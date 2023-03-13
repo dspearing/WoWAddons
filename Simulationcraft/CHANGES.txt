@@ -1,0 +1,10 @@
+lightweight tag 4a6b9151cf0cf2f87a69cd939e5d986c40dec151 10.0.5-02
+Author:	Dave Hendler <sollaires@gmail.com>
+Date:	Sat Mar 11 11:31:51 2023 -0600
+
+commit 4a6b9151cf0cf2f87a69cd939e5d986c40dec151
+Author: Dave Hendler <sollaires@gmail.com>
+Date:   Sat Mar 11 11:31:51 2023 -0600
+
+    Fix weird race condition / startup issue with GetItemGem
+

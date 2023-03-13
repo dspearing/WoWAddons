@@ -1,0 +1,8 @@
+## Interface: 100005
+## Title: |cff0000FFGSE:|r |cFF00D1FFizzi Demon Hunter Macros|r
+## Notes: GSE3 izzi Demon Hunter Macros
+## Author: izzi
+## Version: v1
+## RequiredDeps: GSE
+
+loaded.lua

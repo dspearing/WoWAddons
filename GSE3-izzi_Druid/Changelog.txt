@@ -1,0 +1,5 @@
+0.1 - Initial Version GSE3-izzi_Druid_Macro_set
+0.2 updated izzi bear to lvl 70
+0.3 added feral lvl 70 
+0.4 add balance package
+0.5 updated balance

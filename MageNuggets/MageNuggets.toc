@@ -1,0 +1,23 @@
+## Interface: 100002
+## X-Min-Interface: 100002
+## Title: Mage Nuggets
+## Author: B-Buck (Bbuck - Eredar)
+## Version: 8.3.5
+## Notes: Mage Nuggets is a mage utility with many useful nuggets to make the lives of mages easier.
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: MageNuggets,MageNuggets_Frames
+
+mnoptions.xml
+magenuggets.xml
+
+arcane\magenuggets_arcane.xml
+fire\magenuggets_fire.xml
+frost\magenuggets_frost.xml
+
+portals\magenuggets_horde_portals.xml
+portals\magenuggets_alliance_portals.xml
+
+polymorph\magenuggets_polymorph.xml
+
+moonkin\magenuggets_moonkin.xml

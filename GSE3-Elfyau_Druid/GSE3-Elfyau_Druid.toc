@@ -1,0 +1,8 @@
+## Interface: 100005
+## Title: |cff0000FFGSE:|r |cFF00D1FFElfyau Druid Macros|r
+## Notes: GSE3 Elfyau Druid Macros
+## Author: Elfyau
+## Version: v1
+## RequiredDeps: GSE
+
+loaded.lua

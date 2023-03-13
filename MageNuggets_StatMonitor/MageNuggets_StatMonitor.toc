@@ -1,0 +1,11 @@
+## Interface: 100002
+## X-Min-Interface: 100002
+## Title: Mage Nuggets Stat Monitor
+## Author: B-Buck (Bbuck - Eredar)
+## Version: 8.3.5
+## Notes: Displays stats on a customizable window
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariablesPerCharacter: mageNuggetsStatMonitor
+MageNuggetsStatMonitor.xml
+MNStatMonitoOptions.xml

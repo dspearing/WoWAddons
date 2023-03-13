@@ -1,0 +1,19 @@
+0.0 - Initial Version GSE3-Monk_Macro_Set
+0.01 - Reworked Windwalker macro
+0.02 - Another overhaul - complete rework hopefully more consistant higher DPS
+0.03 - Updated TOC to reflect new patch
+0.04 - Updated TOC to reflect new patch Macro updates coming soon
+0.05 - Updated Windwalker Macro
+0.06 - Updated TOC and Brewmaster Monk Macro
+0.07 - Updated Mistweaver Monk Macro
+0.08 - Updated Windwalker Monk Macro
+0.09 - Updated Mistweaver Monk Macro
+0.10 - Updated TOC
+0.11 - Updated Brewmaster Monk Macro
+0.12 - Updated TOC and Windwalker Monk Macro
+0.13 - Updated TOC and Mistweaver Monk Macro
+0.14 - Updated Windwalker Macro from v1 to v1.1
+0.15 - Removed Erroneous Action Block from Windwalker Macro
+0.16 - Updated TOC
+0.17 - Updated Mistweaver Monk
+0.18 - Talent Fix For Mistweaver Monk
