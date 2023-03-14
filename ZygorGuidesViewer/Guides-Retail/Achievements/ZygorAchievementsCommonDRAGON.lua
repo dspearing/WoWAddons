@@ -1995,7 +1995,7 @@ accept Coldwashed Dragonclaw##70791 |goto 47.83,38.87
 step
 click Golden Claw##380429
 |tip Beneath the right foot of the dragon statue.
-accept Golden Claw##70204 |goto 38.83,45.00
+accept Golden Claw##70204 |goto Thaldraszus/0 38.83,45.00
 step
 click Precious Stone Fragment##381361
 |tip Beneath the right foot of the statue.

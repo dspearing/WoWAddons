@@ -56,8 +56,8 @@ GuideMenu.Toast2={	--General Updates Toast
 
 	{"title", text=[[New in this update:]], fontsize = 12, center = true, volume = ZGV.FontBold},
 
-	{"list", text=[[Updated the **Spark of Ingenuity guide** for the Dragonflight Campaign]], fontsize = 9, size = "S", onclick=function() ZGV.GuideMenu:Show("LEVELING\\The Spark of Ingenuity") GuideMenu.ToastQueuePush() end},
-	{"list", text=[[Added The **Silver Purpose chapter** to the Valdrakken Accord rep guide]], fontsize = 9, size = "S", onclick=function() ZGV.GuideMenu:Show("REPUTATIONS\\Valdrakken Accord") GuideMenu.ToastQueuePush() end},
+    {"list", text=[[Added additional **Dragonflight Pets and Achievements** guides]], fontsize = 10, size = "S", onclick=function() ZGV.GuideMenu:Show("Featured") GuideMenu.ToastQueuePush() end },
+
 
 }
 GuideMenu.Toast3={	--Orientation Guide Toast
@@ -99,7 +99,7 @@ GuideMenu.Sticky = {
 GuideMenu.DisplayMode = {		--values: show (display the toast when conditionsa are met), hide (never display the toast), dev (display when conditions met, but in dev clients only)
 
 	["welcome"] = "show",
-	["updates"] = "hide",
+	["updates"] = "show",
 	["orientation"] = "show",
 	["events"] = "show",
 	["dailyquests"] = "show",
