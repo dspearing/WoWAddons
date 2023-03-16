@@ -1,4 +1,4 @@
--- Generated from CurseForge on Wed Mar 15 21:16:00 UTC 2023
+-- Generated from CurseForge on Thu Mar 16 09:00:34 UTC 2023
 local ns = select(2, ...) ---@type ns @The addon namespace.
 
 if ns:IsSameLocale("zhTW") then

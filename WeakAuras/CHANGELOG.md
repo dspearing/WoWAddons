@@ -1,15 +1,14 @@
-# [5.4.1](https://github.com/WeakAuras/WeakAuras2/tree/5.4.1) (2023-03-16)
+# [5.4.2](https://github.com/WeakAuras/WeakAuras2/tree/5.4.2) (2023-03-16)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.4.0...5.4.1)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.4.1...5.4.2)
 
 ## Highlights
 
- - bug fix 
+ - Turn off new aura API usage temporarily 
 
 ## Commits
 
-mrbuds (2):
+Stanzilla (1):
 
-- Fix Lua error with Atlased Textures
-- Fix potential Lua error in "Talent Known" trigger
+- Turn off new aura API usage temporarily
 
