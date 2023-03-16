@@ -1,8 +1,11 @@
 # <DBM> Dungeons (Dragonflight)
 
-## [r73](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r73) (2023-03-14)
+## [r73](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r73) (2023-03-15)
 [Full Changelog](https://github.com/DeadlyBossMods/DBM-Dungeons/compare/r72...r73) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Dungeons/releases)
 
+- and another tweak  
+- tweak  
+- fixed bug where fissure count never actually incremented on vexamus  
 - hotfixes were incorrect. it was actually nerfed even harder than they stated  
 - Meant to push this before bed but forgot. Updated post hotfix timers for azureblade  
 -  - Made trash alerts that are extremely important to crowd control in high keys use the "crowd control" voice line, even when they aren't special announcements. These spells include Rally the Clan, Desecrating Roar, Flame Dance, and Tectonic Slam. Issue #108  
