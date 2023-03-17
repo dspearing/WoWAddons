@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on 2023-03-16T17:30:05Z
+-- RaiderIO Client Data. Generated on 2023-03-17T21:50:51Z
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -183,6 +183,40 @@ ns.GUILD_BEST_DATA = {
     },
     ["weekly_best"] = {
       [1] = {
+        ["zone_id"] = 6932,
+        ["level"] = 19,
+        ["upgrades"] = 0,
+        ["fraction"] = 1.4226281790147295,
+        ["clear_time"] = "00:46:58.225",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Gutszu",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          [2] = {
+            ["name"] = "Ultrion",
+            ["role"] = "healer",
+            ["class_id"] = 13
+          },
+          [3] = {
+            ["name"] = "Crywolfts",
+            ["role"] = "dps",
+            ["class_id"] = 1
+          },
+          [4] = {
+            ["name"] = "Daamagargoe",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          },
+          [5] = {
+            ["name"] = "Mixoflik",
+            ["role"] = "dps",
+            ["class_id"] = 8
+          }
+        }
+      },
+      [2] = {
         ["zone_id"] = 5965,
         ["level"] = 16,
         ["upgrades"] = 0,
@@ -216,7 +250,7 @@ ns.GUILD_BEST_DATA = {
           }
         }
       },
-      [2] = {
+      [3] = {
         ["zone_id"] = 13982,
         ["level"] = 16,
         ["upgrades"] = 0,
@@ -250,7 +284,7 @@ ns.GUILD_BEST_DATA = {
           }
         }
       },
-      [3] = {
+      [4] = {
         ["zone_id"] = 14063,
         ["level"] = 14,
         ["upgrades"] = 2,
@@ -284,7 +318,7 @@ ns.GUILD_BEST_DATA = {
           }
         }
       },
-      [4] = {
+      [5] = {
         ["zone_id"] = 6932,
         ["level"] = 13,
         ["upgrades"] = 2,
@@ -315,40 +349,6 @@ ns.GUILD_BEST_DATA = {
             ["name"] = "Vekora",
             ["role"] = "dps",
             ["class_id"] = 8
-          }
-        }
-      },
-      [5] = {
-        ["zone_id"] = 14063,
-        ["level"] = 5,
-        ["upgrades"] = 3,
-        ["fraction"] = 0.35436166261058444,
-        ["clear_time"] = "00:10:38.205",
-        ["party"] = {
-          [1] = {
-            ["name"] = "Charmonk",
-            ["role"] = "tank",
-            ["class_id"] = 10
-          },
-          [2] = {
-            ["name"] = "Olissavanna",
-            ["role"] = "healer",
-            ["class_id"] = 10
-          },
-          [3] = {
-            ["name"] = "Monkiirage",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          },
-          [4] = {
-            ["name"] = "Nïnkasi",
-            ["role"] = "dps",
-            ["class_id"] = 11
-          },
-          [5] = {
-            ["name"] = "Wrathpaladin",
-            ["role"] = "dps",
-            ["class_id"] = 2
           }
         }
       }
