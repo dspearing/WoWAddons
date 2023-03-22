@@ -107,6 +107,7 @@ function widget:CreateToastContent(toasttype)
 			prev=object		--set the generated object as the last object generated
 
 			object:Show()		--show the object frame and continue if there are more
+			entireblock.height = height
 			table.insert(entireblock,object)
 		end
 	end

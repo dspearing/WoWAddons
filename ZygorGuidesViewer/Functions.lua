@@ -719,9 +719,10 @@ function ZGV.Garrison_HasBuildingBlueprint(id_or_name,level)
 end
 
 function ZGV.Garrison_GetBuildingLocation(id_or_name)
-	if not C_Garrison.GetPlots(Enum.GarrisonFollowerType.FollowerType_6_0) then return false end
+	local follower60 = Enum.GarrisonFollowerType.FollowerType_6_0 or Enum.GarrisonFollowerType.FollowerType_6_0_GarrisonFollower
+	if not C_Garrison.GetPlots(follower60) then return false end
 
-	for i,plot in ipairs(C_Garrison.GetPlots(Enum.GarrisonFollowerType.FollowerType_6_0)) do
+	for i,plot in ipairs(C_Garrison.GetPlots(follower60)) do
 		local id,name,texPrefix = C_Garrison.GetOwnedBuildingInfo(plot.id)
 		if id and (id_or_name==id or (type(id_or_name)=="string" and texPrefix:find(id_or_name))) then
 			-- that's the one.

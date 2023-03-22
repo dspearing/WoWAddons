@@ -6,9 +6,6 @@ local TA = ZGV.TalentAdvisor
 
 --/run ZGV.Testing.RecordTalents()
 
---/run ZGV.TalentAdvisor:DumpTalents()
---/run ZGV:ShowDump(ZGV.db.profile.dumptalents[ZGV.TalentAdvisor.PlayerClass])
-
 
 
 TA.Builds = {

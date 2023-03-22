@@ -535,6 +535,15 @@ talk Iskaara Defender##186431
 Show #5# Iskaara Defenders your Combat Skills |q 70010/1
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74836
+accept A New Vocation##74836 |goto The Azure Span/0 19.52,24.61
+|tip You will accept this quest automatically.
+step
+talk Izal Whitemoon##201899
+Choose _"Begin pet battle."_
+Defeat Izal Whitemoon in a Pet Battle |q 74836/1 |goto 19.52,24.61
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70622
 accept Resupply Three-Falls##70622 |goto The Azure Span/0 21.41,26.69
 |tip You will accept this quest automatically.
@@ -601,6 +610,148 @@ accept Wild Arcana##70439 |goto The Azure Span/0 51.31,24.87
 step
 kill Unstable Elemental##194961+
 Destroy Unstable Arcana or Kill Players |q 70439/1 |goto 51.31,24.87
+|next "Dragon_World_Quest_Emissaries"
+step
+label "Dragon_World_Quest_Emissaries"
+#include "Dragon_World_Quest_Emissaries"
+]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Forbidden Reach World Quests",{
+author="support@zygorguides.com",
+description="This guide will assist you in completing world quests in The Forbidden Reach.",
+condition_valid=function() return completedallq(75050,74769,73157) end,
+condition_valid_msg="You must complete the \"An Eclectic Accord,\" \"Stemming the Irontide,\" and \"Wings of Mercy,\" quests in the Forbidden Reach leveling guide to unlock world quests.",
+startlevel=60,
+worldquestzone={2151,2150,2102,2154,2100,2101,2109,2110,2026,2107,2118},
+patch='100007',
+},[[
+step
+label "Choose_World_Quest"
+#include "Dragon_Choose_World_Quests"
+step
+label quest-73148
+accept Combustible Vegetation##73148 |goto The Forbidden Reach/5 13.09,53.71
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Wildfire##200688
+|tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
+|tip Defeating these mobs makes Wildfire easier to defeat.
+|tip You can track them on your minimap with Track Pets.
+Defeat Wildfire in a Pet Battle |q 73148/1 |goto 13.09,53.71
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73146
+accept Cutting Wind##73146 |goto The Forbidden Reach/5 18.34,13.24
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Vortex##200685
+|tip This NPC gains power for each of the 7 nearby Storm-Touched Swoglets.
+|tip Defeating these mobs makes Wildfire easier to defeat.
+|tip You can track them on your minimap with Track Pets.
+Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73079
+accept Dragonrider Racing - Morqut Ascent##73079 |goto The Forbidden Reach/5 31.32,65.75
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##200212
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398054 |goto 31.32,65.75 |q 73079
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 31.49,65.94 |q 73079
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73079/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73082
+accept Dragonrider Racing - Southern Reach Route##73082 |goto The Forbidden Reach/5 63.64,84.05
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##200247
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398123 |goto 63.64,84.05 |q 73082
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 63.61,84.32 |q 73082
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73082/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73078
+accept Dragonrider Racing - Stormsunder Crater Circuit##73078 |goto The Forbidden Reach/5 76.13,65.63
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##200183
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398027 |goto 76.13,65.63 |q 73078
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 76.33,65.78 |q 73078
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73078/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73149
+accept Flood Warning##73149 |goto The Forbidden Reach/5 89.29,60.39
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Flow##200697
+Defeat Flow in a Pet Battle |q 73149/1 |goto 89.29,60.39
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73147
+accept Shifting Ground##73147 |goto The Forbidden Reach/5 67.30,12.26
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Tremblor##197447
+Defeat Tremblor in a Pet Battle |q 73147/1 |goto 67.30,12.26
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75257
+accept The War Creche##75257 |goto The War Creche/0 61.04,45.79
+|tip You will accept this quest automatically.
+|polish
+step
+Kill enemies around this area
+|tip Inside the building.
+clicknpc Injured Winguard##203464+
+|tip They look like kneeling Dracthyr inside the building.
+Subdue the War Creche |q 75257/1 |goto 61.04,45.79
 |next "Dragon_World_Quest_Emissaries"
 step
 label "Dragon_World_Quest_Emissaries"
@@ -986,6 +1137,15 @@ Plant #10# Banners |q 70780/1 |goto 83.67,37.55
 |tip Use your dragonriding abilities to fly through 10 golden rings.
 |tip You can find them on cliffs and ledges around this area.
 |tip They appear on your minimap as yellow dots.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74837
+accept Paws of Thunder##74837 |goto Ohn'ahran Plains/0 36.16,52.56
+|tip You will accept this quest automatically.
+step
+talk Vikshi Thunderpaw##201878
+Choose _"Begin pet battle."_
+Defeat Vikshi Thunderpaw in a Pet Battle |q 74837/1 |goto 36.16,52.56
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70074
@@ -1600,6 +1760,15 @@ click Titan Temple Relic##379239+
 collect 8 Titan Temple Relic##198443 |q 70111/1 |goto 49.62,58.93
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74792
+accept They're Full of Stars!##74792 |goto Thaldraszus/0 55.97,40.53
+|tip You will accept this quest automatically.
+step
+talk Stargazer Zenoth##202458
+Choose _"Begin pet battle."_
+Defeat Stargazer Zenoth in a Pet Battle |q 74792/1 |goto 55.97,40.53
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70057
 accept Thieving Tarasek##70057 |goto Thaldraszus/0 56.82,67.56
 |tip You will accept this quest automatically.
@@ -1646,6 +1815,14 @@ patch='100001',
 step
 label "Choose_World_Quest"
 #include "Dragon_Choose_World_Quests"
+step
+label quest-74841
+accept Adinakon##74841 |goto The Waking Shores/0 51.89,72.33
+|tip You will accept this quest automatically.
+step
+clicknpc Adinakon##201849
+Defeat Adinakon in a Pet Battle |q 74841/1 |goto 51.89,72.33
+|next "Dragon_World_Quest_Emissaries"
 step
 label quest-66419
 accept Allegiance To One##66419 |goto The Waking Shores/0 24.38,55.69
@@ -2382,7 +2559,7 @@ accept The Terrible Three##66551 |goto The Waking Shores/0 38.91,83.27
 step
 talk Haniko##196264
 Choose _"Begin pet battle."_
-Defeat Haniko in a Pet Battle |q 66551/1 |goto 38.8,83.2 |goto 38.91,83.27
+Defeat Haniko in a Pet Battle |q 66551/1 |goto 38.91,83.27
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-69913
@@ -2945,7 +3122,7 @@ You have completed the available daily quests at the Roaring Dragonspring fishin
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the various daily quests at the Rusza'thar Reach Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7102) > 0 end,
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7102) end,
 startlevel=62,
 areapoiid=7102,
 areapoitype="Aylaag Outpost",
@@ -2961,13 +3138,12 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Rusza'thar Reach |complete areapoitime(7102) > 0
-|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
-|tip |only if areapoitime(7102) == 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
+Wait for the Aylaag Centaur to Set Up Camp at Rusza'thar Reach |complete areapoi(2023,7102)
+|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3040,20 +3216,20 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(65796,65789,65784,66698) |next "Begin_Dailies"
 step
-You have completed all daily quests for the Rusza'thar Reach area Aylaag Outpost |only if areapoitime(7102) > 0
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7102) > 0
-|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7102) > 0
+You have completed all daily quests for the Rusza'thar Reach area Aylaag Outpost |only if areapoi(2023,7102)
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7102)
+|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7102)
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
-'|complete not completedq(65796,65789,65784,66698) and areapoitime(7102) > 0 |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
+'|complete not completedq(65796,65789,65784,66698) and areapoi(2023,7102) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the various daily quests at the Pinewood Post Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7101) > 0 end,
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7101) end,
 startlevel=62,
 areapoiid=7101,
 areapoitype="Aylaag Outpost",
@@ -3069,13 +3245,12 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Pinewood Post |complete areapoitime(7101) > 0
-|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
-|tip |only if areapoitime(7101) == 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
+Wait for the Aylaag Centaur to Set Up Camp at Pinewood Post |complete areapoi(2023,7101)
+|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3085,7 +3260,8 @@ accept Scaling Ever Higher##70352 |goto 70.70,63.05 |only if questpossible |or 4
 accept Blood of Dragons##70279 |goto 70.70,63.05 |only if questpossible |or 4
 accept If There's Wool There's a Way##70990 |goto 70.70,63.05 |only if questpossible |or 4
 accept Of Wind and Water##67034 |goto 70.70,63.05 |only if questpossible |or 4
-Accept the Daily Quest |complete false or completedq(67222,70352,70279,70990,67034) |goto 70.70,63.05 |or 4
+accept An Amazing Journey##67039 |goto 70.70,63.05 |only if questpossible |or 4
+Accept the Daily Quest |complete false or completedq(67222,70352,70279,70990,67034,67039) |goto 70.70,63.05 |or 4
 step
 use the Aylaag Skinning Shear##200153
 |tip Use it on Wild Cliffhoofs around this area.
@@ -3116,6 +3292,22 @@ You can find more around:
 [83.22,68.95]
 [77.93,76.42]
 |only if haveq(70352) or completedq(70352)
+step
+clicknpc Zaya##192272
+Save Zaya |q 67039/2 |goto 74.08,77.81
+|only if haveq(67039) or completedq(67039)
+step
+clicknpc Sassa##192275
+Pick up Sassa |havebuff spell:377333 |goto 73.15,80.43 |q 67039
+|only if haveq(67039) or completedq(67039)
+step
+Save Sassa |q 67039/1 |goto 72.84,79.92
+|tip Walk to the riverbank.
+|only if haveq(67039) or completedq(67039)
+step
+clicknpc Suder##192271
+Save Suder |q 67039/3 |goto 70.58,79.00
+|only if haveq(67039) or completedq(67039)
 stickystart "Collect_Springborn_Core"
 step
 click Windtossed Feather##377560+
@@ -3146,28 +3338,29 @@ turnin Darkened Clouds##67222 |goto Ohn'ahran Plains/0 70.98,62.58
 |only if haveq(67222) or completedq(67222)
 step
 talk Toluiqi##185881
-turnin Scaling Ever Higher##70352 |goto 70.56,62.85
-|only if haveq(70352) or completedq(70352)
+turnin Scaling Ever Higher##70352 |goto 70.56,62.85 |only if haveq(70352) or completedq(70352)
+turnin An Amazing Journey##67039 |goto 70.56,62.85 |only if haveq(67039) or completedq(67039)
+|only if haveq(70352,67039) or completedq(70352,67039)
 step
 talk Huntmaster Malkik##185870
 turnin Blood of Dragons##70279 |goto 70.65,63.58 |only if haveq(70279) or completedq(70279)
 turnin If There's Wool There's a Way##70990 |goto 70.65,63.58 |only if haveq(70990) or completedq(70990)
 |only if haveq(70279,70990) or completedq(70279,70990)
 step
-You have completed all daily quests for the Pinewood Post area Aylaag Outpost |only if areapoitime(7101) > 0
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7101) > 0
-|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7101) > 0
+You have completed all daily quests for the Pinewood Post area Aylaag Outpost |only if areapoi(2023,7101)
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7101)
+|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7101)
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
-'|complete not completedq(67222,70352,70279,70990,67034) and areapoitime(7101) > 0 |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
+'|complete not completedq(67222,70352,70279,70990,67034,67039) and areapoi(2023,7101) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the various daily quests at the Eaglewatch Outpost Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7103) > 0 end,
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7103) end,
 startlevel=62,
 areapoiid=7103,
 areapoitype="Aylaag Outpost",
@@ -3183,13 +3376,12 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Eaglewatch Outpost |complete areapoitime(7103) > 0
-|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
-|tip |only if areapoitime(7103) == 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
+Wait for the Aylaag Centaur to Set Up Camp at Eaglewatch Outpost |complete areapoi(2023,7103)
+|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3283,15 +3475,15 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(65798,70210,67605,71241) |next "Begin_Dailies"
 step
-You have completed all daily quests for the Eaglewatch Outpost area Aylaag Outpost |only if areapoitime(7103) > 0
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7103) > 0
-|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7103) > 0
+You have completed all daily quests for the Eaglewatch Outpost area Aylaag Outpost |only if areapoi(2023,7103)
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7103)
+|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7103)
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
-'|complete not completedq(65798,70210,67605,71241) and areapoitime(7103) > 0 |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
+'|complete not completedq(65798,70210,67605,71241) and areapoi(2023,7103) |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests",{
 author="support@zygorguides.com",
@@ -3979,3 +4171,263 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(70750,72068,72373,72374,72375) |next "Begin_Weekly_Quests"
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies",{
+author="support@zygorguides.com",
+description="This guide will walk you through completing the various daily quests in the Forbidden Reach.",
+condition_valid=function() return completedallq(75050,74769,73157) end,
+condition_valid_msg="You must complete the \"An Eclectic Accord,\" \"Stemming the Irontide,\" and \"Wings of Mercy,\" quests in the Forbidden Reach leveling guide to unlock envoy quests.",
+patch='100007',
+},[[
+step
+click Envoy Charter
+|tip Choose your envoy for the day.
+|tip Each day you can select an envoy and gain +10% renown gained for that day.
+|tip Picking an envoy for the first time each week will unlock that envoy's twice-weekly envoy quests.
+|tip You can unlock all 4 envoy quests each week by picking a new envoy each day until you choose them all.
+Click Here to Continue |confirm |goto The Forbidden Reach/5 34.18,59.90
+step
+talk Cataloger Daela##200566
+turnin New Adventures##74908 |goto 34.32,59.98
+|only if haveq(74908)
+step
+talk Turik##200562
+turnin New Catches##74909 |goto 34.20,60.03
+|only if haveq(74909)
+step
+talk Storykeeper Ashekh##200564
+turnin New Foes##74910 |goto 34.08,59.97
+|only if haveq(74910)
+step
+talk Kraxxus##200563
+turnin New Horizons##74911 |goto 34.00,59.81
+|only if haveq(74911)
+step
+talk Cataloger Daela##200566
+accept Filming the Caldera##74389 |goto 34.32,59.98 |only if questactive(74389)
+accept Spelunking the Den##74118 |goto 34.32,59.98 |only if questactive(74118)
+|only if questactive(74389,74118)
+step
+click Cataloger's Gyrocopter
+|tip Use the "Catalog" ability on your vehicle bar to take puctures of the wildlife along the river.
+|tip When your film bar becomes empty, use the "Reload Film" ability to reload and take more pictures.
+|tip Taking pictures of wildlife right when they're surrounded by light will result in better quality pictures.
+Ride the Cataloger's Gyrocopter |q 74389/1 |goto 42.76,35.36
+|only if haveq(74389) or completedq(74389)
+step
+Take Pictures of Wildlife |q 74389/2 |goto 42.32,36.83
+|tip Use the "Catalog" ability on your vehicle bar to take puctures of the wildlife along the river.
+|tip When your film bar becomes empty, use the "Reload Film" ability to reload and take more pictures.
+|tip Taking pictures of wildlife right when they're surrounded by light will result in better quality pictures.
+|only if haveq(74389) or completedq(74389)
+step
+click Climbing Gear
+|tip Inside the cave.
+Acquire the Climbing Gear |q 74118/1 |goto 42.62,60.91
+|only if haveq(74118) or completedq(74118)
+step
+click Expedition Climbing Hook
+|tip On the ceiling.
+Grapple onto the Expedition Climbing Hook |q 74118/2 |goto 42.91,61.64
+|only if haveq(74118) or completedq(74118)
+step
+click Primalist Cache Key
+|tip Follow the left side to the hanging bag.
+|tip Click Stalactite Handholds to move along the ceiling and excavate artifacts.
+collect Primalist Cache Key##204561 |q 74118/3 |goto 42.70,59.75
+|only if haveq(74118) or completedq(74118)
+step
+click Primalist Cache
+|tip It's in an alcove high up in the cave.
+|tip Click Stalactite Handholds to move along the ceiling.
+|tip Follow the right side to the handhold that provides a clear view of the hook in the alcove above with the chest.
+collect Primalist Scriptures##204852 |q 74118/4 |goto 43.69,62.10
+|only if haveq(74118) or completedq(74118)
+step
+talk Turik##200562
+accept Harpooner's Challenge##74391 |goto 34.20,60.03 |only if questactive(74391)
+accept Angler's Challenge##74119 |goto 34.19,60.04 |only if questactive(74119)
+|only if questactive(74391,74119)
+step
+use the Ominous Conch##194701
+|tip Use 5 of these at the Large Lunker Sighting here to summon a Lunker.
+|tip You can also fish in open water, and summon a lunker each time you catch an Ominious Conch.
+use the Iskaaran Harpoon##194510
+|tip Use it to spear the lunker.
+extraaction Pull Hard##374599
+|tip Use this after spearing a lunker to pull it to the shore and kill it.
+collect 3 Lunker Morsel##204093 |q 74391/2 |goto 76.25,44.57
+|only if haveq(74391) or completedq(74391)
+step
+cast Fishing##131474
+|tip Catch fish in the fishing hole.
+|tip You can also complete the "Dragonskull Shoal" fishing daily quest.
+|tip The daily quest counts as 40 caught fish.
+Catch 50 or Restock 25 Fish in Dragonskull Fishing Hole |q 74119/1 |goto 34.18,59.98
+|only if haveq(74119) or completedq(74119)
+step
+talk Storykeeper Ashekh##200564
+accept Rare Prey##74117 |goto 34.07,59.96 |only if questactive(74117)
+accept Brutal Prey##74390 |goto 34.07,59.96 |only if questactive(74390)
+|only if questactive(74117,74390)
+step
+Kill rare elite enemies
+|tip Open your world map and look for rare elite icons.
+|tip They look like stars with silver dragons around them.
+|tip You may need a group to defeat these enemies.
+|tip Kill any two you can find.
+Hunt Down #2# Rare Elite Creatures |q 74117/1
+|only if haveq(74117) or completedq(74117)
+step
+Kill elite enemies
+|tip Inside the building.
+|tip You may need a group to defeat these enemies.
+Slay #5# Elite Creatures |q 74390/1 |goto The War Creche/0 61.04,45.79
+|only if haveq(74390) or completedq(74390)
+step
+talk Kraxxus##200563
+accept Reach South##75263 |goto The Forbidden Reach/5 34.00,59.81 |only if questactive(75263)
+accept Reach South##74392 |goto 34.00,59.81 |only if questactive(74392)
+accept Reach Center##75261 |goto 34.00,59.81 |only if questactive(75261)
+accept Reach North##75237 |goto 34.00,59.81 |only if questactive(75237)
+|only if questactive(75263,74392,75261,75237)
+stickystart "Complete_the_Southern_Reach_Route_75263"
+step
+talk Bronze Timekeeper##200183
+Complete the Stormsunder Crater Circuit |q 75263/1 |goto 76.14,65.62
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest.
+|only if haveq(75263) or completedq(75263)
+step
+label "Complete_the_Southern_Reach_Route_75263"
+talk Bronze Timekeeper##200247 |notinsticky
+Complete the Southern Reach Route |q 75263/2 |goto 63.66,84.06
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
+|only if haveq(75263) or completedq(75263)
+stickystart "Complete_the_Southern_Reach_Route_74392"
+step
+talk Bronze Timekeeper##200183
+Complete the Stormsunder Crater Circuit |q 74392/1 |goto 76.14,65.62
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest.
+|only if haveq(74392) or completedq(74392)
+step
+label "Complete_the_Southern_Reach_Route_74392"
+talk Bronze Timekeeper##200247 |notinsticky
+Complete the Southern Reach Route |q 74392/2 |goto 63.66,84.06
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
+|only if haveq(74392) or completedq(74392)
+stickystart "Complete_the_Aerie_Chasm_Cruise_75261"
+stickystart "Complete_the_Caldera_Climb_75237"
+step
+talk Bronze Timekeeper##200417
+Complete the Forbidden Reach Rush |q 75261/2 |goto 49.42,60.06
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest.
+|only if haveq(75261) or completedq(75261)
+step
+label "Complete_the_Aerie_Chasm_Cruise_75261"
+talk Bronze Timekeeper##200417 |notinsticky
+Complete the Aerie Chasm Cruise |q 75261/1 |goto 63.09,51.95
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
+|only if haveq(75261) or completedq(75261)
+stickystart "Complete_the_Aerie_Chasm_Cruise_75237"
+step
+talk Bronze Timekeeper##200417
+Complete the Forbidden Reach Rush |q 75237/3 |goto 49.42,60.06
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest.
+|only if haveq(75237) or completedq(75237)
+step
+label "Complete_the_Aerie_Chasm_Cruise_75237"
+talk Bronze Timekeeper##200417 |notinsticky
+Complete the Aerie Chasm Cruise |q 75237/1 |goto 63.09,51.95
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
+|only if haveq(75237) or completedq(75237)
+step
+label "Complete_the_Caldera_Climb_75237"
+talk Bronze Timekeeper##200316 |notinsticky
+Complete the Caldera Climb |q 75237/2 |goto 41.36,14.55
+|tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
+|only if haveq(75237) or completedq(75237)
+step
+talk Kraxxus##200563
+turnin Reach South##75263 |goto 34.00,59.81 |only if haveq(75263) or completedq(75263)
+turnin Reach South##74392 |goto 34.00,59.81 |only if haveq(74392) or completedq(74392)
+turnin Reach Center##75261 |goto 34.00,59.81 |only if haveq(75261) or completedq(75261)
+turnin Reach North##75237 |goto 34.00,59.81 |only if haveq(75237) or completedq(75237)
+|only if haveq(75263,74392,75261,75237) or completedq(75263,74392,75261,75237)
+step
+talk Cataloger Daela##200566
+turnin Filming the Caldera##74389 |goto 34.32,59.98 |only if haveq(74389) or completedq(74389)
+turnin Spelunking the Den##74118 |goto 34.32,59.98 |only if haveq(74118) or completedq(74118)
+|only if haveq(74389,74118) or completedq(74389,74118)
+step
+talk Storykeeper Ashekh##200564
+turnin Rare Prey##74117 |goto 34.07,59.96 |only if haveq(74117) or completedq(74117)
+turnin Brutal Prey##74390 |goto 34.07,59.96 |only if haveq(74390) or completedq(74390)
+|only if haveq(74117,74390) or completedq(74117,74390)
+step
+talk Turik##200562
+turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or completedq(74391)
+turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
+|only if haveq(74391,74119) or completedq(74391,74119)
+]])
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
+startlevel=60,
+areapoiid=7412,
+areapoitype="Fishing Hole",
+patch='100007',
+},[[
+step
+talk Elder Poa##186448 |goto The Azure Span/0 12.41,49.34
+|tip Inside the building.
+|tip Turn in Stolen Totems from treasures in The Azure Span for rep.
+'|turnin More Stolen Totems##70927 |repeatable |n
+'|turnin Stolen Totems##70926 |repeatable |n
+'|turnin Story of a Memorable Victory##72291 |n
+Reach Renown Level 4 with the Iskaara Tuskarr |complete factionrenown(2511) >= 4
+|tip Complete daily quests, weekly quests, and zone quests in The Azure Span to gain renown.
+step
+_Next to you:_
+talk Rowie##197631
+accept Fishing Holes##70941
+step
+talk Nunvuq##186554
+Train Fishing |skillmax Fishing,1 |goto 13.94,49.24
+step
+talk Nunvuq##186554
+Train Dragon Isles Fishing |q 70941/1 |goto 13.94,49.24
+step
+talk Nunvuq##186554
+turnin Fishing Holes##70941 |goto 13.94,49.24
+step
+Wait for the Tyrhold Fishing Hole to Become Active |complete areapoi(2151,7412)
+step
+label "Begin_Daily_Quests"
+talk Reclusive Fisher##200947
+accept Dragonskull Shoal##73226 |goto The Forbidden Reach/5 74.17,40.53
+|tip Completing this quest will increase the Dragonskull Island fishing hole stock quantity by 20.
+|tip You may want to fish it down some before proceeding.
+step
+clicknpc Stock Fish##195340
+|tip They look like groups of small fish near the shore all over the riverbank.
+|tip They appear on your minimap as yellow dots.
+use Throw Net##198855
+|tip Use it on schools of stock fish.
+Collect #3# Stock Fish |q 73226/1 |goto 83.76,29.78
+step
+extraaction Release Fish##385852
+|tip Mount up and use your dragonriding.
+Drop #3# Fish From Above |q 73226/2 |goto 74.17,40.53
+step
+talk Reclusive Fisher##200947
+turnin Dragonskull Shoal##73226 |goto 74.17,40.53
+|tip Completing this quest will increase the Dragonskull Island fishing hole stock quantity 20.
+|tip You may want to fish it down some before proceeding.
+step
+You have completed the available daily quests at the Dragonskull Island fishing hole
+|tip This guide will reset when more become available.
+'|complete not completedq(73226) |next "Begin_Daily_Quests"
+]])
+ZGV.BETAEND()

@@ -78,7 +78,7 @@ ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Character Achievements\\Quest Achievements\\Shadowlands\\Return to Lordaeron")
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Unlocking the Secrets",{
 author="support@zygorguides.com",
-description="\nComplete the Zereth Mortis achievements listed below:\n\nExplore Zereth Mortis\n"..
+description="Complete the Zereth Mortis achievements listed below:\n\nExplore Zereth Mortis\n"..
 "Tales of the Exile\nCurious Collections\nAdventures in Zereth Mortis\nPath to Enlightenment\n"..
 "A Means to an End",
 achieveid={15514},

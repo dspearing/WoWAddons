@@ -3,6 +3,7 @@ if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("DailiesCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Azure Span World Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Forbidden Reach World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Thaldraszus World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Waking Shores World Quests")
@@ -19,3 +20,8 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\A Cataloger's Paradise")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\A Climber's Calling")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Dragon Isles Emissary")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies")
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole")
+ZGV.BETAEND()

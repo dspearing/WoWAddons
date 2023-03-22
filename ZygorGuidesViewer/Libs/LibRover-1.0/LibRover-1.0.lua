@@ -4388,7 +4388,7 @@ do
 			local canfly_in_pandaria = canfly and (Lib.IsRetail or SP_LICENCE_PANDARIA)
 			local canfly_in_draenor = canfly and playerlevel>=20 and (SP_EXPERT_RIDING or SP_ARTISAN_RIDING or SP_MASTER_RIDING)-- and SP_DRAENOR_PATHFINDER
 			local canfly_in_legion = canfly and playerlevel>=20 and (SP_EXPERT_RIDING or SP_ARTISAN_RIDING or SP_MASTER_RIDING)-- and SP_BROKEN_ISLES_PATHFINDER_2 -- Broken Isles Pathfinder 2
-			local canfly_in_bfa = canfly and playerlevel>=20 and SP_BFA_PATHFINDER_2 -- BfA Pathfinder 2
+			local canfly_in_bfa = canfly and playerlevel>=20 -- and SP_BFA_PATHFINDER_2 -- BfA Pathfinder 2 no longer needed in 10.0.7
 			local canfly_in_sl = canfly and Q_MEMORIES_SUNLESS_SKIES
 			local canfly_in_df = false
 

@@ -8,7 +8,7 @@ achieveid={11298},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Classy","Outfit"},
-description="\nThis guide will walk you through completing the \"A Classy Outfit\" Achievement.",
+description="This guide will walk you through completing the \"A Classy Outfit\" Achievement.",
 },[[
 step
 Collect your Class Order Hall Helmet
@@ -85,7 +85,7 @@ achieveid={10994},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Glorious","Campaign"},
-description="\nThis guide will walk you through completing the \"A Glorious Campaign\" Achievement.",
+description="This guide will walk you through completing the \"A Glorious Campaign\" Achievement.",
 },[[
 step
 To earn this achievement, complete a Class Order Hall Questline with your current character
@@ -112,7 +112,7 @@ achieveid={11171},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Arsenal","of","Power"},
-description="\nThis guide will walk you through completing the \"Arsenal of Power\" Achievement.",
+description="This guide will walk you through completing the \"Arsenal of Power\" Achievement.",
 },[[
 step
 To earn this achievement, collect every Artifcat Weapon for your current character
@@ -139,7 +139,7 @@ achieveid={11190},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Broken","Isles","Pathfinder","Part","One"},
-description="\nThis guide will walk you through completing the \"Broken Isles Pathfinder, Part One\" Achievement.",
+description="This guide will walk you through completing the \"Broken Isles Pathfinder, Part One\" Achievement.",
 },[[
 step
 To earn this achievement, completely explore each Legion leveling zone
@@ -173,7 +173,7 @@ You Earned the "Broken Isles Pathfinder, Part One" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\The Original",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 1 PvP armor from Netherstorm.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 1 PvP armor from Netherstorm.",
 achieveid={11706},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's"},
@@ -210,7 +210,7 @@ You Earned "The Original" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\No Mercy",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 2 PvP armor from Netherstorm.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 2 PvP armor from Netherstorm.",
 achieveid={11707},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, merciless"},
@@ -247,7 +247,7 @@ You Earned the "No Mercy" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\With a Vengeance",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 3 PvP armor from Netherstorm.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 3 PvP armor from Netherstorm.",
 achieveid={11708},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, vengeful"},
@@ -284,7 +284,7 @@ You Earned the "With a Vengeance" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Tough Threads",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 4 PvP armor from Netherstorm.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 4 PvP armor from Netherstorm.",
 achieveid={11709},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, brutal"},
@@ -323,7 +323,7 @@ You Earned the "Tough Threads" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Lethal Looks",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 5 PvP armor from old Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 5 PvP armor from old Dalaran.",
 achieveid={11710},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, hateful"},
@@ -362,7 +362,7 @@ You Earned the "Lethal Looks" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\The Fierce and the Furious",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 6 PvP armor from old Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 6 PvP armor from old Dalaran.",
 achieveid={11711},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, furious"},
@@ -401,7 +401,7 @@ You Earned "The Fierce and the Furious" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Relentlessly Good Looking",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 7 PvP armor from old Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 7 PvP armor from old Dalaran.",
 achieveid={11712},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, relentless"},
@@ -440,7 +440,7 @@ You Earned the "Relentlessly Good Looking" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wrath of the Stich King",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 8 PvP armor from old Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 8 PvP armor from old Dalaran.",
 achieveid={11713},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, wrathful"},
@@ -479,7 +479,7 @@ You Earned the "Wrath of the Stich King" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Viciously Vintage",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 9 PvP armor from Tanaris.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 9 PvP armor from Tanaris.",
 achieveid={11714},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, vicious"},
@@ -518,7 +518,7 @@ You Earned the "Viciously Vintage" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Ruth(less) is More",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 10 PvP armor from Tanaris.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 10 PvP armor from Tanaris.",
 achieveid={11715},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, ruthless"},
@@ -557,7 +557,7 @@ You Earned the "Ruth(less) is More" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Cataclysmic Catwalk",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 11 PvP armor from Tanaris.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 11 PvP armor from Tanaris.",
 achieveid={11716},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, cataclysmic"},
@@ -596,7 +596,7 @@ You Earned the "Cataclysmic Catwalk" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Why Male(volent) Models?",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 12 PvP armor from Valley of the Four Winds.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 12 PvP armor from Valley of the Four Winds.",
 achieveid={11717},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, malevolent"},
@@ -637,7 +637,7 @@ You Earned the "Why Male(volent) Models?" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Dressed to Oppress",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 13 PvP armor from Valley of the Four Winds.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 13 PvP armor from Valley of the Four Winds.",
 achieveid={11718},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, tyrannical"},
@@ -678,7 +678,7 @@ You Earned the "Dressed to Oppress" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\It's Not Fashion Unless it Hurts",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 14 PvP armor from Valley of the Four Winds.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 14 PvP armor from Valley of the Four Winds.",
 achieveid={11719},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, grievous"},
@@ -719,7 +719,7 @@ You Earned the "It's Not Fashion Unless it Hurts" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wear it With Pride",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 15 PvP armor from Valley of the Four Winds.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 15 PvP armor from Valley of the Four Winds.",
 achieveid={11720},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, prideful"},
@@ -760,7 +760,7 @@ You Earned the "Wear it With Pride" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Untamed Beauty",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 16 PvP armor from Stormshield.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 16 PvP armor from Stormshield.",
 achieveid={11629},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, primal"},
@@ -801,7 +801,7 @@ You Earned the "Untamed Beauty" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Wild Style",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 17 PvP armor from Stormshield.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 17 PvP armor from Stormshield.",
 achieveid={11721},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, wild"},
@@ -842,7 +842,7 @@ You Earned the "Wild Style" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\War-Mog-ering",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 18 PvP armor from Stormshield.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 18 PvP armor from Stormshield.",
 achieveid={11722},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, warmongering"},
@@ -883,7 +883,7 @@ You Earned the "War-Mog-ering" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\More Like Win-dictive",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 19 or season 20 PvP armor from Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 19 or season 20 PvP armor from Dalaran.",
 achieveid={11630},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, vindictive"},
@@ -926,7 +926,7 @@ You Earned the "More Like Win-dictive" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\Legion\\Cruel Intentions",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 21 or season 22 PvP armor from Dalaran.",
+description="To earn this achievement, you will need to PvP for 12 Marks of Honor to purchase your class season 21 or season 22 PvP armor from Dalaran.",
 achieveid={11723},
 patch='70200',
 keywords={"appearance, collection, pvp, player, vs, gladiator's, cruel"},
@@ -972,7 +972,7 @@ achieveid={11743},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Temple","of","Ahn","Qiraj","Transmog"},
-description="\nThis guide will walk you through completing the \"Accessor-Eyes\" achievement.",
+description="This guide will walk you through completing the \"Accessor-Eyes\" achievement.",
 },[[
 step
 label "Start"
@@ -2530,7 +2530,7 @@ achieveid={11761},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Azeroth's","Next","Top","Model","Transmog"},
-description="\nThis guide will walk you through completing the \"Azeroth's Next Top Model\" Achievement.",
+description="This guide will walk you through completing the \"Azeroth's Next Top Model\" Achievement.",
 },[[
 step
 label "Start"
@@ -2607,7 +2607,7 @@ achieveid={11748},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Black","is","the","New","Black","Black","Temple"},
-description="\nThis guide will walk you through completing the \"Black is the New Black\" Achievement.",
+description="This guide will walk you through completing the \"Black is the New Black\" Achievement.",
 },[[
 step
 label "start"
@@ -2695,7 +2695,7 @@ achieveid={11762},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Can","I","Get","A","Helya","Trial","of","Valor"},
-description="\nThis guide will walk you through completing the \"Can I Get A Helya\" Achievement.",
+description="This guide will walk you through completing the \"Can I Get A Helya\" Achievement.",
 },[[
 step
 label "Start"
@@ -2798,7 +2798,7 @@ achieveid={11742},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Blackwing","Lair"},
-description="\nThis guide will walk you through completing the \"Dress in Lairs\" achievement.",
+description="This guide will walk you through completing the \"Dress in Lairs\" achievement.",
 },[[
 step
 label "start"
@@ -2873,7 +2873,7 @@ achieveid={11631},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Extreme","Makeover","Fel","Edition","Hellfire","Citadel"},
-description="\nThis guide will walk you through completing the \"Extreme Makeover: Fel Edition\" Achievement.",
+description="This guide will walk you through completing the \"Extreme Makeover: Fel Edition\" Achievement.",
 },[[
 step
 label "start"
@@ -3080,7 +3080,7 @@ achieveid={10687},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Back"},
-description="\nThis guide will walk you through completing the \"Fashionista: Back\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Back\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Back" Armor
@@ -3097,7 +3097,7 @@ achieveid={10682},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Chest"},
-description="\nThis guide will walk you through completing the \"Fashionista: Chest\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Chest\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for the "Chest" Armor
@@ -3118,7 +3118,7 @@ achieveid={10685},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Feet"},
-description="\nThis guide will walk you through completing the \"Fashionista: Feet\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Feet\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Feet" Armor
@@ -3139,7 +3139,7 @@ achieveid={10693},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Hand"},
-description="\nThis guide will walk you through completing the \"Fashionista: Hand\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Hand\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Hands" Armor
@@ -3160,7 +3160,7 @@ achieveid={10681},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Head"},
-description="\nThis guide will walk you through completing the \"Fashionista: Head\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Head\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Head" Armor
@@ -3181,7 +3181,7 @@ achieveid={10684},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Legs"},
-description="\nThis guide will walk you through completing the \"Fashionista: Legs\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Legs\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Legs" Armor
@@ -3202,7 +3202,7 @@ achieveid={10691},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Shirt"},
-description="\nThis guide will walk you through completing the \"Fashionista: Shirt\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Shirt\" Achievement.",
 },[[
 step
 talk Salan Sunthread##97342
@@ -3273,7 +3273,7 @@ achieveid={10692},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Shoulder"},
-description="\nThis guide will walk you through completing the \"Fashionista: Shoulder\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Shoulder\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Shoulder" Armor
@@ -3294,7 +3294,7 @@ achieveid={10690},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Tabard"},
-description="\nThis guide will walk you through completing the \"Fashionista: Tabard\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Tabard\" Achievement.",
 },[[
 step
 To earn this, collect 15 different appearances for the "Tabards"
@@ -3370,7 +3370,7 @@ achieveid={10686},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Waist"},
-description="\nThis guide will walk you through completing the \"Fashionista: Waist\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Waist\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Waist" Armor
@@ -3391,7 +3391,7 @@ achieveid={10689},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Weapon","Off","Hand"},
-description="\nThis guide will walk you through completing the \"Fashionista: Weapon & Off Hand\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Weapon & Off Hand\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for the "Weapon & Off Hand" Slots
@@ -3408,7 +3408,7 @@ achieveid={10688},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fashionista","Wrist"},
-description="\nThis guide will walk you through completing the \"Fashionista: Wrist\" Achievement.",
+description="This guide will walk you through completing the \"Fashionista: Wrist\" Achievement.",
 },[[
 step
 To earn this, collect 100 different appearances for "Wrist" Armor
@@ -3429,7 +3429,7 @@ achieveid={11754},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Glamour","of","Twilight","Bastion","of","Twilight"},
-description="\nThis guide will walk you through completing the \"Glamour of Twilight\" Achievement.",
+description="This guide will walk you through completing the \"Glamour of Twilight\" Achievement.",
 },[[
 step
 label "start"
@@ -3803,7 +3803,7 @@ achieveid={11755},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Hot","Couture","The","Firelands",},
-description="\nThis guide will walk you through completing the \"Hot Couture\" Achievement.",
+description="This guide will walk you through completing the \"Hot Couture\" Achievement.",
 },[[
 step
 label "start"
@@ -4133,7 +4133,7 @@ achieveid={11740},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Make","it","W-orc","W-orc","Blackrock","Foundry"},
-description="\nThis guide will walk you through completing the \"Make it W-orc W-orc\" Achievement.",
+description="This guide will walk you through completing the \"Make it W-orc W-orc\" Achievement.",
 },[[
 step
 label "start"
@@ -4339,7 +4339,7 @@ achieveid={11747},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Serpentshrine","Cavern"},
-description="\nThis guide will walk you through completing the \"Merely a Set\" achievement.",
+description="This guide will walk you through completing the \"Merely a Set\" achievement.",
 },[[
 step
 label "start"
@@ -4511,7 +4511,7 @@ achieveid={11751},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Mogg","Saron","Ulduar"},
-description="\nThis guide will walk you through completing the \"Mogg-Saron\" Achievement.",
+description="This guide will walk you through completing the \"Mogg-Saron\" Achievement.",
 },[[
 step
 label "start"
@@ -4937,7 +4937,7 @@ achieveid={11746},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Karazhan"},
-description="\nThis guide will walk you through completing the \"Outlandish Style\" achievement.",
+description="This guide will walk you through completing the \"Outlandish Style\" achievement.",
 },[[
 step
 label "start"
@@ -5101,7 +5101,7 @@ achieveid={11760},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Retro","Trend","Tomb","of","Sargeras"},
-description="\nThis guide will walk you through completing the \"Retro Trend\" Achievement.",
+description="This guide will walk you through completing the \"Retro Trend\" Achievement.",
 },[[
 step
 label "Start"
@@ -5380,7 +5380,7 @@ achieveid={11757},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Sha","of","Fabulous","Heart","of","Fear","Endless","Spring"},
-description="\nThis guide will walk you through completing the \"Sha of Fabulous\" Achievement.",
+description="This guide will walk you through completing the \"Sha of Fabulous\" Achievement.",
 },[[
 step
 label "Start"
@@ -5568,7 +5568,7 @@ achieveid={11752},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Style","of","the","Crusader","Trial","of","the","Crusader"},
-description="\nThis guide will walk you through completing the \"Style of the Crusader\" Achievement.",
+description="This guide will walk you through completing the \"Style of the Crusader\" Achievement.",
 },[[
 step
 label "start"
@@ -5863,7 +5863,7 @@ achieveid={11741},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Molten","Core"},
-description="\nThis guide will walk you through completing the \"So Hot Right Now\" achievement.",
+description="This guide will walk you through completing the \"So Hot Right Now\" achievement.",
 },[[
 step
 label "loop"
@@ -5999,7 +5999,7 @@ achieveid={11749},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Suns","Out","Thori'dals","Out","Sunwell","Plateau"},
-description="\nThis guide will walk you through completing the \"Suns Out, Thori'dals Out\" Achievement.",
+description="This guide will walk you through completing the \"Suns Out, Thori'dals Out\" Achievement.",
 },[[
 step
 label "start"
@@ -6152,7 +6152,7 @@ achieveid={11628},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"That's","So","Last","Mellenium","Nighthold","Emerald","Nightmare"},
-description="\nThis guide will walk you through completing the \"That's So Last Mellenium\" Achievement.",
+description="This guide will walk you through completing the \"That's So Last Mellenium\" Achievement.",
 },[[
 step
 label "Start"
@@ -6479,7 +6479,7 @@ achieveid={11758},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Thunderwear","Throne","of","Thunder"},
-description="\nThis guide will walk you through completing the \"Thunderwear\" Achievement.",
+description="This guide will walk you through completing the \"Thunderwear\" Achievement.",
 },[[
 step
 label "start"
@@ -6662,7 +6662,7 @@ achieveid={11750},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Undying","Aesthetic","Naxxramas"},
-description="\nThis guide will walk you through completing the \"Undying Aesthetic\" Achievement.",
+description="This guide will walk you through completing the \"Undying Aesthetic\" Achievement.",
 },[[
 step
 label "start"
@@ -6955,7 +6955,7 @@ achieveid={11756},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Wardrobe","of","the","Old","Gods","Dragon","Soul",},
-description="\nThis guide will walk you through completing the \"Wardrobe of the Old Gods\" Achievement.",
+description="This guide will walk you through completing the \"Wardrobe of the Old Gods\" Achievement.",
 },[[
 step
 label "start"
@@ -7277,7 +7277,7 @@ achieveid={11753},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Winter","Catalog","Icecrown","Citadel"},
-description="\nThis guide will walk you through completing the \"Winter Catalog\" Achievement.",
+description="This guide will walk you through completing the \"Winter Catalog\" Achievement.",
 },[[
 step
 label "start"
@@ -7657,7 +7657,7 @@ achieveid={11759},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Yaass","shaarj","Siege","of","Orgrimmar"},
-description="\nThis guide will walk you through completing the \"Yaass'shaarj\" Achievement.",
+description="This guide will walk you through completing the \"Yaass'shaarj\" Achievement.",
 },[[
 step
 label "start"
@@ -7880,7 +7880,7 @@ achieveid={10770},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Tangerine","Traveler"},
-description="\nThis guide will walk you through completing the \"The Tangerine Traveler\" Achievement.",
+description="This guide will walk you through completing the \"The Tangerine Traveler\" Achievement.",
 },[[
 step
 label "Loop"
@@ -8002,7 +8002,7 @@ achieveid={10707},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Specter","Illuminated"},
-description="\nThis guide will walk you through completing the \"A Specter, Illuminated\" Achievement.",
+description="This guide will walk you through completing the \"A Specter, Illuminated\" Achievement.",
 },[[
 step
 Inside the Vault of the Wardens Dungeon:
@@ -8024,7 +8024,7 @@ achieveid={10711},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adds?","More","Like","Bads"},
-description="\nThis guide will walk you through completing the \"Adds? More Like Bads\" Achievement.",
+description="This guide will walk you through completing the \"Adds? More Like Bads\" Achievement.",
 },[[
 step
 Inside the Black Rook Hold Dungeon:
@@ -8043,7 +8043,7 @@ achieveid={10773},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Arcanic","Cling"},
-description="\nThis guide will walk you through completing the \"Arcanic Cling\" Achievement.",
+description="This guide will walk you through completing the \"Arcanic Cling\" Achievement.",
 },[[
 step
 Inside The Arcway Dungeon:
@@ -8063,7 +8063,7 @@ achieveid={10710},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Black","Rook","Moan"},
-description="\nThis guide will walk you through completing the \"Black Rook Moan\" Achievement.",
+description="This guide will walk you through completing the \"Black Rook Moan\" Achievement.",
 },[[
 step
 Inside the Black Rook Hold Dungeon:
@@ -8087,7 +8087,7 @@ achieveid={10769},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Burning","Down","the","House"},
-description="\nThis guide will walk you through completing the \"Burning Down the House\" Achievement.",
+description="This guide will walk you through completing the \"Burning Down the House\" Achievement.",
 },[[
 step
 Inside the Darkheart Thicket Dungeon:
@@ -8108,7 +8108,7 @@ achieveid={10456},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"But","you","Say","He's","Just","Friend"},
-description="\nThis guide will walk you through completing the \"But you Say He's Just a Friend\" Achievement.",
+description="This guide will walk you through completing the \"But you Say He's Just a Friend\" Achievement.",
 },[[
 step
 Inside the Eye of Azshara Dungeon:
@@ -8128,7 +8128,7 @@ achieveid={10875},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Can't","Eat","Just","One"},
-description="\nThis guide will walk you through completing the \"Can't Eat Just One\" Achievement.",
+description="This guide will walk you through completing the \"Can't Eat Just One\" Achievement.",
 },[[
 step
 Inside the Neltharion's Lair Dungeon:
@@ -8148,7 +8148,7 @@ achieveid={10775},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Clean","House"},
-description="\nThis guide will walk you through completing the \"Clean House\" Achievement.",
+description="This guide will walk you through completing the \"Clean House\" Achievement.",
 },[[
 step
 Inside The Arcway Dungeon:
@@ -8168,7 +8168,7 @@ achieveid={10611},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Dropping","Some","Eaves"},
-description="\nThis guide will walk you through completing the \"Dropping Some Eaves\" Achievement.",
+description="This guide will walk you through completing the \"Dropping Some Eaves\" Achievement.",
 },[[
 step
 Inside the Courrt of Stars Dungeon:
@@ -8191,7 +8191,7 @@ achieveid={10766},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Egg","cellent"},
-description="\nThis guide will walk you through completing the \"Egg-cellent!\" Achievement.",
+description="This guide will walk you through completing the \"Egg-cellent!\" Achievement.",
 },[[
 step
 Inside the Darkheart Thicket Dungeon:
@@ -8213,7 +8213,7 @@ achieveid={10996},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Got","to","Ketchum","All"},
-description="\nThis guide will walk you through completing the \"Got to Ketchum All\" Achievement.",
+description="This guide will walk you through completing the \"Got to Ketchum All\" Achievement.",
 },[[
 step
 Inside the Neltharion's Lair Dungeon:
@@ -8274,7 +8274,7 @@ achieveid={10411},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Helheim","Hath","No","Fury"},
-description="\nThis guide will walk you through completing the \"Helheim Hath No Fury\" Achievement.",
+description="This guide will walk you through completing the \"Helheim Hath No Fury\" Achievement.",
 },[[
 step
 Inside the Maw of Souls Dungeon:
@@ -8294,7 +8294,7 @@ achieveid={10679},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"I","Ain't","Even","Cold"},
-description="\nThis guide will walk you through completing the \"I Ain't Even Cold\" Achievement.",
+description="This guide will walk you through completing the \"I Ain't Even Cold\" Achievement.",
 },[[
 step
 Inside the Vault of the Wardens Dungeon:
@@ -8314,7 +8314,7 @@ achieveid={10542},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"I","Got","What","You","Mead"},
-description="\nThis guide will walk you through completing the \"I Got What You Mead\" Achievement.",
+description="This guide will walk you through completing the \"I Got What You Mead\" Achievement.",
 },[[
 step
 Inside the Halls of Valor Dungeon:
@@ -8339,7 +8339,7 @@ achieveid={10554},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"I","Made","a","Food!"},
-description="\nThis guide will walk you through completing the \"I Made a Food!\" Achievement.",
+description="This guide will walk you through completing the \"I Made a Food!\" Achievement.",
 },[[
 step
 Inside the Assault on Violet Hold Dungeon:
@@ -8360,7 +8360,7 @@ achieveid={10413},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Instant","Karma"},
-description="\nThis guide will walk you through completing the \"Instant Karma\" Achievement.",
+description="This guide will walk you through completing the \"Instant Karma\" Achievement.",
 },[[
 step
 Inside the Maw of Souls Dungeon:
@@ -8380,7 +8380,7 @@ achieveid={10776},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"No","Time","To","Waste"},
-description="\nThis guide will walk you through completing the \"No Time to Waste\" Achievement.",
+description="This guide will walk you through completing the \"No Time to Waste\" Achievement.",
 },[[
 step
 Inside the Arcway Dungeon:
@@ -8401,7 +8401,7 @@ achieveid={10412},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Poor","Unfortunate","Souls"},
-description="\nThis guide will walk you through completing the \"Poor Unfortunate Souls\" Achievement.",
+description="This guide will walk you through completing the \"Poor Unfortunate Souls\" Achievement.",
 },[[
 step
 You will need a group of 5 in order to earn this achievement
@@ -8454,7 +8454,7 @@ achieveid={10458},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Ready","for","Raiding","V"},
-description="\nThis guide will walk you through completing the \"Ready for Raiding V\" Achievement.",
+description="This guide will walk you through completing the \"Ready for Raiding V\" Achievement.",
 },[[
 step
 Inside the Eye of Azshara Dungeon:
@@ -8473,7 +8473,7 @@ achieveid={10544},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Stag","Party"},
-description="\nThis guide will walk you through completing the \"Stag Party\" Achievement.",
+description="This guide will walk you through completing the \"Stag Party\" Achievement.",
 },[[
 step
 map Halls of Valor/1
@@ -8503,7 +8503,7 @@ achieveid={10457},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Stay","Salty"},
-description="\nThis guide will walk you through completing the \"Stay Salty\" Achievement.",
+description="This guide will walk you through completing the \"Stay Salty\" Achievement.",
 },[[
 step
 Inside the Eye of Azshara Dungeon
@@ -8524,7 +8524,7 @@ achieveid={10543},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Surge","Protector"},
-description="\nThis guide will walk you through completing the \"Surge Protector\" Achievement.",
+description="This guide will walk you through completing the \"Surge Protector\" Achievement.",
 },[[
 step
 Inside the Halls of Valor Dungeon:
@@ -8542,7 +8542,7 @@ achieveid={10610},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Waiting","for","Gerdo"},
-description="\nThis guide will walk you through completing the \"Waiting for Gerdo\" Achievement.",
+description="This guide will walk you through completing the \"Waiting for Gerdo\" Achievement.",
 },[[
 step
 Inside the Court of Stars Dungeon:
@@ -8564,7 +8564,7 @@ achieveid={10680},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Who's","Afraid","of","the","Dark"},
-description="\nThis guide will walk you through completing the \"Who's Afraid of the Dark\" Achievement.",
+description="This guide will walk you through completing the \"Who's Afraid of the Dark\" Achievement.",
 },[[
 step
 Inside the Vault of the Wardens Dungeon:
@@ -8586,7 +8586,7 @@ achieveid={10709},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"You","Used","to","Scrawl","Me","In","Your","Fel","Tome"},
-description="\nThis guide will walk you through completing the \"You Used to Scrawl Me In Your Fel Tome\" Achievement.",
+description="This guide will walk you through completing the \"You Used to Scrawl Me In Your Fel Tome\" Achievement.",
 },[[
 step
 label "Begin"
@@ -8653,7 +8653,7 @@ achieveid={10553},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"You're","Just","Making","It","Worse"},
-description="\nThis guide will walk you through completing the \"You're Just Making It WORSE!\" Achievement.",
+description="This guide will walk you through completing the \"You're Just Making It WORSE!\" Achievement.",
 },[[
 step
 Refer to the _Follower Millhouse Manastorm_ guide in order to attain the Manastorm's Duplicator
@@ -8677,7 +8677,7 @@ achieveid={10817},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Change","In","Scenery"},
-description="\nThis guide will walk you through completing the \"A Change In Scenery\" Achievement.",
+description="This guide will walk you through completing the \"A Change In Scenery\" Achievement.",
 },[[
 step
 Inside the Nighthold Raid:
@@ -8712,7 +8712,7 @@ achieveid={11683},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Bingo!\" achievement.",
+description="This guide will walk you through completing the \"Bingo!\" achievement.",
 },[[
 step
 Inside the Tomb of Sargeras Raid:
@@ -8732,7 +8732,7 @@ achieveid={10555},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Buggy","Fight"},
-description="\nThis guide will walk you through completing the \"Buggy Fight\" Achievement.",
+description="This guide will walk you through completing the \"Buggy Fight\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -8751,7 +8751,7 @@ achieveid={10575},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"krosus, the, nighthold, mythic"},
-description="\nThis guide will walk you through completing the \"Burning Bridges\" achievement.",
+description="This guide will walk you through completing the \"Burning Bridges\" achievement.",
 },[[
 step
 Inside the Nighthold Raid:
@@ -8776,7 +8776,7 @@ achieveid={10678},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Cage","Rematch"},
-description="\nThis guide will walk you through completing the \"Cage Rematch\" Achievement.",
+description="This guide will walk you through completing the \"Cage Rematch\" Achievement.",
 },[[
 step
 Inside the Nighthold Raid:
@@ -8794,7 +8794,7 @@ achieveid={11387},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"The","Chosen"},
-description="\nThis guide will walk you through completing the \"The Chosen\" Achievement.",
+description="This guide will walk you through completing the \"The Chosen\" Achievement.",
 },[[
 step
 To earn this achievement, you need to clear the Trial of Valor on Mythic Difficulty _"without dying"_
@@ -8809,7 +8809,7 @@ achieveid={11770},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Dark Souls\" achievement.",
+description="This guide will walk you through completing the \"Dark Souls\" achievement.",
 },[[
 step
 Inside the Tomb of Sargeras Raid:
@@ -8828,7 +8828,7 @@ achieveid={10851},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Elementalry!"},
-description="\nThis guide will walk you through completing the \"Elementalry!\" Achievement.",
+description="This guide will walk you through completing the \"Elementalry!\" Achievement.",
 },[[
 step
 Inside the Nighthold Raid:
@@ -8848,7 +8848,7 @@ achieveid={11724},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Fel Turkey!\" achievement.",
+description="This guide will walk you through completing the \"Fel Turkey!\" achievement.",
 },[[
 step
 Inside the Tomb of Sargeras Raid:
@@ -8868,7 +8868,7 @@ achieveid={11676},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Five Course Seafood Buffet\" achievement.",
+description="This guide will walk you through completing the \"Five Course Seafood Buffet\" achievement.",
 },[[
 step
 To earn this, achievement you and your group will need to feed serveral "items" to Sarukel the Devouring Maw
@@ -8928,7 +8928,7 @@ achieveid={10754},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Fruit","of","All","Evil"},
-description="\nThis guide will walk you through completing the \"Fruit of All Evil\" Achievement.",
+description="This guide will walk you through completing the \"Fruit of All Evil\" Achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -8949,7 +8949,7 @@ achieveid={10742},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Gluten","Free"},
-description="\nThis guide will walk you through completing the \"Gluten Free\" Achievement.",
+description="This guide will walk you through completing the \"Gluten Free\" Achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -8967,7 +8967,7 @@ achieveid={11699},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Grand Fin-ale\" achievement.",
+description="This guide will walk you through completing the \"Grand Fin-ale\" achievement.",
 },[[
 step
 To earn this achievement, someone in your raid will need to have the Mrgrglhjorn toy
@@ -8990,7 +8990,7 @@ achieveid={10697},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Grand","Opening"},
-description="\nThis guide will walk you through completing the \"Grand Opening\" Achievement.",
+description="This guide will walk you through completing the \"Grand Opening\" Achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -9009,7 +9009,7 @@ achieveid={11674},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Great Soul, Great Purpose\" achievement.",
+description="This guide will walk you through completing the \"Great Soul, Great Purpose\" achievement.",
 },[[
 step
 To earn this achievement, you and your group will need to keep the Diminishing Soul from perishing during The Desolate Host encounter in Tomb of Sargeras
@@ -9036,7 +9036,7 @@ achieveid={11696},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Grin and Bear it!\" achievement.",
+description="This guide will walk you through completing the \"Grin and Bear it!\" achievement.",
 },[[
 step
 Inside the Tomb of Sargeras Raid:
@@ -9055,7 +9055,7 @@ achieveid={10755},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"I","Attack","the","Darkness"},
-description="\nThis guide will walk you through completing the \"I Attack the Darkness\" Achievement.",
+description="This guide will walk you through completing the \"I Attack the Darkness\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9078,7 +9078,7 @@ achieveid={10696},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"I've","Got","My","Eyes","On","You"},
-description="\nThis guide will walk you through completing the \"I've Got My Eyes On You\" Achievement.",
+description="This guide will walk you through completing the \"I've Got My Eyes On You\" Achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -9096,7 +9096,7 @@ achieveid={10663},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Imagined","Dragons","World","Tour"},
-description="\nThis guide will walk you through completing the \"Imagined Dragons World Tour\" Achievement.",
+description="This guide will walk you through completing the \"Imagined Dragons World Tour\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9119,7 +9119,7 @@ achieveid={10699},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Burning","Bridges",},
-description="\nThis guide will walk you through completing the \"Burning Bridges\" Achievement.",
+description="This guide will walk you through completing the \"Burning Bridges\" Achievement.",
 },[[
 step
 You will need the Infinite Whelpling battle pet to earn this achievement
@@ -9143,7 +9143,7 @@ achieveid={10850},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Gul'dan"},
-description="\nThis guide will walk you through completing the \"Mythic: Gul'dan\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Gul'dan\" achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -9160,7 +9160,7 @@ achieveid={10827},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Xavius"},
-description="\nThis guide will walk you through completing the \"Mythic: Xavius\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Xavius\" Achievement.",
 },[[
 step
 Inside the Emerald Nightmare Raid:
@@ -9174,7 +9174,7 @@ You Earned the "Mythic: Xavius" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Don't Sweat the Technique",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Don't Sweat the Technique\" achievement.",
+description="This guide will walk you through completing the \"Don't Sweat the Technique\" achievement.",
 achieveid={11915},
 patch='70300',
 keywords={"Aggramar, Antorus, Burning, Throne"},
@@ -9196,7 +9196,7 @@ You Earned the "Don't Sweat the Technique" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Hard to Kill",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hard to Kill\" achievement.",
+description="This guide will walk you through completing the \"Hard to Kill\" achievement.",
 achieveid={11949},
 patch='70300',
 keywords={"Imonar, Soulhunter, Antorus, Burning, Throne"},
@@ -9220,7 +9220,7 @@ You Earned the "Hard to Kill" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Hounds Good To Me",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hounds Good To Me\" achievement.",
+description="This guide will walk you through completing the \"Hounds Good To Me\" achievement.",
 achieveid={12065},
 patch='70300',
 keywords={"Felhounds, Sargeras, Antorus, Burning, Throne"},
@@ -9241,7 +9241,7 @@ You Earned the "Hounds Good To Me" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Light's Breach",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Light's Breach\" achievement.",
+description="This guide will walk you through completing the \"Light's Breach\" achievement.",
 achieveid={11988},
 patch='70300',
 keywords={"Garothi, Worldbreaker, Hounds, Sargeras, Antoran, Command, Antorus, Burning, Throne"},
@@ -9266,7 +9266,7 @@ You have earned the _Light's Breach_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Argus the Unmaker",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Argus the Unmaker\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Argus the Unmaker\" achievement.",
 achieveid={12002},
 patch='70300',
 keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
@@ -9283,7 +9283,7 @@ You Earned the "Mythic: Argus the Unmaker" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Portal Combat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Portal Combat\" achievement.",
+description="This guide will walk you through completing the \"Portal Combat\" achievement.",
 achieveid={11928},
 patch='70300',
 keywords={"Portal, Keeper, Hasabel, Antorus, Burning, Throne"},
@@ -9311,7 +9311,7 @@ You Earned the "Portal Combat" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Remember the Titans",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Remember the Titans\" achievement.",
+description="This guide will walk you through completing the \"Remember the Titans\" achievement.",
 achieveid={12046},
 patch='70300',
 keywords={"Coven, Shivarra, Antorus, Burning, Throne"},
@@ -9333,7 +9333,7 @@ You Earned the "Remember the Titans" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Seat of the Pantheon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Seat of the Pantheon\" achievement.",
+description="This guide will walk you through completing the \"Seat of the Pantheon\" achievement.",
 achieveid={11991},
 patch='70300',
 keywords={"Aggramar, Argus, Unmaker, Antorus, Burning, Throne"},
@@ -9354,7 +9354,7 @@ You Earned the "Seat of the Pantheon" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Spheres of Influence",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Spheres of Influence\" achievement.",
+description="This guide will walk you through completing the \"Spheres of Influence\" achievement.",
 achieveid={12067},
 patch='70300',
 keywords={"Eonar, Antorus, Burning, Throne"},
@@ -9376,7 +9376,7 @@ You Earned the "Spheres of Influence" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Stardust Crusaders",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Stardust Crusaders\" achievement.",
+description="This guide will walk you through completing the \"Stardust Crusaders\" achievement.",
 achieveid={12257},
 patch='70302',
 keywords={"Argus, Antorus, Burning, Throne"},
@@ -9399,7 +9399,7 @@ You Earned the "Stardust Crusaders" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\This is the War Room!",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"This is the War Room!\" achievement.",
+description="This guide will walk you through completing the \"This is the War Room!\" achievement.",
 achieveid={12129},
 patch='70300',
 keywords={"Antoran, High, Command, Antorus, Burning, Throne"},
@@ -9419,7 +9419,7 @@ You Earned the "This is the War Room!" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Together We Stand",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Together We Stand\" achievement.",
+description="This guide will walk you through completing the \"Together We Stand\" achievement.",
 achieveid={11948},
 patch='70300',
 keywords={"Varimathras, Antorus, Burning, Throne"},
@@ -9446,7 +9446,7 @@ You Earned the "Together We Stand" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\The World Revolves Around Me",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing \"The World Revolves Around Me\" achievement.",
+description="This guide will walk you through completing \"The World Revolves Around Me\" achievement.",
 achieveid={12030},
 patch='70300',
 keywords={"Kin-garoth, Antorus, Burning, Throne"},
@@ -9467,7 +9467,7 @@ You Earned "The World Revolves Around Me" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Worm-monger",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Worm-monger\" achievement.",
+description="This guide will walk you through completing the \"Worm-monger\" achievement.",
 achieveid={11930},
 patch='70300',
 keywords={"Garothi, Worldbreaker, Antorus, Burning, Throne"},
@@ -9493,7 +9493,7 @@ You Earned the "Worm-monger" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Glory of the Argus Raider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Glory of the Argus Raider\" achievement.",
+description="This guide will walk you through completing the \"Glory of the Argus Raider\" achievement.",
 achieveid={11987},
 patch='70300',
 keywords={"Antorus, Burning, Throne"},
@@ -9558,7 +9558,7 @@ achieveid={10704},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Not","For","You"},
-description="\nThis guide will walk you through completing the \"Not For You\" Achievement.",
+description="This guide will walk you through completing the \"Not For You\" Achievement.",
 },[[
 step
 Inside The Nighthold Raid:
@@ -9577,7 +9577,7 @@ achieveid={10753},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Scare","Bear"},
-description="\nThis guide will walk you through completing the \"Scare Bear\" Achievement.",
+description="This guide will walk you through completing the \"Scare Bear\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9596,7 +9596,7 @@ achieveid={11675},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Sky Walker\" achievement.",
+description="This guide will walk you through completing the \"Sky Walker\" achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9622,7 +9622,7 @@ achieveid={10830},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Took","Red","Eye","Down"},
-description="\nThis guide will walk you through completing the \"Took the Red Eye Down\" Achievement.",
+description="This guide will walk you through completing the \"Took the Red Eye Down\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9643,7 +9643,7 @@ achieveid={11160},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Unleashed","Monstrosities"},
-description="\nThis guide will walk you through completing the \"Unleashed Monstrosities\" Achievement.",
+description="This guide will walk you through completing the \"Unleashed Monstrosities\" Achievement.",
 },[[
 step
 For this, you will need to kill _8 of the 11 World Bosses_ that spawn weekly
@@ -9671,7 +9671,7 @@ achieveid={10772},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Use","the","Force(s)"},
-description="\nThis guide will walk you through completing the \"Use the Force(s)\" Achievement.",
+description="This guide will walk you through completing the \"Use the Force(s)\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9696,7 +9696,7 @@ achieveid={11773},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Wax on, Wax off\" achievement.",
+description="This guide will walk you through completing the \"Wax on, Wax off\" achievement.",
 },[[
 step
 Inside the Tomb of Sargeras Raid:
@@ -9716,7 +9716,7 @@ achieveid={10771},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Webbing","Crashers"},
-description="\nThis guide will walk you through completing the \"Webbing Crashers\" Achievement.",
+description="This guide will walk you through completing the \"Webbing Crashers\" Achievement.",
 },[[
 step
 Inside The Emerald Nightmare Raid:
@@ -9748,7 +9748,7 @@ achieveid={11163},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Legion", "Dungeon", "Meta", "Achievement"},
-description="\nThis guide will walk you through completing the \"Glory of the Legion Hero\" Achievement.",
+description="This guide will walk you through completing the \"Glory of the Legion Hero\" Achievement.",
 },[[
 step
 Earn the "But You Say He's Just a Friend" Achievement |achieve 11163/1
@@ -9860,7 +9860,7 @@ You Earned the "Glory of the Legion Hero" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\...And Chew Mana Buns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"...And Chew Mana Buns\" achievement.",
+description="This guide will walk you through completing the \"...And Chew Mana Buns\" achievement.",
 achieveid={12103},
 patch='70300',
 keywords={"Demon, Krokuun, Eredath, Antoran, Wastes"},
@@ -9878,7 +9878,7 @@ You Earned the "...And Chew Mana Buns" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Adventurer of Argus",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Adventurer of Argus\" achievement.",
+description="This guide will walk you through completing the \"Adventurer of Argus\" achievement.",
 achieveid={12077},
 patch='70300',
 keywords={"Rares, Krokuun, Eredath, Antoran, Wastes"},
@@ -10826,7 +10826,7 @@ achieveid={11802},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Bringing","Home","the","Beacon"},
-description="\nThis guide will walk you through completing the \"Bringing Home the Beacon\" achievement.",
+description="This guide will walk you through completing the \"Bringing Home the Beacon\" achievement.",
 },[[
 step
 The Sentinax will appear under one of these areas and it will stay there for 3 hours
@@ -10848,7 +10848,7 @@ You have completed the _Bringing Home the Beacon_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Broken Isles Explorer",{
 author="support@zygorguides.com",
-description="\nEarn the following Broken Isles exploration achievements:\n\nExplore Azsuna\n"..
+description="Earn the following Broken Isles exploration achievements:\n\nExplore Azsuna\n"..
 "Explore Highmountain\nExplore Suramar\nExplore Val'sharah\nExplore Stormheim",
 achieveid={11188},
 patch='70003',
@@ -10869,7 +10869,7 @@ achieveid={11446},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Broken","Isles","Pathfinder"},
-description="\nThis guide will walk you through completing the \"Broken Isles pathfinder, Part Two\" Achievement.",
+description="This guide will walk you through completing the \"Broken Isles pathfinder, Part Two\" Achievement.",
 },[[
 step
 Earn the _Broken Isles Pathfinder, Part One_ achievement |achieve 11446/1
@@ -10886,7 +10886,7 @@ You have earned the _Broken Isles Pathfinder, Part Two_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Commander of Argus",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Commander of Argus\" achievement.",
+description="This guide will walk you through completing the \"Commander of Argus\" achievement.",
 achieveid={12078},
 patch='70300',
 keywords={"Rares, Krokuun, Eredath, Antoran, Wastes"},
@@ -11769,7 +11769,7 @@ You have earned the _Commander of Argus_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Envision Invasion Eradication",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Envision Invasion Eradication\" achievement.",
+description="This guide will walk you through completing the \"Envision Invasion Eradication\" achievement.",
 achieveid={12028},
 patch='70300',
 keywords={"Demon, Invasion, Point, Commander"},
@@ -11800,7 +11800,7 @@ You Earned the "Envision Invasion Eradication" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Argus",{
 author="support@zygorguides.com",
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\n\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\n\n"..
 "\n\n\n\n\n\n\n\n"..
 "\n\n\n\n\n\n\n\n"..
 "\n\n\n\n\n\n\n\n",
@@ -11861,7 +11861,7 @@ You have earned the _Explore Argus_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Azsuna",{
 author="support@zygorguides.com",
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nThe Greenway\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nThe Greenway\n"..
 "Faronaar\nLlothien Highlands\nNar'thalas\nRuined Sanctum\nLey-Ruins of Zarkhenar\nLost Orchard\n"..
 "Felblaze Ingress\nIsle of the Watchers\nOceanus Cove\nTemple of Lights",
 achieveid={10665},
@@ -11897,7 +11897,7 @@ You Earned the "Explore Azsuna" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Broken Shore",{
 author="support@zygorguides.com",
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nSoul Ruin\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nSoul Ruin\n"..
 "Deliverance Point\nThe Weeping Terrace\nFelrage Strand\nDeadwood Landing\nBroken Valley\n"..
 "Tomb of Sargeras\nFelfire Pass",
 achieveid={11543},
@@ -11927,7 +11927,7 @@ You Earned the "Explore Broken Shore" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Highmountain",{
 author="support@zygorguides.com",
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nBloodhunt Highlands\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nBloodhunt Highlands\n"..
 "Frosthoof Watch\nNightwatcher's Perch\nRiverbend\nShipwreck Cove\nStonehoof Watch\nThunder Totem\n"..
 "Blind Marshlands\nIronhorn Enclave\nPinerock Basin\nRockaway Shallows\nSkyhorn\nSylvan Falls\n"..
 "Trueshot Lodge",
@@ -11973,7 +11973,7 @@ achieveid={10668},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Explore","Stormheim"},
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nAggrammar's Vault\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAggrammar's Vault\n"..
 "Dreadwake's Landing\nGreywatch\nHaustvald\nMaw of Nashal\nNastrondir\nThe Runewood\nSkold-Ashil\n"..
 "Talonrest\nValdisdall\nBlackbeak Overlook\nDeyrgrot\nGates of Valor\nHrydhal\nMorheim\n"..
 "Watchman's Rock\nShield's Rest\nStorm's Reach\nTideskorn Harbor\nWeeping Bluffs",
@@ -12034,7 +12034,7 @@ You Earned the "Explore Stormheim" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Explore Suramar",{
 author="support@zygorguides.com",
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nAmbervale\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAmbervale\n"..
 "Falanaar\nThe Grand Promenade\nMoon Guard Stronghold\nRuins of Elun'eth\nTel'anor\n"..
 "Crimson Thicket\nFelsoul Hold\nJandvik\nMoonwhisper Gulch\nSuramar City",
 achieveid={10669},
@@ -12073,7 +12073,7 @@ achieveid={10666},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Explore","Val'sharah"},
-description="\nExplore Argus, revealing the following covered areas of the world map:\n\nAndutalah\n"..
+description="Explore Argus, revealing the following covered areas of the world map:\n\nAndutalah\n"..
 "Bradenbrook\nGloaming Reef\nLorlathil\nMoonclaw Vale\nSmolderhide Thicket\nThas'talah\n"..
 "Black Rook Hold\nThe Dreamgrove\nGrove of Cenarius\nMistvale\nShala'nir\nTemple of Elune",
 },[[
@@ -12114,7 +12114,7 @@ achieveid={11175},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Higher","Dimensional","Learning"},
-description="\nThis guide will walk you through completing the \"Higher Dimensional Learning\" Achievement.",
+description="This guide will walk you through completing the \"Higher Dimensional Learning\" Achievement.",
 },[[
 step
 label "start"
@@ -12187,7 +12187,7 @@ You Earned the "Higher Dimensional Learning" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Invasion Obliteration",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Invasion Obliteration\" achievement.",
+description="This guide will walk you through completing the \"Invasion Obliteration\" achievement.",
 achieveid={12026},
 patch='70300',
 keywords={"Demon, Greater, Invasion, Point, General"},
@@ -12210,7 +12210,7 @@ You Earned the "Invasion Obliteration" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\To Kill Demons...",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"To Kill Demons...\" achievement.",
+description="This guide will walk you through completing the \"To Kill Demons...\" achievement.",
 achieveid={12102},
 patch='70300',
 keywords={"Demon, Krokuun, Eredath, Antoran, Wastes"},
@@ -12230,7 +12230,7 @@ You Earned the "To Kill Demons..." Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Paragon of Argus",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Paragon of Argus\" achievement.",
+description="This guide will walk you through completing the \"Paragon of Argus\" achievement.",
 achieveid={12083},
 patch='70300',
 keywords={"Argus"},
@@ -12287,7 +12287,7 @@ You Earned the "Paragon of Argus" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Shoot First, Loot Later",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Shoot First, Loot Later\" achievement.",
+description="This guide will walk you through completing the \"Shoot First, Loot Later\" achievement.",
 achieveid={12074},
 patch='70300',
 keywords={"Treasures, Argus"},
@@ -12579,7 +12579,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Univer
 achieveid={46},
 patch='30001',
 author="support@zygorguides.com",
-description="\nTo earn this achievement, you must explore all of the areas of WoW.",
+description="To earn this achievement, you must explore all of the areas of WoW.",
 },[[
 step
 Load the "Eastern Kingdoms Explorer" Achievement Guide |confirm |next "Achievement Guides\\Exploration\\Eastern Kingdoms\\Eastern Kingdoms and Cataclysm Explorer"
@@ -12621,7 +12621,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Underb
 achieveid={11066},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Underbelly Tycoon\" Achievement.",
+description="This guide will walk you through completing the \"Underbelly Tycoon\" Achievement.",
 },[[
 stickystart "info"
 step
@@ -12773,7 +12773,7 @@ You have completed the _Underbelly Tycoon_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\We Came Here For Two Reasons",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"We Came Here For Two Reasons\" achievement.",
+description="This guide will walk you through completing the \"We Came Here For Two Reasons\" achievement.",
 achieveid={12101},
 patch='70300',
 keywords={"Demon, Krokuun, Eredath, Antoran, Wastes"},
@@ -12792,7 +12792,7 @@ You Earned the "We Came Here For Two Reasons" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\And We're All Out of Mana Buns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"And We're All Out of Mana Buns\" achievement.",
+description="This guide will walk you through completing the \"And We're All Out of Mana Buns\" achievement.",
 achieveid={12104},
 patch='70300',
 keywords={"Demon, Krokuun, Eredath, Antoran, Wastes"},
@@ -12812,7 +12812,7 @@ You Earned the "And We're All Out of Mana Buns" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Raids\\Legion\\Ahead of the Curve: Argus the Unmaker",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Ahead of the Curve: Argus the Unmaker\" achievement.",
+description="This guide will walk you through completing the \"Ahead of the Curve: Argus the Unmaker\" achievement.",
 achieveid={12110},
 patch='70300',
 keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
@@ -12828,7 +12828,7 @@ You have earned the _Ahead of the Curve: Argus the Unmaker_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Raids\\Legion\\Cutting Edge: Argus the Unmaker",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Cutting Edge: Argus the Unmaker\" achievement.",
+description="This guide will walk you through completing the \"Cutting Edge: Argus the Unmaker\" achievement.",
 achieveid={12111},
 patch='70300',
 keywords={"Argus, Unmaker, Antorus, Burning, Throne"},
@@ -12847,7 +12847,7 @@ achieveid={11192},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Cutting","Edge","Gul'dan"},
-description="\nThis achievement can no longer be earned. It required you to kill Gul'dan on Mythic difficulty during the height of The Nighthold Raid.",
+description="This achievement can no longer be earned. It required you to kill Gul'dan on Mythic difficulty during the height of The Nighthold Raid.",
 },[[
 step
 This achievement can no longer be earned
@@ -12855,7 +12855,7 @@ This achievement can no longer be earned
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Challenger: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12036},
 patch='70300',
 keywords={"PvP, Arena"},
@@ -12870,7 +12870,7 @@ You Earned the "Challenger: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Defender of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12039},
 patch='70300',
 keywords={"PvP, Battleground"},
@@ -12885,7 +12885,7 @@ You Earned the "Defender of the Alliance: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Duelist: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12034},
 patch='70300',
 keywords={"PvP, Arena"},
@@ -12900,7 +12900,7 @@ You Earned the "Duelist: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Gladiator: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12010},
 patch='70300',
 keywords={"PvP, Arena"},
@@ -12915,7 +12915,7 @@ You Earned the "Fierce Gladiator: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Gladiator: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12045},
 patch='70300',
 keywords={"PvP, Arena"},
@@ -12930,7 +12930,7 @@ You Earned the "Gladiator: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Guardian of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12038},
 patch='70300',
 keywords={"PvP, Battleground"},
@@ -12945,7 +12945,7 @@ You Earned the "Guardian of the Alliance: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Hero of the Alliance: Fierce",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12037},
 patch='70300',
 keywords={"PvP, Battleground"},
@@ -12960,7 +12960,7 @@ You Earned the "Hero of the Alliance: Fierce" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Rival: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12035},
 patch='70300',
 keywords={"PvP, Arena"},
@@ -12975,7 +12975,7 @@ You Earned the "Rival: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Soldier of the Alliance: Legion Season 5",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12040},
 patch='70300',
 keywords={"PvP, Battleground"},
@@ -12990,7 +12990,7 @@ You Earned the "Soldier of the Alliance: Legion Season 5" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Elite",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12090},
 patch='70300',
 keywords={"PvP, Arena, Battleground"},
@@ -13005,7 +13005,7 @@ You Earned the "Fierce Elite" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Player vs. Player\\Legion\\Fierce Combatant",{
 author="support@zygorguides.com",
-description="\nThis achievement can no longer be earned!",
+description="This achievement can no longer be earned!",
 achieveid={12032},
 patch='70300',
 keywords={"Arena, PvP, Battlegrounds"},
@@ -13023,7 +13023,7 @@ achieveid={12229},
 patch='80001',
 author="support@zygorguides.com",
 keywords={"battle, of, azeroth, pet, preorder"},
-description="\nTo acquire this achievement, you must purchase the Battle for Azeroth collector's edition.",
+description="To acquire this achievement, you must purchase the Battle for Azeroth collector's edition.",
 },[[
 step
 Purchase the Collector's Edition of the Battle for Azeroth Expansion |achieve 12229
@@ -13041,7 +13041,7 @@ achieveid={12232},
 patch='80001',
 author="support@zygorguides.com",
 keywords={"battle, of, azeroth, pet, preorder"},
-description="\nTo acquire this achievement, you must purchase the Battle for Azeroth collector's edition.",
+description="To acquire this achievement, you must purchase the Battle for Azeroth collector's edition.",
 },[[
 step
 Purchase the Collector's Edition of the Battle for Azeroth Expansion |achieve 12229
@@ -13059,7 +13059,7 @@ achieveid={10765},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Brokenly","Epic"},
-description="\nThis guide will walk you through completing the \"Brokenly Epic\" Achievement.",
+description="This guide will walk you through completing the \"Brokenly Epic\" Achievement.",
 },[[
 step
 For this, you will need to run _Mythic Dungeons_ for item level 840+ gear
@@ -13074,7 +13074,7 @@ You have earned the _Brokenly Epic_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Anomalous Animals of Argus",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Anomalous Animals of Argus\" achievement.",
+description="This guide will walk you through completing the \"Anomalous Animals of Argus\" achievement.",
 achieveid={12088},
 patch='70300',
 keywords={"Pet, Battle"},
@@ -13336,7 +13336,7 @@ You have earned the _Anomalous Animals of Argus_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Acquiescence",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Aquatic Acquiescence\" achievement.",
+description="This guide will walk you through completing the \"Aquatic Acquiescence\" achievement.",
 achieveid={9686},
 patch='70003',
 keywords={"Pet, Battle, Aquatic"},
@@ -13571,7 +13571,7 @@ You Earned the "Aquatic Acquiescence" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Assault",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Aquatic Assault\" achievement.",
+description="This guide will walk you through completing the \"Aquatic Assault\" achievement.",
 achieveid={12089},
 patch='70300',
 keywords={"Pet, Battle, Aquatic"},
@@ -13792,7 +13792,7 @@ You Earned the "Aquatic Assault" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Aquatic Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Aquatic pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Aquatic pets.",
 achieveid={12280},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -13809,7 +13809,7 @@ You Earned the "Aquatic Brawler" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Blitz",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Beast Blitz\" achievement.",
+description="This guide will walk you through completing the \"Beast Blitz\" achievement.",
 achieveid={12091},
 patch='70300',
 keywords={"Pet, Battle, Beast"},
@@ -13998,7 +13998,7 @@ You Earned the "Beast Blitz" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Beast Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Beast pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Beast pets.",
 achieveid={12281},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -14015,7 +14015,7 @@ You Earned the "Beast Brawler" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Best of the Beasts",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Best of the Beasts\" achievement.",
+description="This guide will walk you through completing the \"Best of the Beasts\" achievement.",
 achieveid={9687},
 patch='70003',
 keywords={"Pet, Battle, Beast"},
@@ -14268,7 +14268,7 @@ You Earned the "Best of the Beasts" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Critical Critters",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Critical Critters\" achievement.",
+description="This guide will walk you through completing the \"Critical Critters\" achievement.",
 achieveid={12092},
 patch='70300',
 keywords={"Pet, Battle, Critter"},
@@ -14471,7 +14471,7 @@ You Earned the "Critical Critters" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Critter Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Critter pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Critter pets.",
 achieveid={12284},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -14488,7 +14488,7 @@ You Earned the "Critter Brawler" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Draconic Destruction",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Draconic Destruction\" achievement.",
+description="This guide will walk you through completing the \"Draconic Destruction\" achievement.",
 achieveid={12093},
 patch='70300',
 keywords={"Pet, Battle, Dragonkin"},
@@ -14706,7 +14706,7 @@ You Earned the "Draconic Destruction" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragonkin Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Dragonkin pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Dragonkin pets.",
 achieveid={12287},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -14723,7 +14723,7 @@ You have earned the "Dragonkin Brawler" achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Dragons!",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Dragons!\" achievement.",
+description="This guide will walk you through completing the \"Dragons!\" achievement.",
 achieveid={9689},
 patch='70003',
 keywords={"Pet, Battle, Dragonkin"},
@@ -14966,7 +14966,7 @@ You have earned the "Dragons!" achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Elemental pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Elemental pets.",
 achieveid={12282},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -14983,7 +14983,7 @@ You have earned the _Elemental Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Elemental Escalation",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Elemental Escalation\" achievement.",
+description="This guide will walk you through completing the \"Elemental Escalation\" achievement.",
 achieveid={12094},
 patch='70300',
 keywords={"Pet, Battle, Elemental"},
@@ -15266,7 +15266,7 @@ You have earned the _Elemental Escalation_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Brawler",{
 author="support@zygorguides.com",
-description="\nComplete the following achievements:\nMechanical Brawler\nAquatic Brawler\nBeast Brawler\nElemental Brawler\nMagic Brawler\nCritter Brawler\nUndead Brawler\nFlying Brawler\nDragonkin Brawler\nHumanoid Brawler",
+description="Complete the following achievements:\nMechanical Brawler\nAquatic Brawler\nBeast Brawler\nElemental Brawler\nMagic Brawler\nCritter Brawler\nUndead Brawler\nFlying Brawler\nDragonkin Brawler\nHumanoid Brawler",
 achieveid={12290},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -15339,7 +15339,7 @@ You have earned the _Family Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Familiar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Family Familiar\" achievement.",
+description="This guide will walk you through completing the \"Family Familiar\" achievement.",
 achieveid={9696},
 patch='70003',
 keywords={"Pet, Battle"},
@@ -15386,7 +15386,7 @@ You have earned the _Family Familiar_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Family Fighter",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Family Fighter\" achievement.",
+description="This guide will walk you through completing the \"Family Fighter\" achievement.",
 achieveid={12100},
 patch='70300',
 keywords={"Pet, Battle"},
@@ -15433,7 +15433,7 @@ You have earned the _Family Fighter_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Fierce Fliers",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Fierce Fliers\" achievement.",
+description="This guide will walk you through completing the \"Fierce Fliers\" achievement.",
 achieveid={12095},
 patch='70300',
 keywords={"Pet, Battle, Flying"},
@@ -15690,7 +15690,7 @@ You have earned the _Fierce Fliers_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Flock Together",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Flock Together\" achievement.",
+description="This guide will walk you through completing the \"Flock Together\" achievement.",
 achieveid={9691},
 patch='70003',
 keywords={"Pet, Battle, Flying"},
@@ -15935,7 +15935,7 @@ You have earned the _Flock Together_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Flying Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Flying pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Flying pets.",
 achieveid={12286},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -15952,7 +15952,7 @@ You have earned the _Flying Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Humanoid pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Humanoid pets.",
 achieveid={12289},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -15969,7 +15969,7 @@ You have earned the _Humanoid Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Humanoid Havoc",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Humanoid Havoc\" achievement.",
+description="This guide will walk you through completing the \"Humanoid Havoc\" achievement.",
 achieveid={12096},
 patch='70300',
 keywords={"Pet, Battle, Humanoid"},
@@ -16248,7 +16248,7 @@ You have earned the _Humanoid Havoc_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\The Lil'Necromancer",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"The Lil'Necromancer\" achievement.",
+description="This guide will walk you through completing the \"The Lil'Necromancer\" achievement.",
 achieveid={9695},
 patch='70003',
 keywords={"Pet, Battle, Undead"},
@@ -16501,7 +16501,7 @@ You have earned the "The Lil'Necromancer" achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Magic Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Magic pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Magic pets.",
 achieveid={12283},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -16518,7 +16518,7 @@ You have earned the _Magic Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Magical Mayhem",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Magical Mayhem\" achievement.",
+description="This guide will walk you through completing the \"Magical Mayhem\" achievement.",
 achieveid={12097},
 patch='70300',
 keywords={"Pet, Battle, Magic"},
@@ -16790,7 +16790,7 @@ You have earned the _Magical Mayhem_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Master of Magic",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Master of Magic\" achievement.",
+description="This guide will walk you through completing the \"Master of Magic\" achievement.",
 achieveid={9693},
 patch='70003',
 keywords={"Pet, Battle, Magic"},
@@ -17038,7 +17038,7 @@ You have earned the _Master of Magic_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Mechanical pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Mechanical pets.",
 achieveid={12279},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -17055,7 +17055,7 @@ You have earned the _Mechanical Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mechanical Melee",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mechanical Melee\" achievement.",
+description="This guide will walk you through completing the \"Mechanical Melee\" achievement.",
 achieveid={12098},
 patch='70300',
 keywords={"Pet, Battle, Mechanical"},
@@ -17322,7 +17322,7 @@ You have earned the _Mechanical Melee_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Mousing Around",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mousing Around\" achievement.",
+description="This guide will walk you through completing the \"Mousing Around\" achievement.",
 achieveid={9688},
 patch='70003',
 keywords={"Pet, Battle, Critter"},
@@ -17572,7 +17572,7 @@ You have earned the _Mousing Around_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Murlocs, Harpies, and Wolvar, Oh My!",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Murlocs, Harpies, and Wolvar, Oh My!\" achievement.",
+description="This guide will walk you through completing the \"Murlocs, Harpies, and Wolvar, Oh My!\" achievement.",
 achieveid={9692},
 patch='70003',
 keywords={"Pet, Battle, Humanoid"},
@@ -17816,7 +17816,7 @@ You have earned the _Murlocs, Harpies, and Wolvar, Oh My!_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Ragnaros, Watch and Learn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Ragnaros, Watch and Learn\" achievement.",
+description="This guide will walk you through completing the \"Ragnaros, Watch and Learn\" achievement.",
 achieveid={9690},
 patch='70003',
 keywords={"Pet, Battle, Elemental"},
@@ -18060,7 +18060,7 @@ You have earned the _Ragnaros, Watch and Learn_ achievement!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Roboteer",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Roboteer\" achievement.",
+description="This guide will walk you through completing the \"Roboteer\" achievement.",
 achieveid={9694},
 patch='70003',
 keywords={"Pet, Battle, Mechanical"},
@@ -18307,7 +18307,7 @@ achieveid={6601},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Pet, Battle"},
-description="\nThis guide will walk you through completing the \"Taming the Wild\" Achievement.",
+description="This guide will walk you through completing the \"Taming the Wild\" Achievement.",
 },[[
 step
 Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
@@ -18323,7 +18323,7 @@ achieveid={7498},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Pet, Battle"},
-description="\nThis guide will walk you through completing the \"Taming the Great Outdoors\" Achievement.",
+description="This guide will walk you through completing the \"Taming the Great Outdoors\" Achievement.",
 },[[
 step
 Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
@@ -18339,7 +18339,7 @@ achieveid={7499},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Pet, Battle"},
-description="\nThis guide will walk you through completing the \"Taming the Great World\" Achievement.",
+description="This guide will walk you through completing the \"Taming the Great World\" Achievement.",
 },[[
 step
 Load the "Taming Azeroth" Achievement Guide |next "Achievement Guides\\Pet Battles\\General\\Taming Azeroth" |confirm
@@ -18352,7 +18352,7 @@ You Earned the "Taming the World" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Undead Brawler",{
 author="support@zygorguides.com",
-description="\nWin 10 PvP pet battles through Find Battle with a full team of level 25 Undead pets.",
+description="Win 10 PvP pet battles through Find Battle with a full team of level 25 Undead pets.",
 achieveid={12285},
 patch='70305',
 keywords={"Pet, Battle"},
@@ -18369,7 +18369,7 @@ You have earned the _Undead Brawler_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legion\\Unstoppable Undead",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Unstoppable Undead\" achievement.",
+description="This guide will walk you through completing the \"Unstoppable Undead\" achievement.",
 achieveid={12099},
 patch='70300',
 keywords={"Pet, Battle, Undead"},
@@ -18641,7 +18641,7 @@ You have earned the _Unstoppable Undead_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Legion\\Raiding with Leashes V: Cuteaclysm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Raiding with Leashes V: Cuteaclysm\" achievement.",
+description="This guide will walk you through completing the \"Raiding with Leashes V: Cuteaclysm\" achievement.",
 achieveid={12079},
 patch='70300',
 keywords={"Pet, Battle, Cataclysm"},
@@ -19450,7 +19450,7 @@ achieveid={11856},
 patch='70205',
 author="support@zygorguides.com",
 keywords={"Pet","Battle","Wailing","Caverns"},
-description="\nThis guide will walk you through completing the \"Pet Battle Challenge: Deadmines\" Achievement.",
+description="This guide will walk you through completing the \"Pet Battle Challenge: Deadmines\" Achievement.",
 },[[
 step
 To earn this achievement, complete the Pet Battle Challenge: Deadmines
@@ -19465,7 +19465,7 @@ achieveid={11765},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Pet","Battle","Wailing","Caverns"},
-description="\nThis guide will walk you through completing the \"Pet Battle Challenge: Wailing Caverns\" Achievement.",
+description="This guide will walk you through completing the \"Pet Battle Challenge: Wailing Caverns\" Achievement.",
 },[[
 step
 To earn this achievement, complete the Pet Battle Challenge: Wailing Caverns
@@ -19477,7 +19477,7 @@ You have earned the _Pet Battle Challenge: Wailing Caverns_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Legion\\Broken Isles Safari",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement you must collect every battle pet on the Broken Isles.",
+description="To earn this achievement you must collect every battle pet on the Broken Isles.",
 achieveid={11233},
 patch='70003',
 keywords={"Pet, Battle, collect"},
@@ -19644,7 +19644,7 @@ You Earned the "Broken Isles Safari" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Heroism",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Crest of Heroism\" achievement.",
+description="This guide will walk you through completing the \"Crest of Heroism\" achievement.",
 achieveid={11165},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19660,7 +19660,7 @@ You have earned the _Crest of Heroism_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Carnage",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Crest of Carnage\" achievement.",
+description="This guide will walk you through completing the \"Crest of Carnage\" achievement.",
 achieveid={11167},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19676,7 +19676,7 @@ You have earned the _Crest of Carnage_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Crest of Devastation",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Crest of Devastation\" achievement.",
+description="This guide will walk you through completing the \"Crest of Devastation\" achievement.",
 achieveid={11169},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19692,7 +19692,7 @@ You have earned the _Crest of Devastation_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Top Honors",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Top Honors\" achievement.",
+description="This guide will walk you through completing the \"Top Honors\" achievement.",
 achieveid={10990},
 patch='unknown',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19707,7 +19707,7 @@ You have earned the _Top Honors_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\First Step into a Larger World",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"First Step into a Larger World\" achievement.",
+description="This guide will walk you through completing the \"First Step into a Larger World\" achievement.",
 achieveid={10991},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19723,7 +19723,7 @@ You have earned the _First Step into a Larger World_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Here We Go Again",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Here We Go Again\" achievement.",
+description="This guide will walk you through completing the \"Here We Go Again\" achievement.",
 achieveid={10992},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19739,7 +19739,7 @@ You have earned the _Here We Go Again_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Third Time's the Charm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Third Time's the Charm\" achievement.",
+description="This guide will walk you through completing the \"Third Time's the Charm\" achievement.",
 achieveid={10993},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19755,7 +19755,7 @@ You have earned the _Third Time's the Charm_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\For Prestige",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"For Prestige\" achievement.",
+description="This guide will walk you through completing the \"For Prestige\" achievement.",
 achieveid={10995},
 patch='70003',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19771,7 +19771,7 @@ You have earned the _For Prestige_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Alive for Five",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Alive for Five\" achievement.",
+description="This guide will walk you through completing the \"Alive for Five\" achievement.",
 achieveid={11468},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19787,7 +19787,7 @@ You have earned the _Alive for Five_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\The River Six",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"The River Six\" achievement.",
+description="This guide will walk you through completing the \"The River Six\" achievement.",
 achieveid={11469},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19803,7 +19803,7 @@ You have earned the _The River Six_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Slayin' to Seven",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Slayin' to Seven\" achievement.",
+description="This guide will walk you through completing the \"Slayin' to Seven\" achievement.",
 achieveid={11470},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19819,7 +19819,7 @@ You have earned the _Slayin' to Seven_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Don't Hate. Grind to Eight",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Don't Hate. Grind to Eight\" achievement.",
+description="This guide will walk you through completing the \"Don't Hate. Grind to Eight\" achievement.",
 achieveid={11471},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19835,7 +19835,7 @@ You have earned the _Don't Hate. Grind to Eight_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nine",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hell. It's About Nine\" achievement.",
+description="This guide will walk you through completing the \"Hell. It's About Nine\" achievement.",
 achieveid={11472},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19851,7 +19851,7 @@ You have earned the _Hell. It's About Nine_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Decade of Dominance",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Decade of Dominance\" achievement.",
+description="This guide will walk you through completing the \"Decade of Dominance\" achievement.",
 achieveid={11685},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19867,7 +19867,7 @@ You have earned the _Decade of Dominance_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\These Go To Elevan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"These Go To Elevan\" achievement.",
+description="This guide will walk you through completing the \"These Go To Elevan\" achievement.",
 achieveid={11686},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19883,7 +19883,7 @@ You have earned the _These Go To Elevan_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Dozen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Demonic Dozen\" achievement.",
+description="This guide will walk you through completing the \"Demonic Dozen\" achievement.",
 achieveid={11687},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19899,7 +19899,7 @@ You have earned the _Demonic Dozen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Floor Thirteen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Floor Thirteen\" achievement.",
+description="This guide will walk you through completing the \"Floor Thirteen\" achievement.",
 achieveid={11688},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19915,7 +19915,7 @@ You have earned the _Floor Thirteen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Fourteen For The Team",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Fourteen For The Team\" achievement.",
+description="This guide will walk you through completing the \"Fourteen For The Team\" achievement.",
 achieveid={11689},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19931,7 +19931,7 @@ You have earned the _Fourteen For The Team_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\When You're Fifteen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"When You're Fifteen\" achievement.",
+description="This guide will walk you through completing the \"When You're Fifteen\" achievement.",
 achieveid={11690},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19947,7 +19947,7 @@ You have earned the _When You're Fifteen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\You Are Sixteen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"You Are Sixteen\" achievement.",
+description="This guide will walk you through completing the \"You Are Sixteen\" achievement.",
 achieveid={11691},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19963,7 +19963,7 @@ You have earned the _You Are Sixteen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Going On Seventeen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Going On Seventeen\" achievement.",
+description="This guide will walk you through completing the \"Going On Seventeen\" achievement.",
 achieveid={11692},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19979,7 +19979,7 @@ You have earned the _Going On Seventeen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Eighteen and Over",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Eighteen and Over\" achievement.",
+description="This guide will walk you through completing the \"Eighteen and Over\" achievement.",
 achieveid={11693},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -19995,7 +19995,7 @@ You have earned the _Eighteen and Over_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Hell. It's About Nineteen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hell. It's About Nineteen\" achievement.",
+description="This guide will walk you through completing the \"Hell. It's About Nineteen\" achievement.",
 achieveid={11694},
 patch='70200',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20011,7 +20011,7 @@ You have earned the _Hell. It's About Nineteen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Double Decade of Dominance",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Double Decade of Dominance\" achievement.",
+description="This guide will walk you through completing the \"Double Decade of Dominance\" achievement.",
 achieveid={12108},
 patch='70300',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20027,7 +20027,7 @@ You have earned the _Double Decade of Dominance_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Twenty-One Arms Salute",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Twenty-One Arms Salute\" achievement.",
+description="This guide will walk you through completing the \"Twenty-One Arms Salute\" achievement.",
 achieveid={12109},
 patch='70300',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20043,7 +20043,7 @@ You have earned the _Twenty-One Arms Salute_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Catching Twenty-Two",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Catching Twenty-Two\" achievement.",
+description="This guide will walk you through completing the \"Catching Twenty-Two\" achievement.",
 achieveid={12180},
 patch='70302',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20059,7 +20059,7 @@ You have earned the _Catching Twenty-Two_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Protocol 2.3",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Protocol 2.3\" achievement.",
+description="This guide will walk you through completing the \"Protocol 2.3\" achievement.",
 achieveid={12181},
 patch='70302',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20075,7 +20075,7 @@ You have earned the _Protocol 2.3_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Demonic Double Dozen",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Demonic Double Dozen\" achievement.",
+description="This guide will walk you through completing the \"Demonic Double Dozen\" achievement.",
 achieveid={12182},
 patch='70302',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20091,7 +20091,7 @@ You have earned the _Demonic Double Dozen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Honor\\Legion\\Prestige Quartermaster",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Prestige Quartermaster\" achievement.",
+description="This guide will walk you through completing the \"Prestige Quartermaster\" achievement.",
 achieveid={12183},
 patch='70302',
 keywords={"PvP, Prestige, Arena, Battleground"},
@@ -20107,7 +20107,7 @@ You have earned the _Prestige Quartermaster_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Legion\\Demonic Elite",{
 author="support@zygorguides.com",
-description="\nReach 2,000 in any Rated PvP Bracket during Legion Season 7.",
+description="Reach 2,000 in any Rated PvP Bracket during Legion Season 7.",
 achieveid={12198},
 patch='70305',
 keywords={"PvP, rated, season"},
@@ -20124,7 +20124,7 @@ You have earned the _Demonic Elite_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Legion\\Demonic Combatant",{
 author="support@zygorguides.com",
-description="\nWin 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 7.",
+description="Win 100 Arena (3v3) or 40 Rated Battlegrounds in Legion Season 7.",
 achieveid={12199},
 patch='70305',
 keywords={"PvP, rated, season"},
@@ -20141,7 +20141,7 @@ You have earned the _Demonic Combatant_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\A Good Start",{
 author="support@zygorguides.com",
-description="\nCollect 100,000 Azerite in Seething Shore.",
+description="Collect 100,000 Azerite in Seething Shore.",
 achieveid={12406},
 patch='70305',
 startlevel=45,
@@ -20159,7 +20159,7 @@ You Earned the "A Good Start" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Blood and Sand",{
 author="support@zygorguides.com",
-description="\nSlay 50 enemies near an Azerite deposit.",
+description="Slay 50 enemies near an Azerite deposit.",
 achieveid={12406},
 patch='70305',
 startlevel=45,
@@ -20176,7 +20176,7 @@ You have earned the _Blood and Sand_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Claim Jumper",{
 author="support@zygorguides.com",
-description="\nWithin 30 seconds of landing on Seething Shore, collect an Azerite deposit.",
+description="Within 30 seconds of landing on Seething Shore, collect an Azerite deposit.",
 achieveid={12404},
 patch='70305',
 startlevel=45,
@@ -20193,7 +20193,7 @@ You have earned the _Claim Jumper_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Death from Above",{
 author="support@zygorguides.com",
-description="\nSlay an enemy within 30 seconds of landing on Seething Shore.",
+description="Slay an enemy within 30 seconds of landing on Seething Shore.",
 achieveid={12405},
 patch='70305',
 startlevel=45,
@@ -20210,7 +20210,7 @@ You have earned the _Death from Above_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Master of Seething Shore",{
 author="support@zygorguides.com",
-description="\nComplete the following Seething Shore achievements:\n\nSeething Shore Victory\nSeething Shore Veteran\nSeething Shore Perfection\nSeething Shore Domination\nDeath from Above\nClaim Jumper\nA Good Start.",
+description="Complete the following Seething Shore achievements:\n\nSeething Shore Victory\nSeething Shore Veteran\nSeething Shore Perfection\nSeething Shore Domination\nDeath from Above\nClaim Jumper\nA Good Start.",
 achieveid={12412},
 patch='70305',
 startlevel=45,
@@ -20252,7 +20252,7 @@ You have earned the _Master of Seething Shore_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Domination",{
 author="support@zygorguides.com",
-description="\nCapture Azerite at the following Seething Shore locations:\n\nTar Pits\nTemple\nTide Pools\nTower\nBonfire\nShipwreck\nRuins\nPlunge\nOverlook\nRidge\nCrash Site\nWaterfall.",
+description="Capture Azerite at the following Seething Shore locations:\n\nTar Pits\nTemple\nTide Pools\nTower\nBonfire\nShipwreck\nRuins\nPlunge\nOverlook\nRidge\nCrash Site\nWaterfall.",
 achieveid={12408},
 patch='70305',
 startlevel=45,
@@ -20288,7 +20288,7 @@ You have earned the _Seething Shore Domination_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Perfection",{
 author="support@zygorguides.com",
-description="\nWin Seething Shore with a score of 1500 to 0.",
+description="Win Seething Shore with a score of 1500 to 0.",
 achieveid={12407},
 patch='70305',
 startlevel=45,
@@ -20306,7 +20306,7 @@ You have earned the _Seething Shore Perfection_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Veteran",{
 author="support@zygorguides.com",
-description="\nComplete 100 victories in Seething Shore.",
+description="Complete 100 victories in Seething Shore.",
 achieveid={12410},
 patch='70305',
 startlevel=45,
@@ -20323,7 +20323,7 @@ You have earned the _Seething Shore Veteran_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\Seething Shore\\Seething Shore Victory",{
 author="support@zygorguides.com",
-description="\nWin Seething Shore.",
+description="Win Seething Shore.",
 achieveid={12409},
 patch='70305',
 startlevel=45,
@@ -20343,7 +20343,7 @@ achieveid={10603},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Keen","Eye"},
-description="\nThis guide will walk you through completing the \"A Keen Eye\" achievement.",
+description="This guide will walk you through completing the \"A Keen Eye\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete the 13 Legion Archaeology quest lines
@@ -20378,7 +20378,7 @@ achieveid={10606},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"The","Dwarven","Dream"},
-description="\nThis guide will walk you through completing the \"The Dwarven Dream\" achievement.",
+description="This guide will walk you through completing the \"The Dwarven Dream\" achievement.",
 },[[
 step
 To earn this achievement, you will need to complete the 5 Archaeology quest lines related to Brann Bronzebeard
@@ -20420,7 +20420,7 @@ achieveid={10607},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Getting","Your","Hands","Dirty"},
-description="\nThis guide will walk you through completing the \"Getting Your Hands Dirty\" achievement.",
+description="This guide will walk you through completing the \"Getting Your Hands Dirty\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete 50 Legion Digsites
@@ -20436,7 +20436,7 @@ achieveid={10605},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Handle","With","Care"},
-description="\nThis guide will walk you through completing the \"Handle With Care\" achievement.",
+description="This guide will walk you through completing the \"Handle With Care\" achievement.",
 },[[
 step
 Restore one of each of the common Legion Artifacts
@@ -20465,7 +20465,7 @@ achieveid={10600},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Archaeologist"},
-description="\nThis guide will walk you through completing the \"Legion Archaeologist\" achievement.",
+description="This guide will walk you through completing the \"Legion Archaeologist\" achievement.",
 },[[
 step
 To earn this achievement, you need to obtain 800 level in Archaeology
@@ -20480,7 +20480,7 @@ achieveid={10604},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Curator"},
-description="\nThis guide will walk you through completing the \"Legion Curator\" achievement.",
+description="This guide will walk you through completing the \"Legion Curator\" achievement.",
 },[[
 step
 Restore and display pristine versions of all Legion Artifacts
@@ -20509,7 +20509,7 @@ achieveid={10609},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"No","Stone","Unturned"},
-description="\nThis guide will walk you through completing the \"No Stone Unturned\" achievement.",
+description="This guide will walk you through completing the \"No Stone Unturned\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete 250 Legion Digsites
@@ -20525,7 +20525,7 @@ achieveid={10602},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"This","Side","Up"},
-description="\nThis guide will walk you through completing the \"This Side Up\" achievement.",
+description="This guide will walk you through completing the \"This Side Up\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete 8 out of the 13 Legion Archaeology quest lines
@@ -20560,7 +20560,7 @@ achieveid={10608},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Sifting","Through","the","Sand"},
-description="\nThis guide will walk you through completing the \"Sifting Through the Sand\" achievement.",
+description="This guide will walk you through completing the \"Sifting Through the Sand\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete 100 Legion digsites
@@ -20576,7 +20576,7 @@ achieveid={10601},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Surveying","the","Land"},
-description="\nThis guide will walk you through completing the \"Surveying the Land\" achievement.",
+description="This guide will walk you through completing the \"Surveying the Land\" achievement.",
 },[[
 step
 To earn this achievement, you will have to complete 1 out of the 13 Legion Archaeology quest lines
@@ -20610,7 +20610,7 @@ achieveid={10593},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Everything","Tastes","Better"},
-description="\nThis guide will walk you through completing the \"Everything Tastes Better\" achievement.",
+description="This guide will walk you through completing the \"Everything Tastes Better\" achievement.",
 },[[
 step
 You will need to create 6 Crispy Bacon if you have the recipe, or buy them from the Auction House
@@ -20628,7 +20628,7 @@ achieveid={10589},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Cooking"},
-description="\nThis guide will walk you through completing the \"Legion Cook\" achievement.",
+description="This guide will walk you through completing the \"Legion Cook\" achievement.",
 },[[
 step
 Obtain 100 Skill Points in Legion Cooking |achieve 10589 |or
@@ -20643,7 +20643,7 @@ achieveid={10762},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Menu"},
-description="\nThis guide will walk you through completing the \"Legion Cooking\" achievement.",
+description="This guide will walk you through completing the \"Legion Cooking\" achievement.",
 },[[
 step
 To earn this achievement you will need to cook up 15 of the Legion Cooking recipes
@@ -20664,7 +20664,7 @@ achieveid={10595},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Cast","Above","Rest"},
-description="\nThis guide will walk you through completing the \"A Cast Above the Rest\" Achievement.",
+description="This guide will walk you through completing the \"A Cast Above the Rest\" Achievement.",
 },[[
 step
 Complete the "Drowned Mana" quest |complete completedq(42911) |or
@@ -20738,7 +20738,7 @@ achieveid={10596},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Bigger","Fish","Fry"},
-description="\nThis guide will walk you through completing the \"Bigger Fish to Fry\" Achievement.",
+description="This guide will walk you through completing the \"Bigger Fish to Fry\" Achievement.",
 },[[
 step
 Earn the _A Cast Above the Rest_ achievement |complete achieved(10595)
@@ -20952,7 +20952,7 @@ You have earned the _Bigger Fish to Fry_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\Fisherfriend of the Isles",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Fisherfriend of the Isles\" achievement.",
+description="This guide will walk you through completing the \"Fisherfriend of the Isles\" achievement.",
 achieveid={11725},
 patch='70300',
 keywords={"Fishing, Masters"},
@@ -20977,7 +20977,7 @@ achieveid={10598},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"The","Fishing","Round","Isles"},
-description="\nThis guide will walk you through completing the \"Fishing 'Round the Isles\" achievement.",
+description="This guide will walk you through completing the \"Fishing 'Round the Isles\" achievement.",
 },[[
 step
 To earn this achievement, you will need to complete every Fishing World Quest on the Broken Isles
@@ -21027,7 +21027,7 @@ achieveid={10597},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Aquaculture"},
-description="\nThis guide will walk you through completing the \"Legion Aquaculture\" achievement.",
+description="This guide will walk you through completing the \"Legion Aquaculture\" achievement.",
 },[[
 step
 To earn this achievement, you will need to catch 100 normal fish from the waters of the Broken Isles
@@ -21042,7 +21042,7 @@ achieveid={10594},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legion","Fisherman"},
-description="\nThis guide will walk you through completing the \"Legion Fisherman\" achievement.",
+description="This guide will walk you through completing the \"Legion Fisherman\" achievement.",
 },[[
 step
 To earn this achievement, you need to get 100 skill level in fishing
@@ -21057,7 +21057,7 @@ achieveid={10722},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"The","Wish","Remover"},
-description="\nThis guide will walk you through completing the \"The Wish Remover\" achievement.",
+description="This guide will walk you through completing the \"The Wish Remover\" achievement.",
 },[[
 step
 To earn this achievement, you will need to fish up all of the different coins from the Dalaran Fountain
@@ -21149,7 +21149,7 @@ achieveid={10587},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Hot","Swapper"},
-description="\nThis guide will walk you through completing the \"Hot Swapper\" achievement.",
+description="This guide will walk you through completing the \"Hot Swapper\" achievement.",
 },[[
 step
 You will first need to obtain the toy JewelCraft
@@ -21172,7 +21172,7 @@ achieveid={10588},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Shortest","Distance"},
-description="\nThis guide will walk you through completing the \"The Shortest Distance\" achievement.",
+description="This guide will walk you through completing the \"The Shortest Distance\" achievement.",
 },[[
 step
 You will first need to obtain the toy Blingtron's Circuit Design Tutorial
@@ -21194,7 +21194,7 @@ achieveid={11126},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"50 World Quests Completed\" Achievement.",
+description="This guide will walk you through completing the \"50 World Quests Completed\" Achievement.",
 },[[
 step
 You will need to do the following to complete 50 World Quests:
@@ -21210,7 +21210,7 @@ achieveid={11127},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"200 World Quests Completed\" Achievement.",
+description="This guide will walk you through completing the \"200 World Quests Completed\" Achievement.",
 },[[
 step
 You will need to do the following to complete 200 World Quests:
@@ -21226,7 +21226,7 @@ achieveid={11128},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the 500 World Quests Completed Achievement.",
+description="This guide will walk you through completing the 500 World Quests Completed Achievement.",
 },[[
 step
 You will need to do the following to complete 500 World Quests:
@@ -21242,7 +21242,7 @@ achieveid={11129},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"1000 World Quests Completed\" Achievement.",
+description="This guide will walk you through completing the \"1000 World Quests Completed\" Achievement.",
 },[[
 step
 You will need to do the following to complete 1,000 World Quests:
@@ -21258,7 +21258,7 @@ achieveid={11130},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"2500 World Quests Completed\" Achievement.",
+description="This guide will walk you through completing the \"2500 World Quests Completed\" Achievement.",
 },[[
 step
 You will need to do the following to complete 2,500 World Quests:
@@ -21274,7 +21274,7 @@ achieveid={11131},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"5000 World Quests Completed\" Achievement.",
+description="This guide will walk you through completing the \"5000 World Quests Completed\" Achievement.",
 },[[
 step
 You will need to do the following to complete 5,000 World Quests:
@@ -21290,7 +21290,7 @@ achieveid={11132},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"10,000 World Quests\" Achievement.",
+description="This guide will walk you through completing the \"10,000 World Quests\" Achievement.",
 },[[
 step
 You will need to do the following to complete 10,000 World Quests:
@@ -21306,7 +21306,7 @@ achieveid={11731},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, mage, tower"},
-description="\nThis guide will walk you through completing the \"A Magic Contribution\" achievement.",
+description="This guide will walk you through completing the \"A Magic Contribution\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -21323,7 +21323,7 @@ achieveid={11732},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, mage, tower"},
-description="\nThis guide will walk you through completing the \"A Magnificent Contribution\" achievement.",
+description="This guide will walk you through completing the \"A Magnificent Contribution\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -21340,7 +21340,7 @@ achieveid={10059},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Highmountain","Legion","Loremaster"},
-description="\nThis guide will walk you through completing the \"Ain't No Mountain High Enough\" Achievement.",
+description="This guide will walk you through completing the \"Ain't No Mountain High Enough\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete each questline in Highmountain
@@ -21362,7 +21362,7 @@ achieveid={11736},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, command, tower"},
-description="\nThis guide will walk you through completing the \"Assume Command\" achievement.",
+description="This guide will walk you through completing the \"Assume Command\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -21379,7 +21379,7 @@ achieveid={10763},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Azsuna","Legion","Loremaster"},
-description="\nThis guide will walk you through completing the \"Azsuna Matata\" Achievement.",
+description="This guide will walk you through completing the \"Azsuna Matata\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete each questline in Azsuna
@@ -21399,7 +21399,7 @@ achieveid={11546},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"broken, shore, campaign"},
-description="\nThis guide will walk you through completing the \"Breaching the Tomb\" Achievement.",
+description="This guide will walk you through completing the \"Breaching the Tomb\" Achievement.",
 },[[
 step
 Click here to load the "Broken Shore Campaign" guide |confirm |or |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
@@ -21415,7 +21415,7 @@ achieveid={11846},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"order, hall"},
-description="\nThis guide will walk you through completing the \"Champions of Legionfall\" achievement.",
+description="This guide will walk you through completing the \"Champions of Legionfall\" achievement.",
 },[[
 step
 Click here to load the "Death Knight 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (10-60)\\Death Knight\\Death Knight 7.2 Order Hall Quests" |only DeathKnight
@@ -21441,7 +21441,7 @@ achieveid={11681},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"behind, enemy, portals, world, quest"},
-description="\nThis guide will walk you through completing the \"Crate Expectations\" achievement.",
+description="This guide will walk you through completing the \"Crate Expectations\" achievement.",
 },[[
 step
 Follow the path |goto Broken Shore/0 46.66,58.79 < 25 |only if walking
@@ -21473,7 +21473,7 @@ achieveid={11544},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"invasion"},
-description="\nThis guide will walk you through completing the \"Defender of the Broken Isles\" achievement.",
+description="This guide will walk you through completing the \"Defender of the Broken Isles\" achievement.",
 },[[
 step
 To earn this achievement you must complete an invasion in each of the 4 leveling zones
@@ -21493,7 +21493,7 @@ achieveid={11737},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, nether, disruptor"},
-description="\nThis guide will walk you through completing the \"Disrupting the Nether\" achievement.",
+description="This guide will walk you through completing the \"Disrupting the Nether\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -21510,7 +21510,7 @@ achieveid={11124},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Suramar","Legion","Loremaster"},
-description="\nThis guide will walk you through completing the \"Good Suramaritan\" Achievement.",
+description="This guide will walk you through completing the \"Good Suramaritan\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete each questline in Suramar
@@ -21535,7 +21535,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Harbinger",
 achieveid={11240},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Harbinger\" Achievement.",
+description="This guide will walk you through completing the \"Harbinger\" Achievement.",
 },[[
 step
 Enter the Master's Cellar |goto Deadwind Pass/0 47.65,78.28 < 10
@@ -21584,7 +21584,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Hatchling o
 achieveid={10774},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hatchling of the Talon\" Achievement.",
+description="This guide will walk you through completing the \"Hatchling of the Talon\" Achievement.",
 },[[
 step
 talk Aviana##97925
@@ -21603,7 +21603,7 @@ achieveid={11340},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Insurrection","Suramar"},
-description="\nThis guide will walk you through completing the \"Insurrection\" Achievement.",
+description="This guide will walk you through completing the \"Insurrection\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to progress through the Suramar guide
@@ -21627,7 +21627,7 @@ achieveid={11738},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, nether, disruptor"},
-description="\nThis guide will walk you through completing the \"It'll Nether Happen\" achievement.",
+description="This guide will walk you through completing the \"It'll Nether Happen\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -21644,7 +21644,7 @@ achieveid={10671},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Level","110"},
-description="\nThis guide will walk you through completing the \"Level 110\" Achievement.",
+description="This guide will walk you through completing the \"Level 110\" Achievement.",
 },[[
 step
 To earn this achievement, use our _Legion Intro & Artifacts_ guide to gain access to Legion questing content
@@ -21659,7 +21659,7 @@ achieveid={10756},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"Leyline Bling\" Achievement.",
+description="This guide will walk you through completing the \"Leyline Bling\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to activate _8_ Leylines found in Suramar
@@ -21682,7 +21682,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Lock, Stock
 achieveid={11232},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Lock, Stock and Two Smoking Goblins\" Achievement.",
+description="This guide will walk you through completing the \"Lock, Stock and Two Smoking Goblins\" Achievement.",
 },[[
 step
 In order to complete this achievement, you will need to have completed the _What a Ripoff!_ achievement
@@ -21710,7 +21710,7 @@ You have completed the _Lock, Stock and Two Smoking Goblins_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\Locked and Loaded",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Locked and Loaded\" achievement.",
+description="This guide will walk you through completing the \"Locked and Loaded\" achievement.",
 achieveid={12073},
 patch='70300',
 keywords={"Vindicaar, Matrix, Core"},
@@ -21729,7 +21729,7 @@ achieveid={11157},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Loremaster","Legion"},
-description="\nThis guide will walk you through completing the \"Loremaster of Legion\" Achievement.",
+description="This guide will walk you through completing the \"Loremaster of Legion\" Achievement.",
 },[[
 step
 Earn the _Azsuna Matata_ achievement |achieve 10763
@@ -21760,7 +21760,7 @@ achieveid={10617},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"Nightfallen But Not Forgotten\" Achievement.",
+description="This guide will walk you through completing the \"Nightfallen But Not Forgotten\" Achievement.",
 },[[
 step
 Refer to the Suramar guide to complete this achievement
@@ -21775,7 +21775,7 @@ achieveid={11427},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"No Shellfish Endeavor\" Achievement.",
+description="This guide will walk you through completing the \"No Shellfish Endeavor\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete 3 World Quests involving Murky's Egg
@@ -21794,7 +21794,7 @@ achieveid={11125},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"World","Quests"},
-description="\nThis guide will walk you through completing the \"Now You're Thinking With Portals\" Achievement.",
+description="This guide will walk you through completing the \"Now You're Thinking With Portals\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to activate _9_ portals in Suramar
@@ -21810,7 +21810,7 @@ achieveid={10877},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Pillars","Creation"},
-description="\nThis guide will walk you through completing the \"Pillars of Creation\" Achievement.",
+description="This guide will walk you through completing the \"Pillars of Creation\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to quest through the Legion leveling zones
@@ -21851,7 +21851,7 @@ achieveid={12431},
 patch='70305',
 author="support@zygorguides.com",
 keywords={"postmaster, office, letters, mail, mailemental"},
-description="\nSort 30 letters within 60 seconds in the Postmaster's Office.",
+description="Sort 30 letters within 60 seconds in the Postmaster's Office.",
 },[[
 step
 click Lost Mail##247797
@@ -22000,7 +22000,7 @@ achieveid={12439},
 patch='70305',
 author="support@zygorguides.com",
 keywords={"postmaster, office, letters, mail, mailemental"},
-description="\nSort 30 partially addressed letters within 60 seconds in the Postmaster's Office.",
+description="Sort 30 partially addressed letters within 60 seconds in the Postmaster's Office.",
 },[[
 step
 click Lost Mail##247797
@@ -22150,7 +22150,7 @@ achieveid={11735},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"legionfall, war, supplies, construction, command, center"},
-description="\nThis guide will walk you through completing the \"Assume Command\" achievement.",
+description="This guide will walk you through completing the \"Assume Command\" achievement.",
 },[[
 step
 clicknpc Legionfall Construction Table##122082
@@ -22167,7 +22167,7 @@ achieveid={11186},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Tehd","Marius","Quests"},
-description="\nThis guide will walk you through completing the \"Tehd & Marius' Excellent Adventure\" Achievement.",
+description="This guide will walk you through completing the \"Tehd & Marius' Excellent Adventure\" Achievement.",
 },[[
 step
 This guide will walk you through witnessing various encounters with Tehd and Marius
@@ -22204,7 +22204,7 @@ achieveid={10698},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Val'shara","Legion","Loremaster"},
-description="\nThis guide will walk you through completing the \"That's Val'sharah Folks!\" Achievement.",
+description="This guide will walk you through completing the \"That's Val'sharah Folks!\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete each questline in Val'sharah
@@ -22226,7 +22226,7 @@ achieveid={11607},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"world, quest, thunder"},
-description="\nThis guide will walk you through completing the \"They See Me Rolling\" Achievement.",
+description="This guide will walk you through completing the \"They See Me Rolling\" Achievement.",
 },[[
 step
 This achievement is earned by delivering a Barrel of Storm Brew without taking any damage
@@ -22244,7 +22244,7 @@ achieveid={12416},
 patch='70305',
 author="support@zygorguides.com",
 keywords={"world, quest, thunder"},
-description="\nFind the Postmaster in Dalaran and lend him your aid.",
+description="Find the Postmaster in Dalaran and lend him your aid.",
 },[[
 step
 click Lost Mail##247797
@@ -22388,7 +22388,7 @@ achieveid={11189},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Variety","Spice","Life"},
-description="\nThis guide will walk you through completing the \"Variety is the Spice of Life\" Achievement.",
+description="This guide will walk you through completing the \"Variety is the Spice of Life\" Achievement.",
 },[[
 step
 Complete #100# different World Quests |achieve 11189 |or
@@ -22403,7 +22403,7 @@ achieveid={10790},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Stormheim","Legion","Loremaster"},
-description="\nThis guide will walk you through completing the \"Vrykul Story, Bro\" Achievement.",
+description="This guide will walk you through completing the \"Vrykul Story, Bro\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete each questline in Stormheim
@@ -22426,7 +22426,7 @@ achieveid={10793},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Guillible","Ripoff"},
-description="\nThis guide will walk you through completing the \"What a Ripoff!\" Achievement.",
+description="This guide will walk you through completing the \"What a Ripoff!\" Achievement.",
 },[[
 step
 To earn this achievement, you may need a group for some of the later quests
@@ -22508,7 +22508,7 @@ achieveid={11133},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Suramar","Mana","Cap","Increase"},
-description="\nThis guide will walk you through completing the \"Why Can't I Hold All This Mana?\" Achievement.",
+description="This guide will walk you through completing the \"Why Can't I Hold All This Mana?\" Achievement.",
 },[[
 step
 Enter the cave |goto Suramar/0 27.17,72.64 < 20
@@ -22573,7 +22573,7 @@ You have earned the _Why Can't I Hold All This Mana?_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Legion\\You Are Now Prepared!",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"You Are Now Prepared!\" achievement.",
+description="This guide will walk you through completing the \"You Are Now Prepared!\" achievement.",
 achieveid={12066},
 patch='70300',
 keywords={"Argus, Campaign"},
@@ -22591,7 +22591,7 @@ achieveid={10626},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Zoom!","Legion"},
-description="\nThis guide will walk you through completing the \"Zoom!\" Achievement.",
+description="This guide will walk you through completing the \"Zoom!\" Achievement.",
 },[[
 step
 Enter the cave |goto Highmountain/0 42.61,25.37 < 20 |walk
@@ -22609,7 +22609,7 @@ achieveid={11796},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"reputation, broken, shore"},
-description="\nThis guide will walk you through completing the \"Armies of Legionfall\" achievement.",
+description="This guide will walk you through completing the \"Armies of Legionfall\" achievement.",
 },[[
 step
 Click here to load the "Armies of Legionfall" guide |confirm |next "Reputation Guides\\Legion Reputations\\Armies of Legionfall"
@@ -22625,7 +22625,7 @@ achieveid={10672},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Broken","Isles","Diplomat"},
-description="\nThis guide will walk you through completing the \"Broken Isles Diplomat\" Achievement.",
+description="This guide will walk you through completing the \"Broken Isles Diplomat\" Achievement.",
 },[[
 step
 Reach _Revered_ reputation with the _Court of Farondis_ |achieve 10672/1
@@ -22670,7 +22670,7 @@ achieveid={11159},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Friends","in","a","Broken","Land"},
-description="\nThis guide will walk you through completing the \"Friends in a Broken Land\" Achievement.",
+description="This guide will walk you through completing the \"Friends in a Broken Land\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to become exalted with one of the 6 factions of Legion, listed below:
@@ -22697,7 +22697,7 @@ achieveid={10778},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"The","Nightfallen"},
-description="\nThis guide will walk you through completing the \"The Nightfallen\" Achievement.",
+description="This guide will walk you through completing the \"The Nightfallen\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to become _Exalted_ with _The Nightfallen_
@@ -22711,7 +22711,7 @@ You have earned _The Nightfallen_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Officer of the Light",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Officer of the Light\" achievement.",
+description="This guide will walk you through completing the \"Officer of the Light\" achievement.",
 achieveid={12081},
 patch='70300',
 keywords={"reputation, argus, army"},
@@ -22740,7 +22740,7 @@ achieveid={11653},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"reputation, broken, isles"},
-description="\nThis guide will walk you through completing the \"Paragon of the Broken Isles\" achievement.",
+description="This guide will walk you through completing the \"Paragon of the Broken Isles\" achievement.",
 },[[
 step
 Click here to load the "World Quests" guide |confirm |next "Daily Guides\\Legion\\Azsuna World Quests"
@@ -22756,7 +22756,7 @@ You have earned the _Paragon of the Broken Isles_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputations\\Legion\\Protector of the Argussian Reach",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Protector of the Argussian Reach\" achievement.",
+description="This guide will walk you through completing the \"Protector of the Argussian Reach\" achievement.",
 achieveid={12076},
 patch='70300',
 keywords={"reputation, argus"},
@@ -22785,7 +22785,7 @@ achieveid={11652},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"reputation"},
-description="\nThis guide will walk you through completing the \"The Reputable\" achievement.",
+description="This guide will walk you through completing the \"The Reputable\" achievement.",
 },[[
 step
 Click here to load the "World Quests" guide |confirm |next "Daily Guides\\Legion\\Azsuna World Quests"
@@ -22803,7 +22803,7 @@ author="support@zygorguides.com",
 achieveid={11570},
 patch='70200',
 keywords={"Educated","Guesser"},
-description="\nThis guide will walk you through completing the \"Educated Guesser\" Achievement.",
+description="This guide will walk you through completing the \"Educated Guesser\" Achievement.",
 },[[
 step
 You will first need to activate A Game of Chance mode in the Brawler's Guild
@@ -22837,7 +22837,7 @@ author="support@zygorguides.com",
 achieveid={11572},
 patch='70200',
 keywords={"I","Am","Thrall's","Complete","Lack","Of","Surprise"},
-description="\nThis guide will walk you through completing the \"I Am Thrall's Complete Lack of Surprise\" Achievement.",
+description="This guide will walk you through completing the \"I Am Thrall's Complete Lack of Surprise\" Achievement.",
 },[[
 step
 You will first need to activate Random Boss mode in the Brawler's Guild
@@ -22871,7 +22871,7 @@ condition_end=function() return achieved(11565) end,
 achieveid={11558,11560,11563,11565,11565},
 patch='70200',
 keywords={"King","of","the","Guild"},
-description="\nThis guide will walk you through completing the \"King of the Guild\" Achievement.",
+description="This guide will walk you through completing the \"King of the Guild\" Achievement.",
 },[[
 step
 For this, you will need to unlock the Legion Brawler Guild
@@ -22886,7 +22886,7 @@ author="support@zygorguides.com",
 achieveid={11573},
 patch='70200',
 keywords={"Rumble","Club"},
-description="\nThis guide will walk you through completing the \"Rumble Club\" Achievement.",
+description="This guide will walk you through completing the \"Rumble Club\" Achievement.",
 },[[
 step
 To earn this achievement you will need to activate and defeat 7 Rumbles
@@ -22975,9 +22975,9 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Legion Brawle
 author="support@zygorguides.com",
 achieveid={11567},
 patch='70200',
-description="\nObtain 20,000 Brawler's Gold",
+description="Obtain 20,000 Brawler's Gold",
 keywords={"You","Are","Not","The","Contents","Of","Your","Wallet"},
-description="\nThis guide will walk you through completing the \"You Are Not The Contents Of Your Wallet\" Achievement.",
+description="This guide will walk you through completing the \"You Are Not The Contents Of Your Wallet\" Achievement.",
 },[[
 step
 To earn this achievement you will need to obtain 20,000 Brawler's Gold
@@ -22989,7 +22989,7 @@ You have earned the _You Are Not The Contents Of Your Wallet_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Hey, You're a Rockstar!",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hey, You're a Rockstar!\" achievement.",
+description="This guide will walk you through completing the \"Hey, You're a Rockstar!\" achievement.",
 achieveid={11918},
 patch='70205',
 keywords={"Hey","You're","a","Rockstar"},
@@ -23008,7 +23008,7 @@ You have earned the _Hey, You're a Rockstar!_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Mosh Pit",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mosh Pit\" achievement.",
+description="This guide will walk you through completing the \"Mosh Pit\" achievement.",
 achieveid={11921},
 patch='70205',
 keywords={"Mosh","Pit"},
@@ -23029,7 +23029,7 @@ You have earned the _Mosh Pit_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Perfect Performance",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Perfect Performance\" achievement.",
+description="This guide will walk you through completing the \"Perfect Performance\" achievement.",
 achieveid={11920},
 patch='70205',
 keywords={"Perfect","Performance"},
@@ -23068,7 +23068,7 @@ You have earned the _Perfect Performance_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Darkmoon Faire\\Taking this Show on the Road",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Taking this Show on the Road\" achievement.",
+description="This guide will walk you through completing the \"Taking this Show on the Road\" achievement.",
 achieveid={11919},
 patch='70205',
 keywords={"Taking","this","Show","on","the","Road"},
@@ -23118,7 +23118,7 @@ achieveid={11135},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"A","Heroic","Campaign"},
-description="\nThis guide will walk you through completing the \"A Heroic Campaign\" Achievement.",
+description="This guide will walk you through completing the \"A Heroic Campaign\" Achievement.",
 },[[
 step
 Complete 3 Class Order Hall Questlines |achieve 11135
@@ -23145,7 +23145,7 @@ achieveid={11136},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"An","Epic","Campaign"},
-description="\nThis guide will walk you through completing the \"An Epic Campaign\" Achievement.",
+description="This guide will walk you through completing the \"An Epic Campaign\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete the Class Order Hall Campaigns on _5 different characters_
@@ -23171,7 +23171,7 @@ achieveid={11222},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Class","Hall"},
-description="\nThis guide will walk you through completing the \"Champions of Power\" achievement.",
+description="This guide will walk you through completing the \"Champions of Power\" achievement.",
 },[[
 step
 To earn this achievement, you will need to raise 8 Order Hall champions to the item level of 850
@@ -23202,7 +23202,7 @@ achieveid={11221},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Champions","Rise"},
-description="\nThis guide will walk you through completing the \"Champions Rise\" Achievement.",
+description="This guide will walk you through completing the \"Champions Rise\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to raise 8 Class Order Hall Champions to level 110
@@ -23235,7 +23235,7 @@ achieveid={10461},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Fighting","with","Style","Classic"},
-description="\nThis guide will walk you through completing the \"Fighting with Style: Classic\" Achievement.",
+description="This guide will walk you through completing the \"Fighting with Style: Classic\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to recover a Pillar of Creation
@@ -23283,7 +23283,7 @@ achieveid={10746},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Forged","for","Battle"},
-description="\nThis guide will walk you through completing the \"Forged for Battle\" Achievement.",
+description="This guide will walk you through completing the \"Forged for Battle\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete the Order Campaign
@@ -23310,7 +23310,7 @@ achieveid={10459},
 patch='70001',
 author="support@zygorguides.com",
 keywords={"Improving","on","History"},
-description="\nThis guide will walk you through completing the \"Improving on History\" Achievement.",
+description="This guide will walk you through completing the \"Improving on History\" Achievement.",
 },[[
 step
 For this, you will need to complete the Balance of Power questline
@@ -23339,7 +23339,7 @@ achieveid={11213},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Lead","a","Legion"},
-description="\nThis guide will walk you through completing the \"Lead a Legion\" Achievement.",
+description="This guide will walk you through completing the \"Lead a Legion\" Achievement.",
 },[[
 step
 For this, you will need to train 100 Troops in your Class Order Hall
@@ -23367,7 +23367,7 @@ achieveid={11223},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Legendary","Research"},
-description="\nThis guide will walk you through completing the \"Legendary Research\" Achievement.",
+description="This guide will walk you through completing the \"Legendary Research\" Achievement.",
 },[[
 step
 You will need to unlock the "Increase the number of Legendary items you can equip by 1." trait
@@ -23384,7 +23384,7 @@ achieveid={11217},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Many","Many","Missions","Handle","It!"},
-description="\nThis guide will walk you through completing the \"Many Many Missions, Handle It!\" Achievement.",
+description="This guide will walk you through completing the \"Many Many Missions, Handle It!\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete 500 Class Order Hall Missions found in your Class Order Hall
@@ -23412,7 +23412,7 @@ achieveid={11214},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Many","Missions"},
-description="\nThis guide will walk you through completing the \"Many Missions\" Achievement.",
+description="This guide will walk you through completing the \"Many Missions\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete 10 Class Order Hall Missions found in your Class Order Hall
@@ -23440,7 +23440,7 @@ achieveid={11219},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Need","Backup"},
-description="\nThis guide will walk you through completing the \"Need Backup\" Achievement.",
+description="This guide will walk you through completing the \"Need Backup\" Achievement.",
 },[[
 step
 To earn this achievement, you will need access to the Class Order Hall Mission Board
@@ -23470,7 +23470,7 @@ achieveid={11215},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Quite","a","Few","Missions"},
-description="\nThis guide will walk you through completing the \"Quite a Few Missions\" Achievement.",
+description="This guide will walk you through completing the \"Quite a Few Missions\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete 50 Class Order Hall Missions found in your Class Order Hall
@@ -23498,7 +23498,7 @@ achieveid={11212},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Raise","an","Army"},
-description="\nThis guide will walk you through completing the \"Raise an Army\" Achievement.",
+description="This guide will walk you through completing the \"Raise an Army\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to train 20 Troops in your Class Order Hall
@@ -23526,7 +23526,7 @@ achieveid={11220},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Roster","of","Champions"},
-description="\nThis guide will walk you through completing the \"Roster of Champions\" Achievement.",
+description="This guide will walk you through completing the \"Roster of Champions\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to collect the 8 Class Order Hall Champions
@@ -23553,7 +23553,7 @@ achieveid={11216},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"So","Many","Missions"},
-description="\nThis guide will walk you through completing the \"So Many Missions\" Achievement.",
+description="This guide will walk you through completing the \"So Many Missions\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete 100 Class Order Hall Missions found in your Class Order Hall
@@ -23581,7 +23581,7 @@ achieveid={11218},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"There's","a","Boss","In","There"},
-description="\nThis guide will walk you through completing the \"There's a Boss In There\" Achievement.",
+description="This guide will walk you through completing the \"There's a Boss In There\" Achievement.",
 },[[
 step
 To earn this achievement, you will need access to the Class Order Hall Mission board
@@ -23611,7 +23611,7 @@ achieveid={10706},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Training","the","Troops"},
-description="\nThis guide will walk you through completing the \"Training the Troops\" Achievement.",
+description="This guide will walk you through completing the \"Training the Troops\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to train 5 Troops in your Class Order Hall
@@ -23639,7 +23639,7 @@ achieveid={11769},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"A","Steamy","Romance","Saga"},
-description="\nThis guide will walk you through completing the \"A Steamy Romance Saga\" Achievement.",
+description="This guide will walk you through completing the \"A Steamy Romance Saga\" Achievement.",
 },[[
 step
 Enter the _Cathedral of Eternal Night_ dungeon on _Mythic_ difficulty |scenariostart
@@ -23661,7 +23661,7 @@ achieveid={11768},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Boom"},
-description="\nThis guide will walk you through completing the \"Boom Bloom\" Achievement.",
+description="This guide will walk you through completing the \"Boom Bloom\" Achievement.",
 },[[
 step
 Enter the _Cathedral of Eternal Night_ dungeon on _Mythic_ difficulty |scenariostart
@@ -23682,7 +23682,7 @@ achieveid={11181},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Broken","Isles","Keymaster","Mythic","Dungeon"},
-description="\nThis guide will walk you through completing the \"Broken Isles Keymaster\" Achievement.",
+description="This guide will walk you through completing the \"Broken Isles Keymaster\" Achievement.",
 },[[
 step
 To earn this, you will need to complete the following dungeons using a Mythic Keystone:
@@ -23705,7 +23705,7 @@ achieveid={11433},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Burn","After","Reading"},
-description="\nThis guide will walk you through completing the \"Burn After Reading\" Achievement.",
+description="This guide will walk you through completing the \"Burn After Reading\" Achievement.",
 },[[
 step
 After defeating the _Mana Devourer_, go into the next room
@@ -23722,7 +23722,7 @@ You have earned the _Burn After Reading_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Darker Side",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Darker Side\" achievement.",
+description="This guide will walk you through completing the \"Darker Side\" achievement.",
 achieveid={12009},
 patch='70300',
 keywords={"L'ura, Seat, of, the, Triumvirate"},
@@ -23754,7 +23754,7 @@ achieveid={11338},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Dine","and","Bash","Reading","Dungeon","Legion"},
-description="\nThis guide will walk you through completing the \"Dine and Bash\" Achievement.",
+description="This guide will walk you through completing the \"Dine and Bash\" Achievement.",
 },[[
 step
 To earn this achievement, defeat the 4 dinner guests within 10 seconds of each other
@@ -23772,7 +23772,7 @@ achieveid={10799},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Assault","on","Violet","Hold","Dungeon","Heroic","Legion"},
-description="\nThis guide will walk you through completing the \"Heroic: Assault on Violet Hold\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Assault on Violet Hold\" Achievement.",
 },[[
 step
 To earn this achievement, complete Assault on Violet Hold on Heroic or higher difficulty
@@ -23787,7 +23787,7 @@ achieveid={10805},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Black","Rook","Hold"},
-description="\nThis guide will walk you through completing the \"Heroic: Black Rook Hold\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Black Rook Hold\" Achievement.",
 },[[
 step
 To earn this achievement, complete Black Rook Hold on Heroic or higher difficulty
@@ -23802,7 +23802,7 @@ achieveid={10784},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Darkheart","Thicket"},
-description="\nThis guide will walk you through completing the \"Heroic: Darkheart Thicket\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Darkheart Thicket\" Achievement.",
 },[[
 step
 To earn this achievement, complete Darkheart Thicket on Heroic or higher difficulty
@@ -23817,7 +23817,7 @@ achieveid={10781},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Eye","of","Azshara"},
-description="\nThis guide will walk you through completing the \"Heroic: Eye of Azshara\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Eye of Azshara\" Achievement.",
 },[[
 step
 To earn this achievement, complete Eye of Azshara on Heroic or higher difficulty
@@ -23832,7 +23832,7 @@ achieveid={10788},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Halls","of","Valor"},
-description="\nThis guide will walk you through completing the \"Heroic: Halls of Valor\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Halls of Valor\" Achievement.",
 },[[
 step
 To earn this achievement, complete Halls of Valor on Heroic or higher difficulty
@@ -23847,7 +23847,7 @@ achieveid={10796},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Neltharion","Lair"},
-description="\nThis guide will walk you through completing the \"Heroic: Neltharion's Lair\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Neltharion's Lair\" Achievement.",
 },[[
 step
 To earn this achievement, complete Neltharion's Lair on Heroic or higher difficulty
@@ -23862,7 +23862,7 @@ achieveid={10808},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Maw","of","Souls"},
-description="\nThis guide will walk you through completing the \"Heroic: Maw of Souls\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Maw of Souls\" Achievement.",
 },[[
 step
 To earn this achievement, complete Maw of Souls on Heroic or higher difficulty
@@ -23877,7 +23877,7 @@ achieveid={11929},
 patch='70205',
 author="support@zygorguides.com",
 keywords={"Heroic","Return","to","Karazhan"},
-description="\nThis guide will walk you through completing the \"Heroic: Return to Karazhan\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Return to Karazhan\" Achievement.",
 },[[
 step
 To earn this achievement, complete Return to Karazhan on Heroic or higher difficulty
@@ -23889,7 +23889,7 @@ You have earned the _Heroic: Return to Karazhan_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Heroic: Seat of the Triumvirate",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Heroic: Seat of the Triumvirate\" achievement.",
+description="This guide will walk you through completing the \"Heroic: Seat of the Triumvirate\" achievement.",
 achieveid={12007},
 patch='70300',
 keywords={"L'ura, Seat, of, the, Triumvirate"},
@@ -23913,7 +23913,7 @@ achieveid={10802},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Heroic","Eye","of","Azshara"},
-description="\nThis guide will walk you through completing the \"Heroic: Vault of the Wardens\" Achievement.",
+description="This guide will walk you through completing the \"Heroic: Vault of the Wardens\" Achievement.",
 },[[
 step
 To earn this achievement, complete Vault of the Wardens on Heroic or higher difficulty
@@ -23928,7 +23928,7 @@ achieveid={11184},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Keystone","Challenger","Mythic","Dungeon"},
-description="\nThis guide will walk you through completing the \"Keystone Challenger\" Achievement.",
+description="This guide will walk you through completing the \"Keystone Challenger\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+4 Difficulty_
@@ -23948,7 +23948,7 @@ achieveid={11185},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Keystone","Conqueror","Mythic","Dungeon"},
-description="\nThis guide will walk you through completing the \"Keystone Conqueror\" Achievement.",
+description="This guide will walk you through completing the \"Keystone Conqueror\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+9 Difficulty_
@@ -23968,7 +23968,7 @@ achieveid={11183},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Keystone","Initiate","Mythic","Dungeon"},
-description="\nThis guide will walk you through completing the \"Keystone Initiate\" Achievement.",
+description="This guide will walk you through completing the \"Keystone Initiate\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic Difficulty_
@@ -23988,7 +23988,7 @@ achieveid={11162},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Keystone","Master","Mythic","Dungeon"},
-description="\nThis guide will walk you through completing the \"Keystone Master\" Achievement.",
+description="This guide will walk you through completing the \"Keystone Master\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a dungeon on _Mythic+15 Difficulty_
@@ -24005,7 +24005,7 @@ You have earned the _Keystone Master_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Let it All Out",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Let it All Out\" achievement.",
+description="This guide will walk you through completing the \"Let it All Out\" achievement.",
 achieveid={12005},
 patch='70300',
 keywords={"Darkfang, Saprish, Seat, of, the, Triumvirate"},
@@ -24039,7 +24039,7 @@ achieveid={11703},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Master","of","Shadows"},
-description="\nThis guide will walk you through completing the \"Master of Shadows\" Achievement.",
+description="This guide will walk you through completing the \"Master of Shadows\" Achievement.",
 },[[
 step
 Enter the _Cathedral of Eternal Night_ dungeon on _Mythic_ difficulty |scenariostart
@@ -24060,7 +24060,7 @@ achieveid={10800},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Assault","on","Violet","Hold"},
-description="\nThis guide will walk you through completing the \"Mythic: Assault on Violet Hold\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Assault on Violet Hold\" Achievement.",
 },[[
 step
 To earn this achievement, complete Assault on Violet Hold on Mythic difficulty
@@ -24076,7 +24076,7 @@ achieveid={10806},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Black","Rook","Hold"},
-description="\nThis guide will walk you through completing the \"Mythic: Black Rook Hold\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Black Rook Hold\" Achievement.",
 },[[
 step
 To earn this achievement, complete Black Rook Hold on Mythic difficulty
@@ -24092,7 +24092,7 @@ achieveid={11702},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Mythic","Cathedral","Eternal","Night"},
-description="\nThis guide will walk you through completing the \"Mythic: Cathedral of Eternal Night\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Cathedral of Eternal Night\" Achievement.",
 },[[
 step
 To earn this achievement, complete Cathedral of Eternal Night on Mythic difficulty
@@ -24108,7 +24108,7 @@ achieveid={10785},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Darkheart","Thicket"},
-description="\nThis guide will walk you through completing the \"Mythic: Darkheart Thicket\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Darkheart Thicket\" Achievement.",
 },[[
 step
 To earn this achievement, complete Darkheart Thicket on Mythic difficulty
@@ -24124,7 +24124,7 @@ achieveid={10782},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Eye","of","Azshara"},
-description="\nThis guide will walk you through completing the \"Mythic: Eye of Azshara\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Eye of Azshara\" Achievement.",
 },[[
 step
 To earn this achievement, complete Eye of Azshara on Mythic difficulty
@@ -24140,7 +24140,7 @@ achieveid={10789},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Halls","of","Valor"},
-description="\nThis guide will walk you through completing the \"Mythic: Halls of Valor\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Halls of Valor\" Achievement.",
 },[[
 step
 To earn this achievement, complete Halls of Valor on Mythic difficulty
@@ -24156,7 +24156,7 @@ achieveid={10809},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Maw","of","Souls"},
-description="\nThis guide will walk you through completing the \"Mythic: Maw of Souls\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Maw of Souls\" Achievement.",
 },[[
 step
 To earn this achievement, complete Maw of Souls on Mythic difficulty
@@ -24172,7 +24172,7 @@ achieveid={10797},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Neltharion","Lair"},
-description="\nThis guide will walk you through completing the \"Mythic: Neltharion's Lair\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Neltharion's Lair\" Achievement.",
 },[[
 step
 To earn this achievement, complete Neltharion's Lair on Mythic difficulty
@@ -24188,7 +24188,7 @@ achieveid={11429},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Return","to","Karazhan"},
-description="\nThis guide will walk you through completing the \"Return to Karazhan\" Achievement.",
+description="This guide will walk you through completing the \"Return to Karazhan\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete the Karazhan Attunement guide
@@ -24203,7 +24203,7 @@ You have earned the _Return to Karazhan_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Mythic: Seat of the Triumvirate",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Seat of the Triumvirate\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Seat of the Triumvirate\" achievement.",
 achieveid={12008},
 patch='70300',
 keywords={"Urjad, Zuraal, Ascended, Seat, of, the, Triumvirate"},
@@ -24228,7 +24228,7 @@ achieveid={10803},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Eye","of","Azshara"},
-description="\nThis guide will walk you through completing the \"Mythic: Vault of the Wardens\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Vault of the Wardens\" Achievement.",
 },[[
 step
 To earn this achievement, complete Vault of the Wardens on Mythic
@@ -24244,7 +24244,7 @@ achieveid={11430},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"One","Night","in","Karazhan","Dungeon","Legion"},
-description="\nThis guide will walk you through completing the \"One Night in Karazhan\" Achievement.",
+description="This guide will walk you through completing the \"One Night in Karazhan\" Achievement.",
 },[[
 step
 This achievement will take some planning
@@ -24271,7 +24271,7 @@ achieveid={11431},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"The","Rat","Pack","Dungeon","Legion"},
-description="\nThis guide will walk you through completing the \"The Rat Pack\" Achievement.",
+description="This guide will walk you through completing the \"The Rat Pack\" Achievement.",
 },[[
 step
 Before you start, you will not be able to earn this achievement if:
@@ -24292,7 +24292,7 @@ achieveid={11432},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Scared","Straight","Dungeon","Legion"},
-description="\nThis guide will walk you through completing the \"Scared Straight\" Achievement.",
+description="This guide will walk you through completing the \"Scared Straight\" Achievement.",
 },[[
 step
 For this, before you encounter the Shade of Medivh, you will need to read a book called "Terrifying Stories to Tell at Night"
@@ -24307,7 +24307,7 @@ achieveid={11335},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Season","Tickets","Reading","Dungeon","Legion"},
-description="\nThis guide will walk you through completing the \"Season Tickets\" Achievement.",
+description="This guide will walk you through completing the \"Season Tickets\" Achievement.",
 },[[
 step
 You will need to run Return to Karazhan a minimum of 3 times to earn this achievement
@@ -24322,7 +24322,7 @@ You have earned the _Season Tickets_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Welcome the Void",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Welcome the Void\" achievement.",
+description="This guide will walk you through completing the \"Welcome the Void\" achievement.",
 achieveid={12004},
 patch='70300',
 keywords={"Urjad, Zuraal, Ascended, Seat, of, the, Triumvirate"},
@@ -24351,7 +24351,7 @@ achieveid={10829},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Arcing","Aqueducts"},
-description="\nThis guide will walk you through completing the \"Arcing Aqueducts\" Achievement.",
+description="This guide will walk you through completing the \"Arcing Aqueducts\" Achievement.",
 },[[
 step
 This achievement is earned by killing the first 3 bosses in The Nighthold
@@ -24368,7 +24368,7 @@ achieveid={10839},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Betrayer's","Rise"},
-description="\nThis guide will walk you through completing the \"Betrayer's Rise\" Achievement.",
+description="This guide will walk you through completing the \"Betrayer's Rise\" Achievement.",
 },[[
 step
 Enter The Nighthold raid |goto Suramar/0 44.15,59.74
@@ -24384,7 +24384,7 @@ achieveid={11386},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Boneafide","Tri","Tip"},
-description="\nThis guide will walk you through completing the \"Boneafide Tri Tip\" Achievement.",
+description="This guide will walk you through completing the \"Boneafide Tri Tip\" Achievement.",
 },[[
 step
 _Do NOT cast spells, touch the boss, get hit by "Off the Leash", get run over by Headlong Charge or die while holding the bone!_
@@ -24409,7 +24409,7 @@ achieveid={11789},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras, lfr"},
-description="\nThis guide will walk you through completing the \"Chamber of the Avatar\" achievement.",
+description="This guide will walk you through completing the \"Chamber of the Avatar\" achievement.",
 },[[
 step
 Click here to load the "Tomb of Sargeras - Chamber of the Avatar" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Chamber of the Avatar"
@@ -24425,7 +24425,7 @@ achieveid={10818},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Darkbough"},
-description="\nThis guide will walk you through completing the \"Darkbough\" Achievement.",
+description="This guide will walk you through completing the \"Darkbough\" Achievement.",
 },[[
 step
 For this, you will need to defeat Xavius in the Emerald Nightmare
@@ -24444,7 +24444,7 @@ achieveid={11790},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras, lfr"},
-description="\nThis guide will walk you through completing the \"Deceiver's Fall\" achievement.",
+description="This guide will walk you through completing the \"Deceiver's Fall\" achievement.",
 },[[
 step
 Click here to load the "Tomb of Sargeras - Deceiver's Fall" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Deceiver's Fall"
@@ -24460,7 +24460,7 @@ achieveid={11787},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras, lfr"},
-description="\nThis guide will walk you through completing the \"The Gates of Hell\" Achievement.",
+description="This guide will walk you through completing the \"The Gates of Hell\" Achievement.",
 },[[
 step
 Click here to load the "Tomb of Sargeras - Gates of Hell" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Gates of Hell"
@@ -24476,7 +24476,7 @@ achieveid={11426},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Trial","of","Valor","Heroic"},
-description="\nThis guide will walk you through completing the \"Heroic: Trial of Valor\" achievement.",
+description="This guide will walk you through completing the \"Heroic: Trial of Valor\" achievement.",
 },[[
 step
 Click here to load the "Trial of Valor - Normal/Heroic" guide |confirm |next "Dungeon Guides\\Legion Raids\\Trial of Valor - Normal/Heroic" |or
@@ -24491,7 +24491,7 @@ achieveid={10826},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Cenarius"},
-description="\nThis guide will walk you through completing the \"Mythic: Cenarius\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Cenarius\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24509,7 +24509,7 @@ achieveid={10842},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Chronomatic","Anomaly"},
-description="\nThis guide will walk you through completing the \"Mythic: Chronomatic Anomaly\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Chronomatic Anomaly\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24527,7 +24527,7 @@ achieveid={11774},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Goroth\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Goroth\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24545,7 +24545,7 @@ achieveid={11778},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Desolate Host\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Desolate Host\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24563,7 +24563,7 @@ achieveid={10825},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Dragons","of","Nightmare"},
-description="\nThis guide will walk you through completing the \"Mythic: Dragons of Nightmare\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Dragons of Nightmare\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24581,7 +24581,7 @@ achieveid={10822},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Elerethe","Renferal"},
-description="\nThis guide will walk you through completing the \"Mythic: Elerethe Renferal\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Elerethe Renferal\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24599,7 +24599,7 @@ achieveid={11780},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Fallen Avatar\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Fallen Avatar\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24617,7 +24617,7 @@ achieveid={11767},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Goroth\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Goroth\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24635,7 +24635,7 @@ achieveid={10849},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Grand","Magistrix","Elisande"},
-description="\nThis guide will walk you through completing the \"Mythic: Grand Magistrix Elisande\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Grand Magistrix Elisande\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24653,7 +24653,7 @@ achieveid={11397},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Mythic","Guarm"},
-description="\nThis guide will walk you through completing the \"Mythic: Guarm\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Guarm\" Achievement.",
 },[[
 step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
@@ -24670,7 +24670,7 @@ achieveid={11775},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Harjatan\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Harjatan\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24688,7 +24688,7 @@ achieveid={11398},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Mythic","Helya"},
-description="\nThis guide will walk you through completing the \"Mythic: Helya\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Helya\" Achievement.",
 },[[
 step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
@@ -24705,7 +24705,7 @@ achieveid={10846},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","High","Botanist","Tel'arn"},
-description="\nThis guide will walk you through completing the \"Mythic: High Botanist Tel'arn\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: High Botanist Tel'arn\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24723,7 +24723,7 @@ achieveid={10823},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Il'gynoth"},
-description="\nThis guide will walk you through completing the \"Mythic: Il'gynoth\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Il'gynoth\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24741,7 +24741,7 @@ achieveid={11781},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Kil'Jaeden\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Kil'Jaeden\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24759,7 +24759,7 @@ achieveid={10848},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Krosus"},
-description="\nThis guide will walk you through completing the \"Mythic: Krosus\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Krosus\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24777,7 +24777,7 @@ achieveid={11779},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Maiden of Vigilance\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Maiden of Vigilance\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24795,7 +24795,7 @@ achieveid={11776},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Mistress Sassz'ine\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Mistress Sassz'ine\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24813,7 +24813,7 @@ achieveid={10821},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Nythendra"},
-description="\nThis guide will walk you through completing the \"Mythic: Nythendra\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Nythendra\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24831,7 +24831,7 @@ achieveid={11396},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Mythic","Odyn"},
-description="\nThis guide will walk you through completing the \"Mythic: Odyn\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Odyn\" Achievement.",
 },[[
 step
 Enter the Trial of Valor with your group |goto Trial of Valor/2 51,10 < 1000 |c
@@ -24848,7 +24848,7 @@ achieveid={11777},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras"},
-description="\nThis guide will walk you through completing the \"Mythic: Sisters of the Moon\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Sisters of the Moon\" achievement.",
 },[[
 step
 Enter the Tomb of Sargeras |goto Tomb of Sargeras/1 45.2,90.2 < 1000 |c
@@ -24866,7 +24866,7 @@ achieveid={10840},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Skorpyron"},
-description="\nThis guide will walk you through completing the \"Mythic: \" Achievement.",
+description="This guide will walk you through completing the \"Mythic: \" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24884,7 +24884,7 @@ achieveid={10844},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Spellblade","Aluriel"},
-description="\nThis guide will walk you through completing the \"Mythic: Spellblade Aluriel\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Spellblade Aluriel\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24902,7 +24902,7 @@ achieveid={10845},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Star","Augur","Etraeus"},
-description="\nThis guide will walk you through completing the \"Mythic: \" Achievement.",
+description="This guide will walk you through completing the \"Mythic: \" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24920,7 +24920,7 @@ achieveid={10847},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Tichondrius"},
-description="\nThis guide will walk you through completing the \"Mythic: Tichondrius\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Tichondrius\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24938,7 +24938,7 @@ achieveid={10843},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Trilliax"},
-description="\nThis guide will walk you through completing the \"Mythic: Trilliax\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Trilliax\" Achievement.",
 },[[
 step
 Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -24956,7 +24956,7 @@ achieveid={10824},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Mythic","Ursoc"},
-description="\nThis guide will walk you through completing the \"Mythic: Ursoc\" Achievement.",
+description="This guide will walk you through completing the \"Mythic: Ursoc\" Achievement.",
 },[[
 step
 Enter the Emerald Nightmare raid |goto The Emerald Nightmare/1 38.0,66.6 < 1000 |c
@@ -24971,7 +24971,7 @@ You have earned the _Mythic: Ursoc_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Forbidden Descent",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Forbidden Descent\" achievement.",
+description="This guide will walk you through completing the \"Forbidden Descent\" achievement.",
 achieveid={11990},
 patch='70300',
 keywords={"Kin'garoth, Varimathras, Coven, Shivarra, Antorus, Burning, Throne"},
@@ -24996,7 +24996,7 @@ You have earned the _Forbidden Descent_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Hope's End",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Hope's End\" achievement.",
+description="This guide will walk you through completing the \"Hope's End\" achievement.",
 achieveid={11989},
 patch='70300',
 keywords={"Portal, Keeper, Hasabel, Imonar, Soulhunter, Eonar, Antorus, Burning, Throne"},
@@ -25021,7 +25021,7 @@ You have earned the _Hope's End_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Aggramar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Aggramar\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Aggramar\" achievement.",
 achieveid={12001},
 patch='70300',
 keywords={"Aggramar, Antorus, Burning, Throne"},
@@ -25036,7 +25036,7 @@ You have earned the _Mythic: Aggramar_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Antoran High Command",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Antoran High Command\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Antoran High Command\" achievement.",
 achieveid={11994},
 patch='70300',
 keywords={"Antoran, High, Command, Antorus, Burning, Throne"},
@@ -25051,7 +25051,7 @@ You have earned the _Mythic: Antoran High Command_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: The Coven of Shivarra",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: The Coven of Shivarra\" achievement.",
+description="This guide will walk you through completing the \"Mythic: The Coven of Shivarra\" achievement.",
 achieveid={12000},
 patch='70300',
 keywords={"Coven, Shivarra, Antorus, Burning, Throne"},
@@ -25066,7 +25066,7 @@ You have earned the _Mythic: The Coven of Shivarra_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Eonar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Eonar\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Eonar\" achievement.",
 achieveid={11996},
 patch='70300',
 keywords={"Eonar, Antorus, Burning, Throne"},
@@ -25081,7 +25081,7 @@ You have earned the _Mythic: Eonar_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Garothi Worldbreaker",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Garothi Worldbreaker\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Garothi Worldbreaker\" achievement.",
 achieveid={11992},
 patch='70300',
 keywords={"Garothi, Worldbreaker, Antorus, Burning, Throne"},
@@ -25096,7 +25096,7 @@ You have earned the _Mythic: Garothi Worldbreaker_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Hounds of Sargeras",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Hounds of Sargeras\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Hounds of Sargeras\" achievement.",
 achieveid={11993},
 patch='70300',
 keywords={"Hounds, Sargeras, Antorus, Burning, Throne"},
@@ -25111,7 +25111,7 @@ You have earned the _Mythic: Hounds of Sargeras_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Imonar the Soulhunter",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Imonar the Soulhunter\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Imonar the Soulhunter\" achievement.",
 achieveid={11997},
 patch='70300',
 keywords={"Imonar, Soulhunter, Antorus, Burning, Throne"},
@@ -25126,7 +25126,7 @@ You have earned the _Mythic: Imonar the Soulhunter_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Kin'garoth",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Kin'garoth\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Kin'garoth\" achievement.",
 achieveid={11998},
 patch='70300',
 keywords={"Kin'garoth, Antorus, Burning, Throne"},
@@ -25141,7 +25141,7 @@ You have earned the _Mythic: Kin'garoth_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Portal Keeper Hasabel",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Portal Keeper Hasabel\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Portal Keeper Hasabel\" achievement.",
 achieveid={11995},
 patch='70300',
 keywords={"Portal, Keeper, Hasabel, Antorus, Burning, Throne"},
@@ -25156,7 +25156,7 @@ You have earned the _Mythic: Portal Keeper Hasabel_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Raids\\Mythic: Varimathras",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mythic: Varimathras\" achievement.",
+description="This guide will walk you through completing the \"Mythic: Varimathras\" achievement.",
 achieveid={11999},
 patch='70300',
 keywords={"Varimathras, Antorus, Burning, Throne"},
@@ -25174,7 +25174,7 @@ achieveid={11377},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Patient","Zero"},
-description="\nThis guide will walk you through completing the \"Patient Zero\" Achievement.",
+description="This guide will walk you through completing the \"Patient Zero\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to reach Phase 2 _"Without anyone in your raid dying"_
@@ -25193,7 +25193,7 @@ achieveid={10838},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Nightspire"},
-description="\nThis guide will walk you through completing the \"Nightspire\" Achievement.",
+description="This guide will walk you through completing the \"Nightspire\" Achievement.",
 },[[
 step
 These bosses can be reached only after defeating Krosus, Tichondrius, and Grand Magistrix Elisande
@@ -25211,7 +25211,7 @@ achieveid={10820},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Rift","of","Aln"},
-description="\nThis guide will walk you through completing the \"Rift of Aln\" Achievement.",
+description="This guide will walk you through completing the \"Rift of Aln\" Achievement.",
 },[[
 step
 For this, you will need to defeat Xavius in the Emerald Nightmare
@@ -25227,7 +25227,7 @@ achieveid={10837},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Royal","Athenaeum"},
-description="\nThis guide will walk you through completing the \"Royal Athenaeum\" Achievement.",
+description="This guide will walk you through completing the \"Royal Athenaeum\" Achievement.",
 },[[
 step
 These bosses can be reached only after defeating Spellblade Aluriel, Star Augur Etraeus, and High Botanist Tel'arn
@@ -25245,7 +25245,7 @@ achieveid={11786},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Terror","of","the","Shore"},
-description="\nThis guide will walk you through completing the \"Terrors of the Shore\" achievement.",
+description="This guide will walk you through completing the \"Terrors of the Shore\" achievement.",
 },[[
 step
 Click here to load the "World Quests" guide |confirm |next "Daily Guides\\Legion\\Azsuna World Quests"
@@ -25265,7 +25265,7 @@ achieveid={10819},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Tormented","Guardians"},
-description="\nThis guide will walk you through completing the \"Tormented Guardians\" Achievement.",
+description="This guide will walk you through completing the \"Tormented Guardians\" Achievement.",
 },[[
 step
 For this, you will need to defeat Xavius in the Emerald Nightmare
@@ -25284,7 +25284,7 @@ achieveid={11394},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Trial","of","Valor"},
-description="\nThis guide will walk you through completing the \"Trial of Valor\" Achievement.",
+description="This guide will walk you through completing the \"Trial of Valor\" Achievement.",
 },[[
 step
 To earn this achievement, defeat the following bosses in the Trials of Valor raid:
@@ -25300,7 +25300,7 @@ achieveid={11788},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"tomb, of, sargeras, lfr"},
-description="\nThis guide will walk you through completing the \"Wailing Halls\" achievement.",
+description="This guide will walk you through completing the \"Wailing Halls\" achievement.",
 },[[
 step
 Click here to load the "Tomb of Sargeras - Wailing Halls" guide |next "Dungeon Guides\\Legion Raids\\Tomb of Sargeras - Wailing Halls"
@@ -25316,7 +25316,7 @@ achieveid={11337},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"You","Ruined","Everything!"},
-description="\nThis guide will walk you through completing the \"You Ruined Everything!\" Achievement.",
+description="This guide will walk you through completing the \"You Ruined Everything!\" Achievement.",
 },[[
 step
 This achievement takes place during Phase 2 of the Odyn encounter
@@ -25332,7 +25332,7 @@ You have earned the _You Ruined Everything!_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Legion Dungeons\\Legion Dungeon Hero",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Legion Dungeon Hero\" achievement.",
+description="This guide will walk you through completing the \"Legion Dungeon Hero\" achievement.",
 achieveid={11164},
 patch='70003',
 keywords={"Dungeon, Hero, Heroic"},
@@ -25394,7 +25394,7 @@ achieveid={11261},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adventurer","Azsuna"},
-description="\nThis guide will walk you through completing the \"Adventurer of Azsuna\" Achievement.",
+description="This guide will walk you through completing the \"Adventurer of Azsuna\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill 26 rare spawns that appear in Azsuna
@@ -25506,7 +25506,7 @@ achieveid={11264},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adventurer","Highmountain"},
-description="\nThis guide will walk you through completing the \"Adventurer of Highmountain\" Achievement.",
+description="This guide will walk you through completing the \"Adventurer of Highmountain\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill 23 rare spawns that appear in Highmountain
@@ -25616,7 +25616,7 @@ achieveid={11263},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adventurer","Stormheim"},
-description="\nThis guide will walk you through completing the \"Adventurer of Stormheim\" Achievement."
+description="This guide will walk you through completing the \"Adventurer of Stormheim\" Achievement."
 },[[
 step
 To earn this achievement, you will need to kill 24 rare spawns that appear in Stormheim
@@ -25806,7 +25806,7 @@ achieveid={11265},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adventurer","Suramar"},
-description="\nThis guide will walk you through completing the \"Adventurer of Suramar\" Achievement.",
+description="This guide will walk you through completing the \"Adventurer of Suramar\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill 32 rare spawns that appear in Suramar
@@ -26051,7 +26051,7 @@ achieveid={11262},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Adventurer","Val'sharah"},
-description="\nThis guide will walk you through completing the \"Adventurer of Val'sharah\" Achievement.",
+description="This guide will walk you through completing the \"Adventurer of Val'sharah\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to kill 20 rare spawns that appear in Val'sharah
@@ -26207,7 +26207,7 @@ achieveid={11841},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"broken, shore, sentinax"},
-description="\nThis guide will walk you through completing the \"Naxt Victim\" achievement.",
+description="This guide will walk you through completing the \"Naxt Victim\" achievement.",
 },[[
 step
 To earn this achievement, you will need to kill each of the Demonic Lieutenants summoned by the Sentinax
@@ -26271,7 +26271,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Going 
 achieveid={10627},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Going Up\" Achievement.",
+description="This guide will walk you through completing the \"Going Up\" Achievement.",
 },[[
 step
 Follow the path |goto Stormheim/0 42.19,35.54 < 15
@@ -26284,7 +26284,7 @@ You have completed the _Going Up_ achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Infused and Abused",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Infused and Abused\" achievement.",
+description="This guide will walk you through completing the \"Infused and Abused\" achievement.",
 achieveid={12084},
 patch='70300',
 keywords={"Fel, Lightning"},
@@ -26309,7 +26309,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasu
 achieveid={11256},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Treasures of Azsuna\" achievement.",
+description="This guide will walk you through completing the \"Treasures of Azsuna\" achievement.",
 },[[
 step
 To earn this achievement, you will need to collect 35 treasures in Azsuna
@@ -26324,7 +26324,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasu
 achieveid={11257},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Treasures of Highmountain\" achievement.",
+description="This guide will walk you through completing the \"Treasures of Highmountain\" achievement.",
 },[[
 step
 To earn this achievement, you will need to collect 40 treasures in Highmountain
@@ -26339,7 +26339,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasu
 achieveid={11259},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Treasures of Stormheim\" achievement.",
+description="This guide will walk you through completing the \"Treasures of Stormheim\" achievement.",
 },[[
 step
 To earn this achievement you will need to collect 60 treasures in Stormheim
@@ -26355,7 +26355,7 @@ achieveid={11260},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Treasures","Suramar"},
-description="\nThis guide will walk you through completing the \"Treasures of Suramar\" achievement.",
+description="This guide will walk you through completing the \"Treasures of Suramar\" achievement.",
 },[[
 step
 To earn this achievement you will need to collect 45 treasures in Suramar
@@ -26370,7 +26370,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Legion\\Treasu
 achieveid={11258},
 patch='70003',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Treasures of Val'sharah\" achievement.",
+description="This guide will walk you through completing the \"Treasures of Val'sharah\" achievement.",
 },[[
 step
 To earn this achievement, you will need to collect 40 treasures in Val'sharah
@@ -26386,7 +26386,7 @@ achieveid={10852},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Artifact","or","Artifiction"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26394,7 +26394,7 @@ This achievement can no longer be obtained!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Crucible's Promise",{
 author="support@zygorguides.com",
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 achieveid={12071},
 patch='70300',
 keywords={"Netherlight, Artifact, Weapon"},
@@ -26405,7 +26405,7 @@ This achievement can no longer be obtained!
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Expansion Features\\Now You're Cooking with Netherlight",{
 author="support@zygorguides.com",
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 achieveid={12072},
 patch='70300',
 keywords={"Netherlight", "Crucible", "Artifact", "Weapon", "Relic"},
@@ -26419,7 +26419,7 @@ achieveid={10853},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Part","of","History"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26430,7 +26430,7 @@ achieveid={11772},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Power","Ascended"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26441,7 +26441,7 @@ achieveid={11144},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Power","Realized"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26452,7 +26452,7 @@ achieveid={11609},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Power","Unbound"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26463,7 +26463,7 @@ achieveid={11610},
 patch='70200',
 author="support@zygorguides.com",
 keywords={"Power","Unleashed"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26474,7 +26474,7 @@ achieveid={11138},
 patch='70003',
 author="support@zygorguides.com",
 keywords={"Is","There","Medic","Zone"},
-description="\nThis achievement was earned prior to patch 8.0 and can no longer be obtained.",
+description="This achievement was earned prior to patch 8.0 and can no longer be obtained.",
 },[[
 step
 This achievement can no longer be obtained!
@@ -26483,7 +26483,7 @@ This achievement can no longer be obtained!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter I: Call of the Archmage",{
 achieveid={9640},
 patch='60001',
-description="\nThis achievement was part of a legendary quest line that has been removed from the game.",
+description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
 step
 The questline required for this achievement was removed in patch 7.0.3
@@ -26493,7 +26493,7 @@ The questline required for this achievement was removed in patch 7.0.3
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter II: Gul'dan Strikes Back",{
 achieveid={9641},
 patch='60001',
-description="\nThis achievement required you to complete Chapter II of the legendary cloak questline and cannot be earned anymore.",
+description="This achievement required you to complete Chapter II of the legendary cloak questline and cannot be earned anymore.",
 },[[
 step
 The questline required for this achievement was removed in patch 7.0.3
@@ -26503,7 +26503,7 @@ The questline required for this achievement was removed in patch 7.0.3
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter III: The Foundry Falls",{
 achieveid={9642},
 patch='60001',
-description="\nThis achievement was part of a legendary quest line that has been removed from the game.",
+description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
 step
 The questline required for this achievement was removed in patch 7.0.3
@@ -26513,7 +26513,7 @@ The questline required for this achievement was removed in patch 7.0.3
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Legacy\\Chapter IV: Darkness Incarnate",{
 achieveid={10021},
 patch='60200',
-description="\nThis achievement was part of a legendary quest line that has been removed from the game.",
+description="This achievement was part of a legendary quest line that has been removed from the game.",
 },[[
 step
 The questline required for this achievement was removed in patch 7.0.3

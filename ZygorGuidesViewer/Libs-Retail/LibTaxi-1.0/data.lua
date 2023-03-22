@@ -80,6 +80,12 @@ data.taxipoints = {
 		-- NEUTRAL --
 		{name="Valdrakken",faction="B",npc="Aluri",npcid=193321,x=44.04,y=67.97},
 	},
+
+	['The Forbidden Reach']={
+
+		-- NEUTRAL --
+		{name="Morqut Village",faction="B",npc="Renpiaq",npcid=200561,x=33.62,y=54.86},
+	},
 },
 
 -------------------------------
@@ -9462,7 +9468,7 @@ data.flightcost = {
 
 
 -- Dragon Isles
-[1978]={
+	[1978]={
 		{
 			tag = "466:811",
 			nodeID = 2773,
@@ -9729,6 +9735,7 @@ data.flightcost = {
 				[2806] = 0, -- Life Vault Ruins
 				[2814] = 0, -- Veiled Ossuary
 				[2817] = 25, -- Skytop Observatory
+				[2855] = 0, -- Morqut Village
 			},
 		},
 		{
@@ -9836,6 +9843,7 @@ data.flightcost = {
 				[2813] = 47, -- Algeth'era
 				[2817] = 0, -- Skytop Observatory
 				[2818] = 0, -- Vault of the Incarnates
+				[2855] = 0, -- Morqut Village
 			},
 		},
 		{
@@ -9947,7 +9955,17 @@ data.flightcost = {
 				[2837] = 0.1, -- Vakthros
 			},
 		},
+		{
+			tag = "624:119",
+			nodeID = 2855,
+			name = "Morqut Village",
+			neighbors = {
+				[2805] = 0, -- Wingrest Embassy
+				[2814] = 0, -- Veiled Ossuary
+			},
+		},
 	},
+
 
 
 

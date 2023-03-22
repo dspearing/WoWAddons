@@ -172,7 +172,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Draen
 condition_end=function() return achieved(8935) end,
 achieveid={8935},
 patch='60001',
-description="\nEarn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
+description="Earn the following Draenor exploration achievements:\n\nExplore Frostfire Ridge\nExplore Gorgrond\n"..
 "Explore Spires of Arak\nExplore Shadowmoon Valley\nExplore Talador\nExplore Nagrand",
 },[[
 leechsteps "Achievement Guides\\Exploration\\Draenor\\Explore Shadowmoon Valley" 1-11
@@ -189,7 +189,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8938) end,
 achieveid={8938},
 patch='60001',
-description="\nExplore Shadowmoon Valley, revealing the following covered areas of the world map:\n\n Anguish Fortress\n"..
+description="Explore Shadowmoon Valley, revealing the following covered areas of the world map:\n\n Anguish Fortress\n"..
 "Elodor\nGloomshade Grove\nKarabor\nThe Shimmer Moor\nIsle of Shadows\nDarktide Roost\nEmbaari Village\n"..
 "Gul'var\nShaz'gul\nSocrethar's Rise",
 },[[
@@ -225,7 +225,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8940) end,
 achieveid={8940},
 patch='60001',
-description="\nExplore Talador, revealing the following covered areas of the world map:\n\n Duskfall Island\n"..
+description="Explore Talador, revealing the following covered areas of the world map:\n\n Duskfall Island\n"..
 "Aruuna\nFort Wrynn\nGul'rok\nOrunai Coast\nShattrath City\nTomb of Lights\nAnchorite's Sojourn\n"..
 "Zangarra\nAuchindoun\nCourt of Souls\nGordal Fortress\nThe Path of Glory\nTelmor\nTuurem",
 },[[
@@ -269,7 +269,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8939) end,
 achieveid={8939},
 patch='60001',
-description="\nExplore Gorgrond, revealing the following covered areas of the world map:\n\n Evermorn Springs\n"..
+description="Explore Gorgrond, revealing the following covered areas of the world map:\n\n Evermorn Springs\n"..
 "Bastion Rise\nGrimrail Depot\nDeadgrin\nHighpass\nStonemaul Arena\nThe Iron Approach\nThe Pit\n"..
 "Beastwatch\nCrimson Fen\nEverbloom Wilds\nGronn Canyon\nIyun Weald\nTangleheart",
 },[[
@@ -311,7 +311,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8937) end,
 achieveid={8937},
 patch='60001',
-description="\nExplore Frostfire Ridge, revealing the following covered areas of the world map:\n\n Bladespire Citadel\n"..
+description="Explore Frostfire Ridge, revealing the following covered areas of the world map:\n\n Bladespire Citadel\n"..
 "Bones of Agurak\nDaggermaw Ravine\nGrimfrost Hill\nIron Siegeworks\nMagnarok\nThe Boneslag\nWor'gol\n"..
 "Bloodmaul Stronghold\nColossal's Fall\nFrostwind Crag\nGrom'gar\nIron Waystation\nStonefang Outpost\n"..
 "The Cracking Plains",
@@ -356,7 +356,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8941) end,
 achieveid={8941},
 patch='60001',
-description="\nExplore Spires of Arak, revealing the following covered areas of the world map:\n\n The Writhing Mire\n"..
+description="Explore Spires of Arak, revealing the following covered areas of the world map:\n\n The Writhing Mire\n"..
 "Skettis\nVeil Zekk\nSouthport\nTerrace of Dawn\nBladefist Hold\nLost Veil Anzu\nRavenskar\nAxefall\n"..
 "The Howling Crag\nPinchwhistle Point\nVeil Akraz\nWindswept Terrace\nSethekk Hollow\nAdmiral Taylor's\n"..
 " Garrison\nPinchwhistle Gearworks\nBloodmane Valley",
@@ -405,7 +405,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Explo
 condition_end=function() return achieved(8942) end,
 achieveid={8942},
 patch='60001',
-description="\nExplore Nagrand, revealing the following covered areas of the world map:\n\n Ancestral Grounds\n"..
+description="Explore Nagrand, revealing the following covered areas of the world map:\n\n Ancestral Grounds\n"..
 "Gates of Grommashar\nHighmaul Harbor\nLok-rath\nMok'gol Watchpost\nTelaar\nThe Ring of Trials\n"..
 "Zangar Shore\nBroken Precipice\nHallvalor\nIronfist Harbor\nMar'gok's Overwatch\nOshu'gun\n"..
 "The Ring of Blood\nThrone of the Elements",
@@ -452,7 +452,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Draenor\\Jungl
 condition_end=function() return achieved(10262) end,
 achieveid={10261, 10262,10262},
 patch='60200',
-description="\nThis guide will walk you through discovering all of the treasures in Tanaan Jungle.",
+description="This guide will walk you through discovering all of the treasures in Tanaan Jungle.",
 },[[
 step
 label "tanaan_treasure_start"
@@ -877,7 +877,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Quests\\Draenor\
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Draenor\\Mean and Green",{
 achieveid={9654},
 patch='60001',
-description="\nReach 10 stacks of Mutagen in the Everbloom Wilds.",
+description="Reach 10 stacks of Mutagen in the Everbloom Wilds.",
 },[[
 step
 _Fly_ to Everbloom Outlook |goto Gorgrond/0 68.8,28.8 < 5 |only if walking

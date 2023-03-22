@@ -1,7 +1,6 @@
 # Capping
 
-## [v10.0.14](https://github.com/BigWigsMods/Capping/tree/v10.0.14) (2023-02-04)
-[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v10.0.13...v10.0.14) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
+## [v10.0.15](https://github.com/BigWigsMods/Capping/tree/v10.0.15) (2023-03-22)
+[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v10.0.14...v10.0.15) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
 
-- Check for NaN when receiving health data #129  
-- Libs: Update CallbackHandler embed  
+- bump toc  

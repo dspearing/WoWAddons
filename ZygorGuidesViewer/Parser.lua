@@ -811,14 +811,15 @@ local ConditionEnv = {
 		local _,s = C_Scenario.GetInfo()
 		return s==stage
 	end,
-	scenariogoal = function(goal)
+	scenariogoal = function(...)
 		if not C_Scenario.IsInScenario() then return false end
-
+		local count = select("#", ...)
 		local _, _, numCriteria = C_Scenario.GetStepInfo();
 		for criteriaIndex=1,numCriteria do
 			local _, _, _, _, _, flags, _, _, criteriaID = C_Scenario.GetCriteriaInfo(criteriaIndex);
-			if criteriaID==goal then
-				return true
+			for i = 1, count do
+				local id = select(i, ...)
+				if criteriaID==id then return true end
 			end
 		end
 		return false

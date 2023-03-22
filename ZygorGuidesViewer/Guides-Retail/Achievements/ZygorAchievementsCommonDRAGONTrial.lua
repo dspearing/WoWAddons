@@ -8,7 +8,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Character Achiev
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks")
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Symbols of Hope",{
 author="support@zygorguides.com",
-description="\nRelease 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.",
+description="Release 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.",
 condition_suggested=function() return level == 60 and not achieved(16584) end,
 achieveid={16584},
 startlevel=60,
@@ -84,7 +84,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Quests\\Dragonfl
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Reputation\\Dragonflight\\Ready, Aim, Catalog!")
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Dragonflight\\Which Knot Was It Again?",{
 author="support@zygorguides.com",
-description="\nUnlock climbing World Quests with the Dragonscale Expedition.",
+description="Unlock climbing World Quests with the Dragonscale Expedition.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 6 and not achieved(16624) end,
 achieveid={16624},
 startlevel=60,

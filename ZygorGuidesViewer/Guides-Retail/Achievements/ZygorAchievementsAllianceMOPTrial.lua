@@ -106,7 +106,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6974) end,
 achieveid={6974},
 patch='50004',
-description="\nEarn the following Pandaria exploration achievements:\n\nExplore Dread Wastes\nExplore Krasarang Wilds\n"..
+description="Earn the following Pandaria exploration achievements:\n\nExplore Dread Wastes\nExplore Krasarang Wilds\n"..
 "Explore Jade Forest\nExplore Kun-Lai Summit\nExplore Townlong Steppes\nExplore Vale of Eternal Blossoms\n"..
 "Explore Valley of the Four Winds",
 },[[
@@ -125,7 +125,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6978) end,
 achieveid={6978},
 patch='50004',
-description="\nExplore Dread Wastes, revealing the following covered areas of the world map:\n\n Kypari Vor\n"..
+description="Explore Dread Wastes, revealing the following covered areas of the world map:\n\n Kypari Vor\n"..
 "Rikkitun Village\nHeart of Fear\nThe Clutches of Shek'zeer\nTerrace of Gurthan\nZan'vess\n"..
 "Writhingwood\nKlaxxi'vess\nKypari Zar\nThe Sunset Brewgarden\nSoggy's Gamble\nThe Briny Muck",
 },[[
@@ -163,7 +163,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6351) end,
 achieveid={6351},
 patch='50004',
-description="\nExplore Jade Forest, revealing the following covered areas of the world map:\n\n Tian Monastery\n"..
+description="Explore Jade Forest, revealing the following covered areas of the world map:\n\n Tian Monastery\n"..
 "Dreamer's Pavillion\nPearl Lake\nGreenstone Quarry\nTemple of the Jade Serpent\nCamp Nooka Nooka\n"..
 "Serpent's Heart\nGarrosh'ar Point\nHoneydew Village\nDawn's Blossom\nTerrace of Ten Thunders\n"..
 "Emperor's Omen\nNectarbreeze Orchard\nGrookin Hill\nSlingtail Pits\nThe Arboretum\nWindward Isle",
@@ -212,7 +212,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6975) end,
 achieveid={6975},
 patch='50004',
-description="\nExplore Krasarang Wilds, revealing the following covered areas of the world map:\n\n Anglers Wharf\n"..
+description="Explore Krasarang Wilds, revealing the following covered areas of the world map:\n\n Anglers Wharf\n"..
 "Dojani River\nKrasarang Cove\nNayeli Lagoon\nRuins of Dojan\nTemple of the Red Crane\nUnga Ingoo\n"..
 "The Forbidden Jungle\nCradle of Chi-Ji\nFallsong Village\nThe Krasari Ruins\nCrane Wing Refuge\n"..
 "Ruins of Korja\nThe Deepwild\nThe Southern Isles\nZhu's Watch",
@@ -259,7 +259,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6976) end,
 achieveid={6976},
 patch='50004',
-description="\nExplore , revealing the following covered areas of the world map:\n\n Binan Village\n"..
+description="Explore , revealing the following covered areas of the world map:\n\n Binan Village\n"..
 "Gate of the August Celestials\nKota Peak\nMount Neverest\nPeak of Serenity\nTemple of "..
 "the White Tiger\nValley of Emperors\nFirebough Nook\nIsle of Reckoning\nMogujia\nMuskpaw Ranch\n"..
 "Shado-Pan Monastery\nThe Burlap Trail\nZouchin Village",
@@ -302,7 +302,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6977) end,
 achieveid={6977},
 patch='50004',
-description="\nExplore Townlong Steppes, revealing the following covered areas of the world map:\n\n Gao-Ran Battlefront\n"..
+description="Explore Townlong Steppes, revealing the following covered areas of the world map:\n\n Gao-Ran Battlefront\n"..
 "Rensai's Watchpost\nFire Camp Osul\nShado-Pan Garrison\nSik'vess\nThe Sumprushes\nKri'vess\nNiuzao Temple\n"..
 "Hatred's Vice\nShan'ze Dao\nSra'vess",
 },[[
@@ -338,7 +338,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6979) end,
 achieveid={6979},
 patch='50004',
-description="\nExplore Vale of Eternal Blossoms, revealing the following covered areas of the world map:\n\n Ruins of Guo-Lai\n"..
+description="Explore Vale of Eternal Blossoms, revealing the following covered areas of the world map:\n\n Ruins of Guo-Lai\n"..
 "Mogu'shan Palace\nThe Golden Stair\nThe Golden Pagoda\nShrine of Two Moons\nThe Five Sisters\nMistfall Village\n"..
 "Setting Sun Garrison\nShrine of Seven Stars\nTu Shen Burial Ground\nWhitepetal Lake",
 },[[
@@ -374,7 +374,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6969) end,
 achieveid={6969},
 patch='50004',
-description="\nExplore Valley of the Four Winds, revealing the following covered areas of the world map:\n\n Nesingwary Safari\n"..
+description="Explore Valley of the Four Winds, revealing the following covered areas of the world map:\n\n Nesingwary Safari\n"..
 "Winds' Edge\nGilded Fan\nHalfhill\nKunzen Village\nPools of Purity\nSilken Fields\nStormstout Brewery\n"..
 "Thunderfoot Ranch\nDustback Gorge\nThe Imperial Granary\nStoneplow\nMudmug's Place\nPaoquan Hollow\nThe Heartland\n"..
 "Rumbling Terrace\nSinging Marshes\nZhu's Descent",

@@ -6,7 +6,7 @@ ZygorGuidesViewer.GuideMenuTier = "MOP"
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Mounts\\Grand Expedition Yak",{
 achieveid={7386},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Grand Expedition Yak from Uncle Bigpocket in Kun-Lai Summit.",
+description="This guide will walk you through obtaining the Grand Expedition Yak from Uncle Bigpocket in Kun-Lai Summit.",
 },[[
 step
 In order to obtain this mount, you will need to have 120,000 gold
@@ -20,7 +20,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Mounts\\Mount 
 achieveid={8302},
 patch='50300',
 condition_valid=function() return achieved(7862) end,
-description="\nObtain 200 mounts.",
+description="Obtain 200 mounts.",
 },[[
 step
 You can use our Mounts guide to obtain all you need to complete the achievements below:
@@ -36,7 +36,7 @@ Congratulations, you have earned the Mount Parade achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Going To Need A Bigger Bag",{
 achieveid={8728},
 patch='50400',
-description="\nObtain all of the rare items from the Timeless Isle listed below.",
+description="Obtain all of the rare items from the Timeless Isle listed below.",
 },[[
 step
 label "start"
@@ -266,7 +266,7 @@ Congratulations, you have obtained the _Going to Need a Bigger Bag_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\And Stay Dead",{
 achieveid={6929},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scarlet Monastery",
+description="You will need a Gear Score of 440 Heroic Scarlet Monastery",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -288,7 +288,7 @@ Congratulations, you have earned the And Stay Dead! Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Attention to Detail",{
 achieveid={6531},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scholomance",
+description="You will need a Gear Score of 440 Heroic Scholomance",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -306,7 +306,7 @@ Congratulations, you have earned the Attention to Detail Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Bomberman",{
 achieveid={6479},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Gate of the Setting Sun",
+description="You will need a Gear Score of 440 Heroic Gate of the Setting Sun",
 },[[
 step
 This achievement requires Heroic Gate of the Setting Sun.
@@ -325,7 +325,7 @@ Congratulations, you have earned the Bomberman Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Burning Man",{
 achieveid={6928},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scarlet Monastery",
+description="You will need a Gear Score of 440 Heroic Scarlet Monastery",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -345,7 +345,7 @@ Congratulations, you have earned the Burning Man Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Cleaning Up",{
 achieveid={6475},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
+description="You will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
 },[[
 step
 For this achievement, you will need to be Level 90, as it requires heroic mode.
@@ -363,7 +363,7 @@ Congratulations, you  have earned the Cleaning Up Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Conscriptinator",{
 achieveid={6476},
 patch='50004',
-description="\nThis guide will walk you through earning the Conscriptinator achievement.",
+description="This guide will walk you through earning the Conscriptinator achievement.",
 },[[
 step
 This achievement is gained by getting _three stacks of Resin Residue_ by defeating Mantid Conscripts in Gate of the Setting Sun dungeon on _Heroic mode_
@@ -377,7 +377,7 @@ Congratulations, you have earned the Conscriptinator Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Empowered Spiritualist",{
 achieveid={6946},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scarlet Monastery",
+description="You will need a Gear Score of 440 Heroic Scarlet Monastery",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -398,7 +398,7 @@ Congratulations, you have earned the Empowered Spiritualist Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Glintrok N' Roll",{
 achieveid={6478},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Mogu'shan Palace",
+description="You will need a Gear Score of 440 Heroic Mogu'shan Palace",
 },[[
 step
 This achievement requires Heroic Mogu'Shan Palace.
@@ -415,7 +415,7 @@ Congratulations, you have earned the Glintrok N' Roll Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Hate Leads to Suffering",{
 achieveid={6471},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Shado-Pan Monastery",
+description="You will need a Gear Score of 440 Heroic Shado-Pan Monastery",
 },[[
 step
 This achievement requires Heroic Shado-Pan Monastery.
@@ -433,7 +433,7 @@ Congratulations, you have earned the Hate Leads to Suffering Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Heroic: Shado-Pan Monastery",{
 achieveid={6470},
 patch='50004',
-description="\nThis guide will walk you through earning the Heroic: Shado-Pan Monastery achievement.",
+description="This guide will walk you through earning the Heroic: Shado-Pan Monastery achievement.",
 },[[
 step
 This achievement is gained by completing the Shado-Pan Monastery dungeon on _Heroic mode_
@@ -446,7 +446,7 @@ Congratulations, you have earned the Heroic: Shado-Pan Monastery Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Heroic: Stormstout Brewery",{
 achieveid={6456},
 patch='50004',
-description="\nThis guide will walk you through earning the Heroic: Stormstout Brewery achievement.",
+description="This guide will walk you through earning the Heroic: Stormstout Brewery achievement.",
 },[[
 step
 This achievement is gained by completing the Stormstout Brewery dungeon on _Heroic mode_
@@ -459,7 +459,7 @@ Congratulations, you have earned the Heroic: Stormstout Brewery Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Heroic: Temple of the Jade Serpent",{
 achieveid={6758},
 patch='50004',
-description="\nThis guide will walk you through earning the Heroic: Temple of the Jade Serpent achievement.",
+description="This guide will walk you through earning the Heroic: Temple of the Jade Serpent achievement.",
 },[[
 step
 This achievement is gained by completing the Temple of the Jade Serpent dungeon on _Heroic mode_
@@ -472,7 +472,7 @@ Congratulations, you have earned the Heroic: Temple of the Jade Serpent Achievem
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Hopocalypse Now!",{
 achieveid={6420},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Stormstout Brewery",
+description="You will need a Gear Score of 440 Heroic Stormstout Brewery",
 },[[
 step
 For this achievement, you will need to be Level 90, as it requires heroic mode.
@@ -491,7 +491,7 @@ Congratulations, you have earned the Hopocalypse Now! Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\How Did He Get Up There?",{
 achieveid={6400},
 patch='50004',
-description="\nThis achievement requires the instance Stormstout Brewery",
+description="This achievement requires the instance Stormstout Brewery",
 },[[
 step
 For this achievement, you will need to have access to the _Stormstout Brewery_, a level 85 Mists of Pandaria instance.
@@ -511,7 +511,7 @@ Congratulations, you have earned the How Did He Get Up There? Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Humane Society",{
 achieveid={6684},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scarlet Halls",
+description="You will need a Gear Score of 440 Heroic Scarlet Halls",
 },[[
 step
 This achievement requires Heroic Scarlet Halls.
@@ -531,7 +531,7 @@ Congratulations, you have earned the Humane Society Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Hydrophobia",{
 achieveid={6460},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
+description="You will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
 },[[
 step
 For this achievement, you will need to be Level 90, as it requires heroic mode.
@@ -552,7 +552,7 @@ Congratulations, you have earned the Hydrophobia Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Keep Rollin' Rollin' Rollin'",{
 achieveid={6089},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Stormstout Brewery",
+description="You will need a Gear Score of 440 Heroic Stormstout Brewery",
 },[[
 step
 For this achievement, you will need to be Level 90, as it requires heroic mode.
@@ -569,7 +569,7 @@ Congratulations, you have earned the Keep Rollin' Rollin' Rollin' Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Ling-Ting's Herbal Journey",{
 achieveid={6402},
 patch='50004',
-description="\nThis achievement requires the instance Stormstout Brewery",
+description="This achievement requires the instance Stormstout Brewery",
 },[[
 step
 For this achievement, you will need to have access to the _Stormstout Brewery_, a level 85 Mists of Pandaria instance.
@@ -648,7 +648,7 @@ Congratulations, you have earned the Ling-Ting's Herbal Journey Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Mantid Swarm",{
 achieveid={6945},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Gate of the Setting Sun",
+description="You will need a Gear Score of 440 Heroic Gate of the Setting Sun",
 },[[
 step
 This achievement requires Heroic Gate of the Setting Sun.
@@ -668,7 +668,7 @@ Congratulations, you have earned the Mantid Swarm Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Mosh Pit",{
 achieveid={6427},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scarlet Halls",
+description="You will need a Gear Score of 440 Heroic Scarlet Halls",
 },[[
 step
 This achievement requires Heroic Scarlet Halls.
@@ -689,7 +689,7 @@ Congratulations, you have earned the Mosh Pit achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\The Obvious Solution",{
 achieveid={6472},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Shado-Pan Monastery",
+description="You will need a Gear Score of 440 Heroic Shado-Pan Monastery",
 },[[
 step
 This achievement requires Heroic Shado-Pan Monastery.
@@ -705,7 +705,7 @@ Congratulations, you have earned The Obvious Solution Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Polyformic Acid Science",{
 achieveid={6715},
 patch='50004',
-description="\nThis guide will walk you through how to get the Polyformic Acid Science achievement.",
+description="This guide will walk you through how to get the Polyformic Acid Science achievement.",
 },[[
 step
 This achievement is gained by defeating the following dungeon and raid bosses while under the effects of a Polyformic Acid Potion
@@ -742,7 +742,7 @@ Congratulations, you have earned the Polyformic Acid Science achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Quarrelsome Quilen Quintet",{
 achieveid={6713},
 patch='50004',
-description="\nThis guide will walk you through earning the Quarrelsome Quilen Quintet achievement.",
+description="This guide will walk you through earning the Quarrelsome Quilen Quintet achievement.",
 },[[
 step
 This achievement is gained by collecting all the Jade Quilen inside the Mogu'Shan Palace dungeon on _Heroic mode_
@@ -762,7 +762,7 @@ Congratulations, you have earned the Quarrelsome Quilen Quintet Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Rattle No More",{
 achieveid={6394},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scholomance",
+description="You will need a Gear Score of 440 Heroic Scholomance",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -783,7 +783,7 @@ Congratulations, you have earned the Rattle No More Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Respect",{
 achieveid={6477},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Shado-Pan Monastery",
+description="You will need a Gear Score of 440 Heroic Shado-Pan Monastery",
 },[[
 step
 This achievement requires Heroic Shado-Pan Monastery.
@@ -800,7 +800,7 @@ Congratulations, you have earned the Respect Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Return to Sender",{
 achieveid={6485},
 patch='50004',
-description="\nThis guide will walk you through earning the Return to Sender achievement.",
+description="This guide will walk you through earning the Return to Sender achievement.",
 },[[
 step
 This achievement is gained by defeating General Pa'valak _while he has 20 stacks of Detonate_ in the Siege of Niuzao Temple dungeon on _Heroic mode_
@@ -813,7 +813,7 @@ Congratulations, you have earned the Return to Sender Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Run with the Wind",{
 achieveid={6822},
 patch='50004',
-description="\nThis guide will walk you through earning the Run with the Wind achievement.",
+description="This guide will walk you through earning the Run with the Wind achievement.",
 },[[
 step
 This achievement is gained by defeating Ner'onok _while under the effect of Tenwu's Resolve_ in the Siege of Niuzao Temple dungeon on _Heroic mode_
@@ -827,7 +827,7 @@ Congratulations, you have earned the Run with the Wind Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Sanguinarian",{
 achieveid={6396},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Scholomance",
+description="You will need a Gear Score of 440 Heroic Scholomance",
 },[[
 step
 This achievement requires Heroic Scarlet Monastery.
@@ -851,7 +851,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6821},
 patch='50004',
 keywords={"Pandaria","Dungeon","Heroic","Scholomance","School's","Out","Forever"},
-description="\nThis guilde will walk you through obtaining the School's Out Forever Achievement.",
+description="This guilde will walk you through obtaining the School's Out Forever Achievement.",
 },[[
 step
 kill Darkmaster Gandling##59080
@@ -868,7 +868,7 @@ You Earned the "School's Out Forever" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Seeds of Doubt",{
 achieveid={6671},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
+description="You will need a Gear Score of 440 Heroic Temple of the Jade Serpent",
 },[[
 step
 For this achievement, you will need to be Level 90, as it requires heroic mode.
@@ -887,7 +887,7 @@ Congratulations, you  have earned the _Seeds of Doubt_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\What Does This Button Do?",{
 achieveid={6736},
 patch='50004',
-description="\nYou will need a Gear Score of 440 Heroic Mogu'shan Palace",
+description="You will need a Gear Score of 440 Heroic Mogu'shan Palace",
 },[[
 step
 This achievement requires Heroic Mogu'Shan Palace.
@@ -909,7 +909,7 @@ Congratulations, you have earned the What Does This Button Do? Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Where's My Air Support?",{
 achieveid={6688},
 patch='50004',
-description="\nThis guide will walk you through earning the Where's My Air Support? achievement.",
+description="This guide will walk you through earning the Where's My Air Support? achievement.",
 },[[
 step
 This achievement is gained by defeating Commander Vo'jak _after having killed the Sik'thik Amberwing_ in Siege of Niuzao Temple on _Heroic mode_
@@ -924,7 +924,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={7933},
 patch='50100',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","And...","It's","Good!"},
-description="\nThis guilde will walk you through obtaining the And... It's Good! Achievement.",
+description="This guilde will walk you through obtaining the And... It's Good! Achievement.",
 },[[
 step
 kill Elegon##60410
@@ -942,7 +942,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6674},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Anything","You","Can","Do","I","Can","Do","Better"},
-description="\nThis guilde will walk you through obtaining the Anything You Can Do, I Can Do Better... Achievement.",
+description="This guilde will walk you through obtaining the Anything You Can Do, I Can Do Better... Achievement.",
 },[[
 step
 kill Feng the Accursed##60009
@@ -975,7 +975,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6936},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Candle","in","the","Wind"},
-description="\nThis guilde will walk you through obtaining the Candle in the Wind Achievement.",
+description="This guilde will walk you through obtaining the Candle in the Wind Achievement.",
 },[[
 step
 kill Blade Lord Ta'yak##62543
@@ -992,7 +992,7 @@ You Earned the "Candle in the Wind" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\Celestial Challenge",{
 achieveid={8535},
 patch='50400',
-description="\nComplete the trials of all four Celestials, besting them each in combat on the Timeless Isle.",
+description="Complete the trials of all four Celestials, besting them each in combat on the Timeless Isle.",
 },[[
 step
 You will need a very large group of people on your faction to help you with these fights.
@@ -1058,7 +1058,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6517},
 patch='50004',
-description="\nDefeat Salyis's Warband in Valley of the Four Winds.",
+description="Defeat Salyis's Warband in Valley of the Four Winds.",
 },[[
 step
 This achievement is gained by _defeating Salyis's Warband_ in Valley of the Four Winds
@@ -1073,7 +1073,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6824},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Face","Clutchers"},
-description="\nThis guilde will walk you through obtaining the Face Clutchers Achievement.",
+description="This guilde will walk you through obtaining the Face Clutchers Achievement.",
 },[[
 step
 kill Lei Shi##62983
@@ -1093,7 +1093,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={8448},
 patch='50400',
 keywords={"Pandaria","Raid","Seige","of","Orgrimmar","Gamon","Will","Save","Us!"},
-description="\nThis guilde will walk you through obtaining the Gamon Will Save Us! Achievement.",
+description="This guilde will walk you through obtaining the Gamon Will Save Us! Achievement.",
 },[[
 step
 kill General Nazgrim##71515
@@ -1110,7 +1110,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6687},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Getting","Hot","In","Here"},
-description="\nThis guilde will walk you through obtaining the Getting Hot In Here Achievement.",
+description="This guilde will walk you through obtaining the Getting Hot In Here Achievement.",
 },[[
 step
 Defeat the Spirit Kings
@@ -1128,7 +1128,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6726},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Heroic","Blade","Lord","Ta'yak"},
-description="\nThis guilde will walk you through obtaining the Heroic: Blade Lord Ta'yak Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Blade Lord Ta'yak Achievement.",
 },[[
 step
 kill Blade Lord Ta'yak##62543
@@ -1142,7 +1142,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6723},
 patch='50004',
-description="\nDefeat Elegon in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat Elegon in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Elegon##60410
@@ -1156,7 +1156,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6720},
 patch='50004',
-description="\nDefeat Feng the Accursed in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat Feng the Accursed in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Feng the Accursed##60009
@@ -1170,7 +1170,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6722},
 patch='50004',
-description="\nDefeat the Spirit Kings in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat the Spirit Kings in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Qiang the Merciless##60709
@@ -1187,7 +1187,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6721},
 patch='50004',
-description="\nDefeat Gara'jal the Spiritbinder in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat Gara'jal the Spiritbinder in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Gara'jal the Spiritbinder##60143
@@ -1201,7 +1201,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6727},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Heroic","Garalon"},
-description="\nThis guilde will walk you through obtaining the Heroic: Garalon Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Garalon Achievement.",
 },[[
 step
 kill Garalon##62164
@@ -1215,7 +1215,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6725},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Heroic","Imperial","Vizier","Zor'lok"},
-description="\nThis guilde will walk you through obtaining the Heroic: Imperial Vizier Zor'lok Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Imperial Vizier Zor'lok Achievement.",
 },[[
 step
 kill Imperial Vizier Zor'lok##62980
@@ -1229,7 +1229,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6733},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Heroic","Lei","Shi"},
-description="\nThis guilde will walk you through obtaining the Heroic: Lei Shi Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Lei Shi Achievement.",
 },[[
 step
 kill Lei Shi##62983
@@ -1243,7 +1243,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6731},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Heroic","Protectors","of","the","Endless"},
-description="\nThis guilde will walk you through obtaining the Heroic: Protectors of the Endless Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Protectors of the Endless Achievement.",
 },[[
 step
 kill Elder Regail##60585
@@ -1259,7 +1259,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6480},
 patch='50004',
-description="\nDefeat the Sha of Anger in Kun-Lai Summit.",
+description="Defeat the Sha of Anger in Kun-Lai Summit.",
 },[[
 step
 This achievement is gained by _defeating the Sha of Anger_ in Kun-Lai Summit
@@ -1274,7 +1274,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6719},
 patch='50004',
-description="\nDefeat the Stone Guard in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat the Stone Guard in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Amethyst Guardian##60047
@@ -1291,7 +1291,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6732},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Heroic","Tsulong"},
-description="\nThis guilde will walk you through obtaining the Heroic: Tsulong Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Tsulong Achievement.",
 },[[
 step
 kill Tsulong##62442
@@ -1305,7 +1305,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={6724},
 patch='50004',
-description="\nDefeat the Will of the Emperor in the Mogu'shan Vaults raid on Heroic mode.",
+description="Defeat the Will of the Emperor in the Mogu'shan Vaults raid on Heroic mode.",
 },[[
 step
 kill Jan-xi##60400
@@ -1320,7 +1320,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6728},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Heroic","Wind","Lord","Mel'jarak"},
-description="\nThis guilde will walk you through obtaining the Heroic: Wind Lord Mel'jarak Achievement.",
+description="This guilde will walk you through obtaining the Heroic: Wind Lord Mel'jarak Achievement.",
 },[[
 step
 kill Wind Lord Mel'jarak##62397
@@ -1334,7 +1334,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6518},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","I","Heard","You","Like","Amber..."},
-description="\nThis guilde will walk you through obtaining the Timing is Everything Achievement.",
+description="This guilde will walk you through obtaining the Timing is Everything Achievement.",
 },[[
 step
 kill 8 Living Amber##62691
@@ -1351,7 +1351,7 @@ You Earned the "I Heard You Like Amber..." Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\The Immortal Vanguard",{
 achieveid={8530},
 patch='50400',
-description="\nThis guide will walk you through how to get The Immortal Vanguard achievement.",
+description="This guide will walk you through how to get The Immortal Vanguard achievement.",
 },[[
 step
 This achievement is gained by defeating Galakras in Siege of Orgrimmar _without allowing a single friendly NPC to die_
@@ -1364,7 +1364,7 @@ Congratulations, you have earned The Immortal Vanguard achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\Lasers and Magnets and Drills! Oh My!",{
 achieveid={8543},
 patch='50400',
-description="\nThis guide will walk you through how to get the Lasers and Magnets and Drills! Oh My! achievement.",
+description="This guide will walk you through how to get the Lasers and Magnets and Drills! Oh My! achievement.",
 },[[
 step
 This achievement is gained by defeating Siegecrafter Blackfuse in Siege of Orgrimmar _without destroying each of the following weapons_
@@ -1380,7 +1380,7 @@ Congratulations, you have earned the Lasers and Magnets and Drills! Oh My! achie
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\Last Stand of the Zandalari",{
 achieveid={8069},
 patch='50200',
-description="\nThis guide will walk you through how to get the Last Stand of the Zandalari achievement.",
+description="This guide will walk you through how to get the Last Stand of the Zandalari achievement.",
 },[[
 step
 This achievement is gained by defeating the bosses occupying the ruins at the entrance to the Throne of Thunder
@@ -1401,7 +1401,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6683},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Less","Than","Three"},
-description="\nThis guilde will walk you through obtaining the Less Than Three Achievement.",
+description="This guilde will walk you through obtaining the Less Than Three Achievement.",
 },[[
 step
 kill Wind Lord Mel'jarak##62397
@@ -1416,7 +1416,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6553},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Like","an","Arrow","to","the","Face"},
-description="\nThis guilde will walk you through obtaining the Like an Arrow to the Face Achievement.",
+description="This guilde will walk you through obtaining the Like an Arrow to the Face Achievement.",
 },[[
 step
 kill Garalon##62164
@@ -1432,7 +1432,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={8123},
 patch='50200',
-description="\nKill the World Boss Oondasta",
+description="Kill the World Boss Oondasta",
 },[[
 step
 For this achievement, you must be in a group of 10+ people.
@@ -1447,7 +1447,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6825},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","The","Mind-Killer"},
-description="\nThis guilde will walk you through obtaining The Mind-Killer Achievement.",
+description="This guilde will walk you through obtaining The Mind-Killer Achievement.",
 },[[
 step
 kill Sha of Fear##60999
@@ -1463,7 +1463,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6823},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Must","Love","Dogs"},
-description="\nThis guilde will walk you through obtaining the Must Love Dogs Achievement.",
+description="This guilde will walk you through obtaining the Must Love Dogs Achievement.",
 },[[
 step
 Kill the Stone Guard encounter
@@ -1479,7 +1479,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6936},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Overzealous"},
-description="\nThis guilde will walk you through obtaining the Overzealous Achievement.",
+description="This guilde will walk you through obtaining the Overzealous Achievement.",
 },[[
 step
 kill Imperial Vizier Zor'lok##62980
@@ -1495,7 +1495,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6717},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Power","Overwhelming"},
-description="\nThis guilde will walk you through obtaining the Power Overwhelming Achievement.",
+description="This guilde will walk you through obtaining the Power Overwhelming Achievement.",
 },[[
 step
 kill Protector Kaolan##60583
@@ -1519,7 +1519,7 @@ You Earned the "Power Overwhelming" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\Praise the Sun!",{
 achieveid={8028},
 patch='50200',
-description="\nDefeat Nalak, the Storm Lord, on the Isle of Thunder.",
+description="Defeat Nalak, the Storm Lord, on the Isle of Thunder.",
 },[[
 step
 In order to get this achievement, you must have access to all areas of the _Isle of Thunder_.
@@ -1534,7 +1534,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6455},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Show","Me","Your","Moves!"},
-description="\nThis guilde will walk you through obtaining the Show Me Your Moves! Achievement.",
+description="This guilde will walk you through obtaining the Show Me Your Moves! Achievement.",
 },[[
 step
 kill Jan-xi##60400
@@ -1556,7 +1556,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={7056},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Sorry","Were","You","Looking","for","This?"},
-description="\nThis guilde will walk you through obtaining the Sorry, Were You Looking for This? Achievement.",
+description="This guilde will walk you through obtaining the Sorry, Were You Looking for This? Achievement.",
 },[[
 step
 kill Gara'jal the Spiritbinder##60143
@@ -1577,7 +1577,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6686},
 patch='50004',
 keywords={"Pandaria","Raid","Mogu'shan","Vaults","Straight","Six"},
-description="\nThis guilde will walk you through obtaining the Straight Six Achievement.",
+description="This guilde will walk you through obtaining the Straight Six Achievement.",
 },[[
 step
 kill Elegon##60410
@@ -1591,7 +1591,7 @@ You Earned the "Straight Six" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Raids\\Swallow Your Pride",{
 achieveid={8521},
 patch='50400',
-description="\nThis guide will walk you through how to get the Swallow Your Pride achievement.",
+description="This guide will walk you through how to get the Swallow Your Pride achievement.",
 },[[
 step
 This achievement is gained by defeating the Sha of Pride in Siege of Orgrimmar _after no player has gained Pride from Manifestations of Pride while Norushen is alive_
@@ -1605,7 +1605,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6922},
 patch='50004',
 keywords={"Pandaria","Raid","Heart","of","Fear","Timing","is","Everything"},
-description="\nThis guilde will walk you through obtaining the Timing is Everything Achievement.",
+description="This guilde will walk you through obtaining the Timing is Everything Achievement.",
 },[[
 step
 kill 2 Kor'thik Reaver##63591+
@@ -1620,7 +1620,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 achieveid={6933},
 patch='50004',
 keywords={"Pandaria","Raid","Terrace","of","Endless","Springs","Who's","Got","Two","Green","Thumbs?"},
-description="\nThis guilde will walk you through obtaining the Who's Got Two Green Thumbs? Achievement.",
+description="This guilde will walk you through obtaining the Who's Got Two Green Thumbs? Achievement.",
 },[[
 step
 kill Tsulong##62442
@@ -1637,7 +1637,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria 
 author="support@zygorguides.com",
 achieveid={7252},
 patch='50004',
-description="\nThis guide will walk you through the A Brewing Storm Achievement. You must be level 90 for this achievement.",
+description="This guide will walk you through the A Brewing Storm Achievement. You must be level 90 for this achievement.",
 },[[
 step
 Use the _Dungeon Finder_, and click the _Scenarios_ tab to queue for _A Brewing Storm_.
@@ -1664,7 +1664,7 @@ Congratulations, you have earned the A Brewing Storm Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Scenarios\\Arena of Annihilation",{
 achieveid={7271},
 patch='50004',
-description="\nThis guide will help you earn the Arena of Annihilation Achievement. You must be level 90 for this achievement.",
+description="This guide will help you earn the Arena of Annihilation Achievement. You must be level 90 for this achievement.",
 },[[
 step
 talk Gurgthock##63315
@@ -1706,7 +1706,7 @@ Congratulations, you have earned the Arena of Annihilation Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Scenarios\\For the Swarm",{
 achieveid={8017},
 patch='50100',
-description="\nDefeat Commander Tel'vrak without killing any Zan'thik Swarmers in the Assault on Zan'vess scenario. You must be level 90 for this achievement.",
+description="Defeat Commander Tel'vrak without killing any Zan'thik Swarmers in the Assault on Zan'vess scenario. You must be level 90 for this achievement.",
 },[[
 step
 Use the _Dungeon Finder_, and click the _Scenarios_ tab to queue for _Assault on Zan'vess_.
@@ -1721,7 +1721,7 @@ Congratulations, you have earned the Arena of Annihilation Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Glory of the Pandaria Hero",{
 achieveid={6927},
 patch='50004',
-description="\nThis guide will walk you through earning the Glory of the Pandaria Hero achievement.",
+description="This guide will walk you through earning the Glory of the Pandaria Hero achievement.",
 },[[
 step
 This achievement is gained by completing the following Pandaria dungeon achievements:
@@ -1779,7 +1779,7 @@ Congratulations, you have completed the Pandaria Dungeon Hero Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Tranquil Master",{
 achieveid={6926},
 patch='50004',
-description="\nThis guide will walk you through earning the Tranquil Master achievement.",
+description="This guide will walk you through earning the Tranquil Master achievement.",
 },[[
 step
 This achievement is earned by purging Pandaria of Sha corruption:
@@ -2179,7 +2179,7 @@ Congratulations, you have earned the Tranquil Master achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Ballad of Liu Lang",{
 achieveid={6856},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the lore objects in Pandaria that tell the tale of Liu Lang.",
+description="This guide will walk you through discovering each of the lore objects in Pandaria that tell the tale of Liu Lang.",
 },[[
 step
 label "start"
@@ -2201,7 +2201,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Between a Saurok and a Hard Place",{
 achieveid={6716},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Saurok lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Saurok lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -2223,7 +2223,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Champions of Lei Shen",{
 achieveid={8103},
 patch='50200',
-description="\nDefeat all of the Isle of Thunder rare mobs.",
+description="Defeat all of the Isle of Thunder rare mobs.",
 },[[
 step
 label "start"
@@ -2267,7 +2267,7 @@ Still more kills required. Routing to the guide start. |next "start" |only if no
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\The Dark Heart of the Mogu",{
 achieveid={6754},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Mogu lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Mogu lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -2289,7 +2289,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Extreme Treasure Hunter",{
 achieveid={8726},
 patch='50400',
-description="\nThis guide will help you find the Gleaming, Rope-Bound and Mist-Covered Treasure found in the Timeless Isle.",
+description="This guide will help you find the Gleaming, Rope-Bound and Mist-Covered Treasure found in the Timeless Isle.",
 },[[
 step
 You will see _4_ pillars before you.
@@ -2315,7 +2315,7 @@ Congratulations, you have earned the _Extreme Treasure Hunter_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Eyes on the Ground",{
 achieveid={8725},
 patch='50400',
-description="\nCheck for loot in suspicious places throughout the Timeless Isle.",
+description="Check for loot in suspicious places throughout the Timeless Isle.",
 },[[
 step
 click Giant Clam##223193 |goto Timeless Isle/0 18.8,20.4
@@ -2352,7 +2352,7 @@ Congratulations, you have obtained the _Eyes on the Ground_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Finders Keepers",{
 achieveid={7282},
 patch='50004',
-description="\nThis guide will walk you through collecting 5 lost treasures hidden throughout Pandaria.",
+description="This guide will walk you through collecting 5 lost treasures hidden throughout Pandaria.",
 },[[
 step
 click Wodin's Mantid Shaker##213363
@@ -2392,7 +2392,7 @@ Congratulations, you have earned the Finders Keepers achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Fish Tales",{
 achieveid={6846},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Jinyu lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Jinyu lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -2415,7 +2415,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(7439) end,
 achieveid={7437,7438,7439},
 patch='50004',
-description="\nTo earn this achievement, you will be required to kill all of the rare spawns in Pandaria.",
+description="To earn this achievement, you will be required to kill all of the rare spawns in Pandaria.",
 },[[
 step
 label "Start"
@@ -2842,7 +2842,7 @@ You Earned the "Glorious!" Achievement. |only if achieved(7439)
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Gods and Monsters",{
 achieveid={8051},
 patch='50200',
-description="\nThis guide will walk you through discovering each of the lore objects in Pandaria that tell of the dark origins of the mogu.",
+description="This guide will walk you through discovering each of the lore objects in Pandaria that tell of the dark origins of the mogu.",
 },[[
 step
 label "start"
@@ -2864,7 +2864,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Heart of the Mantid Swarm",{
 achieveid={6857},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Mantid lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Mantid lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -2887,7 +2887,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Hozen in the Mist",{
 achieveid={6850},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Hozen lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Hozen lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -2909,7 +2909,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\I'm In Your Base, Killing Your Dudes",{
 achieveid={7932},
 patch='50100',
-description="\nThis guide will walk you through killing all three of the opposing faction's champions in Krasarang Wilds.",
+description="This guide will walk you through killing all three of the opposing faction's champions in Krasarang Wilds.",
 },[[
 step
 label "start"
@@ -2931,7 +2931,7 @@ Still more kills required. Routing to the guide start. |next "start" |only if no
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Is Another Man's Treasure",{
 achieveid={7284},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Is Another Man's Treasure Achievement",
+description="This guide will walk you through obtaining the Is Another Man's Treasure Achievement",
 },[[
 step
 For this achievement, you will have to gather 20 of the relics hidden throughout Pandaria
@@ -3045,7 +3045,7 @@ Congratulations, you have obtained the Another Man's Treasure achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Killing Time",{
 achieveid={8712},
 patch='50400',
-description="\nThis guide will walk you through defeating all of the creatures of the Timeless Isle.",
+description="This guide will walk you through defeating all of the creatures of the Timeless Isle.",
 },[[
 step
 label "start"
@@ -3135,7 +3135,7 @@ Still more kills required. Routing to the guide start. |next "start" |only if no
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Legend of the Brewfathers",{
 achieveid={7230},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the three Brewfather Shrines in Pandaria.",
+description="This guide will walk you through discovering each of the three Brewfather Shrines in Pandaria.",
 },[[
 step
 label "start"
@@ -3154,7 +3154,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Legend of the Past",{
 achieveid={8723},
 patch='50400',
-description="\nThis guide will walk you through finding one of the lost pandaren artifacts on the Timeless Isle.",
+description="This guide will walk you through finding one of the lost pandaren artifacts on the Timeless Isle.",
 },[[
 step
 map Timeless Isle
@@ -3174,7 +3174,7 @@ Congratulations, you have earned the Legend of the Past achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Lost and Found",{
 achieveid={7281},
 patch='50004',
-description="\nThis guide will walk you through obtaining The Lost And Found Achievement",
+description="This guide will walk you through obtaining The Lost And Found Achievement",
 },[[
 step
 click Wodin's Mantid Shaker##213363
@@ -3187,7 +3187,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6974) end,
 achieveid={6974},
 patch='50004',
-description="\nEarn the following Pandaria exploration achievements:\n\nExplore Dread Wastes\nExplore Krasarang Wilds\n"..
+description="Earn the following Pandaria exploration achievements:\n\nExplore Dread Wastes\nExplore Krasarang Wilds\n"..
 "Explore Jade Forest\nExplore Kun-Lai Summit\nExplore Townlong Steppes\nExplore Vale of Eternal Blossoms\n"..
 "Explore Valley of the Four Winds",
 },[[
@@ -3206,7 +3206,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6978) end,
 achieveid={6978},
 patch='50004',
-description="\nExplore Dread Wastes, revealing the following covered areas of the world map:\n\n Kypari Vor\n"..
+description="Explore Dread Wastes, revealing the following covered areas of the world map:\n\n Kypari Vor\n"..
 "Rikkitun Village\nHeart of Fear\nThe Clutches of Shek'zeer\nTerrace of Gurthan\nZan'vess\n"..
 "Writhingwood\nKlaxxi'vess\nKypari Zar\nThe Sunset Brewgarden\nSoggy's Gamble\nThe Briny Muck",
 },[[
@@ -3244,7 +3244,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6351) end,
 achieveid={6351},
 patch='50004',
-description="\nExplore Jade Forest, revealing the following covered areas of the world map:\n\n Tian Monastery\n"..
+description="Explore Jade Forest, revealing the following covered areas of the world map:\n\n Tian Monastery\n"..
 "Dreamer's Pavillion\nPearl Lake\nGreenstone Quarry\nTemple of the Jade Serpent\nCamp Nooka Nooka\n"..
 "Serpent's Heart\nGarrosh'ar Point\nHoneydew Village\nDawn's Blossom\nTerrace of Ten Thunders\n"..
 "Emperor's Omen\nNectarbreeze Orchard\nGrookin Hill\nSlingtail Pits\nThe Arboretum\nWindward Isle",
@@ -3293,7 +3293,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6975) end,
 achieveid={6975},
 patch='50004',
-description="\nExplore Krasarang Wilds, revealing the following covered areas of the world map:\n\n Anglers Wharf\n"..
+description="Explore Krasarang Wilds, revealing the following covered areas of the world map:\n\n Anglers Wharf\n"..
 "Dojani River\nKrasarang Cove\nNayeli Lagoon\nRuins of Dojan\nTemple of the Red Crane\nUnga Ingoo\n"..
 "The Forbidden Jungle\nCradle of Chi-Ji\nFallsong Village\nThe Krasari Ruins\nCrane Wing Refuge\n"..
 "Ruins of Korja\nThe Deepwild\nThe Southern Isles\nZhu's Watch",
@@ -3340,7 +3340,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6976) end,
 achieveid={6976},
 patch='50004',
-description="\nExplore , revealing the following covered areas of the world map:\n\n Binan Village\n"..
+description="Explore , revealing the following covered areas of the world map:\n\n Binan Village\n"..
 "Gate of the August Celestials\nKota Peak\nMount Neverest\nPeak of Serenity\nTemple of "..
 "the White Tiger\nValley of Emperors\nFirebough Nook\nIsle of Reckoning\nMogujia\nMuskpaw Ranch\n"..
 "Shado-Pan Monastery\nThe Burlap Trail\nZouchin Village",
@@ -3383,7 +3383,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6977) end,
 achieveid={6977},
 patch='50004',
-description="\nExplore Townlong Steppes, revealing the following covered areas of the world map:\n\n Gao-Ran Battlefront\n"..
+description="Explore Townlong Steppes, revealing the following covered areas of the world map:\n\n Gao-Ran Battlefront\n"..
 "Rensai's Watchpost\nFire Camp Osul\nShado-Pan Garrison\nSik'vess\nThe Sumprushes\nKri'vess\nNiuzao Temple\n"..
 "Hatred's Vice\nShan'ze Dao\nSra'vess",
 },[[
@@ -3419,7 +3419,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6979) end,
 achieveid={6979},
 patch='50004',
-description="\nExplore Vale of Eternal Blossoms, revealing the following covered areas of the world map:\n\n Ruins of Guo-Lai\n"..
+description="Explore Vale of Eternal Blossoms, revealing the following covered areas of the world map:\n\n Ruins of Guo-Lai\n"..
 "Mogu'shan Palace\nThe Golden Stair\nThe Golden Pagoda\nShrine of Two Moons\nThe Five Sisters\nMistfall Village\n"..
 "Setting Sun Garrison\nShrine of Seven Stars\nTu Shen Burial Ground\nWhitepetal Lake",
 },[[
@@ -3455,7 +3455,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(6969) end,
 achieveid={6969},
 patch='50004',
-description="\nExplore Valley of the Four Winds, revealing the following covered areas of the world map:\n\n Nesingwary Safari\n"..
+description="Explore Valley of the Four Winds, revealing the following covered areas of the world map:\n\n Nesingwary Safari\n"..
 "Winds' Edge\nGilded Fan\nHalfhill\nKunzen Village\nPools of Purity\nSilken Fields\nStormstout Brewery\n"..
 "Thunderfoot Ranch\nDustback Gorge\nThe Imperial Granary\nStoneplow\nMudmug's Place\nPaoquan Hollow\nThe Heartland\n"..
 "Rumbling Terrace\nSinging Marshes\nZhu's Descent",
@@ -3505,7 +3505,7 @@ You Earned the "Explore Valley of the Four Winds" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Pilgrimage",{
 achieveid={8724},
 patch='50400',
-description="\nThis guide will instruct you on where to find Time-Lost Shrines in the Timeless Isle.",
+description="This guide will instruct you on where to find Time-Lost Shrines in the Timeless Isle.",
 },[[
 step
 For this achievement, you will need to obtain 4 buffs from Time-Lost Shrines, found all over the Timeless Isle.
@@ -3531,7 +3531,7 @@ Congratulations, you have earned the _Pilgrimage_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Restore Balance",{
 achieveid={7381},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Restore Balance Achievement",
+description="This guide will walk you through obtaining the Restore Balance Achievement",
 },[[
 step
 Take the path and go up the stairs here |goto The Jade Forest 31.6,33.8 < 30
@@ -3544,7 +3544,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Panda
 condition_end=function() return achieved(7997) end,
 achieveid={7996,7995,7994,7997},
 patch='50100',
-description="\nFind all of the Treasures of Pandaria",
+description="Find all of the Treasures of Pandaria",
 },[[
 step
 label "start"
@@ -3651,7 +3651,7 @@ Still more treasure required. Routing to the guide start. |next "start" |only if
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Rolo's Riddle",{
 achieveid={8730},
 patch='50400',
-description="\nThis guide will instruct you on how to solve Rolo's Riddle in the Timeless Isle.",
+description="This guide will instruct you on how to solve Rolo's Riddle in the Timeless Isle.",
 },[[
 step
 click Glinting Sand##222684
@@ -3684,7 +3684,7 @@ Congratulations, you have earned the _Rolo's Riddle_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Rumbles of Thunder",{
 achieveid={8050},
 patch='50200',
-description="\nThis guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of Lei-Shen, the Thunder King.",
+description="This guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of Lei-Shen, the Thunder King.",
 },[[
 step
 label "start"
@@ -3706,7 +3706,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\The Seven Burdens of Shaohao",{
 achieveid={6855},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the lore objects that tell the tale of Shaohao, Last Emperor of Pandaria.",
+description="This guide will walk you through discovering each of the lore objects that tell the tale of Shaohao, Last Emperor of Pandaria.",
 },[[
 step
 label "start"
@@ -3742,7 +3742,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\The Song of the Yaungol",{
 achieveid={6847},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Yaungol lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Yaungol lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -3764,7 +3764,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Timeless Champion",{
 achieveid={8714},
 patch='50400',
-description="\nDefeat all of the rare creatures of the Timeless Isle listed below.",
+description="Defeat all of the rare creatures of the Timeless Isle listed below.",
 },[[
 step
 This achievement requires you to kill every _rare spawn_ on the Timeless Isle.
@@ -3908,7 +3908,7 @@ Congratulations, you have obtained the _Timeless Champion_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Timeless Legends",{
 achieveid={8784},
 patch='50400',
-description="\nThis guide will walk you through finding the four lost pandaren artifacts on the Timeless Isle.",
+description="This guide will walk you through finding the four lost pandaren artifacts on the Timeless Isle.",
 },[[
 step
 map Timeless Isle
@@ -3930,7 +3930,7 @@ Congratulations, you have earned the Timeless Legend achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Timeless Nutriment",{
 achieveid={8722},
 patch='50400',
-description="\nConsume all of the sources of Timeless Nutriment on the Timeless Isle.",
+description="Consume all of the sources of Timeless Nutriment on the Timeless Isle.",
 },[[
 step
 click Sand-Covered Egg##221690
@@ -3960,7 +3960,7 @@ Congratulations, you have obtained the _Timeless Nutriment_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Treasure, Treasure Everywhere",{
 achieveid={8729},
 patch='50400',
-description="\nThis guide will instruct you on how to gather Treasures located in the Timeless Isle.",
+description="This guide will instruct you on how to gather Treasures located in the Timeless Isle.",
 },[[
 step
 Follow the provided path for Moss-Covered Chests.
@@ -4009,7 +4009,7 @@ Congratulations, you have earned the _Treasure, Treasure Everywhere_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Wanderers, Dreamers, and You",{
 achieveid={7518},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Wanderers, Dreamers, and You Achievement",
+description="This guide will walk you through obtaining the Wanderers, Dreamers, and You Achievement",
 },[[
 step
 This achievement requires that you are online on a Sunday during the Wanderer's Festival Event
@@ -4023,7 +4023,7 @@ Congratulations, you have obtained the Wanderers, Dreamers, and You achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\What is Worth Fighting For",{
 achieveid={6858},
 patch='50004',
-description="\nThis guide will walk you through discovering each of the Monk lore objects in Pandaria.",
+description="This guide will walk you through discovering each of the Monk lore objects in Pandaria.",
 },[[
 step
 label "start"
@@ -4048,7 +4048,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Where There's Pirates, There's Booty",{
 achieveid={8727},
 patch='50400',
-description="\nThis guide will instruct you on how to gather Treasures located in the Timeless Isle.",
+description="This guide will instruct you on how to gather Treasures located in the Timeless Isle.",
 },[[
 step
 This will be at the bottom of the sunken ship at the provided coordinates.
@@ -4074,7 +4074,7 @@ Congratulations, you have earned the _Where There's Pirates, There's Booty_ achi
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\The Zandalari Prophecy",{
 achieveid={8049},
 patch='50200',
-description="\nThis guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of the Zandalari and their dark prophecy.",
+description="This guide will walk you through discovering each of the lore objects on the Isle of Thunder that tell of the Zandalari and their dark prophecy.",
 },[[
 step
 label "start"
@@ -4096,7 +4096,7 @@ Still more exploration required. Routing to the guide start. |next "start" |only
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Zarhym Altogether",{
 achieveid={8743},
 patch='50400',
-description="\nHelp Zarhym find his body in the Cavern of Lost Spirits on Timeless Isle.",
+description="Help Zarhym find his body in the Cavern of Lost Spirits on Timeless Isle.",
 },[[
 step
 talk Zarhym##71876 |goto Timeless Isle/22 53.5,57.2
@@ -4113,7 +4113,7 @@ Congratulations, you have earned the _Zarhym Altogether_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Mists of Pandaria\\Zul'Again",{
 achieveid={8078},
 patch='50200',
-description="\nThis guide will walk you through killing 10 Zandalari Warscouts and 5 Zandalari Warbringers.",
+description="This guide will walk you through killing 10 Zandalari Warscouts and 5 Zandalari Warbringers.",
 },[[
 stickystart "tracker"
 step
@@ -4194,7 +4194,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Feats of Strength\\Mounts\\
 author="support@zygorguides.com",
 achieveid={8092},
 patch='50200',
-description="\nKnock a Zandalari Beastcaller from his flying mount",
+description="Knock a Zandalari Beastcaller from his flying mount",
 },[[
 step
 For this achievement, you will likely need to have at least 2 people who have _Heroic Level Dungeon Gear_.
@@ -4218,7 +4218,7 @@ Congratulations, you have obtained the _I've Got 9999 Problems but a Bone-White 
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Double Agent",{
 achieveid={7380},
 patch='50004',
-description="\nReach maximum level on both an Alliance and a Horde character.",
+description="Reach maximum level on both an Alliance and a Horde character.",
 },[[
 step
 To earn this achievement you will need to level both an Alliance and a Horde character to level max level
@@ -4229,7 +4229,7 @@ Congratulations, you have earned the Double Agent achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Dynamic Duo",{
 achieveid={7382},
 patch='50004',
-description="\nReach maximum level on two characters.",
+description="Reach maximum level on two characters.",
 },[[
 step
 To earn this achievement you will need to level 2 characters to max level
@@ -4242,7 +4242,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Got My Mind On My 
 condition_end=function() return achieved(5456) end,
 achieveid={5455,1181,1180,1178,1177,1176,5456,5456},
 patch='40003',
-description="\nLoot 200,000 gold.",
+description="Loot 200,000 gold.",
 },[[
 step
 This achievement will require a lot of time, so you may want to come back to this achievement several times.
@@ -4264,7 +4264,7 @@ Congratulations, you have achieved the _Got Mind On My Money_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Mystically Epic",{
 achieveid={6349},
 patch='50004',
-description="\nEquip items in each slot that have at least an item level of 476",
+description="Equip items in each slot that have at least an item level of 476",
 },[[
 step
 For this achievement you will need to simply equip an Epic (purple) item of at least item level 476 in all your Armor and Weapon slots
@@ -4295,7 +4295,7 @@ You still have gear to equip please refer back to the list. |only if not achieve
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Mystically Superior",{
 achieveid={6348},
 patch='50004',
-description="\nEquip a superior item in every slot with a minimum item level of 450.",
+description="Equip a superior item in every slot with a minimum item level of 450.",
 },[[
 step
 For this achievement you will need to simply equip a Superior (blue) item of at least item level 450 in all your Armor and Weapon slots
@@ -4326,7 +4326,7 @@ You still have gear to equip please refer back to the list. |only if not achieve
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Pandaren Cuisine",{
 achieveid={7329},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Pandaren Cuisine achievement.",
+description="This guide will walk you through obtaining the Pandaren Cuisine achievement.",
 },[[
 step
 In order to get this achievement, it is suggested that you have a _Cooking_ skill of at least 525, and a Fishing skill of at least 500.
@@ -4469,7 +4469,7 @@ Eat the _Green Curry Fish_ you just created. |use Green Curry Fish##81410 |achie
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Pandaren Delicacies",{
 achieveid={7330},
 patch='50004',
-description="\nSample 24 foods exclusive to Pandaria.",
+description="Sample 24 foods exclusive to Pandaria.",
 },[[
 step
 For this achievement, you will have to 24 brand new foods introduced with the Mists of Pandaria.
@@ -4794,7 +4794,7 @@ Congratulations, you have earned the Pandaren Delicacies Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Quintessential Quintet",{
 achieveid={7384},
 patch='50004',
-description="\nReach maximum level on five characters.",
+description="Reach maximum level on five characters.",
 },[[
 step
 To earn this achievement you will need to level 5 characters to level max level
@@ -4806,7 +4806,7 @@ Congratulations, you have earned the Quintessential Quintet achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\Terrific Trio",{
 achieveid={7383},
 patch='50004',
-description="\nReach maximum level on three characters.",
+description="Reach maximum level on three characters.",
 },[[
 step
 To earn this achievement you will need to level 3 characters to level max level
@@ -4818,7 +4818,7 @@ Congratulations, you have earned the Terrific Trio achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\General\\To All the Squirrels I Once Caressed?",{
 achieveid={6350},
 patch='50004',
-description="\nThis guide will walk you through /loving all the critters in Pandaria.",
+description="This guide will walk you through /loving all the critters in Pandaria.",
 },[[
 step
 label "start"
@@ -4917,7 +4917,7 @@ Still more love required. Routing to the guide start. |next "start" |only if not
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\A Rare Catch",{
 achieveid={7462},
 patch='50004',
-description="\nCapture a Rare Quality Battle Pet",
+description="Capture a Rare Quality Battle Pet",
 },[[
 step
 The _Adders_ in this area are level 1. Challenge one to a pet battle and capture it.
@@ -4929,7 +4929,7 @@ Congratulations, you have earned the _A Rare Catch_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\An Uncommon Find",{
 achieveid={7465},
 patch='50004',
-description="\nCapture an Uncommon Quality Battle Pet",
+description="Capture an Uncommon Quality Battle Pet",
 },[[
 step
 The _Adders_ in this area are level 1. Challenge one to a pet battle and capture it.
@@ -4941,7 +4941,7 @@ Congratulations, you have earned the _An Uncommon Find_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Building a Team",{
 achieveid={6555},
 patch='50004',
-description="\nCapture 25 battle pets.",
+description="Capture 25 battle pets.",
 },[[
 step
 For this achievement, you will need to _capture 25 pets in Pet Battles_.
@@ -4953,7 +4953,7 @@ Congratulations, you have earned the _Building a Team_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Celestial Family",{
 achieveid={8519},
 patch='50400',
-description="\nComplete the Celestial Tournament Scenario",
+description="Complete the Celestial Tournament Scenario",
 },[[
 step
 label "start"
@@ -5110,7 +5110,7 @@ Congratulations, you have obtained the _Celestial Family_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Crazy for Cats",{
 achieveid={8397},
 patch='50400',
-description="\nObtain 20 of the cats listed below.",
+description="Obtain 20 of the cats listed below.",
 },[[
 step
 This guide will help you obtain 20 different cat pets for the achievement and title.
@@ -5547,7 +5547,7 @@ Congratulations, you have obtained the _Crazy for Cats_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Going to Need More Traps",{
 achieveid={6556},
 patch='50004',
-description="\nCapture 50 battle pets.",
+description="Capture 50 battle pets.",
 },[[
 step
 For this achievement, you will need to _capture 50 pets in Pet Battles_.
@@ -5559,7 +5559,7 @@ Congratulations, you have earned the _Going to Need More Traps_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\He's Mine!",{
 achieveid={6554},
 patch='50004',
-description="\nCapture 10 battle pets.",
+description="Capture 10 battle pets.",
 },[[
 step
 For this achievement, you will need to _capture 10 pets in Pet Battles_.
@@ -5571,7 +5571,7 @@ Congratulations, you have earned the _He's Mine!_ Achievement! |achieve 6554
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Master Pet Hunter",{
 achieveid={6557},
 patch='50004',
-description="\nCapture 100 battle pets.",
+description="Capture 100 battle pets.",
 },[[
 step
 For this achievement, you will need to _capture 100 pets in Pet Battles_.
@@ -5583,7 +5583,7 @@ Congratulations, you have earned the _Master Pet Hunter_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Pandaria Safari",{
 achieveid={6589},
 patch='50004',
-description="\nCatch every battle pet in Pandaria.",
+description="Catch every battle pet in Pandaria.",
 },[[
 step
 Capturing pets in Pandaria will require level 25 pets so train up!
@@ -5760,7 +5760,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Raidi
 author="support@zygorguides.com",
 achieveid={7934},
 patch='50100',
-description="\nThis guide will walk you through several old world raids in order to attain 12 rare pets and an achievement.",
+description="This guide will walk you through several old world raids in order to attain 12 rare pets and an achievement.",
 },[[
 step
 label "Leashes 1"
@@ -6199,7 +6199,7 @@ Congratulations, you have obtained the _Raiding with Leashes_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Raiding with Leashes II: Attunement Edition",{
 achieveid={8293},
 patch='50300',
-description="\nThis guide will walk you through several old world raids in order to attain 10 rare pets and an achievement.",
+description="This guide will walk you through several old world raids in order to attain 10 rare pets and an achievement.",
 },[[
 step
 label "Leashes 2"
@@ -6578,7 +6578,7 @@ Congratulations, you have earned the _Raiding with Leashes II: Attunement Editio
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Raiding with Leashes III: Drinkin' From the Sunwell",{
 achieveid={9824},
 patch='60100',
-description="\nThis guide will walk you through several old world raids in order to attain 12 rare pets and an achievement.",
+description="This guide will walk you through several old world raids in order to attain 12 rare pets and an achievement.",
 },[[
 step
 label "Leashes 3"
@@ -7178,7 +7178,7 @@ You have earned the _Raiding with Leashes III: Drinkin' From the Sunwell_ achiev
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Raiding with Leashes IV: Wrath of the Lich King",{
 achieveid={11320},
 patch='70200',
-description="\nThis guide will walk you through several old world raids in order to attain 16 rare pets and an achievement.",
+description="This guide will walk you through several old world raids in order to attain 16 rare pets and an achievement.",
 },[[
 step
 label "Leashes 4"
@@ -8127,7 +8127,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\That 
 author="support@zygorguides.com",
 achieveid={6571},
 patch='50004',
-description="\nCapture a battle pet below 5% health.",
+description="Capture a battle pet below 5% health.",
 },[[
 step
 For this Achievement, you will need to _Capture a Battle Pet below 5% Health_.
@@ -8143,7 +8143,7 @@ Congratulations, you have earned the _That was Close!_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\World Safari",{
 achieveid={6590},
 patch='50004',
-description="\nComplete the Safari achievements listed below.",
+description="Complete the Safari achievements listed below.",
 },[[
 step
 Complete the Eastern Kingdoms Safari achievement
@@ -8172,7 +8172,7 @@ You have earned the _World Safari_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Zen Pet Hunter",{
 achieveid={7436},
 patch='50004',
-description="\nCapture 200 battle pets.",
+description="Capture 200 battle pets.",
 },[[
 step
 For this achievement, you will need to _capture 200 pets in Pet Battles_.
@@ -8184,7 +8184,7 @@ Congratulations, you have earned the _Zen Pet Hunter_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Big City Pet Brawler",{
 achieveid={6622},
 patch='50004',
-description="\nWin a pet battle in every Alliance and Horde capital city.",
+description="Win a pet battle in every Alliance and Horde capital city.",
 },[[
 step
 In order to earn this achievement, you will need to complete the following tasks:
@@ -8197,7 +8197,7 @@ leechsteps "Achievement Guides\\Pet Battles\\Battle\\Big City Pet Brawlin' - Hor
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Big City Pet Brawlin' - Alliance",{
 achieveid={6584},
 patch='50004',
-description="\nWin a pet battle in every Alliance capital city.",
+description="Win a pet battle in every Alliance capital city.",
 },[[
 step
 For this achievement, you will have to win a battle in each of the Alliance capitals.
@@ -8226,7 +8226,7 @@ Congratulations, you have earned the Big City Pet Brawlin' - Alliance Achievemen
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Big City Pet Brawlin' - Horde",{
 achieveid={6621},
 patch='50004',
-description="\nWin a pet battle in every Horde capital city.",
+description="Win a pet battle in every Horde capital city.",
 },[[
 step
 For this achievement, you will have to face either a player or a random critter in the Capitals of the Horde.
@@ -8249,7 +8249,7 @@ Congratulations, you have earned the Big City Pet Brawlin' - Horde Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Cat Fight!",{
 achieveid={6594},
 patch='50004',
-description="\nWin 10 pet battles.",
+description="Win 10 pet battles.",
 },[[
 step
 This achievement simply requires that you _win 10 pet battles_.
@@ -8261,7 +8261,7 @@ Congratulations, you have earned the Cat Fight! Achievement! |achieve 6594
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\The Celestial Tournament",{
 achieveid={8410},
 patch='50400',
-description="\nComplete the Celestial Tournament Scenario",
+description="Complete the Celestial Tournament Scenario",
 },[[
 step
 label "start"
@@ -8378,7 +8378,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Deadly
 condition_end=function() return achieved(8301) end,
 achieveid={8297,8298,8300,8301,8301},
 patch='50300',
-description="\nThis guide will walk you through earning the Trainer title.",
+description="This guide will walk you through earning the Trainer title.",
 },[[
 step
 This guide consists of 4 achievements in total, all of which are related to using the _Find Battle_ feature using only level 25 pets.
@@ -8409,7 +8409,7 @@ Congatulations, you have earned the _Merciless, Vengeful, Brutal and Deadly Pet 
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Experienced Pet Battler",{
 achieveid={6593},
 patch='50004',
-description="\nWin 50 pet battles.",
+description="Win 50 pet battles.",
 },[[
 step
 This achievement will require that you _win 50 pet battles_.
@@ -8421,7 +8421,7 @@ Congratulations, you have earned the Experienced Pet Battler Achievement! |achie
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Experienced Pet Brawler",{
 achieveid={6596},
 patch='50004',
-description="\nWin 50 PvP pet battles.",
+description="Win 50 PvP pet battles.",
 },[[
 step
 For this achievement, you will need to win 50 battles against _Another Player_.
@@ -8434,7 +8434,7 @@ Congratulations, you have earned the Experienced Pet Brawler Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Grand Master Pet Battler",{
 achieveid={6591},
 patch='50004',
-description="\nWin 1000 pet battles.",
+description="Win 1000 pet battles.",
 },[[
 step
 This achievement simply requires that you _win 1000 pet battles_.
@@ -8446,7 +8446,7 @@ Congratulations, you have earned the Grand Master Pet Battler Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Grand Master Pet Brawler",{
 achieveid={6598},
 patch='50004',
-description="\nWin 1000 PvP pet battles.",
+description="Win 1000 PvP pet battles.",
 },[[
 step
 For this achievement, you will need to win 1000 battles against _Another Player_.
@@ -8459,7 +8459,7 @@ Congratulations, you have earned the Grand Master Pet Brawler Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legendary Pet Battler",{
 achieveid={6592},
 patch='50004',
-description="\nWin 5000 pet battles.",
+description="Win 5000 pet battles.",
 },[[
 step
 This achievement simply requires that you _win 5000 pet battles_.
@@ -8471,7 +8471,7 @@ Congratulations, you have earned the Legendary Pet Battler Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Legendary Pet Brawler",{
 achieveid={6599},
 patch='50004',
-description="\nWin 5000 PvP pet battles.",
+description="Win 5000 PvP pet battles.",
 },[[
 step
 For this achievement, you will need to win 5000 battles against _Another Player_.
@@ -8520,7 +8520,7 @@ Earn the _Local Pet Mauler_ achievement |achieve 6558
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Master of the Masters",{
 achieveid={8518},
 patch='50400',
-description="\nComplete the Celestial Tournament Scenario",
+description="Complete the Celestial Tournament Scenario",
 },[[
 step
 label "start"
@@ -8638,7 +8638,7 @@ Congratulations, you have obtained _The Celestial Tournament_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Master Pet Battler",{
 achieveid={6462},
 patch='50004',
-description="\nWin 250 pet battles.",
+description="Win 250 pet battles.",
 },[[
 step
 This achievement simply requires that you _win 250 pet battles_.
@@ -8650,7 +8650,7 @@ Congratulations, you have earned the Master Pet Battler Achievement! |achieve 64
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Master Pet Brawler",{
 achieveid={6597},
 patch='50004',
-description="\nWin 250 PvP pet battles.",
+description="Win 250 PvP pet battles.",
 },[[
 step
 For this achievement, you will need to win 250 battles against _Another Player_.
@@ -8663,7 +8663,7 @@ Congratulations, you have earned the Master Pet Brawler Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\No Time To Heal",{
 achieveid={6620},
 patch='50004',
-description="\nWin 5 consecutive PvP battles without any pets dying.",
+description="Win 5 consecutive PvP battles without any pets dying.",
 },[[
 step
 This achievement requires that you face players in the new _Pet Battle System_.
@@ -8677,7 +8677,7 @@ Congratulations, you have earned the No Time to Heal Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Pet Brawler",{
 achieveid={6595},
 patch='50004',
-description="\nWin 10 PvP pet battles.",
+description="Win 10 PvP pet battles.",
 },[[
 step
 For this achievement, you will need to win 10 battles against _Another Player_.
@@ -8691,7 +8691,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Take '
 author="support@zygorguides.com",
 achieveid={6851},
 patch='50004',
-description="\nbattle",
+description="battle",
 },[[
 step
 In order to earn this achievement, you will have to fight one of each type of battle pet
@@ -8722,7 +8722,7 @@ Congratulations, you have earned the Take 'Em All On! achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle\\Win Streak",{
 achieveid={6619},
 patch='50004',
-description="\nWin 25 consecutive pet battles.",
+description="Win 25 consecutive pet battles.",
 },[[
 step
 Win 25 pet battles in a row.
@@ -8736,7 +8736,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\All Gro
 author="support@zygorguides.com",
 achieveid={7433},
 patch='50004',
-description="\nRaise a pet to level 25.",
+description="Raise a pet to level 25.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 25_.
@@ -8749,7 +8749,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\Growing
 author="support@zygorguides.com",
 achieveid={7433},
 patch='50004',
-description="\nRaise a pet to level 10.",
+description="Raise a pet to level 10.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 10_.
@@ -8762,7 +8762,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\Just a 
 author="support@zygorguides.com",
 achieveid={6566},
 patch='50004',
-description="\nRaise a pet to level 5.",
+description="Raise a pet to level 5.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 5_.
@@ -8775,7 +8775,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\Newbie"
 author="support@zygorguides.com",
 achieveid={7433},
 patch='50004',
-description="\nRaise a pet to level 3.",
+description="Raise a pet to level 3.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 3_.
@@ -8788,7 +8788,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\Old Tim
 author="support@zygorguides.com",
 achieveid={7433},
 patch='50004',
-description="\nRaise a pet to level 20.",
+description="Raise a pet to level 20.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 20_.
@@ -8801,7 +8801,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Level\\Time fo
 author="support@zygorguides.com",
 achieveid={7433},
 patch='50004',
-description="\nRaise a pet to level 15.",
+description="Raise a pet to level 15.",
 },[[
 step
 For this Achievement, you will need to _Raise a Battle Pet to Level 15_.
@@ -8813,7 +8813,7 @@ Congratulations, you have earned the _Time for a Leash_ Achievement! |achieve 65
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Battle Master",{
 achieveid={7483},
 patch='50004',
-description="\nEarn 200 pet battle achievement points.",
+description="Earn 200 pet battle achievement points.",
 },[[
 step
 For this achievement, you will need to _earn 200 Pet Battle Achievement Points_.
@@ -8826,7 +8826,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Fabled Pandare
 author="support@zygorguides.com",
 achieveid={8080},
 patch='50200',
-description="\nComplete the Beasts of Fable questline",
+description="Complete the Beasts of Fable questline",
 },[[
 step
 In order to attain this pet, you will need to complete the Battle Pet Questline and defeat the 10 Fabled beasts.
@@ -8846,7 +8846,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\I Choose You",
 author="support@zygorguides.com",
 achieveid={7908},
 patch='50100',
-description="\nDefeat Grand Master Aki",
+description="Defeat Grand Master Aki",
 },[[
 step
 In order to attain this pet, you will need to complete the Battle Pet Questline.
@@ -8859,7 +8859,7 @@ Congratulations, you have obtained the _I Choose You_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\The Longest Day",{
 achieveid={8348},
 patch='50300',
-description="\nThis achievement requires that you complete all of the pet battle daily quests in a single day. This achievement requires that you complete the Battle Pet Questline before attempting this achievement.",
+description="This achievement requires that you complete all of the pet battle daily quests in a single day. This achievement requires that you complete the Battle Pet Questline before attempting this achievement.",
 },[[
 step
 In order to complete this achievement, you must have level 25 pets, and you must have already completed the Battle Pet Questline.
@@ -9383,7 +9383,7 @@ Congratulations, you have obtained _The Longest Day_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Time to Open a Pet Store",{
 achieveid={7521},
 patch='50004',
-description="\nEarn 400 pet battle achievement points.",
+description="Earn 400 pet battle achievement points.",
 },[[
 step
 For this achievement, you will need to _earn 400 Pet Battle Achievement Points_.
@@ -9395,7 +9395,7 @@ Congratulations, you have earned the _Time to Open a Pet Store_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Trainer Extraordinaire",{
 achieveid={7482},
 patch='50004',
-description="\nEarn 100 pet battle achievement points.",
+description="Earn 100 pet battle achievement points.",
 },[[
 step
 For this achievement, you will need to _earn 100 Pet Battle Achievement Points_.
@@ -9421,7 +9421,7 @@ Congratulations, you have earned the _Trainer Extraordinaire_ Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Ultimate Trainer",{
 achieveid={6600},
 patch='50004',
-description="\nEarn 300 pet battle achievement points.",
+description="Earn 300 pet battle achievement points.",
 },[[
 step
 For this achievement, you will need to _earn 300 Pet Battle Achievement Points_.
@@ -9434,7 +9434,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\Going
 author="support@zygorguides.com",
 achieveid={7500},
 patch='50004',
-description="\nObtain a companion pet.",
+description="Obtain a companion pet.",
 },[[
 step
 The _Adders_ in this area are level 1. Challenge one to a pet battle and capture it.
@@ -9470,7 +9470,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Pet Battles\\Collect\\That'
 author="support@zygorguides.com",
 achieveid={7501},
 patch='50004',
-description="\nObtain a companion pet.",
+description="Obtain a companion pet.",
 },[[
 step
 The _Adders_ in this area are level 1. Challenge one to a pet battle and capture it.
@@ -9505,7 +9505,7 @@ That's a Lot of Pet Food Achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\The Timeless Isle\\Emissary of Ordos",{
 achieveid={8716},
 patch='50400',
-description="\nUse the Censer of Eternal Agony obtained from Speaker Gulan on the Timeless Isle.",
+description="Use the Censer of Eternal Agony obtained from Speaker Gulan on the Timeless Isle.",
 },[[
 step
 label "start"
@@ -9527,7 +9527,7 @@ Congratulations, you have obtained the _Emissary of Ordos_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Player vs. Player\\The Timeless Isle\\Kilnmaster",{
 achieveid={8720},
 patch='50400',
-description="\nThis guide will instruct you on how to get the Kilnmaster Achievement, which takes place in the Timeless Isle.",
+description="This guide will instruct you on how to get the Kilnmaster Achievement, which takes place in the Timeless Isle.",
 },[[
 step
 Be warned that this mount may require that you do some PVP combat.
@@ -9555,7 +9555,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\Ironp
 condition_end=function() return achieved(7328) end,
 achieveid={1795,1796,1797,1798,1799,5471,7328},
 patch='50004',
-description="\nThis guide will show you how to learn 240 cooking recipes.",
+description="This guide will show you how to learn 240 cooking recipes.",
 },[[
 step
 There are 47 Recipes here to help complete your Ironpaw Chef Achievement.
@@ -9643,7 +9643,7 @@ achieveid={7305},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Brew"},
-description="\nThis guide will walk you through completing the \"Master of the Brew\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Brew\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Brew cooking on a single character
@@ -9658,7 +9658,7 @@ achieveid={7300},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Grill"},
-description="\nThis guide will walk you through completing the \"Master of the Grill\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Grill\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Grill cooking on a single character
@@ -9673,7 +9673,7 @@ achieveid={7304},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Oven"},
-description="\nThis guide will walk you through completing the \"Master of the Oven\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Oven\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Oven cooking on a single character
@@ -9686,7 +9686,7 @@ You have earned the _Master of the Oven_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\Master of Pandaren Cooking",{
 achieveid={7306},
 patch='50004',
-description="\nThis guide will walk you through becoming the Master of Pandaren Cooking.",
+description="This guide will walk you through becoming the Master of Pandaren Cooking.",
 },[[
 step
 In order to earn this achievement, you will have to level your cooking skill.
@@ -9717,7 +9717,7 @@ achieveid={7302},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Pot"},
-description="\nThis guide will walk you through completing the \"Master of the Pot\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Pot\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Pot cooking on a single character
@@ -9732,7 +9732,7 @@ achieveid={7303},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Steamer"},
-description="\nThis guide will walk you through completing the \"Master of the Steamer\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Steamer\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Steamer cooking on a single character
@@ -9747,7 +9747,7 @@ achieveid={7301},
 patch='50004',
 author="support@zygorguides.com",
 keywords={"Cooking","Master","of","the","Wok"},
-description="\nThis guide will walk you through completing the \"Master of the Wok\" Achievement.",
+description="This guide will walk you through completing the \"Master of the Wok\" Achievement.",
 },[[
 step
 For this achievement, you will need to reach level 600 Way of the Wok cooking on a single character
@@ -9760,7 +9760,7 @@ You have earned the _Master of the Wok_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\Now I Am the Master",{
 achieveid={7325},
 patch='50004',
-description="\nThis guide will walk you through the achievement Now I Am the Master.",
+description="This guide will walk you through the achievement Now I Am the Master.",
 },[[
 step
 For this achievement, you will need to complete the Master of Pandaren Cooking achievement.
@@ -9810,7 +9810,7 @@ Congratulations, you have achieved the _Now I Am the Master_ achievement! |only 
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Cooking\\The Pandaren Gourmet",{
 achieveid={7326},
 patch='50004',
-description="\nThis guide will walk you through the Pandaren Gourmet achievement. This guide consists of 2 achievements.",
+description="This guide will walk you through the Pandaren Gourmet achievement. This guide consists of 2 achievements.",
 },[[
 step
 For this achievement, you will have to create 30 brand new foods introduced with the Mists of Pandaria. It is recommended that you are already level 600 in cooking.
@@ -10061,7 +10061,7 @@ Congratulations, you have achieved the _Pandaren Gourmet_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Professions\\Fishing\\The Pandarian Angler",{
 achieveid={7611},
 patch='50004',
-description="\nThis guide will walk you through The Pandarian Angler",
+description="This guide will walk you through The Pandarian Angler",
 },[[
 step
 Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
@@ -10122,7 +10122,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={7318},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"A Taste of History\" achievement.",
+description="This guide will walk you through completing the \"A Taste of History\" achievement.",
 },[[
 step
 label "start"
@@ -10170,7 +10170,7 @@ You have earned the _Rally the Valley_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\A Taste of Things to Come",{
 achieveid={7294},
 patch='50004',
-description="\nSuccessfully harvest your first special crop",
+description="Successfully harvest your first special crop",
 },[[
 step
 In order to earn this achievement, you will need to be revered with the Tillers faction.
@@ -10215,7 +10215,7 @@ Congratulations, you have earned the _A Taste of Things to Come_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Ain't Lost No More",{
 achieveid={7296},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Ain't Lost No More Achievement.",
+description="This guide will walk you through obtaining the Ain't Lost No More Achievement.",
 },[[
 step
 For this achievement you must be _Exalted_ with _The Tillers_, and _Best Friends_ with all of the _Tillers NPCs_.
@@ -10284,7 +10284,7 @@ Congratulations, you have earned the Ain't Lost No More achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Amber is the Color of My Energy",{
 achieveid={7312},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Amber is the Color of My Energy Achievement.",
+description="This guide will walk you through obtaining the Amber is the Color of My Energy Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Klaxxi_ and completed all of the Dread Wastes Leveling/Loremaster quests.
@@ -10452,7 +10452,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8112},
 patch='50200',
-description="\nScare away the rare blue Hatchling Sycreamer",
+description="Scare away the rare blue Hatchling Sycreamer",
 },[[
 step
 Run next to Hatchlings to scare them away until you find the rare blue one.
@@ -10465,7 +10465,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8118},
 patch='50200',
-description="\nKnock a Zandalari Beastcaller from his flying mount",
+description="Knock a Zandalari Beastcaller from his flying mount",
 },[[
 step
 For this achievement, you will need to attack a _Zandalari Beastcaller_ while he is riding on his flying mount in order to knock him off.
@@ -10480,7 +10480,7 @@ Congratulations, you have obtained the _Boop_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Champion of Chi-Ji",{
 achieveid={7287},
 patch='50004',
-description="\nDefeat every challenger at the cradle of Chi-ji.",
+description="Defeat every challenger at the cradle of Chi-ji.",
 },[[
 step
 label "startaug"
@@ -10648,7 +10648,7 @@ Congratulations, you have obtained the _Champion of Chi-Ji_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Collateral Damage",{
 achieveid={7323},
 patch='50004',
-description="\nUse a Mogu Statue's Crushing Slam to kill another opponent.",
+description="Use a Mogu Statue's Crushing Slam to kill another opponent.",
 },[[
 step
 For this achievement, you will need to have a _Mogu Statue_ defeat another another opponent using the ability _Crushing Slam_.
@@ -10666,7 +10666,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={8105},
 patch='50200',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"The Crumble Bundle\" achievement.",
+description="This guide will walk you through completing the \"The Crumble Bundle\" achievement.",
 },[[
 step
 label "start"
@@ -10899,7 +10899,7 @@ You have earned the _The Crumble Bundle_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Defender of Gods",{
 achieveid={7310},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Defender of Gods Achievement.",
+description="This guide will walk you through obtaining the Defender of Gods Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
@@ -10939,7 +10939,7 @@ Congratulations, you have obtained the _Defender of Gods_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Direhorn in a China Shop",{
 achieveid={8120},
 patch='50200',
-description="\nDestroy the Priceless Zandalari Vase using the Loa-Infused Bloodhorn's charge attack.",
+description="Destroy the Priceless Zandalari Vase using the Loa-Infused Bloodhorn's charge attack.",
 },[[
 step
 kill Loa-Infused Bloodhorn##69193+
@@ -10951,7 +10951,7 @@ Congratulations, you have obtained the _Direhorn in a China Shop_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Dog Pile",{
 achieveid={7320},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Dog Pile Achievement.",
+description="This guide will walk you through obtaining the Dog Pile Achievement.",
 },[[
 step
 For this achievement you must be at least _Honored_ with _The Golden Lotus_.
@@ -10979,7 +10979,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6540},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Dread Haste Makes Dread Waste\" achievement.",
+description="This guide will walk you through completing the \"Dread Haste Makes Dread Waste\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 4 storylines in The Dread Wastes_
@@ -10997,7 +10997,7 @@ You have earned the _Dread Haste Makes Dread Waste_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Every Day I'm Pand-a-ren",{
 achieveid={7285},
 patch='50004',
-description="\nComplete 25 daily quests in pandaria in a single daily reset period.",
+description="Complete 25 daily quests in pandaria in a single daily reset period.",
 },[[
 step
 In order to earn this achievement, you will need to have unlocked several daily hubs.
@@ -11094,7 +11094,7 @@ Congratulations, you have earned the _Every Day I'm Pand-a-ren_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Finish Them!",{
 achieveid={7286},
 patch='50004',
-description="\nDefeat Brewmaster Chani, The Streetfighter, Clever Ashyo, Ken-Ken Kang Bramblestaff, The Wrestler, Master Boom Boom, Master Windfur Hackiss, Healiss and Tankiss at the Temple of the White Tiger.",
+description="Defeat Brewmaster Chani, The Streetfighter, Clever Ashyo, Ken-Ken Kang Bramblestaff, The Wrestler, Master Boom Boom, Master Windfur Hackiss, Healiss and Tankiss at the Temple of the White Tiger.",
 },[[
 step
 label "rev"
@@ -11229,7 +11229,7 @@ Congratulations, you have earned the _Finish Them!_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Fire in the Yaung-hole!",{
 achieveid={7309},
 patch='50004',
-description="\nkill 15 or more Gai-Cho combatants with a single Highly Explosive Oil Barrel",
+description="kill 15 or more Gai-Cho combatants with a single Highly Explosive Oil Barrel",
 },[[
 step
 This achievement requires you to do a daily for the Shado-Pan.
@@ -11261,7 +11261,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8117},
 patch='50200',
-description="\nFinish off an opposing player with a Sunreaver or Kirin Tor ward.",
+description="Finish off an opposing player with a Sunreaver or Kirin Tor ward.",
 },[[
 step
 For this achievement, you must battle an opposing player near your base on the Isle of the Thunder King. Once they are close to death, activate a ward nearby to cause a killing blow.
@@ -11274,7 +11274,7 @@ Congratulations, you have achieved the _For the Ward!_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Getting Around with the Shado-Pan",{
 achieveid={7298},
 patch='50004',
-description="\nComplete 15 Shado-Pan daily quests with each of the Shadow-Pan Heroes.",
+description="Complete 15 Shado-Pan daily quests with each of the Shadow-Pan Heroes.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
@@ -11304,7 +11304,7 @@ Congratulations, you have earned the _Getting Around with the Shado-Pan_ achieve
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Green Acres",{
 achieveid={7292},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Green Acres Achievement.",
+description="This guide will walk you through obtaining the Green Acres Achievement.",
 },[[
 step
 #include "Tillers_Quests"
@@ -11312,7 +11312,7 @@ step
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\How to Strain Your Dragon",{
 achieveid={7290},
 patch='50004',
-description="\nThis guide will walk you through obtaining the How to Strain Your Dragon Achievement.",
+description="This guide will walk you through obtaining the How to Strain Your Dragon Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
@@ -11350,7 +11350,7 @@ Congratulations, you have obtained the _How to Strain Your Dragon_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\In a Trail of Smoke",{
 achieveid={7291},
 patch='50004',
-description="\nThis guide will walk you through obtaining the In a Trail of Smoke Achievement.",
+description="This guide will walk you through obtaining the In a Trail of Smoke Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Order of the Cloud Serpent_.
@@ -11391,7 +11391,7 @@ Congratulations, you have obtained the _In a Trail of Smoke_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Isle of Thunder",{
 achieveid={8028},
 patch='50200',
-description="\nDefeat Nalak, the Storm Lord, on the Isle of Thunder. In order to get this achievement, you must have access to all areas of the _Isle of Thunder_. They are unlocked in stages on a server-wide basis, through completion of daily quests taking place on the Isle. As soon as the realm has made enough concerted progress, this achievement's solo scenarios will be unlocked.",
+description="Defeat Nalak, the Storm Lord, on the Isle of Thunder. In order to get this achievement, you must have access to all areas of the _Isle of Thunder_. They are unlocked in stages on a server-wide basis, through completion of daily quests taking place on the Isle. As soon as the realm has made enough concerted progress, this achievement's solo scenarios will be unlocked.",
 },[[
 step
 label "start"
@@ -11656,7 +11656,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={8101},
 patch='50200',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"It Was Worth Every Ritual Stone\" achievement.",
+description="This guide will walk you through completing the \"It Was Worth Every Ritual Stone\" achievement.",
 },[[
 step
 For this, you will need to defeat all of the Isle of Thunder summonable bosses
@@ -11686,7 +11686,7 @@ You have earned the _It Was Worth Every Ritual Stone_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Know Your Role",{
 achieveid={7308},
 patch='50004',
-description="\nComplete each of the Shado-Pan Blackguard daily quests without taking any damage from monsters.",
+description="Complete each of the Shado-Pan Blackguard daily quests without taking any damage from monsters.",
 },[[
 step
 In order to earn the achievement _Know Your Role_ you will need to complete Complete each of the Shado-Pan Blackguard daily quests without taking any damage from monsters.
@@ -11741,7 +11741,7 @@ Congratulations, you have earned the _Know Your Role_ achievmeent.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Listen to the Drunk Fish",{
 achieveid={7295},
 patch='50004',
-description="\nHarvest every vegetable on a high-forecast day.",
+description="Harvest every vegetable on a high-forecast day.",
 },[[
 step
 In order to earn this achievement, you will need to be revered with the Tillers faction.
@@ -11780,7 +11780,7 @@ Congratulations, you have earned the _Listen to the Drunk Fish_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Loner and a Rebel",{
 achieveid={7299},
 patch='50004',
-description="\nComplete each set of the Shado-Pan daily quests without a Shado-Pan companion of leaving the Townlong Steppes.",
+description="Complete each set of the Shado-Pan daily quests without a Shado-Pan companion of leaving the Townlong Steppes.",
 },[[
 step
 In order to earn this achievement you will need to complete every set of Shado-Pan daily quests without a companion and without leaving Townlong.
@@ -11804,7 +11804,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6536},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Mighty Roamin' Krasaranger\" achievement.",
+description="This guide will walk you through completing the \"Mighty Roamin' Krasaranger\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 10 storylines in Kun-Lai Summit_
@@ -11825,7 +11825,7 @@ achieveid={8110},
 patch='50200',
 author="support@zygorguides.com",
 keywords={"Gogu"},
-description="\nThis guide will walk you through completing the \"The Mogu Have Gotta Go-gu\" achievement.",
+description="This guide will walk you through completing the \"The Mogu Have Gotta Go-gu\" achievement.",
 },[[
 step
 kill Shan'ze Gravekeeper##69235+, Shan'ze Thundercaller##69264+, Shan'ze Soulripper##0, Shan'ze Gravekeeper##69235+, Risen Ancestor##69237, Ancient Stone Conqueror##69238+
@@ -11852,7 +11852,7 @@ You have earned the _The Mogu Have Gotta Go-gu_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\One Many Army",{
 achieveid={7317},
 patch='50004',
-description="\nDefeat the following powerful enemies within the vale of eternal blossoms.",
+description="Defeat the following powerful enemies within the vale of eternal blossoms.",
 },[[
 step
 For this achievement, you will need to kill 16 unique enemies.
@@ -11917,7 +11917,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={7324},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"One Step at a Time\" achievement.",
+description="This guide will walk you through completing the \"One Step at a Time\" achievement.",
 },[[
 step
 label "start"
@@ -12034,7 +12034,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6539},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"One Steppe Forward, Two Steppes Back\" achievement.",
+description="This guide will walk you through completing the \"One Steppe Forward, Two Steppes Back\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 5 storylines in Townlong Steppes_
@@ -12053,7 +12053,7 @@ You have earned the _One Steppe Forward, Two Steppes Back_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Our Powers Combined",{
 achieveid={8119},
 patch='50200',
-description="\nIn the Court of Bones, summon and defeat all of the ancient mogu listed below.",
+description="In the Court of Bones, summon and defeat all of the ancient mogu listed below.",
 },[[
 step
 We suggest you are in a group of at least 2-3 people for this achievement.
@@ -12073,7 +12073,7 @@ Congratulations, you have obtained the _Our Powers Combined_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Over Their Heads",{
 achieveid={7316},
 patch='50004',
-description="\nBomb the following targets during the daily quest 'Dark Skies'.",
+description="Bomb the following targets during the daily quest 'Dark Skies'.",
 },[[
 step
 This achievement requires the quest "Dark Skies" and bombing several NPCs that spawn randomly.
@@ -12138,7 +12138,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={8100},
 patch='50200',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Pay to Slay\" achievement.",
+description="This guide will walk you through completing the \"Pay to Slay\" achievement.",
 },[[
 step
 For this, you will need to farm _"Shan'ze Ritual Stones"_
@@ -12158,7 +12158,7 @@ You have earned the _Pay to Slay_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Platform Hero",{
 achieveid={8114},
 patch='50200',
-description="\nSurvive for 90 seconds on the pillars in the Swollen Vault.",
+description="Survive for 90 seconds on the pillars in the Swollen Vault.",
 },[[
 step
 goto Isle of Thunder/0 62.3,40.3
@@ -12173,7 +12173,7 @@ Congratulations, you have obtained the _Platform Hero_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Proven Strength",{
 achieveid={7297},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Proven Strength Achievement.",
+description="This guide will walk you through obtaining the Proven Strength Achievement.",
 },[[
 step
 For this achievement you must be at least _Revered_ with _The Shado-Pan_.
@@ -12295,7 +12295,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6301},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Rally the Valley\" achievement.",
+description="This guide will walk you through completing the \"Rally the Valley\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 10 storylines in Valley of the Four Winds_
@@ -12316,7 +12316,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8107},
 patch='50200',
-description="\nCrush 200 Ihgaluk Roaches within 1 minute",
+description="Crush 200 Ihgaluk Roaches within 1 minute",
 },[[
 step
 For this achievement, you must run over 200 roaches in Ihgaluk within 1 minute. It is recommended that you have multiple people with you when attempting this achievement
@@ -12331,7 +12331,7 @@ Congratulations, you have achieved the _Ready for RAAAAIIIIDDD?!?ing_ achievemen
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Ready for Raiding III",{
 achieveid={7319},
 patch='50004',
-description="\nComplete the following survival ring challenges without taking any damage.",
+description="Complete the following survival ring challenges without taking any damage.",
 },[[
 step
 For this achievement you will need to survive both the _Survival Ring: Blades_ and Survival Ring: Flame_ daily quests for 90 seconds without taking damage.
@@ -12384,7 +12384,7 @@ Congratulations, you have earned the _Ready For Raiding 3_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Roll Club",{
 achieveid={7322},
 patch='50004',
-description="\nComplete the Serpent Spine roll course in 70 seconds or less.",
+description="Complete the Serpent Spine roll course in 70 seconds or less.",
 },[[
 step
 This achievement requires that you be _Revered_ with the _Golden Lotus_ faction.
@@ -12439,7 +12439,7 @@ Congratulations, you have earned the _Roll Club_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Savior of Stoneplow",{
 achieveid={7502},
 patch='50004',
-description="\nDefeat the Ik'Thik Colossus.",
+description="Defeat the Ik'Thik Colossus.",
 },[[
 #include "Marista_Hub"
 step
@@ -12450,7 +12450,7 @@ Congratulations, you have earned the _Savior of Stoneplow_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Shadow Hopper",{
 achieveid={7289},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Shadow Hopper achievement.",
+description="This guide will walk you through obtaining the Shadow Hopper achievement.",
 },[[
 step
 In order to complete this achievement, you must be at least _Revered_ with the _Order of the Cloud Serpent_
@@ -12483,7 +12483,7 @@ Congratulations, you have earned the Shadow Hopper achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Silent Assassin",{
 achieveid={7307},
 patch='50004',
-description="\nComplete a full set of Shado-Pan Wu Kao daily quests while only killing the exact number of mantid required.",
+description="Complete a full set of Shado-Pan Wu Kao daily quests while only killing the exact number of mantid required.",
 },[[
 step
 In order to earn this achievement, you will need to kill an exact number of enemies that a quest tells you to, and then turn in the quest.
@@ -12509,7 +12509,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6538},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Slum It in the Summit\" achievement.",
+description="This guide will walk you through completing the \"Slum It in the Summit\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 10 storylines in Kun-Lai Summit_
@@ -12533,7 +12533,7 @@ You have earned the _Slum It in the Summit_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Speed Metal",{
 achieveid={8115},
 patch='50200',
-description="\nDefeat Metal Lord Mono-Han with 10 stacks of Power Surge.",
+description="Defeat Metal Lord Mono-Han with 10 stacks of Power Surge.",
 },[[
 step
 In order to get this achievement, you must have access to stage 4 of the _Isle of Thunder_.
@@ -12552,7 +12552,7 @@ Congratulations, you have achieved the _Speed Metal_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Spreading the Warmth!",{
 achieveid={7321},
 patch='50004',
-description="\nKill 60 Krik'Thik hivlings with a single Shadow Pan touch.",
+description="Kill 60 Krik'Thik hivlings with a single Shadow Pan touch.",
 },[[
 step
 Routing to proper section |next "achieve" |only if rep("Golden Lotus")>=Revered
@@ -12618,7 +12618,7 @@ Congratulations, you have earned the _Spreading the Warmth_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Stay Klaxxi",{
 achieveid={7313},
 patch='50004',
-description="\nComplete 5 Klaxxi daily quests with each of the following buffs.",
+description="Complete 5 Klaxxi daily quests with each of the following buffs.",
 },[[
 step
 In order to earn this achievement, you will need to have unlocked the _Klaxxi Dailies_ via The Dread Wastes leveling guide.
@@ -12652,7 +12652,7 @@ achieveid={8121},
 patch='50200',
 author="support@zygorguides.com",
 keywords={"Stormbreaker"},
-description="\nThis guide will walk you through completing the \"Stormbreaker\" achievement.",
+description="This guide will walk you through completing the \"Stormbreaker\" achievement.",
 },[[
 step
 Reference our _"Isle of Thunder"_ guide to earn this achievement |confirm |next "Achievement Guides\\Quests\\Mists of Pandaria\\Isle of Thunder"
@@ -12712,7 +12712,7 @@ You have earned the _One Step at a Time_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Test Drive",{
 achieveid={7314},
 patch='50004',
-description="\nGrow a Kunchong to full size and take it on a rampage.",
+description="Grow a Kunchong to full size and take it on a rampage.",
 },[[
 step
 In order to unlock the dailies required for this achievement, you will need to complete the _Dread Wastes_ Leveling guide.
@@ -12737,7 +12737,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 condition_end=function() return achieved(8109) end,
 achieveid={8110,8109},
 patch='50200',
-description="\nIn the Court of Bones, summon and defeat all of the ancient mogu listed below.",
+description="In the Court of Bones, summon and defeat all of the ancient mogu listed below.",
 },[[
 step
 We suggest you are in a group of at least 2 people for this achievement.
@@ -12766,7 +12766,7 @@ Congratulations, you have achieved the _These Mogu Have Gotta Go-gu_ achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\This Isn't Even My Final Form",{
 achieveid={8111},
 patch='50200',
-description="\nEnjoy the effects of a Zandalari Potion and the Mighty Loa buff at the same time.",
+description="Enjoy the effects of a Zandalari Potion and the Mighty Loa buff at the same time.",
 },[[
 step
 kill Drakkari God-Hulk##69200+
@@ -12779,7 +12779,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8104},
 patch='50200',
-description="\nFind a Trove of the Thunder King",
+description="Find a Trove of the Thunder King",
 },[[
 step
 click Trove of the Thunder King##218593
@@ -12790,7 +12790,7 @@ Congratulations, you have achieved the _Thunder Plunder_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Till the Break of Dawn",{
 achieveid={7293},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Green Acres Achievement.",
+description="This guide will walk you through obtaining the Green Acres Achievement.",
 },[[
 step
 #include "Tillers_Quests"
@@ -12810,7 +12810,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 achieveid={6534},
 patch='50004',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Upjade Complete\" achievement.",
+description="This guide will walk you through completing the \"Upjade Complete\" achievement.",
 },[[
 step
 To earn this achievement, you will need to _complete the 12 storylines in the Jade Forest_
@@ -12837,7 +12837,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8108},
 patch='50200',
-description="\n/bow before the following forms of Kroshik.",
+description="/bow before the following forms of Kroshik.",
 },[[
 step
 This achievement requires that you visit _Ihgaluk Crag_ multiple times over several days, as the phases of _Kroshik_ change at certain increments.
@@ -12869,7 +12869,7 @@ Congratulations, you have obtained the _When in Ihgaluk Crag, Do as the Skumblad
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\Yak Attack",{
 achieveid={7288},
 patch='50004',
-description="\nThis guide will walk you through obtaining the Yak Attack achievement.",
+description="This guide will walk you through obtaining the Yak Attack achievement.",
 },[[
 step
 To earn this achievement, you will need to do dailies for the _August Celestials_.
@@ -12889,7 +12889,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8116},
 patch='50200',
-description="\nKill Fleshcrafter Hoku without killing any of the Possessed Blood that spawns during the fight.",
+description="Kill Fleshcrafter Hoku without killing any of the Possessed Blood that spawns during the fight.",
 },[[
 step
 For this achievement, you will likely need to have at least 2 people who have _Heroic Level Dungeon Gear_.
@@ -12906,7 +12906,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Mists of Pandaria\\
 author="support@zygorguides.com",
 achieveid={8212},
 patch='50200',
-description="\nLoot the rare books listed from Zandalari trolls on the Isle of Thunder",
+description="Loot the rare books listed from Zandalari trolls on the Isle of Thunder",
 },[[
 step
 In order to attain thi, you will need to grind mobs in Zu'Tual on the Isle of Thunder.
@@ -12926,7 +12926,7 @@ Congratulations, you have obtained the _Zandalari Library Card_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Loremaster of Pandaria",{
 achieveid={6541},
 patch='50004',
-description="\nComplete all the storyline achievements in all the zones of the game.",
+description="Complete all the storyline achievements in all the zones of the game.",
 },[[
 step
 Use the Pandaria Leveling Guides to complete Loremaster:
@@ -12945,7 +12945,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Mists of Pandar
 author="support@zygorguides.com",
 achieveid={8206},
 patch='50200',
-description="\nBecome exalted with the Dominance Offensive",
+description="Become exalted with the Dominance Offensive",
 },[[
 step
 For this achievement, you must become _Exalted_ with the _Dominance Offensive_.
@@ -12989,7 +12989,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Mists of Pandar
 author="support@zygorguides.com",
 achieveid={8209},
 patch='50200',
-description="\nBecome exalted with the Sunreaver Onslaught",
+description="Become exalted with the Sunreaver Onslaught",
 },[[
 step
 'For this achievement, you must become _Exalted_ with the _Sunreaver Onslaught_.
@@ -13025,7 +13025,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 author="support@zygorguides.com",
 achieveid={7252},
 patch='50004',
-description="\nThis guide will walk you through the A Brewing Storm Achievement.",
+description="This guide will walk you through the A Brewing Storm Achievement.",
 },[[
 step
 Use the _Dungeon Finder_, and click the _Scenarios_ tab to queue for _A Brewing Storm_.
@@ -13053,7 +13053,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 dungeon=937,
 achieveid={8319},
 patch='50300',
-description="\nPick up 3 special artifacts in the Dark Heart scenario.",
+description="Pick up 3 special artifacts in the Dark Heart scenario.",
 },[[
 step
 talk Grizzle Gearslip##70956 |goto Dark Heart of Pandaria 53.2,67.5
@@ -13077,7 +13077,7 @@ Congratulations, you have completed the _Accelerated Archaeology_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Arena of Annihilation",{
 achieveid={7271},
 patch='50004',
-description="\nThis guide will help you earn the Arena of Annihilation Achievement. You must be level 90 for this achievement.",
+description="This guide will help you earn the Arena of Annihilation Achievement. You must be level 90 for this achievement.",
 },[[
 step
 talk Gurgthock##63315
@@ -13119,7 +13119,7 @@ Congratulations, you have earned the Arena of Annihilation Achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Beat the Heat",{
 achieveid={7273},
 patch='50004',
-description="\nThis guide will walk you through defeating Little Liuyang without anyone taking damage from a Flame Wall in the Arena of Annihilation scenario.",
+description="This guide will walk you through defeating Little Liuyang without anyone taking damage from a Flame Wall in the Arena of Annihilation scenario.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13145,7 +13145,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 dungeon=884,
 achieveid={6931},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Brewmoon Festival.",
+description="This achievement takes place entirely in the scenario Brewmoon Festival.",
 },[[
 step
 label "start"
@@ -13205,7 +13205,7 @@ Congratulations! You have achieved _Binan Village All-Star_!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Bubbletrapped!",{
 achieveid={7989},
 patch='50100',
-description="\nThis guide will walk you through aiding the construction of the Jinyu defenses in the scenario, 'A Little Patience'.",
+description="This guide will walk you through aiding the construction of the Jinyu defenses in the scenario, 'A Little Patience'.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13224,7 +13224,7 @@ Congratulations, you have earned the Bubbletrapped! achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Cannonballer",{
 achieveid={7990},
 patch='50100',
-description="\nThis guide will walk you through aiding in the construction of the Dwarf defenses in the scenario, 'A Little Patience'.",
+description="This guide will walk you through aiding in the construction of the Dwarf defenses in the scenario, 'A Little Patience'.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13243,7 +13243,7 @@ Congratulations, you have earned the Cannonballer achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Don't Shake the Keg",{
 achieveid={7257},
 patch='50004',
-description="\nThis guide will walk you through defeating Borokhula the Destroyer in A Brewing Storm without getting hit by his Swamp Smash.",
+description="This guide will walk you through defeating Borokhula the Destroyer in A Brewing Storm without getting hit by his Swamp Smash.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13269,7 +13269,7 @@ Congratulations, you have earned the Don't Shake the Keg achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Fancy Footwork",{
 achieveid={7276},
 patch='50004',
-description="\nThis guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario without anyone taking damage from the red clouds.",
+description="This guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario without anyone taking damage from the red clouds.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13303,7 +13303,7 @@ Congratulations, you have earned the Fancy Footwork achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\The Few, the Proud, the Gob Squad",{
 achieveid={8295},
 patch='50300',
-description="\nThis guide will walk you through completing the Secrets of Ragefire scenario without any member of the Gob Squad taking damage.",
+description="This guide will walk you through completing the Secrets of Ragefire scenario without any member of the Gob Squad taking damage.",
 },[[
 step
 You will need to run this instance multiple times in order to earn this achievement
@@ -13363,7 +13363,7 @@ Congratulations, you have completed the The Few, the Proud, the Gob Squad achiev
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Fight Anger with Anger",{
 achieveid={8368},
 patch='50300',
-description="\nThis guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario with 20 stacks of Uncontrolled Anger.",
+description="This guide will walk you through defeating the Abomination of Anger in the Crypt of Forgotten Kings scenario with 20 stacks of Uncontrolled Anger.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13398,7 +13398,7 @@ You Earned the "Fight Anger with Anger" Achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\For the Swarm",{
 achieveid={8017},
 patch='50100',
-description="\nDefeat Commander Tel'vrak without killing any Zan'thik Swarmers in the Assault on Zan'vess scenario. You must be level 90 for this achievement.",
+description="Defeat Commander Tel'vrak without killing any Zan'thik Swarmers in the Assault on Zan'vess scenario. You must be level 90 for this achievement.",
 },[[
 step
 Use the _Dungeon Finder_, and click the _Scenarios_ tab to queue for _Assault on Zan'vess_.
@@ -13414,7 +13414,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 dungeon=939,
 achieveid={8329},
 patch='50300',
-description="\nUse every basket of Shimmerweed in a single Blood in the Snow scenario run.",
+description="Use every basket of Shimmerweed in a single Blood in the Snow scenario run.",
 },[[
 step
 You will have a chance to get these as you go through the scenario, so make sure you pay attention to them.
@@ -13469,7 +13469,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 dungeon=939,
 achieveid={8330},
 patch='50300',
-description="\nDon't let Hekima cast Hekima's Wisdom during the Blood in the Snow scenario.",
+description="Don't let Hekima cast Hekima's Wisdom during the Blood in the Snow scenario.",
 },[[
 step
 For this achievement, you must have a stun/interrupt ability or be with someoone who does.
@@ -13506,7 +13506,7 @@ Congratulations, you have completed the _Hekima's Heal-Halter_ achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\I Used To Love Them",{
 achieveid={7992},
 patch='50100',
-description="\nThis guide will walk you through aiding in the construction of the Night Elf defenses in the scenario, 'A Little Patience'.",
+description="This guide will walk you through aiding in the construction of the Night Elf defenses in the scenario, 'A Little Patience'.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13525,7 +13525,7 @@ Congratulations, you have earned the I Used To Love Them achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\In the Eye of the Tiger",{
 achieveid={7272},
 patch='50004',
-description="\nThis guide will walk you through defeating all final bosses - Cloudbender Kobo, Maki Waterblade, and Satay Byu - in the Arena of Annihilation scenario.",
+description="This guide will walk you through defeating all final bosses - Cloudbender Kobo, Maki Waterblade, and Satay Byu - in the Arena of Annihilation scenario.",
 },[[
 step
 You will need to run this instance multiple times in order to earn this achievement
@@ -13564,7 +13564,7 @@ Congratulations, you have earned the In the Eye of the Tiger achievement! |only 
 You'll need to re-que again for the other bosses. |only if not achieved(7272)
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\It's a Trap!",{
-description="\nThis guide will walk you through steping on a floor trap in the Crypt of Forgotten Kings scenario.",
+description="This guide will walk you through steping on a floor trap in the Crypt of Forgotten Kings scenario.",
 achieveid={7275},
 patch='50004',
 },[[
@@ -13582,7 +13582,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandari
 dungeon=938,
 achieveid={8347},
 patch='50300',
-description="\nComplete the Battle on the High Seas Scenario without any member of your party getting hit by cannon fire at any point.",
+description="Complete the Battle on the High Seas Scenario without any member of your party getting hit by cannon fire at any point.",
 },[[
 step
 During the entire _Battle on the High Seas_ Scenario, there will be red circles that spawn underneath you and your party.
@@ -13596,7 +13596,7 @@ Congratulations, you have completed the _Keep those Bombs Away! from me..._ achi
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\The Keg Runner",{
 achieveid={7232},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Theramore's Fall.",
+description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
 step
 Queue for Unga Ingoo Scenario
@@ -13628,7 +13628,7 @@ Take the Brew back to Brewmaster Bo |goto Unga Ingoo/0 50.8,62.1,0.5 |noway |c
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Kite Fight",{
 achieveid={7529},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Theramore's Fall.",
+description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
 step
 This achievement takes place during _Stage 3_ of _Theramore's Fall_.
@@ -13646,7 +13646,7 @@ Congratulations, you have earned the _Kite Fight_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Monkey in the Middle",{
 achieveid={7239},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Unga Ingoo.",
+description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
 step
 In order to earn this achievement, you will need to prevent Captain Ook from picking up an orange during your encounter with him.
@@ -13662,7 +13662,7 @@ Congratulations, you have earned the _Monkey in the Middle_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Monkey See, Monkey Kill",{
 achieveid={7248},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Unga Ingoo.",
+description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
 step
 This achievement takes place during the Scenario _Unga Ingoo_.
@@ -13687,7 +13687,7 @@ Congratulations, you have earned the _Monkey See,Monkey Kill_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\No Egg Left Behind",{
 achieveid={7987},
 patch='50100',
-description="\nThis guide will walk you through destroying all remaining eggs before Broodmaster Noshi reaches 20% health in the Dagger in the Dark Scenario.",
+description="This guide will walk you through destroying all remaining eggs before Broodmaster Noshi reaches 20% health in the Dagger in the Dark Scenario.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13725,7 +13725,7 @@ Congratulations, you have earned the No Egg Left Behind achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\No Tank You",{
 achieveid={7530},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Theramore's Fall.",
+description="This achievement takes place entirely in the scenario Theramore's Fall.",
 },[[
 step
 This achievement takes place during _Stage 3_ of _Theramore's Fall_.
@@ -13744,7 +13744,7 @@ Congratulations, you have earned the _No Tank You_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Party of Six",{
 achieveid={7258},
 patch='50004',
-description="\nThis guide will walk you through finishing A Brewing Storm with all six Thunderpaw Guardians still alive.",
+description="This guide will walk you through finishing A Brewing Storm with all six Thunderpaw Guardians still alive.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13770,7 +13770,7 @@ Congratulations, you have earned the Party of Six achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Perfect Delivery",{
 achieveid={7267},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Greenstone Village.",
+description="This achievement takes place entirely in the scenario Greenstone Village.",
 },[[
 step
 This achievement takes place during _Stage 3_ of the Greenstone Village scenario.
@@ -13787,7 +13787,7 @@ Congratulation, you have earned the _Perfect Delivery_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\The Perfect Pour",{
 achieveid={7261},
 patch='50004',
-description="\nThis guide will walk you through brewing the Boomer Brew without anyone in your party being hit by lightning during A Brewing Storm.",
+description="This guide will walk you through brewing the Boomer Brew without anyone in your party being hit by lightning during A Brewing Storm.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13805,7 +13805,7 @@ Congratulations, you have earned The Perfect Pour achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Queuing Spree",{
 achieveid={6943},
 patch='50004',
-description="\nThis guide will walk you through completing 100 scenarios.",
+description="This guide will walk you through completing 100 scenarios.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13818,7 +13818,7 @@ Congratulations, you have earned the Queuing Spree achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Save it for Later",{
 achieveid={7266},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Greenstone Village.",
+description="This achievement takes place entirely in the scenario Greenstone Village.",
 },[[
 step
 This achievement takes place after _Stage 3_ of the Greenstone Village scenario.
@@ -13833,7 +13833,7 @@ Congratulations, you have earned the _Save it for Later_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Spill No Evil",{
 achieveid={7231},
 patch='50004',
-description="\nThis achievement takes place entirely in the scenario Unga Ingoo.",
+description="This achievement takes place entirely in the scenario Unga Ingoo.",
 },[[
 step
 This achievement takes place during _Stage 2_ of the scenario _Unga Ingoo_.
@@ -13846,7 +13846,7 @@ Congratulations, you have earned the _Spill No Evil_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Waste Not, Want Not",{
 achieveid={8015},
 patch='50100',
-description="\nThis achievement takes place entirely in the scenario Lion's Landing.",
+description="This achievement takes place entirely in the scenario Lion's Landing.",
 },[[
 step
 This achievement takes place at the final stage, or after the scenario _Lion's Landing_ is completed.
@@ -13873,7 +13873,7 @@ Congratulations, you have earned the _Waste Not, Want Not_ achievement.
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Watery Grave",{
 achieveid={7984},
 patch='50100',
-description="\nThis guide will walk you through killing 3 of the Darkhatched Lizard-Lord's reinforcements using his Water Jets ability in the Dagger in the Dark Scenario.",
+description="This guide will walk you through killing 3 of the Darkhatched Lizard-Lord's reinforcements using his Water Jets ability in the Dagger in the Dark Scenario.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13913,7 +13913,7 @@ Congratulations, you have earned the Watery Grave achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\We've Been Dancin'",{
 achieveid={7993},
 patch='50100',
-description="\nThis guide will walk you through aiding Master Brownstone in the construction of the Pandaren defenses in the scenario, 'A Little Patience'.",
+description="This guide will walk you through aiding Master Brownstone in the construction of the Pandaren defenses in the scenario, 'A Little Patience'.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13932,7 +13932,7 @@ Congratulations, you have earned the We've Been Dancin' achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Which Came First?",{
 achieveid={7991},
 patch='50100',
-description="\nThis guide will walk you through aiding in the construction of the Gnome defenses in the scenario, 'A Little Patience'.",
+description="This guide will walk you through aiding in the construction of the Gnome defenses in the scenario, 'A Little Patience'.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13951,7 +13951,7 @@ Congratulations, you have earned the Which Came First? achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\Yaungolian Barbecue",{
 achieveid={6930},
 patch='50004',
-description="\nThis guide will walk you through completing the Brewmoon Festival scenario without any Bataari invaders setting the village on fire.",
+description="This guide will walk you through completing the Brewmoon Festival scenario without any Bataari invaders setting the village on fire.",
 },[[
 step
 talk Lorewalker Fu##78709 |goto Vale of Eternal Blossoms 83.0,30.6
@@ -13969,7 +13969,7 @@ Congratulations, you have earned the Yaungolian Barbecue achievement!
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Scenarios\\Mists of Pandaria\\You Mean That Wasn't a Void Zone?",{
 achieveid={7986},
 patch='50100',
-description="\nThis achievement takes place entirely in the scenario Dagger in the Dark.",
+description="This achievement takes place entirely in the scenario Dagger in the Dark.",
 },[[
 step
 This achievement takes place during _Stage 8_ in the Dagger in the Dark Scenario.
@@ -13988,7 +13988,7 @@ achieveid={9590},
 patch='60001',
 author="support@zygorguides.com",
 keywords={"Scenario"},
-description="\nThis guide will walk you through completing the \"You're Doing it Wrong\" Achievement.",
+description="This guide will walk you through completing the \"You're Doing it Wrong\" Achievement.",
 },[[
 step
 To earn this achievement, you will need to complete a Proving Grounds scenario while using the wrong specialization
@@ -14017,7 +14017,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={7944},
 patch='50100',
-description="\nHit an angry spectator in the head with an Expired Blackout Brew.",
+description="Hit an angry spectator in the head with an Expired Blackout Brew.",
 },[[
 step
 talk Esme Sunshadow##68794
@@ -14033,7 +14033,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={8342},
 patch='50300',
-description="\nReach rank 10 with the Brawler's Guild.",
+description="Reach rank 10 with the Brawler's Guild.",
 },[[
 step
 In order to obtain this achievement, you must gather all of the Challenge Cards for the Brawler's Guild
@@ -14218,7 +14218,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={8343},
 patch='50300',
-description="\nReach rank 10 with the Brawler's Guild during Mists of Pandaria.",
+description="Reach rank 10 with the Brawler's Guild during Mists of Pandaria.",
 },[[
 step
 This achievement was gained by defeating the Brawler's Guild bosses during Mists of Pandaria
@@ -14229,7 +14229,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={7945},
 patch='50100',
-description="\nReach rank 10 with the Brawler's Guild.",
+description="Reach rank 10 with the Brawler's Guild.",
 },[[
 step
 You will need another player to help you with this.
@@ -14253,7 +14253,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={7943},
 patch='50100',
-description="\nCheer a player on after they have won a brawl.",
+description="Cheer a player on after they have won a brawl.",
 },[[
 step
 Wait for someone else to enter in a brawl. As soon as the winner has been declared, cheer for them
@@ -14267,7 +14267,7 @@ author="support@zygorguides.com",
 condition_end=function() return achieved(8338) end,
 achieveid={7948,8020,7939,7942,8337,8338},
 patch='50300',
-description="\nReach rank 10 with the Brawler's Guild.",
+description="Reach rank 10 with the Brawler's Guild.",
 },[[
 This achievement can _no longer be earned_
 |tip This achievement was earned by reaching Rank 10 with Bizmo's Brawlpub during the Pandaria campaign.
@@ -14276,7 +14276,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={8022},
 patch='50100',
-description="\nReach rank 10 with the Brawler's Guild.",
+description="Reach rank 10 with the Brawler's Guild.",
 },[[
 step
 For this achievement, you will need to complete the entire Brawler's Guild questline through rank 8.
@@ -14346,7 +14346,7 @@ ZygorGuidesViewer:RegisterGuide("Achievement Guides\\World Events\\Brawler's Gui
 author="support@zygorguides.com",
 achieveid={7950},
 patch='50100',
-description="\nReach rank 10 with the Brawler's Guild.",
+description="Reach rank 10 with the Brawler's Guild.",
 },[[
 step
 For this achievement, you will either need to come to the Brawler's Guild during peak hours on your server, or get help from friends and guildmates
@@ -14361,7 +14361,7 @@ Congratulations, you have obtained the _Rabble Rabble Rabble_ achievement!
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Pandaria Dungeons\\Glory of the Pandaria Raider",{
-description="\nThis guide will walk you through earning the Glory of the Pandaria Raider.",
+description="This guide will walk you through earning the Glory of the Pandaria Raider.",
 achieveid={6932},
 patch='50004',
 keywords={"Mists, of, Pandaria, Heroic, Mogu'shan, Vaults, Heart, of, Fear, Terrace, of, Endless, Springs"},

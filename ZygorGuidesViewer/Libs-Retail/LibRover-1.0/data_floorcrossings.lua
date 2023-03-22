@@ -11,6 +11,14 @@ data.basenodes.FloorCrossings = {
 			"The Azure Span/0 34.03,30.81 <radius:15> -x- The Azure Span/1 35.06,90.20 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Kargpaw's Den (Main Entrance)
 			"The Azure Span/0 34.96,30.01 <radius:15> -x- The Azure Span/1 53.14,82.77 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Kargpaw's Den (Side Entrance)
 		},
+		["The Forbidden Reach"] = {
+			"The Forbidden Reach/5 36.80,32.50 <radius:15> -x- The Support Creche/0 83.14,80.98 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
+			"The Forbidden Reach/5 74.31,54.78 <radius:15> -x- The Siege Creche/0 22.03,77.49 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
+			"The Forbidden Reach/5 51.84,60.19 <radius:15> -x- The War Creche/0 67.49,4.60 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
+			"The Forbidden Reach/5 74.46,36.07 <radius:15> -x- Dragonskull Island/0 11.14,68.72 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",
+			"The Forbidden Reach/5 76.67,37.79 <radius:15> -x- Dragonskull Island/0 32.01,92.66 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",
+			"The Forbidden Reach/5 60.68,37.91 <radius:15> -x- Froststone Vault/0 26.80,83.77 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
+		},
 	
 	
 	

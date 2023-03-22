@@ -13422,6 +13422,29 @@ Collect the Dragon Glyph: Algeth'ar Academy |achieve 16104 |goto 62.41,40.41 |no
 step
 Collect the Dragon Glyph: Veiled Ossuary |achieve 16105 |goto 67.10,11.76 |notravel
 |tip Inside the large open room at the top of the tower.
+step
+Collect the Dragon Glyph: Talon's Watch |achieve 17411/2 |goto The Forbidden Reach/5 20.58,91.36 |notravel
+|tip In the base of the tower.
+step
+Collect the Dragon Glyph: War Creche |achieve 17411/6 |goto 48.53,68.96 |notravel
+|tip On top of the mountain.
+step
+Collect the Dragon Glyph: Talonlord's Perch |achieve 17411/7 |goto 59.04,65.09 |notravel
+|tip Inside the top of the tower.
+step
+Collect the Dragon Glyph: Stormsunder Mountain |achieve 17411/5 |goto 77.27,55.13 |notravel
+step
+Collect the Dragon Glyph: Dragonskull Island |achieve 17411/4 |goto 79.46,32.65 |notravel
+|tip Underneath the trees.
+step
+Collect the Dragon Glyph: Fragstone Vault |achieve 17411/3 |goto 62.54,32.43 |notravel
+|tip Under the dome in the top of the tower.
+step
+Collect the Dragon Glyph: Caldera of the Menders |achieve 17411/8 |goto 37.72,30.61 |notravel
+|tip Inside the top of the tower.
+step
+Collect the Dragon Glyph: Northwind Point |achieve 17411/1 |goto 18.32,13.22 |notravel
+|tip Inside the broken tower.
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Dragonriding World Tour",{
 author="support@zygorguides.com",
@@ -15451,3 +15474,549 @@ talk Naleidea Rivergleam##192980
 turnin It Belongs in a Museum... Eventually##66547 |goto 47.25,82.77 |next "Gain_Renown" |only if not completedallq(67084,66128,66444,66547,66402,69888)
 turnin It Belongs in a Museum... Eventually##66547 |goto 47.25,82.77 |only if default
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through completing the various chapters of The Forbidden Reach questline.",
+startlevel=68,
+patch='100007',
+},[[
+step
+accept Hidden Legacies##74381 |goto Valdrakken/0 60.91,26.63
+|tip You will accept this quest automatically.
+step
+talk Kurazidaia##201398
+|tip At the top of the tower.
+Tell her _"Tell me what happened."_
+Hear Kurazidaia's Report |q 74381/1 |goto 61.03,26.05
+step
+talk Kurazidaia##201398
+turnin Hidden Legacies##74381 |goto 61.03,26.05
+accept Return to the Reach##73076 |goto 61.03,26.05
+step
+talk Aluri##193321
+Tell him _"Take me to Morqut Village."_
+Speak with Flightmaster Aluri to Fly to the Forbidden Reach |q 73076/1 |goto 44.03,68.00
+step
+Reach the Forbidden Reach |offtaxi
+|tip Wait for the flight to conclude.
+step
+talk Renpiaq##200561
+fpath Morqut Village |goto The Forbidden Reach/5 35.85,59.12
+step
+Find Viridia in the Forbidden Reach |q 73076/2 |goto The Forbidden Reach/5 34.61,57.69
+step
+talk Scalecommander Viridia##199201
+turnin Return to the Reach##73076 |goto 34.61,57.69
+accept Wings of Mercy##73157 |goto 34.61,57.69
+accept Stemming the Irontide##74769 |goto 34.61,57.69
+accept An Eclectic Accord##75050 |goto 34.61,57.69
+step
+talk Scalecommander Azurathel##199204
+Tell him _"Scalecommander Viridia sent me to check on you."_
+Speak to Azurathel |q 75050/3 |goto 35.53,58.69
+step
+talk Scalecommander Cindrethresh##199199
+Tell him _"Scalecommander Viridia sent me to check on you."_
+Speak to Cindrethresh |q 75050/4 |goto 35.30,59.49
+step
+talk Turik##200562
+Tell him _"Scalecommander Viridia sent me to check on you."_
+Speak to Turik |q 75050/2 |goto 34.20,60.04
+step
+talk Unpukiat##200560
+|tip Inside the building.
+home Morqut Village |goto 33.84,59.06
+step
+talk Tukkaraq##200558
+Tell him _"Scalecommander Viridia sent me to check on you."_
+Speak to Tukkaraq |q 75050/1 |goto 34.37,58.57
+step
+talk Scalecommander Viridia##199201
+turnin An Eclectic Accord##75050 |goto 34.61,57.69
+stickystart "Kill_10_Irontide_Pirates"
+step
+extraaction Mender's Signal##404990
+|tip It appears as a button on your screen.
+Aid the Tempest Coast Scouts |q 73157/1 |goto 36.93,43.16
+step
+label "Kill_10_Irontide_Pirates"
+Kill Irontide enemies around this area
+Slay #10# Irontide Pirates |q 74769/1 |goto 34.85,44.21
+step
+extraaction Mender's Signal##404990
+|tip It appears as a button on your screen.
+Aid the Stonesunder Crater Scouts |q 73157/2 |goto 64.74,61.90
+step
+extraaction Mender's Signal##404990
+|tip It appears as a button on your screen.
+Aid the Darksand Hollow Scouts |q 73157/3 |goto 78.84,67.66
+step
+talk Scalecommander Viridia##199201
+turnin Wings of Mercy##73157 |goto 34.61,57.69
+turnin Stemming the Irontide##74769 |goto 34.61,57.69
+accept Helping Hand and Claw##73160 |goto 34.61,57.69
+accept Stuck in Stasis##73694 |goto 34.61,57.69
+accept Emberthal Awaits##74847 |goto 34.61,57.69
+step
+talk Atrenosh Hailstone##200010
+accept Plunder Siege##74359 |goto 34.65,57.57
+step
+talk Dracthyr Mender##201071
+Choose _"Come with me to the Froststone Vault."_
+Recruit a Healing Wing |q 73694/1 |goto 34.47,57.41
+step
+talk Scalecommander Azurathel##199204
+accept Hands Off Our Booty!##73178 |goto 35.53,58.68
+step
+talk Treysh##200559
+accept Still Within Reach##74379 |goto 35.61,59.49
+step
+talk Cataloger Coralie##201291
+accept Snake Wrangling##73191 |goto 34.36,59.28
+step
+Meet with Scalecommander Emberthal above Morqut Village |q 74847/1 |goto 32.56,60.58
+stickystart "Collect_10_Stolen_Goods"
+step
+Kill Irontide enemies around this area
+Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
+step
+label "Collect_10_Stolen_Goods"
+click Stolen Booty##385999+
+collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
+You can find more around:
+[37.67,78.67]
+[34.25,45.30]
+step
+Locate Jeb and Tacha on the Sharpscale Coast |q 73160/1 |goto 36.79,80.39
+step
+click Shipwrecked Debris
+Rescue Pathfinder Tacha |q 73160/2 |goto 36.96,80.28
+step
+click Tangling Seaweed
+Rescue Pathfinder Jeb |q 73160/3 |goto 36.66,79.88
+step
+label "Collect_10_Scattered_Supplies"
+click Scattered Supplies##386055+
+collect 10 Scattered Supplies##202713 |q 73160/4 |goto 36.27,80.25
+step
+kill Karkinus the Capsizer##200907 |q 74377/1 |goto 37.44,81.67
+step
+talk Pathfinder Tacha##200903
+turnin Helping Hand and Claw##73160 |goto 37.18,79.06
+step
+talk Scalecommander Azurathel##199204
+turnin Hands Off Our Booty!##73178 |goto 35.53,58.68
+step
+talk Scalecommander Viridia##199201
+accept Exploring Our Past##73159 |goto 34.61,57.69
+step
+talk Pathfinder Jeb##200040
+turnin Exploring Our Past##73159 |goto 29.09,53.13
+accept Zskera Vault: Az##72953 |goto 29.09,53.13
+step
+talk Pathfinder Tacha##200041
+accept The Keys You Need##74294 |goto 29.16,53.13
+step
+talk Pathfinder Tacha##200041
+turnin The Keys You Need##74294 |goto 29.16,53.13
+step
+talk Cataloger Wulferd##201180
+accept Authentic Authorization##74984 |goto 29.26,52.69
+step
+talk Pathfinder Jeb##200040
+Choose _"Let's explore Zskera Vault Az."_
+Speak with Jeb to Enter the Vault |q 72953/1 |goto 29.09,53.13
+step
+Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
+kill Terrorachna##200349
+|tip Inside the vault.
+Secure the Vault |q 72953/2 |goto 29.58,56.34
+step
+click Unusual Ring##385952
+|tip Inside the vault.
+accept The Forgotten Ring##73155 |goto 29.87,57.30
+step
+click Web Rope##385679
+|tip Inside the vault.
+Climb the Web Rope to Reach the Second Floor |q 72953/4 |goto 28.89,56.12
+step
+click Door
+Open the Doors with Zskera Vault Keys |q 72953/3 |goto 28.57,56.00
+step
+click Flask of Windward Steps##385687
+Gain the "Windward Steps" Buff |complete hasbuff("spell:398283") |goto 28.35,56.13
+step
+click Journal Entry: The Creches##385836
+collect Journal Entry: The Creches##204223 |n
+|tip Inside the door inside the vault.
+accept Journal Entry: The Creches##74883 |goto 28.48,55.68 |only if Horde
+accept Journal Entry: The Creches####73114 |goto 28.48,55.68 |only if Alliance
+step
+extraaction Windward Steps##398280
+|tip Use the ability to jump between platforms
+click Door
+Open the Door with a Zskera Vault Key |goto 30.41,55.47 < 5 |walk
+click Crate of Unfinished Scrolls##388472
+|tip It can be in several areas around this room.
+Gain the "Scroll Collection" Buff |complete hasbuff("spell:403407") |goto 30.91,55.39
+step
+extraaction Scroll Collection##403407
+|tip It appears as a button on your screen.
+|tip This will teleport you to the 3rd or 4th level of the vault.
+Teleport to this ledge |goto 29.11,55.29 < 5 |c |or |q 74984
+step
+click Door
+|tip You should be on the 4th level of Vault Doors.
+Open the Door with a Zskera Vault Key |goto 28.99,55.02
+click Random Scribblings##388895
+collect 1 Random Scribblings##204306 |q 74984/2 |goto 28.79,54.34
+step
+extraaction Scroll Collection##403407
+|tip It appears as a button on your screen.
+|tip This will teleport you to the 3rd or 4th level of the vault.
+Teleport to this ledge |goto 30.00,55.33 < 5 |c |or |q 74984
+step
+click Door
+|tip You should be on the 3rd level of Vault Doors.
+Open the Door with a Zskera Vault Key |goto 30.11,55.08
+click Random Scribblings##388895
+collect 2 Random Scribblings##204306 |q 74984/2 |goto 30.44,54.43
+step
+extraaction Scroll Collection##403407
+|tip It appears as a button on your screen.
+|tip This will teleport you to the 3rd or 4th level of the vault.
+Teleport to this ledge |goto 29.10,57.38 < 5 |q 74869 |future
+step
+talk Pathfinder Jeb##202218
+turnin Zskera Vault: Az##72953 |goto 29.02,57.04
+step
+click Door
+Unlock the door |goto 30.41,57.17 < 5 |walk
+click Random Scribblings##388895
+collect 3 Random Scribblings##204306 |q 74984/2 |goto 30.50,57.67
+step
+Walk through the Portal |goto The Forbidden Reach/5 28.79,49.98 < 5 |walk
+talk Cataloger Wulferd##201180
+turnin Authentic Authorization##74984 |goto 29.26,52.67
+step
+talk Pathfinder Tacha##200041
+accept What's Behind The Next Door##73089 |goto 29.16,53.12
+step
+talk Researcher Imareth##200724
+turnin The Forgotten Ring##73155 |goto 35.18,57.60
+step
+talk Scalecommander Azurathel##199204
+turnin Journal Entry: The Creches##73114 |goto 35.53,58.68
+step
+talk Researcher Imareth##200724
+accept Primordial Embellishment##74355 |goto 35.18,57.61
+step
+click Rustling Bush##384952
+|tip They are green bushes all around this area.
+Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
+[45.61,37.24]
+step
+extraaction Release Watersnakes##400872
+|tip Use the button that appears on your screen.
+Release the Toxic Watersnakes |q 73191/2 |goto 43.53,37.40
+stickystart "Kill_10_Ice_Primalists"
+step
+Enter the building |goto Froststone Vault/0 24.40,87.52 < 5 |walk
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 1 |goto 24.68,85.64
+step
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 2 |goto 37.74,69.33
+step
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 3 |goto 46.93,50.65
+step
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 4 |goto 48.87,36.96
+step
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 5 |goto 45.72,25.90
+step
+clicknpc Imprisoned Dracthyr##201060
+Free an Imprisoned Dracthyr |q 73694/2 |count 6 |goto 58.26,28.32
+step
+label "Kill_10_Ice_Primalists"
+Kill Primalist enemies around this area
+Slay #10# Ice Primalists |q 73694/3
+step
+Leave the building |goto Froststone Vault/0 24.40,87.52 < 5 |walk
+talk Scalecommander Viridia##199201
+turnin Stuck in Stasis##73694 |goto The Forbidden Reach/5 34.61,57.69
+step
+kill Spellsworn Wingcatcher##201369 |q 74379/1 |goto 59.04,57.54
+step
+talk Treysh##200559
+turnin Still Within Reach##74379 |goto 35.61,59.49
+step
+talk Cataloger Coralie##201291
+turnin Snake Wrangling##73191 |goto 34.36,59.28
+step
+label "Collect_3_Zskera_Vault_Keys"
+collect 3 Zskera Vault Key##202196 |q 73089
+|tip These come from various activities within The Forbidden Reach.
+|tip Complete events and kill rare spawns for a chance for them to drop.
+step
+click door
+|tip On the first level of the vault.
+Unlock the door |goto The Forbidden Reach/5 30.57,56.01
+click Primordial Jeweler's Kit##389631
+collect 1 Primordial Jeweler's Kit##204353 |q 74355/1 |goto 31.16,55.91
+step
+click Door
+|tip On the second level of the vault.
+Unlock the door |goto 29.37,57.73
+click Primordial Anvil##393934
+collect 1 Primordial Anvil##204685 |q 74355/2 |goto 29.13,57.92
+step
+Open #3# Doors with Zskera Vault Keys |q 73089/1 |goto 30.31,56.53
+step
+Run up the stairs |goto 29.30,54.22 < 10 |walk
+Walk through the Portal |goto The Forbidden Reach/5 28.79,49.98 < 5 |walk
+talk Pathfinder Tacha##200041
+turnin What's Behind The Next Door##73089 |goto 29.16,53.13
+step
+talk Researcher Imareth##200724
+turnin Primordial Embellishment##74355 |goto 35.18,57.61
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100007',
+},[[
+step
+talk Mayla Highmountain##202656
+accept A Debt That Must Be Paid##72591 |goto Valdrakken/0 50.80,58.65
+step
+talk Baine Bloodhoof##199323
+turnin A Debt That Must Be Paid##72591 |goto Ohn'ahran Plains/0 66.62,38.58
+accept Scars from the Past##72592 |goto Ohn'ahran Plains/0 66.62,38.58
+step
+talk Khanam Matra Sarest##181198
+Choose _"<Ask about Bovan Windtotem and his tribe.>"_
+Speak to the Khanam Matra |q 72592/1 |goto 60.00,37.48
+step
+talk Sansok Khan##195543
+Choose _"<Ask about Bovan Windtotem and his tribe.>"_
+Speak to Sansok Khan |q 72592/2 |goto 63.41,41.39
+step
+talk Scout Tomul##191485
+Choose _"<Ask Tomul about the missing tauren and relay Sansok Khan's request.>"_
+Speak to Scout Tomul |q 72592/3 |goto 62.43,41.72
+step
+talk Baine Bloodhoof##199323
+turnin Scars from the Past##72592 |goto 66.62,38.58
+step
+talk Scout Tomul##199330
+accept A Tomul-tuous Beginning##72593 |goto 66.64,38.68
+step
+talk Baine Bloodhoof##202707
+turnin A Tomul-tuous Beginning##72593 |goto 69.32,47.69
+accept The Search for Bovan Windtotem##72595 |goto 69.32,47.69
+step
+talk Scout Tomul##202706
+accept Resupplying Supplies##72662 |goto 69.40,47.73
+stickystart "Collect_40_Fresh_Plains_Meat"
+step
+click Bloody Axe
+Choose _<Collect the axe.>_
+collect 1 Bloody Axe##202405 |q 72595/1 |goto 71.43,44.47
+step
+talk Windtotem Survivor##202740
+Choose _<Tell the brave how to get back to Baine.>_
+Rescue a Windtotem Survivor |q 72595/4 |count 1 |goto 71.91,47.73
+step
+talk Windtotem Survivor##202740
+Choose _<Tell the brave how to get back to Baine.>_
+Rescue a Windtotem Survivor |q 72595/4 |count 2 |goto 74.83,48.29
+step
+talk Windtotem Survivor##202740
+Choose _<Tell the brave how to get back to Baine.>_
+Rescue a Windtotem Survivor |q 72595/4 |count 3 |goto 76.45,51.36
+step
+click Discarded Necklace
+Choose _<Collect the necklace.>_
+collect 1 Tauren Necklace##202414 |q 72595/3 |goto 74.53,53.41
+step
+clicknpc Unidentified Tauren##200787
+Choose _<Collect the headdress.>_
+collect 1 Unique Headdress##202415 |q 72595/2 |goto 72.85,50.94
+step
+label "Collect_40_Fresh_Plains_Meat"
+Kill enemies around this area
+collect 40 Fresh Plains Meat##202394 |q 72662/1 |goto 74.54,50.52
+step
+talk Scout Tomul##202706
+turnin Resupplying Supplies##72662 |goto 69.40,47.73
+step
+talk Baine Bloodhoof##202707
+turnin The Search for Bovan Windtotem##72595 |goto 69.33,47.69
+accept A Place of Refuge##74946 |goto 69.33,47.69
+step
+talk Scout Tomul##200492
+turnin A Place of Refuge##74946 |goto 73.33,55.07
+accept Delivering Bad News##72594 |goto 73.33,55.07
+step
+talk Koya Windtotem##200700
+Choose _"<Ask about the headdress you found.>"_
+Find the Owner of the Headdress |q 72594/3 |goto 72.36,55.46
+step
+talk Ironhoof##200699
+Choose _"<Ask about the axe you found.>"_
+Find the Owner of the Axe |q 72594/1 |goto 73.21,56.41
+step
+talk Tam Windtotem##200698
+Choose _"<Ask about the necklace you found.>"_
+Find the Owner of the Necklace |q 72594/2 |goto 72.33,57.27
+step
+talk Baine Bloodhoof##200831
+turnin Delivering Bad News##72594 |goto 72.76,55.82
+accept Pinewood Trail##72663 |goto 72.76,55.82
+step
+talk Baine Bloodhoof##200932
+turnin Pinewood Trail##72663 |goto 80.91,57.62
+accept Joint Rescue Operation##72599 |goto 80.91,57.62
+step
+talk Scout Tomul##200933
+accept A Proper Shikaar Send-Off##72600 |goto 80.91,57.72
+stickystart "Plant_10_Shikaar_Banners"
+step
+clicknpc Windtotem Captive##200983
+Free the Windtotem Captive |q 72599/1 |count 1 |goto 83.23,55.66
+step
+clicknpc Windtotem Captive##200983
+Free the Windtotem Captive |q 72599/1 |count 2 |goto 83.80,53.69
+step
+clicknpc Windtotem Captive##200983
+Free the Windtotem Captive |q 72599/1 |count 3 |goto 84.61,52.83
+step
+clicknpc Windtotem Captive##200983
+Free the Windtotem Captive |q 72599/1 |count 4 |goto 86.47,53.52
+step
+clicknpc Windtotem Captive##200983
+|tip Inside the building.
+Free the Windtotem Captive |q 72599/1 |count 5 |goto 86.11,54.55
+step
+clicknpc Windtotem Captive##200983
+Free the Windtotem Captive |q 72599/1 |count 6 |goto 84.88,55.88
+step
+label "Plant_10_Shikaar_Banners"
+Kill Nokhud enemies around this area
+use the Shikaar Banners##203470
+|tip Use it on the corpses of enemies you kill.
+Plant #10# Shikaar Banners |q 72600/1 |goto 84.37,54.13
+You can find more around [86.61,50.63]
+step
+talk Scout Tomul##200938
+turnin A Proper Shikaar Send-Off##72600 |goto 87.18,51.52
+step
+talk Baine Bloodhoof##200939
+turnin Joint Rescue Operation##72599 |goto 87.26,51.60
+step
+talk Scout Tomul##200938
+accept Bovan's Last Hope##72601 |goto 87.18,51.52
+step
+talk Windsage Boku##199409
+turnin Bovan's Last Hope##72601 |goto 56.57,73.83
+accept Optimistic Mystic##72602 |goto 56.57,73.83
+step
+kill Geyser Salamanther##186705
+collect 1 Strong Salamanther Heart##203474 |q 72602/1 |goto 54.04,72.99
+step
+click Geyser Flower##386398
+collect 8 Geyser Flower##203473 |q 72602/2 |goto 53.51,70.91
+step
+talk Windsage Boku##199409
+turnin Optimistic Mystic##72602 |goto 56.87,71.64
+accept What Words Are Worth##72603 |goto 56.87,71.64
+step
+click Incense Burner
+Place the Items |q 72603/1 |goto 56.91,71.60
+step
+Watch the Dialogue
+Witness the Vision |q 72603/2 |goto 56.91,71.60
+step
+talk Baine Bloodhoof##201424
+turnin What Words Are Worth##72603 |goto 56.87,71.54
+accept Desperate Rescue##72604 |goto 56.87,71.54
+step
+talk Baine Bloodhoof##201488
+turnin Desperate Rescue##72604 |goto 38.09,34.01
+accept Saving Bovan Windtotem##72605 |goto 38.08,34.02
+step
+use the Borrowed Potion of Invisibility##203685
+Consume the Borrowed Potion of Invisibility |q 72605/1 |goto 38.01,34.17
+step
+click Prisoner Transfer Notes
+|tip It looks like scattered papers on the ground.
+|tip Avoid enemies with the giant circles around them.
+Find the Prisoner Transfer Notes |q 72605/2 |goto 35.10,36.38
+step
+Follow the path down |goto 34.19,36.99 < 30 |only if walking
+click Interrogation Notes
+|tip It looks like scattered papers on the ground.
+|tip Avoid enemies with the giant circles around them.
+Find the Interrogation Notes |q 72605/3 |goto 35.10,38.94
+step
+click Prisoner Update Notes
+Find the Prisoner Update Notes |q 72605/4 |goto 36.12,40.81
+step
+Find Bovan Windtotem |q 72605/5 |goto 33.21,42.93
+step
+talk Baine Bloodhoof##201496
+turnin Saving Bovan Windtotem##72605 |goto 33.14,42.96
+step
+talk Baine Bloodhoof##201516
+accept See Red##72606 |goto 33.33,42.65
+step
+Kill enemies around this area
+Slay the Centuar within the Nokhudon Hold |q 72606/1 |goto 34.88,38.62
+step
+_Next to you:_
+talk Baine Bloodhoof##203204
+turnin See Red##72606
+accept Old Hatreds##72607
+step
+kill Jamoku##199914 |q 72607/1 |goto 33.05,38.48
+step
+talk Baine Bloodhoof##201528
+turnin Old Hatreds##72607 |goto 33.26,42.93
+step
+talk Scout Tomul##201530
+accept Case Closed##72609 |goto 33.41,42.82
+step
+talk Scout Tomul##201529
+turnin Case Closed##72609 |goto 72.68,56.02
+step
+talk Baine Bloodhoof##201566
+accept Letting Go##72611 |goto 72.71,56.08
+step
+talk Baine Bloodhoof##201566
+Choose _"<Tell Baine you will participate in the funeral.>"_
+|tip The second option will skip the next couple of steps.
+Speak with Baine |q 72611/1 |goto 72.71,56.08
+step
+click Centaur Pyre
+Light the First |q 72611/2 |goto 72.47,55.95
+step
+click Centaur Pyre
+Light the Second Pyre |q 72611/3 |goto 72.50,56.02
+step
+click Tauren Pyre
+Light the Third Pyre |q 72611/4 |goto 72.55,56.09
+step
+click Tauren Pyre
+Light the Final Pyre |q 72611/5 |goto 72.59,56.16
+step
+Watch the Dialogue
+Conclude the Funeral |q 72611/6 |goto 72.69,56.06
+step
+talk Baine Bloodhoof##201566
+turnin Letting Go##72611 |goto 72.71,56.08
+]])
+ZGV.BETAEND()

@@ -138,7 +138,7 @@ patch='80001',
 author="support@zygorguides.com",
 startlevel=10,
 keywords={"Battle","for","Azeroth","Explorer"},
-description="\nThis guide will walk you through completing the \"Battle for Azeroth Explorer\" Achievement.",
+description="This guide will walk you through completing the \"Battle for Azeroth Explorer\" Achievement.",
 },[[
 leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Tiragarde Sound" 1-11
 leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Explore Drustvar" 1-12
@@ -162,7 +162,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12556) end,
 keywords={"explore, tiragarde, sound"},
-description="\nThis guide will walk you through completing the \"Explore Tiragarde Sound\" achievement.",
+description="This guide will walk you through completing the \"Explore Tiragarde Sound\" achievement.",
 },[[
 step
 Explore Fernwood Ridge |achieve 12556/3 |goto Tiragarde Sound/0 70.85,18.30
@@ -199,7 +199,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12557) end,
 keywords={"explore, drustvar"},
-description="\nThis guide will walk you through completing the \"Explore Drustvar\" achievement.",
+description="This guide will walk you through completing the \"Explore Drustvar\" achievement.",
 },[[
 step
 Explore Fallhaven |achieve 12557/6 |goto Drustvar/0 55.55,35.07
@@ -245,7 +245,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12558) end,
 keywords={"explore, stormsong, valley"},
-description="\nThis guide will walk you through completing the \"Explore Stormsong Valley\" achievement.",
+description="This guide will walk you through completing the \"Explore Stormsong Valley\" achievement.",
 },[[
 step
 Explore Brenndam |achieve 12558/1 |goto Stormsong Valley/0 59.20,69.69
@@ -278,7 +278,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12559) end,
 keywords={"explore, zuldazar"},
-description="\nThis guide will walk you through completing the \"Explore Zuldazar\" achievement.",
+description="This guide will walk you through completing the \"Explore Zuldazar\" achievement.",
 },[[
 step
 Explore Xibala |achieve 12559/11 |goto Zuldazar/0 40.76,71.02
@@ -325,7 +325,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12561) end,
 keywords={"explore, nazmir"},
-description="\nThis guide will walk you through completing the \"Explore Nazmir\" achievement.",
+description="This guide will walk you through completing the \"Explore Nazmir\" achievement.",
 },[[
 step
 Explore Nazwatha |achieve 12561/7 |goto Nazmir/0 65.14,40.21
@@ -358,7 +358,7 @@ startlevel=10,
 endlevel=50,
 condition_end=function() return achieved(12560) end,
 keywords={"explore, vol'dun"},
-description="\nThis guide will walk you through completing the \"Explore Vol'dun\" achievement.",
+description="This guide will walk you through completing the \"Explore Vol'dun\" achievement.",
 },[[
 step
 Explore Shatterstone Harbor |achieve 12560/5 |goto Vol'dun/0 38.28,34.53
@@ -620,7 +620,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Quests\\Battle f
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Quests\\Battle for Azeroth\\Every Day I'm Truffling")
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Battle for Azeroth\\Clever Use of Mechanical Explosives",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Clever Use of Mechanical Explosives\" Achievement.",
+description="This guide will walk you through completing the \"Clever Use of Mechanical Explosives\" Achievement.",
 achieveid={13047},
 patch='80001',
 startlevel=45,
@@ -678,7 +678,7 @@ startlevel=45,
 endlevel=50,
 condition_end=function() return achieved(13048) end,
 keywords={"Battle,For,Azeroth,Life,Finds,Way,To,Die!"},
-description="\nTo earn this achievement, you will be required to hunt down and kill a fearsome dinosaur of each species in Zuldazar and Nazmir.",
+description="To earn this achievement, you will be required to hunt down and kill a fearsome dinosaur of each species in Zuldazar and Nazmir.",
 },[[
 step
 kill Sabertusk Empress##129323

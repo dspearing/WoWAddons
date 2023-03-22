@@ -971,6 +971,21 @@ clicknpc Pricklefury Hare##189093
 |tip You may need to attempt the trap several times.
 Learn the "Pricklefury Hare" Battle Pet |learnpet Pricklefury Hare##3272 |goto The Waking Shores/0 78.08,33.54
 ]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Snowy Treeflitter",{
+patch='100500',
+source='PetBattle',
+author="support@zygorguides.com",
+description="Nearly invisible, this creature leaps from tree to snow-covered tree.",
+keywords={"Critter"},
+pet=3260,
+},[[
+step
+clicknpc Snowy Treeflitter##188792
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Learn the "Snowy Treeflitter" Battle Pet |learnpet Snowy Treeflitter##3260 |goto The Azure Span/0 69.09,29.93
+You can find more around [72.32,28.31]
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Treeflitter",{
 patch='100500',
 source='PetBattle',
@@ -1590,12 +1605,15 @@ use the Zapthrottle Soul Inhaler##199414
 collect Encaged Airy Soul##200932 |n
 |tip This will consume 1 Empty Soul Cage.
 collect Docile Airy Soul##201296 |n
-|tip After 15 minutes, the Engaged soul will turn Docile.
+|tip After 15 minutes, the Encaged soul will turn Docile.
 use Docile Airy Soul##201296
 |tip There is a small chance for you to receive the battle pet.
 |tip You may have to repeat the process of capturing the elemental soul several times.
-collect Gale Spirit##201262 |goto Ohn'ahran Plains/0 52.80,30.60 |or
-You can find more around [47.60,36.20]
+collect Gale Spirit##201262 |goto Ohn'ahran Plains/0 23.11,37.39 |or
+You can find more around:
+[23.93,39.34]
+[24.30,33.65]
+[21.30,38.05]
 '|complete haspet(3412) |or
 step
 use the Gale Spirit##201262

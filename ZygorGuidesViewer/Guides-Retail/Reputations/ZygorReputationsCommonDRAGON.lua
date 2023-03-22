@@ -1488,6 +1488,19 @@ Plant the Bluefeather Cliffs Flag |q 70024 |goto Thaldraszus/0 46.10,73.98 |futu
 step
 click Dragonscale Expedition Flag
 Plant the South Hold Gate Flag |q 71222 |goto Thaldraszus/0 34.04,84.85 |future |notravel
+step
+click Dragonscale Expedition Flag
+Plant the Morqut Village Flag |q 73696 |future |goto The Forbidden Reach/5 27.96,59.84 |notravel
+step
+click Dragonscale Expedition Flag
+Plant the Caldera of the Menders Flag |q 73700 |future |goto The Forbidden Reach/5 36.93,37.91 |notravel
+step
+click Dragonscale Expedition Flag
+|tip On top of the broken wall.
+Plant the Froststone Vault Flag |q 73699 |future |goto The Forbidden Reach/5 54.59,34.64 |notravel
+step
+click Dragonscale Expedition Flag
+Plant the Stormsunder Mountain Flag |q 73702 |future |goto The Forbidden Reach/5 76.29,53.45 |notravel
 ]])
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Iskaara Tuskarr\\Iskaara Tuskarr",{
 author="support@zygorguides.com",
@@ -2184,24 +2197,19 @@ talk Big Kinook##186126
 turnin Community Feasts##70938 |goto The Azure Span/0 13.48,48.61
 step
 label "Wait_For_Feast_To_Begin"
-Wait for the Community Feast Event to Begin Preparations |complete areapoi(2024,7219)
-|tip The feast occurs every 3.5 hours.
+Wait for the Community Feast Event to Begin Preparations |complete inscenario() |goto The Azure Span/0 13.53,48.48
+|tip The feast occurs every hour.
 |tip It lasts for 15 minutes, during which you will complete tasks repeatedly to increase the quality of the soup.
-|tip After completion, you can eat the soup for 1 hour to gain a food buff based on the quality of the resulting soup.
-|tip Preparations for the feast will begin again 3 hours after the feast event ends.
+|tip After completion, you can eat the soup to gain a food buff based on the quality of the resulting soup.
 step
-_The Community Feast Begins Soon!_
-|tip The event will begin in approximately 15 minutes.
-Wait for the Community Feast Event to Begin |complete areapoi(2024,7218) |goto The Azure Span/0 13.59,48.55
+talk Pleeqi##196620
+accept Community Feast##70893 |goto 13.50,48.51
+|tip It may take a moment for Pleeqi to offer you this quest.
 step
 Get Your Orders from Big Kinook |scenariostart |goto The Azure Span/0 13.48,48.62
 |tip Wait for a moment for Big Kinook to start the feast and give you a task.
 |tip Stay close to the pot and defend it from enemies if they attack.
 |tip If you get pull into the pot, spam the button on your screen as quickly as possible to stir the soup.
-step
-talk Pleeqi##196620
-accept Community Feast##70893 |goto 13.50,48.51
-|tip It may take a moment for Pleeqi to offer you this quest.
 stickystart "Complete_Tasks_in_the_Community_Feast"
 step
 label "Get_Orders_from_Big_Kinook"
@@ -2212,7 +2220,6 @@ Get Your Orders from Big Kinook |scenariogoal 1/54615 |goto 13.48,48.62
 |only if scenariogoal(54615)
 step
 Proceeding... |complete inscenario()
-|only if areapoi(2024,7218)
 step
 extraaction Yes Chef!##386907
 |tip Use this to increase your speed before it fades.
@@ -2379,9 +2386,157 @@ extraaction Yes Chef!##386907
 Hop into the Pot and Stir! |scenariogoal 1/55061 |goto 13.52,48.60
 |only if scenariogoal(55061)
 step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Gracus##202830
+|tip It walks around this area.
+buy Juicy Bushfruit##204295 |scenariogoal 1/58319 |goto 13.35,48.91
+|only if scenariogoal(58319)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Gracus##202830
+|tip It walks around this area.
+buy Greenberry##204293 |scenariogoal 1/58317 |goto 13.35,48.91
+|only if scenariogoal(58317)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Gracus##202830
+buy Fresh Dragon Fruit##204294 |scenariogoal 1/58318 |goto 13.41,48.92
+|only if scenariogoal(58318)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Head Chef Stacks##202834
+buy Rations: Westfall Stew##204303 |scenariogoal 1/58327 |goto 13.63,47.93
+|only if scenariogoal(58327)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Head Chef Stacks##202834
+buy Rations: Dragonbreath Chili##204304 |scenariogoal 1/58328 |goto 13.63,47.92
+|only if scenariogoal(58328)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Head Chef Stacks##202834
+buy Rations: Undermine Clam Chowder##204302 |scenariogoal 1/58326 |goto 13.63,47.92
+|only if scenariogoal(58326)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Head Chef Stacks##202834
+buy Rations: Scorpid Surprise##204301 |scenariogoal 1/58325 |goto 13.63,47.92
+|only if scenariogoal(58325)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Qariin Dotur##202829
+buy Seven Spices Bruffalon##204289 |scenariogoal 1/58313 |goto 13.71,49.19
+|only if scenariogoal(58313)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Qariin Dotur##202829
+|tip She walks around this area.
+buy "Volcano" Duck##204292 |scenariogoal 1/58316 |goto 13.71,49.12
+|only if scenariogoal(58316)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Qariin Dotur##202829
+|tip She walks around this area.
+buy Dragonflame Argali##204290 |scenariogoal 1/58314 |goto 13.64,48.90
+|only if scenariogoal(58314)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Qariin Dotur##202829
+buy Thrice-Charred Mammoth Ribs##204291 |scenariogoal 1/58315 |goto 13.64,48.89
+|only if scenariogoal(58315)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Norukk##196544
+buy Norukk's "All-Purpose" Fish Powder##204284 |scenariogoal 1/58308 |goto 12.93,48.62
+|only if scenariogoal(58308)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Erugosa##202832
+buy Four-Cheese Blend##204300 |scenariogoal 1/58324 |goto 13.47,48.45
+|only if scenariogoal(58324)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Erugosa##202832
+buy Flaky Pastry Dough##204298  |scenariogoal 1/58322 |goto 13.47,48.45
+|only if scenariogoal(58322)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Erugosa##202832
+buy Exquisite Ohn'ahran Potato##204297 |scenariogoal 1/58321 |goto 13.47,48.45
+|only if scenariogoal(58321)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Erugosa##202832
+buy Dark Thaldraszian Cocoa Powder##204299 |scenariogoal 1/58323 |goto 13.47,48.45
+|only if scenariogoal(58323)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Rokkutuk##194059
+buy Deepsquid Ink##204286 |scenariogoal 1/58310 |goto 13.91,50.08
+|only if scenariogoal(58310)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Tattukiaka##199448
+buy Fermented Mackerel Paste##204285 |scenariogoal 1/58309 |goto 14.03,49.71
+|only if scenariogoal(58309)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Hanu##186186
+buy Eye of Bass##204288 |scenariogoal 1/58312 |goto 12.90,48.70
+|only if scenariogoal(58312)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Tikukk##187869
+buy Island Crab Jerky##204287 |scenariogoal 1/58311 |goto 12.71,50.34
+|only if scenariogoal(58311)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Arvik##186449
+buy Skrog Liver Oil##204283 |scenariogoal 1/58307 |goto 12.90,48.82
+|only if scenariogoal(58307)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Junnik##186558
+buy Thousandbite Piranha Collar##204281 |scenariogoal 1/58305 |goto 13.89,49.50
+|only if scenariogoal(58305)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Patchu##196069
+buy Lunker Bits##204282 |scenariogoal 1/58306 |goto 13.89,49.85
+|only if scenariogoal(58306)
+step
+extraaction Yes Chef!##386907
+|tip Use this to increase your speed before it fades.
+talk Gracus##202830
+buy Dried Coldsnap Sagittate##204296 |scenariogoal 1/58320 |goto 13.27,48.79
+|only if scenariogoal(58320)
+step
 Waiting for Next Stage |complete scenariogoal(54615) |or |next "Get_Orders_from_Big_Kinook"
-'|complete scenariogoal(54614) or scenariogoal(54647) or scenariogoal(54648) or scenariogoal(54649) or scenariogoal(54652) or scenariogoal(54733) or scenariogoal(54735) or scenariogoal(54736) or scenariogoal(54737) or scenariogoal(54650) or scenariogoal(54651) or scenariogoal(54653) or scenariogoal(54734) |or
-|only if inscenario() or areapoi(2024,7218)
+'|complete scenariogoal(54614,54647,54648,54649,54652,54733,54735,54736,54737,54650,54651,54653,54734,58341,58342,58351,58343,58352,58350,58349,58337,58340,58338,58339,58332,58348,58346,58345,58347,58334,58333,58336,58335,58331) |or
+|only if inscenario()
 step
 extraaction Salted Fish Scraps##386267
 Throw Salted Fish Scraps in the Pot |scenariogoal 2/54614 |goto 13.57,48.57
@@ -2435,8 +2590,104 @@ extraaction Grungle##386889
 Throw a Grungle in the Pot |scenariogoal 2/54734 |goto 13.57,48.57
 |only if scenariogoal(54734)
 step
+extraaction Greenberry##404101
+Throw a Greenberry in the Pot |scenariogoal 2/58341 |goto 13.53,48.52
+|only if scenariogoal(58341)
+step
+extraaction Fresh Dragon Fruit##404102
+Throw the Fresh Dragon Fruit in the Pot |scenariogoal 2/58342 |goto 13.57,48.61
+|only if scenariogoal(58342)
+step
+extraaction Rations: Westfall Stew##404111
+Pour the Rations: Westfall Stew in the Pot |scenariogoal 2/58351 |goto 13.54,48.51
+|only if scenariogoal(58351)
+step
+extraaction Juicy Bushfruit##404103
+Throw the Juicy Bushfruit in the Pot |scenariogoal 2/58343 |goto 13.53,48.52
+|only if scenariogoal(58343)
+step
+extraaction Rations: Dragonbreath Chili##404112
+Throw the Rations: Dragonbreath Chili in the Pot |scenariogoal 2/58352 |goto 13.54,48.54
+|only if scenariogoal(58352)
+step
+extraaction Rations: Undermine Clam Chowder##404110
+Pour the Rations: Undermine Clam Chowder in the Pot |scenariogoal 2/58350 |goto 13.55,48.53
+|only if scenariogoal(58350)
+step
+extraaction Rations: Scorpid Surprise##404109
+Throw the Rations: Scorpid Surprise in the Pot |scenariogoal 2/58349 |goto 13.54,48.54
+|only if scenariogoal(58349)
+step
+extraaction Seven Spices Bruffalon##404097
+Throw the Seven Spices Bruffalon in the Pot |scenariogoal 2/58337 |goto 13.58,48.65
+|only if scenariogoal(58337)
+step
+extraaction "Volcano" Duck##404100
+Throw the "Volcano" Duck in the Pot |scenariogoal 2/58340 |goto 13.57,48.60
+|only if scenariogoal(58340)
+step
+extraaction Dragonflame Argali##404098
+Throw the Dragonflame Argali in the Pot |scenariogoal 2/58338 |goto 13.57,48.62
+|only if scenariogoal(58338)
+step
+extraaction Thrice-Charred Mammoth Ribs##404099
+Throw the Thrice-Charred Mammoth Ribs in the Pot |scenariogoal 2/58339 |goto 13.57,48.64
+|only if scenariogoal(58339)
+step
+extraaction Norukk's "All-Purpose" Fish Powder##404092
+Sprinkle Norukk's "All-Purpose" Fish Powder Into the Pot |scenariogoal 2/58332 |goto 13.51,48.53
+|only if scenariogoal(58332)
+step
+extraaction Four-Cheese Blend##404108
+Sprinkle the Four-Cheese Blend in the Pot |scenariogoal 2/58348 |goto 13.54,48.53
+|only if scenariogoal(58348)
+step
+extraaction Flaky Pastry Dough##404106
+Throw the Flaky Pastry Dough in the Pot |scenariogoal 2/58346 |goto 13.54,48.54
+|only if scenariogoal(58346)
+step
+extraaction Exquisite Ohn'ahran Potato##404129
+Throw the Exquisite Ohn'ahran Potato in the Pot |scenariogoal 2/58345 |goto 13.55,48.52
+|only if scenariogoal(58345)
+step
+extraaction Dark Thaldraszian Cocoa Powder##404107
+Sprinkle some Dark Thaldraszian Cocoa Powder in the Pot |scenariogoal 2/58347 |goto 13.55,48.54
+|only if scenariogoal(58347)
+step
+extraaction Deepsquid Ink##404094
+Pour the Deepsquid Ink in the Pot |scenariogoal 2/58334 |goto 13.58,48.65
+|only if scenariogoal(58334)
+step
+extraaction Fermented Mackerel Paste##404093
+Squeeze the Fermented Mackerel Paste in the Pot |scenariogoal 2/58333 |goto 13.58,48.65
+|only if scenariogoal(58333)
+step
+extraaction Eye of Bass##404096
+Throw the Eye of Bass in the Pot |scenariogoal 2/58336 |goto 13.57,48.62
+|only if scenariogoal(58336)
+step
+extraaction Island Crab Jerky##404095
+Throw the Island Crab Jerky In the Pot |scenariogoal 2/58335 |goto 13.52,48.51
+|only if scenariogoal(58335)
+step
+extraaction Skrog Liver Oil##404091
+Pour Some Skrog Liver Oil In the Pot |scenariogoal 2/58331 |goto 13.49,48.52
+|only if scenariogoal(58331)
+step
+extraaction Thousandbite Piranha Collar##404089
+Throw Thousandbite Piranha Collar in the pot |scenariogoal 2/58329 |goto 13.57,48.63
+|only if scenariogoal(58329)
+step
+extraaction Lunker Bits##404090
+Throw Some Lunker Bits in the pot |scenariogoal 2/58330 |goto 13.57,48.63
+|only if scenariogoal(58330)
+step
+extraaction Dried Coldsnap Sagittate##404104
+Throw the Dried Coldsnap Sagittate in the Pot |scenariogoal 2/58344 |goto 13.52,48.50
+|only if scenariogoal(58344)
+step
 Waiting for New Stage |complete scenariogoal(54615) |next "Get_Orders_from_Big_Kinook"
-|only if inscenario() or areapoi(2024,7218)
+|only if inscenario()
 step
 label "Complete_Tasks_in_the_Community_Feast"
 Complete #5# Tasks in the Community Feast |q 70893/1 |goto 13.57,48.59 |or
@@ -2450,14 +2701,8 @@ step
 click Communal Pot
 Choose _<Eat some soup.>_
 |tip The soup will stay hot for one hour after the feast ends.
-Tip Wait for the Soup to Finish |complete areapoi(2024,7220) or areapoi(2024,7219) or areapoitime(7218) >= 60 |goto The Azure Span/0 13.53,48.60
-|tip Aftter an hour, the soup will become unavailable and the event won't start again for several hours.
-step
-click Communal Pot
-Choose _<Eat some soup.>_
-|tip The soup will stay hot for one hour after the feast ends.
-Tip Wait for the Soup to Cool Off |complete not areapoi(2024,7220) |goto The Azure Span/0 13.53,48.60 |next "Wait_For_Feast_To_Begin"
-|tip Aftter an hour, the soup will become unavailable and the event won't start again for several hours.
+Tip Wait for the Feast to Begin Again |complete inscenario() |next "Wait_For_Feast_To_Begin" |goto The Azure Span/0 13.53,48.60
+|tip A new feast begins every hour.
 ]])
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Iskaara Tuskarr\\Fishing Gear Crafting",{
 author="support@zygorguides.com",
@@ -5373,10 +5618,10 @@ talk Unatos##193015
 |tip Inside the building.
 accept Beknownst and Glorious##70916 |goto 58.18,35.15
 ]])
+ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Winterpelt Furbolg",{
 author="support@zygorguides.com",
-description="This guide will get you to 2050/3000 Unfriendly with the Winterpelt Furbolg faction, "..
-"which is the current maximum obtainable reputation."
+description="This guide will help you unlock the Winterpelt Furbolg reputation and repeatable reputation quest."
 },[[
 step
 talk Sonova Snowden##189401
@@ -5573,4 +5818,47 @@ step
 talk Barst##196806
 |tip Outside, on top of the cave.
 turnin A Little Kelp for My Friends##70996 |goto 1.18,39.26
+step
+use Sonova's Request##204254
+accept Academic Assistance##72546
+|tip Open your adventure guide and scroll the content until you find this quest.
+step
+talk Sonova Snowden##189401
+turnin Academic Assistance##72546 |goto 65.39,15.94
+accept Primalist Pillagers##72588 |goto 65.39,15.94
+accept Honor Their Sacrifice##72589 |goto 65.39,15.94
+stickystart "Collect_Frosty_Foraged_Foods"
+step
+clicknpc Winterpelt Forager##199303+
+|tip They look like dead furbolg on the ground around this area.
+collect Winterpelt Jewelry##202246 |q 72589/1 |goto 68.14,19.07
+step
+label "Collect_Frosty_Foraged_Foods"
+Kill enemies around this area
+collect 8 Frosty Foraged Foods##202244 |q 72588/1 |goto 68.21,18.58
+step
+talk Sonova Snowden##189401
+turnin Primalist Pillagers##72588 |goto 65.39,15.95
+turnin Honor Their Sacrifice##72589 |goto 65.39,15.95
+accept Academic Acquisitions##72547 |goto 65.39,15.95
+step
+Kill enemies around this area
+collect 5 Liberated Furbolg Artifacts##202017 |q 72547/1 |goto 68.26,18.54
+step
+talk Sonova Snowden##201065
+turnin Academic Acquisitions##72547 |goto 66.92,12.72
+accept Additional Academic Acquisitions##72586 |goto 66.92,12.72
+step
+Kill enemies around this area
+collect 5 Liberated Furbolg Artifacts##202017 |q 72586/1 |goto 68.26,18.54
+step
+talk Sonova Snowden##201065
+turnin Additional Academic Acquisitions##72586 |goto 66.92,12.72
+step
+Reach Exalted with the Winterpelt Furbolg |complete rep("Winterpelt Furbolg")>Exalted |goto 68.26,18.54
+|tip This grind is similar to the Timbermaw Hold rep grind.
+|tip Farm Liberated Furbolg Artifacts and turn them in at Sonova Snowden for rep.
+|tip Each turn in will grant you one language skill point.
+|tip Every 25 language points unlocks a small series of quests.
 ]])
+ZGV.BETAEND()

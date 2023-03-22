@@ -651,7 +651,7 @@ function Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 		frame:SetWidth(320)
 		frame:SetClipsChildren(true)
 		frame:SetScale(ZGV.db.profile.framescale)
-		local frameheight = 1
+		local frameheight = param.height
 	
 		Notification.messagetoast = param
 		Notification.FloatingToast.sticky = ZGV.GuideMenu.Sticky[param1]
@@ -665,7 +665,6 @@ function Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 		for i, object in ipairs(param) do
 			object:Show()
 			object:SetParent(frame)
-			frameheight = frameheight + object:GetHeight()
 		end
 
 		local bgimage
@@ -701,18 +700,17 @@ function Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 			frame.leftbtn:Show()
 			frame.rightbtn:Show()
 		end
-	--	print(frameheight)
-
-		if param == Notification.MsgTstWelcome and frameheight < 90 then
+		
+		if param == Notification.MsgTstWelcome and frameheight < 120 then
 			frame:SetHeight(120)
 			frame.img:Show()
 		elseif param == Notification.MsgTstOrientation then
 			frame:SetHeight(135)
 			frame.img:Show()
-		elseif frameheight < 90 then
-			frame:SetHeight(frameheight + 55)
+		elseif frameheight < 120 then
+			frame:SetHeight(frameheight)
 		else
-			frame:SetHeight(frameheight + 70)
+			frame:SetHeight(frameheight)
 			frame.img:Show()
 		end
 

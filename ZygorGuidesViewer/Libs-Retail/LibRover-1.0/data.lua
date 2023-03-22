@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 469,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 471,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -34,7 +34,7 @@ data.MapIDsByName = {
 ---------------------------------
 -------    DRAGONFLIGHT   -------
 ---------------------------------
-["The Forbidden Reach"] = {[0]=2118,[1]=2107,[2]=2026,[3]=2110,[4]=2109},
+["The Forbidden Reach"] = {[0]=2118,[1]=2107,[2]=2026,[3]=2110,[4]=2109,[5]=2151},
 ["The Azure Vault"] = {[0]=2077,[1]=2076,[2]=2075,[3]=2074,[4]=2073},
 ["Azmerloth"] = {[0]=2092},
 ["Brackenhide Hollow"]={[0]=2096,[1]=2106},
@@ -59,7 +59,12 @@ data.MapIDsByName = {
 ["Algeth'ar Academy"] = {[0]=2099,[1]=2097,[2]=2098},
 ["Vault of the Incarnates"] = {[0]=2123,[1]=2124,[2]=2122,[3]=2119,[4]=2126,[5]=2120,[6]=2121,[7]=2125},
 ["The Emerald Dreamway DF"]={[0]=2084},
-
+["The Support Creche"]={[0]=2101},
+["The Siege Creche"]={[0]=2100},
+["Froststone Vault"]={[0]=2154},
+["The War Creche"]={[0]=2102},
+["Dragonskull Island"]={[0]=2150},
+["Zaralek Cavern"]={[0]=2133},
 
 
 

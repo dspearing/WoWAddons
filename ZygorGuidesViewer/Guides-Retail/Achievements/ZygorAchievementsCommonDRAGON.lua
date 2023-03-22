@@ -4,7 +4,7 @@ if ZGV:DoMutex("AchievementsCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Professions\\In Tyr's Footsteps",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={16683},
 patch='100002',
 startlevel=70,
@@ -83,7 +83,7 @@ You Earned the "Sleeping on the Job" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks",{
 author="support@zygorguides.com",
-description="\nPlace a flag on 10 of the tallest peaks in the Dragon Isles.",
+description="Place a flag on 10 of the tallest peaks in the Dragon Isles.",
 condition_suggested=function() return level == 70 and factionrenown(2507) >= 6 and not achieved(64556) end,
 achieveid={15890},
 startlevel=70,
@@ -187,7 +187,7 @@ Plant the South Hold Gate Flag |q 71222 |goto Thaldraszus/0 34.04,84.85 |future 
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Symbols of Hope",{
 author="support@zygorguides.com",
-description="\nRelease 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.",
+description="Release 10 Hope Kites that were tethered by locals of the Waking Shores while waiting for the dragonflights' return.",
 condition_suggested=function() return level == 60 and not achieved(16584) end,
 achieveid={16584},
 startlevel=60,
@@ -237,7 +237,7 @@ Release the Hatchery Observatory Hope Kite |q 72099 |goto The Waking Shores/0 61
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Honor Our Ancestors",{
 author="support@zygorguides.com",
-description="\nDeliver 10 gifts to 10 Ancestors found throughout the Ohn'ahran Plains.",
+description="Deliver 10 gifts to 10 Ancestors found throughout the Ohn'ahran Plains.",
 condition_suggested=function() return level == 60 and not achieved(16423) end,
 achieveid={16423},
 startlevel=60,
@@ -410,7 +410,7 @@ You Earned the "Honor Our Ancestors" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\That's Pretty Neat!",{
 author="support@zygorguides.com",
-description="\nUse the S.E.L.F.I.E. Camera to take pictures with various wildlife found on the Dragon Isles.",
+description="Use the S.E.L.F.I.E. Camera to take pictures with various wildlife found on the Dragon Isles.",
 condition_suggested=function() return level == 60 and not achieved(16446) end,
 achieveid={16446},
 startlevel=60,
@@ -621,7 +621,7 @@ Take a Picture with the S.E.L.F.I.E. camera with "Apex Blazewing" |achieve 16446
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Knew You Nokhud Do It!",{
 author="support@zygorguides.com",
-description="\nComplete the Nokhud training course.",
+description="Complete the Nokhud training course.",
 condition_suggested=function() return level == 60 and not achieved(16583) end,
 achieveid={16583},
 startlevel=60,
@@ -651,7 +651,7 @@ You Earned the "Knew You Nokhud Do It!" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Treasures of The Waking Shores",{
 author="support@zygorguides.com",
-description="\nUncover the hidden Treasures of The Waking Shores.",
+description="Uncover the hidden Treasures of The Waking Shores.",
 condition_suggested=function() return level == 60 and not achieved(16297) end,
 achieveid={16297},
 startlevel=60,
@@ -829,7 +829,7 @@ You Earned the "Treasures of The Waking Shores" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Treasures of the Ohn'ahran Plains",{
 author="support@zygorguides.com",
-description="\nUncover the hidden Treasures of the Ohn'ahran Plains.",
+description="Uncover the hidden Treasures of the Ohn'ahran Plains.",
 condition_suggested=function() return level == 60 and not achieved(16299) end,
 achieveid={16299},
 startlevel=60,
@@ -1004,7 +1004,7 @@ You Earned the "Treasures of the Ohn'ahran Plains" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Treasures of The Azure Span",{
 author="support@zygorguides.com",
-description="\nUncover the hidden Treasures of The Azure Span.",
+description="Uncover the hidden Treasures of The Azure Span.",
 condition_suggested=function() return level == 60 and not achieved(16300) end,
 achieveid={16300},
 startlevel=60,
@@ -1176,7 +1176,7 @@ You Earned the "Treasures of The Azure Span" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Treasures of Thaldraszus",{
 author="support@zygorguides.com",
-description="\nUncover the hidden Treasures of Thaldraszus.",
+description="Uncover the hidden Treasures of Thaldraszus.",
 condition_suggested=function() return level == 60 and not achieved(16301) end,
 achieveid={16301},
 startlevel=60,
@@ -1345,7 +1345,7 @@ You Earned the "Treasures of Thaldraszus" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Let's Get Quacking",{
 author="support@zygorguides.com",
-description="\nComplete 5 different Bubbled Duckling escorts over the course of at least 5 weeks.",
+description="Complete 5 different Bubbled Duckling escorts over the course of at least 5 weeks.",
 condition_suggested=function() return level == 60 and not achieved(16409) end,
 achieveid={16409},
 startlevel=60,
@@ -1435,7 +1435,7 @@ You Earned the "Let's Get Quacking" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Who's a Good Bakar?",{
 author="support@zygorguides.com",
-description="\nFind and pet each unique Bakar found in Ohn'ahran Plains.",
+description="Find and pet each unique Bakar found in Ohn'ahran Plains.",
 condition_suggested=function() return level == 60 and not achieved(16424) end,
 achieveid={16424},
 startlevel=60,
@@ -2266,7 +2266,7 @@ You Earned the "Dragon Isles Safari" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Mastering the Waygates",{
 author="support@zygorguides.com",
-description="\nUnlock all of the Ancient Waygate locations in the Dragon Isles.",
+description="Unlock all of the Ancient Waygate locations in the Dragon Isles.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 7 and not achieved(16292) end,
 achieveid={16292},
 startlevel=60,
@@ -2952,7 +2952,7 @@ turnin Waygate: Rusza'thar Reach##71138 |goto The Waking Shores/0 47.20,90.25 |o
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Sojourner of Azure Span",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={16428},
 patch='100002',
 startlevel=60,
@@ -2968,7 +2968,7 @@ You Earned the "Sojourner of Azure Span" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Sojourner of Ohn'ahran Plains",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={16405},
 patch='100002',
 startlevel=60,
@@ -2984,7 +2984,7 @@ You Earned the "Sojourner of Ohn'ahran Plains" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Sojourner of Thaldraszus",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={16398},
 patch='100002',
 startlevel=60,
@@ -3000,7 +3000,7 @@ You Earned the "Sojourner of Thaldraszus" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Sojourner of the Waking Shores",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={16401},
 patch='100002',
 startlevel=60,
@@ -3016,7 +3016,7 @@ You Earned the "Sojourner of The Waking Shores" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\River Rapids Wrangler",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={15889},
 patch='100002',
 startlevel=60,
@@ -3140,7 +3140,7 @@ You Earned the "River Rapids Wrangler" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Dragonflight\\Drop It Like It's Hot",{
 author="support@zygorguides.com",
-description="\n",
+description="",
 achieveid={17343},
 patch='100002',
 startlevel=70,
@@ -3165,7 +3165,7 @@ You Earned the "Drop It Like It's Hot" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Dragonflight\\Ready, Aim, Catalog!",{
 author="support@zygorguides.com",
-description="\nUnlock cataloging World Quests with the Dragonscale Expedition.",
+description="Unlock cataloging World Quests with the Dragonscale Expedition.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 8 and not achieved(16758) end,
 achieveid={16758},
 startlevel=60,
@@ -3217,7 +3217,7 @@ turnin Picture Perfect##65486 |goto 49.88,68.42
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Dragonflight\\Which Knot Was It Again?",{
 author="support@zygorguides.com",
-description="\nUnlock climbing World Quests with the Dragonscale Expedition.",
+description="Unlock climbing World Quests with the Dragonscale Expedition.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 6 and not achieved(16624) end,
 achieveid={16624},
 startlevel=60,
@@ -3271,7 +3271,7 @@ achieve Which Knot Was It Again?##16624
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Dragonflight\\The Disgruntled Hunter",{
 author="support@zygorguides.com",
-description="\nFind Hemet Nesingwary Jr. during the various grand hunts across the Dragon Isles.",
+description="Find Hemet Nesingwary Jr. during the various grand hunts across the Dragon Isles.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 6 and not achieved(16542) end,
 achieveid={16542},
 startlevel=60,
@@ -3332,7 +3332,7 @@ You Earned the "The Disgruntled Hunter" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Reputation\\Dragonflight\\Legendary Photograph",{
 author="support@zygorguides.com",
-description="\nEncounter each of the Legendary encounters found while cataloging wildlife.",
+description="Encounter each of the Legendary encounters found while cataloging wildlife.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 6 and not achieved(16572) end,
 achieveid={16572},
 startlevel=60,

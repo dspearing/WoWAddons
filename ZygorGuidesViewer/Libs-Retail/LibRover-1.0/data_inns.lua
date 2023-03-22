@@ -55,6 +55,10 @@ data.basenodes.inns = {
 		{name="Garden Shrine",faction="B",npc="Szaratheldra",npcid=194788,x=35.11,y=79.24},
 		{name="Temporal Conflux",faction="B",npc="Suma the Guised",npcid=186952,x=59.84,y=82.65,quest=65938},
 	},
+
+	["The Forbidden Reach"]={
+		{name="Morqut Village",faction="B",npc="Unpukiat",npcid=200560,x=33.83,y=59.05},
+	},
 	
 	-------------------------------
 	-----     SHADOWLANDS     -----

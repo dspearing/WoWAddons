@@ -1414,6 +1414,20 @@ GuideMenu.Parsers.ICONS = false
 			:SetWordWrap(mode~="overview")
 			:SetSpacing(4)
 
+		if e.icon then
+			CHAIN(object.tex)
+				:ClearAllPoints()
+				:SetSize(14,14)
+				:SetVertexColor(1,1,1,1)
+				:SetPoint("LEFT",3,0)
+			if e.guide then
+				local guide = ZGV:GetGuideByTitle(e.guide)
+				ZGV.IconSets.TabsIcons[e.guide.type]:AssignToTexture(object.tex)
+			else
+				ZGV.IconSets.TabsIcons[e.icon]:AssignToTexture(object.tex)
+			end
+		end
+
 		if GuideMenu.Parsers.ICONS and mode~="home" then
 			CHAIN(object.tex)
 				:ClearAllPoints()

@@ -4,7 +4,7 @@ if ZGV:DoMutex("AchievementsCSHADOW") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Nine Afterlives",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, find and pet all of the kittens in Maldraxxus.",
+description="To earn this achievement, find and pet all of the kittens in Maldraxxus.",
 achieveid={14634},
 patch='90001',
 startlevel=50,
@@ -60,7 +60,7 @@ You Earned the "Nine Afterlives" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Parasoling",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the \"Parasol Peril\" world quest ten times.",
+description="To earn this achievement, complete the \"Parasol Peril\" world quest ten times.",
 achieveid={14766},
 patch='90001',
 startlevel=50,
@@ -81,7 +81,7 @@ You Earned the "Parasoling" Achievement
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Adventurer of Maldraxxus",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14308},
 patch='90001',
 startlevel=60,
@@ -193,7 +193,7 @@ You Earned the "Adventurer of Maldraxxus " Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Adventurer of Ardenweald",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14309},
 patch='90001',
 startlevel=60,
@@ -377,7 +377,7 @@ You Earned the "Adventurer of Ardenweald" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Adventurer of Bastion",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14307},
 patch='90001',
 startlevel=60,
@@ -669,7 +669,7 @@ You Earned the "Adventurer of Bastion" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Adventurer of Revendreth",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14310},
 patch='90001',
 startlevel=60,
@@ -848,7 +848,7 @@ You Earned the "Adventurer of Revendreath" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Treasures of Maldraxxus",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14312},
 patch='90001',
 startlevel=60,
@@ -956,7 +956,7 @@ step
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Treasures of Revendreth",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14314},
 patch='90001',
 startlevel=60,
@@ -1069,7 +1069,7 @@ You Earned the "Treasures of Revendreth" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Treasures of Ardenweald",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14313},
 patch='90001',
 startlevel=60,
@@ -1251,7 +1251,7 @@ You Earned the "Treasures of Ardenweald" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Treasures of Bastion",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14311},
 patch='90001',
 startlevel=60,
@@ -1423,7 +1423,7 @@ You Earned the "Treasures of Bastion" Achievement
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Glory of the Shadowlands Hero",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the following Shadowlands Mythic dungeon achievements:\n\n"..
+description="To earn this achievement, complete the following Shadowlands Mythic dungeon achievements:\n\n"..
 "Bountiful Harvest\nSurgeon's Supplies\nReady for Raiding VII\nHooked On Hydroponics\nSomeone Could Trip on These!\n"..
 "Hunger for Knowledge\nFull Gores Meal\nGoing Viral\nRiding with my Slimes\nPicking Up the Pieces\nBreaking Bad\n"..
 "Nobody Puts Denathrius in a Corner\nCouple's Therapy\nHighly Communicable\nThinking with...\nGoliath Offline\n"..
@@ -1533,7 +1533,7 @@ Click here to load the "Kaal-ed Shot" achievement guide |confirm |next "Achievem
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Bountiful Harvest",{
 author="support@zygorguides.com",
-description="\nDefeat Amarth the Harvester after he's consumed the corpse of a Grisly Colossus using Final Harvest in the Necrotic Wake on Mythic difficulty.",
+description="Defeat Amarth the Harvester after he's consumed the corpse of a Grisly Colossus using Final Harvest in the Necrotic Wake on Mythic difficulty.",
 achieveid={14295},
 patch='90001',
 startlevel=60,
@@ -1557,7 +1557,7 @@ You Earned the "Bountiful Harvest" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Surgeon's Supplies",{
 author="support@zygorguides.com",
-description="\nDefeat Surgeon Stitchflesh after destroying two barrels of spare parts in the Necrotic Wake on Mythic difficulty.",
+description="Defeat Surgeon Stitchflesh after destroying two barrels of spare parts in the Necrotic Wake on Mythic difficulty.",
 achieveid={14320},
 patch='90001',
 startlevel=60,
@@ -1581,7 +1581,7 @@ You Earned the "Surgeon's Supplies" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Ready for Raiding VII",{
 author="support@zygorguides.com",
-description="\nDefeat Nalthor the Rimebinder without being struck by Comet Storm, Blizzard, or the secondary \n"..
+description="Defeat Nalthor the Rimebinder without being struck by Comet Storm, Blizzard, or the secondary \n"..
 "effect of Frozen Binds in the Necrotic Wake on Mythic difficulty.",
 achieveid={14285},
 patch='90001',
@@ -1607,7 +1607,7 @@ You Earned the "Ready for Raiding VII" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Hooked On Hydroponics",{
 author="support@zygorguides.com",
-description="\nDefeat Ingra Maloch after defeating an Overgrown Hydra on in the Mists of Tirna Scithe on Mythic difficulty.",
+description="Defeat Ingra Maloch after defeating an Overgrown Hydra on in the Mists of Tirna Scithe on Mythic difficulty.",
 achieveid={14503},
 patch='90001',
 startlevel=60,
@@ -1633,7 +1633,7 @@ You Earned the "Hooked On Hydroponics" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Someone Could Trip on These!",{
 author="support@zygorguides.com",
-description="\nFind Mistcaller's 6 toys in the Mists of Tirna Scithe on Mythic difficulty.",
+description="Find Mistcaller's 6 toys in the Mists of Tirna Scithe on Mythic difficulty.",
 achieveid={14291},
 patch='90001',
 startlevel=60,
@@ -1656,7 +1656,7 @@ You Earned the "Someone Could Trip on These!" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Hunger for Knowledge",{
 author="support@zygorguides.com",
-description="\nDefeat Tred'ova after defeating an Elightened Spinemaw Gorger in the Mists of Tirna Scithe on Mythic difficulty.",
+description="Defeat Tred'ova after defeating an Elightened Spinemaw Gorger in the Mists of Tirna Scithe on Mythic difficulty.",
 achieveid={14375},
 patch='90001',
 startlevel=60,
@@ -1678,7 +1678,7 @@ You Earned the "Hunger for Knowledge" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Full Gores Meal",{
 author="support@zygorguides.com",
-description="\nDefeat Globgrog after feeding him a three course meal in Plaguefall on Mythic difficulty.",
+description="Defeat Globgrog after feeding him a three course meal in Plaguefall on Mythic difficulty.",
 achieveid={14347},
 patch='90001',
 startlevel=60,
@@ -1703,7 +1703,7 @@ You Earned the "Full Gores Meal" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Going Viral",{
 author="support@zygorguides.com",
-description="\nDefeat Doctor Ickus after destroying 2 Volatile Plague Bombs in Plaguefall on Mythic difficulty.",
+description="Defeat Doctor Ickus after destroying 2 Volatile Plague Bombs in Plaguefall on Mythic difficulty.",
 achieveid={14296},
 patch='90001',
 startlevel=60,
@@ -1729,7 +1729,7 @@ You Earned the "Going Viral" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Riding with my Slimes",{
 author="support@zygorguides.com",
-description="\nDefeat all bosses while affected by Plaguefallen within a single visit in the Plaguefall dungeon on Mythic difficulty.",
+description="Defeat all bosses while affected by Plaguefallen within a single visit in the Plaguefall dungeon on Mythic difficulty.",
 achieveid={14292},
 patch='90001',
 startlevel=60,
@@ -1804,7 +1804,7 @@ You Earned the "Riding with my Slimes" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Picking Up the Pieces",{
 author="support@zygorguides.com",
-description="\nDefeat Halkias after he reabsorbs all three Shards of Halkias in the Halls of Atonement on Mythic difficulty.",
+description="Defeat Halkias after he reabsorbs all three Shards of Halkias in the Halls of Atonement on Mythic difficulty.",
 achieveid={14567},
 patch='90001',
 startlevel=60,
@@ -1826,7 +1826,7 @@ You Earned the "Picking Up the Pieces" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Breaking Bad",{
 author="support@zygorguides.com",
-description="\nDefeat Echelon after shattering 18 or more Undying Stonefiends at one time in the Halls of Atonement on Mythic difficulty.",
+description="Defeat Echelon after shattering 18 or more Undying Stonefiends at one time in the Halls of Atonement on Mythic difficulty.",
 achieveid={14284},
 patch='90001',
 startlevel=60,
@@ -1848,7 +1848,7 @@ You Earned the "Breaking Bad" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Nobody Puts Denathrius in a Corner",{
 author="support@zygorguides.com",
-description="\nDefeat Lord Chamberlain with 3 Sinstone Statues in corners of the room in the Halls of Atonement on Mythic difficulty.",
+description="Defeat Lord Chamberlain with 3 Sinstone Statues in corners of the room in the Halls of Atonement on Mythic difficulty.",
 achieveid={14352},
 patch='90001',
 startlevel=60,
@@ -1872,7 +1872,7 @@ You Earned the "Nobody Puts Denathrius in a Corner" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Couple's Therapy",{
 author="support@zygorguides.com",
-description="\nCause Millhouse and Millificent to strike each other with each Shadowfury and Echo \n"..
+description="Cause Millhouse and Millificent to strike each other with each Shadowfury and Echo \n"..
 "Finger Laser X-treme cast and defeat the Manastorms in De Other Side on Mythic difficulty.",
 achieveid={14374},
 patch='90001',
@@ -1897,7 +1897,7 @@ You Earned the "Couple's Therapy" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Highly Communicable",{
 author="support@zygorguides.com",
-description="\nDefeat Hakkar, the Manastorms, Dealer Xy'exa, and Mueh'zala while at least one party \n"..
+description="Defeat Hakkar, the Manastorms, Dealer Xy'exa, and Mueh'zala while at least one party \n"..
 "member is afflicted with Corrupted Blood within a single visit to in De Other Side on Mythic difficulty.",
 achieveid={14354},
 patch='90001',
@@ -1923,7 +1923,7 @@ You Earned the "Highly Communicable" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Thinking with...",{
 author="support@zygorguides.com",
-description="\nDefeat Dealer Xy'exa after collecting all 5 orbs floating above her in De Other Side on Mythic Difficulty.",
+description="Defeat Dealer Xy'exa after collecting all 5 orbs floating above her in De Other Side on Mythic Difficulty.",
 achieveid={14606},
 patch='90001',
 startlevel=60,
@@ -1949,7 +1949,7 @@ You Earned the "Thinking with..." Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Goliath Offline",{
 author="support@zygorguides.com",
-description="\nDefeat Oryphrion after activating and destroying all three Shattered Devastators \n"..
+description="Defeat Oryphrion after activating and destroying all three Shattered Devastators \n"..
 "in the Spires of Ascension on Mythic difficulty.",
 achieveid={14331},
 patch='90001',
@@ -1977,7 +1977,7 @@ You Earned the "Goliath Offline" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\ExSPEARiential",{
 author="support@zygorguides.com",
-description="\nDefeat Devos, Paragon of Doubt after hitting her with five Spears of Duty in \n"..
+description="Defeat Devos, Paragon of Doubt after hitting her with five Spears of Duty in \n"..
 "the Spires of Ascension on Mythic difficulty.",
 achieveid={14323},
 patch='90001',
@@ -2002,7 +2002,7 @@ You Earned the "ExSPEARiential" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\I Can See My House From Here",{
 author="support@zygorguides.com",
-description="\nGather all five orbs within 60 seconds of each other in Spires of Ascension after defeating \n"..
+description="Gather all five orbs within 60 seconds of each other in Spires of Ascension after defeating \n"..
 "Devos, Paragon of Doubt in the Spires of Ascension on Mythic difficulty.",
 achieveid={14327},
 patch='90001',
@@ -2026,7 +2026,7 @@ You Earned the "I Can See My House From Here" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Three Choose One",{
 author="support@zygorguides.com",
-description="\nDefeat each of the combatants last throughout multiple completions of the Affront \n"..
+description="Defeat each of the combatants last throughout multiple completions of the Affront \n"..
 "of Challengers encounter in the Theater of Pain on Mythic difficulty.",
 achieveid={14297},
 patch='90001',
@@ -2052,7 +2052,7 @@ You Earned the "Three Choose One" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Fresh Meat!",{
 author="support@zygorguides.com",
-description="\nDefeat Gorechop after tenderizing 2 hunks of meat with Tenderizing Smash in the Theater of Pain on Mythic difficulty.",
+description="Defeat Gorechop after tenderizing 2 hunks of meat with Tenderizing Smash in the Theater of Pain on Mythic difficulty.",
 achieveid={14607},
 patch='90001',
 startlevel=60,
@@ -2074,7 +2074,7 @@ You Earned the "Fresh Meat!" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Royal Rumble",{
 author="support@zygorguides.com",
-description="\nDefeat Mordretha, the Endless Empress, after performing a /challenge and defeating 2 \n"..
+description="Defeat Mordretha, the Endless Empress, after performing a /challenge and defeating 2 \n"..
 "Ghostly Contenders in the Theater of Pain on Mythic difficulty.",
 achieveid={14533},
 patch='90001',
@@ -2099,7 +2099,7 @@ You Earned the "Royal Rumble" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Residue Evil",{
 author="support@zygorguides.com",
-description="\nDefeat Executor Tarvold after slaying 8 Forlorn Captives with the effects of \n"..
+description="Defeat Executor Tarvold after slaying 8 Forlorn Captives with the effects of \n"..
 "Residue in Sanguine Depths on Mythic difficulty.",
 achieveid={14286},
 patch='90001',
@@ -2125,7 +2125,7 @@ You Earned the "Residue Evil" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\I Only Have Eyes For You",{
 author="support@zygorguides.com",
-description="\nDefeat Duraka the Unbreakable in the Sanguine Depths on Mythic difficulty.",
+description="Defeat Duraka the Unbreakable in the Sanguine Depths on Mythic difficulty.",
 achieveid={14290},
 patch='90001',
 startlevel=60,
@@ -2167,7 +2167,7 @@ You Earned the "I Only Have Eyes For You" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Dungeons\\Kaal-ed Shot",{
 author="support@zygorguides.com",
-description="\nDefeat General Kaal while affected by Slammed! in the Sanguine Depths on Mythic difficulty.",
+description="Defeat General Kaal while affected by Slammed! in the Sanguine Depths on Mythic difficulty.",
 achieveid={14289},
 patch='90001',
 startlevel=60,
@@ -2197,7 +2197,7 @@ You Earned the "Kaal-ed Shot" Achievement
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Glory of the Nathria Raider",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievements contained within this guide.",
 achieveid={14355},
 patch='90001',
 startlevel=60,
@@ -2249,7 +2249,7 @@ You Earned the "Glory of the Nathria Raider" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Blind as a Bat",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14293},
 patch='90001',
 startlevel=60,
@@ -2271,7 +2271,7 @@ You Earned the "Blind as a Bat" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Taking Care of Business",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14523},
 patch='90001',
 startlevel=60,
@@ -2293,7 +2293,7 @@ You Earned the "Taking Care of Business" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Burning Bright",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14523},
 patch='90001',
 startlevel=60,
@@ -2316,7 +2316,7 @@ You Earned the "Burning Bright" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Private Stock",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14617},
 patch='90001',
 startlevel=60,
@@ -2341,7 +2341,7 @@ You Earned the "Private Stock" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Feed the Beast",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14376},
 patch='90001',
 startlevel=60,
@@ -2362,7 +2362,7 @@ You Earned the "Feed the Beast" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\I Don't Know What I Expected",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14524},
 patch='90001',
 startlevel=60,
@@ -2386,7 +2386,7 @@ You Earned the "I Don't Know What I Expected" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Pour Decision Making",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14619},
 patch='90001',
 startlevel=60,
@@ -2405,7 +2405,7 @@ You Earned the "Pour Decision Making" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Dirtflap's Revenge",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14294},
 patch='90001',
 startlevel=60,
@@ -2427,7 +2427,7 @@ You Earned the "Dirtflap's Revenge" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Feed Me, Seymour!",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14525},
 patch='90001',
 startlevel=60,
@@ -2456,7 +2456,7 @@ You Earned the "Feed Me, Seymour!" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Clear Conscience",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
+description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
 achieveid={14610},
 patch='90001',
 startlevel=60,
@@ -2480,7 +2480,7 @@ You Earned the "Clear Conscience" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Shadowlands\\We Can Rebuild",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={15023},
 patch='90001',
 startlevel=60,
@@ -2504,7 +2504,7 @@ You Earned the "We Can Rebuild" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Shadowlands\\Denying the Drought",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={15024},
 patch='90001',
 startlevel=60,
@@ -2528,7 +2528,7 @@ You Earned the "Denying the Drought" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Shadowlands\\Sanctum Superior",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={15024},
 patch='90001',
 startlevel=60,
@@ -2552,7 +2552,7 @@ You Earned the "Sanctum Superior" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Path of Ascension\\The Path Towards Ascension 1",{
 author="support@zygorguides.com",
-description="\nThis Guide will walk you through completing The Path Towards Ascension Achievement.",
+description="This Guide will walk you through completing The Path Towards Ascension Achievement.",
 achieveid={14340},
 patch='90001',
 startlevel=60,
@@ -2567,7 +2567,7 @@ You Earned the "The Path Towards Ascension 1" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Path of Ascension\\The Path Towards Ascension 3",{
 author="support@zygorguides.com",
-description="\nThis Guide will walk you through completing The Path Towards Ascension Achievement.",
+description="This Guide will walk you through completing The Path Towards Ascension Achievement.",
 achieveid={14342},
 patch='90001',
 startlevel=60,
@@ -2582,7 +2582,7 @@ You Earned the "The Path Towards Ascension 3" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Path of Ascension\\The Path Towards Ascension 5",{
 author="support@zygorguides.com",
-description="\nThis Guide will walk you through completing The Path Towards Ascension Achievement.",
+description="This Guide will walk you through completing The Path Towards Ascension Achievement.",
 achieveid={14343},
 patch='90001',
 startlevel=60,
@@ -2597,7 +2597,7 @@ You Earned the "The Path Towards Ascension 5" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Path of Ascension\\The Path Towards Ascension 7",{
 author="support@zygorguides.com",
-description="\nThis Guide will walk you through completing The Path Towards Ascension Achievement.",
+description="This Guide will walk you through completing The Path Towards Ascension Achievement.",
 achieveid={14344},
 patch='90001',
 startlevel=60,
@@ -2612,7 +2612,7 @@ You Earned the "The Path Towards Ascension 7" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Torghast\\Twisting Corridors: Layer 2",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete Layer 2 of Twisting Corridors in Torghast, Tower of the Damned.",
+description="To earn this achievement, complete Layer 2 of Twisting Corridors in Torghast, Tower of the Damned.",
 achieveid={14469},
 patch='90001',
 startlevel=60,
@@ -2629,7 +2629,7 @@ You Earned the "Twisting Corridors: Layer 2" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Torghast\\Twisting Corridors: Layer 4",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete Layer 4 of Twisting Corridors in Torghast, Tower of the Damned.",
+description="To earn this achievement, complete Layer 4 of Twisting Corridors in Torghast, Tower of the Damned.",
 achieveid={14471},
 patch='90001',
 startlevel=60,
@@ -2643,7 +2643,7 @@ Earn the "Twisting Corridors: Layer 4" Achievement |achieve 14570
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Torghast\\Twisting Corridors: Layer 6",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete Layer 6 of Twisting Corridors in Torghast, Tower of the Damned.",
+description="To earn this achievement, complete Layer 6 of Twisting Corridors in Torghast, Tower of the Damned.",
 achieveid={14568},
 patch='90001',
 startlevel=60,
@@ -2657,7 +2657,7 @@ Earn the "Twisting Corridors: Layer 6" Achievement |achieve 14570
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Torghast\\Twisting Corridors: Layer 8",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete Layer 8 of Twisting Corridors in Torghast, Tower of the Damned.",
+description="To earn this achievement, complete Layer 8 of Twisting Corridors in Torghast, Tower of the Damned.",
 achieveid={14570},
 patch='90001',
 startlevel=60,
@@ -2674,7 +2674,7 @@ You earned the "Twisting Corridors: Layer 8" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore Bastion",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={14303},
 patch='90001',
 startlevel=60,
@@ -2719,7 +2719,7 @@ You Earned the "Explore Bastion" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore Maldraxxus",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={14305},
 patch='90001',
 startlevel=60,
@@ -2786,7 +2786,7 @@ You Earned the "Explore Maldraxxus" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore Ardenweald",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={14304},
 patch='90001',
 startlevel=60,
@@ -2853,7 +2853,7 @@ You Earned the "Explore Ardenweald" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore Revendreth",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={14306},
 patch='90001',
 startlevel=60,
@@ -2944,7 +2944,7 @@ You Earned the "Explore Revendreth" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore The Maw",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete various achievements within Revendreth, found in this guide.",
+description="To earn this achievement, complete various achievements within Revendreth, found in this guide.",
 achieveid={14663},
 patch='90001',
 startlevel=60,
@@ -2991,7 +2991,7 @@ ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Loremaster of Shadowlands",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement",
+description="To earn this achievement",
 achieveid={14280},
 patch='90001',
 startlevel=60,
@@ -3035,7 +3035,7 @@ You Earned the "Loremaster of Shadowlands" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Sojourner of Bastion",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement",
+description="To earn this achievement",
 achieveid={14801},
 patch='90001',
 startlevel=60,
@@ -3238,7 +3238,7 @@ You Earned the "Sojourner of Bastion" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Sojourner of Revendreth",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement",
+description="To earn this achievement",
 achieveid={14798},
 patch='90001',
 startlevel=60,
@@ -3392,7 +3392,7 @@ You Earned the "Sojourner of Revendreth" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Sojourner of Ardenweald",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement",
+description="To earn this achievement",
 achieveid={14800},
 patch='90001',
 startlevel=60,
@@ -3486,7 +3486,7 @@ You Earned the "Sojourner of Ardenweald" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Sojourner of Maldraxxus",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement",
+description="To earn this achievement",
 achieveid={14799},
 patch='90001',
 startlevel=60,
@@ -3542,7 +3542,7 @@ You Earned the "Sojourner of Maldraxxus" Achievement
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Quest Achievements\\Shadowlands\\Return to Lordaeron",{
 author="support@zygorguides.com",
-description="\nTo earn this achievement, complete the Return to Lordaeron storyline.",
+description="To earn this achievement, complete the Return to Lordaeron storyline.",
 achieveid={15579},
 patch='90205',
 startlevel=60,
@@ -3738,7 +3738,7 @@ You Earned the "Return to Lordaeron" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Unlocking the Secrets",{
 author="support@zygorguides.com",
-description="\nComplete the Zereth Mortis achievements listed below:\n\nExplore Zereth Mortis\n"..
+description="Complete the Zereth Mortis achievements listed below:\n\nExplore Zereth Mortis\n"..
 "Tales of the Exile\nCurious Collections\nAdventures in Zereth Mortis\nPath to Enlightenment\n"..
 "A Means to an End",
 achieveid={15514},
@@ -4015,7 +4015,7 @@ You Earned the "Unlocking the Secrets" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Curious Collections",{
 author="support@zygorguides.com",
-description="\nDiscover 5 hidden treasures of Zereth Mortis.",
+description="Discover 5 hidden treasures of Zereth Mortis.",
 achieveid={15513},
 patch='90200',
 startlevel=60,
@@ -4031,7 +4031,7 @@ You Earned the "Curious Collections" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Adventures in Zereth Mortis",{
 author="support@zygorguides.com",
-description="\nComplete 10 of the special encounters in Zereth Mortis.",
+description="Complete 10 of the special encounters in Zereth Mortis.",
 achieveid={15512},
 patch='90200',
 startlevel=60,
@@ -4048,7 +4048,7 @@ You Earned the "Adventures in Zereth Mortis" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Tales of the Exile",{
 author="support@zygorguides.com",
-description="\nRead the seven volumes of \"Firim in Exile\" found in Zereth Mortis.",
+description="Read the seven volumes of \"Firim in Exile\" found in Zereth Mortis.",
 achieveid={15509},
 patch='90200',
 startlevel=60,
@@ -4116,7 +4116,7 @@ You Earned the "Tales of the Exile" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Quests\\Shadowlands\\Path to Enlightenment",{
 author="support@zygorguides.com",
-description="\nComplete the storylines listed below:\n\nSmall Pet Problems\n"..
+description="Complete the storylines listed below:\n\nSmall Pet Problems\n"..
 "Not All Are Lost\nA Return to Grace",
 achieveid={15515},
 patch='90200',
@@ -4294,7 +4294,7 @@ You Earned the "Path to Enlightenment" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Shadowlands\\Explore Zereth Mortis",{
 author="support@zygorguides.com",
-description="\nExplore Zereth Mortis, revealing the covered areas of the world map.",
+description="Explore Zereth Mortis, revealing the covered areas of the world map.",
 achieveid={15224},
 patch='90200',
 startlevel=60,

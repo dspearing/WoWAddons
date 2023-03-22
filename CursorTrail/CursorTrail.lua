@@ -232,7 +232,7 @@ function printUsageMsg()
     print(BLUE.."  /ct combat"..GREEN.." - Toggles the 'Show only in combat' setting.")
     print(BLUE.."  /ct fade"..GREEN.." - Toggles the 'Fade out when idle' setting.")
     print(BLUE.."  /ct mouselook"..GREEN.." - Toggles the 'Show during Mouse Look' setting.")
-    print(BLUE.."  /ct off"..GREEN.." - Temporarily disables the cursor effects to improve performance."
+    print(BLUE.."  /ct off"..GREEN.." - Temporarily disables the cursor effects to improve game performance."
         .."  (Automatically turns back on at next reload, or by typing "..BLUE.."/ct on"..GREEN..".)")
     print(BLUE.."  /ct reload"..GREEN.." - Reloads the current cursor settings.")
     print(BLUE.."  /ct reset"..GREEN.." - Resets cursor to original settings.")
@@ -563,6 +563,10 @@ end
 -- Hide during movies.
 Globals.MovieFrame:HookScript("OnShow", function() gShowOrHide = kHide end)
 Globals.MovieFrame:HookScript("OnHide", function() gShowOrHide = kShow end)
+---->>>DIDN'T WORK...
+----    -- Only reshow cursor FX if "show only in combat" is off.
+----    if (PlayerConfig.UserShowOnlyInCombat ~= true) then gShowOrHide = kShow end
+----end)
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                            Functions                                    ]]
