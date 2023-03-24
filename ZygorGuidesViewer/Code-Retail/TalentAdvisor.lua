@@ -319,7 +319,7 @@ function TA:LearnNextTalent()
 							node.activeEntry = node.activeEntry or {}
 							node.activeEntry.entryID = entryID
 							node.activeEntry.rank = points_at_level[entryID]
-							if #node.entryIDs>1 then
+							if #node.entryIDs>1 and not node.nextEntry then
 								C_Traits.SetSelection(configID,node.ID,entryID)
 							else
 								C_Traits.PurchaseRank(configID,node.ID)

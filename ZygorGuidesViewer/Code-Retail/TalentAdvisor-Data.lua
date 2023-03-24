@@ -143,22 +143,22 @@ TA.Builds = {
 			]]
 		},
 		["Unholy (DPS)"] = {3,true,[[
-				Cleaving Strikes##96202
-				Enfeeble##96189
-				Brittle##96190
 				Death Strike##96200
 				Chains of Ice##96210
 				Mind Freeze##96211
-				Anti-Magic Shell##96199
-				Improved Death Strike##96196
-				Might of Thassarian##96205
-				Unholy Endurance##96192
-				Unholy Ground##96187
+				Cleaving Strikes##96202
+				Enfeeble##96189
+				Brittle##96190
 				Blinding Sleet##96172
 				Icebound Fortitude##96213
 				Merciless Strikes##96214
 				Gloom Ward##96180
 				Runic Attenuation##96216
+				Might of Thassarian##96205
+				Unholy Endurance##96192
+				Unholy Ground##96187
+				Anti-Magic Shell##96199
+				Improved Death Strike##96196
 				Veteran of the Third War##96197
 				Veteran of the Third War##96197
 				Anti-Magic Zone##96194
@@ -177,33 +177,33 @@ TA.Builds = {
 				Raise Dead##96201
 			]],[[
 				Festering Strike##96326
-				Raise Dead##96325
 				Scourge Strike##96327
-				Dark Transformation##96324
 				Outbreak##96328
-				Unholy Blight##96296
+				Epidemic##96296
+				Raise Dead##96325
+				Dark Transformation##96324
 				Infected Claws##96318
 				Improved Festering Strike##96329
+				Unholy Blight##96295
+				Defile##96294
+				Replenishing Wounds##96297
+				Ebon Fever##96298
 				Sudden Doom##96314
 				Plaguebringer##96319
 				Unholy Pact##96316
-				Epidemic##96295
-				Replenishing Wounds##96297
-				Ebon Fever##96298
 				Improved Festering Strike##96329
 				Apocalypse##96322
+				Magus of the Dead##96282
 				Unholy Command##96331
 				Unholy Command##96331
 				Eternal Agony##96332
-				Improved Death Coil##96321
 				Army of the Dead##96333
-				Army of the Damned##96287
-				Superstrain##96289
 				Death Rot##96292
 				Festermight##96286
 				Festermight##96286
 				Unholy Assault##96285
-				Ghoulish Frenzy##96288
+				Army of the Damned##96287
+				Superstrain##96289
 				Ghoulish Frenzy##96288
 				Morbidity##96334
 			]]
@@ -1482,71 +1482,74 @@ TA.Builds = {
 				Gift of the Golden Val'kyr##102449
 			]]
 		},
-		["Retribution (DPS)"] = {3,true, [[
-				Fist of Justice##102589
-				Fist of Justice##102589
+		["Retribution (DPS)"] = {3,true, [[--Done
 				Greater Judgment##102590
+				Rebuke##102591
 				Divine Steed##102625
 				Cavalier##102592
-				Blessing of Freedom##102587
 				Lay on Hands##102583
+				Cleanse Toxins##102476
 				Blinding Light##102584
+				Seasoned Warhorse##102624
+				Punishment##115444
+				Lightforged Blessing##115239
+				Crusader's Reprieve##102518
 				Avenging Wrath##102593
-				Rebuke##102591
+				Sanctified Plates##115034
+				Sanctified Plates##115034
+				Unbreakable Spirit##102603
+				Justification##102478
 				Holy Aegis##102597
 				Holy Aegis##102597
 				Blessing of Sacrifice##102602
-				Recompense##102594
-				Seal of Reprisal##102621
-				Seal of Reprisal##102621
-				Incandescence##102620
-				Unbreakable Spirit##102603
-				Blessing of Protection##102604
-				Improved Blessing of Protection##102606
-				Divine Purpose##102608
-				Seal of Alacrity##102609
-				Seal of Alacrity##102609
-				Seraphim##102610
-				Aspiration of Divinity##102613
-				Aspiration of Divinity##102613
+				Healing Hands##115481
+				Seal of Might##102612
+				Seal of Might##102612
+				Divine Toll##102465
+				Divine Resonance##115468
 				Of Dusk and Dawn##102615
 				Seal of Order##102614
-				Hallowed Ground##102478
-				Seal of Might##102612
-				Seal of Might##102612
+				Seal of Alacrity##102609
+				Seal of Alacrity##102609
+				Seal of the Crusader##102617
+				Seal of the Crusader##102617
+				Vengeful Wrath##115457
+
+
 				Hammer of Wrath##102479
+				Blessing of Freedom##102587
 				Auras of Swift Vengeance##102588
 			]],[[
 				Blade of Justice##102498
-				Divine Storm##102501
-				Improved Crusader Strike##102500
-				Shield of Vengeance##102521
-				Art of War##102523
-				Holy Blade##102522
-				Blade of Wrath##102491
-				Empyrean Power##102504
-				Wake of Ashes##102495
-				Crusade##102496
-				Hand of Hindrance##102515
-				Sanctify##102519
-				Sanctification##102518
-				Consecrated Blade##102531
-				Zeal##102530
-				Tempest of the Lightbringer##102481
-				Truth's Wake##102492
-				Radiant Decree##102493
-				Exorcism##102516
-				Holy Crusader##102499
-				Ashes to Ashes##102526
-				Ashes to Ashes##102526
-				Virtuous Command##102525
-				Virtuous Command##102525
-				Final Reckoning##102524
-				Divine Toll##102513
-				Empyrean Legacy##102480
-				Divine Resonance##102512
-				Relentless Inquisitor##102514
-				Relentless Inquisitor##102514
+				Divine Storm##102499
+				Swift Justice##102491
+				Final Verdict##102504
+				Holy Blade##115022
+				Art of War##102493
+				Expurgation##114830
+				Guided Prayer##115020
+				Tempest of the Lightbringer##115452
+				Jurisdiction##102516
+				Boundless Judgment##115021
+				Heart of the Crusader##115483
+				Vanguard of Justice##115453
+				Rush of Light##115475
+				Blade of Vengeance##102521
+				Shield of Vengeance##102519
+				Templar Strikes##115473
+				Avenging Wrath##102497
+				Consecrated Blade##102485
+				Blessed Champion##102515
+				Adjudication##102511
+				Blades of Light##115443
+				Divine Arbiter##102514
+				Aegis of Protection##102526
+				Final Reckoning##102513
+				Wake of Ashes##115043
+				Truth's Wake##114824
+				Blessed Champion##102515
+				Penitence##115024
+				Burning Crusade##102510
 			]]
 		},
 	},
@@ -2028,7 +2031,7 @@ TA.Builds = {
 				Frost Shock##101965
 				Earth Elemental##101952
 				Fire and Ice##101956
-				Ancestral Defense##101977
+				Ancestral Defense##114819
 				Astral Shift##101945
 				Nature's Fury##101980
 				Nature's Fury##101980
@@ -2037,55 +2040,55 @@ TA.Builds = {
 				Spirit Walk##101983
 				Capacitor Totem##101961
 				Guardian's Cudgel##101959
-				Elemental Warding##101978
-				Elemental Warding##101978
-				Improved Lightning Bolt##101996
-				Improved Lightning Bolt##101996
-				Healing Stream Totem##101998
+				Wind Rush Totem##101976
+				Nature's Guardian##101974
+				Nature's Guardian##101974
 				Thunderstorm##101995
+				Spirit Wolf##101963
+				Totemic Projection##101973
 				Thundershock##101994
-				Swirling Currents##101999
-				Swirling Currents##101999
 				Ancestral Guidance##102000
-				Planes Traveler##101944
+				Mana Spring##102001
 				Purge##101968
-				Focused Insight##101946
-				Focused Insight##101946
-				Chain Heal##101951
 				Brimming with Life##101979
+				Planes Traveler##101944
+				Chain Heal##101951
+				Earth Shield##102004
+				Elemental Warding##101978
+				Elemental Warding##101978
 				Maelstrom Weapon##101948
 				Chain Lightning##101949
 			]],[[
 				Stormstrike##101804
 				Windfury Weapon##101823
 				Lava Lash##101805
-				Molten Assault##101806
-				Molten Assault##101806
-				Fire Nova##101807
 				Improved Maelstrom Weapon##101822
 				Improved Maelstrom Weapon##101822
 				Raging Maelstrom##101802
+				Ice Strike##101821
+				Molten Assault##101806
+				Windfury Totem##101803
 				Sundering##101841
 				Crash Lightning##101840
-				Crashing Storms##101818
-				Storm's Wrath##101832
-				Forceful Winds##101834
-				Unruly Winds##101833
-				Doom Winds##101824
 				Overflowing Maelstrom##101801
+				Crashing Storms##101818
+				Molten Assault##101806
+				Hailstorm##101808
+				Hot Hand##101809
+				Hot Hand##101809
+				Ashen Catalyst##101811
+				Lashing Flames##101812
 				Swirling Maelstrom##101820
-				Elemental Weapons##101826
-				Elemental Weapons##101826
 				Feral Spirit##101838
 				Witch Doctor's Ancestry##101837
 				Witch Doctor's Ancestry##101837
-				Alpha Wolf##101835
-				Deeply Rooted Elements##101816
-				Static Accumulation##101814
-				Static Accumulation##101814
-				Thorim's Invocation##101813
-				Legacy of the Frost Witch##101815
-				Legacy of the Frost Witch##101815
+				Elemental Spirits##101836
+				Elemental Weapons##101826
+				Elemental Weapons##101826
+				Primordial Wave##101830
+				Primal Maelstrom##101829
+				Primal Maelstrom##101829
+				Splintered Elements##101828
 			]]
 		},
 		["Restoration (Healer)"] = {3,false, [[

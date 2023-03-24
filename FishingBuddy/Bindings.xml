@@ -5,21 +5,21 @@
 			FBEnvironment.Command("");
 		end
 	</Binding>
-	<Binding name="TOGGLEFISHINGBUDDY_LOC" category="ADDONS">
+	<Binding name="TOGGLEFISHINGBUDDY_LOC" category="FISHINGBUDDY_BINDINGS">
 		if ( keystate == "down" ) then
 			FBEnvironment.ToggleFishingBuddyFrame("FishingLocationsFrame");
 		end
 	</Binding>
-	<Binding name="TOGGLEFISHINGBUDDY_OPT" category="ADDONS">
+	<Binding name="TOGGLEFISHINGBUDDY_OPT" category="FISHINGBUDDY_BINDINGS">
 		if ( keystate == "down" ) then
 			FBEnvironment.ToggleFishingBuddyFrame("FishingOptionsFrame");
 		end
 	</Binding>
 	<!-- commands -->
-	<Binding name="FISHINGBUDDY_SWITCH" category="ADDONS">
+	<Binding name="FISHINGBUDDY_SWITCH" category="FISHINGBUDDY_BINDINGS">
 		if ( keystate == "down" ) then
 			FBEnvironment.Command(FBConstants.SWITCH);
 		end
 	</Binding>
-	<Binding name="FISHINGBUDDY_GOFISHING" category="ADDONS" />
+	<Binding name="FISHINGBUDDY_GOFISHING" category="FISHINGBUDDY_BINDINGS" />
 </Bindings>

@@ -15474,7 +15474,6 @@ talk Naleidea Rivergleam##192980
 turnin It Belongs in a Museum... Eventually##66547 |goto 47.25,82.77 |next "Gain_Renown" |only if not completedallq(67084,66128,66444,66547,66402,69888)
 turnin It Belongs in a Museum... Eventually##66547 |goto 47.25,82.77 |only if default
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the various chapters of The Forbidden Reach questline.",
@@ -15556,37 +15555,59 @@ talk Scalecommander Viridia##199201
 turnin Wings of Mercy##73157 |goto 34.61,57.69
 turnin Stemming the Irontide##74769 |goto 34.61,57.69
 accept Helping Hand and Claw##73160 |goto 34.61,57.69
-accept Stuck in Stasis##73694 |goto 34.61,57.69
 accept Emberthal Awaits##74847 |goto 34.61,57.69
 step
 talk Atrenosh Hailstone##200010
 accept Plunder Siege##74359 |goto 34.65,57.57
 step
-talk Dracthyr Mender##201071
-Choose _"Come with me to the Froststone Vault."_
-Recruit a Healing Wing |q 73694/1 |goto 34.47,57.41
-step
-talk Scalecommander Azurathel##199204
-accept Hands Off Our Booty!##73178 |goto 35.53,58.68
-step
 talk Treysh##200559
 accept Still Within Reach##74379 |goto 35.61,59.49
 step
-talk Cataloger Coralie##201291
-accept Snake Wrangling##73191 |goto 34.36,59.28
+talk Scalecommander Cindrethresh##199199
+accept Busting Blues##73142 |goto 35.30,59.49
+accept Soupocalypse Now!##73179 |goto 35.30,59.49
+step
+talk Fusethrian##200987
+Choose _<Ask for explosive... soup?>_
+Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
+step
+talk Tukkaraq##200558
+accept Driftwood Derby##73715 |goto 34.37,58.57
+step
+clicknpc Morqut Glider##201376
+Take the Glider |q 73179/2 |goto 35.70,59.00
+step
+Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
+|tip Use the abilities on your vehicle bar to attack enemies on the boat.
+step
+Return to Morquet Village |outvehicle |goto 35.24,58.97
+step
+clicknpc Tukkaraq's Boat##201122
+Board Tukkaraq's Boat |q 73715/1 |goto 36.60,57.61
+step
+clicknpc Driftwood##201138
+|tip Use the abilities on your vehicle bar to catch driftwood in the water.
+|tip Toss Net at pieces of driftwood.
+|tip Throw fish to stun enemies.
+|tip Water Shield to reduce damage and heal.
+Net #24# Driftwood |q 73715/2
+step
+talk Tukkaraq##200558
+turnin Driftwood Derby##73715 |goto 34.37,58.57
 step
 Meet with Scalecommander Emberthal above Morqut Village |q 74847/1 |goto 32.56,60.58
-stickystart "Collect_10_Stolen_Goods"
 step
-Kill Irontide enemies around this area
-Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
+talk Scalecommander Emberthal##199532
+turnin Emberthal Awaits##74847 |goto 32.57,60.58
 step
-label "Collect_10_Stolen_Goods"
-click Stolen Booty##385999+
-collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
-You can find more around:
-[37.67,78.67]
-[34.25,45.30]
+talk Scalecommander Emberthal##199532
+turnin Emberthal Awaits##74847 |goto 32.57,60.58
+accept The Best We Have##72712 |goto 32.57,60.58
+step
+Watch the dialogue
+talk Talon Damos##199212
+Tell him _"Let's fly."_
+Give Talon Damos His Orders |q 72712/1 |goto 32.63,60.54
 step
 Locate Jeb and Tacha on the Sharpscale Coast |q 73160/1 |goto 36.79,80.39
 step
@@ -15598,6 +15619,7 @@ Rescue Pathfinder Jeb |q 73160/3 |goto 36.66,79.88
 step
 label "Collect_10_Scattered_Supplies"
 click Scattered Supplies##386055+
+|tip They look like small wooden crates and barrels in the water around this area.
 collect 10 Scattered Supplies##202713 |q 73160/4 |goto 36.27,80.25
 step
 kill Karkinus the Capsizer##200907 |q 74377/1 |goto 37.44,81.67
@@ -15605,8 +15627,8 @@ step
 talk Pathfinder Tacha##200903
 turnin Helping Hand and Claw##73160 |goto 37.18,79.06
 step
-talk Scalecommander Azurathel##199204
-turnin Hands Off Our Booty!##73178 |goto 35.53,58.68
+talk Scalecommander Cindrethresh##199199
+turnin Soupocalypse Now!##73179 |goto 35.30,59.49
 step
 talk Scalecommander Viridia##199201
 accept Exploring Our Past##73159 |goto 34.61,57.69
@@ -15622,15 +15644,19 @@ talk Pathfinder Tacha##200041
 turnin The Keys You Need##74294 |goto 29.16,53.13
 step
 talk Cataloger Wulferd##201180
-accept Authentic Authorization##74984 |goto 29.26,52.69
+accept Authentic Authorization##74984 |goto 29.26,52.69 |or
+accept Authentic Authorization##74983 |goto 29.26,52.69 |or
+accept Authentic Authorization##74282 |goto 29.26,52.69 |or
+|tip You will only be able to accept one of these weekly quests.
+|tip Any time you open vault doors, look around for the objective of the weekly quest.
 step
 talk Pathfinder Jeb##200040
 Choose _"Let's explore Zskera Vault Az."_
 Speak with Jeb to Enter the Vault |q 72953/1 |goto 29.09,53.13
 step
 Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
-kill Terrorachna##200349
-|tip Inside the vault.
+Kill the elite
+|tip Inside the middle of the vault.
 Secure the Vault |q 72953/2 |goto 29.58,56.34
 step
 click Unusual Ring##385952
@@ -15645,145 +15671,241 @@ click Door
 Open the Doors with Zskera Vault Keys |q 72953/3 |goto 28.57,56.00
 step
 click Flask of Windward Steps##385687
-Gain the "Windward Steps" Buff |complete hasbuff("spell:398283") |goto 28.35,56.13
+Gain the "Windward Steps" Buff |complete hasbuff("spell:398283") |goto 28.35,56.13 |q 72953
 step
 click Journal Entry: The Creches##385836
 collect Journal Entry: The Creches##204223 |n
 |tip Inside the door inside the vault.
-accept Journal Entry: The Creches##74883 |goto 28.48,55.68 |only if Horde
-accept Journal Entry: The Creches####73114 |goto 28.48,55.68 |only if Alliance
+accept Journal Entry: The Creches##74883 |goto 28.54,55.65 |only if Horde
+accept Journal Entry: The Creches####73114 |goto 28.54,55.65 |only if Alliance
 step
-extraaction Windward Steps##398280
-|tip Use the ability to jump between platforms
-click Door
-Open the Door with a Zskera Vault Key |goto 30.41,55.47 < 5 |walk
-click Crate of Unfinished Scrolls##388472
-|tip It can be in several areas around this room.
-Gain the "Scroll Collection" Buff |complete hasbuff("spell:403407") |goto 30.91,55.39
-step
-extraaction Scroll Collection##403407
-|tip It appears as a button on your screen.
-|tip This will teleport you to the 3rd or 4th level of the vault.
-Teleport to this ledge |goto 29.11,55.29 < 5 |c |or |q 74984
-step
-click Door
-|tip You should be on the 4th level of Vault Doors.
-Open the Door with a Zskera Vault Key |goto 28.99,55.02
-click Random Scribblings##388895
-collect 1 Random Scribblings##204306 |q 74984/2 |goto 28.79,54.34
-step
-extraaction Scroll Collection##403407
-|tip It appears as a button on your screen.
-|tip This will teleport you to the 3rd or 4th level of the vault.
-Teleport to this ledge |goto 30.00,55.33 < 5 |c |or |q 74984
-step
-click Door
-|tip You should be on the 3rd level of Vault Doors.
-Open the Door with a Zskera Vault Key |goto 30.11,55.08
-click Random Scribblings##388895
-collect 2 Random Scribblings##204306 |q 74984/2 |goto 30.44,54.43
-step
-extraaction Scroll Collection##403407
-|tip It appears as a button on your screen.
-|tip This will teleport you to the 3rd or 4th level of the vault.
-Teleport to this ledge |goto 29.10,57.38 < 5 |q 74869 |future
+Click Here to Continue |confirm
+|tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
 step
 talk Pathfinder Jeb##202218
 turnin Zskera Vault: Az##72953 |goto 29.02,57.04
 step
-click Door
-Unlock the door |goto 30.41,57.17 < 5 |walk
-click Random Scribblings##388895
-collect 3 Random Scribblings##204306 |q 74984/2 |goto 30.50,57.67
-step
-Walk through the Portal |goto The Forbidden Reach/5 28.79,49.98 < 5 |walk
-talk Cataloger Wulferd##201180
-turnin Authentic Authorization##74984 |goto 29.26,52.67
+Leave Zskera Vault: Az |complete not subzone("Zskera Vault: Az") |goto 28.81,49.98
 step
 talk Pathfinder Tacha##200041
 accept What's Behind The Next Door##73089 |goto 29.16,53.12
 step
 talk Researcher Imareth##200724
 turnin The Forgotten Ring##73155 |goto 35.18,57.60
-step
-talk Scalecommander Azurathel##199204
-turnin Journal Entry: The Creches##73114 |goto 35.53,58.68
-step
-talk Researcher Imareth##200724
 accept Primordial Embellishment##74355 |goto 35.18,57.61
 step
-click Rustling Bush##384952
-|tip They are green bushes all around this area.
-Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
-[45.61,37.24]
+talk Scalecommander Cindrethresh##199199
+turnin Journal Entry: The Creches##74883 |goto 35.30,59.50 |only if haveq(74883) or completedq(74883)
+turnin Journal Entry: The Creches##73114 |goto 35.30,59.50 |only if haveq(73114) or completedq(73114)
 step
-extraaction Release Watersnakes##400872
-|tip Use the button that appears on your screen.
-Release the Toxic Watersnakes |q 73191/2 |goto 43.53,37.40
-stickystart "Kill_10_Ice_Primalists"
-step
-Enter the building |goto Froststone Vault/0 24.40,87.52 < 5 |walk
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 1 |goto 24.68,85.64
-step
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 2 |goto 37.74,69.33
-step
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 3 |goto 46.93,50.65
-step
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 4 |goto 48.87,36.96
-step
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 5 |goto 45.72,25.90
-step
-clicknpc Imprisoned Dracthyr##201060
-Free an Imprisoned Dracthyr |q 73694/2 |count 6 |goto 58.26,28.32
-step
-label "Kill_10_Ice_Primalists"
-Kill Primalist enemies around this area
-Slay #10# Ice Primalists |q 73694/3
-step
-Leave the building |goto Froststone Vault/0 24.40,87.52 < 5 |walk
-talk Scalecommander Viridia##199201
-turnin Stuck in Stasis##73694 |goto The Forbidden Reach/5 34.61,57.69
+Kill enemies around this area
+collect 10 Arcane Focus##202362 |q 73142/1 |goto 53.22,54.55
 step
 kill Spellsworn Wingcatcher##201369 |q 74379/1 |goto 59.04,57.54
+|tip This enemy is elite and may require a group.
+step
+talk Talon Damos##200403
+|tip On the balcony.
+turnin The Best We Have##72712 |goto 55.14,37.43
+accept Inheritance##72713 |goto 55.14,37.43
+stickystart "Secure_the_Lost_Atheneum"
+step
+kill Skittering Ruinstalker##199238
+|tip Upstairs inside the building.
+Assist Emberthal's Scout |q 72713/1 |goto 53.53,36.78 |count 1
+step
+click Suspicious Rubble
+|tip Inside the building.
+|tip Kill the spiders that spawn.
+Assist Emberthal's Scout |q 72713/1 |goto 53.58,39.11 |count 2
+step
+Enter the building |goto 55.10,38.43 < 10 |walk
+click Damaged Tome+
+|tip Inside the building.
+Assist Emberthal's Scout |q 72713/1 |goto 54.94,36.92 |count 3
+step
+label "Secure_the_Lost_Atheneum"
+Kill enemies around this area
+Secure the Lost Atheneum |q 72713/2 |goto 54.98,39.58
+step
+talk Talon Damos##200459
+turnin Inheritance##72713 |goto 55.18,35.84
+step
+talk Scalecommander Emberthal##199531
+accept Creche Fallen##72545 |goto 55.13,35.89
+step
+clicknpc Talon Arrosh##199215
+|tip Inside the building.
+collect 1 Horn Signet of Arrosh##203692 |q 72545/2 |goto 53.81,36.44
+step
+clicknpc Talon Tetsos##199217
+|tip Inside the building.
+collect 1 Horn Signet of Tetsos##203689 |q 72545/1 |goto 53.81,36.54
+step
+Enter the building |goto 55.10,38.43 < 10 |walk
+clicknpc Talon Hermin##199218
+|tip Inside the building.
+collect Horn Signet of Talon Hermin##203698 |q 72545/4 |goto 54.95,37.00
+step
+clicknpc Talon Ekrati##199214
+|tip Inside the building.
+collect 1 Horn Signet of Ekrati##203697 |q 72545/3 |goto 53.57,39.47
+step
+talk Scalecommander Emberthal##199531
+turnin Creche Fallen##72545 |goto 55.13,35.89
+accept Aiding the Expedition##73094 |goto 55.13,35.89
+step
+Find the beleaguered Dragonscale Expedition |q 73094/1 |goto 61.57,61.64
+step
+talk Scalecommander Emberthal##199175
+turnin Aiding the Expedition##73094 |goto 61.57,61.64
+accept Keeping the Flame at Bay##72715 |goto 61.57,61.64
+step
+talk Ebyssian##199520
+accept An Interdisciplinary Approach##72714 |goto 61.69,61.28
+stickystart "Kill_Sundered_Ruinstalkers"
+stickystart "Kill_Sundered_Pillagers"
+step
+clicknpc Frightened Researcher##202599
+|tip Inside the building.
+Rescue the Researcher |q 72714/1 |goto 58.21,60.79 |count 1
+step
+clicknpc Frightened Researcher##202601
+|tip Upstairs inside the building.
+Rescue the Researcher |q 72714/1 |goto 57.52,63.66 |count 2
+step
+clicknpc Frightened Researcher##199358
+|tip Inside the building.
+Rescue the Researcher |q 72714/1 |goto 59.53,63.93 |count 3
+step
+clicknpc Frightened Researcher##202602
+|tip Inside the building.
+Rescue the Researcher |q 72714/1 |goto 58.92,66.07 |count 4
+step
+clicknpc Frightened Researcher##202603
+|tip Inside the building.
+Rescue the Researcher |q 72714/1 |goto 56.87,66.24 |count 5
+step
+Enter the building |goto 57.35,67.37 < 7 |walk
+|tip Inside the building.
+kill Winglord Iyazael##199401 |q 72715/3 |goto 56.15,68.48
+step
+label "Kill_Sundered_Ruinstalkers"
+kill 6 Sundered Ruinstalker##199379 |q 72715/2 |goto 58.90,62.55
+step
+label "Kill_Sundered_Pillagers"
+kill 4 Sundered Pillager##199374 |q 72715/1 |goto 58.90,62.55
+step
+Enter the building |goto 58.63,69.19 < 7 |walk
+Find Ebyssian in the High Creche |q 72714/2 |goto 58.75,70.29
+step
+talk Scalecommander Emberthal##199521
+|tip Inside the building.
+turnin Keeping the Flame at Bay##72715 |goto 58.83,70.32
+step
+talk Ebyssian##199177
+|tip He will walk to this spot inside the building.
+turnin An Interdisciplinary Approach##72714 |goto 58.76,70.44
+step
+talk Scalecommander Emberthal##199521
+|tip Inside the building.
+accept Chasing the Flame##73137 |goto 58.83,70.32
+step
+talk Scalecommander Emberthal##199538
+turnin Chasing the Flame##73137 |goto 74.38,36.90
+accept A Creche Divided##72717 |goto 74.38,36.90
+step
+click Forbidden Memoire
+|tip Inside the cave.
+Examine the Forbidden Memoire |q 72717/4 |goto Dragonskull Island/0 10.94,61.27 |count 1
+|tip You can skip this step if you would prefer.
+step
+kill Failed Scalecommander Elarthresh##201820 |q 72717/1 |goto 14.65,49.00
+|tip Inside the cave.
+step
+kill Failed Scalecommander Abereth##201823 |q 72717/3 |goto 30.97,35.22
+|tip Inside the cave.
+step
+kill Failed Scalecommander Haerothal##201822 |q 72717/2 |goto 67.92,14.76
+|tip Inside the cave.
+step
+click Forbidden Memoire
+|tip Inside the cave.
+Examine the Forbidden Memoire |q 72717/4 |goto 70.63,50.73 |count 2
+|tip You can skip this step if you would prefer.
+step
+click Forbidden Memoire
+|tip Inside the cave.
+Examine the Forbidden Memoire |q 72717/4 |goto 84.45,46.05 |count 3
+|tip You can skip this step if you would prefer.
+step
+click Forbidden Memoire
+|tip Inside the cave.
+Examine the Forbidden Memoire |q 72717/4 |goto 57.19,74.72 |count 4
+|tip You can skip this step if you would prefer.
+step
+talk Scalecommander Emberthal##199539
+turnin A Creche Divided##72717 |goto The Forbidden Reach/5 76.73,38.52
+step
+Watch the dialogue
+talk Scalecommander Emberthal##199539
+accept Return to Viridia##73156 |goto 76.73,38.53
 step
 talk Treysh##200559
 turnin Still Within Reach##74379 |goto 35.61,59.49
 step
-talk Cataloger Coralie##201291
-turnin Snake Wrangling##73191 |goto 34.36,59.28
+talk Scalecommander Cindrethresh##199199
+turnin Busting Blues##73142 |goto 35.30,59.49
+step
+talk Scalecommander Viridia##199201
+turnin Return to Viridia##73156 |goto 34.60,57.67
+step
+collect Atrenosh's Journal##203463 |q 74359/1
+|tip You can loot this randomly from chests all over The Forbidden Reach.
+step
+talk Atrenosh Hailstone##200010
+turnin Plunder Siege##74359 |goto 34.65,57.57
 step
 label "Collect_3_Zskera_Vault_Keys"
 collect 3 Zskera Vault Key##202196 |q 73089
 |tip These come from various activities within The Forbidden Reach.
 |tip Complete events and kill rare spawns for a chance for them to drop.
 step
-click door
+talk Atrenosh Hailstone##200010
+Tell him _"Let's explore Zskera Vault Az."_
+Enter Zskera Vault: Az |complete subzone("Zskera Vault: Az") |goto 29.09,53.13 |q 74355
+step
+click Door
 |tip On the first level of the vault.
 Unlock the door |goto The Forbidden Reach/5 30.57,56.01
 click Primordial Jeweler's Kit##389631
 collect 1 Primordial Jeweler's Kit##204353 |q 74355/1 |goto 31.16,55.91
 step
+click Flask of Windward Steps##385687
+Gain the "Windward Steps" Buff |complete hasbuff("spell:398283") |goto 28.35,56.13 |q 74355
+step
+extraaction Windward Steps##398280
+|tip Use this to navigate platforms, launching forward a short distance.
 click Door
 |tip On the second level of the vault.
 Unlock the door |goto 29.37,57.73
 click Primordial Anvil##393934
 collect 1 Primordial Anvil##204685 |q 74355/2 |goto 29.13,57.92
 step
+extraaction Windward Steps##398280
+|tip Use this to navigate platforms, launching forward a short distance.
 Open #3# Doors with Zskera Vault Keys |q 73089/1 |goto 30.31,56.53
+|tip Doors will stay open until the next weekly reset.
 step
-Run up the stairs |goto 29.30,54.22 < 10 |walk
-Walk through the Portal |goto The Forbidden Reach/5 28.79,49.98 < 5 |walk
+Leave Zskera Vault: Az |complete not subzone("Zskera Vault: Az") |goto 28.81,49.98
+step
 talk Pathfinder Tacha##200041
-turnin What's Behind The Next Door##73089 |goto 29.16,53.13
+turnin What's Behind The Next Door##73089 |goto The Forbidden Reach/5 29.16,53.13
 step
 talk Researcher Imareth##200724
 turnin Primordial Embellishment##74355 |goto 35.18,57.61
 ]])
+ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{
 author="support@zygorguides.com",
 startlevel=68,
@@ -16018,5 +16140,11 @@ Conclude the Funeral |q 72611/6 |goto 72.69,56.06
 step
 talk Baine Bloodhoof##201566
 turnin Letting Go##72611 |goto 72.71,56.08
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\(Ruth)less is More",{
+achieveid={11715},
+patch='100007',
+},[[
+step
 ]])
 ZGV.BETAEND()

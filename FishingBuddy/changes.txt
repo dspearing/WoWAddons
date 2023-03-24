@@ -1,3 +1,10 @@
+Version 1.20.4
+- Display progress on fishing gear quests
+- Update TOC
+
+Version 1.20.3
+- - Full linting and cleanup pass on all the code which probably fixed some subtle bugs
+
 Version 1.20.2
 - Works with the fan-fix version of Outfitter
 

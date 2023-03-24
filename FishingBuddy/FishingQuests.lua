@@ -1,12 +1,65 @@
 ﻿-- Thanks to SOCD and QuickQuest for inspiration
 local addonName, FBStorage = ...
-local  FBI = FBStorage
+local FBI = FBStorage;
 local FBConstants = FBI.FBConstants;
+local PagleFish = FBI.PagleFish;
 
 local _
 
 local LEW = LibStub("LibEventWindow-1.0");
 local GSB = function(...) return FBI:GetSettingBool(...); end;
+
+-- DragonFlight Quest Fish Tracking
+QuestFish = {}
+QuestFish[202072] = {
+	["enUS"] = "Frigid Floe Fish",
+	["limit"] = 100,
+};
+QuestFish[202073] = {
+	["enUS"] = "Calamitous Carp",
+	["limit"] = 25,
+};
+QuestFish[202074] = {
+	["enUS"] = "Kingfin, the Wise Whiskerfish",
+	["limit"] = 1,
+};
+
+-- Tuskarr Fishing Gear
+QuestFish[200080] = {
+	["enUS"] = "Draconium Nugget",
+	["quests"] = {
+		["70800"] = 3,
+		["70801"] = 6,
+	}
+}
+QuestFish[200081] = {
+	["enUS"] = "Strong Seavine",
+	["quests"] = {
+		["70798"] = 3,
+		["70799"] = 6,
+	}
+}
+QuestFish[200082] = {
+	["enUS"] = "Battered Imbu-made Net",
+	["quests"] = {
+		["70802"] = 3,
+		["70803"] = 6,
+	}
+}
+QuestFish[200083] = {
+	["enUS"] = "Irontree Branch",
+	["quests"] = {
+		["70794"] = 3,
+		["70795"] = 6,
+	}
+}
+QuestFish[200084] = {
+	["enUS"] = "Salinated Serevite",
+	["quests"] = {
+		["70797"] = 3,
+		["70795"] = 6,
+	}
+}
 
 local function GetNPCID()
 	return tonumber(string.match(UnitGUID('npc') or UnitGUID('target') or '', 'Creature%-.-%-.-%-.-%-.-%-(.-)%-'))
@@ -86,6 +139,41 @@ _fqframe:Register('QUEST_COMPLETE', function(_, ...)
 	end
 end, true)
 
+QuestEvents = {}
+QuestEvents[FBConstants.ADD_FISHIE_EVT] = function(id, name, mapId, subzone, texture, quantity, quality, level, idx, poolhint)
+	-- Play a sound on Nat Pagle rep
+	if ( GSB("DingQuestFish") ) then
+		local noises = false;
+		if PagleFish[id] then
+			noises = true
+		end
+		if QuestFish[id] then
+			if QuestFish[id].quests or QuestFish[id].limit then
+				local limit = 0;
+				noises = false
+				if QuestFish[id].quests then
+					for quest, quest_limit in pairs(QuestFish[id].quests) do
+						if not C_QuestLog.IsQuestFlaggedCompleted(quest) then
+							limit = quest_limit
+						end
+					end
+				elseif QuestFish[id].limit then
+					limit = PagQuestFishleFish[id].limit
+				end
+				if limit > 0 then
+					local fishcount = GetItemCount(id);
+					local postfix = "("..fishcount.."/"..limit..")"
+					FBI:QuestFishAlert(id, postfix)
+					noises = fishcount >= limit
+				end
+			end
+		end
+		if noises then
+			PlaySound(SOUNDKIT.IG_QUEST_LIST_COMPLETE, "master");
+		end
+	end
+end
+
 local QuestOptions = {
 	["HandleQuests"] = {
 		["text"] = FBConstants.CONFIG_HANDLEQUESTS_ONOFF,
@@ -106,8 +194,17 @@ local QuestOptions = {
 		["default"] = false,
 		["parents"] = { ["HandleQuests"] = "d", },
 	},
+	["DingQuestFish"] = {
+		["text"] = FBConstants.CONFIG_DINGQUESTFISH_ONOFF,
+		["tooltip"] = FBConstants.CONFIG_DINGQUESTFISH_INFO,
+		["v"] = 1,
+		["default"] = true,
+		["parents"] = { ["HandleQuests"] = "d", },
+	},
 }
 
 _fqframe:Register("VARIABLES_LOADED", function(_, ...)
 	FBI.OptionsFrame.HandleOptions(GENERAL, nil, QuestOptions);
 end, true)
+FBI:RegisterHandlers(QuestEvents);
+

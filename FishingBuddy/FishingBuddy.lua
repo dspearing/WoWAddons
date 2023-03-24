@@ -290,12 +290,6 @@ local GeneralOptions = {
         ["default"] = false,
         ["parents"] = { ["EnhanceFishingSounds"] = "d" },
     },
-    ["DingQuestFish"] = {
-        ["text"] = FBConstants.CONFIG_DINGQUESTFISH_ONOFF,
-        ["tooltip"] = FBConstants.CONFIG_DINGQUESTFISH_INFO,
-        ["v"] = 1,
-        ["default"] = true,
-    },
     ["SetupSkills"] = {
         ["text"] = FBConstants.CONFIG_TRADESKILL_ONOFF,
         ["tooltip"] = FBConstants.CONFIG_TRADESKILL_INFO,
@@ -1924,6 +1918,23 @@ function FBI:EnglishList(list, conjunction)
         end
         return str;
     end
+end
+
+function FBI:QuestFishAlert(fishId, postfix)
+	if not self.FishAlertSystem then
+		local function fish_setup(frame, id, postfix)
+            local info = FishingBuddy_Info["Fishies"][id]
+            msg = info[CurLoc]
+            if postfix then
+                msg = msg.." "..postfix
+            end
+			frame.Title:SetText(FBConstants.CONFIG_DINGQUESTFISH_ONOFF)
+			frame.Name:SetText(msg)
+			frame.Icon.Texture:SetTexture(info.texture)
+		end
+		self.FishAlertSystem = AlertFrame:AddQueuedAlertFrameSubSystem("QuestFishDingTemplate", fish_setup, 2, 0)
+	end
+	self.FishAlertSystem:AddAlert(fishId, postfix)
 end
 
 function FBI:UIError(msg)

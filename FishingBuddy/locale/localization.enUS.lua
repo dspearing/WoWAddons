@@ -225,7 +225,7 @@ FishingTranslations["enUS"] = {
     CONFIG_TURNONSOUND_ONOFF  = "Force sound",
     CONFIG_TURNONSOUND_INFO   = "If enabled, always turn on sounds while fishing.",
     CONFIG_DINGQUESTFISH_ONOFF = "Fish Ringer",
-    CONFIG_DINGQUESTFISH_INFO = "If enabled, the quest added sound will play when a Nat Pagle reputation fish is caught.",
+    CONFIG_DINGQUESTFISH_INFO = "If enabled, the quest added sound will play when a quest fish is caught.",
 
     CONFIG_FISHINGRAID_ONOFF  = "Raid Support",
     CONFIG_FISHINGRAID_INFO  = "Turn on Fishing Raid features.",

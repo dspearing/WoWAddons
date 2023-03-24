@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on 2023-03-22T11:00:40Z
+-- RaiderIO Client Data. Generated on 2023-03-24T01:46:46Z
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -182,7 +182,176 @@ ns.GUILD_BEST_DATA = {
       }
     },
     ["weekly_best"] = {
-
+      [1] = {
+        ["zone_id"] = 6932,
+        ["level"] = 16,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.7413522167350918,
+        ["clear_time"] = "00:24:28.618",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Mechioy",
+            ["role"] = "tank",
+            ["class_id"] = 6
+          },
+          [2] = {
+            ["name"] = "Errastd",
+            ["role"] = "healer",
+            ["class_id"] = 13
+          },
+          [3] = {
+            ["name"] = "Elletal",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          [4] = {
+            ["name"] = "Jacksmite",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          },
+          [5] = {
+            ["name"] = "Sealalicious",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          }
+        }
+      },
+      [2] = {
+        ["zone_id"] = 14063,
+        ["level"] = 15,
+        ["upgrades"] = 0,
+        ["fraction"] = 1.1413565471163505,
+        ["clear_time"] = "00:34:15.582",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Mechioy",
+            ["role"] = "tank",
+            ["class_id"] = 6
+          },
+          [2] = {
+            ["name"] = "Elletal",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          [3] = {
+            ["name"] = "Daemonskill",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          [4] = {
+            ["name"] = "Jacksmite",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          },
+          [5] = {
+            ["name"] = "Zuukee",
+            ["role"] = "dps",
+            ["class_id"] = 7
+          }
+        }
+      },
+      [3] = {
+        ["zone_id"] = 8079,
+        ["level"] = 14,
+        ["upgrades"] = 1,
+        ["fraction"] = 0.8896162629740494,
+        ["clear_time"] = "00:26:42.198",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Mechioy",
+            ["role"] = "tank",
+            ["class_id"] = 6
+          },
+          [2] = {
+            ["name"] = "Icemonge",
+            ["role"] = "healer",
+            ["class_id"] = 10
+          },
+          [3] = {
+            ["name"] = "Keynath",
+            ["role"] = "dps",
+            ["class_id"] = 9
+          },
+          [4] = {
+            ["name"] = "Nycae",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          [5] = {
+            ["name"] = "Rawboning",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          }
+        }
+      },
+      [4] = {
+        ["zone_id"] = 13954,
+        ["level"] = 3,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.3583464844422733,
+        ["clear_time"] = "00:12:43.636",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Zenithia",
+            ["role"] = "tank",
+            ["class_id"] = 12
+          },
+          [2] = {
+            ["name"] = "Thuram",
+            ["role"] = "healer",
+            ["class_id"] = 5
+          },
+          [3] = {
+            ["name"] = "Drewbie",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          [4] = {
+            ["name"] = "Déòz",
+            ["role"] = "dps",
+            ["class_id"] = 7
+          },
+          [5] = {
+            ["name"] = "Ogtitan",
+            ["role"] = "dps",
+            ["class_id"] = 1
+          }
+        }
+      },
+      [5] = {
+        ["zone_id"] = 13982,
+        ["level"] = 2,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.3341409138446122,
+        ["clear_time"] = "00:13:22.272",
+        ["party"] = {
+          [1] = {
+            ["name"] = "Myrollanicus",
+            ["role"] = "tank",
+            ["class_id"] = 6
+          },
+          [2] = {
+            ["name"] = "Discordkitty",
+            ["role"] = "healer",
+            ["class_id"] = 10
+          },
+          [3] = {
+            ["name"] = "Drewbie",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          [4] = {
+            ["name"] = "Fõlo",
+            ["role"] = "dps",
+            ["class_id"] = 9
+          },
+          [5] = {
+            ["name"] = "Yiangaruga",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          }
+        }
+      }
     }
   },
   ["WulfPak-Mal'Ganis"] = {

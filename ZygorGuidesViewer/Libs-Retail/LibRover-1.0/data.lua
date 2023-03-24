@@ -65,6 +65,7 @@ data.MapIDsByName = {
 ["The War Creche"]={[0]=2102},
 ["Dragonskull Island"]={[0]=2150},
 ["Zaralek Cavern"]={[0]=2133},
+["Alterac Valley Heritage"]={[0]=2162},
 
 
 

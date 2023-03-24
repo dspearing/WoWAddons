@@ -1120,6 +1120,9 @@ local ConditionEnv = {
 		end
 		return false
 	end,
+	language = function(skill)
+		return ZGV.Languages:GetLanguageSkill(skill)
+	end,
 }
 setmetatable(ConditionEnv,{__index=function(t,k) local lower=rawget(t,k:lower())  if lower~=nil then return lower end  return _G[k]  end})
 

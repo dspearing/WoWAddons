@@ -2292,3 +2292,42 @@ function ZGV.F.IsBoosted(expansion)
 		if count == 7 then return true else return false end	
 	end
 end
+
+ZGV.Languages = {}
+-- all ids for passive Language spells
+ZGV.Languages.Spells = {76252,79738,79739,79740,79741,79742,79743,79744,79746,79747,79748,79749,143368,143369,262438,262486,273105,274743,292489,292495,312766,312769,362633,362634}
+ZGV.Languages.Pattern = "(%d+)/(%d+)"
+
+-- for now only language with proficiency is Furbolg, so just check tooltip for x/y line
+-- if more are added, we will need to dump names in all client languages and match lines against them
+function ZGV.Languages:GetLanguageSkill(name)
+	if not ZGV.Languages.ActiveLanguage then
+		for _,spell in ipairs(ZGV.Languages.Spells) do 
+			if IsSpellKnown(spell) then
+				ZGV.Languages.ActiveLanguage = spell
+				break
+			end
+		end
+	end
+
+	if ZGV.Languages.ActiveLanguage then
+		local info = ZGV.TooltipScanner:GetSpellTooltip(ZGV.Languages.ActiveLanguage)
+		for _,line in ipairs(info) do
+			if line:find("\n") then 
+				for s in line:gmatch("[^\r\n]+") do
+					local current,maximum = s:match(ZGV.Languages.Pattern)
+					if current then
+						return tonumber(current)
+					end
+				end
+			else
+				local current,maximum = line:match(ZGV.Languages.Pattern)
+				if current then
+					return tonumber(current)
+				end
+			end
+
+		end
+	end
+	return 0
+end

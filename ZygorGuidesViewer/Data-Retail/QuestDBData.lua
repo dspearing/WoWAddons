@@ -195,10 +195,11 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="26190,26177,26192,26153,26183,13103,13101,13100,13107,13102"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\A Bunch of Lunch"] = {
-		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353"},
+		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353,29313,29314,29316,29318,29357"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Captain Rumsey's Lager"] = {
-		{ids="26488,26420,26414,26442,26536,11381,11379,11380,11377"},
+		{ids="13087", cond_if=[[not completedq(13087)]]},
+		{ids="26488,26420,26414,26442,26536,11381,11379,11380,11377,13103,13101,13100,13107,13102,13833,13834,13832,13836,13830"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Cooking With Style"] = {
 		{ids="13103,13101,13100,13107,13102"},
@@ -516,10 +517,10 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["ACHIEVEMENTS\\Professions\\Cooking\\Ironpaw Chef"] = {
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Master of Pandaren Cooking"] = {
-		{ids="31281"},
+		{ids="31281,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31535,31535"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Now I Am the Master"] = {
-		{ids="31281"},
+		{ids="31281,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31535,31535,31332,30330,30332,30328,30329,30331,31332,31333,31334,31335,31336"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Pandaren Gourmet"] = {
 		{ids="31535"},
@@ -640,7 +641,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="31207"},
 	},
 	["ACHIEVEMENTS\\World Events\\Brawler's Guild\\Collect Your Deck"] = {
-		{ids="30747"},
+		{ids="31374", cond=[[Horde]]},
+		{ids="31372", cond=[[Alliance]]},
+		{ids="30747,31752,30252,30535,30254,30255,30256,30257,31945,29463,29436,29438,29434,36481,29455,37910,33756,37911,37868"},
 	},
 	["ACHIEVEMENTS\\Collections\\Toy Box\\All Toys"] = {
 		{ids="37156,37179,37157", cond_if=[[hasbuilding(34) or hasbuilding(35) or hasbuilding(36)]]},
@@ -1009,9 +1012,58 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["ACHIEVEMENTS\\Reputation\\Draenor\\Mantle of the Talon King"] = {
 		{ids="35733,35734,35897,35895,35896"},
 	},
-	["ACHIEVEMENTS\\Quests\\Dragonflight\\Ancient Waygates"] = {
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Curious Coin"] = {
+		{ids="72743,72746,72747,72748,72749"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Fragments of History"] = {
+		{ids="70175,70236,70207,70789,70806,70790,70788,70791,70204,70805"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Framing a New Perspective"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Let's Get Quacking"] = {
+		{ids="66196", cond_if=[[not completedq(66196)]]},
+		{ids="70917", cond_if=[[not completedq(70917)]]},
+		{ids="70877", cond_if=[[not completedq(70877)]]},
+		{ids="70919", cond_if=[[not completedq(70919)]]},
+		{ids="70918", cond_if=[[not completedq(70918)]]},
+		{ids="72122,66105,66107,66104"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Siege on Dragonbane Keep: Chiseled Record"] = {
+		{ids="71210"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\That's Pretty Neat!"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of Thaldraszus"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Azure Span"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Waking Shores"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of the Ohn'ahran Plains"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Who's a Good Bakar?"] = {
+		{ids="67772,67921,70989,68083,68084,68085,71022,68087,69094,69095,69096,65954,66006"},
+	},
+	["ACHIEVEMENTS\\Pet Battles\\Dragon Isles\\Dragon Isles Safari"] = {
+		{ids="70647,70697,70722,70732,70849,70851,70853,70854"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\Mastering the Waygates"] = {
 		{ids="71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157", cond_if=[[not completedallq(71162,71178,71165,71161,71138,71157)]]},
 		{ids="66595,66597,66598,70215,66582,70154,70156,70702,71146,71147,71148,71149,71150"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\River Rapids Wrangler"] = {
+		{ids="65914,65925,65926,66724,65929,65928,65930,66155"},
+	},
+	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Legendary Photograph"] = {
+		{ids="69869,72525,69870,65486"},
 	},
 	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Ready, Aim, Catalog!"] = {
 		{ids="69869,72525,69870,65486"},
@@ -1140,7 +1192,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="29342,29343,29344,29347,29350", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Classic Dailies\\Stormwind City\\Main City Cooking Dailies"] = {
-		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353"},
+		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353,29313,29314,29316,29318,29357"},
 	},
 	["DAILIES\\Classic Dailies\\Stormwind City\\Stormwind City Fishing Dailies"] = {
 		{ids="26488,26420,26414,26442,26536", cond_if=[[questpossible]]},
@@ -1611,6 +1663,15 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="71001,71007,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965", cond_if=[[questpossible]]},
 		{ids="70779", cond_if=[[haveq(70995) or completedq(70995)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies"] = {
+		{ids="75263,74392,75261,75237", cond_if=[[questactive(75263,74392,75261,75237)]]},
+		{ids="74389,74118", cond_if=[[questactive(74389,74118)]]},
+		{ids="74391,74119", cond_if=[[questactive(74391,74119)]]},
+		{ids="74117,74390", cond_if=[[questactive(74117,74390)]]},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole"] = {
+		{ids="70941,73226"},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole"] = {
 		{ids="70203", cond_if=[[itemcount(194969) >= 20 and not completedq(72824)]]},
 		{ids="70199", cond_if=[[itemcount(194730) >= 20 and not completedq(72828)]]},
@@ -1651,30 +1712,33 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="65798,70210,67605,71241,70701,70299", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)"] = {
-		{ids="67222,70352,70279,70990,67034", cond_if=[[questpossible]]},
+		{ids="67222,70352,70279,70990,67034,67039", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)"] = {
 		{ids="65796,65789,65784,66698", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests"] = {
-		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,70067,70780,70074,70646,70209,69929,70649,70652,71140,70176,72058,70638,63520"},
+		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,74838,70067,70780,74837,70074,70646,70209,69929,70649,70652,71140,70176,72058,70638,63520"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
-		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,70934,71164,70661,71154,70111,70057,70072,71180"},
+		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,74794,70934,71164,70661,71154,70111,74792,70057,70072,71180"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Azure Span World Quests"] = {
-		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,70622,70035,72019,70625,70022,70037,70439"},
+		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,74836,70622,70035,72019,70625,70022,70037,70439"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
+		{ids="73148,73146,73079,73082,73078,73149,73147,75257"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
-		{ids="66103,69918,66633,69926,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
-		{ids="66103,69918,66633,69926,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[not completedq(66802)]]},
+		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
+		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[not completedq(66802)]]},
 		{ids="66326,66308", cond_if=[[questpossible]]},
 		{ids="66419"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Waking Shores World Quests"] = {
 		{ids="72338", cond_if=[[haveq(66805) and not completedq(66805)]]},
 		{ids="72337", cond_if=[[haveq(66133) and not completedq(66133)]]},
-		{ids="66419,70636,69930,66902,67010,66934,66070,70782,67062,70075,70632,70502,70415,70413,70410,70416,70418,70412,70382,70417,67113,69916,69938,72030,67014,66989,67026,67009,67005,66133,66805,64768,70150,66833,70172,66896,72008,70012,67006,67024,70651,70984,66588,69931,70021,66551,69913,69924,66203,72058,67012"},
+		{ids="74841,66419,70636,69930,66902,67010,66934,66070,70782,67062,70075,70632,70502,70415,70413,70410,70416,70418,70412,70382,70417,67113,69916,69938,72030,67014,66989,67026,67009,67005,66133,66805,64768,70150,66833,70172,66896,72008,70012,67006,74840,67024,70651,70984,66588,69931,70021,66551,69913,69924,66203,72058,67012"},
 	},
 	["DAILIES\\Shadowlands (50-60)\\Ardenweald World Quests"] = {
 		{ids="60872,60950,60899,60649,61948,61595,61949,61435,61596,61631,61440,61597,61598,60855,62068,61717,62051,61394,61543,61599,61303,61601,61602,61947,61530,61946,61815,61411,58975,60337,59600,59825,60476,60574,61603,60585,60770,58993,60786,61604,60533,60564,60842,60739,60597,60475,60609,60837"},
@@ -2310,7 +2374,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="11057,11025,11058,11030,11080,11062,11010,11023"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\Merrymaker"] = {
-		{ids="7043"},
+		{ids="7043,11057,11025,11058,11030,11080,11062,11010,11023,7043,7045"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\On Metzen!"] = {
 		{ids="7043"},
@@ -2499,14 +2563,16 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="13484,13502"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14055,14053,14051,14048,14054"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress"] = {
+		{ids="14055,14053,14051,14048,14054"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests"] = {
 		{ids="14055,14053,14051,14048,14054"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"] = {
-		{ids="14022,14064,14023"},
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035"},
 	},
 	["EVENTS\\Warlords of Draenor\\Iron Horde Invasion"] = {
 		{ids="35460,35462,36379,35463,35464,36307,35486,35492,35494,35495,35488,35496,35500,36941"},
@@ -3054,13 +3120,14 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="31231,31235,31109,31267,31111,31505,31232,31233,31496,31270,31269,31507,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31609,31612"},
 	},
 	["GOLD\\Alliance Daily Runs\\The Order of the Cloud Serpent Dailies Run"] = {
+		{ids="31705", cond_if=[[completedq(30151)]]},
 		{ids="30146", cond_if=[[skill("Fishing")>=1]]},
 		{ids="30148", cond_if=[[skill("First Aid")>=525]]},
 		{ids="30151,31704,30156,30154,30150", cond_if=[[not completedq(30143)]]},
 		{ids="30151,31704,31716,30156,30154,30150", cond_if=[[completedq(30143)]]},
 		{ids="30147", cond_if=[[skill("Archaeology")>=525]]},
 		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713"},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713,30143,30144,30145,30187,31811,31810"},
 	},
 	["GOLD\\Alliance Daily Runs\\The Shado-Pan Dailies Run"] = {
 		{ids="31127,31038,31220", cond_if=[[rep('Shado-Pan')>=Honored]]},
@@ -3949,6 +4016,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="12649", cond_if=[[completedq(12643)]]},
 		{ids="12859,12902,12861,12857,12883,12884,12894,12630,12633,12631,12795,12652,12661,12903,12901,12904,12912,12669,12673,12677,12686,12676,12690,12710,12713,12914,12916,12919,12503,12740,12565,12505,12596,12506,12799,12557,12609,12610,12504,12508,12507,12510,12562,12514,12527,12599,12516,12623,12597,12598,12512,12606,12553,12552,12554,12583,12584,12555,12627,12615,12622,12628,12635,12640,12639,12632,12642,12650,13549,12655,12646,12647,12653,12659,12662,12665,12666,12667,12672,12668,12674,12675,12684,12685,12709,12712,12708,12707,12721,13556,12729,12730,12932,12933,12934,12935,12936,12948"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Human Heritage Armor"] = {
+		{ids="72644,72405,72408,72409,72424,72426,72430,72431,72432,72453,72445,72449,72446,72450,72451,72452"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Stormwind Trading Post Unlock"] = {
 		{ids="66858"},
 	},
@@ -4586,7 +4656,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="38253,38257,37921,38254,38255,38256,38258,38259,39082,39054,39276,39055,38435,38436,38444,38445,39313,39432,38581,39422,38446,38578"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonflight Campaign"] = {
-		{ids="71232,72585,72406,72397,72429,72435,72773,70437,66675,67073,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70621,70510,70881,70899,70900,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128"},
+		{ids="71232,72585,72406,72397,72429,72435,72773,70437,66675,67073,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70621,70510,70881,70899,70900,69888,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,69097,67722,66636,66173,66174,71152,66546,66547"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonriding World Tour"] = {
 		{ids="72481,72483,72485,72487,72482,72484,72486,72488"},
@@ -4623,6 +4693,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="65686,66227,67174,67175,67033,67035,67036,65688,66523,66671,66488,66489,66493,65914,65925,65926,66724,65929,65928,65930,66155,65689,65702,65709,65852,65751,65752,65854,65855,65750,65769,65758,65832,65833,65834,66699,69904,72784,66500,65864,66503,65868,65867,65866,65871,65872,65873,65870,66239,65869,71233,66026,66261,66262,66263,66264,66265,66266,66267,66268,66269,66270,65838,65846,65844,65845,65848,65847,65849,66210,66211,72435,66218,66558,66212,70129,70939,66213,71234,65850,65911,66223,66781,66164,66154,66147,66175,66177,66232,66187,66559,66837,66838,66844,66839,66843,65279,65306,65302,65594,65595,66840,66841,66845,66846,66027,65886,71094,71095,71096,71097,70550,66708,65887,67299,66964,66622,66553,66554,66555,66556,66557,68641,68639,68642,68643,68644,69862,70338,66709,66715,66703,67050,66730,71013,71014,71015,71016,65943,65944,66647,65958,65977,66007,66009,70041,66015,67111,67724,70856,70858,70859,70931,70937,70941,70946,70970,66391,66141,66353,66352,66422,66423,66425,66426,66427,66428,66429,66148,66149,66150,66151,66152,71009,71012,70166,71017,70940,70168,70996,71000,71135"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
+		{ids="72591,72592,72593,72595,72662,74946,72594,72663,72599,72600,72601,72602,72603,72604,72605,72606,72607,72609,72611"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
 		{ids="69912,69914,65760,65989,65990,65991,65993,65992,65995,65996,65997,65998,65999,66000,66001,66114,66115,68795,70061,65118,65120,65133,68796,68797,68798,68799,66931,66116,66118,66122,66121,66123,66124,66079,72241,66048,66078,65956,65957,65939,66044,66049,66055,66056,66354,66057,66780,66779,65793,66785,66788,65791,65794,65795"},
@@ -4644,6 +4717,11 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="70746,70747", cond_if=[[Dracthyr]]},
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="65686,67033,67035,67036,65688,65689,65702,65709,65852,65751,65752,65854,65855,66699,65864,65868,65867,65866,65871,65872,65873,65870,66239,65869,66026,65838,65846,65844,65845,65848,65847,65849,66210,65850,65911,66027,65886,65887,65943,65944,66647,65958,65977,66007,66009,70041,66015"},
+	},
+	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
+		{ids="74883", cond_if=[[Horde]]},
+		{ids="73114", cond_if=[[Alliance]]},
+		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,73142,73179,73715,72712,73159,72953,74294,74984,74983,74282,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65286,66513,66577,65101,32675,72240,66589", cond_if=[[Alliance]]},
@@ -5159,6 +5237,8 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="55056"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Scrapforged Mechaspider"] = {
+		{ids="56328", cond_if=[[not completedq(55707)]]},
+		{ids="57009,54088,55040,54945,54087,54946,54947,54992,55645,55729,55730,55731,55995,55734,55096,55736,55101,56740,55708,55608,55707,55153,55210,56320,56320,54086,54929,55373,55697,54922,56168,56117,54083,56175,55696,55753,55622"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Shadowbarb Drone (Beta)"] = {
 		{ids="58804,58808,58805,58806,58807,58804,58808,58805,58806,58807,58810,58812,58825,58818,58813,58858,58826,58817,58812,58825,58818,58813,58858,58826,58817,58829,58830,58860,58859,58861,58862,58831,58830,58860,58859,58861,58862,58831,58863", cond_if=[[questpossible]]},
@@ -5542,8 +5622,26 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Garrison Mounts\\Coalfist Gronnling"] = {
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Puzzle Mounts\\Divine Kiss of Ohn'ahra"] = {
+		{ids="65906,65901,65907,65770,65761,65711,66676,72512"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Azure Skitterfly"] = {
+		{ids="70821"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Tamed Skitterfly"] = {
+		{ids="70821"},
+	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Lizi, Thunderspine Tramper"] = {
 		{ids="65906,65901,65907,65770,65761,65711,66676,71196,71197,71198,71199,71195,71209"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Otto"] = {
+		{ids="72738"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Scrappy Worldsnail"] = {
+		{ids="66419,66133,66805,66129"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Ivory Trader's Ottuk"] = {
+		{ids="72193", cond_if=[[level >= 70 and not (itemcount(193708) >= 1 and hasmount(376879))]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Bronzewing Vespoid"] = {
 		{ids="65419,64829,64745,64759,64761,64762,64763,64766,64767,65420,65426,65427,65396"},
@@ -5746,6 +5844,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="27726,25316,25317,25460,25370,25574,25319,25472,25323,25464,25430,25320,25321,25424,25324,25325,25578,25584,25255,25233,25234,25268,25271,25273,25280,25278,25297,25300,25301,25298,25328,25303,25312,25332,25352,25353,25618,25575,25577,25576,25599,25600,25611,27874,25630,25381,25382,25385,25404,25408,25411,25412,25392,25428,25940,25462,25490,25491,25493,25492,25507,25502,25510,25514,25519,25520,25663,25655,25656,25665,25731,25664,25740,25746,25758,25763,25761,25764,25776,25795,25807,25810,25830,25523,25525,25544,25560,29177"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Plump Turkey"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14055,14053,14051,14048,14054"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Rustberg Gull"] = {
 		{ids="28275,27987,27978,27991,27975,27973,28059,28063,28130,28137,28065,27948,27972,27970,27971,28050,27944,28046,27967,27992,27966,27949,28122,28162,28163,28165,28185,28186,28117,28120,28118,28232,28188,28223"},
@@ -5783,6 +5882,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="11356,29074,8311,29430,11360,11440,11439,8356,29392,8353,8355,29398,29399,29402,29403,29411,29413,8357"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Macabre Marionette"] = {
+		{ids="14166"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Sen'jin Fetish"] = {
 	},
@@ -6041,6 +6141,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Imperial Moth"] = {
 	},
 	["PETSMOUNTS\\Battle Pets\\Mechanical Pets\\Lil' Bling"] = {
+		{ids="31752"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Mechanical Pets\\Pierre"] = {
 		{ids="32630"},
@@ -6306,11 +6407,20 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	},
 	["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide"] = {
 	},
-	["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"] = {
+	["PROFESSIONS\\Fishing\\Leveling Guides\\Draenor Fishing 1-100"] = {
 		{ids="34194,36199,36201,36202"},
+	},
+	["PROFESSIONS\\Alchemy\\Leveling Guides\\Dragon Isles Alchemy 1-100"] = {
+		{ids="70530"},
 	},
 	["PROFESSIONS\\Artisan's Consortium\\Artisan's Consortium Intro"] = {
 		{ids="67564,67100,67143,67137,67295,67298,69946,69979"},
+	},
+	["PROFESSIONS\\Cooking\\Leveling Guides\\Dragon Isles Cooking 1-100"] = {
+		{ids="66413"},
+	},
+	["PROFESSIONS\\Enchanting\\Leveling Guides\\Dragon Isles Enchanting 1-100"] = {
+		{ids="72172"},
 	},
 	["PROFESSIONS\\Protoform Synthesis\\Schematic: Ambystan Darter"] = {
 		{ids="65419,65327"},
@@ -6696,13 +6806,14 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="31231,31235,31109,31267,31111,31505,31232,31233,31496,31270,31269,31507,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31609,31612"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent"] = {
+		{ids="31705", cond_if=[[completedq(30151)]]},
 		{ids="30146", cond_if=[[skill("Fishing")>=1]]},
 		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
 		{ids="30151,31704,30156,30154,30150", cond_if=[[not completedq(30143)]]},
 		{ids="30151,31704,31716,30156,30154,30150", cond_if=[[completedq(30143)]]},
 		{ids="30147", cond_if=[[skill("Archaeology")>=525]]},
 		{ids="30148", cond_if=[[skill("Pandaria Tailoring") >= 1]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713"},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713,30143,30144,30145,30187,31811,31810"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Tillers"] = {
 		{ids="32682", cond_if=[[rep('The Tillers')==Exalted and not completedq(32682)]]},
@@ -6714,12 +6825,12 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31338,31339,31340,31341"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Ella"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31534,31537,31538"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung"] = {
 		{ids="31374", cond=[[Horde]]},
@@ -6744,7 +6855,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31320,31321,31322,31323"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw"] = {
 		{ids="31374", cond=[[Horde]]},
@@ -6797,7 +6908,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="70835", cond_if=[[hasprof("Dragon Isles Blacksmithing",100)]]},
 		{ids="71162,71165,71178,71138,71161,71157", cond_if=[[countcompletedq(71162,71178,71165,71161,71138,71157) == 0]]},
 		{ids="71162,71165,71178,71138,71161,71157", cond_if=[[countcompletedq(71162,71178,71165,71161,71138,71157) == 2]]},
-		{ids="70822,70335,70812,70813,69855,72524,66351,65421,70807,66595,66597,66598,70215,66582,70154,70156,70702,69869,72525,69870,65486,70808,70828,71146,70820,70817,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,70819,70809,71148,70814,70831,71149,70818,70832,70815,71150,70833,70810,71151,70821,70834"},
+		{ids="70822,70335,70812,70813,69855,72524,66351,65421,70807,66595,66597,66598,70215,66582,70154,70156,70702,69869,72525,69870,65486,70808,70828,71146,70820,70817,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,70819,70809,71148,70814,70831,71149,70818,70832,70815,71150,70833,70810,71151,69097,67722,66636,66173,66174,71152,66546,66547,70834,70821"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Community Feast"] = {
 		{ids="70938,70893"},
@@ -6806,13 +6917,20 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="71230,70871,72584,70942,70943,70944"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Iskaara Tuskarr"] = {
-		{ids="70936,70938,70941,70939,70940,71230,70871,72584,70942,70953,70943,70954,70959,70944,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,70960,70945,70955,70963,70978,70948,70966,70967,70950,70956,70968,70961,70962,70971,70972,70976,70952,70964,66218,66223,70977,70969"},
+		{ids="72323,72327,72326,72325,72324", cond_if=[[questactive(72323) or questactive(72327) or questactive(72326) or questactive(72325) or questactive(72324)]]},
+		{ids="72318,72320,72319,72322,72321", cond_if=[[questactive(72318) or questactive(72320) or questactive(72319) or questactive(72322) or questactive(72321)]]},
+		{ids="70936,70938,70941,70939,70940,71230,70871,72584,70942,70953,70943,70954,70959,70944,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,70960,70945,70955,70963,70978,70948,70966,70967,70950,70956,70968,70964,70962,70971,70972,70976,70952,70961,66218,66223,70977,70969"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Maruuk Centaur\\Maruuk Centaur"] = {
-		{ids="72117,71229,71231,70501,71058,71060,72363,72137,70541,65906,65901,65907,65770,65761,65711,66676,71028,71066,71067,71029,71073,71074,71075,71030,71079,71083,71031,71085,71032,71089,71091"},
+		{ids="72313,72312,72310,72296,72311", cond_if=[[storyactive(72313,2023) or storyactive(72312,2023) or storyactive(72310,2023) or storyactive(72296,2023) or storyactive(72311,2023)]]},
+		{ids="72315,72316,72297,72317,72314", cond_if=[[storyactive(72315,2023) or storyactive(72316,2023) or storyactive(72297,2023) or storyactive(72317,2023) or storyactive(72314,2023)]]},
+		{ids="72117,71229,71231,70501,71058,71060,72363,72137,70541,65906,65901,65907,65770,65761,65711,66676,71028,71066,71067,71029,71073,71074,72311,71075,71030,71079,71083,71031,71085,71032,71089,71090,71091"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Valdrakken Accord\\Valdrakken Accord"] = {
 		{ids="70839,70880,70882,71210,70883,71227,70885,70887,70888,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70903,70895,70896,70897,70901,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,70891,70904,70915,70905,70910,70911,70912,70913,70914,70916"},
+	},
+	["REPUTATIONS\\Dragonflight Reputations\\Winterpelt Furbolg"] = {
+		{ids="66553,66554,66555,66556,66557,66141,66148,66149,66150,66151,66152,66708,66709,66715,66703,67050,66730,71013,71014,71015,70996,72546,72588,72589,72547,72586"},
 	},
 	["TITLES\\Battle for Azeroth Titles\\General\\Junkyard"] = {
 	},
@@ -6940,6 +7058,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="1468,29093,29106,54130,29117,29119,171"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements"] = {
+		{ids="7043,11057,11025,11058,11030,11080,11062,11010,11023,7043,7045"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests"] = {
 		{ids="7043", cond_if=[[level >= 30 and not completedq(7045)]]},
@@ -6963,6 +7082,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Noble"] = {
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Pilgrim"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14055,14053,14051,14048,14054"},
 	},
 	["TITLES\\Legion Titles\\General\\Postmaster"] = {
 		{ids="46278,41397,41367,41394,41395,50247"},
@@ -7176,15 +7296,19 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\100 Cooking Awards"] = {
 		{ids="13087", cond_if=[[not completedq(13087)]]},
-		{ids="26190,26177,26192,26153,26183"},
+		{ids="26190,26177,26192,26153,26183,13103,13101,13100,13107,13102"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\A Bunch of Lunch"] = {
-		{ids="26190,26177,26192,26153,26183"},
+		{ids="29314", cond_if=[[haveq(29314)]]},
+		{ids="29313,29316,29318,29357", cond_if=[[haveq(29313) or haveq(29316) or haveq(29318) or haveq(29357)]]},
+		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Captain Rumsey's Lager"] = {
-		{ids="26488,26420,26414,26442,26536"},
+		{ids="13087", cond_if=[[not completedq(13087)]]},
+		{ids="26488,26420,26414,26442,26536,11381,11379,11380,11377,13103,13101,13100,13107,13102,13833,13834,13832,13830,13836"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Cooking With Style"] = {
+		{ids="13103,13101,13100,13107,13102"},
 		{ids="13087", cond_if=[[not completedq(13087)]]},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Dinner Impossible"] = {
@@ -7192,6 +7316,26 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["ACHIEVEMENTS\\Professions\\Cooking\\Iron Chef"] = {
 		{ids="6612", cond_if=[[haveq(6612)]]},
 		{ids="26860,6610,8307,8313,9454,9349,9361,9356,13088"},
+	},
+	["ACHIEVEMENTS\\Professions\\Cooking\\Kickin' It Up a Notch"] = {
+		{ids="11381", cond_if=[[haveq(11381)]]},
+		{ids="11377", cond_if=[[haveq(11377)]]},
+		{ids="11380", cond_if=[[haveq(11380)]]},
+		{ids="11379", cond_if=[[haveq(11379)]]},
+	},
+	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Darnassus"] = {
+		{ids="29314", cond_if=[[haveq(29314)]]},
+		{ids="29357", cond_if=[[haveq(29357)]]},
+		{ids="29316", cond_if=[[haveq(29316)]]},
+		{ids="29318", cond_if=[[haveq(29318)]]},
+		{ids="29313", cond_if=[[haveq(29313)]]},
+	},
+	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Ironforge"] = {
+		{ids="29356", cond_if=[[haveq(29356)]]},
+		{ids="29355", cond_if=[[haveq(29355)]]},
+		{ids="29352", cond_if=[[haveq(29352)]]},
+		{ids="29353", cond_if=[[haveq(29353)]]},
+		{ids="29351", cond_if=[[haveq(29351)]]},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Stormwind"] = {
 		{ids="26177", cond_if=[[haveq(26177)]]},
@@ -7204,6 +7348,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="13103,13101,13100,13107,13102"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Cake Is Not A Lie"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Cataclysmic Gourmet"] = {
 	},
@@ -7491,8 +7636,10 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["ACHIEVEMENTS\\Professions\\Cooking\\Ironpaw Chef"] = {
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Master of Pandaren Cooking"] = {
+		{ids="31281,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Now I Am the Master"] = {
+		{ids="31281,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31332,30329,30330,30328,30332,30331,31332,31333,31334,31335,31336"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Pandaren Gourmet"] = {
 		{ids="31535"},
@@ -7591,6 +7738,11 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="31207"},
 	},
 	["ACHIEVEMENTS\\World Events\\Brawler's Guild\\Collect Your Deck"] = {
+		{ids="31372", cond=[[Alliance]]},
+		{ids="37910", cond_if=[[not completedq(37910)]]},
+		{ids="31374", cond=[[Horde]]},
+		{ids="37911", cond_if=[[not completedq(37911)]]},
+		{ids="30252,30535,30254,30255,30256,30257,31945,29463,29436,29438,29434,36481,29455,33756,37868"},
 	},
 	["ACHIEVEMENTS\\Collections\\Toy Box\\All Toys"] = {
 		{ids="37156,37179,37157", cond_if=[[hasbuilding(34) or hasbuilding(35) or hasbuilding(36)]]},
@@ -7864,9 +8016,52 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks"] = {
 		{ids="72876,71035,71034"},
 	},
-	["ACHIEVEMENTS\\Quests\\Dragonflight\\Ancient Waygates"] = {
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Fragments of History"] = {
+		{ids="70175,70204,70207,70236,70788,70789,70790,70791,70805,70806"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Framing a New Perspective"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Let's Get Quacking"] = {
+		{ids="66196", cond_if=[[not completedq(66196)]]},
+		{ids="70917", cond_if=[[not completedq(70917)]]},
+		{ids="70877", cond_if=[[not completedq(70877)]]},
+		{ids="70919", cond_if=[[not completedq(70919)]]},
+		{ids="70918", cond_if=[[not completedq(70918)]]},
+		{ids="72122,66107,66105,66104"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\That's Pretty Neat!"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of Thaldraszus"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Azure Span"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Waking Shores"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of the Ohn'ahran Plains"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Who's a Good Bakar?"] = {
+		{ids="67772,67921,70989,68083,68084,68085,71022,68087,69094,69095,69096,65950,65954,66006"},
+	},
+	["ACHIEVEMENTS\\Pet Battles\\Dragon Isles\\Dragon Isles Safari"] = {
+		{ids="70647,70697,70722,70732,70849,70851,70853,70854"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\Mastering the Waygates"] = {
 		{ids="71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138", cond_if=[[haveq(71162,71178,71165,71161,71138,71157)]]},
 		{ids="72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,72876,71035,71034,71146,72876,71035,71034,71147,72876,71035,71034,71148,72876,71035,71034,71149,72876,71035,71034,71150"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\River Rapids Wrangler"] = {
+		{ids="65914,65925,65926,66724,65929,65928,65930,66155"},
+	},
+	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Legendary Photograph"] = {
+		{ids="69869,72525,69870,65486"},
 	},
 	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Ready, Aim, Catalog!"] = {
 		{ids="72876,71035,71034,69869,72525,69870,65486"},
@@ -8005,6 +8200,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="11548,11516,11515,11877,11875,11880,11514,11541,11536,11544,11543,11540,11546,11521,11547,11533,11537,11523,11525"},
 	},
 	["DAILIES\\Burning Crusade Dailies\\Shattrath Cooking Dailies"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["DAILIES\\Cataclysm Dailies\\Deepholm\\Therazane's Throne Dailies, plus Pre-Quests"] = {
 		{ids="28391,28390", cond_if=[[rep ('Therazane') >= Revered]]},
@@ -8075,7 +8271,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="29342", cond_if=[[haveq(29342)]]},
 	},
 	["DAILIES\\Classic Dailies\\Stormwind City\\Main City Cooking Dailies"] = {
-		{ids="26190,26177,26192,26153,26183"},
+		{ids="26190,26177,26192,26153,26183,29352,29351,29355,29356,29353,29313,29316,29318,29357,29314"},
 	},
 	["DAILIES\\Classic Dailies\\Stormwind City\\Stormwind City Fishing Dailies"] = {
 		{ids="26414", cond_if=[[haveq(26414)]]},
@@ -8088,8 +8284,10 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="25154,25156,25105,25155,25157"},
 	},
 	["DAILIES\\Cooking\\Dalaran Cooking Daily Guide"] = {
+		{ids="13103,13101,13100,13107,13102"},
 	},
 	["DAILIES\\Cooking\\Shattrath Cooking Daily Guide"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["DAILIES\\Cooking\\Stormwind Cooking Daily Guide"] = {
 		{ids="26190,26177,26192,26153,26183"},
@@ -8173,7 +8371,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="11945"},
 	},
 	["DAILIES\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Cooking Dailies"] = {
-		{ids="13087"},
+		{ids="13087,13103,13101,13100,13107,13102"},
 	},
 	["DAILIES\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Fishing Dailies"] = {
 		{ids="13832", cond_if=[[haveq(13832)]]},
@@ -8262,6 +8460,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="12740,12557,12599,12597,12598,12596,12541,12594,12585,12519,12568,12509,12591,12588,12502,12564,12563,12587,12501"},
 	},
 	["PROFESSIONS\\Jewelcrafting\\Daily Guides\\Jewelcrafting Daily Guide"] = {
+		{ids="25154,25156,25105,25155,25157"},
 	},
 	["DAILIES\\Legion\\Antoran Wastes World Quests"] = {
 		{ids="42233", cond_if=[[readyq(42233)]]},
@@ -9150,6 +9349,19 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="70779", cond_if=[[haveq(70995) or completedq(70995)]]},
 		{ids="71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965", cond_if=[[haveq(71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965) or completedq(71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies"] = {
+		{ids="74911", cond_if=[[haveq(74911)]]},
+		{ids="74910", cond_if=[[haveq(74910)]]},
+		{ids="74391,74119", cond_if=[[haveq(74391,74119) or completedq(74391,74119)]]},
+		{ids="74117,74390", cond_if=[[haveq(74117,74390) or completedq(74117,74390)]]},
+		{ids="74389,74118", cond_if=[[haveq(74389,74118) or completedq(74389,74118)]]},
+		{ids="74909", cond_if=[[haveq(74909)]]},
+		{ids="74908", cond_if=[[haveq(74908)]]},
+		{ids="75263,74392,75261,75237", cond_if=[[haveq(75263,74392,75261,75237) or completedq(75263,74392,75261,75237)]]},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole"] = {
+		{ids="70927,70926,72291,70941,73226"},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole"] = {
 		{ids="71191", cond_if=[[haveq(71191) or completedq(71191)]]},
 		{ids="70927,70926,72291,70941,72069"},
@@ -9171,10 +9383,10 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="72868,70929,70928"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)"] = {
-		{ids="70352", cond_if=[[haveq(70352) or completedq(70352)]]},
 		{ids="67222", cond_if=[[haveq(67222) or completedq(67222)]]},
 		{ids="67034", cond_if=[[haveq(67034) or completedq(67034)]]},
 		{ids="70279,70990", cond_if=[[haveq(70279,70990) or completedq(70279,70990)]]},
+		{ids="70352,67039", cond_if=[[haveq(70352,67039) or completedq(70352,67039)]]},
 		{ids="72868,70929,70928"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)"] = {
@@ -9204,11 +9416,17 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="66156", cond_if=[[readyq(66156)]]},
 		{ids="71023", cond_if=[[readyq(71023)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
+		{ids="65606", cond_if=[[readyq(65606)]]},
+		{ids="66511", cond_if=[[readyq(66511)]]},
+		{ids="66156", cond_if=[[readyq(66156)]]},
+		{ids="71023", cond_if=[[readyq(71023)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
-		{ids="69926", cond_if=[[haveq(69926) or completedq(69926)]]},
 		{ids="66445,72447,66321,67051,67099,66449,69984,66883,70848", cond_if=[[readyq(72447) or haveq(66445,69984,66883,70848,66321,67051,67099,66449) or completedq(66445,72447,69984,66883,70848,66321,67051,67099,66449)]]},
-		{ids="66326,66308", cond_if=[[haveq(66326,66308) or completedq(66326,66308)]]},
+		{ids="69926,66856", cond_if=[[haveq(69926,66856) or completedq(69926,66856)]]},
 		{ids="69918,65842", cond_if=[[haveq(69918,65842) or completedq(69918,65842)]]},
+		{ids="66326,66308", cond_if=[[haveq(66326,66308) or completedq(66326,66308)]]},
 		{ids="67142", cond_if=[[haveq(67142) or completedq(67142)]]},
 		{ids="72447,69984,66883,70848", cond_if=[[haveq(72447,69984,66883,70848) or completedq(72447,69984,66883,70848)]]},
 		{ids="69983,66882,72448,70847", cond_if=[[haveq(69983,66882,72448,70847) or completedq(69983,66882,72448,70847)]]},
@@ -9408,6 +9626,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["DUNGEONS\\Legion Dungeons\\Karazhan\\Karazhan Attunement"] = {
 		{ids="45422,44886,44887,44944,44556,44557,44683,44684,44685,44686,44764,44733"},
+	},
+	["DUNGEONS\\Legion Dungeons\\Karazhan\\Return to Karazhan"] = {
+		{ids="44735,44734", cond_if=[[haveq(44734)]]},
 	},
 	["DUNGEONS\\Legion Dungeons\\Vault of the Wardens"] = {
 		{ids="44486", cond_if=[[haveq(44486) or completedq(44486)]]},
@@ -9920,7 +10141,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="11025,11058,11030,11080,11062,11010,11023"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\Merrymaker"] = {
-		{ids="7043"},
+		{ids="7043,11025,11058,11030,11080,11062,11010,11023,7043,7045"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\On Metzen!"] = {
 		{ids="7043"},
@@ -10047,11 +10268,16 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="13484,13502"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14054,14048,14051,14053,14055"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress"] = {
+		{ids="14054,14048,14051,14053,14055"},
+	},
+	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests"] = {
+		{ids="14054,14048,14051,14053,14055"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"] = {
-		{ids="14022,14064"},
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035"},
 	},
 	["EVENTS\\Warlords of Draenor\\Iron Horde Invasion"] = {
 		{ids="35460,35462,36379,35464,35463,36307,35494,35486,35492,35496,35495,35488,35500,36941"},
@@ -10621,9 +10847,15 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="31231,31235,31109,31267,31111,31505,31677,31216,31237,31510,31272,31504,31232,31233,31496,31270,31269,31507,31271,31502,31503,31234,31508,31509,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31959,31609,31612"},
 	},
 	["GOLD\\Alliance Daily Runs\\The Order of the Cloud Serpent Dailies Run"] = {
-		{ids="31704", cond_if=[[haveq(31704)]]},
 		{ids="31716", cond_if=[[haveq(31716)]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142"},
+		{ids="30148", cond_if=[[skill("First Aid")>=525]]},
+		{ids="30151", cond_if=[[haveq(30151)]]},
+		{ids="31713", cond_if=[[haveq(31713)]]},
+		{ids="31704", cond_if=[[haveq(31704)]]},
+		{ids="31710,30150,30156,31704,30154", cond_if=[[haveq(31710) or haveq(30150) or haveq(30156) or haveq(31704) or haveq(30154)]]},
+		{ids="30150", cond_if=[[haveq(30150)]]},
+		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,31194,31701,31702,30155,30158,31703,30154,31699,31698,31700,31706,31711,31707,30152,31721,31717,31720,31718,30159,31709,30157,31712,31715,31714,30147,30146,31705,30143,30144,30145,30187,31811,31810"},
 	},
 	["GOLD\\Alliance Daily Runs\\The Shado-Pan Dailies Run"] = {
 		{ids="31266", cond_if=[[rep('Shado-Pan')==Exalted and not completedq(31277)]]},
@@ -11544,6 +11776,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="12643", cond_if=[[haveq(12643) or completedq(12643)]]},
 		{ids="12902,12883,12861,12857,12859,12884,12630,12652,12894,12904,12661,12673,12669,12686,12677,12690,12710,12676,12901,12912,12903,12713,12914,12916,12919,12795,12565,12503,12740,12557,12799,12609,12610,12505,12504,12508,12506,12507,12562,12510,12599,12514,12527,12516,12597,12598,12512,12552,12553,12606,12583,12554,12555,12584,12596,12623,12615,12627,12622,12628,12632,12635,12655,12642,12646,12647,12640,12639,12650,12653,12665,12666,12667,12672,12668,12674,13549,12675,12662,12659,12684,12685,12712,12709,12708,12707,13556,12721,12729,12730,12932,12933,12934,12935,12936,12948"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Human Heritage Armor"] = {
+		{ids="72644,72405,72408,72409,72424,72426,72430,72431,72453,72432,72445,72446,72449,72450,72451,72452"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Stormwind Trading Post Unlock"] = {
 		{ids="66858"},
 	},
@@ -12167,9 +12402,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="38253,38257,38254,38255,38256,38258,38259,39082,39054,39276,39055,38435,38436,38444,39313,38445,38581,39432,38446,38578"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonflight Campaign"] = {
-		{ids="66444,67084,66402,66128", cond_if=[[not completedallq(67084,66128,66444,66547,66402)]]},
-		{ids="66444,67084,66402,66128", cond_if=[[default]]},
-		{ids="71232,72406,72397,72429,72435,72585,70437,66675,67073,72773,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70510,70881,70899,70900,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,68794,67074,70703,67075,67076,67077,67078,67079,67081,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503"},
+		{ids="66444,67084,66402,66128,66547", cond_if=[[not completedallq(67084,66128,66444,66547,66402,69888)]]},
+		{ids="66444,67084,66402,66128,66547", cond_if=[[default]]},
+		{ids="71232,72406,72397,72429,72435,72585,70437,66675,67073,72773,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70510,70881,70899,70900,69888,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,68794,67074,70703,67075,67076,67077,67078,67079,67081,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,69097,67722,66636,66173,66174,71152,66546"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonriding World Tour"] = {
 		{ids="72481,72483,72485,72487,72482,72484,72486,72488"},
@@ -12213,6 +12448,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="72268", cond_if=[[haveq(72268) or completedq(72268)]]},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
+		{ids="72591,72592,72593,72662,72595,74946,72594,72663,72600,72599,72601,72602,72603,72604,72605,72606,72607,72609,72611"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="72293", cond_if=[[Horde and (haveq(72293) or completedq(72293))]]},
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
@@ -12238,6 +12476,11 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="70746,70747", cond_if=[[Dracthyr]]},
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="72268", cond_if=[[haveq(72268) or completedq(72268)]]},
+	},
+	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
+		{ids="73114", cond_if=[[haveq(73114) or completedq(73114)]]},
+		{ids="74883", cond_if=[[haveq(74883) or completedq(74883)]]},
+		{ids="74381,73076,75050,73157,74769,73715,74847,74847,73160,73179,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73142,73156,74359,73089,74355"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65100,65286,66513,66577,65101,32675,66589,72240", cond_if=[[Alliance]]},
@@ -12757,6 +13000,8 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="55056"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Scrapforged Mechaspider"] = {
+		{ids="56328", cond_if=[[not completedq(55707)]]},
+		{ids="57009,54088,55040,54945,54087,54946,54947,54992,55645,55729,55730,55731,55995,55734,55096,55736,55101,55708,55608,55707,55210,56320,54086,54929,55373,55697,54922,56117,56168,54083,56175,55696,55753,55622,55153"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Shadowbarb Drone (Beta)"] = {
 		{ids="58804,58808,58805,58806,58807", cond_if=[[haveq(58804,58808,58805,58806,58807)]]},
@@ -13142,8 +13387,41 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Garrison Mounts\\Coalfist Gronnling"] = {
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Puzzle Mounts\\Divine Kiss of Ohn'ahra"] = {
+		{ids="72868,70929,70928,65906,65901,65907,65770,65761,65711,66676,72868,70929,70928,72512"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Azure Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Tamed Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Verdant Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Lizi, Thunderspine Tramper"] = {
 		{ids="72868,70929,70928,65906,65901,65907,65770,65761,65711,66676,71196,71195,71209"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Otto"] = {
+		{ids="72729"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown Scouting Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown War Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Ivory Trader's Ottuk"] = {
+		{ids="72193", cond_if=[[level >= 70 and not (itemcount(193708) >= 1 and hasmount(376879))]]},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow Scouting Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow War Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\World Event Mounts\\Plainswalker Bearer"] = {
+		{ids="72868,70929,70928"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Bronzewing Vespoid"] = {
 		{ids="65419,64829,64745,64759,64761,64762,64763,64766,64767,65420,65426,65427,65396"},
@@ -13346,6 +13624,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="27726,25316,25370,25460,25574,25317,25319,25472,25323,25464,25430,25320,25321,25424,25324,25325,25578,25584,25233,25234,25255,25268,25271,25273,25280,25300,25297,25301,25303,25328,25312,25332,25278,25298,25353,25618,25576,25575,25577,25599,25600,25352,25611,25630,25404,25408,25411,25381,25382,25385,25412,25392,25428,25940,25462,25490,25491,25493,25492,25507,25502,25510,25514,25519,25520,27874,25663,25655,25656,25665,25731,25664,25740,25746,25758,25763,25761,25764,25776,25795,25807,25810,25523,25525,25544,25560,29177"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Plump Turkey"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14054,14048,14051,14053,14055"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Rustberg Gull"] = {
 		{ids="28275,27987,27978,27991,27975,27973,28059,28063,28130,28137,28065,27948,27972,27970,27971,28050,27944,28046,27967,27992,27966,27949,28122,28162,28163,28165,28185,28186,28117,28120,28118,28232,28188,28223"},
@@ -13387,6 +13666,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="29074,11356,8356,29430,8353,8355,29392,29398,29399,29402,29403,29411,8357,8311"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Macabre Marionette"] = {
+		{ids="14166"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Sen'jin Fetish"] = {
 	},
@@ -13603,7 +13883,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["PETSMOUNTS\\Battle Pets\\Critter Pets\\Red Cricket"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30408,30404"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Imperial Moth"] = {
 	},
@@ -13886,11 +14166,20 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 525-600 Leveling Guide"] = {
 	},
-	["PROFESSIONS\\Fishing\\Leveling Guides\\Fishing 600-700 Leveling Guide"] = {
+	["PROFESSIONS\\Fishing\\Leveling Guides\\Draenor Fishing 1-100"] = {
 		{ids="34194,36199,36201,36202"},
+	},
+	["PROFESSIONS\\Alchemy\\Leveling Guides\\Dragon Isles Alchemy 1-100"] = {
+		{ids="70530"},
 	},
 	["PROFESSIONS\\Artisan's Consortium\\Artisan's Consortium Intro"] = {
 		{ids="67564,67100,67143,67137,67295,69946,69979,67298"},
+	},
+	["PROFESSIONS\\Cooking\\Leveling Guides\\Dragon Isles Cooking 1-100"] = {
+		{ids="70927,70926,72291,66413"},
+	},
+	["PROFESSIONS\\Enchanting\\Leveling Guides\\Dragon Isles Enchanting 1-100"] = {
+		{ids="72172"},
 	},
 	["PROFESSIONS\\Protoform Synthesis\\Schematic: Ambystan Darter"] = {
 		{ids="65419,65327"},
@@ -14331,9 +14620,15 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="31231,31235,31109,31267,31111,31505,31677,31216,31237,31510,31272,31504,31232,31233,31496,31270,31269,31507,31271,31502,31503,31234,31508,31509,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31959,31609,31612"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent"] = {
-		{ids="31704", cond_if=[[haveq(31704)]]},
 		{ids="31716", cond_if=[[haveq(31716)]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142"},
+		{ids="31710,30150,30156,31704,30154", cond_if=[[haveq(31710) or haveq(30150) or haveq(30156) or haveq(31704) or haveq(30154)]]},
+		{ids="30148", cond_if=[[haveq(30148)]]},
+		{ids="30151", cond_if=[[haveq(30151)]]},
+		{ids="31713", cond_if=[[haveq(31713)]]},
+		{ids="31704", cond_if=[[haveq(31704)]]},
+		{ids="30150", cond_if=[[haveq(30150)]]},
+		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,31194,31701,31702,30155,30158,31703,30154,31699,31698,31700,31706,31711,31707,30152,31721,31717,31720,31718,30159,31709,30157,31712,31715,31714,30147,30146,31705,30143,30144,30145,30187,31811,31810"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Tillers"] = {
 		{ids="32682", cond_if=[[rep('The Tillers')==Exalted and not completedq(32682)]]},
@@ -14354,52 +14649,52 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30402,30400"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Ella"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30386,30381,31534,31537,31538"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30421,30420"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30427,30424"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30390,30389"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30414,30409"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30439,30435,31320,31321,31322,31323"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30396,30394"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Sho"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30408,30404"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30433,30428"},
 	},
 	["REPUTATIONS\\Warlords of Draenor\\Hand of the Prophet"] = {
 		{ids="38045", cond_if=[[haveq(38045) or completedq(38045)]]},
@@ -14430,7 +14725,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Dragonscale Expedition\\Dragonscale Expedition"] = {
 		{ids="71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138", cond_if=[[haveq(71162,71178,71165,71161,71138,71157)]]},
-		{ids="72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,69855,72524,66351,65421,72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,69869,72525,69870,65486,72876,71035,71034,72876,71035,71034,71146,72876,71035,71034,72876,71035,71034,72876,71035,71034,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,66128,72876,71035,71034,72876,71035,71034,71148,72876,71035,71034,72876,71035,71034,71149,72876,71035,71034,72876,71035,71034,72876,71035,71034,71150,72876,71035,71034,72876,71035,71034,72876,71035,71034,71151,72876,71035,71034,72876,71035,71034"},
+		{ids="72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,69855,72524,66351,65421,72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,69869,72525,69870,65486,72876,71035,71034,72876,71035,71034,71146,72876,71035,71034,72876,71035,71034,72876,71035,71034,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,66128,72876,71035,71034,72876,71035,71034,71148,72876,71035,71034,72876,71035,71034,71149,72876,71035,71034,72876,71035,71034,72876,71035,71034,71150,72876,71035,71034,72876,71035,71034,72876,71035,71034,71151,72876,71035,71034,69097,67722,66636,66173,66174,71152,66546,66547,72876,71035,71034"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Dragonscale Expedition\\Dragonscale Expedition Flags"] = {
 		{ids="72876,71035,71034"},
@@ -14443,14 +14738,19 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Iskaara Tuskarr"] = {
-		{ids="70927,70926,72291,70938,70927,70926,72291,70941,70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,66444,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,66218,66223,70927,70926,72291"},
+		{ids="70927,70926,72291,70938,70927,70926,72291,70941,70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,66444,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70976,70927,70926,72291,70927,70926,72291,70927,70926,72291,66218,66223,70927,70926,72291"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Maruuk Centaur\\Maruuk Centaur"] = {
 		{ids="71229,71229,71229", cond_if=[[not completedq(71229)]]},
 		{ids="72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,71231,70501,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,70541,65906,65901,65907,65770,65761,65711,66676,72868,70929,70928,71028,72868,70929,70928,72868,70929,70928,71029,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Valdrakken Accord\\Valdrakken Accord"] = {
-		{ids="70841,70840,70841,70840,70841,70840,70841,70840,71210,70841,70840,70883,70841,70840,71227,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,66402,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840"},
+		{ids="70883", cond_if=[[haveq(70883) or completedq(70883)]]},
+		{ids="70841,70840,70841,70840,70841,70840,70841,70840,71210,70841,70840,70841,70840,71227,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,66402,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840"},
+	},
+	["REPUTATIONS\\Dragonflight Reputations\\Winterpelt Furbolg"] = {
+		{ids="66708", cond_if=[[haveq(66708) or completedq(66708)]]},
+		{ids="66553,66554,66555,66556,66557,66141,66148,66149,66150,66151,66152,66709,66715,66703,67050,66730,71013,71015,71014,70996,72546,72588,72589,72547,72586"},
 	},
 	["TITLES\\Battle for Azeroth Titles\\General\\Junkyard"] = {
 	},
@@ -14467,6 +14767,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="28826,14482,24432,25281,25405,25357,25546,27729,25545,25564,25547,25558,25477,25371"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Achievements"] = {
+	},
+	["TITLES\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Dailies"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\Professions\\Fishing\\Salty"] = {
 		{ids="11668", cond_if=[[haveq(11668)]]},
@@ -14582,6 +14885,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="1468,29106,29093,54130,29117,29119,171"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements"] = {
+		{ids="7043,11025,11058,11030,11080,11062,11010,11023,7043,7045"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests"] = {
 		{ids="7043", cond_if=[[not completedq(7045)]]},
@@ -14604,6 +14908,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Noble"] = {
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Pilgrim"] = {
+		{ids="14022,14064,14023,14024,14028,14030,14033,14035,14054,14048,14051,14053,14055"},
 	},
 	["TITLES\\Legion Titles\\General\\Postmaster"] = {
 		{ids="41411", cond_if=[[haveq(41411)]]},
@@ -14682,9 +14987,58 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 }
 ZGV.Quest_Cache_Accept_Horde = {
-	["ACHIEVEMENTS\\Quests\\Dragonflight\\Ancient Waygates"] = {
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Curious Coin"] = {
+		{ids="72743,72746,72747,72748,72749"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Fragments of History"] = {
+		{ids="70175,70236,70207,70789,70806,70790,70788,70791,70204,70805"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Framing a New Perspective"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Let's Get Quacking"] = {
+		{ids="66196", cond_if=[[not completedq(66196)]]},
+		{ids="70917", cond_if=[[not completedq(70917)]]},
+		{ids="70877", cond_if=[[not completedq(70877)]]},
+		{ids="70919", cond_if=[[not completedq(70919)]]},
+		{ids="70918", cond_if=[[not completedq(70918)]]},
+		{ids="72122,66105,66107,66104"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Siege on Dragonbane Keep: Chiseled Record"] = {
+		{ids="71210"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\That's Pretty Neat!"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of Thaldraszus"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Azure Span"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Waking Shores"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of the Ohn'ahran Plains"] = {
+		{ids="72709,70833"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Who's a Good Bakar?"] = {
+		{ids="67772,67921,70989,68083,68084,68085,71022,68087,69094,69095,69096,65954,66006"},
+	},
+	["ACHIEVEMENTS\\Pet Battles\\Dragon Isles\\Dragon Isles Safari"] = {
+		{ids="70647,70697,70722,70732,70849,70851,70853,70854"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\Mastering the Waygates"] = {
 		{ids="71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157,71162,71165,71178,71138,71161,71157", cond_if=[[not completedallq(71162,71178,71165,71161,71138,71157)]]},
 		{ids="66595,66597,66598,70215,66582,70154,70156,70702,71146,71147,71148,71149,71150"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\River Rapids Wrangler"] = {
+		{ids="65914,65925,65926,66724,65929,65928,65930,66155"},
+	},
+	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Legendary Photograph"] = {
+		{ids="69869,72525,69870,65486"},
 	},
 	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Ready, Aim, Catalog!"] = {
 		{ids="69869,72525,69870,65486"},
@@ -14932,7 +15286,8 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="26227,26226,26235,26220,13115,13113,13112,13116,13114"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Captain Rumsey's Lager"] = {
-		{ids="26588,26572,26557,26543,26556,11381,11379,11380,11377"},
+		{ids="13089", cond_if=[[not completedq(13089)]]},
+		{ids="26588,26572,26557,26543,26556,11381,11379,11380,11377,13115,13113,13112,13116,13114,13833,13834,13832,13836,13830"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Cooking With Style"] = {
 		{ids="13115,13113,13112,13116,13114"},
@@ -15240,10 +15595,10 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["ACHIEVEMENTS\\Professions\\Cooking\\Ironpaw Chef"] = {
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Master of Pandaren Cooking"] = {
-		{ids="31281"},
+		{ids="31281,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31535,31535"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Now I Am the Master"] = {
-		{ids="31281"},
+		{ids="31281,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31302,31311,31470,31472,31475,31478,31479,31467,31480,31471,31477,31476,31474,31536,31535,31535,31332,30330,30332,30328,30329,30331,31332,31333,31334,31335,31336"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Pandaren Gourmet"] = {
 		{ids="31535"},
@@ -15359,7 +15714,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="31207"},
 	},
 	["ACHIEVEMENTS\\World Events\\Brawler's Guild\\Collect Your Deck"] = {
-		{ids="30747"},
+		{ids="31374", cond=[[Horde]]},
+		{ids="31372", cond=[[Alliance]]},
+		{ids="30747,31752,30252,30535,30254,30255,30256,30257,31945,29463,29436,29438,29434,36481,29455,37910,33756,37911,37868"},
 	},
 	["ACHIEVEMENTS\\Draenor Garrison\\A Rare Mission"] = {
 	},
@@ -15787,6 +16144,15 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="71001,71007,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965", cond_if=[[questpossible]]},
 		{ids="70779", cond_if=[[haveq(70995) or completedq(70995)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies"] = {
+		{ids="75263,74392,75261,75237", cond_if=[[questactive(75263,74392,75261,75237)]]},
+		{ids="74389,74118", cond_if=[[questactive(74389,74118)]]},
+		{ids="74391,74119", cond_if=[[questactive(74391,74119)]]},
+		{ids="74117,74390", cond_if=[[questactive(74117,74390)]]},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole"] = {
+		{ids="70941,73226"},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole"] = {
 		{ids="70203", cond_if=[[itemcount(194969) >= 20 and not completedq(72824)]]},
 		{ids="70199", cond_if=[[itemcount(194730) >= 20 and not completedq(72828)]]},
@@ -15827,30 +16193,33 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="65798,70210,67605,71241,70701,70299", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)"] = {
-		{ids="67222,70352,70279,70990,67034", cond_if=[[questpossible]]},
+		{ids="67222,70352,70279,70990,67034,67039", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)"] = {
 		{ids="65796,65789,65784,66698", cond_if=[[questpossible]]},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests"] = {
-		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,70067,70780,70074,70646,70209,69929,70649,70652,71140,70176,72058,70638,63520"},
+		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,74838,70067,70780,74837,70074,70646,70209,69929,70649,70652,71140,70176,72058,70638,63520"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
-		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,70934,71164,70661,71154,70111,70057,70072,71180"},
+		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,74794,70934,71164,70661,71154,70111,74792,70057,70072,71180"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Azure Span World Quests"] = {
-		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,70622,70035,72019,70625,70022,70037,70439"},
+		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,74836,70622,70035,72019,70625,70022,70037,70439"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
+		{ids="73148,73146,73079,73082,73078,73149,73147,75257"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
-		{ids="66103,69918,66633,69926,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
-		{ids="66103,69918,66633,69926,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[not completedq(66802)]]},
+		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
+		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[not completedq(66802)]]},
 		{ids="66326,66308", cond_if=[[questpossible]]},
 		{ids="66419"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Waking Shores World Quests"] = {
 		{ids="72338", cond_if=[[haveq(66805) and not completedq(66805)]]},
 		{ids="72337", cond_if=[[haveq(66133) and not completedq(66133)]]},
-		{ids="66419,70636,69930,66902,67010,66934,66070,70782,67062,70075,70632,70502,70415,70413,70410,70416,70418,70412,70382,70417,67113,69916,69938,72030,67014,66989,67026,67009,67005,66133,66805,64768,70150,66833,70172,66896,72008,70012,67006,67024,70651,70984,66588,69931,70021,66551,69913,69924,66203,72058,67012"},
+		{ids="74841,66419,70636,69930,66902,67010,66934,66070,70782,67062,70075,70632,70502,70415,70413,70410,70416,70418,70412,70382,70417,67113,69916,69938,72030,67014,66989,67026,67009,67005,66133,66805,64768,70150,66833,70172,66896,72008,70012,67006,74840,67024,70651,70984,66588,69931,70021,66551,69913,69924,66203,72058,67012"},
 	},
 	["DAILIES\\Shadowlands (50-60)\\Ardenweald World Quests"] = {
 		{ids="60872,60950,60899,60649,61948,61595,61949,61435,61596,61631,61440,61597,61598,60855,62068,61717,62051,61394,61543,61599,61303,61601,61602,61947,61530,61946,61815,61411,58975,60337,59600,59825,60476,60574,61603,60585,60770,58993,60786,61604,60533,60564,60842,60739,60597,60475,60609,60837"},
@@ -16919,7 +17288,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="11057,11025,11058,11030,11080,11062,11010,11023"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\Merrymaker"] = {
-		{ids="6983"},
+		{ids="6983,11057,11025,11058,11030,11080,11062,11010,11023,6983,6984"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\On Metzen!"] = {
 		{ids="6983"},
@@ -16937,7 +17306,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 	},
 	["EVENTS\\Feast of Winter Veil\\Feast of Winter Veil Quests"] = {
 		{ids="6983", cond_if=[[level >= 30 and not completedq(6984)]]},
-		{ids="6961,6962,6964,7061"},
+		{ids="6961,6962,6964,7061,6984"},
 	},
 	["EVENTS\\Hallow's End\\Achievements\\Hallowed Be Thy Name"] = {
 		{ids="12404,12409", cond_if=[[rep ('The Scryers')>=Neutral]]},
@@ -17039,6 +17408,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="9332,11933,9330,9331,9339"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Draenor"] = {
+		{ids="44580,44573,44582,44571,44570,44572"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Eastern Kingdoms"] = {
 		{ids="11837,11761,28924,28910,11737,28930,11857,28916,11743,11581,11745,11751,11739,11844,28912,11842,11749,11742,11757,11732,11840,11853,11584,11848,11850,11860,11755,11756,28931,11862"},
@@ -17068,6 +17438,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Cataclysm"] = {
 		{ids="29030", cond_if=[[completedq(55519)]]},
 		{ids="29031,28946,28943,29036,28949,28947"},
+	},
+	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Draenor"] = {
+		{ids="44580,44573,44582,44571,44570,44572"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Eastern Kingdoms"] = {
 		{ids="11837,11761,28924,28910,11737,28930,11857,28916,11743,11581,11745,11751,11739,11844,28912,11842,11749,11742,11757,11732,11840,11853,11584,11848,11850,11860,11755,11756,28931,11862"},
@@ -17107,14 +17480,16 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="13483,13503"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim"] = {
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047,14058,14059,14062,14061,14060"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress"] = {
+		{ids="14058,14059,14062,14061,14060"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests"] = {
 		{ids="14058,14059,14062,14061,14060"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"] = {
-		{ids="14036,14065,14037"},
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047"},
 	},
 	["EVENTS\\Warlords of Draenor\\Iron Horde Invasion"] = {
 		{ids="35745,35746,36382,35748,35744,36292,35751,35750,35761,35760,35762,35764,35763,36940"},
@@ -17705,13 +18080,14 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="31231,31235,31109,31267,31111,31505,31232,31233,31496,31270,31269,31507,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31609,31612"},
 	},
 	["GOLD\\Horde Daily Runs\\The Order of the Cloud Serpent Dailies Run"] = {
+		{ids="31705", cond_if=[[completedq(30151)]]},
 		{ids="30146", cond_if=[[skill("Fishing")>=1]]},
 		{ids="30148", cond_if=[[skill("First Aid")>=525]]},
 		{ids="30151,31704,30156,30154,30150", cond_if=[[not completedq(30143)]]},
 		{ids="30151,31704,31716,30156,30154,30150", cond_if=[[completedq(30143)]]},
 		{ids="30147", cond_if=[[skill("Archaeology")>=525]]},
 		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713"},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713,30143,30144,30145,30187,31811,31810"},
 	},
 	["GOLD\\Horde Daily Runs\\The Shado-Pan Dailies Run"] = {
 		{ids="31127,31038,31220", cond_if=[[rep('Shado-Pan')>=Honored]]},
@@ -18101,7 +18477,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="38458,38462,38463,39395"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonflight Campaign"] = {
-		{ids="71232,72585,72406,72397,72429,72435,72773,70437,66675,67073,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70621,70510,70881,70899,70900,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128"},
+		{ids="71232,72585,72406,72397,72429,72435,72773,70437,66675,67073,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70621,70510,70881,70899,70900,69888,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,69097,67722,66636,66173,66174,71152,66546,66547"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonriding World Tour"] = {
 		{ids="72481,72483,72485,72487,72482,72484,72486,72488"},
@@ -18138,6 +18514,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="65686,66227,67174,67175,67033,67035,67036,65688,66523,66671,66488,66489,66493,65914,65925,65926,66724,65929,65928,65930,66155,65689,65702,65709,65852,65751,65752,65854,65855,65750,65769,65758,65832,65833,65834,66699,69904,72784,66500,65864,66503,65868,65867,65866,65871,65872,65873,65870,66239,65869,71233,66026,66261,66262,66263,66264,66265,66266,66267,66268,66269,66270,65838,65846,65844,65845,65848,65847,65849,66210,66211,72435,66218,66558,66212,70129,70939,66213,71234,65850,65911,66223,66781,66164,66154,66147,66175,66177,66232,66187,66559,66837,66838,66844,66839,66843,65279,65306,65302,65594,65595,66840,66841,66845,66846,66027,65886,71094,71095,71096,71097,70550,66708,65887,67299,66964,66622,66553,66554,66555,66556,66557,68641,68639,68642,68643,68644,69862,70338,66709,66715,66703,67050,66730,71013,71014,71015,71016,65943,65944,66647,65958,65977,66007,66009,70041,66015,67111,67724,70856,70858,70859,70931,70937,70941,70946,70970,66391,66141,66353,66352,66422,66423,66425,66426,66427,66428,66429,66148,66149,66150,66151,66152,71009,71012,70166,71017,70940,70168,70996,71000,71135"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
+		{ids="72591,72592,72593,72595,72662,74946,72594,72663,72599,72600,72601,72602,72603,72604,72605,72606,72607,72609,72611"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
 		{ids="69912,69914,65760,65989,65990,65991,65993,65992,65995,65996,65997,65998,65999,66000,66001,66114,66115,68795,70061,65118,65120,65133,68796,68797,68798,68799,66931,66116,66118,66122,66121,66123,66124,66079,72241,66048,66078,65956,65957,65939,66044,66049,66055,66056,66354,66057,66780,66779,65793,66785,66788,65791,65794,65795"},
@@ -18159,6 +18538,11 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="70746,70747", cond_if=[[Dracthyr]]},
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="65686,67033,67035,67036,65688,65689,65702,65709,65852,65751,65752,65854,65855,66699,65864,65868,65867,65866,65871,65872,65873,65870,66239,65869,66026,65838,65846,65844,65845,65848,65847,65849,66210,65850,65911,66027,65886,65887,65943,65944,66647,65958,65977,66007,66009,70041,66015"},
+	},
+	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
+		{ids="74883", cond_if=[[Horde]]},
+		{ids="73114", cond_if=[[Alliance]]},
+		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,73142,73179,73715,72712,73159,72953,74294,74984,74983,74282,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65286,66513,66577,65101,32675,72240,66589", cond_if=[[Alliance]]},
@@ -19080,6 +19464,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="12649", cond_if=[[completedq(12643)]]},
 		{ids="12974,12792,12859,12902,12861,12883,12884,12894,12630,12633,12631,12795,12652,12661,12903,12901,12912,12904,12669,12673,12677,12686,12676,12690,12710,12713,12914,12916,12919,12503,12740,12565,12505,12596,12506,12799,12557,12609,12610,12504,12508,12507,12510,12562,12514,12527,12516,12623,12599,12597,12598,12512,12606,12552,12553,12554,12583,12584,12555,12627,12615,12622,12628,12635,12640,12639,12632,12642,12650,13549,12655,12646,12647,12653,12659,12662,12665,12666,12667,12672,12668,12674,12675,12684,12685,12709,12712,12708,12707,12721,12729,13556,12730,12932,12933,12934,12935,12936,12948"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Orc Heritage Armor"] = {
+		{ids="73703,72462,72464,72465,72467,72476,74581,74374,72477,74415,72466,72474,72475,72478,72479"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Orgrimmar Trading Post Unlock"] = {
 		{ids="66959"},
 	},
@@ -19683,7 +20070,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="35237,37422,34639,34660,34667,34639,34660,34667", cond_if=[[level < 50]]},
 		{ids="34681,34566,34569,35102,34577,34576,34579,34837,34683,34766,34803,33721,33735,33754,35226,33722,33720,33736,34950,33724,33973,33728,33729,33730,34962,33731,33740,33734,33761,33578,33579,33580,33581,33582,34721,34751,35238,33872,33873,33874,34840,34855,34858,34860,34870,34971,34972,34696,33917,33920,34418,35249,34710,34351,33530,34451,33970,33971,33972,34242,34508,34013,34234,33988,33976,34326,34092,34122,34144,34157,34163,34164,34564,36512,34706,33882,33884,33944,34399,34400,34401,34404,34414,34447,35537,34632,34814,34634,34635,34636,34874,34878,34766,34683,34803,33721,33735,33754,35226,33722,33720,33736,34950,33724,33973,33728,33729,33730,34962,33731,33740,33734,33761,33578,33579,33580,33581,33582,34721,34751,35238,33872,33873,33874,34879,34887,34888,34889,34890,34712,34949,34696,33917,33920,34418,35249,34710,34351,33530,34451,33970,33971,33972,34242,34508,34013,34234,33988,33976,34326,34092,34122,34144,34157,34163,34164,34564,36512,34706,33882,33884,33944,34399,34400,34401,34404,34414,34447,35537"},
 	},
-	["LEVELING\\Draenor (10-60)\\Tanaan Jungle (40)"] = {
+	["LEVELING\\Draenor (10-60)\\Tanaan Jungle (40-60)"] = {
 		{ids="39176,39177", cond_if=[[skill("Jewelcrafting") >= 1]]},
 		{ids="38567,38568,38569,38570,38571,38572,38573,38574,39236,39241,39242,37889,37890,37934,37935,39432,38577,39423,39315,38001,38578"},
 	},
@@ -19799,8 +20186,26 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["PETSMOUNTS\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Blue-Purple Mechanostrider"] = {
 		{ids="4601,4603"},
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Puzzle Mounts\\Divine Kiss of Ohn'ahra"] = {
+		{ids="65906,65901,65907,65770,65761,65711,66676,72512"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Azure Skitterfly"] = {
+		{ids="70821"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Tamed Skitterfly"] = {
+		{ids="70821"},
+	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Lizi, Thunderspine Tramper"] = {
 		{ids="65906,65901,65907,65770,65761,65711,66676,71196,71197,71198,71199,71195,71209"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Otto"] = {
+		{ids="72738"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Scrappy Worldsnail"] = {
+		{ids="66419,66133,66805,66129"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Ivory Trader's Ottuk"] = {
+		{ids="72193", cond_if=[[level >= 70 and not (itemcount(193708) >= 1 and hasmount(376879))]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Bronzewing Vespoid"] = {
 		{ids="65419,64829,64745,64759,64761,64762,64763,64766,64767,65420,65426,65427,65396"},
@@ -19878,6 +20283,8 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="55056"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Scrapforged Mechaspider"] = {
+		{ids="56328", cond_if=[[not completedq(55707)]]},
+		{ids="57024,55646,55647,55648,55630,55632,55649,55650,55651,55652,55685,55729,55730,55731,55995,55734,55096,55736,55101,56740,55708,55608,55707,55153,55210,56320,56320,54086,54929,55373,55697,54922,56168,56117,54083,56175,55696,55753,55622"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Shadowbarb Drone (Beta)"] = {
 		{ids="58804,58808,58805,58806,58807,58804,58808,58805,58806,58807,58810,58812,58825,58818,58813,58858,58826,58817,58812,58825,58818,58813,58858,58826,58817,58829,58830,58860,58859,58861,58862,58831,58830,58860,58859,58861,58862,58831,58863", cond_if=[[questpossible]]},
@@ -19984,9 +20391,6 @@ ZGV.Quest_Cache_Accept_Horde = {
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto Drake"] = {
 		{ids="12689,12695,12704,12735,12737,12736,12726,12761,12762,12705"},
-	},
-	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph"] = {
-		{ids="9373,9372,10255,10159,10132,10134,10349,10351,9802,9747,9728,9895,9716,9752,9788,10096,9894,9697,9957,9718,9720,9785,9731,9724,9697,9957,9732,9876,29568,9968,9971,9951,9978,9979,10112,9990,9995,10448,9997,10447,10006,10896,10567,10682,10753,10771,10770,10713,10717,10719,10607,10894,10893,10722,10748,10810,10812,10819,10820,10821,10910,10904,10911,10912,10426,10427,10429,11864,11866,11876,11869,11884,11865,11878,11870,11868,11879,11871,11872,11571,11559,11561,11560,11562,11563,11564,11565,11566,11569,11570,9802,11867"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix"] = {
 	},
@@ -20360,6 +20764,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Imperial Moth"] = {
 	},
 	["PETSMOUNTS\\Battle Pets\\Mechanical Pets\\Lil' Bling"] = {
+		{ids="31752"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Mechanical Pets\\Pierre"] = {
 		{ids="32630"},
@@ -20550,6 +20955,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="3861"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Macabre Marionette"] = {
+		{ids="14166"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Aquatic Pets\\Fishy"] = {
 		{ids="31239"},
@@ -20694,8 +21100,17 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Weebomination"] = {
 		{ids="37248,37645,37644"},
 	},
+	["PROFESSIONS\\Alchemy\\Leveling Guides\\Dragon Isles Alchemy 1-100"] = {
+		{ids="70530"},
+	},
 	["PROFESSIONS\\Artisan's Consortium\\Artisan's Consortium Intro"] = {
 		{ids="67564,67100,67143,67137,67295,67298,69946,69979"},
+	},
+	["PROFESSIONS\\Cooking\\Leveling Guides\\Dragon Isles Cooking 1-100"] = {
+		{ids="66413"},
+	},
+	["PROFESSIONS\\Enchanting\\Leveling Guides\\Dragon Isles Enchanting 1-100"] = {
+		{ids="72172"},
 	},
 	["PROFESSIONS\\Protoform Synthesis\\Schematic: Ambystan Darter"] = {
 		{ids="65419,65327"},
@@ -20970,7 +21385,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="70835", cond_if=[[hasprof("Dragon Isles Blacksmithing",100)]]},
 		{ids="71162,71165,71178,71138,71161,71157", cond_if=[[countcompletedq(71162,71178,71165,71161,71138,71157) == 0]]},
 		{ids="71162,71165,71178,71138,71161,71157", cond_if=[[countcompletedq(71162,71178,71165,71161,71138,71157) == 2]]},
-		{ids="70822,70335,70812,70813,69855,72524,66351,65421,70807,66595,66597,66598,70215,66582,70154,70156,70702,69869,72525,69870,65486,70808,70828,71146,70820,70817,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,70819,70809,71148,70814,70831,71149,70818,70832,70815,71150,70833,70810,71151,70821,70834"},
+		{ids="70822,70335,70812,70813,69855,72524,66351,65421,70807,66595,66597,66598,70215,66582,70154,70156,70702,69869,72525,69870,65486,70808,70828,71146,70820,70817,69093,66012,66013,66673,66094,70784,70785,66814,70507,70503,66128,70819,70809,71148,70814,70831,71149,70818,70832,70815,71150,70833,70810,71151,69097,67722,66636,66173,66174,71152,66546,66547,70834,70821"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Community Feast"] = {
 		{ids="70938,70893"},
@@ -20979,13 +21394,20 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="71230,70871,72584,70942,70943,70944"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Iskaara Tuskarr"] = {
-		{ids="70936,70938,70941,70939,70940,71230,70871,72584,70942,70953,70943,70954,70959,70944,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,70960,70945,70955,70963,70978,70948,70966,70967,70950,70956,70968,70961,70962,70971,70972,70976,70952,70964,66218,66223,70977,70969"},
+		{ids="72323,72327,72326,72325,72324", cond_if=[[questactive(72323) or questactive(72327) or questactive(72326) or questactive(72325) or questactive(72324)]]},
+		{ids="72318,72320,72319,72322,72321", cond_if=[[questactive(72318) or questactive(72320) or questactive(72319) or questactive(72322) or questactive(72321)]]},
+		{ids="70936,70938,70941,70939,70940,71230,70871,72584,70942,70953,70943,70954,70959,70944,68863,68640,66409,66410,66417,66411,66418,66414,66440,66431,66415,66443,66444,70960,70945,70955,70963,70978,70948,70966,70967,70950,70956,70968,70964,70962,70971,70972,70976,70952,70961,66218,66223,70977,70969"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Maruuk Centaur\\Maruuk Centaur"] = {
-		{ids="72117,71229,71231,70501,71058,71060,72363,72137,70541,65906,65901,65907,65770,65761,65711,66676,71028,71066,71067,71029,71073,71074,71075,71030,71079,71083,71031,71085,71032,71089,71091"},
+		{ids="72313,72312,72310,72296,72311", cond_if=[[storyactive(72313,2023) or storyactive(72312,2023) or storyactive(72310,2023) or storyactive(72296,2023) or storyactive(72311,2023)]]},
+		{ids="72315,72316,72297,72317,72314", cond_if=[[storyactive(72315,2023) or storyactive(72316,2023) or storyactive(72297,2023) or storyactive(72317,2023) or storyactive(72314,2023)]]},
+		{ids="72117,71229,71231,70501,71058,71060,72363,72137,70541,65906,65901,65907,65770,65761,65711,66676,71028,71066,71067,71029,71073,71074,72311,71075,71030,71079,71083,71031,71085,71032,71089,71090,71091"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Valdrakken Accord\\Valdrakken Accord"] = {
 		{ids="70839,70880,70882,71210,70883,71227,70885,70887,70888,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70903,70895,70896,70897,70901,66620,66178,66179,66180,66182,66183,66181,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66394,66397,66635,66398,66399,66400,66401,66402,70891,70904,70915,70905,70910,70911,70912,70913,70914,70916"},
+	},
+	["REPUTATIONS\\Dragonflight Reputations\\Winterpelt Furbolg"] = {
+		{ids="66553,66554,66555,66556,66557,66141,66148,66149,66150,66151,66152,66708,66709,66715,66703,67050,66730,71013,71014,71015,70996,72546,72588,72589,72547,72586"},
 	},
 	["REPUTATIONS\\Battle for Azeroth\\Rajani"] = {
 		{ids="58582,58583,58506,56374,56209,56375,56472,56376,58991,56377,56536,56537,56538,56539,56771,56540,56541,56542,58737,57067,57068,57069,57070,57071,57072,57074,57075,57076"},
@@ -21232,13 +21654,14 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="31231,31235,31109,31267,31111,31505,31232,31233,31496,31270,31269,31507,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31609,31612"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent"] = {
+		{ids="31705", cond_if=[[completedq(30151)]]},
 		{ids="30146", cond_if=[[skill("Fishing")>=1]]},
 		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
 		{ids="30151,31704,30156,30154,30150", cond_if=[[not completedq(30143)]]},
 		{ids="30151,31704,31716,30156,30154,30150", cond_if=[[completedq(30143)]]},
 		{ids="30147", cond_if=[[skill("Archaeology")>=525]]},
 		{ids="30148", cond_if=[[skill("Pandaria Tailoring") >= 1]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713"},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,30155,30158,31698,31706,31707,31712,31194,31703,31701,31702,31711,31721,31717,31720,31718,31715,31699,31700,30159,30157,31709,31708,31714,30152,31713,30143,30144,30145,30187,31811,31810"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Tillers"] = {
 		{ids="32682", cond_if=[[rep('The Tillers')==Exalted and not completedq(32682)]]},
@@ -21251,12 +21674,12 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31338,31339,31340,31341"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Ella"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31534,31537,31538"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung"] = {
 		{ids="31374", cond=[[Horde]]},
@@ -21281,7 +21704,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,31320,31321"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw"] = {
 		{ids="31374", cond=[[Horde]]},
@@ -21455,8 +21878,11 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="10942,10945,10951,10953,11975,10963,10967"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements"] = {
+		{ids="6983,11057,11025,11058,11030,11080,11062,11010,11023,6983,6984"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests"] = {
+		{ids="6983", cond_if=[[level >= 30 and not completedq(6984)]]},
+		{ids="6961,6962,6964,7061,6984"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Hallowed"] = {
 		{ids="12404,12409", cond_if=[[rep ('The Scryers')>=Neutral]]},
@@ -21476,6 +21902,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Noble"] = {
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Pilgrim"] = {
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047,14058,14059,14062,14061,14060"},
 	},
 	["TITLES\\Legion Titles\\General\\Postmaster"] = {
 		{ids="46278,41397,41367,41394,41395,50247"},
@@ -21569,9 +21996,52 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks"] = {
 		{ids="72876,71035,71034"},
 	},
-	["ACHIEVEMENTS\\Quests\\Dragonflight\\Ancient Waygates"] = {
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Fragments of History"] = {
+		{ids="70175,70204,70207,70236,70788,70789,70790,70791,70805,70806"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Framing a New Perspective"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Let's Get Quacking"] = {
+		{ids="66196", cond_if=[[not completedq(66196)]]},
+		{ids="70917", cond_if=[[not completedq(70917)]]},
+		{ids="70877", cond_if=[[not completedq(70877)]]},
+		{ids="70919", cond_if=[[not completedq(70919)]]},
+		{ids="70918", cond_if=[[not completedq(70918)]]},
+		{ids="72122,66107,66105,66104"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\That's Pretty Neat!"] = {
+		{ids="32470", cond=[[Horde]]},
+		{ids="32470", cond=[[Alliance]]},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of Thaldraszus"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Azure Span"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of The Waking Shores"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Treasures of the Ohn'ahran Plains"] = {
+		{ids="72709"},
+	},
+	["ACHIEVEMENTS\\Exploration\\Dragon Isles\\Who's a Good Bakar?"] = {
+		{ids="67772,67921,70989,68083,68084,68085,71022,68087,69094,69095,69096,65950,65954,66006"},
+	},
+	["ACHIEVEMENTS\\Pet Battles\\Dragon Isles\\Dragon Isles Safari"] = {
+		{ids="70647,70697,70722,70732,70849,70851,70853,70854"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\Mastering the Waygates"] = {
 		{ids="71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138", cond_if=[[haveq(71162,71178,71165,71161,71138,71157)]]},
 		{ids="72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,72876,71035,71034,71146,72876,71035,71034,71147,72876,71035,71034,71148,72876,71035,71034,71149,72876,71035,71034,71150"},
+	},
+	["ACHIEVEMENTS\\Quests\\Dragonflight\\River Rapids Wrangler"] = {
+		{ids="65914,65925,65926,66724,65929,65928,65930,66155"},
+	},
+	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Legendary Photograph"] = {
+		{ids="69869,72525,69870,65486"},
 	},
 	["ACHIEVEMENTS\\Reputation\\Dragonflight\\Ready, Aim, Catalog!"] = {
 		{ids="72876,71035,71034,69869,72525,69870,65486"},
@@ -21748,7 +22218,8 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="26220", cond_if=[[haveq(26220)]]},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Captain Rumsey's Lager"] = {
-		{ids="26588,26572,26557,26543,26556"},
+		{ids="13089", cond_if=[[not completedq(13089)]]},
+		{ids="26588,26572,26557,26543,26556,11381,11379,11380,11377,13115,13113,13112,13116,13114,13833,13834,13832,13830,13836"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Cooking With Style"] = {
 		{ids="13115,13113,13112,13116,13114"},
@@ -21760,6 +22231,12 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="6610,8307,8313,9349,9361,9356,13090"},
 		{ids="6612", cond_if=[[haveq(6612)]]},
 	},
+	["ACHIEVEMENTS\\Professions\\Cooking\\Kickin' It Up a Notch"] = {
+		{ids="11381", cond_if=[[haveq(11381)]]},
+		{ids="11377", cond_if=[[haveq(11377)]]},
+		{ids="11380", cond_if=[[haveq(11380)]]},
+		{ids="11379", cond_if=[[haveq(11379)]]},
+	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Orgrimmar"] = {
 		{ids="26226", cond_if=[[haveq(26226)]]},
 		{ids="26233", cond_if=[[haveq(26233)]]},
@@ -21767,6 +22244,13 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="26235", cond_if=[[haveq(26235)]]},
 		{ids="26234", cond_if=[[haveq(26234)]]},
 		{ids="26220", cond_if=[[haveq(26220)]]},
+	},
+	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Thunder Bluff"] = {
+		{ids="29364", cond_if=[[haveq(29364)]]},
+		{ids="29358", cond_if=[[haveq(29358)]]},
+		{ids="29365", cond_if=[[haveq(29365)]]},
+		{ids="29363", cond_if=[[haveq(29363)]]},
+		{ids="29362", cond_if=[[haveq(29362)]]},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Let's Do Lunch: Undercity"] = {
 		{ids="29333", cond_if=[[haveq(29333)]]},
@@ -21776,6 +22260,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="29332", cond_if=[[haveq(29332)]]},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Our Daily Bread"] = {
+		{ids="13115,13113,13112,13116,13114"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Cake Is Not A Lie"] = {
 		{ids="13115,13113,13112,13116,13114"},
@@ -22051,8 +22536,10 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["ACHIEVEMENTS\\Professions\\Cooking\\Ironpaw Chef"] = {
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Master of Pandaren Cooking"] = {
+		{ids="31281,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\Now I Am the Master"] = {
+		{ids="31281,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31302,31311,31467,31479,31480,31470,31471,31478,31477,31475,31476,31472,31474,31536,31332,30329,30330,30328,30332,30331,31332,31333,31334,31335,31336"},
 	},
 	["ACHIEVEMENTS\\Professions\\Cooking\\The Pandaren Gourmet"] = {
 		{ids="31535"},
@@ -22146,6 +22633,11 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="31207"},
 	},
 	["ACHIEVEMENTS\\World Events\\Brawler's Guild\\Collect Your Deck"] = {
+		{ids="31372", cond=[[Alliance]]},
+		{ids="37910", cond_if=[[not completedq(37910)]]},
+		{ids="31374", cond=[[Horde]]},
+		{ids="37911", cond_if=[[not completedq(37911)]]},
+		{ids="30252,30535,30254,30255,30256,30257,31945,29463,29436,29438,29434,36481,29455,33756,37868"},
 	},
 	["ACHIEVEMENTS\\Draenor Garrison\\A Rare Mission"] = {
 	},
@@ -22713,6 +23205,19 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="70779", cond_if=[[haveq(70995) or completedq(70995)]]},
 		{ids="71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965", cond_if=[[haveq(71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965) or completedq(71007,71001,70975,71005,70995,70992,71004,70997,71008,71010,71011,70965)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies"] = {
+		{ids="74911", cond_if=[[haveq(74911)]]},
+		{ids="74910", cond_if=[[haveq(74910)]]},
+		{ids="74391,74119", cond_if=[[haveq(74391,74119) or completedq(74391,74119)]]},
+		{ids="74117,74390", cond_if=[[haveq(74117,74390) or completedq(74117,74390)]]},
+		{ids="74389,74118", cond_if=[[haveq(74389,74118) or completedq(74389,74118)]]},
+		{ids="74909", cond_if=[[haveq(74909)]]},
+		{ids="74908", cond_if=[[haveq(74908)]]},
+		{ids="75263,74392,75261,75237", cond_if=[[haveq(75263,74392,75261,75237) or completedq(75263,74392,75261,75237)]]},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole"] = {
+		{ids="70927,70926,72291,70941,73226"},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole"] = {
 		{ids="71191", cond_if=[[haveq(71191) or completedq(71191)]]},
 		{ids="70927,70926,72291,70941,72069"},
@@ -22734,10 +23239,10 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="72868,70929,70928"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)"] = {
-		{ids="70352", cond_if=[[haveq(70352) or completedq(70352)]]},
 		{ids="67222", cond_if=[[haveq(67222) or completedq(67222)]]},
 		{ids="67034", cond_if=[[haveq(67034) or completedq(67034)]]},
 		{ids="70279,70990", cond_if=[[haveq(70279,70990) or completedq(70279,70990)]]},
+		{ids="70352,67039", cond_if=[[haveq(70352,67039) or completedq(70352,67039)]]},
 		{ids="72868,70929,70928"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)"] = {
@@ -22767,11 +23272,17 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="66156", cond_if=[[readyq(66156)]]},
 		{ids="71023", cond_if=[[readyq(71023)]]},
 	},
+	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
+		{ids="65606", cond_if=[[readyq(65606)]]},
+		{ids="66511", cond_if=[[readyq(66511)]]},
+		{ids="66156", cond_if=[[readyq(66156)]]},
+		{ids="71023", cond_if=[[readyq(71023)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
-		{ids="69926", cond_if=[[haveq(69926) or completedq(69926)]]},
 		{ids="66445,72447,66321,67051,67099,66449,69984,66883,70848", cond_if=[[readyq(72447) or haveq(66445,69984,66883,70848,66321,67051,67099,66449) or completedq(66445,72447,69984,66883,70848,66321,67051,67099,66449)]]},
-		{ids="66326,66308", cond_if=[[haveq(66326,66308) or completedq(66326,66308)]]},
+		{ids="69926,66856", cond_if=[[haveq(69926,66856) or completedq(69926,66856)]]},
 		{ids="69918,65842", cond_if=[[haveq(69918,65842) or completedq(69918,65842)]]},
+		{ids="66326,66308", cond_if=[[haveq(66326,66308) or completedq(66326,66308)]]},
 		{ids="67142", cond_if=[[haveq(67142) or completedq(67142)]]},
 		{ids="72447,69984,66883,70848", cond_if=[[haveq(72447,69984,66883,70848) or completedq(72447,69984,66883,70848)]]},
 		{ids="69983,66882,72448,70847", cond_if=[[haveq(69983,66882,72448,70847) or completedq(69983,66882,72448,70847)]]},
@@ -23060,6 +23571,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="11877,11875,11880,11514,11548,11546,11541,11536,11543,11540,11547,11533,11537,11523,11525,11526,11516,11515,11521,11544"},
 	},
 	["DAILIES\\Burning Crusade Dailies\\Shattrath Cooking Dailies"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["DAILIES\\Cataclysm Dailies\\Deepholm Dailies with Pre-Quests"] = {
 		{ids="28391,28390", cond_if=[[rep ('Therazane') >= Revered]]},
@@ -23200,6 +23712,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="26220", cond_if=[[haveq(26220)]]},
 	},
 	["DAILIES\\Cooking\\Shattrath Cooking Daily Guide"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["DAILIES\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Aspirant Rank Dailies"] = {
 		{ids="13673,13674,13675", cond_if=[[haveq(13673,13674,13675) or completedq(13673,13674,13675)]]},
@@ -23359,6 +23872,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="12740,12557,12599,12597,12598,12596,12541,12594,12585,12519,12568,12509,12591,12588,12502,12564,12563,12587,12501"},
 	},
 	["PROFESSIONS\\Jewelcrafting\\Daily Guides\\Jewelcrafting Daily Guide"] = {
+		{ids="25160,25162,25158,25161,25159"},
 	},
 	["DAILIES\\Legion\\Antoran Wastes World Quests"] = {
 		{ids="42233", cond_if=[[readyq(42233)]]},
@@ -23914,6 +24428,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["DUNGEONS\\Legion Dungeons\\Karazhan\\Karazhan Attunement"] = {
 		{ids="45422,44886,44887,44944,44556,44557,44683,44684,44685,44686,44764,44733"},
 	},
+	["DUNGEONS\\Legion Dungeons\\Karazhan\\Return to Karazhan"] = {
+		{ids="44735,44734", cond_if=[[haveq(44734)]]},
+	},
 	["DUNGEONS\\Legion Dungeons\\Vault of the Wardens"] = {
 		{ids="44486", cond_if=[[haveq(44486) or completedq(44486)]]},
 	},
@@ -24420,7 +24937,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="11025,11058,11030,11080,11062,11010,11023"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\Merrymaker"] = {
-		{ids="6983"},
+		{ids="6983,11025,11058,11030,11080,11062,11010,11023,6983,6984"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Achievements\\On Metzen!"] = {
 		{ids="6983"},
@@ -24434,7 +24951,8 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="6983,39648,39649,39668,39651"},
 	},
 	["EVENTS\\Feast of Winter Veil\\Feast of Winter Veil Quests"] = {
-		{ids="6961,6964"},
+		{ids="6983", cond_if=[[not completedq(6984)]]},
+		{ids="6961,6964,6962,7061,6984"},
 	},
 	["EVENTS\\Hallow's End\\Achievements\\Hallowed Be Thy Name"] = {
 		{ids="11219", cond_if=[[haveq(11219) or completedq(11219)]]},
@@ -24507,6 +25025,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="9332,11933,9330,9331"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Draenor"] = {
+		{ids="44573,44571,44570,44572"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Extinguishing Eastern Kingdoms"] = {
 	},
@@ -24526,6 +25045,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Cataclysm"] = {
 		{ids="29031,29036,29030"},
+	},
+	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Draenor"] = {
+		{ids="44573,44571,44570,44572"},
 	},
 	["EVENTS\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Keeper of Pandaria"] = {
 		{ids="32498,32499,32502,32497,32501,32500"},
@@ -24549,11 +25071,16 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="13483,13503"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim"] = {
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047,14060,14061,14062,14059,14058"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress"] = {
+		{ids="14060,14061,14062,14059,14058"},
+	},
+	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests"] = {
+		{ids="14060,14061,14062,14059,14058"},
 	},
 	["EVENTS\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"] = {
-		{ids="14036,14065"},
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047"},
 	},
 	["EVENTS\\Warlords of Draenor\\Iron Horde Invasion"] = {
 		{ids="36382,35745,35746,35744,35748,36292,35761,35751,35750,35764,35760,35762,35763,36940"},
@@ -25190,9 +25717,15 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="31231,31235,31109,31267,31111,31505,31677,31216,31237,31510,31272,31504,31232,31233,31496,31270,31269,31507,31271,31502,31503,31234,31508,31509,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31959,31609,31612"},
 	},
 	["GOLD\\Horde Daily Runs\\The Order of the Cloud Serpent Dailies Run"] = {
-		{ids="31704", cond_if=[[haveq(31704)]]},
 		{ids="31716", cond_if=[[haveq(31716)]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142"},
+		{ids="30148", cond_if=[[skill("First Aid")>=525]]},
+		{ids="30151", cond_if=[[haveq(30151)]]},
+		{ids="31713", cond_if=[[haveq(31713)]]},
+		{ids="31704", cond_if=[[haveq(31704)]]},
+		{ids="31710,30150,30156,31704,30154", cond_if=[[haveq(31710) or haveq(30150) or haveq(30156) or haveq(31704) or haveq(30154)]]},
+		{ids="30150", cond_if=[[haveq(30150)]]},
+		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,31194,31701,31702,30155,30158,31703,30154,31699,31698,31700,31706,31711,31707,30152,31721,31717,31720,31718,30159,31709,30157,31712,31715,31714,30147,30146,31705,30143,30144,30145,30187,31811,31810"},
 	},
 	["GOLD\\Horde Daily Runs\\The Shado-Pan Dailies Run"] = {
 		{ids="31266", cond_if=[[rep('Shado-Pan')==Exalted and not completedq(31277)]]},
@@ -25564,9 +26097,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="38458,38462,38463"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonflight Campaign"] = {
-		{ids="66444,67084,66402,66128", cond_if=[[not completedallq(67084,66128,66444,66547,66402)]]},
-		{ids="66444,67084,66402,66128", cond_if=[[default]]},
-		{ids="71232,72406,72397,72429,72435,72585,70437,66675,67073,72773,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70510,70881,70899,70900,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,68794,67074,70703,67075,67076,67077,67078,67079,67081,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503"},
+		{ids="66444,67084,66402,66128,66547", cond_if=[[not completedallq(67084,66128,66444,66547,66402,69888)]]},
+		{ids="66444,67084,66402,66128,66547", cond_if=[[default]]},
+		{ids="71232,72406,72397,72429,72435,72585,70437,66675,67073,72773,70180,70845,70181,70182,70633,72783,70339,70376,70341,70650,70509,70510,70881,70899,70900,69888,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,68794,67074,70703,67075,67076,67077,67078,67079,67081,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,69097,67722,66636,66173,66174,71152,66546"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\Dragonriding World Tour"] = {
 		{ids="72481,72483,72485,72487,72482,72484,72486,72488"},
@@ -25610,6 +26143,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="72268", cond_if=[[haveq(72268) or completedq(72268)]]},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
+		{ids="72591,72592,72593,72662,72595,74946,72594,72663,72600,72599,72601,72602,72603,72604,72605,72606,72607,72609,72611"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="72293", cond_if=[[Horde and (haveq(72293) or completedq(72293))]]},
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
@@ -25635,6 +26171,11 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="70746,70747", cond_if=[[Dracthyr]]},
 		{ids="66228", cond_if=[[not Dracthyr]]},
 		{ids="72268", cond_if=[[haveq(72268) or completedq(72268)]]},
+	},
+	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
+		{ids="73114", cond_if=[[haveq(73114) or completedq(73114)]]},
+		{ids="74883", cond_if=[[haveq(74883) or completedq(74883)]]},
+		{ids="74381,73076,75050,73157,74769,73715,74847,74847,73160,73179,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73142,73156,74359,73089,74355"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65100,65286,66513,66577,65101,32675,66589,72240", cond_if=[[Alliance]]},
@@ -26641,6 +27182,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="12643", cond_if=[[haveq(12643) or completedq(12643)]]},
 		{ids="12974,12792,12902,12883,12861,12859,12884,12630,12652,12894,12904,12664,12661,12673,12669,12686,12677,12690,12710,12676,12901,12912,12903,12713,12914,12916,12919,12795,12565,12503,12740,12557,12799,12609,12610,12505,12504,12508,12506,12507,12562,12510,12514,12527,12516,12599,12597,12598,12512,12552,12553,12606,12583,12555,12554,12584,12596,12623,12615,12627,12622,12628,12632,12635,12642,12646,12647,12655,12640,12639,12650,12653,12665,12666,12667,12672,12668,12674,12675,12662,12659,13549,12684,12685,12712,12709,12708,12707,12721,13556,12729,12730,12932,12933,12934,12935,12936,12948"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Orc Heritage Armor"] = {
+		{ids="73703,72462,72464,72467,72476,74374,72477,74415,72465,74581,72474,72475,72466,72478,72479"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Orgrimmar Trading Post Unlock"] = {
 		{ids="66959"},
 	},
@@ -27227,7 +27771,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["LEVELING\\Draenor (10-60)\\Talador (20-60)"] = {
 		{ids="34681,34566,34569,35102,34577,34576,34579,34766,34803,34683,33754,33735,35226,33722,33721,33720,33973,33736,34950,33724,33728,33729,33730,34962,33731,33578,33579,34751,34721,33872,33873,33874,33740,33734,33761,33580,33581,33582,34837,34840,34855,34858,34860,34870,34971,34696,33917,33920,34418,35249,33530,34351,34451,33972,33971,33970,34242,33988,34508,33976,34234,34013,34326,34122,34092,34163,34164,34157,34144,34564,33882,33884,33944,34710,34400,34399,34401,34404,34414,34447,34706,34632,34814,34636,34634,34635,34874,34766,34803,34683,33754,33735,35226,33722,33721,33720,33973,33736,34950,33724,33728,33729,33730,34962,33731,33578,33579,34751,34721,33872,33873,33874,33740,33734,33761,33580,33581,33582,34878,34879,34889,34888,34887,34890,34712,34696,33917,33920,34418,35249,33530,34351,34451,33972,33971,33970,34242,33988,34508,33976,34234,34013,34326,34122,34092,34163,34164,34157,34144,34564,33882,33884,33944,34710,34400,34399,34401,34404,34414,34447,34706"},
 	},
-	["LEVELING\\Draenor (10-60)\\Tanaan Jungle (40)"] = {
+	["LEVELING\\Draenor (10-60)\\Tanaan Jungle (40-60)"] = {
 		{ids="39176,39177", cond_if=[[skill("Jewelcrafting") >= 1]]},
 		{ids="38567,38568,38570,38571,38572,38573,38574,39236,39241,39242,37889,37890,37934,37935,39315,38577,39432,38001,38578"},
 	},
@@ -27334,8 +27878,41 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["PETSMOUNTS\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Blue-Purple Mechanostrider"] = {
 		{ids="4601"},
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Puzzle Mounts\\Divine Kiss of Ohn'ahra"] = {
+		{ids="72868,70929,70928,65906,65901,65907,65770,65761,65711,66676,72868,70929,70928,72512"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Azure Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Tamed Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Verdant Skitterfly"] = {
+		{ids="72876,71035,71034"},
+	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Lizi, Thunderspine Tramper"] = {
 		{ids="72868,70929,70928,65906,65901,65907,65770,65761,65711,66676,71196,71195,71209"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Quest Mounts\\Otto"] = {
+		{ids="72729"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown Scouting Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown War Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Ivory Trader's Ottuk"] = {
+		{ids="72193", cond_if=[[level >= 70 and not (itemcount(193708) >= 1 and hasmount(376879))]]},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow Scouting Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow War Ottuk"] = {
+		{ids="70927,70926,72291"},
+	},
+	["PETSMOUNTS\\Mounts\\Ground Mounts\\World Event Mounts\\Plainswalker Bearer"] = {
+		{ids="72868,70929,70928"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Bronzewing Vespoid"] = {
 		{ids="65419,64829,64745,64759,64761,64762,64763,64766,64767,65420,65426,65427,65396"},
@@ -27425,6 +28002,8 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="55056"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Scrapforged Mechaspider"] = {
+		{ids="56328", cond_if=[[not completedq(55707)]]},
+		{ids="57024,55646,55647,55648,55630,55632,55649,55650,55651,55652,55685,55729,55730,55731,55995,55734,55096,55736,55101,55708,55608,55707,55210,56320,54086,54929,55373,55697,54922,56117,56168,54083,56175,55696,55753"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Quest Mounts\\Shadowbarb Drone (Beta)"] = {
 		{ids="58804,58808,58805,58806,58807", cond_if=[[haveq(58804,58808,58805,58806,58807)]]},
@@ -27539,9 +28118,6 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="12761", cond_if=[[haveq(12761)]]},
 		{ids="12762", cond_if=[[haveq(12762)]]},
 		{ids="12695,12704"},
-	},
-	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph"] = {
-		{ids="9373,9372,10255,10159,10132,10134,10349,10351,9912,9802,9895,9747,9752,9894,9788,10096,9728,9716,9718,9785,9720,9731,9724,9732,29568,9957,9951,9971,9968,9978,9979,10112,9990,9995,10448,9997,10447,10006,10896,10682,10567,10717,10713,10719,10894,10893,10722,10748,10607,10810,10812,10753,10770,10771,10819,10820,10821,10910,10904,10911,10912,10426,10427,10429,11866,11876,11869,11884,11865,11878,11879,11870,11871,11872,11868,11571,11559,11561,11560,11562,11563,11564,11565,11569,11566,11570"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix"] = {
 	},
@@ -27878,7 +28454,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["PETSMOUNTS\\Battle Pets\\Critter Pets\\Red Cricket"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30408,30404"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Flying Pets\\Imperial Moth"] = {
 	},
@@ -28080,6 +28656,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="3861"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Macabre Marionette"] = {
+		{ids="14166"},
 	},
 	["PETSMOUNTS\\Battle Pets\\Aquatic Pets\\Fishy"] = {
 		{ids="31239"},
@@ -28196,8 +28773,17 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["PETSMOUNTS\\Battle Pets\\Undead Pets\\Bone Serpent"] = {
 		{ids="38300"},
 	},
+	["PROFESSIONS\\Alchemy\\Leveling Guides\\Dragon Isles Alchemy 1-100"] = {
+		{ids="70530"},
+	},
 	["PROFESSIONS\\Artisan's Consortium\\Artisan's Consortium Intro"] = {
 		{ids="67564,67100,67143,67137,67295,69946,69979,67298"},
+	},
+	["PROFESSIONS\\Cooking\\Leveling Guides\\Dragon Isles Cooking 1-100"] = {
+		{ids="70927,70926,72291,66413"},
+	},
+	["PROFESSIONS\\Enchanting\\Leveling Guides\\Dragon Isles Enchanting 1-100"] = {
+		{ids="72172"},
 	},
 	["PROFESSIONS\\Protoform Synthesis\\Schematic: Ambystan Darter"] = {
 		{ids="65419,65327"},
@@ -28464,7 +29050,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Dragonscale Expedition\\Dragonscale Expedition"] = {
 		{ids="71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138,71157,71162,71178,71165,71161,71138", cond_if=[[haveq(71162,71178,71165,71161,71138,71157)]]},
-		{ids="72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,69855,72524,66351,65421,72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,69869,72525,69870,65486,72876,71035,71034,72876,71035,71034,71146,72876,71035,71034,72876,71035,71034,72876,71035,71034,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,66128,72876,71035,71034,72876,71035,71034,71148,72876,71035,71034,72876,71035,71034,71149,72876,71035,71034,72876,71035,71034,72876,71035,71034,71150,72876,71035,71034,72876,71035,71034,72876,71035,71034,71151,72876,71035,71034,72876,71035,71034"},
+		{ids="72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,72876,71035,71034,69855,72524,66351,65421,72876,71035,71034,66595,66597,66598,70215,66582,70154,70156,72876,71035,71034,70702,69869,72525,69870,65486,72876,71035,71034,72876,71035,71034,71146,72876,71035,71034,72876,71035,71034,72876,71035,71034,69093,66012,66013,66673,70785,66814,66094,70507,70784,70503,66128,72876,71035,71034,72876,71035,71034,71148,72876,71035,71034,72876,71035,71034,71149,72876,71035,71034,72876,71035,71034,72876,71035,71034,71150,72876,71035,71034,72876,71035,71034,72876,71035,71034,71151,72876,71035,71034,69097,67722,66636,66173,66174,71152,66546,66547,72876,71035,71034"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Dragonscale Expedition\\Dragonscale Expedition Flags"] = {
 		{ids="72876,71035,71034"},
@@ -28477,14 +29063,19 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Iskaara Tuskarr\\Iskaara Tuskarr"] = {
-		{ids="70927,70926,72291,70938,70927,70926,72291,70941,70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,66444,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,66218,66223,70927,70926,72291"},
+		{ids="70927,70926,72291,70938,70927,70926,72291,70941,70927,70926,72291,71230,70871,72584,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,68863,68640,66409,66410,66411,66417,66418,66414,66440,66431,66415,66443,66444,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70927,70926,72291,70976,70927,70926,72291,70927,70926,72291,70927,70926,72291,66218,66223,70927,70926,72291"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Maruuk Centaur\\Maruuk Centaur"] = {
 		{ids="71229,71229,71229", cond_if=[[not completedq(71229)]]},
 		{ids="72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,71231,70501,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,70541,65906,65901,65907,65770,65761,65711,66676,72868,70929,70928,71028,72868,70929,70928,72868,70929,70928,71029,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928,72868,70929,70928"},
 	},
 	["REPUTATIONS\\Dragonflight Reputations\\Valdrakken Accord\\Valdrakken Accord"] = {
-		{ids="70841,70840,70841,70840,70841,70840,70841,70840,71210,70841,70840,70883,70841,70840,71227,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,66402,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840"},
+		{ids="70883", cond_if=[[haveq(70883) or completedq(70883)]]},
+		{ids="70841,70840,70841,70840,70841,70840,70841,70840,71210,70841,70840,70841,70840,71227,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,68794,67074,70703,67075,67076,67077,67078,67079,67081,67084,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,66620,66178,66179,66180,66182,66181,66183,66184,66393,66395,66396,66190,66191,66392,66185,66186,66188,66189,66397,66394,66635,66398,66399,66400,66401,66402,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840,70841,70840"},
+	},
+	["REPUTATIONS\\Dragonflight Reputations\\Winterpelt Furbolg"] = {
+		{ids="66708", cond_if=[[haveq(66708) or completedq(66708)]]},
+		{ids="66553,66554,66555,66556,66557,66141,66148,66149,66150,66151,66152,66709,66715,66703,67050,66730,71013,71015,71014,70996,72546,72588,72589,72547,72586"},
 	},
 	["REPUTATIONS\\Battle for Azeroth\\Rajani"] = {
 		{ids="58582,58583,58506,56374,56209,56375,56472,56376,58991,56377,56536,56537,56538,56539,56771,56540,56541,56542,58737,57067,57068,57071,57069,57070,57072,57074,57075,57076"},
@@ -28778,9 +29369,15 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="31231,31235,31109,31267,31111,31505,31677,31216,31237,31510,31272,31504,31232,31233,31496,31270,31269,31507,31271,31502,31503,31234,31508,31509,31238,31487,31494,31268,31024,31808,31506,31018,31208,31209,31210,31211,31439,31441,31458,31465,31959,31609,31612"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Order of the Cloud Serpent"] = {
-		{ids="31704", cond_if=[[haveq(31704)]]},
 		{ids="31716", cond_if=[[haveq(31716)]]},
-		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142"},
+		{ids="31710,30150,30156,31704,30154", cond_if=[[haveq(31710) or haveq(30150) or haveq(30156) or haveq(31704) or haveq(30154)]]},
+		{ids="30148", cond_if=[[haveq(30148)]]},
+		{ids="30151", cond_if=[[haveq(30151)]]},
+		{ids="31713", cond_if=[[haveq(31713)]]},
+		{ids="31704", cond_if=[[haveq(31704)]]},
+		{ids="30150", cond_if=[[haveq(30150)]]},
+		{ids="30149", cond_if=[[skill("Cooking")>=525]]},
+		{ids="30134,30135,30136,30137,30138,30139,30140,30141,30142,31194,31701,31702,30155,30158,31703,30154,31699,31698,31700,31706,31711,31707,30152,31721,31717,31720,31718,30159,31709,30157,31712,31715,31714,30147,30146,31705,30143,30144,30145,30187,31811,31810"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\The Tillers"] = {
 		{ids="32682", cond_if=[[rep('The Tillers')==Exalted and not completedq(32682)]]},
@@ -28801,52 +29398,52 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Chee Chee"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30402,30400"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Ella"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30386,30381,31534,31537,31538"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Farmer Fung"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30421,30420"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Fish Fellreed"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30427,30424"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Gina Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30390,30389"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Haohan Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30414,30409"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Jogu the Drunk"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30439,30435,31320,31321"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Old Hillpaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30396,30394"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Sho"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30408,30404"},
 	},
 	["REPUTATIONS\\Mists of Pandaria Reputations\\Tiller's Union\\Tina Mudclaw"] = {
 		{ids="31374", cond=[[Horde]]},
 		{ids="31372", cond=[[Alliance]]},
-		{ids="30252,30535,30254,30255,30256,30257,31945"},
+		{ids="30252,30535,30254,30255,30256,30257,31945,30433,30428"},
 	},
 	["REPUTATIONS\\Warlords of Draenor\\Order of the Awakened"] = {
 		{ids="39433"},
@@ -28889,6 +29486,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="27718,25924,25929,25936,25941,25942,25943,25944,25946,25947,25948,25949,25477,25371"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\Professions\\Cooking\\Achievements\\Chef"] = {
+	},
+	["TITLES\\Wrath of the Lich King Titles\\Professions\\Cooking\\Chef\\Dailies"] = {
+		{ids="11381,11379,11380,11377"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\Professions\\Fishing\\Salty"] = {
 		{ids="11668", cond_if=[[haveq(11668)]]},
@@ -29016,8 +29616,11 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="10942,10953,10945,10951,10963,11975,10967"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Achievements"] = {
+		{ids="6983,11025,11058,11030,11080,11062,11010,11023,6983,6984"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\Merrymaker\\Feast of Winter Veil Quests"] = {
+		{ids="6983", cond_if=[[not completedq(6984)]]},
+		{ids="6961,6964,6962,7061,6984"},
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Hallowed"] = {
 		{ids="11219", cond_if=[[haveq(11219) or completedq(11219)]]},
@@ -29039,6 +29642,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Noble"] = {
 	},
 	["TITLES\\Wrath of the Lich King Titles\\World Events\\The Pilgrim"] = {
+		{ids="14036,14065,14037,14040,14041,14043,14044,14047,14060,14061,14062,14059,14058"},
 	},
 	["TITLES\\Legion Titles\\General\\Postmaster"] = {
 		{ids="41411", cond_if=[[haveq(41411)]]},

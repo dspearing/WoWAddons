@@ -30,6 +30,21 @@ if C_TooltipInfo then
 		end
 	end
 
+	function TS:GetSpellTooltip(spellID)
+		local data = C_TooltipInfo.GetSpellByID(spellID)
+		local results = {}
+		if data then
+			for line,linedata in ipairs(data.lines) do
+				for _,info in ipairs(linedata.args) do
+					if info.stringVal then
+						table.insert(results,info.stringVal)
+					end
+				end
+			end
+		end
+		return results
+	end
+
 else
 	local Gratuity = LibStub("LibGratuity-3.0")
 	function TS:GetTooltip(itemlink)

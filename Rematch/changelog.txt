@@ -1,3 +1,7 @@
+03/22/2023 version 4.14.15
+- Added 8 new targets to Dragon Isles added in 10.0.7
+- Added option to import teams from Niggles Pet Teams if both Rematch and Niggles Pet Teams are enabled (from the Teams button at the top of the Teams tab)
+
 03/21/2023 version 4.14.14
 - toc update for 10.0.7 patch
 

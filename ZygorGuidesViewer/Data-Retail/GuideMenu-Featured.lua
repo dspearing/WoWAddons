@@ -10,6 +10,15 @@ table.insert(GuideMenu.Featured,{
 	title="Dragonflight", group="dragonflight",
 {"section", text=[[LEVELING]]},
         {"banner", image=ZGV.IMAGESDIR.."DragonflightLeveling",showcaseonly=true},
+
+		{"content", text=[[NEW: Patch 10.0.7 Leveling Content:]]},
+		{"columns",
+		{"item", text=[[NEW: **The Forbidden Reach**]], guide="LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"},
+		{"item", text=[[NEW: **Old Hatreds Questline**]], guide="LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"},
+		{"item", text=[[NEW: **Human Heritage Armor**]], guide="LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Human Heritage Armor", faction="A"},
+		{"item", text=[[NEW: **Orc Heritage Armor**]], guide="LEVELING\\Dragonflight (60-70)\\Heritage Armor\\Orc Heritage Armor", faction="H"},
+	}, --columnsend
+
 	{"content", text=[[Optional: Complete the Dracthyr starter zone]]},
 	{"text", text=[[If leveling a Dracythr, use the Dracthyr starter guide to level your character to 60.]]},
 	{"columns",
@@ -56,6 +65,13 @@ table.insert(GuideMenu.Featured,{
 
 {"section", text=[[DAILIES]]},
         {"banner", image=ZGV.IMAGESDIR.."DragonflightDailies",showcaseonly=true},
+
+		{"content", text=[[NEW: Forbidden Reach Dailies]]},
+		{"columns",
+		{"item", text=[[NEW: **Forbidden Reach Envoy Dailies**]], guide="Dailies\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies"},
+		{"item", text=[[NEW: **The Forbidden Reach World Quests**]], guide="Dailies\\Dragonflight (60-70)\\The Forbidden Reach World Quests"},
+		}, --columnsend
+
 	{"content", text=[[Dragon Isles World Quests]]},
 	{"columns",
 	{"item", text=[[**The Azure Span World Quests**]], guide="Dailies\\Dragonflight (60-70)\\The Azure Span World Quests"},
@@ -88,6 +104,13 @@ table.insert(GuideMenu.Featured,{
 
 {"section", text=[[REPUTATIONS]]},
         {"banner", image=ZGV.IMAGESDIR.."DragonflightReputations",showcaseonly=true},
+
+		{"content", text=[[NEW: Winterpelt Furbolg]]},
+		{"columns",
+		{"item", text=[[NEW: **Winterpelt Furbolg**]], guide="Reputations\\Dragonflight Reputations\\Winterpelt Furbolg"},
+
+		}, --columnsend
+
 	{"content", text=[[Dragon Isles World Quests]]},
 	{"columns",
 	{"item", text=[[**Dragonscale Expedition**]], guide="Reputations\\Dragonflight Reputations\\Dragonscale Expedition\\Dragonscale Expedition"},

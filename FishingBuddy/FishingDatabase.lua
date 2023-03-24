@@ -341,11 +341,6 @@ function FBI:AddFishie(color, id, name, mapId, subzone, texture, quantity, quali
 		end
 	end
 
-	-- Play a sound on Nat Pagle rep
-	if ( PagleFish[id] and GSB("DingQuestFish") ) then
-		PlaySound(SOUNDKIT.IG_QUEST_LIST_COMPLETE, "master");
-	end
-
 	if ( not subzone ) then
 		_, subzone = self:GetCurrentMapIdInfo();
 	end
@@ -408,6 +403,7 @@ function FBI:AddFishie(color, id, name, mapId, subzone, texture, quantity, quali
 	if ( not skillcheck ) then
 		skillcheck = skill + mods;
 	end
+
 	if ( skillcheck > 0 ) then
 		if ( not fs[idx] or skillcheck < fs[idx] ) then
 			fs[idx] = skillcheck;

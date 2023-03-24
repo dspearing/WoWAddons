@@ -647,7 +647,7 @@ accept Cutting Wind##73146 |goto The Forbidden Reach/5 18.34,13.24
 step
 clicknpc Vortex##200685
 |tip This NPC gains power for each of the 7 nearby Storm-Touched Swoglets.
-|tip Defeating these mobs makes Wildfire easier to defeat.
+|tip Defeating these mobs makes Vortex easier to defeat.
 |tip You can track them on your minimap with Track Pets.
 Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
 |next "Dragon_World_Quest_Emissaries"
@@ -679,7 +679,6 @@ step
 label quest-73082
 accept Dragonrider Racing - Southern Reach Route##73082 |goto The Forbidden Reach/5 63.64,84.05
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##200247
 Tell him _"I'd like to try the course."_
@@ -725,12 +724,14 @@ Complete the Race |q 73078/1
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73149
-accept Flood Warning##73149 |goto The Forbidden Reach/5 89.29,60.39
+accept Flood Warning##73149 |goto The Forbidden Reach/5 89.37,60.23
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Flow##200697
-Defeat Flow in a Pet Battle |q 73149/1 |goto 89.29,60.39
+|tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
+|tip Defeating these mobs makes Flow easier to defeat.
+|tip You can track them on your minimap with Track Pets.
+Defeat Flow in a Pet Battle |q 73149/1 |goto 89.37,60.23
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73147
@@ -739,13 +740,15 @@ accept Shifting Ground##73147 |goto The Forbidden Reach/5 67.30,12.26
 |polish
 step
 clicknpc Tremblor##197447
+|tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
+|tip Defeating these mobs makes Tremblor easier to defeat.
+|tip You can track them on your minimap with Track Pets.
 Defeat Tremblor in a Pet Battle |q 73147/1 |goto 67.30,12.26
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75257
 accept The War Creche##75257 |goto The War Creche/0 61.04,45.79
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip Inside the building.
@@ -1121,6 +1124,14 @@ kill Gorging Stagbeetle##195709+
 Collect #25# Honey Plums |q 70549/2 |goto 62.89,57.66
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74838
+accept Lyver##74838 |goto Ohn'ahran Plains/0 73.39,68.00
+|tip You will accept this quest automatically.
+step
+clicknpc Lyver##201858
+Defeat Lyver in a Pet Battle |q 74838/1 |goto 73.39,68.00
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70067
 accept A Message to the Nokhud##70067 |goto Ohn'ahran Plains/0 35.00,38.81
 |tip You will accept this quest automatically.
@@ -1333,23 +1344,29 @@ Splatter Unshielded Professor Intinosa |q 70442/3 |goto 58.52,43.12
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70369
-accept Blasting the Past##70369
+accept Blasting the Past##70369 |goto Thaldraszus/0 57.49,82.86
 |tip You will accept this quest automatically.
-|polish
 step
-Use the Timewalker Scroll |q 70369/1
+click Timewalker Scroll
+|tip They appear on your minimap as yellow dots.
+Use the Timewalker Scroll |q 70369/1 |goto 56.97,83.31
 stickystart "Slay_Time-Lost_Enemies_70369"
 stickystart "Slay_Time-Lost_Champions_70369"
 step
-kill Qu'ruk the Time-Lost##195322 |q 70369/4
-step
 label "Slay_Time-Lost_Enemies_70369"
+extraaction Temporal Burst##385476
+|tip Use this to do AoE damage.
 Kill Time-Lost enemies around this area
-Slay #14# Time-Lost Enemies |q 70369/2
+Slay #14# Time-Lost Enemies |q 70369/2 |goto 57.49,82.86
 step
 label "Slay_Time-Lost_Champions_70369"
+extraaction Temporal Burst##385476
+|tip Use this to do AoE damage. |notinsticky
 Kill Time-Lost enemies around this area
-Slay #2# Time-Lost Champions |q 70369/3
+|tip Kill Chieftains and Destroyers.
+Slay #2# Time-Lost Champions |q 70369/3 |goto 57.49,82.86
+step
+kill Qu'ruk the Time-Lost##195322 |q 70369/4 |goto 57.18,85.13
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-71225
@@ -1690,6 +1707,15 @@ accept Reclaiming the Hold##70066 |goto Thaldraszus/0 58.65,58.58
 step
 Kill enemies around this area
 Eliminate the Forces |q 70066/1 |goto 58.65,58.58
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74794
+accept Right Twice a Day##74794 |goto Thaldraszus/0 60.64,59.74
+|tip You will accept this quest automatically.
+|tip On top of the platform.
+step
+clicknpc Malfunctioning Matrix##202452
+Defeat the Malfunctioning Matrix in a Pet Battle |q 74794/1 |goto 60.64,59.74
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70934
@@ -2480,6 +2506,16 @@ label "Slay_Qalashi_Beasts_67006"
 Kill enemies around this area
 '|kill Magmammoth Calf##180705, Lava Phoenix##186684, Blazing Dreadsquall##191509, Magmammoth Bull##191903
 Slay #5# Qalashi Beasts |q 67006/4 |goto 64.71,30.77
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74840
+accept Sharp as Flint##74840 |goto The Waking Shores/0 68.98,46.79
+|tip You will accept this quest automatically.
+|tip On top of the tower.
+step
+talk Excavator Morgrum Emberflint##201802
+Choose _"Begin pet battle."_
+Defeat Excavator Morgrum Emberflint in a Pet Battle |q 74840/1 |goto 68.98,46.79
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-67024

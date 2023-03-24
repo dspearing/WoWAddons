@@ -867,7 +867,7 @@ function pslCreateAssets()
 	-- Create Dragonflight Milling info
 	if not millingDragonflight then
 		millingDragonflight = ProfessionsFrame.CraftingPage.SchematicForm:CreateFontString("ARTWORK", nil, "GameFontNormal")
-		millingDragonflight:SetPoint("BOTTOMLEFT", ProfessionsFrame.CraftingPage.SchematicForm, "BOTTOMLEFT", 230, 305)
+		millingDragonflight:SetPoint("BOTTOMLEFT", ProfessionsFrame.CraftingPage.SchematicForm, "BOTTOMLEFT", 30, 30)
 		millingDragonflight:SetJustifyH("LEFT")
 		millingDragonflight:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
 		millingDragonflight:SetText("|cffFFFFFFFlourishing Pigment: Writhebark\nSerene Pigment: Bubble Poppy\nBlazing Pigment: Saxifrage\nShimmering Pigment: Hochenblume")
@@ -2747,18 +2747,5 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			pslTrackRecipe(arg1,1)
 			C_TradeSkillUI.SetRecipeTracked(arg1, false, false)
 		end
-	end
-
-	-- When the Catalyst is opened (which one?)
-	if event == "PLAYER_INTERACTION_MANAGER_FRAME_SHOW" and arg1 == 44 then
-		-- Create Catalyst Charges info
-		if not catalystCharges then
-			catalystCharges = ItemInteractionFrame.ButtonFrame.Currency:CreateFontString("ARTWORK", nil, "GameFontNormal")
-			catalystCharges:SetPoint("LEFT", ItemInteractionFrame.ButtonFrame, "LEFT", 10, -2)
-			catalystCharges:SetJustifyH("LEFT")
-			catalystCharges:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-		end
-		-- Update the charges whenever the catalyst window is opened
-		catalystCharges:SetText("Charges: "..C_CurrencyInfo.GetCurrencyInfo(2167).quantity or 0)
 	end
 end)
