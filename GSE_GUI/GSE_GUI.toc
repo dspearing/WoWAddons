@@ -1,10 +1,10 @@
-## Interface: 100005
+## Interface: 100007
 
 
 ## Title: |cff0000ffGSE:|r |cFF00D1FFGUI|r
 ## Notes: GSE GUI
 ## Author: TimothyLuke
-## Version: 3.1.29
+## Version: 3.1.30
 ## Dependencies: GSE
 ## LoadOnDemand: 1
 

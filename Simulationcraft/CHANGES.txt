@@ -1,10 +1,10 @@
-lightweight tag 3f4c9dcc2929c54b17b2115100cd9031e32124bb 10.0.7-02
+lightweight tag dff6ac78bd3cae2ab35aa3b637725ef6f3e83cb1 10.0.7-03
 Author:	Dave Hendler <sollaires@gmail.com>
-Date:	Thu Mar 23 11:19:54 2023 -0700
+Date:	Sat Mar 25 11:49:19 2023 -0700
 
-commit 3f4c9dcc2929c54b17b2115100cd9031e32124bb
+commit dff6ac78bd3cae2ab35aa3b637725ef6f3e83cb1
 Author: Dave Hendler <sollaires@gmail.com>
-Date:   Thu Mar 23 11:19:54 2023 -0700
+Date:   Sat Mar 25 11:49:19 2023 -0700
 
-    Fix a crash when a choice node is selected but, somehow, does not have an entry selected
+    Better error messaging when a loadout is corrupted
 

@@ -5822,6 +5822,7 @@ step
 use Sonova's Request##204254
 accept Academic Assistance##72546
 |tip Open your adventure guide and scroll the content until you find this quest.
+|tip You can also find Sonova's Request in your mailbox.
 step
 talk Sonova Snowden##189401
 turnin Academic Assistance##72546 |goto 65.39,15.94
@@ -5831,7 +5832,7 @@ stickystart "Collect_Frosty_Foraged_Foods"
 step
 clicknpc Winterpelt Forager##199303+
 |tip They look like dead furbolg on the ground around this area.
-collect Winterpelt Jewelry##202246 |q 72589/1 |goto 68.14,19.07
+collect 6 Winterpelt Jewelry##202246 |q 72589/1 |goto 68.14,19.07
 step
 label "Collect_Frosty_Foraged_Foods"
 Kill enemies around this area
@@ -5847,18 +5848,272 @@ collect 5 Liberated Furbolg Artifacts##202017 |q 72547/1 |goto 68.26,18.54
 step
 talk Sonova Snowden##201065
 turnin Academic Acquisitions##72547 |goto 66.92,12.72
-accept Additional Academic Acquisitions##72586 |goto 66.92,12.72
 step
 Kill enemies around this area
-collect 5 Liberated Furbolg Artifacts##202017 |q 72586/1 |goto 68.26,18.54
+collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
+collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
+|tip You will need around 500 Liberated Furbolg Artifacts in total to reach the cap of 100.
+|tip Each Intact Scribe Stick will remove 5 from that total number.
+Click Here to Continue |confirm |complete language("Furbolg")>=25
 step
 talk Sonova Snowden##201065
-turnin Additional Academic Acquisitions##72586 |goto 66.92,12.72
+|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
+'|turnin Additional Academic Acquisitions##72586 |n |repeatable
+'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
+Reach Level 25 in the Furbolg Language |complete language("Furbolg")>=25 |goto 66.92,12.72
 step
+talk Sonova Snowden##201065
+accept Honeyfreeze Mead##73550 |goto 66.92,12.72
+accept Hive Maintenance##73692 |goto 66.92,12.72
+stickystart "Collect_8_Honeyfreeze_Honey"
+step
+Run through the Blooming Frostbells
+Gain the _"Pollen Power!"_ Buff |complete hasbuff("spell:399327") or readyq(73692) or completedq(73692)
+|tip The buff will last 9 seconds.
+|tip Run into Honeyfreeze Pollinators.
+Deliver Pollen to #8# Honeyfreeze Pollinators |q 73692/1 |goto 62.13,17.79
+step
+label "Collect_8_Honeyfreeze_Honey"
+click Honeyfreeze Honeycomb##385968
+collect 1 Honeyfreeze Honey##202243 |q 73550/1 |goto 61.94,18.61
+step
+click Honeyfreeze Honeycomb##385968
+collect 2 Honeyfreeze Honey##202243 |q 73550/1 |goto 61.90,18.70
+step
+click Honeyfreeze Honeycomb##385968
+collect 3 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.04,19.14
+step
+click Honeyfreeze Honeycomb##385968
+collect 4 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.41,19.57
+step
+click Honeyfreeze Honeycomb##385968
+collect 5 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.67,19.80
+step
+click Honeyfreeze Honeycomb##385968
+collect 6 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.65,19.71
+step
+click Honeyfreeze Honeycomb##385968
+collect 7 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.71,19.52
+step
+click Honeyfreeze Honeycomb##385968
+collect 8 Honeyfreeze Honey##202243 |q 73550/1 |goto 62.83,19.54
+step
+talk Sonova Snowden##201065
+turnin Honeyfreeze Mead##73550 |goto 66.92,12.72
+turnin Hive Maintenance##73692 |goto 66.92,12.72
+accept Local Flavors##73704 |goto 66.92,12.72
+step
+talk Kazzi##201105
+Choose _<Ask about local flavor options to incorporate into the brew Sonova is working on.>_
+Collect the Brewing Supplies |q 73704/1 |goto 65.81,12.69
+step
+talk Sonova Snowden##201065
+turnin Local Flavors##73704 |goto 66.92,12.72
+step
+Kill enemies around this area
+collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
+collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
+|tip You will need around 375 Liberated Furbolg Artifacts in total to reach the cap of 100 from this point.
+|tip Each Intact Scribe Stick will remove 5 from that total number.
+Click Here to Continue |confirm |complete language("Furbolg")>=50
+step
+talk Sonova Snowden##201065
+|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
+'|turnin Additional Academic Acquisitions##72586 |n |repeatable
+'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
+Reach Level 50 in the Furbolg Language |complete language("Furbolg")>=50 |goto 66.92,12.72
+step
+talk Garz##199266
+accept A Living History##72551 |goto 66.87,12.99
+step
+Find the First Route Marker |q 72551/1 |goto 61.80,18.33
+step
+Find the Last Route Marker |q 72551/2 |goto 57.34,20.06
+step
+Find the Hidden Elders |q 72551/3 |goto 57.25,21.26
+step
+talk Elder Mhaz##199271
+turnin A Living History##72551 |goto 57.39,21.07
+accept Gathering Together##72552 |goto 57.39,21.07
+step
+talk Matron Fherg##199272
+accept More Effort, More Reward##72553 |goto 57.37,20.86
+stickystart "Collect_12_Chillwrought_Worm_Meat"
+step
+click Best-root Bush##384842
+collect 1 Best-root Tuber##202181 |q 72552/1 |goto 57.78,21.87
+step
+click Best-root Bush##384842
+collect 2 Best-root Tuber##202181 |q 72552/1 |goto 58.43,21.64
+step
+click Best-root Bush##384842
+collect 3 Best-root Tuber##202181 |q 72552/1 |goto 58.55,21.58
+step
+click Best-root Bush##384842
+collect 4 Best-root Tuber##202181 |q 72552/1 |goto 58.64,21.19
+step
+click Best-root Bush##384842
+collect 5 Best-root Tuber##202181 |q 72552/1 |goto 58.51,21.10
+step
+click Best-root Bush##384842
+collect 6 Best-root Tuber##202181 |q 72552/1 |goto 58.34,21.14
+step
+click Best-root Bush##384842
+collect 7 Best-root Tuber##202181 |q 72552/1 |goto 59.28,19.72
+step
+click Best-root Bush##384842
+collect 8 Best-root Tuber##202181 |q 72552/1 |goto 59.38,19.58
+step
+label "Collect_12_Chillwrought_Worm_Meat"
+map The Azure Span
+path    59.27,22.82    60.76,23.27    62.47,23.70    62.58,22.50    61.40,21.83
+path    60.17,21.42
+Kill Chillwrought enemies along this path
+collect 12 Chillwrought Worm Meat##202185 |q 72553/1
+step
+talk Elder Mhaz##199271
+turnin Gathering Together##72552 |goto 57.39,21.07
+step
+talk Matron Fherg##199272
+turnin More Effort, More Reward##72553 |goto 57.37,20.86
+accept Break Him##72554 |goto 57.37,20.87
+step
+kill Icebreaker##199279 |q 72554/2 |goto 55.09,19.72
+collect Saza's Blade##203651 |n
+accept Returning the Blade##74433
+step
+talk Saza##200861
+Find Saza |q 72554/1 |goto 54.92,19.69
+step
+talk Matron Fherg##199272
+turnin Break Him##72554 |goto 57.37,20.87
+step
+talk Jyrra "Fuzzy Feet" Coldsoar##200206
+turnin Returning the Blade##74433 |goto 66.83,13.01
+step
+Kill enemies around this area
+collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
+collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
+|tip You will need around 250 Liberated Furbolg Artifacts in total to reach the cap of 100 from this point.
+|tip Each Intact Scribe Stick will remove 5 from that total number.
+Click Here to Continue |confirm |complete language("Furbolg")>=75
+step
+talk Sonova Snowden##201065
+|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
+'|turnin Additional Academic Acquisitions##72586 |n |repeatable
+'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
+Reach Level 75 in the Furbolg Language |complete language("Furbolg")>=75 |goto 66.92,12.72
+step
+talk Garz##199266
+accept Path of Trust##73035 |goto 66.87,12.99
+step
+talk Radza Thunderclaw##199267
+turnin Path of Trust##73035 |goto 65.99,12.61
+accept Our Honored Ancestors##72558 |goto 65.99,12.61
+step
+click Radza's Spirit Incense
+Choose _<Breathe in the smoke to entice visions of the Winterpelt ancestors.>_
+Use Radza's Incense |q 72558/1 |goto 65.95,12.64
+step
+talk Radza Thunderclaw##199267
+turnin Our Honored Ancestors##72558 |goto 65.99,12.61
+step
+talk Ancestor Brazzok##199996
+accept Ancestral Advice##72941 |goto 65.97,12.73
+step
+talk Ancestor Brazzok##199996
+Ask him _"What is your message, ancestor?"_
+Listen to the Ancestor's Message |q 72941/1 |goto 65.97,12.73
+step
+talk Ancestor Molg##199300
+accept Our Path Ahead##72945 |goto 67.05,13.12
+step
+talk Ancestor Molg##199300
+Ask him _"What is your message, ancestor?"_
+Listen to the Ancestor's Message |q 72945/1 |goto 67.05,13.12
+step
+talk Jhagaza the Wordkeeper##199299
+accept History Heist##72559 |goto 66.98,11.90
+step
+talk Little Toz##199315
+Tell him _"I have an important message for you from your ancestor."_
+Then tell him _"Make sure to marry Bright Fur immediately."_
+Give the Message to Little T'oz |q 72941/2 |goto 67.18,12.06
+step
+Enter the building |goto 66.33,11.45 < 10 |walk
+talk Kranac Sagesnow##189394
+|tip Inside the building.
+Tell him _"I have an important message from your ancestor."_
+Then tell him _"The Winterpelt must obtain allies."_
+Give the Message to Kranac Sagesnow |q 72945/2 |goto 65.92,10.68
+step
+click Stolen Winterpelt Crate##380841
+collect Scribbled Bark Chunks##198834 |q 72559/1 |goto 70.60,31.72
+step
+talk Radza Thunderclaw##199267
+turnin History Heist##72559 |goto 65.99,12.61
+turnin Ancestral Advice##72941 |goto 65.99,12.61
+turnin Our Path Ahead##72945 |goto 65.99,12.61
+step
+Kill enemies around this area
+collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
+collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
+|tip Each Intact Scribe Stick will remove 5 from that total number.
+Click Here to Continue |confirm |complete language("Furbolg")==100
+step
+talk Sonova Snowden##201065
+|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
+'|turnin Additional Academic Acquisitions##72586 |n |repeatable
+'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
+Reach Level 100 in the Furbolg Language |complete language("Furbolg")==100 |goto 66.92,12.72
+step
+talk Sonova Snowden##201065
+accept Words of the Winterpelt##72598 |goto 66.92,12.72
+step
+Enter the building |goto 66.33,11.51 < 10 |walk
+talk Kranac Sagesnow##189394
+turnin Words of the Winterpelt##72598 |goto 65.92,10.68
+accept Ursol's Wisdom##72590 |goto 65.92,10.68
+accept Ursoc's Strength##72597 |goto 65.92,10.68
+stickystart "Collect_12_Rustpine_Cones"
+step
+Ride the Winds of the Isles on a Drake |q 72590/1 |goto 66.39,13.17
+|tip Make sure you are using your Dragonflight mount.
+step
+label "Collect_12_Rustpine_Cones"
+collect 12 Rustpine Cone##202245 |q 72590/2 |goto 65.72,10.94
+|tip They are in the trees above the village.
+step
+click Rustpine Cone
+Contact Ursol |q 72590/3 |goto 69.91,9.70
+step
+click Ursoc's Totem
+Contact Ursoc |q 72597/1 |goto 72.88,18.14
+step
+talk Ursoc's Faithful##199308
+Tell him _"I am willing."_
+kill Ursoc's Faithful##199308
+Gain Ursoc's Blessing |q 72597/2 |goto 72.84,18.21
+step
+Enter the building |goto 66.33,11.51 < 10 |walk
+talk Kranac Sagesnow##189394
+turnin Ursol's Wisdom##72590 |goto 65.92,10.68
+turnin Ursoc's Strength##72597 |goto 65.92,10.68
+accept Champion of the Winterpelt##73031 |goto 65.92,10.68
+step
+talk Kranac Sagesnow##189394
+Tell him _"I am ready to begin."_
+Begin the Celebration |q 73031/1 |goto 65.92,10.68
+step
+talk Kranac Sagesnow##189394
+turnin Champion of the Winterpelt##73031 |goto 65.92,10.68
+step
+talk Sonova Snowden##201065
+'|turnin Additional Academic Acquisitions##72586 |n |repeatable
+'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
 Reach Exalted with the Winterpelt Furbolg |complete rep("Winterpelt Furbolg")>Exalted |goto 68.26,18.54
 |tip This grind is similar to the Timbermaw Hold rep grind.
 |tip Farm Liberated Furbolg Artifacts and turn them in at Sonova Snowden for rep.
-|tip Each turn in will grant you one language skill point.
-|tip Every 25 language points unlocks a small series of quests.
+You can find Sonova at [66.92,12.72]
 ]])
 ZGV.BETAEND()
