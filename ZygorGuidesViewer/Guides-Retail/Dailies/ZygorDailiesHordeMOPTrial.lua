@@ -5,7 +5,7 @@ if ZGV:DoMutex("DailiesHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
 startlevel=15,
-description="\nThis guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
+description="This guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
 },[[
 step
 You must have fishing in order to accept dailies from this faction

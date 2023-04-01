@@ -227,6 +227,9 @@ STYLE.NotificationPopupContentBackdrop=STYLE.MainBackdrop
 STYLE.NotificationPopupContentBackdropColor=STYLE.SecBackdropColor
 STYLE.NotificationPopupContentBackdropBorderColor=STYLE.SecBackdropColor
 
+STYLE.MessageWarning = {HTMLColor("#ff3300ff")}
+STYLE.MessageNotify  = {HTMLColor("#fe6100ff")}
+
 -- Guide Menu
 STYLE.GuideMenuMargin = 0
 STYLE.GuideMenuHeaderFooterBackground = {0,0,0,0}

@@ -254,8 +254,37 @@ GTFO.SpellID["407712"] = {
   sound = 1;
 };
 
+GTFO.SpellID["404653"] = {
+  --desc = "Hard to Port (Grugoth the Hullcrusher)";
+  sound = 1;
+  tankSound = 0;
+};
 
+GTFO.SpellID["340409"] = {
+  --desc = "Corrupted Residue (Forgotten Research)";
+  sound = 1;
+};
 
+GTFO.SpellID["374238"] = {
+  --desc = "Crushing Earth";
+  sound = 1;
+};
+
+GTFO.SpellID["373908"] = {
+  --desc = "Celestial Sear";
+  sound = 1;
+};
+
+GTFO.SpellID["401136"] = {
+  --desc = "Ancient Ice";
+  sound = 2;
+};
+
+GTFO.SpellID["401087"] = {
+  --desc = "Detected!";
+  sound = 1;
+  negatingBuffSpellID = 401091; -- Reflective Arcane Ward
+};
 
 --- *******************
 --- * Ruby Life Pools *
@@ -814,7 +843,29 @@ GTFO.SpellID["375873"] = {
   --desc = "Wildfire (Broodkeeper Diurna)";
   applicationOnly = true;
   minimumStacks = 1;
-  sound = 1;
+  soundFunction = function() 
+		local stacks = GTFO_DebuffStackCount("player", 375873);
+
+		-- Alert if hit in Phase 1
+		if (not GTFO_HasBuff("boss1", 375879)) then
+			if (stacks > 1) then
+				return 1;
+			else
+				return 0;
+			end
+		end
+		
+		-- Alert if more than 2 stacks in Phase 2
+		local isHeroic, isMythic = select(5, GetDifficultyInfo(select(3, GetInstanceInfo())));
+		if (isHeroic or isMythic) then
+			if (stacks > 2) then
+				return 1;
+			end
+			return 0;
+		elseif (stacks > 1) then
+			return 1;
+		end
+	end;
 };
 
 GTFO.SpellID["375578"] = {

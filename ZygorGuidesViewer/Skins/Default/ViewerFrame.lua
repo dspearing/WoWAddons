@@ -2466,15 +2466,15 @@ function ZGV_DefaultSkin_GuideStar_Mixin:OnEnter()
 	if self.ButtonNumber == 3 then
 	ZGV.RatingTimer = ZGV:ScheduleTimer(function()
 		CHAIN(GameTooltip):SetOwner(ZGV.BugReport.GuideRating.GuideRatingViewer.face1,"ANCHOR_TOP") :SetText(L['viewer_special_amazing']) :Show()
-		end, 2)
+		end, 0.1)
 	elseif self.ButtonNumber == 2 then
 		ZGV.RatingTimer = ZGV:ScheduleTimer(function()
 		CHAIN(GameTooltip):SetOwner(ZGV.BugReport.GuideRating.GuideRatingViewer.face2,"ANCHOR_TOP") :SetText(L['viewer_special_average']) :Show()
-		end, 2)
+		end, 0.1)
 	elseif self.ButtonNumber == 1 then
 		ZGV.RatingTimer = ZGV:ScheduleTimer(function()
 		CHAIN(GameTooltip):SetOwner(ZGV.BugReport.GuideRating.GuideRatingViewer.face3,"ANCHOR_TOP") :SetText(L['viewer_special_bad']) :Show()
-		end, 2)
+		end, 0.1)
 	end
 end
 

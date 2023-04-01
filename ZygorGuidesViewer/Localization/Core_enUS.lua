@@ -1114,6 +1114,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	-- NotificationCenter ---------------------------------------------------------------------------------------------------
 		notifcenter_no_entries = "You have no notifications.",
 		notifcenter_reset = "Remove all notifications.",
+		notifcenter_warning_notarget = "No target.",
+		notifcenter_warning_noskill = "Required skill not available.",
 
 	-- Parser ---------------------------------------------------------------------------------------------------
 		coords = "%d,%d",
@@ -1334,8 +1336,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		viewer_special_cancelled_menu = "|cfffe6100Click here|r to load a guide.",
 		viewer_special_endguide = "You have reached the end of the guide.",
 		viewer_special_selectfirst = "Please select a rating first.",
-		viewer_special_amazing = "Amazing",
-		viewer_special_average = "Average",
+		viewer_special_amazing = "Good",
+		viewer_special_average = "Okay",
 		viewer_special_bad = "Bad",
 
 	-- Whowhere

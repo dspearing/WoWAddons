@@ -1077,7 +1077,7 @@ function Notification:CreateStaticToastFrame()
         :SetJustifyH("CENTER")
         :SetJustifyV("TOP")
         :SetText()
-        :SetTextColor(unpack(SkinData("Accent")))
+	:SetTextColor(unpack(SkinData("Accent")))
         :SetWidth(300)
         :SetHeight(300)
         :SetWordWrap(true)
@@ -1114,8 +1114,9 @@ function Notification:CreateStaticToastFrame()
 
 end
 
-function Notification:DisplayStaticToast(text)
+function Notification:DisplayStaticToast(text,purpose)
 	Notification.StaticToast.Text:SetText(text)
+	Notification.StaticToast.Text:SetTextColor(unpack(SkinData(purpose or "MessageNotify")))
 	Notification.StaticToast.ShowAnim:Play()
 	if Notification.StaticHideTimer then ZGV:CancelTimer(Notification.StaticHideTimer) end
 	Notification.StaticHideTimer = ZGV:ScheduleTimer(function() 

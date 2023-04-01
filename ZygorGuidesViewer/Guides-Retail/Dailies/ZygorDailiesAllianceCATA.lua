@@ -5,7 +5,7 @@ if ZGV:DoMutex("DailiesACATA") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Classic Dailies\\Darnassus\\Darnassus Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nComplete one of the following fishing daily quests each day in Darnassus:\n\nStocking Up\n"..
+description="Complete one of the following fishing daily quests each day in Darnassus:\n\nStocking Up\n"..
 "Happy as a Clam Digger\nA Slippery Snack\nThe Sister's Pendant\nAn Old Favorite",
 condition_end=function() return completedq(29321,29323,29325,29324,29359) end,
 condition_valid=function() return level >= 10 end,
@@ -65,7 +65,7 @@ You have completed the Darnassus fishing dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Classic Dailies\\Ironforge\\Ironforge Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nComplete one of the following fishing daily quests each day in Ironforge:\n\nLive Bait\n"..
+description="Complete one of the following fishing daily quests each day in Ironforge:\n\nLive Bait\n"..
 "Cold Water Fishing\nOne fer the Ages\nFish fer Squirky\nThe Gnomish Bait-o-Matic",
 condition_end=function() return completedq(29342,29343,29343,29344,29347) end,
 condition_valid=function() return level >= 10 end,
@@ -152,7 +152,7 @@ You have completed the Ironforge fishing dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Classic Dailies\\Stormwind City\\Main City Cooking Dailies",{
 author="support@zygorguides.com",
-description="\nWalks you through completing the Cooking daily quests in Stormwind, Ironforge and Darnassus. You must be at least level 10 to complete the quests in this guide.",
+description="Walks you through completing the Cooking daily quests in Stormwind, Ironforge and Darnassus. You must be at least level 10 to complete the quests in this guide.",
 },[[
 step
 label "menu"
@@ -188,7 +188,7 @@ Click here to go back to the beginning of the Dailies Menu |confirm |next "menu"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Classic Dailies\\Stormwind City\\Stormwind City Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nComplete one of the following fishing daily quests each day in Stormwind City:\n\nBig Gulp\n"..
+description="Complete one of the following fishing daily quests each day in Stormwind City:\n\nBig Gulp\n"..
 "Diggin' For Worms\nHitting a Walleye\nRock Lobster\nThunder Falls",
 condition_end=function() return completedq(26488,26420,26414,26442,26536) end,
 condition_valid=function() return level >= 10 end,
@@ -256,7 +256,7 @@ You have completed the Stormwind City fishing dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Classic Dailies\\Stormwind City\\Stormwind City Jewelcrafting Dailies",{
 author="support@zygorguides.com",
-description="\nWalks you through completing the Jewelcrafting daily quests in Stormwind City.",
+description="Walks you through completing the Jewelcrafting daily quests in Stormwind City.",
 },[[
 step
 talk Isabel Jones##50480
@@ -310,7 +310,7 @@ turnin The Latest Fashion!##25157 |goto Stormwind City 63.8,61.5
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Burning Crusade Dailies\\Netherwing\\Netherwing Daily Quests", {
 author="support@zygorguides.com",
 startlevel=1,
-description="\nThis guide will walk you through completing the various daily quests for Netherwing reputation.",
+description="This guide will walk you through completing the various daily quests for Netherwing reputation.",
 condition_end=function() return rep("Netherwing") >= Exalted end,
 },[[
 step
@@ -484,7 +484,7 @@ You have completed all available Netherwing daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Burning Crusade Dailies\\Netherwing\\Netherwing Eggs", {
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. "..
+description="This guide section will walk you through an optimized path of collecting Netherwing Eggs, which you can turn in for 250 Netherwing rep each. "..
 "You must have completed the \"The Great Netherwing Egg Hunt\" quest to be able to collect and turn in the Netherwing Eggs.",
 condition_end=function() return rep("Netherwing") >= Exalted end,
 startlevel=1,
@@ -845,13 +845,13 @@ Check for a Netherwing Egg |goto Shadowmoon Valley 78.8,79.6 < 5 |c |next "Begin
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Burning Crusade Dailies\\Shattrath Cooking Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
+description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
 },[[
 #include "A_Shattrath_Cooking_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Burning Crusade Dailies\\Shattered Sun Offensive\\Dailies", {
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through the Shattered Sun Offensive Daily Quests.",
+description="This guide section will walk you through the Shattered Sun Offensive Daily Quests.",
 },[[
 step
 talk Innkeeper Haelthol##19232
@@ -1103,7 +1103,7 @@ only if rep ("Shattered Sun Offensive")==Exalted
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Coldarra Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Coldarra region of Borean Tundra.",
+description="This guide section will walk you through completing the daily quests in the Coldarra region of Borean Tundra.",
 },[[
 step
 Routing to proper section |next |only if not completedq(13413)
@@ -1188,7 +1188,7 @@ Click here to return to the beginning |confirm |next "dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Borean Tundra\\Kaskala Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Kaskala region of Borean Tundra. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
+description="This guide section will walk you through completing the daily quests in the Kaskala region of Borean Tundra. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
 step
 talk Utaik##26213
@@ -1202,7 +1202,7 @@ turnin Preparing for the Worst##11945 |goto 63.9,45.7
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Cooking Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Cooking daily quests in Dalaran.",
+description="This guide section will walk you through completing the Cooking daily quests in Dalaran.",
 },[[
 step
 Routing to proper section |next |only if not completedq(13087)
@@ -1311,7 +1311,7 @@ Click here to go back to the beginning of the guide |confirm |next "dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Dalaran\\Dalaran Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nComplete one of the following fishing daily quests each day in Dalaran:\n\nDisarmed!\n"..
+description="Complete one of the following fishing daily quests each day in Dalaran:\n\nDisarmed!\n"..
 "Blood Is Thicker\nDangerously Delicious\nJewel Of The Sewers\nThe Ghostfish",
 condition_end=function() return completedq(13830,13832,13833,13834,13836) end,
 condition_valid=function() return level >= 10 end,
@@ -1387,7 +1387,7 @@ You have completed the Dalaran fishing dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Dalaran\\Jewelcrafting Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Jewelcrafting daily quests in Dalaran.",
+description="This guide section will walk you through completing the Jewelcrafting daily quests in Dalaran.",
 },[[
 step
 Routing to proper section |next |only if not completedq(13041)
@@ -1504,7 +1504,7 @@ Click here to go back to the beginning of the guide |confirm |next "dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Wyrmrest Accord Dailies with Pre-Quests",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the pre-quests to unlock the daily quests in the Wyrmrest Temple region of Dragonblight. The Moa'ki Harbor region of Dragonblight does not have any pre-quests to unlock the daily quest that is available there.",
+description="This guide section contains the pre-quests to unlock the daily quests in the Wyrmrest Temple region of Dragonblight. The Moa'ki Harbor region of Dragonblight does not have any pre-quests to unlock the daily quest that is available there.",
 },[[
 step
 Proceeding to Pre-Quests |next |only if default
@@ -1520,7 +1520,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Moa'ki Harbor Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Moa'ki Harbor region of Dragonblight. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
+description="This guide section will walk you through completing the daily quest in the Moa'ki Harbor region of Dragonblight. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
 step
 talk Trapper Mau'i##26228
@@ -1535,7 +1535,7 @@ turnin Planning for the Future##11960 |goto 48.3,74.3
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
+description="This guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
 step
 Routing to the proper section |next |only if default
@@ -1619,7 +1619,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
+description="This guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
 step
 Routing to the proper section |next |only if default
@@ -1733,7 +1733,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Granite Springs Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
+description="This guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
 },[[
 step
 Routing to the proper section |next |only if default
@@ -1818,7 +1818,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Venture Bay Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
+description="This guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
 step
 Routing to the proper section |next |only if default
@@ -1944,7 +1944,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Steel Gate Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Apothecary Camp region of Howling Fjord.",
+description="This guide section will walk you through completing the daily quest in the Apothecary Camp region of Howling Fjord.",
 },[[
 step
 Proceeding to the proper section |next |only if default
@@ -2034,7 +2034,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Kamagua Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Kamagua region of Howling Fjord.",
+description="This guide section will walk you through completing the daily quest in the Kamagua region of Howling Fjord.",
 },[[
 step
 Proceeding to the proper section |next |only if default
@@ -2127,7 +2127,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Howling Fjord\\Westguard Keep Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Westguard Keep region of Howling Fjord.",
+description="This guide section will walk you through completing the daily quest in the Westguard Keep region of Howling Fjord.",
 },[[
 step
 Proceeding to the proper section |next |only if default
@@ -2217,7 +2217,7 @@ You have finished this Dailies Guide. Click here to return to the beginning of t
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Aspirant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant rank.",
+description="This guide section will walk you through unlocking Aspirant Rank dailies in order to achieve Argent Tournament Grounds Valiant rank.",
 condition_end=function() return completedq(13679) end,
 },[[
 step
@@ -2544,7 +2544,7 @@ turnin The Aspirant's Challenge##13679 |goto 76.46,19.41
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
+description="This guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
 hideif=function() return not raceclass{"Human","Worgen","Pandaren","KulTiran","Dracthyr"} end,
 condition_end=function() return completedq(13702) end,
 next="Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",
@@ -2844,7 +2844,7 @@ turnin A Champion Rises##13702 |goto 69.66,22.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
+description="This guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
 hideif=function() return not raceclass{"NightElf","VoidElf"} end,
 condition_end=function() return completedq(13735) end,
 next="Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",
@@ -3145,7 +3145,7 @@ turnin A Champion Rises##13735 |goto 69.66,22.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
+description="This guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
 hideif=function() return not raceclass{"Dwarf","DarkIronDwarf"} end,
 condition_end=function() return completedq(13732) end,
 next="Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",
@@ -3445,7 +3445,7 @@ turnin A Champion Rises##13732 |goto 69.66,22.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
+description="This guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
 hideif=function() return not raceclass{"Gnome","Mechagnome"} end,
 condition_end=function() return completedq(13733) end,
 next="Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",
@@ -3746,7 +3746,7 @@ turnin A Champion Rises##13733 |goto 69.66,22.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Valiant Rank Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
+description="This guide section will walk you through unlocking Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank.",
 hideif=function() return not raceclass{"Draenei","LightforgedDraenei"} end,
 condition_end=function() return completedq(13734) end,
 next="Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",
@@ -4047,7 +4047,7 @@ turnin A Champion Rises##13734 |goto 69.66,22.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion of Stormwind",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Stormwind.",
+description="This guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Stormwind.",
 condition_end=function() return completedq(13699) end,
 },[[
 step
@@ -4334,7 +4334,7 @@ turnin The Valiant's Challenge##13699 |goto 76.60,19.12
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion of Darnassus",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Darnassus.",
+description="This guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Darnassus.",
 condition_end=function() return completedq(13725) end,
 },[[
 step
@@ -4625,7 +4625,7 @@ turnin The Valiant's Challenge##13725 |goto 76.35,19.03
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion of Ironforge",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Ironforge.",
+description="This guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Ironforge.",
 condition_end=function() return completedq(13713) end,
 },[[
 step
@@ -4915,7 +4915,7 @@ turnin The Valiant's Challenge##13713 |goto 76.64,19.49
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion of Gnomeregan",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Gnomeregan.",
+description="This guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with Gnomeregan.",
 condition_end=function() return completedq(13723) end,
 },[[
 step
@@ -5206,7 +5206,7 @@ turnin The Valiant's Challenge##13723 |goto 76.55,19.82
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion of The Exodar",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with The Exodar.",
+description="This guide section will walk you through completing Valiant Rank dailies in order to achieve Argent Tournament Grounds Champion rank with The Exodar.",
 condition_end=function() return completedq(13724) end,
 },[[
 step
@@ -5625,7 +5625,7 @@ turnin The Black Knight's Fate##14017 |goto 69.43,23.02
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Crusader Dailies",{
 author="support@zygorguides.com",
-description="\nIn order to be able to complete the quests in this guide section, you must already be Exalted with the Ironforge, Stormwind City, Exodar, Darnassus and Gnomeregan. Also, you must have already become a Champion with each of those factions, using the Crusader Title Guide in the Icecrown section of the Dailies guide.",
+description="In order to be able to complete the quests in this guide section, you must already be Exalted with the Ironforge, Stormwind City, Exodar, Darnassus and Gnomeregan. Also, you must have already become a Champion with each of those factions, using the Crusader Title Guide in the Icecrown section of the Dailies guide.",
 condition_visible=function() return achieved(2817) end,
 },[[
 step
@@ -5715,7 +5715,7 @@ turnin Identifying the Remains##14095 |goto 69.51,23.09 |only if haveq(14095) or
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",{
 author="support@zygorguides.com",
-description="\nYou must be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
+description="You must be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 condition_valid=function() return completedq(13702,13735,13732,13733,13734) end,
 condition_valid_msg="You must complete \"The Valiant's Challenge\" quest for your home city and reach Valiant rank with the Argent Tournament Grounds.\n\n"..
 "Complete the \"Valiant Rank Dailies\" guide first.",
@@ -6078,7 +6078,7 @@ You have completed all available Argent Tournament Champion dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Argent Tournament Grounds\\Champion Rank Dailies",{
 author="support@zygorguides.com",
-description="\nYou must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
+description="You must NOT be a Death Knight to do the quests in this Argent Tournament Grounds guide section. Also, you must have completed the Argent Tournament Grounds Valiant Rank Dailies guide section.",
 condition_valid=function() return completedq(13702,13735,13732,13733,13734) end,
 condition_valid_msg="You must complete \"The Valiant's Challenge\" quest for your home city and reach Valiant rank with the Argent Tournament Grounds.\n\n"..
 "Complete the \"Valiant Rank Dailies\" guide first.",
@@ -6449,7 +6449,7 @@ You have completed all available Argent Tournament Champion dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\The Oracles/Frenzyheart Dailies\\The Oracles Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the pre-quests to unlock the ability to complete daily quests for The Oracles and Frenzyheart Tribe factions in Sholazar Basin.",
+description="This guide section contains the pre-quests to unlock the ability to complete daily quests for The Oracles and Frenzyheart Tribe factions in Sholazar Basin.",
 },[[
 step
 talk Tamara Wobblesprocket##28568
@@ -6921,7 +6921,7 @@ You have completed all available Oracles dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\The Oracles/Frenzyheart Dailies\\Frenzyheart Tribe Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the pre-quests to unlock the ability to complete daily quests for The Oracles and Frenzyheart Tribe factions in Sholazar Basin.",
+description="This guide section contains the pre-quests to unlock the ability to complete daily quests for The Oracles and Frenzyheart Tribe factions in Sholazar Basin.",
 },[[
 step
 talk Tamara Wobblesprocket##28568
@@ -7382,7 +7382,7 @@ You have completed all available Frenzyheart dailies
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\The Sons of Hodir\\The Sons of Hodir Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests to unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), Frosthold, and K3 regions of The Storm Peaks.",
+description="This guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests to unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), Frosthold, and K3 regions of The Storm Peaks.",
 },[[
 step
 talk Smilin' Slirk Brassknob##29904
@@ -8166,7 +8166,7 @@ turnin Assault by Air##13309 |goto 62.6,51.3
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Icecrown\\Shadowvault Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Shadowvault region of Icecrown.",
+description="This guide section will walk you through completing the daily quests in the Shadowvault region of Icecrown.",
 },[[
 step
 talk Baron Sliver##29804
@@ -8207,7 +8207,7 @@ turnin Vile Like Fire!##13071 |goto 43.1,25.2
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Icecrown\\Death's Rise Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Death's Rise region of Icecrown.",
+description="This guide section will walk you through completing the daily quests in the Death's Rise region of Icecrown.",
 },[[
 step
 talk Setaal Darkmender##29396
@@ -8246,7 +8246,7 @@ turnin No Fly Zone##12815 |goto 19.6,47.8
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Dun Niffelem (The Sons of Hodir) Pre-quest and Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests to unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), Frosthold, and K3 regions of The Storm Peaks.",
+description="This guide section contains the quest path for the entire The Storm Peaks zone, which includes the pre-quests to unlock the daily quests in the Brunnhildar Village, Dun Niffelem (The Sons of Hodir), Frosthold, and K3 regions of The Storm Peaks.",
 },[[
 step
 Proceeding to next step |next |only if rep('The Sons of Hodir')<=Neutral
@@ -8510,7 +8510,7 @@ Click here to return to the beginning of the Dailies |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\The Storm Peaks\\Brunnhildar, K-3 and Frosthold Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.",
+description="This guide section will walk you through completing the daily quests in the Brunnhildar Village region of The Storm Peaks.",
 },[[
 step
 label "hub"
@@ -8578,7 +8578,7 @@ You have reached the end of the dailies guide. Click here to return to the begin
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Zul'Drak\\The Argent Stand Dailies and Pre-Quests",{
 author="support@zygorguides.com",
-description="\nThis guide section contains the pre-quests and dailies for Argent Stand.",
+description="This guide section contains the pre-quests and dailies for Argent Stand.",
 mounts={65637,65643,65642,65638,65640,63639,63636,63638,63637,63232},
 },[[
 #include "ArgentT_Quests"
@@ -8702,7 +8702,7 @@ step
 You have finished the Argent Stand Dailies, click here to retrun to the beginning of the Dailies Guide |confirm |next "daily"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Deepholm\\Therazane's Throne Dailies, plus Pre-Quests",{
-description="\nWalks you through completing the daily quests in the Therazane's Throne region of Deepholm.",
+description="Walks you through completing the daily quests in the Therazane's Throne region of Deepholm.",
 },[[
 step
 Proceeding to Pre-Quests |next |only if not completedq(26709)
@@ -8714,7 +8714,7 @@ step
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Uldum Dailies with Pre-Quests",{
 author="support@zygorguides.com",
-description="\nContains the pre-quests to unlock the daily quests in Uldum. You must be at least level 30 to complete this guide section.",
+description="Contains the pre-quests to unlock the daily quests in Uldum. You must be at least level 30 to complete this guide section.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help |only if not ZGV.guidesets['LevelingACATA']
@@ -8747,7 +8747,7 @@ You have reached the end of these dailies. Click here to return to the beginning
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Twilight Highlands\\Twilight Highlands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
-description="\nContains the pre-quests to unlock the daily quests in Twilight Highlands. You must be at least level 30 to complete this guide section.",
+description="Contains the pre-quests to unlock the daily quests in Twilight Highlands. You must be at least level 30 to complete this guide section.",
 },[[
 step
 The pre-quests for these dailies are in Uldum. You can quest through the guide, or use our Leveling Guide for help. |only if not ZGV.guidesets['LevelingACATA']
@@ -8805,13 +8805,13 @@ ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Tol Barad Peni
 achieveid={4874},
 patch='40003',
 author="support@zygorguides.com",
-description="\nWalks you through completing the daily quests in Tol Barad.",
+description="Walks you through completing the daily quests in Tol Barad.",
 },[[
 #include "A_Baradin_Hold_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\Guardians of Hyjal",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with the Guardians of Hyjal faction.",
+description="Walks you through the process of obtaining Exalted reputation with the Guardians of Hyjal faction.",
 },[[
 step
 map Mount Hyjal
@@ -8823,7 +8823,7 @@ You can buy the Tabard of the Guardians of Hyjal by talking to Provisioner White
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\The Earthen Ring",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with The Earthen Ring faction.",
+description="Walks you through the process of obtaining Exalted reputation with The Earthen Ring faction.",
 },[[
 step
 map Shimmering Expanse
@@ -8837,7 +8837,7 @@ You can buy the Tabard of the Earthen Ring by talking to Provisioner Arok at [Sh
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\Therazane",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with the Therazane faction.",
+description="Walks you through the process of obtaining Exalted reputation with the Therazane faction.",
 },[[
 step
 map Deepholm
@@ -8851,7 +8851,7 @@ You can buy the Tabard of Therazane by talking to D'lom the Collector at [Deepho
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\Ramkahen",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with the Ramkahen faction.",
+description="Walks you through the process of obtaining Exalted reputation with the Ramkahen faction.",
 },[[
 step
 map Uldum
@@ -8865,7 +8865,7 @@ You can buy the Tabard of Ramkahen by talking to Blacksmith Abasi at [Uldum 54.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\Wildhammer Clan",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with the Wildhammer Clan faction.",
+description="Walks you through the process of obtaining Exalted reputation with the Wildhammer Clan faction.",
 },[[
 step
 map Twilight Highlands
@@ -8879,7 +8879,7 @@ You can buy the Tabard of the Wildhammer Clan by talking to Craw MacGraw at [Twi
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Reputation\\Baradin's Wardens",{
 author="support@zygorguides.com",
-description="\nWalks you through the process of obtaining Exalted reputation with the Baradin's Wardens faction.",
+description="Walks you through the process of obtaining Exalted reputation with the Baradin's Wardens faction.",
 },[[
 step
 map Tol Barad Peninsula
@@ -8893,7 +8893,7 @@ Once you earn Friendly reputation with the Baradin's Wardens faction, you can bu
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Zandalari Menace Quest Line",{
 author="support@zygorguides.com",
 startlevel=35,
-description="\nWalks you through completing the Zandalari Menace quest line in Stranglethorn Vale. You must be level 35 to be able to use this guide.",
+description="Walks you through completing the Zandalari Menace quest line in Stranglethorn Vale. You must be level 35 to be able to use this guide.",
 },[[
 step
 talk Bwemba##52654
@@ -9043,7 +9043,7 @@ accept Booty Bay's Interests##29153 |goto 41.2,73.1
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Mount Hyjal\\How To Use Firelands Guide Sections - READ FIRST",{
 author="support@zygorguides.com",
-description="\nWalks you through how to use the Firelands guide sections.",
+description="Walks you through how to use the Firelands guide sections.",
 },[[
 step
 The Firelands quests are very dynamic.  You will not be able to complete some daily quests each day, as only a limited amount are available each day.
@@ -9055,7 +9055,7 @@ You will need to use the Firelands Quests and Firelands Dailies together.  Compl
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Mount Hyjal\\Firelands Dailies with Pre-Quests",{
 author="support@zygorguides.com",
 startlevel=32.00,
-description="\nWalks you through completing the Firelands quest line in Mount Hyjal.",
+description="Walks you through completing the Firelands quest line in Mount Hyjal.",
 },[[
 step
 Proceeding to proper section |next |only if default
@@ -9900,7 +9900,7 @@ Click this line to return to the beginning of the Firelands Dailies guide sectio
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cataclysm Dailies\\Mount Hyjal\\The Call of the World-Shaman Quest Line",{
 condition_end=function() return completedq(29331) end,
 author="support@zygorguides.com",
-description="\nWalks you through completing the Call of the World-Shaman quest line.",
+description="Walks you through completing the Call of the World-Shaman quest line.",
 },[[
 step
 talk Naraat the Earthspeaker##45226
@@ -10007,7 +10007,7 @@ Congratulations, you saved Thrall!
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cooking\\Dalaran Cooking Daily Guide",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
+description="This guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
 condition_suggested=function() return hasprof('Cooking',1,600) end,
 },[[
 step
@@ -10100,19 +10100,19 @@ You have completed the maximum amount of Dalaran Cooking dailies you can do toda
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cooking\\Shattrath Cooking Daily Guide",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
+description="This guide section will walk you through completing the Cooking daily quests to earn Shattrath Cooking Awards",
 },[[
 #include "A_Shattrath_Cooking_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Cooking\\Stormwind Cooking Daily Guide",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
+description="This guide section will walk you through completing the Cooking daily quests to earn Dalaran Cooking Awards and gather Northern Spices.",
 },[[
 #include "SW_Cooking_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Daily Guides\\Jewelcrafting Daily Guide",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Jewelcrafting daily quests.",
+description="This guide section will walk you through completing the Jewelcrafting daily quests.",
 },[[
 step
 label "start"
@@ -10164,7 +10164,7 @@ achieveid={11276},
 patch='70200',
 condition_suggested=function() return isevent('Midsummer Fire Festival') end,
 keywords={"Extinguishing","Draenor"},
-description="\nThis guide will walk you through obtaining the Extinguishing Draenor achievement.",
+description="This guide will walk you through obtaining the Extinguishing Draenor achievement.",
 },[[
 step
 click Horde Bonfire##194039
@@ -10179,7 +10179,7 @@ achieveid={11278},
 patch='70200',
 condition_suggested=function() return isevent('Midsummer Fire Festival') end,
 keywords={"Extinguishing","the","Broken","Isles"},
-description="\nThis guide will walk you through obtaining the Extinguishing the Broken Isles achievement.",
+description="This guide will walk you through obtaining the Extinguishing the Broken Isles achievement.",
 },[[
 step
 click Horde Bonfire##194039

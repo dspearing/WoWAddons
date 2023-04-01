@@ -2135,7 +2135,7 @@ function ZGV.F.CutsceneCancel()
 	local text = ZGV.L['cinematic_cancelled']
 	CinematicFrame_CancelCinematic()
 	ZGV:Print(text)
-	ZGV.NotificationCenter:DisplayStaticToast(ZGV.L['cinematic_cancelled_short'])
+	ZGV.NotificationCenter:DisplayStaticToast(ZGV.L['cinematic_cancelled_short'],"MessageNotify")
 end
 
 function ZGV.F.MovieCancel()
@@ -2145,7 +2145,7 @@ function ZGV.F.MovieCancel()
 	MovieFrame:Hide()
 	GameMovieFinished()
 	ZGV:Print(text)
-	ZGV.NotificationCenter:DisplayStaticToast(ZGV.L['cinematic_cancelled_short'])
+	ZGV.NotificationCenter:DisplayStaticToast(ZGV.L['cinematic_cancelled_short'],"MessageNotify")
 end
 
 function ZGV.F.GetSecondsFromTime(timeobject)
@@ -2287,9 +2287,9 @@ function ZGV.F.IsBoosted(expansion)
 	end
 
 	if expansion == "shadowlands" then
-		if count == 6 then return true else return false end
+		return count==6
 	elseif expansion == "dragonflight" then
-		if count == 7 then return true else return false end	
+		return count==7	
 	end
 end
 

@@ -5617,6 +5617,10 @@ step
 talk Unatos##193015
 |tip Inside the building.
 accept Beknownst and Glorious##70916 |goto 58.18,35.15
+step
+talk Unatos##193015
+|tip Inside the building.
+accept Renowned with the Valdrakken Accord##71023 |goto 58.18,35.15
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Winterpelt Furbolg",{

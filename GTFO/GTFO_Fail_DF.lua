@@ -783,6 +783,76 @@ GTFO.SpellID["405230"] = {
   sound = 3;
 };
 
+GTFO.SpellID["403371"] = {
+  --desc = "Expel (Expulsion Drone)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["404781"] = {
+  --desc = "Crash Course (Grugoth the Hullcrusher)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["324511"] = {
+  --desc = "Slime Wave (Experimental Misstep)";
+  sound = 3;
+};
+
+GTFO.SpellID["405617"] = {
+  --desc = "Coin Shower (Animated Riches)";
+  sound = 3;
+};
+
+GTFO.SpellID["404710"] = {
+  --desc = "Lightning Storm (Jamoku)";
+  sound = 3;
+};
+
+GTFO.SpellID["404601"] = {
+  --desc = "Storm Stomp (Jamoku)";
+  sound = 3;
+};
+
+GTFO.SpellID["405347"] = {
+  --desc = "Cave In (Gahz'raxes)";
+  tankSound = 0;
+  sound = 3;
+};
+
+GTFO.SpellID["400159"] = {
+  --desc = "Wing Shredder (Vraken the Hunter)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["400344"] = {
+  --desc = "Spike Traps (Vraken the Hunter)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["405416"] = {
+  --desc = "Chilling Wave (Lady Shaz'ra)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["403169"] = {
+  --desc = "Judgement Wave (Ishyra)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+GTFO.SpellID["401455"] = {
+  --desc = "Obsidian Blast";
+  applicationOnly = true;
+  sound = 3;
+  negatingBuffSpellID = 396787; -- Protective Ward of Flames
+};
+
+
 --- *******************
 --- * Ruby Life Pools *
 --- *******************

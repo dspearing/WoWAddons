@@ -4,7 +4,7 @@ if UnitFactionGroup("player")~="Horde" then return end
 if ZGV:DoMutex("DailiesHWOD") then return end
 ZygorGuidesViewer.GuideMenuTier = "WOD"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Frostwall Tavern Dungeon Dailies",{
-description="\nThis guide will take you through the Frostwall Tavern dungeon dailies.",
+description="This guide will take you through the Frostwall Tavern dungeon dailies.",
 },[[
 step
 label "start"
@@ -306,7 +306,7 @@ turnin A Hero's Quest is Never Complete##37237
 |next "queuemenu"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Fishing Dailies",{
-description="\nThis guide will take you through the Fishing dailies.",
+description="This guide will take you through the Fishing dailies.",
 },[[
 step
 label "start"
@@ -428,7 +428,7 @@ Click to restart the dailies run |confirm |next "start"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Battle Pets Dailies",{
 patch='unknown',
 source='unknown',
-description="\nThis guide will take you through the Battle Pets dailies.",
+description="This guide will take you through the Battle Pets dailies.",
 },[[
 step
 label "start"
@@ -565,7 +565,7 @@ turnin Critters of Draenor##38300 |goto 33.36,42.83
 |next "start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\High Overlord Saurfang Dailies",{
-description="\nThis guide will walk you through completing the daily dungeon and weekly raid quests from High Overlord Saurfang in your garrison",
+description="This guide will walk you through completing the daily dungeon and weekly raid quests from High Overlord Saurfang in your garrison",
 endlevel=10
 },[[
 step
@@ -790,7 +790,7 @@ You have completed today's daily quest, check back tomorrow!
 Click _here_ to return |confirm |next "Start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Harrison Jones Treasure Contracts",{
-description="\nThis guide will walk you through completing the Master Relic Hunter quests offered by Harrison Jones in your garrison.",
+description="This guide will walk you through completing the Master Relic Hunter quests offered by Harrison Jones in your garrison.",
 endlevel=40
 },[[
 step
@@ -1153,7 +1153,7 @@ You have finished today's daily Treasure Contract! Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Shadow Hunter Ty'jin Daily Quests",{
-description="\nThis guide will walk you through completing the Group 3 daily kill quests offered by Shadow Hunter Ty'jin in your garrison",
+description="This guide will walk you through completing the Group 3 daily kill quests offered by Shadow Hunter Ty'jin in your garrison",
 endlevel=40
 },[[
 step
@@ -1280,7 +1280,7 @@ You have finished today's daily group quest. Check back tomorrow
 Click here to return to the menu |confirm |next "Start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Garrison Assault Daily Quests",{
-description="\nThis guide will walk you through the Garrison Assault daily quests.",
+description="This guide will walk you through the Garrison Assault daily quests.",
 },[[
 step
 label "assault_dailies_start"
@@ -1557,7 +1557,7 @@ Click to restart the dailies run |confirm |next "assault_dailies_start"
 |tip You can also click to restart if you want to do more Scouting Missives.
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Garrison Building Dailies",{
-description="\nThis guide will walk you through the garrison daily quests offered from various garrison buildings.",
+description="This guide will walk you through the garrison daily quests offered from various garrison buildings.",
 },[[
 step
 label "Menu"
@@ -1844,7 +1844,7 @@ You have completed today's Menagerie daily quest
 Click here to return to the Main Menu |confirm |next "Menu"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Tanaan Jungle (100)\\Vol'jin's Headhunters Dailies",{
-description="\nThis guide will walk you through the daily quests for the Vol'jin's Headhunters faction.",
+description="This guide will walk you through the daily quests for the Vol'jin's Headhunters faction.",
 },[[
 step
 Complete the Tanaan Jungle (100) Leveling Guide |complete completedq(38578)
@@ -2027,7 +2027,7 @@ You've completed the dailies for today
 Click to restart the dailies run |confirm |next "voljin_headhunters_start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Tanaan Jungle (100)\\Order of the Awakened Dailies",{
-description="\nThis guide will walk you through the daily quests for the Order of the Awakened faction.",
+description="This guide will walk you through the daily quests for the Order of the Awakened faction.",
 },[[
 step
 Complete the Tanaan Jungle (100) Leveling Guide |complete completedq(38578)
@@ -2122,7 +2122,7 @@ You've completed the daily for today
 Click to restart the dailies run |confirm |next "order_awakened_start"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Warlords of Draenor Dailies\\Tanaan Jungle (100)\\The Saberstalkers",{
-description="\nThis guide will walk you through the daily quests for the The Saberstalkers faction.",
+description="This guide will walk you through the daily quests for the The Saberstalkers faction.",
 },[[
 step
 Complete the Tanaan Jungle (100) Leveling Guide |complete completedq(38578)

@@ -24,7 +24,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Wrath of the Lich King
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Wrath of the Lich King Dailies\\Dragonblight\\Dragonblight Dailies plus Pre-Quests")
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blackriver Logging Camp Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
+description="This guide section will walk you through completing the daily quest in the Blackriver Logging Camp region of Grizzly Hills. There are no pre-quests needed to unlock the daily quest offered in this guide section.",
 },[[
 step
 Proceeding to proper section |next |only if default
@@ -109,7 +109,7 @@ Click here to return to the beginning of the guide |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Blue Sky Logging Grounds Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
+description="This guide section will walk you through completing the daily quests in the Blue Sky Logging Grounds region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
 step
 Proceeding to proper section |next |only if default
@@ -225,7 +225,7 @@ Click here to return to the beginning of the guide |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Granite Springs Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
+description="This guide section will walk you through completing the daily quest in the Granite Springs region of Grizzly Hills.",
 },[[
 step
 Proceeding to proper section |next |only if default
@@ -310,7 +310,7 @@ Click here to return to the beginning of the guide |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Wrath of the Lich King Dailies\\Grizzly Hills\\Venture Bay Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
+description="This guide section will walk you through completing the daily quests in the Venture Bay region of Grizzly Hills. There are no pre-quests needed to unlock the daily quests offered in this guide section.",
 },[[
 step
 Proceeding to proper section |next |only if default

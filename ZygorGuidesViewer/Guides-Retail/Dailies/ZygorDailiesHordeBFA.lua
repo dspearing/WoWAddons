@@ -5,7 +5,7 @@ if ZGV:DoMutex("DailiesHBFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\BFA World Quest Unlock",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
+description="This guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
 "To accomplish this, you will need to earn \"Friendly\" reputation with the follwing factions:\n\n"..
 "Talanji's Expedition\n"..
 "Voldunai\n"..
@@ -38,7 +38,7 @@ turnin Uniting Zandalar##51916 |goto Zuldazar/0 58.44,62.67
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Nazjatar\\Nazjatar Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests on Nazjatar.",
+description="This guide will walk you through completing the various daily quests on Nazjatar.",
 condition_suggested=function() return level == 50 end,
 },[[
 step
@@ -396,7 +396,7 @@ You have completed all Nazjatar dailies for the day
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Mechagon Island\\Mechagon Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests on Mechagon Island.",
+description="This guide will walk you through completing the various daily quests on Mechagon Island.",
 condition_suggested=function() return level == 50 and completedq(55736) end,
 },[[
 step
@@ -1384,7 +1384,7 @@ You have completed all Mechagon dailies for the day
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Mechagon Island\\Mechagon Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various Fishing daily quests on Mechagon Island.",
+description="This guide will walk you through completing the various Fishing daily quests on Mechagon Island.",
 condition_suggested=function() return level == 50 end,
 },[[
 step
@@ -1448,7 +1448,7 @@ ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Battle Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the weely Stratholme pet battle dungeon quest.",
+description="This guide will assist you in completing the weely Stratholme pet battle dungeon quest.",
 keywords={"Pet", "Battle"},
 condition_suggested=function() return level >= 50 and completedq(54185) and completedq(56491) and not completedq(56492) end,
 condition_end=function() return completedq(56492) end,

@@ -285,7 +285,7 @@ local ParseMapXYDist = ZGV.Parser.ParseMapXYDist
 ]]
 
 GOALTYPES['talknpcs'] = {
-    parse = function(self,params)
+	parse = function(self,params)
         self.npctype = params
     end,
 
@@ -296,14 +296,14 @@ GOALTYPES['talknpcs'] = {
 	for i,node in ipairs(path) do
 		if node.type=="end" then 
 			last = node
-		end
+			end
 	end
 
 	if last then
 		local title = ZGV.L['stepgoal_talk to']:format(ZGV.Localizers:GetTranslatedNPC(tonumber(last.title)) or "?")
 		if last.w then
 			title = title .. "\n".. (last.w=="1" and L["whowhere_walks"] or last.w)
-		end
+				end
 		local way = ZGV.Pointer:SetWaypoint(last.m,last.x,last.y,{
 			title=title,
 			type="manual",
@@ -316,23 +316,23 @@ GOALTYPES['talknpcs'] = {
 			manualnpcid = npcid,
 			waypoint_region=last.region
 		})
-	end
+			end
 
         local self = ext.goal
 	self.npcid = last.title
-    end,
+	end,
 
     onenter = function(self)
         ZGV.WhoWhere:FindNPC_Smart(self.npctype,self,GOALTYPES[self.action].onLibRoverResults)
     end,
 
-    gettext = function(self)
-	if self.npcid then
+	gettext = function(self)
+		if self.npcid then
 	    return  (ZGV.L['stepgoal_talk to nearest']:format(self.npctype) .. ZGV.L['stepgoal_:']:format(COLOR_NPC(ZGV.Localizers:GetTranslatedNPC(tonumber(self.npcid),self.npc))))
-	else
+		else
 	    return L["stepgoal_talk to"]:format(COLOR_NPC(self.npctype))
-	end
-    end,
+		end
+	end,
 }
 
 GOALTYPES['openskill'] = {
@@ -352,9 +352,9 @@ GOALTYPES['openskill'] = {
 GOALTYPES['findcity'] = {
     parse = function(self,params)
         self.npctype = params
-    end,
+	end,
 
-    onLibRoverResults = function(state, path, ext)
+	onLibRoverResults = function(state, path, ext)
 	if state~="success" then return end
 
 	local last
@@ -404,8 +404,10 @@ GOALTYPES['findcity'] = {
     iscomplete = function(self)
 	if not self.mapid then return false,true end
 	local px,py,pm = LibRover:GetPlayerPosition()
-	return self.mapid==pm, true
+return self.mapid==pm, true
     end,
+
+
 }
 
 GOALTYPES['_item'] = {
@@ -1269,7 +1271,7 @@ GOALTYPES['create'] = {
 			else
 				self.skill = skill
 			end
-
+		
 			if level then
 				local total = level:match("(%d+) total")
 				if total then
@@ -1279,7 +1281,7 @@ GOALTYPES['create'] = {
 					self.skilllevel = tonumber(level)
 				end
 			end
-			if ZGV.IsRetail then
+if ZGV.IsRetail then
 				local product = C_TradeSkillUI.GetRecipeItemLink(self.spellid)
 				if product then self.targetid = ZGV.ItemLink.GetItemID(product) end
 				if C_TradeSkillUI.GetRecipeQualityItemIDs then
@@ -1288,9 +1290,7 @@ GOALTYPES['create'] = {
 						self.targetid,self.targetid2,self.targetid3 = unpack(variants)
 					end
 				end
-			end
-
-			self.debugmode = "spell"
+			end			self.debugmode = "spell"
 			-- self.macrosrc = "#showtooltip ".. castskill .."{;}/run ZGV:PerformTradeSkillGoal({stepnum},{goalnum})"
 			-- This is insane, I know. Here we have a macro that will call a function that will call upon the values above. Great and simple... NOT.
 			-- Yep. It is. Moved to goal onclick.
@@ -1315,7 +1315,11 @@ GOALTYPES['create'] = {
 		-- if nothing, we are crafting one, and getting completed by attached quest
 	end,
 	onclick = function(self)
-		ZGV:PerformTradeSkillGoal(self)
+		if  (ZGV.Professions:GetRecipe(self.spellid)) ~= false then
+			ZGV:PerformTradeSkillGoal(self)
+		else
+			ZGV.NotificationCenter:DisplayStaticToast(ZGV.L["notifcenter_warning_noskill"],"MessageWarning")
+		end
 	end,
 	-- gettext complex; still in Goal:GetText()
 }
@@ -2335,7 +2339,7 @@ GOALTYPES['appearance'] = {
 		if not self.target and self.targetid then
 			local sourceinfo = C_TransmogCollection.GetSourceInfo(self.targetid)
 			self.target = sourceinfo.name
-			end
+		end
 		return L['stepgoal_appearance']:format(self.target or "...")
 	end,
 	iscomplete = function(self)

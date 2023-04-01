@@ -15525,7 +15525,7 @@ Speak to Turik |q 75050/2 |goto 34.20,60.04
 step
 talk Unpukiat##200560
 |tip Inside the building.
-home Morqut Village |goto 33.84,59.06
+home Morqut Village |goto 33.84,59.06 |q 75050
 step
 talk Tukkaraq##200558
 Tell him _"Scalecommander Viridia sent me to check on you."_
@@ -15566,24 +15566,31 @@ step
 talk Scalecommander Cindrethresh##199199
 accept Busting Blues##73142 |goto 35.30,59.49
 accept Soupocalypse Now!##73179 |goto 35.30,59.49
+|only if not completedq(73156)
 step
 talk Fusethrian##200987
 Choose _<Ask for explosive... soup?>_
 Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
+|only if not completedq(73159)
 step
 talk Tukkaraq##200558
 accept Driftwood Derby##73715 |goto 34.37,58.57
+|only if not completedq(74847)
 step
 clicknpc Morqut Glider##201376
 Take the Glider |q 73179/2 |goto 35.70,59.00
+|only if not completedq(73159)
 step
 Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
 |tip Use the abilities on your vehicle bar to attack enemies on the boat.
+|only if not completedq(73159)
 step
 Return to Morquet Village |outvehicle |goto 35.24,58.97
+|only if not completedq(73159)
 step
 clicknpc Tukkaraq's Boat##201122
 Board Tukkaraq's Boat |q 73715/1 |goto 36.60,57.61
+|only if not completedq(74847)
 step
 clicknpc Driftwood##201138
 |tip Use the abilities on your vehicle bar to catch driftwood in the water.
@@ -15591,11 +15598,13 @@ clicknpc Driftwood##201138
 |tip Throw fish to stun enemies.
 |tip Water Shield to reduce damage and heal.
 Net #24# Driftwood |q 73715/2
+|only if not completedq(74847)
 step
 talk Tukkaraq##200558
 turnin Driftwood Derby##73715 |goto 34.37,58.57
+|only if not completedq(74847)
 step
-Meet with Scalecommander Emberthal above Morqut Village |q 74847/1 |goto 32.56,60.58
+Meet with Scalecommander Emberthal Above Morqut Village |q 74847/1 |goto 32.56,60.58
 step
 talk Scalecommander Emberthal##199532
 turnin Emberthal Awaits##74847 |goto 32.57,60.58
@@ -15649,6 +15658,7 @@ accept Authentic Authorization##74983 |goto 29.26,52.69 |or
 accept Authentic Authorization##74282 |goto 29.26,52.69 |or
 |tip You will only be able to accept one of these weekly quests.
 |tip Any time you open vault doors, look around for the objective of the weekly quest.
+|only if not completedq(72953)
 step
 talk Pathfinder Jeb##200040
 Choose _"Let's explore Zskera Vault Az."_
@@ -15679,7 +15689,7 @@ collect Journal Entry: The Creches##204223 |n
 accept Journal Entry: The Creches##74883 |goto 28.54,55.65 |only if Horde
 accept Journal Entry: The Creches####73114 |goto 28.54,55.65 |only if Alliance
 step
-Click Here to Continue |confirm
+Click Here to Continue |confirm |q 72953
 |tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
 step
 talk Pathfinder Jeb##202218
@@ -15700,6 +15710,7 @@ turnin Journal Entry: The Creches##73114 |goto 35.30,59.50 |only if haveq(73114)
 step
 Kill enemies around this area
 collect 10 Arcane Focus##202362 |q 73142/1 |goto 53.22,54.55
+|only if not completedq(73156)
 step
 kill Spellsworn Wingcatcher##201369 |q 74379/1 |goto 59.04,57.54
 |tip This enemy is elite and may require a group.
@@ -15856,6 +15867,7 @@ turnin Still Within Reach##74379 |goto 35.61,59.49
 step
 talk Scalecommander Cindrethresh##199199
 turnin Busting Blues##73142 |goto 35.30,59.49
+|only if not completedq(73156)
 step
 talk Scalecommander Viridia##199201
 turnin Return to Viridia##73156 |goto 34.60,57.67
@@ -15904,6 +15916,87 @@ turnin What's Behind The Next Door##73089 |goto The Forbidden Reach/5 29.16,53.1
 step
 talk Researcher Imareth##200724
 turnin Primordial Embellishment##74355 |goto 35.18,57.61
+step
+talk Volethi##200727
+accept Creche Cache##73189 |goto 34.84,57.47
+step
+talk Tukkaraq##200558
+accept Up to the Highest Height!##75026 |goto 34.36,58.57
+step
+talk Cataloger Coralie##201291
+accept Snake Wrangling##73191 |goto 34.36,59.28
+step
+clicknpc Broken Kite Piece##203134+
+|tip They look like small pieces of wood on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Collect #12# Kite Pieces |q 75026/1 |goto 31.97,60.59
+step
+talk Tukkaraq##200558
+turnin Up to the Highest Height!##75026 |goto 34.36,58.57
+step
+click Rustling Bush##384952+
+|tip They look like green bushes on the ground around this area.
+Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
+You can find more around [45.61,37.24]
+step
+extraaction Release Watersnakes##400872
+|tip Use the button that appears on your screen.
+Release the Toxic Watersnakes |q 73191/2 |goto 43.53,37.40
+step
+Enter the Support Creche |q 73189/1 |goto 36.68,32.41
+step
+use the Toxin Antidote##202620
+|tip Use it to reduce your toxin level before it overwhelms you.
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster.
+click Mender Supplies##385990+
+|tip They look like wooden crates inside the building.
+collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
+step
+use the Toxin Antidote##202620 |only if subzone("The Support Creche")
+|tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster. |only if subzone("The Support Creche")
+talk Volethi##200727
+turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47
+step
+talk Cataloger Coralie##201291
+turnin Snake Wrangling##73191 |goto 34.36,59.28
+step
+talk Pathfinder Jeb##200040
+accept The Scary Vault of Ur##72952 |goto 29.09,53.13
+|tip This quest appears on a rotation with six other versions of the vault.
+|tip Check back at the next daily reset for it.
+step
+talk Cataloger Wulferd##201180
+accept Authentic Authorization##74984 |goto 29.26,52.69 |or
+accept Authentic Authorization##74983 |goto 29.26,52.69 |or
+accept Authentic Authorization##74282 |goto 29.26,52.69 |or
+|tip You will only be able to accept one of these weekly quests.
+|tip Any time you open vault doors, look around for the objective of the weekly quest.
+|only if not completedq(72952)
+step
+collect Zskera Vault Key##202196 |q 72952
+|tip You will need at least one of these to open a vault door for the quest.
+|tip You can acquire these from rare chests and rare mobs all over The Forbidden Reach.
+step
+talk Pathfinder Jeb##200040
+Choose _"Let's explore Zskera Vault Ur."_
+Speak with Jeb to Enter the Vault |q 72952/1 |goto 29.09,53.13
+step
+Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
+Kill the elite
+|tip Inside the middle of the vault.
+Secure the Vault |q 72952/2 |goto 29.57,56.31
+step
+click Door
+Open the Doors with Zskera Vault Keys |q 72952/3 |goto 29.57,56.31
+step
+Click Here to Continue |confirm |q 72952
+|tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
+step
+Leave Zskera Vault: Ur |complete not subzone("Zskera Vault: Ur") |goto 28.81,49.98 |q 72952
+step
+talk Pathfinder Jeb##202218
+turnin The Scary Vault of Ur##72952 |goto 29.09,53.13
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{

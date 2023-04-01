@@ -370,6 +370,7 @@ SI.defaultDB = {
     Currency2118 = true, -- Elemental Overflow
     Currency2122 = true, -- Storm Sigil
     Currency2123 = true, -- Bloody Tokens
+    Currency2167 = true, -- Catalyst Charges
     CurrencyMax = false,
     CurrencyEarned = true,
     CurrencySortName = false,
@@ -2756,7 +2757,7 @@ end
 function SI:OnInitialize()
   local versionString = GetAddOnMetadata("SavedInstances", "version")
   --[==[@debug@
-  if versionString == "10.0.10" then
+  if versionString == "10.0.11" then
     versionString = "Dev"
   end
   --@end-debug@]==]

@@ -15973,7 +15973,7 @@ You Earned the "These Hills Sing" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Smoke Test",{
 author="support@zygorguides.com",
-description="\nDefeat Wrathion in Ny'alotha, the Waking City after defeating 10 Crackling Shards "..
+description="Defeat Wrathion in Ny'alotha, the Waking City after defeating 10 Crackling Shards "..
 "within 3 seconds of each other on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14019},
@@ -15993,7 +15993,7 @@ You Earned the "Smoke Test" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Mana Sponge",{
 author="support@zygorguides.com",
-description="\nDefeat Maut in Ny'alotha, the Waking City after defeating a Forbidden Manifestation "..
+description="Defeat Maut in Ny'alotha, the Waking City after defeating a Forbidden Manifestation "..
 "on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14008},
@@ -16014,7 +16014,7 @@ You Earned the "Mana Sponge" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Phase 3: Prophet",{
 author="support@zygorguides.com",
-description="\nDefeat the Prophet Skitra in Ny'alotha, the Waking City after defeating three Disciples "..
+description="Defeat the Prophet Skitra in Ny'alotha, the Waking City after defeating three Disciples "..
 "of the Prophet on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14037},
@@ -16033,7 +16033,7 @@ You Earned the "Phase 3: Prophet" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Buzzer Beater",{
 author="support@zygorguides.com",
-description="\nDefeat Dark Inquisitor Xanesh in Ny'alotha, the Waking City after safely eliminating a Void "..
+description="Defeat Dark Inquisitor Xanesh in Ny'alotha, the Waking City after safely eliminating a Void "..
 "Orb with less than 3 seconds remaining on Voidwoken 3 times on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14024},
@@ -16054,7 +16054,7 @@ You Earned the "Buzzer Beater" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Realizing Your Potential",{
 author="support@zygorguides.com",
-description="\nDefeat the Hivemind in Ny'alotha, the Waking City after defeating 3 Evolved Specimen on Normal "..
+description="Defeat the Hivemind in Ny'alotha, the Waking City after defeating 3 Evolved Specimen on Normal "..
 "difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14023},
@@ -16076,7 +16076,7 @@ You Earned the "Realizing Your Potential" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\You Can Pet the Dog, But...",{
 author="support@zygorguides.com",
-description="\nDefeat Shad'har the Insatiable in Ny'alotha, the Waking City after having everyone /pet him on "..
+description="Defeat Shad'har the Insatiable in Ny'alotha, the Waking City after having everyone /pet him on "..
 "Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={13990},
@@ -16095,7 +16095,7 @@ You Earned the "You Can Pet the Dog, But..." Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Temper Tantrum",{
 author="support@zygorguides.com",
-description="\nDefeat Drest'agath in Ny'alotha, the Waking City after triggering Throes of Agony twice "..
+description="Defeat Drest'agath in Ny'alotha, the Waking City after triggering Throes of Agony twice "..
 "within 60 seconds on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14026},
@@ -16116,7 +16116,7 @@ You Earned the "Temper Tantrum" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Total Annihilation",{
 author="support@zygorguides.com",
-description="\nDefeat Vexiona in Ny'alotha, the Waking City after allowing every player to be hit by "..
+description="Defeat Vexiona in Ny'alotha, the Waking City after allowing every player to be hit by "..
 "Annihilation at least 30 times on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14139},
@@ -16136,7 +16136,7 @@ You Earned the "Total Annihilation" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\How? Isn't it Obelisk?",{
 author="support@zygorguides.com",
-description="\nDefeat Ra-den in Ny'alotha, the Waking City after destroying 2 obelisks with Unstable Void on "..
+description="Defeat Ra-den in Ny'alotha, the Waking City after destroying 2 obelisks with Unstable Void on "..
 "Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={13999},
@@ -16156,7 +16156,7 @@ You Earned the "How? Isn't it Obelisk?" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Bloody Mess",{
 author="support@zygorguides.com",
-description="\nDefeat Il'gynoth, Corruption Reborn in Ny'alotha, the Waking City after defeating 10 Bloods "..
+description="Defeat Il'gynoth, Corruption Reborn in Ny'alotha, the Waking City after defeating 10 Bloods "..
 "of Ny'alotha in under 3 seconds on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14038},
@@ -16176,7 +16176,7 @@ You Earned the "Bloody Mess" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Cleansing Treatment",{
 author="support@zygorguides.com",
-description="\nDefeat the Carapace of N'Zoth in Ny'alotha, the Waking City after defeating all Synthesis "..
+description="Defeat the Carapace of N'Zoth in Ny'alotha, the Waking City after defeating all Synthesis "..
 "Growths within 10 seconds on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14147},
@@ -16195,7 +16195,7 @@ You Earned the "Cleansing Treatment" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\It's Not A Cult",{
 author="support@zygorguides.com",
-description="\nDefeat N'Zoth the Corruptor in Ny'alotha, the Waking City after all players have accepted "..
+description="Defeat N'Zoth the Corruptor in Ny'alotha, the Waking City after all players have accepted "..
 "the Gift of N'Zoth on Normal difficulty or higher.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},
 achieveid={14148},
@@ -16216,7 +16216,7 @@ You Earned the "It's Not A Cult" Achievement
 ]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Battle for Azeroth Raids\\Glory of the Ny'alotha Raider",{
 author="support@zygorguides.com",
-description="\nComplete the Ny'alotha, the Waking City raid achievements listed below:\n\nSmoke Test\nPhase 3: Prophet\n"..
+description="Complete the Ny'alotha, the Waking City raid achievements listed below:\n\nSmoke Test\nPhase 3: Prophet\n"..
 "Realizing Your Potential\nTemper Tantrum\nHow? Isn't it Obelisk?\nCleansing Treatment\nMana Sponge\nBuzzer Beater"..
 "\nYou Can Pet the Dog, But...\nTotal Annihilation\nBloody Mess\nIt's Not A Cult.",
 keywords={"Glory","of","the","Ny'alotha","Raider","Waking","City"},

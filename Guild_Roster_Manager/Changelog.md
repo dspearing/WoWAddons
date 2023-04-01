@@ -1,6 +1,60 @@
-## **VERSION 1.954 RELEASE - January 23rd 2023**
+## **VERSION 1.96 RELEASE - March 27th, 2023**
 
-* 10.0.5 DF Compatibility Release
+**NEW FEATURE**
+
+* The "Sync Users" tab will now provide more clear and updated sync information so it is more clear what is being sync'd, what isn't, and why. Please note, due to the significant rewrite, the new SyncUsers page will not be forwards compatible so people with older versions will not be able to see your sync status as being unavailable. You will be able to see the outdated users, of course. This only applies to version prior to the 1.96 release.
+
+**PENDING SYNC PROGRESS PAR HAS BEEN DELAYED TIL NEXT UPDATE -- IT IS 100% Built, but some quirks are making it not perfect so I am working on that
+
+***TO BE RELEASE NEXT BUILD***
+* Sync Progress Bar - Sync will now show your progress as a % completed. This is a rough estimation to kind of gauge the speed of your sync, based on total volume of information being sync'd. It will also update you with the details of who you are syncing with, and it will even inform you as sync has failed.
+
+    -- You can hide this sync progress window
+    -- You can re-show this window by typing `/grm sync`
+    -- If you wish to manually trigger sync, just either click the "Start Sync" button or type /grm sync again
+    -- I built an API for creating progress bars that can be used for any purpose but I plan on using it to more easily implement my future "Guild stats" feature. This API can be utilitzed by any addon dev for their own projects, however, fairly easily. This can be found in the "GRM_Stats.lua" file and can be used in conjunction with the GRM_API namespace in the "GRM_API.lua" file.
+***PENDING FEATURE NEXT BUILD***
+
+
+***QUALITY OF LIFE FEATURES***
+
+* If a player has been removed from the guild, or they quit, it will retain the information on their previous alt group. When they rejoin the guild, GRM will now re-add them to their original alt group. While this is a minor thing, guild leadership has been known to joke around and "fake" kick players on occasion. This will save the hassle of having to re-link them to their alt group when they join. Or, just an alt kicked for inactivity from a guild will now auto-be linked back.
+
+* On adding custom channels for GRM to report to, you no longer need to hit ENTER after typing. You still can, to trigger window creation, but upon losing focus from the window, either by pressing ESC or clicking something else, it will auto-trigger the creation of window, or save the changes if new chat window already exists.
+
+* Adjusted the logic on sync leadership slightly. When dealing with a decentralized database, and to cut down on the "noise" of syncing across chat, there is a "sync leader" elected behind the scenes. This sync leader becomes the centralized database that session, that holds the most current sync data for all online to sync with. It will dynamically shift as people log off and on and request sync data. It now prioritises the sync leader a little more intelligently than just the previous method of relying on who is already the sync leader. The election process is more selective. Most people will not notice any difference since this process happens strictly behind the scenes, but it IS important as sync restrictions do matter for things like ban data and so on, so it doesn't make a whole lot of sense to have a non-officer as designated "sync leader" behind the scenes when a GRM officer is currently on, for example...
+
+
+***BUG FIXES***
+
+* Fixed many sync errors that were causing it to fail. I won't go into everyone but I found quite a few.
+
+* Fixed an issue where in some cases the main data would be completely skipped from being sync.
+
+* Same with birthday data -- fixed an issue where in some cases it would skip from being sync'd
+
+* Fixed an issue where main designations were occasionally getting removed on a sync. I did find a flaw where in some circumstances the "timestamp" of the action was being changed to the current time() rather than the sync'd time. This would create a problem during sync because if the timstamp was overwritten with the current epoch time(), then the database would be showing as that being the most recent event, thus it would possibly remove the main time tag.
+
+* Fixed a sync bug that would cause sync to fail when it finally got to comparing the alt data. If you noticed the join date and promotion dates syncing fine, but the alt group and main tags not syncing, and getting a "sync failed" message, this bug fix definitely applies to you.
+
+* To improve sync efficiency, due to the heavy server throttling of data, GRM does a "pre-check" of mismatched data between the 2 players to do a cursory check if they differ so that only the differing information will be compared and sync'd, for the sake of efficiency. This is why subsequent syncs should get shorter over time as there is less to sync. There was a bug that was allowing birthday data to show as not differing between the 2 players in a pre-check, so in some cases sync would skip over syncing the birthday information, whilst still sharing the bday changes, wasting sync time. This has been fixed.
+
+* Fixed an issue where the Event window would not load because if someone was on the events list of upcoming bdays or anniversaries, and they left the guild, it was in some cases not being removed, which ultimately caused an error as it looked up information on the player in the list. They now should properly be auto-removed from the list when they are no longer in the guild.
+
+* Fixed a lua error that would occur for some people who were not able to export FORMER MEMBER lists.
+
+* Fixed a lua error that could prevent patching if you haven't patched and updated GRM in several years.
+
+* Fixed an issue on updating the database to new format would not work for some people so GRM would never load.
+
+* Fixed an issue that caused the ban list to not load properly when viewing.
+
+* Fixed an issue where the "Player not found" or "No Player name..." system message was being swalled by GRM and hidden. It was supposed to only apply when syncing and when a player goes offline, but was permanently doing so for all of those messages.
+
+
+## **VERSION 1.954 RELEASE - January 23rd, 2023**
+
+* 10.0.5 Compatibility Retail
 
 ## **VERSION 1.953 RELEASE - January 18th, 2023**
 

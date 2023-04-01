@@ -4,7 +4,7 @@ if ZGV:DoMutex("DailiesCSHADOW") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Ardenweald World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Ardenweald.",
+description="This guide will assist you in completing world quests in Ardenweald.",
 condition_suggested=function() return level >= 50 end,
 startlevel=50.0,
 worldquestzone={1550,1565},
@@ -811,7 +811,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Bastion World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Bastion.",
+description="This guide will assist you in completing world quests in Bastion.",
 condition_suggested=function() return level >= 50 end,
 startlevel=50.0,
 worldquestzone={1550,1533,1690},
@@ -1662,7 +1662,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Maldraxxus World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Maldraxxus.",
+description="This guide will assist you in completing world quests in Maldraxxus.",
 condition_suggested=function() return level >= 50 end,
 startlevel=50.0,
 worldquestzone={1550,1536},
@@ -2535,7 +2535,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\The Maw World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in The Maw.",
+description="This guide will assist you in completing world quests in The Maw.",
 condition_suggested=function() return level >= 50 end,
 startlevel=50.0,
 worldquestzone={1550,1543},
@@ -2576,7 +2576,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Revendreth World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Revendreth.",
+description="This guide will assist you in completing world quests in Revendreth.",
 condition_suggested=function() return level >= 50 end,
 startlevel=50.0,
 worldquestzone={1550,1525},
@@ -3555,7 +3555,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Zereth Mortis World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Zereth Mortis.",
+description="This guide will assist you in completing world quests in Zereth Mortis.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return completedq(64230) end,
 condition_valid_msg="You must Complete the \"Cyphers of the First Ones\" quest in the third chapter of the Zereth Mortis campaign first!",
@@ -4010,7 +4010,7 @@ label "Shadow_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Ve'nari Daily Quests (The Maw)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests in The Maw.",
+description="This guide will walk you through completing the various daily quests in The Maw.",
 condition_suggested=function() return level >= 60 end,
 patch='90001',
 },[[
@@ -4422,7 +4422,7 @@ You have completed all daily quests in The Maw
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Kyrian Covenant\\Kyrian Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests for the Kyrian Covenant.",
+description="This guide will walk you through completing the various daily quests for the Kyrian Covenant.",
 condition_suggested=function() return level >= 60 and completedq(57904) end,
 patch='90001',
 },[[
@@ -4731,7 +4731,7 @@ You have completed all covenant daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Necrolords Covenant\\Necrolord Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests for the Necrolord Covenant.",
+description="This guide will walk you through completing the various daily quests for the Necrolord Covenant.",
 condition_suggested=function() return level >= 60 and completedq(59609) end,
 patch='90001',
 },[[
@@ -5046,7 +5046,7 @@ You have completed all covenant daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Night Fae Covenant\\Night Fae Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests for the Night Fae Covenant.",
+description="This guide will walk you through completing the various daily quests for the Night Fae Covenant.",
 condition_suggested=function() return level >= 60 and completedq(62899) end,
 patch='90001',
 },[[
@@ -5359,7 +5359,7 @@ You have completed all covenant daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Night Fae Covenant\\Fungal Terminus Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing Fungal Terminus daily quests unlocked "..
+description="This guide will walk you through completing Fungal Terminus daily quests unlocked "..
 "by upgrading your covenant transport network.",
 condition_suggested=function() return level >= 60 end,
 },[[
@@ -5748,7 +5748,7 @@ You have completed all Fungal Terminus daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Venthyr Covenant\\Venthyr Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests for the Venthyr Covenant.",
+description="This guide will walk you through completing the various daily quests for the Venthyr Covenant.",
 condition_suggested=function() return level >= 60 end,
 patch='90001',
 },[[
@@ -6098,7 +6098,7 @@ You have completed all covenant daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Kyrian Covenant\\Kyrian Anima Conductor Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Kyrian Anima Conductor.",
+description="This guide will walk you through completing the various daily quests unlocked through the Kyrian Anima Conductor.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return covenantfeature("Anima Conductor") >= 1 end,
 condition_valid_msg="You must unlock the Anima Conductor using the \"Kyrian Anima Conductor\" guide first!",
@@ -6229,7 +6229,7 @@ You have completed all Anima Conductor daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Necrolords Covenant\\Necrolords Anima Conductor Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Necrolords Anima Conductor.",
+description="This guide will walk you through completing the various daily quests unlocked through the Necrolords Anima Conductor.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return covenantfeature("Anima Conductor") >= 1 end,
 condition_valid_msg="You must unlock the Anima Conductor using the \"Necrolords Anima Conductor\" guide first!",
@@ -6376,7 +6376,7 @@ You have completed all Anima Conductor daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Night Fae Covenant\\Night Fae Anima Conductor Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Night Fae Anima Conductor.",
+description="This guide will walk you through completing the various daily quests unlocked through the Night Fae Anima Conductor.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return covenantfeature("Anima Conductor") >= 1 end,
 condition_valid_msg="You must unlock the Anima Conductor using the \"Night Fae Anima Conductor\" guide first!",
@@ -6487,7 +6487,7 @@ You have completed all Anima Conductor daily quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Venthyr Covenant\\Venthyr Anima Conductor Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Venthyr Anima Conductor.",
+description="This guide will walk you through completing the various daily quests unlocked through the Venthyr Anima Conductor.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return covenantfeature("Anima Conductor") >= 1 end,
 condition_valid_msg="You must unlock the Anima Conductor using the \"Venthyr Anima Conductor\" guide first!",
@@ -6639,7 +6639,7 @@ You have completed all Anima Conductor daily quests
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Necrolords Covenant\\Necrolords Abomination Factory Weekly Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Necrolords Abomination Factory.",
+description="This guide will walk you through completing the various daily quests unlocked through the Necrolords Abomination Factory.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return completedq(60041) end,
 condition_valid_msg="You must unlock the Abomination Factory using the \"Necrolord Abomination Factory\" guide first!",
@@ -7357,7 +7357,7 @@ You have completed all available weekly quests
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Night Fae Covenant\\Night Fae Queen's Conservatory Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests unlocked through the Night Fae Queen's Conservatory.",
+description="This guide will walk you through completing the various daily quests unlocked through the Night Fae Queen's Conservatory.",
 condition_suggested=function() return level >= 60 end,
 condition_valid=function() return covenantfeature("Covenant Unique") >= 1 end,
 condition_valid_msg="You must unlock the Queen's Conservatory to use this guide!",
@@ -7477,7 +7477,7 @@ You have completed the daily Queen's Conservatory quest |only if default
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Chains of Domination\\Korthia Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests in Korthia.",
+description="This guide will walk you through completing the various daily quests in Korthia.",
 condition_suggested=function() return level == 60 and completedq(64556) end,
 patch='90100',
 },[[
@@ -8386,7 +8386,7 @@ You have completed all daily quests in Korthia
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Shadowlands (50-60)\\Eternity's End\\Zereth Mortis Daily Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests in Zereth Mortis.",
+description="This guide will walk you through completing the various daily quests in Zereth Mortis.",
 condition_suggested=function() return level == 60 and completedq(64230) end,
 patch='90200',
 },[[

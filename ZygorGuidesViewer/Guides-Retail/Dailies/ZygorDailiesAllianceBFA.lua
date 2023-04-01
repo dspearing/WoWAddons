@@ -5,7 +5,7 @@ if ZGV:DoMutex("DailiesABFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\BFA World Quest Unlock",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
+description="This guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
 "To accomplish this, you will need to earn \"Friendly\" reputation with the follwing factions:\n\n"..
 "Order of Embers\n"..
 "Proudmoore Admiralty\n"..
@@ -37,7 +37,7 @@ turnin Uniting Kul Tiras##51918 |goto Boralus/0 69.26,26.99
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Nazjatar\\Nazjatar Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests on Nazjatar.",
+description="This guide will walk you through completing the various daily quests on Nazjatar.",
 condition_suggested=function() return level == 50 end,
 },[[
 step
@@ -400,7 +400,7 @@ You have completed all Nazjatar dailies for the day
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Mechagon Island\\Mechagon Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests on Mechagon Island.",
+description="This guide will walk you through completing the various daily quests on Mechagon Island.",
 condition_suggested=function() return level == 50 and completedq(55736) end,
 },[[
 step
@@ -1378,7 +1378,7 @@ You have completed all Mechagon dailies for the day
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Mechagon Island\\Mechagon Fishing Dailies",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various Fishing daily quests on Mechagon Island.",
+description="This guide will walk you through completing the various Fishing daily quests on Mechagon Island.",
 condition_suggested=function() return level >= 50 end,
 },[[
 step
@@ -1442,7 +1442,7 @@ ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Battle Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the weely Stratholme pet battle dungeon quest.",
+description="This guide will assist you in completing the weely Stratholme pet battle dungeon quest.",
 keywords={"Pet", "Battle"},
 condition_suggested=function() return level >= 50 and completedq(54185) and completedq(56491) and not completedq(56492) end,
 condition_end=function() return completedq(56492) end,
@@ -1527,7 +1527,7 @@ turnin Pet Battle Challenge: Stratholme##56492 |goto Eastern Plaguelands/0 43.13
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Collected Tidebloom Honey",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the \"Unbeelievable Quality\" weekly "..
+description="This guide will walk you through completing the \"Unbeelievable Quality\" weekly "..
 "quest for the Honeyback Hive faction.",
 condition_suggested=function() return rep("Honeyback Harvester") == Mature and rep("Honeyback Hive") == Exalted and not completedq(57670) end,
 condition_valid=function() return rep("Honeyback Harvester") == Mature and rep("Honeyback Hive") == Exalted end,

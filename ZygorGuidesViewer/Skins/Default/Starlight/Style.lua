@@ -260,6 +260,9 @@ STYLE.NotificationPopupContentBackdrop=STYLE.SmallOpaqueBackdrop
 STYLE.NotificationPopupContentBackdropColor={ZGV.F.HTMLColor("#222222ff")}
 STYLE.NotificationPopupContentBackdropBorderColor={ZGV.F.HTMLColor("#222222ff")}
 
+STYLE.MessageWarning = {HTMLColor("#ff3300ff")}
+STYLE.MessageNotify  = {HTMLColor("#fe6100ff")}
+
 -- Guide Menu
 STYLE.GuideMenuMargin = 0 -- optional margin around whole thing, not used in starlight
 STYLE.GuideMenuHeaderFooterBackground = TRANSPARENT

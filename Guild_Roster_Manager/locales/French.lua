@@ -381,13 +381,10 @@ GRML.French = function()
     GRM_L["Initiating Sync with {name} Instead!"] = "Initialisation synchronisation avec {name} !"
     GRM_L["Sync Failed with {name}..."] = "Échec de la synchronisation avec {name}..."
     GRM_L["The Player Appears to Be Offline."] = "Le joueur semble être Hors Ligne."
-    GRM_L["Manually Syncing Data With Guildies Now... One Time Only."] = "Synchronisation manuelle des données avec les membres de guilde... Une seule fois."
     GRM_L["Syncing Data With Guildies Now..."] = "Synchronisation des données avec les membres de guilde..."
     GRM_L["(Loading screens may cause sync to fail)"] = "(Les écrans de chargement peuvent provoquer l'échec de la synchronisation)"
     GRM_L["Sync With Guildies Complete..."] = "Synchronisation avec les membres de guilde terminée..."
-    GRM_L["Manual Sync With Guildies Complete..."] = "Synchronisation manuelle avec les membres de guilde terminée..."
-    GRM_L["No Players Currently Online to Sync With. Re-Disabling Sync..."] = "Aucun joueur en ligne pour une synchronisation. Désactivation synchronisation..."
-    
+
     -- ERROR MESSAGES
     GRM_L["Notification Has Already Been Arranged..."] = "La notification a déjà été planifiée..."
     GRM_L["Failed to add alt for unknown reason. Try closing Roster window and retrying!"] = "Échec de l'enregistrement pour une raison inconnue. Merci de fermer la fenêtre et réessayer !"
@@ -734,7 +731,7 @@ GRML.French = function()
     -- R1.30
     GRM_L["Sync With {name} is Complete..."] = "Synchronisation avec {name} effectuée..."
     GRM_L["|CFFE6CC7FLeft-Click|r and drag to move this button."] = "|CFFE6CC7FClic gauche|r et tirer pour déplacer ce bouton."
-    GRM_L["|CFFE6CC7FCtrl-Left-Click|r and drag to move this button anywhere."] = "|CFFE6CC7FCtrl-Clic gauche|r et tirer pour déplacer ce bouton n'importe où."
+    GRM_L["{custom1} and drag to move this button anywhere."] = "{custom1} et tirer pour déplacer ce bouton n'importe où."
     GRM_L["MOTD:"] = "Message du jour"       -- Message Of The Day = M.O.T.D = MOTD - 
     GRM_L["minimap"] = "Minicarte"
 
@@ -809,8 +806,6 @@ GRML.French = function()
     GRM_L["|cffff0000WARNING!!!|r {num} BANNED player is currently in the guild."] = "|cffff0000AVERTISSEMENT!!!|r {num} joueurs BANNIS sont actuellement dans la guilde."        -- Singular  -- please keep the color coding... this keeps the Warning in red    
 
     -- R1.41
-    GRM_L["{num} metadata profiles are being built for people previously in the guild. The data is being requested, but this may take some time."] = "{num} profils de métadonnées en cours de création pour les joueurs précédemment dans la guilde. Les données ont été demandées mais cela peut prendre un moment."                   -- PLURAL
-    GRM_L["One metadata profile is being built for a player previously in the guild. The data is being requested, but this may take some time."] = "Profil de métadonnées en cours de création pour les joueurs précédemment dans la guilde. Les données ont été demandées mais cela peut prendre un moment."           -- SINGULAR, same line.
     GRM_L["Auto-Focus the search box"] = "Focus auto du champ de recherche à l'ouverture du journal"
     GRM_L["This will skip the first time if set to load on logon"] = "Si l'option 'Afficher au démarrage' est activée, le focus se fera à l'ouverture suivante"  -- Referring to the auto-focusing on the search box, this is a tooltip helper
     GRM_L["Please enter a valid level between 1 and {num}"] = "Merci d'entrée un niveau valide entre 1 et {num}"
@@ -1281,6 +1276,7 @@ GRML.French = function()
     GRM_L["Easily remove all Banned players still in the Guild with the Macro Tool"] = true
     GRM_L["GRM will automatically send messages to the \"{name}\" window if you remove all custom channels."] = true
     GRM_L["Multi-Channel support. Just separate with commas"] = true
+    GRM_L["Disable tooltip. Only show popout window."] = true
 
     -- R1.89
     GRM_L["GRM API Error:"] = true
@@ -1418,6 +1414,7 @@ GRML.French = function()
     GRM_L["Ctrl-Shift-Click"] = true
     GRM_L["Alt-Shiift-Click"] = true
     GRM_L["Right-Click"] = "Clic-Droit"
+    GRM_L["Ctrl-Left-Click"] = true
     
     GRM_L["{custom1} to add player to all 3 macro tool ignore lists" ] = true           -- custom1 = "Ctrl-Click"  - it is basically a macro action
     GRM_L["{custom1} to remove player from all 3 macro tool ignore lists"] = true
@@ -1577,5 +1574,38 @@ GRML.French = function()
     GRM_L["{name} matches rules for a demotion and is currently online."] = true
     GRM_L["Please choose a valid Month"] = true
     GRM_L["Warcraft was not released until 2004. Please choose a valid year."] = true
+
+    --R1.953
+    GRM_L["{name} has rejoined their original alt group."] = true
+    
+    --R1.96
+    GRM_L["Not Currentlly Syncing"] = true;
+    GRM_L["Sync with {name} Successful"] = true
+    GRM_L["Sync failed at this point:"] = true
+    GRM_L["Sync with {name} next."] = true
+    GRM_L["Sync is Currently Disabled"] = true
+    GRM_L["Sync has failed..."] = true
+    GRM_L["Start Sync"] = true
+    GRM_L["Initializing Sync"] = true
+    GRM_L["Initializing Sync. One Moment..."] = true
+    GRM_L["No Member is Available to Sync"] = true
+    GRM_L["Outgoing Ban Data Restricted"] = true
+    GRM_L["Incoming Ban Data Restricted"] = true
+    GRM_L["Sync Ok, but their rank is too low to make changes."] = true
+    GRM_L["Sync Ok, but your rank is too low to sync your changes."] = true
+    GRM_L["Their Rank is too Low. All data is restricted."] = true
+    GRM_L["Your Rank is too Low. Player is restricting all data."] = true
+    GRM_L["Sync is Currently Disabled. Do you wish to re-enable?"] = true
+    GRM_L["SYNC DATA"] = true       -- AddonUsers Tab in Options
+    GRM_L["Players"] = true
+    GRM_L["Bans"] = true
+    GRM_L["Details"] = true
+    GRM_L["Syncing all player data."] = true
+    GRM_L["Syncing all data except ban list. Player rank is too low."] = true
+    GRM_L["Syncing all data except ban list. Your rank is too low."] = true
+    GRM_L["Currently Syncing With: {name}"] = true
+    GRM_L["{num}{custom1}: Bans"] = true
+    GRM_L["Sync has begun after waiting in queue for {num} seconds"] = true
+    GRM_L["Not Determined"] = true  -- Ban List
 
 end

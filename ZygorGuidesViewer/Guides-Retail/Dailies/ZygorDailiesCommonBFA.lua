@@ -4,7 +4,7 @@ if ZGV:DoMutex("DailiesCBFA") then return end
 ZygorGuidesViewer.GuideMenuTier = "BFA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Arathi Highlands World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Arathi Highlands.",
+description="This guide will assist you in completing world quests in Arathi Highlands.",
 condition_suggested=function() return level >= 50 end,
 condition_valid=function() return level >= 50 end,
 condition_valid_msg="You have not unlocked Arathi Highlands world quests!\n"..
@@ -852,7 +852,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Darkshore World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Darkshore.",
+description="This guide will assist you in completing world quests in Darkshore.",
 condition_suggested=function() return level>=50 end,
 condition_valid=function() return level>=50 end,
 condition_valid_msg="You have not unlocked Darkshore world quests!\n"..
@@ -2496,7 +2496,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\BFA World Quest Unlock",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
+description="This guide will walk you through unlocking world quests in Kul Tiras and Zandalar.\n\n"..
 "To accomplish this, you will need to earn \"Friendly\" reputation with the follwing factions:\n\n"..
 "Order of Embers\n"..
 "Proudmoore Admiralty\n"..
@@ -2528,7 +2528,7 @@ turnin Uniting Kul Tiras##51918 |goto Boralus/0 69.26,26.99
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Drustvar World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Drustvar, Kul Tiras.",
+description="This guide will assist you in completing world quests in Drustvar, Kul Tiras.",
 condition_suggested=function() return level == 50 and completedq(51918) end,
 condition_valid=function() return level >= 50 and completedq(51918) end,
 condition_valid_msg="You have not unlocked world quests!\n"..
@@ -4373,7 +4373,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Nazmir World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Nazmir, Zandalar.",
+description="This guide will assist you in completing world quests in Nazmir, Zandalar.",
 condition_suggested=function() return level == 50 and completedq(51918) end,
 condition_valid=function() return level >= 50 and completedq(51918) end,
 condition_valid_msg="You have not unlocked world quests!\n"..
@@ -5966,7 +5966,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Mechagon Island World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Mechagon, Kul Tiras.",
+description="This guide will assist you in completing world quests in Mechagon, Kul Tiras.",
 startlevel=50.0,
 worldquestzone=1462,
 },[[
@@ -6076,7 +6076,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Nazjatar World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Nazjatar, Kul Tiras.",
+description="This guide will assist you in completing world quests in Nazjatar, Kul Tiras.",
 condition_suggested=function() return level == 50 and (completedq(56156) or completedq(55500)) end,
 startlevel=50.0,
 worldquestzone=1355,
@@ -8174,7 +8174,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Stormsong Valley World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Stormsong Valley, Kul Tiras.",
+description="This guide will assist you in completing world quests in Stormsong Valley, Kul Tiras.",
 condition_suggested=function() return level == 50 and completedq(51918) end,
 condition_valid=function() return level >= 50 and completedq(51918) end,
 condition_valid_msg="You have not unlocked world quests!\n"..
@@ -10700,7 +10700,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Tiragarde Sound World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Tiragarde Sound, Kul Tiras.",
+description="This guide will assist you in completing world quests in Tiragarde Sound, Kul Tiras.",
 condition_suggested=function() return level == 50 and completedq(51918) end,
 condition_valid=function() return level >= 50 and completedq(51918) end,
 condition_valid_msg="You have not unlocked world quests!\n"..
@@ -13268,7 +13268,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Vol'dun World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Vol'dun, Zandalar.",
+description="This guide will assist you in completing world quests in Vol'dun, Zandalar.",
 condition_suggested=function() return level == 50 and completedq(51916) end,
 condition_valid=function() return level >= 50 and completedq(51916) end,
 condition_valid_msg="You have not unlocked world quests!\n"..
@@ -15007,7 +15007,7 @@ label "BFA_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Battle for Azeroth\\Zuldazar World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Zuldazar, Zandalar.",
+description="This guide will assist you in completing world quests in Zuldazar, Zandalar.",
 condition_suggested=function() return level == 50 and completedq(51918) end,
 condition_valid=function() return level >= 50 and completedq(51918) end,
 condition_valid_msg="You have not unlocked world quests!\n"..

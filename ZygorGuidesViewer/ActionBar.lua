@@ -154,7 +154,11 @@ function ActionBar:SetActionButtonsQueued()
 
 	local goals = {}
 	
-	for gi,goal in ipairs(ZGV.CurrentStep.goals) do tinsert(goals,goal) end
+	for gi,goal in ipairs(ZGV.CurrentStep.goals) do
+		tinsert(goals,goal)
+	--	print(goals[1])
+	--	print(goals[2])
+	end
 	for si,step in ipairs(ZGV:GetStickiesAt(ZGV.CurrentStep.num)) do
 		if not step:IsComplete() then
 			for gi,goal in ipairs(step.goals) do tinsert(goals,goal) end
@@ -190,11 +194,13 @@ function ActionBar:SetActionButtonsQueued()
 				table.insert(actions_npc,{"kill",goal.targetid,goal.target})
 			elseif goal.action=="openskill" and goal.tradeskill then
 				table.insert(actions,{"openskill",goal})
+			elseif goal.action=="create" and goal.spellid then
+				table.insert(actions,{"create",goal})
 			end
 		end -- if goal visible
 	end -- for goal in step
 
-	local counter = 0
+local counter = 0
 	for _,data in ipairs(actions) do 
 		counter = counter + 1
 		ZGV.ActionBar:SetButton(data[1],data[2],data[3],counter) 
@@ -210,8 +216,7 @@ function ActionBar:SetActionButtonsQueued()
 		counter = counter + 1
 		ActionBar.TrashButton = ZGV.ActionBar:SetButton("trash",{},nil,counter)
 	end
-	ActionBar:ReanchorButtons()
-end
+	ActionBar:ReanchorButtons()end
 
 
 function ActionBar:ShowTooltip()
@@ -436,6 +441,7 @@ function ActionBar:SetButton(btype,object,fallbackname,counter)
 	local macro_texture = 134327
 
 	-- set data based on type
+
 	if btype=="item" then 
 		macro_name,_,_,_,_,_,_,_,_,macro_texture = ZGV:GetItemInfo(object)
 		macro_text = (macro_name and "#showtooltip "..macro_name.."\n" or "").."/use item:"..object
@@ -529,17 +535,35 @@ function ActionBar:SetButton(btype,object,fallbackname,counter)
 			--macro_texture = 1505955
 			macro_tooltip = L["actionbar_trash_nothing"]
 		end
+	elseif btype=="create" then
+		ActionBar.creategoal = object.num
+		macro_name = GetSpellInfo(object.spellid)
+		if  (ZGV.Professions:GetRecipe(object.spellid)) then
+			macro_text = (macro_name and "#showtooltip "..macro_name.."\n" or "").."/run ZGV.ActionBar:CreateGoaltype("..ActionBar.creategoal..")"
+			local product =  (ZGV.Professions:GetRecipe(object.spellid)).productid
+			local  _,_,_,_,_,_,_,_,_,ptexture = ZGV:GetItemInfo(product)
+			if ptexture then
+				macro_texture = ptexture
+			elseif GetSpellInfo(object.spellid) then
+				macro_texture = GetSpellInfo(object.spellid)
+			else
+				zygor_texture_index = 3
+			end
+		else
+			zygor_texture_index = 3
+			macro_text = (macro_name and "#showtooltip "..macro_name.."\n" or "").."/run ZGV.NotificationCenter:DisplayStaticToast(ZGV.L[\"notifcenter_warning_noskill\"],\"MessageWarning\")"
+		end
+		macro_tooltip = L["stepgoal_create"] :format(macro_name)
 	end
 
 	if macro_text~="" then
 		EditMacro(macro_index,nil,macro_texture,macro_text)
 	end
 
-	button:SetAttribute("type","macro")
+button:SetAttribute("type","macro")
 	button:SetAttribute("macro",macro_index)
 
-	if btype=="item" then 
-		local macro_name = macro_name or (tonumber(object) and "item:"..object) or object
+	if btype=="item" then 		local macro_name = macro_name or (tonumber(object) and "item:"..object) or object
 		SetMacroItem(macro_index,macro_name)
 	elseif btype=="spell" or btype=="petaction" then
 		local macro_name = macro_name or (tonumber(object) and "spell:"..object) or object
@@ -561,6 +585,9 @@ function ActionBar:SetButton(btype,object,fallbackname,counter)
 	return button
 end
 
+function ActionBar:CreateGoaltype(goal)
+	ZGV:PerformTradeSkillGoal(ZGV.CurrentStep.goals[goal])
+end
 
 function ActionBar:ClearBar(forcehide) 
 	if not ActionBar.Frame then return end

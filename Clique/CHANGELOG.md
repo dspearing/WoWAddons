@@ -1,6 +1,6 @@
 # Clique
 
-## [v3.4.15-release](https://github.com/jnwhiteh/Clique/tree/v3.4.15-release) (2023-03-22)
-[Full Changelog](https://github.com/jnwhiteh/Clique/compare/v3.4.14-release...v3.4.15-release) [Previous Releases](https://github.com/jnwhiteh/Clique/releases)
+## [v3.5.0-release](https://github.com/jnwhiteh/Clique/tree/v3.5.0-release) (2023-04-01)
+[Full Changelog](https://github.com/jnwhiteh/Clique/compare/v3.4.15-release...v3.5.0-release) [Previous Releases](https://github.com/jnwhiteh/Clique/releases)
 
-- Update TOC for 10.0.7  
+- Fix for 10.1.0 PTR with removal of GetAddOnMetadata (#10)  

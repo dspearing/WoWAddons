@@ -5,7 +5,7 @@ if ZGV:DoMutex("DailiesHMOP") then return end
 ZygorGuidesViewer.GuideMenuTier = "MOP"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Anglers Dailies",{
 startlevel=15,
-description="\nThis guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
+description="This guide will take you through The Anglers dailies Becoming Exalted with The Anglers allows you to purchase a companion pet, fishing poles, and water mounts.",
 },[[
 step
 You must have fishing in order to accept dailies from this faction
@@ -169,7 +169,7 @@ Click here to go back to the dailies |confirm |next "dailies"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The August Celestials Dailies",{
 completion={"quests"},
 startlevel=25,
-description="\nThis guide will take you through The August Celestials dailies Becoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
+description="This guide will take you through The August Celestials dailies Becoming Exalted with The August Celestials allows you to purchase flying mounts and armor for your character.",
 },[[
 step
 label "startaug"
@@ -594,7 +594,7 @@ Click here to return to the start of the dailies |next "startaug" |confirm
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Order of the Cloud Serpent Dailies",{
 completion={"quests",10,11,18},
 startlevel=10,
-description="\nThis guide will take you through the Order of the Cloud Serpent dailies Becoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
+description="This guide will take you through the Order of the Cloud Serpent dailies Becoming Exalted with The Order of the Cloud Serpent allows you to purchase flying mounts and designs for companion pets.",
 },[[
 step
 label "start"
@@ -1043,7 +1043,7 @@ Click here to go back to the beginning |confirm |next "start"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Shado-Pan Dailies",{
 completion={"quests"},
 startlevel=25,
-description="\nThis guide will take you through the Shado-Pan dailies Becoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
+description="This guide will take you through the Shado-Pan dailies Becoming Exalted with The Shado-Pan allows you to purchase ground mounts and armor for your character.",
 },[[
 step
 label "shado_dailies"
@@ -1571,7 +1571,7 @@ Click here to return to the start of the dailies |next "shado_dailies" |confirm
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Tillers Dailies",{
 startlevel=15,
 completion={"quests"},
-description="\nThis guide will take you through The Tillers dailies Becoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
+description="This guide will take you through The Tillers dailies Becoming Exalted with The Tillers allows you to purchase ground mounts and recipes for your character.",
 },[[
 step
 #include "Tillers_Dailies"
@@ -1580,7 +1580,7 @@ ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Go
 achieveid={7315,6546},
 patch='50004',
 startlevel=20,
-description="\nThis guide will take you through The Golden Lotus dailies Becoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
+description="This guide will take you through The Golden Lotus dailies Becoming Exalted with the Golden Lotus allows you to purchase a crowd control trinket and some armor. At Honored, you can purchase chest armor, rings, and shoulders. At Revered, you can purchase 3 ground mounts.",
 },[[
 step
 Routing to proper section |next "prequests" |only if not completedq(31511)
@@ -1719,7 +1719,7 @@ Click here to go back to the beginning of the dailies |confirm |next "dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\The Klaxxi Dailies",{
 startlevel=30,
-description="\nThis guide will take you through The Klaxxi dailies Becoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
+description="This guide will take you through The Klaxxi dailies Becoming Exalted with The Klaxxi allows you to purchase ground mounts, plans for blacksmithing, armor, and weapons for your character.",
 },[[
 step
 This guide requires that you have completed all of the quests in the Dread Wastes
@@ -2175,7 +2175,7 @@ Click here to return to the beginning of the dailies |confirm |next "klaxxi star
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\Pandaria Cooking Dailies",{
 completion={"quests"},
 startlevel=15,
-description="\nThis guide will take you through the Cooking dailies",
+description="This guide will take you through the Cooking dailies",
 },[[
 step
 label "start"
@@ -2189,26 +2189,26 @@ label "cookday"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\Dominance Offensive Dailies",{
 startlevel=15,
-description="\nThis guide will take you through The Dominance Offensive dailies Becoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
+description="This guide will take you through The Dominance Offensive dailies Becoming Exalted with the Dominance Offensive allows you to purchase an epic flying mount, epic armor, and battle pets for your character.",
 },[[
 #include "Dominance_Offensive"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\Beast Master Dailies (Dominance Offensive)",{
 startlevel=15,
-description="\nThis guide will take you through the bonus Dominance Offensive Dailies.",
+description="This guide will take you through the bonus Dominance Offensive Dailies.",
 },[[
 #include "Sturdy_Traps"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\Sunreaver Onslaught Dailies",{
 startlevel=32,
-description="\nThis guide will take you through the Sunreaver Onslaught Dailies.",
+description="This guide will take you through the Sunreaver Onslaught Dailies.",
 },[[
 step
 #include "Sunreavers_dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Mists of Pandaria Dailies\\Timeless Isle Dailies",{
 startlevel=30,
-description="\nThis guide will help you complete the dailies on the Timeless Isle. Completing these dailies awards you with Timeless Coins.",
+description="This guide will help you complete the dailies on the Timeless Isle. Completing these dailies awards you with Timeless Coins.",
 },[[
 step
 Routing to proper section |next "prequests" |only if not completedq(33333)

@@ -4,7 +4,7 @@ if ZGV:DoMutex("DailiesCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Azure Span World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in The Azure Span.",
+description="This guide will assist you in completing world quests in The Azure Span.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2024},
@@ -230,6 +230,14 @@ click Infused Glacier Sample+
 |tip Use the handholds to move around the glacier and excavate samples.
 |tip Glacier samples can be found near handholds on both sides of the waterfall.
 Excavate #8# Infused Glacier Samples from the Ice |q 70653/3 |goto 48.41,37.55
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74835
+accept Enok the Stinky##74835 |goto The Azure Span/0 23.41,53.56
+|tip You will accept this quest automatically.
+step
+clicknpc Enok the Stinky##202440
+Defeat Enok the Stinky in a Pet Battle |q 74835/1 |goto 23.41,53.56
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70440
@@ -631,7 +639,6 @@ step
 label quest-73148
 accept Combustible Vegetation##73148 |goto The Forbidden Reach/5 13.09,53.71
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Wildfire##200688
 |tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
@@ -643,13 +650,58 @@ step
 label quest-73146
 accept Cutting Wind##73146 |goto The Forbidden Reach/5 18.34,13.24
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Vortex##200685
 |tip This NPC gains power for each of the 7 nearby Storm-Touched Swoglets.
 |tip Defeating these mobs makes Vortex easier to defeat.
 |tip You can track them on your minimap with Track Pets.
 Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73083
+accept Dragonrider Racing - Caldera Coaster##73083 |goto The Forbidden Reach/5 41.36,14.55
+|tip You will accept this quest automatically.
+step
+talk Bronze Timekeeper##200316
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398228 |goto 41.36,14.55 |q 73083
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 41.34,14.77 |q 73083
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73083/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73084
+accept Dragonrider Racing - Forbidden Reach Rush##73084 |goto The Forbidden Reach/5 49.42,60.05
+|tip You will accept this quest automatically.
+step
+talk Bronze Timekeeper##200417
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398326 |goto 49.42,60.05 |q 73084
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 49.42,59.88 |q 73084
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73084/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73079
@@ -737,7 +789,6 @@ step
 label quest-73147
 accept Shifting Ground##73147 |goto The Forbidden Reach/5 67.30,12.26
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Tremblor##197447
 |tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
@@ -762,7 +813,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Ohn'ahran Plains.",
+description="This guide will assist you in completing world quests in Ohn'ahran Plains.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2023},
@@ -1290,7 +1341,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Thaldraszus World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in Thaldraszus.",
+description="This guide will assist you in completing world quests in Thaldraszus.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2025,2085},
@@ -1832,7 +1883,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Waking Shores World Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing world quests in The Waking Shores.",
+description="This guide will assist you in completing world quests in The Waking Shores.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2022},
@@ -2656,7 +2707,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Dragonscale Expedition\\Dragonscale Basecamp Weekly Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various weekly Wanted quests in Dragonscale Basecamp.",
+description="This guide will walk you through completing the various weekly Wanted quests in Dragonscale Basecamp.",
 condition_suggested=function() return factionrenown(2507) < 25 end,
 patch='100002',
 },[[
@@ -2773,7 +2824,7 @@ You have completed all weekly quests in the Dragonscale Basecamp
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Grimtusk's fishing location.",
+description="This guide will walk you through completing the various daily quests at the Grimtusk's fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2024,7266) end,
 startlevel=62,
 areapoiid=7266,
@@ -2868,7 +2919,7 @@ You have completed the available daily quests at the Grimtusk's fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\River Mouth Fishing Hole",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the River Mouth fishing location.",
+description="This guide will walk you through completing the various daily quests at the River Mouth fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2022,7086) end,
 startlevel=62,
 areapoiid=7086,
@@ -2960,7 +3011,7 @@ You have completed the available daily quests at the River Mouth fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Tyrhold Fishing Hole",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Tyrhold fishing location.",
+description="This guide will walk you through completing the various daily quests at the Tyrhold fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2025,7271) end,
 startlevel=62,
 areapoiid=7271,
@@ -3054,7 +3105,7 @@ You have completed the available daily quests at the Tyrhold fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Roaring Dragonspring Fishing Hole",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Roaring Dragonspring fishing location.",
+description="This guide will walk you through completing the various daily quests at the Roaring Dragonspring fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2023,7270) end,
 startlevel=62,
 areapoiid=7270,
@@ -3157,7 +3208,7 @@ You have completed the available daily quests at the Roaring Dragonspring fishin
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Rusza'thar Reach Aylaag Outpost location.",
+description="This guide will walk you through completing the various daily quests at the Rusza'thar Reach Aylaag Outpost location.",
 condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7102) end,
 startlevel=62,
 areapoiid=7102,
@@ -3264,7 +3315,7 @@ Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide 
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Pinewood Post Aylaag Outpost location.",
+description="This guide will walk you through completing the various daily quests at the Pinewood Post Aylaag Outpost location.",
 condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7101) end,
 startlevel=62,
 areapoiid=7101,
@@ -3395,7 +3446,7 @@ Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide 
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Eaglewatch Outpost Aylaag Outpost location.",
+description="This guide will walk you through completing the various daily quests at the Eaglewatch Outpost Aylaag Outpost location.",
 condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7103) end,
 startlevel=62,
 areapoiid=7103,
@@ -3523,7 +3574,7 @@ Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |conf
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various weekly quests in the Obsidian Citadel \n"..
+description="This guide will walk you through completing the various weekly quests in the Obsidian Citadel \n"..
 "for Sabellian and Wrathion.",
 condition_suggested=function() return level == 70 end,
 startlevel=70,
@@ -3870,7 +3921,7 @@ You have completed all weekly quests the Obsidian Citadel
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Siege on Dragonbane Keep",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Siege on Dragonbane Keep \n"..
+description="This guide will walk you through completing the Siege on Dragonbane Keep \n"..
 "in The Waking Shores.",
 condition_suggested=function() return level == 70 end,
 areapoiid=7267,
@@ -3933,7 +3984,7 @@ Wait for the Assault to Begin Assembling |complete areapoitime(7104) == 0 |next 
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\A Cataloger's Paradise",{
 author="support@zygorguides.com",
-description="\nUnlock cataloging World Quests with the Dragonscale Expedition.",
+description="Unlock cataloging World Quests with the Dragonscale Expedition.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 8 and not achieved(16758) end,
 condition_end=function() return completedq(65486) end,
 startlevel=60,
@@ -3988,7 +4039,7 @@ turnin Picture Perfect##65486 |goto 49.88,68.42
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\A Climber's Calling",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through unlocking the Climbing ability.",
+description="This guide will walk you through unlocking the Climbing ability.",
 condition_suggested=function() return level == 60 and factionrenown(2507) >= 6 and not completedq(65421) end,
 condition_end=function() return completedq(65421) end,
 startlevel=60,
@@ -4042,7 +4093,7 @@ achieve Which Knot Was It Again?##16624
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Dragon Isles Emissary",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the questline to unlock a weekly renown quest.",
+description="This guide will walk you through completing the questline to unlock a weekly renown quest.",
 startlevel=60,
 patch='100002',
 },[[
@@ -4216,6 +4267,7 @@ condition_valid_msg="You must complete the \"An Eclectic Accord,\" \"Stemming th
 patch='100007',
 },[[
 step
+label "Choose_Envoy"
 click Envoy Charter
 |tip Choose your envoy for the day.
 |tip Each day you can select an envoy and gain +10% renown gained for that day.
@@ -4383,6 +4435,21 @@ Complete the Caldera Climb |q 75237/2 |goto 41.36,14.55
 |tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
 |only if haveq(75237) or completedq(75237)
 step
+talk Cataloger Daela##200566
+turnin Filming the Caldera##74389 |goto 34.32,59.98 |only if haveq(74389) or completedq(74389)
+turnin Spelunking the Den##74118 |goto 34.32,59.98 |only if haveq(74118) or completedq(74118)
+|only if haveq(74389,74118) or completedq(74389,74118)
+step
+talk Turik##200562
+turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or completedq(74391)
+turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
+|only if haveq(74391,74119) or completedq(74391,74119)
+step
+talk Storykeeper Ashekh##200564
+turnin Rare Prey##74117 |goto 34.07,59.96 |only if haveq(74117) or completedq(74117)
+turnin Brutal Prey##74390 |goto 34.07,59.96 |only if haveq(74390) or completedq(74390)
+|only if haveq(74117,74390) or completedq(74117,74390)
+step
 talk Kraxxus##200563
 turnin Reach South##75263 |goto 34.00,59.81 |only if haveq(75263) or completedq(75263)
 turnin Reach South##74392 |goto 34.00,59.81 |only if haveq(74392) or completedq(74392)
@@ -4390,26 +4457,15 @@ turnin Reach Center##75261 |goto 34.00,59.81 |only if haveq(75261) or completedq
 turnin Reach North##75237 |goto 34.00,59.81 |only if haveq(75237) or completedq(75237)
 |only if haveq(75263,74392,75261,75237) or completedq(75263,74392,75261,75237)
 step
-talk Cataloger Daela##200566
-turnin Filming the Caldera##74389 |goto 34.32,59.98 |only if haveq(74389) or completedq(74389)
-turnin Spelunking the Den##74118 |goto 34.32,59.98 |only if haveq(74118) or completedq(74118)
-|only if haveq(74389,74118) or completedq(74389,74118)
-step
-talk Storykeeper Ashekh##200564
-turnin Rare Prey##74117 |goto 34.07,59.96 |only if haveq(74117) or completedq(74117)
-turnin Brutal Prey##74390 |goto 34.07,59.96 |only if haveq(74390) or completedq(74390)
-|only if haveq(74117,74390) or completedq(74117,74390)
-step
-talk Turik##200562
-turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or completedq(74391)
-turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
-|only if haveq(74391,74119) or completedq(74391,74119)
+You have completed the available envoy quests
+|tip This guide will reset when more become available.
+'|complete questactive(75263,74392,75261,75237,74389,74118,74117,74390,74391,74119) |next "Choose_Envoy"
 ]])
 ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
+description="This guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
 startlevel=60,
 areapoiid=7412,
 areapoitype="Fishing Hole",

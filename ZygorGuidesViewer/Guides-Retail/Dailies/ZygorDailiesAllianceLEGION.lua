@@ -14465,7 +14465,7 @@ label "Legion_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Brawler's Guild\\Legion Brawler's Guild", {
 startlevel=45,
-description="\nThis guide will help you achieve rank 8 in the Brawler's Guild.",
+description="This guide will help you achieve rank 8 in the Brawler's Guild.",
 },[[
 step
 kill Helarjar Priest##111326+, Helarjar Mystcaller##111325+, Helarjar Soulhunter##111328+
@@ -14978,7 +14978,7 @@ Earn the Achievement "King of the Guild" |achieve 11565
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Legion\\The Originals",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through killing Azuregos, Lord Kazzak, and a Dragon of Nightmare for the daily quest \"The Originals\". This quest is available from November 16 to November 30.",
+description="This guide will walk you through killing Azuregos, Lord Kazzak, and a Dragon of Nightmare for the daily quest \"The Originals\". This quest is available from November 16 to November 30.",
 keywords={"Azuregos","Lord","Kazzak","Dragons","of","Nightmare","Lethon","Taerar","Ysondre","Emeriss"},
 condition_valid=function() return level >= 30 end,
 condition_valid_msg="You must be at least level 30 to complete this guide.",
