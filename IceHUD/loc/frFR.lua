@@ -436,6 +436,8 @@ L["Hide Blizzard Frame"] = "Hide Blizzard Frame"
 --[[Translation missing --]]
 L["Hide Blizzard Party"] = "Hide Blizzard Party"
 --[[Translation missing --]]
+L["Hide during cataloging"] = "Hide during cataloging"
+--[[Translation missing --]]
 L["Hide during pet battles"] = "Hide during pet battles"
 --[[Translation missing --]]
 L["Hide during shell game"] = "Hide during shell game"
@@ -1149,6 +1151,8 @@ L["This will hide the entire mod during pet battles."] = "This will hide the ent
 L["This will hide the entire mod when interacting with a barbershop."] = "This will hide the entire mod when interacting with a barbershop."
 --[[Translation missing --]]
 L["This will hide the entire mod when playing the BfA Tortollan shell game world quest."] = "This will hide the entire mod when playing the BfA Tortollan shell game world quest."
+--[[Translation missing --]]
+L["This will hide the entire mod when using the Dragonflight Cataloging camera."] = "This will hide the entire mod when using the Dragonflight Cataloging camera."
 --[[Translation missing --]]
 L["This will override the global bar texture setting for this bar with the one specified below."] = "This will override the global bar texture setting for this bar with the one specified below."
 --[[Translation missing --]]

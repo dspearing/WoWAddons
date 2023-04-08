@@ -340,6 +340,8 @@ L["Height"] = "Высота"
 L["Hide Blizzard Buffs"] = "Скрыть стандартные баффы"
 L["Hide Blizzard Frame"] = "Скрыть стандартный фрейм"
 L["Hide Blizzard Party"] = "Скрыть стандартный фрейм группы"
+--[[Translation missing --]]
+L["Hide during cataloging"] = "Hide during cataloging"
 L["Hide during pet battles"] = "Скрыть во время битв питомцев"
 --[[Translation missing --]]
 L["Hide during shell game"] = "Hide during shell game"
@@ -813,6 +815,8 @@ L["This will hide the entire mod during pet battles."] = "Это позволи�
 L["This will hide the entire mod when interacting with a barbershop."] = "Это позволит скрыть весь мод при взаимодействии с парикмахерской."
 --[[Translation missing --]]
 L["This will hide the entire mod when playing the BfA Tortollan shell game world quest."] = "This will hide the entire mod when playing the BfA Tortollan shell game world quest."
+--[[Translation missing --]]
+L["This will hide the entire mod when using the Dragonflight Cataloging camera."] = "This will hide the entire mod when using the Dragonflight Cataloging camera."
 L["This will override the global bar texture setting for this bar with the one specified below."] = "Переопределяет глобальное значение стиля полосы на значение указанное ниже"
 L["This will override the global bar texture setting for this bar."] = "Переназначает глобальную настройку текстуры для полосы"
 L["This will remove the marker selected in the 'edit marker' box. This action is irreversible."] = "Удаляет маркер, выбранный в поле 'Редактирование маркера'. Это действие необратимо"

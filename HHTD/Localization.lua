@@ -3,7 +3,7 @@ H.H.T.D. World of Warcraft Add-on
 Copyright (c) 2009-2018 by John Wellesz (hhtd@2072productions.com)
 All rights reserved
 
-Version 2.4.10
+Version 2.4.11
 
 In World of Warcraft healers have to die. This is a cruel truth that you're
 taught very early in the game. This add-on helps you influence this unfortunate
@@ -648,16 +648,11 @@ L["NPC"] = "NPC"
 --[[Translation missing --]]
 L["NPH"] = "Nameplate Hooker"
 L["NPH_DESC"] = "Este módulo añade una cruz roja a las placas de nombre de los sanadores enemigos."
---[[Translation missing --]]
-L["OPT_A_CHAT_WARNING"] = "Chat Warning"
---[[Translation missing --]]
-L["OPT_A_CHAT_WARNING_DESC"] = "Display a chat warning when a friendly healer is under attack"
---[[Translation missing --]]
-L["OPT_A_HEALER_PROTECTION"] = "Healer protection settings"
---[[Translation missing --]]
-L["OPT_A_HUD_WARNING"] = "HUD Warning"
---[[Translation missing --]]
-L["OPT_A_HUD_WARNING_DESC"] = "Display a heads-up warning when a friendly healer is under attack"
+L["OPT_A_CHAT_WARNING"] = "Aviso de chat"
+L["OPT_A_CHAT_WARNING_DESC"] = "Mostrar un aviso de chat cuando un healer amistoso está siendo atacado"
+L["OPT_A_HEALER_PROTECTION"] = "Ajustes de protección del healer"
+L["OPT_A_HUD_WARNING"] = "Advertencia HUD"
+L["OPT_A_HUD_WARNING_DESC"] = "Muestra un aviso emergente cuando un healer amistoso está siendo atacado."
 --[[Translation missing --]]
 L["OPT_ALWAYS_SHOW_NAMEPLATES"] = "Always show nameplates"
 --[[Translation missing --]]

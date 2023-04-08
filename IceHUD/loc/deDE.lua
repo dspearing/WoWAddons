@@ -325,6 +325,8 @@ L["Height"] = "Höhe"
 L["Hide Blizzard Buffs"] = "Verstecke Blizzard Buffs"
 L["Hide Blizzard Frame"] = "Verstecke Blizzard Rahmen"
 L["Hide Blizzard Party"] = "Verstecke Blizzard Gruppe"
+--[[Translation missing --]]
+L["Hide during cataloging"] = "Hide during cataloging"
 L["Hide during pet battles"] = "Verstecke während Haustierkämpfen"
 L["Hide during shell game"] = "Verstecke im Verstohlenheits Modus"
 L["Hide in barbershops"] = "Beim Barbier verstecken"
@@ -749,6 +751,8 @@ L["This will hide the entire mod during pet battles."] = "Diese wird das gesamte
 L["This will hide the entire mod when interacting with a barbershop."] = "Versteckt die Mod beim Barbier"
 --[[Translation missing --]]
 L["This will hide the entire mod when playing the BfA Tortollan shell game world quest."] = "This will hide the entire mod when playing the BfA Tortollan shell game world quest."
+--[[Translation missing --]]
+L["This will hide the entire mod when using the Dragonflight Cataloging camera."] = "This will hide the entire mod when using the Dragonflight Cataloging camera."
 L["This will override the global bar texture setting for this bar with the one specified below."] = "Dies wird die Globale Einstellung der Leisten Textur für diese Leiste mit der darunter Spezifizierten überschreiben."
 L["This will override the global bar texture setting for this bar."] = "Dies wird die Globale Einstellunge für diese Leiste überschreiben."
 L["This will remove the marker selected in the 'edit marker' box. This action is irreversible."] = "Dies wird die ausgewählte Makierung entfernen. Dies ist nicht rückgäng zu machen"

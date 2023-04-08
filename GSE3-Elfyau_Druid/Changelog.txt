@@ -1,9 +1,9 @@
 0.1 - Initial Version GSE3-Elfyau_Druid_Macro_set
 0.01 - Updated and reworked Feral Druid
-0.02 - Updated TOC to reflect new patch
+0.02 - Updated TOC to reflect the new patch
 0.03 - Updated TOC to reflect new patch Macro updates coming soon
 0.04 - Updated Feral Druid Macro
-0.05 - Updated Gaurdian and Restoration Druid Macros
+0.05 - Updated Guardian and Restoration Druid Macros
 0.06 - Updated TOC and Balance Druid Macro
 0.07 - Updated Feral Druid Macro
 0.08 - Updated TOC
@@ -19,3 +19,5 @@
 0.18 - Updated Feral Talents
 0.19 - Updated Feral Talents - Fixed
 0.20 - Updated Guardian Druid
+0.21 - Updated TOC
+0.22 - Updated Restoration Druid

@@ -1,4 +1,4 @@
--- Generated from CurseForge on Sat Apr  1 08:47:52 UTC 2023
+-- Generated from CurseForge on Sat Apr  8 08:17:30 UTC 2023
 local ns = select(2, ...) ---@type ns @The addon namespace.
 
 if ns:IsSameLocale("ruRU") then

@@ -1,4 +1,4 @@
-## Interface: 100005
+## Interface: 100007
 ## Title: |cff0000FFGSE:|r |cFF00D1FFElfyau Druid Macros|r
 ## Notes: GSE3 Elfyau Druid Macros
 ## Author: Elfyau

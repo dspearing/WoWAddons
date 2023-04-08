@@ -319,6 +319,8 @@ L["Height"] = "높이"
 L["Hide Blizzard Buffs"] = "블리자드 버프 숨김"
 L["Hide Blizzard Frame"] = "블리자드 프레임 숨김"
 L["Hide Blizzard Party"] = "블리자드 파티 프레임  숨김"
+--[[Translation missing --]]
+L["Hide during cataloging"] = "Hide during cataloging"
 L["Hide during pet battles"] = "애완동물 대전 중 숨김"
 L["Hide during shell game"] = "껍질놀이 중 숨김"
 L["Hide in barbershops"] = "미용실에서 숨김"
@@ -731,6 +733,8 @@ L[ [=[This will fade the graphical representation from the min color specified t
 L["This will hide the entire mod during pet battles."] = "애완동물 대전 중에는 전체 모드를 숨깁니다."
 L["This will hide the entire mod when interacting with a barbershop."] = "미용실 이용 중에는 전체 모드를 숨깁니다."
 L["This will hide the entire mod when playing the BfA Tortollan shell game world quest."] = "'격적의 아제로스' 토르톨란 껍질 놀이 전역 퀘스트를 할 때 전체 모드를 숨깁니다."
+--[[Translation missing --]]
+L["This will hide the entire mod when using the Dragonflight Cataloging camera."] = "This will hide the entire mod when using the Dragonflight Cataloging camera."
 L["This will override the global bar texture setting for this bar with the one specified below."] = "이 바의 전역 바 질감 설정이 아래에 지정된 것보다 우선합니다."
 L["This will override the global bar texture setting for this bar."] = "이 바에 대한 전역 바 질감 설정을 재정의합니다."
 L["This will remove the marker selected in the 'edit marker' box. This action is irreversible."] = "'표식 편집' 상자에서 선택한 표식이 제거됩니다. 이 행동은 돌이킬 수 없습니다."
