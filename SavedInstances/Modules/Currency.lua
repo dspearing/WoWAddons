@@ -1,4 +1,4 @@
-local SI, L = unpack(select(2, ...))
+local SI, L = unpack((select(2, ...)))
 local Module = SI:NewModule('Currency', 'AceEvent-3.0', 'AceTimer-3.0', 'AceBucket-3.0')
 
 -- Lua functions
@@ -226,6 +226,9 @@ function Module:UpdateCurrency()
           ci.covenant = ci.covenant or {}
           ci.covenant[covenantID] = ci.amount
         end
+      elseif idx == 2167 then -- Catalyst Charges
+        ci.weeklyMax = nil
+        ci.earnedThisWeek = nil
       end
       -- don't store useless info
       if ci.weeklyMax == 0 then ci.weeklyMax = nil end

@@ -9449,9 +9449,6 @@ step
 Earn the "Blushing Bride" Achievement |achieve 2576
 |tip Use the kiss emote on a player wearing an Elegant Dress.
 |tip The Elegant Dress looks like a long pink dress when worn.
-step
-_Congratulations!_
-You Earned the "Blushing Bride" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocoholic",{
 author="support@zygorguides.com",
@@ -9469,9 +9466,6 @@ collect 100 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
 step
 use the Noblegarden Chocolate##44791+
 Eat #100# Noblegarden Chocolates |achieve 2418
-step
-_Congratulations!_
-You Earned the "Chocoholic" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocolate Lover",{
 author="support@zygorguides.com",
@@ -9489,9 +9483,6 @@ collect 25 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
 step
 use the Noblegarden Chocolate##44791+
 Eat #25# Noblegarden Chocolates |achieve 2417
-step
-_Congratulations!_
-You Earned the "Chocolate Lover" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Desert Rose",{
 author="support@zygorguides.com",
@@ -9509,36 +9500,29 @@ collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
 '|complete achieved(2436) |or
 step
 talk Noblegarden Vendor##32836
-buy 1 Spring Robes##44800 |goto 54.11,50.82 |or
+buy 1 Spring Florist's Pouch##188694 |goto 54.11,50.82 |or
 '|complete achieved(2436) |or
 step
-Equip the Spring Robes |equipped Spring Robes##44800 |or
+use the Spring Florist's Pouch##188694
+Learn the Spring Florist's Pouch Toy |toy Spring Florist's Pouch##188694 |or
 '|complete achieved(2436) |or
 step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in the Badlands |achieve 2436/1 |goto Badlands/0 21.71,57.73
 step
-talk Zidormi##128607
-|tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
-Ask her _"Can you show me what Silithus was like before the Wound in the World?"_
-Travel to the Past |complete ZGV.InPhase('Old Silithus') |goto Silithus/0 78.93,21.97
+use the Spring Florist's Pouch##188694
+Plant a Flower in Silithus |achieve 2436/3 |goto Silithus/0 78.93,21.97
 step
-use Spring Robes##44800
-Plant a Flower in Silithus |achieve 2436/3 |goto 78.93,21.97
-step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in Tanaris |achieve 2436/4 |goto Tanaris/0 51.38,29.43
 step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles/0 79.09,71.89
 step
-use the Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in the Desolace |achieve 2436/2 |goto Desolace/0 64.67,10.44
 step
 Earn the "Desert Rose" Achievement |achieve 2436
-step
-_Congratulations!_
-You Earned the "Desert Rose" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion",{
 author="support@zygorguides.com",
@@ -9556,9 +9540,6 @@ collect 1 Elegant Dress##151806 |achieve 249 |goto Dun Morogh/0 53.51,50.84 |or
 '|complete achieved(249) |or
 step
 Earn the "Dressed for the Occasion" Achievement |achieve 249
-step
-_Congratulations!_
-You Earned the "Dressed for the Occasion" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Hard Boiled",{
 author="support@zygorguides.com",
@@ -9583,9 +9564,6 @@ step
 Earn the "Hard Boiled" Achievement |achieve 2416 |goto Un'Goro Crater/0 35.74,54.21
 |tip Avoid enemies, as being hit will cause you to lose your disguise.
 |tip Stand in this spot until you lay an egg.
-step
-_Congratulations!_
-You Earned the "Hard Boiled" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\I Found One!",{
 author="support@zygorguides.com",
@@ -9597,13 +9575,10 @@ patch='30101',
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
-collect 1 Brightly Colored Egg##113768 |achieve 2676 |goto Dun Morogh/0 53.51,50.84 |or
+collect 1 Brightly Colored Egg##45072 |achieve 2676 |goto Dun Morogh/0 53.51,50.84 |or
 '|complete achieved(2676) |or
 step
 Earn the "I Found One!" Achievement |achieve 2676
-step
-_Congratulations!_
-You Earned the "I Found One!" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Noble Garden",{
 author="support@zygorguides.com",
@@ -9625,13 +9600,10 @@ buy 1 Noblegarden Egg##44818 |goto 43.04,65.32 |or
 step
 use Noblegarden Egg##44818
 Earn the "Noble Garden" Achievement |achieve 2421 |goto Stormwind City/0 72.99,89.93
-step
-_Congratulations!_
-You Earned the "Noble Garden" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker",{
 author="support@zygorguides.com",
-description="\nUse Spring Flowers to place rabbit ears upon players of at least 10th level of the following races:\n\n"..
+description="\nUse Spring Flowers to place rabbit ears upon players of at least 20th level of the following races:\n\n"..
 "Blood Elf\nDraenei\nDwarf\nGnome\nGoblin\nHuman\nNight Elf\nOrc\nTauren\nTroll\nUndead\nWorgen",
 condition_suggested=function() return isevent('Noblegarden') end,
 achieveid={2422},
@@ -9668,9 +9640,6 @@ Place Bunny Ears on an Undead |achieve 2422/11
 Place Bunny Ears on a Worgen |achieve 2422/12
 step
 Earn the "Shake Your Bunny-Maker" Achievement |achieve 2422
-step
-_Congratulations!_
-You Earned the "Shake Your Bunny-Maker" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Spring Fling",{
 author="support@zygorguides.com",
@@ -9692,7 +9661,7 @@ buy 1 Spring Rabbit's Foot##44794 |goto 54.11,50.82 |or
 '|complete achieved(2419) |or
 step
 use the Spring Rabbit's Foot##44794
-Learn the "Spring Rabbit" Battle Pet |learnpet 61725 |or
+Learn the "Spring Rabbit" Battle Pet |learnpet Spring Rabbit##200 |or
 '|complete achieved(2419) |or
 step
 Find Your Spring Rabbit Another to Love in Kharanos |achieve 2419/4 |goto 53.49,50.85
@@ -9705,6 +9674,10 @@ Find Your Spring Rabbit Another to Love in Goldshire |achieve 2419/3 |goto Elwyn
 |tip Spring Rabbits are white with brown spots.
 |tip Walk near the other player's rabbit to get credit.
 step
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') or achieved(2419) |goto Darkshore/0 48.86,24.46
+step
 Find Your Spring Rabbit Another to Love in Dolanaar |achieve 2419/2 |goto Teldrassil/0 55.45,50.42
 |tip Summon your Spring Rabbit and find another player who has one summoned.
 |tip Spring Rabbits are white with brown spots.
@@ -9716,9 +9689,6 @@ Find Your Spring Rabbit Another to Love in Azure Watch |achieve 2419/1 |goto Azu
 |tip Walk near the other player's rabbit to get credit.
 step
 Earn the "Spring Fling" Achievement |achieve 2419
-step
-_Congratulations!_
-You Earned the "Spring Fling" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest",{
 author="support@zygorguides.com",
@@ -9743,9 +9713,6 @@ collect 1 Black Tuxedo Pants##151804 |achieve 248/2 |goto 53.51,50.84 |or
 '|complete achieved(248) |or
 step
 Earn the "Sunday's Finest" Achievement |achieve 248
-step
-_Congratulations!_
-You Earned the "Sunday's Finest" Achievement.
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests",{
 author="support@zygorguides.com",

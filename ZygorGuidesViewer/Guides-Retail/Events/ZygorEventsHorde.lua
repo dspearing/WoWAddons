@@ -9599,22 +9599,23 @@ condition_suggested=function() return isevent('Noblegarden') end,
 condition_end=function() return completedq(13503) end,
 },[[
 step
-talk Tauren Commoner##19176
-accept Spring Gatherers##13483 |goto Thunder Bluff/0 40.85,56.12
+talk Orc Commoner##19175
+accept Spring Gatherers##13483 |goto Orgrimmar/1 51.55,75.14
 step
 talk Spring Gatherer##32798
-turnin Spring Gatherers##13483 |goto Mulgore/0 46.93,59.53
+turnin Spring Gatherers##13483 |goto Durotar/0 51.82,42.07
 step
 talk Noblegarden Merchant##32837
-accept A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 47.11,59.89
+accept A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 51.90,41.86
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 10 Noblegarden Chocolate##44791 |q 13503/1 |goto 47.35,59.19
+collect 10 Noblegarden Chocolate##44791 |q 13503/1 |goto 52.58,42.81
 step
 talk Noblegarden Merchant##32837
-turnin A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 47.11,59.89
+turnin A Tisket, a Tasket, a Noblegarden Basket##13503 |goto 51.90,41.86
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Noblegarden Dailies",{
 author="support@zygorguides.com",
@@ -9622,21 +9623,24 @@ condition_suggested=function() return isevent('Noblegarden') end,
 description="\nThis guide section will walk you through completing the dailies for the Noblegarden event.",
 },[[
 step
-label "Begin_Daily_Quests"
-talk Tauren Commoner##19176
-accept Spring Gatherers##13483 |goto Thunder Bluff/0 40.85,56.12
+talk Orc Commoner##19175
+accept Spring Gatherers##13483 |goto Orgrimmar/1 51.55,75.14
 step
 talk Spring Gatherer##32798
-turnin Spring Gatherers##13483 |goto Mulgore/0 46.93,59.53
-accept The Great Egg Hunt##13479 |goto 46.93,59.53
+turnin Spring Gatherers##13483 |goto Durotar/0 51.82,42.07
+step
+label "Begin_Daily_Quests"
+talk Spring Gatherer##32798
+accept The Great Egg Hunt##13479 |goto 51.82,42.07
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 20 Brightly Colored Shell Fragment##44806 |q 13479/1 |goto 47.35,59.19
+collect 20 Brightly Colored Shell Fragment##44806 |q 13479/1 |goto 52.58,42.81
 step
 talk Spring Gatherer##32798
-turnin The Great Egg Hunt##13479 |goto 46.93,59.53
+turnin The Great Egg Hunt##13479 |goto 51.82,42.07
 step
 You have completed all Noblegarden daily quests
 |tip This guide will reset when more become available.
@@ -9653,16 +9657,17 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 50 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2576) |or
 step
 talk Noblegarden Merchant##32837
-buy 1 Black Tuxedo Pants##151804 |goto 47.11,59.89 |or
+buy 1 Black Tuxedo Pants##151804 |goto 51.90,41.86 |or
 '|complete achieved(2576) |or
 step
 talk Noblegarden Merchant##32837
-buy 1 White Tuxedo Shirt##6833 |goto 47.11,59.89 |or
+buy 1 White Tuxedo Shirt##6833 |goto 51.90,41.86 |or
 '|complete achieved(2576) |or
 step
 Equip the Black Tuxedo Pants |equipped Black Tuxedo Pants##151804 |or
@@ -9690,8 +9695,9 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 100 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 100 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2418) |or
 step
 use the Noblegarden Chocolate##44791+
@@ -9711,8 +9717,9 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 25 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 25 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2417) |or
 step
 use the Noblegarden Chocolate##44791+
@@ -9733,36 +9740,32 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 50 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2436) |or
 step
 talk Noblegarden Merchant##32837
-buy 1 Spring Robes##44800 |goto 47.11,59.89 |or
+buy 1 Spring Florist's Pouch##188694 |goto 51.90,41.86 |or
 '|complete achieved(2436) |or
 step
-Equip the Spring Robes |equipped Spring Robes##44800 |or
+use the Spring Florist's Pouch##188694
+Learn the Spring Florist's Pouch Toy |toy Spring Florist's Pouch##188694 |or
 '|complete achieved(2436) |or
 step
-use the Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in Desolace |achieve 2436/2 |goto Desolace/0 64.67,10.44
 step
-talk Zidormi##128607
-|tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
-Ask her _"Can you show me what Silithus was like before the Wound in the World?"_
-Travel to the Past |complete ZGV.InPhase('Old Silithus') |goto Silithus/0 78.93,21.97 |or
-'|complete achieved(2436) |or
+use the Spring Florist's Pouch##188694
+Plant a Flower in Silithus |achieve 2436/3 |goto Silithus/0 78.93,21.97
 step
-use Spring Robes##44800
-Plant a Flower in Silithus |achieve 2436/3 |goto 78.93,21.97
-step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in Tanaris |achieve 2436/4 |goto Tanaris/0 51.38,29.43
 step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles/0 79.09,71.89
 step
-use Spring Robes##44800
+use the Spring Florist's Pouch##188694
 Plant a Flower in the Badlands |achieve 2436/1 |goto Badlands/0 21.71,57.73
 step
 Earn the "Desert Rose" Achievement |achieve 2436
@@ -9781,9 +9784,10 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 |tip You may need to loot hundreds, if not thousands of these eggs.
 use the Brightly Colored Egg##45072+
-collect 1 Elegant Dress##151806 |achieve 249 |goto Mulgore/0 47.35,59.19 |or
+collect 1 Elegant Dress##151806 |achieve 249 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(249) |or
 step
 Earn the "Dressed for the Occasion" Achievement |achieve 249
@@ -9808,8 +9812,9 @@ home Marshal's Stand |goto Un'Goro Crater/0 55.38,62.26 |or
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-Gain the "Noblegarden Bunny" Buff |havebuff 237000 |goto Mulgore/0 47.35,59.19 |or
+Gain the "Noblegarden Bunny" Buff |havebuff 237000 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2416) |or
 step
 Earn the "Hard Boiled" Achievement |achieve 2416 |goto Un'Goro Crater/0 35.74,54.21
@@ -9830,7 +9835,8 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
-collect 1 Brightly Colored Egg##113768 |achieve 2676 |goto Mulgore/0 47.35,59.19 |or
+|tip They look like multicolored eggs near objects and buildings around this area.
+collect 1 Brightly Colored Egg##45072 |achieve 2676 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2676) |or
 step
 Earn the "I Found One!" Achievement |achieve 2676
@@ -9854,6 +9860,7 @@ Travel to the Past |complete ZGV.InPhase('Old Undercity') |goto Tirisfal Glades/
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
 collect 5 Noblegarden Chocolate##44791 |goto 61.00,52.74 |or
 '|complete achieved(2420) |or
@@ -9880,12 +9887,13 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 50 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2422) |or
 step
 talk Noblegarden Merchant##32837
-buy 1 Spring Flowers##45073 |goto 47.11,59.89 |or
+buy 1 Spring Flowers##45073 |goto 51.90,41.86 |or
 '|complete achieved(2422) |or
 step
 Equip the Spring Flowers |equipped Spring Flowers##45073 |or
@@ -9924,24 +9932,25 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 use the Brightly Colored Egg##45072+
-collect 100 Noblegarden Chocolate##44791 |goto Mulgore/0 47.35,59.19 |or
+collect 100 Noblegarden Chocolate##44791 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(2497) |or
 step
 talk Noblegarden Merchant##32837
-buy 1 Spring Rabbit's Foot##44794 |goto 47.11,59.89 |or
+buy 1 Spring Rabbit's Foot##44794 |goto 51.90,41.86 |or
 '|complete achieved(2497) |or
 step
 use the Spring Rabbit's Foot##44794
-Learn the "Spring Rabbit" Battle Pet |learnpet 61725 |or
+Learn the "Spring Rabbit" Battle Pet |learnpet Spring Rabbit##200 |or
 '|complete achieved(2497) |or
 step
-Find Your Spring Rabbit Another to Love in Bloodhoof Village |achieve 2497/1 |goto Mulgore/0 47.44,59.15
+Find Your Spring Rabbit Another to Love in Razor Hill |achieve 2497/4 |goto Durotar/0 52.61,42.44
 |tip Summon your Spring Rabbit and find another player who has one summoned.
 |tip Spring Rabbits are white with brown spots.
 |tip Walk near the other player's rabbit to get credit.
 step
-Find Your Spring Rabbit Another to Love in Razor Hill |achieve 2497/4 |goto Durotar/0 52.61,42.44
+Find Your Spring Rabbit Another to Love in Bloodhoof Village |achieve 2497/1 |goto Mulgore/0 47.44,59.15
 |tip Summon your Spring Rabbit and find another player who has one summoned.
 |tip Spring Rabbits are white with brown spots.
 |tip Walk near the other player's rabbit to get credit.
@@ -9977,16 +9986,18 @@ keywords={"Noblegarden, Achievement, Noble, Garden"},
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 |tip You may need to loot hundreds, if not thousands of these eggs.
 use the Brightly Colored Egg##45072+
-collect 1 White Tuxedo Shirt##6833 |achieve 248/1 |goto Mulgore/0 47.35,59.19 |or
+collect 1 White Tuxedo Shirt##6833 |achieve 248/1 |goto Durotar/0 52.58,42.81 |or
 '|complete achieved(248) |or
 step
 click Brightly Colored Egg##113768+
 |tip There is at least one available at all times.
+|tip They look like multicolored eggs near objects and buildings around this area.
 |tip You may need to loot hundreds, if not thousands of these eggs.
 use the Brightly Colored Egg##45072+
-collect 1 Black Tuxedo Pants##151804 |achieve 248/2 |goto 47.35,59.19 |or
+collect 1 Black Tuxedo Pants##151804 |achieve 248/2 |goto 52.58,42.81 |or
 '|complete achieved(248) |or
 step
 Earn the "Sunday's Finest" Achievement |achieve 248

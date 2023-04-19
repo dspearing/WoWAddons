@@ -228,7 +228,14 @@ keywords={"Aquatic"},
 pet=3360,
 },[[
 step
-Reach Level 70 |ding 70
+Complete the "Loremaster of the Dragon Isles" Achievement |complete achieved(16585) or haspet(3360)
+|tip You must unlock world quests to have access to the purveyor of this pet.
+|tip Use the "Full Zones (Story + Side Quests)" to accomplish this.
+|tip This pet can also be purchased in the auction house.
+Click Here to Load the "Full Zones (Story + Side Quests)" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Full Zones (Story + Side Quests)\\Intro & The Waking Shores (Full Zone)"
+step
+Reach Level 70 |ding 70 |or
+'|complete haspet(3360) |or
 step
 talk Cataloger Jakes##189226 |goto The Waking Shores/0 47.11,82.58
 |tip Inside the tent.
@@ -957,6 +964,27 @@ step
 use Cubbly##201463
 Learn the "Cubbly" Battle Pet |learnpet Cubbly##3415
 ]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Chestnut",{
+patch='100500',
+source='Puzzle',
+author="support@zygorguides.com",
+description="Chestnut once found an acorn larger than he was, ate the whole thing, and doubled in size. It's a good thing he didn't eat a Trunkalumpf.",
+keywords={"Critter"},
+pet=3275,
+},[[
+step
+click Acorn##381424
+|tip Its a tiny acorn on the ground by a large tree.
+Get the Acorn buff |complete hasbuff("spell:388485") or haspet(3275) |goto Thaldraszus/0 49.38,62.66 |or
+You can find more around [49.37,63.06]
+step
+clicknpc Acorn Harvester##196172
+collect Chestnut##193066 |goto 49.43,62.89 |or
+'|complete haspet(3275) |or
+step
+use the Chestnut##193066
+Learn the "Chestnut" Battle Pet |learnpet Chestnut##3275
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Pricklefury Hare",{
 patch='100500',
 source='PetBattle',
@@ -970,6 +998,68 @@ clicknpc Pricklefury Hare##189093
 |tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
 |tip You may need to attempt the trap several times.
 Learn the "Pricklefury Hare" Battle Pet |learnpet Pricklefury Hare##3272 |goto The Waking Shores/0 78.08,33.54
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Pistachio",{
+patch='100500',
+source='Vendor',
+author="support@zygorguides.com",
+description="Pistachio got her name in exactly the way you would expect.",
+keywords={"Critter","Iskaara Tuskarr","Patchu"},
+pet=3278,
+},[[
+step
+collect 50 Polished Pet Charm##163036 |or
+|tip Acquire them from winning pet battle world quests that award Polished Pet Charms in BFA, Shadowlands, and Dragon Isles areas.
+'|complete haspet(3278) |or
+step
+talk Patchu##196069
+Tell her _"Want to trade some pet charms?"_
+buy Pistachio##193071 |goto The Azure Span/0 13.89,49.85 |or
+'|complete haspet(3278) |or
+step
+use Pistachio##193071
+Learn the "Pistachio" Battle Pet |learnpet Pistachio##3278
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pets\\Shaggy",{
+patch='100500',
+source='Quest',
+author="support@zygorguides.com",
+description="This little rabbit is cute from the tip of her button nose to the tips of her deadly claws.",
+keywords={"Critter"},
+pet=3259,
+},[[
+step
+Complete the achievment _"Waking Hope"_. |confirm |complete achieved(16334) or haspet(3259)
+|tip Complete all of the main story questlines.
+|tip Use the Full Zone leveling guide to accomplish this.
+|tip You can also purchase this pet from the auction house.
+Click Here to Load the "Full Zones (Story + Side Quests)" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Full Zones (Story + Side Quests)\\Intro & The Waking Shores (Full Zone)"
+step
+Reach Level 70 |ding 70 |or
+'|complete haspet(3259) |or
+step
+Unlock the The Forbidden Reach Envoys in Morut Village. |confirm |complete completedq(73157) or haspet(3259)
+|tip Complete The Forbidden Reach quest chain.
+|tip Use the Forbidden Reach Leveling Guide to accomplish this.
+Click Here to Load the "Forbidden Reach Quests" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach"
+step
+earn 2000 Elemental Overflow##2118 |or
+|tip These drop from mobs, treasures, and daily quests in The Forbidden Reach, and areas affected by the Elemental Storm.
+'|complete haspet(3259) |or
+step
+talk Cataloger Daela##200566
+|tip She is a Dark Iron Dwarf inside the building
+buy Sack of Oddities##204383 |goto The Forbidden Reach/5 34.32,59.98 |or
+'|complete haspet(3259) |or
+step
+use Sack of Oddities##204383
+|tip The pet has a small chance to drop from this container.
+|tip You may have to purchase and open several of these to obtain the pet.
+collect Shaggy##191915 |or
+'|complete haspet(3259) |or
+step
+use Shaggy##191915
+Learn the "Shaggy" Battle Pet |learnpet Shaggy##3259
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Snowy Treeflitter",{
 patch='100500',
@@ -999,48 +1089,6 @@ clicknpc Treeflitter##189097
 |tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
 |tip You may need to attempt the trap several times.
 Learn the "Treeflitter" Battle Pet |learnpet Treeflitter##3276 |goto Ohn'ahran Plains/0 55.58,42.26
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Pistachio",{
-patch='100500',
-source='Vendor',
-author="support@zygorguides.com",
-description="Pistachio got her name in exactly the way you would expect.",
-keywords={"Critter","Iskaara Tuskarr","Patchu"},
-pet=3278,
-},[[
-step
-collect 50 Polished Pet Charm##163036 |or
-|tip Acquire them from winning pet battle world quests that award Polished Pet Charms in BFA, Shadowlands, and Dragon Isles areas.
-'|complete haspet(3278) |or
-step
-talk Patchu##196069
-Tell her _"Want to trade some pet charms?"_
-buy Pistachio##193071 |goto The Azure Span/0 13.89,49.85 |or
-'|complete haspet(3278) |or
-step
-use Pistachio##193071
-Learn the "Pistachio" Battle Pet |learnpet Pistachio##3278
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Chestnut",{
-patch='100500',
-source='Puzzle',
-author="support@zygorguides.com",
-description="Chestnut once found an acorn larger than he was, ate the whole thing, and doubled in size. It's a good thing he didn't eat a Trunkalumpf.",
-keywords={"Critter"},
-pet=3275,
-},[[
-step
-click Acorn##381424
-|tip Its a tiny acorn on the ground by a large tree.
-Get the Acorn buff |complete hasbuff("spell:388485") or haspet(3275) |goto Thaldraszus/0 49.38,62.66 |or
-You can find more around [49.37,63.06]
-step
-clicknpc Acorn Harvester##196172
-collect Chestnut##193066 |goto 49.43,62.89 |or
-'|complete haspet(3275) |or
-step
-use the Chestnut##193066
-Learn the "Chestnut" Battle Pet |learnpet Chestnut##3275
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pets\\Obsidian Proto-Whelp",{
 patch='100500',
@@ -1111,7 +1159,7 @@ step
 Reach Level 70 |ding 70 |or
 '|complete haspet(3382) |or
 step
-collect 1000 Elemental Overflow##2118 |or
+earn 1000 Elemental Overflow##2118 |or
 |tip These drop from mobs in areas affected by the Elemental Storm.
 '|complete haspet(3382) |or
 step
@@ -2159,7 +2207,7 @@ step
 talk Sabellian##185894
 _Or_
 talk Wrathion##187495
-Tell them _"I swear to support your current efforts._"
+Tell them _"I swear to support your current efforts."_
 |tip On the balcony.
 |tip You will unlock an additional quest to gain reputation with whichever one you choose for the week.
 Show Support to Wrathion or Sabellian |q 66419/1 |goto 24.38,55.69 |or
@@ -2556,7 +2604,7 @@ Click Here to Load the "Full Zones (Story + Side Quests)" Leveling Guide |confir
 step
 Reach Level 70 |ding 70
 step
-collect 1000 Elemental Overflow##2118 |or
+earn 1000 Elemental Overflow##2118 |or
 |tip These drop from mobs in areas affected by the Elemental Storm.
 '|complete haspet(3287) |or
 step

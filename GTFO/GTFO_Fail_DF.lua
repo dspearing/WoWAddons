@@ -1837,5 +1837,103 @@ GTFO.SpellID["385073"] = {
   sound = 3;
 };
 
+--- **********************************
+--- * Aberrus, the Shadowed Crucible *
+--- **********************************
+
+GTFO.SpellID["408619"] = {
+  --desc = "Fire Pillar (Sundered Devastator)";
+  sound = 3;
+};
+
+GTFO.SpellID["402461"] = {
+  --desc = "Hellsteel Fragment (Kazzara, the Hellforged)";
+  sound = 3;
+};
+
+GTFO.SpellID["404789"] = {
+  --desc = "Revenant's Blood (Kazzara, the Hellforged)";
+  sound = 3;
+};
+
+GTFO.SpellID["406860"] = {
+  --desc = "Arcane Chaos (Sundered Arcanist)";
+  sound = 3;
+};
+
+GTFO.SpellID["411917"] = {
+  --desc = "Dreadfire Emission (Sundered Devourer)";
+  sound = 3;
+};
+
+GTFO.SpellID["411908"] = {
+  --desc = "Flame Canister (Sundered Chemist)";
+  sound = 3;
+};
+
+GTFO.SpellID["408947"] = {
+  --desc = "Cleansing Breath (Sundered Preserver)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["408714"] = {
+  --desc = "Splintered Flames (Eternal Blaze)";
+  sound = 3;
+};
+
+GTFO.SpellID["404910"] = {
+  --desc = "Swirling Flame (Eternal Blaze)";
+  sound = 3;
+};
+
+GTFO.SpellID["408717"] = {
+  --desc = "Splintered Shadow (Essence of Shadow)";
+  sound = 3;
+};
+
+GTFO.SpellID["405704"] = {
+  --desc = "Swirling Shadowflame (Shadowflame Amalgamation)";
+  sound = 3;
+};
+
+GTFO.SpellID["406783"] = {
+  --desc = "Shadowflame Burst (Shadowflame Amalgamation)";
+  sound = 3;
+  tankSound = 0;
+};
+
+GTFO.SpellID["404472"] = {
+  --desc = "Massive Slam (Neldris)";
+  sound = 3;
+};
+
+GTFO.SpellID["407733"] = {
+  --desc = "Massive Slam (Neldris)";
+  sound = 3;
+};
+
+GTFO.SpellID["405599"] = {
+  --desc = "Volatile Spew (Thadrion)";
+  sound = 3;
+};
+
+GTFO.SpellID["405601"] = {
+  --desc = "Volatile Spew (Thadrion)";
+  sound = 3;
+};
+
+GTFO.SpellID["408462"] = {
+  --desc = "Unstable Essence (Thadrion)";
+  sound = 3;
+};
+
+GTFO.SpellID["406233"] = {
+  --desc = "Deep Breath (Rionthus)";
+  applicationOnly = true;
+  sound = 3;
+};
+
+
 end
 

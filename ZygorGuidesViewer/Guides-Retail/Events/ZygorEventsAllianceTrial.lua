@@ -457,694 +457,22 @@ talk King Varian Wrynn##29611
 |tip Inside the keep.
 turnin Report to the King##36941 |goto Stormwind City/0 85.92,31.56
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Love is in the Air Main Questline",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Love is in the Air') and not completedq(24657) end,
-description="\nThis guide will walk you through completing the main questline for the Love is in the Air event.",
-},[[
-step
-talk Inspector Snip Snagglebolt##38066
-accept Something Stinks##24655 |goto Stormwind City/0 61.51,75.27
-step
-clicknpc Stormwind City Guard##68+
-|tip Look for Stormwind Guards that have the Heavily Perfumed buff.
-|tip They look like Stormwind Guards with a glowing purple aura around them all over Stormwind.
-use Snagglebolt's Air Analyzer##50131
-|tip Use it on Stormwind Guards around this area.
-Analyze #6# Perfumed Guards |q 24655/1 |goto 61.86,72.49
-step
-talk Inspector Snip Snagglebolt##38066
-turnin Something Stinks##24655 |goto 61.51,75.27
-accept Pilfering Perfume##24656 |goto 61.51,75.27
-step
-label "Gain_Crown_Parcel_Service_Uniform_Buff"
-talk Inspector Snip Snagglebolt##38066
-Tell him  _"I need another disguise."_
-Gain the "Crown Parcel Service Uniform" Buff |havebuff spell:71450 |goto 61.51,75.27 |or
-'|complete completedq(24656) |or
-step
-Follow the path |goto Elwynn Forest/0 31.88,48.88 < 15 |only if walking
-Get the Crown Chemical Co. Package |complete hasbuff("spell:71459") |q 24656 |goto Stormwind City/0 78.75,89.34 |or
-|tip Quickly run by the boxes to get the package.
-'|complete not hasbuff("spell:71450") and not readyq(24656) and not completedq(24656) |next "Gain_Crown_Parcel_Service_Uniform_Buff" |or
-step
-Return the Crown Chemical Co. Package |complete readyq(24656) or completedq(24656) |goto 61.51,75.27 |or
-|tip You have to move quickly before your disguise wears off or you drop the package.
-|tip Simply walk next to Inspector Snip Snagglebolt to return the package to him.
-'|complete (not hasbuff("spell:71450") or not hasbuff("spell:71459")) and not readyq(24656) and not completedq(24656) |next "Gain_Crown_Parcel_Service_Uniform_Buff" |or
-step
-talk Inspector Snip Snagglebolt##38066
-turnin Pilfering Perfume##24656 |goto 61.51,75.27
-accept Fireworks At The Gilded Rose##24848 |goto 61.51,75.27
-step
-talk Marion Sutton##38325
-|tip Upstairs inside the building.
-turnin Fireworks At The Gilded Rose##24848 |goto 60.61,76.36
-accept Hot On The Trail##24849 |goto 60.61,76.36
-step
-Watch the dialogue
-|tip Inside the building.
-Search the Stormwind Counting House |q 24849/1 |goto 63.03,78.74
-step
-Watch the dialogue
-|tip Inside the building.
-Search the Stormwind Auction House |q 24849/2 |goto 61.42,71.61
-step
-Watch the dialogue
-|tip Inside the building.
-Search the Stormwind Barber Shop |q 24849/3 |goto 61.31,65.39
-step
-talk Marion Sutton##38325
-|tip Upstairs inside the building.
-turnin Hot On The Trail##24849 |goto 60.61,76.36
-accept A Friendly Chat...##24657 |goto 60.61,76.36
-step
-talk Snivel Rustrocket##37715
-Tell him _"I have a rocket here with your mark on it, Snivel."_
-collect 1 Snivel's Ledger##49915 |q 24657/1 |goto 27.43,34.83
-step
-talk Inspector Snip Snagglebolt##38066
-turnin A Friendly Chat...##24657 |goto 61.51,75.27
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Love is in the Air Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Love is in the Air') and completedq(24657) and not completedq(44558,24629,24635,24636,24597,44560,24610,24611,24609) end,
-description="\nThis guide section will walk you through completing the Love is in the Air event daily quests.",
-},[[
-step
-label "Complete_Leveling_Guide"
-Complete the "Love is in the Air Main Questline" guide before using this guide |complete completedq(24657)
-step
-talk Inspector Snip Snagglebolt##38066
-accept Crushing the Crown##44558 |goto Stormwind City/0 61.51,75.27
-step
-talk Public Relations Agent##37675
-accept A Perfect Puff of Perfume##24629 |goto 62.41,75.38 |or
-accept A Cloudlet of Classy Cologne##24635 |goto 62.41,75.38 |or
-accept Bonbon Blitz##24636 |goto 62.41,75.38 |or
-|tip You will only be able to accept one of these quests.
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the King of Stormwind##24597 |goto 62.53,74.96
-step
-use the Crown Cologne Sprayer##49669
-|tip Use it on NPCs and other players without a red heart over their head.
-|tip You can do this anywhere in Stormwind.
-Give #10# Cologne Samples |q 24635/1 |goto 62.35,72.50
-|only if haveq(24635)
-step
-use the Crown Perfume Sprayer##49668
-|tip Use it on NPCs and other players without a red heart over their head.
-|tip You can do this anywhere in Stormwind.
-Give #10# Perfume Samples |q 24629/1 |goto 62.35,72.50
-|only if haveq(24629)
-step
-use the Crown Chocolate Sampler##49670
-|tip Use it on NPCs and other players without a red heart over their head.
-|tip You can do this anywhere in Stormwind.
-Give #10# Chocolate Samples |q 24636/1 |goto 62.35,72.50
-|only if haveq(24636)
-stickystart "Slay_Crown_Chemical_Co_Employees"
-step
-use Snagglebolt's Khorium Bomb##50130
-Destroy the Chemical Wagon |q 44558/1 |goto Silverpine Forest/0 45.74,73.39
-|only if haveq(44558)
-step
-click Love Potion Recipe
-accept Follow the Recipe##44560 |goto 45.25,73.85
-|only if haveq(44558)
-step
-Enter the building |goto 46.27,73.45 < 10 |walk
-click Recipe Fragment##6478
-|tip Upstairs inside the building.
-Collect the 1st Fragment |q 44560/1 |goto 46.28,73.51
-|only if haveq(44560)
-step
-Enter the building |goto 44.98,71.64 < 10 |walk
-click Recipe Fragment##6478
-|tip Inside the building.
-Collect the 2nd Fragment |q 44560/2 |goto 45.14,71.52
-|only if haveq(44560)
-step
-click Recipe Fragment##6478
-Collect the 3rd Fragment |q 44560/3 |goto 42.70,71.16
-|only if haveq(44560)
-step
-label "Slay_Crown_Chemical_Co_Employees"
-Kill enemies around this area
-Slay #12# Crown Chemical Co. Employees |q 44558/2 |goto 45.62,73.51
-|only if haveq(44558)
-step
-Kill enemies that yield experience
-|tip Any enemy that is green, yellow, or red difficulty will drop charms.
-|tip You can kill enemies in dungeons or the open-world zone of your choice.
-|tip You must get the killing blow for a chance at a charm.
-collect 40 Lovely Charm##49655 |goto Silverpine Forest/0 45.74,73.39 |q 24609 |future
-step
-use the Lovely Charm##49655
-collect 4 Lovely Charm Bracelet##49916 |q 24609 |future
-step
-talk Inspector Snip Snagglebolt##38066
-turnin Crushing the Crown##44558 |goto Stormwind City/0 61.51,75.27 |only if haveq(44558) or completedq(44558)
-turnin Follow the Recipe##44560 |goto 61.51,75.27 |only if haveq(44560) or completedq(44560)
-|only if haveq(44558,44560) or completedq(44558,44560)
-step
-talk Public Relations Agent##37675
-turnin A Perfect Puff of Perfume##24629 |goto 62.41,75.38 |only if haveq(24629) or completedq(24629)
-turnin A Cloudlet of Classy Cologne##24635 |goto 62.41,75.38 |only if haveq(24635) or completedq(24635)
-turnin Bonbon Blitz##24636 |goto 62.41,75.38 |only if haveq(24636) or completedq(24636)
-|only if haveq(24629,24635,24636) or completedq(24629,24635,24636)
-step
-talk Anduin Wrynn##107574
-|tip Inside Stormwind Keep.
-turnin A Gift for the King of Stormwind##24597 |goto 85.91,31.57
-step
-talk Zidormi##141489
-Ask her _"Can you show me what Darkshore was like before the battle?"_
-Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |q 24610 |future
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the High Priestess of Elune##24610 |goto Darnassus/0 45.42,57.75
-step
-Enter the building |goto 43.01,74.83 < 10 |walk
-talk Tyrande Whisperwind##7999
-|tip Upstairs inside the building.
-turnin A Gift for the High Priestess of Elune##24610 |goto 43.01,78.07
-step
-Run up the ramp |goto The Exodar/0 52.71,33.69 < 15 |walk
-Continue up the ramp |goto 64.13,35.99 < 15 |walk
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the Prophet##24611 |goto 73.65,57.01
-step
-Run down the ramp |goto 73.51,53.36 < 15 |walk
-Run up the stairs |goto 31.09,60.83 < 10 |walk
-talk Prophet Velen##17468
-turnin A Gift for the Prophet##24611 |goto 32.85,54.48
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the Lord of Ironforge##24609 |goto Ironforge/0 33.57,65.60
-step
-Enter the building |goto 44.39,49.69 < 10 |walk
-talk Muradin Bronzebeard##42928
-turnin A Gift for the Lord of Ironforge##24609 |goto 39.19,56.09
-step
-You have completed all available daily quests
-|tip This guide will reset when more become available.
-'|complete not completedq(44558,24629,24635,24636,24597,44560,24610,24611,24609) |next "Complete_Leveling_Guide"
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Be Mine!",{
-author="support@zygorguides.com",
-description="\nEat the eight \"Bag of Candies\" heart candies listed below:\n\nBe Mine!\nAll yours.\nHot Lips.\n"..
-"You're the best!\nI'll follow you all around Azeroth.\nI'm all yours!\nYou're Mine!\nI LOVE YOU",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1701) end,
-achieveid={1701},
-patch='30002',
-},[[
-step
-talk Lovely Merchant##37674
-buy Bag of Heart Candies##21813 |goto Stormwind City/0 62.49,75.24 |n
-use the Bag of Heart Candies##21813
-|tip Collect the 8 different types of Heart Candy from the Bag of Heart Candies.
-Collect "Be Mine" |collect 1 Heart Candy##21816 |only if not achieved(1701,1)
-Collect "I'll Follow You All Around Azeroth" |collect 1 Heart Candy##21818 |only if not achieved(1701,2)
-Collect "All Yours" |collect 1 Heart Candy##21819 |only if not achieved(1701,3)
-Collect "I'm All Yours" |collect 1 Heart Candy##21821 |only if not achieved(1701,4)
-Collect "Hot Lips" |collect 1 Heart Candy##21823 |only if not achieved(1701,5)
-Collect "You're Mine" |collect 1 Heart Candy##21822 |only if not achieved(1701,6)
-Collect "You're the Best" |collect 1 Heart Candy##21820 |only if not achieved(1701,7)
-Collect "I LOVE YOU" |collect 1 Heart Candy##21817 |only if not achieved(1701,8)
-step
-use Heart Candy##21816
-Eat the "Be Mine!" Heart Candy |achieve 1701/1
-step
-use Heart Candy##21818
-Eat the "I'll follow you all around Azeroth." Heart Candy |achieve 1701/2
-step
-use Heart Candy##21819
-Eat the "All yours." Heart Candy |achieve 1701/3
-step
-use Heart Candy##21821
-Eat the "I'm all yours!" Heart Candy |achieve 1701/4
-step
-use Heart Candy##21823
-Eat the "Hot lips." Heart Candy |achieve 1701/5
-step
-use Heart Candy##21822
-Eat the "You're mine!" Heart Candy |achieve 1701/6
-step
-use Heart Candy##21820
-Eat the "You're the best!" Heart Candy |achieve 1701/7
-step
-use Heart Candy##21817
-Eat the "I LOVE YOU" Heart Candy |achieve 1701/8
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Charming",{
-author="support@zygorguides.com",
-description="\nCreate 12 Lovely Charm Bracelets.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(260) end,
-achieveid={260},
-patch='30001',
-},[[
-step
-talk Kwee Q. Peddlefeet##37887
-collect 1 Lovely Charm Collector's Kit##49661 |goto Stormwind City/0 62.4,75.0 |or
-'|complete achieved(260) |or
-'|accept A Gift for the King of Stormwind##24597 |n
-step
-collect 120 Lovely Charm##49655 |goto Silverpine Forest/0 45.74,73.39
-|tip They come from killing enemies that are at least green difficulty to you.
-|tip They will not drop if they are grey difficulty.
-|tip You can run dungeons or pick a zone of your choice and kill anything.
-|tip You must get the killing blow for a chance at a charm.
-step
-use the Lovely Charm##49655
-collect 12 Lovely Charm Bracelet##49916 |or
-'|complete achieved(260) |or
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Dangerous Love",{
-author="support@zygorguides.com",
-description="\nAssist the Steamwheedle Cartel in stopping the sinister Crown Chemical Co. plot.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1695) end,
-achieveid={1695},
-patch='30003',
-},[[
-leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Main Questline"
-step
-Reach Level 7 |ding 7 |or
-'|complete achieved(1695) |or
-step
-talk Inspector Snip Snagglebolt##38066
-accept Crushing the Crown##44558 |goto Stormwind City/0 61.51,75.27 |or
-'|complete achieved(1695) |or
-stickystart "Slay_Crown_Chemical_Co_Employees"
-step
-use Snagglebolt's Khorium Bomb##50130
-Destroy the Chemical Wagon |q 44558/1 |goto Silverpine Forest/0 45.74,73.39 |or
-'|complete achieved(1695) |or
-step
-label "Slay_Crown_Chemical_Co_Employees"
-Kill enemies around this area
-Slay #12# Crown Chemical Co. Employees |q 44558/2 |goto 45.62,73.51 |or
-'|complete achieved(1695) |or
-step
-talk Inspector Snip Snagglebolt##38066
-turnin Crushing the Crown##44558 |goto Stormwind City/0 61.51,75.27 |or
-'|complete achieved(1695) |or
-step
-Earn the "Dangerous Love" Achievement |achieve 1695
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Fistful of Love",{
-author="support@zygorguides.com",
-description="\nUse a Handful of Rose Petals on each of the race/class combinations listed below:\n\nGnome Warlock\n"..
-"Human Death Knight\nOrc Shaman\nUndead Warrior\nBlood Elf Mage\nDwarf Hunter\nOrc Death Knight\nNight Elf Priest"..
-"\nTauren Druid\nTroll Rogue\nDraenei Paladin",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1699) end,
-achieveid={1699},
-patch='30003',
-},[[
-step
-collect 6 Love Token##49927 |or
-|tip Earn these by completing daily quests.
-|tip You can also kill mobs to assemble Lovely Charm Bracelets and trade them to the Lovely Merchant.
-'|complete achieved(1699) |or
-step
-talk Lovely Merchant##37674
-buy 15 Handful of Rose Petals##22218 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1699) |or
-stickystart "Use_Petals_on_Gnome_Warlock"
-stickystart "Use_Petals_on_Orc_Death_Knight"
-stickystart "Use_Petals_on_Human_Death_Knight"
-stickystart "Use_Petals_on_Night_Elf_Priest"
-stickystart "Use_Petals_on_Orc_Shaman"
-stickystart "Use_Petals_on_Tauren_Druid"
-stickystart "Use_Petals_on_Undead_Warrior"
-stickystart "Use_Petals_on_Troll_Rogue"
-stickystart "Use_Petals_on_Blood_Elf_Mage"
-stickystart "Use_Petals_on_Draenei_Paladin"
-stickystart "Use_Petals_on_Dwarf_Hunter"
-step
-use the Handful of Rose Petals##22218
-|tip Battlegrounds and capital cities are good locations.
-Use them once on each of the following classes:
-'|complete achieved(1699)
-step
-label "Use_Petals_on_Gnome_Warlock"
-Use Rose Petals on a "Gnome Warlock" |achieve 1699/1
-step
-label "Use_Petals_on_Orc_Death_Knight"
-Use Rose Petals on a "Orc Death Knight" |achieve 1699/2
-step
-label "Use_Petals_on_Human_Death_Knight"
-Use Rose Petals on a "Human Death Knight" |achieve 1699/3
-step
-label "Use_Petals_on_Night_Elf_Priest"
-Use Rose Petals on a "Night Elf Priest" |achieve 1699/4
-step
-label "Use_Petals_on_Orc_Shaman"
-Use Rose Petals on a "Orc Shaman" |achieve 1699/5
-step
-label "Use_Petals_on_Tauren_Druid"
-Use Rose Petals on a "Tauren Druid" |achieve 1699/6
-step
-label "Use_Petals_on_Undead_Warrior"
-Use Rose Petals on a "Undead Warrior" |achieve 1699/7
-step
-label "Use_Petals_on_Troll_Rogue"
-Use Rose Petals on a "Troll Rogue" |achieve 1699/8
-step
-label "Use_Petals_on_Blood_Elf_Mage"
-Use Rose Petals on a "Blood Elf Mage" |achieve 1699/9
-step
-label "Use_Petals_on_Draenei_Paladin"
-Use Rose Petals on a "Draenei Paladin" |achieve 1699/10
-step
-label "Use_Petals_on_Dwarf_Hunter"
-Use Rose Petals on a "Dwarf Hunter" |achieve 1699/11
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Flirt With Disaster",{
-author="support@zygorguides.com",
-description="\nGet completely smashed, put on your best perfume, throw a handful of rose petals "..
-"on Sraaz and then kiss him. You'll regret it in the morning.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1279) end,
-achieveid={1279},
-patch='30001',
-},[[
-step
-collect 3 Love Token##49927 |or
-|tip Earn these by completing daily quests.
-|tip You can also kill mobs to assemble Lovely Charm Bracelets and trade them to the Lovely Merchant.
-'|complete achieved(1279) |or
-step
-talk Lovely Merchant##37674
-buy 1 "VICTORY" Perfume##49856 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1279) |or
-step
-talk Bruuk Barleybeard##5570
-|tip Inside the building.
-buy 6 Cherry Grog##4600 |goto Ironforge/0 72.52,76.95 |only if level >= 11
-buy 6 Flagon of Dwarven Mead##2594 |goto 72.52,76.95 |only if level <= 10 |or
-'|complete achieved(1279) |or
-step
-use the "VICTORY" Perfume##49856
-Gain the "'VICTORY' Perfume" Buff |havebuff spell:70233 |or
-'|complete achieved(1279) |or
-step
-clicknpc Sraaz##9099
-|tip He's a gnome that walks the circle around The Great Forge.
-use the Cherry Grog##4600 |only if level >= 11
-use the Flagon of Dwarven Mead##2594 |only if level <= 10
-|tip Use all 6 of your Cherry Grog to get Completely Smashed. |only if level >= 11
-|tip Use all 6 of your Flagons of Dwarven Mead to get Completely Smashed. |only if level <= 10
-use Handful of Rose Petals##22218
-|tip Use them on Sraaz.
-Use the Handful of Rose Petals on Sraaz While Completely Smashed |achieve 1279/2 |goto Ironforge/0 55.82,35.34
-step
-clicknpc Sraaz##9099
-"Kiss" Sraaz |script DoEmote("KISS")
-Kiss Sraaz While Completely Smashed |achieve 1279/1 |goto 55.82,35.34
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\I Pitied The Fool",{
-author="support@zygorguides.com",
-description="\nPity the Love Fool in the locations specified below:\n\nWintergrasp\nNaxxramas\n"..
-"Arathi Basin Blacksmith\nBattle Ring of Gurubashi Arena\nThe Culling of Stratholme",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1704) end,
-achieveid={1704},
-patch='30002',
-},[[
-step
-collect 50 Love Token##49927 |or
-|tip Earn these by completing daily quests.
-|tip You can also kill mobs to assemble Lovely Charm Bracelets and trade them to the Lovely Merchant.
-'|complete achieved(1704) |or
-step
-talk Lovely Merchant##37674
-buy 5 Love Fool##22261 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1704) |or
-step
-use the Love Fool##22261
-|tip You can use your Love Fool anywhere inside Wintergrasp.
-clicknpc Love Fool##16111
-"Pity" the Love Fool |script DoEmote("PITY")
-Target and Pity the Love Fool in Wintergrasp |achieve 1704/1 |goto Wintergrasp/0 70.30,32.28
-step
-use the Love Fool##22261
-|tip You can use your Love Fool anywhere inside the Gurubashi Arena.
-clicknpc Love Fool##16111
-"Pity" the Love Fool |script DoEmote("PITY")
-Target and Pity the Love Fool in the Gurubashi Arena |achieve 1704/2 |goto The Cape of Stranglethorn/0 46.41,26.05
-step
-use the Love Fool##22261
-|tip Use your Love Fool near the Blacksmith node inside of the Arathi Basin Battleground.
-clicknpc Love Fool##16111
-"Pity" the Love Fool |script DoEmote("PITY")
-Target and Pity the Love Fool in the Arathi Basin Battleground |achieve 1704/3
-step
-use Love Fool##22261
-|tip You can use your Love Fool anywhere inside the Culling of Stratholme Dungeon.
-clicknpc Love Fool##16111
-"Pity" the Love Fool |script DoEmote("PITY")
-Target and Pity the Love Fool in The Culling of Stratholme Dungeon |achieve 1704/4 |goto The Culling of Stratholme/1 86.80,58.97
-step
-use Love Fool##22261
-|tip You can use your Love Fool anywhere inside the Naxxramas Raid.
-clicknpc Love Fool##16111
-"Pity" the Love Fool |script DoEmote("PITY")
-Target and Pity the Love Fool in the Naxxramas Raid |achieve 1704/5 |goto Naxxramas/5 51.79,51.58
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Lonely?",{
-author="support@zygorguides.com",
-description="\nEnjoy a Buttermilk Delight with someone in Dalaran at a Romantic Picnic during the Love is in the Air celebration.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1291) end,
-achieveid={1291},
-patch='30100',
-},[[
-step
-collect 10 Love Token##49927 |or
-|tip Earn these by completing daily quests.
-|tip You can also kill mobs to assemble Lovely Charm Bracelets and trade them to the Lovely Merchant.
-'|complete achieved(1291) |or
-step
-talk Lovely Merchant##37674
-buy 1 Romantic Picnic Basket##34480 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1291) |or
-step
-talk Lovely Merchant##37674
-buy 1 Box of Chocolates##49909 |goto 62.49,75.24 |n
-|tip These cost 10 Love Tokens each.
-|tip You can acquire Love Tokens by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-use the Box of Chocolates##49909
-collect 1 Buttermilk Delight##22236 |or
-'|complete achieved(1291) |or
-step
-use the Romantic Picnic Basket##34480
-|tip Find a player to have a picnic with you.
-|tip It can be anywhere in Dalaran.
-use the Buttermilk Delight##22236
-|tip While having a picnic, use your Buttermilk Delight.
-Enjoy a Buttermilk Delight with Someone in Dalaran at a Romantic Picnic |achieve 1291 |goto Dalaran L/10 53.61,39.65
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Lovely Luck Is On Your Side",{
-author="support@zygorguides.com",
-description="\nOpen a Lovely Dress Box and receive a Lovely Black Dress.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1694) end,
-achieveid={1694},
-patch='30002',
-},[[
-step
-collect 20 Love Token##49927 |or
-|tip Earn these by completing daily quests.
-|tip You can also kill mobs to assemble Lovely Charm Bracelets and trade them to the Lovely Merchant.
-'|complete achieved(1694) |or
-step
-talk Lovely Merchant##37674
-buy 1 Lovely Dress Box##50160 |n
-|tip These cost 20 Love Tokens each.
-|tip You can acquire Love Tokens by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-use the Lovely Dress Box##50160
-collect 1 Lovely Black Dress##22279 |goto Stormwind City/0 62.49,75.24
-'|complete achieved(1694) |or
-step
-Earn the "Lovely Luck Is On Your Side" Achievement |achieve 1694
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\My Love is Like a Red, Red Rose",{
-author="support@zygorguides.com",
-description="\nObtain a Bouquet of Red or Ebon Roses during the Love is in the Air celebration.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1703) end,
-achieveid={1703},
-patch='30002',
-},[[
-step
-collect 1 Bouquet of Red Roses##22206 |n
-collect 1 Bouquet of Ebon Roses##44731 |n
-|tip These come from specific bosses in dungeons.
-|tip Corla, Herald of Twilight in Blackrock Caverns
-|tip High Priestess Azil in Stonecore
-|tip Admiral Ripsnarl in Deadmines
-|tip Lord Godfrey in Shadowfang Keep
-|tip You will need one or the other, not both.
-Earn the "My Love is Like a Red, Red Rose" Achievement |achieve 1703
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Nation of Adoration",{
-author="support@zygorguides.com",
-description="\nComplete the Lovely Charm Bracelet daily quest for each Alliance capital.",
-condition_suggested=function() return isevent('Love is in the Air') and completedq(36941) and not achieved(1697) end,
-achieveid={1697},
-patch='30303',
-},[[
-leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Main Questline"
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the King of Stormwind##24597 |goto Stormwind City/0 62.53,74.96 |or
-'|complete achieved(1697,4) |or
-step
-Kill enemies that yield experience
-|tip Any enemy that is green, yellow, or red difficulty will drop charms.
-|tip You can kill enemies in dungeons or the open-world zone of your choice.
-|tip You must get the killing blow for a chance at a charm.
-collect 40 Lovely Charm##49655 |goto Silverpine Forest/0 45.74,73.39 |or
-'|complete achieved(1697) |or
-step
-use the Lovely Charm##49655
-collect 4 Lovely Charm Bracelet##49916 |or
-'|complete achieved(1697) |or
-step
-talk Anduin Wrynn##107574
-|tip Inside Stormwind Keep.
-turnin A Gift for the King of Stormwind##24597 |goto 85.91,31.57 |or
-'|complete achieved(1697,4) |or
-step
-talk Zidormi##141489
-Ask her _"Can you show me what Darkshore was like before the battle?"_
-Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |or
-'|complete achieved(1697,1) |or
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the High Priestess of Elune##24610 |goto Darnassus/0 45.42,57.75 |or
-'|complete achieved(1697,1) |or
-step
-Enter the building |goto 43.01,74.83 < 10 |walk
-talk Tyrande Whisperwind##7999
-|tip Upstairs inside the building.
-turnin A Gift for the High Priestess of Elune##24610 |goto 43.01,78.07 |or
-'|complete achieved(1697,1) |or
-step
-Run up the ramp |goto The Exodar/0 52.71,33.69 < 15 |walk
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the Prophet##24611 |goto 73.65,57.01 |or
-'|complete achieved(1697,2) |or
-step
-Run up the stairs |goto 31.09,60.83 < 10 |walk
-talk Prophet Velen##17468
-turnin A Gift for the Prophet##24611 |goto 32.85,54.48 |or
-'|complete achieved(1697,2) |or
-step
-talk Kwee Q. Peddlefeet##16075
-accept A Gift for the Lord of Ironforge##24609 |goto Ironforge/0 33.57,65.60 |or
-'|complete achieved(1697,3) |or
-step
-Enter the building |goto 44.39,49.69 < 10 |walk
-talk Muradin Bronzebeard##42928
-turnin A Gift for the Lord of Ironforge##24609 |goto 39.19,56.09 |or
-'|complete achieved(1697,3) |or
-step
-Earn the "Nation of Adoration" Achievement |achieve 1697
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Perma-Peddle",{
-author="support@zygorguides.com",
-description="\nObtain a permanent Peddlefeet pet by procuring a Truesilver Shafted Arrow.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1700) end,
-achieveid={1700},
-patch='30003',
-},[[
-step
-collect 40 Love Token##49927 |or
-|tip You can acquire these by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-'|complete achieved(1700) |or
-step
-talk Lovely Merchant##37674
-buy 1 Truesilver Shafted Arrow##22235 |goto Stormwind City/0 62.49,75.24
-'|complete achieved(1700) |or
-step
-Earn the "Perma-Peddle" Achievement |achieve 1700
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Shafted!",{
-author="support@zygorguides.com",
-description="\nShoot 10 players with a Silver Shafted Arrow.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1188) end,
-achieveid={1188},
-patch='30003',
-},[[
-step
-collect 10 Love Token##49927 |or
-|tip You can acquire these by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-'|complete achieved(1188) |or
-step
-talk Lovely Merchant##37674
-buy 10 Silver Shafted Arrow##22200 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1188) |or
-step
-use the Silver Shafted Arrow##22200
-|tip Use your Silver Shafted Arrows on 10 players inside Stormwind.
-Shoot #10# Players with the Silver Shafted Arrow |achieve 1188 |goto 62.49,75.24
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\Sweet Tooth",{
-author="support@zygorguides.com",
-description="\nSample the following holiday candy:\n\nButtermilk Delight\nDark Desire\n"..
-"Sweet Surprise\nVery Berry Cream",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1702) end,
-achieveid={1702},
-patch='30008',
-},[[
-step
-talk Lovely Merchant##37674
-buy 1 Box of Chocolates##49909 |goto Stormwind City/0 62.49,75.24 |n
-|tip These cost 10 Love Tokens each.
-|tip You can acquire Love Tokens by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-use Box of Chocolates##49909
-collect 1 Buttermilk Delight##22236 |only if not achieved(1702,1)
-collect 1 Dark Desire##22237 |only if not achieved(1702,2)
-collect 1 Sweet Surprise##22239 |only if not achieved(1702,3)
-collect 1 Very Berry Cream##22238 |only if not achieved(1702,4)
-step
-use the Buttermilk Delight##22236
-Sample the "Buttermilk Delight" Candy |achieve 1702/1
-|tip Save the remaining Buttermilk Delights for a later achievement.
-step
-use the Dark Desire##22237
-Sample the "Dark Desire" Candy |achieve 1702/2
-step
-use the Sweet Surprise##22239
-Sample the "Sweet Surprise" Candy |achieve 1702/3
-step
-use the Very Berry Cream##22238
-Sample the "Very Berry Cream" Candy |achieve 1702/4
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Achievements\\The Rocket's Pink Glare",{
-author="support@zygorguides.com",
-description="\nShoot off 10 Love Rockets in 20 seconds or less.",
-condition_suggested=function() return isevent('Love is in the Air') and not achieved(1696) end,
-achieveid={1696},
-patch='30002',
-},[[
-step
-collect 10 Love Token##49927 |or
-|tip You can acquire these by completing Love is in the Air daily quests.
-|tip Use the "Love is in the Air Dailies" event guide to accomplish this.
-'|complete achieved(1696) |or
-step
-talk Lovely Merchant##37674
-buy 10 Love Rocket##34258 |goto Stormwind City/0 62.49,75.24 |or
-'|complete achieved(1696) |or
-step
-use the Love Rocket##34258
-|tip Use them quickly to set off all 10 in 20 seconds or less.
-Shoot off #10# Love Rockets in 20 Seconds or Less |achieve 1696
-]])
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Love is in the Air Main Questline")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Love is in the Air Dailies")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Be Mine!")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Charming")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Dangerous Love")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Fistful of Love")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Flirt With Disaster")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\I Pitied The Fool")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Lonely?")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Lovely Luck Is On Your Side")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\My Love is Like a Red, Red Rose")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Nation of Adoration")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Perma-Peddle")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Shafted!")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\Sweet Tooth")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Love is in the Air\\Achievements\\The Rocket's Pink Glare")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Lunar Festival\\Lunar Festival Main Questline")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Lunar Festival\\Lunar Festival Crown Transmog Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Lunar Festival\\Lunar Festival Optimized Elders Path")
@@ -1188,19 +516,353 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festiv
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Draenor")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Broken Isles")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Kul Tiras")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Noblegarden Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Noblegarden Dailies")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Blushing Bride")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Chocoholic")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Chocolate Lover")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Desert Rose")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Hard Boiled")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\I Found One!")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Noble Garden")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Spring Fling")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest")
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Noblegarden Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the quests for the Noblegarden event.",
+condition_suggested=function() return isevent('Noblegarden') end,
+condition_end=function() return completedq(13502) end,
+},[[
+step
+talk Dwarf Commoner##19148
+accept Spring Collectors##13484 |goto Ironforge/0 30.86,71.95
+step
+talk Spring Collector##32799
+turnin Spring Collectors##13484 |goto Dun Morogh/0 53.99,50.70
+step
+talk Noblegarden Vendor##32836
+accept A Tisket, A Tasket, A Noblegarden Basket##13502 |goto 54.11,50.81
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 10 Noblegarden Chocolate##44791 |q 13502/1 |goto 53.51,50.84
+step
+talk Noblegarden Vendor##32836
+turnin A Tisket, a Tasket, a Noblegarden Basket##13502 |goto 54.11,50.81
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Noblegarden Dailies",{
+author="support@zygorguides.com",
+condition_suggested=function() return isevent('Noblegarden') end,
+description="\nThis guide section will walk you through completing the dailies for the Noblegarden event.",
+},[[
+step
+label "Begin_Daily_Quests"
+talk Dwarf Commoner##19148
+accept Spring Collectors##13484 |goto Ironforge/0 30.86,71.95
+step
+talk Spring Collector##32799
+turnin Spring Collectors##13484 |goto Dun Morogh/0 53.99,50.70
+accept The Great Egg Hunt##13480 |goto 53.99,50.70
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 20 Brightly Colored Shell Fragment##44806 |q 13480/1 |goto 53.51,50.84
+step
+talk Spring Collector##32799
+turnin The Great Egg Hunt##13480 |goto 53.99,50.70
+step
+You have completed all Noblegarden daily quests
+|tip This guide will reset when more become available.
+'|complete not completedq(13480) |next "Begin_Daily_Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Blushing Bride",{
+author="support@zygorguides.com",
+description="\nKiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2576},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2576) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 Black Tuxedo Pants##151804 |goto 54.11,50.82 |or
+'|complete achieved(2576) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 White Tuxedo Shirt##6833 |goto 54.11,50.82 |or
+'|complete achieved(2576) |or
+step
+Equip the Black Tuxedo Pants |equipped Black Tuxedo Pants##151804 |or
+'|complete achieved(2576) |or
+step
+Equip the White Tuxedo Shirt |equipped White Tuxedo Shirt##6833 |or
+'|complete achieved(2576) |or
+step
+|script DoEmote("KISS")
+Earn the "Blushing Bride" Achievement |achieve 2576
+|tip Use the kiss emote on a player wearing an Elegant Dress.
+|tip The Elegant Dress looks like a long pink dress when worn.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocoholic",{
+author="support@zygorguides.com",
+description="\nEat 100 Noblegarden Chocolates during the Noblegarden celebration.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2418},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 100 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2418) |or
+step
+use the Noblegarden Chocolate##44791+
+Eat #100# Noblegarden Chocolates |achieve 2418
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocolate Lover",{
+author="support@zygorguides.com",
+description="\nEat 25 Noblegarden Chocolates during the Noblegarden celebration.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2417},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 25 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2417) |or
+step
+use the Noblegarden Chocolate##44791+
+Eat #25# Noblegarden Chocolates |achieve 2417
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Desert Rose",{
+author="support@zygorguides.com",
+description="\nUse Spring Robes to plant a flower in each of the deserts listed below:\n\n"..
+"The Badlands\nDesolace\nSilithus\nTanaris\nThousand Needles",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2436},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2436) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 Spring Florist's Pouch##188694 |goto 54.11,50.82 |or
+'|complete achieved(2436) |or
+step
+use the Spring Florist's Pouch##188694
+Learn the Spring Florist's Pouch Toy |toy Spring Florist's Pouch##188694 |or
+'|complete achieved(2436) |or
+step
+use the Spring Florist's Pouch##188694
+Plant a Flower in the Badlands |achieve 2436/1 |goto Badlands/0 21.71,57.73
+step
+use the Spring Florist's Pouch##188694
+Plant a Flower in Silithus |achieve 2436/3 |goto Silithus/0 78.93,21.97
+step
+use the Spring Florist's Pouch##188694
+Plant a Flower in Tanaris |achieve 2436/4 |goto Tanaris/0 51.38,29.43
+step
+use the Spring Florist's Pouch##188694
+Plant a Flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles/0 79.09,71.89
+step
+use the Spring Florist's Pouch##188694
+Plant a Flower in the Desolace |achieve 2436/2 |goto Desolace/0 64.67,10.44
+step
+Earn the "Desert Rose" Achievement |achieve 2436
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion",{
+author="support@zygorguides.com",
+description="\nDiscover an Elegant Dress by opening Brightly Colored Eggs during the Noblegarden celebration.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={249},
+patch='30002',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+|tip You may need to loot hundreds, if not thousands of these eggs.
+use the Brightly Colored Egg##45072+
+collect 1 Elegant Dress##151806 |achieve 249 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(249) |or
+step
+Earn the "Dressed for the Occasion" Achievement |achieve 249
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Hard Boiled",{
+author="support@zygorguides.com",
+description="\nLay an egg in Un'Goro Crater's Golakka Hot Springs as a rabbit during the Noblegarden celebration.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2416},
+patch='30100',
+},[[
+step
+talk Innkeeper Dreedle##38488
+|tip Setting your hearthstone here will greatly reduce your travel time.
+|tip You cannot take flight paths or use your mount after getting the buff.
+home Marshal's Stand |goto Un'Goro Crater/0 55.38,62.26 |or
+'|complete achieved(2416) |or
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+Gain the "Noblegarden Bunny" Buff |havebuff 237000 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2416) |or
+step
+Earn the "Hard Boiled" Achievement |achieve 2416 |goto Un'Goro Crater/0 35.74,54.21
+|tip Avoid enemies, as being hit will cause you to lose your disguise.
+|tip Stand in this spot until you lay an egg.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\I Found One!",{
+author="support@zygorguides.com",
+description="\nFind a Brightly Colored Egg.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2676},
+patch='30101',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+collect 1 Brightly Colored Egg##45072 |achieve 2676 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2676) |or
+step
+Earn the "I Found One!" Achievement |achieve 2676
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Noble Garden",{
+author="support@zygorguides.com",
+description="\nHide a Brightly Colored Egg in Stormwind City.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2421},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 5 Noblegarden Chocolate##44791 |goto Elwynn Forest/0 42.38,65.61 |or
+'|complete achieved(2421) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 Noblegarden Egg##44818 |goto 43.04,65.32 |or
+'|complete achieved(2421) |or
+step
+use Noblegarden Egg##44818
+Earn the "Noble Garden" Achievement |achieve 2421 |goto Stormwind City/0 72.99,89.93
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker",{
+author="support@zygorguides.com",
+description="\nUse Spring Flowers to place rabbit ears upon players of at least 20th level of the following races:\n\n"..
+"Blood Elf\nDraenei\nDwarf\nGnome\nGoblin\nHuman\nNight Elf\nOrc\nTauren\nTroll\nUndead\nWorgen",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2422},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2422) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 Spring Flowers##45073 |goto Dun Morogh/0 54.11,50.82 |or
+'|complete achieved(2422) |or
+step
+Equip the Spring Flowers |equipped Spring Flowers##45073 |or
+'|complete achieved(2422) |or
+step
+use the Spring Flowers##45073
+|tip Use it on level 20+ characters.
+|tip Check around capital cities.
+Place Bunny Ears on a Blood Elf |achieve 2422/1
+Place Bunny Ears on a Tauren |achieve 2422/9
+Place Bunny Ears on a Draenei |achieve 2422/2
+Place Bunny Ears on a Human |achieve 2422/6
+Place Bunny Ears on a Troll |achieve 2422/10
+Place Bunny Ears on a Dwarf |achieve 2422/3
+Place Bunny Ears on a Night Elf |achieve 2422/7
+Place Bunny Ears on a Gnome |achieve 2422/4
+Place Bunny Ears on an Orc |achieve 2422/8
+Place Bunny Ears on a Goblin |achieve 2422/5
+Place Bunny Ears on an Undead |achieve 2422/11
+Place Bunny Ears on a Worgen |achieve 2422/12
+step
+Earn the "Shake Your Bunny-Maker" Achievement |achieve 2422
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Spring Fling",{
+author="support@zygorguides.com",
+description="\nFind your pet Spring Rabbit another one to love in each of the towns listed below:\n\n"..
+"Azure Watch\nDolanar\nGoldshire\nKharanos",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={2419},
+patch='30100',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+use the Brightly Colored Egg##45072+
+collect 100 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(2419) |or
+step
+talk Noblegarden Vendor##32836
+buy 1 Spring Rabbit's Foot##44794 |goto 54.11,50.82 |or
+'|complete achieved(2419) |or
+step
+use the Spring Rabbit's Foot##44794
+Learn the "Spring Rabbit" Battle Pet |learnpet Spring Rabbit##200 |or
+'|complete achieved(2419) |or
+step
+Find Your Spring Rabbit Another to Love in Kharanos |achieve 2419/4 |goto 53.49,50.85
+|tip Summon your Spring Rabbit and find another player who has one summoned.
+|tip Spring Rabbits are white with brown spots.
+|tip Walk near the other player's rabbit to get credit.
+step
+Find Your Spring Rabbit Another to Love in Goldshire |achieve 2419/3 |goto Elwynn Forest/0 43.1,67.6
+|tip Summon your Spring Rabbit and find another player who has one summoned.
+|tip Spring Rabbits are white with brown spots.
+|tip Walk near the other player's rabbit to get credit.
+step
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') or achieved(2419) |goto Darkshore/0 48.86,24.46
+step
+Find Your Spring Rabbit Another to Love in Dolanaar |achieve 2419/2 |goto Teldrassil/0 55.45,50.42
+|tip Summon your Spring Rabbit and find another player who has one summoned.
+|tip Spring Rabbits are white with brown spots.
+|tip Walk near the other player's rabbit to get credit.
+step
+Find Your Spring Rabbit Another to Love in Azure Watch |achieve 2419/1 |goto Azuremyst Isle/0 49.12,51.49
+|tip Summon your Spring Rabbit and find another player who has one summoned.
+|tip Spring Rabbits are white with brown spots.
+|tip Walk near the other player's rabbit to get credit.
+step
+Earn the "Spring Fling" Achievement |achieve 2419
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest",{
+author="support@zygorguides.com",
+description="\nDiscover the White Tuxedo Shirt and Black Tuxedo Pants by opening Brightly Colored Eggs during the Noblegarden celebration.",
+condition_suggested=function() return isevent('Noblegarden') end,
+achieveid={248},
+patch='30008',
+},[[
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+|tip You may need to loot hundreds, if not thousands of these eggs.
+use the Brightly Colored Egg##45072+
+collect 1 White Tuxedo Shirt##6833 |achieve 248/1 |goto Dun Morogh/0 53.51,50.84 |or
+'|complete achieved(248) |or
+step
+click Brightly Colored Egg##113768+
+|tip There is at least one available at all times.
+|tip You may need to loot hundreds, if not thousands of these eggs.
+use the Brightly Colored Egg##45072+
+collect 1 Black Tuxedo Pants##151804 |achieve 248/2 |goto 53.51,50.84 |or
+'|complete achieved(248) |or
+step
+Earn the "Sunday's Finest" Achievement |achieve 248
+]])
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\FOOD FIGHT!")

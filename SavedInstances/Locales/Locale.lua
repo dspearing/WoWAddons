@@ -3,7 +3,7 @@
 -- To help with missing translations please go here:
 local url = "http://www.wowace.com/addons/saved_instances/localization/"
 
-local SI, L = unpack(select(2, ...))
+local SI, L = unpack((select(2, ...)))
 
 -- Lua functions
 local print, format, rawget = print, format, rawget
@@ -244,6 +244,8 @@ Ld["Sorting"] = "Sorting"
 Ld["SOTS"] = "SOTS"
 Ld["Space between categories"] = "Space between categories"
 Ld["Sparks of Life"] = "Sparks of Life"
+Ld["Storm Surge"] = "Storm Surge"
+Ld["Storm's Fury"] = "Storm's Fury"
 Ld["STRT"] = "STRT"
 Ld["TAV"] = "TAV"
 Ld["TD"] = "TD"
@@ -575,6 +577,10 @@ La["SOTS"] = "SOTS"
 La["Space between categories"] = "Espacer les catégories"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 --[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]
@@ -923,6 +929,10 @@ La["Space between categories"] = "Freiraum zwischen Kategorien"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
 --[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
+--[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]
 La["TAV"] = "TAV"
@@ -1211,6 +1221,10 @@ La["Sorting"] = "정렬"
 La["SOTS"] = "폭사"
 La["Space between categories"] = "카테고리 사이에 공백"
 La["Sparks of Life"] = "생명의 불꽃"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 La["STRT"] = "타자:경이"
 La["TAV"] = "하늘빛"
 La["TD"] = "톨다고르"
@@ -1608,6 +1622,10 @@ La["Space between categories"] = "Espacio entre categorías"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
 --[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
+--[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]
 La["TAV"] = "TAV"
@@ -1910,6 +1928,10 @@ La["Sorting"] = "Сортировка"
 La["SOTS"] = "СШ"
 La["Space between categories"] = "Промежуток между категориями"
 La["Sparks of Life"] = "Искры жизни"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 La["STRT"] = "УЛИЦЫ"
 La["TAV"] = "ЛХ"
 La["TD"] = "ТД"
@@ -2180,6 +2202,10 @@ La["Sorting"] = "排序"
 La["SOTS"] = "风暴"
 La["Space between categories"] = "显示分类间距"
 La["Sparks of Life"] = "生命火花"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 La["STRT"] = "天街"
 La["TAV"] = "魔馆"
 La["TD"] = "托尔"
@@ -2531,6 +2557,10 @@ La["Space between categories"] = "Espacio entre categorías"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
 --[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
+--[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]
 La["TAV"] = "TAV"
@@ -2784,8 +2814,7 @@ La["PF"] = "瘟疫"
 --[[Translation missing --]]
 La["Pipspark Thundersnap"] = "Pipspark Thundersnap"
 La["Primal Storms Core"] = "元素風暴核心"
---[[Translation missing --]]
-La["Primal Storms Elementals"] = "Primal Storms Elementals"
+La["Primal Storms Elementals"] = "洪荒風暴元素"
 La["Quest progresses"] = "任務進度"
 La["Raids before dungeons"] = "團隊在地城之前"
 La["Recent Bonus Rolls"] = "最近的額外骰子"
@@ -2845,8 +2874,11 @@ La["Sorting"] = "排序"
 --[[Translation missing --]]
 La["SOTS"] = "SOTS"
 La["Space between categories"] = "分類間距"
+La["Sparks of Life"] = "生命火花"
 --[[Translation missing --]]
-La["Sparks of Life"] = "Sparks of Life"
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 La["STRT"] = "街道"
 --[[Translation missing --]]
 La["TAV"] = "TAV"
@@ -3234,6 +3266,10 @@ La["SOTS"] = "SOTS"
 La["Space between categories"] = "Espaço entre as categorias"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 --[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]
@@ -3656,6 +3692,10 @@ La["SOTS"] = "SOTS"
 La["Space between categories"] = "Spazio tra le categorie"
 --[[Translation missing --]]
 La["Sparks of Life"] = "Sparks of Life"
+--[[Translation missing --]]
+La["Storm Surge"] = "Storm Surge"
+--[[Translation missing --]]
+La["Storm's Fury"] = "Storm's Fury"
 --[[Translation missing --]]
 La["STRT"] = "STRT"
 --[[Translation missing --]]

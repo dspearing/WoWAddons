@@ -14668,15 +14668,15 @@ Watch the dialogue
 Witness the Memory |q 67077/2 |goto 62.13,59.41
 step
 talk Nozdormu##192492
-Choose _<Ask about the memory.>
+Choose _<Ask about the memory.>_
 Speak to Nozdormu |q 67077/4 |goto 62.14,59.41
 step
 talk Kalecgos##193492
-Choose _<Ask about the memory.>
+Choose _<Ask about the memory.>_
 Speak to Kalecgos |q 67077/3 |goto 62.20,59.38
 step
 talk Alexstrasza the Life-Binder##192573
-Choose _<Ask about the memory.>
+Choose _<Ask about the memory.>_
 Speak to Alexstrasza |q 67077/5 |goto 62.12,59.28
 step
 talk Alexstrasza the Life-Binder##192573
@@ -15566,12 +15566,14 @@ step
 talk Scalecommander Cindrethresh##199199
 accept Busting Blues##73142 |goto 35.30,59.49
 accept Soupocalypse Now!##73179 |goto 35.30,59.49
+|tip These quests may or may not be available to you.
+|tip If they are not offered, skip this step.
 |only if not completedq(73156)
 step
 talk Fusethrian##200987
 Choose _<Ask for explosive... soup?>_
 Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
-|only if not completedq(73159)
+|only if haveq(73179) or completedq(73179)
 step
 talk Tukkaraq##200558
 accept Driftwood Derby##73715 |goto 34.37,58.57
@@ -15579,11 +15581,11 @@ accept Driftwood Derby##73715 |goto 34.37,58.57
 step
 clicknpc Morqut Glider##201376
 Take the Glider |q 73179/2 |goto 35.70,59.00
-|only if not completedq(73159)
+|only if haveq(73179) or completedq(73179)
 step
 Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
 |tip Use the abilities on your vehicle bar to attack enemies on the boat.
-|only if not completedq(73159)
+|only if haveq(73179) or completedq(73179)
 step
 Return to Morquet Village |outvehicle |goto 35.24,58.97
 |only if not completedq(73159)
@@ -15638,6 +15640,7 @@ turnin Helping Hand and Claw##73160 |goto 37.18,79.06
 step
 talk Scalecommander Cindrethresh##199199
 turnin Soupocalypse Now!##73179 |goto 35.30,59.49
+|only if haveq(73179) or completedq(73179)
 step
 talk Scalecommander Viridia##199201
 accept Exploring Our Past##73159 |goto 34.61,57.69
@@ -15710,7 +15713,7 @@ turnin Journal Entry: The Creches##73114 |goto 35.30,59.50 |only if haveq(73114)
 step
 Kill enemies around this area
 collect 10 Arcane Focus##202362 |q 73142/1 |goto 53.22,54.55
-|only if not completedq(73156)
+|only if haveq(73142) or completedq(73142)
 step
 kill Spellsworn Wingcatcher##201369 |q 74379/1 |goto 59.04,57.54
 |tip This enemy is elite and may require a group.
@@ -15867,7 +15870,7 @@ turnin Still Within Reach##74379 |goto 35.61,59.49
 step
 talk Scalecommander Cindrethresh##199199
 turnin Busting Blues##73142 |goto 35.30,59.49
-|only if not completedq(73156)
+|only if haveq(73142) or completedq(73142)
 step
 talk Scalecommander Viridia##199201
 turnin Return to Viridia##73156 |goto 34.60,57.67
@@ -15997,6 +16000,50 @@ Leave Zskera Vault: Ur |complete not subzone("Zskera Vault: Ur") |goto 28.81,49.
 step
 talk Pathfinder Jeb##202218
 turnin The Scary Vault of Ur##72952 |goto 29.09,53.13
+step
+talk Pathfinder Jeb##200040
+accept Zskera Vault: Ix##72954 |goto 29.09,53.13
+|tip This quest appears on a rotation with six other versions of the vault.
+|tip Check back at the next daily reset for it.
+step
+talk Pathfinder Tacha##200041
+accept Key Hunting##74771 |goto The Forbidden Reach/5 29.16,53.13
+step
+talk Cataloger Wulferd##201180
+accept Authentic Authorization##74984 |goto 29.26,52.69 |or
+accept Authentic Authorization##74983 |goto 29.26,52.69 |or
+accept Authentic Authorization##74282 |goto 29.26,52.69 |or
+|tip You will only be able to accept one of these weekly quests.
+|tip Any time you open vault doors, look around for the objective of the weekly quest.
+|only if not completedq(72954)
+step
+collect 3 Zskera Vault Key##202196 |q 74771/1
+|tip You can acquire these from rare chests and rare mobs all over The Forbidden Reach.
+step
+talk Pathfinder Tacha##200041
+turnin Key Hunting##74771 |goto The Forbidden Reach/5 29.16,53.13
+step
+talk Pathfinder Jeb##200040
+Choose _"Let's explore Zskera Vault Ix."_
+Speak with Jeb to Enter the Vault |q 72954/1 |goto 29.09,53.13
+step
+Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
+Kill the elite
+|tip Inside the middle of the vault.
+Secure the Vault |q 72954/2 |goto 29.57,56.31
+step
+click Door
+Open the Doors with Zskera Vault Keys |q 72954/3 |goto 29.57,56.31
+step
+Fire the Breaching Cannon |q 72954/4 |goto 29.81,56.53
+step
+Click Here to Continue |confirm |q 72954
+|tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
+step
+Leave Zskera Vault: Ix |complete not subzone("Zskera Vault: Ix") |goto 28.81,49.98 |q 72954
+step
+talk Pathfinder Jeb##202218
+turnin Zskera Vault: Ix##72954 |goto 29.09,53.13
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{

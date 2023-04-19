@@ -1,4 +1,4 @@
-local SI, L = unpack(select(2, ...))
+local SI, L = unpack((select(2, ...)))
 local Module = SI:NewModule('Quest')
 
 -- Lua functions
@@ -60,7 +60,7 @@ local _specialQuests = {
   [58770] = { name=L["Ambered Coffer"] },     -- Ambered Coffer
 
   -- Beastwarrens Hunts
-  [63180] = { name=L["Hunt: Shadehounds"] },        -- Hunt: Shadehounds
+  [63433] = { name=L["Hunt: Shadehounds"] },        -- Hunt: Shadehounds (63180 -> 63433 which tracks mount droping)
   [63194] = { name=L["Hunt: Winged Soul Eaters"] }, -- Hunt: Winged Soul Eaters
   [63198] = { name=L["Hunt: Death Elementals"] },   -- Hunt: Death Elementals
   [63199] = { name=L["Hunt: Soul Eaters"] },        -- Hunt: Soul Eaters
@@ -81,6 +81,7 @@ local _specialQuests = {
   [71137] = { name=L["Grand Hunts: Uncommon Reward"] }, -- Grand Hunts: Uncommon Reward
   [71033] = { name=L["Trial of Flood"] }, -- Trial of Flood
   [71995] = { name=L["Trial of Elements"] }, -- Trial of Elements
+  [73162] = { name=L["Storm's Fury"] }, -- Storm's Fury
   -- Draconic Treatise
   [74105] = { lid=194699 }, -- Draconic Treatise on Inscription
   [74106] = { lid=194708 }, -- Draconic Treatise on Mining
@@ -353,6 +354,7 @@ local QuestExceptions = {
   [72373] = "Weekly", -- Aiding the Accord: The Hunt is On
   [72374] = "Weekly", -- Aiding the Accord: Dragonbane Keep
   [72375] = "Weekly", -- Aiding the Accord: The Isles Call
+  [75259] = "Weekly", -- Aiding the Accord: Zskera Vault
   -- Fishing Weeklies
   [70199] = "Weekly", -- Catch and Release: Scalebelly Mackerel
   [70200] = "Weekly", -- Catch and Release: Thousandbite Piranha

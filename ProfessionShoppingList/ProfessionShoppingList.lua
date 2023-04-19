@@ -454,6 +454,8 @@ function pslTrackRecipe(recipeID, recipeQuantity)
 	recipesTracked[recipeID] = recipesTracked[recipeID] + recipeQuantity
 
 	local recipeType = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).recipeType
+	local recipeMin = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).quantityMin
+	local recipeMax = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).quantityMax
 
 	-- Add recipe link for crafted items
 	if recipeType == 1 then
@@ -471,7 +473,16 @@ function pslTrackRecipe(recipeID, recipeQuantity)
 		else
 			itemLink = string.gsub(itemLink, " |A:Professions%-ChatIcon%-Quality%-Tier1:17:15::1|a", "") -- Remove the quality from the item string
 		end
+
+		-- Add quantity
+		if recipeMin == recipeMax and recipeMin ~= 1 then
+			itemLink = itemLink.." ×"..recipeMin
+		elseif recipeMin ~= 1 then
+			itemLink = itemLink.." ×"..recipeMin.."-"..recipeMax
+		end
+
 		recipeLinks[recipeID] = itemLink
+
 	-- Add recipe "link" for enchants
 	elseif recipeType == 3 then recipeLinks[recipeID] = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).name
 	end
@@ -1885,7 +1896,7 @@ function pslWindowFunctions()
 				-- If Shift is held also
 				if IsShiftKeyDown() == true then
 					-- Try write link to chat
-					ChatEdit_InsertLink(data[realrow][1])
+					ChatEdit_InsertLink(string.match(data[realrow][1], "(.*)|r")) -- Extract just the item link
 				-- If Control is held also
 				elseif IsControlKeyDown() == true then
 					-- Get the selected recipe ID
@@ -2744,7 +2755,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 	-- Replace the in-game tracking of shift+clicking a recipe with PSL's
 	if event == "TRACKED_RECIPE_UPDATE" then
 		if arg2 == true then
-			pslTrackRecipe(arg1,1)
+			pslTrackRecipe(pslSelectedRecipeID,1)
 			C_TradeSkillUI.SetRecipeTracked(arg1, false, false)
 		end
 	end

@@ -839,6 +839,11 @@ GTFO.SpellID["375883"] = {
   sound = 1;
 };
 
+GTFO.SpellID["396624"] = {
+  --desc = "Storm Fissure (Broodkeeper Diurna)";
+  sound = 1;
+};
+
 GTFO.SpellID["375873"] = {
   --desc = "Wildfire (Broodkeeper Diurna)";
   applicationOnly = true;
@@ -907,4 +912,92 @@ GTFO.SpellID["388659"] = {
 	end;
 };
 
+
+--- **********************************
+--- * Aberrus, the Shadowed Crucible *
+--- **********************************
+
+GTFO.SpellID["408976"] = {
+  --desc = "Dancing Steel (Sundered Edgelord)";
+  sound = 1;
+  tankSound = 0;
+};
+
+GTFO.SpellID["406530"] = {
+  --desc = "Riftburn (Kazzara, the Hellforged)";
+  sound = 1;
+};
+
+GTFO.SpellID["402420"] = {
+  --desc = "Molten Scar (Kazzara, the Hellforged)";
+  sound = 1;
+};
+
+GTFO.SpellID["400432"] = {
+  --desc = "Hellbeam (Kazzara, the Hellforged)";
+  sound = 1;
+};
+
+GTFO.SpellID["405927"] = {
+  --desc = "Chrono Pocket (Sundered Timewalker)";
+  applicationOnly = true;
+  sound = 2;
+};
+
+GTFO.SpellID["411905"] = {
+  --desc = "Blaze Boil (Sundered Chemist)";
+  sound = 1;
+};
+
+GTFO.SpellID["411900"] = {
+  --desc = "Gloom Fluid (Sundered Chemist)";
+  sound = 1;
+};
+
+GTFO.SpellID["412625"] = {
+  --desc = "Shadowflame Spill (Sundered Chemist)";
+  sound = 1;
+};
+
+GTFO.SpellID["405084"] = {
+  --desc = "Lingering Umbra (Essence of Shadow)";
+  sound = 1;
+};
+
+GTFO.SpellID["405645"] = {
+  --desc = "Engulfing Heat (Shadowflame Amalgamation)";
+  sound = 1;
+};
+
+GTFO.SpellID["411892"] = {
+  --desc = "Viscous Bile (???)";
+  applicationOnly = true;
+  sound = 2;
+};
+
+GTFO.SpellID["412498"] = {
+  --desc = "Stagnating Pool (Oozing Sludge)";
+  applicationOnly = true;
+  sound = 2;
+};
+
+GTFO.SpellID["411799"] = {
+  --desc = "Creeping Ooze (Oozing Sludge)";
+  applicationOnly = true;
+  sound = 2;
+  test = true;
+};
+
+GTFO.SpellID["406233"] = {
+  --desc = "Deep Breath (Rionthus)";
+  sound = 1;
+};
+
+GTFO.SpellID["405457"] = {
+  --desc = "Disintegrate (Rionthus)";
+  sound = 4;
+};
+
+
 end
+

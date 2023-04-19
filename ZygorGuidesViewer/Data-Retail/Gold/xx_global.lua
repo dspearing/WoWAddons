@@ -1,7 +1,7 @@
 ZGV.Gold.ServerTrends:ImportServerPrices[[
 realm=GLOBAL
-date=1680930002
-date-readable=2023-04-08 01:00:02
+date=1681794001
+date-readable=2023-04-18 01:00:01
 columns=
 items=0
 ]]
