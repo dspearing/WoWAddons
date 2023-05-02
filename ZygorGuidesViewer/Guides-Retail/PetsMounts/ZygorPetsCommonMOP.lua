@@ -347,7 +347,7 @@ step
 Stand on the small island here.
 Equip your Fishing Pole, if it's not already equipped |use Fishing Pole##6256
 Use your Fishing skill to fish in the water here. |cast Fishing##131474
-collect 1 Tiny Red Carp##94932 |goto Townlong Steppes/0 35.9,53.3
+collect 1 Tiny Red Carp##94932 |goto Townlong Steppes/0 35.90,53.30
 |tip This is a very rare item. You may be fishing here for a while.
 step
 learnpet Tiny Red Carp##1206 |use Tiny Red Carp##94932
@@ -380,7 +380,7 @@ confirm
 step
 Challenge one to a pet battle and capture it.
 |tip The Wanderer's Festival Hatchlings in this area are around level 23.
-learnpet Wanderer's Festival Hatchling##1013 |goto Krasarang Wilds 78.0,24.0
+learnpet Wanderer's Festival Hatchling##1013 |goto Krasarang Wilds/0 72.12,32.34
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Yellow-Bellied Bullfrog",{
 patch='50100',
@@ -392,7 +392,9 @@ pet=752,
 step
 Challenge one to a pet battle and capture it.
 |tip The Yellow-Bellied Bullfrogs are around level 24.
-learnpet Yellow-Bellied Bullfrog##752 |goto Vale of Eternal Blossoms 88.6,50.3
+|tip They are not always available, and you may have to wait, realm hop, or battle other pets to find it as a backline.
+learnpet Yellow-Bellied Bullfrog##752 |goto Vale of Eternal Blossoms/0 69.00,44.84
+You can find more around [24.60,30.84]
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Alpine Foxling",{
 patch='50100',
@@ -2910,16 +2912,14 @@ description="\nThis guide will walk you through obtaining the Mechanical pet: Su
 pet=1178,
 },[[
 step
-For this pet, you will need to fight the rare spawn Haywire Sunreaver Construct.
-|tip You will likely need at least one other person to kill this rarespawn, unless you can self sustain your health while dpsing him down.
-confirm
+kill Haywire Sunreaver Construct##50358
+|tip He walks around this area.
+collect Sunreaver Construct##94124 |goto Isle of Thunder/0 49.20,86.40 |or
+|tip You may have to kill him several times to collect the item.
+'|complete haspet(1183)
 step
-kill Haywire Sunreaver Construct##50358+
-collect Sunreaver Construct##94124 |goto Isle of Thunder/0 50.0,91.1
-step
-learnpet Sunreaver Micro-Sentry##1178 |use Sunreaver Construct##94124
-step
-Congratulations, you have learned the Sunreaver Micro-Sentry!
+|use Sunreaver Construct##94124
+Learn the "Sunreaver Micro-Sentry" Battle Pet |learnpet Sunreaver Micro-Sentry##1178
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\\Unborn Val'kyr",{
 patch='53000',

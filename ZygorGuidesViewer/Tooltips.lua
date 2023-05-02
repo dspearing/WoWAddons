@@ -9,11 +9,7 @@ if C_TooltipInfo then
 		local results = {}
 		if data then
 			for line,linedata in ipairs(data.lines) do
-				for _,info in ipairs(linedata.args) do
-					if info.stringVal then
-						table.insert(results,info.stringVal)
-					end
-				end
+				table.insert(results,linedata.leftText)
 			end
 		end
 		return results
@@ -21,13 +17,7 @@ if C_TooltipInfo then
 
 	function TS:GetQuestLogItem(type,index,quest)
 		local data = C_TooltipInfo.GetQuestLogItem(type,index,quest)
-		if data then
-			for _,info in ipairs(data.args) do
-				if info.field=="hyperlink" then
-					return info.stringVal
-				end
-			end
-		end
+		if data then return data.hyperlink end
 	end
 
 	function TS:GetSpellTooltip(spellID)

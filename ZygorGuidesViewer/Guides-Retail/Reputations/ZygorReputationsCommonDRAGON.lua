@@ -5866,13 +5866,16 @@ talk Sonova Snowden##201065
 '|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
 Reach Level 25 in the Furbolg Language |complete language("Furbolg")>=25 |goto 66.92,12.72
 step
+Reach Level 25 in the Furbolg Language
+confirm
+step
 talk Sonova Snowden##201065
 accept Honeyfreeze Mead##73550 |goto 66.92,12.72
 accept Hive Maintenance##73692 |goto 66.92,12.72
 stickystart "Collect_8_Honeyfreeze_Honey"
 step
-Run through the Blooming Frostbells
-Gain the _"Pollen Power!"_ Buff |complete hasbuff("spell:399327") or readyq(73692) or completedq(73692)
+Run through the Blooming Frostbell's
+Gain the _"Pollen Power!"_ Buff |complete hasbuff("spell:399327") |q 73692/1
 |tip The buff will last 9 seconds.
 |tip Run into Honeyfreeze Pollinators.
 Deliver Pollen to #8# Honeyfreeze Pollinators |q 73692/1 |goto 62.13,17.79
@@ -5908,24 +5911,14 @@ turnin Hive Maintenance##73692 |goto 66.92,12.72
 accept Local Flavors##73704 |goto 66.92,12.72
 step
 talk Kazzi##201105
-Choose _<Ask about local flavor options to incorporate into the brew Sonova is working on.>_
+Choose _"<Ask about local flavor options to incorporate into the brew Sonova is working on.>"_
 Collect the Brewing Supplies |q 73704/1 |goto 65.81,12.69
 step
 talk Sonova Snowden##201065
 turnin Local Flavors##73704 |goto 66.92,12.72
 step
-Kill enemies around this area
-collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
-collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
-|tip You will need around 375 Liberated Furbolg Artifacts in total to reach the cap of 100 from this point.
-|tip Each Intact Scribe Stick will remove 5 from that total number.
-Click Here to Continue |confirm |complete language("Furbolg")>=50
-step
-talk Sonova Snowden##201065
-|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
-'|turnin Additional Academic Acquisitions##72586 |n |repeatable
-'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
-Reach Level 50 in the Furbolg Language |complete language("Furbolg")>=50 |goto 66.92,12.72
+Reach Level 50 in the Furbolg Language
+confirm
 step
 talk Garz##199266
 accept A Living History##72551 |goto 66.87,12.99
@@ -5972,7 +5965,7 @@ label "Collect_12_Chillwrought_Worm_Meat"
 map The Azure Span
 path    59.27,22.82    60.76,23.27    62.47,23.70    62.58,22.50    61.40,21.83
 path    60.17,21.42
-Kill Chillwrought enemies along this path
+Kill Chillwrought Enemies Along this Path
 collect 12 Chillwrought Worm Meat##202185 |q 72553/1
 step
 talk Elder Mhaz##199271
@@ -5995,18 +5988,8 @@ step
 talk Jyrra "Fuzzy Feet" Coldsoar##200206
 turnin Returning the Blade##74433 |goto 66.83,13.01
 step
-Kill enemies around this area
-collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
-collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
-|tip You will need around 250 Liberated Furbolg Artifacts in total to reach the cap of 100 from this point.
-|tip Each Intact Scribe Stick will remove 5 from that total number.
-Click Here to Continue |confirm |complete language("Furbolg")>=75
-step
-talk Sonova Snowden##201065
-|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
-'|turnin Additional Academic Acquisitions##72586 |n |repeatable
-'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
-Reach Level 75 in the Furbolg Language |complete language("Furbolg")>=75 |goto 66.92,12.72
+Reach Level 75 in the Furbolg Language
+confirm
 step
 talk Garz##199266
 accept Path of Trust##73035 |goto 66.87,12.99
@@ -6015,8 +5998,7 @@ talk Radza Thunderclaw##199267
 turnin Path of Trust##73035 |goto 65.99,12.61
 accept Our Honored Ancestors##72558 |goto 65.99,12.61
 step
-click Radza's Spirit Incense
-Choose _<Breathe in the smoke to entice visions of the Winterpelt ancestors.>_
+Choose _<"Breath in the smoke to entice visions of the Winterpelt ancestors.">_
 Use Radza's Incense |q 72558/1 |goto 65.95,12.64
 step
 talk Radza Thunderclaw##199267
@@ -6025,30 +6007,30 @@ step
 talk Ancestor Brazzok##199996
 accept Ancestral Advice##72941 |goto 65.97,12.73
 step
+Choose _"What is your message, ancestor?"_
 talk Ancestor Brazzok##199996
-Ask him _"What is your message, ancestor?"_
 Listen to the Ancestor's Message |q 72941/1 |goto 65.97,12.73
 step
 talk Ancestor Molg##199300
 accept Our Path Ahead##72945 |goto 67.05,13.12
 step
+Choose _"What is your message, ancestor?"_
 talk Ancestor Molg##199300
-Ask him _"What is your message, ancestor?"_
 Listen to the Ancestor's Message |q 72945/1 |goto 67.05,13.12
 step
 talk Jhagaza the Wordkeeper##199299
 accept History Heist##72559 |goto 66.98,11.90
 step
 talk Little Toz##199315
-Tell him _"I have an important message for you from your ancestor."_
-Then tell him _"Make sure to marry Bright Fur immediately."_
+Choose _"I have an important message for you from your ancestor."_
+Then Choose _"Make sure to marry Bright Fur immediately."_
 Give the Message to Little T'oz |q 72941/2 |goto 67.18,12.06
 step
 Enter the building |goto 66.33,11.45 < 10 |walk
 talk Kranac Sagesnow##189394
 |tip Inside the building.
-Tell him _"I have an important message from your ancestor."_
-Then tell him _"The Winterpelt must obtain allies."_
+Choose _"I have an important message from your ancestor."_
+Then Choose _"The Winterpelt must obtain allies."_
 Give the Message to Kranac Sagesnow |q 72945/2 |goto 65.92,10.68
 step
 click Stolen Winterpelt Crate##380841
@@ -6059,17 +6041,8 @@ turnin History Heist##72559 |goto 65.99,12.61
 turnin Ancestral Advice##72941 |goto 65.99,12.61
 turnin Our Path Ahead##72945 |goto 65.99,12.61
 step
-Kill enemies around this area
-collect Intact Scribe Stick##202018 |goto 68.26,18.54 |n
-collect 125 Liberated Furbolg Artifacts##202017 |goto 68.26,18.54 |n
-|tip Each Intact Scribe Stick will remove 5 from that total number.
-Click Here to Continue |confirm |complete language("Furbolg")==100
-step
-talk Sonova Snowden##201065
-|tip Turn in the Intact Scribe Sticks and Liberated Furbolg Artifacts you have farmed to increase your Furbolg Language.
-'|turnin Additional Academic Acquisitions##72586 |n |repeatable
-'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
-Reach Level 100 in the Furbolg Language |complete language("Furbolg")==100 |goto 66.92,12.72
+Reach Level 100 in the Furbolg Language
+confirm
 step
 talk Sonova Snowden##201065
 accept Words of the Winterpelt##72598 |goto 66.92,12.72
@@ -6081,21 +6054,21 @@ accept Ursol's Wisdom##72590 |goto 65.92,10.68
 accept Ursoc's Strength##72597 |goto 65.92,10.68
 stickystart "Collect_12_Rustpine_Cones"
 step
-Ride the Winds of the Isles on a Drake |q 72590/1 |goto 66.39,13.17
+Ride the Winds of the Isles on a drake |q 72590/1 |goto 66.39,13.17
 |tip Make sure you are using your Dragonflight mount.
 step
 label "Collect_12_Rustpine_Cones"
 collect 12 Rustpine Cone##202245 |q 72590/2 |goto 65.72,10.94
-|tip They are in the trees above the village.
+|tip They are in the tries above the village.
 step
 click Rustpine Cone
-Contact Ursol |q 72590/3 |goto 69.91,9.70
+Ursol Contacted |q 72590/3 |goto 69.91,9.70
 step
 click Ursoc's Totem
 Contact Ursoc |q 72597/1 |goto 72.88,18.14
 step
 talk Ursoc's Faithful##199308
-Tell him _"I am willing."_
+Choose _"I am willing."_
 kill Ursoc's Faithful##199308
 Gain Ursoc's Blessing |q 72597/2 |goto 72.84,18.21
 step
@@ -6105,19 +6078,228 @@ turnin Ursol's Wisdom##72590 |goto 65.92,10.68
 turnin Ursoc's Strength##72597 |goto 65.92,10.68
 accept Champion of the Winterpelt##73031 |goto 65.92,10.68
 step
+Choose _"I am ready to begin."_
 talk Kranac Sagesnow##189394
-Tell him _"I am ready to begin."_
-Begin the Celebration |q 73031/1 |goto 65.92,10.68
+Celebration Begun |q 73031/1 |goto 65.92,10.68
 step
 talk Kranac Sagesnow##189394
 turnin Champion of the Winterpelt##73031 |goto 65.92,10.68
 step
-talk Sonova Snowden##201065
-'|turnin Additional Academic Acquisitions##72586 |n |repeatable
-'|turnin Astonishing Academic Acquisitions##72587 |n |repeatable
 Reach Exalted with the Winterpelt Furbolg |complete rep("Winterpelt Furbolg")>Exalted |goto 68.26,18.54
 |tip This grind is similar to the Timbermaw Hold rep grind.
 |tip Farm Liberated Furbolg Artifacts and turn them in at Sonova Snowden for rep.
 You can find Sonova at [66.92,12.72]
+]])
+ZGV.BETAEND()
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Loamm Niffen",{
+author="support@zygorguides.com",
+description="This guide will walk you through Loamm Niffen renown content.",
+patch='100100',
+},[[
+step
+Complete the "Orientation: Loamm Niffen" Quest |q 75643 |or
+|tip This quest is required to unlock Loamm Niffen renown.
+|tip Progress through the Zaralek Cavern guide to unlock it.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+Click Here to Load the Zaralek Cavern Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Zaralek Cavern"
+step
+Reach Renown Level 2 with the Loamm Niffen |complete factionrenown(2564) >= 2
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Dragon Isles Supplies##76025
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin Dragon Isles Supplies##76025 |goto Zaralek Cavern/0 56.53,55.66
+step
+Reach Renown Level 3 with the Loamm Niffen |complete factionrenown(2564) >= 3
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Care to Barter?##75720
+step
+talk Ponzo##204693
+turnin Care to Barter?##75720 |goto 58.09,53.81
+accept Bartering 101##75721 |goto 58.09,53.81
+step
+talk Kayann##203516
+turnin Bartering 101##75721 |goto Valdrakken/0 36.45,62.48
+step
+Reach Renown Level 4 with the Loamm Niffen |complete factionrenown(2564) >= 4
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Drake's Shadowflame Crest##75722
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin Drake's Shadowflame Crest##75722 |goto Zaralek Cavern/0 56.53,55.66
+step
+Reach Renown Level 5 with the Loamm Niffen |complete factionrenown(2564) >= 5
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Cavern Drakewatching##75723
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Cavern Drakewatching##75723 |goto 56.49,55.62
+step
+Reach Renown Level 6 with the Loamm Niffen |complete factionrenown(2564) >= 6
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Like the Niffen Do##75724
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin Like the Niffen Do##75724 |goto 56.53,55.66
+step
+Reach Renown Level 7 with the Loamm Niffen |complete factionrenown(2564) >= 7
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Off to the Track##75725
+step
+talk Briggul##201752
+turnin Off to the Track##75725 |goto 44.25,79.93
+step
+Reach Renown Level 8 with the Loamm Niffen |complete factionrenown(2564) >= 8
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+Reach Renown Level 9 with the Loamm Niffen |complete factionrenown(2564) >= 9
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+Reach Renown Level 10 with the Loamm Niffen |complete factionrenown(2564) >= 10
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Dragon Isles Supplies##76028
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin Dragon Isles Supplies##76028 |goto Zaralek Cavern/0 56.53,55.66
+step
+Reach Renown Level 11 with the Loamm Niffen |complete factionrenown(2564) >= 11
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+Reach Renown Level 12 with the Loamm Niffen |complete factionrenown(2564) >= 12
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Bartering Boulders##75728
+step
+talk Ponzo##204693
+turnin Bartering Boulders##75728 |goto 58.09,53.81
+step
+Reach Renown Level 13 with the Loamm Niffen |complete factionrenown(2564) >= 13
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Slitherdrake Watching##75730
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Slitherdrake Watching##75730 |goto 56.49,55.62
+step
+_Next to you:_
+talk Newsy##205127
+accept Airborne Winding##76030
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Airborne Winding##76030 |goto 56.49,55.62
+step
+Reach Renown Level 14 with the Loamm Niffen |complete factionrenown(2564) >= 14
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Scented Boots##75731
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Scented Boots##75731 |goto 56.49,55.62
+step
+Reach Renown Level 15 with the Loamm Niffen |complete factionrenown(2564) >= 15
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Signed, Sealed, Self-Delivered##76067
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Signed, Sealed, Self-Delivered##76067 |goto 56.49,55.62
+step
+Reach Renown Level 16 with the Loamm Niffen |complete factionrenown(2564) >= 16
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+Reach Renown Level 17 with the Loamm Niffen |complete factionrenown(2564) >= 17
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Bundle of Boulders##75741
+step
+talk Ponzo##204693
+turnin Bundle of Boulders##75741 |goto 58.09,53.81
+step
+Reach Renown Level 18 with the Loamm Niffen |complete factionrenown(2564) >= 18
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+Reach Renown Level 19 with the Loamm Niffen |complete factionrenown(2564) >= 19
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Drake Helms##75742
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Drake Helms##75742 |goto 56.49,55.62
+step
+Reach Renown Level 20 with the Loamm Niffen |complete factionrenown(2564) >= 20
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept A Token of Our Gratitude##75744
+accept The Smelliest Tabard##75727
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin A Token of Our Gratitude##75744 |goto 56.53,55.66
+turnin The Smelliest Tabard##75727 |goto 56.53,55.66
 ]])
 ZGV.BETAEND()

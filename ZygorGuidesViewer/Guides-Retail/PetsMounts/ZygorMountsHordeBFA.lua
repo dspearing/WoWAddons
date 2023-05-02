@@ -1051,17 +1051,16 @@ condition_end=function() return hasmount(254813) end,
 description="\nThis mount is acquired by obtaining a random drop from Harlan Sweete in the Freehold dungeon on Mythic difficulty.",
 },[[
 step
-Enter the Freehold Dungeon |goto Freehold/0 0.00,0.00 < 1000
+Enter the Freehold Dungeon |goto Tiragarde Sound/0 84.53,78.83 < 10 |c
 step
 kill Harlan Sweete##129440
-collect 1 Sharkbait's Favorite Crackers##159842 |n
+collect 1 Sharkbait's Favorite Crackers##159842 |or
 |tip This is a rare drop.
 |tip This only can drop in Mythic difficulty.
-use Sharkbait's Favorite Crackers##159842
-Learn the Sharkbait Mount |learnmount Shark Bait##254813
+'|complete hasmount(254813) |or
 step
-_Congratulations!_
-You Earned the "Sharkbait" Mount.
+use Sharkbait's Favorite Crackers##159842
+Learn the "Sharkbait" Mount |learnmount Sharkbait##254813
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Silent Glider",{
 author="support@zygorguides.com",
@@ -2260,272 +2259,6 @@ step
 _Congratulations!_
 You Collected the "Mechanocat Laser Pointer" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Undercity Plaguebat",{
-author="support@zygorguides.com",
-startlevel=45.0,
-keywords={"flying, mount, battle, for, azeroth, quest, horde"},
-mounts={272472},
-patch='80100',
-mounttype='Flying',
-model={85886},
-condition_end=function() return hasmount(272472) end,
-description="\nThis mount is acquired by completing the \"Burning of Teldrassil\" event.",
-},[[
-step
-accept The Warchief Awaits##50476
-|tip You will automatically accept this quest.
-step
-Follow the path |goto Undercity/0 52.05,64.52 < 5 |walk
-Continue following the path |goto 46.32,72.88 < 5 |walk
-Continue following the path |goto 45.29,78.11 < 5 |walk
-Continue following the path |goto 46.20,83.81 < 5 |walk
-Continue following the path |goto 48.81,87.79 < 5 |walk
-talk Lady Sylvanas Windrunner##134554
-turnin The Warchief Awaits##50476 |goto 58.14,91.88
-accept The Warchief Commands##50642 |goto 58.10,91.88
-step
-talk High Overlord Saurfang##134574
-turnin The Warchief Commands##50642 |goto Northern Barrens/0 50.88,46.00
-accept A Quick Diversion##50646 |goto 50.88,46.00
-step
-talk Lorash##134573
-turnin A Quick Diversion##50646 |goto Ashenvale/0 38.91,55.30
-accept Everybody Has a Price##50647 |goto Ashenvale/0 38.91,55.30
-step
-Cross the bridge |goto 37.45,53.69 |walk
-|tip Dismount before crossing.
-kill Astranaar Sentinel##134645+
-|tip Use the "Marked!" ability on guards around this area.
-Eliminate #10# Guards |q 50647/1 |goto 36.62,51.99
-step
-talk Lorash##134573
-turnin Everybody Has a Price##50647 |goto 38.91,55.29
-accept A Timely Arrival##50738 |goto 38.91,55.29
-step
-talk Lady Sylvanas Windrunner##135003
-turnin A Timely Arrival##50738 |goto 37.83,56.30
-accept Zoram'gar Outpost##50740 |goto 37.83,56.30
-step
-Enter the building |goto 12.86,34.12 < 3 |walk
-talk Innkeeper Duras##43606
-|tip Inside the building.
-Tell her _"The warchief needs rations and lodging for an incoming army."_
-Speak with the Innkeeper |q 50740/2 |goto 12.99,34.16
-step
-Leave the building |goto 12.86,34.12 < 3 |walk
-Enter the building |goto 11.67,35.00 < 5 |walk
-talk Dagrun Ragehammer##34303
-|tip He walks around inside the building.
-Tell him _"Warchief Sylvanas Windrunner requires your aid repairing her soldiers' weapons."_
-Speak with the Weaponsmith |q 50740/3 |goto 11.56,35.36
-step
-Leave the building |goto 11.65,35.07 < 5 |walk
-talk Commander Grimfang##34122
-Tell him _"Commander, the warchief asks that you prepare your outpost for an incoming army."_
-Speak with Commander Grimfang |q 50740/1 |goto 12.11,33.86
-step
-talk High Overlord Saurfang##134574
-turnin Zoram'gar Outpost##50740 |goto 35.17,49.44
-accept On The Prowl##50772 |goto 35.17,49.44
-step
-Meet Sylvanas Near the Entrance to Darkshore |q 50772/1 |goto Darkshore/0 44.07,90.46
-step
-talk Lady Sylvanas Windrunner##134554
-turnin On The Prowl##50772 |goto 44.08,90.50
-accept Into the Woods##50800 |goto 44.08,90.50
-step
-kill 6 Ashenvale Huntress##135350 |q 50800/1 |goto 44.11,90.49
-step
-talk Lady Sylvanas Windrunner##134554
-turnin Into the Woods##50800 |goto 44.07,90.49
-accept Ripe for the Picking##50823 |goto 44.07,90.49
-step
-turnin Ripe for the Picking##50823 |goto Ashenvale/0 12.13,33.75
-step
-talk Lady Sylvanas Windrunner##134554
-accept A Quick Flyover##50837 |goto 12.02,33.77
-step
-talk Zarvik Blastwix##135501
-Speak with Zarvik Blastwix |q 50837/1 |goto 11.82,33.26
-step
-talk Zarvik Blastwix##135501
-Tell him _"Let's Fly."_
-Board the Bombardier |invehicle |goto 11.82,33.26 |q 50837
-stickystart "Destroy_30_Wisps"
-step
-kill Marked Tree##140924+
-|tip Use the "Anti-Air Canon" ability on your action bar.
-Fell #3# Marked Trees |q 50837/2 |goto Darkshore/0 40.83,90.64
-step
-label "Destroy_30_Wisps"
-kill Wisp##141268+
-|tip Use the "Anti-Air Canon" ability on your action bar.
-Destroy #30# Wisps |q 50837/3 |goto 42.35,90.41
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Quick Flyover##50837 |goto Ashenvale/0 12.02,33.78
-accept An Unstoppable Force##50880 |goto 12.02,33.78
-step
-Meet Sylvanas at the Wall |q 50880/1 |goto Darkshore/0 44.00,90.18
-step
-Pass Through the Wall |q 50880/2 |goto 43.81,89.77
-step
-talk Lady Sylvanas Windrunner##134554
-turnin An Unstoppable Force##50880 |goto 42.84,87.43
-accept Clearing Them Out##53604 |goto 42.84,87.43
-accept A Glaive Misunderstanding##53605 |goto 42.84,87.43
-stickystart "Kill_6_Darnassian_Archers"
-step
-use the Everburning Torch##158937
-Burn #4# Glaive Throwers |q 53605/1 |goto 40.67,83.88
-step
-label "Kill_6_Darnassian_Archers"
-Kill enemies around this area
-Defeat #7# of the Night Elf Forces |q 53604/1 |goto 40.67,83.88
-step
-talk Lady Sylvanas Windrunner##134554
-turnin Clearing Them Out##53604 |goto 42.43,82.06
-turnin A Glaive Misunderstanding##53605 |goto 42.43,82.06
-accept Blurred Vision##50878 |goto 42.43,82.06
-stickystart "Kill_10_Frenzied_Blackwood_Furbolg"
-step
-kill 8 Sentry Owl##141359 |q 50878/1 |goto 42.36,78.18
-step
-label "Kill_10_Frenzied_Blackwood_Furbolg"
-kill 10 Frenzied Blackwood Furbolg##140686 |q 50878/2 |goto 42.36,78.18
-step
-talk Lady Sylvanas Windrunner##135003
-turnin Blurred Vision##50878 |goto 43.30,75.67
-accept The Trees Have Ears##50879 |goto 43.30,75.67
-step
-kill Burning Ancient##141365 |q 50879/1 |goto 44.31,75.17
-step
-talk Lady Sylvanas Windrunner##135003
-turnin The Trees Have Ears##50879 |goto 43.30,75.67
-step
-talk Lady Sylvanas Windrunner##135003
-accept The Blackwood Den##52436 |goto 43.30,75.67
-accept Aggressive Inspiration##53606 |goto 43.30,75.67
-stickystart "Slay_10_Blackwood_Furbolgs"
-step
-click Horde Banner##289540
-Plant the Northern Banner |q 53606/1 |goto 45.10,83.68
-step
-click Horde Banner##289540
-Plant the Center Banner |q 53606/2 |goto 44.61,85.10
-step
-click Horde Banner##289540
-Plant the Southern Banner |q 53606/3 |goto 44.39,86.53
-step
-label "Slay_10_Blackwood_Furbolgs"
-Kill Blackwood enemies around this area
-Slay #10# Blackwood Furbolgs |q 52436/1
-step
-talk Lady Sylvanas Windrunner##134554
-turnin The Blackwood Den##52436 |goto 43.32,84.71
-turnin Aggressive Inspiration##53606 |goto 43.32,84.71
-accept The Start of Something Good##52437 |goto 43.32,84.71
-step
-Meet Sylvanas at Nazj'vel |q 52437/1 |goto 35.81,84.77
-step
-talk Jux Burstkix##144346
-turnin The Start of Something Good##52437 |goto 35.82,84.84
-accept Fueling the Horde War Machine##53608 |goto 35.82,84.84
-accept A Very Clear Message##53609 |goto 35.82,84.84
-stickystart "Slay_10_Night_Elves"
-step
-click Azerite Deposit##297790+
-|tip They look like small multicolored rocks on the ground around this area.
-Collect #6# Azerite |q 53608/1 |goto 32.63,84.08
-step
-label "Slay_10_Night_Elves"
-Kill enemies around this area
-Slay #10# Night Elves |q 53609/1 |goto 32.63,84.08
-step
-talk Jux Burstkix##144346
-turnin Fueling the Horde War Machine##53608 |goto 35.82,84.84
-turnin A Very Clear Message##53609 |goto 35.82,84.84
-accept A Gift of Azerite##53627 |goto 35.82,84.84
-step
-talk Zarvik Blastwix##135501
-|tip He walks around this area.
-turnin A Gift of Azerite##53627 |goto 44.60,86.54
-accept A Wild Ride##52438 |goto 44.60,86.54
-step
-clicknpc Goblin Hellion##141847
-Use the Goblin Hellion |q 52438/1 |goto 44.76,83.45
-step
-Ride the Goblin Hellion to Wildbend River |q 52438/2 |goto 41.15,69.32
-stickystart "Slay_20_Kaldorei_Forces"
-step
-kill Awakened Ancient##140741+
-|tip Use the abilities on your action bar.
-Slay #5# Awakened Ancients |q 52438/3 |goto 40.34,68.01
-step
-label "Slay_20_Kaldorei_Forces"
-Kill enemies around this area
-|tip Use the abilities on your action bar.
-Slay #20# Kaldorei forces |q 52438/4 |goto 41.01,67.80
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Wild Ride##52438 |goto 42.70,67.75
-accept A Looming Threat##52806 |goto 42.70,67.75
-step
-talk Lady Sylvanas Windrunner##134554
-Ask her _"Where do we go from here, Warchief?"_
-Speak with Sylvanas at the Blackwood Den |q 52806/1 |goto 44.70,86.78
-step
-talk Lady Sylvanas Windrunner##134554
-turnin A Looming Threat##52806 |goto 44.70,86.78
-accept Saurfang Returns##52967 |goto 44.70,86.78
-step
-talk High Overlord Saurfang##142310
-turnin Saurfang Returns##52967 |goto 52.16,22.46
-accept No Small Mercy##52970 |goto 52.16,22.46
-accept Driving Them Out##53610 |goto 52.16,22.46
-accept Seaside Rendezvous##52971 |goto 52.16,22.46
-stickystart "Secure_8_Civilians"
-stickystart "Slay_15_Lor'danel_defenders"
-step
-kill Ariel Stagguard##144345 |q 52971/2 |goto 51.66,17.80
-step
-kill Caranne Briarbow##142749 |q 52971/1 |goto 46.73,18.79
-step
-label "Secure_8_Civilians"
-clicknpc Lor'danel Citizen##142408
-Tell them _"Come with us to safety. We will not harm you."_
-Secure #8# Civilians |q 52970/1 |goto 50.75,20.27
-step
-label "Slay_15_Lor'danel_defenders"
-Kill enemies around this area
-Slay #15# Lor'danel Defenders |q 53610/1 |goto 50.23,18.67
-step
-talk High Overlord Saurfang##142310
-turnin No Small Mercy##52970 |goto 52.16,22.45
-turnin Driving Them Out##53610 |goto 52.16,22.45
-turnin Seaside Rendezvous##52971 |goto 52.16,22.45
-accept Killer Queen##52981 |goto 52.16,22.45
-step
-Find Saurfang in Northern Darkshore |q 52981/1 |goto 45.93,23.55
-step
-Watch the dialogue
-Assist the Warchief |q 52981/2 |goto 46.13,24.40
-step
-Watch the dialogue
-Follow Saurfang |q 52981/3 |goto 46.12,24.28
-step
-talk Lady Sylvanas Windrunner##144466
-Tell her _"I am ready."_ |q 52981/4 |goto 45.52,18.25
-step
-talk Lady Sylvanas Windrunner##144466
-turnin Killer Queen##52981 |goto 45.51,18.24
-step
-use the War-Torn Reins of the Undercity Plaguebat##163128
-learnmount Undercity Plaguebat##272472
-step
-_Congratulations!_
-You Collected the "Undercity Plaguebat" Mount.
-]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Aquatic Mounts\\Profession Mounts\\Great Sea Ray",{
 author="support@zygorguides.com",
 startlevel=45.0,
@@ -2805,69 +2538,119 @@ model={92254},
 description="\nThis mount is can be purchased from Mrrl in Nazjatar after purchasing numerous other items in a specific order.",
 },[[
 step
-Obtain an Azsh'iri Stormsurger Cape |complete itemcount(169489) >= 1 |goto Nazjatar/0 49.23,62.08
+Obtain an Azsh'ari Stormsurger Cape |complete itemcount(169489) >= 1 |goto Nazjatar/0 49.23,62.08
 |tip This is obtained randomly from Benthic Cloak tokens.
 |tip You can purchase them here from Finder Palta for five Prismatic Manapearls.
 |tip You can also acquired them randomly from mobs and chests in Nazjatar.
+|tip Keep this item, you will need it later.
 step
-Equip the Azsh'iri Stormsurger Cape |equipped Azsh'iri Stormsurger Cape##169489
+talk Mrrl##152084
+accept A Safer Place##55530 |goto 48.19,45.34
+|only if not completedallq(55530,55529)
 step
+Follow the path up |goto 50.57,45.65 < 20 |only if walking
+Continue up the path |goto 51.97,52.74 < 20 |only if walking
+Continue following the path |goto 50.53,57.31 < 20 |only if walking
+Escort Mrrl to Newhome |q 55530/1 |goto 47.42,61.49
+|only if not completedallq(55530,55529)
+step
+talk Mrrl##152084
+turnin A Safer Place##55530 |goto 46.95,61.45
+accept No Backs##55529 |goto 46.95,61.45
+|only if not completedallq(55530,55529)
+step
+talk Flrgrrl##151952
+|tip It swims around the pond.
+buy Unidentified Mass##167912 |q 55529/2 |goto 47.00,62.51
+|only if not completedallq(55530,55529)
+step
+talk Hurlgrl##151953
+buy Sweet Sea Vegetable##167915 |q 55529/1 |goto 47.78,63.12
+|only if not completedallq(55530,55529)
+step
+talk Mrrglrlr##151950
+|tip It runs in a circle around this area.
+buy Slimy Naga Eyeball##167896 |q 55529/4 |goto 48.41,62.30
+|only if not completedallq(55530,55529)
+step
+talk Mrrl##152084
+turnin No Backs##55529 |goto 46.95,61.45
+|only if not completedallq(55530,55529)
+step
+Equip the Azsh'ari Stormsurger Cape |equipped Azsh'ari Stormsurger Cape##169489
+step
+Check Mrrl's inventory
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+|tip If you can't see the mount in his inventory, you will have to try another day, or perhaps another server.
+Click Here to Continue After Checking for the Crimson Tidestallion |confirm |goto 46.95,61.45
+step
+|tip Equip the
 Enter the cave |goto 46.39,32.59 < 15 |walk
 Talk Murlaco
 |tip Inside the cave.
-|tip It costs 666 gold.
-buy 1 Hungry Herald's Tentacle Taco##170100 |goto 45.60,32.39
+|tip This NPC is not always active.
+|tip You may have to wait or server hop to locate him.
+|tip You will need to fight some Naga to release Murlaco from his cage.
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+buy Hungry Herald's Tentacle Taco##170100 |goto 45.60,32.39
 step
 talk Mrrglrlr##151950
 |tip It runs around the fire.
+|tip These last 24 hours in your inventory.
 buy 714 Slimy Naga Eyeball##167896 |goto 48.18,62.43
 step
 talk Hurlgrl##151953
 buy 128 Sweet Sea Vegetable##167915 |goto 47.78,63.12
+|tip These last 24 hours in your inventory.
 step
 talk Flrgrrl##151952
 |tip Swimming underwater in the pond.
-buy 324 Unidentified Mass##167912 |goto 46.99,62.55
+|tip These last 24 hours in your inventory.
+buy 288 Unidentified Mass##167912 |goto 46.99,62.55
 buy 32 Just Regular Butter##167911 |goto 46.99,62.55
 step
 talk Grrmrlg##151951
+|tip These last 24 hours in your inventory.
 buy 238 Curious Murloc Horn##167905 |goto 47.72,61.43
 step
 talk Hurlgrl##151953
+|tip These last 24 hours in your inventory.
 buy 48 Dirty Sock##167916 |goto 47.78,63.12
 buy 14 Healthy Murloc Lunch##167913 |goto 47.78,63.12
 step
-use the Dirty Sock##167916
+use the Dirty Sock##167916+
 |tip Use all of them.
 |tip You must be standing in water.
+|tip These last 24 hours in your inventory.
 Clean the Socks |complete itemcount(167923) >= 48 |goto 47.69,62.22
 step
 talk Grrmrlg##151951
+|tip These last 24 hours in your inventory.
 buy 16 Sea Giant Foot Dust##167908 |goto 47.72,61.43
 step
 talk Mrrglrlr##151950
 |tip It runs around the fire.
 buy 2 Pulsating Blood Stone##169780 |goto 48.18,62.43
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+|tip These last 24 hours in your inventory.
 buy 16 Smelly Pile of Gloop##167904 |goto 48.18,62.43
 step
 talk Flrgrrl##151952
 |tip Swimming underwater in the pond.
+|tip These last 24 hours in your inventory.
 buy 28 Ghost Food##167909 |goto 46.99,62.55
 step
 talk Hurlgrl##151953
-buy 4 Cultist Pinky Finger##169783 |goto 38.65,54.46
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+|tip These last 24 hours in your inventory.
+buy 4 Cultist Pinky Finger##169783 |goto 47.78,63.12
 step
 talk Mrrl##152084
-buy 1 Crimson Tidestallion##169202 |goto 46.95,61.45
-step
-use the Crimson Tidestallion##169202
-collect Crimson Tidestallion##169202
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+buy Crimson Tidestallion##169202 |goto 46.95,61.45
 step
 use the Crimson Tidestallion##169202
 Learn the "Crimson Tidestallion" Mount |learnmount Crimson Tidestallion##300153
-step
-_Congratulations!_
-You Collected the "Crimson Tidestallion" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Vendor Mounts\\Rustbolt Resistor",{
 author="support@zygorguides.com",
@@ -3784,6 +3567,7 @@ model={93335},
 step
 Learn the "Ensorcelled Everwyrm" Mount |learnmount Ensorcelled Everwyrm##307932
 |tip This mount should be collected automatically after purchasing the Heroic Edition of the Shadowlands World of Warcraft expansion.
+|tip You can also purchase this mount from the in-game store for $25.
 step
 click Guiding Orb
 |tip Summon your Ensorcelled Everwyrm and click the orb directly behind the seat.

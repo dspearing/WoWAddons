@@ -502,29 +502,30 @@ description="\nThis guide will walk you through obtaining the Dragonkin pet: Alb
 pet=1385,
 },[[
 step
-Click here to farm the pet yourself. |confirm |next "farmalbinoc"
-Click here to be taken to the Auctioneer to purchase it. |confirm |next "buy"
-|tip This pet can be farmed, or purchased from the Auction House.
-step
-label "farmalbinoc"
-This pet requires you complete the Mastering the Menagerie daily after gaining Menagerie Level 3.
-|tip The daily reward will be a Big Bag of Pet Supplies from which you have a chance of getting this pet.
-confirm
+You must have a Garrison and a level 3 Pet Menagerie to Obtain This
+|tip Use the "Chromie Time" and "Warlords of Draenor: The Dark Portal" leveling guides to achieve this. |only if not completedq(34378)
+Click Here to Open the "Chromie Time" Leveling Guide |confirm |loadguide "Leveling Guides\\Starter Guides\\Chromie Time" |only if not completedq(34378)
+|tip Use the "Garrison Leveling Guide" to achieve this. |only if completedq(34378)
+Click Here to Open the "Garrison Leveling Guide" |confirm |loadguide "Leveling Guides\\Draenor (10-60)\\Garrisons\\Garrison Leveling Guide" |only if completedq(34378)
+|tip This pet can also be purchased from the Auction House.
+'|complete hasbuilding(168,3) |or
+'|complete haspet(1385) |or
 step
 talk Serr'ah##79858
-accept Mastering the Menagerie##37248 |goto Frostwall 31.4,42.0 |or
-accept Mastering the Menagerie##37645 |goto Frostwall 31.4,42.0 |or
-accept Mastering the Menagerie##37644 |goto Frostwall 31.4,42.0 |or
+accept Mastering the Menagerie##37645 |n
+|tip Defeat the pets that are available in the Menagerie.
+collect Big Bag of Pet Supplies##118697 |goto Frostwall/0 42.50,53.50 |or
+'|complete haspet(13850) |or
 step
-collect Albino Chimaeraling##119434 |use Big Bag of Pet Supplies##118697
-|next "done"
+|use Big Bag of Pet Supplies##118697
+|tip The pet has a small chance to drop from the bag.
+|tip You may have to complete this quest several times to obtain the pet.
+|tip You can repeat this quest daily.
+collect Albino Chimaeraling##119434 |or
+'|complete haspet(1385) |or
 step
-label "buy"
-talk Auctioneer Drezmit##44866 |goto Orgrimmar 54.1,73.4
-buy Albino Chimaeraling##119434
-step
-label "done"
-learnpet Albino Chimaeraling##1385 |use Albino Chimaeraling##119434
+|use Albino Chimaeraling##119434
+Learn the Albino Chimaeraling Battle Pet |learnpet Albino Chimaeraling##1385
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pets\\Bronze Whelpling",{
 patch='112100',
@@ -1332,7 +1333,7 @@ description="\nThis guide will walk you through obtaining the Humanoid pet: Sist
 pet=1628,
 },[[
 step
-kill Mother Shahraz##22947 |goto Black Temple/6 67.2,37.1
+kill Mother Shahraz##22947 |goto Black Temple/6 67.20,37.10
 |tip This pet has a small chance to drop from Mother Shahraz in the Black Temple.
 collect Sultry Grimoire##122110 |n
 learnpet Sister of Temptation##1628 |use Sultry Grimoire##122110
@@ -1812,6 +1813,25 @@ author="support@zygorguides.com",
 description="\nThis guide will walk you through obtaining the Undead pet: Cursed Birman.",
 pet=1521,
 },[[
+step
+Wait for the "Hallow's End" Event |complete isevent("Hallow's End") |or
+|tip The "Hallow's End" Event is usually starts around mid-October.
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(1521)
+step
+collect 150 Tricky Treat##33226 |or
+|tip You obtain these by completing Hallow's End Quests and Dailies.
+|tip You can use the Hallow's End Event Guides to help you with this.
+Click Here to Open the "Hallow's End Quests" Event Guide |confirm |loadguide "Events Guides\\Hallow's End\\Hallow's End Quests"
+Click Here to Open the "Hallow's End Dailies" Event Guide |confirm |loadguide "Events Guides\\Hallow's End\\Hallow's End Dailies"
+'|complete haspet(1521)
+step
+talk Chub##53757
+buy Cursed Birman##116801 |goto Tirisfal Glades/0 62.15,66.98 |or
+'|complete haspet(1521)
+step
+use Cursed Birman##116801
+Learn the "Cursed Birman" Battle Pet |learnpet Cursed Birman##1521
 step
 This pet can only be obtained during the Hallow's End festival
 collect 150 Tricky Treat##33226

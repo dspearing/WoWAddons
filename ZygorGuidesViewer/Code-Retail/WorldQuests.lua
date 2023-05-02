@@ -187,19 +187,18 @@ WorldQuests.Quests = {}
 WorldQuests.HiddenQuests = {}
 WorldQuests.DisplayAll = true
 
-local world_quest_guides
 function WorldQuests:Startup()
 	WorldQuests:SetFilters()
 
-	world_quest_guides = {}
+	WorldQuests.Guides = {}
 	for i,guide in pairs(ZGV.registeredguides) do
 		if guide.headerdata and guide.headerdata.worldquestzone then
 			if type(guide.headerdata.worldquestzone)=="table" then
 				for _,zone in pairs(guide.headerdata.worldquestzone) do
-					world_quest_guides[zone] = guide
+					WorldQuests.Guides[zone] = guide
 				end
 			else
-				world_quest_guides[guide.headerdata.worldquestzone] = guide
+				WorldQuests.Guides[guide.headerdata.worldquestzone] = guide
 			end
 			if guide.headerdata and guide.headerdata.worldquestshidden then
 				WorldQuests.HiddenQuests[guide.headerdata.worldquestzone] = {}
@@ -212,7 +211,9 @@ function WorldQuests:Startup()
 
 	hooksecurefunc(WorldMap_WorldQuestPinMixin,"OnClick", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
 	hooksecurefunc(BonusObjectivePinMixin,"OnClick", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
-	--hooksecurefunc(VignettePinMixin,"OnClick", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
+	hooksecurefunc(VignettePinMixin,"OnAcquired", function(self) 
+		self:SetScript("OnMouseUp",function(self) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
+	end)	
 	hooksecurefunc(WorldMapFrame,"OnMapChanged", function() 
 		if not ZGV.db.profile.worldquestenable then return end
 		WorldQuests.DisplayFrame:Show()
@@ -268,14 +269,14 @@ local function guide_exists(questID)
 	if not guides then return false end
 
 	for _,guide in ipairs(guides) do
-		for map,mapguide in pairs(world_quest_guides) do
+		for map,mapguide in pairs(WorldQuests.Guides) do
 			if mapguide.title==guide then return true end
 		end
 	end
 	return false
 end
 
-local function find_world_quest_step(questID,mapID)
+local function find_world_quest_step(questID,mapID,vignetteID)
 	local labelstep, zoneguide
 	local mapid = mapID or WorldMapFrame and WorldMapFrame:GetMapID()
 
@@ -284,12 +285,14 @@ local function find_world_quest_step(questID,mapID)
 		return false,false
 	end
 	
-	zoneguide = world_quest_guides[mapid]
-	
+	local prefix = "quest-"
+	zoneguide = WorldQuests.Guides[mapid]
+	if vignetteID then prefix="vignette-" end
+
 	if zoneguide then
 		zoneguide:Parse(true)
 		for labelname,labeldata in pairs(zoneguide.steplabels) do
-			if labelname == "quest-"..questID then
+			if labelname == prefix..(questID or vignetteID) then
 				return zoneguide,labeldata[1]
 			end
 		end
@@ -297,68 +300,26 @@ local function find_world_quest_step(questID,mapID)
 	return false,false
 end
 
-local function add_world_quest_notification(questID,questTitle,guide,labelstep,tab)
-	if not (ZGV.db.profile.n_nc_enabled and ZGV.db.profile.n_popup_wq) then
-		-- if nc is disabled, just open new tab
-		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
-		tab:SetAsCurrent()
-		ZGV:SetGuide(guide.title,labelstep)
-	else
-		-- otherwise show popup
-		ZGV:Debug("&_SUB &worldquests popup for %s",questID)
-		ZGV.NotificationCenter:AddEntry(
-		"worldquest",
-		questTitle,
-		L["tabs_world_quest_new"],
-		ZGV.IconSets.TabsIcons.file,
-		ZGV.IconSets.TabsIcons['LEVELING'].texcoord,
-		function() 
-			local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
-			tab:SetAsCurrent()
-			ZGV:SetGuide(guide.title,labelstep) end,
-		nil,
-		1,
-		10, --poptime
-		30, --removetime
-		false, --quiet
-		nil,--onopen
-		"worldquest")
-	end
-end
-
 function WorldQuests:SuggestWorldQuestGuide(object,questID,force,mapID)
-	local questID = object and (object.worldQuest or object.isCombatAllyQuest) and object.questID or questID
+	local questID = object and (object.worldQuest or object.isCombatAllyQuest) and object.questID or questID or object.vignetteID
 	if not questID then return false end
 
-	if C_QuestLog.GetQuestWatchType(questID) or (object and object.isCombatAllyQuest) or (object and object.hiddenworldquest) or force then
-		local guide,labelstep = find_world_quest_step(questID,mapID)
+	if C_QuestLog.GetQuestWatchType(questID) or (object and (object.isCombatAllyQuest or object.hiddenworldquest or object.vignetteID)) or force then
+		local guide,labelstep = find_world_quest_step(questID,mapID,object and object.vignetteID)
 
 		if not labelstep then
 			ZGV:Print("Selected World Quest is not yet in our guides.")
-			ZGV:Debug("&_SUB &worldquests no label for %s",questID)
+			ZGV:Debug("&_SUB &worldquests no label for %s %s",object.vignetteID and "vignette" or "quest",questID)
 			return false
 		end
 		
-		local questTitle = ZGV.QuestDB:GetQuestName(questID)
-
-		if not questTitle then 
-			ZGV:Debug("&_SUB &worldquests no title for %s",questID)
-			return false
-		end
-
-		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
-		tab:SetAsCurrent()
-		ZGV:SetGuide(guide.title,labelstep)
-
 		-- if tab with world quest guide exists load guide into it, otherwise create one
-		local silent = false
-		if ZGV.Tabs:DoesSpecialTabExist("worldquestzone") then
-			silent = true
-		end
+		local silent = ZGV.Tabs:DoesSpecialTabExist("worldquestzone")
+
 		ZGV:Debug("&_SUB &worldquests setting to %s",questID)
 		local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")
 		tab:SetAsCurrent()
-		ZGV:SetGuide(guide.title,labelstep,false,"silent")
+		ZGV:SetGuide(guide.title,labelstep,false,silent)
 
 		return true
 	else
@@ -1447,7 +1408,7 @@ function WorldQuests.QueuePathHandler(state,path,ext,reason)
 	end
 
 	if (state=="success" or state=="failure") and not result then
-		local guide = world_quest_guides[rm or 0]
+		local guide = WorldQuests.Guides[rm or 0]
 		-- open current zone wq guide in tab
 		if guide then
 			local tab = ZGV.Tabs:GetSpecialTabFromPool("worldquestzone")

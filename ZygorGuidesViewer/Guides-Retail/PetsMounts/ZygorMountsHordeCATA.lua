@@ -17,11 +17,7 @@ This mount is only available to Tauren Paladins
 step
 To obtain this mount you must level a Tauren Paladin to level 10
 |tip Once your character is level 10, this mount will be rewarded automatically.
-learnmount Sunwalker Kodo##69820
-|only Paladin
-step
-_Congratulations!_
-You are now the proud owner of a Sunwalker Kodo.
+Learn the "Sunwalker Kodo" Mount |learnmount Sunwalker Kodo##69820
 |only Paladin
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Paladin\\Great Sunwalker Kodo",{
@@ -1318,9 +1314,9 @@ Go up the stairs here |goto Sethekk Halls,48.7,95.0,0.5 |noway |c
 step
 kill Anzu##23035
 collect 1 Reins of the Raven Lord##32768 |goto 32.1,54.8
-|tip This has a 1.8% drop rate, do this everyday to have a higher chance of obtaining it!
 step
-learnmount Raven Lord##41252 |use Reins of the Raven Lord##32768
+|use Reins of the Raven Lord##32768
+Learn the "Raven Lord" Mount |learnmount Raven Lord##41252
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
 keywords={"rivendare's","deathcharger","skeletal","warhorse","ground","mount"},
@@ -4165,7 +4161,7 @@ After he uses _Quake_, he will spawn an _Angered Earth_ per player in the instan
 _Do not kill_ them!
 At _66% and 33% Health_, he will use an ability called _Chains of Woe_.
 Destroy the chains and leave the radius of the attack, _but keep the angered earth in the affected area_.
-You must kill 8 Angered Earth with The Skullcracker.
+You must kill 10 Angered Earth with The Skullcracker.
 achieve 4845/2 |goto Blackrock Caverns/1 50.0,70.2
 step
 _Arrested Development_
@@ -4524,15 +4520,17 @@ model={35740},
 description="\nThis guide will help you acquire the Phosphorescent Stone Drake mount.",
 },[[
 step
-map Deepholm
-path	46.8,57.4	43.8,60.2	42.6,48.2
-path	46.4,44.4	51.6,42.8	52.8,64.4
-This mount drops off a rare spawn found in Deepholm called Aeonaxx who has a spawn timer of anywhere from 5.5 to 22 hours.
-clicknpc Aeonaxx##50062
-kill Aeonaxx##50062 |tip After a few seconds, Aeonaxx's name will turn red and become hostile. You have a limited time to kill him before he overwhelms you. Every few seconds he will spawn young drake adds to attack you, these should be killed.
-collect 1 Reins of the Phosphorescent Stone Drake##63042
+Follow the Path to Find Aeonaxx at One of the Spawn Points
+map Deepholm/0
+path	49.12,55.60	50.50,63.50	55.05,54.11
+path	53.72,39.71	42.00,43.60	43.00,50.79
+kill Aeonaxx##50062
+|tip After a few seconds, Aeonaxx's name will turn red and become hostile. You have a limited time to kill him before he overwhelms you. Every few seconds he will spawn young drake adds to attack you, these should be killed.
+collect 1 Reins of the Phosphorescent Stone Drake##63042 |or
+'|complete hasmount(88718) |or
 step
-learnmount Phosphorescent Stone Drake##88718 |use Reins of the Phosphorescent Stone Drake##63042
+|use Reins of the Phosphorescent Stone Drake##63042
+Learn the "Phosphorescent Stone Drake" Mount |learnmount Phosphorescent Stone Drake##88718
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto Drake",{
 keywords={"time","lost","proto","drake","flying","mount"},
@@ -4604,22 +4602,22 @@ model={27812},
 description="\nThis guide will help you acquire the Bronze Drake mount.",
 },[[
 step
-This mount is obtained in the heroic mode version of The Culling of Stratholme.
-To change an instance to heroic mode: right click your portait and hover over "Dungeon Difficulty", click on 5 Player (Heroic). You should see the entrance portal change into a giant skull.
-Obtaining this mount is much easier with a group of 3+ players
-confirm
 step
-talk Chromie##26527 |goto The Culling of Stratholme/2 86.5,61.6
-Tell her you know what's going on and to skip ahead to the real action
-Say "Yes, please!" |goto The Culling of Stratholme,47.4,18.6,0.5 |noway |c
-|tip This will start the timed event
+Enter "The Culling of Stratholme" Dungeon |goto Tanaris/18 57.10,82.55 < 20 |c |or
+|tip Down inside the Caverns of Time.
+|tip You must do the Heroic version.
+'|complete hasmount(59569) |or
 step
-Traverse through The Culling of Stratholme instance
-|tip Make sure you make it to this next point with the timer still on, otherwise you will not receive the bronze drake.
 kill Infinite Corruptor##32273
-collect 1 Reins of the Bronze Drake##43951 |goto 51.6,41.6
+|tip He is down the Market Row road, past the place where you fight Mal'Ganis.
+|tip You have a timer of 24 minutes to complete the event.
+|tip You must do the Heroic version to get the mount.
+|tip Use "The Culling of Stratholme" dungeon guide to accomplish this.
+collect 1 Reins of the Bronze Drake##43951 |or
+'|complete hasmount(59569) |or
 step
-learnmount Bronze Drake##59569 |use Reins of the Bronze Drake##43951
+use the Reins of the Bronze Drake##43951
+Learn the "Bronze Drake" Mount |learnmount Bronze Drake##59569
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
 keywords={"drake","of","the","north","wind","flying","mount"},
@@ -4632,14 +4630,18 @@ description="\nThis guide will help you acquire the Drake of the North Wind moun
 step
 Use the _dungeon finder_ to take you to _The Vortex Pinnacle_
 |tip It is much easier to obtain this mount with friends that will let you have it
-Go to The Vortex Pinnacle |goto The Vortex Pinnacle |noway |c
+Go to The Vortex Pinnacle |goto Uldum/0 76.69,84.33 < 100 |c |or
+|tip It is within a floating platform in the sky.
+'|complete hasmount(88742) |or
 step
 _Traverse_ through _The Vortex Pinnacle_ instance
 kill Altairus##43873
-collect 1 Reins of the Drake of the North Wind##63040 |goto 52.2,80.2
+collect 1 Reins of the Drake of the North Wind##63040 |goto The Vortex Pinnacle/1 52.2,80.2 |or
 |tip This has a .8% drop rate, do this everyday to have a higher chance of obtaining it!
+'|complete hasmount(88742) |or
 step
-learnmount Drake of the North Wind##88742 |use Reins of the Drake of the North Wind##63040
+|use Reins of the Drake of the North Wind##63040
+Learn the "Drake of the North Wind" Mount |learnmount Drake of the North Wind##88742
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
 keywords={"vitreous","stone","drake","slabhide","flying","mount"},

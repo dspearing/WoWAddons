@@ -306,6 +306,7 @@ end
 function Inventory:FindItemsToBuy()
 	if self.popup then self.popup:Hide() end
 	if not (ZGV.db.profile.autobuy and ZGV.db.profile.enable_vendor_tools) then return end
+	if not (MerchantFrame and MerchantFrame:IsVisible()) then return end
 
 	if not ZGV.CurrentStep then return end
 	local goals=ZGV.CurrentStep.goals

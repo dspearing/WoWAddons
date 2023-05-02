@@ -1,7 +1,8 @@
-## Interface: 100005
+## Interface: 100007
 ## Title: WeakAuras Companion
 ## Author: The WeakAuras Team
 ## Version: 4.1.0
+## IconTexture: InterfaceAddOnsWeakAurasMediaTexturesicon.blp
 ## Notes: Keep your WeakAuras updated!
 ## X-Category: Interface Enhancements
 ## DefaultState: Enabled

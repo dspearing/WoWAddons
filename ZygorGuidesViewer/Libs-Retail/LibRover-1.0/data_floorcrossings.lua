@@ -19,6 +19,9 @@ data.basenodes.FloorCrossings = {
 			"The Forbidden Reach/5 76.67,37.79 <radius:15> -x- Dragonskull Island/0 32.01,92.66 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",
 			"The Forbidden Reach/5 60.68,37.91 <radius:15> -x- Froststone Vault/0 26.80,83.77 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
 		},
+		["Zaralek Cavern"] = {
+			"Zaralek Cavern/0 60.36,37.23 <radius:15> -x- Deepflayer Nest/0 11.43,50.25 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",--Deepflayer Nest
+		},
 	
 	
 	

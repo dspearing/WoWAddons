@@ -1682,13 +1682,16 @@ mounttype='Flying',
 description="\nThis guide will help you acquire the Solar Spirehawk mount.",
 },[[
 step
-This mount requires you to kill _Rukhmar_, the _Spires of Arak world boss_
-This _will require a group_ to complete
-confirm
-step
 kill Rukhmar##87493
-collect Solar Spirehawk##116771 |goto Spires of Arak 40.0,43.0
-learnmount Solar Spirehawk##171828 |use Solar Spirehawk##116771
+|tip Stand on this little spire by the road.
+|tip He will spawn almost directly above you.
+|tip Respawn timer is approximately 15 minutes.
+|tip You may need help with this.
+collect Solar Spirehawk##116771 |goto Spires of Arak/0 36.75,39.77 |or
+'|complete hasmount(171828) |or
+step
+|use Solar Spirehawk##116771
+Learn the "Solar Spirehawk" Mount |learnmount Solar Spirehawk##171828
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Infinite Timereaver",{
 keywords={"infinite","timereaver","flying","mount"},

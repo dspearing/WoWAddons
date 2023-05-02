@@ -541,33 +541,16 @@ description="\nThis guide will walk you through obtaining the Elemental pet: Sap
 pet=846,
 },[[
 step
-Click here to gather and create the pet yourself |confirm |next "create"
-Click here to be taken to the Auctioneer to purchase it |confirm |next "buy"
-|tip This pet requires you to either have level 600 Inscription, or purchase it from the Auction House.
+collect Sapphire Cub##82775 |or
+|tip This can be crafted with Pandaria Jewelcrafting at skill 75.
+|tip You obtain this jewelcrafting design from the Golden Lotus Daily Quest reward or by opening a Serpent's Heart. |only if hasprof("Pandaria Jewelcrafting",1,75)
+|tip Please open your Jewelcrafting Profession Interface. |only if hasprof("Pandaria Jewelcrafting",1,75)
+Click Here to Open the "Golden Lotus Dailies" Guide |confirm |loadguide "Daily Guides\\Mists of Pandaria Dailies\\The Golden Lotus Dailies" |only if hasprof("Pandaria Jewelcrafting",1,75)
+|tip You can also purchase the pet from the auction house.
+'|complete haspet(846) |or
 step
-label "create"
-|tip You have to complete the Dailies for the Golden Lotus to get the recipe for this pet.
-confirm
-step
-map Vale of Eternal Blossoms
-path	54.6,23.7	52.8,23.1	47.0,18.7
-path	42.6,15.0	41.8,17.8	36.9,18.0
-path	353.5,21.3	35.0,28.7	35.6,34.5
-path	42.2,29.1	45.4,29.6	47.9,26.5
-path	50.8,31.5	53.6,28.6
-Follow the path, mining any node you see.
-Use your _Prospecting_ skill on any 5 ore you gather. |cast Prospecting##31252
-collect 3 Wild Jade##76138
-step
-create 1 Sapphire Cub##82775
-|next "done"
-step
-label "buy"
-talk Auctioneer Chilton##8670
-buy 1 Sapphire Cub##82775 |goto Stormwind City 61.0,71.6
-step
-label "done"
-learnpet Sapphire Cub##846 |use Sapphire Cub##82775
+use Sapphire Cub##82775
+Learn the "Sapphire Cub" Battle Pet |learnpet Sapphire Cub##846
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pets\\Thundertail Flapper",{
 patch='52000',

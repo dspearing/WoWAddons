@@ -3059,6 +3059,8 @@ step
 talk Sean Wilkers##150987
 Tell him _"I'm ready, send me into Stratholme!"_
 Ask Sean Wilkers to Open the Stratholme Service Entrance |scenariostart |goto 43.13,19.94 |q 56492 |future |or
+|tip You have to complete the pet dungeon in Normal Mode one time in order to forever unlock Challenge Mode.
+|tip Completing the pet dungeon a second time in Challenge Mode rewards you with the pet and the achievement.
 '|learnpet Minimancer##2638 |or
 step
 clicknpc Belchling##150923
@@ -3150,9 +3152,6 @@ collect 1 Evil Wizard Hat##169670 |goto Nazjatar/0 73.70,46.05 |or
 step
 use the Evil Wizard Hat##169670
 Learn the "Minimancer" Battle Pet |learnpet Minimancer##2638
-step
-_Congratulations!_
-You Collected the "Minimancer" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\\Ziggy",{
 patch='82000',

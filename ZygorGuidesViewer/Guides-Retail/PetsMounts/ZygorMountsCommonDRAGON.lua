@@ -256,10 +256,11 @@ patch='100002',
 },[[
 step
 kill Breezebiter##195353 |goto The Azure Span/0 29.80,46.31
-|tip This rare spawns from this cave and flies around this area.
+|tip This elite mob spawns from this cave and flies around this area.
 |tip It looks like a wyvern being ridden by a hyena person.
+|tip You can kill him over and over to try for the drop.
 collect Reins of the Liberated Slyvern##201440 |or
-|tip This is a rare drop.
+|tip This item is a rare drop.
 '|learnmount Liberated Slyvern##359622 |or
 step
 use the Reins of the Liberated Slyvern##201440
@@ -452,23 +453,23 @@ Kill Snowhide enemies around this area
 collect 20 Flash Frozen Meat##201422 |goto The Azure Span/0 58.14,41.77 |or
 |tip You can also purchase these from the Auction House.
 You can find more around [57.05,42.90]
-'|learnmount Temperamental Skyclaw##385738 |or
+'|complete hasmount(385738) |or
 step
 Kill Stormfang enemies around this area
 collect 20 Gnolan's House Special##201420 |goto The Azure Span/0 23.00,43.60 |or
 |tip You can also purchase these from the Auction House.
-'|learnmount Temperamental Skyclaw##385738 |or
+'|complete hasmount(385738) |or
 step
 Kill Darktooth enemies around this area
 collect 20 Tuskarr Jerky##201421 |goto The Azure Span/0 34.40,44.40 |or
 |tip You can also purchase these from the Auction House.
-'|learnmount Temperamental Skyclaw##385738 |or
+'|complete hasmount(385738) |or
 step
 talk Zon'Wogi##190892
 Choose _"<Ask about the saddled slyvern.>"_
 |tip Present the food dishes to Zon'Wogi.
-collect Temperamental Skyclaw##201454 |goto The Waking Shores/0 19.04,23.98 |or
-'|learnmount Temperamental Skyclaw##385738 |or
+collect Temperamental Skyclaw##201454 |goto The Azure Span/0 19.04,23.98 |or
+'|complete hasmount(385738) |or
 step
 use Temperamental Skyclaw##201454
 |tip This item will now be in your inventory.

@@ -865,15 +865,15 @@ model={21427},
 description="\nThis guide will help you acquire the Raven Lord mount.",
 },[[
 step
-Traverse through Sethekk Halls |goto Sethekk Halls,48.7,95.0
-Go up the stairs here |goto Sethekk Halls,48.7,95.0,0.5 |noway |c
+Enter the "Sethekk Halls" Dungeon goto Terokkar Forest/0 44.90,65.61 < 20 |c |or
+'|complete hasmount(41252)
 step
-kill Anzu##23035 |goto Sethekk Halls/2 32.1,54.8
-collect 1 Reins of the Raven Lord##32768
-|tip This has a 1.8% drop rate, do this everyday to have a higher chance of obtaining it!
-Note that if it doesn't drop, you will have to wait until tomorrow for a chance to get it again.
+kill Anzu##23035
+collect 1 Reins of the Raven Lord##32768 |goto Sethekk Halls/2 32.1,54.8 |or
+'|complete hasmount(41252) |or
 step
-learnmount Raven Lord##41252 |use Reins of the Raven Lord##32768
+use Reins of the Raven Lord##32768
+Learn the "Raven Lord" Mount |learnmount Raven Lord##41252
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dungeon Mounts\\Rivendare's Deathcharger",{
 keywords={"rivendare's","deathcharger","skeletal","warhorse","ground","mount"},
@@ -3887,7 +3887,7 @@ After he uses _Quake_, he will spawn an _Angered Earth_ per player in the instan
 _Do not kill_ them!
 At _66% and 33% Health_, he will use an ability called _Chains of Woe_.
 Destroy the chains and leave the radius of the attack, _but keep the angered earth in the affected area_.
-You must kill 8 Angered Earth with The Skullcracker.
+You must kill 10 Angered Earth with The Skullcracker.
 achieve 4845/2 |goto Blackrock Caverns/1 50.0,70.2
 step
 _Arrested Development_
@@ -4245,20 +4245,17 @@ model={35740},
 description="\nThis guide will help you acquire the Phosphorescent Stone Drake mount.",
 },[[
 step
-This mount drops off a rare spawn found in Deepholm called Aeonaxx.
-Aeonaxx can be found flying around the Temple of Earth, he is an extremely rare find and has a spawn timer of anywhere from 5.5 to 22 hours.
-confirm
-step
-map Deepholm
-path	51.6,42.8	46.4,44.4	42.6,48.2
-path	43.8,60.2	46.6,58.8	52.8,64.4
-Follow the provided path and search for _Aoenaxx_.
-Click Aeonaxx
+Follow the Path to Find Aeonaxx at One of the Spawn Points
+map Deepholm/0
+path	49.12,55.60	50.50,63.50	55.05,54.11
+path	53.72,39.71	42.00,43.60	43.00,50.79
 kill Aeonaxx##50062
 |tip After a few seconds, Aeonaxx's name will turn red and become hostile. You have a limited time to kill him before he overwhelms you. Every few seconds he will spawn young drake adds to attack you, these should be killed.
-collect 1 Reins of the Phosphorescent Stone Drake##63042
+collect 1 Reins of the Phosphorescent Stone Drake##63042 |or
+'|complete hasmount(88718) |or
 step
-learnmount Phosphorescent Stone Drake##88718 |use Reins of the Phosphorescent Stone Drake##63042
+|use Reins of the Phosphorescent Stone Drake##63042
+Learn the "Phosphorescent Stone Drake" Mount |learnmount Phosphorescent Stone Drake##88718
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Time-Lost Proto-Drake",{
 keywords={"time","lost","proto","drake","flying","mount"},
@@ -4330,27 +4327,19 @@ model={27812},
 description="\nThis guide will help you acquire the Bronze Drake mount.",
 },[[
 step
-This mount is obtained in the heroic mode version of The Culling of Stratholme. |goto The Culling of Stratholme/1 87.5,71.3
-To change an instance to heroic mode: right click your portait and hover over "Dungeon Difficulty", click on 5 Player (Heroic). You should see the entrance portal change into a giant skull.
-Obtaining this mount is much easier with a group of 3+ players
-Enter the Culling of Stratholme |goto The Culling of Stratholme |c
+Enter The Culling of Stratholme Dungeon |goto The Culling of Stratholme/1 87.5,71.3 < 100 |c |or
+|tip You must do the Heroic version.
+'|complete hasmount(59569) |or
 step
-talk Chromie##26527 |goto The Culling of Stratholme,86.5,61.6
-Tell her you know what's going on and to skip ahead to the real action
-Say "Yes, please!" |goto The Culling of Stratholme,47.4,18.6,0.5 |noway |c
-|tip This will start the timed event
-step
-talk Arthas##26499 |goto The Culling of Stratholme/2 58.8,36.8
-Tell him:
-<We're only doing what is best for Lordaron, your Highness.>
-confirm
-step
-Traverse through The Culling of Stratholme instance
-|tip Make sure you make it to this next point with the timer still on, otherwise you will not receive the bronze drake.
 kill Infinite Corruptor##32273
-collect 1 Reins of the Bronze Drake##43951 |goto 51.6,41.6
+|tip You must do the Heroic version.
+|tip Use "The Culling of Stratholme" dungeon guide to accomplish this.
+Click Here to Open the "The Culling of Stratholme Dungeon" Guide |confirm |loadguide "Dungeon Guides\\Northrend Dungeons\\Caverns of Time: The Culling of Stratholme"
+collect 1 Reins of the Bronze Drake##43951 |complete hasmount(59569) |or
+'|complete hasmount(59569) |or
 step
-learnmount Bronze Drake##59569 |use Reins of the Bronze Drake##43951
+use the Reins of the Bronze Drake##43951
+Learn the "Bronze Drake" Mount |learnmount Bronze Drake##59569
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dungeon Mounts\\Drake of the North Wind",{
 keywords={"drake","of","the","north","wind","flying","mount"},
@@ -4361,16 +4350,17 @@ model={35755},
 description="\nThis guide will help you acquire the Drake of the North Wind mount.",
 },[[
 step
-Use the _dungeon finder_ to take you to _The Vortex Pinnacle: Heroic_
-|tip It is much easier to obtain this mount with friends that will let you have it
-Go to The Vortex Pinnacle |goto The Vortex Pinnacle |noway |c
+Enter The Vortex Pinnacle Dungeon |goto Uldum/0 76.69,84.33 < 20 |c |or
+'|complete hasmount(88742) |or
 step
-_Traverse_ through _The Vortex Pinnacle_ instance
-kill Altairus##43873 |goto 52.2,80.2
-collect 1 Reins of the Drake of the North Wind##63040
-|tip This has a .8% drop rate, do this everyday to have a higher chance of obtaining it!
+kill Altairus##43873
+|tip You can use "The Vortex Pinnacle" Dungeon Guide to accomplish this.
+Click Here to Open "The Vortex Pinnacle" Dungeon Guide |confirm |loadguide "Dungeon Guides\\Cataclysm Dungeons\\Vortex Pinnacle"
+collect 1 Reins of the Drake of the North Wind##63040 |complete hasmount(88742) |or
+'|complete hasmount(88742) |or
 step
-learnmount Drake of the North Wind##88742 |use Reins of the Drake of the North Wind##63040
+use the Reins of the Drake of the North Wind##63040
+Learn the "Drake of the North Wind" Mount |learnmount Drake of the North Wind##88742
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dungeon Mounts\\Vitreous Stone Drake",{
 keywords={"vitreous","stone","drake","slabhide","flying","mount"},
@@ -4378,20 +4368,20 @@ mounts={88746},
 patch='unknown',
 mounttype='Flying',
 model={35751},
-description="\nThis guide will help you acquire the Vitreous Stone Drake mount.",
+description="\nThis mount is a very rare drop from Slabhide in The Stonecore dungeon.",
 },[[
 step
-For this mount, you can do it on _Normal_ or _Heroic_ difficulty.
-To reset the instance, you can right click your character portrait and select the _Reset all isntances_ option.
-Keep in mind you can only reset instances so many times.
-confirm
+Enter "The Stonecore" Dungeon |goto The Stonecore/1 54.09,93.33 < 100 |c |or
+'|complete hasmount(88746) |or
 step
-_Traverse_ through _The Stonecore_ instance
 kill Slabhide##43214
-collect 1 Reins of the Vitreous Stone Drake##63043 |goto The Stonecore,36.6,45.8
-|tip This has a .8% drop rate, do this everyday to have a higher chance of obtaining it!
+|tip Use "The Stonecore" Dungeon Guide to accomplish this.
+Click Here to Open the "The Stonecore" Dungeon Guide |confirm |loadguide "Dungeon Guides\\Cataclysm Dungeons\\The Stonecore"
+collect 1 Reins of the Vitreous Stone Drake##63043 |or
+'|complete hasmount(88746) |or
 step
-learnmount Vitreous Stone Drake##88746 |use Reins of the Vitreous Stone Drake##63043
+use the Reins of the Vitreous Stone Drake##63043
+Learn the "Vitreous Stone Drake" Mount |learnmount Vitreous Stone Drake##88746
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Event Mounts\\Love is in the Air\\X-45 Heartbreaker",{
 keywords={"big","love","rocket","love","is","in","the","air","flying","mount"},
@@ -4402,18 +4392,23 @@ model={30989},
 description="\nThis guide will help you acquire the X-45 Heartbreaker mount.",
 },[[
 step
-This requires the _Love is in the Air_ event
+Wait for the "Love is in the Air" Event |complete isevent("Love is in the Air")
+step
+Queue for the Holiday Dungeon "The Crown Chemical Co." Dungeon |goto Shadowfang Keep |noway |c |or
 |tip You must be at least level 10 to obtain this mount.
-Use the _Dungeon Finder_ to go to the _World Event Dungeon - Hummel_ |goto Shadowfang Keep |noway |c
+'|complete hasmount(71342) |or
 step
 kill Apothecary Hummel##36296
-collect Heart-Shaped Box##54537
-|tip This will appear in your bags once you kill Apothecary Hummel and can only be won once a day
-use Heart-Shaped Box##54537
-collect X-45 Heartbreaker##50250
-|tip This mount has an insanely low chance of dropping.
+collect Heart-Shaped Box##54537 |or
+|tip This can only be won once a day.
+'|complete hasmount(71342) |or
 step
-learnmount X-45 Heartbreaker##71342 |use X-45 Heartbreaker##50250
+use Heart-Shaped Box##54537
+collect X-45 Heartbreaker##50250 |or
+'|complete hasmount(71342) |or
+step
+|use X-45 Heartbreaker##50250
+Learn the "X-45 Heartbreaker" Mount |learnmount X-45 Heartbreaker##71342
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Event Mounts\\Hallow's End\\Headless Horseman's Mount",{
 author="support@zygorguides.com",
@@ -4823,12 +4818,25 @@ model={17890},
 description="\nThis guide will help you acquire the Ashes of Al'ar mount.",
 },[[
 step
-This mount is dropped by Kael'thas Sunstrider in the Eye raid.
-kill Kael'thas Sunstrider##19622
-collect 1 Ashes of Al'ar##32458 |goto Tempest Keep 50,15.2
-|tip This has a very low drop chance.
+talk Zidormi##88206
+Tell her _"Show me the Blasted Lands before the invasion."_
+Time Travel to Old Blasted Lands |complete ZGV.InPhase("Old Blasted Lands") |goto Blasted Lands/0 48.16,7.28 |or
+|tip In the correct time period, The Dark Portal should be green, not red.
+|only if not ZGV.InPhase("Old Blasted Lands")
+'|complete hasmount(40192) |or
 step
-learnmount Ashes of Al'ar##40192 |use Ashes of Al'ar##32458
+Enter the "The Eye" Raid |goto Netherstorm/0 73.64,63.73 < 20 |c |or
+'|complete hasmount(40192) |or
+step
+kill Kael'thas Sunstrider##19622
+|tip You can use the "The Eye" Raid Guide to accomplish this.
+Click Here to Open the "The Eye" Raid Guide |confirm |loadguide "Dungeon Guides\\Outland Raids\\The Eye"
+collect Ashes of Al'ar##32458 |or
+|tip It may take several attempts to obtain this.
+'|complete hasmount(40192) |or
+step
+|use Ashes of Al'ar##32458
+Learn the "Ashes of Al'ar" Mount |learnmount Ashes of Al'ar##40192
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Azure Drake",{
 author="support@zygorguides.com",
@@ -4840,13 +4848,19 @@ model={24743},
 description="\nThis guide will help you acquire the Azure Drake mount.",
 },[[
 step
-This mount is found in Alexstrasza's Gift within The Eye of Eternity raid.
-kill Malygos##28859 |n
-click Alexstrasza's Gift##193967
-collect 1 Reins of the Azure Drake##43952 |goto The Eye of Eternity 38.4,49.8
-|tip This has a very low drop chance.
+Enter "The Eye of Eternity" Raid Portal |goto Borean Tundra/0 27.53,26.74 < 20 |c |or
+|tip It's the very top floor portal.
+'|complete hasmount(59567) |or
 step
-learnmount Azure Drake##59567 |use Reins of the Azure Drake##43952
+kill Malygos##28859
+|tip Use "The Eye of Eternity" Raid Guide to accomplish this.
+Click Here to Open "The Eye of Eternity" Raid Guide |confirm |loadguide "Dungeon Guides\\Northrend Raids\\The Eye of Eternity"
+click Alexstrasza's Gift##193967
+collect 1 Reins of the Azure Drake##43952 |or
+'|complete hasmount(59567) |or
+step
+use the Reins of the Azure Drake##43952
+Learn the "Azure Drake" Mount |learnmount Azure Drake##59567
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Black Drake",{
 author="support@zygorguides.com",
@@ -4910,12 +4924,19 @@ model={31248},
 description="\nThis guide will help you acquire the Invincible mount.",
 },[[
 step
-This mount is dropped by The Lich King in the Icecrown Citadel raid. It is only dropped on Heroic 25 player Difficulty.
-kill The Lich King##36597
-collect 1 Invincible's Reins##50818 |goto Icecrown Citadel/7 49.8,52.8
-|tip This has a very low drop chance.
+Enter the "Icecrown Citadel" Raid |goto Icecrown/0 53.79,87.02 < 20 |c |or
+|tip Raid difficulty must be set to 25 man Heroic.
+'|complete hasmount(72286) |or
 step
-learnmount Invincible##72286 |use Invincible's Reins##50818
+kill The Lich King##36597
+|tip You can use the "Icecrown Citadel" Raid Guide to accomplish this.
+Click Here to Open the "Icecrown Citadel" Raid Guide |confirm |loadguide "Dungeon Guides\\Northrend Raids\\Icecrown Citadel"
+collect Invincible's Reins##50818 |or
+|tip It may take several attempts to obtain this.
+'|complete hasmount(72286) |or
+step
+|use Invincible's Reins##50818
+Learn the "Invincible" Mount |learnmount Invincible##72286
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Life-Binder's Handmaiden",{
 author="support@zygorguides.com",
@@ -7563,7 +7584,7 @@ You will not be able to do some of the quests in this section if you are not a D
 confirm
 step
 talk Megelon##16475
-accept You Survived!##9279 |goto Azuremyst Isle,84.2,43.0
+accept You Survived!##9279 |goto Azuremyst Isle/0 84.2,43.0
 step
 talk Proenitus##16477
 turnin You Survived!##9279 |goto 80.4,45.9
@@ -7573,8 +7594,8 @@ kill Vale Moth##16520+
 collect 6 Vial of Moth Blood##22889 |q 9280/1 |goto 78.6,45.4
 step
 talk Proenitus##16477
-turnin Replenishing the Healing Crystals##9280 |goto Azuremyst Isle,80.4,45.9
-accept Urgent Delivery!##9409 |goto Azuremyst Isle,80.4,45.9
+turnin Replenishing the Healing Crystals##9280 |goto Azuremyst Isle/0 80.4,45.9
+accept Urgent Delivery!##9409 |goto Azuremyst Isle/0 80.4,45.9
 step
 talk Zalduun##16502
 turnin Urgent Delivery!##9409 |goto 80.1,48.8
@@ -7587,7 +7608,7 @@ talk Botanist Taerix##16514
 turnin Botanist Taerix##9371 |goto 79.1,46.5
 step
 talk Botanist Taerix##16514
-accept Volatile Mutations##10302 |goto Azuremyst Isle,79.1,46.5
+accept Volatile Mutations##10302 |goto Azuremyst Isle/0 79.1,46.5
 step
 kill 8 Volatile Mutation |q 10302/1 |goto 78.4,43.5
 step
@@ -7603,7 +7624,7 @@ talk Apprentice Vishael##20233
 accept Botanical Legwork##9799 |goto 79.1,46.6
 step
 talk Zalduun##16502
-turnin Rescue the Survivors!##9283 |goto Azuremyst Isle,80.1,48.8
+turnin Rescue the Survivors!##9283 |goto Azuremyst Isle/0 80.1,48.8
 step
 talk Technician Zhanaa##17071
 accept Spare Parts##9305 |goto 79.4,51.2
@@ -7612,10 +7633,10 @@ talk Vindicator Aldar##16535
 accept Inoculation##9303 |goto 79.5,51.6
 step
 kill Mutated Root Lasher##16517+
-collect 10 Lasher Sample##22934 |q 9293/1 |goto Azuremyst Isle,74.9,50.4
+collect 10 Lasher Sample##22934 |q 9293/1 |goto Azuremyst Isle/0 74.9,50.4
 Click the Corrupted Flowers
 |tip The Corrupted Flowers are tall red flowers around this area.
-collect 3 Corrupted Flower##24416 |q 9799/1 |goto Azuremyst Isle,74.9,50.4
+collect 3 Corrupted Flower##24416 |q 9799/1 |goto Azuremyst Isle/0 74.9,50.4
 step
 talk Apprentice Vishael##20233
 turnin Botanical Legwork##9799 |goto 79.1,46.6
@@ -7627,19 +7648,19 @@ stickystart "inoculate"
 step
 Click the Irradiated Power Crystal
 |tip It's a huge purple crystal sitting in the lake.
-Disperse the Neutralizing Agent |q 9294/1 |goto Azuremyst Isle,77.3,58.7
+Disperse the Neutralizing Agent |q 9294/1 |goto Azuremyst Isle/0 77.3,58.7
 step
 Go through the tunnel into the small clearing
 Click the Emitter Spare Parts
 |tip They look like purple crystal guns sitting on the ground.
-collect 4 Emitter Spare Part##22978 |q 9305/1 |goto Azuremyst Isle,84.7,65.6
+collect 4 Emitter Spare Part##22978 |q 9305/1 |goto Azuremyst Isle/0 84.7,65.6
 step
 label "inoculate"
 Use your Inoculating Crystal on Nestlewood Owlkins |use Inoculating Crystal##22962
-Inoculate 6 Nestlewood Owlkins |q 9303/1 |goto Azuremyst Isle,78.4,60.4
+Inoculate 6 Nestlewood Owlkins |q 9303/1 |goto Azuremyst Isle/0 78.4,60.4
 step
 talk Botanist Taerix##16514
-turnin Healing the Lake##9294 |goto Azuremyst Isle,79.1,46.5
+turnin Healing the Lake##9294 |goto Azuremyst Isle/0 79.1,46.5
 step
 talk Technician Zhanaa##17071
 turnin Spare Parts##9305 |goto 79.4,51.2
@@ -7649,19 +7670,19 @@ turnin Inoculation##9303 |goto 79.5,51.6
 accept The Missing Scout##9309 |goto 79.5,51.6
 step
 talk Tolaan##16546
-turnin The Missing Scout##9309 |goto Azuremyst Isle,72,60.8
-accept The Blood Elves##10303 |goto Azuremyst Isle,72,60.8
+turnin The Missing Scout##9309 |goto Azuremyst Isle/0 72,60.8
+accept The Blood Elves##10303 |goto Azuremyst Isle/0 72,60.8
 step
-kill 10 Blood Elf Scout |q 10303/1 |goto Azuremyst Isle,71.3,60.7
+kill 10 Blood Elf Scout |q 10303/1 |goto Azuremyst Isle/0 71.3,60.7
 step
 talk Tolaan##16546
-turnin The Blood Elves##10303 |goto Azuremyst Isle,72,60.8
-accept Blood Elf Spy##9311 |goto Azuremyst Isle,72,60.8
+turnin The Blood Elves##10303 |goto Azuremyst Isle/0 72,60.8
+accept Blood Elf Spy##9311 |goto Azuremyst Isle/0 72,60.8
 step
-kill Surveyor Candress |q 9311/1 |goto Azuremyst Isle,69.3,65.7
+kill Surveyor Candress |q 9311/1 |goto Azuremyst Isle/0 69.3,65.7
 collect Blood Elf Plans##24414 |n
 Click the Blood Elf Plans in your bags |use Blood Elf Plans##24414
-accept Blood Elf Plans##9798 |goto Azuremyst Isle,69.3,65.7
+accept Blood Elf Plans##9798 |goto Azuremyst Isle/0 69.3,65.7
 step
 talk Vindicator Aldar##16535
 turnin Blood Elf Spy##9311 |goto 79.5,51.6
@@ -7674,97 +7695,97 @@ accept Travel to Azure Watch##9313 |goto 79.4,51.2
 step
 The path through the mountains starts here |goto 68.3,53.9 < 5 |walk
 talk Aeun##16554
-accept Word from Azure Watch##9314 |goto Azuremyst Isle,64.5,54
+accept Word from Azure Watch##9314 |goto Azuremyst Isle/0 64.5,54
 step
 talk Diktynna##17101
-accept Red Snapper - Very Tasty!##9452 |goto Azuremyst Isle,61.1,54.2
+accept Red Snapper - Very Tasty!##9452 |goto Azuremyst Isle/0 61.1,54.2
 step
 Use your Draenei Fishing Net next to Schools of Red Snapper |use Draenei Fishing Net##23654
 |tip They look like little round schools of fish in the water.
-collect 10 Red Snapper##23614 |q 9452/1 |goto Azuremyst Isle,61.9,51.6
+collect 10 Red Snapper##23614 |q 9452/1 |goto Azuremyst Isle/0 61.9,51.6
 step
 talk Diktynna##17101
-turnin Red Snapper - Very Tasty!##9452 |goto Azuremyst Isle,61.1,54.2
-accept Find Acteon!##9453 |goto Azuremyst Isle,61.1,54.2
+turnin Red Snapper - Very Tasty!##9452 |goto Azuremyst Isle/0 61.1,54.2
+accept Find Acteon!##9453 |goto Azuremyst Isle/0 61.1,54.2
 step
 talk Acteon##17110
-turnin Find Acteon!##9453 |goto Azuremyst Isle,49.8,51.9
-accept The Great Moongraze Hunt##9454 |goto Azuremyst Isle,49.8,51.9
+turnin Find Acteon!##9453 |goto Azuremyst Isle/0 49.8,51.9
+accept The Great Moongraze Hunt##9454 |goto Azuremyst Isle/0 49.8,51.9
 step
 talk Anchorite Fateema##17214
-accept Medicinal Purpose##9463 |goto Azuremyst Isle,48.4,51.8
+accept Medicinal Purpose##9463 |goto Azuremyst Isle/0 48.4,51.8
 step
 talk Technician Dyvuun##16551
-turnin Travel to Azure Watch##9313 |goto Azuremyst Isle,48.7,50.3
+turnin Travel to Azure Watch##9313 |goto Azuremyst Isle/0 48.7,50.3
 step
 talk Caregiver Chellan##16553
-turnin Word from Azure Watch##9314 |goto Azuremyst Isle,48.3,49.2
-home Azure Watch |goto Azuremyst Isle,48.3,49.2
+turnin Word from Azure Watch##9314 |goto Azuremyst Isle/0 48.3,49.2
+home Azure Watch |goto Azuremyst Isle/0 48.3,49.2
 step
 talk Zaldaan##43991
 fpath Azure Watch |goto 49.7,49.1
 step
 kill Moongraze Stag##17200+
-collect 6 Moongraze Stag Tenderloin##23676|q 9454/1 |goto Azuremyst Isle,50.3,56.6
+collect 6 Moongraze Stag Tenderloin##23676|q 9454/1 |goto Azuremyst Isle/0 50.3,56.6
 kill Root Trapper##17196+
-collect 8 Root Trapper Vine##23685|q 9463/1 |goto Azuremyst Isle,50.3,56.6
+collect 8 Root Trapper Vine##23685|q 9463/1 |goto Azuremyst Isle/0 50.3,56.6
 step
 talk Admiral Odesyus##17240
-accept A Small Start##9506 |goto Azuremyst Isle,47,70.2
+accept A Small Start##9506 |goto Azuremyst Isle/0 47,70.2
 step
 talk "Cookie" McWeaksauce##17246
-accept Cookie's Jumbo Gumbo##9512 |goto Azuremyst Isle,46.7,70.5
+accept Cookie's Jumbo Gumbo##9512 |goto Azuremyst Isle/0 46.7,70.5
 step
 kill Skittering Crawler##17216+
-collect 6 Skittering Crawler Meat##23757 |q 9512/1 |goto Azuremyst Isle,47.6,73
+collect 6 Skittering Crawler Meat##23757 |q 9512/1 |goto Azuremyst Isle/0 47.6,73
 step
 talk "Cookie" McWeaksauce##17246
-turnin Cookie's Jumbo Gumbo##9512 |goto Azuremyst Isle,46.7,70.5
+turnin Cookie's Jumbo Gumbo##9512 |goto Azuremyst Isle/0 46.7,70.5
 step
 talk Priestess Kyleen Il'dinare##17241
-accept Reclaiming the Ruins##9513 |goto Azuremyst Isle,47,70.2
+accept Reclaiming the Ruins##9513 |goto Azuremyst Isle/0 47,70.2
 step
 talk Archaeologist Adamant Ironheart##17242
-accept Precious and Fragile Things Need Special Handling##9523 |goto Azuremyst Isle,47.2,70
+accept Precious and Fragile Things Need Special Handling##9523 |goto Azuremyst Isle/0 47.2,70
 step
 Click the Nautical Map
 |tip It's sitting on a box under a green canopy.
-collect Nautical Map##23739 |q 9506/2 |goto Azuremyst Isle,58.6,66.4
+collect Nautical Map##23739 |q 9506/2 |goto Azuremyst Isle/0 58.6,66.4
 step
 Click the Nautical Compass
 |tip It's sitting on a box under the blue canopy with a green stripe on it
-collect Nautical Compass##23738 |q 9506/1 |goto Azuremyst Isle,59.6,67.6
+collect Nautical Compass##23738 |q 9506/1 |goto Azuremyst Isle/0 59.6,67.6
 step
 talk Admiral Odesyus##17240
-turnin A Small Start##9506 |goto Azuremyst Isle,47,70.2
-accept I've Got a Plant##9530 |goto Azuremyst Isle,47,70.2
+turnin A Small Start##9506 |goto Azuremyst Isle/0 47,70.2
+accept I've Got a Plant##9530 |goto Azuremyst Isle/0 47,70.2
 step
 Click a Hollowed Out Tree
 |tip They look like tall, skinny tree stumps around this area.
-collect Hollowed Out Tree##23790 |q 9530/1 |goto Azuremyst Isle,45.9,65.7
+collect Hollowed Out Tree##23790 |q 9530/1 |goto Azuremyst Isle/0 45.9,65.7
 Click Piles of Leaves
 |tip They look like small piles of purple leaves on the ground around this area.
-collect 5 Pile of Leaves##23791 |q 9530/2 |goto Azuremyst Isle,45.9,65.7
+collect 5 Pile of Leaves##23791 |q 9530/2 |goto Azuremyst Isle/0 45.9,65.7
 step
 talk Admiral Odesyus##17240
-turnin I've Got a Plant##9530 |goto Azuremyst Isle,47,70.2
-accept Tree's Company##9531 |goto Azuremyst Isle,47,70.2
+turnin I've Got a Plant##9530 |goto Azuremyst Isle/0 47,70.2
+accept Tree's Company##9531 |goto Azuremyst Isle/0 47,70.2
 step
 Click Ancient Relics
 |tip They look like white glowing orbs on small stands around this area.
-collect 8 Ancient Relic##23779 |q 9523/1 |goto Azuremyst Isle,36.1,77
-kill 5 Wrathscale Myrmidon |q 9513/1 |goto Azuremyst Isle,36.1,77
-kill 5 Wrathscale Naga |q 9513/2 |goto Azuremyst Isle,36.1,77
-kill 5 Wrathscale Siren |q 9513/3 |goto Azuremyst Isle,36.1,77
+collect 8 Ancient Relic##23779 |q 9523/1 |goto Azuremyst Isle/0 36.1,77
+kill 5 Wrathscale Myrmidon |q 9513/1 |goto Azuremyst Isle/0 36.1,77
+kill 5 Wrathscale Naga |q 9513/2 |goto Azuremyst Isle/0 36.1,77
+kill 5 Wrathscale Siren |q 9513/3 |goto Azuremyst Isle/0 36.1,77
 kill Wrathscale Myrmidon##17194+, Wrathscale Naga##17193+, Wrathscale Siren##17195+
 collect Rune Covered Tablet##23759 |n
 Click the Rune Covered Tablet in your bags |use Rune Covered Tablet##23759
-accept Rune Covered Tablet##9514 |goto Azuremyst Isle,36.1,77
+accept Rune Covered Tablet##9514 |goto Azuremyst Isle/0 36.1,77
 step
 Use your Tree Disguise Kit next to the Naga Flag |use Tree Disguise Kit##23792
 |tip It's a red flag on a metal pole on the beach.
 Watch the conversation
-Uncover the Traitor |q 9531/1 |goto Azuremyst Isle,18.5,84.3
+Uncover the Traitor |q 9531/1 |goto Azuremyst Isle/0 18.5,84.3
 step
 talk Anchorite Fateema##17214
 turnin Medicinal Purpose##9463 |goto 48.4,51.8
@@ -7773,35 +7794,35 @@ talk Daedal##17215
 accept An Alternative Alternative##9473 |goto 48.4,51.5
 step
 talk Acteon##17110
-turnin The Great Moongraze Hunt##9454 |goto Azuremyst Isle,49.8,51.9
-accept The Great Moongraze Hunt##10324 |goto Azuremyst Isle,49.8,51.9
+turnin The Great Moongraze Hunt##9454 |goto Azuremyst Isle/0 49.8,51.9
+accept The Great Moongraze Hunt##10324 |goto Azuremyst Isle/0 49.8,51.9
 step
 kill Moongraze Buck##17201+
-collect 6 Moongraze Buck Hide##23677 |q 10324/1 |goto Azuremyst Isle,50.6,46.2
+collect 6 Moongraze Buck Hide##23677 |q 10324/1 |goto Azuremyst Isle/0 50.6,46.2
 kill Infected Nightstalker Runt##17202+
 collect Faintly Glowing Crystal##23678 |n
 Click the Faintly Glowing Crystal in your bags |use Faintly Glowing Crystal##23678
-accept Strange Findings##9455 |goto Azuremyst Isle,50.6,46.2
+accept Strange Findings##9455 |goto Azuremyst Isle/0 50.6,46.2
 step
 Click Azure Snapdragons
 |tip They are tall flowers with big bulbs that puff smoke at the base of trees.
-collect 5 Azure Snapdragon Bulb##23692 |q 9473/1 |goto Azuremyst Isle,50.4,37.1
+collect 5 Azure Snapdragon Bulb##23692 |q 9473/1 |goto Azuremyst Isle/0 50.4,37.1
 step
 talk Acteon##17110
-turnin The Great Moongraze Hunt##10324 |goto Azuremyst Isle,49.8,51.9
+turnin The Great Moongraze Hunt##10324 |goto Azuremyst Isle/0 49.8,51.9
 step
 talk Daedal##17215
-turnin An Alternative Alternative##9473 |goto Azuremyst Isle,48.4,51.8
+turnin An Alternative Alternative##9473 |goto Azuremyst Isle/0 48.4,51.8
 step
 talk Exarch Menelaous##17116
-turnin Strange Findings##9455 |goto Azuremyst Isle,47.1,50.6
-accept Nightstalker Clean Up, Isle 2...##9456 |goto Azuremyst Isle,47.1,50.6
+turnin Strange Findings##9455 |goto Azuremyst Isle/0 47.1,50.6
+accept Nightstalker Clean Up, Isle 2...##9456 |goto Azuremyst Isle/0 47.1,50.6
 step
 talk Dulvi##17488
-accept The Missing Fisherman##10428 |goto Azuremyst Isle,49,51.1
+accept The Missing Fisherman##10428 |goto Azuremyst Isle/0 49,51.1
 step
 talk Caregiver Chellan##16553
-accept Beds, Bandages, and Beyond##9603 |goto Azuremyst Isle,48.3,49.2
+accept Beds, Bandages, and Beyond##9603 |goto Azuremyst Isle/0 48.3,49.2
 step
 talk Zaldaan##43991
 turnin Beds, Bandages, and Beyond##9603 |goto 49.7,49.1
@@ -7816,12 +7837,12 @@ turnin Hippogryph Master Stephanos##9605 |goto 54.5,36.3
 accept Return to Caregiver Chellan##9606 |goto 54.5,36.3
 step
 talk Caregiver Chellan##16553
-turnin Return to Caregiver Chellan##9606 |goto Azuremyst Isle,48.3,49.2
+turnin Return to Caregiver Chellan##9606 |goto Azuremyst Isle/0 48.3,49.2
 step
-kill 8 Infected Nightstalker Runt |q 9456/1 |goto Azuremyst Isle,45.7,43.9
+kill 8 Infected Nightstalker Runt |q 9456/1 |goto Azuremyst Isle/0 45.7,43.9
 step
 talk Exarch Menelaous##17116
-turnin Nightstalker Clean Up, Isle 2...##9456 |goto Azuremyst Isle,47.1,50.6
+turnin Nightstalker Clean Up, Isle 2...##9456 |goto Azuremyst Isle/0 47.1,50.6
 step
 talk Admiral Odesyus##17240
 turnin Tree's Company##9531 |goto 47.0,70.2
@@ -7832,7 +7853,7 @@ turnin Reclaiming the Ruins##9513 |goto 47.1,70.3
 turnin Rune Covered Tablet##9514 |goto 47.1,70.3
 step
 talk Archaeologist Adamant Ironheart##17242
-turnin Precious and Fragile Things Need Special Handling##9523 |goto Azuremyst Isle,47.2,70
+turnin Precious and Fragile Things Need Special Handling##9523 |goto Azuremyst Isle/0 47.2,70
 step
 talk Priestess Kyleen Il'dinare##17241
 accept Warlord Sriss'tiz##9515 |goto 47.1,70.3
@@ -7840,19 +7861,19 @@ step
 talk Engineer "Spark" Overgrind##17243
 Tell him it's over
 kill Engineer "Spark" Overgrind##17243
-collect Traitor's Communication##23899 |q 9537/1 |goto Azuremyst Isle,48.2,72.5
+collect Traitor's Communication##23899 |q 9537/1 |goto Azuremyst Isle/0 48.2,72.5
 step
 talk Admiral Odesyus##17240
-turnin Show Gnomercy##9537 |goto Azuremyst Isle,47,70.2
-accept Deliver Them From Evil...##9602 |goto Azuremyst Isle,47,70.2
+turnin Show Gnomercy##9537 |goto Azuremyst Isle/0 47,70.2
+accept Deliver Them From Evil...##9602 |goto Azuremyst Isle/0 47,70.2
 step
 talk Exarch Menelaous##17116
-turnin Deliver Them From Evil...##9602 |goto Azuremyst Isle,47.1,50.6
+turnin Deliver Them From Evil...##9602 |goto Azuremyst Isle/0 47.1,50.6
 step
 talk Cryptographer Aurren##17232
 accept Learning the Language##9538
 Click the Stillpine Furbolg Language Primer in your bags |use Stillpine Furbolg Language Primer##23818
-Read the Stillpine Furbolg Language Primer |q 9538/1 |goto Azuremyst Isle,49.40,51.0
+Read the Stillpine Furbolg Language Primer |q 9538/1 |goto Azuremyst Isle/0 49.40,51.0
 step
 Click the Totem of Akida
 |tip In the middle of town, next to the giant bone altar thing with the huge pink crystal in it.
@@ -7871,60 +7892,60 @@ Follow the ghost furbolg to the edge of the cliff
 He will give you wings |havebuff 135898 |q 9540 |goto 55.6,41.6
 step
 Click the Totem of Tikti
-turnin Totem of Tikti##9540 |goto Azuremyst Isle,64.5,39.8
-accept Totem of Yor##9541 |goto Azuremyst Isle,64.5,39.8
+turnin Totem of Tikti##9540 |goto Azuremyst Isle/0 64.5,39.8
+accept Totem of Yor##9541 |goto Azuremyst Isle/0 64.5,39.8
 step
 Follow the ghost furbolg to the river
 He will give you a swim speed buff |havebuff 132107 |q 9541 |goto 63.8,40.2
 step
 Click the Totem of Yor underwater
-turnin Totem of Yor##9541 |goto Azuremyst Isle,63,67.9
-accept Totem of Vark##9542 |goto Azuremyst Isle,63,67.9
+turnin Totem of Yor##9541 |goto Azuremyst Isle/0 63,67.9
+accept Totem of Vark##9542 |goto Azuremyst Isle/0 63,67.9
 step
 Follow the ghost furbolg out of the water
 He will turn you into a ghost panther |havebuff 132142 |q 9542 |goto 61.0,69.5
 step
 Follow the panther as he runs
 Click the Totem of Vark
-turnin Totem of Vark##9542 |goto Azuremyst Isle,28.1,62.4
-accept The Prophecy of Akida##9544 |goto Azuremyst Isle,28.1,62.4
+turnin Totem of Vark##9542 |goto Azuremyst Isle/0 28.1,62.4
+accept The Prophecy of Akida##9544 |goto Azuremyst Isle/0 28.1,62.4
 step
 kill Bristlelimb Ursa##17185+, Bristlelimb Windcaller##17184+, Bristlelimb Furbolg##17183+
 collect Bristlelimb Key##23801 |n
 Click Bristlelimb Cages
 |tip They look like yellow cages around this area.
-Free 8 Stillpine Captives |q 9544/1 |goto Azuremyst Isle,28.5,66.4
+Free 8 Stillpine Captives |q 9544/1 |goto Azuremyst Isle/0 28.5,66.4
 step
-Enter the cave |goto Azuremyst Isle,27.0,76.7 < 5 |walk
+Enter the cave |goto Azuremyst Isle/0 27.0,76.7 < 5 |walk
 Follow the path to the bottom of the cave
-kill Warlord Sriss'tiz |q 9515/1 |goto Azuremyst Isle,25.2,74.2
+kill Warlord Sriss'tiz |q 9515/1 |goto Azuremyst Isle/0 25.2,74.2
 step
-Leave the cave |goto Azuremyst Isle,27.0,76.7 < 5 |walk
+Leave the cave |goto Azuremyst Isle/0 27.0,76.7 < 5 |walk
 talk Cowlen##17311
-turnin The Missing Fisherman##10428 |goto Azuremyst Isle,16.6,94.5
-accept All That Remains##9527 |goto Azuremyst Isle,16.6,94.5
+turnin The Missing Fisherman##10428 |goto Azuremyst Isle/0 16.6,94.5
+accept All That Remains##9527 |goto Azuremyst Isle/0 16.6,94.5
 step
 kill Raving Owlbeast##17188+, Aberrant Owlbeast##17187+, Deranged Owlbeast##17186+
-collect Remains of Cowlen's Family##23789 |q 9527/1 |goto Azuremyst Isle,14.8,92
+collect Remains of Cowlen's Family##23789 |q 9527/1 |goto Azuremyst Isle/0 14.8,92
 step
 talk Cowlen##17311
-turnin All That Remains##9527 |goto Azuremyst Isle,16.6,94.5
+turnin All That Remains##9527 |goto Azuremyst Isle/0 16.6,94.5
 step
 talk Arugoo the Stillpine##17114
-turnin The Prophecy of Akida##9544 |goto Azuremyst Isle,49.41,51.0
-accept Stillpine Hold##9559 |goto Azuremyst Isle,49.41,51.0
+turnin The Prophecy of Akida##9544 |goto Azuremyst Isle/0 49.41,51.0
+accept Stillpine Hold##9559 |goto Azuremyst Isle/0 49.41,51.0
 step
 talk Priestess Kyleen Il'dinare##17241
-turnin Warlord Sriss'tiz##9515 |goto Azuremyst Isle,47,70.2
+turnin Warlord Sriss'tiz##9515 |goto Azuremyst Isle/0 47,70.2
 step
 talk Gurf##17441
-accept Murlocs... Why Here? Why Now?##9562 |goto Azuremyst Isle,44.7,23.6
+accept Murlocs... Why Here? Why Now?##9562 |goto Azuremyst Isle/0 44.7,23.6
 step
 talk Moordo##17442
 accept Beasts of the Apocalypse!##9560 |goto 44.8,23.9
 step
 talk High Chief Stillpine##17440
-turnin Stillpine Hold##9559 |goto Azuremyst Isle,46.7,20.6
+turnin Stillpine Hold##9559 |goto Azuremyst Isle/0 46.7,20.6
 step
 kill Ravager Specimen##17199+
 collect 8 Ravager Hide##23845 |q 9560/1 |goto 53.1,20.8
@@ -7933,11 +7954,11 @@ Follow the road around
 kill Siltfin Hunter##17192+, Siltfin Murloc##17190+, Siltfin Oracle##17191+
 Click Stillpine Grain
 |tip They look like bags near the murloc huts along the beach.
-collect 5 Stillpine Grain##23849 |q 9562/1 |goto Azuremyst Isle,33.8,25.7
+collect 5 Stillpine Grain##23849 |q 9562/1 |goto Azuremyst Isle/0 33.8,25.7
 kill Murgurgala##17475
 collect Gurf's Dignity##23850 |n
 Click Gurf's Dignity in your bags |use Gurf's Dignity##23850
-accept Gurf's Dignity##9564 |goto Azuremyst Isle,33.8,25.7
+accept Gurf's Dignity##9564 |goto Azuremyst Isle/0 33.8,25.7
 step
 kill Blood Elf Bandit##17591+
 collect Blood Elf Communication##23910
@@ -7945,35 +7966,35 @@ Click the Blood Elf Communication in your bags |use Blood Elf Communication##239
 accept Bandits!##9616 |goto 34.0,26.5
 step
 talk Gurf##17441
-turnin Murlocs... Why Here? Why Now?##9562 |goto Azuremyst Isle,44.7,23.6
-turnin Gurf's Dignity##9564 |goto Azuremyst Isle,44.7,23.6
+turnin Murlocs... Why Here? Why Now?##9562 |goto Azuremyst Isle/0 44.7,23.6
+turnin Gurf's Dignity##9564 |goto Azuremyst Isle/0 44.7,23.6
 step
 talk Moordo##17442
 turnin Beasts of the Apocalypse!##9560 |goto 44.8,23.9
 step
 talk High Chief Stillpine##17440
-accept Search Stillpine Hold##9565 |goto Azuremyst Isle,46.7,20.6
+accept Search Stillpine Hold##9565 |goto Azuremyst Isle/0 46.7,20.6
 step
 talk Stillpine the Younger##17445
-accept Chieftain Oomooroo##9573 |goto Azuremyst Isle,46.9,21.2
+accept Chieftain Oomooroo##9573 |goto Azuremyst Isle/0 46.9,21.2
 step
 Enter the cave |goto 45.4,19.1 < 5 |walk
 Go to the upper level of the cave
-kill Chieftain Oomooroo |q 9573/1 |goto Azuremyst Isle,47.4,14.1
+kill Chieftain Oomooroo |q 9573/1 |goto Azuremyst Isle/0 47.4,14.1
 step
 Click the Blood Crystal
 |tip It's a huge red crystal on a little dirt island in the water.
-turnin Search Stillpine Hold##9565 |goto Azuremyst Isle,50.5,11.5
-accept Blood Crystals##9566 |goto Azuremyst Isle,50.5,11.5
+turnin Search Stillpine Hold##9565 |goto Azuremyst Isle/0 50.5,11.5
+accept Blood Crystals##9566 |goto Azuremyst Isle/0 50.5,11.5
 step
-kill 9 Crazed Wildkin |q 9573/2 |goto Azuremyst Isle,47.4,16.0
+kill 9 Crazed Wildkin |q 9573/2 |goto Azuremyst Isle/0 47.4,16.0
 step
 Leave the cave |goto 45.4,19.1 < 5 |walk
 talk High Chief Stillpine##17440
-turnin Blood Crystals##9566 |goto Azuremyst Isle,46.7,20.6
+turnin Blood Crystals##9566 |goto Azuremyst Isle/0 46.7,20.6
 step
 talk Stillpine the Younger##17445
-turnin Chieftain Oomooroo##9573 |goto Azuremyst Isle,46.9,21.2
+turnin Chieftain Oomooroo##9573 |goto Azuremyst Isle/0 46.9,21.2
 step
 talk Kurz the Revelator##17443
 accept The Kurken is Lurkin'##9570 |goto 47.0,22.3
@@ -7988,40 +8009,40 @@ turnin The Kurken is Lurkin'##9570 |goto 47.0,22.3
 accept The Kurken's Hide##9571 |goto 47.0,22.3
 step
 talk High Chief Stillpine##17440
-accept Warn Your People##9622 |goto Azuremyst Isle,46.7,20.6
-turnin Bandits!##9616 |goto Azuremyst Isle,46.7,20.6
+accept Warn Your People##9622 |goto Azuremyst Isle/0 46.7,20.6
+turnin Bandits!##9616 |goto Azuremyst Isle/0 46.7,20.6
 step
 talk Moordo##17442
-turnin The Kurken's Hide##9571 |goto Azuremyst Isle,44.8,23.9
+turnin The Kurken's Hide##9571 |goto Azuremyst Isle/0 44.8,23.9
 step
 talk Exarch Menelaous##17116
-turnin Warn Your People##9622 |goto Azuremyst Isle,47.1,50.6
-accept Coming of Age##9623 |goto Azuremyst Isle,47.1,50.6
+turnin Warn Your People##9622 |goto Azuremyst Isle/0 47.1,50.6
+accept Coming of Age##9623 |goto Azuremyst Isle/0 47.1,50.6
 step
 Follow the ramp up and outside The Exodar
 talk Torallius the Pack Handler##17584
-turnin Coming of Age##9623 |goto Azuremyst Isle,35.1,43.4
-accept Elekks Are Serious Business##9625 |goto Azuremyst Isle,35.1,43.4
+turnin Coming of Age##9623 |goto Azuremyst Isle/0 35.1,43.4
+accept Elekks Are Serious Business##9625 |goto Azuremyst Isle/0 35.1,43.4
 step
 talk Vorkhan the Elekk Herder##17586
-turnin Elekks Are Serious Business##9625 |goto Bloodmyst Isle,63.0,87.9
-accept Alien Predators##9634 |goto Bloodmyst Isle,63.0,87.9
+turnin Elekks Are Serious Business##9625 |goto Bloodmyst Isle/0 63.0,87.9
+accept Alien Predators##9634 |goto Bloodmyst Isle/0 63.0,87.9
 step
 talk Kessel##17649
 accept The Kessel Run##9663 |goto 63.0,87.5
 step
 talk High Chief Stillpine##17440
-Warn High Chief Stillpine |q 9663/1 |goto Azuremyst Isle,46.7,20.6
+Warn High Chief Stillpine |q 9663/1 |goto Azuremyst Isle/0 46.7,20.6
 step
 talk Exarch Menelaous##17116
 Warn Exarch Menelaous |q 9663/2 |goto 47.1,50.6
 step
 talk Admiral Odesyus##17240
-Warn Admiral Odesyus |q 9663/3 |goto Azuremyst Isle,47,70.2
+Warn Admiral Odesyus |q 9663/3 |goto Azuremyst Isle/0 47,70.2
 step
 talk Kessel##17649
-turnin The Kessel Run##9663 |goto Bloodmyst Isle,63.0,87.5
-accept Declaration of Power##9666 |goto Bloodmyst Isle,63.0,87.5
+turnin The Kessel Run##9663 |goto Bloodmyst Isle/0 63.0,87.5
+accept Declaration of Power##9666 |goto Bloodmyst Isle/0 63.0,87.5
 step
 talk Aonar##17599
 accept A Favorite Treat##9624 |goto 63.4,88.8
@@ -8386,7 +8407,7 @@ Free #5# Expedition Researchers |q 9670/1 |goto 18.1,36.2
 |tip There will be webbed creatures along the mountainside.
 step
 talk Researcher Cornelius##17686
-turnin They're Alive! Maybe...##9670 |goto Bloodmyst Isle,24.9,34.4
+turnin They're Alive! Maybe...##9670 |goto Bloodmyst Isle/0 24.9,34.4
 step
 talk Achelus##17676
 turnin The Missing Expedition##9669 |goto 53.2,57.0
@@ -8395,15 +8416,15 @@ talk Anchorite Paetheus##17424
 accept New Found Allies##9632 |goto 54.6,53.9
 step
 talk Prophet Velen##17468
-turnin Audience with the Prophet##9698 |goto 32.9,54.4
+turnin Audience with the Prophet##9698 |goto The Exodar/0 32.9,54.4
 accept Truth or Fiction##9699 |goto 32.9,54.4
 step
 talk Huntress Kella Nightbow##17614
-turnin Newfound Allies##9632 |goto Azuremyst Isle 24.2,54.3
+turnin Newfound Allies##9632 |goto Azuremyst Isle/0 24.2,54.3
 step
 map The Exodar
 To continue gaining reputation with the Exodar faction:
-You can buy an Exodar Tabard from Kadu at [The Exodar 69.6,61.7]
+You can buy an Exodar Tabard from Kadu at [The Exodar/0 69.6,61.7]
 |tip Wear the Exodar Tabard and use the Dungeon Finder tool to complete random Azeroth, Northrend, or Cataclysm. The Burning Crusade dungeons will not give any rep when using this tabard.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Argent Tournament Guides\\Home Cities Reputation\\Ironforge & Gnomeregan\\Dwarf",{
@@ -9473,14 +9494,14 @@ You will not be able to do some of the quests in this section if you are not a H
 confirm
 step
 talk Marshal McBride##197
-accept Beating them Back!##28757 |goto Northshire 33.6,53.0 |only Human Mage
-accept Beating them Back!##28762 |goto Northshire 33.6,53.0 |only Human Paladin
-accept Beating them Back!##28763 |goto Northshire 33.6,53.0 |only Human Priest
-accept Beating them Back!##28764 |goto Northshire 33.6,53.0 |only Human Rogue
-accept Beating them Back!##28765 |goto Northshire 33.6,53.0 |only Human Warlock
-accept Beating them Back!##28766 |goto Northshire 33.6,53.0 |only Human Warrior
-accept Beating them Back!##28767 |goto Northshire 33.6,53.0 |only Human Hunter
-accept Beating Them Back!##31139 |goto Northshire 33.6,53.0 |only Human Monk
+accept Beating them Back!##28757 |goto Northshire/0 33.6,53.0 |only Human Mage
+accept Beating them Back!##28762 |goto Northshire/0 33.6,53.0 |only Human Paladin
+accept Beating them Back!##28763 |goto Northshire/0 33.6,53.0 |only Human Priest
+accept Beating them Back!##28764 |goto Northshire/0 33.6,53.0 |only Human Rogue
+accept Beating them Back!##28765 |goto Northshire/0 33.6,53.0 |only Human Warlock
+accept Beating them Back!##28766 |goto Northshire/0 33.6,53.0 |only Human Warrior
+accept Beating them Back!##28767 |goto Northshire/0 33.6,53.0 |only Human Hunter
+accept Beating Them Back!##31139 |goto Northshire/0 33.6,53.0 |only Human Monk
 step
 kill 6 Blackrock Battle Worg##49871+ |q 28757/1 |goto 29.0,42.9 |only Human Mage
 kill 6 Blackrock Battle Worg##49871+ |q 28762/1 |goto 29.0,42.9 |only Human Paladin
@@ -9665,11 +9686,11 @@ turnin Ending the Invasion!##26390 |goto 33.6,53.0
 accept Report to Goldshire##54 |goto 33.6,53.0
 step
 talk Falkhaan Isenstrider##6774
-accept Rest and Relaxation##2158 |goto Northshire 24.2,73.4
+accept Rest and Relaxation##2158 |goto Elwynn Forest/0 45.37,49.00
 step
 talk Marshal Dughan##240
-turnin Report to Goldshire##54 |goto Elwynn Forest 42.1,65.9
-accept The Fargodeep Mine##62 |goto Elwynn Forest 42.1,65.9
+turnin Report to Goldshire##54 |goto Elwynn Forest/0 42.1,65.9
+accept The Fargodeep Mine##62 |goto Elwynn Forest/0 42.1,65.9
 step
 talk Remy "Two Times"##241
 accept Gold Dust Exchange##47 |goto 42.1,67.3
@@ -9693,8 +9714,8 @@ accept Continue to Stormwind##26394 |goto 41.7,64.6
 only Human
 step
 talk Osric Strang##1323
-turnin Continue to Stormwind##26394 |goto Stormwind City,77.2,61.0
-accept Dungar Longdrink##26395 |goto Stormwind City,77.2,61.0
+turnin Continue to Stormwind##26394 |goto Stormwind City/0 77.2,61.0
+accept Dungar Longdrink##26395 |goto Stormwind City/0 77.2,61.0
 only Human
 step
 talk Dungar Longdrink##352
@@ -9703,7 +9724,7 @@ accept Return to Argus##26396 |goto 70.9,72.5
 only Human
 step
 talk Smith Argus##514
-turnin Return to Argus##26396 |goto Elwynn Forest,41.7,65.5
+turnin Return to Argus##26396 |goto Elwynn Forest/0 41.7,65.5
 only Human
 stickystart "largecandle"
 step
@@ -9716,8 +9737,8 @@ collect 10 Gold Dust##773 |q 47/1 |goto Elwynn Forest/1 53.8,60.1
 collect 8 Large Candle##772 |q 60/1 |goto Elwynn Forest/1 53.8,60.1
 step
 talk William Pestle##253
-turnin Kobold Candles##60 |goto Elwynn Forest 43.3,65.7
-accept A Visit With Maybell##26150 |goto Elwynn Forest 43.3,65.7
+turnin Kobold Candles##60 |goto Elwynn Forest/0 43.3,65.7
+accept A Visit With Maybell##26150 |goto Elwynn Forest/0 43.3,65.7
 step
 talk Marshal Dughan##240
 turnin The Fargodeep Mine##62 |goto 42.1,65.9
@@ -9792,14 +9813,14 @@ step
 talk Maybell Maclure##251
 turnin The Escape##114 |goto 43.1,89.6
 step
-talk Marshal Dughan##240 |goto Elwynn Forest,42.1,65.9
+talk Marshal Dughan##240 |goto Elwynn Forest/0 42.1,65.9
 Tell him you wish to ride the Stormwind charger
-Ride the horse to the east side of Elwynn Forest |goto 73.9,72.5,0.5 |noway |c
+Ride the horse to the east side of Elwynn Forest/0 |goto 73.9,72.5,0.5 |noway |c
 step
 talk Guard Thomas##261
-turnin Further Concerns##35 |goto Elwynn Forest,74.0,72.2 |only if haveq(35)
-accept Find the Lost Guards##37 |goto Elwynn Forest,74.0,72.2 |only if completedq(35)
-accept Protect the Frontier##52 |goto Elwynn Forest,74.0,72.2
+turnin Further Concerns##35 |goto Elwynn Forest/0 74.0,72.2 |only if haveq(35)
+accept Find the Lost Guards##37 |goto Elwynn Forest/0 74.0,72.2 |only if completedq(35)
+accept Protect the Frontier##52 |goto Elwynn Forest/0 74.0,72.2
 step
 click Bounty Board##232398
 accept Bounty on Murlocs##46 |goto 74.0,72.3
@@ -9843,7 +9864,7 @@ kill 8 Prowler or Forest Wolf |q 52/1 |goto 80.9,61.5
 kill 5 Young Forest Bear##822 |q 52/2 |goto 80.9,61.5
 click Bundles of Wood##1248+
 collect 8 Bundle of Wood##13872 |q 5545/1 |goto 80.9,61.5
-You can find more Prowlers and Young Forest Bears around [Elwynn Forest,87.8,64.7]
+You can find more Prowlers and Young Forest Bears around [Elwynn Forest/0 87.8,64.7]
 kill Gray Forest Wolf##1922, Greypaw##44256, Gonzalez##43294
 step
 talk Supervisor Raelen##10616
@@ -9873,8 +9894,8 @@ Go to this spot inside the mine
 Explore the Jasperlode Mine |q 76/1 |goto Elwynn Forest/19 37.7,52.5
 step
 talk Marshal Dughan##240
-turnin The Jasperlode Mine##76 |goto Elwynn Forest 42.1,65.9
-accept Westbrook Garrison Needs Help!##239 |goto Elwynn Forest 42.1,65.9
+turnin The Jasperlode Mine##76 |goto Elwynn Forest/0 42.1,65.9
+accept Westbrook Garrison Needs Help!##239 |goto Elwynn Forest/0 42.1,65.9
 step
 click Wanted Poster##184945
 accept Wanted: "Hogger"##176 |goto 24.6,78.2

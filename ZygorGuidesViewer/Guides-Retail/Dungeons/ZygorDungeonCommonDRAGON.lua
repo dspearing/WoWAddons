@@ -437,14 +437,14 @@ Click Here to Continue |confirm
 step
 kill Warlord Sargha##189901 |goto Neltharus/0 52.09,86.95
 _EVERYONE:_ |grouprole EVERYONE
-|tip During "Magma Shield", use the piles of treasure to obtain magic items that will remove it eventually.
-|tip "Wand of Negation" will deal 27k Arcane damage to absorb shields.
-|tip "Anti-Magic Bomb" will deal 27k shield damage to those within 8 yards of impact.
-|tip "Azure Stone of Might" causes the caster to launch themselves at the enemy dealing 27k shield damage.
-|tip "Rose of the Vale" causes 27k damage to shields to enemies within 12 yards.
-|tip "Seismic Boots" causes you to stomp the ground releasing a wave for 27k shield damage.
-|tip After the Magma Shield is broken, Warlord Sargha will cast "Flame Eruption" applying Flame Vulnerability to the group.
-|tip "Flame Eruption" stacks and causes 50% more damage from subsequent Flame Eruptions.
+|tip During "Magma Shield", use the piles of treasure to obtain magic items that will remove it eventually. |grouprole EVERYONE
+|tip "Wand of Negation" will deal 27k Arcane damage to absorb shields. |grouprole EVERYONE
+|tip "Anti-Magic Bomb" will deal 27k shield damage to those within 8 yards of impact. |grouprole EVERYONE
+|tip "Azure Stone of Might" causes the caster to launch themselves at the enemy dealing 27k shield damage. |grouprole EVERYONE
+|tip "Rose of the Vale" causes 27k damage to shields to enemies within 12 yards. |grouprole EVERYONE
+|tip "Seismic Boots" causes you to stomp the ground releasing a wave for 27k shield damage. |grouprole EVERYONE
+|tip After the Magma Shield is broken, Warlord Sargha will cast "Flame Eruption" applying Flame Vulnerability to the group. |grouprole EVERYONE
+|tip "Flame Eruption" stacks and causes 50% more damage from subsequent Flame Eruptions. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
 |tip Avoid standing in front of her to avoid "The Dragon's Kiln" which deals moderate damage. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
@@ -500,15 +500,15 @@ Click Here to Continue |confirm
 step
 kill Umbrelskul##186738 |goto The Azure Vault/0 52.18,52.62
 _EVERYONE:_ |grouprole EVERYONE
-|tip At 75%, 50% and 25% health, Umbrelskul shatters causing Detonating Crystals to fall from his body.
-|tip "Detonating Crystals" deal moderate damage each second to the group each second for 15 seconds.
-|tip Avoid standing in "Arcane Eruptions" as they deal heavy damage and knock players back as well as leaves behind a Crackling Vortex that deals damage over time.
+|tip At 75%, 50% and 25% health, Umbrelskul shatters causing Detonating Crystals to fall from his body. |grouprole EVERYONE
+|tip "Detonating Crystals" deal moderate damage each second to the group each second for 15 seconds. |grouprole EVERYONE
+|tip Avoid standing in "Arcane Eruptions" as they deal heavy damage and knock players back as well as leaves behind a Crackling Vortex that deals damage over time. |grouprole EVERYONE
 _DAMAGE:_ |grouprole DAMAGE
-|tip "Unleashed Destruction" will push players away from him.
+|tip "Unleashed Destruction" will push players away from him. |grouprole DAMAGE
 _HEALER:_ |grouprole HEALER
-|tip "Dragon Strike" will deal heavy damage to the target player.
+|tip "Dragon Strike" will deal heavy damage to the target player. |grouprole HEALER
 _TANK:_ |grouprole TANK
-|tip "Dragon Strike" deals heavy damage so mitigation skills may be required.
+|tip "Dragon Strike" deals heavy damage so mitigation skills may be required. |grouprole TANK
 Click Here to Continue |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Dragonflight Raids\\Vault of the Incarnates",{

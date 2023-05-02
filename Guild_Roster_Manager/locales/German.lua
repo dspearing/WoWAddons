@@ -537,7 +537,6 @@
         GRM_L["Alliance"] = "Allianz"
         GRM_L["Creation Date"] = "Erstellungsdatum"
         GRM_L["Members"] = "Mitglieder"
-        GRM_L["Backup {num}:"] = "Backup {num}:"           -- As in, the number of backups... so "Backup 1:"
         GRM_L["None"] = "leer"
         GRM_L["Restore"] = "Wiederherstellen"
         GRM_L["Set Backup"] = "Backup erstellen"
@@ -545,9 +544,6 @@
     
         -- Update 1.137
         GRM_L["GRM: Unable to Create Backup for a Guild With Unknown Creation Date! Log into that guild on any alt to update old database."] = "Kann kein Backup für eine Gilde ohne Erstellungsdatum anlegen. Bitte logge auf einen Char in der Gilde, um veraltete Daten zu aktualisieren."
-        GRM_L["Enable Auto-Backup Once Every"] = "Aktiviere Auto-Backup alle"
-        GRM_L["Auto {num}:"] = "Auto {num}:"
-        GRM_L["Please Choose a Time Interval Between 1 and 99 Days!"] = "Bitte wähle einen Intervall zwischen 1 und 99 Tagen!"
         GRM_L["Really restore {name} Backup Point?"] = "Wirklich {name} wiederherstellen?"
         GRM_L["Check All"] = "Alle auswählen"
     
@@ -805,7 +801,6 @@
         GRM_L["{name}'s Ban has been Updated by {name2}!"] = true
         GRM_L["{name} has Updated {name2}'s BAN and also BANNED all linked alts from the guild!"] = true
         GRM_L["One moment, GRM is still being configured."] = true
-        GRM_L["Press ENTER to complete"] = true
         GRM_L["Player Was Banned By: {name}"] = true
         GRM_L["|cffff0000WARNING!!!|r {num} BANNED players are currently in the guild."] = true     -- plural
         GRM_L["|cffff0000WARNING!!!|r {num} BANNED player is currently in the guild."] = true        -- Singular  -- please keep the color coding... this keeps the Warning in red
@@ -1146,13 +1141,7 @@
         GRM_L["Macro Tool:"] = true
         GRM_L["Export Tool:"] = true
         GRM_L["Audit Join Date Tool:"] = true
-        GRM_L["GRM UI Scale"] = true
         GRM_L["Right-Click to Reset"] = true
-        GRM_L["Open the Mouseover Window to see immediate scaling changes"] = true
-        GRM_L["Open the Macro Tool Window to see immediate scaling changes"] = true
-        GRM_L["The Export Tool is connected to the Core window scaling"] = true
-        GRM_L["This provides additional scaling controls on just this window"] = true
-        GRM_L["Open the Export Tool Window to see immediate scaling changes"] = true
         GRM_L["WARNING: Clear the text box before re-scaling or you may lock up your system"] = true
         GRM_L["Resets ALL settings, not just the ones on this page"] = true
         GRM_L["Open MouseOver"] = true
@@ -1475,8 +1464,6 @@
     GRM_L["Unable to notify yourself if you go offline."] = true
     GRM_L["{custom1} to sync join date among all alts in grouping."] = true
     GRM_L["Total Patch Time:"] = true
-    GRM_L["Applying {num} patches."] = true
-    GRM_L["Applying 1 patch."] = true
     GRM_L["Do you really want to import the join date for the selected player?"] = true
     GRM_L["Do you really want to import the join date for the {num} selected players?"] = true
     GRM_L["Do you really want to import the join date for 1 player?"] = true
@@ -1616,6 +1603,48 @@
     GRM_L["Sync has begun after waiting in queue for {num} seconds"] = true
     GRM_L["Not Determined"] = true  -- Ban List
 
+    --R1.97
+    GRM_L["You are added to the sync queue. Position: {num}"] = true
+    GRM_L["Sync Queue Position Update: {num}"] = true
+    GRM_L["Data has been transferred from the old Guild \"{name}\""] = true
+    GRM_L["Restore Date:"] = true
+    GRM_L["Guild Name"] = true
+    GRM_L["Sync with {name} complete."] = true
+    GRM_L["Transfer Data"] = true
+    GRM_L["Please confirm that \"{name}\" has transferred. Clicking YES will import all guild data."] = true
+    GRM_L["Set Restore Point"] = true
+    GRM_L["Guild Transfer Tool"] = true
+    GRM_L["Transfer Tool Guide"] = true
+    GRM_L["Step-by-Step guide on how to use transfer tool"] = true
+    GRM_L["Step {num}:"] = true  -- Step 1: , Step 2: etc...
+    GRM_L["Click \"Set Restore Point\" to the guild you are currently in (remove the old if necessary)."] = true
+    GRM_L["Initiate the guild transfer process."] = true
+    GRM_L["Log into the new guild on the new server."] = true
+    GRM_L["Open the Restore Tab again and click \"Transfer Data\" from your old guild. Confirm YES."] = true
+    GRM_L["If you are satisfied with the transfer, remove the restore point to lower memory use next session."] = true
+    GRM_L["Ensure that the new guild rank structure is identical to the previous (name changes are fine)."] = true
+    GRM_L["Transferred from old server"] = true
+    GRM_L["{name} has transferred servers and REJOINED the Guild."] = true
+    GRM_L["Group Info Module is Outdated."] = true
+    
+    -- R1.972
+    GRM_L["Show Player Level"] = true
+    GRM_L["Show Mythic+ Rating"] = true
+    GRM_L["M+ Rating:" ] = true
+    GRM_L["Do Not Show if at Max Level {num}"] = true
+    GRM_L["Not on Server"] = true
+    GRM_L["Mythic+ rating will only appear on members at max level {num}."] = true
+
+    -- R1.973
+    GRM_L["You are currently syncing. Please wait until sync completes to transfer the guild data."] = true
+    GRM_L["Mythic+ Score"] = true
+    GRM_L["Show Member Faction"] = true
+    GRM_L["Faction"] = true
+    GRM_L["Alts:"] = true
+
+    -- R1.975
+    GRM_L["Export a full list of names in the queue."] = true
+    
 end
     
     -- THANK YOU @Nehry for this full translation up to R1.20

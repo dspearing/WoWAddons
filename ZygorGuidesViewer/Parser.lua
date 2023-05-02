@@ -911,8 +911,11 @@ local ConditionEnv = {
 		local count = select("#", ...)
 		for i = 1, count do
 			local id = select(i, ...)
-			if C_TaskQuest.IsActive(id) then return true end -- it is active, good
-			if C_TaskQuest.GetQuestTimeLeftSeconds(id) then return true end -- fallback, does it have time remaining
+			local q = ZGV.questsbyid[id]
+			if not (q and (q.complete and not q.inlog)) then -- some quests remain active/have time for up to 60 seconds after turning in. verify that we did not just turn that in. at the same time, C.QuestLog.IsComplete returns false as soon as we turn them in, so we can't use that
+				if C_TaskQuest.IsActive(id) then return true end -- it is active, good
+				if C_TaskQuest.GetQuestTimeLeftSeconds(id) then return true end -- fallback, does it have time remaining
+			end
 		end
 		return false
 	end,

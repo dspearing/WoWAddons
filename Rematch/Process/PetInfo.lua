@@ -2,7 +2,7 @@
 
    Rematch refers to pets as a single number or string, depending on their
    context. This reference, called a petID, can be one of seven idTypes:
-   
+
    idType      example petID value    description
    ----------  ---------------------  -----------------------------------
    "pet"       "Battle-0-0000000etc"  a player-owned pet in the journal
@@ -13,7 +13,7 @@
    "battle"    "battle:2:1"           pet in battle (battle:owner:index)
    "random"    "random:10"            random mechanical pet (random:0 for any pet type)
    "unknown"   (anything, even nil)   indecipherable/undefined pet
-   
+
    To simplify getting information about these different types of pets, to
    eliminate the scattered code to independently call the various API through
    C_PetJournal and C_PetBattles, and to reduce redundant API calls for
@@ -21,13 +21,13 @@
    encapsulates a "front end" for information about pets.
 
    To use, first create a petInfo instance:
-      
+
       local petInfo = rematch:CreatePetInfo()
 
    Then fetch a petID to make it the pet of interest:
 
       petInfo:Fetch(petID)
-      
+
    After a pet of interest is fetched, simply index the stat you want:
 
       print(petInfo.name,"is level",petInfo.level,"and breed",petInfo.breedName)
@@ -93,7 +93,7 @@
       expansionID: the numeric index of the expansion the pet is from: 0=classic, 1=BC, 2=WotLK, etc. (integer)
       expansionName: the name of the expansion the pet is from (string)
       canLevel: whether the pet can battle and is below level 25
-      
+
    How it works:
 
       petInfo:Fetch(petID) will check if the petID is different from the last-
@@ -147,7 +147,7 @@ local apiByStat = {
    possibleBreedNames="PossibleBreeds", numPossibleBreeds="PossibleBreeds", hasBreed="Breed",
    owned="Valid", battleOwner="Battle", battleIndex="Battle", isSlotted="Slotted",
    inTeams="Teams", numTeams="Teams", sourceID="Source", moveset="Moveset", speciesAt25="SpeciesAt25",
-   notes="Notes", hasNotes="Notes", isLeveling="IsLeveling", isSummoned="IsSummoned", 
+   notes="Notes", hasNotes="Notes", isLeveling="IsLeveling", isSummoned="IsSummoned",
    expansionID="Expansion", expansionName="Expansion",
    canLevel="CanLevel",
 }
@@ -278,7 +278,7 @@ local function fillInfoBySpeciesID(self,speciesID)
       if not canBattleBySpeciesID[speciesID] and canBattle then
          canBattleBySpeciesID[speciesID] = canBattle -- if pet is ever canBattle, then it always can
       end
-      self.canBattle = canBattleBySpeciesID[speciesID]   
+      self.canBattle = canBattleBySpeciesID[speciesID]
    end
 end
 
@@ -479,6 +479,8 @@ local queryAPIs = {
          if type(breedID)~="number" then
             breedID = 0
             breedName = self.numPossibleBreeds==0 and "NEW" or "???"
+         elseif RematchSettings.ShowNumericBreeds then
+            breedName = breedID
          end
 		 self.breedID = breedID
          self.breedName = breedName or breedNames[breedID]
@@ -612,7 +614,10 @@ local queryAPIs = {
 -- addons are used in this priority: BattlePetBreedID, PetTracker_Breeds then LibPetBreedInfo-1.0
 function rematch:GetBreedSource()
    if breedSource==nil then
-      if IsAddOnLoaded("BattlePetBreedID") then
+      if RematchSettings.PreferPetTrackerBreeds and IsAddOnLoaded("BattlePetBreedID") and IsAddOnLoaded("PetTracker") then
+         breedSource = "PetTracker"
+         return "PetTracker"
+      elseif IsAddOnLoaded("BattlePetBreedID") then
          breedSource = "BattlePetBreedID"
          return "BattlePetBreedID"
       elseif IsAddOnLoaded("PetTracker_Breeds") and GetAddOnMetadata("PetTracker_Breeds","Version")~="7.1.4" then
@@ -642,6 +647,10 @@ function rematch:GetBreedSource()
    return breedSource
 end
 
+function rematch:ResetBreedSource()
+   breedSource = nil
+end
+
 -- either "text" or "icon", the format of breed to display
 function rematch:GetBreedFormat()
    local source = rematch:GetBreedSource()
@@ -654,6 +663,11 @@ end
 
 -- returns the name of a breed by its ID (used by PetMenus' breed menu; not petInfo)
 function rematch:GetBreedNameByID(breedID)
+
+   if RematchSettings.ShowNumericBreeds then
+      return breedID
+   end
+
    local breedSource = rematch:GetBreedSource()
 	if breedSource=="PetTracker_Breeds" then
       return PetTracker:GetBreedIcon(breedID,.85)

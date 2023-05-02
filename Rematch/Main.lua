@@ -216,6 +216,9 @@ function rematch:Start()
 	-- watch for player forfeiting a match (playerForfeit is nil'ed during PET_BATTLE_OPENING_START)
 	hooksecurefunc(C_PetBattles,"ForfeitGame",function() rematch.playerForfeit=true end)
 	rematch.inWorld = true
+
+	-- for compartment use
+	RematchToggleWindow = RematchFrame.Toggle
 end
 
 function rematch:InitSavedVars()
@@ -961,7 +964,7 @@ end
 
 --[[ RematchFootnoteButtonTemplate: for the little round buttons on list buttons (notes, leveling, etc) ]]
 
-local footnoteCoords = { 
+local footnoteCoords = {
 	notes={0,0.125,0,0.25}, leveling={0.125,0.25,0,0.25}, preferences={0.25,0.375,0,0.25},
 	ascending={0.375,0.5,0,0.25}, median={0,0.125,0.25,0.5}, descending={0.125,0.375,0.25,0.5},
    random={0.375,0.5,0.25,0.5}, ignored={0,0.125,0.5,0.75},

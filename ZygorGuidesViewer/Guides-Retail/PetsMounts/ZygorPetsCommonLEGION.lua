@@ -1267,15 +1267,15 @@ Follow the path |goto 23.8,60.4 < 6
 |tip Opening the world map will display an ant trail guiding you through the current floor.
 confirm
 step
-Run up the ramp
-click Ogre Tannin Basket##179499
-collect Ogre Tannin##18240 |goto 23.1,56.3
+collect Ogre Tannin##18240 |or
+|tip Go up the ramp and click the tiny, round basket in the middle of the floor.
+'|complete itemcount(18258) == 1 |or
 step
-Jump down here |goto 25.2,58.4
 talk Knot Thimblejack##14338
-turnin The Gordok Ogre Suit##27120 |goto 28.5,55.8
-collect Gordok Ogre Suit##18258 |n
-|tip This is a reward for completing this quest.
+turnin The Gordok Ogre Suit##27119 |n
+turnin The Gordok Ogre Suit##27120 |n
+|tip Go back down the ramp and head to the northeast corner on the ground floor.
+collect Gordok Ogre Suit##18258
 step
 Enter Blackrock Depths |goto Blackrock Depths/1 34.7,78.1 < 10000 |c
 step
@@ -2158,19 +2158,23 @@ description="\nThis guide will walk you through obtaining the Flying pet: Bloodg
 pet=1977,
 },[[
 step
-The world quest _Bloodgazer Swarm!_ must be active to earn this pet
-Click here to continue |confirm
+The world quest _Bloodgazer Swarm!_ must be active to earn this pet |complete questactive(44894) |or
+'|complete haspet(1977) |or
 step
 talk Applebough##96990
 buy 1 Azsunian Grapes##128843 |n
-collect 1 Azsunian Grapes##128843 |goto Dalaran L/10 42.94,57.40
-|tip You need this in your inventory to lure the Orphaned Bloodgazer.
+collect 1 Azsunian Grapes##128843 |goto Dalaran L/10 42.94,57.40 |or
+|tip You need this in your inventory to lure the orphaned hatchling.
+'|complete haspet(1977) |or
 step
-kill Bloodgazer Matriarch##115674 |goto Azsuna/0 35.6,5.6
+kill Bloodgazer Matriarch##115674 |goto Azsuna/0 35.60,5.60
+|tip Do not complete the world quest until you talk to the orphaned hatchling.
+Click here to continue |confirm
+step
 talk Orphaned Bloodgazer##115741
 |tip The Orphan will spawn shortly after killing the Matriarch.
 Choose _"<Give the orphaned bloodgazer some of your Azsunian Grapes.>"_
-learnpet Bloodgazer Hatchling##1977 |goto 35.5,7.5
+learnpet Bloodgazer Hatchling##1977 |goto 35.50,7.50
 step
 Congratulations!
 You have collected the _Bloodgazer Hatchling_ battle pet
@@ -2199,65 +2203,68 @@ description="\nThis guide will walk you through obtaining the Flying pet: Cracke
 pet=1997,
 },[[
 step
-You must be a Rogue to obtain this pet
-confirm
+Complete the Rogue Order Hall Campaign |complete completedq
+|tip You must be on a Rogue class character to complete this battle pet guide.
 step
 talk Maiev Shadowsong##116576
 accept Champions of Legionfall##47137
-|only Rogue
+|only if Rogue
 step
 talk Lord Jorach Ravenholdt##101513
-accept The Pirate's Bay##46322 |goto Dalaran L/4 41.31,77.29
-|only Rogue
+accept The Pirate's Bay##46322 |goto Dalaran L/4 41.31,77.29 |only if Horde
+accept The Pirate's Bay##45833 |goto Dalaran L/4 41.31,77.29 |only if Alliance
+|only if Rogue
 step
-talk Lilian Voss##119822
+talk Lilian Voss##119822 |only if Horde
+talk Princess Tess Greymane##119821 |only if Alliance
 turnin The Pirate's Bay##46322 |goto Azsuna/0 57.67,63.46
 accept What's the Cache?##46323 |goto Azsuna/0 57.67,63.46
 accept False Orders##46324 |goto Azsuna/0 57.67,63.46
-|only Rogue
+|only if Rogue
 step
 talk Fleet Admiral Tethys##118125
 accept Loot and Plunder!##45073 |goto 57.65,63.55
-|only Rogue
+|only if Rogue
 stickystart "Blacksail Booty"
 step
 Go onto the ship |goto 60.59,68.50 |only if walking
 Plant the First False Orders |q 46324/1 |goto 61.01,68.29
-|only Rogue
+|only if Rogue
 step
 Follow the path |goto 60.07,70.87 |only if walking
 Plant the Second False Orders |q 46324/2 |goto 59.48,72.60
-|only Rogue
+|only if Rogue
 step
 Follow the path |goto 58.04,76.27 |only if walking
 Go onto the ship |goto 58.68,77.42 |only if walking
 kill Master Gunner Prix##115242
 collect Fel-Infused Gunpowder Cache##142116 |q 46323/1 |goto 59.22,77.93
-|only Rogue
+|only if Rogue
 step
 label "Blacksail Booty"
 clicknpc Blacksail Booty##116035
 Burn 8 Blacksail Booty |q 45073/1
-|only Rogue
+|only if Rogue
 step
-talk Lilian Voss##119822
+talk Lilian Voss##119822 |only if Horde
+talk Princess Tess Greymane##119821 |only if Alliance
 turnin What's the Cache?##46323 |goto Azsuna/0 57.67,63.46
 turnin False Orders##46324 |goto Azsuna/0 57.67,63.46
-|only Rogue
+|only if Rogue
 step
 talk Fleet Admiral Tethys##118125
 turnin Loot and Plunder!##45073 |goto 57.65,63.55
-|only Rogue
+|only if Rogue
 step
 talk Crackers##118126
 accept Fit For a Pirate##45848 |goto 57.67,63.54
 collect Crackers##143679 |n |use Crackers##143679
 learnpet Crackers##1997
-|only Rogue
+|only if Rogue
 step
 Congratulations!
 You have collected the _Crackers_ battle pet
-|only Rogue
+|only if Rogue
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Direbeak Hatchling",{
 patch='71000',
@@ -2267,18 +2274,22 @@ description="\nThis guide will walk you through obtaining the Flying pet: Direbe
 pet=1975,
 },[[
 step
-The world quest _Direbeak Swarm!_ must be active to earn this pet
-Click here to continue |confirm
+The world quest _Direbeak Swarm!_ must be active to earn this pet |complete questactive(44893) |or
+'|complete haspet(1975) |or
 step
 talk Fialla Sweetberry##96784
 buy 1 Pungent Vrykul Gamalost##128763 |n
-collect 1 Pungent Vrykul Gamalost##128763 |goto Dalaran L/10 53.06,34.76
-|tip You need this in your inventory to lure the Orphaned Direbeak.
+collect 1 Pungent Vrykul Gamalost##128763 |goto Dalaran L/10 53.06,34.76 |or
+|tip Keep this in your inventory to lure the orphaned hatchling.
+'|complete haspet(1975) |or
 step
-kill Direbeak Matriarch##115671 |goto Stormheim/0 78.8,75.8
-talk Orphaned Direbeak##
+kill Direbeak Matriarch##115671 |goto Stormheim/0 78.80,75.80
+|tip Do not complete the world quest until you talk to the orphaned hatchling.
+Click here to continue |confirm
+step
+talk Orphaned Direbeak##115742
 |tip The Orphan will spawn shortly after killing the Matriarch.
-Choose _"<Give the orphaned snowfeather some of your Pungent Vrykul Gamalost.>"_
+Choose _"<Give the orphaned hatchling some of your Pungent Vrykul Gamalost.>"_
 learnpet Direbeak Hatchling##1975 |goto 79.74,69.56
 step
 Congratulations!
@@ -2633,21 +2644,22 @@ description="\nThis guide will walk you through obtaining the Flying pet: Sharpt
 pet=1976,
 },[[
 step
-The world quest _Sharptalon Swarm!_ must be active to earn this pet
-Click here to continue |confirm
+The world quest _Sharptalon Swarm!_ must be active to earn this pet |complete questactive(44895) |or
+'|complete haspet(1976) |or
 step
 talk Fialla Sweetberry##96784
 buy 1 Dried Bilberries##128837 |n
-collect 1 Dried Bilberries##128837 |goto Dalaran L/10 53.05,34.72
-|tip You need this in your inventory to lure the Orphaned Sharptalon.
+collect 1 Dried Bilberries##128837 |goto Dalaran L/10 53.05,34.72 |or
+|tip Keep this in your inventory to lure the orphaned hatchling.
+'|complete haspet(1976) |or
 step
 kill Sharptalon Matriarch##115672 |goto Val'sharah/0 48.00,9.70
+|tip Do not complete the world quest until you talk to the orphaned hatchling.
+Click here to continue |confirm
+step
 talk Orphaned Sharptalon##115740
 Choose _"<Give the orphaned sharptalon some of your Dried Bilberries.>"_
-learnpet Sharptalon Hatchling##1976 |goto Val'sharah/0 47.0,10.4
-step
-Congratulations!
-You have collected the _Sharptalon Hatchling_ battle pet
+learnpet Sharptalon Hatchling##1976 |goto Val'sharah/0 47.00,10.40
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Shimmering Aquafly",{
 patch='70300',
@@ -2757,22 +2769,23 @@ description="\nThis guide will walk you through obtaining the Flying pet: Snowfe
 pet=1974,
 },[[
 step
-The world quest _Snowfeather Swarm!_ must be active to earn this pet
-Click here to continue |confirm
+The world quest _Snowfeather Swarm!_ must be active to earn this pet |complete questactive(44892)
 step
 talk Amisi Azuregaze##96806
+|tip Inside the building.
 buy 1 Smoked Elderhorn##128839 |n
-collect 1 Smoked Elderhorn##128839 |goto Dalaran L/10 49.77,40.15
-|tip You will need this later to feed an NPC.
+|tip Keep this in your inventory to lure the orphaned hatchling.
+collect 1 Smoked Elderhorn##128839 |goto Dalaran L/10 49.77,40.15 |or
+'|complete haspet(1974) |or
 step
-kill Snowfeather Matriarch##115673 |goto Highmountain/0 35.0,22.66
+kill Snowfeather Matriarch##115673 |goto Highmountain/0 34.96,22.05
+|tip Do not complete the world quest until you talk to the orphaned hatchling.
+Click here to continue |confirm
+step
 talk Oprhaned Snowfeather##115737
 |tip The Orphan will spawn shortly after killing the Matriarch.
-Choose _"<Give the orphaned snowfeather some of your Smoked Elderhorn.>"_
-learnpet Snowfeather Hatchling##1974 |goto 32.6,28.2
-step
-Congratulations!
-You have collected the _Snowfeather Hatchling_ battle pet
+Choose _"<Give the orphaned hatchling some of your Smoked Elderhorn.>"_
+learnpet Snowfeather Hatchling##1974 |goto 32.50,28.20
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Vale Flitter",{
 patch='70300',
@@ -3463,142 +3476,138 @@ click Lost Mail##247797
 |tip You can also purchase it from the Auction House.
 collect Lost Mail##134859 |n
 Read the Lost Mail |use Lost Mail##135479 |only if itemcount(135479) >= 1
-accept Lost Mail##41368 |goto Dalaran L/10 58.98,48.70 |only if itemcount(135479) == 0
-accept Lost Mail##41411 |goto Dalaran L/10 58.98,48.70 |only if itemcount(135479) >= 1
+accept Lost Mail##41368 |goto Dalaran L/10 58.98,48.70 |only if itemcount(135479) == 0  |or
+accept Lost Mail##41411 |goto Dalaran L/10 58.98,48.70 |only if itemcount(135479) >= 1  |or
 |tip Only one of these will be available.
+'|complete haspet(2158) |or
 step
-Enter the tunnel |goto 60.41,48.57 < 7 |walk
-Go down the stairs |goto Dalaran L/11 76.95,67.93 < 7 |walk
-Go down the stairs |goto 73.02,64.98 < 7 |walk
-Go down the stairs |goto 70.11,62.34 < 7 |walk
-Follow the path |goto 64.82,55.80 < 7 |walk
-Follow the path |goto 60.23,49.36 < 10 |walk
-Enter the tunnel |goto 59.70,39.41 < 7 |walk
-Leave the tunnel |goto 67.27,25.33 < 7 |walk
 talk Madam Goya##100986
+|tip In the Underbelly in the Northern-most chamber.
 |tip During periods without guards, The Underbelly is a PvP zone.
-|tip Along the path as you reach the bottom of the stairs, talk to Raethan to hire a guard if you desire protection.
+|tip Talk to Raethan to hire a guard if you desire protection.
 |tip Guards last for five minutes.
-turnin Lost Mail##41368 |goto 71.41,17.92 |only if haveq(41368)
-turnin Lost Mail##41411 |goto 71.41,17.92 |only if haveq(41411)
+turnin Lost Mail##41368 |goto 71.41,17.92 |or
+turnin Lost Mail##41411 |goto 71.41,17.92 |or
+|tip You will only have one of these quests.
+'|complete haspet(2158) |or
 step
-Enter the tunnel |goto 67.39,25.13 < 7 |walk
-Leave the tunnel |goto 59.70,39.38 < 7 |walk
-Enter the tunnel |goto 55.70,46.98 < 7 |walk
-Leave the tunnel |goto 52.95,51.95 < 7 |walk
-Follow the path |goto 40.99,42.02 < 7 |walk
-Enter the tunnel |goto 34.74,43.60 < 7 |walk
-Leave the tunnel |goto 31.30,43.23 < 7 |walk |c |q 41397
-step
-Enter the tunnel |goto 29.42,49.60 < 7 |walk
-Go up the ramp |goto 27.36,53.52 < 7 |walk
-Go up the ramp |goto 23.52,55.13 < 7 |walk
-Go up the stairs |goto 20.26,57.31 < 7 |walk
-Go up the stairs |goto 24.84,57.31 < 7 |walk
-Leave the tunnel |goto Dalaran L/10 34.61,45.56 < 7 |walk |c |q 41397
-step
-Follow the path |goto 33.91,39.18 < 7 |walk
-Follow the path |goto 32.05,34.54 < 10 |walk
-click Mail Tube##280797 |goto 33.46,31.60 < 7 |walk
-Enter The Postmaster's Office |goto 39.46,41.83 < 7 |noway |c |q 41397
+click Mail Tube##280797
+|tip It looks like a brown pipe sticking out of the ground.
+Travel to the Postmaster's Office |goto Dalaran L/10 33.46,31.60 < 5 |c |or
+'|complete haspet(2158) |or
 step
 talk The Postmaster##103976
-accept Return to Sender##46278 |goto 37.62,40.15
+accept Return to Sender##46278 |goto 37.62,40.15 |or
+'|complete haspet(2158) |or
 step
-Return #9# letters |q 46278/1 |goto 38.98,40.71
+Return #9# letters |q 46278/1 |goto 38.98,40.71 |or
 |tip Click letters floating in the air around the room.
 |tip Each one you click will return one letter.
+'|complete haspet(2158) |or
 step
 talk The Postmaster##103976
 turnin Return to Sender##46278 |goto 37.62,40.15
-accept A Huge Package##41397 |goto 37.62,40.15
+accept A Huge Package##41397 |goto 37.62,40.15 |or
+'|complete haspet(2158) |or
 step
 click Sack of Solid Stone
-Heft the Solid Stone |q 41397/1 |goto 39.75,39.07
+Heft the Solid Stone |q 41397/1 |goto 39.75,39.07 |or
+'|complete haspet(2158) |or
 step
-click Mail Tube##280797 |goto 37.87,42.14
-Leave The Postmaster's Office |goto 32.99,31.62 |noway |c |q 41397
+click Mail Tube##280797
+Leave The Postmaster's Office |goto 37.87,42.14 |c |noway |or
+'|complete haspet(2158) |or
 step
-Follow the path |goto 32.12,35.47 < 10 |walk
-Follow the path |goto 38.93,44.80 < 10 |walk
-Follow the path |goto 48.51,26.70 < 10 |walk
-Deliver 1,362 pieces of solid stone |q 41397/2 |goto 44.34,17.78
+extraaction Deliver Solid Stone##206157
+Deliver 1,362 pieces of solid stone |q 41397/2 |goto 44.34,17.78 |or
 |tip Use the extra action button that appears on-screen.
+'|complete haspet(2158) |or
 step
-Follow the path |goto 48.53,26.98 < 10 |only if walking
-Follow the path |goto 39.21,45.21 < 10 |only if walking
-Follow the path |goto 31.91,35.16 < 10 |only if walking
 click Mail Tube##280797 |goto 33.47,31.62 < 7
-Enter The Postmaster's Office |goto 39.46,41.83 < 7 |noway |c |q 41397
+Enter The Postmaster's Office |goto 39.46,41.83 < 7 |c |noway |or
+'|complete haspet(2158) |or
 step
 talk The Postmaster##103976
 turnin A Huge Package##41397 |goto 37.61,40.15
-accept Priority Delivery##41367 |goto 37.61,40.15
+accept Priority Delivery##41367 |goto 37.61,40.15 |or
+'|complete haspet(2158) |or
 step
 click Portal to the Frozen Throne
-Take the portal to the Frozen Throne |q 41367/1 |goto 38.67,40.17
+|tip Katy Stampwhistle casts a portal for you inside the mail room.
+Take the portal to the Frozen Throne |q 41367/1 |goto 38.67,40.17 |or
+'|complete haspet(2158) |or
 step
 clicknpc The Lich King##103996
-Retrieve the Forgotten Loot |q 41367/2 |goto Icecrown Citadel L/4 49.35,70.79
+Retrieve the Forgotten Loot |q 41367/2 |goto Icecrown Citadel L/4 49.35,70.79 |or
+'|complete haspet(2158) |or
 step
 kill Nexus-Lord Ashaal##132999
-Slay Nexus-Lord Ashaal |q 41367/3 |goto 49.35,70.79
+Slay Nexus-Lord Ashaal |q 41367/3 |goto 49.35,70.79 |or
+'|complete haspet(2158) |or
 step
-click Portal to Dalaran##251123 |goto 49.86,38.98
-Return to Dalaran |goto Dalaran L/10 60.92,44.72 < 10 |noway |c |q 41367
+click Portal to Dalaran##251123
+Return to Dalaran |goto 49.86,38.98 < 5 |c |or
+'|complete haspet(2158) |or
 step
-Locate the Stalwart Adventurer |q 41367/4 |goto Feralas/0 68.69,73.06
+Locate the Stalwart Adventurer |q 41367/4 |goto Feralas/0 68.69,73.06 |or
+'|complete haspet(2158) |or
 step
 talk Johnny Awesome##52562
 turnin Priority Delivery##41367 |goto 68.69,73.06
-accept Service with a Smile##41394 |goto 68.69,73.06
+accept Service with a Smile##41394 |goto 68.69,73.06 |or
+'|complete haspet(2158) |or
 step
-Follow the path |goto 70.24,72.59 < 10 |only if walking
-Follow the path |goto 70.64,72.70 < 7 |only if walking
 talk Gott Weedlespan##51735
 Tell him _"I.... have to sell this horse to you."_
-Invincible's Reins sold |q 41394/1 |goto 70.76,73.08
+Invincible's Reins sold |q 41394/1 |goto 70.76,73.08 |or
+'|complete haspet(2158) |or
 step
-Follow the path |goto 70.58,72.64 < 10 |only if walking
-Follow the path |goto 70.11,72.67 < 10 |only if walking
 talk Johnny Awesome##52562
 turnin Service with a Smile##41394 |goto 68.69,73.07
-accept Due Reward##41395 |goto 68.69,73.07
+accept Due Reward##41395 |goto 68.69,73.07 |or
+'|complete haspet(2158) |or
 step
 clicknpc Wilson##104110
-Honor Twinkles' memory |q 41395/1 |goto Hillsbrad Foothills/0 38.72,59.99
+Honor Twinkles' memory |q 41395/1 |goto Hillsbrad Foothills/0 38.72,59.99 |or
+'|complete haspet(2158) |or
 step
 Click the Quest Complete Box:
-turnin Due Reward##41395
+turnin Due Reward##41395 |or
+'|complete haspet(2158) |or
 step
-click Mail Tube##280797 |goto Dalaran L/10 33.47,31.62 < 7
-Enter The Postmaster's Office |goto 39.46,41.83 < 7 |noway |c |q 50247
+click Mail Tube##280797
+Enter The Postmaster's Office |goto Dalaran L/10 33.47,31.62 < 7 |c |or
+'|complete haspet(2158) |or
 step
 talk The Postmaster##103976
-accept The Mail Must Flow##50247 |goto 37.61,40.13
+accept The Mail Must Flow##50247 |goto 37.61,40.13 |or
+'|complete haspet(2158) |or
 step
-talk The Postmaster##103976 |goto 37.61,40.13
+talk The Postmaster##103976
 Tell him _"I want to sort letters!"_
 |tip Each letter will have an address.
 |tip Click the portal for the zone that corresponds to the address.
-Sort at Least 15 Letters |q 50247/1 |goto 37.59,40.53
+Sort at Least 15 Letters |q 50247/1 |goto 37.61,40.13 |or
+'|complete haspet(2158) |or
 step
 talk The Postmaster##103976
-turnin The Mail Must Flow##50247 |goto 37.61,40.13
+turnin The Mail Must Flow##50247 |goto 37.61,40.13 |or
+'|complete haspet(2158) |or
 step
 To earn this achievement, you will need to sort 30 letters within 60 seconds
 talk The Postmaster##103976 |goto 37.61,40.13
 Tell him _"I want to sort letters!"_
 |tip Each letter will have an address.
 |tip Click the portal for the zone that corresponds to the address.
-Earn the _Post Haste_ achievement |achieve 12431 |goto 37.59,40.53
+Earn the "Post Haste" achievement |achieve 12431 |goto 37.59,40.53 |or
+'|complete haspet(2158) |or
 step
-collect Mailemental##156721 |n
+collect Mailemental##156721 |or
 |tip The Postmaster will mail this to you. Collect it at the nearest mailbox.
-learnpet Mailemental##2158 |use Mailemental##156721
+'|complete haspet(2158) |or
 step
-Congratulations!
-You have collected the _Mailemental_ battle pet
+|use Mailemental##156721
+Learn the "Mailemental" Battle Pet |learnpet Mailemental##2158
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\Sanctum Cub",{
 patch='71000',
@@ -3646,24 +3655,26 @@ description="\nThis guide will walk you through obtaining the Magic pet: Stardus
 pet=1969,
 },[[
 step
-Complete the _Raiding with Leashes IV: Wrath of the Lich King_ achievement |achieve 11320
+Complete the "Raiding with Leashes IV: Wrath of the Lich King" Achievement |complete achieved(11320) |or
 |tip You will receive a Celestial Invitation in the mail.
+'|complete haspet(1969)
 step
 collect Celestial Invitation##142210 |n
 |tip Retrieve this from your mailbox.
-accept Celestial Invitation##44767
+accept Celestial Invitation##44767 |or
+'|complete haspet(1969)
 step
 talk Algalon the Observer##115307
-Challenge Algalon to a pet battle and defeate him |q 44767/1 |goto The Storm Peaks/0 41.6,24.4
+Challenge Algalon to a pet battle and defeat him |q 44767/1 |goto The Storm Peaks/0 41.6,24.4 |or
+'|complete haspet(1969)
 step
 talk Algalon the Observer##115307
-turnin Celestial Invitation##44767 |goto 41.6,24.4
+turnin Celestial Invitation##44767 |goto 41.60,24.40 |n
+collect Stardust##142100 |or
+'|complete haspet(1969)
 step
-collect Stardust##142100 |n |use Stardust##142100
-learnpet Stardust##1969
-step
-Congratulations!
-You have collected the _Stardust_ battle pet
+|use Stardust##142100
+Learn the "Stardust" Battle Pet |learnpet Stardust##1969
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\Void Shardling",{
 patch='73000',

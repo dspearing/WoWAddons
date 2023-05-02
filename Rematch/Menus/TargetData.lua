@@ -126,6 +126,28 @@ rematch.targetData = {
     {9,2025,197350,71180,4,25,393,459,646}, -- Setimothes
     {9,2025,202458,74794,4,25,3474,3473,3472}, -- Stargazer Zenoth
     {9,2025,202452,74794,4,25,3466}, -- Malfunctioning Matrix
+    -- mapID 2151: Forbidden Reach
+    {9,2151,200677,73146,4,25,3444}, -- Storm-Touched Swoglet
+    {9,2151,200684,73146,4,25,3429}, -- Vortex (Legendary)
+    {9,2151,200682,73146,4,25,3433}, -- Vortex (Epic)
+    {9,2151,200685,73146,4,25,3437}, -- Vortex (Rare)
+    {9,2151,200679,73148,4,25,3442}, -- Storm-Touched Skitterer
+    {9,2151,200688,73148,4,25,3431}, -- Wildfire (Legendary)
+    {9,2151,200686,73148,4,25,3435}, -- Wildfire (Epic)
+    {9,2151,200689,73148,4,25,3439}, -- Wildfire (Rare)
+    {9,2151,200678,73147,4,25,3443}, -- Storm-Touched Slyvern
+    {9,2151,200692,73147,4,25,3430}, -- Tremblor (Legendary)
+    {9,2151,200690,73147,4,25,3434}, -- Tremblor (Epic)
+    {9,2151,200693,73147,4,25,3438}, -- Tremblor (Rare)
+    {9,2151,200680,73149,4,25,3441}, -- Storm-Touched Ohuna
+    {9,2151,200696,73149,4,25,3432}, -- Flow (Legendary)
+    {9,2151,200694,73149,4,25,3436}, -- Flow (Epic)
+    {9,2151,200697,73149,4,25,3440}, -- Flow (Rare)
+    -- mapID 2133: Zaralek Caverns
+    {9,2133,204926,75834,4,25,3570,3569,3568}, -- Delver Mardei
+    {9,2133,201004,75680,4,25,3560,3559,3558}, -- Explorer Bezzert
+    {9,2133,204792,75750,4,25,3565,3566,3567}, -- Shinmura
+    {9,2133,204934,75835,4,25,3572,3571,3573}, -- Trainer Orlogg
 
     -- expansionID 8: Shadowlands
 
@@ -512,12 +534,21 @@ rematch.targetRedirects = {
     [85676] = 85627, -- Archimedes
 }
 
--- on Shadowlands clients remove the Dragonflight targets
-if select(4,GetBuildInfo())<100000 then
-    for i=#rematch.targetData,1,-1 do
-        if rematch.targetData[i][1]==9 then
-            tremove(rematch.targetData,i)
-        end
-    end
-end
+-- when targets share the same name and need a (Subname) to differentiate them; add them here
+rematch.targetSubNames = {
+    [200684] = ITEM_QUALITY5_DESC, -- Vortex (Legendary)
+    [200682] = ITEM_QUALITY4_DESC, -- Vortex (Epic)
+    [200685] = ITEM_QUALITY3_DESC, -- Vortex (Rare)
 
+    [200688] = ITEM_QUALITY5_DESC, -- Wildfire (Legendary)
+    [200686] = ITEM_QUALITY4_DESC, -- Wildfire (Epic)
+    [200689] = ITEM_QUALITY3_DESC, -- Wildfire (Rare)
+
+    [200692] = ITEM_QUALITY5_DESC, -- Tremblor (Legendary)
+    [200690] = ITEM_QUALITY4_DESC, -- Tremblor (Epic)
+    [200693] = ITEM_QUALITY3_DESC, -- Tremblor (Rare)
+
+    [200696] = ITEM_QUALITY5_DESC, -- Flow (Legendary)
+    [200694] = ITEM_QUALITY4_DESC, -- Flow (Epic)
+    [200697] = ITEM_QUALITY3_DESC, -- Flow (Rare)
+}

@@ -16,6 +16,7 @@ api:RegisterEvent("CRAFTINGORDERS_RELEASE_ORDER_RESPONSE")
 api:RegisterEvent("CRAFTINGORDERS_FULFILL_ORDER_RESPONSE")
 api:RegisterEvent("TRACKED_RECIPE_UPDATE")
 api:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW")
+api:RegisterEvent("AUCTION_HOUSE_SHOW")
 
 -- Might as well keep this in here, it's useful
 local function dump(o)
@@ -31,9 +32,9 @@ local function dump(o)
 	end
 end
 
--- Create SavedVariables
+-- Create SavedVariables, default window position, and default user settings
 function pslInitialise()
-	-- Declare some variables
+	-- Declare SavedVariables
 	if not userSettings then userSettings = {} end
 	if not recipesTracked then recipesTracked = {} end
 	if not recipeLinks then recipeLinks = {} end
@@ -55,7 +56,11 @@ function pslInitialise()
 			},
 		}
 	end
+
+	-- Declare per-character SavedVariables
 	if not pcWindowPosition then pcWindowPosition = windowPosition end
+	if not pcRecipesTracked then pcRecipesTracked = {} end
+	if not pcRecipeLinks then pcRecipeLinks = {} end
 
 	-- Enable default user settings
 	if userSettings["hide"] == nil then userSettings["hide"] = false end
@@ -76,6 +81,13 @@ function pslInitialise()
 	if userSettings["knowledgeHideDone"] == nil then userSettings["knowledgeHideDone"] = false end
 	if userSettings["knowledgeAlwaysShowDetails"] == nil then userSettings["knowledgeAlwaysShowDetails"] = false end
 	if userSettings["pcWindowPosition"] == nil then userSettings["pcWindowPosition"] = false end
+	if userSettings["pcRecipesTracked"] == nil then userSettings["pcRecipesTracked"] = false end
+
+	-- Load personal recipes, if the setting is enabled
+	if userSettings["pcRecipesTracked"] == true then
+		recipesTracked = pcRecipesTracked
+		recipeLinks = pcRecipeLinks
+	end
 end
 
 -- Save the window position
@@ -170,6 +182,7 @@ function pslTrackingWindows()
 		pslSaveWindowPosition()
 	end)
 
+	pslFrame1:ClearAllPoints()
 	if userSettings["pcWindowPosition"] == true then
 		pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame1"].left, pcWindowPosition["pslFrame1"].bottom)
 	else
@@ -252,6 +265,7 @@ function pslTrackingWindows()
 		pslSaveWindowPosition()
 	end)
 
+	pslFrame2:ClearAllPoints()
 	if userSettings["pcWindowPosition"] == true then
 		pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame2"].left, pcWindowPosition["pslFrame2"].bottom)
 	else
@@ -388,6 +402,10 @@ end
 
 -- Update recipes and reagents tracked
 function pslUpdateRecipes()
+	-- Set personal recipes to be the same as global recipes
+	pcRecipesTracked = recipesTracked
+	pcRecipeLinks = recipeLinks
+
 	-- Update recipes tracked
 	local data = {}
 
@@ -611,7 +629,7 @@ function pslCreateAssets()
 		ebSLrankText:SetPoint("RIGHT", ebSLrank, "LEFT", -10, 0)
 		ebSLrankText:SetJustifyH("LEFT")
 		ebSLrankText:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-		ebSLrankText:SetText("Rank to track:")
+		ebSLrankText:SetText("Rank:")
 		ebSLrankText:Hide()
 	end
 
@@ -931,6 +949,7 @@ function pslCreateAssets()
 	end
 end
 
+-- Update assets
 function pslUpdateAssets()
 	-- Enable tracking button for 1 = Item, 3 = Enchant
 	if pslRecipeType == 1 or pslRecipeType == 3 then
@@ -1170,6 +1189,17 @@ function pslSettings()
 	cbPcWindowPosition:SetChecked(userSettings["pcWindowPosition"])
 	cbPcWindowPosition:SetScript("OnClick", function(self)
 		userSettings["pcWindowPosition"] = self:GetChecked()
+	end)
+
+	local cbPcRecipesTracked = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	cbPcRecipesTracked.Text:SetText("Track recipes per character")
+	cbPcRecipesTracked.Text:SetTextColor(1, 1, 1, 1)
+	cbPcRecipesTracked.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbPcRecipesTracked:SetPoint("TOPLEFT", cbPcWindowPosition, "BOTTOMLEFT", 0, 0)
+	cbPcRecipesTracked:SetChecked(userSettings["pcRecipesTracked"])
+	cbPcRecipesTracked:SetScript("OnClick", function(self)
+		userSettings["pcRecipesTracked"] = cbPcRecipesTracked:GetChecked()
+		pslUpdateRecipes()
 	end)
 
 	-- Category: List and tracking
@@ -1456,7 +1486,7 @@ function pslSettings()
 	local pslSettingsText3 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	pslSettingsText3:SetPoint("TOPLEFT", pslSettingsText2, "BOTTOMLEFT", 0, -15)
 	pslSettingsText3:SetJustifyH("LEFT")
-	pslSettingsText3:SetText("Other features:\n|cffFFFFFF- Adds a Chef's Hat button to the Cooking window, if the toy is known.\n- Shows current charges at the Revival Catalyst.")
+	pslSettingsText3:SetText("Other features:\n|cffFFFFFF- Adds a Chef's Hat button to the Cooking window, if the toy is known.\n- Copy tracked reagents to the Auctionator import window.")
 end
 
 -- Window functions
@@ -2492,7 +2522,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			end
 
 			-- Cooking
-			if professionID == 5 and PlayerHasToy(134020) then
+			if professionID == 5 and PlayerHasToy(134020) and C_TradeSkillUI.GetProfessionInfoBySkillLineID(2546).skillLevel >= 25 then
 				chefsHatButton:Show()
 			else
 				chefsHatButton:Hide()
@@ -2712,7 +2742,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 	end
 
 	-- When a spell is succesfully cast
-	if event == "UNIT_SPELLCAST_SUCCEEDED" and userSettings["removeCraft"] == true then
+	if event == "UNIT_SPELLCAST_SUCCEEDED" and arg1 == "player" and userSettings["removeCraft"] == true then
 		local spellID = ...
 	
 		-- Run only when crafting a tracked recipe
@@ -2731,7 +2761,11 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 
 	-- When bag changes occur
 	if event == "BAG_UPDATE_DELAYED" then
-		pslUpdateNumbers()
+		-- If any recipes are tracked
+		local next = next
+		if next(recipesTracked) ~= nil then
+			pslUpdateNumbers()
+		end
 	end
 
 	-- Set the Vendor filter to 'All' if the option is enabled
@@ -2758,5 +2792,52 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			pslTrackRecipe(pslSelectedRecipeID,1)
 			C_TradeSkillUI.SetRecipeTracked(arg1, false, false)
 		end
+	end
+
+	-- When the Auction House is opened
+	if event == "AUCTION_HOUSE_SHOW" then
+		dump(reagentsTracked)
+
+		-- Create a temporary variable
+		if not auctionatorReagents then local auctionatorReagents end
+
+		-- Grab all item names for tracked reagents
+		local function getReagentNames()
+			-- Reset the reagents list
+			auctionatorReagents = "PSL"
+
+			for reagentID, _ in pairs(reagentsTracked) do
+				-- Get info
+				local itemName = GetItemInfo(reagentID)
+		
+				-- Try again if error
+				if itemName == nil then
+					RunNextFrame(getReagentNames)
+					do return end
+				end
+
+				-- Put the item names in the temporary variable
+				auctionatorReagents = auctionatorReagents .. '^"' .. itemName .. '";;0;0;0;0;0;0;0;0;;#;'
+			end
+		end
+
+		-- Wait 3 seconds, because Auctionator needs to create its frames
+		C_Timer.After(3, function()
+			-- Create PSL Import button for Auctionator, if the frame exists (and the AddOn is loaded)
+			if AuctionatorImportListFrame and not auctionatorImportButton then
+				auctionatorImportButton = CreateFrame("Button", nil, AuctionatorImportListFrame.Import, "UIPanelButtonTemplate")
+				auctionatorImportButton:SetText("Copy from PSL")
+				auctionatorImportButton:SetWidth(110)
+				auctionatorImportButton:SetPoint("BOTTOMRIGHT", AuctionatorImportListFrame.Import, "BOTTOMLEFT", 0, 0)
+				auctionatorImportButton:SetScript("OnClick", function()
+					pslUpdateRecipes()
+					-- Add another delay because I have no idea how to optimise my AddOn
+					C_Timer.After(0.5, function()
+						getReagentNames()
+						AuctionatorImportListFrame.EditBoxContainer:SetText(auctionatorReagents)
+					end)
+				end)
+			end
+		end)
 	end
 end)

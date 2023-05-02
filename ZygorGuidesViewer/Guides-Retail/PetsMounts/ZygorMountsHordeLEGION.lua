@@ -1168,9 +1168,9 @@ This mount is only available to Death Knights |confirm
 |only if not DeathKnight
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 |only DeathKnight
 step
 talk Dread Commander Thalanor##117573
@@ -1270,9 +1270,9 @@ This mount is only available to Demon Hunters |confirm
 |only if not DemonHunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 |only DemonHunter
 step
 talk Illidari Enforcer##118314
@@ -1359,9 +1359,9 @@ This mount is only available to Hunters |confirm
 |only if not Hunter
 step
 You must complete the Broken Shore campaign to continue
-Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 Breach the Tomb |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
+Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 |only Hunter
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
@@ -1572,9 +1572,6 @@ step
 talk Archmage Khadgar##90417
 Tell him _"Khadgar, I'm looking for a piece of a disc that Antonidas gave you a long time ago."_
 Speak with Archmage Khadgar |q 45845/1 |goto Dalaran L/10 28.56,48.39
-|only Mage
-step
-click the Portal to Karazhan##246009 |q 45845/3 |goto Dalaran L/12 32.36,71.93
 |only Mage
 step
 talk Archmage Alturus##114667
@@ -2821,12 +2818,11 @@ Enter the Tomb of Sargeras with your group |goto Tomb of Sargeras/1 45.2,90.2 |c
 |tip This mount can only drop on Normal difficulty or higher.
 step
 kill Mistress Sassz'ine##115767 |goto Tomb of Sargeras/2 85,87
-collect Abyss Worm##143643 |use Abyss Worm##143643
+collect Abyss Worm##143643
 |tip This has a small chance to drop off of this boss.
-learnmount Abyss Worm##232519
 step
-_Congratulations!_
-You are now the proud owner of a _Abyss Worm_.
+|use Abyss Worm##143643
+Learn the "Abyss Worm" Mount |learnmount Abyss Worm##232519
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Acid Belcher",{
 author="support@zygorguides.com",
@@ -3188,7 +3184,7 @@ model={70040},
 description="\nThis guide will help you acquire the Living Infernal Core.",
 },[[
 step
-Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+Enter the Nighthold with your group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
 |tip This mount does not drop on LFR difficulty.
 confirm
 step
@@ -3212,13 +3208,12 @@ model={70051},
 description="\nThis guide will help you acquire the Fiendish Hellfire Core.",
 },[[
 step
-Enter the Nighthold with you group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
+Enter the Nighthold with your group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
 |tip This mount only drops off Mythic difficulty.
 confirm
 step
 kill Gul'dan##105503 |goto The Nighthold/9 49.3,52.2
 |tip Check out our Mythic Nighthold guide to accomplish this.
-|tip This mount has a 100 percent chance to drop.
 collect Fiendish Hellfire Core##137575 |use Fiendish Hellfire Core##137575
 learnmount Hellfire Infernal##213134
 step
@@ -3326,7 +3321,7 @@ To get to summon Nightbane you must collect all 5 Soul Fragments in a short amou
 You will have 8 minutes once inside to click the first Soul Fragment, once the first one is clicked within the required time you will receive a 6 minute buff, for each crystal after that you will get 5 more minutes added on
 confirm
 step
-Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3 < 1000 |c
+Enter Karazhan with your group |goto Karazhan L/6 63.9,61.3 < 1000 |c
 |tip This mount can only drop on Mythic Difficulty.
 step
 Once Inside go to your right and follow the stairs down to the Opera room clearing trash along the way
@@ -3712,7 +3707,7 @@ model={73808},
 description="\nThis guide will help you acquire the Midnight's Eternal Reins.",
 },[[
 step
-Enter Karazhan with you group |goto Karazhan L/6 63.9,61.3
+Enter Karazhan with your group |goto Karazhan L/6 63.9,61.3
 confirm
 step
 kill Attumen the Huntsman##114262 |goto Karazhan L/1 45.3,82.3
@@ -4209,7 +4204,7 @@ Click here to continue |confirm
 step
 talk Zidormi##163463
 Ask her _"Can you show me what the Vale was like before the Black Empire assault?"_
-Trave to the Past |complete ZGV.InPhase('OldVale') |goto Vale of Eternal Blossoms New/0 80.97,29.48
+Travel to the Past |complete ZGV.InPhase('OldVale') |goto Vale of Eternal Blossoms New/0 80.97,29.48
 step
 talk Lorewalker Han##80633
 "Tell me of the Vale of Eternal Sorrows that surrond us."
@@ -5135,33 +5130,6 @@ step
 label "Steelbound Grats"
 _Congratulations!_
 You collected the _Steelbound Devourer_ mount
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Quest Mounts\\Violet Spellwing",{
-author="support@zygorguides.com",
-startlevel=45.0,
-keywords={"flying","mount","argus","the","unmaker","antorus","burning","throne"},
-mounts={253639},
-patch='73000',
-mounttype='Flying',
-model={79583},
-description="\nThis guide will help you acquire a \"Violet Spellwing\" mount.",
-},[[
-step
-Enter Antorus, the Burning Throne with Your Group |goto Antorus/1 91,69 < 1000
-|tip This mount only drops on Heroic difficulty.
-step
-kill Argus the Unmaker##124828
-collect Blood of the Unmaker##152900 |n
-accept Blood of a Titan##48954 |goto Antorus/9 50.1,53.0
-step
-talk Archmage Khadgar##90417
-turnin Blood of a Titan##48954 |goto Dalaran/2 28.8,48.6
-step
-collect Kirin Tor Summoning Crystal##152901 |n
-learnmount Violet Spellwing##253639 |use Kirin Tor Summoning Crystal##152901
-step
-_Congratulations!_
-You Collected the "Violet Spellwing" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Llothien Prowler",{
 author="support@zygorguides.com",

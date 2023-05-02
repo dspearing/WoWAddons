@@ -2319,4 +2319,33 @@ data.basenodes.transit = {
 
 		-- MONK
 			"The Wandering Isle L/0 51.45,48.65 <spell:126892> <cond:PlayerCompletedQuest(40236) and ZGV.CurrentMapID~=709>",
+
+
+
+
+
+
+		--Keystone Hero Teleports:--
+		"Bastion/0 40.13,55.20				<spell:354462>",--Keystone Hero: The Necrotic Wake (Path of the Courageous)
+		"Maldraxxus/0 59.60,65.31			<spell:354463>",--Keystone Hero: Plaguefall (Path of the Plagued)
+		"Ardenweald/0 35.41,54.11			<spell:354464>",--Keystone Hero: Mists of Tirna Scithe (Path of the Misty Forest)
+		"Revendreth/0 78.58,49.22			<spell:354465>",--Keystone Hero: Halls of Atonement (Path of the Sinful Soul)
+		"Bastion/0 58.60,28.52				<spell:354466>",--Keystone Hero: Spires of Ascension (Path of the Ascendant)
+		"Maldraxxus/0 53.09,52.87			<spell:354467>",--Keystone Hero: Theater of Pain (Path of the Undefeated)
+		"Ardenweald/0 68.66,66.71			<spell:354468>",--Keystone Hero: De Other Side (Path of the Scheming Loa)
+		"Revendreth/0 51.07,30.22			<spell:354469>",--Keystone Hero: Sanguine Depths (Path of the Stone Warden)
+		"The Gilded Landing/0 88.85,43.95		<spell:367416>",--Keystone Hero: Tazavesh, the Veiled Market (Path of the Streetwise Merchant)
+		"Deadwind Pass/0 46.72,70.20			<spell:373262>",--Keystone Hero: Return to Karazhan (Path of the Fallen Guardian)
+		"Mechagon Island/0 73.01,36.46			<spell:373274>",--Keystone Hero: Operation: Mechagon (Path of the Scrappy Prince)
+		"Gorgrond/0 45.42,13.51				<spell:159896>",--Keystone Hero: Iron Docks (Path of the Iron Prow)
+		"Gorgrond 55.01,31.30				<spell:159900>",--Keystone Hero: Grimrail Depot (Path of the Dark Rail)
+		"Revendreth/0 46.37,41.50			<spell:373190>",--Mythic: Fates of the Shadowlands Raids (Path of the Sire)
+		"The Maw/0 69.79,31.89				<spell:373191>",--Mythic: Fates of the Shadowlands Raids (Path of the Tormented Soul)
+		"Zereth Mortis/0 81.02,53.40			<spell:373192>",--Mythic: Fates of the Shadowlands Raids (Path of the First Ones)
+		"Tiragarde Sound/0 84.45,78.88			<spell:257701>",--Keystone Hero: Freehold (Teleport to Freehold)
+		"Highmountain/0 49.56,68.66			<spell:205379>",--Keystone Hero: Neltharion's Lair (Teleport: Neltharion's Lair)
+		"Nazmir/0 51.38,64.83				<spell:272269>",--Keystone Hero: The Underrot (Teleport: The Underrot)
+		"Uldum 76.81,84.55				<spell:88775>",--Keystone Hero: The Vortex Pinnacle (Teleport to The Vortex Pinnacle)
+		"Uldum New/0 76.84,84.61			<spell:88775>",--Keystone Hero: The Vortex Pinnacle (Teleport to The Vortex Pinnacle)
+		--"X			<spell:>",--Keystone Hero:  ()
 }

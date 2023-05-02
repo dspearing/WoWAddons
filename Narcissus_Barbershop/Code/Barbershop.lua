@@ -463,6 +463,8 @@ RaceAtlas.fixedModelAtlasNames = {
     [129] = "dragonriding-barbershop-icon-pterrodax",
     [123] = "dragonriding-barbershop-icon-drake",
     [126] = "dragonriding-barbershop-icon-wyvernspirit",
+
+    [125] = "dragonriding-barbershop-icon-slitherdrake",  --10.1.0
 };
 
 function RaceAtlas:GetAtlas(raceName, gender, alternateForm)
@@ -481,6 +483,8 @@ function RaceAtlas:GetAtlas(raceName, gender, alternateForm)
     if not raceName then
         raceName = "human";
     end
+
+    gender = gender or "none";
 
     local formatingString = "raceicon128-%s-%s";    --"raceicon-%s-%s"
     return formatingString:format(raceName, gender);

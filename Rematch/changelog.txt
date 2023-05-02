@@ -1,3 +1,13 @@
+05/02/2023 version 4.14.17
+- Added Zaralek Cavern targets
+- Added compartment launcher support
+- Updated toc for icon and 10.1.0 patch
+
+04/22/2023 version 4.14.16
+- Added Forbidden Reach targets. Note: There are separate Legendary, Epic and Rare versions of Vortex, Wildfire, Tremblor and Flow because some people use different strategies for each rarity and a future update will allow all rarities to be in one team.
+- Added option "Show Numeric Breeds" under Appearance Options for those that prefer the numeric breed.
+- If both Battle Pet BreedID and PetTracker are enabled, added option "Use PetTracker Breeds" under Appearance Options to use the breeds from PetTracker instead of Battle Pet BreedID.
+
 03/22/2023 version 4.14.15
 - Added 8 new targets to Dragon Isles added in 10.0.7
 - Added option to import teams from Niggles Pet Teams if both Rematch and Niggles Pet Teams are enabled (from the Teams button at the top of the Teams tab)

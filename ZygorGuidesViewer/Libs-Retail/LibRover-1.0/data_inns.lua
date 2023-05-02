@@ -59,6 +59,11 @@ data.basenodes.inns = {
 	["The Forbidden Reach"]={
 		{name="Morqut Village",faction="B",npc="Unpukiat",npcid=200560,x=33.83,y=59.05},
 	},
+
+	["Zaralek Cavern"]={
+		{name="Loamm",faction="B",npc="Floressa",npcid=203293,x=56.22,y=56.31},
+		{name="Obsidian Rest",faction="B",npc="Stabitha Sharptwist",npcid=200892,x=52.24,y=26.32},
+	},
 	
 	-------------------------------
 	-----     SHADOWLANDS     -----

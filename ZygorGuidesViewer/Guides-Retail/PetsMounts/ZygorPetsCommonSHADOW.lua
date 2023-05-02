@@ -1274,40 +1274,6 @@ step
 _Congratulations!_
 You Collected the "Shimmerbough Hoarder" Battle Pet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Sir Reginald",{
-patch='90001',
-source='Vendor',
-author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching Friendly reputation with the Marasmius faction.",
-keywords={"Critter","Marasmius"},
-pet=3023,
-},[[
-step
-Join the Night Fae Covenant |complete  NightFae |or
-|tip You must be a member of the Night Fae covenant to collect this pet.
-'|learnpet Sir Reginald##3023 |or
-step
-Reach Friendly Reputation with the Marasmius |complete rep('Marasmius') >= Friendly |or
-|tip Use the "Marasmius" reputation guide to accomplish this.
-'|learnpet Sir Reginald##3023 |or
-step
-collect 250 Polished Pet Charm##163036 |or
-|tip Complete battle pet world quests to earn this currency.
-|tip Use the "World Quests" guides to accomplish this.
-'|learnpet Sir Reginald##3023 |or
-step
-talk Cortinarius##174766
-buy Sir Reginald##182674 |goto Ardenweald/0 56.04,53.01 |or
-|tip This costs 250 Polished Pet Charms.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-'|learnpet Sir Reginald##3023 |or
-step
-use Sir Reginald##182674
-Learn the "Sir Reginald" Battle Pet |learnpet Sir Reginald##3023
-step
-_Congratulations!_
-You Collected the "Sir Reginald" Battle Pet.
-]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Spinemaw Gormling",{
 patch='90001',
 source='Drop',
@@ -2219,7 +2185,7 @@ turnin Broken Wings##59262 |goto 42.83,42.72
 accept Feathers of Flight##59263 |goto 42.83,42.72
 step
 kill Swiftwing Larion##160569+
-collect Larion Flight Feather##175792 |q 59263/1 |goto 46.25,35.90
+collect 100 Larion Flight Feather##175792 |q 59263/1 |goto 46.25,35.90
 step
 talk Kowalskos##164640
 turnin Feathers of Flight##59263 |goto 42.83,42.73
@@ -2239,13 +2205,13 @@ accept More Wings!##59348 |goto 42.83,42.73
 accept Strings and Things##59351 |goto 42.83,42.73
 stickystart "Collect_Etherwyrm_Filament"
 step
-click Animyllis Bloom##346108+
+click 10 Animyllis Bloom##346108
 |tip They look like blue and white flowers around this area.
 collect Animyllis Bloom##175968 |q 59348/1 |goto 48.65,47.31
 step
 label "Collect_Etherwyrm_Filament"
 Kill Etherwyrm enemies around this area
-collect Etherwyrm Filament##175967 |q 59351/1 |goto 46.62,47.62
+collect 10 Etherwyrm Filament##175967 |q 59351/1 |goto 46.62,47.62
 step
 talk Kowalskos##164640
 turnin More Wings!##59348 |goto 42.83,42.73
@@ -2785,6 +2751,129 @@ Learn the "Glimr" Battle Pet |learnpet Glimr##2888
 step
 _Congratulations!_
 You Collected the "Glimr" Battle Pet.
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts\\Battle Pets\\Humanoid Pets\\Quest Pets\\Gurgl",{
+pet=3107,
+source='Quest',
+description = "This guide will help you through the quest chain to obtain the Gurgl battle pet.",
+patch='90105',
+startlevel=1,
+endlevel=70,
+},[[
+step
+talk Breanni##96479
+|tip Inside the building.
+accept Pets Detective##64167 |goto Dalaran L/10 58.46,39.14 |or
+'|complete haspet(3107) |or
+step
+talk Suspicious Onlooker##179516
+|tip He is stealthed by the well.
+Tell him _"The cat's out of the bag. Why are you spying on the shop?"_
+Suspicious Onlooker spoken to |q 64167/2 |goto 47.99,31.89 |or
+'|complete haspet(3107) |or
+step
+talk Precocious Onlooker##179517
+|tip She is stealthed near the Flower Vendor by the entrance to the Violet Hold.
+Ask her _"What are you doing, young lady?"_
+Precocious Onlooker spoken to |q 64167/4 |goto 57.09,55.76 |or
+'|complete haspet(3107) |or
+step
+talk Farsighted Onlooker##179518
+|tip He is stealthed on the lawn outside the Dalaran wall.
+Ask him _"Yeah, this isn't suspicious. What are you spying on?"_
+Farsighted Onlooker spoken to |q 64167/6 |goto 55.47,82.12 |or
+'|complete haspet(3107) |or
+step
+talk Breanni##96479
+|tip Inside the building.
+turnin Pets Detective##64167 |goto 58.46,39.14
+accept Pet Up##64196 |goto 58.46,39.14 |or
+'|complete haspet(3107) |or
+step
+clicknpc Zantini##179566
+|tip This step may be difficult to reach without the flying skill, or the Eye of Azshara, Azuna flight path. |only if not knowspell(34090) or not knowspell(90265)
+|tip You may need help with this. |only if level <= 42
+Zantini healed |q 64196/2 |goto Eye of Azshara Map/0 73.23,74.96 |or
+'|complete haspet(3107) |or
+step
+clicknpc Speedy IV##179944
+|tip You may need help with this. |only if level <= 42
+Speedy IV healed |q 64196/4 |goto 73.56,77.96 |or
+'|complete haspet(3107) |or
+step
+clicknpc Stringfellowe##179905
+|tip You may need help with this. |only if level <= 42
+Stringfellowe healed |q 64196/3 |goto 74.25,67.71 |or
+'|complete haspet(3107) |or
+step
+talk Zantini##179566
+turnin Pet Up##64196 |goto 73.24,74.96
+accept The Coast is Clear##64203 |goto 73.24,74.96 |or
+'|complete haspet(3107) |or
+step
+talk Speedy IV##179587
+Tell him _"Let's get some pet supplies."_
+Ask Speedy IV for help |q 64203/1 |goto 73.41,74.65 |or
+'|complete haspet(3107) |or
+step
+click Pet Supplies##369137
+|tip They are small bags all around this area.
+|tip You will be Speedy.
+|tip Use the abilities on your action bar.
+Pet Supplies collected |q 64203/2 |goto 70.56,63.82 |or
+You can find more at:
+[70.83,61.55]
+[75.78,63.41]
+[74.16,58.55]
+[76.58,57.39]
+[78.21,66.17]
+[78.11,64.55]
+[78.43,62.21]
+[77.81,55.84]
+[77.74,54.01]
+[75.62,52.18]
+[75.80,50.96]
+[72.95,52.66]
+[73.76,50.31]
+[73.40,47.31]
+[75.20,45.86]
+'|complete haspet(3107) |or
+step
+talk Zantini##179566
+turnin The Coast is Clear##64203 |goto 73.23,74.96
+accept Paw Patrol##64215 |goto 73.23,74.96 |or
+'|complete haspet(3107) |or
+step
+Kill Violetsail enemies around this area
+collect Violetsail Pet Cage Key##186772 |n
+|tip Use the keys to unlock the pet cages.
+Free #6# pets |q 64215/1 |goto 44.33,36.42 |or
+'|complete haspet(3107) |or
+step
+talk Zantini##179566
+turnin Paw Patrol##64215 |goto 73.23,74.96
+accept Gurgl and the Bandit##64237 |goto 73.23,74.96 |or
+'|complete haspet(3107) |or
+step
+talk Trainer Iris Greedsway##179694
+|tip She has Magic, Flying, and Humanoid pets.
+Defeat Trainer Iris Greedsway |q 64237/1 |goto 31.96,58.15 |or
+'|complete haspet(3107) |or
+step
+clicknpc Gurgl##179813
+collect Gurgl##186553 |n
+0/1 Rescue Gurgl |q 64237/2 |goto 32.10,58.23 |or
+'|complete haspet(3107) |or
+step
+talk Breanni##96479
+|tip Inside the building.
+turnin Gurgl and the Bandit##64237 |goto Dalaran L/10 58.46,39.14 |n
+|tip You can complete this quest and receive the pet item; but it is soulbound, and you can only learn one. |only if haspet(3107)
+collect Gurgl##186553 |or
+'|complete haspet(3107) |or
+step
+use Gurgl##186553
+Learn the "Gurgl" Battle Pet |learnpet Gurgl##3107
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pets\\Lost Featherling",{
 patch='90001',
@@ -3632,7 +3721,7 @@ pet=2944,
 step
 talk Slumbar Valorum##161702
 |tip This pet is cageable, meaning you can purchase it from the Auction House.
-home Seat of the Primus |goto Maldraxxus/0 50.95,53.16
+home Theater of Pain |goto Maldraxxus/0 50.95,53.16
 step
 click Edible Redcap##327367+
 |tip Make sure your Hearthstone is available to use.
@@ -3649,9 +3738,6 @@ collect Oonar's Arm##181164 |goto 51.42,48.48
 step
 use the Oonar's Arm##181164
 Learn the "Oonar's Arm" Battle Pet |learnpet Oonar's Arm##2944
-step
-_Congratulations!_
-You Collected the "Oonar's Arm" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\\Putrid Geist",{
 patch='90001',
@@ -4478,15 +4564,17 @@ step
 Reach Tentative Reputation with Ve'nari |complete rep("Ve'nari") >= Tentative |or
 |tip You can earn reputation by completing dailies, killing rares, and opening chests in The Maw.
 |tip Use the "Ve'nari Daily Quests" guide to accomplish this.
+Click Here to Open the "Ve'nari Daily Quests" |confirm |loadguide "Daily Guides\\Shadowlands (50-60)\\Ve'nari Daily Quests (The Maw)"
 '|learnpet Lil'Abom##3098 |or
 step
 talk Ve'nari##162804
 turnin Rule 5: Be Audacious##60284 |goto The Maw/0 46.90,41.70 |or
 |tip Use "The Maw" leveling guide to accomplish this.
+Click Here to Open "The Maw" Leveling Guide |confirm |loadguide "Leveling Guides\\Shadowlands (50-60)\\The Maw"
 '|learnpet Lil'Abom##3098 |or
 step
 click Lil'Abom Head##186183
-|tip There is a chance this won't be available.
+|tip This can only be collected during the Necrolord Assault in The Maw.
 collect Lil'Abom Head##186183 |goto 32.2,56.0 |or
 It can also be found around:
 [27.4,56.6]
@@ -4496,12 +4584,13 @@ step
 Enter the cave |goto 38.84,58.53 < 30 |walk
 click Lil'Abom Right Hand##186186
 |tip Inside the cave.
+|tip This can only be collected during the Necrolord Assault in The Maw.
 |tip There is a chance this won't be available.
 collect Lil'Abom Right Hand##186186 |goto 37.93,62.63 |or
 '|learnpet Lil'Abom##3098 |or
 step
 click Lil'Abom Spare Arm##186187
-|tip There is a chance this won't be available.
+|tip These can only be collected during the Necrolord Assault in The Maw.
 collect Lil'Abom Spare Arm##186187 |goto 39.2,66.5 |or
 It can also be found around:
 [33.3,65.8]
@@ -4510,7 +4599,7 @@ step
 Enter the cave |goto 36.92,67.41 < 30 |walk
 click Lil'Abom Torso##186184
 |tip Inside the cave.
-|tip There is a chance this won't be available.
+|tip This can only be collected during the Necrolord Assault in The Maw.
 collect Lil'Abom Torso##186184 |goto 36.9,67.4 |or
 It can also be found around:
 [36.4,64.4]
@@ -4518,20 +4607,16 @@ It can also be found around:
 '|learnpet Lil'Abom##3098 |or
 step
 click Lil'Abom Legs##186185
-|tip There is a chance this won't be available.
+|tip This can only be collected during the Necrolord Assault in The Maw.
 collect Lil'Abom Legs##186185 |goto 29.4,67.2 |or
 '|learnpet Lil'Abom##3098 |or
 step
 use the Lil'Abom Legs##186185
 collect Lil'Abom##186188 |or
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
 '|learnpet Lil'Abom##3098 |or
 step
 use the Lil'Abom##186188
 Learn the "Lil'Abom" Battle Pet |learnpet Lil'Abom##3098
-step
-_Congratulations!_
-You Collected the "Lil'Abom" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\\Lost Limb",{
 patch='90100',

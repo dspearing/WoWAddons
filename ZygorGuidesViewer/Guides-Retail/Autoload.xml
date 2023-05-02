@@ -392,35 +392,35 @@
 
 	<!-- PETS AND MOUNTS -->
 		<!-- All Pets  Order for these matters-->
-		<!--DRAGONFLIGHT PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceDRAGON.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceDRAGONTrial.lua"/>
+		<!--CATA PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceCATA.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceCATATrial.lua"/>
+		
+		<Script file="PetsMounts\ZygorPetsHordeCATA.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeCATATrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsHordeDRAGON.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeDRAGONTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonCATA.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonCATATrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsCommonDRAGON.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonDRAGONTrial.lua"/>
+		<!--MOP PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceMOP.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceMOPTrial.lua"/>
 
-		<!--SHADOWLANDS PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceSHADOW.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceSHADOWTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeMOP.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeMOPTrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsHordeSHADOW.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeSHADOWTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonMOP.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonMOPTrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsCommonSHADOW.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonSHADOWTrial.lua"/>
+		<!--WOD PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceWOD.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceWODTrial.lua"/>
 
-		<!--BFA PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceBFA.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceBFATrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeWOD.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeWODTrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsHordeBFA.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeBFATrial.lua"/>
-
-		<Script file="PetsMounts\ZygorPetsCommonBFA.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonBFATrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonWOD.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonWODTrial.lua"/>
 
 		<!--LEGION PETS-->
 		<Script file="PetsMounts\ZygorPetsAllianceLEGION.lua"/>
@@ -432,36 +432,36 @@
 		<Script file="PetsMounts\ZygorPetsCommonLEGION.lua"/>
 		<Script file="PetsMounts\ZygorPetsCommonLEGIONTrial.lua"/>
 
-		<!--WOD PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceWOD.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceWODTrial.lua"/>
+		<!--BFA PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceBFA.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceBFATrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsHordeWOD.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeWODTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeBFA.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeBFATrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsCommonWOD.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonWODTrial.lua"/>
-		
-		<!--MOP PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceMOP.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceMOPTrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonBFA.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonBFATrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsHordeMOP.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeMOPTrial.lua"/>
+		<!--SHADOWLANDS PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceSHADOW.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceSHADOWTrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsCommonMOP.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonMOPTrial.lua"/>
-		
-		<!--CATA PETS-->
-		<Script file="PetsMounts\ZygorPetsAllianceCATA.lua"/>
-		<Script file="PetsMounts\ZygorPetsAllianceCATATrial.lua"/>
-		
-		<Script file="PetsMounts\ZygorPetsHordeCATA.lua"/>
-		<Script file="PetsMounts\ZygorPetsHordeCATATrial.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeSHADOW.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeSHADOWTrial.lua"/>
 
-		<Script file="PetsMounts\ZygorPetsCommonCATA.lua"/>
-		<Script file="PetsMounts\ZygorPetsCommonCATATrial.lua"/>
-			
+		<Script file="PetsMounts\ZygorPetsCommonSHADOW.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonSHADOWTrial.lua"/>
+
+		<!--DRAGONFLIGHT PETS-->
+		<Script file="PetsMounts\ZygorPetsAllianceDRAGON.lua"/>
+		<Script file="PetsMounts\ZygorPetsAllianceDRAGONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorPetsHordeDRAGON.lua"/>
+		<Script file="PetsMounts\ZygorPetsHordeDRAGONTrial.lua"/>
+
+		<Script file="PetsMounts\ZygorPetsCommonDRAGON.lua"/>
+		<Script file="PetsMounts\ZygorPetsCommonDRAGONTrial.lua"/>
+
 		<!-- CATA -->
 		<Script file="PetsMounts\ZygorHunterPetHordeCATA.lua"/>
 		<Script file="PetsMounts\ZygorHunterPetHordeCATATrial.lua"/>

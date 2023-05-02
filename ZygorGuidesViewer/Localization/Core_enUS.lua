@@ -1079,7 +1079,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		loot_autobuyframetext = "Would you like to buy\n%sfor\n|cffffdd00%s|r",
 		loot_autobuynoroom = "Not enough room for %d stacks.",
 		loot_autobuynostock = "%s x |cffffdd00%d|r are not available at this time.",
-		loot_autobuynotavail = "|cffffee66 not available at this vendor or is out of stock.",
+		loot_autobuynotavail = "|cffffee66 %s not available at this vendor or is out of stock.",
 		loot_autobuynotmoney = "%s does not use gold to buy. Please purchase it yourself.",
 		loot_autobuypoor = "You do not have enough money to buy all items. |cffffdd00%s|r is needed.",
 		loot_greyframe_maintext = "Total value of gray items",

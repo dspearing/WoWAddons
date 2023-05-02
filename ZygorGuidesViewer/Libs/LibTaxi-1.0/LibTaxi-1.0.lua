@@ -117,7 +117,9 @@ do
 		if cont==ZONE_ARGUS_KROKUUN or cont==ZONE_ARGUS_MACAREE or cont==ZONE_ARGUS_ANTORAN then cont=ZONE_ARGUS end  -- Argus zones need to have a common continent (not so much for ants!).
 		local cont_scan = cont
 		if cont==113 then cont_scan=988 end -- wotlk classic taxis are not findable via regular contient id
-		return cont,cont_scan
+		local extracont
+		if cont==1978 then extracont=2175 end -- dragonflight needs to have subcontinent scanned
+		return cont,cont_scan,extracont
 	end		
 
 	function Lib:GetCurrentMapContinent()
@@ -413,10 +415,20 @@ do
 		return Lib.fnode_by_nodeID[nodeID]
 	end
 
-	function Lib:GetTaxiDataBySlot()
-		local _,cont = Lib:GetCurrentMapContinent()
-
+	function Lib:GetAllTaxiNodes()
+		local _,cont,extracont = Lib:GetCurrentMapContinent()
 		local taxidata = C_TaxiMap.GetAllTaxiNodes(cont)
+		if extracont then 
+			local extradata = C_TaxiMap.GetAllTaxiNodes(extracont)
+			for i,taxi in pairs(extradata) do table.insert(taxidata,taxi) end
+		end
+		return taxidata
+	end
+
+	function Lib:GetTaxiDataBySlot()
+		local cont = Lib:GetMapContinent(C_Map.GetBestMapForUnit("player"))
+
+		local taxidata = Lib:GetAllTaxiNodes()
 		local taxidata_by_slot = {}
 		for i,taxi in ipairs(taxidata) do taxidata_by_slot[taxi.slotIndex]=taxi end
 		
@@ -673,7 +685,7 @@ do
 
 		self:Debug_HookButtons()
 
-		local contorg, cont = Lib:GetCurrentMapContinent()
+		local contorg, cont, contextra = Lib:GetCurrentMapContinent()
 
 		self:Debug("Scanning map for continent %d...",cont)
 
@@ -687,7 +699,7 @@ do
 			-- @field slotIndex number rr
 			-- @field state number 1=available, 2=unavailable
 			
-			taxidata = C_TaxiMap.GetAllTaxiNodes(cont)
+			taxidata = Lib:GetAllTaxiNodes(cont)
 
 			-- switch to a specific operator
 			for i,taxi in ipairs(taxidata) do
@@ -1090,7 +1102,7 @@ do
 
 	function Lib:DEV_FindNodeIDs(operator)
 		local continent = Lib:GetCurrentMapContinent()
-		local taxidata = C_TaxiMap.GetAllTaxiNodes(continent)
+		local taxidata = Lib:GetAllTaxiNodes(continent)
 		local count_ided=0
 		local count_alreadyided=0
 		local count_failed=0

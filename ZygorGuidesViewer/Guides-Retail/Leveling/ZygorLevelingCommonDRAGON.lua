@@ -15563,29 +15563,9 @@ step
 talk Treysh##200559
 accept Still Within Reach##74379 |goto 35.61,59.49
 step
-talk Scalecommander Cindrethresh##199199
-accept Busting Blues##73142 |goto 35.30,59.49
-accept Soupocalypse Now!##73179 |goto 35.30,59.49
-|tip These quests may or may not be available to you.
-|tip If they are not offered, skip this step.
-|only if not completedq(73156)
-step
-talk Fusethrian##200987
-Choose _<Ask for explosive... soup?>_
-Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
-|only if haveq(73179) or completedq(73179)
-step
 talk Tukkaraq##200558
 accept Driftwood Derby##73715 |goto 34.37,58.57
 |only if not completedq(74847)
-step
-clicknpc Morqut Glider##201376
-Take the Glider |q 73179/2 |goto 35.70,59.00
-|only if haveq(73179) or completedq(73179)
-step
-Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
-|tip Use the abilities on your vehicle bar to attack enemies on the boat.
-|only if haveq(73179) or completedq(73179)
 step
 Return to Morquet Village |outvehicle |goto 35.24,58.97
 |only if not completedq(73159)
@@ -15638,10 +15618,6 @@ step
 talk Pathfinder Tacha##200903
 turnin Helping Hand and Claw##73160 |goto 37.18,79.06
 step
-talk Scalecommander Cindrethresh##199199
-turnin Soupocalypse Now!##73179 |goto 35.30,59.49
-|only if haveq(73179) or completedq(73179)
-step
 talk Scalecommander Viridia##199201
 accept Exploring Our Past##73159 |goto 34.61,57.69
 step
@@ -15690,7 +15666,7 @@ click Journal Entry: The Creches##385836
 collect Journal Entry: The Creches##204223 |n
 |tip Inside the door inside the vault.
 accept Journal Entry: The Creches##74883 |goto 28.54,55.65 |only if Horde
-accept Journal Entry: The Creches####73114 |goto 28.54,55.65 |only if Alliance
+accept Journal Entry: The Creches##73114 |goto 28.54,55.65 |only if Alliance
 step
 Click Here to Continue |confirm |q 72953
 |tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
@@ -15708,12 +15684,12 @@ turnin The Forgotten Ring##73155 |goto 35.18,57.60
 accept Primordial Embellishment##74355 |goto 35.18,57.61
 step
 talk Scalecommander Cindrethresh##199199
-turnin Journal Entry: The Creches##74883 |goto 35.30,59.50 |only if haveq(74883) or completedq(74883)
-turnin Journal Entry: The Creches##73114 |goto 35.30,59.50 |only if haveq(73114) or completedq(73114)
+turnin Journal Entry: The Creches##74883 |goto 35.30,59.50
+|only if haveq(74883) or completedq(74883)
 step
-Kill enemies around this area
-collect 10 Arcane Focus##202362 |q 73142/1 |goto 53.22,54.55
-|only if haveq(73142) or completedq(73142)
+talk Scalecommander Azurathel##199204
+turnin Journal Entry: The Creches##73114 |goto 35.53,58.69
+|only if haveq(73114) or completedq(73114)
 step
 kill Spellsworn Wingcatcher##201369 |q 74379/1 |goto 59.04,57.54
 |tip This enemy is elite and may require a group.
@@ -15868,10 +15844,6 @@ step
 talk Treysh##200559
 turnin Still Within Reach##74379 |goto 35.61,59.49
 step
-talk Scalecommander Cindrethresh##199199
-turnin Busting Blues##73142 |goto 35.30,59.49
-|only if haveq(73142) or completedq(73142)
-step
 talk Scalecommander Viridia##199201
 turnin Return to Viridia##73156 |goto 34.60,57.67
 step
@@ -15919,50 +15891,6 @@ turnin What's Behind The Next Door##73089 |goto The Forbidden Reach/5 29.16,53.1
 step
 talk Researcher Imareth##200724
 turnin Primordial Embellishment##74355 |goto 35.18,57.61
-step
-talk Volethi##200727
-accept Creche Cache##73189 |goto 34.84,57.47
-step
-talk Tukkaraq##200558
-accept Up to the Highest Height!##75026 |goto 34.36,58.57
-step
-talk Cataloger Coralie##201291
-accept Snake Wrangling##73191 |goto 34.36,59.28
-step
-clicknpc Broken Kite Piece##203134+
-|tip They look like small pieces of wood on the ground around this area.
-|tip They appear on your minimap as yellow dots.
-Collect #12# Kite Pieces |q 75026/1 |goto 31.97,60.59
-step
-talk Tukkaraq##200558
-turnin Up to the Highest Height!##75026 |goto 34.36,58.57
-step
-click Rustling Bush##384952+
-|tip They look like green bushes on the ground around this area.
-Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
-You can find more around [45.61,37.24]
-step
-extraaction Release Watersnakes##400872
-|tip Use the button that appears on your screen.
-Release the Toxic Watersnakes |q 73191/2 |goto 43.53,37.40
-step
-Enter the Support Creche |q 73189/1 |goto 36.68,32.41
-step
-use the Toxin Antidote##202620
-|tip Use it to reduce your toxin level before it overwhelms you.
-|tip Avoid cloudy areas on the ground, which increase your toxicity level faster.
-click Mender Supplies##385990+
-|tip They look like wooden crates inside the building.
-collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
-step
-use the Toxin Antidote##202620 |only if subzone("The Support Creche")
-|tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
-|tip Avoid cloudy areas on the ground, which increase your toxicity level faster. |only if subzone("The Support Creche")
-talk Volethi##200727
-turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47
-step
-talk Cataloger Coralie##201291
-turnin Snake Wrangling##73191 |goto 34.36,59.28
 step
 talk Pathfinder Jeb##200040
 accept The Scary Vault of Ur##72952 |goto 29.09,53.13
@@ -16027,23 +15955,75 @@ talk Pathfinder Jeb##200040
 Choose _"Let's explore Zskera Vault Ix."_
 Speak with Jeb to Enter the Vault |q 72954/1 |goto 29.09,53.13
 step
-Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
-Kill the elite
+talk Volethi##201240
+accept Not Forgotten##74293 |goto 28.87,52.26
+stickystart "Free_Imprisoned_Dracthyr"
+step
+kill Toadstool Danner##200260 |q 72954/2 |goto 29.57,56.31
 |tip Inside the middle of the vault.
-Secure the Vault |q 72954/2 |goto 29.57,56.31
+step
+click Igniter Torch##387508
+collect Igniter Torch##204066 |goto 29.66,56.63 |q 72954
+step
+click Breaching Cannon
+Fire the Breaching Cannon |q 72954/4 |goto 29.81,56.53
+|tip This will blast open the door in front of it and an enemy will attack you.
 step
 click Door
 Open the Doors with Zskera Vault Keys |q 72954/3 |goto 29.57,56.31
 step
-Fire the Breaching Cannon |q 72954/4 |goto 29.81,56.53
-step
 Click Here to Continue |confirm |q 72954
 |tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
+step
+label "Free_Imprisoned_Dracthyr"
+clicknpc Imprisoned Dracthyr##200568+
+|tip They look like Dracthry frozen in place behind vault doors.
+Free #6# Imprisoned Dracthyr |q 74293/1 |goto 29.57,56.31
 step
 Leave Zskera Vault: Ix |complete not subzone("Zskera Vault: Ix") |goto 28.81,49.98 |q 72954
 step
 talk Pathfinder Jeb##202218
 turnin Zskera Vault: Ix##72954 |goto 29.09,53.13
+step
+talk Scalecommander Viridia##199201
+turnin Not Forgotten##74293 |goto 34.60,57.68
+step
+talk Pathfinder Jeb##200040
+accept Zskera Vault: Kx##72955 |goto 29.09,53.13
+|tip This quest appears on a rotation with six other versions of the vault.
+|tip Check back at the next daily reset for it.
+step
+talk Cataloger Wulferd##201180
+accept Authentic Authorization##74984 |goto 29.26,52.69 |or
+accept Authentic Authorization##74983 |goto 29.26,52.69 |or
+accept Authentic Authorization##74282 |goto 29.26,52.69 |or
+|tip You will only be able to accept one of these weekly quests.
+|tip Any time you open vault doors, look around for the objective of the weekly quest.
+|only if not completedq(72955)
+step
+collect Zskera Vault Key##202196 |q 72955
+|tip You will need at least one of these to open a vault door for the quest.
+|tip You can acquire these from rare chests and rare mobs all over The Forbidden Reach.
+step
+talk Pathfinder Jeb##200040
+Choose _"Let's explore Zskera Vault Kx."_
+Speak with Jeb to Enter the Vault |q 72955/1 |goto 29.09,53.13
+step
+Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
+Kill enemies around this area
+|tip Inside the middle of the vault.
+Secure the Vault |q 72955/2 |goto 29.57,56.31
+step
+click Door
+Open the Doors with Zskera Vault Keys |q 72955/3 |goto 29.57,56.31
+step
+Click Here to Continue |confirm |q 72955
+|tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
+step
+Leave Zskera Vault: Kx |complete not subzone("Zskera Vault: Kx") |goto 28.81,49.98 |q 72955
+step
+talk Pathfinder Jeb##202218
+turnin Zskera Vault: Kx##72955 |goto 29.09,53.13
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{
@@ -16280,11 +16260,1736 @@ Conclude the Funeral |q 72611/6 |goto 72.69,56.06
 step
 talk Baine Bloodhoof##201566
 turnin Letting Go##72611 |goto 72.71,56.08
+accept A Final Word##75258 |goto 72.71,56.08
+step
+talk Baine Bloodhoof##201566
+turnin A Final Word##75258 |goto 72.71,56.08
 ]])
-ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Collections\\Appearances\\(Ruth)less is More",{
-achieveid={11715},
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests",{
+author="support@zygorguides.com",
+startlevel=68,
 patch='100007',
 },[[
 step
+label "Active_Quests_Available"
+Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178)
+step
+talk Volethi##200727
+accept Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if questactive(73189)
+accept Sneaky Pebbles##75024 |goto 34.85,57.48 |only if questactive(75024)
+|only if questactive(73189,75024)
+step
+talk Tukkaraq##200558
+accept Up to the Highest Height!##75026 |goto 34.36,58.57
+|only if questactive(75026)
+step
+talk Cataloger Coralie##201291
+accept Snake Wrangling##73191 |goto 34.36,59.28 |only if questactive(73191)
+accept A Good Day for Rolling##75025 |goto 34.36,59.28 |only if questactive(75025)
+|only if questactive(73191,75025)
+step
+talk Scalecommander Cindrethresh##199199
+accept Toxic Infestation##73190 |goto 35.31,59.49 |only if questactive(73190)
+accept Busting Blues##73142 |goto 35.31,59.50 |only if questactive(73142)
+accept Soupocalypse Now!##73179 |goto 35.30,59.49 |only if questactive(73179)
+|only if questactive(73190,73142,73179)
+step
+talk Scalecommander Azurathel##199204
+accept Hands Off Our Booty!##73178 |goto 35.53,58.69
+|only if questactive(73178)
+stickystart "Slay_Irontide_Cutthroats"
+step
+click Stolen Booty##385999+
+|tip They look like small chests around these areas.
+collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
+You can find more around:
+[37.67,78.67]
+[34.25,45.30]
+step
+label "Slay_Irontide_Cutthroats"
+Kill Irontide enemies around this area
+Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
+step
+talk Fusethrian##200987
+Choose _<Ask for explosive... soup?>_
+Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
+|only if haveq(73179) or completedq(73179)
+step
+clicknpc Morqut Glider##201376
+Take the Glider |q 73179/2 |goto 35.70,59.00
+|only if haveq(73179) or completedq(73179)
+step
+Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
+|tip Use the abilities on your vehicle bar to attack enemies on the boat.
+|only if haveq(73179) or completedq(73179)
+stickystart "Kill_Dragonbane_Beetles"
+step
+kill Pestilent Pincher##200910 |q 73190/2 |goto 41.04,35.84
+|only if haveq(73190) or completedq(73190)
+step
+click Infuser Shard+
+|tip They look like tiny crystals on the ground around this area.
+|tip Aim at Dragonbane Beetles and fire the crystal at them to infuse and defeat them.
+Defeat #12# Infused Beetles |q 75024/1 |goto 39.36,32.76
+|only if haveq(75024) or completedq(75024)
+step
+label "Kill_Dragonbane_Beetles"
+kill 24 Dragonbane Beetle##198792 |q 73190/1 |goto 39.83,35.02
+|only if haveq(73190) or completedq(73190)
+step
+click Snowball
+|tip They look like large round balls of snow on the ground around this area.
+|tip While carrying them, run over burning critters to save them.
+Save #14# Overcharged Critters |q 75025/1 |goto 61.81,26.70
+|only if haveq(75025) or completedq(75025)
+step
+clicknpc Broken Kite Piece##203134+
+|tip They look like small pieces of wood on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Collect #12# Kite Pieces |q 75026/1 |goto 31.97,60.59
+|only if haveq(75026) or completedq(75026)
+step
+click Rustling Bush##384952+
+|tip They look like green bushes on the ground around this area.
+Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
+You can find more around [45.61,37.24]
+|only if haveq(73191) or completedq(73191)
+step
+extraaction Release Watersnakes##400872
+|tip Use the button that appears on your screen.
+Release the Toxic Watersnakes |q 73191/2 |goto 42.91,38.91
+|only if haveq(73191) or completedq(73191)
+step
+Kill enemies around this area
+collect 10 Arcane Focus##202362 |q 73142/1 |goto 52.59,56.41
+|only if haveq(73142) or completedq(73142)
+step
+Enter the Support Creche |q 73189/1 |goto 36.68,32.41
+|only if haveq(73189) or completedq(73189)
+step
+use the Toxin Antidote##202620
+|tip Use it to reduce your toxin level before it overwhelms you.
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster.
+click Mender Supplies##385990+
+|tip They look like wooden crates inside the building.
+collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
+|only if haveq(73189) or completedq(73189)
+step
+use the Toxin Antidote##202620 |only if subzone("The Support Creche")
+|tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster. |only if subzone("The Support Creche")
+talk Volethi##200727
+turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if haveq(73189) or completedq(73189)
+turnin Sneaky Pebbles##75024 |goto 34.85,57.48 |only if haveq(75024) or completedq(75024)
+|only if haveq(73189,75024) or completedq(73189,75024)
+step
+talk Cataloger Coralie##201291
+turnin Snake Wrangling##73191 |goto 34.36,59.28 |only if haveq(73191) or completedq(73191)
+turnin A Good Day for Rolling##75025 |goto 34.36,59.28 |only if haveq(75025) or completedq(75025)
+|only if haveq(73191,75025) or completedq(73191,75025)
+step
+talk Tukkaraq##200558
+turnin Up to the Highest Height!##75026 |goto 34.36,58.57
+|only if haveq(75026) or completedq(75026)
+step
+talk Scalecommander Cindrethresh##199199
+turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
+turnin Busting Blues##73142 |goto 35.31,59.50 |only if haveq(73142) or completedq(73142)
+turnin Soupocalypse Now!##73179 |goto 35.30,59.49 |only if haveq(73179) or completedq(73179)
+|only if haveq(73190,73142,73179) or completedq(73190,73142,73179)
+step
+talk Scalecommander Azurathel##199204
+turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
+|only if haveq(73178) or completedq(73178)
+step
+You have completed all available side quests in The Forbidden Reach
+|tip This guide will reset when more become available.
+'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178) |next "Active_Quests_Available"
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)",{
+author="support@zygorguides.com",
+achieveid={18150},
+patch='100100',
+},[[
+step
+_NOTE:_
+Dragon Glyphs & Dragonriding Skills
+|tip You will need to complete the start of the "Zaralek Cavern" guide to unlock the area.
+|tip Dragon Glyphs look like large round golden runes that float in the air, spread out across the continent.
+|tip You fly through them on your dragonriding mount to collect them.
+|tip Collecting them will give you Dragonriding skill points, which can be used to increase the power of your Dragonriding ability.
+|tip This guide will walk you through collecting all of the Dragon Glyphs, so that you can max out your Dragonriding skill quickly.
+|tip As you collect Dragon Glyphs, to spend the skill points, click the "Dragon Isles Summary" button on your minimap, and click the "View" button under "Dragonriding Skills & Unlocks".
+Click Here to Continue |confirm
+step
+Collect the Dragon Glyph: Loamm |achieve 18150/3 |goto Zaralek Cavern/0 54.75,54.71 |notravel
+|tip Near the roof.
+step
+Collect the Dragon Glyph: The Throughway |achieve 18150/6 |goto 72.05,48.44 |notravel
+|tip Behind the stalactites hanging from the ceiling.
+step
+Collect the Dragon Glyph: Nal Ks'kol |achieve 18150/2 |goto 62.57,73.33 |notravel
+|tip On top of the roof.
+step
+Collect the Dragon Glyph: Glimmerogg |achieve 18150/1 |goto 41.67,80.38 |notravel
+|tip Near the roof.
+step
+Collect the Dragon Glyph: Zaqali Calderra |achieve 18150/4 |goto 30.45,45.33 |notravel
+|tip On top of the rock.
+|tip Land before you reach 10 stacks of the debuff and wait for it to wear off or you will be shot down.
+step
+Collect the Dragon Glyph: Acidbite Ravine |achieve 18150/7 |goto 47.44,37.07 |notravel
+|tip At the top of the cavern.
+step
+Collect the Dragon Glyph: Slitherdrake Roost |achieve 18150/5 |goto 55.29,27.84 |notravel
+|tip Behind the stalactites hanging from the ceiling.
+step
+Collect the Dragon Glyph: Aberrus Approach |achieve 18150/8 |goto 48.07,4.31 |notravel
+|tip At the top of the lava fall.
+|tip Get this glyph quickly because this area can dismount you randomly.
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Zaralek Cavern",{
+author="support@zygorguides.com",
+description="This guide will help you complete the primary story and side quests in Zaralek Cavern",
+condition_suggested=function() return level == 70 and not completedq(75694) end,
+startlevel=68,
+patch='100100',
+},[[
+step
+accept The Land Beneath: Zaralek Cavern!##72975
+|tip You will accept this quest automatically.
+step
+talk Ebyssian##201281
+|tip At the top of the tower.
+turnin The Land Beneath: Zaralek Cavern!##72975 |goto Valdrakken/0 61.44,42.20
+accept A Crack in the World##72976 |goto 61.44,42.20
+step
+talk Alexstrasza the Life-Binder##187678
+|tip She eventually walks to this spot at the top of the tower.
+Ask her _"What news is there of the Incarnates?"_
+Speak with Alexstrasza Concerning Iridikron |q 72976/1 |goto 59.11,37.13
+step
+talk Ebyssian##201281
+|tip At the top of the tower.
+turnin A Crack in the World##72976 |goto 58.87,38.49
+accept Where the Flames Fell##72977 |goto 58.87,38.49
+step
+talk Wrathion##201311
+turnin Where the Flames Fell##72977 |goto Ohn'ahran Plains/0 87.14,27.27
+accept Scar of Earth and Fire##72978 |goto 87.14,27.27
+step
+Watch the dialogue
+talk Khasar##202788
+|tip He eventually walks to this spot.
+Ask him _"What happened here?"_
+Speak with Khasar |q 72978/1 |goto 86.98,27.28
+step
+click Remains of a Fallen Shikaar
+Inspect the Pile of Ashes |q 72978/2 |goto 87.04,27.30
+step
+click Spear of a Fallen Shikaar
+Inspect the Broken Spear |q 72978/3 |goto 87.09,27.44
+step
+talk Sabellian##200085
+Ask him _"Have you learned anything?"_
+Speak with Sabellian |q 72978/4 |goto 87.37,27.54
+step
+talk Wrathion##201311
+turnin Scar of Earth and Fire##72978 |goto 87.17,27.27
+step
+talk Khasar##202788
+accept Rest Well, Warrior##75985 |goto 86.99,27.28
+step
+click Shovel
+Bury the Brave Shikaar |q 75985/1 |goto 87.04,27.266
+step
+talk Khasar##202788
+turnin Rest Well, Warrior##75985 |goto 86.99,27.28
+step
+talk Sabellian##200085
+accept The Patience of Princes##72981 |goto 87.37,27.53
+step
+map Ohn'ahran Plains/0
+path follow smart; loop off; ants curved; dist 30
+path	87.90,29.05	86.42,26.60	83.54,28.16	84.88,30.65	84.46,31.91
+path	83.31,31.27
+Travel Through the Tunnel |q 72981/1
+step
+talk Sabellian##201411
+Ask him _"So what's the plan?"_
+Watch the dialogue
+Discuss the Plan with Sabellian |scenariogoal 1/58683 |goto The Throughway/0 74.41,42.24 |q 72981
+stickystart "Slay_the_Earth_Primalists"
+step
+kill Cliffkeeper Bouldani##202612 |scenariogoal 2/58225 |goto 49.77,55.15 |q 72981
+step
+label "Slay_the_Earth_Primalists"
+Kill Stonebreath enemies around this area
+Slay the Earth Primalists |scenariogoal 2/0 |goto 40.55,40.06 |q 72981
+stickystart "Slay_the_Fire_Primalists"
+step
+kill Portalkeeper Cimbra##202613 |scenariogoal 3/58372 |goto 36.37,38.84 |q 72981
+step
+label "Slay_the_Fire_Primalists"
+Slay the Fire Primalists |scenariogoal 3/0 |goto 44.19,49.48 |q 72981
+step
+kill Summitshaper Lorac##201522 |scenariogoal 4/57855 |goto 28.36,44.86 |q 72981
+step
+talk Elder Honeypelt##200116
+|tip Inside the cave.
+turnin The Patience of Princes##72981 |goto Deepflayer Nest/0 82.30,64.72
+accept It Was Not Enough##72873 |goto 82.30,64.72
+accept Culling the Deep##72872 |goto 82.30,64.72
+step
+extraaction Escape Crystals##403458
+|tip Inside the cave.
+Escape the Crystal Prison |q 72873/1 |goto 82.30,64.72
+step
+talk Elder Honeypelt##200116
+|tip Inside the cave.
+Ask her _"Can you lead me to my companions?"_
+Speak with Elder Honeypelt |q 72873/2 |goto 81.78,65.86
+stickystart "Slay_8_Deepflayers"
+step
+click Niffin Hole
+|tip Inside the cave.
+Follow Elder Honeypelt |q 72873/3 |goto 33.21,64.72
+step
+click Niffin Hole
+|tip Inside the cave.
+Follow Elder Honeypelt |q 72873/4 |goto 39.15,30.09
+step
+click Niffin Hole
+|tip Inside the cave.
+Follow Elder Honeypelt |q 72873/5 |goto 62.28,21.47
+step
+Kill enemies that attack
+|tip Inside the cave.
+Rescue Wrathion |q 72873/6 |goto 75.09,25.09
+step
+label "Slay_8_Deepflayers"
+Slay #8# Deepflayers |q 72872/1 |goto 53.62,45.06
+|tip Inside the cave. |notinsticky
+step
+Follow the path |goto 25.41,35.49 < 10 |walk
+Find Sabellian |q 72873/7 |goto Zaralek Cavern/0 60.21,37.66
+step
+Watch the dialogue
+talk Elder Honeypelt##201587
+turnin It Was Not Enough##72873 |goto 60.17,37.80
+turnin Culling the Deep##72872 |goto 60.17,37.80
+accept Niffen and Goliath##72970 |goto 60.17,37.80
+step
+Enter the cave |goto Zaralek Cavern/0 58.92,38.95 < 7 |walk
+click Honeypelts Pungent Bait
+Place the Pungent Bait |q 72970/1 |goto 58.41,38.96
+step
+kill Deepflayer Broodmatron##200115 |q 72970/2 |goto 58.41,38.96
+step
+talk Elder Honeypelt##201584
+turnin Niffen and Goliath##72970 |goto 60.16,37.56
+step
+talk Wrathion##201583
+accept Brother's Keeper##72980 |goto 60.06,37.47
+step
+talk Sabellian##201589
+turnin Brother's Keeper##72980 |goto 60.57,40.13
+accept Secrets From Our Father##72874 |goto 60.57,40.13
+step
+click Damaged Relic
+Investigate the Damaged Relic |q 72874/2 |goto 60.31,42.71
+step
+Enter the cave |goto 59.06,41.00 < 7 |walk
+click Humming Relic
+|tip Inside the cave.
+Choose _"Press the button."_
+Investigate the Humming Relic |q 72874/3 |goto 58.84,41.59
+step
+Enter the cave |goto 61.91,41.80 < 7 |walk
+click Rusted Relic
+|tip Inside the cave.
+Investigate the Rusted Relic |q 72874/1 |goto 62.52,41.74
+step
+talk Sabellian##201589
+|tip He walks around this area.
+turnin Secrets From Our Father##72874 |goto 60.57,40.13
+accept The Earth Gives Way##72979 |goto 60.57,40.13
+step
+talk Wrathion##201583
+turnin The Earth Gives Way##72979 |goto 57.03,38.26
+step
+talk Elder Honeypelt##201584
+accept Smells Like Loamm##72973 |goto 57.07,38.18
+step
+talk Elder Honeypelt##202873
+Tell him _"We're ready to enter Loamm."_
+Meet Honeypelt on the Outskirts of Loamm |q 72973/1 |goto 58.60,54.58
+step
+talk Aurantia##204522
+turnin Smells Like Loamm##72973 |goto 56.96,55.65
+accept Orientation: Loamm Niffen##75643 |goto 56.96,55.65
+accept Tougher Down Under##76101 |goto Zaralek Cavern/0 56.96,55.65
+step
+talk Elder Honeypelt##200054
+accept Welcome to the City of Smells##72974 |goto Zaralek Cavern/0 56.98,55.77
+step
+talk Brynnsahce##204546
+Tell him _"Ready to deliver!"_
+Speak with Brynnsahce |q 72974/1 |goto 57.02,55.78
+step
+talk Mimuup##204254
+|tip Inside the building.
+Introduce Yourself to the Keeper of Renown |q 75643/1 |goto 56.53,55.66
+step
+talk Mimuup##204254
+|tip Inside the building.
+accept A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+Introduce Yourself to the Renown Quartermaster |q 75643/2 |goto 56.48,55.62
+step
+talk Floressa##203293
+|tip Inside the building.
+home Loamm |goto 56.42,55.84 |q 75643
+step
+talk Vaskarn##203404
+|tip Inside the building.
+turnin Tougher Down Under##76101 |goto Zaralek Cavern/0 56.52,56.08
+accept Flightstones##72658 |goto 56.52,56.08
+step
+talk Kalecgos##205647
+accept Fyrakk's Forces##75887 |goto 55.66,54.92
+step
+talk Avogadro##202467
+|tip Inside the building.
+Introduce Yourself to the Flight Master |q 75643/3 |goto 55.64,54.79
+step
+talk Examiner Tae'shara Bloodwatcher##204509
+accept Power Unified##75641 |goto 56.84,54.79
+step
+talk Gumm##204624
+|tip Jumping around the chairs aroudn this area.
+Trade with the Teacher |q 72974/4 |goto 57.64,53.42
+step
+Watch the Dialogue
+talk Quicksmack Magk##204651
+Tell him _"Let's give it our best!"_
+kill Quicksmack Magk##204651
+Trade with the Coach |q 72974/3 |goto 57.73,56.42
+step
+talk Myrrit##201426
+|tip He burrows around this area.
+Watch the Dialogue
+click Treasure?
+|tip There will be multiple piles of "Treasure" to click.
+|tip They look like small piles of dirt on the ground around this area.
+Trade with the Cave Diver |q 72974/2 |goto 55.65,57.35
+step
+click Cenka's Slug Jar
+kill Runaway Meal##204639
+Trade with the Resourceful Chef |q 72974/5 |goto 54.20,56.39
+step
+talk Aurantia##200052
+turnin Orientation: Loamm Niffen##75643 |goto Zaralek Cavern/0 54.64,54.74
+step
+talk Elder Honeypelt##200054
+turnin Welcome to the City of Smells##72974 |goto 54.64,54.70
+|tip Keep the item awarded from this quest for a later quest.
+step
+Watch the dialogue
+talk Aurantia##200052
+accept Six Hundred Feet Under##75644 |goto 54.64,54.74
+step
+talk Ebyssian##201366
+Tell him _"Let's discuss our next steps."_
+Regroup with Your Companions |q 75644/1 |goto 54.71,54.51
+step
+talk Ebyssian##201366
+turnin Six Hundred Feet Under##75644 |goto 54.71,54.51
+accept Future Aspects##74334 |goto 54.71,54.51
+step
+talk Ebyssian##201366
+Tell him _"We could ask Honeypelt."_
+Suggest Honeypelt as a Guide |q 74334/1 |goto 54.71,54.51
+step
+talk Effervesta##200053
+accept A Swallow's Tale##72881 |goto 54.64,54.79
+step
+talk Cuzolth##203403
+|tip Inside the building.
+Upgrade a Piece of Equipment with Flightstones |q 72658/2 |goto 56.55,56.00
+|tip Use the item awarded from "Welcome to the City of Smells" to upgrade.
+step
+talk Vaskarn##203404
+|tip Inside the building.
+turnin Flightstones##72658 |goto 56.52,56.08
+accept Shadowflame Crests##75506 |goto 56.52,56.08
+step
+talk Spinsoa##203602
+Visit Spinsoa |q 75506/1 |goto Zaralek Cavern/0 55.92,55.47
+step
+use the Whelpling's Shadowflame Crest Fragment##204075
+|tip You should have some from completing the "Flightstones" quest.
+Combine 15 Fragments to Create a Shadowflame Crest |q 75506/2 |goto 55.92,55.47
+step
+talk Vaskarn##203404
+|tip Inside the building.
+turnin Shadowflame Crests##75506 |goto 56.52,56.08
+|tip Keep the "Friendship Censer" awarded from the quest.
+accept Catching Up with Friends##75507 |goto 56.52,56.08
+step
+talk Cuzolth##203403
+|tip Inside the building.
+Upgrade the Friendship Censer or an Explorer Level Equipment |q 75507/2 |goto 56.55,56.00
+|tip The Friendship Censer was awarded from the "Shadowflame Crests" quests.
+step
+talk Vaskarn##203404
+|tip Inside the building.
+turnin Catching Up with Friends##75507 |goto 56.52,56.08
+step
+Enter the cave |goto 56.15,59.27 < 20 |walk
+talk Cinnam##200056
+|tip Inside the cave.
+Ask him _"Do you know where Nevroll is?"_
+Speak with Nevroll |q 72881/1 |goto 55.69,60.23
+step
+talk Cinnam##200056
+|tip Inside the cave.
+turnin A Swallow's Tale##72881 |goto 55.69,60.23
+accept Flown the Coop##72882 |goto 55.69,60.23
+step
+clicknpc Frightened Swallow##201777+
+|tip They look like birds flying around Loamm.
+Find #6# Swallows |q 72882/1 |goto 57.18,55.48
+step
+Enter the cave |goto 56.15,59.27 < 20 |walk
+talk Cinnam##200056
+|tip Inside the cave.
+turnin Flown the Coop##72882 |goto 55.69,60.23
+step
+talk Ponzo##204693
+accept Get Rich Quick##75885 |goto 58.09,53.81
+step
+talk Dead Cave Swallow##200238
+accept A Bitter Pill to Swallow##72883 |goto 57.90,54.84
+step
+talk Loamm Citizen##205014
+Ask her _"Could I interest you in a Glimmerogg Timeshare Voucher?"_
+Sell a Glimmerogg Timeshare Voucher |q 75885/2 |goto 57.71,54.82 |count 1
+step
+talk Loamm Citizen##205025
+Ask him _"Could I interest you in ordering a jar of Ponzo's Cream?"_
+Sell Ponzo's Cream |q 75885/1 |goto 58.12,55.55 |count 1
+step
+talk Loamm Citizen##205020
+Ask her _"Could I interest you in a Glimmerogg Timeshare Voucher?"_
+Sell a Glimmerogg Timeshare Voucher |q 75885/2 |goto 57.36,52.96 |count 2
+step
+talk Loamm Citizen##205027
+Ask her _"Could I interest you in a Glimmerogg Timeshare Voucher?"_
+Sell a Glimmerogg Timeshare Voucher |q 75885/2 |goto 56.60,53.97 |count 3
+step
+talk Loamm Citizen##205028
+Ask him _"Could I interest you in ordering a jar of Ponzo's Cream?"_
+Tell him _"Yes!"_
+Sell Ponzo's Cream |q 75885/1 |goto 56.33,54.83 |count 3
+step
+talk Ponzo##204693
+turnin Get Rich Quick##75885 |goto 58.09,53.81
+step
+Enter the cave |goto 56.15,59.27 < 20 |walk
+talk Cinnam##200056
+|tip Inside the cave.
+Choose _<Show Cinnam the dead swallow.>_
+Return to Cinnam |q 72883/1 |goto 55.69,60.23
+step
+talk Aurantia##200052
+turnin A Bitter Pill to Swallow##72883 |goto 54.64,54.74
+accept Expedition Effervesta##72884 |goto 54.64,54.74
+step
+click Miss Smelly
+Find the First Clue |q 72884/1 |goto 57.64,56.36 |count 1
+step
+click Effervesta's Trusty Pickaxe
+Find the Second Clue |q 72884/1 |goto 58.06,54.41 |count 2
+step
+click Effervesta's Scent Journal
+Find the Third Clue |q 72884/1 |goto 55.88,57.33 |count 3
+step
+talk Aurantia##200052
+turnin Expedition Effervesta##72884 |goto 54.64,54.74
+step
+talk Aurantia##200052
+accept Suss Out the Imposter##72886 |goto 58.05,54.16
+step
+kill Nevroll##203039 |q 72886/1 |goto 58.29,52.50
+|tip Inside the cave.
+|tip Kill the two drogbar to engage Nevroll.
+step
+click Effervesta's Prison
+|tip Inside the cave.
+Free Effervesta |q 72886/2 |goto 58.25,52.37
+step
+talk Aurantia##200052
+turnin Suss Out the Imposter##72886 |goto 54.64,54.74
+step
+talk Elder Honeypelt##200054
+accept Slime Time Live##72878 |goto 54.64,54.70
+step
+clicknpc Redolent Whelk##200898+
+|tip You can find them all over this area.
+use Snail Lasso##205980
+|tip Lasso them and drag them around until the lasso wears off.
+click Slime Puddle##386235+
+collect 8 Snail Slime##203442 |q 72878/1 |goto 58.72,64.29
+step
+talk Ebyssian##201236
+turnin Future Aspects##74334 |goto 59.42,68.82
+step
+talk Scalecommander Emberthal##200049
+accept Save-A-Mole##72958 |goto 59.44,68.94
+accept Collating Their Research##74375 |goto 59.44,68.94
+stickystart "Collect_6_Sundered_Flame_Expedition_Notes"
+step
+click Titan Writings
+Find a Clue |q 74375/1 |count 1 |goto 59.87,72.61
+step
+click Draconic Texts
+Find a Clue |q 74375/1 |count 2 |goto 59.18,73.76
+step
+click Titan Scroll
+Find a Clue |q 74375/1 |count 3 |goto 59.93,74.50
+step
+click Draconic Scrolls
+Find a Clue |q 74375/1 |count 4 |goto 57.87,74.02
+step
+Enter the cave |goto 58.55,74.66 < 7 |walk
+talk Tuberros##201265
+|tip Inside the cave.
+Tell him _"It's okay. I'm here to free you."_
+Find Tuberros |q 72958/1 |goto 58.13,75.44
+step
+label "Collect_6_Sundered_Flame_Expedition_Notes"
+kill Sundered Researcher##199946+
+collect 6 Sundered Flame Expedition Notes##204713 |q 74375/2 |goto 59.21,73.81
+step
+talk Scalecommander Emberthal##200049
+turnin Save-A-Mole##72958 |goto 59.44,68.94
+turnin Collating Their Research##74375 |goto 59.44,68.94
+accept Whose Vault Is It Anyway?##72959 |goto 59.44,68.94
+step
+talk Scalecommander Emberthal##200049
+Tell her _"I am ready to go."_
+Watch the dialogue
+Talk to Emberthal |q 72959/1 |goto 59.44,68.94
+step
+talk Scalecommander Emberthal##201619
+turnin Whose Vault Is It Anyway?##72959 |goto 62.57,73.26
+step
+talk Rannan Korren##200074
+accept Charging Up##72961 |goto 62.56,73.30
+step
+click Buzzing Orb
+|tip They look like glowing orbs laying all around this area.
+kill Nal ks'kol Defense Orb##203819
+collect 6 Buzzing Orb Core##204833 |q 72961/1 |goto 61.55,72.42
+step
+talk Rannan Korren##200074
+turnin Charging Up##72961 |goto 62.56,73.30
+step
+talk Scalecommander Emberthal##201619
+accept Open That Door!##72962 |goto 62.57,73.26
+step
+talk Rannan Korren##200074
+Ask her _"How close are you to opening the door?"_
+Ask Rannan About His Progress |q 72962/1 |goto 62.56,73.30
+step
+Watch the dialogue
+Open the Door |q 72962/2 |goto 62.56,73.30
+step
+Enter the Vault with Emberthal |q 72962/3 |goto 62.75,73.60
+|tip Inside the building.
+step
+talk Scalecommander Emberthal##200075
+|tip Inside the building.
+turnin Open That Door!##72962 |goto 62.76,73.60
+accept Sundered Flames##75419 |goto 62.75,73.60
+step
+kill Winglord Dezran##201677
+|tip Inside the building.
+Defeat the Sundered Flame Sentries |q 75419/1 |goto 62.75,73.60
+step
+Watch the dialogue
+talk Scalecommander Emberthal##204040
+|tip He eventually walks to this spot inside the building.
+turnin Sundered Flames##75419 |goto 63.01,73.96
+accept The Upper Hand##72963 |goto 63.01,73.96
+step
+talk Scalecommander Emberthal##202857
+|tip Inside the building.
+Tell her _"I am ready."_
+Let Emberthal Know that you are Ready to Face Sarkareth |q 72963/1 |goto 63.01,73.96
+step
+Watch the dialogue
+kill Scalecommander Sarkareth##184308
+|tip Inside the building.
+|tip Jump over the ring of flame when it moves outward.
+|tip Move out of orange areas on the ground.
+Defeat Sarkareth |q 72963/2 |goto 63.50,74.71
+step
+talk Scalecommander Emberthal##204571
+|tip Inside the building.
+turnin The Upper Hand##72963 |goto 63.42,74.60
+accept Singed##72964 |goto 63.42,74.60
+step
+talk Marithos##202696
+|tip Inside the building.
+Ask him _"Would you join Emberthal's cause?"_
+Talk to Marithos |q 72964/2 |goto 63.64,74.83
+step
+talk Amythora##202693
+|tip Inside the building.
+Tell her _"Emberthal would welcome you with open arms."_
+Talk to Amythora |q 72964/1 |goto 63.59,74.93
+step
+talk Scalecommander Emberthal##200064
+|tip Inside the building.
+turnin Singed##72964 |goto 63.49,74.71
+step
+talk Ebyssian##202670
+|tip Inside the building.
+accept Aspects of Our Legacy##72965 |goto 63.39,74.65
+step
+talk Ebyssian##202771
+Tell him _"You should talk to them."_
+Meet Ebyssian in Loamm |q 72965/1 |goto 56.57,57.15
+step
+Watch the dialogue
+talk Sabellian##199849
+turnin Aspects of Our Legacy##72965 |goto 56.62,56.71
+accept Where There's Smoke, There's Fire##72966 |goto 56.62,56.71
+step
+talk Citros##200055
+turnin Slime Time Live##72878 |goto Zaralek Cavern/0 56.80,54.00
+accept Smells like Kith Spirit##72879 |goto 56.80,54.00
+step
+click Incense Brew
+Add Snail Slime |q 72879/1 |goto 56.83,53.81
+step
+click Platter of Bugs
+|tip Next to the cooking fire.
+click Incense Brew
+Add Bugs |q 72879/2 |goto 56.83,53.81
+step
+click Smelling Crystals
+|tip Next to the cooking fire.
+click Incense Brew
+Add Crystals |q 72879/3 |goto 56.83,53.81
+step
+talk Citros##200055
+turnin Smells like Kith Spirit##72879 |goto 56.80,54.00
+accept Incense Gratification##72880 |goto 56.80,54.00
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 56.59,54.30 |count 1
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 55.90,54.18 |count 2
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 55.85,53.07 |count 3
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 55.35,52.25 |count 4
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 54.44,50.86 |count 5
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 53.36,50.83 |count 6
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 52.74,50.18 |count 7
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 51.96,50.29 |count 8
+step
+click Niffen Incense
+Place the Incense |q 72880/1 |goto 51.54,49.54 |count 9
+step
+talk Elder Honeypelt##200054
+turnin Incense Gratification##72880 |goto 54.64,54.70
+step
+talk Sabellian##200081
+turnin Where There's Smoke, There's Fire##72966 |goto 41.02,41.75
+step
+talk Ebyssian##200080
+accept Sight Beyond Sight##72908 |goto 40.94,41.71
+step
+click Flamesight Totem##393951
+collect 1 Flamesight Rune##203385 |q 72908/1 |goto 40.54,43.15
+step
+click Flamesight Totem##393951
+collect 2 Flamesight Rune##203385 |q 72908/1 |goto 39.70,42.29
+step
+click Flamesight Totem##393951
+collect 3 Flamesight Rune##203385 |q 72908/1 |goto 37.20,41.95
+step
+kill High Seer Jhatal##199842
+collect 1 Greater Flamesight Rune##204694 |q 72908/2 |goto 35.47,42.15
+step
+click Greater Flamesight Totem
+|tip On top of the tower.
+Activate the Greater Flamesight Totem  |q 72908/3 |goto 35.50,42.13
+step
+talk Ebyssian##199852
+|tip On top of the tower.
+turnin Sight Beyond Sight##72908 |goto 35.48,41.84
+accept Legends of the Zaqali##72909 |goto 35.48,41.84
+step
+talk Sabellian##199851
+|tip On top of the tower.
+accept Know Thy Enemy##72910 |goto 35.40,41.87
+stickystart "Collect_Zaqali_Armaments"
+step
+click Smoldering Incense
+Inspect the Smoldering Incense |q 72909/1 |goto 33.28,40.91
+step
+click Thrumming Earthstone
+Inspect the Thrumming Earthstone |q 72909/2 |goto 32.94,42.04
+step
+click Cached Weaponry
+Inspect the Cached Weaponry |q 72909/3 |goto 31.85,41.46
+step
+click Battered Ebon Armament
+Inspect the Battered Ebon Armament |q 72909/4 |goto 32.22,40.21
+step
+click Prayer Tablet
+Inspect the Prayer Tablet |q 72909/5 |goto 32.31,39.47
+step
+label "Collect_Zaqali_Armaments"
+Kill Zaqali enemies around this area
+|tip Ebyssian will help you kill them.
+Collect #8# Zaqali Armaments |q 72910/1 |goto 31.94,41.35
+step
+Regroup with Sabellian |q 72909/6 |goto 30.39,41.56
+step
+Watch the dialogue
+talk Ebyssian##199948
+|tip Inside the cave.
+turnin Legends of the Zaqali##72909 |goto 30.18,41.02
+step
+talk Sabellian##199949
+|tip Inside the cave.
+turnin Know Thy Enemy##72910 |goto 30.26,40.95
+accept Take Out the Head##72911 |goto 30.26,40.95
+stickystart "Kill_Earthrender_Ku'siva"
+step
+kill Shrinekeeper Qanosh##199839 |q 72911/1 |goto 30.98,45.72
+step
+label "Kill_Earthrender_Ku'siva"
+kill Earthrender Ku'siva##199840 |q 72911/2 |goto 30.98,45.72
+step
+Investigate the Disturbance  |q 72911/3 |goto 30.98,45.72
+step
+talk Ebyssian##199863
+turnin Take Out the Head##72911 |goto 38.21,48.46
+accept Consequences##72912 |goto 38.21,48.46
+step
+talk Sabellian##199862
+Tell him _"Let me see your arm."_
+Watch the dialogue
+Inspect Sabellian's Injuries |q 72912/1 |goto 38.24,48.37
+step
+talk Ebyssian##199863
+turnin Consequences##72912 |goto 38.20,48.47
+accept Battlefield Triage##72913 |goto 38.20,48.47
+stickystart "Collect_5_Vacant_Elemental_Cores"
+step
+kill Zaqali Flamewalker##199826+
+collect 1 Zaqali Flame Totem##203654 |q 72913/2 |goto 35.46,48.68
+step
+label "Collect_5_Vacant_Elemental_Cores"
+Kill enemies around this area
+collect 5 Vacant Elemental Core##203653 |q 72913/1 |goto 35.46,48.68
+step
+_Next to you:_
+talk Ebyssian
+turnin Battlefield Triage##72913
+accept Rushing Quality##72914
+step
+Head to the Altar |q 72914/1 |goto 33.24,50.92
+step
+click Zaqali Flame Totem
+Place the Totem |q 72914/2 |goto 33.24,50.92
+step
+click Vacant Elemental Core
+Place the Elemental Core  |q 72914/3 |count 1 |goto 33.33,50.79
+step
+click Vacant Elemental Core
+Place the Elemental Core |q 72914/3 |count 2 |goto 33.36,50.95
+step
+click Vacant Elemental Core
+Place the Elemental Core |q 72914/3 |count 3 |goto 33.28,51.10
+step
+click Vacant Elemental Core
+Place the Elemental Core |q 72914/3 |count 4 |goto 33.15,51.10
+step
+click Vacant Elemental Core
+Place the Elemental Core |q 72914/3 |count 5 |goto 33.09,51.02
+step
+extraaction Assist Ebyssian##400855
+|tip Use the "Assist Ebyssian" button that appears on your screen.
+Take Your Place in the Ritual and Assist Ebyssian |q 72914/4 |goto 33.26,50.78
+step
+click Darkened Elemental Core
+collect 1 Darkened Elemental Core##203682 |q 72914/5 |goto 33.33,50.79
+step
+click Darkened Elemental Core
+collect 2 Darkened Elemental Core##203682 |q 72914/5 |goto 33.36,50.95
+step
+click Darkened Elemental Core
+collect 3 Darkened Elemental Core##203682 |q 72914/5 |goto 33.28,51.10
+step
+click Darkened Elemental Core
+collect 4 Darkened Elemental Core##203682 |q 72914/5 |goto 33.15,51.10
+step
+click Darkened Elemental Core
+collect 5 Darkened Elemental Core##203682 |q 72914/5 |goto 33.08,51.02
+step
+extraaction Toss Cores##400826
+|tip Use the "Toss Cores" button that appears on your screen.
+Throw the Darkened Cores Into the Lava |q 72914/6 |goto 33.20,50.98
+step
+talk Ebyssian##201581
+turnin Rushing Quality##72914 |goto 33.10,50.88
+accept Shut Them Down##72916 |goto 33.10,50.88
+step
+_Next to you:_
+talk Sabellian##199950
+accept Alliance of Convenience##72915
+stickystart "Kill_4_Zaqali_Guards"
+step
+click Extracted Elemental Core
+Destroy the Extracted Elemental Core |q 72916/2 |count 1 |goto 29.86,51.43
+step
+click Extracted Elemental Core
+Destroy the Extracted Elemental Core |q 72916/2 |count 2 |goto 29.67,50.52
+step
+click Extracted Elemental Core
+Destroy the Extracted Elemental Core |q 72916/2 |count 3 |goto 29.22,53.59
+step
+click Extracted Elemental Core
+Destroy the Extracted Elemental Core |q 72916/2 |count 4 |goto 29.91,54.28
+step
+click Earthdrainer Conduit
+Destroy the Earthdrainer Conduit |q 72916/1 |count 1 |goto 29.51,54.70
+step
+click Earthdrainer Conduit
+Destroy the Earthdrainer Conduit |q 72916/1 |count 2 |goto 29.38,54.56
+step
+click Earthdrainer Conduit
+Destroy the Earthdrainer Conduit |q 72916/1 |count 3 |goto 29.20,54.53
+step
+label "Kill_4_Zaqali_Guards"
+Kill Zaqali enemies around this area
+Slay #4# Zaqali Guards |q 72915/1 |goto 28.74,49.99
+step
+_Next to you:_
+talk Ebyssian
+turnin Shut Them Down##72916
+step
+_Next to you:_
+talk Sabellian##201647
+turnin Alliance of Convenience##72915
+accept A Scale for a Scale##74494
+step
+click Zaqali Dragonslayer's Spear
+collect 1 Zaqali Dragonslayer's Spear##204085 |q 74494/1 |goto 28.21,50.39
+step
+Head to the Overlook |q 74494/2 |goto 29.48,49.91
+step
+Watch the dialogue
+talk Sabellian##199952
+|tip He will run to this location.
+turnin A Scale for a Scale##74494 |goto 29.61,49.69
+accept From Hell's Heart##72917 |goto 29.61,49.69
+step
+Watch the dialogue
+talk Sabellian##199954
+Tell him _"I am ready."_
+Agree to Sabellian's Plan |q 72917/1 |goto 30.21,48.98
+step
+kill Erupting Shadowflame##199838 |q 72917/2 |goto 30.04,49.01
+step
+talk Ebyssian##199877
+turnin From Hell's Heart##72917 |goto 41.02,59.94
+accept No Dragon Left Behind##72918 |goto 41.02,59.94
+step
+clicknpc Ebyssian##199877
+Pull the Spear Out By Hand |q 72918/1 |goto 41.02,59.94
+step
+clicknpc Ebyssian##199877
+|tip Walk away from Ebyssian once you have clicked.
+Pull the Spear Out with More Leverage |q 72918/2 |goto 41.02,59.94
+step
+talk Sabellian##199876
+Tell him _"Do what you can."_
+Watch the dialogue
+Let Sabellian Help |q 72918/3 |goto 41.17,59.83
+step
+clicknpc Ebyssian##199877
+Remove the Heated Spear |q 72918/4 |goto 41.03,59.92
+step
+talk Sabellian##199876
+turnin No Dragon Left Behind##72918 |goto 41.17,59.83
+step
+talk Ebyssian##199877
+accept Raked Over the Coals##72919 |goto 41.02,59.91
+step
+Disperse the Shadowflame |q 72919/1 |count 1 |goto 42.86,58.95
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 2 |goto 44.34,56.72
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 3 |goto 45.30,56.61
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 4 |goto 46.56,54.92
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 5 |goto 46.58,53.00
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 6 |goto 48.03,53.65
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 7 |goto 49.42,54.39
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 8 |goto 50.35,53.06
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 9 |goto 52.01,51.66
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 10 |goto 52.82,49.93
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 11 |goto 53.45,51.63
+|tip Fly through it on your drake.
+step
+Disperse the Shadowflame |q 72919/1 |count 12 |goto 54.68,51.20
+|tip Fly through it on your drake.
+step
+Head Into Loamm |q 72919/2 |goto 55.78,53.60
+step
+talk Ebyssian##199958
+|tip He runs to this location.
+turnin Raked Over the Coals##72919 |goto 56.01,54.35
+accept The Endless Burning Sky##72920 |goto 56.01,54.35
+stickystart "Extinguish_Loamm"
+step
+talk Aquinan##204992
+Rescue #1# Loamm Villager |q 72920/2 |count 1 |goto 55.16,55.23
+step
+talk Cenka##204993
+Tell him _"You need to evacuate!"_
+Rescue #2# Loamm Villagers |q 72920/2 |count 2 |goto 54.21,56.47
+step
+talk Teek##204994
+Rescue #3# Loamm Villagers |q 72920/2 |count 3 |goto 55.76,57.68
+step
+talk Gloowaz Bonesmusher##204995
+Tell him _"I'll help you stand up."_
+Rescue #4# Loamm Villagers |q 72920/2 |count 4 |goto 57.71,56.43
+step
+talk Tale-Teller Talpi##204991
+Tell him _"You need to evacuate!"_
+Rescue #5# Loamm Villagers |q 72920/2 |goto 57.76,53.42
+step
+label "Extinguish_Loamm"
+extraaction Smothering Earth##401160
+|tip Use the "Smothering Earth" button that appears on your screen.
+Extinguish the Fires Around Loam |q 72920/1
+step
+talk Elder Honeypelt##201772
+|tip Inside the building.
+Tell her _"We need to get out of here."_
+Rescue Elder Honeypelt |q 72920/3 |goto 56.48,55.50
+step
+Watch the dialogue
+Clear the Fire from the Doorway |q 72920/4 |goto 56.29,55.45
+step
+talk Ebyssian##201784
+|tip He runs to this location.
+turnin The Endless Burning Sky##72920 |goto 56.06,54.55
+accept In the Wake of the Ashes##75145 |goto 56.06,54.55
+step
+talk Ebyssian##203151
+|tip At the top of the tower.
+Tell him _"I am ready."_
+Deliver the Report to Alexstrasza |q 75145/1 |goto Valdrakken/0 58.33,38.92
+step
+talk Ebyssian##203151
+|tip At the top of the tower.
+turnin In the Wake of the Ashes##75145 |goto 58.33,38.92
+step
+talk Ebyssian##203965
+|tip He walks to this location at the top of the tower.
+accept Here We Go Again##72987 |goto 61.94,41.17
+step
+talk Kalecgos##187676
+|tip At the top of the tower.
+Tell him _"I need a portal to Zaralek Cavern."_
+Ask Kalecgos for a Portal |q 72987/2 |goto 61.63,36.09
+step
+click Portal to Zaralek Cavern |goto 60.70,36.92
+|tip Kalecgos will catch you as you fall when you arrive.
+Travel to the Zaralek Caverns |goto Zaralek Cavern/0 48.72,40.05 < 100 |noway |c |q 72987
+step
+talk Ebyssian##200046
+Find Ebyssian |q 72987/1 |goto 49.91,27.54
+step
+talk Ebyssian##200046
+turnin Here We Go Again##72987 |goto 49.91,27.54
+accept The Obsidian Rest##75367 |goto 49.91,27.54
+step
+click Flight Master's Report
+collect 1 Flight Master's Report##204819 |q 75367/1 |goto 51.06,26.31
+step
+talk Keskos##200893
+fpath Obsidian Rest |goto 51.03,26.17
+step
+talk Tzashivak##201026
+Tell her _"We need any help we can get to stop the djaradin."_
+Request Help from Tzashivak |q 75367/2 |goto 51.36,25.60
+step
+click Enchanted Spying Glass
+Use the Spying Glass |q 75367/3 |goto 50.71,25.20
+step
+talk Ebyssian##200046
+turnin The Obsidian Rest##75367goto 49.92,27.54
+accept Report: Battlefield Ruins##74393 |goto 49.92,27.54
+step
+talk Field Commander Ignax##200051
+turnin Report: Battlefield Ruins##74393 |goto 46.69,29.63
+accept Blow It Up##74538 |goto 46.69,29.63
+accept Thinning Their Defenses##74539 |goto 46.69,29.63
+accept Intercepting Communications##74540 |goto 46.69,29.63
+stickystart "Kill_5_Zaqali_Flametongues"
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 43.86,34.21 |count 1
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.86,33.44 |count 2
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.11,33.78 |count 3
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.22,34.76 |count 4
+step
+kill 1 Warchanter Ronvath##200128 |q 74540/2 |goto 43.20,38.87
+step
+click Djaradin Warchest##398782
+collect 1 Invasion Plans: Dragon Nests##204074 |q 74540/1 |goto 42.97,38.95
+step
+label "Kill_5_Zaqali_Flametongues"
+kill 5 Zaqali Flametongue##200066 |q 74539/1 |goto 42.53,31.67
+step
+talk Field Commander Ignax##200051
+turnin Blow It Up##74538 |goto 46.69,29.62
+turnin Thinning Their Defenses##74539 |goto 46.69,29.62
+turnin Intercepting Communications##74540 |goto 46.69,29.62
+accept Air Superiority##74542 |goto 46.69,29.62
+step
+talk Ebyssian##202469
+Tell him _"Let's fly."_
+Fly with Ebyssian |q 74542/1 |goto 46.97,29.38
+step
+Defeat the Djaradin Forces |q 74542/2 |goto 46.97,29.38
+|tip Use the abilities on your action bar to accomplish this.
+step
+Reach the Ledge |q 74542/3 |goto 53.39,30.26
+step
+talk Ebyssian##202523
+|tip He walks to this location.
+turnin Air Superiority##74542 |goto 53.60,30.22
+|tip Keep the "Whelpling's Shadowflame Crest" rewarded from this quest for later.
+accept Investigating the Unknown##74557 |goto 53.60,30.22
+step
+clicknpc Zaqali Berserker##202529
+Inspect the Djaradin Corpse  |q 74557/1 |goto 53.63,30.16
+step
+clicknpc Drakonid Poacher##202549
+Inspect the Poacher Corpse |q 74557/2 |goto 53.44,29.84
+step
+clicknpc Slitherdrake##202550
+Make Contact with a Serpent Drake |q 74557/3 |goto 53.43,30.39
+step
+talk Ebyssian##202523
+turnin Investigating the Unknown##74557 |goto 53.59,30.21
+accept Break Them Out##74562 |goto 53.59,30.21
+accept Worst of the Worst##74563 |goto 53.59,30.21
+stickystart "Disrupt_The_Operation"
+step
+Enter the cave |goto 54.67,30.61 < 10 |walk
+kill 1 Overseer Xymra##200186 |q 74563/1 |goto 56.99,30.31
+|tip Inside the cave.
+step
+label "Disrupt_The_Operation"
+click Transportation Cart
+click Door
+kill Drakonid Poacher##200173
+|tip Inside the cave.
+Disrupt the Drakonid Poacher's Operation |q 74562/1 |goto 55.43,30.99
+step
+talk Ebyssian##202523
+turnin Break Them Out##74562 |goto 53.60,30.21
+turnin Worst of the Worst##74563 |goto 53.60,30.21
+step
+talk Ebyssian##202995
+accept Fading Embers##72922 |goto 53.42,30.24
+step
+talk Scalecommander Emberthal##203904
+Tell her _"I am ready to face him with you."_
+Speak to Emberthal |q 72922/1 |goto 45.91,26.34
+step
+Stop Sarkareth |q 72922/2 |goto 45.32,25.20
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin Fading Embers##72922 |goto Zaralek Cavern/0 45.98,26.24
+accept A Whisper to Sabellian##72923 |goto 45.98,26.24
+step
+talk Sabellian##199973
+Tell him _"Ebyssian would like to speak to you."_
+Speak to Sabellian |q 72923/1 |goto 46.74,29.57
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin A Whisper to Sabellian##72923 |goto 46.82,29.66
+accept Appealing to the Black Prince##72924 |goto 46.82,29.66
+step
+talk Wrathion##200101
+Tell him _"Ebyssian would like to speak to you."_
+Speak to Wrathion |q 72924/1 |goto 51.53,25.79
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin Appealing to the Black Prince##72924 |goto 51.47,25.76
+accept With Our Powers Combined##72925 |goto 51.47,25.76
+step
+Meet Emberthal By the Entrance to Brimstone Garrison |q 72925/1 |goto 47.18,27.90
+step
+talk Ebyssian##199965
+turnin With Our Powers Combined##72925 |goto 47.18,27.90
+accept Forward Camp##72931 |goto 47.18,27.90
+step
+Watch the dialogue
+talk Wrathion##200101
+accept In the Right Hands##72926 |goto 47.23,27.82
+step
+talk Sabellian##199973
+accept Wipe Them Out##72928 |goto 47.06,28.08
+stickystart "Defeat_Enemies_Around_Brimstone_Garrison"
+step
+click 'The Resting Blade'##385569
+|tip Inside the building.
+collect 'The Resting Blade'##204877 |q 72926/2 |goto 45.11,21.01
+step
+click Ebon Eviscerator
+collect Ebon Eviscerator##204184 |q 72926/1 |goto 45.11,18.45
+step
+label "Defeat_Enemies_Around_Brimstone_Garrison"
+Kill enemies around this area
+Defeat Enemies in Brimstone Garrison |q 72928/1 |goto 45.16,19.46
+step
+Meet Ebyssian at the Brimstone Garrison |q 72931/1 |goto 44.05,15.65
+|tip At the top of the tower.
+step
+talk Wrathion##200101
+|tip At the top of the tower.
+turnin In the Right Hands##72926 |goto 44.00,15.66
+step
+talk Sabellian##199973
+|tip At the top of the tower.
+turnin Wipe Them Out##72928 |goto 44.07,15.55
+step
+talk Ebyssian##199965
+|tip At the top of the tower.
+turnin Forward Camp##72931 |goto 44.05,15.65
+accept Finding Sarkareth##72927 |goto 44.04,15.63
+step
+Meet with Emberthal |q 72927/1 |goto 47.28,15.69
+step
+talk Scalecommander Emberthal##199964
+turnin Finding Sarkareth##72927 |goto 47.37,15.61
+accept Cracking His Shell##72929 |goto 47.37,15.61
+step
+click Aberrus Charge
+Destroy a Connection |q 72929/1 |count 1 |goto 47.54,16.32
+step
+click Aberrus Charge
+Destroy a Connection |q 72929/1 |count 2 |goto 49.24,16.62
+step
+talk Scalecommander Emberthal##199964
+turnin Cracking His Shell##72929 |goto 47.37,15.61
+accept Stopping Sarkareth##72930 |goto 47.37,15.61
+step
+kill Dreadful Defender##203842
+|tip Keep moving out of areas on targeted on the ground.
+Stop Sarkareth |q 72930/1 |goto 48.55,15.01
+step
+talk Scalecommander Emberthal##199964
+turnin Stopping Sarkareth##72930 |goto 47.87,14.90
+step
+talk Ebyssian##199965
+accept Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto 47.89,14.97
+step
+talk Rupert, the Gentleman Elemental##200291
+accept Healing Crystals##73037 |goto 40.10,68.42
+step
+talk Earthmender Narvra##200953
+accept Satiating Sharpbeak##75440 |goto 40.13,68.35
+step
+talk Veritistrasz##200298
+accept Medicinal Fungi##73036 |goto 40.19,68.32
+step
+click Sharpbeak's Feed
+collect 1 Sharpbeak's Feed##205217 |q 75440/1 |goto 40.14,68.19
+step
+talk Sharpbeak##200300
+Tell it _"Easy, easy. I'm here to help."_
+Get Sharpbeak to Accept Her Feed |q 75440/2 |goto 40.34,67.80
+step
+talk Sharpbeak##200300
+turnin Satiating Sharpbeak##75440 |goto 40.34,67.80
+stickystart "Collect_10_Viridian_Heartcrystals"
+step
+click Drooping Mushroom
+collect 1 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 39.87,71.63
+step
+click Drooping Mushroom
+collect 2 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 39.02,70.15
+step
+click Drooping Mushroom
+collect 3 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 37.87,68.69
+step
+click Drooping Mushroom
+collect 4 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 37.60,69.31
+step
+click Drooping Mushroom
+collect 5 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 36.83,69.29
+step
+click Drooping Mushroom
+collect 6 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 36.54,69.54
+step
+click Drooping Mushroom
+collect 7 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 36.82,70.03
+step
+click Drooping Mushroom
+collect 8 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 37.86,70.95
+step
+click Drooping Mushroom
+collect 9 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 36.92,70.88
+step
+click Drooping Mushroom
+collect 10 Drooping Mushroom Cutting##202873 |q 73036/1 |goto 37.07,72.05
+step
+label "Collect_10_Viridian_Heartcrystals"
+Kill Viridian enemies around this area
+collect 10 Viridian Heartcrystal##203012 |q 73037/1 |goto 38.77,72.89
+step
+talk Veritistrasz##200298
+turnin Medicinal Fungi##73036 |goto 40.19,68.32
+step
+talk Earthmender Narvra##200953
+turnin Healing Crystals##73037 |goto 40.13,68.35
+step
+talk Rupert, the Gentleman Elemental##200291
+accept Cavernous Capers##73046 |goto 40.10,68.40
+step
+talk Rupert, the Gentleman Elemental##200291
+Tell him _"I'm Ready to travel with you"_
+Speak with Rupert to Travel to the Buried Vault |q 73046/1 |goto 40.10,68.40
+step
+talk Rupert, the Gentleman Elemental##203176
+|tip He runs to this spot.
+turnin Cavernous Capers##73046 |goto 53.62,79.33
+accept Bringing Disorder to Order##73040 |goto 53.62,79.33
+step
+talk Voraxian##200290
+accept A Room Without a View##73038 |goto 53.67,79.52
+stickystart "Kill_6_Enraged_Watchers"
+step
+Enter the building |goto 52.64,81.98 < 10 |walk
+click Elementally Charged Orb
+collect 1 Elementally Charged Orb##203394 |q 73038/1 |goto 51.18,83.24
+step
+click Elementally Charged Orb
+collect 2 Elementally Charged Orb##203394 |q 73038/1 |goto 53.07,84.77
+step
+click Elementally Charged Orb
+collect 3 Elementally Charged Orb##203394 |q 73038/1 |goto 51.28,86.23
+step
+label "Kill_6_Enraged_Watchers"
+kill 6 Enraged Watcher##200407 |q 73040/1 |goto 53.20,80.58
+step
+talk Voraxian##200290
+turnin A Room Without a View##73038 |goto 53.68,79.51
+step
+talk Rupert, the Gentleman Elemental##203176
+turnin Bringing Disorder to Order##73040 |goto 53.62,79.33
+accept Terrestrial Tunneling##73047 |goto 53.62,79.33
+step
+talk Rupert, the Gentleman Elemental##203176
+Ask him _"Can you take me back to camp?"_
+Ask Rupert to Take You Back to the Dragonscale Camp |q 73047/1 |goto 53.62,79.33
+step
+Return to the Dragonscale Camp |q 73047/2 |goto 40.24,68.43
+step
+talk Rupert, the Gentleman Elemental##200291
+turnin Terrestrial Tunneling##73047 |goto 40.12,68.46
+step
+talk Earthmender Narvra##200953
+accept Respite##73041 |goto 40.16,68.34
+step
+click Peacebloom Tea
+click Roasted Kabab
+click Fruit Platter
+click Cheese Platter
+click Roasted Nuts
+|tip Choose whichever you prefer.
+Choose your meal |q 73041/1 |goto 40.17,68.39
+step
+talk Tellywin Sharpfizzle##200292
+Ask her _"What were the artifacts we recovered?"_
+Ask Tellywin About the Artifacts You Recovered |q 73041/3 |goto 40.14,68.35
+step
+talk Earthmender Narvra##200953
+turnin Respite##73041 |goto 40.16,68.34
+accept A Tower Yonder##73042 |goto 40.16,68.34
+step
+Investigate the Tower |q 73042/1 |goto 48.35,50.30
+step
+click Broken Weapon
+Investigate the Broken Weapon |q 73042/3 |goto 47.92,48.94
+step
+clicknpc Brimstone Lookout##202825
+Investigate the Corpse |q 73042/2 |goto 47.90,48.95
+step
+clicknpc Brimstone Lookout##202825
+Choose _"<Pick up the jerky.>"_
+collect Questionable Jerky##204342 |goto 47.90,48.95 |q 73042
+step
+click Cracked Jar
+Investigate the Cracked Jar |q 73042/4 |goto 47.64,48.71
+step
+click Weathered Book
+|tip On the ground in the corner.
+Choose _"<Pick up the book to bring to Narvra.>"_
+Investigate the Book |q 73042/5 |goto 47.67,48.89
+step
+click Note to Disposal Site
+|tip Under the rubble.
+collect Note to Disposal Site##204345 |goto 47.63,48.89 |q 73042
+step
+Watch the Dialogue
+talk Earthmender Narvra##200953
+|tip She walks to this location.
+turnin A Tower Yonder##73042 |goto 48.95,45.52
+accept Restless Death##73039 |goto 48.95,45.52
+step
+talk Veritistrasz##200298
+accept A Ghastly Legacy##73043 |goto 48.93,45.51
+step
+talk Voraxian##200290
+accept Cataloging Horror##73044 |goto 48.86,45.41
+stickystart "Kill_Researchers_and_Experiments"
+step
+use the Cataloging Camera##204698
+|tip Use the ability on your action bar to photograph where the Giant Yellow Arrows are pointing.
+|tip There should be 2 here.
+Take #2# Photographs of the Evidence |q 73044/1 |count 2 |goto 49.15,45.09
+step
+use the Cataloging Camera##204698
+|tip Use the ability on your action bar to photograph where the Giant Yellow Arrows are pointing.
+Photograph the Evidence |q 73044/1 |count 3 |goto 49.90,45.65
+step
+use the Cataloging Camera##204698
+|tip Use the ability on your action bar to photograph where the Giant Yellow Arrows are pointing.
+Photograph the Evidence |q 73044/1 |count 4 |goto 50.12,43.84
+step
+click Ritual Anchor Totem
+Place the First Ritual Anchor Totem |q 73039/1 |goto 50.42,44.00
+step
+use the Cataloging Camera##204698
+|tip Use the ability on your action bar to photograph where the Giant Yellow Arrows are pointing.
+Photograph the Evidence |q 73044/1 |count 5 |goto 51.12,43.64
+step
+use the Cataloging Camera##204698
+|tip Use the ability on your action bar to photograph where the Giant Yellow Arrows are pointing.
+Photograph the Evidence |q 73044/1 |count 6 |goto 49.63,42.81
+step
+click Ritual Anchor Totem
+Place the second Ritual Anchor Totem |q 73039/2 |goto 50.20,41.14
+step
+click Ritual Anchor Totem
+Place the third Ritual Anchor Totem |q 73039/3 |goto 49.99,38.49
+step
+click Ritual Anchor Totem
+Place the fourth Ritual Anchor Totem |q 73039/4 |goto 50.22,36.61
+step
+label "Kill_Researchers_and_Experiments"
+Kill enemies around this area
+Slay #15# Failed Experiments or Ghastly Researchers |q 73043/1 |goto 50.34,37.30
+step
+_Next to You:_
+talk Voraxian##203099
+turnin Cataloging Horror##73044 |goto 50.34,37.30
+step
+talk Veritistrasz##200298
+turnin A Ghastly Legacy##73043 |goto 48.35,32.86
+step
+talk Earthmender Narvra##200953
+turnin Restless Death##73039 |goto 48.31,32.79
+accept Stain Removal##73045 |goto 48.31,32.79
+step
+extraaction Cleansing Ritual##408146
+Start the Ritual |q 73045/1 |goto 48.42,32.87
+step
+Watch the Dialogue
+Complete the Ritual |q 73045/2 |goto 48.42,32.87
+step
+kill Lead Researcher Sytorian##203067 |q 73045/3 |goto 48.83,28.53
+step
+talk Earthmender Narvra##200953
+turnin Stain Removal##73045 |goto 48.31,32.79
+step
+click TICKET: Glimmerogg Games
+accept TICKET: Glimmerogg Games##73707 |goto 55.61,54.56
+step
+talk Myrrit##201426
+accept Best Friends##74877 |goto 55.62,57.45
+step
+talk Effervesta##202778
+Tell her _" Myrrit is wondering if you have time to go on a dig with him."_
+Talk to Effervesta |q 74877/1 |goto 54.61,54.94
+step
+talk Myrrit##201426
+Tell him _"Effervesta says she will meet with you at your 'spot.'"_
+Give Myrrit the Good News |q 74877/2 |goto 55.62,57.45
+step
+talk Marithos##203233
+accept Stress Fractures##73081 |goto 56.38,57.09
+|only if Dracthyr
+step
+talk Floressa##203293
+|tip Inside the building.
+buy 1 Squishy Snack##204791 |q 74877/3 |goto 56.42,55.84
+step
+Check on Myrrit at the "Secret Spot" |q 74877/4 |goto 52.27,62.87
+step
+Investigate the Captured Sundered Flame |q 73081/1 |goto 55.71,56.98
+|only if haveq(73081) or completedq(73081)
+step
+talk Belligerent Dracthyr##202967
+Tell her _"You can't treat a prisoner like this."_
+Belligerent Dracthyr questioned |q 73081/2 |goto 55.71,56.98
+|only if haveq(73081) or completedq(73081)
+step
+kill Belligerent Dracthyr##200877
+Deter the Belligerent Dracthyr |q 73081/3 |goto 55.71,57.39
+|only if haveq(73081) or completedq(73081)
+step
+talk Captured Messenger##200876
+turnin Stress Fractures##73081 |goto 55.76,57.04 |only if haveq(73081) or completedq(73081)
+accept Cold Feet##73085 |goto 55.76,57.04 |only if haveq(73085) or completedq(73085)
+|only if haveq(73081,73085) or completedq(73081,73085)
+step
+click Bag of Sundered Flame Contraband
+Examine the Bag of Sundered Flame Contraband |q 73085/1 |goto 55.74,57.04
+|only if haveq(73085) or completedq(73085)
+step
+click Tarnished Box
+Examine the Tarnished Box |q 73085/4 |goto 55.65,57.15
+|only if haveq(73085) or completedq(73085)
+step
+click Stolen Tome
+Examine the Stolen Tome |q 73085/3 |goto 55.68,57.18
+|only if haveq(73085) or completedq(73085)
+step
+click Sundered Flame Missive
+Examine the Sundered Flame Missive |q 73085/2 |goto 55.71,57.19
+|only if haveq(73085) or completedq(73085)
+step
+talk Myrrit##202766
+turnin Best Friends##74877 |goto 52.17,62.80
+step
+talk Marithos##203233
+turnin Cold Feet##73085 |goto 56.38,57.09
+|only if haveq(73081) or completedq(73081)
+step
+talk Patroclosa##200550
+accept This Might Sting##73077 |goto 59.39,63.73
+|only if Dracthyr
+stickystart "Collect-Quartzite_Spore_Bile"
+step
+click Spongy Loamshroom+
+|tip They look like large brown mushrooms on the ground around this area.
+collect 8 Spongy Loamshroom##203393 |q 73077/2 |goto 58.85,65.26
+|only if haveq(73077) or completedq(73077)
+step
+label "Collect-Quartzite_Spore_Bile"
+kill Quartzite Sporebat##201306+
+collect 6 Quartzite Spore Bile##204088 |q 73077/1 |goto 58.52,64.86
+|only if haveq(73077) or completedq(73077)
+step
+clicknpc Sundered Flame Scout##200870
+Apply the Antivenom |q 73077/3 |goto 59.36,63.73
+|only if haveq(73077) or completedq(73077)
+step
+talk Patroclosa##200550
+turnin This Might Sting##73077 |goto 59.39,63.78
+|only if haveq(73077) or completedq(73077)
+step
+talk Yarren##202597
+accept Mouse Detective##74857 |goto 51.05,74.14
+step
+Follow the Tracks |q 74857/1 |goto 50.40,76.37
+step
+talk Agrul##202600
+Choose  _"<Ask Agrul if he's seen the mouse.>"_
+Speak to Agrul |q 74857/2 |goto 50.40,76.37
+step
+talk Agrul##202600
+turnin Mouse Detective##74857 |goto 50.40,76.37
+accept Agrulculture##74858 |goto 50.40,76.37
+step
+_Next to you:_
+talk Agrul##202600
+accept Sporemoth Exterminator##74859
+stickystart "Kill_10_Sporemoths"
+step
+click Glow Spores+
+|tip Look for clouds of smelly dirt around this area.
+|tip They look like pillars of yellow smoke.
+|tip They appear on your minimap as yellow dots.
+|tip Viper enemies may spawn at random instead of a Glow Spore spawning.
+Watch the dialogue
+collect 6 Glow Spores##204377 |q 74858/1 |goto 51.43,76.75
+step
+label "Kill_10_Sporemoths"
+Kill Sporemoth enemies around this area
+Slay #10# Sporemoths |q 74859/1 |goto 50.23,76.76
+step
+talk Agrul##202600
+turnin Agrulculture##74858 |goto 50.40,76.37
+turnin Sporemoth Exterminator##74859 |goto 50.40,76.37
+accept A Friendly Introduction##74860 |goto 50.40,76.37
+step
+click Empty Storage Crate
+Deliver the Harvest  |q 74860/1 |goto 50.96,74.18
+step
+talk Yarren##202597
+Choose _"<Introduce Agrul.>"_
+Watch the Dialogue
+Introduce Agrul to Yarren |q 74860/2 |goto 51.05,74.14
+step
+talk Yarren##202597
+turnin A Friendly Introduction##74860 |goto 51.05,74.14
+accept An Unfriendly Confrontation##74861 |goto 51.05,74.14
+step
+Find Agrul |q 74861/1 |goto 46.97,79.03
+step
+talk Agrul##202600
+turnin An Unfriendly Confrontation##74861 |goto 46.89,79.58
+accept Mouse Rescuers##75462 |goto 46.89,79.58
+step
+Enter the cave |goto 46.66,79.72 < 10 |walk
+kill Malrogg##202606 |q 75462/1 |goto 46.38,80.56
+|tip Inside the cave.
+step
+Watch the Dialogue
+Find Persii |q 75462/2 |goto 46.95,79.57
+step
+Watch the Dialogue
+Follow Agrul |q 75462/3 |goto 51.04,73.95
+step
+talk Yarren##202597
+turnin Mouse Rescuers##75462 |goto 51.05,74.14
+step
+talk Brogg the Beast##201098
+turnin TICKET: Glimmerogg Games##73707 |goto 43.79,82.98
+accept Pay to Play##73708 |goto 43.79,82.98
+accept Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Festival Challenger##202571
+Tell him _"You're a party crasher!"_
+Find #6# Intruders |q 73709/1 |goto 44.27,82.29
+step
+kill Echoed Lurker##202636+
+collect 4 Echoed Lurker Flesh##204803 |q 73708/1 |goto 44.20,84.66
+step
+talk Gudegg##203378
+accept Flesh to Bone##75233 |goto 43.21,84.09
+step
+click Glimmer Mushroom##388520
+collect 1 Glimmer Mushroom##205169 |q 73708/2 |goto 38.12,78.45
+step
+click Glimmer Mushroom##388520
+collect 2 Glimmer Mushroom##205169 |q 73708/2 |goto 37.93,77.49
+step
+click Glimmer Mushroom##388520
+collect 3 Glimmer Mushroom##205169 |q 73708/2 |goto 37.63,76.63
+step
+click Glimmer Mushroom##388520
+collect 4 Glimmer Mushroom##205169 |q 73708/2 |goto 38.28,76.66
+step
+talk Brogg the Beast##201098
+turnin Pay to Play##73708 |goto 43.79,82.98
+turnin Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Storul Heavystone##201100
+accept Rock By Rock##73710 |goto 44.97,83.29
+step
+click Starter Rock Bar
+Lift the Weight Bars |q 73710/1 |count 1 |goto 45.13,83.35
+step
+click Mid-Weight Rock Bar
+Lift the Weight Bars |q 73710/1 |count 2 |goto 45.08,83.24
+step
+click Heavy Rock Bar
+Lift the Weight Bars |q 73710/1 |count 3 |goto 44.99,83.10
+step
+talk Storul Heavystone##201100
+turnin Rock By Rock##73710 |goto 44.98,83.31
+accept Marked Champion##73711 |goto 44.98,83.30
+step
+Enter the cave |goto 45.40,86.85 < 10 |walk
+kill Carcaxas##202836 |q 73711/1 |goto 45.59,87.62
+|tip Inside the cave.
+step
+talk Storul Heavystone##201100
+turnin Marked Champion##73711 |goto 44.98,83.29
+step
+talk Briggul##201752
+accept Come Snail Away##74787 |goto 44.25,79.93
+step
+clicknpc Big Slick in the City##202731
+Meet Slick |q 74787/1 |goto 44.17,79.98
+step
+talk Briggul##201752
+turnin Come Snail Away##74787 |goto 44.26,79.93
+step
+kill Scalecommander Sarkareth |q 75694/1 |goto Aberrus, the Shadowed Crucible/4 48.97,71.21
+step
+talk Ebyssian##199965
+turnin Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto Zaralek Cavern/0 47.89,14.97
+]])

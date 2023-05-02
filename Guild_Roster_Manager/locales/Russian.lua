@@ -533,7 +533,6 @@ GRML.Russian = function()
     GRM_L["Alliance"] = "Альянс"
     GRM_L["Creation Date"] = "Дата создания"
     GRM_L["Members"] = "Участников"
-    GRM_L["Backup {num}:"] = "Бэкап {num}:"           -- As in, the number of backups... so "Backup 1:"
     GRM_L["None"] = "None"
     GRM_L["Restore"] = "Восстановить"
     GRM_L["Set Backup"] = "Создать бэкап"
@@ -541,9 +540,6 @@ GRML.Russian = function()
 
     -- Update 1.137
     GRM_L["GRM: Unable to Create Backup for a Guild With Unknown Creation Date! Log into that guild on any alt to update old database."] = "ГРМ: невозможно создать резервную копию гильдии с неизвестной датой создания! Войдите в эту гильдию с любого твинка, чтобы обновить старую базу данных."
-    GRM_L["Enable Auto-Backup Once Every"] = "Включить автобекап каждые"
-    GRM_L["Auto {num}:"] = "Авто {num}:"
-    GRM_L["Please Choose a Time Interval Between 1 and 99 Days!"] = "Пожалуйста, выберите временной интервал от 1 до 99 дней!"
     GRM_L["Really restore {name} Backup Point?"] = "Вы действительно хотите восстановить бэкап игрока {name}?" 
     GRM_L["Check All"] = "Выбрать все"
 
@@ -801,7 +797,6 @@ GRML.Russian = function()
     GRM_L["{name}'s Ban has been Updated by {name2}!"] = "Бан пользователя {name} был обновлен {name2}!"
     GRM_L["{name} has Updated {name2}'s BAN and also BANNED all linked alts from the guild!"] = "{name} обновил бан {name2}, а также забанил всех связанных твинков из гильдии!"
     GRM_L["One moment, GRM is still being configured."] = "Минутку, ГРМ все еще настраивается."
-    GRM_L["Press ENTER to complete"] = "Нажмите ENTER для завершения"
     GRM_L["Player Was Banned By: {name}"] = "Персонаж был забанен игроком: {name}"
     GRM_L["|cffff0000WARNING!!!|r {num} BANNED players are currently in the guild."] = "|cffff0000ВНИМАНИЕ!!!|r {num} забаненные игроки в настоящее время состоят в гильдии."     -- plural
     GRM_L["|cffff0000WARNING!!!|r {num} BANNED player is currently in the guild."] = "|cffff0000ВНИМАНИЕ!!!|r {num} забаненный игрок в настоящее время состоит в гильдии."        -- Singular  -- please keep the color coding... this keeps the Warning in red
@@ -1139,13 +1134,7 @@ GRML.Russian = function()
     GRM_L["Macro Tool:"] = "Инструмент макроса:"
     GRM_L["Export Tool:"] = "Инструмент экспорта:"
     GRM_L["Audit Join Date Tool:"] = "Инструмент проверки даты регистрации:"
-    GRM_L["GRM UI Scale"] = "ГРМ UI Масштаб"
     GRM_L["Right-Click to Reset"] = "Щелкните правой кнопкой мыши для сброса"
-    GRM_L["Open the Mouseover Window to see immediate scaling changes"] = "Откройте окно наведения мыши, чтобы увидеть немедленные изменения масштабирования"
-    GRM_L["Open the Macro Tool Window to see immediate scaling changes"] = "Откройте окно инструментов макроса, чтобы увидеть немедленные изменения масштабирования."
-    GRM_L["The Export Tool is connected to the Core window scaling"] = "Инструмент экспорта связан с масштабированием основного окна"
-    GRM_L["This provides additional scaling controls on just this window"] = "Это обеспечивает дополнительные элементы управления масштабированием только в этом окне."
-    GRM_L["Open the Export Tool Window to see immediate scaling changes"] = "Откройте окно инструмента экспорта, чтобы увидеть немедленные изменения масштабирования."
     GRM_L["WARNING: Clear the text box before re-scaling or you may lock up your system"] = "ВНИМАНИЕ: очистите текстовое поле перед изменением масштаба, иначе вы можете заблокировать систему."
     GRM_L["Resets ALL settings, not just the ones on this page"] = "Сбрасывает ВСЕ настройки, а не только те, что на этой странице"
     GRM_L["Open MouseOver"] = "Открыть MouseOver"
@@ -1467,8 +1456,6 @@ GRML.Russian = function()
     GRM_L["Unable to notify yourself if you go offline."] = true
     GRM_L["{custom1} to sync join date among all alts in grouping."] = true
     GRM_L["Total Patch Time:"] = true
-    GRM_L["Applying {num} patches."] = true
-    GRM_L["Applying 1 patch."] = true
     GRM_L["Do you really want to import the join date for the selected player?"] = true
     GRM_L["Do you really want to import the join date for the {num} selected players?"] = true
     GRM_L["Do you really want to import the join date for 1 player?"] = true
@@ -1609,6 +1596,48 @@ GRML.Russian = function()
     GRM_L["Sync has begun after waiting in queue for {num} seconds"] = true
     GRM_L["Not Determined"] = true  -- Ban List
 
+    --R1.97
+    GRM_L["You are added to the sync queue. Position: {num}"] = true
+    GRM_L["Sync Queue Position Update: {num}"] = true
+    GRM_L["Data has been transferred from the old Guild \"{name}\""] = true
+    GRM_L["Restore Date:"] = true
+    GRM_L["Guild Name"] = true
+    GRM_L["Sync with {name} complete."] = true
+    GRM_L["Transfer Data"] = true
+    GRM_L["Please confirm that \"{name}\" has transferred. Clicking YES will import all guild data."] = true
+    GRM_L["Set Restore Point"] = true
+    GRM_L["Guild Transfer Tool"] = true
+    GRM_L["Transfer Tool Guide"] = true
+    GRM_L["Step-by-Step guide on how to use transfer tool"] = true
+    GRM_L["Step {num}:"] = true  -- Step 1: , Step 2: etc...
+    GRM_L["Click \"Set Restore Point\" to the guild you are currently in (remove the old if necessary)."] = true
+    GRM_L["Initiate the guild transfer process."] = true
+    GRM_L["Log into the new guild on the new server."] = true
+    GRM_L["Open the Restore Tab again and click \"Transfer Data\" from your old guild. Confirm YES."] = true
+    GRM_L["If you are satisfied with the transfer, remove the restore point to lower memory use next session."] = true
+    GRM_L["Ensure that the new guild rank structure is identical to the previous (name changes are fine)."] = true
+    GRM_L["Transferred from old server"] = true
+    GRM_L["{name} has transferred servers and REJOINED the Guild."] = true
+    GRM_L["Group Info Module is Outdated."] = true
+    
+    -- R1.972
+    GRM_L["Show Player Level"] = true
+    GRM_L["Show Mythic+ Rating"] = true
+    GRM_L["M+ Rating:" ] = true
+    GRM_L["Do Not Show if at Max Level {num}"] = true
+    GRM_L["Not on Server"] = true
+    GRM_L["Mythic+ rating will only appear on members at max level {num}."] = true
+    
+    -- R1.973
+    GRM_L["You are currently syncing. Please wait until sync completes to transfer the guild data."] = true
+    GRM_L["Mythic+ Score"] = true
+    GRM_L["Show Member Faction"] = true
+    GRM_L["Faction"] = true
+    GRM_L["Alts:"] = true
+
+    -- R1.975
+    GRM_L["Export a full list of names in the queue."] = true
+    
 end
     
     -- Anazing work Максим#0406 on Discord - Incredible work, really!

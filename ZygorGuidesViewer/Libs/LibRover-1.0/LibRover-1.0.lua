@@ -3021,7 +3021,7 @@ do
 				if debugged_pair then print("|cffeeddaaLibRover DebugNodes:|r DEBUGGED PAIR:",(current.type=="start" and "start" or current.num),(neigh.type=="end" and "end" or neigh.num)) end
 
 				local mode=neighlink.mode
-				local neighlink__ts = tempstore[neighlink]
+				local neighlink__ts = Lib.opti_neighcond and tempstore[neighlink]
 
 
 				
@@ -3131,6 +3131,11 @@ do
 					elseif (mode=="walk" or mode=="fly") and current.parentlink and current.parentlink.mode=="taxi" and current:IsTaxiKnown()==false then -- walking from an unknown taxi, means we have LANDED on it. Penalize!
 						mytime=COST_FAILURE+1
 						if cost_debugging then costdesc = costdesc .. "no arrival at unknown taxi; " end
+
+					-- don't touch taxihidden nodes unless you're on a taxi.
+					elseif mode~="taxi" and neigh.taxihidden then
+						mytime=COST_FAILURE+1
+						if cost_debugging then costdesc = costdesc .. "no start from hidden taxi; " end
 
 					else -- walk/fly
 

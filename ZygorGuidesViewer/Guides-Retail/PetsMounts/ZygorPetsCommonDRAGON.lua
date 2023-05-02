@@ -1118,7 +1118,7 @@ earn 150 Dragon Isles Supplies##2003 |or
 step
 talk Lorena Belle##188625
 Tell her _"May I see your wares?"_
-buy Obsidian Proto-Whelp##200930 |goto The Azure Span/0 25.16,55.80 |or
+buy Obsidian Proto-Whelp##200930 |goto The Waking Shores/0 25.16,55.80 |or
 '|complete haspet(3414) |or
 step
 use the Obsidian Proto-Whelp##200930
@@ -2190,10 +2190,12 @@ talk Vazallia##192662
 |tip She will eventually land in this sheltered cove, and transform into her human form.
 Ask her _"What are you doing here?"_
 Watch the dialogue
-accept A Dragon's Day Off##65875 |goto The Waking Shores/0 20.14,39.54
+accept A Dragon's Day Off##65875 |goto The Waking Shores/0 20.14,39.54 |or
 |tip This quest does not have a marker until you have accepted it.
+'|complete haspet(3342) |or
 step
-Reach Level 70 |ding 70
+Reach Level 70 |ding 70 |or
+'|complete haspet(3342) |or
 step
 Complete "The Shadow of His Wings" Quest |complete completedq(65691) or haspet(3342) |or
 |tip Use the Full Zone leveling guide for The Waking Shores to accomplish this.
@@ -2240,42 +2242,51 @@ Gain the "Worldbreaker Membership" Buff |havebuff spell:386848 |or
 step
 talk Dealer Vexil##193310
 |tip Inside the cave.
-buy Flameslinger Rum##197738 |q 65875/1 |goto The Waking Shores/0 34.74,46.73
+buy Flameslinger Rum##197738 |q 65875/1 |goto The Waking Shores/0 34.74,46.73 |or
 |tip Do not use the Flameslinger Rum, as Dealer Vexil may not allow you to buy another one for the quest.
+'|complete haspet(3342) |or
 step
 click Popfizz Punch##378820
 |tip It looks like a small bottle on the deck of the partially submerged sunken ship.
-collect Popfizz Punch##197737 |q 65875/3 |goto 39.29,38.33
+collect Popfizz Punch##197737 |q 65875/3 |goto 39.29,38.33 |or
+'|complete haspet(3342) |or
 step
 click Slam Bam Swill##379297
 |tip It looks like a small bottle on the top platform of the treehouse that is on top of the mountain.
-collect Slam Bam Swill##198045 |q 65875/5 |goto 46.92,30.71
+collect Slam Bam Swill##198045 |q 65875/5 |goto 46.92,30.71 |or
+'|complete haspet(3342) |or
 step
 clicknpc Rampaging Wind##187494
 use Kul Tiran Red##198047 |n
 |tip Target the Rampaging Wind and click the Kul Tiran Red to throw it.
-collect Whirlwind Wine##198044 |q 65875/6 |goto 76.35,46.54
+collect Whirlwind Wine##198044 |q 65875/6 |goto 76.35,46.54 |or
 You can find more at: [74.16,44.05]
+'|complete haspet(3342) |or
 step
 talk Kora Fullsails##186454
 |tip She is a Kul Tiran lady standing near Firstmate Kaleson at The Obsidian Bulwark.
-buy Kul Tiran Red##198047 |goto 43.13,67.36
+buy Kul Tiran Red##198047 |goto 43.13,67.36 |or
+'|complete haspet(3342) |or
 step
 talk Firstmate Kaleson##186752
 |tip He walks around this area at The Obsidian Bulwark.
-buy Happy Trigger Sour##197739 |q 65875/4 |goto 43.12,67.41
+buy Happy Trigger Sour##197739 |q 65875/4 |goto 43.12,67.41 |or
+'|complete haspet(3342) |or
 step
 talk Outfitter Tipech##188349
 |tip He is on Wrathion's side of the Obsidian Throne platform.
-buy Stealthy Elven Port##198043 |q 65875/7 |goto 25.70,55.18
+buy Stealthy Elven Port##198043 |q 65875/7 |goto 25.70,55.18 |or
+'|complete haspet(3342) |or
 step
 click Riptide Brew##378054
 |tip It looks like a cask inside the cave.
 |tip You may have to kill Lago the Drowned inside the cave.
-collect Riptide Brew##195543 |q 65875/2 |goto 20.14,39.54
+collect Riptide Brew##195543 |q 65875/2 |goto 62.95,79.72 |or
+'|complete haspet(3342) |or
 step
 talk Vazallia##192662
-turnin A Dragon's Day Off##65875 |goto 20.14,39.55
+turnin A Dragon's Day Off##65875 |goto 20.14,39.55 |or
+'|complete haspet(3342) |or
 step
 use Spyragos##198622
 Learn the "Spyragos" Battle Pet |learnpet Spyragos##3342

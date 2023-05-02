@@ -44,6 +44,8 @@ data.taxipoints = {
 		{name="Pinewood Post",faction="B",npc="Nakeena",npcid=191622,x=80.44,y=57.89},
 		--{name="Rusza'thar Reach",taxinodeID=2839,faction="B",npc="Ancient Waygate",npcid="aw",x=81.31,y=38.98,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71138) or c.completedq(71138)) and not c.hasbuff("spell:392960") end},
 		--{name="Shady Sanctuary",taxinodeID=2840,faction="B",npc="Ancient Waygate",npcid="aw",x=30.66,y=55.48,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71178) or c.completedq(71178)) and not c.hasbuff("spell:392960") end},
+		{name = "Cascades Canyon, Ohn'ahran Plains", taxinodeID = 2866,taxihidden=true, faction="B", x=88.75, y=27.66}, -- zaralek cavern crossmap point
+		{name = "Old Loamm Road, Ohn'ahran Plains", taxinodeID = 2874,taxihidden=true, faction="B", x=36.02, y=59.11}, -- zaralek cavern crossmap point
 	},
 
 	['The Azure Span']={
@@ -59,6 +61,7 @@ data.taxipoints = {
 		{name="Theron's Watch",faction="B",npc="Taelmyr Blazewing",npcid=186742,x=65.37,y=16.39},
 		--{name="Cobalt Assembly",taxinodeID=2838,faction="B",npc="Ancient Waygate",npcid="aw",x=48.33,y=30.13,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(70156) or c.completedq(70156)) and not c.hasbuff("spell:392960") end},
 		--{name="Vakthros",taxinodeID=2837,faction="B",npc="Ancient Waygate",npcid="aw",x=77.59,y=30.79,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71161) or c.completedq(71161)) and not c.hasbuff("spell:392960") end},
+		{name = "Lookout Breach, Azure Span", taxinodeID=2877, taxihidden=true, faction="B", x=18.75, y=22.87}, -- zaralek cavern crossmap point
 	},
 
 	['Thaldraszus']={
@@ -85,6 +88,18 @@ data.taxipoints = {
 
 		-- NEUTRAL --
 		{name="Morqut Village",faction="B",npc="Renpiaq",npcid=200561,x=33.62,y=54.86},
+	},
+
+	['Zaralek Cavern']={
+
+		-- NEUTRAL --
+		{name="Obsidian Rest",faction="B",npc="Keskos",npcid=200893,x=51.03,y=26.17},
+		{name="Loamm",faction="B",npc="Avogadro",npcid=202467,x=56.60,y=52.72},
+		{name="Dragonscale Camp",faction="B",npc="Sharpbeak",npcid=200300,x=40.34,y=67.80},
+
+		{name = "The Throughway, Zaralek Cavern", taxinodeID = 2867,taxihidden=true, faction="B", x=73.80, y=49.33}, -- zaralek cavern crossmap point
+		{name = "Old Loamm Road, Zaralek Cavern", taxinodeID = 2875,taxihidden=true, faction="B", x=34.50, y=79.60}, -- zaralek cavern crossmap point
+		{name = "Lookout Breach, Zaralek Cavern", taxinodeID = 2876,taxihidden=true, faction="B", x=35.80, y=89.80}, -- zaralek cavern crossmap point
 	},
 },
 
@@ -9562,6 +9577,7 @@ data.flightcost = {
 				[2792] = 0, -- Maruukai
 				[2793] = 0, -- Forkriver Crossing
 				[2794] = 0, -- Teerakai
+				[2877] = 0, -- Lookout Breach
 			},
 		},
 		{
@@ -9617,6 +9633,7 @@ data.flightcost = {
 				[2795] = 0, -- Broadhoof Outpost
 				[2796] = 21, -- Shady Sanctuary
 				[2825] = 34, -- Ohn'iri Springs
+				[2874] = 0, -- Old Loamm Road
 			},
 		},
 		{
@@ -9798,6 +9815,7 @@ data.flightcost = {
 				[2811] = 0, -- Gelikyr Post
 				[2813] = 45, -- Algeth'era
 				[2815] = 30, -- Garden Shrine
+				[2866] = 0, -- Cascades Canyon
 			},
 		},
 		{
@@ -9962,6 +9980,93 @@ data.flightcost = {
 			neighbors = {
 				[2805] = 0, -- Wingrest Embassy
 				[2814] = 0, -- Veiled Ossuary
+			},
+		},
+		{
+			tag = "555:547",
+			nodeID = 2863,
+			name = "Loamm",
+			neighbors = {
+				[2864] = 0, -- Obsidian Rest
+				[2865] = 0, -- Dragonscale Camp
+				[2867] = 0, -- The Throughway
+			},
+		},
+		{
+			tag = "511:261",
+			nodeID = 2864,
+			name = "Obsidian Rest",
+			neighbors = {
+				[2863] = 0, -- Loamm
+				[2865] = 0, -- Dragonscale Camp
+			},
+		},
+		{
+			tag = "403:678",
+			nodeID = 2865,
+			name = "Dragonscale Camp",
+			neighbors = {
+				[2863] = 0, -- Loamm
+				[2864] = 0, -- Obsidian Rest
+				[2867] = 0, -- The Throughway
+				[2875] = 0, -- Old Loamm Road
+				[2876] = 0, -- Lookout Breach
+			},
+		},
+		{
+			tag = "521:500",
+			nodeID = 2866,
+			name = "Cascades Canyon",
+			neighbors = {
+				[2810] = 0, -- Valdrakken
+				[2867] = 5, -- The Throughway
+			},
+		},
+		{
+			tag = "731:495",
+			nodeID = 2867,
+			name = "The Throughway",
+			neighbors = {
+				[2863] = 0, -- Loamm
+				[2865] = 0, -- Dragonscale Camp
+				[2866] = 5, -- Cascades Canyon
+			},
+		},
+		{
+			tag = "361:590",
+			nodeID = 2874,
+			name = "Old Loamm Road",
+			neighbors = {
+				[2794] = 0, -- Teerakai
+				[2796] = 0, -- Shady Sanctuary : added by hand
+				[2875] = 5, -- Old Loamm Road
+			},
+		},
+		{
+			tag = "348:800",
+			nodeID = 2875,
+			name = "Old Loamm Road",
+			neighbors = {
+				[2865] = 0, -- Dragonscale Camp
+				[2874] = 5, -- Old Loamm Road
+			},
+		},
+		{
+			tag = "359:907",
+			nodeID = 2876,
+			name = "Lookout Breach",
+			neighbors = {
+				[2865] = 0, -- Dragonscale Camp
+				[2877] = 5, -- Lookout Breach
+			},
+		},
+		{
+			tag = "388:649",
+			nodeID = 2877,
+			name = "Lookout Breach",
+			neighbors = {
+				[2789] = 0, -- Three-Falls Lookout
+				[2876] = 5, -- Lookout Breach
 			},
 		},
 	},

@@ -18,5 +18,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach")
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Collections\\Appearances\\(Ruth)less is More")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests")
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Zaralek Cavern")

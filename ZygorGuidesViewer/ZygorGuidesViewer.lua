@@ -15,7 +15,7 @@ local addonName,ZygorGuidesViewer = ...
 LibStub("AceAddon-3.0"):NewAddon(ZygorGuidesViewer,addonName, "AceConsole-3.0","AceEvent-3.0","AceTimer-3.0","AceHook-3.0")
 
 local ZGV=ZygorGuidesViewer
-ZGV.StandAlone = GetAddOnMetadata(addonName,"X-Standalone")
+ZGV.StandAlone = ZGV.Retrofit.C_AddOns.GetAddOnMetadata(addonName,"X-Standalone")
 
 --global exports
 _G['ZygorGuidesViewer']=ZygorGuidesViewer

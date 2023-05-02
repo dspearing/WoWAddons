@@ -1575,14 +1575,11 @@ description="\nThis mount is a very rare drop from Sha of Anger in Kun-Lai Summi
 step
 kill Sha of Anger##60491
 |tip It has about a 10-20 minute respawn timer.
-collect Reins of the Heavenly Onyx Cloud Serpent##87771 |goto Kun-Lai Summit/0 53.77,64.62 |complete hasmount(127158)
+collect Reins of the Heavenly Onyx Cloud Serpent##87771 |goto Kun-Lai Summit/0 54.47,63.22 |complete hasmount(127158)
 |tip This has an extremely low drop rate.
 step
 use the Reins of the Heavenly Onyx Cloud Serpent##87771
 Learn the "Heavenly Onyx Cloud Serpent" Mount |learnmount Heavenly Onyx Cloud Serpent##127158
-step
-_Congratulations!_
-You Collected the "Heavenly Onyx Cloud Serpent" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Thundering Onyx Cloud Serpent",{
 keywords={"thundering","onyx","cloud","serpent","huolon","flying","mount"},
@@ -1724,50 +1721,58 @@ mounttype='Flying',
 description="\nThis mount is crafted with the Engineering profession or purchased from the Auction House.",
 },[[
 step
-Reach 75 Pandaria Engineering |skill Pandaria Engineering,75
+Reach 75 Pandaria Engineering |skill Pandaria Engineering,75 |or
 |tip Use the "Pandaria Engineering 1-75" profession guide to accomplish this.
+Click Here to Open the "Pandaria Engineering 1-75" |confirm |loadguide "Profession Guides\\Engineering\\Leveling Guides\\Pandaria Engineering 1-75"
 |tip If you don't want to gather the materials to craft it you can buy it from the Auction House.
+'|complete hasmount(126507) |or
 step
-talk Sally Fizzlefury##55143
-learn Depleted-Kyparium Rocket##127138 |goto Valley of the Four Winds/0 16.05,83.14
+talk Didi the Wrench##93520
+|tip Inside the building.
+learn Depleted-Kyparium Rocket##127138 |goto Dalaran L/10 38.80,24.76 |or
+'|complete hasmount(126507) |or
 step
-collect 12 Living Steel##72104 |complete hasmount(126507)
+collect 12 Living Steel##72104 |or
 |tip These are crafted with Trillium Bars and Spirits of Harmony, if you have Alchemy.
 |tip Use the "Trillium" and "Spirit of Harmony" profession guides to gather these, if you have Mining.
 |tip You can also buy them from the Auction House.
+'|complete hasmount(126507) |or
 step
-collect 200 Kyparite##72093 |complete hasmount(126507)
+collect 200 Kyparite##72093 |or
 |tip Use the "Kyparite" farming guide to gather these, if you have Jewelcrafting.
 |tip You can also buy them from the Auction House.
+'|complete hasmount(126507) |or
 step
-collect 12 High Explosive Gunpowder##77468 |complete hasmount(126507)
+collect 12 High Explosive Gunpowder##77468 |or
 |tip These are created with Ghost Iron Bars.
 |tip Use the "Ghost Iron Ore" farming guide to gather these, if you have Mining.
 |tip You can also buy them from the Auction House.
+'|complete hasmount(126507) |or
 step
-collect 20 Ghost Iron Bolts##77467 |complete hasmount(126507)
+collect 20 Ghost Iron Bolts##77467 |or
 |tip These are created with Ghost Iron Bars.
 |tip Use the "Ghost Iron Ore" farming guide to gather these, if you have Mining.
 |tip You can also buy them from the Auction House.
+'|complete hasmount(126507) |or
 step
-collect 12 Spirit of Harmony##76061 |complete hasmount(126507)
+collect 12 Spirit of Harmony##76061 |or
 |tip Use the "Spirit of Harmony" profession guide to gather these.
 |tip You can also buy them from the Auction House.
+'|complete hasmount(126507) |or
 step
 talk Big Keech##61650
 |tip He walks around this area.
-buy 3 Orb of Mystery##83092 |goto Vale of Eternal Blossoms/0 71.52,44.20 |complete hasmount(126507)
+buy 3 Orb of Mystery##83092 |goto Vale of Eternal Blossoms/0 71.52,44.20 |or
 He may also be found around [62.26,41.96]
+'|complete hasmount(126507) |or
 step
 Open Your Engineering Crafting Panel:
 _<Create 1 Depleted-Kyparium Rocket>_
-collect 1 Depleted-Kyparium Rocket##87250 |complete hasmount(126507)
+collect 1 Depleted-Kyparium Rocket##87250 |or
+'|complete hasmount(126507) |or
 step
 use the Depleted-Kyparium Rocket##87250
 Learn the "Depleted-Kyparium Rocket" Mount |learnmount Depleted-Kyparium Rocket##126507
-step
-_Congratulations!_
-You Collected the "Depleted-Kyparium Rocket" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Profession Mounts\\Engineering\\Geosynchronous World Spinner",{
 keywords={"engineering","flying","mount"},

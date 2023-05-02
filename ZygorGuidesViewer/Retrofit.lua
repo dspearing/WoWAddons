@@ -16,6 +16,10 @@ ZGV.Retrofit.C_Container = C_Container or {
 	UseContainerItem = UseContainerItem,
 }
 
+ZGV.Retrofit.C_AddOns = C_AddOns or {
+	GetAddOnMetadata = GetAddOnMetadata
+}
+
 ZGV.Retrofit.Enum = {}
 ZGV.Retrofit.Enum.ItemClass = Enum.ItemClass or {
 	Armor = LE_ITEM_CLASS_ARMOR,

@@ -1546,6 +1546,7 @@ This pet is created with the Alchemy Profession, with the _"Transmute: Meat to P
 |tip You'll need 10 Meaty Haunch, 10 Stringy Loins and 5 Blood-Stained Bone to create this.
 collect Quivering Sac##160325 |n
 use the Quivering Sac##160325
+|tip Right click the Quivering Sac in your bag.
 collect Baby Crawg##163859 |complete haspet(2477)
 step
 use the Baby Crawg##163859
@@ -4210,17 +4211,17 @@ description="\nThis pet can be captured after a BFA treasure hunt."..
 pet=2352,
 },[[
 step
-In order to collect Baa'l, you will also need to collect _Uuna pet_
-|tip Refer to the Uuna pet guide to accomplish this.
-Click Here to Continue |confirm |complete haspet(2352)
+Obtain the "Uuna" Battle Pet
+|tip You need this pet to be able to defeat and collect the Baa'l Battle Pet.
+|tip Use the "Uuna" Battle Pet Guide to accomplish this.
+Click Here to Open the "Uuna" Battle Pet Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pets\\Humanoid Pets\\Uuna"
+'|complete haspet(2352)
 step
-Once you've collected Uuna, you will need to complete Uuna's questline
-|tip Refer to the Uuna Scenario guide to accomplish this.
-Click Here to continue |confirm |complete haspet(2352)
-step
-Once you've completed Uuna's questline, you will need to take Uuna on a World Tour
-|tip Refer to the Uuna World Tour guide to accomplish this.
-Click Here to Continue |confirm |complete haspet(2352)
+Complete the "Uuna" Questline and Worldtour
+|tip You must complete this to be able to defeat and collect the Baa'l Battle Pet.
+|tip Use the "Uuna Scenario" Guide to accomplish this.
+Click Here to Open the "Uuna Scenario" Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pet Quests\\Uuna Storyline"
+'|complete completedq(50109)
 step
 Cross the bridge |goto Nazmir/0 44.40,53.95 < 15 |only if walking
 Cross the bridge |goto 46.39,54.03 < 10 |only if walking
@@ -4231,13 +4232,15 @@ click Conspicious Note
 |tip It's on the side of the golden symbol.
 Read the Conspicious Note |goto 51.77,59.05
 |tip Purple smoke will rise from the scroll once you have read it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 click Ordinary Pebble
 |tip It's a tiny rock sitting on a table to the left of a purple orb.
 Read the description of an Ordinary Pebble |goto Broken Shore/0 37.47,71.61
 |tip You won't be able to interact with it again once you've read it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Walk through the net |goto Boralus/0 49.63,40.00
 |tip Once you do, a path will be hidden under the rubbish on the ground.
@@ -4245,7 +4248,8 @@ click Ordinary Pebble
 |tip Inside the cave.
 Find an Ordinary Pebble |goto Boralus/0 44.71,38.50
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 _Be sure to have a Goblin Glider or something similar available before starting this step_
 Follow the road up |goto Zuldazar/0 44.03,38.16 < 15 |only if walking
@@ -4262,7 +4266,8 @@ Run up the ramp |goto 38.72,33.93 < 15 |only if walking
 Jump down here |goto 38.28,34.63 < 15 |only if walking
 Run down the ramp |goto 37.98,35.26 < 10 |only if walking
 Jump down here |goto 38.02,35.86 < 10 |only if walking
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Jump up the wedge |goto Zuldazar/0 37.60,36.24
 |tip Keep jumping and moving forward until you make your way up.
@@ -4276,7 +4281,8 @@ click Ordinary Pebble
 |tip It's a tiny rock next to a vine inside the cave.
 Find an Ordinary Pebble |goto 31.93,35.30
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path up |goto Drustvar/0 34.88,67.70 < 15 |only if walking
 Continue up the path |goto 37.33,68.69 < 10 |only if walking
@@ -4290,7 +4296,8 @@ click Ordinary Pebble
 |tip It's in the eye of the effigy inside of the cave.
 Find an Ordinary Pebble |goto Drustvar/0 36.31,53.83
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Jump down here |goto Vol'dun/0 62.22,21.98 < 10 |only if walking
 Jump down here |goto 62.85,21.83 < 5 |only if walking
@@ -4300,7 +4307,8 @@ click Ordinary Pebble
 |tip Bring some sort of Invisibility potion to avoid aggroing Clatterback.
 Find an Ordinary Pebble |goto 63.04,21.59
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path |goto Stormsong Valley/0 69.00,9.46 < 5 |only if walking
 Continue up the path |goto 68.27,9.64 < 5 |only if walking
@@ -4311,7 +4319,8 @@ click Ordinary Pebble
 |tip It's in the cart next to the water.
 Find an Ordinary Pebble |goto Stormsong Valley/0 67.93,12.97
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 click Ordinary Pebble
 |tip It will be on a ship deep underwater.
@@ -4321,7 +4330,8 @@ click Ordinary Pebble
 Find an Ordinary Pebble |goto Zandalar/0 54.54,7.3
 |tip There will be a skull decoration with five notches underneath it.
 |tip The Ordinary Pebble will be the second from the left.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Cross the water |goto Tiragarde Sound/0 69.57,46.02 < 20 |only if walking
 Follow the path up |goto Boralus/0 40.25,88.32 < 10 |only if walking
@@ -4335,7 +4345,8 @@ click Ordinary Pebble
 |tip It's between a barrel and a crate in the basement.
 Find an Ordinary Pebble |goto 37.20,79.80
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path down |goto Drustvar/0 22.47,15.08 < 15 |only if walking
 Jump down here |goto 22.03,14.58 10 |only if walking
@@ -4353,7 +4364,8 @@ click Ordinary Pebble
 Find an Ordinary Pebble |goto 17.23,6.45
 |tip You need a Goblin Glider Kit to access the platform if you aren't a Demon Hunter.
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path up |goto Tiragarde Sound/0 78.33,70.99 < 15 |only if walking
 Continue up the path |goto 77.92,70.52 < 15 |only if walking
@@ -4365,7 +4377,8 @@ click Ordinary Pebble
 |tip There will be 3 Clatterbacks that burrow up inside the cave.
 Find an Ordinary Pebble |goto 74.29,70.87
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path up |goto 81.47,21.93 < 15 |only if walking
 Continue following the path |goto 81.15,21.13 < 15 |only if walking
@@ -4377,7 +4390,8 @@ click Ordinary Pebble
 |tip It's underneath a long scroll that is hanging on the wall and covering some of the ground.
 Find an Ordinary Pebble |goto 79.66,17.99
 |tip You won't be able to interact with it again once you've clicked it.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Cross the water |goto 68.61,46.83 < 15 |only if walking
 Enter the underwater cave |goto Boralus/0 9.99,82.49 < 10 |only if walking
@@ -4385,7 +4399,8 @@ Enter the underwater cave |goto Boralus/0 9.99,82.49 < 10 |only if walking
 click Ordinary Pebble
 Find an Ordinary Pebble |goto Tiragarde Sound/0 59.70,41.84
 |tip It's underneath some foliage, close to the water.
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Follow the path |goto Zandalar/0 45.87,3.78
 Continue following the path |goto 47.7,-3
@@ -4397,21 +4412,21 @@ Enter the Underwater Cave |goto 55.72,-10.21
 click Ordinary Pebble
 |tip It will be inside the cave, just underneath the entrance.
 Find an Ordinary Pebble
-Click Here to Continue |confirm |complete haspet(2352)
+Click Here to Continue |confirm |or
+'|complete haspet(2352) |or
 step
 Summon Uuna
 |tip This fight will be impossible without her assistance.
 Watch the dialogue
 kill Baa'l##141909
+|tip Defeat Baa'l in a pet battle.
 |tip If Uuna isn't weakening Baa'l, you may need to realm hop until you find a server where she can.
 |tip You can also try toggling War Mode.
-collect Baa'ls Darksign##162578 |goto Frostfire Ridge/0 62.27,22.86 |complete haspet(2352)
+collect Baa'ls Darksign##162578 |goto Frostfire Ridge/0 62.27,22.86 |or
+'|complete haspet(2352) |or
 step
 use Baa'ls Darksign##162578
-Collect the "Baa'l" Battle Pet |learnpet Baa'l##2352
-step
-_Congratulations!_
-You Collected a "Baa'l" Battle Pet.
+Learn the "Baa'l" Battle Pet |learnpet Baa'l##2352
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\Enchanted Tiki Mask",{
 patch='80100',
@@ -5366,29 +5381,31 @@ pet=2411,
 },[[
 step
 click Hexed Chest##297878
-collect Bundle of Wicker Sticks##163789	|goto Drustvar/0 18.5,51.4 |complete haspet(2411)
+collect Bundle of Wicker Sticks##163789	|goto Drustvar/0 18.5,51.4 |or
+'|complete haspet(2411) |or
 step
 Enter the cave |goto 25.40,23.53 < 10 |walk
 click Enchanted Chest##297881 |goto 25.45,24.15
 |tip Inside the cave.
-collect Wolf Pup Spine##163796 |goto 25.4,24.1 |complete haspet(2411)
+collect Wolf Pup Spine##163796 |goto 25.4,24.1 |or
+'|complete haspet(2411) |or
 step
 click Bespelled Chest##297879
-collect Spooky Incantation##163790 |goto 55.58,51.83 |complete haspet(2411)
+collect Spooky Incantation##163790 |goto 55.58,51.83 |or
+'|complete haspet(2411) |or
 step
 Follow the path up |goto 68.48,69.10 < 15 |only if walking
 Follow the path |goto 67.59,70.37 < 15 |only if walking
 Continue up the path |goto 67.38,71.23 < 15 |only if walking
 Continue up the path |goto 67.45,72.41 < 15 |only if walking
 click Ensorcelled Chest##297880
-collect Miniature Stag Skull##163791 |goto 67.8,73.7 |complete haspet(2411)
+collect Miniature Stag Skull##163791 |goto 67.8,73.7 |or
+'|complete haspet(2411) |or
 step
 use the Spooky Incantation##163790
-collect Spooky Bundle of Sticks##163497 |complete haspet(2411)
+collect Spooky Bundle of Sticks##163497 |or
+'|complete haspet(2411) |or
 step
 use the Spooky Bundle of Sticks##163497
 Collect the "Wicker Pup" Battle Pet |learnpet Wicker Pup##2411
-step
-_Congratulations!_
-You Collected a "Wicker Pup" Battle Pet.
 ]])

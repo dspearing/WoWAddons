@@ -291,6 +291,35 @@ data.basenodes.borders = {
 
 	-- The Maw -x- Pit of Anguish
 		"The Maw/0 54.62,80.06 <radius:15> -x- Pit of Anguish/1 46.35,25.54 <radius:15> {title_atob:Enter the Cave} {title_btoa:Leave the Cave}",
+
 		
+		"Un'Goro Crater 50.4,7.9 <region:shapers_terrace> -x- Sholazar Basin 40.4,83.0 {mode:PORTAL} {template:portalauto} {cond:PlayerCompletedQuest(12613)}", -- Only if the player completed quest 12613 "Powering the Waygate - The Makers' Overlook"
+
+	-- Zaralek Cavern tunnels
+		-- north tunnel to Ohn'ahran Plains
+		-- cave mouths
+		"Ohn'ahran Plains/0 88.86,28.73 <border_in_flight:true> <radius:5> -x- Ohn'ahran Plains/0 88.68,28.78  <region:zc_iridikron_plains>  <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		"Zaralek Cavern/0 73.64,49.34   <border_in_flight:true> <radius:5> -x- Zaralek Cavern/0 73.67,49.31    <region:zc_iridikron_zaralek> <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		-- crossing between regions
+		"Ohn'ahran Plains/0 82.92,31.67 <region:zc_iridikron_plains>  <border_in_flight:true> <radius:25> -to- Zaralek Cavern/0 75.08,49.46   <region:zc_iridikron_zaralek> <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+		"Zaralek Cavern/0 79.32,46.39	<region:zc_iridikron_zaralek> <border_in_flight:true> <radius:25> -to- Ohn'ahran Plains/0 86.14,26.57 <region:zc_iridikron_plains>  <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+
+		-- south tunnel to Ohn'ahran Plains
+		-- cave mouths
+		"Ohn'ahran Plains/0 35.77,59.09 <border_in_flight:true> <radius:5> -x- Ohn'ahran Plains/0 35.74,59.09 <region:zc_loamm_plains>  <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		"Zaralek Cavern/0 34.64,79.93   <border_in_flight:true> <radius:5> -x- Zaralek Cavern/0 34.50,79.77   <region:zc_loamm_zaralek> <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		-- crossing between regions
+		"Ohn'ahran Plains/0 40.46,59.39 <region:zc_loamm_plains>  <border_in_flight:true> <radius:25> -to- Zaralek Cavern/0 31.92,80.72   <region:zc_loamm_zaralek> <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+		"Zaralek Cavern/0 29.96,77.67   <region:zc_loamm_zaralek> <border_in_flight:true> <radius:25> -to- Ohn'ahran Plains/0 38.45,56.54 <region:zc_loamm_plains>  <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+		
+		-- south tunnel to Azure Span
+		-- cave mouths
+		"Zaralek Cavern/0 35.94,90.97 <border_in_flight:true> <radius:5> -x- Zaralek Cavern/0 35.91,91.02 <region:zc_lookout_zaralek> <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		"The Azure Span/0 18.91,23.43 <border_in_flight:true> <radius:5> -x- The Azure Span/0 18.91,23.35 <region:zc_lookout_azure>   <border_in_flight:true> <radius:5> {title:Follow the tunnel} {cost:1}",
+		-- crossing between regions
+		"Zaralek Cavern/0 34.59,97.62 <region:zc_lookout_zaralek> <border_in_flight:true> <radius:25> -to- The Azure Span/0 17.80,20.28 <region:zc_lookout_azure>   <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+		"The Azure Span/0 19.04,18.59 <region:zc_lookout_azure>   <border_in_flight:true> <radius:25> -to- Zaralek Cavern/0 36.54,94.96 <region:zc_lookout_zaralek> <border_in_flight:true> {title:Follow the tunnel} {cost:1}",
+
+
 }
 

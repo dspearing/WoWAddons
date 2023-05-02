@@ -61,23 +61,31 @@ keywords={"Aquatic","Darkmoon","Faire"},
 pet=335,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(335) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(335) |or
+step
+earn 90 Darkmoon Prize Ticket##515 |or
+|tip Earn them by completing daily quests, winning games, and riding the ride at the Darkmoon Faire.
+|tip Use the "Darkmoon Faire" Event Guides to help you with this.
+|tip You can also purchase this pet from the auction house.
+Click Here to Open the "Darkmoon Faire Achievements" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements"
+Click Here to Open the "Darkmoon Faire Dailies" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies"
+Click Here to Open the "Darkmoon Faire Quests" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+'|complete haspet(335) |or
 step
 talk Lhara##14846
-buy Darkmoon Turtle##73765 |n
-|tip It costs 90 Darkmoon Faire tickets.
-|tip To earn tickets you have to complete daily quests.
-|tip You can use our Darkmoon Faire guides to help you earn tickets.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-collect Darkmoon Turtle##73765 |n
-use the Darkmoon Turtle##73765
-|tip It is in your inventory.
-Learn the "Darkmoon Turtle" Battle Pet |learnpet Darkmoon Turtle##335 |goto 48.25,69.52
+buy Darkmoon Turtle##73765 |goto Darkmoon Island/0 48.60,69.80 |or
+'|complete haspet(335) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Turtle" Battle Pet.
+use the Darkmoon Turtle##73765
+Learn the "Darkmoon Turtle" Battle Pet |learnpet Darkmoon Turtle##335
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Frog",{
 patch='50100',
@@ -425,21 +433,24 @@ keywords={"Aquatic","Darkmoon","Faire"},
 pet=65,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(65) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(65) |or
 step
 talk Flik##14860
-|tip He is running around this area.
-buy Tree Frog Box##11026 |n
-collect Tree Frog Box##11026 |n
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-use the Tree Frog Box##11026
-|tip It is in your inventory.
-Learn the "Tree Frog" Battle Pet |learnpet Tree Frog##65 |goto 59.12,68.26
+|tip He is running around the Darkmoon Faire on the east side of the main road.
+buy Tree Frog Box##11026 |or
+|tip This costs 80 silver.
+'|complete haspet(65) |or
 step
-_Congratulations!_
-You Collected the "Tree Frog" Battle Pet.
+use the Tree Frog Box##11026
+Learn the "Tree Frog" Battle Pet |learnpet Tree Frog##65
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Tundra Penguin",{
 patch='50100',
@@ -484,21 +495,24 @@ keywords={"Aquatic","Darkmoon","Faire"},
 pet=64,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(64) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(64) |or
 step
 talk Flik##14860
-|tip He is running around this area.
-buy Wood Frog Box##11027 |n
-collect Wood Frog Box##11027 |n
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-use the Wood Frog Box##11027
-|tip It is in your inventory.
-Learn the "Wood Frog" Battle Pet |learnpet Wood Frog##64 |goto 59.12,68.26
+|tip He is running around the Darkmoon Faire on the east side of the main road.
+buy Wood Frog Box##11027 |or
+|tip This costs 1 gold.
+'|complete haspet(64) |or
 step
-_Congratulations!_
-You Collected the "Wood Frog" Battle Pet.
+use the Wood Frog Box##11027
+Learn the "Wood Frog" Battle Pet |learnpet Wood Frog##64
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Adder",{
 patch='50100',
@@ -842,23 +856,31 @@ keywords={"Beast","Darkmoon","Faire"},
 pet=343,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(343) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(343) |or
+step
+earn 90 Darkmoon Prize Ticket##515 |or
+|tip Earn them by completing daily quests, winning games, and riding the ride at the Darkmoon Faire.
+|tip Use the "Darkmoon Faire" Event Guides to help you with this.
+|tip You can also purchase this pet from the auction house.
+Click Here to Open the "Darkmoon Faire Achievements" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements"
+Click Here to Open the "Darkmoon Faire Dailies" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies"
+Click Here to Open the "Darkmoon Faire Quests" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+'|complete haspet(343) |or
 step
 talk Lhara##14846
-buy Darkmoon Cub##74981 |n
-|tip It costs 90 Darkmoon Faire tickets.
-|tip To earn tickets you have to complete daily quests.
-|tip You can use our Darkmoon Faire guides to help you earn tickets.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-collect Darkmoon Cub##74981 |n
-use the Darkmoon Cub##74981
-|tip It is in your inventory.
-Learn the "Darkmoon Cub" Battle Pet |learnpet Darkmoon Cub##343 |goto 48.25,69.52
+buy Darkmoon Cub##74981 |goto Darkmoon Island/0 48.60,69.80 |or
+'|complete haspet(343) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Cub" Battle Pet.
+use the Darkmoon Cub##74981
+Learn the "Darkmoon Cub" Battle Pet |learnpet Darkmoon Cub##343
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Darkmoon Monkey",{
 patch='43000',
@@ -869,23 +891,31 @@ keywords={"Beast","Darkmoon","Faire"},
 pet=330,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(330) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(330) |or
+step
+earn 90 Darkmoon Prize Ticket##515 |or
+|tip Earn them by completing daily quests, winning games, and riding the ride at the Darkmoon Faire.
+|tip Use the "Darkmoon Faire" Event Guides to help you with this.
+|tip You can also purchase this pet from the auction house.
+Click Here to Open the "Darkmoon Faire Achievements" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements"
+Click Here to Open the "Darkmoon Faire Dailies" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies"
+Click Here to Open the "Darkmoon Faire Quests" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+'|complete haspet(330) |or
 step
 talk Lhara##14846
-buy Darkmoon Monkey##73764 |n
-|tip It costs 90 Darkmoon Faire tickets.
-|tip To earn tickets you have to complete daily quests.
-|tip You can use our Darkmoon Faire guides to help you earn tickets.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-collect Darkmoon Monkey##73764 |n
-use the Darkmoon Monkey##73764
-|tip It is in your inventory.
-Learn the "Darkmoon Monkey" Battle Pet |learnpet Darkmoon Monkey##330 |goto 48.25,69.52
+buy Darkmoon Monkey##73764 |goto Darkmoon Island/0 48.60,69.80 |or
+'|complete haspet(330) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Monkey" Battle Pet.
+use the Darkmoon Monkey##73764
+Learn the "Darkmoon Monkey" Battle Pet |learnpet Darkmoon Monkey##330
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Darkshore Cub",{
 patch='50100',
@@ -2370,23 +2400,31 @@ keywords={"Critter","Darkmoon","Faire"},
 pet=1061,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(1061) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(1061) |or
+step
+earn 90 Darkmoon Prize Ticket##515 |or
+|tip Earn them by completing daily quests, winning games, and riding the ride at the Darkmoon Faire.
+|tip Use the "Darkmoon Faire" Event Guides to help you with this.
+|tip You can also purchase this pet from the auction house.
+Click Here to Open the "Darkmoon Faire Achievements" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Achievements"
+Click Here to Open the "Darkmoon Faire Dailies" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies"
+Click Here to Open the "Darkmoon Faire Quests" Event Guide |confirm |loadguide "Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests"
+'|complete haspet(1061) |or
 step
 talk Lhara##14846
-buy Darkmoon Hatchling##91003 |n
-|tip It costs 90 Darkmoon Faire tickets.
-|tip To earn tickets you have to complete daily quests.
-|tip You can use our Darkmoon Faire guides to help you earn tickets.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-collect Darkmoon Hatchling##91003 |n
-use the Darkmoon Hatchling##91003
-|tip It is in your inventory.
-Learn the "Darkmoon Hatchling" Battle Pet |learnpet Darkmoon Hatchling##1061 |goto 48.25,69.52
+buy Darkmoon Hatchling##91003 |goto Darkmoon Island/0 48.60,69.80 |or
+'|complete haspet(1061) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Hatchling" Battle Pet.
+use the Darkmoon Hatchling##91003
+Learn the "Darkmoon Hatchling" Battle Pet |learnpet Darkmoon Hatchling##1061
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Darkmoon Rabbit",{
 patch='50100',
@@ -2397,22 +2435,26 @@ keywords={"Critter","Darkmoon","Faire"},
 pet=848,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+|tip You can also purchase this pet from the auction house.
+'|complete haspet(848) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(848) |or
 step
 kill Darkmoon Rabbit##58336
 |tip He hops around this area.
-|tip He has very high hp, so you may need to find a group to help kill it.
-collect Darkmoon Rabbit##80008 |n
-|tip This is not a guaranteed drop, it may take you several attempts to get it.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-use the Darkmoon Rabbit##80008
-|tip It is in your inventory.
-Learn the "Darkmoon Rabbit" Battle Pet |learnpet Darkmoon Rabbit##848 |goto 77.12,79.69
+|tip You may need help with this.
+|tip You can also purchase this pet from the auction house.
+collect Darkmoon Rabbit##80008 |goto Darkmoon Island/0 77.12,79.69 |or
+|tip It may take several attempts to obtain this.
+'|complete haspet(848) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Rabbit" Battle Pet.
+use the Darkmoon Rabbit##80008
+Learn the "Darkmoon Rabbit" Battle Pet |learnpet Darkmoon Rabbit##848
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Death's Head Cockroach",{
 patch='50100',
@@ -3510,22 +3552,35 @@ keywords={"Dragonkin","Blackwing","Lair"},
 pet=1152,
 },[[
 step
+Enter The Molten Span and Fly or Climb to This Balcony |goto Burning Steppes/14 63.24,44.35 < 10 |c |or
+|tip This pet can also be purchased from the Auction House.
+'|complete haspet(1152) |or
+step
+Follow the Walkway to the Left |goto 65.46,43.94 < 5 |c |or
+|tip Go left from the balcony to find the Orb.
+'|complete haspet(1152) |or
+step
 click Orb of Command##179879
-Choose _<Place my hand on the orb.>_
-Enter the Blackwing Lair Raid |goto Blackwing Lair/1 0.00,0.00 |c |or
-|tip You can use the Blackwing Lair guide if you need help getting through the raid.
-'|learnpet Chrominius##1152 |or
+Choose _"<Place my hand on the orb.>"_
+Interact with the Orb of Command |goto Blackwing Lair/1 0.00,0.00 |c |or
+'|complete haspet(1152) |or
 step
+Enter the Blackwing Lair Raid
+|tip Use the "Blackwing Lair" Raid Guide to help with this.
+Click Here to Open the "Blackwing Lair" Raid Guide |confirm |loadguide "Dungeon Guides\\Classic Raids\\Blackwing Lair"
+Click Here to Continue the Raid |confirm |next "Next_Step_Kill_Chromaggus"
+'|complete haspet(1152)
+step
+label "Next_Step_Kill_Chromaggus"
 kill Chromaggus##14020
-collect Whistle of Chromatic Bone##93038 |n
-|tip This has a 23.96% chance to drop, it may take you a few attempts to get it.
-use the Whistle of Chromatic Bone##93038
-|tip It is in your inventory.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-Learn the "Chrominius" Battle Pet |learnpet Chrominius##1152
+|tip The pet item has a small chance to drop from this boss.
+|tip You may have to complete the raid several times to acquire it.
+|tip You will have to wait until the next reset to run the raid again.
+collect Whistle of Chromatic Bone##93038 |or
+'|complete haspet(1152) |or
 step
-_Congratulations!_
-You Collected the "Chrominius" Battle Pet.
+use the Whistle of Chromatic Bone##93038
+Learn the "Chrominius" Battle Pet |learnpet Chrominius##1152
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pets\\Crimson Whelpling",{
 patch='111100',
@@ -4637,18 +4692,20 @@ keywords={"Flying","Darkmoon","Faire"},
 pet=1068,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+'|complete haspet(1068) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(1068) |or
 step
 clicknpc Crow##67443
 |tip They appear more often as a secondary pet, try battling any pet you find in the forest areas.
 |tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
 |tip You may need to attempt the trap several times.
 Learn the "Crow" Battle Pet |learnpet Crow##1068 |goto 37.39,70.52
-step
-_Congratulations!_
-You Collected the "Crow" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Darkmoon Glowfly",{
 patch='unknown',
@@ -4659,17 +4716,19 @@ keywords={"Flying","Darkmoon","Faire"},
 pet=1062,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the Darkmoon Faire Event |complete isevent("Darkmoon Faire") |or
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+'|complete haspet(1062) |or
+step
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |notravel |or
+'|complete haspet(1062) |or
 step
 clicknpc Darkmoon Glowfly##67329
 |tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
 |tip You may need to attempt the trap several times.
 Learn the "Darkmoon Glowfly" Battle Pet |learnpet Darkmoon Glowfly##1062 |goto 45.73,50.78
-step
-_Congratulations!_
-You Collected the "Darkmoon Glowfly" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Dragon Kite",{
 patch='unknown',
@@ -5395,20 +5454,18 @@ keywords={"Humanoid","Ahn'Qiraj"},
 pet=1155,
 },[[
 step
-Enter the Ahn'Qiraj Raid |goto Ahn'Qiraj/2 0.00,0.00 |c |or
+Enter the Ahn'Qiraj Raid |goto Ahn'Qiraj: The Fallen Kingdom/0 46.83,7.51 < 10 |c |or
 |tip You can use the Ahn'Qiraj raid guide if you need help getting through the raid.
+|tip You can also purchase it from the auction house.
 '|learnpet Anubisath Idol##1155 |or
 step
 kill Emperor Vek'lor##15276
-collect Anubisath Idol##93040 |n
-|tip This has a 1 in 10 chance to drop, it may take several attempts to get it.
-use the Anubisath Idol##93040
-|tip It is in your inventory.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-Learn the "Anubisath Idol" Battle Pet |learnpet Anubisath Idol##1155
+|tip Emperor Vek'lor and his brother Emperor Vek'nilash comprise the Twin Emperors boss encounter inside of the Temple of Ahn'Qiraj.
+collect Anubisath Idol##93040 |or
+'|learnpet Anubisath Idol##1155 |or
 step
-_Congratulations!_
-You Collected the "Anubisath Idol" Battle Pet.
+use the Anubisath Idol##93040
+Learn the "Anubisath Idol" Battle Pet |learnpet Anubisath Idol##1155
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pets\\Corefire Imp",{
 patch='unknown',
@@ -5884,35 +5941,36 @@ keywords={"Magic","Darkmoon","Faire"},
 pet=1063,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84 |only if Horde
+click Portal to the Darkmoon Faire |goto Elwynn Forest/0 41.78,69.52 |only if Alliance
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 < 7 |c |or
+'|complete haspet(1063) |or
 step
 talk Jeremy Feasel##67370
-accept Darkmoon Pet Battle!##32175 |goto 47.04,62.76
+accept Darkmoon Pet Battle!##32175 |goto 47.04,62.76 |or
+'|complete haspet(1063) |or
 step
 talk Jeremy Feasel##67370
 Tell him _"I challenge you to a pet battle!"_
 |tip This costs one Darkmoon Game token.
 |tip Jeremy's pets are all level 25 epic.
 |tip He has a magic, a mechanical, and a beast pet.
-Defeat Jeremy Feasel |q 32175/1 |goto 47.56,62.55
+Defeat Jeremy Feasel |q 32175/1 |goto 47.56,62.55 |or
+'|complete haspet(1063) |or
 step
 talk Jeremy Feasel##67370
-turnin Darkmoon Pet Battle!##32175 |goto 47.04,62.75
+turnin Darkmoon Pet Battle!##32175
+collect Darkmoon Pet Supplies##91086 |goto 47.04,62.75 |or
+'|complete haspet(1063) |or
 step
-collect Darkmoon Pet Supplies##91086 |n
-|tip You can only get this once a day.
 use the Darkmoon Pet Supplies##91086
-|tip It is in your inventory.
-collect Darkmoon Eye##91040 |n
+collect Darkmoon Eye##91040 |or
 |tip This has a 1 in 56 chance to drop, it may take you several attempts to get this.
-use the Darkmoon Eye##91040
-|tip It is in your inventory.
-Learn the "Darkmoon Eye" Battle Pet |learnpet Darkmoon Eye##1063
+'|complete haspet(1063) |or
 step
-_Congratulations!_
-You Collected the "Darkmoon Eye" Battle Pet.
+use the Darkmoon Eye##91040
+Learn the "Darkmoon Eye" Battle Pet |learnpet Darkmoon Eye##1063
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\Disgusting Oozeling",{
 patch='unknown',
@@ -7046,9 +7104,10 @@ pet=439,
 step
 clicknpc Restless Shadeling##61375
 |tip They only spawn between the hours of 12am-9am server time.
+|tip You will enter The Master's Cellar and follow the tunnels down until you see the pet.
 |tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
 |tip You may need to attempt the trap several times.
-Learn the "Restless Shadeling" Battle Pet |learnpet Restless Shadeling##439 |goto Deadwind Pass/0 54.15,77.93
+Learn the "Restless Shadeling" Battle Pet |learnpet Restless Shadeling##439 |goto Deadwind Pass/0 47.64,78.28
 step
 _Congratulations!_
 You Collected the "Restless Shadeling" Battle Pet.

@@ -74,6 +74,7 @@ local instanceIDOverrides = {
     [2241] = 1,    -- Uldum N'zoth assault
     [2274] = 1,    -- Uldum N'zoth Minor Vision
     [2275] = 870,  -- Vale of Eternal Blossoms N'zoth Minor Vision
+    [2454] = 2444, -- Zerek Caverns
 }
 
 local dynamicInstanceIDOverrides = {}

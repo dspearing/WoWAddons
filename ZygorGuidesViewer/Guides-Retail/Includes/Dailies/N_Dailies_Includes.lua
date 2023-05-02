@@ -1232,6 +1232,7 @@ ZygorGuidesViewer:RegisterInclude("Dragon_Choose_World_Quests",[[
 		'|confirm |next "Maruuk_Centaur_WQ" |complete readyq(65606) and not ZGV.WorldQuests:QuestsQueued()
 		'|confirm |next "Iskaara_Tuskarr_WQ" |complete readyq(66511) and not ZGV.WorldQuests:QuestsQueued()
 		'|confirm |next "Dragonscale_Expedition_WQ" |complete readyq(66156) and not ZGV.WorldQuests:QuestsQueued()
+		'|confirm |next "Loamm_Niffen_WQ" |complete readyq(75290) and not ZGV.WorldQuests:QuestsQueued()
 		|worldquestqueue
 ]])
 
@@ -1263,6 +1264,12 @@ ZygorGuidesViewer:RegisterInclude("Dragon_World_Quest_Emissaries",[[
 		|tip Inside the building.
 		turnin Renowned with the Dragonscale Expedition##66156 |goto 47.10,82.57
 		|only if readyq(66156)
+	step
+	label "Loamm_Niffen_WQ"
+		talk Mimuup##204254
+		|tip Inside the building.
+		turnin Renowned with the Loamm Niffen##75290 |goto Zaralek Cavern/0 56.53,55.66
+		|only if readyq(75290)
 	step
 		|next "Choose_World_Quest"
 ]])

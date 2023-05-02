@@ -1459,8 +1459,9 @@ model={98151},
 description="\nThis mount has a very small chance to drop from Nalthor the Rimebinder in The Necrotic Wake dungeon on Mythic difficulty.",
 },[[
 step
-Enter The Necrotic Wake Dungeon |goto The Necrotic Wake/0 81.64,40.17 < 1000 |or
+Enter The Necrotic Wake Dungeon
 |tip Enter the dungeon on Mythic difficulty.
+Enter Mythic Necrotic Wake |goto Bastion/0 40.18,55.22 < 10 |c |or
 '|complete hasmount(336036) |or
 step
 kill Nalthor the Rimebinder##166945
@@ -1471,9 +1472,6 @@ collect Marrowfang's Reins##181819 |goto The Necrotic Wake/2 50.79,47.70 |or
 step
 use Marrowfang's Reins##181819
 Learn the "Marrowfang" Mount |learnmount Marrowfang##336036
-step
-_Congratulations!_
-You Collected the "Marrowfang" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Shimmermist Runner",{
 author="support@zygorguides.com",
@@ -1488,6 +1486,7 @@ description="\nThis mount is acquired by completing the Mistveil Tangle maze nea
 step
 Start here |goto Ardenweald/0 32.46,51.18 < 15 |walk
 click Tale of the Tangle##355547 |goto 32.54,53.06 < 5 |walk
+|tip This is a plaque hanging on the tree here.
 Follow the path down |goto 30.96,54.58 < 15 |walk
 Follow the path |goto 29.60,56.28 < 10 |walk
 Follow the path right |goto 29.89,57.80 < 10 |walk
@@ -1503,9 +1502,6 @@ collect Shimmermist Runner##180727 |goto 26.29,58.97 |or
 step
 use the Shimmermist Runner##180727
 Learn the "Shimmermist Runner" Mount |learnmount Shimmermist Runner##332252
-step
-_Congratulations!_
-You Collected the "Shimmermist Runner" Mount.
 ]])
 ZGV.BETAEND()
 ZGV.DevEnd()
@@ -1557,6 +1553,7 @@ Click Here After Requesting an Audience |confirm |goto 47.65,54.05 |complete ite
 step
 talk Ysera##160262
 |tip She will walk out to you.
+|tip Dismount before speaking to her.
 Ask her _"Ysera, this soulweb has the ability to capture dreams, but requires power to do so. Can you help?"_
 collect 1 Dream Catcher##178675 |goto Heart of the Forest/0 69.34,45.71 |or
 '|complete hasmount(312767) |or
@@ -2089,7 +2086,7 @@ Ride the Anima Gateway |complete _G.UnitOnTaxi("player") |goto 63.46,72.39 < 7 |
 |only if walking
 step
 click Anima Crystal Shard##355534
-|tip Sitting on the outside edge of the pillar.
+|tip Sitting on the outside edge of the pillar on the platform above.
 Find Shard 11 |q 61249 |future |goto 65.52,71.92
 step
 click Anima Crystal Shard##355534
@@ -2116,7 +2113,7 @@ step
 Jump onto the ledge |goto Bastion/0 51.06,47.53 < 5 |only if walking |region heros_rest
 Carefully walk along the ledge |goto 51.26,47.87 < 5 |only if walking |region heros_rest
 click Anima Crystal Shard##355534
-|tip On a small ledge on the outside of Hero's Rest.
+|tip On a small ledge just under Hero's Rest.
 Find Shard 17 |q 61258 |future |goto 51.67,48.02 |region heros_rest
 step
 click Anima Crystal Shard##355534
@@ -3284,24 +3281,21 @@ mounts={354361},
 patch='90100',
 mounttype='Flying',
 model={100254},
-description="\nThis mount can be obtained by brining a Lost Razorwing Egg to a Razorwing Nest.",
+description="\nThis mount can be obtained by bringing a Lost Razorwing Egg to a Razorwing Nest.",
 },[[
 step
 Kill enemies around this area
 collect 10 Lost Razorwing Egg##187054 |goto Korthia/0 37.39,49.23 |or
 |tip Only Gorgers, Scavengers, and Worldeater type enemies will drops this.
-'|learnmount Dusklight Razorwing##354361 |or
+'|complete hasmount(354361) |or
 step
 click Razorwing Nest##369246
 |tip When you place the first egg in the nest you will be attacked by a Nestguardian, upon placing the 10th egg you will receive the mount.
 collect Dusklight Razorwing##186651 |goto 25.72,51.08 |or
-'|learnmount Dusklight Razorwing##354361 |or
+'|complete hasmount(354361) |or
 step
 use the Dusklight Razorwing##186651
 Learn the "Dusklight Razorwing" Mount |learnmount Dusklight Razorwing##354361
-step
-_Congratulations!_
-You Collected the "Dusklight Razorwing" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Elysian Aquilon",{
 author="support@zygorguides.com",
@@ -3593,6 +3587,8 @@ model={100241},
 description="\nThis mount can be purchased for 7,500 Reservoir Anima from Su Zettai in Maldraxxus.",
 },[[
 step
+Reach Renown 70 with the Necrolord Covenant |complete covenantrenown() >= 70
+step
 Collect #7500# Reservoir Anima |complete curcount(1813) >= 7500 |or
 |tip Collect Resevoir Anima by completing world quests, dungeons, covenant calling quests, killing rares, and opening treasures.
 '|learnmount Regal Corpsefly##353884 |or
@@ -3608,9 +3604,6 @@ collect Regal Corpsefly Harness##186488 |or
 step
 use the Regal Corpsefly Harness##186488
 Learn the "Regal Corpsefly" Mount |learnmount Regal Corpsefly##353884
-step
-_Congratulations!_
-You Collected the "Regal Corpsefly" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Sanctum Gloomcharger",{
 author="support@zygorguides.com",
@@ -3744,42 +3737,39 @@ description="\nThis mount is rewarded to you after completing the quest Wilderli
 step
 Join the Night Fae Covenant |complete  NightFae |or
 |tip Use the "Shadowlands Intro & Main Story Questline" leveling guide to accomplish this.
-'|learnmount Summer Wilderling##353859 |or
+'|complete hasmount(353859) |or
 step
-talk Karras##180005
-|tip He will start the rare event "Escaped Wilderling".
+click Alluring Drum##180009
+|tip This will start the rare event "Escaped Wilderling".
 |tip You will see a gold star on your mini map when this event is active.
-kill Escaped Wilderling##180014 |goto Korthia/0 35.73,32.22 |or
-'|learnmount Summer Wilderling##353859 |or
+kill Escaped Wilderling##180014 |goto Korthia/0 33.19,39.39 |or
+'|complete hasmount(353859) |or
 step
 click Escaped Wilderling##180014
-Begin Riding the Escaped Wilderling |invehicle |c |goto 35.73,32.22 |or
-'|learnmount Summer Wilderling##353859 |or
+Begin Riding the Escaped Wilderling |invehicle |c |goto 33.05,39.32 |or
+'|complete hasmount(353859) |or
 step
 Ride the Escaped Wilderling
 |tip Use the "Hold on Tight" button that appears on the skillbar whenever the "Escaped Wilderling" gains a burst of speed.
 collect Wilderling Saddle##187281 |or
-|tip This can only be collected by a character aligned with the Night Fae covenant.
+|tip This can only be collected by a character aligned with the Night Fae Covenant.
 |tip This has a chance to drop after you finish riding the "Escaped Wilderling".
 |tip It may take several attempts to get this.
-'|learnmount Summer Wilderling##353859 |or
+'|complete hasmount(353859) |or
 step
 Click the Quest Accept Box
 accept Wilderling Saddle##64528 |or
-'|learnmount Summer Wilderling##353859 |or
+'|complete hasmount(353859) |or
 step
 talk Reldorn##180340
-turnin Wilderling Saddle##64528 |goto 60.6,21.2 |or
-'|learnmount Summer Wilderling##353859 |or
+turnin Wilderling Saddle##64528 |goto 60.53,21.06 |or
+'|complete hasmount(353859) |or
 step
 collect Summer Wilderling Harness##186492 |or
-'|learnmount Summer Wilderling##353859 |or
+'|complete hasmount(353859) |or
 step
 use the Summer Wilderling Harness##186492
 Learn the "Summer Wilderling" Mount |learnmount Summer Wilderling##353859
-step
-_Congratulations!_
-You Collected the "Summer Wilderling" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Tamed Mauler",{
 author="support@zygorguides.com",

@@ -547,6 +547,8 @@ data.basenodes.DungeonEntrances = {
 		--Dragonflight
 			--Vault of the Incarnates--
 			"Thaldraszus/0 73.15,55.61 -x- Vault of the Incarnates/2 0.00,0.00 {autotype:portal_dungeon}",
+			--Aberrus, the Shadowed Crucible--
+			"Zaralek Cavern/0 48.46,9.94 -x- Aberrus, the Shadowed Crucible/0 51.10,95.59 {autotype:portal_dungeon}",
 }
 
 data.basenodes.DungeonFloors = {
@@ -1137,6 +1139,16 @@ data.basenodes.DungeonFloors = {
 			"Vault of the Incarnates/1 24.20,51.65 <radius:15> -x- Vault of the Incarnates/2 49.90,35.58 <radius:15>",
 			"Vault of the Incarnates/2 31.25,20.80 <radius:15> -x- Vault of the Incarnates/0 58.15,24.64 <radius:15>",
 			"Vault of the Incarnates/2 00.00,00.00 <radius:15> -x- Vault of the Incarnates/7 00.00,00.00 <radius:15>",
+		},
+
+		--------------------------------------
+		--- ABERRUS, THE SHADOWED CRUCIBLE ---
+		--------------------------------------
+		["Aberrus, the Shadowed Crucible"] = {
+			"Aberrus, the Shadowed Crucible/0 32.81,18.47 -x- Aberrus, the Shadowed Crucible/1 55.16,16.39",
+			"Aberrus, the Shadowed Crucible/1 48.71,73.17 -x- Aberrus, the Shadowed Crucible/2 45.58,68.61",
+			"Aberrus, the Shadowed Crucible/2 55.52,89.13 -x- Aberrus, the Shadowed Crucible/3 50.74,90.64",
+			"Aberrus, the Shadowed Crucible/3 50.98,13.52 -x- Aberrus, the Shadowed Crucible/4 48.95,10.04",
 		},
 }
 

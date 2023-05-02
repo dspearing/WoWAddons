@@ -190,5 +190,18 @@ data.basenodes.advanced = {
 
 	{"REGION",name="zerekriss",mapzone="The Maw",zonematch="*/*/*/Zerekriss"},
 
+
+	--------------------------------
+	-----     DRAGONFLIGHT     -----
+	--------------------------------
+
+	{"REGION",name="zc_iridikron_plains",mapzone="Ohn'ahran Plains",zonematch="*/*/*/Iridikron's Gambit", in_flight=true},
+	{"REGION",name="zc_iridikron_zaralek",mapzone="Zaralek Cavern",zonematch="*/*/*/Iridikron's Gambit", in_flight=true},
+
+	{"REGION",name="zc_loamm_plains",mapzone="Ohn'ahran Plains",zonematch="*/*/*/Old Loamm Road", in_flight=true},
+	{"REGION",name="zc_loamm_zaralek",mapzone="Zaralek Cavern",zonematch="*/*/*/Old Loamm Road", in_flight=true},
+
+	{"REGION",name="zc_lookout_azure",mapzone="The Azure Span",zonematch="*/*/*/Lookout Breach", in_flight=true},
+	{"REGION",name="zc_lookout_zaralek",mapzone="Zaralek Cavern",zonematch="*/*/*/Lookout Breach", in_flight=true},
 }
 

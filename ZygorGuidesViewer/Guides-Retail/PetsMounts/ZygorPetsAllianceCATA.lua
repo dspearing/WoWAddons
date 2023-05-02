@@ -14,22 +14,19 @@ pet=132,
 },[[
 step
 cast Fishing##7620
-|tip You must have a fishing level of 430 to catch Mr. Pinchy.
-|tip He has a 1 in 500 chance to drop from Highland Mixed Schools, it may take some time to catch him.
+|tip Fish in Highland Mixed Schools.
+|tip It may take some time to catch this item.
+|tip You can also purchase this pet from the auction house.
 collect Mr. Pinchy##27388 |goto Terokkar Forest/0 66.88,81.11
 step
 use the Mr. Pinchy##27388
-|tip You can use him 3 times, but he has a 4 hour cooldown period between uses.
-|tip He is in your inventory.
-collect Magical Crawdad Box##27445 |n
-|tip This has a 1 in 5 chance to drop from Mr. Pinchy, it may take you several attempts to get this.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-use the Magical Crawdad Box##27445
-|tip It is in your inventory.
-Learn the "Magical Crawdad" Battle Pet |learnpet Magical Crawdad##132
+|tip Use the item to make a wish.
+|tip It has 3 uses with a 4 hour cooldown.
+|tip It may take you several attempts to get this.
+collect Magical Crawdad Box##27445
 step
-_Congratulations!_
-You Collected the "Magical Crawdad" Battle Pet.
+use the Magical Crawdad Box##27445
+Learn the "Magical Crawdad" Battle Pet |learnpet Magical Crawdad##132
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Pengu",{
 patch='30200',
@@ -40,18 +37,18 @@ keywords={"Aquatic","Dragonblight"},
 pet=198,
 },[[
 step
+Reach Exalted reputation with The Kalu'ak |complete rep("The Kalu'ak") >= Exalted |or
+|tip You can use the The Kalu'ak Reuptation Guide to complete this.
+Click here to load the The Kalu'ak Reputation Guide |confirm |loadguide "Reputation Guides\\Wrath of the Lich King Reputations\\Kalu'ak"
+'|learnpet Pengu##198 |or
+step
 talk Sairuk##32763
-buy Nurtured Penguin Egg##44723 |goto Dragonblight/0 48.47,75.66
-|tip You need to have exalted reputation with the Kalu'ak in order to purchase this.
-|tip You can use our Kalu'ak reputation guide to help you increase your level.
+buy Nurtured Penguin Egg##44723
+collect Nurtured Penguin Egg##44723 |goto Dragonblight/0 48.47,75.66 |or
+'|learnpet Pengu##198 |or
 step
-collect Nurtured Penguin Egg##44723 |n
 use the Nurtured Penguin Egg##44723
-|tip It is in your inventory.
 Learn the "Pengu" Battle Pet |learnpet Pengu##198
-step
-_Congratulations!_
-You Collected the "Pengu" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Sea Pony",{
 patch='43000',
@@ -62,20 +59,19 @@ keywords={"Aquatic","Darkmoon","Faire"},
 pet=340,
 },[[
 step
-click Portal to the Darkmoon Faire |goto Mulgore/0 36.85,35.84
+Wait for the "Darkmoon Faire" Event |complete isevent("Darkmoon Faire")
 |tip The Darkmoon Faire is only available during the first week of every month.
-Teleport to the Darkmoon Faire |goto Darkmoon Island/0 51.29,23.86 |c
+step
+click Portal to the Darkmoon Faire
+Teleport to the Darkmoon Faire |goto Elwynn Forest/0 41.80,69.22
 step
 cast Fishing##7620
 |tip Cast out anywhere in the open water along the docks and beaches.
-collect Sea Pony##73953 |n
-|tip This has a 1 in 250 chance to be caught, it may take some time to get this.
-use the Sea Pony##73953
-|tip It is in your inventory.
-Learn the "Sea Pony" Battle Pet |learnpet Sea Pony##340 |goto 51.80,91.19
+|tip It may take some time to catch.
+collect Sea Pony##73953 |goto Darkmoon Island/0 51.70,91.50
 step
-_Congratulations!_
-You Collected the "Sea Pony" Battle Pet.
+use the Sea Pony##73953
+Learn the "Sea Pony" Battle Pet |learnpet Sea Pony##340
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
 patch='50100',
@@ -86,13 +82,10 @@ keywords={"Aquatic","Auction","House"},
 pet=629,
 },[[
 step
-buy Shore Crawler |n
-|tip This pet is trained to Horde Goblin characters.
-|tip If you do not have a Horde Goblin character you can purchase this pet from the Auction House.
+buy Shore Crawler pet
+|tip This pet is only available from a vendor to Horde Goblin players.
+|tip If you do not have a Horde Goblin character you can also purchase this pet from the Auction House.
 Learn the "Shore Crawler" Battle Pet |learnpet Shore Crawler##629
-step
-_Congratulations!_
-You Collected the "Shore Crawler" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Small Frog",{
 patch='50100',
@@ -110,27 +103,6 @@ Learn the "Small Frog" Battle Pet |learnpet Small Frog##419 |goto Elwynn Forest/
 step
 _Congratulations!_
 You Collected the "Small Frog" Battle Pet.
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Speedy",{
-patch='111100',
-source='WorldEvent',
-author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
-keywords={"Aquatic","Children's","Week"},
-pet=125,
-},[[
-step
-collect Turtle Box##23002 |n
-|tip This pet is a reward for completing the Children's Week quests in Stormwind.
-|tip You can use our Children's Week Stormwind Quests guide to help you complete these quests.
-|tip You can only choose 3 pets a year as a reward for Children's Week.
-|tip This pet is cageable, meaning you can purchase it from the Auction House.
-use the Turtle Box##23002
-|tip It will be in your mailbox.
-Learn the "Speedy" Battle Pet |learnpet Speedy##125
-step
-_Congratulations!_
-You Collected the "Speedy" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
 patch='31000',
@@ -154,78 +126,6 @@ step
 _Congratulations!_
 You Collected the "Strand Crawler" Battle Pet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Magical Crawdad",{
-patch='20100',
-source='Profession',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Magical Crawdad.",
-pet=132,
-},[[
-#include "Mr_Pinchy"
-step
-learnpet Magical Crawdad##132
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Pengu",{
-patch='30200',
-source='Vendor',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Pengu.",
-pet=198,
-},[[
-step
-Completing all normal quests should make you revered with the _Kalu'ak_ before having to do daily quests.
-confirm
-#include "Kaluak_rep"
-step
-#include "dailies_rep_mount",rep="The Kalu'ak"
-step
-talk Sairuk##32763
-buy 1 Nurtured Penguin Egg##44723 |goto Dragonblight 48.6,75.6
-step
-learnpet Pengu##198 |use Nurtured Penguin Egg##44723
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Sea Pony",{
-patch='43000',
-source='Profession',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Sea Pony.",
-pet=340,
-},[[
-step
-This pet requires Darkmoon Island to be accessible.
-confirm
-step
-Follow the Path to the Darkmoon Faire |goto Darkmoon Island,56.0,52.9,1 |walk
-This pet can be caught by fishing the waters around Darkmoon Island.
-collect Sea Pony##73953
-step
-learnpet Sea Pony##340 |use Sea Pony##73953
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Shore Crawler",{
-patch='50100',
-source='Vendor',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Shore Crawler.",
-pet=629,
-},[[
-step
-This pet is only available to Horde characters.
-confirm
-step
-learnpet Shore Crawler##629
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Small Frog",{
-patch='50100',
-source='PetBattle',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Small Frog.",
-pet=419,
-},[[
-step
-Challenge one to a pet battle and capture it
-|tip The Small Frog is level 3.
-learnpet Small Frog##419 |goto Elwynn Forest 56.0,67.1
-]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Speedy",{
 patch='111100',
 source='WorldEvent',
@@ -234,17 +134,21 @@ description="\nThis guide will walk you through obtaining the Aquatic pet: Speed
 pet=125,
 },[[
 step
-You may only get _three_ of these pets _per year_ from _completing_ the quest lines _Back to the Orphanage (Shattrath)_, _Warden of the Alliance_, and _Back to the Orphanage (Dalaran)_
-If you are aligned with the Oracles, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-If you are aligned with the Wolvar, click here for their Children's Week Daily set. |next "Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-For the Shattrath Daily set, click here. |next "Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
-confirm
+Wait for the Children's Week Event |complete isevent("Children's Week") |or
+'|complete haspet(125)
 step
-collect 1 Turtle Box##23002
-|tip Back to the Orphanage (Shattrath)
+Complete the Children's Week Event
+|tip You can use our "Children's Week" guides to achieve this.
+Click Here to Open "Children's Week Dalaran Oracles" Guide |loadguide "Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click Here to Open "Children's Week Dalaran Wolvar" Guide |loadguide "Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click Here to Open "Children's Week Shattrath" Guide |loadguide "Events Guides\\Children's Week\\Children's Week Shattrath Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click Here to Open "Children's Week Kul Tiras" Guide |loadguide "Events Guides\\Children's Week\\Children's Week Kul Tiras Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+Click Here to Open "Children's Week Stormwind" Guide |loadguide "Events Guides\\Children's Week\\Children's Week Stormwind Quests" |confirm |only if ZGV.guidesets["DailiesHCATA"]
+collect Turtle Box##23002 |or
+'|complete haspet(125)
 step
-learnpet Speedy##125 |use Turtle Box##23002
-|tip Back to the Orphanage (Shattrath)
+|use Turtle Box##23002
+Learn the "Speedy" Battle Pet |learnpet Speedy##125
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Strand Crawler",{
 patch='31000',
@@ -4844,46 +4748,6 @@ step
 _Congratulations!_
 You Collected the "Gold Mini Jouster" Battle Pet.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Great Horned Owl",{
-patch='111100',
-source='Vendor',
-author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Darnassus.",
-keywords={"Flying","Darnassus"},
-pet=68,
-},[[
-step
-talk Shylenai##8665
-buy Great Horned Owl##8500 |goto Darnassus/0 64.05,53.54
-step
-collect Great Horned Owl##8500 |n
-use the Great Horned Owl##8500
-|tip It is in your inventory.
-Learn the "Great Horned Owl" Battle Pet |learnpet Great Horned Owl##68
-step
-_Congratulations!_
-You Collected the "Great Horned Owl" Battle Pet.
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Hawk Owl",{
-patch='111100',
-source='Vendor',
-author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Darnassus.",
-keywords={"Flying","Darnassus"},
-pet=67,
-},[[
-step
-talk Shylenai##8665
-buy Hawk Owl##8501 |goto Darnassus/0 64.05,53.54
-step
-collect Hawk Owl##8501 |n
-use the Hawk Owl##8501
-|tip It is in your inventory.
-Learn the "Hawk Owl" Battle Pet |learnpet Hawk Owl##67
-step
-_Congratulations!_
-You Collected the "Hawk Owl" Battle Pet.
-]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Plump Turkey",{
 patch='32200',
 source='WorldEvent',
@@ -4984,24 +4848,22 @@ pet=84,
 step
 step
 talk William Saldean##33996
-buy Special Chicken Feed##11109 |goto Tirisfal Glades/0 61.19,51.97
+buy Special Chicken Feed##11109 |goto Westfall/0 56.04,31.23
 step
 click Chicken##620
 |tip Spam the "Chicken" emote on a chicken walking around this area.
 |tip The chicken will eventually give you a quizzical look and offer you a quest.
 |tip It may take a while to get the quest.
-accept CLUCK!##3861 |goto 53.24,56.58
-turnin CLUCK!##3861 |goto 53.24,56.58
+accept CLUCK!##3861
+turnin CLUCK!##3861
 step
 click Farm Chicken Egg##161513
 |tip It looks like a brown egg underneath the chicken you are speaking to.
-collect Chicken Egg##11110 |n
+collect Chicken Egg##11110
+step
 use the Chicken Egg##11110
 |tip It is in your inventory.
 Learn the "Westfall Chicken" Battle Pet |learnpet Westfall Chicken##84
-step
-_Congratulations!_
-You Collected the "Westfall Chicken" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\White Moth",{
 patch='20100',
@@ -6493,9 +6355,10 @@ pet=68,
 },[[
 step
 talk Shylenai##8665
-buy 1 Great Horned Owl##8500 |goto Darnassus 64.0,53.6
+buy 1 Great Horned Owl##8500 |goto Darnassus/0 64.05,53.56
 step
-learnpet Great Horned Owl##68 |use Great Horned Owl##8500
+use Great Horned Owl##8500
+Learn the "Great Horned Owl" Battle Pet |learnpet Great Horned Owl##68
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Hawk Owl",{
 patch='111100',
@@ -6506,9 +6369,10 @@ pet=67,
 },[[
 step
 talk Shylenai##8665
-buy 1 Hawk Owl##8501 |goto Darnassus 64.0,53.6
+buy 1 Hawk Owl##8501 |goto Darnassus/0 64.05,53.56
 step
-learnpet Hawk Owl##67 |use Hawk Owl##8501
+use Hawk Owl##8501
+Learn the "Hawk Owl" Battle Pet |learnpet Hawk Owl##67
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Plump Turkey",{
 patch='32200',
@@ -7103,28 +6967,6 @@ buy 1 Tirisfal Batling##44971
 |tip This pet must be bought with a Horde character or through the Auction House.
 step
 learnpet Tirisfal Batling##206 |use Tirisfal Batling##44971
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Westfall Chicken",{
-patch='30200',
-source='Quest',
-author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Westfall Chicken.",
-pet=84,
-},[[
-step
-talk Farmer Saldean##233
-buy 1 Special Chicken Feed##11109 |goto Westfall 56.0,31.2
-step
-Perform the "Chicken" emote on a Chicken: |script DoEmote("CHICKEN")
-|tip Do this until the Chicken gives you a quest
-talk Chicken##620
-accept CLUCK!##3861 |goto 55.8,31.4
-step
-talk Chicken##620
-turnin CLUCK!##3861
-step
-Click on the Chicken Egg on the ground to loot your new pet
-learnpet Westfall Chicken##84
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\\White Moth",{
 patch='20100',

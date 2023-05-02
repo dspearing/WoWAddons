@@ -4,7 +4,7 @@ if ZGV:DoMutex("DailiesCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Azure Span World Quests",{
 author="support@zygorguides.com",
-description="This guide will assist you in completing world quests in The Azure Span.",
+description="\nThis guide will assist you in completing world quests in The Azure Span.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2024},
@@ -230,14 +230,6 @@ click Infused Glacier Sample+
 |tip Use the handholds to move around the glacier and excavate samples.
 |tip Glacier samples can be found near handholds on both sides of the waterfall.
 Excavate #8# Infused Glacier Samples from the Ice |q 70653/3 |goto 48.41,37.55
-|next "Dragon_World_Quest_Emissaries"
-step
-label quest-74835
-accept Enok the Stinky##74835 |goto The Azure Span/0 23.41,53.56
-|tip You will accept this quest automatically.
-step
-clicknpc Enok the Stinky##202440
-Defeat Enok the Stinky in a Pet Battle |q 74835/1 |goto 23.41,53.56
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70440
@@ -639,6 +631,7 @@ step
 label quest-73148
 accept Combustible Vegetation##73148 |goto The Forbidden Reach/5 13.09,53.71
 |tip You will accept this quest automatically.
+|polish
 step
 clicknpc Wildfire##200688
 |tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
@@ -650,58 +643,13 @@ step
 label quest-73146
 accept Cutting Wind##73146 |goto The Forbidden Reach/5 18.34,13.24
 |tip You will accept this quest automatically.
+|polish
 step
 clicknpc Vortex##200685
 |tip This NPC gains power for each of the 7 nearby Storm-Touched Swoglets.
-|tip Defeating these mobs makes Vortex easier to defeat.
+|tip Defeating these mobs makes Wildfire easier to defeat.
 |tip You can track them on your minimap with Track Pets.
 Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
-|next "Dragon_World_Quest_Emissaries"
-step
-label quest-73083
-accept Dragonrider Racing - Caldera Coaster##73083 |goto The Forbidden Reach/5 41.36,14.55
-|tip You will accept this quest automatically.
-step
-talk Bronze Timekeeper##200316
-Tell him _"I'd like to try the course."_
-Prepare for the Race |havebuff spell:398228 |goto 41.36,14.55 |q 73083
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
-step
-Wait for the Race to Start |havebuff spell:369968 |goto 41.34,14.77 |q 73083
-|tip This will take about 5 seconds.
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
-step
-Complete the Race |q 73083/1
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
-|next "Dragon_World_Quest_Emissaries"
-step
-label quest-73084
-accept Dragonrider Racing - Forbidden Reach Rush##73084 |goto The Forbidden Reach/5 49.42,60.05
-|tip You will accept this quest automatically.
-step
-talk Bronze Timekeeper##200417
-Tell him _"I'd like to try the course."_
-Prepare for the Race |havebuff spell:398326 |goto 49.42,60.05 |q 73084
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
-step
-Wait for the Race to Start |havebuff spell:369968 |goto 49.42,59.88 |q 73084
-|tip This will take about 5 seconds.
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
-step
-Complete the Race |q 73084/1
-|tip Follow the indicated path, flying through rings and any wind gusts you see.
-|tip Use your dragonriding abilities frequently to maintain a swift pace.
-|tip The immediate next path appears in orange, while future paths appear in blue.
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73079
@@ -731,6 +679,7 @@ step
 label quest-73082
 accept Dragonrider Racing - Southern Reach Route##73082 |goto The Forbidden Reach/5 63.64,84.05
 |tip You will accept this quest automatically.
+|polish
 step
 talk Bronze Timekeeper##200247
 Tell him _"I'd like to try the course."_
@@ -776,30 +725,27 @@ Complete the Race |q 73078/1
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73149
-accept Flood Warning##73149 |goto The Forbidden Reach/5 89.37,60.23
+accept Flood Warning##73149 |goto The Forbidden Reach/5 89.29,60.39
 |tip You will accept this quest automatically.
+|polish
 step
 clicknpc Flow##200697
-|tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
-|tip Defeating these mobs makes Flow easier to defeat.
-|tip You can track them on your minimap with Track Pets.
-Defeat Flow in a Pet Battle |q 73149/1 |goto 89.37,60.23
+Defeat Flow in a Pet Battle |q 73149/1 |goto 89.29,60.39
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-73147
 accept Shifting Ground##73147 |goto The Forbidden Reach/5 67.30,12.26
 |tip You will accept this quest automatically.
+|polish
 step
 clicknpc Tremblor##197447
-|tip This NPC gains power for each of the 7 nearby Storm-Touched mobs.
-|tip Defeating these mobs makes Tremblor easier to defeat.
-|tip You can track them on your minimap with Track Pets.
 Defeat Tremblor in a Pet Battle |q 73147/1 |goto 67.30,12.26
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75257
 accept The War Creche##75257 |goto The War Creche/0 61.04,45.79
 |tip You will accept this quest automatically.
+|polish
 step
 Kill enemies around this area
 |tip Inside the building.
@@ -813,7 +759,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests",{
 author="support@zygorguides.com",
-description="This guide will assist you in completing world quests in Ohn'ahran Plains.",
+description="\nThis guide will assist you in completing world quests in Ohn'ahran Plains.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2023},
@@ -1176,11 +1122,11 @@ Collect #25# Honey Plums |q 70549/2 |goto 62.89,57.66
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-74838
-accept Lyver##74838 |goto Ohn'ahran Plains/0 73.39,68.00
+accept Lyver##74838 |goto Ohn'ahran Plains/0 73.38,67.99
 |tip You will accept this quest automatically.
 step
 clicknpc Lyver##201858
-Defeat Lyver in a Pet Battle |q 74838/1 |goto 73.39,68.00
+Defeat Lyver in a Pet Battle |q 74838/1 |goto 73.38,67.99
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70067
@@ -1263,6 +1209,40 @@ _TANK:_ |grouprole TANK
 |tip Move out of "Shock Water" to avoid heavy damage. |grouprole TANK
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74501
+accept Suffusion Camp: Cinderwind##74501 |goto Ohn'ahran Plains/0 79.72,75.48
+|tip You will accept this quest automatically.
+|polish
+stickystart "Collect_Ward_of_Igira"
+stickystart "Collect_Ward_of_Fyrakk"
+step
+label "Collect_Ward_of_Igira"
+Kill enemies around this area
+collect 5 Ward of Igira##203430 |goto 73.88,71.44 |q 74501
+step
+click Suffusion Crucible
+|tip You can find several more nearby.
+|tip They appear on your minimap as yellow dots.
+Loot the Suffusion Crucible |q 74501/1 |goto 73.88,71.20
+|tip Looting the crucible will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+step
+Slay the Crucible Guardian |q 74501/2 |goto 73.88,71.20
+step
+label "Collect_Ward_of_Fyrakk"
+Kill enemies around this area
+|tip More powerful elite enemies will sometimes drop wards.
+|tip You can also acquire them looting Suffusion Crucibles.
+collect 5 Ward of Fyrakk##203683 |goto 73.88,71.44 |q 74501
+step
+click Suffusion Mold
+Loot the Suffusion Mold |q 74501/3 |goto 74.27,72.28
+|tip Looting the mold will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+step
+kill Forgemaster Kraglin##201625 |q 74501/4 |goto 74.24,72.15
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70649
 accept Swab Swog##70649 |goto Ohn'ahran Plains/0 79.72,75.48
 |tip You will accept this quest automatically.
@@ -1341,7 +1321,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Thaldraszus World Quests",{
 author="support@zygorguides.com",
-description="This guide will assist you in completing world quests in Thaldraszus.",
+description="\nThis guide will assist you in completing world quests in Thaldraszus.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2025,2085},
@@ -1395,29 +1375,23 @@ Splatter Unshielded Professor Intinosa |q 70442/3 |goto 58.52,43.12
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70369
-accept Blasting the Past##70369 |goto Thaldraszus/0 57.49,82.86
+accept Blasting the Past##70369
 |tip You will accept this quest automatically.
+|polish
 step
-click Timewalker Scroll
-|tip They appear on your minimap as yellow dots.
-Use the Timewalker Scroll |q 70369/1 |goto 56.97,83.31
+Use the Timewalker Scroll |q 70369/1
 stickystart "Slay_Time-Lost_Enemies_70369"
 stickystart "Slay_Time-Lost_Champions_70369"
 step
+kill Qu'ruk the Time-Lost##195322 |q 70369/4
+step
 label "Slay_Time-Lost_Enemies_70369"
-extraaction Temporal Burst##385476
-|tip Use this to do AoE damage.
 Kill Time-Lost enemies around this area
-Slay #14# Time-Lost Enemies |q 70369/2 |goto 57.49,82.86
+Slay #14# Time-Lost Enemies |q 70369/2
 step
 label "Slay_Time-Lost_Champions_70369"
-extraaction Temporal Burst##385476
-|tip Use this to do AoE damage. |notinsticky
 Kill Time-Lost enemies around this area
-|tip Kill Chieftains and Destroyers.
-Slay #2# Time-Lost Champions |q 70369/3 |goto 57.49,82.86
-step
-kill Qu'ruk the Time-Lost##195322 |q 70369/4 |goto 57.18,85.13
+Slay #2# Time-Lost Champions |q 70369/3
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-71225
@@ -1766,6 +1740,7 @@ accept Right Twice a Day##74794 |goto Thaldraszus/0 60.64,59.74
 |tip On top of the platform.
 step
 clicknpc Malfunctioning Matrix##202452
+|tip On top of the platform.
 Defeat the Malfunctioning Matrix in a Pet Battle |q 74794/1 |goto 60.64,59.74
 |next "Dragon_World_Quest_Emissaries"
 step
@@ -1837,15 +1812,6 @@ click Titan Temple Relic##379239+
 collect 8 Titan Temple Relic##198443 |q 70111/1 |goto 49.62,58.93
 |next "Dragon_World_Quest_Emissaries"
 step
-label quest-74792
-accept They're Full of Stars!##74792 |goto Thaldraszus/0 55.97,40.53
-|tip You will accept this quest automatically.
-step
-talk Stargazer Zenoth##202458
-Choose _"Begin pet battle."_
-Defeat Stargazer Zenoth in a Pet Battle |q 74792/1 |goto 55.97,40.53
-|next "Dragon_World_Quest_Emissaries"
-step
 label quest-70057
 accept Thieving Tarasek##70057 |goto Thaldraszus/0 56.82,67.56
 |tip You will accept this quest automatically.
@@ -1883,7 +1849,7 @@ label "Dragon_World_Quest_Emissaries"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Waking Shores World Quests",{
 author="support@zygorguides.com",
-description="This guide will assist you in completing world quests in The Waking Shores.",
+description="\nThis guide will assist you in completing world quests in The Waking Shores.",
 condition_suggested=function() return completedq(66221) end,
 startlevel=60,
 worldquestzone={2022},
@@ -1892,14 +1858,6 @@ patch='100001',
 step
 label "Choose_World_Quest"
 #include "Dragon_Choose_World_Quests"
-step
-label quest-74841
-accept Adinakon##74841 |goto The Waking Shores/0 51.89,72.33
-|tip You will accept this quest automatically.
-step
-clicknpc Adinakon##201849
-Defeat Adinakon in a Pet Battle |q 74841/1 |goto 51.89,72.33
-|next "Dragon_World_Quest_Emissaries"
 step
 label quest-66419
 accept Allegiance To One##66419 |goto The Waking Shores/0 24.38,55.69
@@ -2560,13 +2518,12 @@ Slay #5# Qalashi Beasts |q 67006/4 |goto 64.71,30.77
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-74840
-accept Sharp as Flint##74840 |goto The Waking Shores/0 68.98,46.79
+accept Sharp as Flint##74840 |goto The Waking Shores/0 68.98,46.78
 |tip You will accept this quest automatically.
-|tip On top of the tower.
 step
 talk Excavator Morgrum Emberflint##201802
 Choose _"Begin pet battle."_
-Defeat Excavator Morgrum Emberflint in a Pet Battle |q 74840/1 |goto 68.98,46.79
+Defeat Excavator Morgrum Emberflint in a Pet Battle |q 74840/1 |goto 68.98,46.78
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-67024
@@ -2646,7 +2603,7 @@ accept The Terrible Three##66551 |goto The Waking Shores/0 38.91,83.27
 step
 talk Haniko##196264
 Choose _"Begin pet battle."_
-Defeat Haniko in a Pet Battle |q 66551/1 |goto 38.91,83.27
+Defeat Haniko in a Pet Battle |q 66551/1 |goto 38.8,83.2 |goto 38.91,83.27
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-69913
@@ -2705,9 +2662,1095 @@ step
 label "Dragon_World_Quest_Emissaries"
 #include "Dragon_World_Quest_Emissaries"
 ]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Zaralek Cavern World Quests",{
+author="support@zygorguides.com",
+description="This guide will assist you in completing world quests in Zaralek Cavern.",
+startlevel=60,
+worldquestzone={2133},
+patch='100100',
+},[[
+step
+label "Choose_World_Quest"
+#include "Dragon_Choose_World_Quests"
+step
+label vignette-5643
+Enter the cave |goto Zaralek Cavern/0 56.77,73.27 < 20 |walk
+accept Alcanon##75285 |goto 56.14,73.91
+|tip You will accept this quest automatically.
+|tip Inside the cave.
+|polish
+step
+kill Alcanon##203515 |q 75285/1 |goto 56.14,73.91
+|tip Inside the cave.
+|tip Avoid standing in front during "Golem Smash" when possible.
+|tip "Crush" deals heavy melee damage.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75343
+accept All That Glitter##75343 |goto Zaralek Cavern/0 56.66,66.04
+|tip You will accept this quest automatically.
+|polish
+step
+Collect #12# Glitter |q 75343/1 |goto 56.66,66.04
+|tip Fly through glittering yellow orbs in the air around this area.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75063
+accept Ambergrease##75063 |goto Zaralek Cavern/0 45.26,75.05
+|tip You will accept this quest automatically.
+|polish
+step
+Choose a Snail |q 75063/1 |goto 45.26,75.05
+|tip Click one of the three snails.
+step
+Collect #5# Ambergrease |q 75063/3 |goto 45.26,75.05
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5640
+accept Aquifon##75271 |goto Zaralek Cavern/0 48.36,75.09
+|tip You will accept this quest automatically.
+|polish
+step
+kill Aquifon##203468 |q 75271/1 |goto 48.36,75.09
+|tip Interrupt "Elemental Edema" on cooldown.
+|tip Move away from "Living Whirl" cyclones that pursue you.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75750
+Enter the cave |goto Zaralek Cavern/0 38.62,50.34 < 10 |walk
+accept Are They Not Beautiful?##75750 |goto Zaralek Cavern/0 38.25,49.66
+|tip Inside the cave.
+|tip You will accept this quest automatically.
+|polish
+step
+talk Shinmura##204792
+|tip Inside the cave.
+Choose _"Begin pet battle."_
+Defeat Shinmura in a Pet Battle |q 75750/1 |goto 38.25,49.66
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5652
+accept Brullo the Strong##75326 |goto Zaralek Cavern/0 41.52,86.13
+|tip You will accept this quest automatically.
+|polish
+step
+talk Brullo the Strong##203621
+Choose _"<Show off your gains.>"_
+kill Brullo the Strong##203621 |q 75326/1 |goto 41.52,86.13
+|tip He will attack you after a brief dialogue
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5728
+accept Captain Reykal##75612 |goto Zaralek Cavern/0 44.15,74.34
+|tip You will accept this quest automatically.
+|tip On top of the ledge.
+|polish
+step
+kill Captain Reykal##204423 |q 75612/1 |goto 44.15,74.34
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5706
+accept Cascades Calling##75612 |goto Zaralek Cavern/0 44.15,74.34
+|tip You will accept this quest automatically.
+|tip On top of the ledge.
+|polish
+step
+click Control Pylon+
+|tip They look like pillars of earth topped with white and blue swirling orbs around the water.
+|tip Click them until Rimecaller Raava is released.
+kill Rimecaller Raava##204423 |q 75612/1 |goto 44.15,74.34
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75126
+accept Cataloging Zaralek Cavern##75126 |goto Zaralek Cavern/0 43.26,84.64
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Cataloger's Raft##195713
+|tip Use the "Catalog" ability on your vehicle bar to take puctures of the wildlife along the river.
+|tip When your film bar becomes empty, use the "Reload Film" ability to reload and take more pictures.
+|tip Taking pictures of wildlife right when they're surrounded by light will result in better quality pictures.
+Ride the Cataloger's Raft |q 75126/1 |goto 43.26,84.64
+step
+Take Pictures of Wildlife |q 75126/2
+|tip Use the "Catalog" ability on your vehicle bar to take puctures of the wildlife along the river.
+|tip When your film bar becomes empty, use the "Reload Film" ability to reload and take more pictures.
+|tip Taking pictures of wildlife right when they're surrounded by light will result in better quality pictures.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5705
+accept The Champion's Challenge##75624 |goto Zaralek Cavern/0 45.11,82.99
+|tip You will accept this quest automatically.
+|polish
+step
+click Rock Weight+
+|tip They look like large weights sunk in the ground around this area.
+kill Drogbar Participant##204531+
+|tip They will attack you.
+|tip When the Challenge Points bar fills up nearbye at Judge Roggul, the challenge is complete.
+Complete the Champion's Challenge |q 75624/1 |goto 45.11,82.99
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73221
+accept A Clear State of Mind##73221 |goto Zaralek Cavern/0 51.16,58.26
+|tip You will accept this quest automatically.
+|polish
+step
+use M.U.S.T##202714
+|tip Use it in Refti enemies around this area.
+Cleanse #8# Refti |q 73221/1 |goto 51.16,58.26
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5674
+accept Colossian##75476 |goto Zaralek Cavern/0 48.38,23.80
+|tip You will accept this quest automatically.
+|polish
+step
+kill Colossian##204093 |q 75476/1 |goto 48.38,23.80
+|tip Don't stand in front of Colossian during "Devastating Slam."
+|tip Move quickly after "Fissuring Slam" out of the area under your feet.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5708
+accept Conspiracy of Flames##75455 |goto Zaralek Cavern/0 32.02,43.48
+|tip You will accept this quest automatically.
+|polish
+step
+click Ancient Dragon Skull+
+|tip Click the skull with the orange orb over it to fill the bar.
+|tip Keep alternating until all of the skulls are empowered.
+Complete the Djaradin Ritual |q 75455/1 |goto 32.02,43.48
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74879
+accept Corrosive Counterbalance##74879 |goto Zaralek Cavern/0 48.21,38.63
+|tip You will accept this quest automatically.
+|polish
+step
+Neutralize #6# Acidic Pools with Elemental Base |q 74879/1 |goto 48.21,38.63
+|tip Drag Alkaline Ragers to the greenish-yellow vapor clouds.
+step
+Neutralize #6# Basic Pools with Elemental Acid |q 74879/2 |goto 48.21,38.63
+|tip Drag Sulfuric Ragers to the blue vapor clouds.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75030
+accept Crystal Catastrophe!##75030 |goto Zaralek Cavern/0 58.82,46.49
+|tip You will accept this quest automatically.
+|polish
+step
+Catch #20# Crystals |q 75030/1 |goto 58.82,46.49
+|tip Run into the blue patches on the ground to catch a crystal.
+|tip Avoid the brown patches.
+|tip You cannot catch crystals while mounted.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75062
+accept Crystalline Conundrum##75062 |goto Zaralek Cavern/0 56.90,63.68
+|tip You will accept this quest automatically.
+step
+click Climbing Gear
+Acquire the Climbing Gear |q 75062/1 |goto 56.90,63.68
+step
+click Handhold
+Find a Handhold on the Cliff |q 75062/2 |goto 56.83,63.55
+step
+clicknpc Shimmering Crystal+
+|tip They look like glowing crystals on the wall next to handholds.
+|tip Click handholds to move up the wall and excavate artifacts from the wall by clicking them.
+|tip Avoid Aggressive Rockvipers which will cause you to lose grip.
+Collect #8# Shimmering Crystals |q 75062/3 |goto 56.70,63.06
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5700
+accept Crystalline Survey##75471 |goto Zaralek Cavern/0 62.53,47.65
+|tip You will accept this quest automatically.
+|polish
+step
+kill Agitated Crystalline##204099+
+Complete the Survey |q 75471/1 |goto 62.53,47.65
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75661
+accept Curative Crystalline Collection##75661 |goto Zaralek Cavern/0 37.71,71.08
+|tip You will accept this quest automatically.
+|polish
+step
+Kill Viridian enemies around this area
+collect 10 Viridian Heartcrystal##203012 |q 75661/1 |goto 37.71,71.08
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75344
+accept Crystal Cracker##75344 |goto Zaralek Cavern/0 56.46,65.54
+|tip You will accept this quest automatically.
+|polish
+stickystart "Kill_Crystalline_Walkers"
+step
+extraaction Shine Shardling##408547
+|tip Use it on Living Clusters around this area.
+|tip They look like small Crystalline Walkers near rock formations.
+Shine #8# Shardlings |q 75344/2 |goto 56.46,65.54
+step
+label "Kill_Crystalline_Walkers"
+kill 4 Crystalline Walker##201063 |q 75344/1 |goto 56.46,65.54
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75346
+accept Delver Mardei##75346 |goto Zaralek Cavern/0 60.39,69.42
+|tip You will accept this quest automatically.
+|polish
+step
+extraaction Order Scan##411428
+|tip It appears as a button on your screen.
+|tip Use it on various creatures around this area.
+Scan #10# Wildlife |q 75346/1 |goto 60.39,69.42
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75200
+accept Deepflayer Slayer##75200 |goto Zaralek Cavern/0 60.34,37.33
+|tip You will accept this quest automatically.
+|polish
+step
+Enter the cave |goto Zaralek Cavern/0 60.42,37.07 < 10 |walk
+Kill Scavengening enemies around this area
+|tip Inside and outside the cave.
+Slay #15# Deepflayers |q 75200/1 |goto 45.81,45.56
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74292
+accept Deephollow Mysteries##74292 |goto Zaralek Cavern/0 61.93,53.77
+|tip You will accept this quest automatically.
+|polish
+step
+click Arcane Magnetbubble
+|tip They look like blue bubbles floating underwater around this area.
+Use the Arcane Magnetbubble to Breathe Underwater |q 74292/1 |goto 61.93,53.77
+step
+click Arcane Magnetbubble
+|tip They look like blue bubbles floating underwater around this area.
+|tip Clicking a distant one will drag you to it quickly.
+Click objects around this area
+|tip They look like various discarded items underwater around this area.
+Collect #15# Strange Artifacts |q 74292/2 |goto 61.93,53.77
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75834
+accept Delver Mardei##75834 |goto Zaralek Cavern/0 65.37,49.60
+|tip You will accept this quest automatically.
+|polish
+step
+talk Delver Mardei##204926
+Choose _"Begin pet battle."_
+Defeat Delver Mardei in a Pet Battle |q 75834/1 |goto 65.37,49.60
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5660
+accept Dinn##75353 |goto Zaralek Cavern/0 28.50,51.13
+|tip You will accept this quest automatically.
+|polish
+step
+kill Dinn##203646 |q 75353/1 |goto 28.50,51.13
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5720
+accept Discordant Crystals##75664 |goto Zaralek Cavern/0 56.57,65.54
+|tip You will accept this quest automatically.
+|polish
+stickystart "Kill_Discordant_Chips"
+step
+kill Discordant Lodestone##204676 |q 75664/1 |goto 56.57,65.54
+step
+label "Kill_Discordant_Chips"
+kill 8 Discordant Chip##204677 |q 75664/2 |goto 56.57,65.54
+|tip They look like blue crystal clusters on the ground around this area.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75835
+accept Do You Even Train?##75835 |goto Zaralek Cavern/0 45.69,81.50
+|tip You will accept this quest automatically.
+|polish
+step
+talk Trainer Orlogg##204934
+Choose _"Begin pet battle."_
+Defeat Trainer Orlogg in a Pet Battle |q 75835/1 |goto 45.69,81.50
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75121
+accept Dragonrider Racing - Brimstone Scramble##75121 |goto Zaralek Cavern/0 54.50,23.70
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202749
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:403746 |goto 54.50,23.70 |q 75121
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 54.49,23.80 |q 75121
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75121/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75120
+accept Dragonrider Racing - Caldera Cruise##75120 |goto Zaralek Cavern/0 39.06,49.99
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202676
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:403533 |goto 39.06,49.99 |q 75120
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 39.09,49.89 |q 75120
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75120/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75119
+accept Dragonrider Racing - Crystal Circuit##75119 |goto Zaralek Cavern/0 38.75,60.61
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202524
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:403192 |goto 38.75,60.61 |q 75119
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 38.65,60.61 |q 75119
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75119/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75123
+accept Dragonrider Racing - Loamm Roamm##75123 |goto Zaralek Cavern/0 58.15,57.59
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202795
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:403934 |goto 58.15,57.59 |q 75123
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 58.07,57.61 |q 75123
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75123/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75122
+accept Dragonrider Racing - Shimmering Slalom##75122 |goto Zaralek Cavern/0 58.72,45.03
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202772
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:403830 |goto 58.72,45.03 |q 75122
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 58.71,45.13 |q 75122
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75122/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75124
+accept Dragonrider Racing - Sulfur Sprint##75124 |goto Zaralek Cavern/0 51.26,46.67
+|tip You will accept this quest automatically.
+|polish
+step
+talk Bronze Timekeeper##202973
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:404558 |goto 51.26,46.67 |q 75124
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 51.20,46.65 |q 75124
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 75124/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5663
+accept Emberdusk##75364 |goto Zaralek Cavern/0 31.81,50.63
+|tip You will accept this quest automatically.
+|polish
+step
+kill Emberdusk##203664 |q 75364/1 |goto 31.81,50.63
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75660
+accept Ending Their Watch##75660 |goto Zaralek Cavern/0 53.56,79.28
+|tip You will accept this quest automatically.
+|polish
+step
+talk Rupert, the Gentleman Elemental##200291
+Tell it _"I'm ready to travel with you."_
+Ask Rupert to Bring You to the Buried Vault |q 75660/1 |goto 53.56,79.28
+step
+kill 6 Enraged Watcher##200407 |q 75660/2 |goto 52.92,81.05
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5661
+Enter the cave |goto Zaralek Cavern/0 35.91,43.94 < 15
+accept Flowfy##75358 |goto Zaralek Cavern/0 36.30,44.79
+|tip You will accept this quest automatically.
+|tip Inside the cave.
+|polish
+step
+kill Flowfy##203660 |q 75358/1 |goto 36.30,44.79
+|tip Inside the cave.
+|tip "Fracturing Bite" stacks and causes 10% increased damage taken per stack.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5645
+accept General Zskorro##75296 |goto Zaralek Cavern/0 42.12,18.70
+|tip You will accept this quest automatically.
+|tip Inside the building.
+|polish
+step
+kill General Zskorro##203592 |q 75296/1 |goto 42.12,18.70
+|tip Inside the building.
+|tip After "Thundering Stomp," avoid blue areas on the ground.
+|tip Interrupt "Stonefall" or avoid the swirling areas on the ground.
+|tip "Dragon Rend" deals bleed damage over 8 seconds.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5704
+accept Glimmerfish Before It's Gone##75611 |goto Zaralek Cavern/0 40.44,60.97
+|tip You will accept this quest automatically.
+|polish
+step
+kill Giant Glimmerfish##204389
+click Glimmerfish Scale##399671+
+|tip They drop from the Glimmerfish when you attack it.
+collect 15 Glimmerfish Scale##205179 |q 75611/2 |goto 40.44,60.97
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5641
+accept Kairoktra##75274 |goto Zaralek Cavern/0 68.80,46.01
+|tip You will accept this quest automatically.
+|polish
+step
+kill Goopal##203477 |q 75274/1 |goto 68.80,46.01
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74945
+accept Guanite Gambit##74945 |goto Zaralek Cavern/0 49.59,41.20
+|tip You will accept this quest automatically.
+|polish
+step
+kill Nesting Shalewing##202785+
+click Guanite+
+|tip They look like small rocks around this area.
+|tip They also drop from Nesting Shalewings.
+collect 24 Guanite##204265 |q 74945/1 |goto 49.59,41.20
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5718
+accept Hungry Hungry Hydra##75478 |goto Zaralek Cavern/0 47.30,20.92
+|tip You will accept this quest automatically.
+|polish
+step
+Kill enemies around this area
+|tip Drag them to the hydra heads along the lava edge.
+|tip Kill them in front of the hydra heads to feed them to the hydra.
+Satiate the Hydra |q 75478/1 |goto 47.30,20.92
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74988
+accept If You Can't Take the Heat##74988 |goto Zaralek Cavern/0 36.28,47.63
+|tip You will accept this quest automatically.
+|polish
+step
+kill Crumbling Scoria##199837+
+use the Conductive Lodestone##204344
+|tip Use it on defeated Crumbling Scoria enemies.
+Siphon #10# Crumbling Scoria |q 74988/1 |goto 36.03,46.20
+step
+use the Conductive Lodestone##204344
+|tip Use it on High Summoner Wahuna to kill him.
+kill High Summoner Wahuna##202981 |q 74988/2 |goto 36.28,47.63
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5710
+accept Imperfect Balance##75451 |goto Zaralek Cavern/0 35.46,51.20
+|tip You will accept this quest automatically.
+|polish
+step
+kill Fury of the Caldera##204108 |q 75451/1 |goto 35.46,51.20
+|tip Stand in the pillar of earth and pillar of fire nearbye until both of the infusion bars are full.
+|tip When fully infusted, it will be attackable.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5654
+accept Invohq##75336 |goto Zaralek Cavern/0 45.65,33.28
+|tip You will accept this quest automatically.
+|polish
+step
+kill Invohq##203627 |q 75336/1 |goto 45.65,33.28
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5653
+accept Kairoktra##75334
+|tip You will accept this quest automatically.
+|polish
+step
+kill Kairoktra##203625 |q 75334/1
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5639
+accept Kaprachu##75269 |goto Zaralek Cavern/0 59.64,39.51
+|tip You will accept this quest automatically.
+|polish
+step
+kill Kaprachu##203466 |q 75269/1 |goto 59.64,39.51
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5651
+accept Klakatak##75322 |goto Zaralek Cavern/0 54.05,41.71
+|tip You will accept this quest automatically.
+|polish
+step
+kill Klakatak##203618 |q 75322/1 |goto 54.05,41.71
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5638
+Enter the cave |goto Zaralek Cavern/0 64.67,55.45 < 10 |walk
+accept Kob'rok##75267 |goto 65.42,55.87
+|tip You will accept this quest automatically.
+|tip Inside the cave.
+|polish
+step
+kill Kob'rok##203462 |q 75267/1 |goto 65.42,55.87
+|tip Inside the cave.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74985
+accept Like Moths to a Flame##74985 |goto Zaralek Cavern/0 47.69,49.19
+|tip You will accept this quest automatically.
+|polish
+step
+kill 12 Lightbound Swarmer##202841 |q 74985/1 |goto 47.69,49.19
+|tip At the top of the tower.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5716
+accept Magmaclaw Matriarch##75461 |goto Zaralek Cavern/0 40.76,38.19
+|tip You will accept this quest automatically.
+|polish
+step
+Kill Magmaclaw enemies around this area
+click Singed Offering+
+|tip They look like charred pieces of meat next to lava around this area.
+kill Magmaclaw Queen##203934 |q 75461/1 |goto 40.76,38.19
+|tip It will spawn from the pool and attack you when the bar fills up.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5656
+accept Magmanesha##75340 |goto Zaralek Cavern/0 40.76,38.19
+|tip You will accept this quest automatically.
+|polish
+step
+kill Magmanesha##200111 |q 75340/1 |goto 40.76,38.19
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5721
+accept Monument Maintenance##75705 |goto Zaralek Cavern/0 61.71,72.04
+|tip You will accept this quest automatically.
+|polish
+step
+click Missing Head
+Retrieve the Missing Head |havebuff spell:409244 |goto 62.77,72.37 |q 75705
+step
+click Crumbling Statue
+Place the Missing Head |nobuff spell:409244 |goto 61.71,72.04 |q 75705
+step
+click Missing Arm
+Retrieve the Missing Arm |havebuff spell:409322 |goto 58.63,72.44 |q 75705
+step
+click Crumbling Statue
+Place the Missing Arm |nobuff spell:409322 |goto 61.71,72.04 |q 75705
+step
+click Shattered Sphere
+Retreive the Shattered Sphere |havebuff spell:409264 |goto 62.34,69.53 |q 75705
+step
+click Crumbling Statue
+Place the Shattered Sphere |nobuff spell:409264 |goto 61.71,72.04 |q 75705
+step
+Restore the Crumbling Statue |q 75705/1 |goto 61.71,72.04
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5707
+accept Mortar Warfare##75454 |goto Zaralek Cavern/0 40.26,43.52
+|tip You will accept this quest automatically.
+|polish
+step
+kill Fury of the Caldera##204108+
+extraaction Frothing Lava##407633
+|tip Run to the erupting fire and pick an orb up floating above the ground.
+|tip Target a ballistae and use the Frothing Lava ability on it.
+|tip Repeat this to destroy the three ballistae.
+Destroy the Dragonkiller Ballistae |q 75454/1 |goto 40.26,43.52
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75350
+accept Niffen Nabber##75350 |goto Zaralek Cavern/0 59.24,73.86
+|tip You will accept this quest automatically.
+|polish
+step
+click Prison Door
+|tip They look like doors on large cages around this area.
+Free #6# Kidnapped Niffen |q 75350/1 |goto 59.24,73.86
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75061
+accept No Mushroom For Ever##75061 |goto Zaralek Cavern/0 54.49,68.01
+|tip You will accept this quest automatically.
+step
+click Climbing Gear
+Acquire the Climbing Gear |q 75061/1 |goto 54.49,68.01
+step
+click Handhold
+Find a Handhold on the Cliff |q 75061/2 |goto 54.46,68.26
+step
+clicknpc Cavern Mushroom+
+|tip They look like mushroom clusters growing on the wall next to handholds.
+|tip Click handholds to move up the wall and excavate mushrooms from the wall by clicking them.
+|tip Avoid Aggressive Rockvipers which will cause you to lose grip.
+Collect #8# Cavern Mushrooms |q 75061/3 |goto 53.97,68.21
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5644
+Enter the building |goto Zaralek Cavern/0 52.98,18.87 < 10 |walk
+accept Professor Gastrinax##75292 |goto 55.84,18.99
+|tip You will accept this quest automatically.
+|tip Inside the building.
+|polish
+step
+kill Professor Gastrinax##203521 |q 75292/1 |goto 55.84,18.99
+|tip Inside the building.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75151
+accept Redistributing the Remnants##75151 |goto Zaralek Cavern/0 43.28,22.16
+|tip You will accept this quest automatically.
+|polish
+step
+Click objects around this area
+|tip Click the various weapons and armor laying on the ground around this area.
+collect 8 Drakeforged Armaments##204437 |q 75151/1 |goto 43.28,22.16
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75663
+accept Restless Torment##75663 |goto Zaralek Cavern/0 49.86,39.10
+|tip You will accept this quest automatically.
+|polish
+step
+kill Ghostly Researcher##203013+
+kill Failed Experiment##203007+
+Kill #15# Ghostly Researchers or Failed Experiments |q 75663/1 |goto 49.86,39.10
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75067
+accept Rock Viper Roundup##75067 |goto Zaralek Cavern/0 45.08,69.05
+|tip You will accept this quest automatically.
+|polish
+stickystart "Destroy_Rock_Viper_Eggs"
+step
+kill 20 Rock Viper Egg##203054 |q 75067/2 |goto 45.08,69.05
+step
+label "Destroy_Rock_Viper_Eggs"
+kill 10 Invasive Rock Viper##203053 |q 75067/1 |goto 45.08,69.05
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74990
+accept Roiling Shadow##74990 |goto Zaralek Cavern/0 31.05,49.25
+|tip You will accept this quest automatically.
+|polish
+step
+extraaction Blazing Ascent##405041
+|tip Use it to throw yourself in the air.
+extraaction Surge Upward##404933
+|tip Use it to briefly dash upward a short distance.
+Pop #10# Shadowflame Boils |q 74990/2 |goto 31.05,49.25
+step
+kill Igneous Darkness##202866 |q 74990/1 |goto 32.51,50.05
+|tip This enemy is elite and may require a group.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73698
+accept Rolie Polie Molie##73698 |goto Zaralek Cavern/0 61.97,49.52
+|tip You will accept this quest automatically.
+|polish
+step
+talk Olie##201042
+Tell him _"I'm ready."_
+Talk to Olie to Transform |q 73698/1 |goto 61.97,49.52
+step
+collect 20 Snail Slime##203229 |q 73698/2 |goto 61.60,48.59
+|tip Use the "Jump" ability on your vehicle bar to burst up under Slimy Whelks.
+|tip Run over the slime patches to collect them.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5709
+accept Seismic Ceremony##75450 |goto Zaralek Cavern/0 34.36,47.83
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Primalist Runestone##204001+
+Deactivate the Primalist Runestones |q 75450/1 |goto 34.36,47.83
+|tip Every 8 seconds the stones will erupt and deal damage and stun anyone nearby.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75155
+accept Shadowflame Snuffer##75155 |goto Zaralek Cavern/0 47.22,20.96
+|tip You will accept this quest automatically.
+|polish
+step
+kill Shadowflame Emberling##203182+
+|tip They look like little blue elementals near the lava around this area.
+|tip Run over them to squish them.
+Snuff the Shadowflame |q 75155/1 |goto 47.22,20.96
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75345
+accept Shell Corporation##75345 |goto Zaralek Cavern/0 59.34,67.77
+|tip You will accept this quest automatically.
+|polish
+step
+kill Redolent Whelk##200898+
+|tip They can be found all over this area.
+collect 8 Slime Sheathed Shell##205199 |q 75345/1 |goto 59.34,67.77
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5701
+accept Shellfire##75222 |goto Zaralek Cavern/0 57.66,49.00
+|tip You will accept this quest automatically.
+|polish
+step
+kill Excited Ember##203330+
+click Jar of Snuffer Powder
+|tip They drop from Excited Embers.
+extraaction Throw Snuffer Powder##405716
+|tip Throw the powder on Big Bessie.
+Extinguish Big Bessie |q 75222/1 |goto 57.66,49.00
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75064
+accept Shrooming for a Living##75064 |goto Zaralek Cavern/0 47.22,20.96
+|tip You will accept this quest automatically.
+|polish
+stickystart "Kill_Pesky_Sporemoths"
+step
+click Dewcup Mushroom+
+|tip They look like cup-shaped mushrooms on the ground around this area.
+Harvest #7# Dewcup Mushrooms |q 75064/1 |goto 52.03,76.46
+step
+label "Kill_Pesky_Sporemoths"
+kill 12 Pesky Sporemoth##202625 |q 75064/2 |goto 52.03,76.46
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5659
+accept Skornace##75349
+|tip You will accept this quest automatically.
+|polish
+step
+kill Skornace##203643 |q 75349/1
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75128
+accept Slime Ranching##75128 |goto Zaralek Cavern/0 52.49,18.87
+|tip You will accept this quest automatically.
+|polish
+step
+extraaction Slime Sucker 2000##405006
+|tip Use it to vacuum slimes to you inside and outside the building.
+Contain the Slimes |q 75128/1 |goto 52.49,18.87
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5702
+map Zaralek Cavern/0
+path follow smart; loop on; ants curved; dist 30
+path	63.30,52.50	62.56,51.88	61.41,50.80	61.06,51.66	60.61,52.34
+path	60.27,54.23	61.02,54.90	61.86,55.14	62.97,53.72
+accept Smellincense##75370
+|tip You will accept this quest automatically.
+|polish
+step
+map Zaralek Cavern/0
+path follow smart; loop on; ants curved; dist 30
+path	63.30,52.50	62.56,51.88	61.41,50.80	61.06,51.66	60.61,52.34
+path	60.27,54.23	61.02,54.90	61.86,55.14	62.97,53.72
+Click objects on the ground
+|tip Various small glowing objects will provide you with an action button on your screen.
+extraaction Throw Ingredient##407047
+|tip Target the wagon and throw the ingredient at it.
+|tip When the wagon has 30 stacks of the buff, the incense is complete.
+Complete the Incense |q 75370/1 |goto 62.53,47.65
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5703
+accept Smelly Scramble##75441 |goto Zaralek Cavern/0 57.69,57.06
+|tip You will accept this quest automatically.
+|polish
+step
+Make the Concoction |q 75441/1 |goto 57.69,57.06
+|tip Run into the circles on the ground and use the ability on-screen to throw it far away on the ground.
+|tip Keep running and catching until the concoction finishes.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-73408
+accept Sniffen 'em Out!##73408 |goto Deepflayer Nest/0 27.31,34.45
+|tip You will accept this quest automatically.
+|polish
+step
+use the Niffen Incense##203013
+|tip Follow the trail of fumes, stopping around large patches and searching.
+extraaction Dig!##399339
+|tip Use it when it appears on-screen near a big patch of fumes.
+Dig up #5# Reekroot |q 73408/1 |goto 27.31,34.45
+|tip At the top of the tower.
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75071
+accept Sniffing Mice are Nice##75071 |goto Zaralek Cavern/0 49.86,39.10
+|tip You will accept this quest automatically.
+|polish
+step
+clicknpc Sniffing Mouse##205042
+Borrow a Sniffing Mouse |q 75071/1 |goto 49.86,39.10
+step
+extraaction Dig Here!##406104
+|tip Use it on smoky glittering spots on the ground.
+|tip After the Drogbar digs up the item, click it.
+Collect #10# 'Smellies' |q 75071/2 |goto 49.18,73.71
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75058
+accept Spearheading Acquisition##75058 |goto Zaralek Cavern/0 38.33,63.10
+|tip You will accept this quest automatically.
+|polish
+step
+click Climbing Gear
+Acquire the Climbing Gear |q 75058/1 |goto 38.33,63.10
+step
+click Handhold
+Find a Handhold on the Cliff |q 75058/2 |goto 38.17,63.07
+step
+clicknpc Zaqali Spear+
+|tip They look like large spears in the stone next to handholds on the wall.
+|tip Click handholds to move up the wall and excavate supplies.
+|tip Move quickly past Rockworm Hatchlings which causes you to lose grip.
+Collect #7# Zaqali Spears |q 75058/3 |goto 38.17,63.07
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5642
+Enter the cave |goto Zaralek Cavern/0 54.66,65.95 < 10 |walk
+accept Spinmarrow##75276 |goto Zaralek Cavern/0 53.10,64.23
+|tip You will accept this quest automatically.
+|tip Inside the cave.
+|polish
+step
+kill Spinmarrow##203480 |q 75276/1 |goto 53.10,64.23
+|tip Inside the cave.
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5699
+accept Stress Express##75156 |goto Zaralek Cavern/0 65.60,51.15
+|tip You will accept this quest automatically.
+|polish
+step
+map Zaralek Cavern/0
+path follow smart; loop off; ants curved; dist 30
+path	66.25,49.91	65.50,51.10	64.20,51.01	62.47,50.02	60.54,50.18
+path	59.28,53.80	58.27,54.81
+kill Busted Wagon##203065
+|tip Attack the wagon to cause it to move forward.
+Push the Wagon into Loamm |q 75156/1 |goto 62.53,47.65
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5719
+accept Strike the Colors##75494 |goto Zaralek Cavern/0 45.12,21.97
+|tip You will accept this quest automatically.
+|polish
+step
+click Brimstone Banner+
+|tip They look like massive banners hanging from balconies and towers around this area.
+|tip They appear on your minimap as yellow dots.
+Replace Neltharion's Banners |q 75494/1 |goto 45.12,21.97
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5662
+accept Subterrax##75360 |goto Zaralek Cavern/0 38.42,46.51
+|tip You will accept this quest automatically.
+|tip On top of the ledge.
+|polish
+step
+kill Subterrax##203662 |q 75360/1 |goto 38.42,46.51
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75680
+accept To a Land Down Under##75680 |goto Zaralek Cavern/0 52.41,66.04
+|tip You will accept this quest automatically.
+|polish
+step
+talk Explorer Bezzert##201004
+Choose _"Begin pet battle."_
+Defeat Explorer Bezzert in a Pet Battle |q 75680/1 |goto 52.41,66.04
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5646
+accept Underlight Queen##75298 |goto Zaralek Cavern/0 57.79,69.13
+|tip You will accept this quest automatically.
+|polish
+step
+kill Underlight Queen##203593 |q 75298/1 |goto 57.79,69.13
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-75060
+accept A Veritable Dumping Ground##75060 |goto Zaralek Cavern/0 51.26,24.38
+|tip You will accept this quest automatically.
+|polish
+step
+click Climbing Gear
+Acquire the Climbing Gear |q 75060/1 |goto 51.26,24.38
+step
+click Handhold
+Find a Handhold on the Cliff |q 75060/2 |goto 51.34,24.43
+step
+clicknpc Draconic Artifact+
+|tip They look like broken tablets in the stone next to handholds on the wall.
+|tip Click handholds to move up the wall and excavate supplies.
+|tip Move quickly past lava patches which causes you to lose grip.
+Collect #7# Draconic Artifacts |q 75060/3 |goto 51.37,24.97
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5664
+accept Viridian King##75366 |goto Zaralek Cavern/0 38.86,71.51
+|tip You will accept this quest automatically.
+|polish
+step
+kill Viridian King##201029 |q 75366/1 |goto 38.86,71.51
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74991
+accept We Have Returned##74991 |goto Zaralek Cavern/0 32.89,41.98
+|tip You will accept this quest automatically.
+|polish
+stickystart "Plant_Zaqali_Spears_in_Corpses"
+step
+click Ancient Ebon Spear
+Retrieve #4# Ancient Ebon Spears |q 74991/1 |goto 32.89,41.98
+step
+label "Plant_Zaqali_Spears_in_Corpses"
+Kill Zaqali enemies around this area
+use the Bundle of Ebon Spears##204365
+Plant #8# Zaqali Spears in Corpses |q 74991/2 |goto 32.89,41.98
+|next "Dragon_World_Quest_Emissaries"
+step
+label vignette-5717
+accept Whirling Zephyr##74352 |goto Zaralek Cavern/0 57.69,57.06
+|tip You will accept this quest automatically.
+|polish
+step
+Kill enemies around this area
+collect Hurricane Scepter##203706 |n
+clicknpc Lesser Storm Pylon##201299
+|tip Destroy the lessor pylons with Hurricane Scepters to remove the greater pylon shield.
+clicknpc Greater Storm Pylon##201262
+Destroy the Greater Pylon |q 74352/1 |goto 57.69,57.06
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74892
+accept Zaqali Elders##74892 |goto Zaralek Cavern/0 27.55,44.56
+|tip You will accept this quest automatically.
+|polish
+step
+kill Vakan##199855
+kill Gholna##199853
+_EVERYONE:_ |grouprole EVERYONE
+|tip Avoid standing in "Incineration" areas on the ground. |grouprole EVERYONE
+|tip Avoid standing in "Scorching Eclipse" areas on the ground. |grouprole EVERYONE
+_HEALER:_ |grouprole HEALER
+|tip Random players will receiving stacking "Searing Touch" debuffs and require extra healing. |grouprole HEALER
+|tip Random players will receiving stacking "Burning SHadows" debuffs and require extra healing. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Swap threat before the debuffs stack become too much for you to manage. |grouprole TANK
+|tip Swap threat before the debuffs stack become too much for you to manage. |grouprole TANK
+|tip Tank them apart so they don't gain the "Empowered Rivalry" buff. |grouprole TANK
+Defeat the Zaqali Elders |q 74892 |goto 27.55,44.56
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74989
+accept Zealous Defenses##74989 |goto Zaralek Cavern/0 29.25,50.17
+|tip You will accept this quest automatically.
+|polish
+stickystart "Slay_Zaqali_or_Primalist_Enemies"
+step
+click Shrine Ward+
+|tip They look like totems with flaming orbs above them around this area.
+Destroy #5# Shrine Wards |q 74989/1 |goto 29.25,50.17
+step
+label "Slay_Zaqali_or_Primalist_Enemies"
+Kill Zaqali and Primalist enemies around this area
+Slay #8# Zaqali or Primalist Enemies |q 74989/2 |goto 29.25,50.17
+|next "Dragon_World_Quest_Emissaries"
+step
+label "Dragon_World_Quest_Emissaries"
+#include "Dragon_World_Quest_Emissaries"
+]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Dragonscale Expedition\\Dragonscale Basecamp Weekly Quests",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various weekly Wanted quests in Dragonscale Basecamp.",
+description="\nThis guide will walk you through completing the various weekly Wanted quests in Dragonscale Basecamp.",
 condition_suggested=function() return factionrenown(2507) < 25 end,
 patch='100002',
 },[[
@@ -2824,7 +3867,7 @@ You have completed all weekly quests in the Dragonscale Basecamp
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Grimtusk's Fishing Hole",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Grimtusk's fishing location.",
+description="\nThis guide will walk you through completing the various daily quests at the Grimtusk's fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2024,7266) end,
 startlevel=62,
 areapoiid=7266,
@@ -2919,7 +3962,7 @@ You have completed the available daily quests at the Grimtusk's fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\River Mouth Fishing Hole",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the River Mouth fishing location.",
+description="\nThis guide will walk you through completing the various daily quests at the River Mouth fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2022,7086) end,
 startlevel=62,
 areapoiid=7086,
@@ -3011,7 +4054,7 @@ You have completed the available daily quests at the River Mouth fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Tyrhold Fishing Hole",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Tyrhold fishing location.",
+description="\nThis guide will walk you through completing the various daily quests at the Tyrhold fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2025,7271) end,
 startlevel=62,
 areapoiid=7271,
@@ -3105,7 +4148,7 @@ You have completed the available daily quests at the Tyrhold fishing hole
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Roaring Dragonspring Fishing Hole",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Roaring Dragonspring fishing location.",
+description="\nThis guide will walk you through completing the various daily quests at the Roaring Dragonspring fishing location.",
 condition_suggested=function() return level == 70 and completedq(70941) and factionrenown(2503) < 25 and areapoi(2023,7270) end,
 startlevel=62,
 areapoiid=7270,
@@ -3208,8 +4251,8 @@ You have completed the available daily quests at the Roaring Dragonspring fishin
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Rusza'thar Reach Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7102) end,
+description="\nThis guide will walk you through completing the various daily quests at the Rusza'thar Reach Aylaag Outpost location.",
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7102) > 0 end,
 startlevel=62,
 areapoiid=7102,
 areapoitype="Aylaag Outpost",
@@ -3225,12 +4268,13 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Rusza'thar Reach |complete areapoi(2023,7102)
-|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
+Wait for the Aylaag Centaur to Set Up Camp at Rusza'thar Reach |complete areapoitime(7102) > 0
+|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
+|tip |only if areapoitime(7102) == 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3303,20 +4347,20 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(65796,65789,65784,66698) |next "Begin_Dailies"
 step
-You have completed all daily quests for the Rusza'thar Reach area Aylaag Outpost |only if areapoi(2023,7102)
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7102)
-|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7102)
+You have completed all daily quests for the Rusza'thar Reach area Aylaag Outpost |only if areapoitime(7102) > 0
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7102) > 0
+|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7102) > 0
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
-'|complete not completedq(65796,65789,65784,66698) and areapoi(2023,7102) |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
+'|complete not completedq(65796,65789,65784,66698) and areapoitime(7102) > 0 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Pinewood Post Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7101) end,
+description="\nThis guide will walk you through completing the various daily quests at the Pinewood Post Aylaag Outpost location.",
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7101) > 0 end,
 startlevel=62,
 areapoiid=7101,
 areapoitype="Aylaag Outpost",
@@ -3332,12 +4376,13 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Pinewood Post |complete areapoi(2023,7101)
-|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
+Wait for the Aylaag Centaur to Set Up Camp at Pinewood Post |complete areapoitime(7101) > 0
+|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
+|tip |only if areapoitime(7101) == 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3347,8 +4392,7 @@ accept Scaling Ever Higher##70352 |goto 70.70,63.05 |only if questpossible |or 4
 accept Blood of Dragons##70279 |goto 70.70,63.05 |only if questpossible |or 4
 accept If There's Wool There's a Way##70990 |goto 70.70,63.05 |only if questpossible |or 4
 accept Of Wind and Water##67034 |goto 70.70,63.05 |only if questpossible |or 4
-accept An Amazing Journey##67039 |goto 70.70,63.05 |only if questpossible |or 4
-Accept the Daily Quest |complete false or completedq(67222,70352,70279,70990,67034,67039) |goto 70.70,63.05 |or 4
+Accept the Daily Quest |complete false or completedq(67222,70352,70279,70990,67034) |goto 70.70,63.05 |or 4
 step
 use the Aylaag Skinning Shear##200153
 |tip Use it on Wild Cliffhoofs around this area.
@@ -3379,22 +4423,6 @@ You can find more around:
 [83.22,68.95]
 [77.93,76.42]
 |only if haveq(70352) or completedq(70352)
-step
-clicknpc Zaya##192272
-Save Zaya |q 67039/2 |goto 74.08,77.81
-|only if haveq(67039) or completedq(67039)
-step
-clicknpc Sassa##192275
-Pick up Sassa |havebuff spell:377333 |goto 73.15,80.43 |q 67039
-|only if haveq(67039) or completedq(67039)
-step
-Save Sassa |q 67039/1 |goto 72.84,79.92
-|tip Walk to the riverbank.
-|only if haveq(67039) or completedq(67039)
-step
-clicknpc Suder##192271
-Save Suder |q 67039/3 |goto 70.58,79.00
-|only if haveq(67039) or completedq(67039)
 stickystart "Collect_Springborn_Core"
 step
 click Windtossed Feather##377560+
@@ -3425,29 +4453,28 @@ turnin Darkened Clouds##67222 |goto Ohn'ahran Plains/0 70.98,62.58
 |only if haveq(67222) or completedq(67222)
 step
 talk Toluiqi##185881
-turnin Scaling Ever Higher##70352 |goto 70.56,62.85 |only if haveq(70352) or completedq(70352)
-turnin An Amazing Journey##67039 |goto 70.56,62.85 |only if haveq(67039) or completedq(67039)
-|only if haveq(70352,67039) or completedq(70352,67039)
+turnin Scaling Ever Higher##70352 |goto 70.56,62.85
+|only if haveq(70352) or completedq(70352)
 step
 talk Huntmaster Malkik##185870
 turnin Blood of Dragons##70279 |goto 70.65,63.58 |only if haveq(70279) or completedq(70279)
 turnin If There's Wool There's a Way##70990 |goto 70.65,63.58 |only if haveq(70990) or completedq(70990)
 |only if haveq(70279,70990) or completedq(70279,70990)
 step
-You have completed all daily quests for the Pinewood Post area Aylaag Outpost |only if areapoi(2023,7101)
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7101)
-|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7101)
+You have completed all daily quests for the Pinewood Post area Aylaag Outpost |only if areapoitime(7101) > 0
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7101) > 0
+|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7101) > 0
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
-Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoi(2023,7103)
-|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoi(2023,7103)
-'|complete not completedq(67222,70352,70279,70990,67034,67039) and areapoi(2023,7101) |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Eaglewatch Outpost)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)" |only if areapoitime(7103) > 0
+|tip The Aylaag centaur are currently camped at Eaglewatch Outpost. |only if areapoitime(7103) > 0
+'|complete not completedq(67222,70352,70279,70990,67034) and areapoitime(7101) > 0 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Eaglewatch Outpost)",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Eaglewatch Outpost Aylaag Outpost location.",
-condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoi(2023,7103) end,
+description="\nThis guide will walk you through completing the various daily quests at the Eaglewatch Outpost Aylaag Outpost location.",
+condition_suggested=function() return level == 62 and factionrenown(2503) >= 4 and factionrenown(2503) < 25 and areapoitime(7103) > 0 end,
 startlevel=62,
 areapoiid=7103,
 areapoitype="Aylaag Outpost",
@@ -3463,12 +4490,13 @@ Reach Renown Level 4 with the Maruuk Centaur |complete factionrenown(2503) >= 4
 |tip Complete daily quests, weekly quests, and zone quests in Ohn'ahran Plains to gain renown.
 |tip The Aylaag Nomads will offer you quests each time they set up camp in Ohn'ahran Plains.
 step
-Wait for the Aylaag Centaur to Set Up Camp at Eaglewatch Outpost |complete areapoi(2023,7103)
-|tip The Aylaag centaur are currently travelling. |only if not areapoi(2023,7101) and not areapoi(2023,7102) and not areapoi(2023,7103)
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
+Wait for the Aylaag Centaur to Set Up Camp at Eaglewatch Outpost |complete areapoitime(7103) > 0
+|tip The Aylaag centaur are currently travelling. |only if areapoitime(7101) == 0 and areapoitime(7102) == 0 and areapoitime(7103) == 0
+|tip |only if areapoitime(7103) == 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
 |tip You need to be inside Ohn'ahran Plains to detect its location.
 step
 label "Begin_Dailies"
@@ -3562,19 +4590,19 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(65798,70210,67605,71241) |next "Begin_Dailies"
 step
-You have completed all daily quests for the Eaglewatch Outpost area Aylaag Outpost |only if areapoi(2023,7103)
-|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoi(2023,7103)
-|tip This guide will reset when they offer more quests at this location. |only if areapoi(2023,7103)
+You have completed all daily quests for the Eaglewatch Outpost area Aylaag Outpost |only if areapoitime(7103) > 0
+|tip You can only complete these quests once each time the outpost sets up at this location. |only if areapoitime(7103) > 0
+|tip This guide will reset when they offer more quests at this location. |only if areapoitime(7103) > 0
 The Aylaag centaur are currently travelling and not offering quests |complete false |only if default
-Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoi(2023,7102)
-|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoi(2023,7102)
-Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoi(2023,7101)
-|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoi(2023,7101)
-'|complete not completedq(65798,70210,67605,71241) and areapoi(2023,7103) |next "Begin_Dailies"
+Click Here to Load the "Aylaag Outpost Daily Quests (Rusza'thar Reach)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Rusza'thar Reach)" |only if areapoitime(7102) > 0
+|tip The Aylaag centaur are currently camped at Rusza'thar Reach. |only if areapoitime(7102) > 0
+Click Here to Load the "Aylaag Outpost Daily Quests (Pinewood Post)" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\Maruuk Centaur\\Aylaag Outpost Daily Quests (Pinewood Post)" |only if areapoitime(7101) > 0
+|tip The Aylaag centaur are currently camped at Pinewood Post. |only if areapoitime(7101) > 0
+'|complete not completedq(65798,70210,67605,71241) and areapoitime(7103) > 0 |next "Begin_Dailies"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various weekly quests in the Obsidian Citadel \n"..
+description="\nThis guide will walk you through completing the various weekly quests in the Obsidian Citadel \n"..
 "for Sabellian and Wrathion.",
 condition_suggested=function() return level == 70 end,
 startlevel=70,
@@ -3921,7 +4949,7 @@ You have completed all weekly quests the Obsidian Citadel
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Siege on Dragonbane Keep",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the Siege on Dragonbane Keep \n"..
+description="\nThis guide will walk you through completing the Siege on Dragonbane Keep \n"..
 "in The Waking Shores.",
 condition_suggested=function() return level == 70 end,
 areapoiid=7267,
@@ -3984,7 +5012,7 @@ Wait for the Assault to Begin Assembling |complete areapoitime(7104) == 0 |next 
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\A Cataloger's Paradise",{
 author="support@zygorguides.com",
-description="Unlock cataloging World Quests with the Dragonscale Expedition.",
+description="\nUnlock cataloging World Quests with the Dragonscale Expedition.",
 condition_suggested=function() return level >= 60 and factionrenown(2507) >= 8 and not achieved(16758) end,
 condition_end=function() return completedq(65486) end,
 startlevel=60,
@@ -4039,7 +5067,7 @@ turnin Picture Perfect##65486 |goto 49.88,68.42
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\A Climber's Calling",{
 author="support@zygorguides.com",
-description="This guide will walk you through unlocking the Climbing ability.",
+description="\nThis guide will walk you through unlocking the Climbing ability.",
 condition_suggested=function() return level == 60 and factionrenown(2507) >= 6 and not completedq(65421) end,
 condition_end=function() return completedq(65421) end,
 startlevel=60,
@@ -4093,7 +5121,7 @@ achieve Which Knot Was It Again?##16624
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Dragon Isles Emissary",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the questline to unlock a weekly renown quest.",
+description="\nThis guide will walk you through completing the questline to unlock a weekly renown quest.",
 startlevel=60,
 patch='100002',
 },[[
@@ -4193,11 +5221,13 @@ accept Aiding the Accord: A Feast For All##72068 |goto 50.15,56.29 |only if ques
 accept Aiding the Accord: The Hunt is On##72373 |goto 50.15,56.29 |only if questpossible |or
 accept Aiding the Accord: Dragonbane Keep##72374 |goto 50.15,56.29 |only if questpossible |or
 accept Aiding the Accord: The Isles Call##72375 |goto 50.15,56.29 |only if questpossible |or
+accept Aiding the Accord: Sniffenseeking##75859 |goto 50.15,56.29 |only if questpossible |or
 Accept the Weekly Quest |complete false |goto 50.15,56.29 |or
 stickystart "Gain_Reputation_Throughout_the_Dragon_Isles_72068"
 stickystart "Gain_Reputation_Throughout_the_Dragon_Isles_72373"
 stickystart "Gain_Reputation_Throughout_the_Dragon_Isles_72374"
 stickystart "Gain_Reputation_Throughout_the_Dragon_Isles_72375"
+stickystart "Gain_Reputation_Throughout_the_Dragon_Isles_75859"
 step
 Gain #4000# Reputation Throughout the Dragon Isles |q 70750/1
 |tip Gain reputation by completing world quests, daily quests, and weekly quests in the Dragon Isles.
@@ -4223,6 +5253,10 @@ Complete #5# World Quests |q 72375/1
 |tip Use the Dragonflight world quest guides to accomplish this.
 |only if haveq(72375) or completedq(72375)
 step
+Complete a Dig with Myrrit |q 75859/2
+|tip Use the Dragonflight world quest guides to accomplish this.
+|only if haveq(75859) or completedq(75859)
+step
 label "Gain_Reputation_Throughout_the_Dragon_Isles_72068"
 Gain #3000# Reputation Throughout the Dragon Isles |q 72068/2
 |tip Gain reputation by completing world quests, daily quests, and weekly quests in the Dragon Isles.
@@ -4247,16 +5281,23 @@ Gain #3000# Reputation Throughout the Dragon Isles |q 72375/2
 |tip You can also gain reputation by working through leveling guides and zone side quests.
 |only if haveq(72375) or completedq(72375)
 step
+label "Gain_Reputation_Throughout_the_Dragon_Isles_75859"
+Gain #3000# Reputation Throughout the Dragon Isles |q 75859/3
+|tip Gain reputation by completing world quests, daily quests, and weekly quests in the Dragon Isles.
+|tip You can also gain reputation by working through leveling guides and zone side quests.
+|only if haveq(75859) or completedq(75859)
+step
 talk Therazal##196499
 turnin Aiding the Accord##70750 |goto 50.15,56.29 |only if haveq(70750) or completedq(70750)
 turnin Aiding the Accord: A Feast For All##72068 |goto 50.15,56.29 |only if haveq(72068) or completedq(72068)
 turnin Aiding the Accord: The Hunt is On##72373 |goto 50.15,56.29 |only if haveq(72373) or completedq(72373)
 turnin Aiding the Accord: Dragonbane Keep##72374 |goto 50.15,56.29 |only if haveq(72374) or completedq(72374)
 turnin Aiding the Accord: The Isles Call##72375 |goto 50.15,56.29 |only if haveq(72375) or completedq(72375)
+turnin Aiding the Accord: Sniffenseeking##75859 |goto 50.15,56.29 |only if haveq(75859) or completedq(75859)
 step
 You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
-'|complete not completedq(70750,72068,72373,72374,72375) |next "Begin_Weekly_Quests"
+'|complete not completedq(70750,72068,72373,72374,72375,75859) |next "Begin_Weekly_Quests"
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies",{
@@ -4267,7 +5308,6 @@ condition_valid_msg="You must complete the \"An Eclectic Accord,\" \"Stemming th
 patch='100007',
 },[[
 step
-label "Choose_Envoy"
 click Envoy Charter
 |tip Choose your envoy for the day.
 |tip Each day you can select an envoy and gain +10% renown gained for that day.
@@ -4435,21 +5475,6 @@ Complete the Caldera Climb |q 75237/2 |goto 41.36,14.55
 |tip You can complete either one of these races in reverse or advanced mode once to complete the quest. |notinsticky
 |only if haveq(75237) or completedq(75237)
 step
-talk Cataloger Daela##200566
-turnin Filming the Caldera##74389 |goto 34.32,59.98 |only if haveq(74389) or completedq(74389)
-turnin Spelunking the Den##74118 |goto 34.32,59.98 |only if haveq(74118) or completedq(74118)
-|only if haveq(74389,74118) or completedq(74389,74118)
-step
-talk Turik##200562
-turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or completedq(74391)
-turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
-|only if haveq(74391,74119) or completedq(74391,74119)
-step
-talk Storykeeper Ashekh##200564
-turnin Rare Prey##74117 |goto 34.07,59.96 |only if haveq(74117) or completedq(74117)
-turnin Brutal Prey##74390 |goto 34.07,59.96 |only if haveq(74390) or completedq(74390)
-|only if haveq(74117,74390) or completedq(74117,74390)
-step
 talk Kraxxus##200563
 turnin Reach South##75263 |goto 34.00,59.81 |only if haveq(75263) or completedq(75263)
 turnin Reach South##74392 |goto 34.00,59.81 |only if haveq(74392) or completedq(74392)
@@ -4457,15 +5482,26 @@ turnin Reach Center##75261 |goto 34.00,59.81 |only if haveq(75261) or completedq
 turnin Reach North##75237 |goto 34.00,59.81 |only if haveq(75237) or completedq(75237)
 |only if haveq(75263,74392,75261,75237) or completedq(75263,74392,75261,75237)
 step
-You have completed the available envoy quests
-|tip This guide will reset when more become available.
-'|complete questactive(75263,74392,75261,75237,74389,74118,74117,74390,74391,74119) |next "Choose_Envoy"
+talk Cataloger Daela##200566
+turnin Filming the Caldera##74389 |goto 34.32,59.98 |only if haveq(74389) or completedq(74389)
+turnin Spelunking the Den##74118 |goto 34.32,59.98 |only if haveq(74118) or completedq(74118)
+|only if haveq(74389,74118) or completedq(74389,74118)
+step
+talk Storykeeper Ashekh##200564
+turnin Rare Prey##74117 |goto 34.07,59.96 |only if haveq(74117) or completedq(74117)
+turnin Brutal Prey##74390 |goto 34.07,59.96 |only if haveq(74390) or completedq(74390)
+|only if haveq(74117,74390) or completedq(74117,74390)
+step
+talk Turik##200562
+turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or completedq(74391)
+turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
+|only if haveq(74391,74119) or completedq(74391,74119)
 ]])
 ZGV.BETAEND()
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole",{
 author="support@zygorguides.com",
-description="This guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
+description="\nThis guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
 startlevel=60,
 areapoiid=7412,
 areapoitype="Fishing Hole",
@@ -4523,3 +5559,144 @@ You have completed the available daily quests at the Dragonskull Island fishing 
 '|complete not completedq(73226) |next "Begin_Daily_Quests"
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100007',
+},[[
+step
+label "Active_Quests_Available"
+Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178)
+step
+talk Volethi##200727
+accept Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if questactive(73189)
+accept Sneaky Pebbles##75024 |goto 34.85,57.48 |only if questactive(75024)
+|only if questactive(73189,75024)
+step
+talk Tukkaraq##200558
+accept Up to the Highest Height!##75026 |goto 34.36,58.57
+|only if questactive(75026)
+step
+talk Cataloger Coralie##201291
+accept Snake Wrangling##73191 |goto 34.36,59.28 |only if questactive(73191)
+accept A Good Day for Rolling##75025 |goto 34.36,59.28 |only if questactive(75025)
+|only if questactive(73191,75025)
+step
+talk Scalecommander Cindrethresh##199199
+accept Toxic Infestation##73190 |goto 35.31,59.49 |only if questactive(73190)
+accept Busting Blues##73142 |goto 35.31,59.50 |only if questactive(73142)
+accept Soupocalypse Now!##73179 |goto 35.30,59.49 |only if questactive(73179)
+|only if questactive(73190,73142,73179)
+step
+talk Scalecommander Azurathel##199204
+accept Hands Off Our Booty!##73178 |goto 35.53,58.69
+|only if questactive(73178)
+stickystart "Slay_Irontide_Cutthroats"
+step
+click Stolen Booty##385999+
+|tip They look like small chests around these areas.
+collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
+You can find more around:
+[37.67,78.67]
+[34.25,45.30]
+step
+label "Slay_Irontide_Cutthroats"
+Kill Irontide enemies around this area
+Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
+step
+talk Fusethrian##200987
+Choose _<Ask for explosive... soup?>_
+Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
+|only if haveq(73179) or completedq(73179)
+step
+clicknpc Morqut Glider##201376
+Take the Glider |q 73179/2 |goto 35.70,59.00
+|only if haveq(73179) or completedq(73179)
+step
+Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
+|tip Use the abilities on your vehicle bar to attack enemies on the boat.
+|only if haveq(73179) or completedq(73179)
+stickystart "Kill_Dragonbane_Beetles"
+step
+kill Pestilent Pincher##200910 |q 73190/2 |goto 41.04,35.84
+|only if haveq(73190) or completedq(73190)
+step
+click Infuser Shard+
+|tip They look like tiny crystals on the ground around this area.
+|tip Aim at Dragonbane Beetles and fire the crystal at them to infuse and defeat them.
+Defeat #12# Infused Beetles |q 75024/1 |goto 39.36,32.76
+|only if haveq(75024) or completedq(75024)
+step
+label "Kill_Dragonbane_Beetles"
+kill 24 Dragonbane Beetle##198792 |q 73190/1 |goto 39.83,35.02
+|only if haveq(73190) or completedq(73190)
+step
+click Snowball
+|tip They look like large round balls of snow on the ground around this area.
+|tip While carrying them, run over burning critters to save them.
+Save #14# Overcharged Critters |q 75025/1 |goto 61.81,26.70
+|only if haveq(75025) or completedq(75025)
+step
+clicknpc Broken Kite Piece##203134+
+|tip They look like small pieces of wood on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Collect #12# Kite Pieces |q 75026/1 |goto 31.97,60.59
+|only if haveq(75026) or completedq(75026)
+step
+click Rustling Bush##384952+
+|tip They look like green bushes on the ground around this area.
+Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
+You can find more around [45.61,37.24]
+|only if haveq(73191) or completedq(73191)
+step
+extraaction Release Watersnakes##400872
+|tip Use the button that appears on your screen.
+Release the Toxic Watersnakes |q 73191/2 |goto 42.91,38.91
+|only if haveq(73191) or completedq(73191)
+step
+Kill enemies around this area
+collect 10 Arcane Focus##202362 |q 73142/1 |goto 52.59,56.41
+|only if haveq(73142) or completedq(73142)
+step
+Enter the Support Creche |q 73189/1 |goto 36.68,32.41
+|only if haveq(73189) or completedq(73189)
+step
+use the Toxin Antidote##202620
+|tip Use it to reduce your toxin level before it overwhelms you.
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster.
+click Mender Supplies##385990+
+|tip They look like wooden crates inside the building.
+collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
+|only if haveq(73189) or completedq(73189)
+step
+use the Toxin Antidote##202620 |only if subzone("The Support Creche")
+|tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
+|tip Avoid cloudy areas on the ground, which increase your toxicity level faster. |only if subzone("The Support Creche")
+talk Volethi##200727
+turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if haveq(73189) or completedq(73189)
+turnin Sneaky Pebbles##75024 |goto 34.85,57.48 |only if haveq(75024) or completedq(75024)
+|only if haveq(73189,75024) or completedq(73189,75024)
+step
+talk Cataloger Coralie##201291
+turnin Snake Wrangling##73191 |goto 34.36,59.28 |only if haveq(73191) or completedq(73191)
+turnin A Good Day for Rolling##75025 |goto 34.36,59.28 |only if haveq(75025) or completedq(75025)
+|only if haveq(73191,75025) or completedq(73191,75025)
+step
+talk Tukkaraq##200558
+turnin Up to the Highest Height!##75026 |goto 34.36,58.57
+|only if haveq(75026) or completedq(75026)
+step
+talk Scalecommander Cindrethresh##199199
+turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
+turnin Busting Blues##73142 |goto 35.31,59.50 |only if haveq(73142) or completedq(73142)
+turnin Soupocalypse Now!##73179 |goto 35.30,59.49 |only if haveq(73179) or completedq(73179)
+|only if haveq(73190,73142,73179) or completedq(73190,73142,73179)
+step
+talk Scalecommander Azurathel##199204
+turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
+|only if haveq(73178) or completedq(73178)
+step
+You have completed all available side quests in The Forbidden Reach
+|tip This guide will reset when more become available.
+'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178) |next "Active_Quests_Available"
+]])

@@ -1,12 +1,14 @@
 # Auctionator
 
-## [10.0.45](https://github.com/Auctionator/Auctionator/tree/10.0.45) (2023-04-08)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.0.44...10.0.45) 
+## [10.1.0](https://github.com/Auctionator/Auctionator/tree/10.1.0) (2023-05-02)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.0.45...10.1.0) 
 
-- [Fixes #1373] Classic: Option to select remaining partial stacks when posting  
-- Mainline: Selling: Show seller names in sell search item row tooltip  
-- Add addon icon for addon list in 10.1.0  
-- Mainline: Fix for GetAddOnMetadata API on latest 10.1.0 build  
-- Use Blizzard frame pools instead of custom frame pools  
-- SplashScreen: Fix missing template error on classic era for close button  
-- Selling: Simplify scroll offset saving in bag view when collapsing sections  
+- Update toc for 10.1.0  
+- SlashCmd: Forgot constant for invalid option message  
+- SlashCmd: Update commands to support more config types  
+- Mainline: Selling: Cleanup for new price matching feature  
+- Mainline: Selling: Fix nil reference error when doing after post searches  
+- [Fixes #1305] Selling: Options to match items by level/id/name/name-and-level  
+- Mainline: Selling: Fix flickering cursor in some scenarios  
+- Shopping: Fix list view scrolling to top when item edited/deleted  
+- Fix comment  

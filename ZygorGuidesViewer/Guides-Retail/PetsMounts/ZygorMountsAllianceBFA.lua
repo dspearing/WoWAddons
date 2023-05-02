@@ -1014,17 +1014,16 @@ condition_end=function() return hasmount(254813) end,
 description="\nThis mount is acquired by obtaining a random drop from Harlan Sweete in the Freehold dungeon on Mythic difficulty.",
 },[[
 step
-Enter the Freehold Dungeon |goto Freehold/0 0.00,0.00 < 1000
+Enter the Freehold Dungeon |goto Tiragarde Sound/0 84.53,78.83 < 10 |c
 step
 kill Harlan Sweete##129440
-collect 1 Sharkbait's Favorite Crackers##159842 |n
+collect 1 Sharkbait's Favorite Crackers##159842 |or
 |tip This is a rare drop.
 |tip This only can drop in Mythic difficulty.
-use Sharkbait's Favorite Crackers##159842
-Learn the Sharkbait Mount |learnmount Sharkbait##254813
+'|complete hasmount(254813) |or
 step
-_Congratulations!_
-You Earned the "Sharkbait" Mount.
+use Sharkbait's Favorite Crackers##159842
+Learn the "Sharkbait" Mount |learnmount Sharkbait##254813
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Silent Glider",{
 author="support@zygorguides.com",
@@ -2166,255 +2165,6 @@ step
 _Congratulations!_
 You Collected the "Mechanocat Laser Pointer" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Teldrassil Hippogryph",{
-author="support@zygorguides.com",
-startlevel=45.0,
-keywords={"flying, mount, battle, for, azeroth, quest, alliance"},
-mounts={274610},
-patch='80100',
-mounttype='Flying',
-model={86527},
-condition_end=function() return hasmount(274610) end,
-description="\nThis mount is acquired by completing the \"Burning of Teldrassil\" event.",
-},[[
-step
-accept A Short-Lived Peace##52058
-|tip You will accept this quest automatically.
-step
-Enter the building |goto Stormwind City/0 80.69,37.80 < 5 |walk
-talk Anduin Wrynn##107574
-|tip Inside the building.
-turnin A Short-Lived Peace##52058 |goto 85.90,31.57
-accept The Horde Uprising##52060 |goto 85.90,31.57
-step
-talk Master Mathias Shaw##139798
-|tip Inside the building.
-turnin The Horde Uprising##52060 |goto 85.15,32.35
-accept A Disturbance in Ashenvale##52062 |goto 85.15,32.35
-step
-Follow the path |goto 83.88,30.57 < 5 |only if walking
-Run up the stairs |goto 83.25,29.36 < 5 |only if walking
-click Portal to Astranaar##297575
-Take the Portal to Astranaar |q 52062/1 |goto 82.68,26.84
-step
-Find Delaryn Summermoon |q 52062/2 |goto Ashenvale/0 35.79,49.99
-step
-talk Captain Delaryn Summermoon##134578
-turnin A Disturbance in Ashenvale##52062 |goto 35.86,50.43
-accept The Light of Elune##52072 |goto 35.86,50.43
-accept Knives of the Forsaken##53616 |goto 35.86,50.43
-stickystart "Slay_Forsaken_Assassins"
-step
-clicknpc Astranaar Sentinel##144282+
-|tip They look like Night Elf corpses on the ground around this area.
-Honor #6# Fallen Soldiers |q 52072/1 |goto 35.88,50.20
-step
-label "Slay_Forsaken_Assassins"
-kill Forsaken Assassin##140801+
-|tip They are stealthed around this area.
-Slay #8# Forsaken Assassins |q 53616/1 |goto 36.06,50.26
-step
-talk Captain Delaryn Summermoon##134578
-turnin The Light of Elune##52072 |goto 35.86,50.43
-turnin Knives of the Forsaken##53616 |goto 35.86,50.43
-accept A Soft Glow##52116 |goto 35.86,50.43
-step
-Meet Malfurion at the Entrance to Darkshore |q 52116/1 |goto Darkshore/0 43.82,89.82
-step
-Watch the dialogue
-talk Malfurion Stormrage##133693
-turnin A Soft Glow##52116 |goto 43.58,89.25
-accept Hidden Amongst the Leaves##52234 |goto 43.58,89.25
-accept Mercy for the Mad##53617 |goto 43.58,89.25
-stickystart "Slay_Frenzied_Blackwood_Furbolgs"
-step
-talk Druid of the Claw##140633+
-|tip They look like friendly druids on the ground around this area.
-|tip Some are shapeshifted in animal form and some aren't.
-Tell them _"You must defend the Grove of the Ancients!"_
-Dispatch #8# Druids |q 52234/1 |goto 42.07,77.29
-step
-label "Slay_Frenzied_Blackwood_Furbolgs"
-kill 10 Frenzied Blackwood Furbolg##140686 |q 53617/1 |goto 41.72,76.89
-step
-talk Captain Delaryn Summermoon##134578
-turnin Hidden Amongst the Leaves##52234 |goto 43.41,75.56
-turnin Mercy for the Mad##53617 |goto 43.41,75.56
-accept Garden Grove##52240 |goto 43.41,75.56
-step
-kill Monstrous Shredder##143562 |q 52240/1 |goto 43.98,75.34
-|tip You may need help with this.
-step
-talk Captain Delaryn Summermoon##134578
-turnin Garden Grove##52240 |goto 45.20,74.96
-step
-talk Onu##33072
-accept Enraged Furbolgs##52245 |goto 45.41,74.85
-step
-talk Elder Brolg##140719
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Elder Brolg |q 52245/1 |goto 43.54,81.08
-step
-_Next to you:_
-talk Captain Delaryn Summermoon##140728
-accept Elves in the Machine##53551
-stickystart "Sabotage_Horde_Demolishers"
-step
-talk Elder Brownpaw##140721
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Elder Brownpaw |q 52245/3 |goto 46.47,85.73
-step
-Enter the cave |goto 46.43,83.73 < 5 |walk
-talk Gren Tornfur##140720
-|tip Inside the cave.
-Tell him _"Come with us to safety. We will not harm you."_
-Rescue Gren Tornfur |q 52245/2 |goto 46.63,83.90
-step
-label "Sabotage_Horde_Demolishers"
-clicknpc Horde Demolisher##144103+
-|tip They look like large siege vehicles on the ground around this area.
-|tip Use the "Sleeping Powder" ability onscreen to put enemies to sleep.
-Sabotage #5# Horde Demolishers |q 53551/1 |goto 45.07,85.52
-step
-_Next to you:_
-talk Captain Delaryn Summermoon##140728
-turnin Elves in the Machine##53551
-step
-talk Onu##33072
-turnin Enraged Furbolgs##52245 |goto 45.41,74.85
-accept The Wake of Something New##52242 |goto 45.41,74.85
-step
-click Azerite Deposit##292886
-Discover the Source of Onu's Pain |q 52242/1 |goto 34.66,85.17
-step
-talk Captain Delaryn Summermoon##134578
-turnin The Wake of Something New##52242 |goto 34.73,85.11
-accept Azerite Denial##53619 |goto 34.73,85.11
-accept No Horde Allowed##53621 |goto 34.73,85.11
-stickystart "Collect_Azerite"
-step
-Kill enemies around this area
-Slay #10# Horde Combatants |q 53621/1 |goto 32.48,84.42
-step
-label "Collect_Azerite"
-click Azerite Deposit##292886+
-|tip They look like small blue crystals sticking out of the ground around this area.
-Collect #6# Azerite |q 53619/1 |goto 32.50,84.24
-step
-talk Captain Delaryn Summermoon##134578
-turnin Azerite Denial##53619 |goto 34.73,85.11
-turnin No Horde Allowed##53621 |goto 34.73,85.11
-accept Malfurion Returns##52256 |goto 34.73,85.11
-step
-talk Malfurion Stormrage##133693
-turnin Malfurion Returns##52256 |goto 42.30,66.80
-accept "Rock" The World##52257 |goto 42.30,66.80
-step
-clicknpc Tree of Life##143861
-Speak with Tree of Life |q 52257/1 |goto 42.07,66.84
-step
-Kill enemies around this area
-|tip Use the abilities on your action bar.
-Slay #50# Horde Enemies |q 52257/2 |goto 42.17,69.08
-step
-talk Malfurion Stormrage##133693
-turnin "Rock" The World##52257 |goto 42.30,66.80
-accept Long Away##52197 |goto 42.30,66.80
-step
-talk Captain Delaryn Summermoon##134578
-turnin Long Away##52197 |goto Darnassus/0 40.00,50.42
-accept A Looming Threat##52279 |goto 40.00,50.42
-step
-talk Janthes Shadeleaf##144146
-Tell him _"The Horde have halted their advance at the Wildbend River! We must push them back at once!"_
-Rally the Druids of the Claw |q 52279/2 |goto 45.61,35.93
-step
-talk Myara Sunsong##140498
-Tell her _"Captain, the Horde have reached the Wildbend River! We cannot hold them for long!"_
-Rally the Kaldorei Forces |q 52279/3 |goto 61.00,49.41
-step
-talk Astarii Starseeker##4090
-Tell her _"Priestess, we require your aid to hold the Horde at Wildbend River."_
-Rally the Priestesses of the Moon |q 52279/1 |goto 42.99,73.06
-step
-talk Malfurion Stormrage##140877
-turnin A Looming Threat##52279 |goto Teldrassil/0 58.47,89.49
-step
-talk Captain Delaryn Summermoon##134578
-accept A Threat from the North##52973 |goto 58.48,89.41
-|tip You will accept this quest automatically.
-step
-talk Malfurion Stormrage##140877
-turnin A Threat from the North##52973 |goto Darkshore/0 50.42,20.01
-accept Rescue Effort##52974 |goto 50.42,20.01
-accept Defending Lor'danel##53622 |goto 50.42,20.01
-step
-talk Captain Delaryn Summermoon##134578
-accept Action This Day##52975 |goto 50.43,19.68
-stickystart "Slay_Horde_Attackers"
-step
-talk Lor'danel Citizen##142408+
-|tip They look like friendly NPCs cowering in fear on the ground around this area.
-Tell them _"I have cleared a path - - you must escape now!"_
-Rescue #8# Lor'danel Citizens |q 52974/1 |goto 50.75,19.24
-step
-label "Slay_Horde_Attackers"
-Kill enemies around this area
-Slay #15# Horde Attackers |q 53622/1 |goto 50.81,19.16
-step
-kill Gormok Axefall##144364 |q 52975/1 |goto 47.67,20.42
-step
-kill Ragash Bloodwish##144365 |q 52975/2 |goto 46.82,18.82
-step
-talk Captain Delaryn Summermoon##134578
-turnin Rescue Effort##52974 |goto 50.43,19.68
-turnin Action This Day##52975 |goto 50.43,19.68
-turnin Defending Lor'danel##53622 |goto 50.43,19.68
-accept The Guidance of Our Shan'do##52977 |goto 50.43,19.68
-step
-Find Malfurion in Darkshore |q 52977/1 |goto 46.24,24.23
-step
-Watch the dialogue
-Assist Malfurion |q 52977/2 |goto 45.94,24.47
-step
-clicknpc Tamed Hippogryph##142110
-Use Tyrande's Mount |q 52977/3 |goto 45.96,24.96
-step
-Return to Darnassus |goto Darnassus/0 43.01,73.09 < 5 |c |notravel |q 52977
-step
-Enter the building |goto 43.01,74.83 < 5 |walk
-talk Mia Greymane##142978
-|tip Inside the building.
-turnin The Guidance of Our Shan'do##52977 |goto 43.09,78.62
-accept A Flicker of Hope##53095 |goto 43.09,78.62 |only if not completedq(53310)
-step
-Leave the building |goto 43.01,74.80 < 3 |walk
-Put out fires
-|tip Use the "Douse" ability on your screen.
-|tip Use it to put out fires around this area.
-talk Darnassian Citizen##143409+
-Tell them _"The flames are clear! Get to the Temple of the Moon!"_
-Evacuate #982# Darnassian Citizens |q 53095/1 |goto 58.76,68.28 |only if not completedq(53310)
-|tip You will fail this quest.
-step
-Watch the dialogue
-accept From the Ashes...##53310 |goto 43.38,78.28
-|tip You will accept this quest automatically.
-step
-click Portal to Stormwind##303144 |goto 43.91,78.68
-Teleport to Stormwind |goto Stormwind City/0 49.59,86.53 < 5 |c |noway |q 53310
-step
-Enter the building |goto 80.69,37.80 < 5 |walk
-talk Anduin Wrynn##107574
-|tip Inside the building.
-turnin From the Ashes...##53310 |goto 85.90,31.57
-step
-use the Smoldering Reins of the Teldrassil Hippogryph##163127
-learnmount Teldrassil Hippogryph##274610
-step
-_Congratulations!_
-You Collected the "Teldrassil Hippogryph" Mount.
-]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Aquatic Mounts\\Profession Mounts\\Great Sea Ray",{
 author="support@zygorguides.com",
 startlevel=45.0,
@@ -2684,67 +2434,120 @@ model={92254},
 description="\nThis mount is can be purchased from Mrrl in Nazjatar after purchasing numerous other items in a specific order.",
 },[[
 step
-Obtain an Azsh'iri Stormsurger Cape |complete itemcount(169489) >= 1 |goto Nazjatar/0 37.85,55.71
+Obtain an Azsh'ari Stormsurger Cape |complete itemcount(169489) >= 1 |goto Nazjatar/0 37.85,55.71
 |tip This is obtained randomly from Benthic Cloak tokens.
 |tip You can purchase them here from Artisan Itanu for five Prismatic Manapearls.
 |tip You can also acquired them randomly from mobs and chests in Nazjatar.
+|tip Keep this item, you will need it later.
 step
-Equip the Azsh'iri Stormsurger Cape |equipped Azsh'iri Stormsurger Cape##169489
+talk Mrrl##152084
+accept A Safer Place##55983 |goto 48.19,45.34
+|only if not completedallq(55983,55529)
+step
+Follow the path up |goto 45.49,44.03 < 20 |only if walking
+Continue up the path |goto 38.16,47.41 < 20 |only if walking
+Escort Mrrl to Mezzamere |q 55983/1 |goto 38.55,52.86
+|only if not completedallq(55983,55529)
+step
+talk Mrrl##152084
+turnin A Safer Place##55983 |goto 39.10,54.32
+accept No Backs##55529 |goto 39.10,54.32
+|only if not completedallq(55983,55529)
+step
+talk Flrgrrl##151952
+buy Unidentified Mass##167912 |q 55529/2 |goto 39.96,53.43
+|only if not completedallq(55983,55529)
+step
+talk Mrrglrlr##151950
+|tip It runs in a circle around this area.
+buy Slimy Naga Eyeball##167896 |q 55529/4 |goto 38.76,54.86
+|only if not completedallq(55983,55529)
+step
+talk Hurlgrl##151953
+buy Sweet Sea Vegetable##167915 |q 55529/1 |goto 38.64,54.46
+|only if not completedallq(55983,55529)
+step
+talk Grrmrlg##151951
+buy Flatulent Fish##167906 |q 55529/3 |goto 37.49,53.45
+|only if not completedallq(55983,55529)
+step
+talk Mrrl##152084
+turnin No Backs##55529 |goto 39.10,54.32
+|only if not completedallq(55983,55529)
+step
+Equip the Azsh'ari Stormsurger Cape |equipped Azsh'ari Stormsurger Cape##169489
+step
+Check Mrrl's inventory
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+|tip If you can't see the mount in his inventory, you will have to try another day, or perhaps another server.
+Click Here to Continue After Checking for the Crimson Tidestallion |confirm |goto 39.10,54.32
 step
 Enter the cave |goto 46.39,32.59 < 15 |walk
 Talk Murlaco
 |tip Inside the cave.
-|tip It costs 666 gold.
-buy 1 Hungry Herald's Tentacle Taco##170100 |goto 45.60,32.39
+|tip This NPC is not always active.
+|tip You may have to wait or server hop to locate him.
+|tip You will need to fight some Naga to release Murlaco from his cage.
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+buy Hungry Herald's Tentacle Taco##170100 |goto 45.60,32.39
 step
 talk Mrrglrlr##151950
 |tip It runs around the rocks.
+|tip These last 24 hours in your inventory.
 buy 714 Slimy Naga Eyeball##167896 |goto 38.41,54.28
 step
 talk Hurlgrl##151953
+|tip These last 24 hours in your inventory.
 buy 128 Sweet Sea Vegetable##167915 |goto 38.65,54.46
 step
 talk Flrgrrl##151952
+|tip Swimming underwater in the pond.
+|tip These last 24 hours in your inventory.
 buy 324 Unidentified Mass##167912 |goto 39.97,53.43
 buy 32 Just Regular Butter##167911 |goto 39.97,53.43
 step
 talk Grrmrlg##151951
+|tip These last 24 hours in your inventory.
 buy 238 Curious Murloc Horn##167905 |goto 37.50,53.45
 step
 talk Hurlgrl##151953
+|tip These last 24 hours in your inventory.
 buy 48 Dirty Sock##167916 |goto 38.65,54.46
 buy 14 Healthy Murloc Lunch##167913 |goto 38.65,54.46
 step
-use the Dirty Sock##167916
+use the Dirty Sock##167916+
 |tip Use all of them.
 |tip You must be standing in water.
+|tip These last 24 hours in your inventory.
 Clean the Socks |complete itemcount(167923) >= 48 |goto 38.93,57.67
 step
 talk Grrmrlg##151951
+|tip These last 24 hours in your inventory.
 buy 16 Sea Giant Foot Dust##167908 |goto 37.50,53.45
 step
 talk Mrrglrlr##151950
 |tip It runs around the rocks.
+|tip These last 24 hours in your inventory.
 buy 2 Pulsating Blood Stone##169780 |goto 38.41,54.28
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
 buy 16 Smelly Pile of Gloop##167904 |goto 38.41,54.28
 step
 talk Flrgrrl##151952
+|tip Swimming underwater in the pond.
+|tip These last 24 hours in your inventory.
 buy 28 Ghost Food##167909 |goto 39.97,53.43
 step
 talk Hurlgrl##151953
+|tip These last 24 hours in your inventory.
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
 buy 4 Cultist Pinky Finger##169783 |goto 38.65,54.46
 step
 talk Mrrl##152084
-buy 1 Crimson Tidestallion##169202 |goto 39.10,54.32
-step
-use the Crimson Tidestallion##169202
-collect Crimson Tidestallion##169202
+|tip You must equip the Azsh'ari Stormsurger Cape to see the special items in his inventory.
+buy Crimson Tidestallion##169202 |goto 39.10,54.32
 step
 use the Crimson Tidestallion##169202
 Learn the "Crimson Tidestallion" Mount |learnmount Crimson Tidestallion##300153
-step
-_Congratulations!_
-You Collected the "Crimson Tidestallion" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Vendor Mounts\\Ankoan Waveray",{
 author="support@zygorguides.com",
@@ -3586,6 +3389,7 @@ model={93335},
 step
 Learn the "Ensorcelled Everwyrm" Mount |learnmount Ensorcelled Everwyrm##307932
 |tip This mount should be collected automatically after purchasing the Heroic Edition of the Shadowlands World of Warcraft expansion.
+|tip You can also purchase this mount from the in-game store for $25.
 step
 click Guiding Orb
 |tip Summon your Ensorcelled Everwyrm and click the orb directly behind the seat.

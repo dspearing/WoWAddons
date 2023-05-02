@@ -22,6 +22,11 @@ Enter the building |goto Dazar'alor/0 56.80,31.16 < 10 |walk
 talk Radek Fuselock##147641
 accept Trouble in Gnomeregan##54276 |goto 56.26,30.82
 step
+Take the Gnomeregan Teleporter
+|tip This teleport pad at Grom'gol Base Camp will take you straight to the Gnomeregan dungeon entrance.
+|tip You can easily enter the pet dungeon from here.
+Step into the teleporter |goto Northern Stranglethorn/0 36.73,51.07
+step
 Enter the tunnel |goto New Tinkertown/0 32.54,36.95 < 10 |walk
 Follow the path |goto Dun Morogh/10 53.73,81.03 < 20 |walk
 talk Micro Zoox##147070
