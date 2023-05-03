@@ -1,7 +1,7 @@
-## Interface: 100007
+## Interface: 100100
 
-## Version: 1.5.3
-## Title: TankHelper |T132362:16:16:0:0|t by |cff3FC7EBD4KiR |T132115:16:16:0:0|t 
+## Version: 1.5.5
+## Title: TankHelper by |cff3FC7EBD4KiR |T132115:16:16:0:0|t 
 ## Notes: Raid Icons and pull timer
 ## Author: D4KiR
 ## DefaultState: enabled
@@ -9,6 +9,7 @@
 ## SavedVariablesPerCharacter: THTABPC
 ## X-Curse-Project-ID: 398385
 ## X-Wago-ID: lQNlmP6e
+## IconTexture: 132362
 
 # External Libs
 ##libs\!LibUIDropDownMenu\LibStub\LibStub.lua

@@ -18,3 +18,4 @@
 0.17 - Updated Mistweaver Monk
 0.18 - Talent Fix For Mistweaver Monk
 0.19 - Updated TOC
+0.20 - Updated TOC

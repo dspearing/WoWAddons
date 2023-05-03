@@ -260,19 +260,736 @@ talk Anduin Wrynn##107574
 |tip Inside the building.
 turnin From the Ashes...##53310 |goto 85.90,31.57
 ]])
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Kul Tiras Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Stormwind Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Shattrath Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Aw, Isn't It Cute?")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Bad Example")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Daily Chores")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Home Alone")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\School of Hard Knocks")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Veteran Nanny")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\For the Children")
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Kul Tiras Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Kul Tiras questline for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+condition_end=function() return completedq(53865) end,
+startlevel=10,
+},[[
+step
+Run up the stairs |goto Boralus/0 44.22,57.84 < 15 |only if walking
+Run down the stairs |goto 41.65,44.93 < 15 |only if walking
+Enter the building |goto 48.16,39.43 < 10 |walk
+talk Orphan Matron Westerson##145291
+|tip Inside the building.
+accept Children's Week##53811 |goto 48.00,40.26
+step
+use the Kul Tiran Orphan Whistle##164772
+_Next to you:_
+talk Liam##145394
+turnin Children's Week##53811 |goto 48.00,40.26
+accept The Mountain Folk##53859 |goto 48.00,40.26
+accept Yo Ho, Yo Ho!##53861 |goto 48.00,40.26
+accept The Squid Shrine##53862 |goto 48.00,40.26
+step
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Visit the Roughnecks |q 53859/1 |goto Tiragarde Sound/0 42.46,22.61
+step
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Visit Shrine of the Storm |q 53862/1 |goto Stormsong Valley/0 72.59,49.92
+step
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Visit Freehold |q 53861/1 |goto Tiragarde Sound/0 79.82,82.50
+step
+use the Kul Tiran Orphan Whistle##164772
+_Next to you:_
+talk Liam##145394
+turnin The Mountain Folk##53859 |goto 79.82,82.50
+turnin Yo Ho, Yo Ho!##53861 |goto 79.82,82.50
+turnin The Squid Shrine##53862 |goto 79.82,82.50
+accept Bird Friends##53863 |goto 79.82,82.50
+accept Shapeshifters!##53864 |goto 79.82,82.50
+step
+Follow the path |goto Drustvar/0 38.93,49.78 < 20 |only if walking
+Continue following the path |goto 43.87,41.79 < 20 |only if walking
+Continue up the path |goto 46.61,39.29 < 15 |only if walking
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Visit Ulfar's Den |q 53864/1 |goto 46.31,44.59
+step
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Visit Arom's Stand |q 53863/1 |goto Drustvar/0 36.03,51.19
+step
+use the Kul Tiran Orphan Whistle##164772
+_Next to you:_
+talk Liam##145394
+turnin Bird Friends##53863 |goto 36.03,51.19
+turnin Shapeshifters!##53864 |goto 36.03,51.19
+accept Return to the Orphanage##53865 |goto 36.03,51.19
+step
+Run up the stairs |goto Boralus/0 44.22,57.84 < 15 |only if walking
+Run down the stairs |goto 41.65,44.93 < 15 |only if walking
+Enter the building |goto 48.16,39.43 < 10 |walk
+use the Kul Tiran Orphan Whistle##164772
+|tip Ensure that you have your orphan, Liam, summoned.
+Return to the Orphanage |q 53865/1 |goto 48.00,40.26
+step
+use the Kul Tiran Orphan Whistle##164772
+_Next to you:_
+talk Liam##145394
+turnin Return to the Orphanage##53865 |goto 48.00,40.26
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Stormwind Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Stormwind questline for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+condition_end=function() return completedq(171) end,
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+accept Children's Week##1468 |goto Stormwind City/0 56.31,54.00
+step
+use the Human Orphan Whistle##18598
+_Next to you:_
+talk Human Orphan##14305
+turnin Children's Week##1468 |goto 56.31,54.00
+accept Cruisin' the Chasm##29093 |goto 56.31,54.00
+accept The Biggest Diamond Ever!##29106 |goto 56.31,54.00
+accept Our New Friends##54130 |goto 56.31,54.00
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+Visit the Stormwind Embassy with your Orphan |q 54130/1 |goto 53.35,15.36
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+clicknpc Rental Chopper##52189
+Jump in the Chopper |invehicle |q 29093 |goto Westfall/0 57.76,53.04
+step
+Watch the dialogue
+Take a Chopper Tour of the Raging Chasm |q 29093/1
+step
+Run down the ramp |goto Ironforge/0 44.16,51.94 < 5 |walk
+Run up the stairs |goto Ironforge/1 58.29,49.21 < 5 |walk
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+Visit King Magni in Old Ironforge |q 29106/1 |goto 34.40,51.26
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+_Next to you:_
+talk Human Orphan##14305
+turnin The Biggest Diamond Ever!##29106 |goto 34.40,51.26
+turnin Cruisin' the Chasm##29093 |goto 34.40,51.26
+turnin Our New Friends##54130 |goto 34.40,51.26
+accept Let's Go Fly a Kite##29117 |goto 34.40,51.26
+accept You Scream, I Scream...##29119 |goto 34.40,51.26
+step
+talk Craggle Wobbletop##52358
+|tip He walks around the Trade District canal.
+buy 1 Dragon Kite 2-Pack##68890 |q 29117 |goto Stormwind City/0 57.33,65.64
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+use the Dragon Kite 2-Pack##68890
+Fly Dragon Kites with Your Orphan |q 29117/1
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+_Next to you:_
+talk Human Orphan##14305
+turnin Let's Go Fly a Kite##29117
+step
+talk Hans Coldhearth##52421
+buy 1 Cone of Cold##69027 |q 29119 |goto 48.97,89.74
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+use Cone of Cold##69027
+Take Your Orphan Out for Ice Cream |q 29119/1
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+_Next to you:_
+talk Human Orphan##14305
+turnin You Scream, I Scream...##29119
+accept A Warden of the Alliance##171
+step
+talk Craggle Wobbletop##52358
+|tip He walks around the Trade District canal.
+buy 1 Foam Sword Rack##69057 |q 171/1 |goto 57.33,65.64
+step
+talk Orphan Matron Nightingale##51988
+turnin A Warden of the Alliance##171 |goto 56.31,54.00
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Shattrath Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Shattrath questline for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+condition_end=function() return completedq(10966) end,
+startlevel=10,
+},[[
+step
+talk Orphan Matron Mercy##22819
+accept Children's Week##10943 |goto Shattrath City/0 75.08,47.90
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan.
+_Next to you:_
+talk Draenei Orphan##22818
+turnin Children's Week##10943 |goto 75.08,47.90
+accept Auchindoun and the Ring of Observance##10950 |goto 75.08,47.90
+accept A Trip to the Dark Portal##10952 |goto 75.08,47.90
+accept Jheel is at Aeris Landing!##10954 |goto 75.08,47.90
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to Aeris Landing |q 10954/1 |goto Nagrand/0 31.47,57.49
+step
+talk Jheel##22836
+turnin Jheel is at Aeris Landing!##10954 |goto 31.49,57.61
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to the Ring of Observance |q 10950/1 |goto Terokkar Forest/0 39.90,64.69
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+_Next to you:_
+talk Draenei Orphan##22818
+turnin Auchindoun and the Ring of Observance##10950 |goto 39.90,64.69
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to the Dark Portal |q 10952/1 |goto Hellfire Peninsula/0 88.68,50.22
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+_Next to you:_
+talk Draenei Orphan##22818
+turnin A Trip to the Dark Portal##10952 |goto 88.68,50.22
+accept The Seat of the Naaru##10956 |goto 88.68,50.22
+accept Time to Visit the Caverns##10962 |goto 88.68,50.22
+step
+Follow the path down |goto Tanaris/17 63.40,30.36 < 15 |only if walking
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to the Caverns of Time |q 10962/2 |goto Tanaris/18 53.14,56.80
+step
+talk Alurmi##21643
+buy 1 Toy Dragon##31951 |q 10962/1 |goto Tanaris/17 39.94,77.30
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+_Next to you:_
+talk Draenei Orphan##22818
+turnin Time to Visit the Caverns##10962 |goto 39.94,77.30
+step
+Follow the path |goto The Exodar/0 63.31,41.65 < 10 |only if walking
+Run down the ramp |goto 59.68,33.99 < 10 |only if walking
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to the Seat of the Naaru |q 10956/1 |goto 57.59,41.21
+step
+talk O'ros##17538
+turnin The Seat of the Naaru##10956
+accept Call on the Farseer##10968 |goto 57.94,41.42
+step
+Run up the ramp |goto 54.69,36.29 < 10 |only if walking
+Follow the path |goto 42.78,32.19 < 10 |only if walking
+Continue following the path |goto 36.91,31.41 < 10 |only if walking
+Continue following the path |goto 31.63,36.27 < 10 |only if walking
+Run up the ramp |goto 26.97,29.79 < 7 |only if walking
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+Take Dornaa to Farseer Nobundo |q 10968/1 |goto 31.09,28.11
+step
+talk Farseer Nobundo##17204
+|tip He walks around this area.
+turnin Call on the Farseer##10968 |goto 30.82,30.80
+step
+use the Draenei Orphan Whistle##31881
+|tip Use it to summon your Draenei Orphan, if needed.
+_Next to you:_
+talk Draenei Orphan##22818
+accept Back to the Orphanage##10966
+step
+talk Orphan Matron Mercy##22819
+turnin Back to the Orphanage##10966 |goto Shattrath City/0 75.08,47.90
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+condition_end=function() return completedq(28880) or completedq(13960) or completedq(13959) or completedq(28879) end,
+startlevel=10,
+},[[
+step
+talk Orphan Matron Aria##34365
+accept Little Orphan Roo Of The Oracles##13926 |goto Dalaran/1 49.36,63.26
+step
+talk Orphan Matron Aria##34365
+Choose _<Ask about the orphans.>_
+Speak to Orphan Matron Aria |q 13926/1 |goto 49.36,63.26
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin Little Orphan Roo Of The Oracles##13926 |goto 49.36,63.26
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan.
+_Next to you:_
+talk Oracle Orphan##33533
+accept The Biggest Tree Ever!##13929 |goto 49.36,63.26
+accept The Bronze Dragonshrine##13933 |goto 49.36,63.26
+accept Playmates!##13950 |goto 49.36,63.26
+step
+Follow the path |goto Grizzly Hills/0 50.39,46.40 < 10 |only if walking
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+Take Roo to Visit Grizzlemaw |q 13929/1 |goto 50.68,44.09
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin The Biggest Tree Ever!##13929 |goto 50.68,44.09
+step
+Follow the path |goto Dragonblight/0 69.66,46.14 < 10 |only if walking
+Follow the path up |goto 69.51,44.06 < 10 |only if walking
+Continue up the path |goto 69.77,42.63 < 10 |only if walking
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+Take Roo to Visit the Bronze Dragonshrine |q 13933/1 |goto 71.11,41.10
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin The Bronze Dragonshrine##13933 |goto 71.11,41.10
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+Take Roo to Visit Winterfin Retreat |q 13950/1 |goto Borean Tundra/0 43.55,13.65
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin Playmates!##13950 |goto 43.55,13.65
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+accept The Dragon Queen##13954 |goto 43.55,13.65
+accept Meeting a Great One##13956 |goto 43.55,13.65
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+Take Roo to Visit The Etymidian |q 13956/1 |goto Un'Goro Crater/0 47.60,9.17
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin Meeting a Great One##13956 |goto 47.60,9.17
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+|tip She is at the top of Wyrmrest Temple.
+Take Roo to Visit Alexstrasza the Life-Binder |q 13954/1 |goto Dragonblight/0 59.84,54.59
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin The Dragon Queen##13954 |goto 59.84,54.59
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+accept A Trip To The Wonderworks##13937 |goto 59.84,54.59
+step
+Run up the stairs |goto Dalaran/1 41.92,47.99 < 5 |only if walking
+Enter the building |goto 43.27,45.30 < 5 |walk
+talk Jepetto Joybuzz##29478
+|tip Inside the building.
+buy 1 Small Paper Zeppelin##46693 |q 13937 |goto 44.82,45.63
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+use the Small Paper Zeppelin##46693
+|tip Use it on your Oracle Orphan.
+Throw the Small Paper Zeppelin to Roo |q 13937/1 |goto 44.82,45.63
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+turnin A Trip To The Wonderworks##13937 |goto 44.82,45.63
+step
+use the Oracle Orphan Whistle##46397
+|tip Use it to summon your Oracle Orphan, if needed.
+_Next to you:_
+talk Oracle Orphan##33533
+accept Back To The Orphanage##28879 |goto 44.82,45.63 |or
+accept Back To The Orphanage##13959 |goto 44.82,45.63 |or
+step
+Leave the building |goto 43.17,45.17 < 3 |walk
+talk Orphan Matron Aria##34365
+turnin Back To The Orphanage##28879 |goto 49.35,63.25 |only if haveq(28879) or completedq(28879)
+turnin Back To The Orphanage##13959 |goto 49.35,63.25 |only if haveq(13959) or completedq(13959)
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+condition_end=function() return completedq(28880) or completedq(13960) or completedq(13959) or completedq(28879) end,
+startlevel=10,
+},[[
+step
+talk Orphan Matron Aria##34365
+accept Little Orphan Kekek Of The Wolvar##13927 |goto Dalaran/1 49.35,63.25
+step
+talk Orphan Matron Aria##34365
+Choose _<Ask about the orphans.>_
+Speak to Orphan Matron Aria |q 13927/1 |goto 49.35,63.25
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin Little Orphan Kekek Of The Wolvar##13927 |goto 49.35,63.25
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan.
+_Next to you:_
+talk Wolvar Orphan##33532
+accept Home Of The Bear-Men##13930 |goto 49.35,63.25
+accept The Bronze Dragonshrine##13934 |goto 49.35,63.25
+accept Playmates!##13951 |goto 49.35,63.25
+step
+Follow the path |goto Grizzly Hills/0 50.39,46.40 < 10 |only if walking
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+Take Kekek to Visit Grizzlemaw |q 13930/1 |goto 50.68,44.09
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin Home Of The Bear-Men##13930 |goto 50.68,44.09
+step
+Follow the path |goto Dragonblight/0 69.66,46.14 < 10 |only if walking
+Follow the path up |goto 69.51,44.06 < 10 |only if walking
+Continue up the path |goto 69.77,42.63 < 10 |only if walking
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+Take Kekek to Visit the Bronze Dragonshrine |q 13934/1 |goto 71.11,41.10
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin The Bronze Dragonshrine##13934 |goto 71.11,41.10
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+Take Kekek to Visit Snowfall Glade |q 13951/1 |goto Dragonblight/0 45.28,63.29
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin Playmates!##13951 |goto 45.28,63.29
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+accept The Dragon Queen##13955 |goto 45.28,63.29
+accept The Mighty Hemet Nesingwary##13957 |goto 45.28,63.29
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+|tip She is at the top of Wyrmrest Temple.
+Take Kekek to Visit Alexstrasza the Life-Binder |q 13955/1 |goto Dragonblight/0 59.84,54.59
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin The Dragon Queen##13955 |goto 59.84,54.59
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+Take Kekek to Visit Hemet Nesingwary |q 13957/1 |goto Sholazar Basin/0 27.13,59.23
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin The Mighty Hemet Nesingwary##13957 |goto 27.13,59.23
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+accept A Visit To The Wonderworks##13938 |goto 27.13,59.23
+step
+Run up the stairs |goto Dalaran/1 41.92,47.99 < 5 |only if walking
+Enter the building |goto 43.27,45.30 < 5 |walk
+talk Jepetto Joybuzz##29478
+|tip Inside the building.
+buy 1 Small Paper Zeppelin##46693 |q 13938 |goto 44.82,45.63
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+use Small Paper Zeppelin##46693
+|tip Use it on your Wolvar Orphan.
+Throw the Small Paper Zeppelin to Kekek |q 13938/1 |goto 44.82,45.63
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+turnin A Visit To The Wonderworks##13938 |goto 44.82,45.63
+step
+use the Wolvar Orphan Whistle##46396
+|tip Use it to summon your Wolvar Orphan, if needed.
+_Next to you:_
+talk Wolvar Orphan##33532
+accept Back To The Orphanage##28880 |goto 44.82,45.63 |or
+accept Back To The Orphanage##13960 |goto 44.82,45.63 |or
+step
+Leave the building |goto 43.17,45.17 < 3 |walk
+talk Orphan Matron Aria##34365
+turnin Back To The Orphanage##28880 |goto 49.35,63.25 |only if haveq(28880) or completedq(28880)
+turnin Back To The Orphanage##13960 |goto 49.35,63.25 |only if haveq(13960) or completedq(13960)
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Aw, Isn't It Cute?",{
+author="support@zygorguides.com",
+description="\nObtain one of the Children's Week reward pets through questing.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1792},
+patch='30009',
+startlevel=10,
+},[[
+leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
+step
+_Congratulations!_
+You Earned the "Aw, Isn't It Cute?" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Bad Example",{
+author="support@zygorguides.com",
+description="\nEat the following sweets while your orphan is watching:\n\nTigule's Strawberry Ice Cream\n"..
+"Tasty Cupcake\nRed Velvet Cupcake\nDelicious Chocolate Cake\nLovely Cake Slice\nDalaran Brownie\nDalran Doughnut",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1788},
+patch='30002',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+step
+talk Emmithue Smails##14481
+buy 1 Tigule's Strawberry Ice Cream##7228 |achieve 1788 |goto Stormwind City/0 61.30,75.02
+step
+talk Auctioneer Fitch##8719
+|tip Purchase the follow items from the Auction House, or use your Cooking ability to create them.
+collect 1 Tasty Cupcake##43490 |achieve 1788 |goto 61.16,70.78
+collect 1 Delicious Chocolate Cake##33924 |achieve 1788 |goto 61.16,70.78
+step
+talk Aimee##29548
+buy 1 Red Velvet Cupcake##42429 |achieve 1788 |goto Dalaran/1 51.17,29.07
+buy 1 Lovely Cake##42438 |achieve 1788 |goto 51.17,29.07
+buy 1 Dalaran Doughnut##42430 |achieve 1788 |goto 51.17,29.07
+buy 1 Dalaran Brownie##42431 |achieve 1788 |goto 51.17,29.07
+step
+use the Lovely Cake##42438
+|tip Use it to place a cake on the ground.
+click Lovely Cake
+collect 1 Lovely Cake Slice##42434 |achieve 1788
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+use Tigule's Strawberry Ice Cream##7228
+Eat Tigule's Strawberry Ice Cream |achieve 1788/1
+step
+use the Tasty Cupcake##43490
+Eat Tasty Cupcake |achieve 1788/2
+step
+use the Red Velvet Cupcake##42429
+Eat Red Velvet Cupcake |achieve 1788/3
+step
+use the Delicious Chocolate Cake##33924
+Eat Delicious Chocolate Cake |achieve 1788/4
+step
+use the Lovely Cake Slice##42434
+Eat Lovely Cake Slice |achieve 1788/5
+step
+use the Dalaran Brownie##42431
+Eat Dalaran Brownie |achieve 1788/6
+step
+use the Dalaran Doughnut##42430
+Eat Dalaran Doughnut |achieve 1788/7
+step
+|achieve 1788
+step
+_Congratulations!_
+You Earned the "Bad Example" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Daily Chores",{
+author="support@zygorguides.com",
+description="\nComplete five daily quests with your orphan out.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1789},
+patch='30003',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+Complete any 5 daily quests of your choice:
+|tip World Quests do not count for this achievement.
+|tip Use the various daily quest guides to complete this.
+|tip Make sure your orphan is standing next to you when turning in the daily quests, or you won't get credit for this achievement.
+|achieve 1789
+step
+_Congratulations!_
+You Earned the "Daily Chores" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby",{
+author="support@zygorguides.com",
+description="\nDefeat King Ymiron in Utgarde Pinnacle with your orphan out.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1790},
+patch='30002',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+kill King Ymiron##26861
+|tip Inside the Utgarde Pinnacle dungeon.
+|tip He's the final boss of the instance.
+|achieve 1790 |goto Utgarde Pinnacle/2 42.60,53.50
+step
+_Congratulations!_
+You Earned the "Hail To The King, Baby" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Home Alone",{
+author="support@zygorguides.com",
+description="\nUse your Hearthstone while your orphan is with you.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1791},
+patch='30002',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+use Hearthstone##6948
+|tip Use it while your Orphan is standing next to you.
+|achieve 1791
+step
+_Congratulations!_
+You Earned the "Home Alone" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\School of Hard Knocks",{
+author="support@zygorguides.com",
+description="\nTake your orphan into the battlegrounds and complete the feats listed below:\n\nCapture the flag "..
+"in Eye of the Storm\nAssault a flag in Arathi Basin\nAssault a tower in Alterac Valley\nReturn a "..
+"fallen flag in Warsong Gulch",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1786},
+patch='30002',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+|tip Enter the Eye of the Storm battleground and capture the flag.
+Capture the flag in Eye of the Storm |achieve 1786/1
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+|tip Enter the Alterac Valley battleground and assault a tower.
+Assault a Tower in Alterac Valley |achieve 1786/2
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+|tip Enter the Arathi Basin battleground and assault a flag.
+Assault a Flag in Arathi Basin |achieve 1786/3
+step
+use the Human Orphan Whistle##18598
+|tip Use it to summon your Human Orphan, if needed.
+|tip Enter the Warsong Gulch battleground and return a fallen flag.
+Return a fallen Flag in Warsong Gulch |achieve 1786/4
+step
+_Congratulations!_
+You Earned the "School of Hard Knocks" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Veteran Nanny",{
+author="support@zygorguides.com",
+description="\nAcquire Egbert's Egg, Sleepy Willy, and Elekk Training Collar on a single character.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={275},
+patch='30001',
+startlevel=10,
+},[[
+step
+This achievement takes three years to complete
+|tip You must do the following questline once each year on the same character.
+|tip Ensure that you only choose Egbert's Egg, Sleepy Willy, and the Elekk Training Collar as rewards.
+|confirm
+leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
+step
+_Congratulations!_
+You Earned the "Veteran Nanny" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\For the Children",{
+author="support@zygorguides.com",
+description="\nThis guide section will walk you through completing the Achievements for the Children's Week event.",
+condition_suggested=function() return isevent("Children's Week") end,
+achieveid={1793},
+patch='30002',
+startlevel=10,
+},[[
+step
+talk Orphan Matron Nightingale##14450
+Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
+collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
+leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
+leechsteps "Events Guides\\Children's Week\\Achievements\\Bad Example" 2-12
+leechsteps "Events Guides\\Children's Week\\Achievements\\Daily Chores" 2-2
+leechsteps "Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby" 2-2
+leechsteps "Events Guides\\Children's Week\\Achievements\\Home Alone" 2-2
+leechsteps "Events Guides\\Children's Week\\Achievements\\School of Hard Knocks" 2-5
+step
+|achieve 1793
+step
+_Congratulations!_
+You Earned the "For the Children" Achievement
+]])
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Achievements\\Ace Tonk Commander")
@@ -516,353 +1233,19 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festiv
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Draenor")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Broken Isles")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Achievements\\The Fires of Azeroth\\Flame Warden of Kul Tiras")
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Noblegarden Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the quests for the Noblegarden event.",
-condition_suggested=function() return isevent('Noblegarden') end,
-condition_end=function() return completedq(13502) end,
-},[[
-step
-talk Dwarf Commoner##19148
-accept Spring Collectors##13484 |goto Ironforge/0 30.86,71.95
-step
-talk Spring Collector##32799
-turnin Spring Collectors##13484 |goto Dun Morogh/0 53.99,50.70
-step
-talk Noblegarden Vendor##32836
-accept A Tisket, A Tasket, A Noblegarden Basket##13502 |goto 54.11,50.81
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 10 Noblegarden Chocolate##44791 |q 13502/1 |goto 53.51,50.84
-step
-talk Noblegarden Vendor##32836
-turnin A Tisket, a Tasket, a Noblegarden Basket##13502 |goto 54.11,50.81
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Noblegarden Dailies",{
-author="support@zygorguides.com",
-condition_suggested=function() return isevent('Noblegarden') end,
-description="\nThis guide section will walk you through completing the dailies for the Noblegarden event.",
-},[[
-step
-label "Begin_Daily_Quests"
-talk Dwarf Commoner##19148
-accept Spring Collectors##13484 |goto Ironforge/0 30.86,71.95
-step
-talk Spring Collector##32799
-turnin Spring Collectors##13484 |goto Dun Morogh/0 53.99,50.70
-accept The Great Egg Hunt##13480 |goto 53.99,50.70
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 20 Brightly Colored Shell Fragment##44806 |q 13480/1 |goto 53.51,50.84
-step
-talk Spring Collector##32799
-turnin The Great Egg Hunt##13480 |goto 53.99,50.70
-step
-You have completed all Noblegarden daily quests
-|tip This guide will reset when more become available.
-'|complete not completedq(13480) |next "Begin_Daily_Quests"
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Blushing Bride",{
-author="support@zygorguides.com",
-description="\nKiss someone wearing an Elegant Dress while wearing a White Tuxedo Shirt and Black Tuxedo Pants.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2576},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2576) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 Black Tuxedo Pants##151804 |goto 54.11,50.82 |or
-'|complete achieved(2576) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 White Tuxedo Shirt##6833 |goto 54.11,50.82 |or
-'|complete achieved(2576) |or
-step
-Equip the Black Tuxedo Pants |equipped Black Tuxedo Pants##151804 |or
-'|complete achieved(2576) |or
-step
-Equip the White Tuxedo Shirt |equipped White Tuxedo Shirt##6833 |or
-'|complete achieved(2576) |or
-step
-|script DoEmote("KISS")
-Earn the "Blushing Bride" Achievement |achieve 2576
-|tip Use the kiss emote on a player wearing an Elegant Dress.
-|tip The Elegant Dress looks like a long pink dress when worn.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocoholic",{
-author="support@zygorguides.com",
-description="\nEat 100 Noblegarden Chocolates during the Noblegarden celebration.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2418},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 100 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2418) |or
-step
-use the Noblegarden Chocolate##44791+
-Eat #100# Noblegarden Chocolates |achieve 2418
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Chocolate Lover",{
-author="support@zygorguides.com",
-description="\nEat 25 Noblegarden Chocolates during the Noblegarden celebration.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2417},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 25 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2417) |or
-step
-use the Noblegarden Chocolate##44791+
-Eat #25# Noblegarden Chocolates |achieve 2417
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Desert Rose",{
-author="support@zygorguides.com",
-description="\nUse Spring Robes to plant a flower in each of the deserts listed below:\n\n"..
-"The Badlands\nDesolace\nSilithus\nTanaris\nThousand Needles",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2436},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2436) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 Spring Florist's Pouch##188694 |goto 54.11,50.82 |or
-'|complete achieved(2436) |or
-step
-use the Spring Florist's Pouch##188694
-Learn the Spring Florist's Pouch Toy |toy Spring Florist's Pouch##188694 |or
-'|complete achieved(2436) |or
-step
-use the Spring Florist's Pouch##188694
-Plant a Flower in the Badlands |achieve 2436/1 |goto Badlands/0 21.71,57.73
-step
-use the Spring Florist's Pouch##188694
-Plant a Flower in Silithus |achieve 2436/3 |goto Silithus/0 78.93,21.97
-step
-use the Spring Florist's Pouch##188694
-Plant a Flower in Tanaris |achieve 2436/4 |goto Tanaris/0 51.38,29.43
-step
-use the Spring Florist's Pouch##188694
-Plant a Flower in Thousand Needles |achieve 2436/5 |goto Thousand Needles/0 79.09,71.89
-step
-use the Spring Florist's Pouch##188694
-Plant a Flower in the Desolace |achieve 2436/2 |goto Desolace/0 64.67,10.44
-step
-Earn the "Desert Rose" Achievement |achieve 2436
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion",{
-author="support@zygorguides.com",
-description="\nDiscover an Elegant Dress by opening Brightly Colored Eggs during the Noblegarden celebration.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={249},
-patch='30002',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-|tip You may need to loot hundreds, if not thousands of these eggs.
-use the Brightly Colored Egg##45072+
-collect 1 Elegant Dress##151806 |achieve 249 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(249) |or
-step
-Earn the "Dressed for the Occasion" Achievement |achieve 249
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Hard Boiled",{
-author="support@zygorguides.com",
-description="\nLay an egg in Un'Goro Crater's Golakka Hot Springs as a rabbit during the Noblegarden celebration.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2416},
-patch='30100',
-},[[
-step
-talk Innkeeper Dreedle##38488
-|tip Setting your hearthstone here will greatly reduce your travel time.
-|tip You cannot take flight paths or use your mount after getting the buff.
-home Marshal's Stand |goto Un'Goro Crater/0 55.38,62.26 |or
-'|complete achieved(2416) |or
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-Gain the "Noblegarden Bunny" Buff |havebuff 237000 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2416) |or
-step
-Earn the "Hard Boiled" Achievement |achieve 2416 |goto Un'Goro Crater/0 35.74,54.21
-|tip Avoid enemies, as being hit will cause you to lose your disguise.
-|tip Stand in this spot until you lay an egg.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\I Found One!",{
-author="support@zygorguides.com",
-description="\nFind a Brightly Colored Egg.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2676},
-patch='30101',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-collect 1 Brightly Colored Egg##45072 |achieve 2676 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2676) |or
-step
-Earn the "I Found One!" Achievement |achieve 2676
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Noble Garden",{
-author="support@zygorguides.com",
-description="\nHide a Brightly Colored Egg in Stormwind City.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2421},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 5 Noblegarden Chocolate##44791 |goto Elwynn Forest/0 42.38,65.61 |or
-'|complete achieved(2421) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 Noblegarden Egg##44818 |goto 43.04,65.32 |or
-'|complete achieved(2421) |or
-step
-use Noblegarden Egg##44818
-Earn the "Noble Garden" Achievement |achieve 2421 |goto Stormwind City/0 72.99,89.93
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker",{
-author="support@zygorguides.com",
-description="\nUse Spring Flowers to place rabbit ears upon players of at least 20th level of the following races:\n\n"..
-"Blood Elf\nDraenei\nDwarf\nGnome\nGoblin\nHuman\nNight Elf\nOrc\nTauren\nTroll\nUndead\nWorgen",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2422},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 50 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2422) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 Spring Flowers##45073 |goto Dun Morogh/0 54.11,50.82 |or
-'|complete achieved(2422) |or
-step
-Equip the Spring Flowers |equipped Spring Flowers##45073 |or
-'|complete achieved(2422) |or
-step
-use the Spring Flowers##45073
-|tip Use it on level 20+ characters.
-|tip Check around capital cities.
-Place Bunny Ears on a Blood Elf |achieve 2422/1
-Place Bunny Ears on a Tauren |achieve 2422/9
-Place Bunny Ears on a Draenei |achieve 2422/2
-Place Bunny Ears on a Human |achieve 2422/6
-Place Bunny Ears on a Troll |achieve 2422/10
-Place Bunny Ears on a Dwarf |achieve 2422/3
-Place Bunny Ears on a Night Elf |achieve 2422/7
-Place Bunny Ears on a Gnome |achieve 2422/4
-Place Bunny Ears on an Orc |achieve 2422/8
-Place Bunny Ears on a Goblin |achieve 2422/5
-Place Bunny Ears on an Undead |achieve 2422/11
-Place Bunny Ears on a Worgen |achieve 2422/12
-step
-Earn the "Shake Your Bunny-Maker" Achievement |achieve 2422
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Spring Fling",{
-author="support@zygorguides.com",
-description="\nFind your pet Spring Rabbit another one to love in each of the towns listed below:\n\n"..
-"Azure Watch\nDolanar\nGoldshire\nKharanos",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={2419},
-patch='30100',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-use the Brightly Colored Egg##45072+
-collect 100 Noblegarden Chocolate##44791 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(2419) |or
-step
-talk Noblegarden Vendor##32836
-buy 1 Spring Rabbit's Foot##44794 |goto 54.11,50.82 |or
-'|complete achieved(2419) |or
-step
-use the Spring Rabbit's Foot##44794
-Learn the "Spring Rabbit" Battle Pet |learnpet Spring Rabbit##200 |or
-'|complete achieved(2419) |or
-step
-Find Your Spring Rabbit Another to Love in Kharanos |achieve 2419/4 |goto 53.49,50.85
-|tip Summon your Spring Rabbit and find another player who has one summoned.
-|tip Spring Rabbits are white with brown spots.
-|tip Walk near the other player's rabbit to get credit.
-step
-Find Your Spring Rabbit Another to Love in Goldshire |achieve 2419/3 |goto Elwynn Forest/0 43.1,67.6
-|tip Summon your Spring Rabbit and find another player who has one summoned.
-|tip Spring Rabbits are white with brown spots.
-|tip Walk near the other player's rabbit to get credit.
-step
-talk Zidormi##141489
-Ask her _"Can you show me what Darkshore was like before the battle?"_
-Travel to the Past |complete ZGV.InPhase('Old Darnassus') or achieved(2419) |goto Darkshore/0 48.86,24.46
-step
-Find Your Spring Rabbit Another to Love in Dolanaar |achieve 2419/2 |goto Teldrassil/0 55.45,50.42
-|tip Summon your Spring Rabbit and find another player who has one summoned.
-|tip Spring Rabbits are white with brown spots.
-|tip Walk near the other player's rabbit to get credit.
-step
-Find Your Spring Rabbit Another to Love in Azure Watch |achieve 2419/1 |goto Azuremyst Isle/0 49.12,51.49
-|tip Summon your Spring Rabbit and find another player who has one summoned.
-|tip Spring Rabbits are white with brown spots.
-|tip Walk near the other player's rabbit to get credit.
-step
-Earn the "Spring Fling" Achievement |achieve 2419
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest",{
-author="support@zygorguides.com",
-description="\nDiscover the White Tuxedo Shirt and Black Tuxedo Pants by opening Brightly Colored Eggs during the Noblegarden celebration.",
-condition_suggested=function() return isevent('Noblegarden') end,
-achieveid={248},
-patch='30008',
-},[[
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-|tip You may need to loot hundreds, if not thousands of these eggs.
-use the Brightly Colored Egg##45072+
-collect 1 White Tuxedo Shirt##6833 |achieve 248/1 |goto Dun Morogh/0 53.51,50.84 |or
-'|complete achieved(248) |or
-step
-click Brightly Colored Egg##113768+
-|tip There is at least one available at all times.
-|tip You may need to loot hundreds, if not thousands of these eggs.
-use the Brightly Colored Egg##45072+
-collect 1 Black Tuxedo Pants##151804 |achieve 248/2 |goto 53.51,50.84 |or
-'|complete achieved(248) |or
-step
-Earn the "Sunday's Finest" Achievement |achieve 248
-]])
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Noblegarden Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Noblegarden Dailies")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Blushing Bride")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Chocoholic")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Chocolate Lover")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Desert Rose")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Dressed for the Occasion")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Hard Boiled")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\I Found One!")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Noble Garden")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Spring Fling")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\FOOD FIGHT!")

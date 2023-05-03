@@ -16272,7 +16272,7 @@ patch='100007',
 },[[
 step
 label "Active_Quests_Available"
-Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178)
+Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141)
 step
 talk Volethi##200727
 accept Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if questactive(73189)
@@ -16280,8 +16280,20 @@ accept Sneaky Pebbles##75024 |goto 34.85,57.48 |only if questactive(75024)
 |only if questactive(73189,75024)
 step
 talk Tukkaraq##200558
-accept Up to the Highest Height!##75026 |goto 34.36,58.57
-|only if questactive(75026)
+accept Up to the Highest Height!##75026 |goto 34.36,58.57 |only if questactive(75026)
+accept Everburning Embers##73141 |goto 34.36,58.57 |only if questactive(73141)
+|only if questactive(75026,73141)
+step
+talk Scalecommander Viridia##199201
+accept Stuck in Stasis##73694 |goto 34.60,57.67
+|only if questactive(73694)
+step
+Talk to NPCs around this area
+|tip The Dracthyr Stoneclaw will tank for you.
+|tip The Dracthyr Mender will heal for you.
+Tell it _"Come with me to the Froststone Vault."_
+Recruit the Healing Wing |q 73694/1 |goto 34.74,57.94
+|only if haveq(73694) or completedq(73694)
 step
 talk Cataloger Coralie##201291
 accept Snake Wrangling##73191 |goto 34.36,59.28 |only if questactive(73191)
@@ -16374,6 +16386,24 @@ click Mender Supplies##385990+
 |tip They look like wooden crates inside the building.
 collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
 |only if haveq(73189) or completedq(73189)
+stickystart "Slay_Ice_Primalists"
+step
+clicknpc Imprisoned Dracthyr##201060+
+|tip They look like Dracthyr frozen in stasis inside the building.
+|tip They appear on your minimap as yellow dots.
+Free #6# Imprisoned Dracthyr |q 73694/2 |goto Froststone Vault/0 55.23,39.08
+|only if haveq(73694) or completedq(73694)
+step
+label "Slay_Ice_Primalists"
+Kill enemies around this area.
+|tip Inside the building.
+Slay #10# Ice Primalists |q 73694/3 |goto 55.23,39.08
+|only if haveq(73694) or completedq(73694)
+step
+Kill enemies around this area
+|tip Inside and outside The Siege Creche.
+collect 14 Everburning Ember##202364 |q 73141/1 |goto The Siege Creche/0 58.82,38.53
+|only if haveq(73141) or completedq(73141)
 step
 use the Toxin Antidote##202620 |only if subzone("The Support Creche")
 |tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
@@ -16383,14 +16413,19 @@ turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if have
 turnin Sneaky Pebbles##75024 |goto 34.85,57.48 |only if haveq(75024) or completedq(75024)
 |only if haveq(73189,75024) or completedq(73189,75024)
 step
+talk Scalecommander Viridia##199201
+turnin Stuck in Stasis##73694 |goto 34.60,57.67
+|only if haveq(73694) or completedq(73694)
+step
 talk Cataloger Coralie##201291
 turnin Snake Wrangling##73191 |goto 34.36,59.28 |only if haveq(73191) or completedq(73191)
 turnin A Good Day for Rolling##75025 |goto 34.36,59.28 |only if haveq(75025) or completedq(75025)
 |only if haveq(73191,75025) or completedq(73191,75025)
 step
 talk Tukkaraq##200558
-turnin Up to the Highest Height!##75026 |goto 34.36,58.57
-|only if haveq(75026) or completedq(75026)
+turnin Up to the Highest Height!##75026 |goto 34.36,58.57 |only if haveq(75026) or completedq(75026)
+turnin Everburning Embers##73141 |goto 34.36,58.57 |only if haveq(73141) or completedq(73141)
+|only if haveq(75026,73141) or completedq(75026,73141)
 step
 talk Scalecommander Cindrethresh##199199
 turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
@@ -16404,7 +16439,7 @@ turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
 step
 You have completed all available side quests in The Forbidden Reach
 |tip This guide will reset when more become available.
-'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178) |next "Active_Quests_Available"
+'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141) |next "Active_Quests_Available"
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)",{
@@ -16423,14 +16458,17 @@ Dragon Glyphs & Dragonriding Skills
 |tip As you collect Dragon Glyphs, to spend the skill points, click the "Dragon Isles Summary" button on your minimap, and click the "View" button under "Dragonriding Skills & Unlocks".
 Click Here to Continue |confirm
 step
+Complete the "It Was Not Enough" Quest |complete completedq(72873) |or
+|tip Complete this quest in the "Zaralek Cavern" leveling guide to gain access to the zone.
+Click Here to Load the "Zaralek Cavern" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Zaralek Cavern" |or
+step
 Collect the Dragon Glyph: Loamm |achieve 18150/3 |goto Zaralek Cavern/0 54.75,54.71 |notravel
 |tip Near the roof.
 step
 Collect the Dragon Glyph: The Throughway |achieve 18150/6 |goto 72.05,48.44 |notravel
 |tip Behind the stalactites hanging from the ceiling.
 step
-Collect the Dragon Glyph: Nal Ks'kol |achieve 18150/2 |goto 62.57,73.33 |notravel
-|tip On top of the roof.
+Collect the Dragon Glyph: Nal Ks'kol |achieve 18150/2 |goto 62.70,70.39 |notravel
 step
 Collect the Dragon Glyph: Glimmerogg |achieve 18150/1 |goto 41.67,80.38 |notravel
 |tip Near the roof.
@@ -16502,6 +16540,7 @@ talk Khasar##202788
 accept Rest Well, Warrior##75985 |goto 86.99,27.28
 step
 click Shovel
+Watch the dialogue
 Bury the Brave Shikaar |q 75985/1 |goto 87.04,27.266
 step
 talk Khasar##202788
@@ -16515,6 +16554,7 @@ path follow smart; loop off; ants curved; dist 30
 path	87.90,29.05	86.42,26.60	83.54,28.16	84.88,30.65	84.46,31.91
 path	83.31,31.27
 Travel Through the Tunnel |q 72981/1
+|tip Fly off the cliff and through the tunnel below you.
 step
 talk Sabellian##201411
 Ask him _"So what's the plan?"_
@@ -16583,8 +16623,7 @@ accept Niffen and Goliath##72970 |goto 60.17,37.80
 step
 Enter the cave |goto Zaralek Cavern/0 58.92,38.95 < 7 |walk
 click Honeypelts Pungent Bait
-Place the Pungent Bait |q 72970/1 |goto 58.41,38.96
-step
+|tip Inside the cave.
 kill Deepflayer Broodmatron##200115 |q 72970/2 |goto 58.41,38.96
 step
 talk Elder Honeypelt##201584
@@ -16644,7 +16683,8 @@ Introduce Yourself to the Keeper of Renown |q 75643/1 |goto 56.53,55.66
 step
 talk Mimuup##204254
 |tip Inside the building.
-accept A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66
+accept A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66 |or
+'|complete completedq(75643) |or
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -16659,17 +16699,11 @@ talk Vaskarn##203404
 turnin Tougher Down Under##76101 |goto Zaralek Cavern/0 56.52,56.08
 accept Flightstones##72658 |goto 56.52,56.08
 step
-talk Kalecgos##205647
-accept Fyrakk's Forces##75887 |goto 55.66,54.92
-step
 talk Avogadro##202467
 |tip Inside the building.
 Introduce Yourself to the Flight Master |q 75643/3 |goto 55.64,54.79
 step
-talk Examiner Tae'shara Bloodwatcher##204509
-accept Power Unified##75641 |goto 56.84,54.79
-step
-talk Gumm##204624
+clicknpc Gumm##204624
 |tip Jumping around the chairs aroudn this area.
 Trade with the Teacher |q 72974/4 |goto 57.64,53.42
 step
@@ -16748,6 +16782,9 @@ step
 talk Vaskarn##203404
 |tip Inside the building.
 turnin Catching Up with Friends##75507 |goto 56.52,56.08
+step
+talk Examiner Tae'shara Bloodwatcher##204509
+accept Power Unified##75641 |goto 56.84,54.79
 step
 Enter the cave |goto 56.15,59.27 < 20 |walk
 talk Cinnam##200056
@@ -16835,6 +16872,9 @@ step
 talk Aurantia##200052
 turnin Suss Out the Imposter##72886 |goto 54.64,54.74
 step
+use the Gift of the High Redolence##205250
+Use the Reputation Token |complete itemcount(205250) == 0
+step
 talk Elder Honeypelt##200054
 accept Slime Time Live##72878 |goto 54.64,54.70
 step
@@ -16911,6 +16951,7 @@ Open the Door |q 72962/2 |goto 62.56,73.30
 step
 Enter the Vault with Emberthal |q 72962/3 |goto 62.75,73.60
 |tip Inside the building.
+|tip Make sure he starts walking forward before you run in.
 step
 talk Scalecommander Emberthal##200075
 |tip Inside the building.
@@ -16919,7 +16960,7 @@ accept Sundered Flames##75419 |goto 62.75,73.60
 step
 kill Winglord Dezran##201677
 |tip Inside the building.
-Defeat the Sundered Flame Sentries |q 75419/1 |goto 62.75,73.60
+Defeat the Sundered Flame Sentries |q 75419/1 |goto 62.85,73.75
 step
 Watch the dialogue
 talk Scalecommander Emberthal##204040
@@ -16954,6 +16995,8 @@ talk Amythora##202693
 Tell her _"Emberthal would welcome you with open arms."_
 Talk to Amythora |q 72964/1 |goto 63.59,74.93
 step
+Watch the Dialogue |complete readyq(72964) or completedq(72964)
+step
 talk Scalecommander Emberthal##200064
 |tip Inside the building.
 turnin Singed##72964 |goto 63.49,74.71
@@ -16970,6 +17013,9 @@ Watch the dialogue
 talk Sabellian##199849
 turnin Aspects of Our Legacy##72965 |goto 56.62,56.71
 accept Where There's Smoke, There's Fire##72966 |goto 56.62,56.71
+step
+use the Shiny Token of Gratitude##205991
+Use the Reputation Token |complete itemcount(205991) == 0
 step
 talk Citros##200055
 turnin Slime Time Live##72878 |goto Zaralek Cavern/0 56.80,54.00
@@ -17021,6 +17067,9 @@ Place the Incense |q 72880/1 |goto 51.54,49.54 |count 9
 step
 talk Elder Honeypelt##200054
 turnin Incense Gratification##72880 |goto 54.64,54.70
+step
+use the Pungent Niffen Incense##205249
+Use the Reputation Token |complete itemcount(205249) == 0
 step
 talk Sabellian##200081
 turnin Where There's Smoke, There's Fire##72966 |goto 41.02,41.75
@@ -17222,6 +17271,7 @@ talk Sabellian##199954
 Tell him _"I am ready."_
 Agree to Sabellian's Plan |q 72917/1 |goto 30.21,48.98
 step
+Watch the dialogue
 kill Erupting Shadowflame##199838 |q 72917/2 |goto 30.04,49.01
 step
 talk Ebyssian##199877
@@ -17337,6 +17387,22 @@ step
 talk Ebyssian##203151
 |tip At the top of the tower.
 turnin In the Wake of the Ashes##75145 |goto 58.33,38.92
+step
+use the Symbol of Friendship##205989
+Use the Reputation Token |complete itemcount(205989) == 0
+step
+talk Mimuup##204254
+|tip Inside the building.
+turnin A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66 |or
+'|complete completedq(75643) |or
+step
+collect Splintered Spark of Shadowflame##204717 |q 75641/1 |goto Zaralek Cavern/0 56.84,54.79
+step
+talk Examiner Tae'shara Bloodwatcher##204509
+turnin Power Unified##75641 |goto 56.84,54.79
+step
+More Content Will Come in Future Weeks |complete false
+|tip The remainder of the story is timegated until a future weekly reset.
 step
 talk Ebyssian##203965
 |tip He walks to this location at the top of the tower.

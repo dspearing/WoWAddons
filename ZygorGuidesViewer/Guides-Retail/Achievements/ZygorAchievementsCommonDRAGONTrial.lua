@@ -5,6 +5,7 @@ ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Character Achievements\\Professions\\In Tyr's Footsteps")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Character Achievements\\Professions\\Discombobberlated")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Character Achievements\\Professions\\Sleeping on the Job")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Expansion Features\\Dragonriding\\Zaralek Cavern Glyph Hunter")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Achievement Guides\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks")
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Symbols of Hope",{
 author="support@zygorguides.com",

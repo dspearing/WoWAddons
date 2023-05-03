@@ -7,6 +7,35 @@ local GuideMenu = ZGV.GuideMenu
 GuideMenu.Featured={}
 
 table.insert(GuideMenu.Featured,{
+	title="Patch 10.1 - Embers of Neltharion", group="patch_101",
+{"section", text=[[LEVELING]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch101Leveling",showcaseonly=true},
+	{"text", text=[[NOTE: The last chapter of the Zaralek Cavern questline won't be available until Blizzard releases it.
+]]},
+	{"columns",
+	{"item", text=[[**Zaralek Cavern**]], guide="LEVELING\\Dragonflight (60-70)\\Zaralek Cavern"},
+	{"item", text=[[**Dragon Glyphs (Zaralek Cavern)**]], guide="LEVELING\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)"},
+	}, --columnsend
+	
+{"section", text=[[DAILIES]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch101Dailies",showcaseonly=true},
+	{"text", text=[[NOTE: This should be nearly all of the Zaralek Cavern World Quests. You can now load rare guides from rare icons. Strategies for those are still in progress. The new world quest type appears only when you are near it on the map and will not function in the world quest planner.]]},
+	{"columns",
+	{"item", text=[[**Zaralek Cavern World Quests**]], guide="DAILIES\\Dragonflight (60-70)\\Zaralek Cavern World Quests"},
+	}, --columnsend
+
+{"section", text=[[REPUTATIONS]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch101Reputations",showcaseonly=true},
+	{"content", text=[[Complete the Sepulcher of the First Ones Raid]]},
+	{"text", text=[[NOTE: This guide is in a beta state and complete up to renown 10/20.]]},
+	{"columns",
+	{"item", text=[[**Loamm Niffen Reputation**]], guide="REPUTATIONS\\Dragonflight Reputations\\Loamm Niffen"},
+	}, --columnsend
+
+}) 
+
+
+table.insert(GuideMenu.Featured,{
 	title="Dragonflight", group="dragonflight",
 {"section", text=[[LEVELING]]},
         {"banner", image=ZGV.IMAGESDIR.."DragonflightLeveling",showcaseonly=true},

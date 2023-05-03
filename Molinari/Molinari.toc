@@ -1,6 +1,6 @@
 ## Interface: 100100
 ## Author: p3lim
-## Version: 100100.98-Release
+## Version: 100100.100-Release
 ## Title: Molinari
 ## Notes: One-click Milling, Prospecting, Disenchanting, Lockpicking, and more!
 ## IconTexture: Interface\Icons\ability_miling

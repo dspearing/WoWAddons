@@ -913,10 +913,10 @@ function BugReport:GenerateAndShow(maint)
 end
 
 
-function BugReport:SaveDump(text,timestamp,header)
+function BugReport:SaveDump(text,timestamp,header,addonmodule,severity)
 	timestamp = timestamp or time()
 	ZGV.db.global.bugreports = ZGV.db.global.bugreports or {}
-	ZGV.db.global.bugreports[timestamp]=self:FormatDumpForUpload(text,header)
+	ZGV.db.global.bugreports[timestamp]=self:FormatDumpForUpload(text,header,addonmodule,severity)
 	if ZGV.DEV then
 		if GuideRating.GuideRatingViewer then ZGV:Print("Guide rating saved for upload.")
 		else ZGV:Print("Bug report saved for upload.")
@@ -946,7 +946,7 @@ function BugReport:SimpleDump(tab)
 	return table.concat(t,"\n").."\n"
 end
 
-function BugReport:FormatDumpForUpload(content,more_headers)
+function BugReport:FormatDumpForUpload(content,more_headers,addonmodule,severity)
 	local header = ""
 	header = header .. "bug_report_id="..self:GetUniqueId().."\n"
 	header = header .. "bug_report_sent=0\n"
@@ -954,6 +954,8 @@ function BugReport:FormatDumpForUpload(content,more_headers)
 	header = header .. "bug_report_version="..ZGV.version.."\n"
 	header = header .. "bug_report_player="..BugReport:GetReport_Player_Basic().."\n"
 	header = header .. "bug_report_loc="..BugReport:GetReport_Player_Location().."\n"
+	header = header .. "step_feedback_module="..addonmodule.."\n"
+	header = header .. "step_feedback_severity="..severity.."\n"
 	if more_headers then header = header .. more_headers end
 
 	return ("%s\n%s\n---->>\n%s\n<<----\n%s"):format("%%BUG_REPORT_START%%",header,content,"%%BUG_REPORT_END%%")
@@ -1152,34 +1154,157 @@ function StepFeedback:CreateFrame()
 		:SetText(L["bugreport_step_title"])
 		.__END
 
-	frame.message = CHAIN(frame:CreateFontString())
+	frame.typetext = CHAIN(frame:CreateFontString())	--"Please select a feedback type"
 		:SetFont(FONT,12,"")
 		:SetJustifyH("LEFT")
-		:SetPoint("TOP",frame.title,"BOTTOM",0,-5)
+		:SetPoint("TOP",frame.title,"BOTTOM",0,-7)
 		:SetPoint("LEFT",frame,10,0)
-		:SetText(L["bugreport_step_message"])
+		:SetText(L["bugreport_step_type"])
+		:SetWidth(200)
 		.__END
 
+	frame.typeguide = CHAIN(ui:Create("Button",frame))	--Guide button
+		:SetPoint("LEFT",frame.typetext,"RIGHT",10,0)
+		:SetSize(100,20)
+		:SetText("Guide")
+		:SetFont(FONT,12)
+		:SetScript("OnClick",function()
+			StepFeedback.ReportMode = "guide"
+			StepFeedback.Frame:UpdateLayout()
+		end)
+		:SetNormalBackdropColor(unpack(SkinData("ButtonColor1")))
+	.__END
+	frame.typeaddon= CHAIN(ui:Create("Button",frame))	--Addon button
+		:SetPoint("LEFT",frame.typeguide,"RIGHT",10,0)
+		:SetSize(100,20)
+		:SetText("Addon")
+		:SetFont(FONT,12)
+		:SetScript("OnClick",function()
+			StepFeedback.ReportMode = "addon"
+			StepFeedback.Frame:UpdateLayout()
+		end)
+		:SetNormalBackdropColor(0.1,0.1,0.1,1)
+	.__END
+
+	local modules = {
+		{value="default", text=L["bugreport_step_default"]},
+		{value="guideviewer", text=L["bugreport_step_comp_guideviewer"]},
+		{value="share", text=L["bugreport_step_comp_share"]},
+		{value="guidemenu", text=L["bugreport_step_comp_guidemenu"]},
+		{value="featured", text=L["bugreport_step_comp_featured"]},
+		{value="widgets", 	text=L["bugreport_step_comp_widgets"]},
+		{value="travel", text=L["bugreport_step_comp_travel"]},
+		{value="findNPC", text=L["bugreport_step_comp_findNPC"]},
+		{value="notifications", text=L["bugreport_step_comp_notifications"]},
+		{value="gearsuggestion", text=L["bugreport_step_comp_gearsuggestion"]},
+		{value="gearfinder", text=L["bugreport_step_comp_gearfinder"]},
+		{value="auction", text=L["bugreport_step_comp_auctiontools"]},
+		{value="poi", 	text=L["bugreport_step_comp_poi"]},
+		{value="talentadvisor", text=L["bugreport_step_comp_talentadvisor"]},
+		{value="settings", text=L["bugreport_step_comp_settings"]},
+		{value="other",	text=L["bugreport_step_comp_other"]},
+	}
+
+	local severity = {
+		{value="default", text=L["bugreport_step_severity0"]},
+		{value="high", text=L["bugreport_step_severity1"]},
+		{value="medium", text=L["bugreport_step_severity2"]},
+		{value="low", text=L["bugreport_step_severity3"]},
+	}
+
+	frame.addoncontainer = CHAIN(CreateFrame("Frame",nil,frame))
+		:SetPoint("TOPLEFT",frame.typetext,"BOTTOMLEFT",0,-10)
+		:SetSize(200,30)
+		:Hide()
+	.__END
+
+	frame.componenttext = CHAIN(frame.addoncontainer:CreateFontString())	--"Please select a component"
+		:SetFont(FONT,12,"")
+		:SetJustifyH("LEFT")
+		:SetPoint("TOPLEFT",frame.addoncontainer,"TOPLEFT")
+		:SetText(L["bugreport_step_component"])
+		:SetWidth(200)
+	.__END
+
+	frame.addonmodule= CHAIN(ui:Create("DropDown",frame.addoncontainer,2,frame:GetFrameLevel()+2))
+		:SetPoint("LEFT",frame.componenttext,"RIGHT",10,0)
+		:SetSize(250,20)
+	.__END
+	frame.addonmodule.frame:SetBackdropColor(0.1,0.1,0.1,1)
+
+	frame.severitytext = CHAIN(frame.addoncontainer:CreateFontString())	--"Tell us how severe the issue is"
+		:SetFont(FONT,12,"")
+		:SetJustifyH("LEFT")
+		:SetPoint("TOPLEFT",frame.componenttext,"BOTTOMLEFT",0,-10)
+		:SetText(L["bugreport_step_severity"])
+		:SetWidth(200)
+		.__END
+
+	frame.severity= CHAIN(ui:Create("DropDown",frame.addoncontainer,2,frame:GetFrameLevel()+2))	--"Issue is minor and.."
+		:SetPoint("LEFT",frame.severitytext,"RIGHT",10,0)
+		:SetSize(250,20)
+	.__END
+	frame.severity.frame:SetBackdropColor(0.1,0.1,0.1,1)
+
+	for optnum,opt in ipairs(modules) do
+		local item = frame.addonmodule:AddItem(opt.text,opt.value)
+	end
+	frame.addonmodule:SetCurrentSelectedByValue("default")
+
+	for optnum,opt in ipairs(severity) do
+		local item = frame.severity:AddItem(opt.text,opt.value)
+	end
+	frame.severity:SetCurrentSelectedByValue("default")
 	
 	frame.close = CHAIN(CreateFrame("Button",nil,frame,"ZGV_DefaultSkin_TitleButton_Template"))
 		:SetPoint("TOPRIGHT",frame,"TOPRIGHT", -5, -4)
 		:SetScript("OnClick", function() 
+			frame.errEditbox:Hide()
+			frame.errMessage:Hide()
+			frame.errComponent:Hide()
+			frame.errSeverity:Hide()
+			StepFeedback.ReportMode = "guide"
+			StepFeedback.Frame:UpdateLayout()
 			StepFeedback:Hide()
 		 end)
 		.__END
 	frame.close.buttonkey = "CLOSE"
 	frame.close:ApplySkin()
 
-	frame.scroll = CHAIN(ui:Create("ScrollChild",frame,nil,"editbox"))
-		:SetPoint("TOPLEFT", frame, 8, -40)
+	frame.scroll = CHAIN(ui:Create("ScrollChild",frame,nil,"editbox"))	--Input box
+		:SetPoint("TOP",frame.typetext,"BOTTOM",0,-15)
+		:SetPoint("LEFT",frame,10,0)
 		:SetSize(580,235)
 		:MySetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -1, 38)
-		:HookScript("OnShow",function(me) me.child:SetFocus(true) end)
+		:HookScript("OnShow",function(me)
+			if frame.editBox:GetText() == "" then
+				frame.editBox:SetText(frame.editBox.placeholder)
+				frame.editBox:SetTextColor(1,1,1,0.7)
+			end
+		end)
 	.__END
 
 	frame.scroll.child:SetScript("OnEscapePressed", function() frame.save=nil frame:Hide() end)
 	frame.editBox = frame.scroll.child	
 
+	if StepFeedback.ReportMode == nil or StepFeedback.ReportMode == "Guide" then
+		frame.editBox.placeholder = L["bugreport_step_message"]
+	else
+		frame.editBox.placeholder = L["bugreport_step_message_addon"]
+	end
+
+	frame.editBox:SetScript("OnEditFocusLost",function(self)
+		if self:GetText()=="" then
+			self:SetText(self.placeholder)
+			self:SetTextColor(1,1,1,0.7)
+		end
+	end)
+	frame.editBox:SetScript("OnEditFocusGained",function(self)
+		if self:GetText()==self.placeholder then
+			self:SetText("")
+			self:SetTextColor(1,1,1,1)
+		end
+	end)
 
 	frame.buttonsubmit = CHAIN(ui:Create("Button",frame))
 		:SetSize(180,25)
@@ -1188,10 +1313,102 @@ function StepFeedback:CreateFrame()
 		:SetPoint("BOTTOMRIGHT", frame, -10,5)
 		:SetScript("OnClick",function(self)
 			if self:GetParent().old_timestamp then ZGV.db.global.bugreports[self:GetParent().old_timestamp]=nil end
-			StepFeedback:Save(self:GetParent().editBox:GetText())
+			frame.errEditbox:Hide()
+			frame.errMessage:Hide()
+			frame.errComponent:Hide()
+			frame.errSeverity:Hide()
+
+			if StepFeedback.ReportMode == "guide" then
+				if self:GetParent().editBox:GetText() ~= L["bugreport_step_message"] then
+					StepFeedback:Save(self:GetParent().editBox:GetText(),"guide","guide")
+					frame.errEditbox:Hide()
+					frame.errMessage:Hide()
+					self:GetParent().editBox:SetText(L["bugreport_step_message"])
+				else
+					frame.errEditbox:Show()
+					frame.errMessage:SetText(L["bugreport_step_nofeed"])
+					frame.errMessage:Show()
+				end
+			else
+				if self:GetParent().editBox:GetText() ~= L["bugreport_step_message_addon"] and frame.addonmodule:GetCurrentSelectedItemValue() ~= "default" and frame.severity:GetCurrentSelectedItemValue() ~= "default" then
+					StepFeedback:Save(self:GetParent().editBox:GetText(),frame.addonmodule:GetCurrentSelectedItemValue(),frame.severity:GetCurrentSelectedItemValue())
+					frame.errEditbox:Hide()
+					frame.errMessage:Hide()
+					frame.errComponent:Hide()
+					frame.errSeverity:Hide()
+					self:GetParent().editBox:SetText(L["bugreport_step_message"])
+				else
+					if self:GetParent().editBox:GetText() == L["bugreport_step_message_addon"]  then frame.errEditbox:Show() end
+					if frame.addonmodule:GetCurrentSelectedItemValue() == "default" then frame.errComponent:Show() end
+					if frame.severity:GetCurrentSelectedItemValue() == "default" then frame.errSeverity:Show() end
+					frame.errMessage:SetText(L["bugreport_step_addoninfo"])
+					frame.errMessage:Show()
+				end
+			end
 		end)
 		:SetPushedBackdropColor(unpack(SkinData("Accent")))
 	.__END
+
+	function frame:UpdateLayout()
+		local height = frame.editBox:GetHeight() + frame.buttonsubmit:GetHeight()
+		if StepFeedback.ReportMode == "guide" then
+			frame.addoncontainer:Hide()
+			frame.typeguide:SetNormalBackdropColor(unpack(SkinData("ButtonColor1")))
+			frame.typeaddon:SetNormalBackdropColor(0.1,0.1,0.1,1)
+			frame.scroll:SetPoint("TOP",frame.typetext,"BOTTOM",0,-15)
+			if frame.editBox:GetText() == L["bugreport_step_message_addon"] then frame.editBox:SetText(L["bugreport_step_message"]) end
+			frame.editBox.placeholder = L["bugreport_step_message"]
+			frame.errEditbox:Hide()
+			frame.errMessage:Hide()
+			frame.errComponent:Hide()
+			frame.errSeverity:Hide()
+		else
+			frame.addoncontainer:Show()
+			frame.typeguide:SetNormalBackdropColor(0.1,0.1,0.1,1)
+			frame.typeaddon:SetNormalBackdropColor(unpack(SkinData("ButtonColor1")))
+			frame.scroll:SetPoint("TOP",frame.addoncontainer,"BOTTOM",0,-15)
+			if frame.editBox:GetText() == L["bugreport_step_message"] then frame.editBox:SetText(L["bugreport_step_message_addon"]) end
+			frame.errEditbox:Hide()
+			frame.errMessage:Hide()
+			frame.editBox.placeholder = L["bugreport_step_message_addon"]
+		end
+	end
+
+
+	----------------Error messages------------------
+	frame.errEditbox = CHAIN(ui:Create("Frame",frame))
+		:SetBackdropColor(0,0,0,0)
+		:SetBackdropBorderColor(83/255,33/255,11/255,1)
+		:SetPoint("TOPLEFT", frame.scroll)
+		:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -15, 40)
+		:Hide()
+	.__END
+
+	frame.errComponent = CHAIN(ui:Create("Frame",frame))
+		:SetBackdropColor(0,0,0,0)
+		:SetBackdropBorderColor(83/255,33/255,11/255,1)
+		:SetPoint("TOPLEFT", frame.typeguide, "BOTTOMLEFT", -1, -2)
+		:SetSize(252,22)
+		:Hide()
+	.__END
+
+	frame.errSeverity = CHAIN(ui:Create("Frame",frame))
+		:SetBackdropColor(0,0,0,0)
+		:SetBackdropBorderColor(83/255,33/255,11/255,1)
+		:SetPoint("TOPLEFT", frame.errComponent, "BOTTOMLEFT")
+		:SetSize(252,22)
+		:Hide()
+	.__END
+
+	frame.errMessage = CHAIN(frame:CreateFontString())
+		:SetFont(FONT,12,"")
+		:SetJustifyH("LEFT")
+		:SetSize(290,30)
+		:SetPoint("RIGHT",frame.buttonsubmit,"LEFT",-10,0)
+		:SetText(L["bugreport_step_nofeed"])
+		:Hide()
+	.__END
+
 
 	ZGV:AddMessageHandler("SKIN_UPDATED",{self,"ApplySkin"})
 	self:ApplySkin()
@@ -1199,6 +1416,7 @@ end
 
 function StepFeedback:Clear()
 	self.Frame.editBox:SetText("")
+	self.ReportMode = "guide"
 end
 
 function StepFeedback:ApplySkin()
@@ -1252,8 +1470,8 @@ function StepFeedback:FindStepReportForCurrentStep()
 	end
 end
 
-function StepFeedback:Save(text)
-	BugReport:SaveDump(text,time(),self:GetStepReportHeader())
+function StepFeedback:Save(text,addonmodule,severity)
+	BugReport:SaveDump(text,time(),self:GetStepReportHeader(),addonmodule,severity)
 	self:Hide()
 end
 
@@ -1308,7 +1526,7 @@ function GuideRating:CreateFrame()
 		:SetHeight(60)
 	.__END
 
-frame.face1 = CHAIN(CreateFrame("Button",nil,frame,"ZGV_Guide_Rating_Star_Template"))
+	frame.face1 = CHAIN(CreateFrame("Button",nil,frame,"ZGV_Guide_Rating_Star_Template"))
 		:SetPoint("TOP",frame.frameFS,"BOTTOM",-50,-5)
 		:SetSize(35,35)
         .__END

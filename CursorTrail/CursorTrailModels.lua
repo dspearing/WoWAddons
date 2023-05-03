@@ -49,6 +49,14 @@ kModelConstants =
     --   [] To find a model's ID, go to "https://wow.tools/files" and search for the model's 
     --      file name (excluding the path).  Choose M2 file types, not MDX.
     
+    [0] = {  -- "None.  (Don't show a model effect.)"
+        Name = kStr_None,
+        BaseScale = 1.0, BaseFacing = 0,
+        BaseOfsX = 0, BaseOfsY = 0,
+        BaseStepX = 0, BaseStepY = 0,
+        IsSkewed = false, HorizontalSlope = 0,
+    },
+    
     --~~~~~~~~~~~~~~~~~~~~~~~~
     --[[       Glows        ]]
     --~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +65,7 @@ kModelConstants =
         Name = kCategory.Glow .. "Burning Cloud, Blue",
         BaseScale = 0.05, BaseFacing = 0,
         BaseOfsX = 0, BaseOfsY = 0,
-        BaseStepX = 3420, BaseStepY = 3156,
+        BaseStepX = 3430, BaseStepY = 3156,
         IsSkewed = true, HorizontalSlope = 0,
     },
     [166471] = {  -- "spells/lifetap_state_chest.m2"
@@ -72,7 +80,7 @@ kModelConstants =
         BaseScale = 0.055, BaseFacing = 0,
         BaseOfsX = 0.46, BaseOfsY = 0.035,
         BaseStepX = 3430, BaseStepY = 3150,
-        IsSkewed = true, HorizontalSlope = 4.4,
+        IsSkewed = true, HorizontalSlope = 4,
     },
     [166028] = {  -- "spells/enchantments/spellsurgeglow_high.m2"
         Name = kCategory.Glow .. "Cloud, Blue",
@@ -92,14 +100,14 @@ kModelConstants =
         Name = kCategory.Glow .. "Cloud, Purple",
         BaseScale = 0.11, BaseFacing = 0,
         BaseOfsX = 0.025, BaseOfsY = -0.025,
-        BaseStepX = 3440, BaseStepY = 3150,
+        BaseStepX = 3430, BaseStepY = 3150,
         IsSkewed = true, HorizontalSlope = 0, 
     },
     [166991] = {  -- "spells/summon_precast_hand.m2"
         Name = kCategory.Glow .. "Cloud, Purple (Soft)",
         BaseScale = 0.18, BaseFacing = 0,
         BaseOfsX = 0.075, BaseOfsY = -0.15,
-        BaseStepX = 3438, BaseStepY = 3150,
+        BaseStepX = 3428, BaseStepY = 3150,
         IsSkewed = true, HorizontalSlope = 0, 
     },
 
@@ -135,7 +143,7 @@ kModelConstants =
         Name = kCategory.Object .. "Ring of Bones",
         BaseScale = 0.05, BaseFacing = 0,
         BaseOfsX = 0, BaseOfsY = -1.15,
-        BaseStepX = 3350, BaseStepY = 3100,
+        BaseStepX = 3380, BaseStepY = 3080,
         IsSkewed = true, HorizontalSlope = 0, 
     },
     
@@ -182,7 +190,7 @@ kModelConstants =
     [166339] = {  -- "spells/holy_precast_uber_hand.m2"
         Name = kCategory.Spots .. "Pulsing, Holy",
         BaseScale = 0.11, BaseFacing = 0,
-        BaseOfsX = 0.065, BaseOfsY = -0.033,
+        BaseOfsX = 0.061, BaseOfsY = -0.035,
         BaseStepX = 3430, BaseStepY = 3155,
         IsSkewed = true, HorizontalSlope = 0,
     },
@@ -277,6 +285,7 @@ kModelConstants =
         BaseOfsX = 0, BaseOfsY = -1.875,
         BaseStepX = 3380, BaseStepY = 3060,
         IsSkewed = true, HorizontalSlope = 0,
+        SkewTopMult = 0.98, SkewBottomMult = 1.115,  -- Has different side skewing.
     },
     [165653] = {  -- "spells/banish_chest_yellow.m2"
         Name = kCategory.Trail .. "Pulsing, Yellow",
@@ -284,6 +293,7 @@ kModelConstants =
         BaseOfsX = 0, BaseOfsY = -1.875,
         BaseStepX = 3380, BaseStepY = 3050,
         IsSkewed = true, HorizontalSlope = 0,
+        SkewTopMult = 0.98, SkewBottomMult = 1.115,  -- Has different side skewing.
     },
     [166926] = {  -- "spells/soulshatter_missile.m2"
         Name = kCategory.Trail .. "Soul Skull",
@@ -338,8 +348,8 @@ kModelConstants =
     [240896] = {  -- "spells/firebomb_missle.m2"
         Name = kCategory.Trail .. "Swirling, Orange",
         BaseScale = 0.01, BaseFacing = 0,
-        BaseOfsX = 0, BaseOfsY = 0.1,
-        BaseStepX = 3420, BaseStepY = 3150,
+        BaseOfsX = 0.007, BaseOfsY = 0.109,
+        BaseStepX = 3432, BaseStepY = 3155,
         IsSkewed = true, HorizontalSlope = 0, 
     },
     [1536474] = {  -- "cfx_monk_chiorbit_missile.m2"

@@ -230,18 +230,19 @@ local QuestItemTracker = CreateFrame("Frame");
 
 local match = string.match;
 local select = select;
+local tonumber = tonumber;
 local GetItemInfoInstant = GetItemInfoInstant;
-local TRACKED_PLAYER_NAME = "";
-
+local find = string.find;
+local LOOT_ITEM_SELF = string.gsub(LOOT_ITEM_SELF or "You receive loot: %s", "%%s", "");
 local QuestItemDB = {};
 
 local function QuestItemTracker_OnEvent(self, event, text, playerName, languageName, channelName, playerName2, specialFlags, zoneChannelID, channelIndex, channelBaseName, languageID, lineID, guid)
-    if playerName == TRACKED_PLAYER_NAME then
-        local itemID = match(text, "item:(%d+)", 1);
-        if itemID then
-            itemID = tonumber(itemID);
-            local classID = select(6, GetItemInfoInstant(itemID));
-            if classID == 12 then
+    local itemID = match(text, "item:(%d+)", 1);
+    if itemID then
+        itemID = tonumber(itemID);
+        local classID = select(6, GetItemInfoInstant(itemID));
+        if classID == 12 then
+            if find(text, LOOT_ITEM_SELF) then
                 if not QuestItemDB[itemID] then
                     QuestItemDB[itemID]= true;
                     NarciQuestItemDisplay:SetItem(itemID);
@@ -252,12 +253,14 @@ local function QuestItemTracker_OnEvent(self, event, text, playerName, languageN
 end
 
 function QuestItemTracker:EnableTracker()
+    --[[
     local playerName = UnitNameUnmodified("player");
     local _, realmName = UnitFullName("player");
 
     if realmName then
         TRACKED_PLAYER_NAME = playerName.."-"..realmName;
     end
+    --]]
 
     self:RegisterEvent("CHAT_MSG_LOOT");   --QUEST_LOOT_RECEIVED
     self:SetScript("OnEvent", QuestItemTracker_OnEvent);
@@ -283,7 +286,7 @@ do
         end
     end
 
-    function SettingFunctions.SetAutoDisplayQuestItem(id, db)
+    function SettingFunctions.SetQuestItemDisplayTheme(id, db)
         if id == nil then
             id = db["QuestCardTheme"];
         end

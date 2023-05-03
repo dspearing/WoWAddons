@@ -6108,14 +6108,6 @@ Reach Renown Level 2 with the Loamm Niffen |complete factionrenown(2564) >= 2
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
 |tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
 step
-_Next to you:_
-talk Newsy##205127
-accept Dragon Isles Supplies##76025
-step
-talk Mimuup##204254
-|tip Inside the building.
-turnin Dragon Isles Supplies##76025 |goto Zaralek Cavern/0 56.53,55.66
-step
 Reach Renown Level 3 with the Loamm Niffen |complete factionrenown(2564) >= 3
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
 |tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
@@ -6123,9 +6115,10 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Care to Barter?##75720
+|tip You may need to relog to see this quest.
 step
 talk Ponzo##204693
-turnin Care to Barter?##75720 |goto 58.09,53.81
+turnin Care to Barter?##75720 |goto Zaralek Cavern/0 58.09,53.81
 accept Bartering 101##75721 |goto 58.09,53.81
 step
 talk Kayann##203516
@@ -6138,6 +6131,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Drake's Shadowflame Crest##75722
+|tip You may need to relog to see this quest.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6150,6 +6144,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Cavern Drakewatching##75723
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6162,6 +6157,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Like the Niffen Do##75724
+|tip You may need to relog to see this quest.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6174,6 +6170,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Off to the Track##75725
+|tip You may need to relog to see this quest.
 step
 talk Briggul##201752
 turnin Off to the Track##75725 |goto 44.25,79.93
@@ -6193,6 +6190,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Dragon Isles Supplies##76028
+|tip You may need to relog to see this quest.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6209,6 +6207,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Bartering Boulders##75728
+|tip You may need to relog to see this quest.
 step
 talk Ponzo##204693
 turnin Bartering Boulders##75728 |goto 58.09,53.81
@@ -6220,6 +6219,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Slitherdrake Watching##75730
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6228,6 +6228,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Airborne Winding##76030
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6240,6 +6241,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Scented Boots##75731
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6252,6 +6254,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Signed, Sealed, Self-Delivered##76067
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6268,6 +6271,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Bundle of Boulders##75741
+|tip You may need to relog to see this quest.
 step
 talk Ponzo##204693
 turnin Bundle of Boulders##75741 |goto 58.09,53.81
@@ -6283,6 +6287,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Drake Helms##75742
+|tip You may need to relog to see this quest.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6296,6 +6301,7 @@ _Next to you:_
 talk Newsy##205127
 accept A Token of Our Gratitude##75744
 accept The Smelliest Tabard##75727
+|tip You may need to relog to see this quest.
 step
 talk Mimuup##204254
 |tip Inside the building.

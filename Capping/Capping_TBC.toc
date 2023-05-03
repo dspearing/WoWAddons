@@ -1,5 +1,5 @@
 ## Interface: 20504
-## Version: v10.0.15
+## Version: v10.1.0
 ## Title: Capping
 ## Author: Funkydude
 ## Notes: Battleground timers and other PvP features.

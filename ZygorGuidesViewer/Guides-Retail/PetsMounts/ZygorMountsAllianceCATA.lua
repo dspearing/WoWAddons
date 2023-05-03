@@ -4773,40 +4773,74 @@ model={28064},
 description="\nThis guide will help you acquire the Magnificent Flying Carpet mount.",
 },[[
 step
-Click here to level your Northrend Tailoring skill if it is not level 50. |next "Profession Guides\\Tailoring\\Leveling Guides\\Northrend Tailoring 1-75" |only if ZGV.guidesets["ProfessionsA"] |confirm
-talk Georgio Bolero##1346
-learn Magnificent Flying Carpet##60971 |goto Stormwind City,53.1,81.3
+Reach Level 27 |ding 27 |or
+|tip Reach Level 27 to be able to learn this mount.
+'|complete hasmount(61309) |or
 step
-You can either _buy_ these _items from_ the _Auction House_ or _farm_ them:
-collect 12 Bolt of Imbued Frostweave##41511
-collect 4 Monarch Topaz##36930
-collect 4 Iceweb Spider Silk##42253
-|next "sup" |only if default
-Click here if you wish to farm these yourself. |confirm
+Learn Tailoring to Craft and Learn this Mount
+talk Charles Worth##28699
+|tip This mount can only be crafted and learned with the Tailoring Profession.
+Learn the "Tailoring" Profession |goto Dalaran/1 36.14,33.55 |complete hasprof("Tailoring",1,300) |or
+'|complete hasmount(61309) |or
+step
+Level your Northrend Tailoring Profession to Level 50
+|tip Use the "Northrend Tailoring 1-75" to accomplish this.
+Click Here to Open the "Northrend Tailoring 1-75" Profession Guide |confirm |loadguide "Profession Guides\\Tailoring\\Leveling Guides\\Northrend Tailoring 1-75"
+Learn "Northrend Tailoring" Level 50 |complete hasprof("Northrend Tailoring",50,75) |or
+'|complete hasmount(61309) |or
+step
+talk Charles Worth##28699
+|tip You must have Northrend Tailoring Level 50 to craft or use this pattern.
+learn Magnificent Flying Carpet##60971 |goto Dalaran/1 36.14,33.55 |or
+'|complete hasmount(61309) |or
+step
+Kill Crystalweb Spiders
+|tip Inside the cave.
+|tip You can also purchase these from the auction house.
+collect 4 Iceweb Spider Silk##42253 |goto The Storm Peaks/0 40.40,78.27 |or
+'|complete hasmount(61309) |or
 step
 kill Chosen Zealot##32175+
-collect 60 Frostweave Cloth##33470 |goto Icecrown 45,77
-Farm the elite mobs inside of the Cathedral of Darkness.
+|tip Inside the building.
+|tip You can also purchase these from the auction house.
+collect 120 Frostweave Cloth##33470 |goto Icecrown/0 44.37,77.68 |or
+'|complete hasmount(61309) |or
 step
-Farm spiders inside of the cave.
-collect 4 Iceweb Spider Silk##42253 |goto The Storm Peaks 41,78
+collect 24 Infinite Dust##34054 |or
+|tip You can disenchant Northrend gear and weapons with the Enchanting profession to obtain these, or purchase these from the auction house.
+'|complete hasmount(61309) |or
 step
-talk Auctioneer Chilton##8670
-buy 4 Monarch Topaz##36930 |goto Stormwind City/0 60.8,70.8
-buy 24 Infinite Dust##34054 |goto Stormwind City/0 60.8,70.8
+collect 4 Monarch Topaz##36930 |or
+|tip You can prospect Northrend ores using the Jewelcrafting profession to obtain these, or purchase these from the auction house.
+'|complete hasmount(61309) |or
 step
-create Bolt of Imbued Frosteweave##55900,Tailoring, 12 total
+talk Dominique Stefano##28726
+|tip Inside the building.
+buy 4 Red Dye##2604 |goto Dalaran/1 35.62,34.41 |or
+'|complete hasmount(61309) |or
 step
-label "sup"
-talk Alexandra Bolero##1347
-buy 4 Red Dye##2604 |goto Stormwind City 53.1,81.8
-buy 2 Yellow Dye##4341 |goto Stormwind City 53.1,81.8
+talk Dominique Stefano##28726
+|tip Inside the building.
+buy 2 Yellow Dye##4341 |goto Dalaran/1 35.62,34.41 |or
+'|complete hasmount(61309) |or
 step
-create Magnificent Flying Carpet##60971,Tailoring,1 total
-collect 1 Magnificent Flying Carpet##44558
+Create 24 Bolts of Frostweave Cloth
+|tip Create these using your Northrend Tailoring Profession.
+|tip You can also purchase these from the auction house.
+collect 24 Bolt of Frostweave##41510 |or
+'|complete hasmount(61309) |or
 step
-learnmount Magnificent Flying Carpet##61309 |use Magnificent Flying Carpet##44558
-_Warning!_ If you _drop Tailoring_ you _will not_ be able to _use this mount anymore_!
+Create 12 Bolts of Imbued Netherweave
+|tip You can also purchase these from the auction house.
+collect 12 Bolt of Imbued Frosteweave##41511 |or
+'|complete hasmount(61309) |or
+step
+Create Magnificent Flying Carpet |only if hasprof ("Northrend Tailoring",50,75)
+collect Magnificent Flying Carpet##44558 |or
+'|complete hasmount(61309) |or
+step
+|use Magnificent Flying Carpet##44558
+Learn the "Magnificent Flying Carpet" Mount |learnmount Magnificent Flying Carpet##61309
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Ashes of Al'ar",{
 author="support@zygorguides.com",
@@ -4948,13 +4982,31 @@ model={39563},
 description="\nThis guide will help you acquire the Life-Binder's Handmaiden mount.",
 },[[
 step
-This mount is found in the Elementium Fragment within the Dragon Soul raid. It is only dropped on Heroic Difficulty.
-kill Deathwing##56173
-click Elementium Fragment##210220
-collect 1 Life-Binder's Handmaiden##77069 |goto Dragon Soul/7 33.5,79.6
-|tip This has a very low drop chance.
+Reach Level 35 |ding 35 |or
+|tip This is the minimum level to enter the instance.
+|tip If you plan to solo this instance, it is much easier at level 50+.
+'|complete hasmount(107845) |or
 step
-learnmount Life-Binder's Handmaiden##107845 |use Life-Binder's Handmaiden##77069
+Enter the Dragon Soul Raid
+|tip Go down the spiral tunnel and enter the first passageway on the right at the bottom.
+|tip Set the Raid Difficulty to Heroic.
+|tip Open your map to help you locate the raid.
+Enter the Heroic Dragon Soul Raid |goto Tanaris/18 61.84,26.61 < 20 |c |or
+'|complete hasmount(107845) |or
+step
+kill Deathwing
+|tip You will have to kill all the other bosses in this raid before you can kill Deathwing.
+|tip Use the "Dragon Soul" Guide to accomplish this.
+Click Here to Open the "Dragon Soul" Raid Guide |confirm |loadguide "Dungeon Guides\\Cataclysm Raids\\Dragon Soul"
+step
+click Elementium Fragment##210220
+collect Life-Binder's Handmaiden##77069 |or
+|tip You may have to complete the raid several times to collect the mount.
+|tip This raid can be completed once a week.
+'|complete hasmount(107845) |or
+step
+use Life-Binder's Handmaiden##77069
+Learn the "Life-Binder's Handmaiden" Mount |learnmount Life-Binder's Handmaiden##107845
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Mimiron's Head",{
 author="support@zygorguides.com",

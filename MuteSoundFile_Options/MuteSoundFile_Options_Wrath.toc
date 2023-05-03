@@ -12,7 +12,7 @@
 ## Notes-koKR: MuteSoundFile|1을;를; 설정하는 옵션입니다.
 ## Notes-ptBR: MuteSoundFile Opções de Configuração.
 ## Notes-ruRU: MuteSoundFile параметры настроек.
-## Version: v10.0.3
+## Version: v10.1.0
 ## LoadOnDemand: 1
 ## Dependencies: MuteSoundFile
 

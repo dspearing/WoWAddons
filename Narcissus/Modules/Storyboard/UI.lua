@@ -1,6 +1,15 @@
 local _, addon = ...
 
-local StoryboardUtil = addon.StoryboardUtil;
+
+local READING_SPEED_LETTER = 180 * 5;   --WPM * avg. word length
+local FONT_HEIGHT_DESC = 16;
+do
+    local textLanguage = GetLocale();
+    if textLanguage == "zhCN" or textLanguage == "zhTW" or textLanguage == "koKR" then
+        READING_SPEED_LETTER = 200;
+        FONT_HEIGHT_DESC = 18;
+    end
+end
 
 
 NarciStoryboardMixin = {};
@@ -30,7 +39,7 @@ function NarciStoryboardMixin:OnLoad()
     end);
 
     local fontName, fontHeight, fontFlags = GameFontBlackMedium:GetFont();
-    self.DescriptionFrame.Text:SetFont(fontName, 16, fontFlags);
+    self.DescriptionFrame.Text:SetFont(fontName, FONT_HEIGHT_DESC, fontFlags);
 
     self.AnimIn:SetScript("OnFinished", function()
         self.SpeechBalloon:Show();
@@ -118,8 +127,8 @@ function NarciQuestItemDisplayMixin:OnLoad()
     end);
 
     local fontName, fontHeight, fontFlags = GameFontBlackMedium:GetFont();
-    self.ItemName:SetFont(fontName, 18, fontFlags);
-    self.Description:SetFont(fontName, 16, fontFlags);
+    self.ItemName:SetFont(fontName, FONT_HEIGHT_DESC + 2, fontFlags);
+    self.Description:SetFont(fontName, FONT_HEIGHT_DESC, fontFlags);
 
     self.AnimIn:SetScript("OnFinished", function()
         self.Border.AnimSheen:Play();
@@ -202,6 +211,9 @@ function NarciQuestItemDisplayMixin:ProcessQueue()
     end
 end
 
+
+
+
 function NarciQuestItemDisplayMixin:SetItem(itemID)
     --/run NarciQuestItemDisplay:SetItem(204803);NarciQuestItemDisplay:SetItem(205169)
 
@@ -257,7 +269,7 @@ function NarciQuestItemDisplayMixin:SetItem(itemID)
 
     self:SetSize(textWidth + ICON_SIZE + 3*PADDING, textHeight + 2*PADDING);
 
-    local readTime = (strlenutf8(name) + strlenutf8(description)) / 900 * 60;
+    local readTime = (strlenutf8(name) + strlenutf8(description)) / READING_SPEED_LETTER * 60;
     self.Border.CloseButton.Countdown:SetCooldownDuration(readTime);
     self.Border.CloseButton.Countdown:Pause();
 end

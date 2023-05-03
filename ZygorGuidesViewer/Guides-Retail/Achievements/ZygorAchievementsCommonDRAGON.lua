@@ -81,6 +81,54 @@ step
 _Congratulations!_
 You Earned the "Sleeping on the Job" Achievement
 ]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Expansion Features\\Dragonriding\\Zaralek Cavern Glyph Hunter",{
+author="support@zygorguides.com",
+description="Find the all eight dragon glyphs in Zaralek Cavern.",
+achieveid={18150},
+patch='100100',
+startlevel=70,
+keywords={"Dragonflight", "Dragonriding"},
+},[[
+step
+_NOTE:_
+Dragon Glyphs & Dragonriding Skills
+|tip You will need to complete the start of the "Zaralek Cavern" guide to unlock the area.
+|tip Dragon Glyphs look like large round golden runes that float in the air, spread out across the continent.
+|tip You fly through them on your dragonriding mount to collect them.
+|tip Collecting them will give you Dragonriding skill points, which can be used to increase the power of your Dragonriding ability.
+|tip This guide will walk you through collecting all of the Dragon Glyphs, so that you can max out your Dragonriding skill quickly.
+|tip As you collect Dragon Glyphs, to spend the skill points, click the "Dragon Isles Summary" button on your minimap, and click the "View" button under "Dragonriding Skills & Unlocks".
+Click Here to Continue |confirm
+step
+Complete the "It Was Not Enough" Quest |complete completedq(72873) |or
+|tip Complete this quest in the "Zaralek Cavern" leveling guide to gain access to the zone.
+Click Here to Load the "Zaralek Cavern" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Zaralek Cavern" |or
+step
+Collect the Dragon Glyph: Loamm |achieve 18150/3 |goto Zaralek Cavern/0 54.75,54.71 |notravel
+|tip Near the roof.
+step
+Collect the Dragon Glyph: The Throughway |achieve 18150/6 |goto 72.05,48.44 |notravel
+|tip Behind the stalactites hanging from the ceiling.
+step
+Collect the Dragon Glyph: Nal Ks'kol |achieve 18150/2 |goto 62.70,70.39 |notravel
+step
+Collect the Dragon Glyph: Glimmerogg |achieve 18150/1 |goto 41.67,80.38 |notravel
+|tip Near the roof.
+step
+Collect the Dragon Glyph: Zaqali Calderra |achieve 18150/4 |goto 30.45,45.33 |notravel
+|tip On top of the rock.
+|tip Land before you reach 10 stacks of the debuff and wait for it to wear off or you will be shot down.
+step
+Collect the Dragon Glyph: Acidbite Ravine |achieve 18150/7 |goto 47.44,37.07 |notravel
+|tip At the top of the cavern.
+step
+Collect the Dragon Glyph: Slitherdrake Roost |achieve 18150/5 |goto 55.29,27.84 |notravel
+|tip Behind the stalactites hanging from the ceiling.
+step
+Collect the Dragon Glyph: Aberrus Approach |achieve 18150/8 |goto 48.07,4.31 |notravel
+|tip At the top of the lava fall.
+|tip Get this glyph quickly because this area can dismount you randomly.
+]])
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\Dragon Isles\\Dragonscale Expedition: The Highest Peaks",{
 author="support@zygorguides.com",
 description="Place a flag on 10 of the tallest peaks in the Dragon Isles.",

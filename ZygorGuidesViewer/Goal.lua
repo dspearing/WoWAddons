@@ -750,6 +750,20 @@ GOALTYPES['learnpet'] = {
 	gettext = function(self) return L["stepgoal_learnpet"]:format(COLOR_ITEM(ZGV.Localizers:GetTranslatedNPC(self.npcId))) end,
 }
 
+GOALTYPES['petlevel'] = {
+	parse = function(self,params)
+		GOALTYPES['_item'].parse(self,params)
+		self.level = self.count
+		self.count = nil
+		self.npcId = ZGV.PetBattle.NPCIdBySpeciesId[self.targetid] or 0
+	end,
+	iscomplete = function(self)
+		if not ZGV.Parser.ConditionEnv.haspet(self.targetid) then return false,true end
+		return ZGV.Parser.ConditionEnv.petlevel(self.targetid)>=self.level, true
+	end,
+	gettext = function(self) return L["stepgoal_petlevel"]:format(COLOR_ITEM(ZGV.Localizers:GetTranslatedNPC(self.npcId)),self.level) end,
+}
+
 GOALTYPES['petspecies'] = {
 	parse = function(self,params)
 		local _

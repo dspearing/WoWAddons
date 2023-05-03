@@ -21,3 +21,4 @@
 0.20 - Updated Guardian Druid
 0.21 - Updated TOC
 0.22 - Updated Restoration Druid
+0.23 - Updated TOC

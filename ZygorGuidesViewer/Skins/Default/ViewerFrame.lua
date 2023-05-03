@@ -1624,7 +1624,9 @@ end
 
 		local width = self:GetWidth()
 		local margin = SkinData("ViewerMargin")*2
-	
+
+		if not self.Controls then return end -- 10.1 sometimes calls for onsizechanged before frame is fully loaded. make sure we are ready before moving on.
+
 		-- sorry. Can't rely on SetPoint alone, as they notoriously report GetWidth()==0 during resizes.
 		self.Controls.StepContainer:SetWidth(ZGV.db.profile.showcountsteps==0 and width-margin-19 or width-margin)
 

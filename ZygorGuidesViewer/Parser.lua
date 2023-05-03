@@ -599,10 +599,22 @@ local ConditionEnv = {
 	knowspell = function(spellid)
 		return IsSpellKnown(spellid)
 	end,
-	haspet = function(speciesId)
-		local numCollected, limit = C_PetJournal.GetNumCollectedInfo(speciesId)
+	haspet = function(speciesID)
+		local numCollected, limit = C_PetJournal.GetNumCollectedInfo(speciesID)
 		return ((numCollected or 0) > 0)
 	end,
+	petlevel = function(speciesID) 
+		-- do we even have that pet?
+		if not Parser.ConditionEnv.haspet then return 0 end
+
+		local numPets = C_PetJournal.GetNumPets();
+		local maxlevel = 0
+		for i = 1,numPets do
+			local _, petspeciesID, _, _, level = C_PetJournal.GetPetInfoByIndex(i);
+			if petspeciesID==speciesID then maxlevel=max(maxlevel,level) end
+		end
+		return maxlevel
+	end,	
 	hastoy = function(toyId)
 		return PlayerHasToy(toyId)
 	end,

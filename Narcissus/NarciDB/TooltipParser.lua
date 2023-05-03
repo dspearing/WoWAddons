@@ -154,7 +154,7 @@ local SOCKET_BONUS = TrimWhiteSpace(ITEM_SOCKET_BONUS);    --Socket Bonus: %s
 
 local PATTERN_COOLDOWN_TIME = "%((%d.+) Cooldown%)$";
 local PATTERN_UPGRADE_LEVEL = gsub(ITEM_UPGRADE_TOOLTIP_FORMAT, "%%d+", "(%%d+)");  --Upgrade Level: %d/%d
-local PATTERN_UPGRADE_STRING = gsub(ITEM_UPGRADE_TOOLTIP_FORMAT or "Upgrade Level", "([:：])(.+)", "%1") .. "%s*(.+)";  --Upgrade Level: %d/%d
+local PATTERN_UPGRADE_STRING = gsub(ITEM_UPGRADE_TOOLTIP_FORMAT or "Upgrade Level: %d/%d", "%%d/%%d", "(.+)");  --Upgrade Level: %d/%d
 local PATTERN_ITEM_SET_NAME = "(.+) %((%d+)/(%d+)%)";   --Pattern_WrapNumber( Pattern_WrapSpace( Pattern_WrapBrace( ITEM_SET_NAME) ) );
 local PATTERN_CLASS_REQUIREMENT = Pattern_WrapSpace(ITEM_CLASSES_ALLOWED);
 local PATTERN_AMMO_DPS = gsub(AMMO_DAMAGE_TEMPLATE, "%%s", "([%%d.]+)");
@@ -979,7 +979,7 @@ local function GetCompleteItemData(tooltipData, itemLink)
                             if not data then
                                 data = {};
                             end
-                            data.upgradeString = match1;
+                            data.upgradeString = strtrim(match1);
                             anyMatch = true;
                         end
                     end
