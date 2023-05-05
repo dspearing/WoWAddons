@@ -3,7 +3,7 @@ local name,addon = ...
 addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
-data.basenodes.DungeonEntrances = {
+data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 	-- DUNGEON ENTRANCE/EXITS
 		-- {autotype:portal_dungeon} gives the nice "enter dungeon"/"exit dungeon" mechanics.
 
@@ -551,7 +551,7 @@ data.basenodes.DungeonEntrances = {
 			"Zaralek Cavern/0 48.46,9.94 -x- Aberrus, the Shadowed Crucible/0 51.10,95.59 {autotype:portal_dungeon}",
 }
 
-data.basenodes.DungeonFloors = {
+data.basenodes.DungeonFloors = --[[LIBROVER]] {
 	-- Dungeons
 
 		--Kalimdor

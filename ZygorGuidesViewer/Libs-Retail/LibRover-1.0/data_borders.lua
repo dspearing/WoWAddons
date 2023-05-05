@@ -6,7 +6,7 @@ local data=addon.LibRoverData
 -- WATCH OUT. These are GROUND ONLY, and WILL be ignored by flight!
 
 -- indexed by continent, but that's ignored anyway.
-data.basenodes.borders = {
+data.basenodes.borders = --[[LIBROVER]] {
 
 	-- Shadowlands
 		"The Maw/0 23.01,68.40 -x- Altar of Domination/0 89.73,34.52 {title_atob:Enter the building} {title_btoa:Leave the building}",

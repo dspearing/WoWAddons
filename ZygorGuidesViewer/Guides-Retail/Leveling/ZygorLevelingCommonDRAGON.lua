@@ -17401,223 +17401,6 @@ step
 talk Examiner Tae'shara Bloodwatcher##204509
 turnin Power Unified##75641 |goto 56.84,54.79
 step
-More Content Will Come in Future Weeks |complete false
-|tip The remainder of the story is timegated until a future weekly reset.
-step
-talk Ebyssian##203965
-|tip He walks to this location at the top of the tower.
-accept Here We Go Again##72987 |goto 61.94,41.17
-step
-talk Kalecgos##187676
-|tip At the top of the tower.
-Tell him _"I need a portal to Zaralek Cavern."_
-Ask Kalecgos for a Portal |q 72987/2 |goto 61.63,36.09
-step
-click Portal to Zaralek Cavern |goto 60.70,36.92
-|tip Kalecgos will catch you as you fall when you arrive.
-Travel to the Zaralek Caverns |goto Zaralek Cavern/0 48.72,40.05 < 100 |noway |c |q 72987
-step
-talk Ebyssian##200046
-Find Ebyssian |q 72987/1 |goto 49.91,27.54
-step
-talk Ebyssian##200046
-turnin Here We Go Again##72987 |goto 49.91,27.54
-accept The Obsidian Rest##75367 |goto 49.91,27.54
-step
-click Flight Master's Report
-collect 1 Flight Master's Report##204819 |q 75367/1 |goto 51.06,26.31
-step
-talk Keskos##200893
-fpath Obsidian Rest |goto 51.03,26.17
-step
-talk Tzashivak##201026
-Tell her _"We need any help we can get to stop the djaradin."_
-Request Help from Tzashivak |q 75367/2 |goto 51.36,25.60
-step
-click Enchanted Spying Glass
-Use the Spying Glass |q 75367/3 |goto 50.71,25.20
-step
-talk Ebyssian##200046
-turnin The Obsidian Rest##75367goto 49.92,27.54
-accept Report: Battlefield Ruins##74393 |goto 49.92,27.54
-step
-talk Field Commander Ignax##200051
-turnin Report: Battlefield Ruins##74393 |goto 46.69,29.63
-accept Blow It Up##74538 |goto 46.69,29.63
-accept Thinning Their Defenses##74539 |goto 46.69,29.63
-accept Intercepting Communications##74540 |goto 46.69,29.63
-stickystart "Kill_5_Zaqali_Flametongues"
-step
-click Dragonslayer Ballista
-Destroy the Dragonslayer Ballista |q 74538/1 |goto 43.86,34.21 |count 1
-step
-click Dragonslayer Ballista
-Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.86,33.44 |count 2
-step
-click Dragonslayer Ballista
-Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.11,33.78 |count 3
-step
-click Dragonslayer Ballista
-Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.22,34.76 |count 4
-step
-kill 1 Warchanter Ronvath##200128 |q 74540/2 |goto 43.20,38.87
-step
-click Djaradin Warchest##398782
-collect 1 Invasion Plans: Dragon Nests##204074 |q 74540/1 |goto 42.97,38.95
-step
-label "Kill_5_Zaqali_Flametongues"
-kill 5 Zaqali Flametongue##200066 |q 74539/1 |goto 42.53,31.67
-step
-talk Field Commander Ignax##200051
-turnin Blow It Up##74538 |goto 46.69,29.62
-turnin Thinning Their Defenses##74539 |goto 46.69,29.62
-turnin Intercepting Communications##74540 |goto 46.69,29.62
-accept Air Superiority##74542 |goto 46.69,29.62
-step
-talk Ebyssian##202469
-Tell him _"Let's fly."_
-Fly with Ebyssian |q 74542/1 |goto 46.97,29.38
-step
-Defeat the Djaradin Forces |q 74542/2 |goto 46.97,29.38
-|tip Use the abilities on your action bar to accomplish this.
-step
-Reach the Ledge |q 74542/3 |goto 53.39,30.26
-step
-talk Ebyssian##202523
-|tip He walks to this location.
-turnin Air Superiority##74542 |goto 53.60,30.22
-|tip Keep the "Whelpling's Shadowflame Crest" rewarded from this quest for later.
-accept Investigating the Unknown##74557 |goto 53.60,30.22
-step
-clicknpc Zaqali Berserker##202529
-Inspect the Djaradin Corpse  |q 74557/1 |goto 53.63,30.16
-step
-clicknpc Drakonid Poacher##202549
-Inspect the Poacher Corpse |q 74557/2 |goto 53.44,29.84
-step
-clicknpc Slitherdrake##202550
-Make Contact with a Serpent Drake |q 74557/3 |goto 53.43,30.39
-step
-talk Ebyssian##202523
-turnin Investigating the Unknown##74557 |goto 53.59,30.21
-accept Break Them Out##74562 |goto 53.59,30.21
-accept Worst of the Worst##74563 |goto 53.59,30.21
-stickystart "Disrupt_The_Operation"
-step
-Enter the cave |goto 54.67,30.61 < 10 |walk
-kill 1 Overseer Xymra##200186 |q 74563/1 |goto 56.99,30.31
-|tip Inside the cave.
-step
-label "Disrupt_The_Operation"
-click Transportation Cart
-click Door
-kill Drakonid Poacher##200173
-|tip Inside the cave.
-Disrupt the Drakonid Poacher's Operation |q 74562/1 |goto 55.43,30.99
-step
-talk Ebyssian##202523
-turnin Break Them Out##74562 |goto 53.60,30.21
-turnin Worst of the Worst##74563 |goto 53.60,30.21
-step
-talk Ebyssian##202995
-accept Fading Embers##72922 |goto 53.42,30.24
-step
-talk Scalecommander Emberthal##203904
-Tell her _"I am ready to face him with you."_
-Speak to Emberthal |q 72922/1 |goto 45.91,26.34
-step
-Stop Sarkareth |q 72922/2 |goto 45.32,25.20
-step
-Watch the dialogue
-talk Ebyssian##199965
-turnin Fading Embers##72922 |goto Zaralek Cavern/0 45.98,26.24
-accept A Whisper to Sabellian##72923 |goto 45.98,26.24
-step
-talk Sabellian##199973
-Tell him _"Ebyssian would like to speak to you."_
-Speak to Sabellian |q 72923/1 |goto 46.74,29.57
-step
-Watch the dialogue
-talk Ebyssian##199965
-turnin A Whisper to Sabellian##72923 |goto 46.82,29.66
-accept Appealing to the Black Prince##72924 |goto 46.82,29.66
-step
-talk Wrathion##200101
-Tell him _"Ebyssian would like to speak to you."_
-Speak to Wrathion |q 72924/1 |goto 51.53,25.79
-step
-Watch the dialogue
-talk Ebyssian##199965
-turnin Appealing to the Black Prince##72924 |goto 51.47,25.76
-accept With Our Powers Combined##72925 |goto 51.47,25.76
-step
-Meet Emberthal By the Entrance to Brimstone Garrison |q 72925/1 |goto 47.18,27.90
-step
-talk Ebyssian##199965
-turnin With Our Powers Combined##72925 |goto 47.18,27.90
-accept Forward Camp##72931 |goto 47.18,27.90
-step
-Watch the dialogue
-talk Wrathion##200101
-accept In the Right Hands##72926 |goto 47.23,27.82
-step
-talk Sabellian##199973
-accept Wipe Them Out##72928 |goto 47.06,28.08
-stickystart "Defeat_Enemies_Around_Brimstone_Garrison"
-step
-click 'The Resting Blade'##385569
-|tip Inside the building.
-collect 'The Resting Blade'##204877 |q 72926/2 |goto 45.11,21.01
-step
-click Ebon Eviscerator
-collect Ebon Eviscerator##204184 |q 72926/1 |goto 45.11,18.45
-step
-label "Defeat_Enemies_Around_Brimstone_Garrison"
-Kill enemies around this area
-Defeat Enemies in Brimstone Garrison |q 72928/1 |goto 45.16,19.46
-step
-Meet Ebyssian at the Brimstone Garrison |q 72931/1 |goto 44.05,15.65
-|tip At the top of the tower.
-step
-talk Wrathion##200101
-|tip At the top of the tower.
-turnin In the Right Hands##72926 |goto 44.00,15.66
-step
-talk Sabellian##199973
-|tip At the top of the tower.
-turnin Wipe Them Out##72928 |goto 44.07,15.55
-step
-talk Ebyssian##199965
-|tip At the top of the tower.
-turnin Forward Camp##72931 |goto 44.05,15.65
-accept Finding Sarkareth##72927 |goto 44.04,15.63
-step
-Meet with Emberthal |q 72927/1 |goto 47.28,15.69
-step
-talk Scalecommander Emberthal##199964
-turnin Finding Sarkareth##72927 |goto 47.37,15.61
-accept Cracking His Shell##72929 |goto 47.37,15.61
-step
-click Aberrus Charge
-Destroy a Connection |q 72929/1 |count 1 |goto 47.54,16.32
-step
-click Aberrus Charge
-Destroy a Connection |q 72929/1 |count 2 |goto 49.24,16.62
-step
-talk Scalecommander Emberthal##199964
-turnin Cracking His Shell##72929 |goto 47.37,15.61
-accept Stopping Sarkareth##72930 |goto 47.37,15.61
-step
-kill Dreadful Defender##203842
-|tip Keep moving out of areas on targeted on the ground.
-Stop Sarkareth |q 72930/1 |goto 48.55,15.01
-step
-talk Scalecommander Emberthal##199964
-turnin Stopping Sarkareth##72930 |goto 47.87,14.90
-step
-talk Ebyssian##199965
-accept Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto 47.89,14.97
-step
 talk Rupert, the Gentleman Elemental##200291
 accept Healing Crystals##73037 |goto 40.10,68.42
 step
@@ -17692,19 +17475,26 @@ accept Bringing Disorder to Order##73040 |goto 53.62,79.33
 step
 talk Voraxian##200290
 accept A Room Without a View##73038 |goto 53.67,79.52
-stickystart "Kill_6_Enraged_Watchers"
 step
 Enter the building |goto 52.64,81.98 < 10 |walk
 click Elementally Charged Orb
+|tip Inside the building.
+|tip WARNING: Completing the world quest to kill watchers will boot you out of this area with no way to re-enter.
+|tip If this happens, abandon "Bringing Disorder to Order" and accept it again.
 collect 1 Elementally Charged Orb##203394 |q 73038/1 |goto 51.18,83.24
 step
 click Elementally Charged Orb
+|tip Inside the building.
+|tip WARNING: Completing the world quest to kill watchers will boot you out of this area with no way to re-enter.
+|tip If this happens, abandon "Bringing Disorder to Order" and accept it again.
 collect 2 Elementally Charged Orb##203394 |q 73038/1 |goto 53.07,84.77
 step
 click Elementally Charged Orb
+|tip Inside the building.
+|tip WARNING: Completing the world quest to kill watchers will boot you out of this area with no way to re-enter.
+|tip If this happens, abandon "Bringing Disorder to Order" and accept it again.
 collect 3 Elementally Charged Orb##203394 |q 73038/1 |goto 51.28,86.23
 step
-label "Kill_6_Enraged_Watchers"
 kill 6 Enraged Watcher##200407 |q 73040/1 |goto 53.20,80.58
 step
 talk Voraxian##200290
@@ -17838,6 +17628,9 @@ step
 talk Earthmender Narvra##200953
 turnin Stain Removal##73045 |goto 48.31,32.79
 step
+use the Honorary Explorer's Compass##205254
+Use the Reputation Token |complete itemcount(205254) == 0
+step
 click TICKET: Glimmerogg Games
 accept TICKET: Glimmerogg Games##73707 |goto 55.61,54.56
 step
@@ -17862,6 +17655,9 @@ buy 1 Squishy Snack##204791 |q 74877/3 |goto 56.42,55.84
 step
 Check on Myrrit at the "Secret Spot" |q 74877/4 |goto 52.27,62.87
 step
+talk Myrrit##202766
+turnin Best Friends##74877 |goto 52.17,62.80
+step
 Investigate the Captured Sundered Flame |q 73081/1 |goto 55.71,56.98
 |only if haveq(73081) or completedq(73081)
 step
@@ -17876,7 +17672,7 @@ Deter the Belligerent Dracthyr |q 73081/3 |goto 55.71,57.39
 step
 talk Captured Messenger##200876
 turnin Stress Fractures##73081 |goto 55.76,57.04 |only if haveq(73081) or completedq(73081)
-accept Cold Feet##73085 |goto 55.76,57.04 |only if haveq(73085) or completedq(73085)
+accept Cold Feet##73085 |goto 55.76,57.04 |only if haveq(73081) or completedq(73081)
 |only if haveq(73081,73085) or completedq(73081,73085)
 step
 click Bag of Sundered Flame Contraband
@@ -17894,9 +17690,6 @@ step
 click Sundered Flame Missive
 Examine the Sundered Flame Missive |q 73085/2 |goto 55.71,57.19
 |only if haveq(73085) or completedq(73085)
-step
-talk Myrrit##202766
-turnin Best Friends##74877 |goto 52.17,62.80
 step
 talk Marithos##203233
 turnin Cold Feet##73085 |goto 56.38,57.09
@@ -17991,13 +17784,16 @@ step
 talk Yarren##202597
 turnin Mouse Rescuers##75462 |goto 51.05,74.14
 step
+use the Farmhand's Abundant Harvest##205253
+Use the Reputation Token |complete itemcount(205253) == 0
+step
 talk Brogg the Beast##201098
 turnin TICKET: Glimmerogg Games##73707 |goto 43.79,82.98
 accept Pay to Play##73708 |goto 43.79,82.98
 accept Favor on the Side##73709 |goto 43.79,82.98
 step
 talk Festival Challenger##202571
-Tell him _"You're a party crasher!"_
+Tell them _"You're a party crasher!"_
 Find #6# Intruders |q 73709/1 |goto 44.27,82.29
 step
 kill Echoed Lurker##202636+
@@ -18017,6 +17813,21 @@ collect 3 Glimmer Mushroom##205169 |q 73708/2 |goto 37.63,76.63
 step
 click Glimmer Mushroom##388520
 collect 4 Glimmer Mushroom##205169 |q 73708/2 |goto 38.28,76.66
+step
+Find the Cave Entrance |q 75233/1 |goto 54.73,65.91
+stickystart "Collect_Crawler_Venom"
+step
+kill Osseous Broodmother##203348
+|tip Inside the cave.
+collect 1 Broodmother Venom##205031 |q 75233/3 |goto 52.63,65.26
+step
+label "Collect_Crawler_Venom"
+kill Calcifying Crawler##203342+
+|tip Inside the cave.
+collect 6 Crawler Venom##205030 |q 75233/2 |goto 53.33,65.31
+step
+talk Gudegg##203378
+turnin Flesh to Bone##75233 |goto 43.20,84.08
 step
 talk Brogg the Beast##201098
 turnin Pay to Play##73708 |goto 43.79,82.98
@@ -18040,10 +17851,13 @@ accept Marked Champion##73711 |goto 44.98,83.30
 step
 Enter the cave |goto 45.40,86.85 < 10 |walk
 kill Carcaxas##202836 |q 73711/1 |goto 45.59,87.62
-|tip Inside the cave.
+|tip Inside the cave up on the ledge.
 step
 talk Storul Heavystone##201100
 turnin Marked Champion##73711 |goto 44.98,83.29
+step
+use the Champion's Rock Bar##205251
+Use the Reputation Token |complete itemcount(205251) == 0
 step
 talk Briggul##201752
 accept Come Snail Away##74787 |goto 44.25,79.93
@@ -18054,8 +17868,6 @@ step
 talk Briggul##201752
 turnin Come Snail Away##74787 |goto 44.26,79.93
 step
-kill Scalecommander Sarkareth |q 75694/1 |goto Aberrus, the Shadowed Crucible/4 48.97,71.21
-step
-talk Ebyssian##199965
-turnin Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto Zaralek Cavern/0 47.89,14.97
+More Content Will Come in Future Weeks |complete false
+|tip The remainder of the story is timegated until a future weekly reset.
 ]])

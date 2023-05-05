@@ -45,6 +45,10 @@ L["OPTION_SETTINGS_HIDE_MINIMAP_TOOLTIP"] = "Обнаружена модифик
 L["OPTION_SETTINGS_HIDE_SELECTOR_NO_SCRIPT"] = "Не показывать, если нет скриптов."
 L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "Блокировка селектора сценариев"
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "Не ждать перед удалением."
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Play sound when \"Autobattle\" button becomes active"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Sound"
 L["OPTION_SETTINGS_RESET_FRAMES"] = "Сброс размера и положения панели"
 L["OPTION_SETTINGS_TEST_BREAK"] = "Отладка: скрипт проверки тестового сценария."
 L["Options"] = "Опции"

@@ -14,7 +14,7 @@ local oenchantItem = {
 	[7] = {0, INVTYPE_LEGS},
 	[8] = {1, INVTYPE_FEET},
 	[9] = {1, INVTYPE_WRIST},
-	[10] = {1, INVTYPE_HAND},
+	[10] = {0, INVTYPE_HAND},
 	[11] = {1, INVTYPE_FINGER.."1"},
 	[12] = {1, INVTYPE_FINGER.."2"},
 	[13] = {0, INVTYPE_TRINKET.."1"},
@@ -3373,6 +3373,12 @@ function OGetRaidProgression2(RaidName, OSTAT, NumRaidBosses, Faction)
 		otooltip2:SetCell(1,4,"|cffffffff"..CNname,"LEFT",2)
 		otooltip2:SetCellScript(1,4,"OnMouseUp",function(s)
 			Save_orp_vars(CNname)
+			otooltip2:Clear()
+			DrawOTooltip2()
+		end)
+		otooltip2:SetCell(2,4,"|cffffffff"..CNname2,"LEFT",2)
+		otooltip2:SetCellScript(2,4,"OnMouseUp",function(s)
+			Save_orp_vars(CNname2)
 			otooltip2:Clear()
 			DrawOTooltip2()
 		end)

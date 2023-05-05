@@ -10,6 +10,9 @@ if C_TooltipInfo then
 		if data then
 			for line,linedata in ipairs(data.lines) do
 				table.insert(results,linedata.leftText)
+				if linedata.rightText and linedata.rightText~="" then
+					table.insert(results,linedata.rightText)
+				end
 			end
 		end
 		return results
@@ -25,10 +28,9 @@ if C_TooltipInfo then
 		local results = {}
 		if data then
 			for line,linedata in ipairs(data.lines) do
-				for _,info in ipairs(linedata.args) do
-					if info.stringVal then
-						table.insert(results,info.stringVal)
-					end
+				table.insert(results,linedata.leftText)
+				if linedata.rightText and linedata.rightText~="" then
+					table.insert(results,linedata.rightText)
 				end
 			end
 		end

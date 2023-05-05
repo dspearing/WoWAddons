@@ -139,7 +139,7 @@ local ModelPool = {};
 ModelPool.pools = {};
 
 function ModelPool:Init()
-    local f = CreateFrame("Frame", MainFrame);
+    local f = CreateFrame("Frame", nil, MainFrame);
     f:SetSize(8, 8);
     f:SetPoint("TOP", MainFrame, "BOTTOM", 0, -8);
     f:Hide();

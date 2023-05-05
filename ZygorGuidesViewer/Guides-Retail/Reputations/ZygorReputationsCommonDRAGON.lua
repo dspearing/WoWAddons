@@ -6115,7 +6115,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Care to Barter?##75720
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Ponzo##204693
 turnin Care to Barter?##75720 |goto Zaralek Cavern/0 58.09,53.81
@@ -6131,7 +6131,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Drake's Shadowflame Crest##75722
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6144,7 +6144,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Cavern Drakewatching##75723
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6157,7 +6157,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Like the Niffen Do##75724
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6170,7 +6170,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Off to the Track##75725
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Briggul##201752
 turnin Off to the Track##75725 |goto 44.25,79.93
@@ -6190,7 +6190,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Dragon Isles Supplies##76028
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -6207,7 +6207,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Bartering Boulders##75728
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Ponzo##204693
 turnin Bartering Boulders##75728 |goto 58.09,53.81
@@ -6219,7 +6219,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Slitherdrake Watching##75730
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6228,7 +6228,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Airborne Winding##76030
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6241,7 +6241,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Scented Boots##75731
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6254,7 +6254,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Signed, Sealed, Self-Delivered##76067
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6271,7 +6271,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Bundle of Boulders##75741
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Ponzo##204693
 turnin Bundle of Boulders##75741 |goto 58.09,53.81
@@ -6287,7 +6287,7 @@ step
 _Next to you:_
 talk Newsy##205127
 accept Drake Helms##75742
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Harlowe Marl##202468
 |tip Inside the building.
@@ -6301,7 +6301,7 @@ _Next to you:_
 talk Newsy##205127
 accept A Token of Our Gratitude##75744
 accept The Smelliest Tabard##75727
-|tip You may need to relog to see this quest.
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.

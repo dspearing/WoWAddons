@@ -3,6 +3,8 @@ local _, addon = ...
 
 local READING_SPEED_LETTER = 180 * 5;   --WPM * avg. word length
 local FONT_HEIGHT_DESC = 16;
+local match = string.match;
+
 do
     local textLanguage = GetLocale();
     if textLanguage == "zhCN" or textLanguage == "zhTW" or textLanguage == "koKR" then
@@ -136,11 +138,10 @@ function NarciQuestItemDisplayMixin:OnLoad()
     end);
 
     self.Border.CloseButton.Countdown:SetScript("OnCooldownDone", function()
-        self.AnimOut:Play();
+        if not self.editmode then
+            self.AnimOut:Play();
+        end
     end);
-
-    self:ClearAllPoints();
-    self:SetPoint("LEFT", Narci_GuideLineFrame, "LEFT", 64, 80);
 
     local function PauseCountdown()
         self.Border.CloseButton.Countdown:Pause();
@@ -165,7 +166,12 @@ function NarciQuestItemDisplayMixin:OnLoad()
 end
 
 function NarciQuestItemDisplayMixin:OnHide()
-
+    if self.editmode then
+        self.Border:SetScript("OnMouseDown", nil);
+        self.Border:SetScript("OnMouseUp", nil);
+        self.Border:EnableMouse(false);
+        self.editmode = nil;
+    end
 end
 
 function NarciQuestItemDisplayMixin:OnShow()
@@ -211,11 +217,8 @@ function NarciQuestItemDisplayMixin:ProcessQueue()
     end
 end
 
-
-
-
-function NarciQuestItemDisplayMixin:SetItem(itemID)
-    --/run NarciQuestItemDisplay:SetItem(204803);NarciQuestItemDisplay:SetItem(205169)
+function NarciQuestItemDisplayMixin:SetItem(itemID, requery)
+    --/run NarciQuestItemDisplay:SetItem(204803);NarciQuestItemDisplay:SetItem(204713)
 
     local tooltipData = C_TooltipInfo.GetItemByID(itemID);
     if not (tooltipData and tooltipData.lines) then
@@ -230,14 +233,22 @@ function NarciQuestItemDisplayMixin:SetItem(itemID)
             if i == 1 then
                 name = line.leftText;
             else
-                description = line.leftText;
-                break
+                if match(line.leftText, "^[\"“]") then
+                    description = line.leftText;
+                    break
+                end
             end
         end
     end
 
     if not (name and description) then
-        self:ProcessQueue();
+        if requery then
+            C_Timer.After(0.5, function()
+                self:SetItem(itemID, true);
+            end);
+        else
+            self:ProcessQueue();
+        end
         return
     end
 
@@ -256,20 +267,90 @@ function NarciQuestItemDisplayMixin:SetItem(itemID)
     self.ItemName:SetText(name);
     self.Description:SetText(description);
 
-    local textWidth = math.floor(0.5 + math.max(self.ItemName:GetWrappedWidth(), self.Description:GetWrappedWidth())) ;
+    self:Layout();
+
+    local readTime = (strlenutf8(name) + strlenutf8(description)) / READING_SPEED_LETTER * 60;
+    self.Border.CloseButton.Countdown:SetCooldownDuration(readTime);
+    self.Border.CloseButton.Countdown:Pause();
+end
+
+function NarciQuestItemDisplayMixin:Layout()
+    local titleWidth = self.ItemName:GetWrappedWidth() + PADDING;
+    local descWidth = self.Description:GetWrappedWidth();
+
+    local textWidth = math.floor(0.5 + math.max(titleWidth, descWidth)) ;
     local textHeight = math.floor(0.5 + self.ItemName:GetTop() - self.Description:GetBottom());
 
     self.ItemName:ClearAllPoints();
     if textHeight < ICON_SIZE then
-        textHeight = ICON_SIZE;
         self.ItemName:SetPoint("TOPLEFT", self.ItemIcon, "TOPRIGHT", PADDING, 0.5*(textHeight - ICON_SIZE));
+        textHeight = ICON_SIZE;
     else
         self.ItemName:SetPoint("TOPLEFT", self.ItemIcon, "TOPRIGHT", PADDING, 0);
     end
 
     self:SetSize(textWidth + ICON_SIZE + 3*PADDING, textHeight + 2*PADDING);
+end
 
-    local readTime = (strlenutf8(name) + strlenutf8(description)) / READING_SPEED_LETTER * 60;
-    self.Border.CloseButton.Countdown:SetCooldownDuration(readTime);
-    self.Border.CloseButton.Countdown:Pause();
+local function ChangePosition_OnMouseDown(self, button)
+    if button == "LeftButton" then
+        self:GetParent():StartMoving();
+    elseif button == "MiddleButton" then
+        self:GetParent():ResetPosition();
+    end
+end
+
+local function ChangePosition_OnMouseUp(self, button)
+    if button == "LeftButton" then
+        local card = self:GetParent();
+        card:StopMovingOrSizing();
+
+        --Save Current Position
+        local x = card:GetLeft();
+        local y = card:GetTop();
+        NarcissusDB.QuestItemDisplayPositionX = math.floor(x + 0.5);
+        NarcissusDB.QuestItemDisplayPositionY = math.floor(y + 0.5);
+
+        card:UseSavedPosition();
+    end
+end
+
+function NarciQuestItemDisplayMixin:ChangePosition()
+    if self.editmode and self:IsShown() then
+        self:Hide();
+        return
+    end
+
+    self.editmode = true;
+    self.Border:SetScript("OnMouseDown", ChangePosition_OnMouseDown);
+    self.Border:SetScript("OnMouseUp", ChangePosition_OnMouseUp);
+    self.Border:EnableMouse(true);
+
+    self.ItemIcon:SetTexture(133741);
+    self.ItemName:SetText(Narci.L["Drag To Move"]);
+    self.Description:SetText(Narci.L["Middle Click Reset Position"]);
+
+    self:Show();
+    self:Layout();
+
+    self.Border.CloseButton.Countdown:SetCooldownDuration(0);
+end
+
+function NarciQuestItemDisplayMixin:ResetPosition()
+    self:ClearAllPoints();
+    self:SetPoint("LEFT", Narci_GuideLineFrame, "LEFT", 64, 80);
+end
+
+function NarciQuestItemDisplayMixin:UseSavedPosition()
+    self:SetUserPlaced(false);
+
+    local x = NarcissusDB.QuestItemDisplayPositionX;
+    local y = NarcissusDB.QuestItemDisplayPositionY;
+
+    if x and y then
+        self:ClearAllPoints();
+        self:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x, y);
+    else
+        self:ResetPosition();
+    end
 end

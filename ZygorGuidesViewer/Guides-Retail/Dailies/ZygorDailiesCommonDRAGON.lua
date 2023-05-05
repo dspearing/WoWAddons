@@ -5700,3 +5700,619 @@ You have completed all available side quests in The Forbidden Reach
 |tip This guide will reset when more become available.
 '|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178) |next "Active_Quests_Available"
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Sniffenseeking!",{
+author="support@zygorguides.com",
+description="This guide will help you complete the 17 digs available from Myrrit in Loamm.",
+startlevel=68,
+patch='100100',
+},[[
+step
+Unlock Zaralek Cavern |complete completedq(72973)
+|tip Complete the beginning of the "Zaralek Cavern" leveling guide to unlock Loamm.
+step
+label "Start_Dig"
+use the Lost Dig Map##205982
+|tip Lost dig maps have a chance to drop from the Scentsational Niffen Treasures after completing the weekly quest.
+use the Bartered Dig Map##205984
+|tip This dig map can be purchased from Ponzo in Loamm for 3 Barter Brick.
+talk Myrrit##201426
+'|accept The Buddy System##74876 |only if not completedq(74876) |or
+'|accept The Heavy Crown##74953 |only if not completedq(74953) |or
+'|accept Best Friends##74877 |only if not completedq(74877) |or
+Tell him _"Let's go Sniffenseeking!"_
+Ride with Myrrit |havebuff spell:410214 |goto Zaralek Cavern/0 55.62,57.45 |or |override
+step
+talk Effervesta##202778
+Ask her _"Myrrit really needs to speak with you. He's here. Can you see him?"_
+Talk to Effervesta |q 74953/1 |goto 54.61,54.94
+|only if haveq(74953)
+step
+click Cushion of Questions
+Sat on the "Throne" while perfumed |q 74953/2 |goto 54.61,54.94
+|only if haveq(74953)
+step
+talk Marron Glassee##202996
+|tip Pick whichever you like, it doesn't matter.
+Solve the Problem |q 74953/3 |goto 54.61,54.94
+|only if haveq(74953)
+step
+talk Myrrit##202766
+turnin The Heavy Crown##74953 |goto 54.65,54.36 |only if haveq(74953)
+accept Old Friends, Dear Friends##74878 |goto 54.65,54.36 |only if completedq(74953) and not completedq(74878)
+|only if (haveq(74953) or completedq(74953)) and not completedq(74878)
+step
+talk Effervesta##202778
+Tell her _"Myrrit is having trouble telling you what's wrong because he's afraid of how you'll react."_
+Talk to Effervesta |q 74878/1 |goto 54.61,54.38
+|only if haveq(74878)
+step
+talk Myrrit##202766
+Choose _"<Encourage Myrrit to be truthful about how he feels.>"_
+Myrrit encouraged |q 74878/2 |goto 54.65,54.36
+|only if haveq(74878)
+step
+talk Myrrit##202766
+turnin Old Friends, Dear Friends##74878 |goto 54.65,54.36 |next "Start_Dig"
+|only if haveq(74878)
+step
+talk Effervesta##202778
+Tell her _" Myrrit is wondering if you have time to go on a dig with him."_
+Talk to Effervesta |q 74877/1 |goto 54.61,54.94
+|only if haveq(74877)
+step
+talk Myrrit##201426
+Tell him _"Effervesta says she will meet with you at your 'spot.'"_
+Give Myrrit the Good News |q 74877/2 |goto 55.62,57.45
+|only if haveq(74877)
+step
+talk Floressa##203293
+|tip Inside the building.
+buy 1 Squishy Snack##204791 |q 74877/3 |goto 56.42,55.84
+|only if haveq(74877)
+step
+Check on Myrrit at the "Secret Spot" |q 74877/4 |goto 52.27,62.87
+|only if haveq(74877)
+step
+talk Myrrit##202766
+turnin Best Friends##74877 |goto 52.17,62.80 |next "Start_Dig"
+|only if haveq(74877)
+step
+talk Myrrit##201426
+Tell him _"Let's go Sniffenseeking!"_
+Ride with Myrrit |havebuff spell:410214 |goto 55.62,57.45
+step
+Watch the dialogue
+Reach the Mysterious Cave |nobuff spell:410214
+step
+accept Brand New Digs##75459 |only if not completedq(75459) |or
+accept Sneak and Sniff##75517 |only if not completedq(75517) |or
+accept The Living Drill##76016 |only if not completedq(76016) |or
+accept Thieving Critters##75619 |only if not completedq(75619) |or
+accept Element Whispers##75621 |only if not completedq(75621) |or
+accept Living Statue##76014 |only if not completedq(76014) |or
+accept Making Scents##75393 |only if not completedq(75393) |or
+accept Vertical Anomaly##75390 |only if not completedq(75390) |or
+accept Flapping and Screaming##76027 |only if not completedq(76027) |or
+accept Scratch and Sniff##75234 |only if not completedq(75234) |or
+accept Successful Interventions##75516 |only if not completedq(75516) |or
+accept Those Rascally Worms##75397 |only if not completedq(75397) |or
+accept Your Weight in Gold##75996 |only if not completedq(75996) |or
+accept Heart of Iron##76015 |only if not completedq(76015) |or
+accept Liars in Light##75620 |only if not completedq(75620) |or
+accept Frostfire Finesse##76084 |only if not completedq(76084) |or
+accept Liars of Spirit##76081 |only if not completedq(76081) |or
+|tip You will accept one of these quests automatically.
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75459
+|only if haveq(75459)
+step
+collect Metal Key##204867 |q 75459/2 |goto 55.95,48.93
+|tip Use "Sniff" to find the treasure inside the cave.
+|tip Then "Burrow" under it and use "Dig" to collect it.
+|only if haveq(75459)
+step
+Burrowed with Myrrit |q 75459/5 |goto 55.95,49.91
+|tip Use "Burrow" to move under the gas inside the cave to safety on the other side.
+|tip Then "Emerge" from the ground.
+|only if haveq(75459)
+step
+Burrow Past the Toxic Gas at the Entrance |q 75459/6 |goto 55.84,49.17
+|tip Inside the cave.
+|only if haveq(75459)
+step
+Place Myrrit on the Pressure Plate |q 75459/7 |goto 55.88,48.86
+|tip Stand in the middle of the plate inse the cave and "Put Down Myrrit" to leave him on the plate and keep it activated.
+|only if haveq(75459)
+step
+click Treasure Chest
+|tip Inside the cave.
+Solve the Chest Puzzle |q 75459/8 |goto 56.08,48.91
+|only if haveq(75459)
+step
+Go on a Dig with Myrrit |q 74876/1 |goto 56.08,48.91
+|only if haveq(74876)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75517
+|only if haveq(75517)
+step
+click Jangly Keys
+|tip "Burrow" underground, avoiding the patches of disturbed ground which spawn enemies.
+collect 1 Jangly Key##205412 |q 75517/1 |goto 55.42,53.56
+|only if haveq(75517)
+step
+click Treasure Chest
+|tip You must "Emerge" and drop Myrrit first.
+Open the Chest |q 75517/2 |goto 56.71,53.22
+|only if haveq(75517)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76016
+|only if haveq(76016)
+step
+kill Diganthor##204434
+|tip Pick up Myrrit and "Burrow," then "Dig" beneath disturbed areas on the ground.
+|tip Kill the enemies that spawn from each area until Diganthor spawns.
+collect 1 Spit-covered Key##205941 |q 76016/1 |goto 56.22,52.99
+|only if haveq(76016)
+step
+click Treasure Chest
+|tip Pick up Myrrit and "Burrow," then "Dig" beneath this spot on the ground.
+|tip You will have to put Myrrit down to loot the chest.
+Loot the Treasure Chest |q 76016/2 |goto 56.01,53.18
+|only if haveq(76016)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75619
+|only if haveq(75619)
+step
+kill Sneaky Darkfang##204435
+|tip Pick up Myrrit and "Burrow," avoiding spider webs on the ground.
+|tip "Emerge" and put down Myrrit to click the web, spawning the darkfang.
+collect Sticky Key##205186 |goto 56.84,55.50 |q 75619
+|only if haveq(75619)
+step
+kill Mischievous Stagnose##204432
+|tip Pick up Myrrit and "Burrow," avoiding spider webs on the ground.
+|tip "Dig" under the moving patch of rumbling earth to spawn the stagnose.
+|tip It moves in a counter-clockwise circle in the cave.
+collect Muddy Key##205185 |goto 55.59,57.21 |q 75619
+|only if haveq(75619)
+step
+click Double-Locked Chest
+|tip Pick up Myrrit and "Burrow" to bypass enemies, avoiding spider webs.
+|tip "Emerge" and put him down to loot the chest.
+Loot the Double-Locked Chest |q 75619/1 |goto 56.73,57.28
+|only if haveq(75619)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75621
+|only if haveq(75621)
+step
+talk Earthward Challenger##204800
+|tip In the upper portion of the cave.
+Ask it _"Can you check to see if my pattern is right?"_
+Speak with Guardian |q 75621/1 |goto 56.01,51.01
+|tip This will tell you in chat how many of your selections are correct.
+|only if haveq(75621)
+step
+kill Earthward Challenger##204800
+|tip In the upper portion of the cave.
+|tip Set the West Brazier to Earth.
+|tip Set the South Brazier to Water.
+|tip Set the East Brazier to Air.
+|tip Set the North Brazier to Fire.
+|tip When you do this, the elementals downstairs will attack you.
+|tip Then, check your pattern and the Challenger will attack you.
+collect 1 Champion's Crystal##205689 |q 75621/2 |goto 56.04,51.04
+|only if haveq(75621)
+step
+click Elementally Guarded Geode
+|tip Downstairs inside the cave.
+Open the Elementally Guarded Geode |q 75621/3 |goto 56.01,51.17
+|only if haveq(75621)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76014
+|only if haveq(76014)
+step
+click Light Etched Key
+|tip Inside the cave.
+Pick Up the Light Etched Key |havebuff spell:411171 |goto 57.97,55.06 |q 76014
+|only if haveq(76014)
+step
+click Etched Receiver North
+|tip Inside the cave.
+Restore the North Etched Key |q 76014/4 |goto 58.08,55.80
+|only if haveq(76014)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76014
+|only if haveq(76014)
+step
+click Light Etched Key
+|tip "Burrow" underground, then "Dig" at this spot inside the cave to move the rubble.
+Pick Up the Light Etched Key |havebuff spell:411171 |goto 58.17,54.58 |q 76014
+|only if haveq(76014)
+step
+click Etched Receiver East
+|tip Inside the cave.
+Restore the East Etched Key |q 76014/3 |goto 57.87,56.09
+|only if haveq(76014)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76014
+|only if haveq(76014)
+step
+click Light Etched Key
+|tip "Burrow" underground, then "Dig" at this spot inside the cave to move the rubble.
+Pick Up the Light Etched Key |havebuff spell:411171 |goto 58.53,56.45 |q 76014
+|only if haveq(76014)
+step
+click Etched Holder South
+|tip Inside the cave.
+Restore the South Etched Key |q 76014/2 |goto 58.07,56.40
+|only if haveq(76014)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76014
+|only if haveq(76014)
+step
+click Light Etched Key
+|tip "Burrow" underground, then "Dig" at this spot inside the cave to move the rubble.
+Pick Up the Light Etched Key |havebuff spell:411171 |goto 57.61,56.42 |q 76014
+|only if haveq(76014)
+step
+click Etched Holder West
+|tip Inside the cave.
+Restore the West Etched Key |q 76014/1 |goto 58.27,56.11
+|only if haveq(76014)
+step
+click Protector Lynaera Statue
+|tip This will cause it to animate and attack you.
+kill Empowered Protector Lynaera##204419
+collect 1 Heated Titan Key##205938 |q 76014/5 |goto 58.07,56.09
+|only if haveq(76014)
+step
+click Etched Titan Chest
+|tip Inside the cave.
+Open the Etched Titan Chest |q 76014/6 |goto 58.28,57.19
+|only if haveq(76014)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75393
+|only if haveq(75393)
+step
+kill Calibrating Scent Matrix##203606
+extraaction Sniff##411068
+|tip When "Olfactory Defenses" go off, use this ability to get a clue as to which orb to click.
+|tip When lightning is mentioned, click Air.
+|tip When fish are mentioned, click Water.
+|tip When charcoal is mentioned, click Fire.
+|tip When worms are mentioned, click Earth.
+click Titan Smell Cache
+|tip It will spawn after killing the Matrix
+Loot the Titan Smell Cache |q 75393/1 |goto 58.07,56.08
+|only if haveq(75393)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75390
+|only if haveq(75390)
+step
+confirm |goto 54.51,49.23
+|tip "Burrow" underground, then "Dig" at this spot inside the cave to break the crystal.
+|only if haveq(75390)
+step
+confirm |goto 55.05,48.94
+|tip "Burrow" underground, then "Dig" at this spot inside the cave to break the crystal.
+|only if haveq(75390)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75390
+|only if haveq(75390)
+step
+Drop Myrrit on the Plate |nobuff spell:400133 |goto 54.92,49.09
+|tip Use "Put Down Myrrit" to leave him on the plate and activate the steam vent.
+|only if haveq(75390)
+step
+Access the Transit Bubble |q 75390/1 |goto 54.67,48.80
+|tip Walk into the bubble to gain a brief buff.
+|only if haveq(75390)
+step
+click Floating Chest
+|tip Float up inside the transit bubble and wait for the bubble that moves around the room to line up with the one over the steam vent.
+|tip Float from the transit bubble, to the moving bubble, to the steam vent bubble to reach the chest.
+collect Waterlogged Key##203655 |q 75390/2 |goto 54.98,48.67
+|only if haveq(75390)
+step
+click Lost Dive Box
+Open the Lost Dive Box |q 75390/3 |goto 54.65,48.85
+|only if haveq(75390)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 76081
+|only if haveq(76081)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 60.13,56.15 |q 76081
+|tip Use the "Put Down Myrrit" ability to leave Myrrit on the pressure plate.
+|only if haveq(76081)
+step
+click Regal Statue
+Select _"Choose this statue as telling the truth."_
+kill Pahi'rys##205540
+|tip It will spawn nearby.
+collect 1 Fierce Key##205990 |q 76081/2 |goto 59.98,55.98
+|only if haveq(76081)
+step
+click Titan Chest
+Loot the Titan Chest |q 76081/3 |goto 60.14,57.00
+|only if haveq(76081)
+step
+click Critter Lasso
+Pick Up the Critter Lasso |havebuff spell:411301 |goto 54.54,49.38 |q 76027
+|only if haveq(76027)
+step
+clicknpc Cave Screecher##205417+
+|tip They're small bats flying around the cave.
+extraaction Critter Lasso##411283
+|tip Lasso a bat and quickly run to the crystal until it shatters.
+|tip If the key is not in this crystal, continue shattering them until you find it.
+click Glowing Key##402578
+collect 1 Glowing Key##205969 |q 76027/1 |goto 54.73,48.88
+|only if haveq(76027)
+step
+click Glowing Chest
+Unlock the Treasure Chest |q 76027/2 |goto 54.86,48.94
+|only if haveq(76027)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75996
+|only if haveq(75996)
+step
+Open the Sealed Chamber Door |q 75996/1 |goto 58.69,51.97
+|tip "Burrow" underground, then "Dig" at these spots inside the cave to move the rubble.
+|tip A mob will spawn and attack you.
+|tip Keep it alive and drag it to nearby pressure plates.
+|tip Stand on them to activate them, then wait for it to surround you with a giant gold area and run to the next one.
+|tip Do this with 3 pressure plates and stand on the final one yourself.
+|tip Or, you can do this with 2 pressure plates, kill it, then quicky place Myrrit on one and yourself on the fourth.
+You can find rubble at:
+[58.66,52.19]
+[58.86,52.25]
+[58.87,52.08]
+[58.60,51.59]
+|only if haveq(75996)
+step
+click Bag of Secrets
+Find the Bag of Secrets |q 75996/2 |goto 57.41,51.37
+|only if haveq(75996)
+step
+click Sunflower Tea
+Sip the Sunflower Tea |q 75516/1 |goto 58.69,49.83
+|only if haveq(75516)
+step
+talk Mr. Sunflower##205080
+Ask him _"What exactly is going on in here?"_
+Question Mr. Sunflower |q 75516/2 |goto 58.73,49.85
+|only if haveq(75516)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75516
+|only if haveq(75516)
+step
+talk Webbed "Guest"##205089
+Choose _"Point out that this is Ralph to Mr. Sunflower."_
+|tip Use the "Sniff" ability next to Webbed Guests around the table.
+|tip Myrrit will say the correct guest smells like some sort of hairy creature that has been here a long time.
+Find Ralph |q 75516/3 |goto 58.62,49.87
+|only if haveq(75516)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 58.75,50.17 |q 75516
+|tip Use the "Put Down Myrrit" ability to drop him.
+|only if haveq(75516)
+step
+click Ralph's Abandoned Belongings
+Collect Ralph's Abandoned Belongings |q 75516/4 |goto 58.75,50.17
+|only if haveq(75516)
+step
+click Smelly Bag+
+|tip They look like small piles of dirt revealed by Myrrit at the locations listed below.
+kill Thieving Worm##203850+
+|tip Pick up Myrrit, then "Burrow" underground.
+|tip Move beneath areas of disturbed dirt and "Dig" to reveal worms.
+|tip Avoid the swirling areas on the ground.
+collect 6 Pipsee Cheese Snack##202180 |q 75397/2 |goto 58.56,51.99
+Smelly Bags can be found at:
+[58.44,51.52]
+[58.59,51.70]
+[58.52,52.20]
+[58.57,52.55]
+[58.84,52.17]
+|only if haveq(75397)
+step
+talk Pipsee##205267
+Tell it _"Offer Pipsee the snacks."_
+Feed Pipsee |q 75397/3 |goto 57.54,51.35
+|only if haveq(75397)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 57.54,51.34 |q 75397
+|tip Use the "Put Down Myrrit" ability to drop him.
+|only if haveq(75397)
+step
+click Pipsee's Treasures
+Collect Pipsee's Treasures |q 75397/4 |goto 57.54,51.34
+|only if haveq(75397)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+|tip He may also be nearby.
+Pick Myrrit Up |havebuff spell:400133 |q 76084
+|only if haveq(76084)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 60.22,55.50 |q 76084
+|tip Use the "Put Down Myrrit" ability to drop him on the pressure plate.
+|only if haveq(76084)
+step
+click Frost Charge
+Gain the "Extinguishing Frost" Buff |havebuff spell:411696 |goto 60.05,55.48 |q 76084
+|only if haveq(76084)
+step
+click Flame-Engulfed Key Fragment##402855
+|tip Avoid the hazards, which will deplete the shield you have.
+|tip Move clockwise with the beam and avoid the orbs.
+|tip Point your camera towards the ground to see the path of the orbs better.
+collect Flame-Engulfed Key Fragment##206002 |goto 60.37,56.55
+|only if haveq(76084)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |goto 60.22,55.50 |q 76084
+|only if haveq(76084)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 60.05,55.48 |q 76084
+|tip Use the "Put Down Myrrit" ability to drop him on the pressure plate.
+|only if haveq(76084)
+step
+click Fire Charge
+Gain the "Thawing Flame" Buff |havebuff spell:411698 |goto 60.22,55.49 |q 76084
+|only if haveq(76084)
+step
+click Frost-Encased Key Fragment##402856
+|tip Avoid the hazards, which will deplete the shield you have.
+|tip Move clockwise with the beam and avoid the orbs.
+|tip Point your camera towards the ground to see the path of the orbs better.
+collect Frost-Encased Key Fragment##206001 |goto 59.90,56.55
+|only if haveq(76084)
+step
+extraaction Combine Fragments##411729
+|tip it appears as a button on your screen.
+collect Frostfire Key##206000 |q 76084/1 |goto 60.14,56.77
+|only if haveq(76084)
+step
+click Frostfire Cache
+Open the Frostfire Cache |q 76084/2 |goto 60.14,57.09
+|only if haveq(76084)
+step
+kill Jalgon Stoutburn##204426
+|tip Move out of areas targeted on the ground.
+|tip Mole machines that spawn deal damage in the entire room.
+collect Iron Titan Key##205939 |q 76015/1 |goto 58.09,56.07
+|only if haveq(76015)
+step
+click Scorched Chest
+|tip Pick up Myrrit and "Burrow" under these locations.
+|tip Using "Sniff" will reveal them so you can see them.
+|tip Use "Dig" beneath them to reveal what's underneath.
+|tip If it is a mine, run away before it blows up.
+|tip Put down Myrrit to loot the chest.
+Unlock the Scorched Chest |q 76015/2 |goto 58.35,55.94
+You can find dirt piles at:
+[58.38,56.40]
+[58.02,56.56]
+[57.77,56.23]
+|only if haveq(76015)
+step
+kill Bogg##201747
+|tip Pick up Myrrit and "Burrow" under these locations.
+|tip Using "Sniff" will reveal them so you can see them.
+|tip Use "Dig" beneath them to reveal what's underneath.
+|tip Bogg will be in one of the piles instead of a normal enemy.
+collect Stolen Key##205277 |q 75234/2 |goto 54.82,52.62
+You can find dirt piles at:
+[54.71,52.33]
+[54.47,52.24]
+[54.32,51.82]
+[54.57,51.48]
+[54.68,51.21]
+[55.06,51.78]
+|only if haveq(75234)
+step
+click Treasure Chest
+Unlock the Treasure Chest |q 75234/3 |goto 54.73,52.16
+|only if haveq(75234)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+Pick Myrrit Up |havebuff spell:400133 |q 75620
+|only if haveq(75620)
+step
+Put Down Myrrit |nobuff spell:400133 |goto 59.99,56.10 |q 75620
+|tip Use the "Put Down Myrrit" ability to leave Myrrit on the pressure plate.
+|only if haveq(75620)
+step
+click Tauren Statue
+|tip Stand on this pressure plate and click the statue.
+kill Shade of Skytalon##204430
+collect Small Key##205202 |q 75620/2 |goto 60.27,56.10
+|only if haveq(75620)
+step
+click Titan Chest
+Unlock the Titan Chest |q 75620/3 |goto 60.13,56.62
+|only if haveq(75620)
+step
+_Next to you:_
+clicknpc Myrrit##205098
+|tip Inside the cave.
+|tip He may also be nearby.
+|tip If Myrrit disappears, use his backpack near the entrance to call him.
+Pick Myrrit Up |havebuff spell:400133
+step
+Return with Myrrit to Loamm |goto 55.64,57.36 < 50 |c |noway
+|tip Pick up Myrrit again and use "Escape" to leave the cave after you're finished.
+step
+talk Myrrit##201426
+turnin The Buddy System##74876 |goto Zaralek Cavern/0 55.62,57.45
+|only if haveq(74876) or completedq(74876)
+step
+talk Citros##200055
+turnin Incense Replay##75771 |goto 56.80,54.00
+|only if readyq(75771)
+step
+talk Chigoe##204861
+turnin Drawing a Blank##75769 |goto 57.23,52.68
+|only if readyq(75769)
+step
+talk Garram##203644
+turnin Flask Manager##75772 |goto 57.25,55.85
+|only if readyq(75772)
+step
+Click Here When a New Dig Becomes Available |confirm |next "Start_Dig"
+|tip You can purchase a dig from Ponso in Loamm once per week for 3 Barter Bricks.
+|tip You also get a dig from the weekly "A Worthy Ally: Loamm Niffen" quest.
+]])
+ZGV.BETAEND()

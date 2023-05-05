@@ -707,3 +707,6 @@ L["Perks Program Using Cache Alert"] = "Using the cache from your last visit. Th
 
 --Quest--
 L["Auto Display Quest Item"] = "Auto Display Quest Item Descriptions";
+L["Drag To Move"] = "Drag to Move";
+L["Middle Click Reset Position"] = "Middle-click to reset position."
+L["Change Position"] = "Change Position";

@@ -954,8 +954,10 @@ function BugReport:FormatDumpForUpload(content,more_headers,addonmodule,severity
 	header = header .. "bug_report_version="..ZGV.version.."\n"
 	header = header .. "bug_report_player="..BugReport:GetReport_Player_Basic().."\n"
 	header = header .. "bug_report_loc="..BugReport:GetReport_Player_Location().."\n"
-	header = header .. "step_feedback_module="..addonmodule.."\n"
-	header = header .. "step_feedback_severity="..severity.."\n"
+	if addonmodule then
+		header = header .. "bug_report_module="..addonmodule.."\n"
+		header = header .. "bug_report_severity="..severity.."\n"
+	end
 	if more_headers then header = header .. more_headers end
 
 	return ("%s\n%s\n---->>\n%s\n<<----\n%s"):format("%%BUG_REPORT_START%%",header,content,"%%BUG_REPORT_END%%")
@@ -1320,7 +1322,7 @@ function StepFeedback:CreateFrame()
 
 			if StepFeedback.ReportMode == "guide" then
 				if self:GetParent().editBox:GetText() ~= L["bugreport_step_message"] then
-					StepFeedback:Save(self:GetParent().editBox:GetText(),"guide","guide")
+					StepFeedback:Save(self:GetParent().editBox:GetText())
 					frame.errEditbox:Hide()
 					frame.errMessage:Hide()
 					self:GetParent().editBox:SetText(L["bugreport_step_message"])
@@ -1417,6 +1419,8 @@ end
 function StepFeedback:Clear()
 	self.Frame.editBox:SetText("")
 	self.ReportMode = "guide"
+	self.Frame.addonmodule:SetCurrentSelectedByValue("default")
+	self.Frame.severity:SetCurrentSelectedByValue("default")
 end
 
 function StepFeedback:ApplySkin()
@@ -1464,6 +1468,7 @@ end
 
 function StepFeedback:FindStepReportForCurrentStep()
 	if not ZGV.db.global.bugreports then return end
+--	if StepFeedback.ReportMode == "addon" then return end
 	local signature = self:GetGuideStepSignature().."\n" -- look for Name\\Of\\Guide::123\n
 	for timestamp,report in pairs(ZGV.db.global.bugreports) do
 		if report:find(signature,1,true) then return timestamp,BugReport:GetDumpBody(report) end

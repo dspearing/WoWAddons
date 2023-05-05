@@ -1,7 +1,5 @@
-## Changed in v2023.3
+## Changed in v2023.4
 
-* New Forbidden Reach rares for 10.0.7
-* Make the Stormed Off rares from Primal Storms work properly for alerts
-* Was missing Overseer Stonetongue
-* Assorted minor data fixes
+* New Zaralek Vaern rares for 10.1.0
+* Forbidden Reach's Forbidden Hoard now has loot
 

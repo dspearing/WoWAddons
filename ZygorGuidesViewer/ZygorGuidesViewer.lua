@@ -773,6 +773,9 @@ local function _StartupThread()
 		end end
 		return done
 	end
+
+	--- Run a full round of startups, until nothing new starts up, or 20 cycles pass. Name irrelevant.
+	--- @param phase string - just for the logs
 	local function run_startup_phase(phase)
 		for cycles=1,20 do
 			yield("Startup cycle "..phase..": "..cycles)
@@ -780,6 +783,9 @@ local function _StartupThread()
 			if done==0 then yield("Nothing done, ending cycles") break end
 		end
 	end
+
+	--- Simulate a completed startup phase for other phases to wait for with "after="
+	--- @param flag string name of phase
 	local function set_startup_flag(flag)
 		tinsert(self.startups,{id=flag,func=function() end,done=true})
 	end

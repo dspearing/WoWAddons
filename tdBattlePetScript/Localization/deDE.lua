@@ -26,14 +26,11 @@ L["IMPORT_SCRIPT_WELCOME"] = "Füge Share-String oder Skript in das Eingabefeld 
 L["IMPORT_SHARED_STRING_WARNING"] = "Die Daten des Share-Strings sind zwar unvollständig, aber können trotzdem importiert werden."
 L["Installed"] = "Installiert"
 L["New script"] = "Neues Skript"
---[[Translation missing --]]
-L["NEXT_ACTION"] = "Next action"
+L["NEXT_ACTION"] = "Nächste Aktion"
 L["No script"] = "Kein Skript"
---[[Translation missing --]]
-L["NO_TEAM_FOR_SCRIPT"] = "No team matches this script"
+L["NO_TEAM_FOR_SCRIPT"] = "Kein Team passt zu diesem Skript"
 L["Not Installed"] = "Nicht installiert"
---[[Translation missing --]]
-L["NOTES"] = "This script selector will be bound to the Rematch team."
+L["NOTES"] = "Dieser Skript-Selektor gilt basiered auf dem aktuellen Rematch Team."
 L["OPTION_GENERAL_NOTES"] = "Hier findest du einige allgemeine Einstellungen."
 L["OPTION_SCRIPTEDITOR_NOTES"] = "Hier findest du Einstellungen für den Skript-Editor."
 L["OPTION_SCRIPTSELECTOR_NOTES"] = "Hier kannst du die Verfügbarkeit und Priorität der Skript-Selektoren einstellen."
@@ -45,8 +42,10 @@ L["OPTION_SETTINGS_HIDE_MINIMAP_TOOLTIP"] = "Um diese Einstellung zu ändern, mu
 L["OPTION_SETTINGS_HIDE_SELECTOR_NO_SCRIPT"] = "Skript-Selektor nicht anzeigen, wenn keine Skripte verfügbar sind"
 L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "Skript-Selektor sperren (kann nicht verschoben werden)"
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "Nicht auf das Löschen eines Skripts warten"
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Spiele Ton wenn \"Autobattle\" Schaltfläche aktiv wird"
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Ton"
 L["OPTION_SETTINGS_RESET_FRAMES"] = "Größe und Position von allen Fenstern zurücksetzen"
-L["OPTION_SETTINGS_TEST_BREAK"] = "Debug: Action test break script"
+L["OPTION_SETTINGS_TEST_BREAK"] = "Entwickler: Die 'test' Aktion unterbricht die Ausführung"
 L["Options"] = "Optionen"
 L["PLUGINALLINONE_NOTES"] = "Dieses Skript kann in allen Haustierkämpfen verwendet werden."
 L["PLUGINALLINONE_TITLE"] = "Alle in einem"
@@ -77,13 +76,12 @@ L["SCRIPT_SELECTOR_NOT_MATCH"] = "Kein Skript-Selektor stimmt mit dem aktuellen 
 L["SCRIPT_SELECTOR_NOTINSTALLED_HELP"] = "Linksklick zum Anschauen, Rechtsklick zum Schließen"
 L["SCRIPT_SELECTOR_NOTINSTALLED_TEXT"] = "Kein geeigneter Skript-Selektor installiert!"
 L["Select script"] = "Skript auswählen"
-L["TEAM"] = "Battle Pet Script"
+L["TEAM"] = "Team: "
 --[[Translation missing --]]
 L["TITLE"] = "Rematch"
 L["TOGGLE_SCRIPT_MANAGER"] = "Skript-Manager öffnen/schließen"
 L["TOGGLE_SCRIPT_SELECTOR"] = "Skript-Selektor öffnen/schließen"
 L["TOOLTIP_CREATE_OR_DEBUG_SCRIPT"] = "Ein Skript erstellen oder debuggen"
 L["UPDATED"] = "Aktualisiert auf Version: "
---[[Translation missing --]]
-L["WRITE_SCRIPT"] = "Write script"
+L["WRITE_SCRIPT"] = "Skript schreiben"
 

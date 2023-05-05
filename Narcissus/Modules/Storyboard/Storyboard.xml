@@ -192,7 +192,7 @@
         </Scripts>
     </Frame>
 
-    <Frame name="NarciQuestItemDisplay" mixin="NarciQuestItemDisplayMixin" frameStrata="HIGH" hidden="true" parent="UIParent" ignoreParentScale="true" ignoreParentAlpha="true">
+    <Frame name="NarciQuestItemDisplay" mixin="NarciQuestItemDisplayMixin" frameStrata="HIGH" hidden="true" parent="UIParent" ignoreParentScale="true" ignoreParentAlpha="true" clampedToScreen="true" movable="true">
         <Size x="320" y="320"/>
         <Anchors>
             <Anchor point="LEFT" x="160" y="80"/>

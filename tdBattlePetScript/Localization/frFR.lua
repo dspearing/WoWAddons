@@ -45,6 +45,10 @@ L["OPTION_SETTINGS_HIDE_MINIMAP_TOOLTIP"] = "La modification de ce paramètre n�
 L["OPTION_SETTINGS_HIDE_SELECTOR_NO_SCRIPT"] = "Ne pas afficher le sélecteur de script lorsqu'il n'y a pas de script"
 L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "Verrouiller le sélecteur de script"
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "Ne pas attendre lors de la suppression des scripts"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Play sound when \"Autobattle\" button becomes active"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Sound"
 L["OPTION_SETTINGS_RESET_FRAMES"] = "Réinitialiser la taille et la position du panneau"
 L["OPTION_SETTINGS_TEST_BREAK"] = "Débogage: la commande de test interrompt le script"
 L["Options"] = "Installer"

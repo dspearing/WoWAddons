@@ -2654,7 +2654,7 @@ function Goal:IsComplete()
 	if self.condition_complete then
 		ZGV.Parser.ConditionEnv:_SetLocal(self.parentStep.parentGuide,self.parentStep,self)
 		local res,err = pcall(self.condition_complete)
-		if res then completion_by_condition=err  else  error("Error in step ".. self.parentStep.num .. " goal " .. self.num .. " condition: "..err) end
+		if res then completion_by_condition=err  else  error(("Error in guide %s step %d goal %d condition: %s"):format(self.parentStep.parentGuide.title,self.parentStep.num,self.num,err)) end
 		-- condition overrides.
 		if completion_by_condition==true or completion_by_condition=="complete" then 
 			return true,true, 1,1

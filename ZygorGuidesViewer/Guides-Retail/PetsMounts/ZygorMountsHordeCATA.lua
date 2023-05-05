@@ -5340,11 +5340,18 @@ model={27796},
 description="\nThis guide will help you acquire the Twilight Drake mount.",
 },[[
 step
-This mount is dropped by Sartharion in The Obsidian Sanctum 25-Man raid.
-kill Sartharion##28860 |n
-collect Reins of the Twilight Drake##43954 |goto The Obsidian Sanctum/0 52.9,48.0
+Enter "The Obsidian Sanctum" Raid |goto Dragonblight/0 60.01,56.89 < 20 |c |or
+'|complete hasmount(59571) |or
 step
-learnmount Twilight Drake##59571 |use Reins of the Twilight Drake##43954
+kill Sartharion##28860
+|tip Kill him without killing any of the Twilight Drakes in the raid instance.
+|tip When you attack Sartharion, every mob in the instance attacks you.
+click the Obsidian Cache
+collect Reins of the Twilight Drake##43954 |or
+'|complete hasmount(59571) |or
+step
+|use Reins of the Twilight Drake##43954
+Learn the "Twilight Drake" Mount |learnmount Twilight Drake##59571
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Raid Mounts\\Drake of the South Wind",{
 author="support@zygorguides.com",

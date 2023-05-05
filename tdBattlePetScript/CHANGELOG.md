@@ -1,3 +1,19 @@
+## v1.7.5
+
+- Fixed locale strings
+
+## v1.7
+
+### Breaking Changes
+
+- `change(next)` now skips dead pets as well as pets that can't be swapped in due to debuffs. Previously `change(next)` only skipped to the exactly next pet, and if that was unable to be swapped in did nothing. It now first checks whether the next pet can be swapped in, and if it can't checks the one after the next pet, until it finds a valid pet or loops around to the current pet.
+
+### Other
+
+- Updated for Dragonflight 10.1
+- Added an option to have an audible notification once the battle round finished and the "autobattle" button becomes active again. Disabled by default.
+- ElvUI detection is now working correctly if the global toggle for "all Blizzard frames" is disabled, rather than just the petbattle one.
+
 ## v1.6
 
 - Updated calculation for can_explode, to use "<=" instead of "<".

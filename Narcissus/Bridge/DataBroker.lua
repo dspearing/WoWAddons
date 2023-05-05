@@ -5,7 +5,8 @@ local function CreateDataObject()
         return
     end
 
-    local ldb = LibStub:GetLibrary("LibDataBroker-1.1");
+    local silent = true;
+    local ldb = LibStub:GetLibrary("LibDataBroker-1.1", silent);
     if not (ldb and ldb.NewDataObject) then
         return
     end

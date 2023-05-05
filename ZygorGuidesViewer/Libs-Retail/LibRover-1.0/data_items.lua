@@ -196,6 +196,8 @@ data.portkeys = { -- smile if you're a muggle
 	--------------------
 	-- Lucky Tortollan Charm
 	{item=202046, destination="Stormsong Valley/0 40.28,36.53", cost=15, cooldown=60},
+	-- Niffen Diggin' Mitts
+	{item=205255, destination="Zaralek Cavern/0 56.45,55.80", cost=15, cooldown=60},
 	-- Aylaag Windstone Fragment
 	--{item=200613, destination="Ohn'ahran Plains/0 71.33,31.48", cost=15, cooldown=15 , cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7102)>0 end}, --Rusza'thar Reach location
 	--{item=200613, destination="Ohn'ahran Plains/0 70.58,63.34", cost=15, cooldown=15, cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7101)>0 end}, --Pinewood Post location

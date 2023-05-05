@@ -80,6 +80,10 @@ L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "Lock the script selector"
 --[[Translation missing --]]
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "Do not wait for the script to be deleted"
 --[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Play sound when \"Autobattle\" button becomes active"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Sound"
+--[[Translation missing --]]
 L["OPTION_SETTINGS_RESET_FRAMES"] = "Reset the panel size and position"
 --[[Translation missing --]]
 L["OPTION_SETTINGS_TEST_BREAK"] = "Debug: Action test break script"

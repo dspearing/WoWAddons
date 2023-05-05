@@ -35399,6 +35399,12 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [191629]="Lava Slug",
 [200333]="Drunzek Skullband",
 [187389]="Sweelin",
+[201060]="Imprisoned Dracthyr",
+[199201]="Scalecommander Viridia",
+[200236]="Bronze Timekeeper",
+[200587]="Spellsworn Crechebound",
+[199204]="Scalecommander Azurathel",
+[202812]="Infused Beetle",
 
 
 --[]="",

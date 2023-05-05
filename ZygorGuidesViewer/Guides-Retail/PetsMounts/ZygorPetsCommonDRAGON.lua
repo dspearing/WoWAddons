@@ -651,6 +651,13 @@ keywords={"Beast"},
 pet=3359,
 },[[
 step
+This Quest Chain is Complete |only if completedq(67606)
+|tip You have already completed this quest chain. |only if completedq(67606)
+|tip You must complete this guide on a different character, unless you still have the "Honorary Dryad" title. |only if completedq(67606)
+Click Here to Confirm  |confirm |only if completedq(67606)
+step
+Reach Level 68 |ding 68
+step
 talk Thalendra##192522
 |tip She looks like a dryad standing in front of a fountain.
 accept A Dryadic Remedy##67606 |goto Valdrakken/0 72.78,66.17
@@ -665,19 +672,23 @@ Treat the Despondent Duckling |q 67606/2 |goto 66.46,58.29
 step
 talk Thalendra##192522
 |tip She looks like a dryad standing in front of a fountain.
+|tip Do not log out before finishing this guide, or you will lose the temporary title you need.
 turnin A Dryadic Remedy##67606 |goto Valdrakken/0 72.78,66.17
 step
 kill River Hornswog##191618
 |tip They look like large frogs with horns and fins in The Waking Shores.
 |tip These can also be purchased from the auction house.
-collect 3 Hornswog Hunk##197744 |goto The Waking Shores/0 66.20,42.80
+collect 3 Hornswog Hunk##197744 |goto The Waking Shores/0 66.20,42.80 |or
+'|complete haspet(3359) |or
 step
 Click here to unlock Dealer Vexil in order to purchase a Honey Snack |confirm |next |or
 |tip This will require a fair amount of farming time.
 Click Here to Purchase a Honey Snack from the Auction House |confirm |next "Purchase_Honey_Snack_From_Auction_House" |or
 '|havebuff spell:386848 |next "Dealer_Vexil_Already_Unlocked" |or
+'|complete haspet(3359) |or
 step
-Reach Level 70 |ding 70
+Reach Level 70 |ding 70 |or
+'|complete haspet(3359) |or
 step
 Complete "The Shadow of His Wings" Quest |complete completedq(65691) or haspet(3359) |or
 |tip Use the Full Zone leveling guide for The Waking Shores to accomplish this.
@@ -737,7 +748,7 @@ step
 Set the "Honorary Dryad" title
 |tip In your character panel, set your title to Honorary Dryad.
 |tip If you do not do this, the NPC on the following step will run from you.
-Click Here to Continue |confirm |or
+Set the "Honorary Dryad" Title |complete hastitle(728) |or
 '|complete haspet(3359) |or
 step
 talk Primal Bear Cub##196768

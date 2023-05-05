@@ -47,6 +47,10 @@ L["OPTION_SETTINGS_HIDE_SELECTOR_NO_SCRIPT"] = [=[Non mostrare il selettore di s
 ]=]
 L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "Blocca il selettore di script"
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "Non aspettare quando elimini gli script"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Play sound when \"Autobattle\" button becomes active"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Sound"
 L["OPTION_SETTINGS_RESET_FRAMES"] = "Ripristina le dimensioni e la posizione del pannello"
 L["OPTION_SETTINGS_TEST_BREAK"] = "Debug: il comando test interrompe lo script"
 L["Options"] = "Opzioni"

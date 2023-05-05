@@ -2194,6 +2194,24 @@ if IS_DRAGONFLIGHT then
         end
     end
 
+    local function QuestCardPositionButton_Setup(f)
+        f:SetScript("OnClick", function ()
+            NarciQuestItemDisplay:ChangePosition()
+        end)
+
+        function f:UpdateState()
+            return
+        end
+
+        f.Border:SetTexture("Interface\\AddOns\\Narcissus\\Art\\SettingsFrame\\FourWayArrow");
+        f.Border:SetTexCoord(0, 1, 0, 1);
+        f.Selection:Hide();
+        f.Selection:SetTexture(nil);
+        f.Highlight:SetTexture(nil);
+        f.Background:Hide();
+        f.Background:SetTexture(nil);
+    end
+
     local questCategory = {name = TRANSMOG_SOURCE_2 or "Quest", level = 1, key = "quest",
     widgets = {
         {type = "header", level = 0, text = TRANSMOG_SOURCE_2 or "Quest"},
@@ -2202,6 +2220,7 @@ if IS_DRAGONFLIGHT then
         {type = "radio", level = 3, key = "QuestCardTheme", texts = {L["Border Theme Bright"], L["Border Theme Dark"]}, onValueChangedFunc = QuestCardStyleButton_OnValueChanged, setupFunc = QuestCardStyle_Setup,
             previewImage = "Preview-QuestCardTheme", previewWidth = 200, previewHeight = 75, previewOffsetY = 10, isChild = true
         },
+        {type = "checkbox", level = 3, text = L["Change Position"], isChild = true, setupFunc = QuestCardPositionButton_Setup},
     }};
 
     InsertCategory(questCategory);

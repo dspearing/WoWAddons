@@ -45,6 +45,10 @@ L["OPTION_SETTINGS_HIDE_MINIMAP_TOOLTIP"] = "修改这项设置需要重新载�
 L["OPTION_SETTINGS_HIDE_SELECTOR_NO_SCRIPT"] = "没有脚本时不显示脚本选择器"
 L["OPTION_SETTINGS_LOCK_SCRIPT_SELECTOR"] = "锁定脚本选择器"
 L["OPTION_SETTINGS_NO_WAIT_DELETE_SCRIPT"] = "删除脚本时不等待"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE"] = "Play sound when \"Autobattle\" button becomes active"
+--[[Translation missing --]]
+L["OPTION_SETTINGS_NOTIFY_BUTTON_ACTIVE_SOUND"] = "Sound"
 L["OPTION_SETTINGS_RESET_FRAMES"] = "重置面板大小与位置"
 L["OPTION_SETTINGS_TEST_BREAK"] = "Debug: test 命令中断脚本"
 L["Options"] = "设置"

@@ -2281,6 +2281,7 @@ talk Fialla Sweetberry##96784
 buy 1 Pungent Vrykul Gamalost##128763 |n
 collect 1 Pungent Vrykul Gamalost##128763 |goto Dalaran L/10 53.06,34.76 |or
 |tip Keep this in your inventory to lure the orphaned hatchling.
+You can also buy it here: Riala the Hearthwatcher [Stormheim/0 60.54,50.26]
 '|complete haspet(1975) |or
 step
 kill Direbeak Matriarch##115671 |goto Stormheim/0 78.80,75.80

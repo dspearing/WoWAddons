@@ -134,6 +134,7 @@ function GuideMenu:Search()
 end
 
 local TYPING_TIMEOUT=5
+local SEARCH_HISTORY_MAX=50
 function GuideMenu:AddSearchHistory(searchtext,numresults)
 	ZGV.db.char.searchhistory = ZGV.db.char.searchhistory or {}
 	if not #searchtext or #searchtext==0 then return end
@@ -156,7 +157,7 @@ function GuideMenu:AddSearchHistory(searchtext,numresults)
 	end
 
 	-- trim
-	while (#sh>20) do tremove(sh,1) end
+	while (#sh>SEARCH_HISTORY_MAX) do tremove(sh,1) end
 end
 
 function GuideMenu:SearchHistory_Commit()

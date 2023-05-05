@@ -5275,19 +5275,48 @@ model={81468},
 description="\nThis guide will help you acquire the Arcanist's Manasaber.",
 },[[
 step
-Earn Exalted reputation with the Nightfallen |complete rep("The Nightfallen")>=Exalted
+Earn Exalted reputation with the Nightfallen |complete rep("The Nightfallen")>=Exalted |or
 |tip Use the "Suramar" leveling guide to accomplish this.
-|tip Complete world quests in Suramar.
-|tip Use the "World Quests" dailies guide to accomplish this.
+Click Here to Open the "Suramar" Leveling Guide |confirm |loadguide "Leveling Guides\\Legion (10-60)\\Suramar (45-60)"
+|tip Unlock and complete world quests in Suramar.
+|tip Click World Quests on your map to open the Suramar World Quests Guides.
+'|complete hasmount(230987)
 step
 Complete the Suramar Insurrection quest line |achieve 11340
 |tip Use your Suramar guide to accomplish this.
 step
-collect Arcanist's Manasaber##142436 |use Arcanist's Manasaber##142436
-learnmount Arcanist's Manasaber##230987
+talk Archmage Khadgar##115367
+|tip Inside the building.
+accept The Nighthold: Lord of the Shadow Council##45417 |goto Suramar/0 44.19,60.13
 step
-_Congratulations!_
-You are now the proud owner of a Arcanist's Manasaber.
+Enter the Nighthold Raid
+|tip Inside the building.
+|tip You can complete this on any raid difficulty.
+|tip You will have to kill all the other bosses of this raid to get to Gul'dan.
+|tip Use the "Nighthold" Raid Guide to accomplish this.
+Click Here to Open the "Nighthold" Raid Guide |confirm |loadguide "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+Defeat Gul'dan |q 45417/1 |goto Suramar/0 44.16,59.71
+step
+talk Archmage Khadgar##106522
+|tip Inside the Nighthold, in The Font of Night right where you killed Gul'dan.
+|tip He will port you back to Dalaran.
+turnin The Nighthold: Lord of the Shadow Council##45417
+accept The Nighthold: The Eye of Aman'Thul##45420
+step
+talk Archmage Khadgar##90417
+turnin goto The Nighthold: The Eye of Aman'Thul##45420 |goto Dalaran L/10 28.48,48.32
+step
+talk Chief Telemancer Oculeth##115710
+|tip Inside the cave.
+accept Fate of the Nightborne##45372 |goto Suramar/0 36.62,45.08
+step
+talk First Arcanist Thalyssra##115736
+turnin Fate of the Nightborne##45372 |goto 36.49,45.83
+collect Arcanist's Manasaber##142436 |goto 36.49,45.83 |or
+'|complete hasmount(230987)
+step
+use Arcanist's Manasaber##142436
+Learn the "Arcanist's Manasaber" Mount |learnmount Arcanist's Manasaber##230987
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph",{
 author="support@zygorguides.com",

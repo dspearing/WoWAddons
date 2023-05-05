@@ -37,7 +37,7 @@ TA.Builds = {
 				Rune Mastery##96209
 				Abomination Limb##96177
 				Permafrost##96212
-				--Insidious Chill##96217
+				Insidious Chill##96217
 				Death Strike##96200
 				Icy Talons##96179
 				Icy Talons##96179
@@ -57,23 +57,23 @@ TA.Builds = {
 				Dancing Rune Weapon##96269
 				Heartbreaker##96266
 				Heartbreaker##96266
-				Leeching Strike##96301
-				Blood Tap##96274
 				Improved Bone Shield##96170
+				Reinforced Bones##96300
 				Insatiable Blade##96260
 				Everlasting Bond##96261
 				Relish in Blood##96280
 				Rapid Decomposition##96273
 				Voracious##96171
+				Coagulopathy##96166
 				Sanguine Ground##96169
 				Iron Heart##96307
 				Bloodshot##96256
 				Tombstone##96270
 				Shattering Bone##96259
 				Shattering Bone##96259
-				Coagulopathy##96166
+				Heartrend##96262
+				Purgatory##96264
 				Hemostasis##96268
-				Red Thirst##96263
 				Red Thirst##96263
 			]]
 		},
@@ -93,7 +93,7 @@ TA.Builds = {
 				Anti-Magic Shell##96199
 				Unholy Endurance##96192
 				Unholy Ground##96187
-				Asphyxiate##96193
+				Permafrost##96212
 				Improved Death Strike##96196
 				Veteran of the Third War##96197
 				Veteran of the Third War##96197
@@ -123,11 +123,10 @@ TA.Builds = {
 				Improved Obliterate##96249
 				Frigid Executioner##96251
 				Murderous Efficiency##96252
-				Enduring Strength##96230
-				Enduring Strength##96230
+				Frostwhelp's Aid##96236
+				Frostwhelp's Aid##96236
 				Icecap##96162
-				Frostwhelp's Aid##96236
-				Frostwhelp's Aid##96236
+				Enduring Strength##96230
 				Biting Cold##96242
 				Fatal Fixation##96218
 				Glacial Advance##96221
@@ -139,6 +138,7 @@ TA.Builds = {
 				Obliteration##96220
 				Avalanche##96235
 				Frostwyrm's Fury##96224
+				Absolute Zero##96223
 				Everfrost##96164
 				Gathering Storm##96239
 			]]
@@ -205,7 +205,7 @@ TA.Builds = {
 				Unholy Assault##96285
 				Army of the Damned##96287
 				Superstrain##96289
-				Ghoulish Frenzy##96288
+				Morbidity##96334
 				Morbidity##96334
 			]]
 		},
@@ -230,7 +230,6 @@ TA.Builds = {
 				Sigil of Misery##112859
 				Master of the Glaive##112912
 				Chaos Nova##112911
-				Unleashed Power##112909
 				Will of the Illidari##112918
 				Will of the Illidari##112918
 				Illidari Knowledge##112846
@@ -243,6 +242,7 @@ TA.Builds = {
 				Erratic Felheart##112914
 				Collective Anguish##112913
 				Bouncing Glaives##112841
+				Misery in Defeat##112857
 				Vengeful Retreat##112853
 			]],[[
 				Eye Beam##112939
@@ -284,7 +284,8 @@ TA.Builds = {
 				Imprison##112927
 				Improved Disrupt##112849
 				Pursuit##112851
-				Consume Magic##112926
+				--Consume Magic##112926
+				Aura of Pain##112843
 				Shattered Restoration##112863
 				Rush of Chaos##112844
 				Infernal Armor##112924
@@ -320,8 +321,10 @@ TA.Builds = {
 				Fracture##112885
 				Calcified Spikes##112882
 				Spirit Bomb##112894
-				Extended Spikes##112881
-				Extended Spikes##112881
+				Burning Blood##112903
+				Burning Blood##112903
+				Agonizing Flames##112887
+				Agonizing Flames##112887
 				Fallout##112888
 				Volatile Flameblood##112902
 				Darkglare Boon##112901
@@ -330,7 +333,6 @@ TA.Builds = {
 				Soul Furnace##112890
 				Fiery Demise##112872
 				Fiery Demise##112872
-				Agonizing Flames##112887
 				Focused Cleave##112891
 				Vulnerability##112897
 				Vulnerability##112897
@@ -338,7 +340,7 @@ TA.Builds = {
 				Burning Alive##112873
 				Charred Flesh##112877
 				Charred Flesh##112877
-				Fodder to the Flame##112875
+				Elysian Decree##112874
 				Soulcrush##112896
 				Down in Flames##112876
 			]]
@@ -356,10 +358,11 @@ TA.Builds = {
 				Ironfur##103305
 				Astral Influence##103288
 				Astral Influence##103288
-				Cyclone##103291
+				Rejuvenation##103295
 				Wild Charge##103276
 				Typhoon##103287
-				Gale Winds##114299
+				--Incessant Tempest##114298
+				Swiftmend##103294
 				Improved Sunfire##103285
 				Soothe##103307
 				Stampeding Roar##103312
@@ -373,7 +376,7 @@ TA.Builds = {
 				Lycara's Teachings##103311
 				Lycara's Teachings##103311
 				Renewal##103310
-				Incapacitating Roar##103316
+				Mighty Bash##103315
 				Well-Honed Instincts##103326
 				Well-Honed Instincts##103326
 				Improved Stampeding Roar##103308
@@ -386,29 +389,29 @@ TA.Builds = {
 				Twin Moons##109842
 				Shooting Stars##109861
 				Solstice##109835
-				Stellar Flare##109841
+				Wild Surges##115458
 				Aetherial Kindling##109843
+				Astral Smolder##109836
+				Astral Smolder##109836
 				Celestial Alignment##109849
 				Primordial Arcanic Pulsar##109855
 				Soul of the Forest##109846
 				Nature's Grace##109857
 				Power of Goldrinn##109840
 				Power of Goldrinn##109840
-				Umbral Embrace##109850
-				Umbral Embrace##109850
 				Cosmic Rapidity##109863
 				Cosmic Rapidity##109863
 				Waning Twilight##109834
 				Waning Twilight##109834
-				Sundered Firmament##109851
+				Starlord##109832
+				Starlord##109832
 				Incarnation: Chosen of Elune##109839
 				Rattle the Stars##109872
 				Fury of Elune##109859
-				Wild Mushroom##109854
-				Fungal Growth##109837
-				Starlord##109832
-				Starlord##109832
 				Orbit Breaker##109831
+				Denizen of the Dream##109852
+				Friend of the Fae##109870
+				Radiant Moonlight##109847
 				Balance of All Things##109848
 			]]
 		},
@@ -424,14 +427,14 @@ TA.Builds = {
 				Wild Charge##103276
 				Skull Bash##103302
 				Primal Fury##103317
-				Maim##103299
+				Feline Swiftness##103318
+				Feline Swiftness##103318
 				Soothe##103307
 				Stampeding Roar##103312
 				Astral Influence##103288
 				Astral Influence##103288
 				Typhoon##103287
 				Incessant Tempest##114298
-				Matted Fur##103314
 				Thick Hide##103306
 				Ursol's Vortex##103321
 				Innervate##103323
@@ -464,15 +467,16 @@ TA.Builds = {
 				Dreadful Bleeding##103181
 				Brutal Slash##103151
 				Taste for Blood##103182
-				Relentless Predator##103147
+				--Relentless Predator##103147
 				Berserk: Heart of the Lion##103166
 				Berserk: Frenzy##103149
+			Moment of Clarity##103161
 				Frantic Momentum##103179
 				Frantic Momentum##103179
 				Incarnation: Avatar of Ashamane##103178
 				Rip and Tear##103153
 				Apex Predator's Craving##103152
-				Lion's Strength##103172
+				Bloodtalons##103171
 				Soul of the Forest##103157
 				Circle of Life and Death##103156
 				Carnivorous Instinct##103173
@@ -510,7 +514,7 @@ TA.Builds = {
 				Heart of the Wild##103309
 				Improved Stampeding Roar##103308
 				Incapacitating Roar##103316
-				Well-Honed Instincts##103326
+				Thick Hide##103306
 				Frenzied Regeneration##103298
 				Thrash##103301
 			]],[[
@@ -594,7 +598,7 @@ TA.Builds = {
 				Soul of the Forest##103113
 				Rampant Growth##103112
 				Ironbark##103141
-				Inner Peace##103107
+				Improved Ironbark##103139
 				Cultivation##103110
 				Unstoppable Growth##103138
 				Unstoppable Growth##103138
@@ -651,34 +655,34 @@ TA.Builds = {
 			]],[[
 				Pyre##87669
 				Azure Essence Burst##87668
-				Imposing Presence##87667
+				Inner Radiance##87666
 				Dragonrage##87665
 				Eternity Surge##87647
 				Arcane Intensity##87646
 				Arcane Intensity##87646
 				Ruby Essence Burst##87670
-				Dense Energy##87671
-				Volatility##87672
-				Volatility##87672
-				Engulfing Blaze##87673
+				Animosity##87664
 				Essence Attunement##87649
-				Causality##87639
+				Eye of Infinity##87640
 				Shattering Star##87641
-				Charged Blast##87651
 				Eternity's Span##87645
 				Heat Wave##87661
 				Heat Wave##87661
 				Tyranny##87662
-				Font of Magic##87656
-				Burnout##87657
-				Burnout##87657
-				Feed the Flames##87637
-				Onyx Legacy##87654
+				Catalyze##87660
+				Dense Energy##87671
+				Volatility##87672
+				Volatility##87672
+				Arcane Vigor##87642
+				Power Swell##87644
+				Iridescence##87638
 				Spellweaver's Dominance##87652
-				Scintillation##87653
-				Scintillation##87653
 				Hoarded Power##87591
-				Animosity##87664
+				Scintillation##87653
+				Titanic Wrath##87663
+				Titanic Wrath##87663
+				Causality##115682
+				Burnout##87657
 			]]
 		},
 		["Preservation (Healer)"] = {2,false, [[
@@ -688,13 +692,14 @@ TA.Builds = {
 				Enkindled##87704
 				Obsidian Scales##87702
 				Permeating Chill##87703
-				Innate Magic##87710
-				Innate Magic##87710
+				Landslide##87708
+				Natural Convergence##87709
 				Attuned to the Dream##87699
 				Attuned to the Dream##87699
-				Bountiful Bloom##87588
-				Panacea##87707
 				Tip the Scales##87713
+				Extended Flight##87706
+				Extended Flight##87706
+				Panacea##87707
 				Quell##87692
 				Instinctive Arcana##87693
 				Instinctive Arcana##87693
@@ -706,10 +711,9 @@ TA.Builds = {
 				Lush Growth##87678
 				Zephyr##87682
 				Rescue##87685
-				Twin Guardian##87683
 				Renewing Blaze##87679
 				Aerial Mastery##87686
-				Protracted Talons##87688
+				Oppressing Roar##87695
 				Leaping Flames##87689
 				Obsidian Bulwark##87701
 				Draconic Legacy##87712
@@ -723,9 +727,10 @@ TA.Builds = {
 				Spiritbloom##87625
 				Reversion##87629
 				Rewind##87612
-				Spiritual Clarity##87623
+				Life-Giver's Flame##87616
+				Life-Giver's Flame##87616
 				Emerald Communion##87594
-				Rush of Vitality##87592
+				Dreamwalker##87593
 				Call of Ysera##87618
 				Time Dilation##87613
 				Temporal Anomaly##87611
@@ -735,13 +740,12 @@ TA.Builds = {
 				Time Lord##87615
 				Time Lord##87615
 				Lifebind##87634
-				Time of Need##87604
+				Temporal Artificer##87619
 				Timeless Magic##87605
 				Timeless Magic##87605
 				Stasis##87603
-				Spark of Insight##87635
-				Renewing Breath##87599
-				Renewing Breath##87599
+				Lifeforce Mender##87617
+				Lifeforce Mender##87617
 				Font of Magic##87596
 				Grace Period##87621
 				Grace Period##87621
@@ -827,7 +831,6 @@ TA.Builds = {
 				Nature's Endurance##100521
 				Camouflage##100647
 				Pathfinding##100631
-				Pathfinding##100631
 				Tar Trap##100641
 				Improved Traps##100636
 				Improved Traps##100636
@@ -835,7 +838,8 @@ TA.Builds = {
 				Hunter's Avoidance##100536
 				Born To Be Wild##100646
 				Born To Be Wild##100646
-				Tranquilizing Shot##100617
+				Rejuvenating Wind##100619
+				Rejuvenating Wind##100619
 				Master Marksman##100625
 				Master Marksman##100625
 				Arctic Bola##100514
@@ -857,28 +861,28 @@ TA.Builds = {
 				Precise Shots##100582
 				Careful Aim##100584
 				Careful Aim##100584
-				Focused Aim##100601
-				Focused Aim##100601
+				Target Practice##100591
 				Tactical Reload##100579
 				Serpentstalker's Trickery##100586
-				Target Practice##100591
 				Lone Wolf##100576
 				Streamline##100598
 				Streamline##100598
-				Surging Shots##100602
+				In the Rhythm##100603
 				Deathblow##100588
 				Multi-Shot##100544
 				Volley##100595
+				Trick Shots##100580
+				Razor Fragments##100535
 				Trueshot##100587
 				Eagletalon's True Focus##100607
 				Eagletalon's True Focus##100607
 				Unerring Vision##100608
-				Trick Shots##100580
 				Bulletstorm##100517
 				Salvo##100534
-				Razor Fragments##100535
-				Lock and Load##100589
-				Wailing Arrow##100590
+				Bullseye##100581
+				Legacy of the Windrunners##100605
+				Legacy of the Windrunners##100605
+				Windrunner's Guidance##100599
 			]]
 		},
 		["Survival (DPS)"] = {3,false,[[
@@ -898,15 +902,16 @@ TA.Builds = {
 				Born To Be Wild##100646
 				Improved Kill Shot##100643
 				Tranquilizing Shot##100617
-				Intimidation##100621
+				--Intimidation##100621
 				Hunter's Avoidance##100536
 				Rejuvenating Wind##100619
 				Rejuvenating Wind##100619
+				Pathfinding##100631
 				Master Marksman##100625
 				Master Marksman##100625
 				Keen Eyesight##100635
 				Keen Eyesight##100635
-				Stampede##100629
+				Death Chakram##100628
 				Arctic Bola##100514
 				Arctic Bola##100514
 				Explosive Shot##100626
@@ -924,27 +929,27 @@ TA.Builds = {
 				Harpoon##100546
 				Terms of Engagement##100567
 				Mongoose Bite##100566
-				Flanking Strike##100545
 				Butchery##100552
+				Lunge##100550
 				Guerrilla Tactics##100572
-				Intense Focus##100531
 				Improved Wildfire Bomb##100555
 				Improved Wildfire Bomb##100555
-				Sweeping Spear##100561
-				Sweeping Spear##100561
+				Viper's Venom##100530
+				Viper's Venom##100530
+				Sharp Edges##100547
+				Sharp Edges##100547
 				Frenzy Strikes##100548
-				Viper's Venom##100530
-				Viper's Venom##100530
+				Sweeping Spear##100561
 				Coordinated Assault##100570
 				Coordinated Kill##100528
 				Coordinated Kill##100528
 				Birds of Prey##100569
+				Explosives Expert##100563
+				Explosives Expert##100563
+				Ranger##100529
+				Ranger##100529
+				Quick Shot##100573
 				Wildfire Infusion##100575
-				Fury of the Eagle##100557
-				Ranger##100529
-				Ranger##100529
-				Spear Focus##100558
-				Spear Focus##100558
 			]]
 		},
 	},

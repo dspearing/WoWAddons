@@ -299,6 +299,7 @@ do
         end
 
         QuestItemDB = NarciStatisticsDB.QuestItems;
+        NarciQuestItemDisplay:UseSavedPosition();
     end
 
     addon.AddInitializationCallback(LoadDatabase);
