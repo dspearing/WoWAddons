@@ -964,10 +964,17 @@ model={35135},
 description="\nThis guide will help you acquire the Grey Riding Camel mount.",
 },[[
 step
+talk Zidormi##162419
+Time Travel to Old Uldum |complete ZGV.InPhase("Old Uldum") |goto Uldum New/0 56.02,35.14
+|only if not ZGV.InPhase("Old Uldum")
 label "start"
-This mount drops off a rare spawn called Dormus the Camel-Hoarder. You get to him by clicking the Mysterious Camel Figurines around Uldum. They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
-Check all the waypoints in each step for a chance to find the Camel Figurine.
-confirm
+step
+Begin the Search
+|tip This mount drops off a rare spawn called Dormus the Camel-Hoarder.
+|tip You get to him by clicking the Mysterious Camel Figurines around Uldum.
+|tip They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
+|tip Check all the waypoints in each step for a chance to find the Camel Figurine.
+Click Here to Continue |confirm
 step
 Next to this table in the inn.
 confirm |goto Uldum/0 22.0,64.2
@@ -1154,7 +1161,7 @@ confirm |goto 50.6,31.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this burried pillar.
+Next to this buried pillar.
 confirm |goto 45.2,15.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
@@ -5344,7 +5351,7 @@ Enter "The Obsidian Sanctum" Raid |goto Dragonblight/0 60.01,56.89 < 20 |c |or
 '|complete hasmount(59571) |or
 step
 kill Sartharion##28860
-|tip Kill him without killing any of the Twilight Drakes in the raid instance.
+|tip Kill him first before killing any of the Twilight Drakes in the raid instance.
 |tip When you attack Sartharion, every mob in the instance attacks you.
 click the Obsidian Cache
 collect Reins of the Twilight Drake##43954 |or

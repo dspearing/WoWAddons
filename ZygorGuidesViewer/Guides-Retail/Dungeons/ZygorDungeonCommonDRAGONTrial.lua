@@ -11,3 +11,4 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeon
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeons\\Neltharus")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeons\\The Azure Vault")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Raids\\Vault of the Incarnates")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Raids\\Aberrus, The Shadowed Crucible")

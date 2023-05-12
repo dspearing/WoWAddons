@@ -82,6 +82,7 @@ function pslInitialise()
 	if userSettings["knowledgeAlwaysShowDetails"] == nil then userSettings["knowledgeAlwaysShowDetails"] = false end
 	if userSettings["pcWindowPosition"] == nil then userSettings["pcWindowPosition"] = false end
 	if userSettings["pcRecipesTracked"] == nil then userSettings["pcRecipesTracked"] = false end
+	if userSettings["headerTooltip"] == nil then userSettings["headerTooltip"] = true end
 
 	-- Load personal recipes, if the setting is enabled
 	if userSettings["pcRecipesTracked"] == true then
@@ -340,7 +341,10 @@ function pslUpdateNumbers()
 	local data = {}
 
 	for reagentID, amount in pairs(reagentsTracked) do
-		-- Get info
+		-- Cache item
+		if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+		-- Get item info
 		local itemName, itemLink
 		itemName, itemLink = GetItemInfo(reagentID)
 
@@ -449,7 +453,7 @@ end
 -- Track recipe
 function pslTrackRecipe(recipeID, recipeQuantity)
 	-- 2 = Salvage, recipes without reagents | Disable these, cause they shouldn't be tracked
-	if pslRecipeType == 2 or C_TradeSkillUI.GetRecipeSchematic(pslSelectedRecipeID,false).reagentSlotSchematics[1] == nil then
+	if C_TradeSkillUI.GetRecipeSchematic(recipeID,false).recipeType == 2 or C_TradeSkillUI.GetRecipeSchematic(recipeID,false).reagentSlotSchematics[1] == nil then
 		do return end
 	end
 	
@@ -477,14 +481,20 @@ function pslTrackRecipe(recipeID, recipeQuantity)
 
 	-- Add recipe link for crafted items
 	if recipeType == 1 then
-		local _, itemLink = GetItemInfo(C_TradeSkillUI.GetRecipeSchematic(recipeID,false).outputItemID)
+		local itemID = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).outputItemID
+
+		-- Cache item
+		if not C_Item.IsItemDataCachedByID(itemID) then local item = Item:CreateFromItemID(itemID) end
+
+		-- Get item info
+		local _, itemLink = GetItemInfo(itemID)
 
 		-- Try again if error
 		if itemLink == nil then
 			RunNextFrame(pslTrackRecipe(recipeID, recipeQuantity))
 			do return end
 		end
-
+		
 		-- Exceptions for SL legendary crafts
 		if slLegendaryRecipeIDs[recipeID] then
 			itemLink = itemLink.." (Rank "..slLegendaryRecipeIDs[recipeID].rank..")" -- Append the rank
@@ -574,7 +584,7 @@ function pslCreateAssets()
 		if newValue >= 0 then
 			pslUntrackRecipe(pslSelectedRecipeID,0)
 			if newValue >0 then
-				pslTrackRecipe(pslSelectedRecipeID,newValue)
+				pslTrackRecipe(pslSelectedRecipeID, newValue)
 			end
 		end
 	end
@@ -881,22 +891,67 @@ function pslCreateAssets()
 	-- Initialise this variable for the MakeOrderButtons
 	if not pslOrderRecipeID then pslOrderRecipeID = 0 end
 
+	-- Create Cooking Fire button
+	if not cookingFireButton then
+		cookingFireButton = CreateFrame("Button", "CookingFireButton", ProfessionsFrame, "SecureActionButtonTemplate")
+		cookingFireButton:SetWidth(40)
+		cookingFireButton:SetHeight(40)
+		cookingFireButton:SetNormalTexture(135805)
+		cookingFireButton:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
+		cookingFireButton:SetPoint("BOTTOMRIGHT", ProfessionsFrame.CraftingPage.SchematicForm, "BOTTOMRIGHT", -5, 4)
+		cookingFireButton:SetFrameStrata("HIGH")
+		cookingFireButton:RegisterForClicks("AnyDown")
+		cookingFireButton:SetAttribute("type1", "spell")
+		cookingFireButton:SetAttribute("spell", 818)
+
+		cookingFireCooldown = CreateFrame("Cooldown", "CookingFireCooldown", cookingFireButton, "CooldownFrameTemplate")
+		cookingFireCooldown:SetAllPoints(cookingFireButton)
+		cookingFireCooldown:SetSwipeColor(1, 1, 1)
+	end
+
 	-- Create Chef's Hat button
 	if not chefsHatButton then
 		chefsHatButton = CreateFrame("Button", "ChefsHatButton", ProfessionsFrame, "SecureActionButtonTemplate")
 		chefsHatButton:SetWidth(40)
 		chefsHatButton:SetHeight(40)
 		chefsHatButton:SetNormalTexture(236571)
-		chefsHatButton:SetPoint("BOTTOMRIGHT", ProfessionsFrame.CraftingPage.SchematicForm, "BOTTOMRIGHT", -5, 4)
+		chefsHatButton:GetNormalTexture():SetDesaturated(true)
+		chefsHatButton:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
+		chefsHatButton:SetPoint("BOTTOMRIGHT", cookingFireButton, "BOTTOMLEFT", -3, 0)
 		chefsHatButton:SetFrameStrata("HIGH")
 		chefsHatButton:RegisterForClicks("AnyDown")
 		chefsHatButton:SetAttribute("type1", "toy")
 		chefsHatButton:SetAttribute("toy", 134020)
+
+		chefsHatCooldown = CreateFrame("Cooldown", "ChefsHatCooldown", chefsHatButton, "CooldownFrameTemplate")
+		chefsHatCooldown:SetAllPoints(chefsHatButton)
+		chefsHatCooldown:SetSwipeColor(1, 1, 1)
 	end
 
-	-- Make the Chef's Hat button desaturated if it cannot be used
-	if PlayerHasToy(134020) and C_TradeSkillUI.GetProfessionInfoBySkillLineID(2546).skillLevel >= 25 then
-		chefsHatButton:SetDesaturated(true)
+	-- Create Thermal Anvil button
+	if not thermalAnvilButton then
+		thermalAnvilButton = CreateFrame("Button", "ThermalAnvilButton", ProfessionsFrame, "SecureActionButtonTemplate")
+		thermalAnvilButton:SetWidth(40)
+		thermalAnvilButton:SetHeight(40)
+		thermalAnvilButton:SetNormalTexture(136241)
+		thermalAnvilButton:GetNormalTexture():SetDesaturated(true)
+		thermalAnvilButton:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
+		thermalAnvilButton:SetPoint("BOTTOMRIGHT", ProfessionsFrame.CraftingPage.SchematicForm, "BOTTOMRIGHT", -5, 4)
+		thermalAnvilButton:SetFrameStrata("HIGH")
+		thermalAnvilButton:RegisterForClicks("AnyDown")
+		thermalAnvilButton:SetAttribute("type1", "macro")
+		thermalAnvilButton:SetAttribute("macrotext1", "/use item:87216")
+
+		thermalAnvilCooldown = CreateFrame("Cooldown", "ThermalAnvilCooldown", thermalAnvilButton, "CooldownFrameTemplate")
+		thermalAnvilCooldown:SetAllPoints(thermalAnvilButton)
+		thermalAnvilCooldown:SetSwipeColor(1, 1, 1)
+
+		thermalAnvilCharges = thermalAnvilButton:CreateFontString("ARTWORK", nil, "GameFontNormal")
+		thermalAnvilCharges:SetPoint("BOTTOMRIGHT", thermalAnvilButton, "BOTTOMRIGHT", 0, 0)
+		thermalAnvilCharges:SetJustifyH("RIGHT")
+		if not C_Item.IsItemDataCachedByID(87216) then local item = Item:CreateFromItemID(87216) end
+		local anvilCharges = GetItemCount(87216, false, true, false)
+		thermalAnvilCharges:SetText(anvilCharges)
 	end
 
 	-- Create Dragonflight Milling info
@@ -952,6 +1007,60 @@ function pslCreateAssets()
 		knowledgePointTooltipText = knowledgePointTooltip:CreateFontString("ARTWORK", nil, "GameFontNormal")
 		knowledgePointTooltipText:SetPoint("TOPLEFT", knowledgePointTooltip, "TOPLEFT", 10, -10)
 		knowledgePointTooltipText:SetJustifyH("LEFT")
+	end
+
+	-- Create Recipes header tooltip
+	if not recipeHeaderTooltip then
+		recipeHeaderTooltip = CreateFrame("Frame", nil, pslTrackingWindow2, "BackdropTemplate")
+		recipeHeaderTooltip:SetPoint("CENTER")
+		recipeHeaderTooltip:SetPoint("BOTTOM", pslTrackingWindow2, "TOP", 0, 0)
+		recipeHeaderTooltip:SetFrameStrata("TOOLTIP")
+		recipeHeaderTooltip:SetBackdrop({
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 },
+		})
+		recipeHeaderTooltip:SetBackdropColor(0, 0, 0, 0.9)
+		recipeHeaderTooltip:EnableMouse(false)
+		recipeHeaderTooltip:SetMovable(false)
+		recipeHeaderTooltip:Hide()
+
+		recipeHeaderTooltipText = recipeHeaderTooltip:CreateFontString("ARTWORK", nil, "GameFontNormal")
+		recipeHeaderTooltipText:SetPoint("TOPLEFT", recipeHeaderTooltip, "TOPLEFT", 10, -10)
+		recipeHeaderTooltipText:SetJustifyH("LEFT")
+		recipeHeaderTooltipText:SetText("Drag|cffFFFFFF: Move the window.\n|RShift+click Recipe|cffFFFFFF: Link the recipe.\n|RCtrl+click Recipe|cffFFFFFF: Open the recipe (if known on current character).\n|RRight-click #|cffFFFFFF: Untrack 1 of the selected recipe.\n|RCtrl+right-click #|cffFFFFFF: Untrack all of the selected recipe.")
+
+		-- Set the tooltip size to fit its contents
+		recipeHeaderTooltip:SetHeight(recipeHeaderTooltipText:GetStringHeight()+20)
+		recipeHeaderTooltip:SetWidth(recipeHeaderTooltipText:GetStringWidth()+20)
+	end
+
+	-- Create Reagents header tooltip
+	if not reagentHeaderTooltip then
+		reagentHeaderTooltip = CreateFrame("Frame", nil, pslTrackingWindow1, "BackdropTemplate")
+		reagentHeaderTooltip:SetPoint("CENTER")
+		reagentHeaderTooltip:SetPoint("BOTTOM", pslTrackingWindow1, "TOP", 0, 0)
+		reagentHeaderTooltip:SetFrameStrata("TOOLTIP")
+		reagentHeaderTooltip:SetBackdrop({
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 },
+		})
+		reagentHeaderTooltip:SetBackdropColor(0, 0, 0, 0.9)
+		reagentHeaderTooltip:EnableMouse(false)
+		reagentHeaderTooltip:SetMovable(false)
+		reagentHeaderTooltip:Hide()
+
+		reagentHeaderTooltipText = reagentHeaderTooltip:CreateFontString("ARTWORK", nil, "GameFontNormal")
+		reagentHeaderTooltipText:SetPoint("TOPLEFT", reagentHeaderTooltip, "TOPLEFT", 10, -10)
+		reagentHeaderTooltipText:SetJustifyH("LEFT")
+		reagentHeaderTooltipText:SetText("Drag|cffFFFFFF: Move the window.\n|RShift+click Reagent|cffFFFFFF: Link the reagent.\n|RCtrl+click Reagent|cffFFFFFF: Add recipe for the selected subreagent, if it exists.\n(This only works for professions that have been opened with PSL active.)")
+
+		-- Set the tooltip size to fit its contents
+		reagentHeaderTooltip:SetHeight(reagentHeaderTooltipText:GetStringHeight()+20)
+		reagentHeaderTooltip:SetWidth(reagentHeaderTooltipText:GetStringWidth()+20)
 	end
 end
 
@@ -1013,6 +1122,36 @@ function pslUpdateAssets()
 	else
 		personalCharname:SetText("")
 	end
+
+	-- Make the Chef's Hat button not desaturated if it can be used
+	if PlayerHasToy(134020) and C_TradeSkillUI.GetProfessionInfoBySkillLineID(2546).skillLevel >= 25 then
+		chefsHatButton:GetNormalTexture():SetDesaturated(false)
+	end
+
+	-- Check how many thermal anvils the player has
+	if not C_Item.IsItemDataCachedByID(87216) then local item = Item:CreateFromItemID(87216) end
+	local anvilCount = GetItemCount(87216)
+	-- (De)saturate based on that
+	if anvilCount >= 1 then
+		thermalAnvilButton:GetNormalTexture():SetDesaturated(false)
+	else
+		thermalAnvilButton:GetNormalTexture():SetDesaturated(true)
+	end
+	-- Update charges
+	local anvilCharges = GetItemCount(87216, false, true, false)
+	thermalAnvilCharges:SetText(anvilCharges)
+
+	-- Cooking Fire button cooldown
+	local start, duration = GetSpellCooldown(818)
+	CookingFireCooldown:SetCooldown(start, duration)
+
+	-- Chef's Hat button cooldown
+	start, duration = GetItemCooldown(134020)
+	ChefsHatCooldown:SetCooldown(start, duration)
+
+	-- Thermal Anvil button cooldown
+	start, duration = GetItemCooldown(87216)
+	thermalAnvilCooldown:SetCooldown(start, duration)
 end
 
 -- Tooltip information
@@ -1187,6 +1326,16 @@ function pslSettings()
 		end
 	end)
 
+	local cbHeaderTooltip = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	cbHeaderTooltip.Text:SetText("Show header tooltip")
+	cbHeaderTooltip.Text:SetTextColor(1, 1, 1, 1)
+	cbHeaderTooltip.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbHeaderTooltip:SetPoint("TOPLEFT", cbMinimapButton, "BOTTOMLEFT", 0, 0)
+	cbHeaderTooltip:SetChecked(userSettings["headerTooltip"])
+	cbHeaderTooltip:SetScript("OnClick", function(self)
+		userSettings["headerTooltip"] = cbHeaderTooltip:GetChecked()
+	end)
+
 	local cbPcWindowPosition = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
 	cbPcWindowPosition.Text:SetText("Save window positions per character")
 	cbPcWindowPosition.Text:SetTextColor(1, 1, 1, 1)
@@ -1210,7 +1359,7 @@ function pslSettings()
 
 	-- Category: List and tracking
 	local titleListSettings = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
-	titleListSettings:SetPoint("TOPLEFT", cbMinimapButton, "BOTTOMLEFT", 0, -10)
+	titleListSettings:SetPoint("TOPLEFT", cbHeaderTooltip, "BOTTOMLEFT", 0, -10)
 	titleListSettings:SetJustifyH("LEFT")
 	titleListSettings:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
 	titleListSettings:SetText("List and tracking")
@@ -1482,17 +1631,17 @@ function pslSettings()
 	local pslSettingsText1 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	pslSettingsText1:SetPoint("TOPLEFT", cbKnowledgeAlwaysShowDetails, "BOTTOMLEFT", 3, -20)
 	pslSettingsText1:SetJustifyH("LEFT")
-	pslSettingsText1:SetText("Chat commands:\n/psl |cffFFFFFF- Toggle the PSL windows.\n|R/psl settings |cffFFFFFF- Open the PSL settings.\n|R/psl clear |cffFFFFFF- Clear all tracked recipes.")
+	pslSettingsText1:SetText("Chat commands:\n/psl |cffFFFFFF- Toggle the PSL windows.\n|R/psl settings |cffFFFFFF- Open the PSL settings.\n|R/psl clear |cffFFFFFF- Clear all tracked recipes.\n|R/psl track |cff1B9C85recipeID quantity |R|cffFFFFFF- Track a recipe.\n|R/psl untrack |cff1B9C85recipeID quantity |R|cffFFFFFF- Untrack a recipe.\n|R/psl untrack |cff1B9C85recipeID |Rall |cffFFFFFF- Untrack all of a recipe.")
 
 	local pslSettingsText2 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	pslSettingsText2:SetPoint("TOPLEFT", pslSettingsText1, "BOTTOMLEFT", 0, -15)
 	pslSettingsText2:SetJustifyH("LEFT")
-	pslSettingsText2:SetText("Mouse interactions:\nDrag|cffFFFFFF: Move the PSL windows.\n|RShift+click Recipe|cffFFFFFF: Link the recipe.\n|RCtrl+click Recipe|cffFFFFFF: Open the recipe (if known on current character).\n|RRight-click Recipe #|cffFFFFFF: Untrack 1 of the selected recipe.\n|RCtrl+right-click Recipe #|cffFFFFFF: Untrack all of the selected recipe.\n|RShift+click Reagent|cffFFFFFF: Link the reagent.\n|RCtrl+click Reagent|cffFFFFFF: Add recipe for the selected subreagent, if it exists.\n(This only works for professions that have been opened with PSL active.)")
+	pslSettingsText2:SetText("Mouse interactions:\nDrag|cffFFFFFF: Move the PSL windows.\n|RShift+click Recipe|cffFFFFFF: Link the recipe.\n|RCtrl+click Recipe|cffFFFFFF: Open the recipe (if known on current character).\n|RRight-click Recipe (# column)|cffFFFFFF: Untrack 1 of the selected recipe.\n|RCtrl+right-click Recipe (# column)|cffFFFFFF: Untrack all of the selected recipe.\n|RShift+click Reagent|cffFFFFFF: Link the reagent.\n|RCtrl+click Reagent|cffFFFFFF: Add recipe for the selected subreagent, if it exists.\n(This only works for professions that have been opened with PSL active.)")
 
 	local pslSettingsText3 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	pslSettingsText3:SetPoint("TOPLEFT", pslSettingsText2, "BOTTOMLEFT", 0, -15)
 	pslSettingsText3:SetJustifyH("LEFT")
-	pslSettingsText3:SetText("Other features:\n|cffFFFFFF- Adds a Chef's Hat button to the Cooking window, if the toy is known.\n- Copy tracked reagents to the Auctionator import window.")
+	pslSettingsText3:SetText("Other features:\n|cffFFFFFF- Adds buttons for Cooking Fire, Chef's Hat, and Thermal Anvil.\n- Copy tracked reagents to the Auctionator import window.")
 end
 
 -- Window functions
@@ -1500,17 +1649,23 @@ function pslWindowFunctions()
 	-- Reagents window
 	table1:RegisterEvents({
 		["OnEnter"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, ...)
+			-- Show item tooltip if hovering over the actual rows
 			if row and realrow ~= nil then
 				local celldata = data[realrow][1]
 				GameTooltip:ClearLines()
 				GameTooltip:SetOwner(pslFrame1, "ANCHOR_BOTTOM")
 				GameTooltip:SetHyperlink(celldata)
 				GameTooltip:Show()
+				reagentHeaderTooltip:Hide()
+			-- Show header tooltip
+			elseif userSettings["headerTooltip"] == true then
+				reagentHeaderTooltip:Show()
 			end
 		end,
 		["OnLeave"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, ...)
 			GameTooltip:ClearLines()
 			GameTooltip:Hide()
+			reagentHeaderTooltip:Hide()
 		end,
 		["OnMouseDown"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, button, ...)
 			if button == "LeftButton" then
@@ -1612,6 +1767,10 @@ function pslWindowFunctions()
 					for reagentID, reagentAmount in pairs(reagentsTable) do
 						-- Get info
 						local function getInfo()
+							-- Cache item
+							if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+							-- Get item info
 							local itemName, itemLink = GetItemInfo(reagentID)
 
 							-- Try again if error
@@ -1661,6 +1820,10 @@ function pslWindowFunctions()
 						for reagentID, reagentAmount in pairs(reagentsTable) do
 							-- Get info
 							local function getInfo()
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+								-- Get item info
 								local itemName, itemLink = GetItemInfo(reagentID)
 
 								-- Try again if error
@@ -1711,6 +1874,10 @@ function pslWindowFunctions()
 						for reagentID, reagentAmount in pairs(reagentsTable) do
 							-- Get info
 							local function getInfo()
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+								
+								-- Get item info
 								local itemName, itemLink = GetItemInfo(reagentID)
 
 								-- Try again if error
@@ -1761,6 +1928,10 @@ function pslWindowFunctions()
 						for reagentID, reagentAmount in pairs(reagentsTable) do
 							-- Get info
 							local function getInfo()
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+								-- Get item info
 								local itemName, itemLink = GetItemInfo(reagentID)
 
 								-- Try again if error
@@ -1808,6 +1979,10 @@ function pslWindowFunctions()
 						for reagentID, reagentAmount in pairs(reagentsTable) do
 							-- Get info
 							local function getInfo()
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+								-- Get item info
 								local itemName, itemLink = GetItemInfo(reagentID)
 
 								-- Try again if error
@@ -1855,6 +2030,10 @@ function pslWindowFunctions()
 						for reagentID, reagentAmount in pairs(reagentsTable) do
 							-- Get info
 							local function getInfo()
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+
+								-- Get item info
 								local itemName, itemLink = GetItemInfo(reagentID)
 
 								-- Try again if error
@@ -1894,17 +2073,23 @@ function pslWindowFunctions()
 	-- Recipes window
 	table2:RegisterEvents({
 		["OnEnter"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, ...)
+			-- Show item tooltip if hovering over the actual rows
 			if row and realrow ~= nil then
 				local celldata = data[realrow][1]
 				GameTooltip:ClearLines()
 				GameTooltip:SetOwner(pslFrame2, "ANCHOR_BOTTOM")
 				GameTooltip:SetHyperlink(celldata)
 				GameTooltip:Show()
+				recipeHeaderTooltip:Hide()
+			-- Show header tooltip
+			elseif userSettings["headerTooltip"] == true then
+				recipeHeaderTooltip:Show()
 			end
 		end,
 		["OnLeave"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, ...)
 			GameTooltip:ClearLines()
 			GameTooltip:Hide()
+			recipeHeaderTooltip:Hide()
 		end,
 		["OnClick"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, button, ...)
 			-- Right-click on recipe amount
@@ -1982,21 +2167,67 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 		-- Slash commands
 		SLASH_PSL1 = "/psl";
 		function SlashCmdList.PSL(msg, editBox)
+			-- Split message into command and rest
+			local command, rest = msg:match("^(%S*)%s*(.-)$")
+
 			-- Open settings
-			if msg == "settings" then
+			if command == "settings" then
 				pslOpenSettings()
 			-- Clear list
-			elseif msg == "clear" then
+			elseif command == "clear" then
 				pslClear()
-			-- No arguments
+			-- Track recipe
+			elseif command == 'track' then
+				-- Split entered recipeID and recipeQuantity and turn them into real numbers
+				local part1, part2 = rest:match("^(%S*)%s*(.-)$")
+				recipeID = tonumber(part1)
+				recipeQuantity = tonumber(part2)
+
+				-- Only run if the recipeID is cached and the quantity is an actual number
+				if recipeLibrary[recipeID] then
+					if type(recipeQuantity) == "number" and recipeQuantity ~= 0 then
+						pslTrackRecipe(recipeID, recipeQuantity)
+					else
+						print("PSL: Invalid parameters. Please enter a valid recipe quantity.")
+					end
+				else
+					print("PSL: Invalid parameters. Please enter a cached recipe ID.")
+				end
+			elseif command == 'untrack' then
+				-- Split entered recipeID and recipeQuantity and turn them into real numbers
+				local part1, part2 = rest:match("^(%S*)%s*(.-)$")
+				recipeID = tonumber(part1)
+				recipeQuantity = tonumber(part2)
+
+				-- Only run if the recipeID is tracked and the quantity is an actual number (with a maximum of the amount of recipes tracked)
+				if recipesTracked[recipeID] then
+					if part2 == "all" then
+						pslUntrackRecipe(recipeID, 0)
+
+						-- Show windows
+						pslFrame1:Show()
+						pslFrame2:Show()
+					elseif type(recipeQuantity) == "number" and recipeQuantity ~= 0 and recipeQuantity <= recipesTracked[recipeID] then
+						pslUntrackRecipe(recipeID, recipeQuantity)
+
+						-- Show windows
+						pslFrame1:Show()
+						pslFrame2:Show()
+					else
+						print("PSL: Invalid parameters. Please enter a valid recipe quantity.")
+					end
+				else
+					print("PSL: Invalid parameters. Please enter a tracked recipe ID.")
+				end
+			-- No command
 			else
 				pslToggle()
 			end
 		end
 	end
 
-	-- When a recipe is selected
-	if event == "SPELL_DATA_LOAD_RESULT" then
+	-- When a recipe is selected (out of combat)
+	if event == "SPELL_DATA_LOAD_RESULT" and UnitAffectingCombat("player") == false then
 		-- Get selected recipe ID and type (global variables)
 		if pslSelectedRecipeID == nil then pslSelectedRecipeID = 0 end
 		pslSelectedRecipeID = arg1
@@ -2104,6 +2335,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			local progress = true
 
 			local function kpTooltip()
+				-- Cache treatise item
+				if not C_Item.IsItemDataCachedByID(treatiseItem) then local item = Item:CreateFromItemID(treatiseItem) end
+
 				-- Treatise
 				local treatiseStatus = READY_CHECK_NOT_READY_TEXTURE
 				local treatiseNumber = 0
@@ -2191,6 +2425,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 						shardNo = shardNo + 1
 					end
 				end
+
+				-- Cache item
+				if not C_Item.IsItemDataCachedByID(191784) then local item = Item:CreateFromItemID(191784) end
 
 				local _, shardItemLink = GetItemInfo(191784)
 
@@ -2281,6 +2518,11 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 					if IsModifierKeyDown() == true or userSettings["knowledgeAlwaysShowDetails"] == true then
 						for _, dropInfo in ipairs (drops) do
 							oldText = knowledgePointTooltipText:GetText()
+
+							-- Cache item
+							if not C_Item.IsItemDataCachedByID(dropInfo.itemID) then local item = Item:CreateFromItemID(dropInfo.itemID) end
+
+							-- Get item info
 							local _, itemLink = GetItemInfo(dropInfo.itemID)
 		
 							-- If links missing, try again
@@ -2352,6 +2594,11 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 						if IsModifierKeyDown() == true or userSettings["knowledgeAlwaysShowDetails"] == true then
 							for questID, itemID in pairs (treasures) do
 								oldText = knowledgePointTooltipText:GetText()
+
+								-- Cache item
+								if not C_Item.IsItemDataCachedByID(itemID) then local item = Item:CreateFromItemID(itemID) end
+
+								-- Get item info
 								local _, itemLink = GetItemInfo(itemID)
 			
 								-- If links missing, try again
@@ -2375,6 +2622,12 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 					-- Don't show this
 				else
 					oldText = knowledgePointTooltipText:GetText()
+
+					-- Cache items
+					if not C_Item.IsItemDataCachedByID(books[1].itemID) then local item = Item:CreateFromItemID(books[1].itemID) end
+					if not C_Item.IsItemDataCachedByID(books[2].itemID) then local item = Item:CreateFromItemID(books[2].itemID) end
+					if not C_Item.IsItemDataCachedByID(books[3].itemID) then local item = Item:CreateFromItemID(books[3].itemID) end
+
 					local _, itemLink1 = GetItemInfo(books[1].itemID)
 					local _, itemLink2 = GetItemInfo(books[2].itemID)
 					local _, itemLink3 = GetItemInfo(books[3].itemID)
@@ -2427,7 +2680,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 198454
 				treatiseQuest = 74109
 				orderQuest = 70589
-				gatherQuests = {66517, 66897, 66941, 72398}
+				gatherQuests = {66517, 66897, 66941, 72398, 75148, 75569}
 				craftQuests = {70211, 70233, 70234, 70235}
 				hiddenMaster = 70250
 				drops = {}
@@ -2459,7 +2712,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194700
 				treatiseQuest = 74113
 				orderQuest = 70594
-				gatherQuests = {66363, 66364, 66951, 72407}
+				gatherQuests = {66363, 66364, 66951, 72407, 75354, 75368}
 				craftQuests = {70567, 70568, 70569, 70571}
 				hiddenMaster = 70256
 				drops = {}
@@ -2489,7 +2742,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194697
 				treatiseQuest = 74108
 				orderQuest = nil
-				gatherQuests = {66937, 66938, 66940, 72427}
+				gatherQuests = {66937, 66938, 66940, 72427, 75363, 75371}
 				craftQuests = {70530, 70531, 70532, 70533}
 				hiddenMaster = 70247
 				drops = {}
@@ -2536,16 +2789,6 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				books[3] = {questID = 71919, itemID = 201287}
 			end
 
-			-- Only execute this if not in combat
-			if UnitAffectingCombat("player") == false then
-				-- Cooking
-				if professionID == 5 then
-					chefsHatButton:Show()
-				else
-					chefsHatButton:Hide()
-				end
-			end
-
 			-- Mining
 			if professionID == 6 then
 				treatiseItem = 194708
@@ -2573,7 +2816,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194698
 				treatiseQuest = 74115
 				orderQuest = 70595
-				gatherQuests = {66899, 66952, 66953, 72410}
+				gatherQuests = {66899, 66952, 66953, 72410, 75407, 75600}
 				craftQuests = {70572, 70582, 70586, 70587}
 				hiddenMaster = 70260
 				drops = {}
@@ -2604,7 +2847,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 198510
 				treatiseQuest = 74111
 				orderQuest = 70591
-				gatherQuests = {66890, 66891, 66942, 72396}
+				gatherQuests = {66890, 66891, 66942, 72396, 75575, 75608}
 				craftQuests = {70539, 70540, 70545, 70557}
 				hiddenMaster = 70252
 				drops = {}
@@ -2634,7 +2877,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194702
 				treatiseQuest = 74110
 				orderQuest = nil
-				gatherQuests = {66884, 66900, 66935, 72423}
+				gatherQuests = {66884, 66900, 66935, 72423, 75150, 75865}
 				craftQuests = {72155, 72172, 72173, 72175}
 				hiddenMaster = 70251
 				drops = {}
@@ -2687,7 +2930,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194703
 				treatiseQuest = 74112
 				orderQuest = 70593
-				gatherQuests = {66516, 66949, 66950, 72428}
+				gatherQuests = {66516, 66949, 66950, 72428, 75362, 75602}
 				craftQuests = {70562, 70563, 70564, 70565}
 				hiddenMaster = 70255
 				drops = {}
@@ -2718,7 +2961,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				treatiseItem = 194699
 				treatiseQuest = 74105
 				orderQuest = 70592
-				gatherQuests = {66943, 66944, 66945, 72438}
+				gatherQuests = {66943, 66944, 66945, 72438, 75149, 75573}
 				craftQuests = {70558, 70559, 70560, 70561}
 				hiddenMaster = 70254
 				drops = {}
@@ -2764,12 +3007,28 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			else
 				knowledgePointTracker:Hide()
 			end
+
+			-- Cooking Fire and Chef's Hat buttons
+			if professionID == 5 then
+				cookingFireButton:Show()
+				chefsHatButton:Show()
+			else
+				cookingFireButton:Hide()
+				chefsHatButton:Hide()
+			end
+
+			-- Thermal Anvil button
+			if professionID == 1 or professionID == 8 then
+				thermalAnvilButton:Show()
+			else
+				thermalAnvilButton:Hide()
+			end
 		end
 		professionFeatures()
 	end
 	
-	-- When a profession window is loaded
-	if event == "TRADE_SKILL_LIST_UPDATE" then
+	-- When a profession window is loaded (out of combat)
+	if event == "TRADE_SKILL_LIST_UPDATE" and UnitAffectingCombat("player") == false then
 		-- Register all recipes for this profession
 		for _, id in pairs(C_TradeSkillUI.GetAllRecipeIDs()) do
 			local item = C_TradeSkillUI.GetRecipeOutputItemData(id).itemID
@@ -2779,12 +3038,17 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 		end
 	end
 
-	-- When a spell is succesfully cast
-	if event == "UNIT_SPELLCAST_SUCCEEDED" and arg1 == "player" and userSettings["removeCraft"] == true then
+	-- When a spell is succesfully cast by the player (out of combat)
+	if event == "UNIT_SPELLCAST_SUCCEEDED" and UnitAffectingCombat("player") == false and arg1 == "player" then
 		local spellID = ...
+
+		-- Profession button stuff
+		if spellID == 818 or spellID == 67556 or spellID == 126462 then
+			C_Timer.After(0.1, function() pslUpdateAssets() end)
+		end
 	
-		-- Run only when crafting a tracked recipe
-		if recipesTracked[spellID] then
+		-- Run only when crafting a tracked recipe, and if the remove craft option is enabled
+		if recipesTracked[spellID] and userSettings["removeCraft"] == true then
 			-- Remove 1 tracked recipe when it has been crafted (if the option is enabled)
 			pslUntrackRecipe(spellID, 1)
 			
@@ -2797,8 +3061,8 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 		end
 	end
 
-	-- When bag changes occur
-	if event == "BAG_UPDATE_DELAYED" then
+	-- When bag changes occur (out of combat)
+	if event == "BAG_UPDATE_DELAYED" and UnitAffectingCombat("player") == false then
 		-- If any recipes are tracked
 		local next = next
 		if next(recipesTracked) ~= nil then
@@ -2834,8 +3098,6 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 
 	-- When the Auction House is opened
 	if event == "AUCTION_HOUSE_SHOW" then
-		dump(reagentsTracked)
-
 		-- Create a temporary variable
 		if not auctionatorReagents then local auctionatorReagents end
 
@@ -2845,7 +3107,10 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			auctionatorReagents = "PSL"
 
 			for reagentID, _ in pairs(reagentsTracked) do
-				-- Get info
+				-- Cache item
+				if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+				
+				-- Get item info
 				local itemName = GetItemInfo(reagentID)
 		
 				-- Try again if error

@@ -1096,15 +1096,17 @@ model={90189},
 description="\nThis mount is acquired from the Battle for Dazar'alor Raid.",
 },[[
 step
+Enter the "Battle for Dazar'alor" Raid |goto Dazar'alor/0 38.83,2.52 < 20 |c |or
+'|complete hasmount(289083)
+step
 kill High Tinker Mekkatorque##144838
 |tip He is a boss in the Battle for Dazar'alor raid.
 |tip If you are in LFR, Jaina will have a chance to drop the mount instead.
-collect G.M.O.D.##166518 |n
+collect G.M.O.D.##166518 |or
+'|complete hasmount(289083)
+step
 use the G.M.O.D.##166518
 Learn the "G.M.O.D." Mount |learnmount G.M.O.D.##289083
-step
-_Congratulations!_
-You Collected the "G.M.O.D." Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Glacial Tidestorm",{
 author="support@zygorguides.com",
@@ -1186,15 +1188,14 @@ description="\nThis mount is acquired by a random world drop.",
 },[[
 step
 Kill enemies around this area
-collect Captured Dune Scavenger##163576 |n
+collect Captured Dune Scavenger##163576 |goto Vol'dun/0 49.4,75.8 |or
 |tip This will drop randomly from the Snake enemies in the zone.
 You can find more around [63.4,31.6]
 You can find more around [55.6,41.2]
-use the Captured Dun Scavenger##163576
-Learn the "Dune Scavenger" Mount |learnmount Dune Scavenger##237286 |goto Vol'dun/0 49.4,75.8
+'|complete hasmount(237286) |or
 step
-_Congratulations!_
-You Collected the "Dune Scavenger" Mount.
+use the Captured Dun Scavenger##163576
+Learn the "Dune Scavenger" Mount |learnmount Dune Scavenger##237286
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Goldenmane",{
 author="support@zygorguides.com",
@@ -1418,16 +1419,17 @@ model={706},
 description="\nThis mount is acquired from the Rarespawn Blackpaw in Darkshore.",
 },[[
 step
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
+step
 kill Blackpaw##149660
-|tip You will be flagged for PvP if your faction does not control Darkshore.
-collect Blackpaw##166428 |goto Darkshore/0 49.65,24.96 |complete hasmount(288438)
+|tip You will be flagged for PvP.
+collect Blackpaw##166428 |goto Darkshore/0 49.65,24.96 |or
 |tip This has about a 6% drop rate.
+'|complete hasmount(288438) |or
 step
 use Blackpaw##166428
 Learn the "Blackpaw" Mount |learnmount Blackpaw##288438
-step
-_Congratulations!_
-You Collected the "Blackpaw" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Kaldorei Nightsaber",{
 author="support@zygorguides.com",
@@ -1440,14 +1442,16 @@ model={89247},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
 },[[
 step
-kill Shadowclaw##149663
-|tip You will be flagged for PVP if your faction does not control Darkshore.
-collect Kaldorei Nightsaber##166435 |n
-use the Kaldorei Nightsaber##166435
-Learn the "Kaldorei Nightsaber" Mount |learnmount Kaldorei Nightsaber##288505 |goto Darkshore/0 39.81,32.80
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
 step
-_Congratulations!_
-You Collected the "Kaldorei Nightsaber" Mount.
+kill Shadowclaw##149663
+|tip You will be flagged for PVP.
+collect Kaldorei Nightsaber##166435 |goto Darkshore/0 39.81,32.40 |or
+'|complete hasmount(288505) |or
+step
+use the Kaldorei Nightsaber##166435
+Learn the "Kaldorei Nightsaber" Mount |learnmount Kaldorei Nightsaber##288505
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Umber Nightsaber",{
 author="support@zygorguides.com",
@@ -1460,15 +1464,17 @@ model={89246},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
 },[[
 step
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
+step
 kill Athil Dewfire##148037
 |tip He walks around this area.
 |tip You will be flagged for PVP if your faction does not control Darkshore.
-collect Umber Nightsaber##166803 |n
-use the Umber Nightsaber##166803
-Learn the "Umber Nightsaber" Mount |learnmount Umber Nightsaber##288503 |goto Darkshore/0 41.66,76.62
+collect Umber Nightsaber##166803 |goto Darkshore/0 41.66,76.62 |or
+'|complete hasmount(288505) |or
 step
-_Congratulations!_
-You Collected the "Umber Nightsaber" Mount.
+use the Umber Nightsaber##166803
+Learn the "Umber Nightsaber" Mount |learnmount Umber Nightsaber##288503
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Witherbark Direwing",{
 author="support@zygorguides.com",
@@ -1481,15 +1487,17 @@ model={86091},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Arathi Highlands.",
 },[[
 step
+Wait for the Arathi Highlands Assault to Begin |only if ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279868) |or
+step
 kill Nimar the Slayer##142692
 |tip He walks around this area.
 |tip You will be flagged for PVP if your faction does not control Arathi Highlands.
-collect Witherbark Direwing##163706 |n
-use the Witherbark Direwing##163706
-Learn the "Witherbark Direwing" Mount |learnmount Witherbark Direwing##279868 |goto Arathi Highlands/0 67.63,60.86
+collect Witherbark Direwing##163706 |goto Arathi Highlands/0 67.63,60.86 |or
+'|complete hasmount(279868) |or
 step
-_Congratulations!_
-You Collected the "Witherbark Direwing" Mount.
+use the Witherbark Direwing##163706
+Learn the "Witherbark Direwing" Mount |learnmount Witherbark Direwing##279868
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Frightened Kodo",{
 author="support@zygorguides.com",

@@ -22,6 +22,7 @@ table.insert(GuideMenu.Featured,{
 	{"text", text=[[NOTE: This should be nearly all of the Zaralek Cavern World Quests. You can now load rare guides from rare icons. Strategies for those are still in progress. The new world quest type appears only when you are near it on the map and will not function in the world quest planner.]]},
 	{"columns",
 	{"item", text=[[**Zaralek Cavern World Quests**]], guide="DAILIES\\Dragonflight (60-70)\\Zaralek Cavern World Quests"},
+	{"item", text=[[**Sniffenseeking!**]], guide="DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"},
 	}, --columnsend
 
 {"section", text=[[REPUTATIONS]]},

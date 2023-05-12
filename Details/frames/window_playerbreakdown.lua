@@ -33,6 +33,12 @@ local PLAYER_DETAILS_STATUSBAR_ALPHA = 1
 Details.player_details_tabs = {}
 breakdownWindow.currentTabsInUse =  {}
 
+Details222.BreakdownWindow.BackdropSettings = {
+	backdrop = {edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\Tooltips\UI-Tooltip-Background]], tileSize = 64, tile = true},
+	backdropcolor = {DetailsFramework:GetDefaultBackdropColor()},
+	backdropbordercolor = {0, 0, 0, 0.7},
+}
+
 ------------------------------------------------------------------------------------------------------------------------------
 --self = instancia
 --jogador = classe_damage ou classe_heal
@@ -431,22 +437,29 @@ end
 ---@param instance instance
 function Details222.BreakdownWindow.SendSpellData(data, actorObject, combatObject, instance)
 	--need to get the tab showing the summary and transmit the data to it
-	local tab = Details222.BreakdownWindow.CurrentDefaultTab
-	if (tab) then
+	local tabButton = Details222.BreakdownWindow.CurrentDefaultTab
+	if (tabButton) then
 		--tab is the tab button
-		if (tab.OnReceiveSpellData) then
-			tab.OnReceiveSpellData(data, actorObject, combatObject, instance)
+		if (tabButton.OnReceiveSpellData) then
+			tabButton.OnReceiveSpellData(data, actorObject, combatObject, instance)
 		end
 	end
 end
 
 function Details222.BreakdownWindow.SendTargetData(targetList, actorObject, combatObject, instance)
-	--need to get the tab showing the summary and transmit the data to it
-	local tab = Details222.BreakdownWindow.CurrentDefaultTab
-	if (tab) then
-		--tab is the tab button
-		if (tab.OnReceiveTargetData) then
-			tab.OnReceiveTargetData(targetList, actorObject, combatObject, instance)
+	local tabButton = Details222.BreakdownWindow.CurrentDefaultTab
+	if (tabButton) then
+		if (tabButton.OnReceiveTargetData) then
+			tabButton.OnReceiveTargetData(targetList, actorObject, combatObject, instance)
+		end
+	end
+end
+
+function Details222.BreakdownWindow.SendGenericData(resultTable, actorObject, combatObject, instance)
+	local tabButton = Details222.BreakdownWindow.CurrentDefaultTab
+	if (tabButton) then
+		if (tabButton.OnReceiveGenericData) then
+			tabButton.OnReceiveGenericData(resultTable, actorObject, combatObject, instance)
 		end
 	end
 end
@@ -505,6 +518,12 @@ function Details:CreateBreakdownWindow()
 			LibWindow.RestorePosition(breakdownWindow)
 			LibWindow.MakeDraggable(breakdownWindow)
 			LibWindow.SavePosition(breakdownWindow)
+
+			breakdownWindow:SetScript("OnMouseDown", function(self, button)
+				if (button == "RightButton") then
+					Details:CloseBreakdownWindow()
+				end
+			end)
 		end
 	end
 
@@ -544,7 +563,7 @@ function Details:CreateBreakdownWindow()
     end)
 
 	--title
-	detailsFramework:NewLabel(breakdownWindow, breakdownWindow, nil, "titleText", Loc ["STRING_PLAYER_DETAILS"] .. " (|cFFFF8811Under Maintenance|r) - Report Bugs At Discord", "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
+	detailsFramework:NewLabel(breakdownWindow, breakdownWindow, nil, "titleText", Loc ["STRING_PLAYER_DETAILS"], "GameFontHighlightLeft", 12, {227/255, 186/255, 4/255})
 	breakdownWindow.titleText:SetPoint("center", breakdownWindow, "center")
 	breakdownWindow.titleText:SetPoint("top", breakdownWindow, "top", 0, -6)
 

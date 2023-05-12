@@ -16024,8 +16024,44 @@ Leave Zskera Vault: Kx |complete not subzone("Zskera Vault: Kx") |goto 28.81,49.
 step
 talk Pathfinder Jeb##202218
 turnin Zskera Vault: Kx##72955 |goto 29.09,53.13
+step
+talk Pathfinder Jeb##200040
+accept More Doors To Open##72956 |goto 29.09,53.13
+|tip This quest appears on a rotation with six other versions of the vault.
+|tip Check back at the next daily reset for it.
+step
+talk Cataloger Wulferd##201180
+accept Authentic Authorization##74984 |goto 29.26,52.69 |or
+accept Authentic Authorization##74983 |goto 29.26,52.69 |or
+accept Authentic Authorization##74282 |goto 29.26,52.69 |or
+|tip You will only be able to accept one of these weekly quests.
+|tip Any time you open vault doors, look around for the objective of the weekly quest.
+|only if not completedq(72956)
+step
+collect Zskera Vault Key##202196 |q 72956
+|tip You will need at least one of these to open a vault door for the quest.
+|tip You can acquire these from rare chests and rare mobs all over The Forbidden Reach.
+step
+talk Pathfinder Jeb##200040
+Choose _"Let's explore Zskera Vault Ur."_
+Speak with Jeb to Enter the Vault |q 72956/1 |goto 29.09,53.13
+step
+Run down the stairs |goto The Forbidden Reach/5 29.09,52.39 < 10 |walk
+kill 1 Farscale Overseer##202653
+|tip Inside the middle of the vault.
+Secure the Vault |q 72956/2 |goto 29.57,56.31
+step
+click Door
+Open the Doors with Zskera Vault Keys |q 72956/3 |goto 29.57,56.31
+step
+Click Here to Continue |confirm |q 72956
+|tip From this point, you can either continue opening vault doors until you exhaust your keys, or save them for later.
+step
+Leave the Zskera Vaults |complete not subzone("Zskera Vaults") |goto 28.81,49.98 |q 72956
+step
+talk Pathfinder Jeb##202218
+turnin More Doors To Open##72956 |goto 29.09,53.13
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Old Hatreds Questline",{
 author="support@zygorguides.com",
 startlevel=68,
@@ -16265,6 +16301,7 @@ step
 talk Baine Bloodhoof##201566
 turnin A Final Word##75258 |goto 72.71,56.08
 ]])
+ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests",{
 author="support@zygorguides.com",
 startlevel=68,
@@ -17388,15 +17425,230 @@ talk Ebyssian##203151
 |tip At the top of the tower.
 turnin In the Wake of the Ashes##75145 |goto 58.33,38.92
 step
+talk Ebyssian##203965
+|tip He walks to this location at the top of the tower.
+accept Here We Go Again##72987 |goto Valdrakken/0 61.94,41.17
+step
 use the Symbol of Friendship##205989
 Use the Reputation Token |complete itemcount(205989) == 0
 step
+talk Kalecgos##187676
+|tip At the top of the tower.
+Tell him _"I need a portal to Zaralek Cavern."_
+Ask Kalecgos for a Portal |q 72987/2 |goto 61.63,36.09
+step
+click Portal to Zaralek Cavern |goto 60.70,36.92
+|tip Kalecgos will catch you as you fall when you arrive.
+Travel to the Zaralek Caverns |goto Zaralek Cavern/0 48.72,40.05 < 100 |noway |c |q 72987
+step
+talk Ebyssian##200046
+Find Ebyssian |q 72987/1 |goto 49.91,27.54
+step
+talk Ebyssian##200046
+turnin Here We Go Again##72987 |goto 49.91,27.54
+accept The Obsidian Rest##75367 |goto 49.91,27.54
+step
+click Flight Master's Report
+collect 1 Flight Master's Report##204819 |q 75367/1 |goto 51.06,26.31
+step
+talk Keskos##200893
+fpath Obsidian Rest |goto 51.03,26.17
+step
+talk Tzashivak##201026
+Tell her _"We need any help we can get to stop the djaradin."_
+Request Help from Tzashivak |q 75367/2 |goto 51.36,25.60
+step
+click Enchanted Spying Glass
+Use the Spying Glass |q 75367/3 |goto 50.71,25.20
+step
+talk Ebyssian##200046
+turnin The Obsidian Rest##75367goto 49.92,27.54
+accept Report: Battlefield Ruins##74393 |goto 49.92,27.54
+step
+talk Field Commander Ignax##200051
+turnin Report: Battlefield Ruins##74393 |goto 46.69,29.63
+accept Blow It Up##74538 |goto 46.69,29.63
+accept Thinning Their Defenses##74539 |goto 46.69,29.63
+accept Intercepting Communications##74540 |goto 46.69,29.63
+stickystart "Kill_5_Zaqali_Flametongues"
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 43.86,34.21 |count 1
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.86,33.44 |count 2
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.11,33.78 |count 3
+step
+click Dragonslayer Ballista
+Destroy the Dragonslayer Ballista |q 74538/1 |goto 42.22,34.76 |count 4
+step
+kill 1 Warchanter Ronvath##200128 |q 74540/2 |goto 43.20,38.87
+step
+click Djaradin Warchest##398782
+collect 1 Invasion Plans: Dragon Nests##204074 |q 74540/1 |goto 42.97,38.95
+step
+label "Kill_5_Zaqali_Flametongues"
+kill 5 Zaqali Flametongue##200066 |q 74539/1 |goto 42.53,31.67
+step
+talk Field Commander Ignax##200051
+turnin Blow It Up##74538 |goto 46.69,29.62
+turnin Thinning Their Defenses##74539 |goto 46.69,29.62
+turnin Intercepting Communications##74540 |goto 46.69,29.62
+accept Air Superiority##74542 |goto 46.69,29.62
+step
+talk Ebyssian##202469
+Tell him _"Let's fly."_
+Fly with Ebyssian |q 74542/1 |goto 46.97,29.38
+step
+Defeat the Djaradin Forces |q 74542/2 |goto 46.97,29.38
+|tip Use the abilities on your action bar to accomplish this.
+step
+Reach the Ledge |q 74542/3 |goto 53.39,30.26
+step
+talk Ebyssian##202523
+|tip He walks to this location.
+turnin Air Superiority##74542 |goto 53.60,30.22
+|tip Keep the "Whelpling's Shadowflame Crest" rewarded from this quest for later.
+accept Investigating the Unknown##74557 |goto 53.60,30.22
+step
+clicknpc Zaqali Berserker##202529
+Inspect the Djaradin Corpse  |q 74557/1 |goto 53.63,30.16
+step
+clicknpc Drakonid Poacher##202549
+Inspect the Poacher Corpse |q 74557/2 |goto 53.44,29.84
+step
+clicknpc Slitherdrake##202550
+Make Contact with a Serpent Drake |q 74557/3 |goto 53.43,30.39
+step
+talk Ebyssian##202523
+turnin Investigating the Unknown##74557 |goto 53.59,30.21
+accept Break Them Out##74562 |goto 53.59,30.21
+accept Worst of the Worst##74563 |goto 53.59,30.21
+stickystart "Disrupt_The_Operation"
+step
+Enter the cave |goto 54.67,30.61 < 10 |walk
+kill 1 Overseer Xymra##200186 |q 74563/1 |goto 56.99,30.31
+|tip Inside the cave.
+step
+label "Disrupt_The_Operation"
+click Transportation Cart
+click Door
+kill Drakonid Poacher##200173
+|tip Inside the cave.
+Disrupt the Drakonid Poacher's Operation |q 74562/1 |goto 55.43,30.99
+step
+talk Ebyssian##202523
+turnin Break Them Out##74562 |goto 53.60,30.21
+turnin Worst of the Worst##74563 |goto 53.60,30.21
+step
+talk Ebyssian##202995
+accept Fading Embers##72922 |goto 53.42,30.24
+step
+talk Scalecommander Emberthal##203904
+Tell her _"I am ready to face him with you."_
+Speak to Emberthal |q 72922/1 |goto 45.91,26.34
+step
+Stop Sarkareth |q 72922/2 |goto 45.32,25.20
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin Fading Embers##72922 |goto Zaralek Cavern/0 45.98,26.24
+accept A Whisper to Sabellian##72923 |goto 45.98,26.24
+step
+talk Sabellian##199973
+Tell him _"Ebyssian would like to speak to you."_
+Speak to Sabellian |q 72923/1 |goto 46.74,29.57
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin A Whisper to Sabellian##72923 |goto 46.82,29.66
+accept Appealing to the Black Prince##72924 |goto 46.82,29.66
+step
+talk Wrathion##200101
+Tell him _"Ebyssian would like to speak to you."_
+Speak to Wrathion |q 72924/1 |goto 51.53,25.79
+step
+Watch the dialogue
+talk Ebyssian##199965
+turnin Appealing to the Black Prince##72924 |goto 51.47,25.76
+accept With Our Powers Combined##72925 |goto 51.47,25.76
+step
+Meet Emberthal By the Entrance to Brimstone Garrison |q 72925/1 |goto 47.18,27.90
+step
+talk Ebyssian##199965
+turnin With Our Powers Combined##72925 |goto 47.18,27.90
+accept Forward Camp##72931 |goto 47.18,27.90
+step
+Watch the dialogue
+talk Wrathion##200101
+accept In the Right Hands##72926 |goto 47.23,27.82
+step
+talk Sabellian##199973
+accept Wipe Them Out##72928 |goto 47.06,28.08
+stickystart "Defeat_Enemies_Around_Brimstone_Garrison"
+step
+click 'The Resting Blade'##385569
+|tip Inside the building.
+collect 'The Resting Blade'##204877 |q 72926/2 |goto 45.11,21.01
+step
+click Ebon Eviscerator
+collect Ebon Eviscerator##204184 |q 72926/1 |goto 45.11,18.45
+step
+label "Defeat_Enemies_Around_Brimstone_Garrison"
+Kill enemies around this area
+Defeat Enemies in Brimstone Garrison |q 72928/1 |goto 45.16,19.46
+step
+Meet Ebyssian at the Brimstone Garrison |q 72931/1 |goto 44.05,15.65
+|tip At the top of the tower.
+step
+talk Wrathion##200101
+|tip At the top of the tower.
+turnin In the Right Hands##72926 |goto 44.00,15.66
+step
+talk Sabellian##199973
+|tip At the top of the tower.
+turnin Wipe Them Out##72928 |goto 44.07,15.55
+step
+talk Ebyssian##199965
+|tip At the top of the tower.
+turnin Forward Camp##72931 |goto 44.05,15.65
+accept Finding Sarkareth##72927 |goto 44.04,15.63
+step
+Meet with Emberthal |q 72927/1 |goto 47.28,15.69
+step
+talk Scalecommander Emberthal##199964
+turnin Finding Sarkareth##72927 |goto 47.37,15.61
+accept Cracking His Shell##72929 |goto 47.37,15.61
+step
+click Aberrus Charge
+Destroy a Connection |q 72929/1 |count 1 |goto 47.54,16.32
+step
+click Aberrus Charge
+Destroy a Connection |q 72929/1 |count 2 |goto 49.24,16.62
+step
+talk Scalecommander Emberthal##199964
+turnin Cracking His Shell##72929 |goto 47.37,15.61
+accept Stopping Sarkareth##72930 |goto 47.37,15.61
+step
+kill Dreadful Defender##203842
+|tip Keep moving out of areas on targeted on the ground.
+Stop Sarkareth |q 72930/1 |goto 48.55,15.01
+step
+talk Scalecommander Emberthal##199964
+turnin Stopping Sarkareth##72930 |goto 47.87,14.90
+step
+talk Ebyssian##199965
+accept Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto 47.89,14.97
+step
 talk Mimuup##204254
 |tip Inside the building.
-turnin A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66 |or
+turnin A Worthy Ally: Loamm Niffen##75665 |goto 56.53,55.66 |or
 '|complete completedq(75643) |or
 step
-collect Splintered Spark of Shadowflame##204717 |q 75641/1 |goto Zaralek Cavern/0 56.84,54.79
+use the Scentsational Niffen Treasures##205983
+collect Splintered Spark of Shadowflame##204717 |q 75641/1 |goto 56.84,54.79
 step
 talk Examiner Tae'shara Bloodwatcher##204509
 turnin Power Unified##75641 |goto 56.84,54.79
@@ -17793,7 +18045,7 @@ accept Pay to Play##73708 |goto 43.79,82.98
 accept Favor on the Side##73709 |goto 43.79,82.98
 step
 talk Festival Challenger##202571
-Tell them _"You're a party crasher!"_
+Tell him _"You're a party crasher!"_
 Find #6# Intruders |q 73709/1 |goto 44.27,82.29
 step
 kill Echoed Lurker##202636+
@@ -17851,7 +18103,7 @@ accept Marked Champion##73711 |goto 44.98,83.30
 step
 Enter the cave |goto 45.40,86.85 < 10 |walk
 kill Carcaxas##202836 |q 73711/1 |goto 45.59,87.62
-|tip Inside the cave up on the ledge.
+|tip Inside the cave.
 step
 talk Storul Heavystone##201100
 turnin Marked Champion##73711 |goto 44.98,83.29
@@ -17868,6 +18120,217 @@ step
 talk Briggul##201752
 turnin Come Snail Away##74787 |goto 44.26,79.93
 step
-More Content Will Come in Future Weeks |complete false
-|tip The remainder of the story is timegated until a future weekly reset.
+kill Scalecommander Sarkareth |q 75694/1 |goto Aberrus, the Shadowed Crucible/4 48.97,71.21
+step
+talk Ebyssian##199965
+turnin Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto Zaralek Cavern/0 47.89,14.97
 ]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Snail Racing",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100100',
+},[[
+step
+click TICKET: Glimmerogg Games
+accept TICKET: Glimmerogg Games##73707 |goto Zaralek Cavern/0 55.61,54.56
+step
+talk Brogg the Beast##201098
+turnin TICKET: Glimmerogg Games##73707 |goto 43.79,82.98
+accept Pay to Play##73708 |goto 43.79,82.98
+accept Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Festival Challenger##202571
+Tell him _"You're a party crasher!"_
+Find #6# Intruders |q 73709/1 |goto 44.27,82.29
+step
+kill Echoed Lurker##202636+
+collect 4 Echoed Lurker Flesh##204803 |q 73708/1 |goto 44.20,84.66
+step
+talk Gudegg##203378
+accept Flesh to Bone##75233 |goto 43.21,84.09
+step
+click Glimmer Mushroom##388520
+collect 1 Glimmer Mushroom##205169 |q 73708/2 |goto 38.12,78.45
+step
+click Glimmer Mushroom##388520
+collect 2 Glimmer Mushroom##205169 |q 73708/2 |goto 37.93,77.49
+step
+click Glimmer Mushroom##388520
+collect 3 Glimmer Mushroom##205169 |q 73708/2 |goto 37.63,76.63
+step
+click Glimmer Mushroom##388520
+collect 4 Glimmer Mushroom##205169 |q 73708/2 |goto 38.28,76.66
+step
+talk Brogg the Beast##201098
+turnin Pay to Play##73708 |goto 43.79,82.98
+turnin Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Storul Heavystone##201100
+accept Rock By Rock##73710 |goto 44.97,83.29
+step
+click Starter Rock Bar
+Lift the Weight Bars |q 73710/1 |count 1 |goto 45.13,83.35
+step
+click Mid-Weight Rock Bar
+Lift the Weight Bars |q 73710/1 |count 2 |goto 45.08,83.24
+step
+click Heavy Rock Bar
+Lift the Weight Bars |q 73710/1 |count 3 |goto 44.99,83.10
+step
+talk Storul Heavystone##201100
+turnin Rock By Rock##73710 |goto 44.98,83.31
+accept Marked Champion##73711 |goto 44.98,83.30
+step
+Enter the cave |goto 45.40,86.85 < 10 |walk
+kill Carcaxas##202836 |q 73711/1 |goto 45.59,87.62
+|tip Inside the cave.
+step
+talk Storul Heavystone##201100
+turnin Marked Champion##73711 |goto 44.98,83.29
+step
+Reach Renown Level 7 with the Loamm Niffen |complete factionrenown(2564) >= 7
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Off to the Track##75725
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
+step
+talk Briggul##201752
+turnin Off to the Track##75725 |goto 44.25,79.93
+accept Come Snail Away##74787 |goto 44.25,79.93
+step
+clicknpc Big Slick in the City##202731
+Meet Slick |q 74787/1 |goto 44.17,79.98
+step
+talk Briggul##201752
+turnin Come Snail Away##74787 |goto 44.26,79.93
+step
+talk Grogul##201099
+accept A Race to the Finish##75662 |goto 44.45,80.40
+step
+talk Corry##204672
+Ask it _"Is there any other way I can affect the outcome of a race?"_
+Tell it _"I'd like treats to help Bashful win."_
+|tip You will only see this dialogue option when the race is starting.
+Speak with Corry and Collect Treats for Bashful |q 75662/1 |goto 44.40,80.42
+|only if haveq(75662) or completedq(75662)
+step
+clicknpc Bashful##204614
+extraaction Bashful Treats##409176
+|tip Drop the treat right in front of Bashful.
+|tip It's a blue snail on the race track.
+Use Treats on the Snail Racer Bashful |q 75662/2 |goto 44.80,80.73
+|only if haveq(75662) or completedq(75662)
+step
+clicknpc Bashful##204614
+extraaction Bashful Treats##409176
+|tip Drop the treat right in front of Bashful.
+|tip Continue using "Bashful Treats" as you follow it.
+|tip Only kill attacking enemies if they attack your snail.
+|tip Otherwise, they will attack and slow the competition.
+Help Bashful Win a Race |q 75662/3 |goto 44.54,81.21
+|only if haveq(75662) or completedq(75662)
+step
+talk Grogul##201099
+turnin A Race to the Finish##75662 |goto 44.46,80.39
+step
+Wait for a New Race to Begin |complete not completedq(75708)
+|tip A new race will begin at the next daily reset.
+step
+talk Grogul##201099
+accept A Race to the Finish##75706 |goto 44.46,80.40
+step
+talk Corry##204672
+Ask it _"Is there any other way I can affect the outcome of a race?"_
+Tell it _"I'd like treats to help Tricky win."_
+|tip You will only see this dialogue option when the race is starting.
+Speak with Corry and get Tricky's Treats |q 75706/1 |goto 44.40,80.42
+|only if haveq(75706) or completedq(75706)
+step
+clicknpc Tricky##204616
+extraaction Tricky Treats##409203
+|tip Drop the treat right in front of Tricky.
+|tip It's a blue snail on the race track.
+Use Treats on the Snail Racer Tricky |q 75706/2 |goto 44.80,80.73
+|only if haveq(75706) or completedq(75706)
+step
+clicknpc Tricky##204616
+extraaction Tricky Treats##409203
+|tip Drop the treat right in front of Tricky.
+|tip Continue using "Tricky Treats" as you follow it.
+|tip Only kill attacking enemies if they attack your snail.
+|tip Otherwise, they will attack and slow the competition.
+Help Tricky Win a Race |q 75706/3 |goto 44.54,81.21
+|only if haveq(75706) or completedq(75706)
+step
+talk Grogul##201099
+turnin A Race to the Finish##75706 |goto 44.46,80.40
+step
+Wait for a New Race to Begin |complete not completedq(75708)
+|tip A new race will begin at the next daily reset.
+step
+talk Grogul##201099
+accept A Race to the Finish##75707 |goto 44.46,80.40
+step
+talk Corry##204672
+Ask it _"Is there any other way I can affect the outcome of a race?"_
+Tell it _"I'd like treats to help Brulee win."_
+|tip You will only see this dialogue option when the race is starting.
+Speak with Corry and get Brulee's Treats |q 75707/1 |goto 44.40,80.42
+|only if haveq(75707) or completedq(75707)
+step
+clicknpc Brulee##204615
+extraaction Brulee Treats##409200
+|tip Drop the treat right in front of Brulee.
+|tip It's a blue snail on the race track.
+Use Treats on the Snail Racer Brulee |q 75707/2 |goto 44.80,80.73
+|only if haveq(75707) or completedq(75707)
+step
+clicknpc Brulee##204615
+extraaction Brulee Treats##409200
+|tip Drop the treat right in front of Brulee.
+|tip Continue using "Brulee Treats" as you follow it.
+|tip Only kill attacking enemies if they attack your snail.
+|tip Otherwise, they will attack and slow the competition.
+Help Brulee Win a Race |q 75707/3 |goto 44.54,81.21
+|only if haveq(75707) or completedq(75707)
+step
+talk Grogul##201099
+turnin A Race to the Finish##75707 |goto 44.46,80.40
+step
+Wait for a New Race to Begin |complete not completedq(75708)
+|tip A new race will begin at the next daily reset.
+step
+talk Grogul##201099
+accept A Race to the Finish##75708 |goto 44.46,80.40
+step
+talk Corry##204672
+Ask it _"Is there any other way I can affect the outcome of a race?"_
+Tell it _"I'd like treats to help Roggy win."_
+|tip You will only see this dialogue option when the race is starting.
+Speak with Corry and get Roggy's Treats |q 75708/1 |goto 44.40,80.42
+|only if haveq(75708) or completedq(75708)
+step
+clicknpc Roggy##204618
+extraaction Roggy Treats##409206
+|tip Drop the treat right in front of Roggy.
+|tip It's a blue snail on the race track.
+Use Treats on the Snail Racer Roggy |q 75708/2 |goto 44.80,80.73
+|only if haveq(75708) or completedq(75708)
+step
+clicknpc Roggy##204618
+extraaction Roggy Treats##409206
+|tip Drop the treat right in front of Roggy.
+|tip Continue using "Roggy Treats" as you follow it.
+|tip Only kill attacking enemies if they attack your snail.
+|tip Otherwise, they will attack and slow the competition.
+Help Roggy Win a Race |q 75708/3 |goto 44.54,81.21
+|only if haveq(75708) or completedq(75708)
+step
+talk Grogul##201099
+turnin A Race to the Finish##75708 |goto 44.46,80.40
+]])
+ZGV.BETAEND()

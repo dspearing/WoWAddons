@@ -194,28 +194,35 @@ function LibDBCompartment:OnDataObjectAttributeChanged(_, _, _, _, dataObject)
 end
 
 function LibDBCompartment:OnDropDownButtonClick(dataObject, button, _, _, _, mouseButtonName)
-    if dataObject.OnClick then
-        dataObject.OnClick(button, mouseButtonName);
+    local OnClick = dataObject.OnAddonCompartmentClick or dataObject.OnClick;
+
+    if OnClick then
+        OnClick(button, mouseButtonName);
     end
 end
 
 function LibDBCompartment:OnDropDownButtonEnter(dataObject, button)
-    if dataObject.OnTooltipShow then
+    local OnEnter = dataObject.OnAddonCompartmentEnter or dataObject.OnEnter;
+    local OnTooltipShow = dataObject.OnAddonCompartmentTooltipShow or dataObject.OnTooltipShow;
+
+    if OnTooltipShow then
         self.tooltip:SetOwner(button, "ANCHOR_NONE");
         self.tooltip:ClearAllPoints();
         self.tooltip:SetPoint(self:GetTooltipAnchorPoint(button));
-        dataObject.OnTooltipShow(self.tooltip);
+        OnTooltipShow(self.tooltip);
         self.tooltip:Show();
-    elseif dataObject.OnEnter then
-        dataObject.OnEnter(button);
+    elseif OnEnter then
+        OnEnter(button);
     end
 end
 
 function LibDBCompartment:OnDropDownButtonLeave(dataObject, button)
+    local OnLeave = dataObject.OnAddonCompartmentLeave or dataObject.OnLeave;
+
     self.tooltip:Hide();
 
-    if dataObject.OnLeave then
-        dataObject.OnLeave(button);
+    if OnLeave then
+        OnLeave(button);
     end
 end
 

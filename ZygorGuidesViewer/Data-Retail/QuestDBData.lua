@@ -1720,6 +1720,47 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["DAILIES\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests"] = {
 		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,74838,70067,70780,74837,70074,70646,70209,69929,74501,70649,70652,71140,70176,72058,70638,63520"},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Snail Racing Dailies"] = {
+		{ids="74968", cond_if=[[petlevel(1903) >= 25 and not completedq(74968)]]},
+		{ids="74959", cond_if=[[petlevel(1776) >= 25 and not completedq(74959)]]},
+		{ids="74961", cond_if=[[petlevel(2698) >= 25 and not completedq(74961)]]},
+		{ids="74952", cond_if=[[petlevel(3235) >= 25 and not completedq(74952)]]},
+		{ids="74786", cond_if=[[petlevel(493) >= 25 and not completedq(74786)]]},
+		{ids="74966", cond_if=[[petlevel(568) >= 25 and not completedq(74966)]]},
+		{ids="74967", cond_if=[[petlevel(2653) >= 25 and not completedq(74967)]]},
+		{ids="74965", cond_if=[[petlevel(3222) >= 25 and not completedq(74965)]]},
+		{ids="74960", cond_if=[[petlevel(3219) >= 25 and not completedq(74960)]]},
+		{ids="74963", cond_if=[[petlevel(496) >= 25 and not completedq(74963)]]},
+		{ids="74950", cond_if=[[petlevel(2657) >= 25 and not completedq(74950)]]},
+		{ids="74948", cond_if=[[petlevel(2697) >= 25 and not completedq(74948)]]},
+		{ids="74964", cond_if=[[petlevel(289) >= 25 and not completedq(74964)]]},
+		{ids="74518,74516,74514,74519,74517", cond_if=[[questpossible]]},
+		{ids="74962", cond_if=[[petlevel(743) >= 25 and not completedq(74962)]]},
+		{ids="73707,73708,73709,73710,73711,75725,74787"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"] = {
+		{ids="76016", cond_if=[[not completedq(76016)]]},
+		{ids="75459", cond_if=[[not completedq(75459)]]},
+		{ids="74953", cond_if=[[not completedq(74953)]]},
+		{ids="75234", cond_if=[[not completedq(75234)]]},
+		{ids="75621", cond_if=[[not completedq(75621)]]},
+		{ids="74877", cond_if=[[not completedq(74877)]]},
+		{ids="75517", cond_if=[[not completedq(75517)]]},
+		{ids="75390", cond_if=[[not completedq(75390)]]},
+		{ids="74876", cond_if=[[not completedq(74876)]]},
+		{ids="76015", cond_if=[[not completedq(76015)]]},
+		{ids="76084", cond_if=[[not completedq(76084)]]},
+		{ids="75619", cond_if=[[not completedq(75619)]]},
+		{ids="74878", cond_if=[[(haveq(74953) or completedq(74953)) and not completedq(74878)]]},
+		{ids="75397", cond_if=[[not completedq(75397)]]},
+		{ids="76081", cond_if=[[not completedq(76081)]]},
+		{ids="75996", cond_if=[[not completedq(75996)]]},
+		{ids="76027", cond_if=[[not completedq(76027)]]},
+		{ids="75516", cond_if=[[not completedq(75516)]]},
+		{ids="75393", cond_if=[[not completedq(75393)]]},
+		{ids="75620", cond_if=[[not completedq(75620)]]},
+		{ids="76014", cond_if=[[not completedq(76014)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
 		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,74794,70934,71164,70661,71154,70111,70057,70072,71180"},
 	},
@@ -1727,7 +1768,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,74836,70622,70035,72019,70625,70022,70037,70439"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
-		{ids="73148,73146,73079,73082,73078,73149,73147,75257"},
+		{ids="73148,73146,73084,73079,73082,73078,73149,73147,75257"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
 		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
@@ -1744,9 +1785,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="75285,75343,75063,75271,75750,75326,75612,75612,75126,75624,73221,75476,75455,74879,75030,75062,75471,75661,75344,75346,75200,74292,75834,75353,75664,75835,75121,75120,75119,75123,75122,75124,75364,75660,75358,75296,75611,75274,74945,75478,74988,75451,75336,75334,75269,75322,75267,74985,75461,75340,75705,75454,75350,75061,75292,75151,75663,75067,74990,73698,75450,75155,75345,75222,75064,75349,75128,75370,75441,73408,75071,75058,75276,75156,75494,75360,75680,75298,75060,75366,74991,74352,74892,74989"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
+		{ids="73190,73142,73179,73194", cond_if=[[questactive(73190,73142,73179,73194)]]},
 		{ids="75026", cond_if=[[questactive(75026)]]},
 		{ids="73178", cond_if=[[questactive(73178)]]},
-		{ids="73190,73142,73179", cond_if=[[questactive(73190,73142,73179)]]},
 		{ids="73191,75025", cond_if=[[questactive(73191,75025)]]},
 		{ids="73189,75024", cond_if=[[questactive(73189,75024)]]},
 	},
@@ -4706,6 +4747,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
 		{ids="72591,72592,72593,72595,72662,74946,72594,72663,72599,72600,72601,72602,72603,72604,72605,72606,72607,72609,72611,75258"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Snail Racing"] = {
+		{ids="73707,73708,73709,75233,73710,73711,75725,74787,75662,75706,75707,75708"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
 		{ids="69912,69914,65760,65989,65990,65991,65993,65992,65995,65996,65997,65998,65999,66000,66001,66114,66115,68795,70061,65118,65120,65133,68796,68797,68798,68799,66931,66116,66118,66122,66121,66123,66124,66079,72241,66048,66078,65956,65957,65939,66044,66049,66055,66056,66354,66057,66780,66779,65793,66785,66788,65791,65794,65795"},
@@ -4729,14 +4773,15 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="65686,67033,67035,67036,65688,65689,65702,65709,65852,65751,65752,65854,65855,66699,65864,65868,65867,65866,65871,65872,65873,65870,66239,65869,66026,65838,65846,65844,65845,65848,65847,65849,66210,65850,65911,66027,65886,65887,65943,65944,66647,65958,65977,66007,66009,70041,66015"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
-		{ids="74984,74983,74282", cond_if=[[not completedq(72954)]]},
-		{ids="74984,74983,74282", cond_if=[[not completedq(72955)]]},
 		{ids="74984,74983,74282", cond_if=[[not completedq(72952)]]},
-		{ids="73114", cond_if=[[Alliance]]},
 		{ids="74984,74983,74282", cond_if=[[not completedq(72953)]]},
 		{ids="74883", cond_if=[[Horde]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72954)]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72956)]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72955)]]},
 		{ids="73715", cond_if=[[not completedq(74847)]]},
-		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,72712,73159,72953,74294,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156,72952,72954,74771,74293,72955"},
+		{ids="73114", cond_if=[[Alliance]]},
+		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,72712,73159,72953,74294,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156,72952,72954,74771,74293,72955,72956"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73178", cond_if=[[questactive(73178)]]},
@@ -4749,7 +4794,7 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["LEVELING\\Dragonflight (60-70)\\Zaralek Cavern"] = {
 		{ids="73085", cond_if=[[haveq(73081,73085) or completedq(73081,73085)]]},
 		{ids="73081,73077", cond_if=[[Dracthyr]]},
-		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,75643,76101,72974,75665,72658,75644,74334,72881,75506,75507,75641,72882,75885,72883,72884,72886,72878,72958,74375,72959,72961,72962,75419,72963,72964,72965,72966,72879,72880,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,73037,75440,73036,73046,73040,73038,73047,73041,73042,73039,73043,73044,73045,73707,74877,74857,74858,74859,74860,74861,75462,73708,73709,75233,73710,73711,74787"},
+		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,75643,76101,72974,75665,72658,75644,74334,72881,75506,75507,75641,72882,75885,72883,72884,72886,72878,72958,74375,72959,72961,72962,75419,72963,72964,72965,72966,72879,72880,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,72987,75367,74393,74538,74539,74540,74542,74557,74562,74563,72922,72923,72924,72925,72931,72926,72928,72927,72929,72930,75694,73037,75440,73036,73046,73040,73038,73047,73041,73042,73039,73043,73044,73045,73707,74877,74857,74858,74859,74860,74861,75462,73708,73709,75233,73710,73711,74787"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65286,66513,66577,65101,32675,72240,66589", cond_if=[[Alliance]]},
@@ -5388,9 +5433,6 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Achievement Mounts\\Green Proto-Drake"] = {
 		{ids="12654,12528,12529,12530,12533,12534,12532,12531,12535,12536,12537,12538,12539,12540,12570,12571,12572,12573,12574,12575,12576,12577,12578,12580,12579,12581,12689,12695,12704,12735,12737,12736,12726,12761,12762,12705"},
 	},
-	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph"] = {
-		{ids="9373,9372,10255,10159,10132,10134,10349,10351,9802,9747,9728,9895,9716,9752,9788,10096,9894,9957,9718,9720,9785,9731,9724,9957,9732,29566,29616,29563,29565,29564,29568,29570,29567,29691,29613,29614,29615,9730,9817,9968,9971,9951,9978,9979,10112,9990,9994,10444,9996,10446,10005,10896,10567,10682,10753,10771,10770,10713,10717,10719,10607,10894,10893,10722,10748,10810,10812,10819,10820,10821,10910,10904,10911,10912,10426,10427,10429,11864,11866,11876,11869,11884,11865,11878,11870,11868,11879,11871,11872,11571,11559,11561,11560,11562,11563,11564,11565,11566,11569,11570,11867"},
-	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix"] = {
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind"] = {
@@ -5415,8 +5457,8 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="12818,12843,12844,12827,12836,12819,12828,12826,12820,12829,12830,12831,12832,12821,12846,12822,12823,12824,12841,12905,12906,12907,12908,12921,12969,12970,12971,12972,12942,12968,12925,12851,12856,13063,12900,12983,12989,12996,12997,13061,13062,12886,13064,12915,12953,12833,12922,12956,12924,12966,12967,13009,12981,12975,12976,12977,12985,13011,12987,13006,13050,13051,13010,13057,13005,13035,13047,12862,12854,12863,12870,12864,12865,12855,12866,12867,12858,12860,13415,12872,12871,12885,12930,12873,12874,12875,12876,12877,12986,12878,12879,12880,12973,12869,12931,12937,12957,12964,12965,12978,12979,12980,12984,12988,12991,12993,12998,13007,13424,13423,13422,13425"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Dailies Mounts\\Winterspring Frostsaber"] = {
-		{ids="29040,29035,29038,29037", cond=[[NightElf,Gnome,Draenei]]},
-		{ids="29051,29052,29039,29053", cond=[[Dwarf,Worgen]]},
+		{ids="29051,29052,29039,29053", cond_if=[[Dwarf or Worgen]]},
+		{ids="29040,29035,29038,29037", cond_if=[[NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome]]},
 		{ids="29032,29034"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Faction Mounts\\Elekk Mounts"] = {
@@ -5454,7 +5496,8 @@ ZGV.Quest_Cache_Accept_Alliance = {
 		{ids="9835,10115,10116,9839,9830,9833,9902,9834,9905,9956,9869,9917,9936,9940,10476,9874,9878,9923,9924,9918,9920,9921,9922,10108,9928,9927,9931,9932,9933,9954,9938,9982,9991,9999,10001,10004,9955,10009,10010,10011,10477"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher"] = {
-		{ids="46719,46720,46812,46813", cond=[[DeathKnight]]},
+		{ids="46719", cond=[[DeathKnight]]},
+		{ids="46720,46812,46813", cond_if=[[DeathKnight]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker"] = {
 		{ids="46333,46334", cond=[[DemonHunter]]},
@@ -5485,6 +5528,9 @@ ZGV.Quest_Cache_Accept_Alliance = {
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm"] = {
 		{ids="46208,46207", cond=[[Warrior]]},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber"] = {
+		{ids="45417,45420,45372"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph"] = {
 		{ids="46745"},
@@ -9431,6 +9477,37 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["DAILIES\\Dragonflight (60-70)\\Siege on Dragonbane Keep"] = {
 		{ids="70841,70840"},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Snail Racing Dailies"] = {
+		{ids="74966", cond_if=[[petlevel(568) >= 25 and not completedq(74966)]]},
+		{ids="74518", cond_if=[[haveq(74518) or completedq(74518)]]},
+		{ids="74960", cond_if=[[petlevel(3219) >= 25 and not completedq(74960)]]},
+		{ids="74963", cond_if=[[petlevel(496) >= 25 and not completedq(74963)]]},
+		{ids="74948", cond_if=[[petlevel(2697) >= 25 and not completedq(74948)]]},
+		{ids="74964", cond_if=[[petlevel(289) >= 25 and not completedq(74964)]]},
+		{ids="74786", cond_if=[[petlevel(493) >= 25 and not completedq(74786)]]},
+		{ids="74965", cond_if=[[petlevel(3222) >= 25 and not completedq(74965)]]},
+		{ids="74961", cond_if=[[petlevel(2698) >= 25 and not completedq(74961)]]},
+		{ids="74952", cond_if=[[petlevel(3235) >= 25 and not completedq(74952)]]},
+		{ids="74967", cond_if=[[petlevel(2653) >= 25 and not completedq(74967)]]},
+		{ids="74516", cond_if=[[haveq(74516) or completedq(74516)]]},
+		{ids="74517", cond_if=[[haveq(74517) or completedq(74517)]]},
+		{ids="74519", cond_if=[[haveq(74519) or completedq(74519)]]},
+		{ids="74950", cond_if=[[petlevel(2657) >= 25 and not completedq(74950)]]},
+		{ids="74968", cond_if=[[petlevel(1903) >= 25 and not completedq(74968)]]},
+		{ids="74959", cond_if=[[petlevel(1776) >= 25 and not completedq(74959)]]},
+		{ids="74514", cond_if=[[haveq(74514) or completedq(74514)]]},
+		{ids="74962", cond_if=[[petlevel(743) >= 25 and not completedq(74962)]]},
+		{ids="73707,73708,73709,73710,73711,75725,74787"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"] = {
+		{ids="75769", cond_if=[[readyq(75769)]]},
+		{ids="75771", cond_if=[[readyq(75771)]]},
+		{ids="74878", cond_if=[[haveq(74878)]]},
+		{ids="74877", cond_if=[[haveq(74877)]]},
+		{ids="74953", cond_if=[[(haveq(74953) or completedq(74953)) and not completedq(74878)]]},
+		{ids="75772", cond_if=[[readyq(75772)]]},
+		{ids="74876", cond_if=[[haveq(74876) or completedq(74876)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
 		{ids="66511", cond_if=[[readyq(66511)]]},
 		{ids="71023", cond_if=[[readyq(71023)]]},
@@ -9480,7 +9557,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73189,75024", cond_if=[[haveq(73189,75024) or completedq(73189,75024)]]},
 		{ids="73191,75025", cond_if=[[haveq(73191,75025) or completedq(73191,75025)]]},
-		{ids="73190,73142,73179", cond_if=[[haveq(73190,73142,73179) or completedq(73190,73142,73179)]]},
+		{ids="73190,73142,73179,73194", cond_if=[[haveq(73190,73142,73179,73194) or completedq(73190,73142,73179,73194)]]},
 		{ids="75026", cond_if=[[haveq(75026) or completedq(75026)]]},
 		{ids="73178", cond_if=[[haveq(73178) or completedq(73178)]]},
 	},
@@ -12496,6 +12573,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
 		{ids="72591,72592,72593,72662,72595,74946,72594,72663,72600,72599,72601,72602,72603,72604,72605,72606,72607,72609,72611,75258"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Snail Racing"] = {
+		{ids="73707,73708,73709,73710,73711,75725,74787,75662,75706,75707,75708"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="72293", cond_if=[[Horde and (haveq(72293) or completedq(72293))]]},
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
@@ -12526,7 +12606,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="73114", cond_if=[[haveq(73114) or completedq(73114)]]},
 		{ids="73715", cond_if=[[not completedq(74847)]]},
 		{ids="74883", cond_if=[[haveq(74883) or completedq(74883)]]},
-		{ids="74381,73076,75050,73157,74769,74847,74847,73160,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73156,74359,73089,74355,72952,74771,72954,74293,72955"},
+		{ids="74381,73076,75050,73157,74769,74847,74847,73160,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73156,74359,73089,74355,72952,74771,72954,74293,72955,72956"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73694", cond_if=[[haveq(73694) or completedq(73694)]]},
@@ -12540,7 +12620,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="73081", cond_if=[[haveq(73081,73085) or completedq(73081,73085)]]},
 		{ids="73077", cond_if=[[haveq(73077) or completedq(73077)]]},
 		{ids="73085", cond_if=[[haveq(73081) or completedq(73081)]]},
-		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,76101,75643,72974,75644,72658,75506,75507,72881,72882,75885,72883,72884,72886,74334,72958,74375,72959,72961,72962,75419,72963,72964,72965,72878,72879,72880,72966,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,75665,75641,75440,73036,73037,73046,73038,73040,73047,73041,73042,73044,73043,73039,73045,74877,74857,74858,74859,74860,74861,75462,73707,75233,73708,73709,73710,73711,74787"},
+		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,76101,75643,72974,75644,72658,75506,75507,72881,72882,75885,72883,72884,72886,74334,72958,74375,72959,72961,72962,75419,72963,72964,72965,72878,72879,72880,72966,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,72987,75367,74393,74538,74539,74540,74542,74557,74562,74563,72922,72923,72924,72925,72926,72928,72931,72927,72929,72930,75665,75641,75440,73036,73037,73046,73038,73040,73047,73041,73042,73044,73043,73039,73045,74877,74857,74858,74859,74860,74861,75462,73707,75233,73708,73709,73710,73711,74787,75694"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65100,65286,66513,66577,65101,32675,66589,72240", cond_if=[[Alliance]]},
@@ -13195,9 +13275,6 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="12762", cond_if=[[haveq(12762)]]},
 		{ids="12528,12529,12530,12533,12534,12532,12531,12535,12536,12537,12538,12539,12540,12570,12571,12572,12654,12573,12574,12575,12576,12577,12578,12580,12579,12581,12695,12704"},
 	},
-	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cenarion War Hippogryph"] = {
-		{ids="9373,9372,10255,10159,10132,10134,10349,10351,9802,9895,9747,9752,9894,9788,10096,9728,9716,9718,9785,9720,9731,9724,9732,29566,29564,29563,29568,29570,29567,29691,29616,29615,29613,29614,9730,9817,9957,9951,9971,9968,9978,9979,10112,9990,9994,10444,9996,10446,10006,10896,10682,10567,10717,10713,10719,10894,10893,10722,10748,10607,10810,10812,10753,10770,10771,10819,10820,10821,10910,10904,10911,10912,10426,10427,10429,11866,11876,11869,11884,11865,11878,11879,11870,11871,11872,11868,11571,11559,11559,11561,11560,11562,11563,11564,11565,11569,11566,11570"},
-	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix"] = {
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Drake of the West Wind"] = {
@@ -13219,14 +13296,14 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="12853,12818,12827,12836,12819,12826,12831,12829,12830,12820,12828,12832,12843,12844,12821,12823,12846,12841,12905,12906,12907,12908,12921,12969,12970,12971,12972,12851,12856,13063,12900,12983,12989,12996,12997,13061,13062,12886,13064,12824,12822,12833,12925,12942,12968,12953,12922,12956,12915,12966,12967,12924,12975,12976,12981,12977,12985,12987,13009,13050,13051,13006,13011,13010,13057,13005,13035,13047,12862,12863,12854,12870,12864,12865,12855,12858,12860,13415,12872,12885,12871,12866,12867,12873,12874,12875,12877,12986,12878,12879,12880,12973,12876,12869,12930,12931,12937,12957,12964,12965,12978,12979,12980,12984,12988,12991,12993,12998,13007,13424,13423,13422,13425"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Dailies Mounts\\Winterspring Frostsaber"] = {
-		{ids="29051", cond_if=[[haveq(29051)]]},
-		{ids="29040", cond_if=[[haveq(29040)]]},
-		{ids="29035", cond_if=[[haveq(29035)]]},
-		{ids="29052", cond_if=[[haveq(29052)]]},
-		{ids="29039", cond_if=[[haveq(29039)]]},
-		{ids="29037", cond_if=[[haveq(29037)]]},
-		{ids="29038", cond_if=[[haveq(29038)]]},
-		{ids="29053", cond_if=[[haveq(29053)]]},
+		{ids="29053", cond_if=[[haveq(29053) and Dwarf or Worgen]]},
+		{ids="29037", cond_if=[[haveq(29037) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome]]},
+		{ids="29038", cond_if=[[haveq(29038) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome]]},
+		{ids="29035", cond_if=[[haveq(29035) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome]]},
+		{ids="29039", cond_if=[[haveq(29039) and Dwarf or Worgen]]},
+		{ids="29040", cond_if=[[haveq(29040) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome]]},
+		{ids="29052", cond_if=[[haveq(29052) and Dwarf or Worgen]]},
+		{ids="29051", cond_if=[[haveq(29051) and Dwarf or Worgen]]},
 		{ids="29032,29034"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Faction Mounts\\Elekk Mounts"] = {
@@ -13264,7 +13341,7 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 		{ids="10116,9835,9835,10115,9830,9833,9902,9834,9905,9869,9878,9874,9956,9923,9917,9936,9940,10476,9918,9920,9921,9922,9924,10108,9928,9927,9931,9932,9933,9982,9991,9999,10001,9954,9938,9955,10004,10009,10010,10011"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher"] = {
-		{ids="46719,46720,46812,46813", cond=[[DeathKnight]]},
+		{ids="46719,46720,46812,46813", cond_if=[[DeathKnight]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker"] = {
 		{ids="46333,46334", cond=[[DemonHunter]]},
@@ -13295,6 +13372,9 @@ ZGV.Quest_Cache_Turnin_Alliance = {
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm"] = {
 		{ids="46208,46207", cond=[[Warrior]]},
+	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber"] = {
+		{ids="45417,45420,45372"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph"] = {
 		{ids="46745"},
@@ -16257,6 +16337,47 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["DAILIES\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests"] = {
 		{ids="70659,70079,70623,70422,70420,70423,70424,70421,70712,70419,71206,69994,69991,69990,69993,69995,69987,72028,69988,70146,70149,70634,70655,70549,74838,70067,70780,74837,70074,70646,70209,69929,74501,70649,70652,71140,70176,72058,70638,63520"},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Snail Racing Dailies"] = {
+		{ids="74968", cond_if=[[petlevel(1903) >= 25 and not completedq(74968)]]},
+		{ids="74959", cond_if=[[petlevel(1776) >= 25 and not completedq(74959)]]},
+		{ids="74961", cond_if=[[petlevel(2698) >= 25 and not completedq(74961)]]},
+		{ids="74952", cond_if=[[petlevel(3235) >= 25 and not completedq(74952)]]},
+		{ids="74786", cond_if=[[petlevel(493) >= 25 and not completedq(74786)]]},
+		{ids="74966", cond_if=[[petlevel(568) >= 25 and not completedq(74966)]]},
+		{ids="74967", cond_if=[[petlevel(2653) >= 25 and not completedq(74967)]]},
+		{ids="74965", cond_if=[[petlevel(3222) >= 25 and not completedq(74965)]]},
+		{ids="74960", cond_if=[[petlevel(3219) >= 25 and not completedq(74960)]]},
+		{ids="74963", cond_if=[[petlevel(496) >= 25 and not completedq(74963)]]},
+		{ids="74950", cond_if=[[petlevel(2657) >= 25 and not completedq(74950)]]},
+		{ids="74948", cond_if=[[petlevel(2697) >= 25 and not completedq(74948)]]},
+		{ids="74964", cond_if=[[petlevel(289) >= 25 and not completedq(74964)]]},
+		{ids="74518,74516,74514,74519,74517", cond_if=[[questpossible]]},
+		{ids="74962", cond_if=[[petlevel(743) >= 25 and not completedq(74962)]]},
+		{ids="73707,73708,73709,73710,73711,75725,74787"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"] = {
+		{ids="76016", cond_if=[[not completedq(76016)]]},
+		{ids="75459", cond_if=[[not completedq(75459)]]},
+		{ids="74953", cond_if=[[not completedq(74953)]]},
+		{ids="75234", cond_if=[[not completedq(75234)]]},
+		{ids="75621", cond_if=[[not completedq(75621)]]},
+		{ids="74877", cond_if=[[not completedq(74877)]]},
+		{ids="75517", cond_if=[[not completedq(75517)]]},
+		{ids="75390", cond_if=[[not completedq(75390)]]},
+		{ids="74876", cond_if=[[not completedq(74876)]]},
+		{ids="76015", cond_if=[[not completedq(76015)]]},
+		{ids="76084", cond_if=[[not completedq(76084)]]},
+		{ids="75619", cond_if=[[not completedq(75619)]]},
+		{ids="74878", cond_if=[[(haveq(74953) or completedq(74953)) and not completedq(74878)]]},
+		{ids="75397", cond_if=[[not completedq(75397)]]},
+		{ids="76081", cond_if=[[not completedq(76081)]]},
+		{ids="75996", cond_if=[[not completedq(75996)]]},
+		{ids="76027", cond_if=[[not completedq(76027)]]},
+		{ids="75516", cond_if=[[not completedq(75516)]]},
+		{ids="75393", cond_if=[[not completedq(75393)]]},
+		{ids="75620", cond_if=[[not completedq(75620)]]},
+		{ids="76014", cond_if=[[not completedq(76014)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
 		{ids="70160,70654,70442,70369,71225,70073,70699,70110,71160,70434,70433,70436,70431,70435,70432,69949,70224,72029,71181,70602,71205,69928,70656,71166,71156,70066,74794,70934,71164,70661,71154,70111,70057,70072,71180"},
 	},
@@ -16264,7 +16385,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="70658,70629,71212,70639,69927,70662,69942,70529,70016,70720,70100,70787,70631,70068,70653,70440,70015,70430,70426,70425,70429,70428,70427,70612,72029,70152,72022,70064,69941,70112,70011,70071,71145,70047,71202,70010,74836,70622,70035,72019,70625,70022,70037,70439"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Forbidden Reach World Quests"] = {
-		{ids="73148,73146,73079,73082,73078,73149,73147,75257"},
+		{ids="73148,73146,73084,73079,73082,73078,73149,73147,75257"},
 	},
 	["DAILIES\\Dragonflight (60-70)\\The Obsidian Citadel Weekly Quests"] = {
 		{ids="66103,69918,66633,69926,66856,65842,72448,66445,72447,66321,67051,67099,67142,66449", cond_if=[[completedq(66802)]]},
@@ -16281,9 +16402,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="75285,75343,75063,75271,75750,75326,75612,75612,75126,75624,73221,75476,75455,74879,75030,75062,75471,75661,75344,75346,75200,74292,75834,75353,75664,75835,75121,75120,75119,75123,75122,75124,75364,75660,75358,75296,75611,75274,74945,75478,74988,75451,75336,75334,75269,75322,75267,74985,75461,75340,75705,75454,75350,75061,75292,75151,75663,75067,74990,73698,75450,75155,75345,75222,75064,75349,75128,75370,75441,73408,75071,75058,75276,75156,75494,75360,75680,75298,75060,75366,74991,74352,74892,74989"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
+		{ids="73190,73142,73179,73194", cond_if=[[questactive(73190,73142,73179,73194)]]},
 		{ids="75026", cond_if=[[questactive(75026)]]},
 		{ids="73178", cond_if=[[questactive(73178)]]},
-		{ids="73190,73142,73179", cond_if=[[questactive(73190,73142,73179)]]},
 		{ids="73191,75025", cond_if=[[questactive(73191,75025)]]},
 		{ids="73189,75024", cond_if=[[questactive(73189,75024)]]},
 	},
@@ -18583,6 +18704,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
 		{ids="72591,72592,72593,72595,72662,74946,72594,72663,72599,72600,72601,72602,72603,72604,72605,72606,72607,72609,72611,75258"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Snail Racing"] = {
+		{ids="73707,73708,73709,75233,73710,73711,75725,74787,75662,75706,75707,75708"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
 		{ids="69912,69914,65760,65989,65990,65991,65993,65992,65995,65996,65997,65998,65999,66000,66001,66114,66115,68795,70061,65118,65120,65133,68796,68797,68798,68799,66931,66116,66118,66122,66121,66123,66124,66079,72241,66048,66078,65956,65957,65939,66044,66049,66055,66056,66354,66057,66780,66779,65793,66785,66788,65791,65794,65795"},
@@ -18606,14 +18730,15 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="65686,67033,67035,67036,65688,65689,65702,65709,65852,65751,65752,65854,65855,66699,65864,65868,65867,65866,65871,65872,65873,65870,66239,65869,66026,65838,65846,65844,65845,65848,65847,65849,66210,65850,65911,66027,65886,65887,65943,65944,66647,65958,65977,66007,66009,70041,66015"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach"] = {
-		{ids="74984,74983,74282", cond_if=[[not completedq(72954)]]},
-		{ids="74984,74983,74282", cond_if=[[not completedq(72955)]]},
 		{ids="74984,74983,74282", cond_if=[[not completedq(72952)]]},
-		{ids="73114", cond_if=[[Alliance]]},
 		{ids="74984,74983,74282", cond_if=[[not completedq(72953)]]},
 		{ids="74883", cond_if=[[Horde]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72954)]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72956)]]},
+		{ids="74984,74983,74282", cond_if=[[not completedq(72955)]]},
 		{ids="73715", cond_if=[[not completedq(74847)]]},
-		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,72712,73159,72953,74294,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156,72952,72954,74771,74293,72955"},
+		{ids="73114", cond_if=[[Alliance]]},
+		{ids="74381,73076,73157,74769,75050,73160,74847,74359,74379,72712,73159,72953,74294,73155,73089,74355,72713,72545,73094,72715,72714,73137,72717,73156,72952,72954,74771,74293,72955,72956"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73178", cond_if=[[questactive(73178)]]},
@@ -18626,7 +18751,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["LEVELING\\Dragonflight (60-70)\\Zaralek Cavern"] = {
 		{ids="73085", cond_if=[[haveq(73081,73085) or completedq(73081,73085)]]},
 		{ids="73081,73077", cond_if=[[Dracthyr]]},
-		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,75643,76101,72974,75665,72658,75644,74334,72881,75506,75507,75641,72882,75885,72883,72884,72886,72878,72958,74375,72959,72961,72962,75419,72963,72964,72965,72966,72879,72880,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,73037,75440,73036,73046,73040,73038,73047,73041,73042,73039,73043,73044,73045,73707,74877,74857,74858,74859,74860,74861,75462,73708,73709,75233,73710,73711,74787"},
+		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,75643,76101,72974,75665,72658,75644,74334,72881,75506,75507,75641,72882,75885,72883,72884,72886,72878,72958,74375,72959,72961,72962,75419,72963,72964,72965,72966,72879,72880,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,72987,75367,74393,74538,74539,74540,74542,74557,74562,74563,72922,72923,72924,72925,72931,72926,72928,72927,72929,72930,75694,73037,75440,73036,73046,73040,73038,73047,73041,73042,73039,73043,73044,73045,73707,74877,74857,74858,74859,74860,74861,75462,73708,73709,75233,73710,73711,74787"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65286,66513,66577,65101,32675,72240,66589", cond_if=[[Alliance]]},
@@ -20548,7 +20673,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="9400,9401,9405,9410,9406,9854,9789,9857,9861,9855,9850,9858,9944,9888,10479,9935,9939,9870,9863,9864,9867,9913,9862,9800,9815,9818,9819,9865,9945,9948,9866,9900,9925,9882,9914,10109,9889,9890,9891,9906,9910,9821,9804,9805,9849,9810,9907,9916,10107,9928,9927,9931,9932,9934,9937,9983,9991,9999,10001,10004,9946,10009,10010,10011,10478"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher"] = {
-		{ids="46719,46720,46812,46813", cond=[[DeathKnight]]},
+		{ids="46719,46720,46812,46813", cond_if=[[DeathKnight]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker"] = {
 		{ids="46333,46334", cond=[[DemonHunter]]},
@@ -20580,6 +20705,9 @@ ZGV.Quest_Cache_Accept_Horde = {
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm"] = {
 		{ids="46208,46207", cond=[[Warrior]]},
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber"] = {
+		{ids="45417,45420,45372"},
+	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph"] = {
 		{ids="46745"},
 	},
@@ -20593,7 +20721,7 @@ ZGV.Quest_Cache_Accept_Horde = {
 		{ids="44973,44975,44976,44977,44978,44979,44980,44981,44982,44983,44984,44985,44986,44987,44988"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Predatory Bloodgazer"] = {
-		{ids="44990,44993,44996,44998,45000,45002,45004,45006,45008,45010,45012,45016,45018,45020"},
+		{ids="44990,44993,44996,44998,45000,45002,45004,45006,45008,45010,45012,45014,45016,45018,45020"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter"] = {
 		{ids="44948,44971,44950,44953,44954,44956,44957,44958,44959,44960,44961,44962,44967,44968,44969"},
@@ -23347,6 +23475,37 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["DAILIES\\Dragonflight (60-70)\\Siege on Dragonbane Keep"] = {
 		{ids="70841,70840"},
 	},
+	["DAILIES\\Dragonflight (60-70)\\Snail Racing Dailies"] = {
+		{ids="74966", cond_if=[[petlevel(568) >= 25 and not completedq(74966)]]},
+		{ids="74518", cond_if=[[haveq(74518) or completedq(74518)]]},
+		{ids="74960", cond_if=[[petlevel(3219) >= 25 and not completedq(74960)]]},
+		{ids="74963", cond_if=[[petlevel(496) >= 25 and not completedq(74963)]]},
+		{ids="74948", cond_if=[[petlevel(2697) >= 25 and not completedq(74948)]]},
+		{ids="74964", cond_if=[[petlevel(289) >= 25 and not completedq(74964)]]},
+		{ids="74786", cond_if=[[petlevel(493) >= 25 and not completedq(74786)]]},
+		{ids="74965", cond_if=[[petlevel(3222) >= 25 and not completedq(74965)]]},
+		{ids="74961", cond_if=[[petlevel(2698) >= 25 and not completedq(74961)]]},
+		{ids="74952", cond_if=[[petlevel(3235) >= 25 and not completedq(74952)]]},
+		{ids="74967", cond_if=[[petlevel(2653) >= 25 and not completedq(74967)]]},
+		{ids="74516", cond_if=[[haveq(74516) or completedq(74516)]]},
+		{ids="74517", cond_if=[[haveq(74517) or completedq(74517)]]},
+		{ids="74519", cond_if=[[haveq(74519) or completedq(74519)]]},
+		{ids="74950", cond_if=[[petlevel(2657) >= 25 and not completedq(74950)]]},
+		{ids="74968", cond_if=[[petlevel(1903) >= 25 and not completedq(74968)]]},
+		{ids="74959", cond_if=[[petlevel(1776) >= 25 and not completedq(74959)]]},
+		{ids="74514", cond_if=[[haveq(74514) or completedq(74514)]]},
+		{ids="74962", cond_if=[[petlevel(743) >= 25 and not completedq(74962)]]},
+		{ids="73707,73708,73709,73710,73711,75725,74787"},
+	},
+	["DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"] = {
+		{ids="75769", cond_if=[[readyq(75769)]]},
+		{ids="75771", cond_if=[[readyq(75771)]]},
+		{ids="74878", cond_if=[[haveq(74878)]]},
+		{ids="74877", cond_if=[[haveq(74877)]]},
+		{ids="74953", cond_if=[[(haveq(74953) or completedq(74953)) and not completedq(74878)]]},
+		{ids="75772", cond_if=[[readyq(75772)]]},
+		{ids="74876", cond_if=[[haveq(74876) or completedq(74876)]]},
+	},
 	["DAILIES\\Dragonflight (60-70)\\Thaldraszus World Quests"] = {
 		{ids="66511", cond_if=[[readyq(66511)]]},
 		{ids="71023", cond_if=[[readyq(71023)]]},
@@ -23396,7 +23555,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73189,75024", cond_if=[[haveq(73189,75024) or completedq(73189,75024)]]},
 		{ids="73191,75025", cond_if=[[haveq(73191,75025) or completedq(73191,75025)]]},
-		{ids="73190,73142,73179", cond_if=[[haveq(73190,73142,73179) or completedq(73190,73142,73179)]]},
+		{ids="73190,73142,73179,73194", cond_if=[[haveq(73190,73142,73179,73194) or completedq(73190,73142,73179,73194)]]},
 		{ids="75026", cond_if=[[haveq(75026) or completedq(75026)]]},
 		{ids="73178", cond_if=[[haveq(73178) or completedq(73178)]]},
 	},
@@ -26251,6 +26410,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["LEVELING\\Dragonflight (60-70)\\Old Hatreds Questline"] = {
 		{ids="72591,72592,72593,72662,72595,74946,72594,72663,72600,72599,72601,72602,72603,72604,72605,72606,72607,72609,72611,75258"},
 	},
+	["LEVELING\\Dragonflight (60-70)\\Snail Racing"] = {
+		{ids="73707,73708,73709,73710,73711,75725,74787,75662,75706,75707,75708"},
+	},
 	["LEVELING\\Dragonflight (60-70)\\Story Campaigns\\Intro & The Waking Shores (Story Only)"] = {
 		{ids="72293", cond_if=[[Horde and (haveq(72293) or completedq(72293))]]},
 		{ids="65436,66577", cond_if=[[Alliance and not (haveq(66589) or completedq(66589))]]},
@@ -26281,7 +26443,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="73114", cond_if=[[haveq(73114) or completedq(73114)]]},
 		{ids="73715", cond_if=[[not completedq(74847)]]},
 		{ids="74883", cond_if=[[haveq(74883) or completedq(74883)]]},
-		{ids="74381,73076,75050,73157,74769,74847,74847,73160,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73156,74359,73089,74355,72952,74771,72954,74293,72955"},
+		{ids="74381,73076,75050,73157,74769,74847,74847,73160,73159,74294,72953,73155,72712,72713,72545,73094,72715,72714,73137,72717,74379,73156,74359,73089,74355,72952,74771,72954,74293,72955,72956"},
 	},
 	["LEVELING\\Dragonflight (60-70)\\The Forbidden Reach Side Quests"] = {
 		{ids="73694", cond_if=[[haveq(73694) or completedq(73694)]]},
@@ -26295,7 +26457,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="73081", cond_if=[[haveq(73081,73085) or completedq(73081,73085)]]},
 		{ids="73077", cond_if=[[haveq(73077) or completedq(73077)]]},
 		{ids="73085", cond_if=[[haveq(73081) or completedq(73081)]]},
-		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,76101,75643,72974,75644,72658,75506,75507,72881,72882,75885,72883,72884,72886,74334,72958,74375,72959,72961,72962,75419,72963,72964,72965,72878,72879,72880,72966,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,75665,75641,75440,73036,73037,73046,73038,73040,73047,73041,73042,73044,73043,73039,73045,74877,74857,74858,74859,74860,74861,75462,73707,75233,73708,73709,73710,73711,74787"},
+		{ids="72975,72976,72977,72978,75985,72981,72873,72872,72970,72980,72874,72979,72973,76101,75643,72974,75644,72658,75506,75507,72881,72882,75885,72883,72884,72886,74334,72958,74375,72959,72961,72962,75419,72963,72964,72965,72878,72879,72880,72966,72908,72909,72910,72911,72912,72913,72914,72916,72915,74494,72917,72918,72919,72920,75145,72987,75367,74393,74538,74539,74540,74542,74557,74562,74563,72922,72923,72924,72925,72926,72928,72931,72927,72929,72930,75665,75641,75440,73036,73037,73046,73038,73040,73047,73041,73042,73044,73043,73039,73045,74877,74857,74858,74859,74860,74861,75462,73707,75233,73708,73709,73710,73711,74787,75694"},
 	},
 	["LEVELING\\Starter Guides\\Dracthyr Starter (58-60)"] = {
 		{ids="65100,65286,66513,66577,65101,32675,66589,72240", cond_if=[[Alliance]]},
@@ -28308,7 +28470,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="9400,9401,9405,9410,9406,9854,9789,9857,9797,9861,9870,9818,9864,9944,9945,9948,9865,9913,9914,9900,9925,9882,10109,9888,9889,9890,9891,10479,9939,9863,9866,9867,9819,9800,9815,9862,9804,9821,9858,9850,9855,9805,9906,9910,9916,9907,10107,9928,9927,9935,9849,9810,9931,9932,9934,9983,9991,9999,10001,9946,9937,10004,10009,10010,10011"},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Death Knight\\Deathlord's Vilebrood Vanquisher"] = {
-		{ids="46719,46720,46812,46813", cond=[[DeathKnight]]},
+		{ids="46719,46720,46812,46813", cond_if=[[DeathKnight]]},
 	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker"] = {
 		{ids="46333,46334", cond=[[DemonHunter]]},
@@ -28340,6 +28502,9 @@ ZGV.Quest_Cache_Turnin_Horde = {
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Class Mounts\\Warrior\\Battlelord's Bloodthirsty War Wyrm"] = {
 		{ids="46208,46207", cond=[[Warrior]]},
 	},
+	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Arcanist's Manasaber"] = {
+		{ids="45417,45420,45372"},
+	},
 	["PETSMOUNTS\\Mounts\\Flying Mounts\\Reputation Mounts\\Cloudwing Hippogryph"] = {
 		{ids="46745"},
 	},
@@ -28353,7 +28518,7 @@ ZGV.Quest_Cache_Turnin_Horde = {
 		{ids="44973,44975,44976,44977,44978,44979,44980,44981,44982,44983,44984,44985,44986,44987,44988"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Predatory Bloodgazer"] = {
-		{ids="44990,44993,44996,44998,45000,45002,45004,45006,45008,45010,45012,45016,45018,45020"},
+		{ids="44990,44993,44996,44998,45000,45002,45004,45006,45008,45010,45012,45014,45016,45018,45020"},
 	},
 	["PETSMOUNTS\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter"] = {
 		{ids="44948,44971,44950,44953,44954,44956,44957,44958,44959,44960,44961,44962,44967,44968,44969"},

@@ -138,13 +138,7 @@ Click Here to Find Another Warbringer |confirm
 step
 kill Zandalari Warbringer##69769
 |tip The color of the Warbringer's mount is the color of the mount that will drop.
-collect Reins of the Jade Primordial Direhorn##94231 |goto Krasarang Wilds/0 38.81,67.38 |complete itemcount(94231) == 1 or hasmount(138426) |next "Learn_Mount"
-|tip This has about a 4% drop rate.
-Click Here to Find Another Warbringer |confirm
-step
-kill Zandalari Warbringer##69769
-|tip The color of the Warbringer's mount is the color of the mount that will drop.
-collect Reins of the Jade Primordial Direhorn##94231 |goto Dread Wastes/0 47.50,61.50 |complete itemcount(94231) == 1 or hasmount(138426) |next "Learn_Mount"
+collect Reins of the Jade Primordial Direhorn##94231 |goto Kun-Lai Summit/0 75.00,67.58 |complete itemcount(94231) == 1 or hasmount(138426) |next "Learn_Mount"
 |tip This has about a 4% drop rate.
 Click Here to Find Another Warbringer |confirm
 step
@@ -156,16 +150,13 @@ Click Here to Find Another Warbringer |confirm
 step
 kill Zandalari Warbringer##69769
 |tip The color of the Warbringer's mount is the color of the mount that will drop.
-collect Reins of the Jade Primordial Direhorn##94231 |goto Kun-Lai Summit/0 75.00,67.58 |complete itemcount(94231) == 1 or hasmount(138426) |next "Learn_Mount"
+collect Reins of the Jade Primordial Direhorn##94231 |goto Dread Wastes/0 47.50,61.50 |complete itemcount(94231) == 1 or hasmount(138426) |next "Learn_Mount"
 |tip This has about a 4% drop rate.
 Click Here to Find Another Warbringer |confirm |next "Start_of_Guide"
 step
 label "Learn_Mount"
 use the Reins of the Jade Primordial Direhorn##94231
 Learn the "Jade Primordial Direhorn" Mount |learnmount Jade Primordial Direhorn##138426
-step
-_Congratulations!_
-You Collected the "Jade Primordial Direhorn" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Red Primal Raptor",{
 keywords={"green","primal","raptor","ground","mount"},

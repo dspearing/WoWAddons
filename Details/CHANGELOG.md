@@ -1,9 +1,7 @@
 # Details! Damage Meter
 
-## [Details.DF.Wrath.10.1.0.10986.151](https://github.com/Tercioo/Details-Damage-Meter/tree/Details.DF.Wrath.10.1.0.10986.151) (2023-05-05)
-[Full Changelog](https://github.com/Tercioo/Details-Damage-Meter/compare/Details.DF.Wrath.10.1.0.10985.151...Details.DF.Wrath.10.1.0.10986.151) 
+## [Details.20230511.11004.151](https://github.com/Tercioo/Details-Damage-Meter/tree/Details.20230511.11004.151) (2023-05-11)
+[Full Changelog](https://github.com/Tercioo/Details-Damage-Meter/compare/Details.20230509.11001.151...Details.20230511.11004.151) 
 
-- Version Up, Fixed a bug with Wrath  
-- Merge pull request #517 from Flamanis/SpellTableMixin  
-    Add the SpellTable and its resulting Mixin to Wrath TOC  
-- Add the SpellTable and its resulting Mixin to Wrath TOC  
+- Fixed reported bugs on the new breakdown window  
+- Fixed an issue where it throws an error when opening the Damage Taken breakdown  

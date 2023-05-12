@@ -336,7 +336,7 @@ mounts={334398},
 patch='90001',
 mounttype='Ground',
 model={94331},
-description="\nThis mount is purchased for 2,000 Reservoir Anima from Adjutant Galos after reaching Renown level 23 with the Kyrian covenant.",
+description="\nThis mount is purchased for 5000 Reservoir Anima from Adjutant Galos after reaching Renown level 23 with the Kyrian covenant.",
 },[[
 step
 Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(334398)
@@ -344,7 +344,7 @@ Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(334398)
 |tip They are repeatable quests in your covenant base.
 |tip Use the "Kyrian Daily Quests" guide to accomplish this.
 step
-Collect 2,000 Reservoir Anima |complete curcount(1813) >= 2000 or hasmount(334398)
+Collect 5000 Reservoir Anima |complete curcount(1813) >= 2000 or hasmount(334398)
 |tip These are gained by completing world quests and from defeating Rare enemies.
 step
 talk Adjutant Galos##174937
@@ -353,9 +353,6 @@ buy 1 Phalynx of Purity##180764 |goto Elysian Hold/1 63.64,30.38 |or
 step
 use the Phalynx of Purity##180764
 Learn the "Phalynx of Purity" Mount |learnmount Phalynx of Purity##334398
-step
-_Congratulations!_
-You Collected the "Phalynx of Purity" Mount.
 ]])
 ZGV.BETAEND()
 ZGV.DevEnd()
@@ -1597,8 +1594,11 @@ model={98498},
 description="\nThis mount is dropped by the rare spawn, Humon'gozz, in Ardenweald.",
 },[[
 step
+Reach Level 60 |ding 60
+|tip You can receive the mount item before 60, but you must be level 60 to learn this mount.
+step
 Kill enemies around this area
-collect Unusually Large Mushroom##175247 |goto Ardenweald/0 30.83,37.86 |or
+collect Unusually Large Mushroom##175247 |goto Ardenweald/0 45.37,74.17 |or
 |tip This has about a 3-5% drop rate.
 |tip This item only lasts for 20 minutes before disappearing.
 '|complete hasmount(339632) |or
@@ -1611,14 +1611,8 @@ kill Humon'gozz##164112
 collect Arboreal Gulper##182650 |goto 32.43,30.27 |or
 '|complete hasmount(339632) |or
 step
-Reach Level 60 |ding 60
-|tip You must be level 60 to learn this mount.
-step
 use the Arboreal Gulper##182650
 Learn the "Arboreal Gulper" Mount |learnmount Arboreal Gulper##339632
-step
-_Congratulations!_
-You Collected the "Arboreal Gulper" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Battle-Bound Warhound",{
 author="support@zygorguides.com",

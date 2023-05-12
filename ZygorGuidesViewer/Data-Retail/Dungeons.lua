@@ -17,7 +17,13 @@ Dungeons.ExpansionsLimits = {
 	[9] = 70, -- dragonflight
 }
 
-Dungeons.Phases = {}
+Dungeons.Phases = {
+	["aberrus1"] = true,
+	["aberrus2"] = false,
+	["aberrus3"] = false,
+	["aberrus4"] = false,
+
+}
 
 -- Timewalks and legion mythics do not have any lfg entry, so we need to hardcode basic data for them
 Dungeons.hardcoded_dungeons = {
@@ -129,6 +135,11 @@ Dungeons.max_levels = {
 	[2292]=60, -- Sepulcher of the First Ones (LFR)
 	[2293]=60, -- Sepulcher of the First Ones (LFR)
 	[2294]=60, -- Sepulcher of the First Ones (LFR)
+	[2405]=70, -- Aberrus, the Shadowed Crucible (Mythic)
+	[2399]=70, -- Aberrus, the Shadowed Crucible (LFR)
+	[2400]=70, -- Aberrus, the Shadowed Crucible (LFR)
+	[2401]=70, -- Aberrus, the Shadowed Crucible (LFR)
+	[2402]=70, -- Aberrus, the Shadowed Crucible (LFR)
 }
 
 Dungeons.add_flags = {
@@ -136,4 +147,11 @@ Dungeons.add_flags = {
 	["e_900"] = { attunement_queston=46244 }, -- Cathedral of Eternal Night M
 	[1115] = { attunement_achieve=11547 }, -- Return to Karazhan HC
 	[1488] = { attunement_queston=46244 }, -- Cathedral of Eternal Night HC
+
+	[2399] = { phase="aberrus1" },
+	[2400] = { phase="aberrus2" },
+	[2401] = { phase="aberrus3" },
+	[2402] = { phase="aberrus4" },
+
+
 }

@@ -3,7 +3,7 @@ local addonName, addon = ...;
 local Events = addon.import('Core/Events');
 local Utils = addon.import('Core/Utils');
 
-local VERSION_COUNTER = 4;
+local VERSION_COUNTER = 5;
 
 local module = addon.export('Logic/Options', {});
 local options = {};
@@ -32,7 +32,7 @@ local function migrateOptions ()
   if (options.majorDirection ~= nil and options.minorDirection ~= nil) then
     options.direction = options.majorDirection .. options.minorDirection;
     options.majorDirection = nil;
-    options.minorDirection = nil
+    options.minorDirection = nil;
   end
 end
 
@@ -56,6 +56,7 @@ local function readValues (loadedValues)
     autohide = 0,
     buttonsPerRow = 5,
     scale = 1,
+    hidecompartment = false,
     buttonScale = 1,
     version = 0,
   };
@@ -73,8 +74,8 @@ local function readValues (loadedValues)
 end
 
 local function printVersionMessage ()
-  Utils.printAddonMessage('can now automatically hide buttons after a set time!\n',
-      'Type "/mbb set autohide <value>" to set the time in seconds after which the buttons should be automatically hidden.');
+  Utils.printAddonMessage('can now hide the addon compartment button!\n',
+      'Type "/mbb set hidecompartment <true/false>" to set if the button shall be hidden.');
 end
 
 local function checkVersion ()
@@ -99,6 +100,10 @@ Events.registerEvent('ADDON_LOADED', function (loadedAddon)
 
   if (not Layout.applyLayout(options.direction)) then
     Layout.applyDefaultLayout();
+  end
+
+  if (Utils.isRetail() and options.hidecompartment == true) then
+    addon.import('Features/Enhancements').hideCompartmentFrame();
   end
 
   checkVersion();

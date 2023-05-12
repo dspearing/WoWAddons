@@ -652,6 +652,29 @@ clicknpc Vortex##200685
 Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-73084
+accept Dragonrider Racing - Forbidden Reach Rush##73084 |goto The Forbidden Reach/5 49.42,60.06
+|tip You will accept this quest automatically.
+step
+talk Bronze Timekeeper##200417
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398326 |goto 49.42,60.06 |q 73084
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 49.42,59.88 |q 73084
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73084/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-73079
 accept Dragonrider Racing - Morqut Ascent##73079 |goto The Forbidden Reach/5 31.32,65.75
 |tip You will accept this quest automatically.
@@ -745,7 +768,6 @@ step
 label quest-75257
 accept The War Creche##75257 |goto The War Creche/0 61.04,45.79
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 |tip Inside the building.
@@ -2687,23 +2709,30 @@ kill Alcanon##203515 |q 75285/1 |goto 56.14,73.91
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75343
-accept All That Glitter##75343 |goto Zaralek Cavern/0 56.66,66.04
+accept All That Glitter##75343 |goto Zaralek Cavern/0 56.65,71.41
 |tip You will accept this quest automatically.
-|polish
 step
-Collect #12# Glitter |q 75343/1 |goto 56.66,66.04
+Collect #12# Glitter |q 75343/1 |goto 56.65,71.41
 |tip Fly through glittering yellow orbs in the air around this area.
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75063
-accept Ambergrease##75063 |goto Zaralek Cavern/0 45.26,75.05
+accept Ambergrease##75063 |goto Zaralek Cavern/0 44.27,76.99
 |tip You will accept this quest automatically.
-|polish
 step
-Choose a Snail |q 75063/1 |goto 45.26,75.05
+Choose a Snail |q 75063/1 |goto 44.27,76.99
 |tip Click one of the three snails.
+stickystart "Feed_the_Snail"
 step
+click Ambergrease+
+|tip They look like small piles of dirt on the ground around this area.
+|tip They snail will often leave one behind after eating a mushroom.
 Collect #5# Ambergrease |q 75063/3 |goto 45.26,75.05
+step
+label "Feed_the_Snail"
+Feed the Snail #5# Times |q 75063/2 |goto 45.26,75.05
+|tip Stand next to small glowing mushrooms around this area.
+|tip The snail will consume them in about 15 seconds.
 |next "Dragon_World_Quest_Emissaries"
 step
 label vignette-5640
@@ -2883,7 +2912,6 @@ step
 label quest-75344
 accept Crystal Cracker##75344 |goto Zaralek Cavern/0 56.46,65.54
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Crystalline_Walkers"
 step
 extraaction Shine Shardling##408547
@@ -2920,7 +2948,6 @@ step
 label quest-74292
 accept Deephollow Mysteries##74292 |goto Zaralek Cavern/0 61.93,53.77
 |tip You will accept this quest automatically.
-|polish
 step
 click Arcane Magnetbubble
 |tip They look like blue bubbles floating underwater around this area.
@@ -2978,7 +3005,6 @@ step
 label quest-75121
 accept Dragonrider Racing - Brimstone Scramble##75121 |goto Zaralek Cavern/0 54.50,23.70
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202749
 Tell him _"I'd like to try the course."_
@@ -3002,7 +3028,6 @@ step
 label quest-75120
 accept Dragonrider Racing - Caldera Cruise##75120 |goto Zaralek Cavern/0 39.06,49.99
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202676
 Tell him _"I'd like to try the course."_
@@ -3074,7 +3099,6 @@ step
 label quest-75122
 accept Dragonrider Racing - Shimmering Slalom##75122 |goto Zaralek Cavern/0 58.72,45.03
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202772
 Tell him _"I'd like to try the course."_
@@ -3098,7 +3122,6 @@ step
 label quest-75124
 accept Dragonrider Racing - Sulfur Sprint##75124 |goto Zaralek Cavern/0 51.26,46.67
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202973
 Tell him _"I'd like to try the course."_
@@ -3186,7 +3209,6 @@ step
 label quest-74945
 accept Guanite Gambit##74945 |goto Zaralek Cavern/0 49.59,41.20
 |tip You will accept this quest automatically.
-|polish
 step
 kill Nesting Shalewing##202785+
 click Guanite+
@@ -3209,7 +3231,6 @@ step
 label quest-74988
 accept If You Can't Take the Heat##74988 |goto Zaralek Cavern/0 36.28,47.63
 |tip You will accept this quest automatically.
-|polish
 step
 kill Crumbling Scoria##199837+
 use the Conductive Lodestone##204344
@@ -3308,24 +3329,11 @@ accept Monument Maintenance##75705 |goto Zaralek Cavern/0 61.71,72.04
 |tip You will accept this quest automatically.
 |polish
 step
-click Missing Head
-Retrieve the Missing Head |havebuff spell:409244 |goto 62.77,72.37 |q 75705
-step
-click Crumbling Statue
-Place the Missing Head |nobuff spell:409244 |goto 61.71,72.04 |q 75705
-step
-click Missing Arm
-Retrieve the Missing Arm |havebuff spell:409322 |goto 58.63,72.44 |q 75705
-step
-click Crumbling Statue
-Place the Missing Arm |nobuff spell:409322 |goto 61.71,72.04 |q 75705
-step
-click Shattered Sphere
-Retreive the Shattered Sphere |havebuff spell:409264 |goto 62.34,69.53 |q 75705
-step
-click Crumbling Statue
-Place the Shattered Sphere |nobuff spell:409264 |goto 61.71,72.04 |q 75705
-step
+Click objects around this area
+|tip Find the Missing Arm, Missing Head, and Shattered Sphere around the area.
+|tip They appear on your minimap as yellow dots.
+|tip Bring them back to the statue and click it to restore the pieces.
+|tip When you pick one up, don't mount and avoid enemies.
 Restore the Crumbling Statue |q 75705/1 |goto 61.71,72.04
 |next "Dragon_World_Quest_Emissaries"
 step
@@ -3345,7 +3353,6 @@ step
 label quest-75350
 accept Niffen Nabber##75350 |goto Zaralek Cavern/0 59.24,73.86
 |tip You will accept this quest automatically.
-|polish
 step
 click Prison Door
 |tip They look like doors on large cages around this area.
@@ -3393,7 +3400,6 @@ step
 label quest-75663
 accept Restless Torment##75663 |goto Zaralek Cavern/0 49.86,39.10
 |tip You will accept this quest automatically.
-|polish
 step
 kill Ghostly Researcher##203013+
 kill Failed Experiment##203007+
@@ -3415,7 +3421,6 @@ step
 label quest-74990
 accept Roiling Shadow##74990 |goto Zaralek Cavern/0 31.05,49.25
 |tip You will accept this quest automatically.
-|polish
 step
 extraaction Blazing Ascent##405041
 |tip Use it to throw yourself in the air.
@@ -3452,14 +3457,13 @@ Deactivate the Primalist Runestones |q 75450/1 |goto 34.36,47.83
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75155
-accept Shadowflame Snuffer##75155 |goto Zaralek Cavern/0 47.22,20.96
+accept Shadowflame Snuffer##75155 |goto Zaralek Cavern/0 48.44,16.89
 |tip You will accept this quest automatically.
-|polish
 step
 kill Shadowflame Emberling##203182+
-|tip They look like little blue elementals near the lava around this area.
+|tip They look like little flaming elementals near the lava around this area.
 |tip Run over them to squish them.
-Snuff the Shadowflame |q 75155/1 |goto 47.22,20.96
+Snuff the Shadowflame |q 75155/1 |goto 48.44,16.89
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75345
@@ -3467,8 +3471,16 @@ accept Shell Corporation##75345 |goto Zaralek Cavern/0 59.34,67.77
 |tip You will accept this quest automatically.
 |polish
 step
-kill Redolent Whelk##200898+
+click Succulent Looking Deepcaps+
+|tip They look like clusters of mushrooms on the ground around this area.
+clicknpc Redolent Whelk##200898+
 |tip They can be found all over this area.
+extraaction Snail Stuffing!##408797
+|tip Throw the stuffing at a Redolent Whelk snail.
+|tip In a few seconds it will drop a shell.
+|tip Don't mount or you will lose the ability.
+click Cast Off Shell+
+|tip They drop from snails you feed.
 collect 8 Slime Sheathed Shell##205199 |q 75345/1 |goto 59.34,67.77
 |next "Dragon_World_Quest_Emissaries"
 step
@@ -3500,17 +3512,16 @@ kill 12 Pesky Sporemoth##202625 |q 75064/2 |goto 52.03,76.46
 |next "Dragon_World_Quest_Emissaries"
 step
 label vignette-5659
-accept Skornace##75349
+accept Skornace##75349 |goto Zaralek Cavern/0 36.38,52.74
 |tip You will accept this quest automatically.
 |polish
 step
-kill Skornace##203643 |q 75349/1
+kill Skornak##203643 |q 75349/1 |goto 36.38,52.74
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75128
 accept Slime Ranching##75128 |goto Zaralek Cavern/0 52.49,18.87
 |tip You will accept this quest automatically.
-|polish
 step
 extraaction Slime Sucker 2000##405006
 |tip Use it to vacuum slimes to you inside and outside the building.
@@ -3551,7 +3562,6 @@ step
 label quest-73408
 accept Sniffen 'em Out!##73408 |goto Deepflayer Nest/0 27.31,34.45
 |tip You will accept this quest automatically.
-|polish
 step
 use the Niffen Incense##203013
 |tip Follow the trail of fumes, stopping around large patches and searching.
@@ -3578,7 +3588,6 @@ step
 label quest-75058
 accept Spearheading Acquisition##75058 |goto Zaralek Cavern/0 38.33,63.10
 |tip You will accept this quest automatically.
-|polish
 step
 click Climbing Gear
 Acquire the Climbing Gear |q 75058/1 |goto 38.33,63.10
@@ -3641,7 +3650,6 @@ step
 label quest-75680
 accept To a Land Down Under##75680 |goto Zaralek Cavern/0 52.41,66.04
 |tip You will accept this quest automatically.
-|polish
 step
 talk Explorer Bezzert##201004
 Choose _"Begin pet battle."_
@@ -3685,7 +3693,6 @@ step
 label quest-74991
 accept We Have Returned##74991 |goto Zaralek Cavern/0 32.89,41.98
 |tip You will accept this quest automatically.
-|polish
 stickystart "Plant_Zaqali_Spears_in_Corpses"
 step
 click Ancient Ebon Spear
@@ -5299,7 +5306,6 @@ You have completed all daily quests in Aylaag Outpost
 |tip This guide will reset when more become available.
 '|complete not completedq(70750,72068,72373,72374,72375,75859) |next "Begin_Weekly_Quests"
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Forbidden Reach Envoy Dailies",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the various daily quests in the Forbidden Reach.",
@@ -5497,8 +5503,6 @@ turnin Harpooner's Challenge##74391 |goto 34.20,60.03 |only if haveq(74391) or c
 turnin Angler's Challenge##74119 |goto 34.19,60.04 |only if haveq(74119) or completedq(74119)
 |only if haveq(74391,74119) or completedq(74391,74119)
 ]])
-ZGV.BETAEND()
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Iskaara Tuskarr\\Dragonskull Island Fishing Hole",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through completing the various daily quests at the Dragonskull Island fishing location.",
@@ -5558,7 +5562,6 @@ You have completed the available daily quests at the Dragonskull Island fishing 
 |tip This guide will reset when more become available.
 '|complete not completedq(73226) |next "Begin_Daily_Quests"
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests",{
 author="support@zygorguides.com",
 startlevel=68,
@@ -5586,7 +5589,8 @@ talk Scalecommander Cindrethresh##199199
 accept Toxic Infestation##73190 |goto 35.31,59.49 |only if questactive(73190)
 accept Busting Blues##73142 |goto 35.31,59.50 |only if questactive(73142)
 accept Soupocalypse Now!##73179 |goto 35.30,59.49 |only if questactive(73179)
-|only if questactive(73190,73142,73179)
+accept Up Close and Personal##73194 |goto 35.30,59.49 |only if questactive(73194)
+|only if questactive(73190,73142,73179,73194)
 step
 talk Scalecommander Azurathel##199204
 accept Hands Off Our Booty!##73178 |goto 35.53,58.69
@@ -5620,6 +5624,18 @@ stickystart "Kill_Dragonbane_Beetles"
 step
 kill Pestilent Pincher##200910 |q 73190/2 |goto 41.04,35.84
 |only if haveq(73190) or completedq(73190)
+step
+use the Proto-Killing Spear##202642
+|tip Use it on a proto dragon flying around one of these areas.
+|tip While on the proto dragon, attack it until your bar switches to a vehicle bar.
+|tip Spam the ability to deal damage to the proto dragon.
+|tip Repeat this until it dies.
+Slay a Proto-dragon with the Proto-Killing Spear |q 73194/1 |goto 39.60,52.62
+You can find more around:
+[50.33,53.11]
+[60.69,60.44]
+[69.68,58.47]
+|only if haveq(73194) or completedq(73194)
 step
 click Infuser Shard+
 |tip They look like tiny crystals on the ground around this area.
@@ -5690,7 +5706,8 @@ talk Scalecommander Cindrethresh##199199
 turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
 turnin Busting Blues##73142 |goto 35.31,59.50 |only if haveq(73142) or completedq(73142)
 turnin Soupocalypse Now!##73179 |goto 35.30,59.49 |only if haveq(73179) or completedq(73179)
-|only if haveq(73190,73142,73179) or completedq(73190,73142,73179)
+turnin Up Close and Personal##73194 |goto 35.30,59.49 |only if haveq(73194) or completedq(73194)
+|only if haveq(73190,73142,73179,73194) or completedq(73190,73142,73179,73194)
 step
 talk Scalecommander Azurathel##199204
 turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
@@ -5698,7 +5715,7 @@ turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
 step
 You have completed all available side quests in The Forbidden Reach
 |tip This guide will reset when more become available.
-'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178) |next "Active_Quests_Available"
+'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73194) |next "Active_Quests_Available"
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Sniffenseeking!",{
@@ -6314,5 +6331,540 @@ step
 Click Here When a New Dig Becomes Available |confirm |next "Start_Dig"
 |tip You can purchase a dig from Ponso in Loamm once per week for 3 Barter Bricks.
 |tip You also get a dig from the weekly "A Worthy Ally: Loamm Niffen" quest.
+]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Snail Racing Dailies",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100100',
+},[[
+step
+click TICKET: Glimmerogg Games
+accept TICKET: Glimmerogg Games##73707 |goto Zaralek Cavern/0 55.61,54.56
+step
+talk Brogg the Beast##201098
+turnin TICKET: Glimmerogg Games##73707 |goto 43.79,82.98
+accept Pay to Play##73708 |goto 43.79,82.98
+accept Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Festival Challenger##202571
+Tell him _"You're a party crasher!"_
+Find #6# Intruders |q 73709/1 |goto 44.27,82.29
+step
+kill Echoed Lurker##202636+
+collect 4 Echoed Lurker Flesh##204803 |q 73708/1 |goto 44.20,84.66
+step
+click Glimmer Mushroom##388520
+collect 1 Glimmer Mushroom##205169 |q 73708/2 |goto 38.12,78.45
+step
+click Glimmer Mushroom##388520
+collect 2 Glimmer Mushroom##205169 |q 73708/2 |goto 37.93,77.49
+step
+click Glimmer Mushroom##388520
+collect 3 Glimmer Mushroom##205169 |q 73708/2 |goto 37.63,76.63
+step
+click Glimmer Mushroom##388520
+collect 4 Glimmer Mushroom##205169 |q 73708/2 |goto 38.28,76.66
+step
+talk Brogg the Beast##201098
+turnin Pay to Play##73708 |goto 43.79,82.98
+turnin Favor on the Side##73709 |goto 43.79,82.98
+step
+talk Storul Heavystone##201100
+accept Rock By Rock##73710 |goto 44.97,83.29
+step
+click Starter Rock Bar
+Lift the Weight Bars |q 73710/1 |count 1 |goto 45.13,83.35
+step
+click Mid-Weight Rock Bar
+Lift the Weight Bars |q 73710/1 |count 2 |goto 45.08,83.24
+step
+click Heavy Rock Bar
+Lift the Weight Bars |q 73710/1 |count 3 |goto 44.99,83.10
+step
+talk Storul Heavystone##201100
+turnin Rock By Rock##73710 |goto 44.98,83.31
+accept Marked Champion##73711 |goto 44.98,83.30
+step
+Enter the cave |goto 45.40,86.85 < 10 |walk
+kill Carcaxas##202836 |q 73711/1 |goto 45.59,87.62
+|tip Inside the cave.
+step
+talk Storul Heavystone##201100
+turnin Marked Champion##73711 |goto 44.98,83.29
+step
+Reach Renown Level 7 with the Loamm Niffen |complete factionrenown(2564) >= 7
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Off to the Track##75725
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
+step
+talk Briggul##201752
+turnin Off to the Track##75725 |goto 44.25,79.93
+accept Come Snail Away##74787 |goto 44.25,79.93
+step
+clicknpc Big Slick in the City##202731
+Meet Slick |q 74787/1 |goto 44.17,79.98
+step
+talk Briggul##201752
+turnin Come Snail Away##74787 |goto 44.26,79.93
+step
+label "Begin_Daily_Quests"
+talk Briggul##201752
+accept Resistance Training##74518 |goto 44.25,79.92 |only if questpossible |or
+accept A Snail's Pace##74516 |goto 44.25,79.92 |only if questpossible |or
+accept The Slowest Fan Club##74514 |goto 44.25,79.92 |only if questpossible |or
+accept Good for Goo##74519 |goto 44.25,79.92 |only if questpossible |or
+accept All Terrain Snail##74517 |goto 44.25,79.92 |only if questpossible |or
+Accept the Daily Quest |complete false |goto 44.25,79.92 |or
+step
+Summon Your Level 25 Amethyst Softshell |complete activepet(2697) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(2697) >= 25 and not completedq(74948)
+step
+talk Briggul##201752
+accept Snailspiration: Amethyst Softshell##74948 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Amethyst Softshell summoned.
+|only if petlevel(2697) >= 25 and not completedq(74948)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Amethyst Softshell.>"_
+|tip Your level 25 Amethyst Softshell must be summoned.
+Show Your Max Level Amethyst Softshell to Briggul |q 74948/1 |goto 44.25,79.92
+|only if petlevel(2697) >= 25 and not completedq(74948)
+step
+talk Briggul##201752
+turnin Snailspiration: Amethyst Softshell##74948 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Amethyst Softshell summoned.
+|only if petlevel(2697) >= 25 and not completedq(74948)
+step
+Summon Your Level 25 Blackchasm Crawler |complete activepet(2657) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(2657) >= 25 and not completedq(74950)
+step
+talk Briggul##201752
+accept Snailspiration: Blackchasm Crawler##74950 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Blackchasm Crawler summoned.
+|only if petlevel(2657) >= 25 and not completedq(74950)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Blackchasm Crawler.>"_
+|tip Your level 25 Blackchasm Crawler must be summoned.
+Show Your Max Level Blackchasm Crawler to Briggul |q 74950/1 |goto 44.25,79.92
+|only if petlevel(2657) >= 25 and not completedq(74950)
+step
+talk Briggul##201752
+turnin Snailspiration: Blackchasm Crawler##74950 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Blackchasm Crawler summoned.
+|only if petlevel(2657) >= 25 and not completedq(74950)
+step
+Summon Your Level 25 Microlicid |complete activepet(3235) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(3235) >= 25 and not completedq(74952)
+step
+talk Briggul##201752
+accept Snailspiration: Microlicid##74952 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Microlicid summoned.
+|only if petlevel(3235) >= 25 and not completedq(74952)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Microlicid.>"_
+|tip Your level 25 Microlicid must be summoned.
+Show Your Max Level Microlicid to Briggul |q 74952/1 |goto 44.25,79.92
+|only if petlevel(3235) >= 25 and not completedq(74952)
+step
+talk Briggul##201752
+turnin Snailspiration: Microlicid##74952 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Microlicid summoned.
+|only if petlevel(3235) >= 25 and not completedq(74952)
+step
+Summon Your Level 25 Mudshell Conch |complete activepet(1776) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(1776) >= 25 and not completedq(74959)
+step
+talk Briggul##201752
+accept Snailspiration: Mudshell Conch##74959 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Mudshell Conch summoned.
+|only if petlevel(1776) >= 25 and not completedq(74959)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Mudshell Conch.>"_
+|tip Your level 25 Mudshell Conch must be summoned.
+Show Your Max Level Mudshell Conch to Briggul |q 74959/1 |goto 44.25,79.92
+|only if petlevel(1776) >= 25 and not completedq(74959)
+step
+talk Briggul##201752
+turnin Snailspiration: Mudshell Conch##74959 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Mudshell Conch summoned.
+|only if petlevel(1776) >= 25 and not completedq(74959)
+step
+Summon Your Level 25 Predatory Helicid |complete activepet(3219) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(3219) >= 25 and not completedq(74960)
+step
+talk Briggul##201752
+accept Snailspiration: Predatory Helicid##74960 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Predatory Helicid summoned.
+|only if petlevel(3219) >= 25 and not completedq(74960)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Predatory Helicid.>"_
+|tip Your level 25 Predatory Helicid must be summoned.
+Show Your Max Level Predatory Helicid to Briggul |q 74960/1 |goto 44.25,79.92
+|only if petlevel(3219) >= 25 and not completedq(74960)
+step
+talk Briggul##201752
+turnin Snailspiration: Predatory Helicid##74960 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Predatory Helicid summoned.
+|only if petlevel(3219) >= 25 and not completedq(74960)
+step
+Summon Your Level 25 Prismatic Softshell |complete activepet(2698) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(2698) >= 25 and not completedq(74961)
+step
+talk Briggul##201752
+accept Snailspiration: Prismatic Softshell##74961 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Prismatic Softshell summoned.
+|only if petlevel(2698) >= 25 and not completedq(74961)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Prismatic Softshell.>"_
+|tip Your level 25 Prismatic Softshell must be summoned.
+Show Your Max Level Prismatic Softshell to Briggul |q 74961/1 |goto 44.25,79.92
+|only if petlevel(2698) >= 25 and not completedq(74961)
+step
+talk Briggul##201752
+turnin Snailspiration: Prismatic Softshell##74961 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Prismatic Softshell summoned.
+|only if petlevel(2698) >= 25 and not completedq(74961)
+step
+Summon Your Level 25 Rapana Whelk |complete activepet(743) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(743) >= 25 and not completedq(74962)
+step
+talk Briggul##201752
+accept Snailspiration: Rapana Whelk##74962 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Rapana Whelk summoned.
+|only if petlevel(743) >= 25 and not completedq(74962)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Rapana Whelk.>"_
+|tip Your level 25 Rapana Whelk must be summoned.
+Show Your Max Level Rapana Whelk to Briggul |q 74962/1 |goto 44.25,79.92
+|only if petlevel(743) >= 25 and not completedq(74962)
+step
+talk Briggul##201752
+turnin Snailspiration: Rapana Whelk##74962 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Rapana Whelk summoned.
+|only if petlevel(743) >= 25 and not completedq(74962)
+step
+Summon Your Level 25 Rusty Snail |complete activepet(496) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(496) >= 25 and not completedq(74963)
+step
+talk Briggul##201752
+accept Snailspiration: Rusty Snail##74963 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Rusty Snail summoned.
+|only if petlevel(496) >= 25 and not completedq(74963)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Rusty Snail.>"_
+|tip Your level 25 Rusty Snail must be summoned.
+Show Your Max Level Rusty Snail to Briggul |q 74963/1 |goto 44.25,79.92
+|only if petlevel(496) >= 25 and not completedq(74963)
+step
+talk Briggul##201752
+turnin Snailspiration: Rusty Snail##74963 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Rusty Snail summoned.
+|only if petlevel(496) >= 25 and not completedq(74963)
+step
+Summon Your Level 25 Scooter the Snail |complete activepet(289) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(289) >= 25 and not completedq(74964)
+step
+talk Briggul##201752
+accept Snailspiration: Scooter the Snail##74964 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Scooter the Snail summoned.
+|only if petlevel(289) >= 25 and not completedq(74964)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Scooter the Snail.>"_
+|tip Your level 25 Scooter the Snail must be summoned.
+Show Your Max Level Scooter the Snail to Briggul |q 74964/1 |goto 44.25,79.92
+|only if petlevel(289) >= 25 and not completedq(74964)
+step
+talk Briggul##201752
+turnin Snailspiration: Scooter the Snail##74964 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Scooter the Snail summoned.
+|only if petlevel(289) >= 25 and not completedq(74964)
+step
+Summon Your Level 25 Shelly |complete activepet(3222) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(3222) >= 25 and not completedq(74965)
+step
+talk Briggul##201752
+accept Snailspiration: Shelly##74965 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Shelly summoned.
+|only if petlevel(3222) >= 25 and not completedq(74965)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Shelly.>"_
+|tip Your level 25 Shelly must be summoned.
+Show Your Max Level Shelly to Briggul |q 74965/1 |goto 44.25,79.92
+|only if petlevel(3222) >= 25 and not completedq(74965)
+step
+talk Briggul##201752
+turnin Snailspiration: Shelly##74965 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Shelly summoned.
+|only if petlevel(3222) >= 25 and not completedq(74965)
+step
+Summon Your Level 25 Shimmershell Snail |complete activepet(493) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(493) == 25 and not completedq(74786)
+step
+talk Briggul##201752
+accept Snailspiration: Shimmershell Snail##74786 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Shimmershell Snail summoned.
+|only if petlevel(493) >= 25 and not completedq(74786)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Shimmershell Snail.>"_
+|tip Your level 25 Shimmershell Snail must be summoned.
+Show Your Max Level Shimmershell Snail to Briggul |q 74786/1 |goto 44.25,79.92
+|only if petlevel(493) >= 25 and not completedq(74786)
+step
+talk Briggul##201752
+turnin Snailspiration: Shimmershell Snail##74786 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Shimmershell Snail summoned.
+|only if petlevel(493) >= 25 and not completedq(74786)
+step
+Summon Your Level 25 Silkbead Snail |complete activepet(568) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(568) >= 25 and not completedq(74966)
+step
+talk Briggul##201752
+accept Snailspiration: Silkbead Snail##74966 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Silkbead Snail summoned.
+|only if petlevel(568) >= 25 and not completedq(74966)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Silkbead Snail.>"_
+|tip Your level 25 Silkbead Snail must be summoned.
+Show Your Max Level Silkbead Snail to Briggul |q 74966/1 |goto 44.25,79.92
+|only if petlevel(568) >= 25 and not completedq(74966)
+step
+talk Briggul##201752
+turnin Snailspiration: Silkbead Snail##74966 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Silkbead Snail summoned.
+|only if petlevel(568) >= 25 and not completedq(74966)
+step
+Summon Your Level 25 Spireshell Snail |complete activepet(2653) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(2653) >= 25 and not completedq(74967)
+step
+talk Briggul##201752
+accept Snailspiration: Spireshell Snail##74967 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Spireshell Snail summoned.
+|only if petlevel(2653) >= 25 and not completedq(74967)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Spireshell Snail.>"_
+|tip Your level 25 Spireshell Snail must be summoned.
+Show Your Max Level Spireshell Snail to Briggul |q 74967/1 |goto 44.25,79.92
+|only if petlevel(2653) >= 25 and not completedq(74967)
+step
+talk Briggul##201752
+turnin Snailspiration: Spireshell Snail##74967 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Spireshell Snail summoned.
+|only if petlevel(2653) >= 25 and not completedq(74967)
+step
+Summon Your Level 25 Zoom |complete activepet(1903) |goto 44.25,79.92
+|tip You can complete a special quest for having this pet at max level.
+|only if petlevel(1903) >= 25 and not completedq(74968)
+step
+talk Briggul##201752
+accept Snailspiration: Zoom##74968 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Zoom summoned.
+|only if petlevel(1903) >= 25 and not completedq(74968)
+step
+talk Briggul##201752
+Choose _"<Show Briggul your level 25 Zoom.>"_
+|tip Your level 25 Zoom must be summoned.
+Show Your Max Level Zoom to Briggul |q 74968/1 |goto 44.25,79.92
+|only if petlevel(1903) >= 25 and not completedq(74968)
+step
+talk Briggul##201752
+turnin Snailspiration: Zoom##74968 |goto 44.25,79.92
+|tip This quest will only appear with your level 25 Zoom summoned.
+|only if petlevel(1903) >= 25 and not completedq(74968)
+step
+click Glowing Crystal##387725+
+|tip They look like small blue crystals on the ground around this area.
+collect 5 Glowing Crystal##204067 |q 74518/1 |goto 38.02,70.67
+|only if haveq(74518) or completedq(74518)
+step
+click Magma Crystal##387729+
+|tip They look like small orangish crystals on the ground near the lava.
+collect 5 Magma Crystal##204070 |q 74518/3 |goto 44.44,52.33
+|only if haveq(74518) or completedq(74518)
+step
+click Sulfuric Crystal##387727
+|tip They look like small brown spheres on the ground around this area.
+collect 5 Sulfuric Crystal##204069 |q 74518/2 |goto 50.24,59.67
+|only if haveq(74518) or completedq(74518)
+step
+clicknpc Aimless Snail##201875
+use the Snailcatcher Net##204178
+|tip Use it on Aimless Snails.
+Capture #8# Aimless Snails |q 74514/1 |goto 49.10,70.07
+|only if haveq(74514) or completedq(74514)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |q 74516 |goto 44.52,80.22
+|only if haveq(74516) or completedq(74516)
+step
+map Zaralek Cavern
+path	44.53,80.23	44.86,80.52	44.96,80.93	44.70,81.20	44.50,81.11
+path	44.27,80.79	44.14,80.40	44.27,80.22
+Pass #12# Track Markers While Riding Big Slick |q 74516/1
+|tip Run through the red markers on the ground.
+|only if haveq(74516) or completedq(74516)
+step
+Kill enemies around this area
+Collect Slime |q 74519/1 |goto 39.25,41.54
+[40.66,46.74]
+[34.72,43.69]
+[27.45,46.12]
+|only if haveq(74519) or completedq(74519)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |goto Ohn'ahran Plains/0 78.12,29.75 |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 1 |goto 77.00,33.84
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 2 |goto 76.19,31.86
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 3 |goto 78.00,29.66
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 4 |goto 78.51,32.13
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 5 |goto 77.39,32.14
+|only if haveq(74517) or completedq(74517)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |goto The Waking Shores/0 77.91,46.70 |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 1 |goto 77.91,46.70
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 2 |goto 78.22,44.73
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 3 |goto 79.26,44.59
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 4 |goto 80.02,44.57
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 5 |goto 79.09,46.83
+|only if haveq(74517) or completedq(74517)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |goto Thaldraszus/0 57.72,81.14 |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 1 |goto 57.72,81.14
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 2 |goto 58.43,81.68
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 3 |goto 58.94,82.28
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 4 |goto 58.92,79.61
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 5 |goto 58.15,79.59
+|only if haveq(74517) or completedq(74517)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |goto The Azure Span/0 62.77,31.28 |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Upper Frostlands |q 74517/3 |count 1 |goto 62.77,31.28
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Upper Frostlands |q 74517/3 |count 2 |goto 62.23,32.16
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Upper Frostlands |q 74517/3 |count 3 |goto 61.43,33.30
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Upper Frostlands |q 74517/3 |count 4 |goto 60.98,31.59
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Upper Frostlands |q 74517/3 |count 5 |goto 61.12,30.27
+|only if haveq(74517) or completedq(74517)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+talk Briggul##201752
+turnin Resistance Training##74518 |goto Zaralek Cavern/0 44.25,79.92 |only if haveq(74518) or completedq(74518)
+turnin A Snail's Pace##74516 |goto 44.25,79.92 |only if haveq(74516) or completedq(74516)
+turnin The Slowest Fan Club##74514 |goto 44.25,79.92 |only if haveq(74514) or completedq(74514)
+turnin Good for Goo##74519 |goto 44.25,79.92 |only if haveq(74519) or completedq(74519)
+turnin All Terrain Snail##74517 |goto 44.25,79.92 |only if haveq(74517) or completedq(74517)
+step
+You have completed the daily quest for the day
+|tip You can gain additional Glimmerogg Racer reputation by acquiring certain snail battle pets and leveling them to 25.
+You can complete the following snail pet quests:
+|tip Amethyst Softshell |only if not completedq(74948)
+|tip Blackchasm Crawler |only if not completedq(74950)
+|tip Microlicid |only if not completedq(74952)
+|tip Mudshell Conch |only if not completedq(74959)
+|tip Predatory Helicid |only if not completedq(74960)
+|tip Prismatic Softshell |only if not completedq(74961)
+|tip Rapana Whelk |only if not completedq(74962)
+|tip Rusty Snail |only if not completedq(74963)
+|tip Scooter the Snail |only if not completedq(74964)
+|tip Shelly |only if not completedq(74965)
+|tip Shimmershell Snail |only if not completedq(74786)
+|tip Silkbead Snail |only if not completedq(74966)
+|tip Spireshell Snail |only if not completedq(74967)
+|tip Zoom |only if not completedq(74968)
+'|complete not completedq(74518,74516,74514,74519,74517) |next "Begin_Daily_Quests" |or
+'|complete petlevel(2697) >= 25 and not completedq(74948) |next "Begin_Daily_Quests" |or
+'|complete petlevel(2657) >= 25 and not completedq(74950) |next "Begin_Daily_Quests" |or
+'|complete petlevel(3235) >= 25 and not completedq(74952) |next "Begin_Daily_Quests" |or
+'|complete petlevel(1776) >= 25 and not completedq(74959) |next "Begin_Daily_Quests" |or
+'|complete petlevel(3219) >= 25 and not completedq(74960) |next "Begin_Daily_Quests" |or
+'|complete petlevel(2698) >= 25 and not completedq(74961) |next "Begin_Daily_Quests" |or
+'|complete petlevel(743) >= 25 and not completedq(74962) |next "Begin_Daily_Quests" |or
+'|complete petlevel(496) >= 25 and not completedq(74963) |next "Begin_Daily_Quests" |or
+'|complete petlevel(289) >= 25 and not completedq(74964) |next "Begin_Daily_Quests" |or
+'|complete petlevel(3222) >= 25 and not completedq(74965) |next "Begin_Daily_Quests" |or
+'|complete petlevel(493) >= 25 and not completedq(74786) |next "Begin_Daily_Quests" |or
+'|complete petlevel(568) >= 25 and not completedq(74966) |next "Begin_Daily_Quests" |or
+'|complete petlevel(2653) >= 25 and not completedq(74967) |next "Begin_Daily_Quests" |or
+'|complete petlevel(1903) >= 25 and not completedq(74968) |next "Begin_Daily_Quests" |or
 ]])
 ZGV.BETAEND()

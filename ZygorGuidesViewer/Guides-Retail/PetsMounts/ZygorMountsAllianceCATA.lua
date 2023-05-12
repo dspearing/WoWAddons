@@ -368,135 +368,146 @@ description="\nThis guide will help you acquire the Winterspring Frostsaber moun
 },[[
 step
 This mount will take _20 days_ to earn.
-confirm
+Click Here to Continue |confirm
 step
 talk Rivern Frostwind##10618
-accept Get Them While They're Young##29032 |goto Winterspring 46.6,17.6
+accept Get Them While They're Young##29032 |goto Winterspring/0 46.68,17.71
 step
 clicknpc Frostsaber Cub##51681
-collect 8 Frostsaber Cub##68638 |q 29032/1 |goto 46.6,17.6
+collect 8 Frostsaber Cub##68638 |q 29032/1 |goto Winterspring/0 48.91,18.72
 step
 talk Rivern Frostwind##10618
-turnin Get Them While They're Young##29032 |goto 46.6,17.6
-accept They Grow Up So Fast##29034 |goto 46.6,17.6
+turnin Get Them While They're Young##29032 |goto Winterspring/0 46.68,17.71
+accept They Grow Up So Fast##29034 |goto 46.68,17.71
 step
 label "dailies"
-Go to _Winterspring_ |goto Winterspring |noway |c
+Go to _Winterspring_ |goto Winterspring/0 46.45,17.67 < 100 |c
 step
 use Winterspring Cub##68646
 talk Winterspring Cub##51677
-accept Cub's First Toy##29040 |or |only NightElf,Gnome,Draenei
-accept Cub's First Toy##29051 |or |only Dwarf,Worgen
-accept A Cub's Craving##29035 |or |only NightElf,Gnome,Draenei
-accept A Cub's Cravings##29052 |or |only Dwarf,Worgen
-accept Hunting Practice##29038 |or |only NightElf,Gnome,Draenei
-accept Hunting Practice##29039 |or |only Dwarf,Worgen
-accept 'Borrowing' From the Winterfall##29037 |or |only NightElf,Gnome,Draenei
-accept 'Borrowing' From the Winterfall##29053 |or |only Dwarf,Worgen
+accept Cub's First Toy##29040 |or |only if NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+accept Cub's First Toy##29051 |or |only if Dwarf or Worgen
+accept A Cub's Craving##29035 |or |only if NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+accept A Cub's Cravings##29052 |or |only if Dwarf or Worgen
+accept Hunting Practice##29038 |or |only if NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+accept Hunting Practice##29039 |or |only if Dwarf or Worgen
+accept 'Borrowing' From the Winterfall##29037 |or |only if NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+accept 'Borrowing' From the Winterfall##29053 |or |only if Dwarf or Worgen
+|tip You will only be able to accept one of these quests a day.
 step
 kill Ice Thistle Yeti##7458+
-collect 1 Tough Yeti Hide##68663 |q 29040 |goto 66.1,55.9
-only NightElf,Gnome,Draenei
-only if haveq(29040)
+collect 1 Tough Yeti Hide##68663 |goto Winterspring/0 66.17,55.99 |q 29040
+|only if haveq(29040)
 step
-kill Berserk Owlbeast##7454+, Crazed Owlbeast##7452+
-collect 5 Wildkin Feather##68662 |q 29040 |goto 57.5,75.7
-only NightElf,Gnome,Draenei
-only if haveq(29040)
+kill Owlbeast enemies around this area
+collect 5 Wildkin Feather##68662 |goto Winterspring/0 64.85,28.98 |q 29040
+You can find more around [65.22,39.59]
+|only if haveq(29040)
 step
 use Winterspring Cub##68646
-Use the _Tough Yeti Hides_ in your bag to make the _Cat Toy_ |use Tough Yeti Hide##68663
-Use the Winterspring Cat Toy to play with your Winterspring Cub |use Winterspring Cat Toy##68668
+use Tough Yeti Hide##68663
+|tip Use the Tough Yeti Hide to create the Winterspring Cat Toy.
+collect Winterspring Cat Toy##68668 |q 29040
+|only if haveq(29040)
+step
+use Winterspring Cub##68646
+use Winterspring Cat Toy##68668
+|tip Use the Winterspring Cat Toy to play with your Winterspring Cub.
 Try out Winterspring Cat Toy |q 29040/1
-only NightElf,Gnome,Draenei
-only if haveq(29040)
+|only if haveq(29040)
 step
 kill Ice Thistle Yeti##7458+
-collect 1 Tough Yeti Hide##68663 |q 29051 |goto 66.1,55.9
-only Dwarf,Worgen
-only if haveq(29051)
+collect Tough Yeti Hide##68663 |goto Winterspring/0 66.17,55.99 |q 29051
+|only if haveq(29051)
 step
-kill Berserk Owlbeast##7454+, Crazed Owlbeast##7452+
-collect 5 Wildkin Feather##68662 |q 29051 |goto 57.5,75.7
-only Dwarf,Worgen
-only if haveq(29051)
+kill Owlbeast enemies around this area
+collect 5 Wildkin Feather##68662 |goto Winterspring/0 64.85,28.98 |q 29051
+You can find more around [65.22,39.59]
+|only if haveq(29051)
+step
+use Tough Yeti Hide##68663
+|tip Create the Winterspring Cat Toy.
+collect Winterspring Cat Toy##68668 |q 29051
+|only if haveq(29051)
 step
 use Winterspring Cub##68646
-Use the _Tough Yeti Hide_ in your bag to make the _Cat Toy_ |use Tough Yeti Hide##68663
-Use the Winterspring Cat Toy to play with your Winterspring Cub |use Winterspring Cat Toy##68668
+use Winterspring Cat Toy##68668
+|tip Use the Winterspring Cat Toy to play with your Winterspring Cub.
 Try out Winterspring Cat Toy |q 29051/1
-only Dwarf,Worgen
-only if haveq(29051)
+|only if haveq(29051)
 step
 kill Shardtooth Mauler##7443+
-collect 6 Shardtooth Meat##12622 |q 29035 |goto Winterspring,57.7,39.6
-only NightElf,Gnome,Draenei
-only if haveq(29035)
+collect 6 Shardtooth Meat##12622 |goto Winterspring/0 57.24,38.61 |q 29035
+|only if haveq(29035)
 step
 use Winterspring Cub##68646
-Feed your cub |use Shardtooth Meat##12622
+|use Shardtooth Meat##12622
 Feed Shardtooth Meat to Cub |q 29035/1
-only NightElf,Gnome,Draenei
-only if haveq(29035)
+|only if haveq(29035)
 step
 kill Shardtooth Mauler##7443+
-collect 6 Shardtooth Meat##12622 |q 29052 |goto Winterspring,57.7,39.6
-only Dwarf,Worgen
-only if haveq(29052)
+collect 6 Shardtooth Meat##12622 |goto Winterspring/0 57.24,38.61 |q 29052
+|only if haveq(29052)
 step
 use Winterspring Cub##68646
-Feed your cub |use Shardtooth Meat##12622
+use Shardtooth Meat##12622
 Feed Shardtooth Meat to Cub |q 29052/1
-only Dwarf,Worgen
-only if haveq(29052)
+|only if haveq(29052)
 step
 use Winterspring Cub##68646
-Bring your _cub_ next to the _snow mounds_ around this area
-|tip They look like white snow mounds that are glittering
-Hunting Practice |q 29038/1 |goto 53.5,27.5
-only NightElf,Gnome,Draenei
-only if haveq(29038)
+|tip Bring your Winterspring Cub to the snow mounds around this area.
+|tip They look like tiny piles of snow that are glittering.
+Hunting Practice |q 29038/1 |goto Winterspring/0 53.46,27.61
+|only if haveq(29038)
 step
 use Winterspring Cub##68646
-Bring your _cub_ next to the _snow mounds_ around this area
-|tip They look like white snow mounds that are glittering
-Hunting Practice |q 29039/1 |goto 53.5,27.5
-only Dwarf,Worgen
-only if haveq(29039)
+|tip Bring your Winterspring Cub to the snow mounds around this area.
+|tip They look like tiny piles of snow that are glittering.
+Hunting Practice |q 29039/1 |goto Winterspring/0 53.46,27.61
+|only if haveq(29039)
 step
 click Smoked Meat##208189
-collect 6 Smoked Meat##68645 |q 29037 |goto 67.0,46.0
-only NightElf,Gnome,Draenei
-only if haveq(29037)
+|tip They are cooking on little, square, barbeque stands around the Winterfall camps.
+collect 6 Smoked Meat##68645 |goto Winterspring/0 66.63,47.81 |q 29037
+You can find more around:
+[36.87,55.65]
+[35.21,56.57]
+[23.95,47.76]
+|only if haveq(29037)
 step
 use Winterspring Cub##68646
-_Feed_ your _cub_ |use Smoked Meat##68645
-_Feed_ Winterspring Cub _Smoked Meat_ |q 29037/1
-only NightElf,Gnome,Draenei
-only if haveq(29037)
+use Smoked Meat##68645
+|tip Feed them to your Winterspring Cub.
+Feed Your Winterspring Cub the Smoked Meat |q 29037/1
+|only if haveq(29037)
 step
 click Smoked Meat##208189
-collect 6 Smoked Meat##68645 |q 29053 |goto 67.0,46.0
-only Dwarf,Worgen
-only if haveq(29053)
+|tip They are cooking on little, square, barbeque stands around the Winterfall camps.
+collect 6 Smoked Meat##68645 |goto Winterspring/0 66.63,47.81 |q 29053
+You can find more around:
+[36.87,55.65]
+[35.21,56.57]
+[23.95,47.76]
+|only if haveq(29053)
 step
 use Winterspring Cub##68646
-_Feed_ your _cub_ |use Smoked Meat##68645
-_Feed_ Winterspring Cub _Smoked Meat_ |q 29053/1
-only Dwarf,Worgen
-only if haveq(29053)
+use Smoked Meat##68645
+|tip Feed them to your Winterspring Cub.
+Feed Your Winterspring Cub the Smoked Meat |q 29053/1
+|only if haveq(29053)
 step
 use Winterspring Cub##68646
 talk Winterspring Cub##51677
-turnin Cub's First Toy##29040 |or |only NightElf,Gnome,Draenei |only if haveq(29040)
-turnin Cub's First Toy##29051 |or |only Dwarf,Worgen |only if haveq(29051)
-turnin A Cub's Craving##29035 |or |only NightElf,Gnome,Draenei |only if haveq(29035)
-turnin A Cub's Cravings##29052 |or |only Dwarf,Worgen |only if haveq(29052)
-turnin Hunting Practice##29038 |or |only NightElf,Gnome,Draenei |only if haveq(29038)
-turnin Hunting Practice##29039 |or |only Dwarf,Worgen |only if haveq(29039)
-turnin 'Borrowing' From the Winterfall##29037 |or |only NightElf,Gnome,Draenei |only if haveq(29037)
-turnin 'Borrowing' From the Winterfall##29053 |or |only Dwarf,Worgen |only if haveq(29053)
-_Click here_ to return to the _ beginning_ of the _daily quests_ |confirm |next "dailies"
+turnin Cub's First Toy##29040 |or |only if haveq(29040) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+turnin Cub's First Toy##29051 |or |only if haveq(29051) and Dwarf or Worgen
+turnin A Cub's Craving##29035 |or |only if haveq(29035) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+turnin A Cub's Cravings##29052 |or |only if haveq(29052) and Dwarf or Worgen
+turnin Hunting Practice##29038 |or |only if haveq(29038) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+turnin Hunting Practice##29039 |or |only  if haveq(29039) and Dwarf or Worgen
+turnin 'Borrowing' From the Winterfall##29037 |or |only if haveq(29037) and NightElf or Gnome or Draenei or KulTiran or VoidElf or Pandaren or DarkIronDwarf or LightforgedDraenei or Mechagnome
+turnin 'Borrowing' From the Winterfall##29053 |or |only if haveq(29053) and Dwarf or Worgen
+_Click here_ to return to the _beginning_ of the _daily quests_. |confirm |next "dailies"
+|tip You can only do one of these quests per day.
 collect 20 Cub Whisker##68644 |q 29034/1
 step
 You can either _buy_ these _items from_ the _Auction House_ or _farm_ them:
@@ -504,10 +515,11 @@ collect 20 Runecloth##14047
 collect 20 Rugged Leather##8170
 step
 talk Rivern Frostwind##10618
-turnin They Grow Up So Fast##29034 |goto 46.6,17.6
-collect 1 Reins of the Winterspring Frostsaber##13086 |goto 46.6,17.6
+turnin They Grow Up So Fast##29034 |goto Winterspring/0 46.68,17.71
+collect 1 Reins of the Winterspring Frostsaber##13086 |goto Winterspring/0 46.68,17.71
 step
-learnmount Winterspring Frostsaber##17229 |use Reins of the Winterspring Frostsaber##13086
+|use Reins of the Winterspring Frostsaber##13086
+Learn the "Winterspring Frostsaber" Mount |learnmount Winterspring Frostsaber##17229
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Grey Riding Camel",{
 keywords={"grey","riding","camel","ground","mount"},
@@ -518,11 +530,17 @@ model={35135},
 description="\nThis guide will help you acquire the Grey Riding Camel mount.",
 },[[
 step
+talk Zidormi##162419
+Time Travel to Old Uldum |complete ZGV.InPhase("Old Uldum") |goto Uldum New/0 56.02,35.14
+|only if not ZGV.InPhase("Old Uldum")
 label "start"
-map Uldum
-This mount drops off a rare spawn called Dormus the Camel-Hoarder. You get to him by clicking the Mysterious Camel Figurines around Uldum. They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
-Check all the waypoints in each step for a chance to find the Camel Figurine.
-confirm
+step
+Begin the Search
+|tip This mount drops off a rare spawn called Dormus the Camel-Hoarder.
+|tip You get to him by clicking the Mysterious Camel Figurines around Uldum.
+|tip They have a chance to teleport you to his area and you get a debuff giving you 20 minutes to kill him.
+|tip Check all the waypoints in each step for a chance to find the Camel Figurine.
+Click Here to Continue |confirm
 step
 Next to this table in the inn.
 confirm |goto Uldum/0 22.0,64.2
@@ -709,7 +727,7 @@ confirm |goto 50.6,31.6
 _
 If you found the correct figurine, click here |confirm |next "camel"
 step
-Next to this burried pillar.
+Next to this buried pillar.
 confirm |goto 45.2,15.8
 _
 If you found the correct figurine, click here |confirm |next "camel"
@@ -819,9 +837,10 @@ confirm |next "start"
 step
 label "camel"
 kill Dormus the Camel-Hoarder |n
-collect 1 Reins of the Grey Riding Camel##63046 |n
-_
-learnmount Grey Riding Camel##88750 |use Reins of the Grey Riding Camel##63046
+collect 1 Reins of the Grey Riding Camel##63046
+step
+|use Reins of the Grey Riding Camel##63046
+Learn the "Grey Riding Camel" Mount |learnmount Grey Riding Camel##88750
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dungeon Mounts\\Amani Battle Bear",{
 keywords={"amani","battle","bear","ground","mount"},
@@ -5089,7 +5108,7 @@ Enter "The Obsidian Sanctum" Raid |goto Dragonblight/0 60.01,56.89 < 20 |c |or
 '|complete hasmount(59571) |or
 step
 kill Sartharion##28860
-|tip Kill him without killing any of the Twilight Drakes in the raid instance.
+|tip Kill him first before killing any of the Twilight Drakes in the raid instance.
 |tip When you attack Sartharion, every mob in the instance attacks you.
 click the Obsidian Cache
 collect Reins of the Twilight Drake##43954 |or
@@ -5127,13 +5146,18 @@ mounttype='Flying',
 model={31542},
 description="\nThis guide will help you acquire the Cenarion War Hippogryph mount.",
 },[[
-#include "Cenarion_Expedition_Rep"
 step
-label "mount"
+Reach Exalted Reputation with The Cenarion Expedition |complete rep("Cenarion Expedition") == Exalted |or
+|tip Use the "Cenarion Expedition" Reputation Guide to achieve this.
+Click Here to Open the "Cenarion Expedition" Reputation Guide |confirm |loadguide "Reputation Guides\\Burning Crusade Reputations\\Cenarion Expedition"
+'|complete hasmount(43927) |or
+step
 talk Fedryen Swiftspear##17904
-buy 1 Cenarion War Hippogryph##33999 |goto Zangarmarsh,79.2,63.8
+buy Cenarion War Hippogryph##33999 |goto Zangarmarsh/0 79.25,63.66 |or
+'|complete hasmount(43927) |or
 step
-learnmount Cenarion War Hippogryph##43927 |use Cenarion War Hippogryph##33999
+use Cenarion War Hippogryph##33999
+Learn the "Cenarion War Hippogryph" Mount |learnmount Cenarion War Hippogryph##43927
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Dark Phoenix",{
 keywords={"dark","phoenix","pheonix","mount","guild","exalted","flying"},

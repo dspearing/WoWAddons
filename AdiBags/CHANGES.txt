@@ -1,16 +1,12 @@
-lightweight tag c09e86e76c01e938ed6e2f0e898f6200a2697d14 v1.10.7
+lightweight tag e659a1e2a82a2b1eb4ed28594823cc9c0fcefcb9 v1.10.8
 Author:	Antonio Lobato <aj.lobato@gmail.com>
-Date:	Tue Jan 24 22:10:38 2023 -0800
+Date:	Sun May 7 12:38:52 2023 -0700
 
-commit c09e86e76c01e938ed6e2f0e898f6200a2697d14
+commit e659a1e2a82a2b1eb4ed28594823cc9c0fcefcb9
 Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Tue Jan 24 22:10:38 2023 -0800
+Date:   Sun May 7 12:38:52 2023 -0700
 
-    Fixed TOC messages
-
-commit aa2a244bb2493a7b381f64f25b3310393d9a86b5
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Tue Jan 24 22:10:05 2023 -0800
-
-    Fixed bags not updating in the newest Retail patch.
+    Updated TOC for 10.1.
+    
+    Readded Anchor mode, disabled by default for new installs.
 

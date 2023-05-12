@@ -22,3 +22,5 @@
 0.21 - Updated TOC
 0.22 - Updated Restoration Druid
 0.23 - Updated TOC
+0.24 - Updated Balance Druid
+0.25 - Fixed Balance Druid ST and AOE not being AOE and ST

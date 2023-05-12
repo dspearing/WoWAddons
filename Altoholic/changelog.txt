@@ -15,6 +15,10 @@ How to support Altoholic's development :
 If you like the addon, consider supporting it, this has been the long term effort and commitment of a single person. #ArmyOfOne
 
 
+10.1.003 (11/05/2023)
+
+- DataStore_Quests : fixed scanning of spell rewards.
+
 10.1.002 (04/05/2023)
 
 - Updated Ace Libraries

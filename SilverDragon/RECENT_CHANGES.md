@@ -1,5 +1,5 @@
-## Changed in v2023.4
+## Changed in v2023.6
 
-* New Zaralek Vaern rares for 10.1.0
-* Forbidden Reach's Forbidden Hoard now has loot
+* More Zaralek Cavern data
+* Suppress alerts while a cinematic is running
 

@@ -1059,15 +1059,17 @@ model={90189},
 description="\nThis mount is acquired from the Battle for Dazar'alor Raid.",
 },[[
 step
+Enter the "Battle for Dazar'alor" Raid |goto Boralus/0 70.55,35.33 < 20 |c |or
+'|complete hasmount(289083)
+step
 kill High Tinker Mekkatorque##144838
 |tip He is a boss in the Battle for Dazar'alor raid.
 |tip If you are in LFR, Jaina will have a chance to drop the mount instead.
-collect G.M.O.D.##166518 |n
+collect G.M.O.D.##166518 |or
+'|complete hasmount(289083)
+step
 use the G.M.O.D.##166518
 Learn the "G.M.O.D." Mount |learnmount G.M.O.D.##289083
-step
-_Congratulations!_
-You Collected the "G.M.O.D." Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Glacial Tidestorm",{
 author="support@zygorguides.com",
@@ -1122,15 +1124,14 @@ description="\nThis mount is acquired by a random world drop.",
 },[[
 step
 Kill enemies around this area
-collect Captured Dune Scavenger##163576 |n
+collect Captured Dune Scavenger##163576 |goto Vol'dun/0 49.4,75.8 |or
 |tip This will drop randomly from the Snake enemies in the zone.
 You can find more around [63.4,31.6]
 You can find more around [55.6,41.2]
-use the Captured Dun Scavenger##163576
-Learn the "Dune Scavenger" Mount |learnmount Dune Scavenger##237286 |goto Vol'dun/0 49.4,75.8
+'|complete hasmount(237286) |or
 step
-_Congratulations!_
-You Collected the "Dune Scavenger" Mount.
+use the Captured Dun Scavenger##163576
+Learn the "Dune Scavenger" Mount |learnmount Dune Scavenger##237286
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Goldenmane",{
 author="support@zygorguides.com",
@@ -1342,8 +1343,11 @@ model={706},
 description="\nThis mount is acquired from the Rarespawn Blackpaw in Darkshore.",
 },[[
 step
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
+step
 kill Blackpaw##149660
-|tip You will be flagged for PvP if your faction does not control Darkshore.
+|tip You will be flagged for PvP.
 collect Blackpaw##166428 |goto Darkshore/0 49.65,24.96 |complete hasmount(288438)
 |tip This has about a 6% drop rate.
 step
@@ -1364,14 +1368,16 @@ model={89247},
 description="\nThis mount is acquired from the Rarespawn Croz Bloodrage in Darkshore.",
 },[[
 step
-kill Croz Bloodrage##149655
-|tip You will be flagged for PVP if your faction does not control Darkshore.
-collect Captured Kaldorei Nightsaber##166437 |n
-use the Captured Kaldorei Nightsaber##166437
-Learn the "Kaldorei Nightsaber" Mount |learnmount Kaldorei Nightsaber##288505 |goto Darkshore/0 50.75,32.32
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
 step
-_Congratulations!_
-You Collected the "Kaldorei Nightsaber" Mount.
+kill Croz Bloodrage##149655
+|tip You will be flagged for PVP.
+collect Kaldorei Nightsaber##166435 |goto Darkshore/0 58.61,51.20 |or
+'|complete hasmount(288505) |or
+step
+use the Kaldorei Nightsaber##166435
+Learn the "Kaldorei Nightsaber" Mount |learnmount Kaldorei Nightsaber##288505
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Umber Nightsaber",{
 author="support@zygorguides.com",
@@ -1384,15 +1390,17 @@ model={89246},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
 },[[
 step
+Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288505) |or
+step
 kill Moxo the Beheader##147701
 |tip He walks around this area.
-|tip You will be flagged for PVP if your faction does not control Darkshore.
-collect Captured Umber Nightsaber##166434 |n
-use the Captured Umber Nightsaber##166434
-Learn the "Umber Nightsaber" Mount |learnmount Umber Nightsaber##288503 |goto Darkshore/0 65.08,20.13
+|tip You will be flagged for PVP.
+collect Captured Umber Nightsaber##166434 |goto Darkshore/0 65.08,20.13 |or
+'|complete hasmount(288505) |or
 step
-_Congratulations!_
-You Collected the "Umber Nightsaber" Mount.
+use Captured Umber Nightsaber##166434
+Learn the "Umber Nightsaber" Mount |learnmount Umber Nightsaber##288503
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Witherbark Direwing",{
 author="support@zygorguides.com",
@@ -3488,9 +3496,6 @@ collect Reins of the Drake of the Four Winds##174641 |goto Uldum New/0 73.90,83.
 step
 use the Reins of the Drake of the Four Winds##174641
 Learn the "Drake of the Four Winds" Mount |learnmount Drake of the Four Winds##315847
-step
-_Congratulations!_
-You Collected the "Drake of the Four Winds" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Mail Muncher",{
 author="support@zygorguides.com",

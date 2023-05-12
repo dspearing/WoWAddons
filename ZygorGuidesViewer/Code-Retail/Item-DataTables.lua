@@ -228,25 +228,25 @@ ItemScore.Item_Armor_Types = {
 -- Hey Dugi. We know you are watching this file. 
 ItemScore.MythicPlusMods = {
 	-- level, prefix, item level
-	 [2]={p=3410,lvl=376}, -- ranks "3399:7363"
-	 [3]={p=3411,lvl=376}, -- ranks "3399:7364"
-	 [4]={p=3412,lvl=379}, -- ranks "3399:7365"
-	 [5]={p=3413,lvl=379}, -- ranks "3399:7366"
-	 [6]={p=3414,lvl=382}, -- ranks "3399:7367"
-	 [7]={p=3415,lvl=385}, -- ranks "3399:7368"
-	 [8]={p=3416,lvl=385}, -- ranks "3399:7369"
-	 [9]={p=3417,lvl=389}, -- ranks "3399:7370"
-	[10]={p=3418,lvl=392}, -- ranks "3399:7371"
-	[11]={p=3509,lvl=392}, -- ranks "3399:7372"
-	[12]={p=3510,lvl=392}, -- ranks "3399:7373"
-	[13]={p=3534,lvl=392},
-	[14]={p=3535,lvl=395},
-	[15]={p=3536,lvl=398},
-	[16]={p=1806,lvl=398}, -- no mythic 16+ itemmod, show just mythic
-	[17]={p=1806,lvl=402},
-	[18]={p=1806,lvl=402},
-	[19]={p=1806,lvl=405},
-	[20]={p=1806,lvl=405},
+	 [2]={p=3410,lvl=402}, -- ranks "3399:7363"
+	 [3]={p=3411,lvl=405}, -- ranks "3399:7364"
+	 [4]={p=3412,lvl=405}, -- ranks "3399:7365"
+	 [5]={p=3413,lvl=408}, -- ranks "3399:7366"
+	 [6]={p=3414,lvl=408}, -- ranks "3399:7367"
+	 [7]={p=3415,lvl=411}, -- ranks "3399:7368"
+	 [8]={p=3416,lvl=411}, -- ranks "3399:7369"
+	 [9]={p=3417,lvl=415}, -- ranks "3399:7370"
+	[10]={p=3418,lvl=415}, -- ranks "3399:7371"
+	[11]={p=3509,lvl=418}, -- ranks "3399:7372"
+	[12]={p=3510,lvl=418}, -- ranks "3399:7373"
+	[13]={p=3534,lvl=421},
+	[14]={p=3535,lvl=421},
+	[15]={p=3536,lvl=424},
+	[16]={p=1806,lvl=424}, -- no mythic 16+ itemmod, show just mythic
+	[17]={p=1806,lvl=428},
+	[18]={p=1806,lvl=428},
+	[19]={p=1806,lvl=431},
+	[20]={p=1806,lvl=431},
 }
 
 ItemScore.MythicItemBaseLevels = {

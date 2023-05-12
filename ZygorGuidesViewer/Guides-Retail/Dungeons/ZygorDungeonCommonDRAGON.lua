@@ -691,3 +691,176 @@ _TANK:_ |grouprole TANK
 |tip Face her away from the raid when possible.
 Click Here to Continue |confirm
 ]])
+ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Dragonflight Raids\\Aberrus, The Shadowed Crucible",{
+mapid=2166,
+achieveid={18160},
+patch='90200',
+condition_suggested=function() return level >= 70 end,
+keywords={"Shadowlands"},
+author="support@zygorguides.com",
+},[[
+step
+kill Kazzara, the Hellforged##201261 |goto Aberrus, the Shadowed Crucible/0 51.20,72.11
+_EVERYONE:_ |grouprole EVERYONE
+|tip At 100 energy, she will use "Hellbeam". |grouprole EVERYONE
+|tip Avoid its path when being cast and avoid pools of Revenant's Blood that appear. |grouprole EVERYONE
+|tip At 70% 50% and 30%, the raid will be hit with a permanent DoT that deals heavy shadowflame damage, increasing in damage at each %. |grouprole EVERYONE
+|tip Avoid puddles of "Hellsteel Fragment" and "Revenant's Blood" that appear during these phases. |grouprole EVERYONE
+|tip If marked with "Dread Rift", move away from other players. |grouprole EVERYONE
+|tip It may be beneficial to coordinate a spot for those marked so the raid knows where to go for Rays of Anguish. |grouprole EVERYONE
+|tip "Wings of Extinction" knocks back players and deals moderate shadow damage. |grouprole EVERYONE
+_DAMAGE:_
+|tip Players targeted by "Rays of Anguish" should use Dread Rift puddles to remove it.  |grouprole DAMAGE
+_TANK:_
+|tip Tank swap after "Terror Claw" applications. |grouprole TANK
+|tip Face Kazzara away from the raid and where she stands. |grouprole TANK
+Click Here to continue |confirm
+step
+kill The Amalgamation Chamber |goto Aberrus, the Shadowed Crucible/1 44.33,63.44
+|tip There will be two sides during the fight:
+_Krozgoth Side_
+_EVERYONE:_ |grouprole EVERYONE
+|tip If marked by "Umbral Detonation", move to the side/back of the room and avoid being within 8 yards of others. |grouprole EVERYONE
+|tip Each detonation will leave behind "Lingering Umbra." |grouprole EVERYONE
+|tip Ranged should stack in one spot for "Coalescing Void" then spread out quickly via Blink or Warlock Gate. |grouprole EVERYONE
+|tip Watch for stray "Swirling Flame" from the opposite side. |grouprole EVERYONE
+|tip Try to reduce Krozgoth's health pool to 50% at the same time as Moltannia's. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip It's recommended that ranged DPS start here. |grouprole DAMAGE
+|tip
+_Moltannia Side_
+_EVERYONE:_ |grouprole EVERYONE
+|tip Players targeted by "Swirling Flame" should aim it at a safe side of the arena when possible. |grouprole EVERYONE
+|tip Soak up the "Molten Eruption" as it reduces the HP of the opposite side while active. |grouprole EVERYONE
+|tip Stack for "Fiery Meteor" or have a player with immunities absorb it. |grouprole EVERYONE
+|tip Try to reduce Moltannia's health pool to 50% at the same time as Krozgoth's. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip It's recommended that melee DPS start here. |grouprole DAMAGE
+_Molgoth_
+_EVERYONE:_ |grouprole EVERYONE
+|tip Everyone must absorb the "Convergent Eruption" circles that appear while avoiding "Orbs" that spawn after. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Melee need to absorb "Gloom Conflagration" if no immune players are available. |grouprole DAMAGE
+|tip Ranged uses the same Coalescing Void strategy as previously stated. |grouprole DAMAGE
+|tip Players targeted by "Blistering Twilight" should move away from the raid to safe spots. |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip Ranged uses the same Coalescing Void strategy as previously stated. |grouprole HEALER
+|tip Players targeted by "Blistering Twilight" should move away from the raid to safe spots. |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip Face the boss away from the raid at all times to avoid damage from "Shadowflame Burst". |grouprole TANK
+Click Here to continue |confirm
+step
+kill Assault of the Zaqali |goto Aberrus, the Shadowed Crucible/2 42.25,35.51
+_Boss Group_
+_EVERYONE:_ |grouprole EVERYONE
+|tip Rocks will appear nearby that need to be tossed off the ledge indicated by yellow arrows. |grouprole EVERYONE
+|tip Try to throw rocks at different arrows to avoid additional adds. |grouprole EVERYONE
+|tip At 100 energy, the boss will jump to the opposite platform. |grouprole EVERYONE
+_Add Group_
+_EVERYONE:_ |grouprole EVERYONE
+|tip DPS Priority:Breaking Magma Mystic Shield, Obsidian Guard, Flamebound Huntsman, the boss then tap wallclimbers as they appear. |grouprole EVERYONE
+|tip When the boss jumps to this platform, avoid the area of impact. |grouprole EVERYONE
+|tip Tanks should grab adds as soon as possible save for Wallclimbers. |grouprole EVERYONE
+|tip Ranged avoid standing near the edge of the platform to avoid more adds. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Interrupt "Lava Bolt" casts when possible. |grouprole DAMAGE
+_Phase 2_
+_EVERYONE:_ |grouprole EVERYONE
+|tip At 15% the boss moves to the center of the room. |grouprole EVERYONE
+|tip "Flame Cudgel" deals damage towards a tank, dealing frontal damage and produces whirls that must be avoided. |grouprole EVERYONE
+|tip "Catastrophic Slam" targets the door spawning a circle that the raid must soak to reduce the damage taken. |grouprole EVERYONE
+|tip This will cause you to take more damage each soak. |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip Bring all adds to the boss and AoE them down. |grouprole TANK
+|tip Tank the boss facing away fromt he raid at all times. |grouprole TANK
+Click Here to continue |confirm
+step
+kill Rashok##201320 |goto Aberrus, the Shadowed Crucible/0 67.24,22.06
+_EVERYONE:_ |grouprole EVERYONE
+|tip Players targeted by "Searing Slam" should move away from the raid to a corner, placing them clockwise while avoiding lava pools. |grouprole EVERYONE
+|tip Players targeted by "Shadowlava Blast" should aim it towards a wall. |grouprole EVERYONE
+|tip Everyone should soak "Charged Smash" when possible. |grouprole EVERYONE
+|tip "Doom Flame" circles should also be soaked. |grouprole EVERYONE
+|tip At 100 Energy, bring the boss to the center of the room. |grouprole EVERYONE
+|tip During "Siphon Energy (Conduit)", group up and avoid Shadow Lines while dodging the boss damage until his energy reaches zero. |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip Keep the boss and "Living Lava" in line of sight to watch moving puddles. |grouprole TANK
+Click Here to continue |confirm
+step
+kill Zskarn##202637 |goto Aberrus, the Shadowed Crucible/0 50.86,24.57
+_EVERYONE:_ |grouprole EVERYONE
+|tip Once traps active, move clockwise, keeping the boss close to active traps. |grouprole EVERYONE
+|tip Players targeted by "Unstable Embers" should move away from the group. |grouprole EVERYONE
+|tip Traps will knockback the raid when destroyed, so be aware of your surroundings to avoid being knocked into damage. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Players with immunities may also do this. |grouprole DAMAGE
+|tip "Golems" should be the primary target while active with their casts being interrupted. |grouprole DAMAGE
+|tip Have a player with high mobility Salvage Parts for disabling traps. |grouprole DAMAGE
+|tip Prioritize disabling traps near the center of the room when possible. |grouprole DAMAGE
+_TANK:_ |grouprole TANK
+|tip Tank should move the boss next to a Dragon Statue and wait until traps become active. |grouprole TANK
+|tip Off-tank should soak "Shrapnel Bomb" when they appear. |grouprole TANK
+|tip Bring Golems to the boss when possible. |grouprole TANK
+Click Here to continue |confirm
+step
+kill Magmorax##201579 |goto Aberrus, the Shadowed Crucible/0 51.03,46.64
+_EVERYONE:_ |grouprole EVERYONE
+|tip During the encounter, random players will be targeted by "Molten Spittle". |grouprole EVERYONE
+|tip After 6 seconds the afflicted players will detonate, leaving behind "Magma Puddles." |grouprole EVERYONE
+|tip Magma Puddles need to be soaked up, usually by designated players. |grouprole EVERYONE
+|tip Avoid stacking damage from Magma Puddles during "Igniting Roar." |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Melee should place the puddles near the boss so that they can soak it while ranged should also try to keep it nearby. |grouprole DAMAGE
+|tip "Overwhelming Stomp" can be mitigated by Warlock Gates and should be when possible. |grouprole DAMAGE
+_TANK:_ |grouprole TANK
+|tip Tank the boss near the side of the room for Overwhelming Stomp. |grouprole TANK
+|tip Tanks be sure to keep the boss out of Magma Puddles. |grouprole TANK
+|tip Tank swap every 2 stacks of "Incinerating Maw." |grouprole TANK
+Click Here to continue |confirm
+step
+kill Echo of Neltharion |goto Aberrus, the Shadowed Crucible/3 50.62,28.23
+_Warder Phase_
+_EVERYONE:_ |grouprole EVERYONE
+|tip "Echoing Fissure" does lethal damage the closer you are to the boss when it goes off. |grouprole EVERYONE
+|tip "Twisted Eruption" will split the room with a rock wall, damaging players near where it appears. |grouprole EVERYONE
+|tip "Rushing Shadows" attack random enemies and can cause the Twisted Eruption to Shatter. |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip For "Calamitous Strike" the tank will be knocked back. |grouprole TANK
+|tip Try to avoid being knocked into the Twisted Eruption or it will cause a "Shatter", dealing raid wide damage. |grouprole TANK
+|tip
+_Corruption and Fracture Phase_
+_EVERYONE:_ |grouprole EVERYONE
+|tip "Twisted Aberrations" deal massive AoE damage and leave behind portals._ |grouprole EVERYONE
+|tip During "Ebon Destruction" players must use the portals to avoid the damage._ |grouprole EVERYONE
+_TANK:_ |grouprole TANK
+|tip Tanks will be targeted by "Sunder Shadow" which will seperate them from their bodies. |grouprole TANK
+|tip You will need to run back asap. |grouprole TANK
+step
+kill Scalecommander Sarkareth##205319 |goto Aberrus, the Shadowed Crucible/4 48.97,71.21
+PHASE 1
+_EVERYONE:_ |grouprole EVERYONE
+|tip Players hit by "Emptiness Between Stars" have their damage reduced by 99% and will die unless they recover a fragment of their mind.
+|tip "Glittering Surge" applies Dazzled to players who have Oppressing Howl. |grouprole EVERYONE
+|tip Avoid "Scorching Bomb" which targets random players which will detonate leaving behind Burning Ground.
+|tip Players hit will take heavy damage as well as a DoT.
+_TANK:_ |grouprole TANK
+|tip "Burning Claws" deals heavy damage leaving a dot. |grouprole TANK
+|tip When the DoT from Burning Claws drops, "Blazing Blast" deals raid wide damage based on damage taken from the DoT. |grouprole TANK
+PHASE 2
+_DAMAGE:_ |grouprole DAMAGE
+|tip "Abyssal Breath" creates temporal images of Sarkareth, increasing power from "Ebon Might." |grouprole DAMAGE
+|tip "Void Bomb" erupts for high damage unless detonated within "Emptiness Between Stars." |grouprole DAMAGE
+_HEALER:_ |grouprole HEALER
+|tip "Void Bomb" erupts for high damage unless detonated within "Emptiness Between Stars." |grouprole HEALER
+_TANK:_ |grouprole TANK
+|tip "Void Claw" gives a DoT and reduces healing recieved by 25% for 18 seconds and stacks.
+|tip When the effect expires, "Void Blast" dealing damage to players within 20 yards of the victim.
+PHASE 3
+_EVERYONE:_ |grouprole EVERYONE
+|tip During "Cosmic Ascension" Sarkareth enters a portal and deals heavy damage as well as knocking back players near. |grouprole EVERYONE
+|tip During "Astral Formation" asteroids well be pulled from the portal and land randomly on the battlefield. |grouprole EVERYONE
+|tip During "Scouring Eternity", hide behind Astral Formations to avoid lethal damage. |grouprole EVERYONE
+_DAMAGE:_ |grouprole DAMAGE
+|tip Void Bomb and its mechanics persist.
+confirm
+]])

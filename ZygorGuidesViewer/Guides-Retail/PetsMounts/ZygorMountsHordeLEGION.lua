@@ -412,231 +412,263 @@ model={70060},
 description="\nThis guide will help you acquire the Predatory Bloodgazer.",
 },[[
 step
-You must first obtain the Bloodgazer Hatchling before being able to get this mount.
-|tip Check out our Bloodgazer Hatchling guide to accomplish this.
-confirm
+Obtain the Bloodgazer Hatchling
+|tip Use the Bloodgazer Hatchling guide to accomplish this.
+Click Here to Open the "Bloodgazer Hatchling" Battle Pet Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pets\\Flying Pets\\Bloodgazer Hatchling"
+'|complete haspet(1977) or hasmount(213158)
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Raising Your Bloodgazer##44990
+accept Raising Your Bloodgazer##44990 |or
+'|complete hasmount(213158) |or
 step
 Level your Bloodgazer Hatchling to 25 |q 44990/1
+|tip You can do this by winning pet battles with your Bloodgazer Hatchling until they are level 25, or by using the _Ultimate Battle-Training Stone_.
+|tip If you use the _Ultimate Battle Training Stone_ you may have to abandon and reacquire the quest.
+'|complete completedq(44990) or hasmount(213158)
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Raising Your Bloodgazer##44990
+turnin Raising Your Bloodgazer##44990 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept The Smell of Blood Elves##44993
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept The Smell of Blood Elves##44993 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Acclimate your Bloodgazer to the Blood Elves |q 44993/1 |goto Silvermoon City/0 79.86,58.69
+Enter the building |goto Silvermoon City/0 79.86,58.69
+Acclimate your Bloodgazer to the Blood Elves |q 44993/1 |goto 59.61,19.22 |or
+|tip Go into the Silvermoon City Inn to accomplish this.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin The Smell of Blood Elves##44993
+turnin The Smell of Blood Elves##44993 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Hunting Lesson: Erudite Manafiend##44996
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Hunting Lesson: Erudite Manafiend##44996 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Challenge and defeat 3 Erudite Manafiends using your Bloodgazer Hatchling
-|tip Your Hatchling must be in the first pet battle slot to receive credit.
-|tip These will only appear during daylight hours.
-Defeat #3# Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00
+Defeat Erudite Manafiends in a Pet Battle
+|tip Your Hatchling must be on your battle team, but does not have to participate in the battle to receive credit.
+|tip You will still get credit if your hatchling dies, as long as you win the pet battle.
+|tip The Erudite Manafiends will only appear in the daytime.
+Defeat #3# Erudite Manafiends |q 44996/1 |goto Azsuna/0 57.64,16.00 |or
 |tip These can be found all around these Ley-Ruins.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Hunting Lesson: Erudite Manafiend##44996
+turnin Hunting Lesson: Erudite Manafiend##44996 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Allies in Azsuna##44998
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Allies in Azsuna##44998 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
-Complete #5# World Quests in Azsuna |q 44998/1
-|tip You can use our World Quest guide to accomplish this.
+Complete World Quests in Azuna
+Complete #5# World Quests in Azsuna |q 44998/1 |or
+|tip Use the World Quest guides to accomplish this.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Allies in Azsuna##44998
+turnin Allies in Azsuna##44998 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Bloodgazer Team Up##45000
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Bloodgazer Team Up##45000 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned before starting each Pet Battle
-|tip Your Bloodgazer Hatchling must be in the first battle slot.
-|tip Your Bloodgazer Hatchling can not die.
-Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45000/1
-|tip You can use our World Quest guide to accomplish this.
+Win Pet Battle World Quests
+|tip You must summon your Bloodgazer Hatchling before you begin the pet battle.
+|tip Your Bloodgazer Hatchling must be the first pet on your battle team.
+|tip Your Bloodgazer Hatchling must not die during the fight.
+Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45000/1 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Bloodgazer Team Up##45000
+turnin Bloodgazer Team Up##45000 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Dangerous Prey##45002
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Dangerous Prey##45002 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned while you complete this World Quest
-Complete 1 Rare Elite World Quest with your Bloodgazer Hatchling |q 45002/1
-|tip You can use our World Quest guide to accomplish this
+Complete Rare Elite World Quest
+|tip Your Bloodgazer Hatchling should be summoned during the completion of this world quest.
+Complete 1 Rare Elite World Quest with your Bloodgazer Hatchling |q 45002/1 |or
+|tip You can use the World Quest guide to accomplish this.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Dangerous Prey##45002
+turnin Dangerous Prey##45002 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
 accept Hunting Lesson: Fledgling Kingfeather##45004
-|tip To Start the next quest you will have to wait for dailies to reset.
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Challenge and defeat 3 Fledgling Kingfeather using your Bloodgazer Hatchling
+Defeat Fledgling Kingfeathers in a Pet Battle
 |tip Your Hatchling must be in the first pet battle slot to receive credit.
-Defeat #3# Fledgling Kingfeather |q 45004/1 |goto Azsuna/0 42.18,21.63
+Defeat #3# Fledgling Kingfeather |q 45004/1 |goto Azsuna/0 42.18,21.63 |or
 |tip These can be found all around this area.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Hunting Lesson: Fledgling Kingfeather##45004
+turnin Hunting Lesson: Fledgling Kingfeather##45004 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept The Unfavorable Faction##45006
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept The Unfavorable Faction##45006 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned while you complete these World Quests
-Complete #3# PvP World Quests with your Bloodgazer Hatchling |q 45006/1
-|tip You can use our World Quest guide to accomplish this.
+Complete PVP World Quests
+|tip Your Bloodgazer Hatchling should be summoned during the completion of the world quest.
+Complete #3# PvP World Quests with your Bloodgazer Hatchling |q 45006/1 |or
+|tip You can use the World Quest guides to accomplish this.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin The Unfavorable Faction##45006
+turnin The Unfavorable Faction##45006 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Bloodgazer Bonding##45008
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Bloodgazer Bonding##45008 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
 talk Aerith Primrose##96780
-buy 1 Purple Blossom##142498 |q 45008/1 |goto Dalaran L/10 56.83,53.54
+buy 1 Purple Blossom##142498 |q 45008/1 |goto Dalaran L/10 56.83,53.54 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Bloodgazer Bonding##45008
+turnin Bloodgazer Bonding##45008 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Hunting Lesson: Juvenile Scuttleback##45010
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Hunting Lesson: Juvenile Scuttleback##45010 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Challenge and defeat 3 Juvenile Scuttlebacks using your Bloodgazer Hatchling and 2 Flying type pets
+Defeat Juvenile Scuttlebacks in a Pet Battle
 |tip Your Hatchling must be in the first pet battle slot to receive credit.
-|tip Your other 2 pets need to be flying type pets.
-Defeat #3# Juvenile Scuttlebacks |q 45010/1 |goto Azsuna/0 58.48,58.15
+|tip Your other 2 pets need to be flying-type pets.
+Defeat #3# Juvenile Scuttlebacks |q 45010/1 |goto Azsuna/0 58.48,58.15 |or
 |tip These can be found all around this area.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Hunting Lesson: Juvenile Scuttleback##45010
+turnin Hunting Lesson: Juvenile Scuttleback##45010 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Teamwork Lesson: Serpentrix##45012
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Teamwork Lesson: Serpentrix##45012 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c |q 45012
+Enter the _Eye of Azshara_ Dungeon
+kill Serpentrix##91808 |q 45012/1 |goto Eye of Azshara/1 52.59,35.50 |or
+|tip This is the 3rd boss in the dungeon.
+|tip You will have to kill the previous bosses to reach this boss.
+|tip Your Bloodgazer Hatchling should be summoned while killing this boss.
+|tip Use the "Eye of Azshara" Dungeon Guide to accomplish this.
+Click Here to Open the "Eye of Azshara" Dungeon Guide |confirm |loadguide "Dungeon Guides\\Legion Dungeons\\Eye of Azshara"
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned while you kill Serpentrix
-kill Serpentrix##91808 |q 45012/1 |goto Eye of Azshara/1 52.59,35.50
-|tip You can use our Eye of Azshara dungeon guide to accomplish this.
-step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Teamwork Lesson: Serpentrix##45012
+turnin Teamwork Lesson: Serpentrix##45012 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Teamwork Lesson: Skorpyron##45016
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Hunting Lesson: Felspider##45014 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Press _I_ and queue for The Nighthold or enter the raid with your group |goto The Nighthold/1 24.0,91.1 |c |q 45016
+Defeat 3 Felspiders in a Pet Battle
+|tip Your Hatchling must be in the first pet battle slot to receive credit.
+|tip Your other 2 pets need to be Critter type pets.
+Defeat #3# Felspiders |q 45014/1 |goto Azsuna/0 32.10,50.87 |or
+|tip These can be found all around this area.
+'|complete hasmount(213158) |or
+step
+talk Bloodgazer Hatchling##115787
+turnin Hunting Lesson: Felspider##45014 |or
+'|complete hasmount(213158) |or
+step
+talk Bloodgazer Hatchling##115787
+accept Teamwork Lesson: Skorpyron##45016 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
+step
+Enter The Nighthold Raid |goto The Nighthold/1 24.0,91.1 |c |q 45016 |or
+'|complete hasmount(213158) |or
 step
 Make sure your Bloodgazer Hatchling is summoned before killing Skorpyron
-kill Skorpyron##102263 |q 45016/1 |goto 32.0,61.22
-|tip Check out our Nighthold guide to accomplish this.
+kill Skorpyron##102263 |q 45016/1 |goto 32.0,61.22 |or
+|tip This is the 1st boss in this raid.
+|tip Your Bloodgazer Hatchling should be summoned while killing this boss.
+|tip Use the "Nighthold" Raid Guide to accomplish this.
+Click Here to Open the "Nighthold" Raid Guide |confirm |loadguide "Dungeon Guides\\Legion Raids\\Nighthold - Normal/Heroic"
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Teamwork Lesson: Skorpyron##45016
+turnin Teamwork Lesson: Skorpyron##45016 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
 accept Bloodgazer Team Rumble##45018
-|tip To Start the next quest you will have to wait for dailies to reset.
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Make sure your Bloodgazer Hatchling is summoned before starting each Pet Battle
+Win Pet Battle World Quests
 |tip Your Sharptalon Hatchling must be in the first battle slot.
 |tip Your other 2 pets must be Beast type pets.
 |tip Your Bloodgazer Hatchling can not die.
-Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45018/1
-|tip You can use our World Quest guide to accomplish this.
+Defeat #3# Pet Battle world quests with your Bloodgazer Hatchling |q 45018/1 |or
+|tip Use the World Quest guides to accomplish this.
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-turnin Bloodgazer Team Rumble##45018
+turnin Bloodgazer Team Rumble##45018 |or
+'|complete hasmount(213158) |or
 step
-Summon your Bloodgazer Hatchling
-Next to you
 talk Bloodgazer Hatchling##115787
-accept Bloodgazer Reunion##45020
-|tip To Start the next quest you will have to wait for dailies to reset.
+accept Bloodgazer Reunion##45020 |or
+|tip To start this quest you will have to wait for dailies to reset, or you can accept this quest on a different character.
+|tip Once you accept the quest, it is account-wide and can be completed on any character.
+'|complete hasmount(213158) |or
 step
-Return your Bloodgazer to Alluvanon's Delta |q 45020/1 |goto Azsuna/0 35.63,7.71
+Return your Bloodgazer to Alluvanon's Delta |q 45020/1 |goto Azsuna/0 35.63,7.71 |or
+'|complete hasmount(213158) |or
 step
 clicknpc Injured Bloodgazer Matriarch##116139
-_"Bandage the Injured Matriarch"_ |q 45020/2 |goto Azsuna/0 35.63,7.71
+Bandage the Injured Matriarch |q 45020/2 |goto Azsuna/0 35.63,7.71 |or
+'|complete hasmount(213158) |or
 step
-click the Quest completion box
 turnin Bloodgazer Reunion##45020
-collect Predatory Bloodgazer##137577 |n |use Predatory Bloodgazer##137577
-learnmount Predatory Bloodgazer##213158
+|tip Click the quest complete box.
+collect Predatory Bloodgazer##137577 |or
+'|complete hasmount(213158) |or
 step
-_Congratulations!_
-You are now the proud owner of a Predatory Bloodgazer.
+|use Predatory Bloodgazer##137577
+Learn the "Predatory Bloodgazer" Mount |learnmount Predatory Bloodgazer##213158
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Battle Pet Mounts\\Snowfeather Hunter",{
 author="support@zygorguides.com",
@@ -1164,95 +1196,96 @@ description="\nThis guide will help you acquire the Deathlord's Vilebrood Vanqui
 },[[
 step
 This mount is only available to Death Knights |confirm
-|tip You can earn it by completing this guide on a Horde or Alliance Death Knight.
+|tip You can obtain it by completing this guide on a level 45+ Horde or Alliance Death Knight.
 |only if not DeathKnight
 step
 You must complete the Broken Shore campaign to continue
-Breach the Tomb |q 46246 |future
+Strike Them Down |q 46246 |future
 |tip Use the Broken Shore Campaign guide to accomplish this.
 Click here to load the "Broken Shore Campaign" guide |confirm |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
-|only DeathKnight
+|only if DeathKnight
 step
 talk Dread Commander Thalanor##117573
 accept Amal'thazad's Message##46719 |goto Broken Shore/0 43.92,63.12
-|only DeathKnight
+|only if DeathKnight
 step
 talk Amal'thazad##93555
 turnin Amal'thazad's Message##46719 |goto Broken Shore/2 58.21,31.07
 accept Frozen Memories##46720 |goto 58.21,31.07
-|only DeathKnight
+|only if DeathKnight
 step
 Take the portal to the top of Archerus |q 46720/1 |goto 55.52,28.34
-|only DeathKnight
+|only if DeathKnight
 step
 Listen to the Lich King's plan |q 46720/2 |goto Broken Shore/1 47.82,51.83
 |tip Simply wait for the dialogue to complete.
-|only DeathKnight
+|only if DeathKnight
 step
 Witness the Lich King's vision  |q 46720/3 |goto Icecrown/0 44.70,4.41
 |tip Land on the little chunk of ice and wait for the vision to complete.
-|only DeathKnight
+|only if DeathKnight
 step
-Click the quest completion box
-turnin Frozen Memories##46720 |goto 44.70,4.41
-accept Draconic Secrets##46812 |goto 44.70,4.41
-|only DeathKnight
+Click the Complete Quest Box:
+turnin Frozen Memories##46720
+accept Draconic Secrets##46812
+|tip If this quest does not become automatically available, use your Deathgate ability to return to Archerus Hold and get the quest from Slimy.
+You can find Slimy to Amal'thazad's left here [Broken Shore/2 54.79,28.95]
+|only if DeathKnight
 step
 talk Trizormu##27938
 |tip He is on the ground floor.
 Tell him: _"Tell me all you know of a glacier to the north where a powerful dragon fell."_
 Trizormu interrogated |q 46812/1 |goto Dragonblight/0 60.31,54.86
-|only DeathKnight
+|only if DeathKnight
 step
 talk Tariolstrasz##26443
 |tip He is on the ground floor.
 Tell him: _"Tell me all you know of a great dragon that fell on a glacier to the north of Icecrown."_
 Steward Tariolstrasz interrogated |q 46812/2 |goto 57.90,54.16
-|only DeathKnight
+|only if DeathKnight
 step
 Infiltrate the Ruby Sanctum |q 46812/3 |goto The Ruby Sanctum DK/0 49.01,31.40
-|only DeathKnight
+|only if DeathKnight
 step
 Follow the path |goto 41.40,76.55 < 20 |only if walking
 |tip Avoid the Ruby Keepers.
 click Codex Draconomicus Rubicus##268643
 Read the Codex Draconomicus |q 46812/4 |goto 47.92,77.21
-|only DeathKnight
+|only if DeathKnight
 step
 Click the quest completion box
 turnin Draconic Secrets##46812 |goto 47.92,77.21
 accept The Lost Glacier##46813 |goto 47.92,77.21
-|only DeathKnight
+|only if DeathKnight
 step
 Travel to the Lost Glacier |q 46813/1 |goto Icecrown/0 42.60,0.38
 |tip Move around a little bit if the scenario doesn't trigger.
-|only DeathKnight
+|only if DeathKnight
 step
 Find the Frozen Span |scenariogoal 1/36221 |q 46813 |goto The Lost Glacier/0 52.20,69.57
 |tip You will need to fight through the ghouls to reach the Frozen Span.
-|only DeathKnight
+|only if DeathKnight
 step
 Find Kyranastraz' Rest |scenariogoal 2/36222 |q 46813
 |tip There is a narrow path of ice ahead. Follow that towards the skeletal remains.
-|only DeathKnight
+|only if DeathKnight
 step
 kill Revitalized Ghoul##121040+, Revitalized Monstrosity##121048+, Revitalized Skeleton##121060+
 Collect the red dragon's essence |scenariogoal 3/36223 |q 46813
 |tip Kill mobs until the bar on your screen fills up.
-|only DeathKnight
+|only if DeathKnight
 step
 Convert the life essence to death |scenariogoal 4/36224 |q 46813
 |tip Use the special action button ability on your screen.
-|only DeathKnight
+|only if DeathKnight
 step
 clicknpc Deep Crack##121128
 |tip It is located near the green mound.
 turnin The Lost Glacier##46813
-|only DeathKnight
+|only if DeathKnight
 step
-_Congratulations!_
-You collected the _Deathlord's Vilebrood Vanquisher_ mount
-|only DeathKnight
+Learn the "Deathlord's Vilebrood Vanquisher" Mount |learnmount Deathlord's Vilebrood Vanquisher##229387
+|only if DeathKnight
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Class Mounts\\Demon Hunter\\Slayer's Felbroken Shrieker",{
 author="support@zygorguides.com",

@@ -1,10 +1,10 @@
-## Interface: 30401
+## Interface: 30402
 
 
 ## Title: |cff0000FFGSE:|r |cFF00D1FFLDB|r
 ## Notes: LibDataBroker Plugin for GSE
 ## Author: TimothyLuke
-## Version: 3.1.32
+## Version: 3.1.33
 ## Dependencies: GSE
 
 

@@ -2,7 +2,7 @@ local cfg
 local L = OILVL_L
 local LibDD
 local HELM, NECK, SHOULDER, SHIRT, CHEST, WAIST, LEGS, FEET, WRISTS, HANDS, RING1, RING2, TRINK1, TRINK2, BACK, WEP, OFFHAND = 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17;
-
+local omp = C_PlayerInfo.GetPlayerMythicPlusRatingSummary;
 local oenchantItem = {
 	[0] = {0, INVTYPE_AMMO},
 	[1] = {0, INVTYPE_HEAD},
@@ -177,13 +177,14 @@ local Oilvltimer = LibStub("AceAddon-3.0"):NewAddon("OilvlTimer", "AceTimer-3.0"
 
 local OILVL = CreateFrame("Frame");
 local oilvlframesw=false;
-local oilvlframedata = {};
+oilvlframedata = {};
 oilvlframedata.guid = {};
 
 oilvlframedata.name = {};
 oilvlframedata.spec = {}; -- specialization
 oilvlframedata.role = {};
 oilvlframedata.ilvl = {};
+oilvlframedata.mps = {}; -- current season mythic plus score
 
 oilvlframedata.me = {}; -- miss enchant
 oilvlframedata.mg = {}; -- miss gem
@@ -291,57 +292,57 @@ local OSTATCN = {
 local OSTATCN2 = {
 	{
 		18180, -- [1]
-		18181, -- [2]
-		18182, -- [3]
-		18183, -- [4]
+		18189, -- [2]
+		18210, -- [3]
+		18219, -- [4]
 	}, -- [1]
 	{
-		18184, -- [1]
-		18185, -- [2]
-		18186, -- [3]
-		18188, -- [4]
+		18181, -- [1]
+		18190, -- [2]
+		18211, -- [3]
+		18220, -- [4]
 	}, -- [2]
 	{
-		18187, -- [1]
-		18189, -- [2]
-		18190, -- [3]
-		18191, -- [4]
+		18182, -- [1]
+		18191, -- [2]
+		18212, -- [3]
+		18221, -- [4]
 	}, -- [3]
 	{
-		18192, -- [1]
-		18194, -- [2]
-		18195, -- [3]
-		18196, -- [4]
+		18183, -- [1]
+		18192, -- [2]
+		18213, -- [3]
+		18222, -- [4]
 	}, -- [4]
 	{
-		18197, -- [1]
-		18198, -- [2]
-		18210, -- [3]
-		18211, -- [4]
+		18184, -- [1]
+		18194, -- [2]
+		18214, -- [3]
+		18223, -- [4]
 	}, -- [5]
 	{
-		18212, -- [1]
-		18213, -- [2]
-		18214, -- [3]
-		18215, -- [4]
+		18185, -- [1]
+		18195, -- [2]
+		18215, -- [3]
+		18224, -- [4]
 	}, -- [6]
 	{
-		18216, -- [1]
-		18217, -- [2]
-		18218, -- [3]
-		18219, -- [4]
+		18186, -- [1]
+		18196, -- [2]
+		18216, -- [3]
+		18225, -- [4]
 	}, -- [7]
 	{
-		18220, -- [1]
-		18221, -- [2]
-		18222, -- [3]
-		18223, -- [4]
+		18187, -- [1]
+		18198, -- [2]
+		18218, -- [3]
+		18227, -- [4]
 	}, -- [8]
 	{
-		18224, -- [1]
-		18225, -- [2]
-		18226, -- [3]
-		18227, -- [4]
+		18183, -- [1]
+		18192, -- [2]
+		18213, -- [3]
+		18222, -- [4]
 	}, -- [9]
 }
 
@@ -635,6 +636,7 @@ function ORfbIlvl(ounit)
 			if GetUnitName(OTCurrent2,"") ~= nil then
 				--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 				oilvlframedata.name[tonumber(ounit)] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+				oilvlframedata.mps[tonumber(ounit)] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 				--oilvlframedata.ilvl[tonumber(ounit)][1] = ""
 				oilvl(OTCurrent2)
 			end
@@ -646,6 +648,7 @@ function ORfbIlvl(ounit)
 				if GetUnitName(OTCurrent2,"") ~= nil then
 					--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 					oilvlframedata.name[1] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+					oilvlframedata.mps[1] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 					--oilvlframedata.ilvl[1][1] = ""
 					oilvl(OTCurrent2)
 				end
@@ -656,6 +659,7 @@ function ORfbIlvl(ounit)
 				if GetUnitName(OTCurrent2,"") ~= nil then
 					--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 					oilvlframedata.name[tonumber(ounit)] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+					oilvlframedata.mps[tonumber(ounit)] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 					--oilvlframedata.ilvl[tonumber(ounit)][1] = ""
 					oilvl(OTCurrent2)
 				end
@@ -668,6 +672,7 @@ function ORfbIlvl(ounit)
 				if GetUnitName(OTCurrent2,"") ~= nil then
 					--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 					oilvlframedata.name[1] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+					oilvlframedata.mps[1] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 					--oilvlframedata.ilvl[1][1] = ""
 					oilvl(OTCurrent2)
 				end
@@ -678,6 +683,7 @@ function ORfbIlvl(ounit)
 				if GetUnitName(OTCurrent2,"") ~= nil then
 					--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 					oilvlframedata.name[tonumber(ounit)] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+					oilvlframedata.mps[tonumber(ounit)] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 					--oilvlframedata.ilvl[tonumber(ounit)][1] = ""
 					oilvl(OTCurrent2)
 				end
@@ -689,6 +695,7 @@ function ORfbIlvl(ounit)
 			if GetUnitName(OTCurrent2,"") ~= nil then
 				--_G[OTCurrent]:SetText(oClassColor(OTCurrent2)..GetUnitName(OTCurrent2,""):gsub("%-.+", ""));
 				oilvlframedata.name[1] = GetUnitName(OTCurrent2,""):gsub("%-.+", "");
+				oilvlframedata.mps[1] = omp(OTCurrent2) and omp(OTCurrent2).currentSeasonScore or "";
 				--oilvlframedata.ilvl[1][1] = ""
 				oilvl(OTCurrent2)
 			end
@@ -754,40 +761,51 @@ function oilvlcheckunknown()
 			if oilvlframedata.name[i] == "Unknown" then
 				oilvlframedata.guid[i] = UnitGUID("raid"..i);
 				oilvlframedata.name[i] = GetUnitName("raid"..i,""):gsub("%-.+", "");
+				oilvlframedata.mps[i] = omp("raid"..i) and omp("raid"..i).currentSeasonScore or "";
 				if _OT(oilvlframedata.ilvl,i,4) and oilvlframedata.ilvl[i][4] > 0 then
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
 				else
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
 				end
 				_G["OILVLRAIDFRAME"..i]:Show();
+			else
+				oilvlframedata.mps[i] = omp("raid"..i) and omp("raid"..i).currentSeasonScore or "";
 			end
 		end
 	elseif IsInGroup(LE_PARTY_CATEGORY_INSTANCE) then
 		rnum = GetNumGroupMembers(LE_PARTY_CATEGORY_INSTANCE)
+		oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 		for i = 2, rnum do
 			if oilvlframedata.name[i] == "Unknown" then
 				oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 				oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
+				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
 				if _OT(oilvlframedata.ilvl,i,4) and oilvlframedata.ilvl[i][4] > 0 then
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
 				else
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
 				end
 				_G["OILVLRAIDFRAME"..i]:Show();
+			else
+				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";				
 			end
 		end
 	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
 		rnum = GetNumGroupMembers(LE_PARTY_CATEGORY_HOME)
+		oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 		for i = 2, rnum do
 			if oilvlframedata.name[i] == "Unknown" then
 				oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 				oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
+				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
 				if _OT(oilvlframedata.ilvl,i,4) and oilvlframedata.ilvl[i][4] > 0 then
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
 				else
 					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
 				end
 				_G["OILVLRAIDFRAME"..i]:Show();
+			else
+				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";				
 			end
 		end
 	else
@@ -847,6 +865,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 		oilvlframedata.mg[i] = "";
 		oilvlframedata.spec[i] = "";
 		oilvlframedata.gear[i] = "";
+		oilvlframedata.mps[i] = "";
 		_G["Oilvltier"..i]:SetText("")
 		_G["OilvlUpgrade"..i]:SetText("")
 	end
@@ -877,6 +896,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			oilvlframedata.guid[i] = "";
 			oilvlframedata.name[i] = "";
 			oilvlframedata.ilvl[i][1] = "";
+			oilvlframedata.mps[i] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
 			oilvlframedata.spec[i] = "";
@@ -894,6 +914,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			OilvlSetRank(i, rank);
 			oilvlframedata.guid[i] = UnitGUID("raid"..i);
 			oilvlframedata.name[i] = GetUnitName("raid"..i,""):gsub("%-.+", "");
+			oilvlframedata.mps[i] = omp("raid"..i) and omp("raid"..i).currentSeasonScore or "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -924,6 +945,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 		if UnitIsGroupLeader("player") then	OilvlSetRank(1, 2);	else OilvlSetRank(1, 0); end
 		oilvlframedata.guid[1] = UnitGUID("player");
 		oilvlframedata.name[1] = GetUnitName("player",""):gsub("%-.+", "");
+		oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 		oilvlframedata.ilvl[1][1] = "";
 		oilvlframedata.me[1] = "";
 		oilvlframedata.mg[1] = "";
@@ -938,6 +960,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			if UnitIsGroupLeader("party"..(i-1)) then OilvlSetRank(i, 2); else OilvlSetRank(i, 0); end
 			oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 			oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
+			oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -954,6 +977,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			_G["OILVLRAIDFRAME"..i]:Hide();
 			oilvlframedata.guid[i] = "";
 			oilvlframedata.name[i] = "";
+			oilvlframedata.mps[i] = "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -969,6 +993,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 		if UnitIsGroupLeader("player") then	OilvlSetRank(1, 2);	else OilvlSetRank(1, 0); end
 		oilvlframedata.guid[1] = UnitGUID("player");
 		oilvlframedata.name[1] = GetUnitName("player",""):gsub("%-.+", "");
+		oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 		oilvlframedata.ilvl[1][1] = "";
 		oilvlframedata.me[1] = "";
 		oilvlframedata.mg[1] = "";
@@ -983,6 +1008,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			if UnitIsGroupLeader("party"..(i-1)) then OilvlSetRank(i, 2); else OilvlSetRank(i, 0); end
 			oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 			oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
+			oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -998,6 +1024,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			_G["OILVLRAIDFRAME"..i]:Hide();
 			oilvlframedata.guid[i] = "";
 			oilvlframedata.name[i] = "";
+			oilvlframedata.mps[i] = "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -1013,6 +1040,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 		OIVLFRAME:SetWidth(400);
 		oilvlframedata.guid[1] = UnitGUID("player");
 		oilvlframedata.name[1] = GetUnitName("player",""):gsub("%-.+", "");
+		oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 		oilvlframedata.ilvl[1][1] = "";
 		oilvlframedata.me[1] = "";
 		oilvlframedata.mg[1] = "";
@@ -1039,6 +1067,7 @@ function OilvlCheckFrame()
 		td.mg = {};
 		td.spec = {};
 		td.gear = {};
+		td.mps = {};
 		for i=1,40 do
 			td.guid[i] = "";
 			td.name[i] = "";
@@ -1047,6 +1076,7 @@ function OilvlCheckFrame()
 			td.mg[i] = "";
 			td.spec[i] = "";
 			td.gear[i] = "";
+			td.mps[i] = "";
 			_G["Oilvltier"..i]:SetText("")
 			_G["OilvlUpgrade"..i]:SetText("")
 		end
@@ -1086,12 +1116,14 @@ function OilvlCheckFrame()
 						td.mg[j] = oilvlframedata.mg[i];
 						td.spec[j] = oilvlframedata.spec[i];
 						td.gear[j] = oilvlframedata.gear[i];
+						td.mps[j] = oilvlframedata.mps[i];
 						break;
 					end
 				end
 				if td.guid[j] == "" then
 					td.guid[j] = UnitGUID("raid"..j);
 					td.name[j] = GetUnitName("raid"..j,""):gsub("%-.+", "");
+					td.mps[j] = omp("raid"..j) and omp("raid"..j).currentSeasonScore or "";
 					td.ilvl[j] = {"",otooltip6gearsw};
 					td.me[j] = "";
 					td.spec[j] = "";
@@ -1105,6 +1137,7 @@ function OilvlCheckFrame()
 				_G["OILVLRAIDFRAME"..i]:Hide();
 				oilvlframedata.guid[i] = "";
 				oilvlframedata.name[i] = "";
+				oilvlframedata.mps[i] = "";
 				oilvlframedata.ilvl[i]= {"",otooltip6gearsw,0,0};
 				oilvlframedata.me[i] = "";
 				oilvlframedata.mg[i] = "";
@@ -1127,6 +1160,7 @@ function OilvlCheckFrame()
 				OilvlSetRank(i, rank);
 				oilvlframedata.guid[i] = td.guid[i];
 				oilvlframedata.name[i] = td.name[i];
+				oilvlframedata.mps[i] = td.mps[i];
 				oilvlframedata.ilvl[i] = td.ilvl[i];
 				oilvlframedata.me[i] = td.me[i];
 				oilvlframedata.mg[i] = td.mg[i];
@@ -1145,6 +1179,7 @@ function OilvlCheckFrame()
 						if UnitGUID("party"..j) == oilvlframedata.guid[i] then
 							td.guid[j+1] = oilvlframedata.guid[i];
 							td.name[j+1] = oilvlframedata.name[i];
+							td.mps[j+1]= oilvlframedata.mps[i];
 							td.ilvl[j+1] = oilvlframedata.ilvl[i];
 							td.me[j+1] = oilvlframedata.me[i];
 							td.mg[j+1] = oilvlframedata.mg[i];
@@ -1155,7 +1190,8 @@ function OilvlCheckFrame()
 					end
 					if td.guid[j+1] == "" then
 						td.guid[j+1] = UnitGUID("party"..j);
-						td.name[j+1] = GetUnitName("party"..j,""):gsub("%-.+", "");
+						td.name[j+1] = GetUnitName("party"..j,""):gsub("%-.+", "");						
+						td.mps[j+1] = omp("party"..j) and omp("party"..j).currentSeasonScore or "";
 						td.ilvl[j+1] = {"",otooltip6gearsw};
 						td.me[j+1] = "";
 						td.spec[j+1] = "";
@@ -1168,6 +1204,7 @@ function OilvlCheckFrame()
 					_G["OILVLRAIDFRAME"..i]:Hide();
 					oilvlframedata.guid[i] = "";
 					oilvlframedata.name[i] = "";
+					oilvlframedata.mps[i] = "";
 					oilvlframedata.ilvl[i] = {"",otooltip6gearsw,0,0};
 					oilvlframedata.me[i] = "";
 					oilvlframedata.mg[i] = "";
@@ -1196,6 +1233,7 @@ function OilvlCheckFrame()
 					oilvlframedata.guid[i] = td.guid[i];
 					oilvlframedata.name[i] = td.name[i];
 					oilvlframedata.ilvl[i] = td.ilvl[i];
+					oilvlframedata.mps[i] = td.mps[i];
 					oilvlframedata.me[i] = td.me[i];
 					oilvlframedata.mg[i] = td.mg[i];
 					oilvlframedata.spec[i] = td.spec[i];
@@ -1216,6 +1254,7 @@ function OilvlCheckFrame()
 							td.guid[j+1] = oilvlframedata.guid[i];
 							td.name[j+1] = oilvlframedata.name[i];
 							td.ilvl[j+1] = oilvlframedata.ilvl[i];
+							td.mps[j+1] = oilvlframedata.mps[i];
 							td.me[j+1] = oilvlframedata.me[i];
 							td.mg[j+1] = oilvlframedata.mg[i];
 							td.spec[j+1] = oilvlframedata.spec[i];
@@ -1226,6 +1265,7 @@ function OilvlCheckFrame()
 					if td.guid[j+1] == "" then
 						td.guid[j+1] = UnitGUID("party"..j);
 						td.name[j+1] = GetUnitName("party"..j,""):gsub("%-.+", "");
+						td.mps[j+1] = omp("party"..j) and omp("party"..j).currentSeasonScore or "";
 						td.ilvl[j+1] = {"",otooltip6gearsw};
 						td.me[j+1] = "";
 						td.spec[j+1] = "";
@@ -1238,6 +1278,7 @@ function OilvlCheckFrame()
 					_G["OILVLRAIDFRAME"..i]:Hide();
 					oilvlframedata.guid[i] = "";
 					oilvlframedata.name[i] = "";
+					oilvlframedata.mps[i] = "";
 					oilvlframedata.ilvl[i] = {"",otooltip6gearsw,0,0};
 					oilvlframedata.me[i] = "";
 					oilvlframedata.mg[i] = "";
@@ -1266,6 +1307,7 @@ function OilvlCheckFrame()
 					oilvlframedata.guid[i] = td.guid[i];
 					oilvlframedata.name[i] = td.name[i];
 					oilvlframedata.ilvl[i] = td.ilvl[i];
+					oilvlframedata.mps[i] = td.mps[i];
 					oilvlframedata.me[i] = td.me[i];
 					oilvlframedata.mg[i] = td.mg[i];
 					oilvlframedata.spec[i] = td.spec[i];
@@ -1284,6 +1326,7 @@ function OilvlCheckFrame()
 					oilvlframedata.guid[1] = oilvlframedata.guid[i];
 					oilvlframedata.name[1] = oilvlframedata.name[i];
 					oilvlframedata.ilvl[1] = oilvlframedata.ilvl[i]
+					oilvlframedata.mps[1] = oilvlframedata.mps[i];
 					oilvlframedata.me[1] = oilvlframedata.me[i];
 					oilvlframedata.mg[1] = oilvlframedata.mg[i];
 					oilvlframedata.spec[1] = oilvlframedata.spec[i];
@@ -1294,6 +1337,7 @@ function OilvlCheckFrame()
 				_G["OILVLRAIDFRAME"..i]:Hide();
 				oilvlframedata.guid[i] = "";
 				oilvlframedata.name[i] = "";
+				oilvlframedata.mps[i] = "";
 				oilvlframedata.ilvl[i] = {"",otooltip6gearsw,0,0};
 				oilvlframedata.me[i] = "";
 				oilvlframedata.mg[i] = "";
@@ -1309,6 +1353,7 @@ function OilvlCheckFrame()
 					OIVLFRAME:SetWidth(400);
 					oilvlframedata.guid[1] = UnitGUID("player");
 					oilvlframedata.name[1] = GetUnitName("player",""):gsub("%-.+", "");
+					oilvlframedata.mps[1] = omp("player") and omp("player").currentSeasonScore or "";
 					oilvlframedata.ilvl[1] = {"",otooltip6gearsw};
 					oilvlframedata.me[1] = "";
 					oilvlframedata.mg[1] = "";
@@ -4160,6 +4205,7 @@ end
 
 oilvltestvar = {};
 function otooltip6func()
+	oilvlcheckunknown();
 	local self = LDB_ANCHOR;
 	otooltip6rpd=nil; otooltip6rpdunit=nil; otooltip6rpdid=nil;
 	if otooltip6 ~= nil then
@@ -4270,13 +4316,14 @@ function otooltip6func()
 			otooltip6sortMethod = "ILVL"; otooltip6func();
 		end
 	end)
-	otooltip6:SetCell(line,5,"|cffffffff"..SCENARIO_BONUS_LABEL)
+	--otooltip6:SetCell(line,5,"|cffffffff"..SCENARIO_BONUS_LABEL)
 	local ot6gear = {HELM,SHOULDER,CHEST,HANDS,LEGS,WRISTS,WAIST,FEET,NECK,BACK,RING1,RING2,TRINK1,TRINK2,WEP,OFFHAND}
 	for ot = 6, 21 do
 		if otooltip6gearsw or otooltip6gearsw2 then
 			otooltip6:SetCell(line, ot, "|cffffffff"..oenchantItem[ot6gear[ot-5]][2])
 		end
 	end
+	otooltip6:SetCell(line,5,"|cffffffffM+")
 	otooltip6:AddSeparator()
 	wipe(oicomp)
 	oicomp = nil
@@ -4286,6 +4333,7 @@ function otooltip6func()
 		if oilvlframedata.name[m] ~= ""  and oilvlframedata.name[m] and oilvlframedata.guid[m] ~= "" and oilvlframedata.guid[m] then
 			compi = compi + 1
 			local ooname =_G["OILVLRAIDFRAME"..m]:GetText():sub(1,10).. oilvlframedata.name[m]:gsub("!",""):gsub("~",""):gsub(" ","");
+			local oomps = oilvlframedata.mps[m];
 			local function CheckGearAvail(n,slot,pp)
 				if oilvlframedata.gear[n][slot] then
 					local eg = "|cFFFFFFFF"
@@ -4303,10 +4351,10 @@ function otooltip6func()
 				end
 			end
 			if pvpsw then
-				oicomp[compi] = {id = m, name = ooname, role = oilvlframedata.role[m], ilvl = oilvlframedata.ilvl[m][1], sw = oilvlframedata.ilvl[m][2], nset = oilvlCheckTierBonusSet(m)}
+				oicomp[compi] = {id = m, name = ooname, role = oilvlframedata.role[m], ilvl = oilvlframedata.ilvl[m][1], sw = oilvlframedata.ilvl[m][2], nset = oilvlCheckTierBonusSet(m), mps = oomps}
 				for ot = 1, #ot6gear do oicomp[compi][ot6gear[ot]] = CheckGearAvail(m,ot6gear[ot],7) end
 			else
-				oicomp[compi] = {id = m, name = ooname, role = oilvlframedata.role[m], ilvl = oilvlframedata.ilvl[m][1], sw = oilvlframedata.ilvl[m][2], nset = oilvlCheckTierBonusSet(m)}
+				oicomp[compi] = {id = m, name = ooname, role = oilvlframedata.role[m], ilvl = oilvlframedata.ilvl[m][1], sw = oilvlframedata.ilvl[m][2], nset = oilvlCheckTierBonusSet(m), mps = oomps}
 				for ot = 1, #ot6gear do oicomp[compi][ot6gear[ot]] = CheckGearAvail(m,ot6gear[ot],1) end
 			end
 		end
@@ -4317,7 +4365,22 @@ function otooltip6func()
 		line = otooltip6:AddLine()
 		otooltip6:SetCell(line, 1, oicomp[m].id)
 		if _G["Oilvlmark"..oicomp[m].id]:IsShown() then	otooltip6:SetCellColor(line,1,0,1,0,1) end
-		otooltip6:SetCell(line, 2, oicomp[m].name)
+		otooltip6:SetCell(line, 2, oicomp[m].name);
+
+		if (oicomp[m].mps == "") or (oicomp[m].mps == nil) then 
+			otooltip6:SetCell(line, 5, "|cffffffff0");
+		elseif (oicomp[m].mps < 1000) then
+			otooltip6:SetCell(line, 5, "|cffffffff" .. oicomp[m].mps);
+		elseif (oicomp[m].mps >= 1000) and (oicomp[m].mps < 1500) then
+			otooltip6:SetCell(line, 5, "|cff4be74f" .. oicomp[m].mps);
+		elseif (oicomp[m].mps >= 1500) and (oicomp[m].mps < 2000) then
+			otooltip6:SetCell(line, 5, "|cff2375d7" .. oicomp[m].mps);
+		elseif (oicomp[m].mps >= 2000) and (oicomp[m].mps < 2200) then
+			otooltip6:SetCell(line, 5, "|cffb23ade" .. oicomp[m].mps);
+		else
+			otooltip6:SetCell(line, 5, "|cffff8000" .. oicomp[m].mps);
+		end			
+		
 		otooltip6:SetCellScript(line, 2, "OnMouseUp", function(f,info,button)
 			if button == "LeftButton" then	ORfbIlvl(oicomp[m].id,true) end
 			if button == "MiddleButton" then
@@ -4422,125 +4485,17 @@ function otooltip6func()
 			end
 		end
 
-		if tonumber(oicomp[m].ilvl) then
+		--[[if tonumber(oicomp[m].ilvl) then
 			otooltip6:SetCellScript(line, 4, "OnMouseUp", function(f)
 				if oicomp[m].sw then oicomp[m].sw = false else oicomp[m].sw = true end
 				oilvlframedata.ilvl[oicomp[m].id][2] = oicomp[m].sw
 				otooltip6gearsw2 = true
 				otooltip6func()
 			end)
-		end
+		end--]]
 		local function checklegendary(itemlink)
 			local _,_,quality,_ = GetItemInfo(itemlink)
 			if quality == 5 then return true else return false end
-		end
-		otooltip6:SetCell(line, 5, oicomp[m].nset,"CENTER")
-		if (otooltip6gearsw or otooltip6gearsw2) and oicomp[m].sw then
-			for ot = 6,21 do
-				if tonumber(oicomp[m][ot6gear[ot-5]][1]) and tonumber(oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]][1]) and
-					tonumber(oicomp[m].ilvl) then
-					if checklegendary(oicomp[m][ot6gear[ot-5]][2]) then
-						otooltip6:SetCell(line,ot, "|cFFFF8000"..oicomp[m][ot6gear[ot-5]][1].." |cFF00FF00"..(oicomp[m][ot6gear[ot-5]][4] or ""))
-					else
-						otooltip6:SetCell(line,ot, oicomp[m][ot6gear[ot-5]][3]..oicomp[m][ot6gear[ot-5]][1].." |cFF00FF00"..(oicomp[m][ot6gear[ot-5]][4] or ""))
-						if (ot >= 6 and ot <= 10) or ot == 15 then
-							if checkMtier(oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]]) then
-								otooltip6:SetCellColor(line,ot,255/255, 127/255, 243/255,1)
-							elseif checkHtier(oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]]) then
-								otooltip6:SetCellColor(line,ot,25/255, 127.5/255, 255/255,1)
-							elseif checkNtier(oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]]) then
-								otooltip6:SetCellColor(line,ot,0,1,0,1)
-							else
-								otooltip6:SetCellColor(line,ot,0,0,0,0)
-							end
-						end
-					end
-					otooltip6:SetCellScript(line, ot, "OnEnter", function(f)
-						if checknil(oilvlframedata.gear[oicomp[m].id],ot6gear[ot-5],2) then return end
-						OilvlInspectTooltip:SetOwner(UIParent, "ANCHOR_NONE");
-						OilvlInspectTooltip:SetPoint("TOPRIGHT",f,"TOPRIGHT",0,f:GetTop())
-						OilvlInspectTooltip:ClearLines()
-						OilvlInspectTooltip:SetMinimumWidth(150)
-
-						local additionalTooltipBackdrop = {bgFile="Interface/Buttons/WHITE8X8",edgeFile="Interface/Tooltips/UI-Tooltip-Border",tile=false,edgeSize=14,insets={left=0.5,right=0.5,top=0.5,bottom=0.5}}
-						-- H.Sch. - ReglohPri - changes for Patch 9.0.1 Shadowlands
-						OilvlInspectTooltip.backdropInfo = additionalTooltipBackdrop;
-						OilvlInspectTooltip:ApplyBackdrop();
-						-- End for Patch 9.0.1
-						--OilvlInspectTooltip:SetBackdropColor(0,0,0,1)
-						OilvlInspectTooltip:SetBackdropBorderColor(1,1,1,1)
-
-						if oicomp[m][ot6gear[ot-5]][2] ~= "" and oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]] and oilvlframedata.spec[oicomp[m].id] ~= "" then
-							OilvlInspectTooltip:SetHyperlink(
-								oilvlframedata.gear[oicomp[m].id][ot6gear[ot-5]][2],
-								CheckClass(oilvlframedata.spec[oicomp[m].id]),
-								oilvlframedata.spec[oicomp[m].id]
-							)
-
-							-- check tier
-							do
-								local j,sn,ns;
-								-- j=line number for tier set (n/n)
-								-- sn = name of tier set
-								-- ns = total number of gears in the tier set
-								for i = 1, OilvlInspectTooltip:NumLines() do
-									j = i;
-									sn,ns = _G["OilvlInspectTooltipTextLeft"..i]:GetText():match("(.+) %(%d+/(%d+)")
-									if ns then
-										ns = tonumber(ns)
-										break
-									end
-								end
-								if ns then
-									local tier = {}
-									local tieravail = {}
-									local k=1
-									for i = j+1,j+ns do
-										tier[k]=_G["OilvlInspectTooltipTextLeft"..i]:GetText():sub(3)
-										k=k+1
-									end
-									local gearnames = {}
-									for i=1,#ot6gear do
-										if not checknil(oilvlframedata.gear[oicomp[m].id],ot6gear[i],2) then
-											gearnames[i]=oilvlframedata.gear[oicomp[m].id][ot6gear[i]][2]:match("%[(.+)%]")
-										end
-									end
-									local tn=0
-									for i = 1, #gearnames do
-										if gearnames[i] and gearnames[i] ~= "" then
-											for j = 1, ns do
-												if gearnames[i] == tier[j] then
-													tieravail[j] = true
-													tn = tn + 1
-													break
-												end
-											end
-										end
-									end
-									_G["OilvlInspectTooltipTextLeft"..j]:SetText(sn.." ("..tn.."/"..ns..")")
-									_G["OilvlInspectTooltipTextLeft"..j]:SetTextColor(1,210/255,0,1)
-									for i = j+1, j+ns do
-										if tieravail[i-j] then
-											_G["OilvlInspectTooltipTextLeft"..i]:SetTextColor(1,1,151/255,1)
-										else
-											_G["OilvlInspectTooltipTextLeft"..i]:SetTextColor(0.5,0.5,0.5,1)
-										end
-									end
-									if tn >= 2 then
-										_G["OilvlInspectTooltipTextLeft"..j+ns+2]:SetTextColor(0,1,0,1)
-									end
-									if tn >= 4 then
-										_G["OilvlInspectTooltipTextLeft"..j+ns+3]:SetTextColor(0,1,0,1)
-									end
-								end
-							end
-
-						end
-						OilvlInspectTooltip:Show()
-					end)
-					otooltip6:SetCellScript(line, ot, "OnLeave", function(f) OilvlInspectTooltip:Hide() end)
-				end
-			end
 		end
 	end
 	otooltip6:AddSeparator()
@@ -5475,7 +5430,8 @@ end
 
 function events:GROUP_ROSTER_UPDATE(...)
 	if not UnitAffectingCombat("player")  then
-		if oilvlframesw then OResetSendMark(); OilvlCheckFrame(); end
+		--if oilvlframesw then OResetSendMark(); OilvlCheckFrame(); end
+		OResetSendMark(); OilvlCheckFrame();
 		OILVL:UnregisterEvent("INSPECT_ACHIEVEMENT_READY");
 		--ClearAchievementComparisonUnit();
 		rpsw=false;

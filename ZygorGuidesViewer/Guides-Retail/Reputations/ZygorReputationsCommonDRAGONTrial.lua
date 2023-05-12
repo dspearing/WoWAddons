@@ -818,5 +818,6 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Repu
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Winterpelt Furbolg")
 ZGV.BETAEND()
+ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Loamm Niffen")
 ZGV.BETAEND()
