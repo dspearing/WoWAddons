@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Sun May 28 2023 17:16:47 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Sun May 28 2023 17:27:01 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
