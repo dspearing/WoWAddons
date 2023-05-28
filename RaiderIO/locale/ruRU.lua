@@ -1,4 +1,4 @@
--- Generated from CurseForge on Fri May 12 08:26:56 UTC 2023
+-- Generated from CurseForge on Sun May 28 08:55:48 UTC 2023
 local ns = select(2, ...) ---@type ns @The addon namespace.
 
 if ns:IsSameLocale("ruRU") then
@@ -143,6 +143,8 @@ L["PREVIOUS_SCORE"] = "Очки предыдущего сезона (%s):"
 L["PROFILE_BEST_RUNS"] = "Лучшие прохождения"
 L["PROFILE_TOOLTIP_ANCHOR_TOOLTIP"] = "Заблокируйте рамку профиля Raider.IO или включите автоматическое позиционирование, чтобы скрыть эту привязку."
 L["PROVIDER_NOT_LOADED"] = "|cffFF0000Предупреждение:|r |cffFFFFFF%s|r не может найти данные для Вашей текущей фракции. Пожалуйста, проверьте Ваши настройки |cffFFFFFF/raiderio|r и включите данные для |cffFFFFFF%s|r."
+--[[Translation missing --]]
+--[[ L["PVP_DATA_HEADER"] = ""--]] 
 L["RAID_BOSS_ATSC_1"] = "Каззара Огнекованная "
 L["RAID_BOSS_ATSC_2"] = "Чертог слияния"
 L["RAID_BOSS_ATSC_3"] = "Забытые эксперименты "
@@ -244,6 +246,14 @@ L["RELOAD_LATER"] = "Перезагрузить позже"
 L["RELOAD_NOW"] = "Перезагрузить сейчас"
 L["RELOAD_RWF_MODE_BUTTON"] = "Сохранить"
 L["RELOAD_RWF_MODE_BUTTON_TOOLTIP"] = "Нажмите, чтобы сохранить журнал в файл хранилища. Это приведет к перезагрузке вашего интерфейса."
+--[[Translation missing --]]
+--[[ L["REPLAY_SETTINGS_TOOLTIP"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MDI"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MODERN"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MODERN_COMPACT"] = ""--]] 
 L["RWF_MINIBUTTON_TOOLTIP"] = "Щелкните ЛКМ каждый раз, когда есть ожидающая добыча. Это приведет к перезагрузке Вашего интерфейса. Щелкните ПКМ, чтобы открыть фрейм Race World First."
 L["RWF_SUBTITLE_LOGGING_FILTERED_LOOT"] = "(регистрация соответствующих элементов)"
 L["RWF_SUBTITLE_LOGGING_LOOT"] = "(регистрация добычи)"

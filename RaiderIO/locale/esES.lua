@@ -1,4 +1,4 @@
--- Generated from CurseForge on Fri May 12 08:26:50 UTC 2023
+-- Generated from CurseForge on Sun May 28 08:55:42 UTC 2023
 local ns = select(2, ...) ---@type ns @The addon namespace.
 
 if ns:IsSameLocale("esES") then
@@ -173,6 +173,8 @@ L["PROFILE_BEST_RUNS"] = "Mejor de cada mazmorra"
 --[[ L["PROFILE_TOOLTIP_ANCHOR_TOOLTIP"] = ""--]] 
 L["PROVIDER_NOT_LOADED"] = "|cffFF0000Advertencia:|r |cffFFFFFF%s|r no puede encontrar datos para tu facción actual. Compruebe la configuración de |cffFFFFFF/raiderio|r y habilite los datos de información sobre herramientas para |cffFFFFFF%s|r."
 --[[Translation missing --]]
+--[[ L["PVP_DATA_HEADER"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["RAID_BOSS_ATSC_1"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RAID_BOSS_ATSC_2"] = ""--]] 
@@ -293,6 +295,14 @@ L["RELOAD_NOW"] = "Reiniciarla ahora"
 --[[ L["RELOAD_RWF_MODE_BUTTON"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RELOAD_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_SETTINGS_TOOLTIP"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MDI"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MODERN"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MODERN_COMPACT"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RWF_MINIBUTTON_TOOLTIP"] = ""--]] 
 --[[Translation missing --]]

@@ -830,7 +830,7 @@ function rematch:ShowDebugDialog()
 		end
 	end
 	-- gather each line into data table
-	add("__ Rematch version %s __",GetAddOnMetadata("Rematch","Version"))
+	add("__ Rematch version %s __",C_AddOns.GetAddOnMetadata("Rematch","Version"))
 	add("%s last used",settings.JournalUsed and "Journal" or "Standalone")
 	add("Panel Tab=%s",settings.JournalUsed and settings.JournalPanel or settings.ActivePanel)
 	add("Error Reporting=%s",IsAddOnLoaded("BugSack") and "BugSack" or GetCVarBool("scriptErrors") and "scriptErrors" or "None")

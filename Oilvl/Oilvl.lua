@@ -295,55 +295,55 @@ local OSTATCN2 = {
 		18189, -- [2]
 		18210, -- [3]
 		18219, -- [4]
-	}, -- [1]
+	}, -- [1] Kazzara, the Hellforged
 	{
 		18181, -- [1]
 		18190, -- [2]
 		18211, -- [3]
 		18220, -- [4]
-	}, -- [2]
+	}, -- [2] Amalgamation Chamber
 	{
 		18182, -- [1]
 		18191, -- [2]
 		18212, -- [3]
 		18221, -- [4]
-	}, -- [3]
-	{
-		18183, -- [1]
-		18192, -- [2]
-		18213, -- [3]
-		18222, -- [4]
-	}, -- [4]
+	}, -- [3] Forgotten Experiments
 	{
 		18184, -- [1]
 		18194, -- [2]
 		18214, -- [3]
 		18223, -- [4]
-	}, -- [5]
-	{
-		18185, -- [1]
-		18195, -- [2]
-		18215, -- [3]
-		18224, -- [4]
-	}, -- [6]
-	{
-		18186, -- [1]
-		18196, -- [2]
-		18216, -- [3]
-		18225, -- [4]
-	}, -- [7]
-	{
-		18187, -- [1]
-		18198, -- [2]
-		18218, -- [3]
-		18227, -- [4]
-	}, -- [8]
+	}, -- [4] Rashok
 	{
 		18183, -- [1]
 		18192, -- [2]
 		18213, -- [3]
 		18222, -- [4]
-	}, -- [9]
+	}, -- [5] Assault of the Zaqali
+	{
+		18185, -- [1]
+		18195, -- [2]
+		18215, -- [3]
+		18224, -- [4]
+	}, -- [6] Zskarn
+	{
+		18186, -- [1]
+		18196, -- [2]
+		18216, -- [3]
+		18225, -- [4]
+	}, -- [7] Magmorax
+	{
+		18188, -- [1]
+		18197, -- [2]
+		18217, -- [3]
+		18226, -- [4]
+	}, -- [8] Echo of Neltharion
+	{
+		18187, -- [1]
+		18198, -- [2]
+		18218, -- [3]
+		18227, -- [4]
+	}, -- [9] Scalecommander Sarkareth
 }
 
 local OSTATCN3 = {
@@ -779,15 +779,15 @@ function oilvlcheckunknown()
 			if oilvlframedata.name[i] == "Unknown" then
 				oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 				oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
-				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
+				oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";
 				if _OT(oilvlframedata.ilvl,i,4) and oilvlframedata.ilvl[i][4] > 0 then
-					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
+					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("party"..(i-1))..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
 				else
-					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
+					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("party"..(i-1))..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
 				end
 				_G["OILVLRAIDFRAME"..i]:Show();
 			else
-				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";				
+				oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";				
 			end
 		end
 	elseif IsInGroup(LE_PARTY_CATEGORY_HOME) then
@@ -797,15 +797,15 @@ function oilvlcheckunknown()
 			if oilvlframedata.name[i] == "Unknown" then
 				oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 				oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
-				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
+				oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";
 				if _OT(oilvlframedata.ilvl,i,4) and oilvlframedata.ilvl[i][4] > 0 then
-					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
+					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("party"..(i-1))..oilvlframedata.name[i].."\n|r|cFFFF8000"..oilvlframedata.ilvl[i][1]);
 				else
-					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("raid"..i)..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
+					_G["OILVLRAIDFRAME"..i]:SetText(oClassColor("party"..(i-1))..oilvlframedata.name[i].."\n|r|cFF00FF00"..oilvlframedata.ilvl[i][1]);
 				end
 				_G["OILVLRAIDFRAME"..i]:Show();
 			else
-				oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";				
+				oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";				
 			end
 		end
 	else
@@ -960,7 +960,7 @@ if not UnitAffectingCombat("player")  and oilvlframesw then
 			if UnitIsGroupLeader("party"..(i-1)) then OilvlSetRank(i, 2); else OilvlSetRank(i, 0); end
 			oilvlframedata.guid[i] = UnitGUID("party"..(i-1));
 			oilvlframedata.name[i] = GetUnitName("party"..(i-1),""):gsub("%-.+", "")
-			oilvlframedata.mps[i] = omp("party"..i) and omp("party"..i).currentSeasonScore or "";
+			oilvlframedata.mps[i] = omp("party"..(i-1)) and omp("party"..(i-1)).currentSeasonScore or "";
 			oilvlframedata.ilvl[i][1] = "";
 			oilvlframedata.me[i] = "";
 			oilvlframedata.mg[i] = "";
@@ -2918,7 +2918,7 @@ function OilvlGetStatisticId(OCategory, ORaidName, OTable, Oprint)
 					if k == 1 then
 						OTable[j] = {}
 					end
-					OTable[j][k] = IDNumber;
+					OTable[j][k] = IDNumber..":"..OOName;
 					if k < 4 then
 						k = k + 1;
 					else

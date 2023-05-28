@@ -112,3 +112,4 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Snail Racing")
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\The Blue Dragonflight's Legacy")

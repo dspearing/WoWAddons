@@ -396,6 +396,14 @@ Complete the Race |q 70427/1
 |tip The immediate next path appears in orange, while future paths appear in blue.
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74835
+accept Enok the Stinky##74835 |goto The Azure Span/0 23.41,53.56
+|tip You will accept this quest automatically.
+step
+clicknpc Enok the Stinky##202440
+Defeat Enok the Stinky in a Pet Battle |q 74835/1 |goto 23.41,53.56
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70612
 accept Feed Three-Falls##70612 |goto The Azure Span/0 17.47,26.85
 |tip You will accept this quest automatically.
@@ -588,6 +596,41 @@ kill Spellforged Brute##184456
 Slay the Spellforged Creation |q 70625/1 |goto 48.90,18.84
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-75280
+accept Suffusion Camp: Frostburn##75280 |goto The Azure Span/0 55.02,33.42
+|tip You will accept this quest automatically.
+stickystart "Collect_Ward_of_Fyrakk"
+step
+Kill enemies around this area
+collect 5 Ward of Igira##203430 |goto 55.02,33.42 |q 75280
+step
+click Suffusion Crucible
+|tip You can find several more nearby.
+|tip They appear on your minimap as yellow dots.
+Loot the Suffusion Crucible |q 75280/1 |goto 54.78,33.22
+|tip Looting the crucible will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+step
+Slay the Crucible Guardian |q 75280/2 |goto 54.78,33.22
+|tip A random rare mob will attack you.
+|tip You may need help with this.
+step
+label "Collect_Ward_of_Fyrakk"
+Kill enemies around this area
+|tip More powerful elite enemies will sometimes drop wards.
+|tip You can also acquire them looting Suffusion Crucibles.
+collect 5 Ward of Fyrakk##203683 |goto 55.02,33.42 |q 75280
+step
+click Suffusion Mold
+Loot the Suffusion Mold |q 75280/3 |goto 55.41,35.19
+|tip Looting the mold will cause an elite enemy to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+step
+Defeat the Forgemaster |q 75280/4 |goto 55.41,35.19
+|tip An elite (usually Forgemaster Algrin) will spawn.
+|tip You may need help with this.
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70022
 accept Tale of Korave##70022
 |tip You will accept this quest automatically.
@@ -597,11 +640,14 @@ Speak with Brena |q 70022/1
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70037
-accept Unpowered Tools##70037
+accept Unpowered Tools##70037 |goto The Azure Span/0 47.05,24.55
 |tip You will accept this quest automatically.
 |polish
 step
-Empower #6# Tools |q 70037/1
+clicknpc Powered Tool##193792+
+|tip They look like small tools laying on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Empower #6# Tools |q 70037/1 |goto 47.05,24.55
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70439
@@ -652,6 +698,29 @@ clicknpc Vortex##200685
 Defeat Vortex in a Pet Battle |q 73146/1 |goto 18.34,13.24
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-73083
+accept Dragonrider Racing - Caldera Coaster##73083 |goto The Forbidden Reach/5 41.36,14.58
+|tip You will accept this quest automatically.
+step
+talk Bronze Timekeeper##200316
+Tell him _"I'd like to try the course."_
+Prepare for the Race |havebuff spell:398228 |goto 41.36,14.58 |q 73083
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Wait for the Race to Start |havebuff spell:369968 |goto 41.34,14.77 |q 73083
+|tip This will take about 5 seconds.
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+step
+Complete the Race |q 73083/1
+|tip Follow the indicated path, flying through rings and any wind gusts you see.
+|tip Use your dragonriding abilities frequently to maintain a swift pace.
+|tip The immediate next path appears in orange, while future paths appear in blue.
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-73084
 accept Dragonrider Racing - Forbidden Reach Rush##73084 |goto The Forbidden Reach/5 49.42,60.06
 |tip You will accept this quest automatically.
@@ -678,7 +747,6 @@ step
 label quest-73079
 accept Dragonrider Racing - Morqut Ascent##73079 |goto The Forbidden Reach/5 31.32,65.75
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##200212
 Tell him _"I'd like to try the course."_
@@ -702,7 +770,6 @@ step
 label quest-73082
 accept Dragonrider Racing - Southern Reach Route##73082 |goto The Forbidden Reach/5 63.64,84.05
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##200247
 Tell him _"I'd like to try the course."_
@@ -1232,17 +1299,16 @@ _TANK:_ |grouprole TANK
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-74501
-accept Suffusion Camp: Cinderwind##74501 |goto Ohn'ahran Plains/0 79.72,75.48
+accept Suffusion Camp: Cinderwind##74501 |goto Ohn'ahran Plains/0 74.12,71.71
 |tip You will accept this quest automatically.
-|polish
 stickystart "Collect_Ward_of_Igira"
 stickystart "Collect_Ward_of_Fyrakk"
 step
 label "Collect_Ward_of_Igira"
 Kill enemies around this area
-collect 5 Ward of Igira##203430 |goto 73.88,71.44 |q 74501
+collect 5 Ward of Igira##203430 |goto 74.12,71.71 |q 74501
 step
-click Suffusion Crucible
+click Infusing Hammer
 |tip You can find several more nearby.
 |tip They appear on your minimap as yellow dots.
 Loot the Suffusion Crucible |q 74501/1 |goto 73.88,71.20
@@ -1250,19 +1316,23 @@ Loot the Suffusion Crucible |q 74501/1 |goto 73.88,71.20
 |tip Clear the area and get some help to kill them.
 step
 Slay the Crucible Guardian |q 74501/2 |goto 73.88,71.20
+|tip A random rare mob will attack you.
+|tip You may need help with this.
 step
 label "Collect_Ward_of_Fyrakk"
 Kill enemies around this area
 |tip More powerful elite enemies will sometimes drop wards.
 |tip You can also acquire them looting Suffusion Crucibles.
-collect 5 Ward of Fyrakk##203683 |goto 73.88,71.44 |q 74501
+collect 5 Ward of Fyrakk##203683 |goto 74.12,71.71 |q 74501
 step
 click Suffusion Mold
 Loot the Suffusion Mold |q 74501/3 |goto 74.27,72.28
-|tip Looting the mold will cause a pair of elite enemies to spawn and attack you.
+|tip Looting the mold will cause an elite enemy to spawn and attack you.
 |tip Clear the area and get some help to kill them.
 step
-kill Forgemaster Kraglin##201625 |q 74501/4 |goto 74.24,72.15
+Defeat the Forgemaster |q 74501/4 |goto 74.24,72.15
+|tip An elite (usually Forgemaster Kraglin) will spawn.
+|tip You may need help with this.
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-70649
@@ -1834,6 +1904,17 @@ click Titan Temple Relic##379239+
 collect 8 Titan Temple Relic##198443 |q 70111/1 |goto 49.62,58.93
 |next "Dragon_World_Quest_Emissaries"
 step
+label quest-74792
+accept They're Full of Stars!##74792 |goto Thaldraszus/0 55.97,40.53
+|tip You will accept this quest automatically.
+|tip On top of the platform.
+step
+talk Stargazer Zenoth##202458
+|tip On top of the platform.
+Tell her _"Begin pet battle."_
+Defeat Stargazer Zenoth in a Pet Battle |q 74792/1 |goto 55.97,40.53
+|next "Dragon_World_Quest_Emissaries"
+step
 label quest-70057
 accept Thieving Tarasek##70057 |goto Thaldraszus/0 56.82,67.56
 |tip You will accept this quest automatically.
@@ -1880,6 +1961,14 @@ patch='100001',
 step
 label "Choose_World_Quest"
 #include "Dragon_Choose_World_Quests"
+step
+label quest-74841
+accept Adinakon##74841 |goto The Waking Shores/0 51.88,72.33
+|tip You will accept this quest automatically.
+step
+clicknpc Adinakon##201849
+Defeat Adinakon in a Pet Battle |q 74841/1 |goto 51.88,72.33
+|next "Dragon_World_Quest_Emissaries"
 step
 label quest-66419
 accept Allegiance To One##66419 |goto The Waking Shores/0 24.38,55.69
@@ -2782,12 +2871,16 @@ label vignette-5706
 accept Cascades Calling##75612 |goto Zaralek Cavern/0 44.15,74.34
 |tip You will accept this quest automatically.
 |tip On top of the ledge.
-|polish
+stickystart "Kill_Frigidus"
 step
 click Control Pylon+
 |tip They look like pillars of earth topped with white and blue swirling orbs around the water.
 |tip Click them until Rimecaller Raava is released.
 kill Rimecaller Raava##204423 |q 75612/1 |goto 44.15,74.34
+step
+label "Kill_Frigidus"
+kill Frigidus##204425 |q 75612/2 |goto 44.23,74.26
+|tip Attack both at least once to get credit.
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75126
@@ -2810,7 +2903,6 @@ step
 label vignette-5705
 accept The Champion's Challenge##75624 |goto Zaralek Cavern/0 45.11,82.99
 |tip You will accept this quest automatically.
-|polish
 step
 click Rock Weight+
 |tip They look like large weights sunk in the ground around this area.
@@ -2823,7 +2915,6 @@ step
 label quest-73221
 accept A Clear State of Mind##73221 |goto Zaralek Cavern/0 51.16,58.26
 |tip You will accept this quest automatically.
-|polish
 step
 use M.U.S.T##202714
 |tip Use it in Refti enemies around this area.
@@ -2843,7 +2934,6 @@ step
 label vignette-5708
 accept Conspiracy of Flames##75455 |goto Zaralek Cavern/0 32.02,43.48
 |tip You will accept this quest automatically.
-|polish
 step
 click Ancient Dragon Skull+
 |tip Click the skull with the orange orb over it to fill the bar.
@@ -2854,7 +2944,6 @@ step
 label quest-74879
 accept Corrosive Counterbalance##74879 |goto Zaralek Cavern/0 48.21,38.63
 |tip You will accept this quest automatically.
-|polish
 step
 Neutralize #6# Acidic Pools with Elemental Base |q 74879/1 |goto 48.21,38.63
 |tip Drag Alkaline Ragers to the greenish-yellow vapor clouds.
@@ -2866,7 +2955,6 @@ step
 label quest-75030
 accept Crystal Catastrophe!##75030 |goto Zaralek Cavern/0 58.82,46.49
 |tip You will accept this quest automatically.
-|polish
 step
 Catch #20# Crystals |q 75030/1 |goto 58.82,46.49
 |tip Run into the blue patches on the ground to catch a crystal.
@@ -2894,7 +2982,6 @@ step
 label vignette-5700
 accept Crystalline Survey##75471 |goto Zaralek Cavern/0 62.53,47.65
 |tip You will accept this quest automatically.
-|polish
 step
 kill Agitated Crystalline##204099+
 Complete the Survey |q 75471/1 |goto 62.53,47.65
@@ -2903,7 +2990,6 @@ step
 label quest-75661
 accept Curative Crystalline Collection##75661 |goto Zaralek Cavern/0 37.71,71.08
 |tip You will accept this quest automatically.
-|polish
 step
 Kill Viridian enemies around this area
 collect 10 Viridian Heartcrystal##203012 |q 75661/1 |goto 37.71,71.08
@@ -2914,8 +3000,7 @@ accept Crystal Cracker##75344 |goto Zaralek Cavern/0 56.46,65.54
 |tip You will accept this quest automatically.
 stickystart "Kill_Crystalline_Walkers"
 step
-extraaction Shine Shardling##408547
-|tip Use it on Living Clusters around this area.
+clicknpc Living Cluster##201062+
 |tip They look like small Crystalline Walkers near rock formations.
 Shine #8# Shardlings |q 75344/2 |goto 56.46,65.54
 step
@@ -2926,7 +3011,6 @@ step
 label quest-75346
 accept Delver Mardei##75346 |goto Zaralek Cavern/0 60.39,69.42
 |tip You will accept this quest automatically.
-|polish
 step
 extraaction Order Scan##411428
 |tip It appears as a button on your screen.
@@ -2937,7 +3021,6 @@ step
 label quest-75200
 accept Deepflayer Slayer##75200 |goto Zaralek Cavern/0 60.34,37.33
 |tip You will accept this quest automatically.
-|polish
 step
 Enter the cave |goto Zaralek Cavern/0 60.42,37.07 < 10 |walk
 Kill Scavengening enemies around this area
@@ -2982,7 +3065,6 @@ step
 label vignette-5720
 accept Discordant Crystals##75664 |goto Zaralek Cavern/0 56.57,65.54
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Discordant_Chips"
 step
 kill Discordant Lodestone##204676 |q 75664/1 |goto 56.57,65.54
@@ -3051,7 +3133,6 @@ step
 label quest-75119
 accept Dragonrider Racing - Crystal Circuit##75119 |goto Zaralek Cavern/0 38.75,60.61
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202524
 Tell him _"I'd like to try the course."_
@@ -3075,7 +3156,6 @@ step
 label quest-75123
 accept Dragonrider Racing - Loamm Roamm##75123 |goto Zaralek Cavern/0 58.15,57.59
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##202795
 Tell him _"I'd like to try the course."_
@@ -3151,15 +3231,24 @@ kill Emberdusk##203664 |q 75364/1 |goto 31.81,50.63
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75660
-accept Ending Their Watch##75660 |goto Zaralek Cavern/0 53.56,79.28
+accept Ending Their Watch##75660 |goto Zaralek Cavern/0 40.13,68.45
 |tip You will accept this quest automatically.
-|polish
 step
 talk Rupert, the Gentleman Elemental##200291
 Tell it _"I'm ready to travel with you."_
-Ask Rupert to Bring You to the Buried Vault |q 75660/1 |goto 53.56,79.28
+Ask Rupert to Bring You to the Buried Vault |q 75660/1 |goto 40.12,68.47
 step
 kill 6 Enraged Watcher##200407 |q 75660/2 |goto 52.92,81.05
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-74992
+accept Fire Resistance Gear##74992 |goto Zaralek Cavern/0 33.66,46.24
+|tip You will accept this quest automatically.
+step
+Kill Hound and Pup enemies around this area
+|tip Kill enemies around the lava that look like dogs.
+|tip Skin the corpses if you have Skinning as well.
+collect 8 Corehound Hide##204314 |q 74992/1 |goto 33.66,46.24
 |next "Dragon_World_Quest_Emissaries"
 step
 label vignette-5661
@@ -3178,7 +3267,6 @@ label vignette-5645
 accept General Zskorro##75296 |goto Zaralek Cavern/0 42.12,18.70
 |tip You will accept this quest automatically.
 |tip Inside the building.
-|polish
 step
 kill General Zskorro##203592 |q 75296/1 |goto 42.12,18.70
 |tip Inside the building.
@@ -3190,7 +3278,6 @@ step
 label vignette-5704
 accept Glimmerfish Before It's Gone##75611 |goto Zaralek Cavern/0 40.44,60.97
 |tip You will accept this quest automatically.
-|polish
 step
 kill Giant Glimmerfish##204389
 click Glimmerfish Scale##399671+
@@ -3245,10 +3332,10 @@ step
 label vignette-5710
 accept Imperfect Balance##75451 |goto Zaralek Cavern/0 35.46,51.20
 |tip You will accept this quest automatically.
-|polish
 step
 kill Fury of the Caldera##204108 |q 75451/1 |goto 35.46,51.20
-|tip Stand in the pillar of earth and pillar of fire nearbye until both of the infusion bars are full.
+|tip Stand in the pillar of earth and pillar of fire nearby until both of the infusion bars are full.
+|tip Pulling an elite in one circle will cause the other one to attack as well.
 |tip When fully infusted, it will be attackable.
 |next "Dragon_World_Quest_Emissaries"
 step
@@ -3298,7 +3385,6 @@ step
 label quest-74985
 accept Like Moths to a Flame##74985 |goto Zaralek Cavern/0 47.69,49.19
 |tip You will accept this quest automatically.
-|polish
 step
 kill 12 Lightbound Swarmer##202841 |q 74985/1 |goto 47.69,49.19
 |tip At the top of the tower.
@@ -3327,7 +3413,6 @@ step
 label vignette-5721
 accept Monument Maintenance##75705 |goto Zaralek Cavern/0 61.71,72.04
 |tip You will accept this quest automatically.
-|polish
 step
 Click objects around this area
 |tip Find the Missing Arm, Missing Head, and Shattered Sphere around the area.
@@ -3340,14 +3425,13 @@ step
 label vignette-5707
 accept Mortar Warfare##75454 |goto Zaralek Cavern/0 40.26,43.52
 |tip You will accept this quest automatically.
-|polish
 step
 kill Fury of the Caldera##204108+
 extraaction Frothing Lava##407633
 |tip Run to the erupting fire and pick an orb up floating above the ground.
 |tip Target a ballistae and use the Frothing Lava ability on it.
 |tip Repeat this to destroy the three ballistae.
-Destroy the Dragonkiller Ballistae |q 75454/1 |goto 40.26,43.52
+Destroy the Dragonkiller Ballistae |q 75454/2 |goto 40.26,43.52
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75350
@@ -3390,7 +3474,6 @@ step
 label quest-75151
 accept Redistributing the Remnants##75151 |goto Zaralek Cavern/0 43.28,22.16
 |tip You will accept this quest automatically.
-|polish
 step
 Click objects around this area
 |tip Click the various weapons and armor laying on the ground around this area.
@@ -3439,7 +3522,7 @@ accept Rolie Polie Molie##73698 |goto Zaralek Cavern/0 61.97,49.52
 step
 talk Olie##201042
 Tell him _"I'm ready."_
-Talk to Olie to Transform |q 73698/1 |goto 61.97,49.52
+Talk to Olie to Transform |q 73698/1 |goto 60.94,49.50
 step
 collect 20 Snail Slime##203229 |q 73698/2 |goto 61.60,48.59
 |tip Use the "Jump" ability on your vehicle bar to burst up under Slimy Whelks.
@@ -3449,7 +3532,6 @@ step
 label vignette-5709
 accept Seismic Ceremony##75450 |goto Zaralek Cavern/0 34.36,47.83
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Primalist Runestone##204001+
 Deactivate the Primalist Runestones |q 75450/1 |goto 34.36,47.83
@@ -3487,7 +3569,6 @@ step
 label vignette-5701
 accept Shellfire##75222 |goto Zaralek Cavern/0 57.66,49.00
 |tip You will accept this quest automatically.
-|polish
 step
 kill Excited Ember##203330+
 click Jar of Snuffer Powder
@@ -3498,9 +3579,8 @@ Extinguish Big Bessie |q 75222/1 |goto 57.66,49.00
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75064
-accept Shrooming for a Living##75064 |goto Zaralek Cavern/0 47.22,20.96
+accept Shrooming for a Living##75064 |goto Zaralek Cavern/0 51.88,76.12
 |tip You will accept this quest automatically.
-|polish
 stickystart "Kill_Pesky_Sporemoths"
 step
 click Dewcup Mushroom+
@@ -3509,6 +3589,7 @@ Harvest #7# Dewcup Mushrooms |q 75064/1 |goto 52.03,76.46
 step
 label "Kill_Pesky_Sporemoths"
 kill 12 Pesky Sporemoth##202625 |q 75064/2 |goto 52.03,76.46
+|tip These often spawn slowly.
 |next "Dragon_World_Quest_Emissaries"
 step
 label vignette-5659
@@ -3535,7 +3616,6 @@ path	63.30,52.50	62.56,51.88	61.41,50.80	61.06,51.66	60.61,52.34
 path	60.27,54.23	61.02,54.90	61.86,55.14	62.97,53.72
 accept Smellincense##75370
 |tip You will accept this quest automatically.
-|polish
 step
 map Zaralek Cavern/0
 path follow smart; loop on; ants curved; dist 30
@@ -3572,12 +3652,11 @@ Dig up #5# Reekroot |q 73408/1 |goto 27.31,34.45
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75071
-accept Sniffing Mice are Nice##75071 |goto Zaralek Cavern/0 49.86,39.10
+accept Sniffing Mice are Nice##75071 |goto Zaralek Cavern/0 51.06,74.13
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Sniffing Mouse##205042
-Borrow a Sniffing Mouse |q 75071/1 |goto 49.86,39.10
+Borrow a Sniffing Mouse |q 75071/1 |goto 51.06,74.13
 step
 extraaction Dig Here!##406104
 |tip Use it on smoky glittering spots on the ground.
@@ -3616,7 +3695,6 @@ step
 label vignette-5699
 accept Stress Express##75156 |goto Zaralek Cavern/0 65.60,51.15
 |tip You will accept this quest automatically.
-|polish
 step
 map Zaralek Cavern/0
 path follow smart; loop off; ants curved; dist 30
@@ -3667,7 +3745,6 @@ step
 label quest-75060
 accept A Veritable Dumping Ground##75060 |goto Zaralek Cavern/0 51.26,24.38
 |tip You will accept this quest automatically.
-|polish
 step
 click Climbing Gear
 Acquire the Climbing Gear |q 75060/1 |goto 51.26,24.38
@@ -3705,28 +3782,27 @@ Plant #8# Zaqali Spears in Corpses |q 74991/2 |goto 32.89,41.98
 |next "Dragon_World_Quest_Emissaries"
 step
 label vignette-5717
-accept Whirling Zephyr##74352 |goto Zaralek Cavern/0 57.69,57.06
+accept Whirling Zephyr##74352 |goto Zaralek Cavern/0 58.23,67.40
 |tip You will accept this quest automatically.
-|polish
 step
 Kill enemies around this area
 collect Hurricane Scepter##203706 |n
 clicknpc Lesser Storm Pylon##201299
 |tip Destroy the lessor pylons with Hurricane Scepters to remove the greater pylon shield.
 clicknpc Greater Storm Pylon##201262
-Destroy the Greater Pylon |q 74352/1 |goto 57.69,57.06
+Destroy the Greater Pylon |q 74352/1 |goto 58.23,67.40
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-74892
 accept Zaqali Elders##74892 |goto Zaralek Cavern/0 27.55,44.56
 |tip You will accept this quest automatically.
-|polish
 step
 kill Vakan##199855
 kill Gholna##199853
 _EVERYONE:_ |grouprole EVERYONE
 |tip Avoid standing in "Incineration" areas on the ground. |grouprole EVERYONE
 |tip Avoid standing in "Scorching Eclipse" areas on the ground. |grouprole EVERYONE
+|tip Be sure to hit each mob once to get credit for the kill. |grouprole EVERYONE
 _HEALER:_ |grouprole HEALER
 |tip Random players will receiving stacking "Searing Touch" debuffs and require extra healing. |grouprole HEALER
 |tip Random players will receiving stacking "Burning SHadows" debuffs and require extra healing. |grouprole HEALER
@@ -3740,16 +3816,15 @@ step
 label quest-74989
 accept Zealous Defenses##74989 |goto Zaralek Cavern/0 29.25,50.17
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Zaqali_or_Primalist_Enemies"
 step
 click Shrine Ward+
 |tip They look like totems with flaming orbs above them around this area.
-Destroy #5# Shrine Wards |q 74989/1 |goto 29.25,50.17
+Destroy #5# Shrine Wards |q 74989/2 |goto 29.25,50.17
 step
 label "Slay_Zaqali_or_Primalist_Enemies"
 Kill Zaqali and Primalist enemies around this area
-Slay #8# Zaqali or Primalist Enemies |q 74989/2 |goto 29.25,50.17
+Slay #8# Zaqali or Primalist Enemies |q 74989/1 |goto 29.25,50.17
 |next "Dragon_World_Quest_Emissaries"
 step
 label "Dragon_World_Quest_Emissaries"
@@ -5562,161 +5637,6 @@ You have completed the available daily quests at the Dragonskull Island fishing 
 |tip This guide will reset when more become available.
 '|complete not completedq(73226) |next "Begin_Daily_Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Forbidden Reach Side Quests",{
-author="support@zygorguides.com",
-startlevel=68,
-patch='100007',
-},[[
-step
-label "Active_Quests_Available"
-Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178)
-step
-talk Volethi##200727
-accept Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if questactive(73189)
-accept Sneaky Pebbles##75024 |goto 34.85,57.48 |only if questactive(75024)
-|only if questactive(73189,75024)
-step
-talk Tukkaraq##200558
-accept Up to the Highest Height!##75026 |goto 34.36,58.57
-|only if questactive(75026)
-step
-talk Cataloger Coralie##201291
-accept Snake Wrangling##73191 |goto 34.36,59.28 |only if questactive(73191)
-accept A Good Day for Rolling##75025 |goto 34.36,59.28 |only if questactive(75025)
-|only if questactive(73191,75025)
-step
-talk Scalecommander Cindrethresh##199199
-accept Toxic Infestation##73190 |goto 35.31,59.49 |only if questactive(73190)
-accept Busting Blues##73142 |goto 35.31,59.50 |only if questactive(73142)
-accept Soupocalypse Now!##73179 |goto 35.30,59.49 |only if questactive(73179)
-accept Up Close and Personal##73194 |goto 35.30,59.49 |only if questactive(73194)
-|only if questactive(73190,73142,73179,73194)
-step
-talk Scalecommander Azurathel##199204
-accept Hands Off Our Booty!##73178 |goto 35.53,58.69
-|only if questactive(73178)
-stickystart "Slay_Irontide_Cutthroats"
-step
-click Stolen Booty##385999+
-|tip They look like small chests around these areas.
-collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
-You can find more around:
-[37.67,78.67]
-[34.25,45.30]
-step
-label "Slay_Irontide_Cutthroats"
-Kill Irontide enemies around this area
-Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
-step
-talk Fusethrian##200987
-Choose _<Ask for explosive... soup?>_
-Obtain the Explosive Soup Experiments |q 73179/1 |goto 34.16,59.77
-|only if haveq(73179) or completedq(73179)
-step
-clicknpc Morqut Glider##201376
-Take the Glider |q 73179/2 |goto 35.70,59.00
-|only if haveq(73179) or completedq(73179)
-step
-Slay #50# Irontide Invaders |q 73179/3 |goto 21.13,45.45
-|tip Use the abilities on your vehicle bar to attack enemies on the boat.
-|only if haveq(73179) or completedq(73179)
-stickystart "Kill_Dragonbane_Beetles"
-step
-kill Pestilent Pincher##200910 |q 73190/2 |goto 41.04,35.84
-|only if haveq(73190) or completedq(73190)
-step
-use the Proto-Killing Spear##202642
-|tip Use it on a proto dragon flying around one of these areas.
-|tip While on the proto dragon, attack it until your bar switches to a vehicle bar.
-|tip Spam the ability to deal damage to the proto dragon.
-|tip Repeat this until it dies.
-Slay a Proto-dragon with the Proto-Killing Spear |q 73194/1 |goto 39.60,52.62
-You can find more around:
-[50.33,53.11]
-[60.69,60.44]
-[69.68,58.47]
-|only if haveq(73194) or completedq(73194)
-step
-click Infuser Shard+
-|tip They look like tiny crystals on the ground around this area.
-|tip Aim at Dragonbane Beetles and fire the crystal at them to infuse and defeat them.
-Defeat #12# Infused Beetles |q 75024/1 |goto 39.36,32.76
-|only if haveq(75024) or completedq(75024)
-step
-label "Kill_Dragonbane_Beetles"
-kill 24 Dragonbane Beetle##198792 |q 73190/1 |goto 39.83,35.02
-|only if haveq(73190) or completedq(73190)
-step
-click Snowball
-|tip They look like large round balls of snow on the ground around this area.
-|tip While carrying them, run over burning critters to save them.
-Save #14# Overcharged Critters |q 75025/1 |goto 61.81,26.70
-|only if haveq(75025) or completedq(75025)
-step
-clicknpc Broken Kite Piece##203134+
-|tip They look like small pieces of wood on the ground around this area.
-|tip They appear on your minimap as yellow dots.
-Collect #12# Kite Pieces |q 75026/1 |goto 31.97,60.59
-|only if haveq(75026) or completedq(75026)
-step
-click Rustling Bush##384952+
-|tip They look like green bushes on the ground around this area.
-Collect #6# Toxic Watersnakes |q 73191/1 |goto 41.28,40.55
-You can find more around [45.61,37.24]
-|only if haveq(73191) or completedq(73191)
-step
-extraaction Release Watersnakes##400872
-|tip Use the button that appears on your screen.
-Release the Toxic Watersnakes |q 73191/2 |goto 42.91,38.91
-|only if haveq(73191) or completedq(73191)
-step
-Kill enemies around this area
-collect 10 Arcane Focus##202362 |q 73142/1 |goto 52.59,56.41
-|only if haveq(73142) or completedq(73142)
-step
-Enter the Support Creche |q 73189/1 |goto 36.68,32.41
-|only if haveq(73189) or completedq(73189)
-step
-use the Toxin Antidote##202620
-|tip Use it to reduce your toxin level before it overwhelms you.
-|tip Avoid cloudy areas on the ground, which increase your toxicity level faster.
-click Mender Supplies##385990+
-|tip They look like wooden crates inside the building.
-collect 6 Mender Supplies##202619 |q 73189/2 |goto The Support Creche/0 37.51,44.98
-|only if haveq(73189) or completedq(73189)
-step
-use the Toxin Antidote##202620 |only if subzone("The Support Creche")
-|tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
-|tip Avoid cloudy areas on the ground, which increase your toxicity level faster. |only if subzone("The Support Creche")
-talk Volethi##200727
-turnin Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if haveq(73189) or completedq(73189)
-turnin Sneaky Pebbles##75024 |goto 34.85,57.48 |only if haveq(75024) or completedq(75024)
-|only if haveq(73189,75024) or completedq(73189,75024)
-step
-talk Cataloger Coralie##201291
-turnin Snake Wrangling##73191 |goto 34.36,59.28 |only if haveq(73191) or completedq(73191)
-turnin A Good Day for Rolling##75025 |goto 34.36,59.28 |only if haveq(75025) or completedq(75025)
-|only if haveq(73191,75025) or completedq(73191,75025)
-step
-talk Tukkaraq##200558
-turnin Up to the Highest Height!##75026 |goto 34.36,58.57
-|only if haveq(75026) or completedq(75026)
-step
-talk Scalecommander Cindrethresh##199199
-turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
-turnin Busting Blues##73142 |goto 35.31,59.50 |only if haveq(73142) or completedq(73142)
-turnin Soupocalypse Now!##73179 |goto 35.30,59.49 |only if haveq(73179) or completedq(73179)
-turnin Up Close and Personal##73194 |goto 35.30,59.49 |only if haveq(73194) or completedq(73194)
-|only if haveq(73190,73142,73179,73194) or completedq(73190,73142,73179,73194)
-step
-talk Scalecommander Azurathel##199204
-turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
-|only if haveq(73178) or completedq(73178)
-step
-You have completed all available side quests in The Forbidden Reach
-|tip This guide will reset when more become available.
-'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73194) |next "Active_Quests_Available"
-]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Sniffenseeking!",{
 author="support@zygorguides.com",
@@ -5820,6 +5740,7 @@ accept Liars in Light##75620 |only if not completedq(75620) |or
 accept Frostfire Finesse##76084 |only if not completedq(76084) |or
 accept Liars of Spirit##76081 |only if not completedq(76081) |or
 |tip You will accept one of these quests automatically.
+stickystart "Search_For_Quests"
 step
 _Next to you:_
 clicknpc Myrrit##205098
@@ -6312,6 +6233,15 @@ step
 Return with Myrrit to Loamm |goto 55.64,57.36 < 50 |c |noway
 |tip Pick up Myrrit again and use "Escape" to leave the cave after you're finished.
 step
+label "Search_For_Quests"
+Search for an object offering a quest inside the mysterious cave
+|tip Various quest-giving objects appear randomly in digs.
+|tip You can also find hidden NPCs and objects for weekly quests while Burrowing with Myrrit.
+|tip When the "Dig" button lights up something is nearby.
+'|goto 55.64,57.36 < 50 |c |noway |or
+'|complete false |or
+|only if factionrenown(2564) >= 9
+step
 talk Myrrit##201426
 turnin The Buddy System##74876 |goto Zaralek Cavern/0 55.62,57.45
 |only if haveq(74876) or completedq(74876)
@@ -6328,6 +6258,44 @@ talk Garram##203644
 turnin Flask Manager##75772 |goto 57.25,55.85
 |only if readyq(75772)
 step
+talk Lyssa##204860
+turnin Little Blank Book##75773 |goto 56.81,56.37
+|only if readyq(75773)
+step
+talk Kiln-Singer Malraka##204215
+turnin Liquid Art##75765 |goto 57.80,54.35
+|only if readyq(75765)
+step
+talk Fanilly##203612
+turnin Ruby in the Rough##75766 |goto 56.70,55.32
+|only if readyq(75766)
+step
+talk Citros##200055
+turnin Good Time Boy##75767 |goto 56.80,54.00
+|only if readyq(75767)
+step
+Enter the cave |goto 56.12,59.26 < 10 |walk
+talk Cinnam##205318
+|tip Inside the cave.
+turnin Lucky Ducky##75768 |goto 55.69,60.22
+|only if readyq(75768)
+step
+talk Mistie##203607
+turnin A Glass of Bubbly##75770 |goto 56.00,56.45
+|only if readyq(75770)
+step
+talk Vanndual##203294
+turnin Crispety Crunchety##75998 |goto 57.70,57.85
+|only if readyq(75998)
+step
+talk Marie Shellie##204356
+turnin Slimy Yet Satisfying##75936 |goto 56.82,53.97
+|only if readyq(75936)
+step
+talk Kilnmaster Crubus##203170
+turnin Deep Cuts##76004 |goto 57.06,54.98
+|only if readyq(76004)
+step
 Click Here When a New Dig Becomes Available |confirm |next "Start_Dig"
 |tip You can purchase a dig from Ponso in Loamm once per week for 3 Barter Bricks.
 |tip You also get a dig from the weekly "A Worthy Ally: Loamm Niffen" quest.
@@ -6337,6 +6305,10 @@ author="support@zygorguides.com",
 startlevel=68,
 patch='100100',
 },[[
+step
+Reach Renown Level 7 with the Loamm Niffen |complete factionrenown(2564) >= 7
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
 step
 click TICKET: Glimmerogg Games
 accept TICKET: Glimmerogg Games##73707 |goto Zaralek Cavern/0 55.61,54.56
@@ -6418,7 +6390,9 @@ accept A Snail's Pace##74516 |goto 44.25,79.92 |only if questpossible |or
 accept The Slowest Fan Club##74514 |goto 44.25,79.92 |only if questpossible |or
 accept Good for Goo##74519 |goto 44.25,79.92 |only if questpossible |or
 accept All Terrain Snail##74517 |goto 44.25,79.92 |only if questpossible |or
-Accept the Daily Quest |complete false |goto 44.25,79.92 |or
+accept Snail Mail##74515 |goto 44.25,79.92 |only if questpossible |or
+accept Less Cargo##74520 |goto 44.25,79.92 |only if questpossible |or
+Accept the Daily Quest |complete false or completedq(74518,74516,74514,74519,74517,74515,74520) |goto 44.25,79.92 |or
 step
 Summon Your Level 25 Amethyst Softshell |complete activepet(2697) |goto 44.25,79.92
 |tip You can complete a special quest for having this pet at max level.
@@ -6700,6 +6674,29 @@ turnin Snailspiration: Zoom##74968 |goto 44.25,79.92
 |tip This quest will only appear with your level 25 Zoom summoned.
 |only if petlevel(1903) >= 25 and not completedq(74968)
 step
+talk Briggul##201752
+Tell her _"I am ready."_
+|tip You will mount a snail.
+|tip Don't dismount the snail or you will have to return to get another one.
+Collect the Package from Briggul |q 74515/1 |goto Zaralek Cavern/0 44.26,79.93
+|only if haveq(74515) or completedq(74515)
+step
+map Zaralek Cavern/0
+path follow smart; loop off; ants curved; dist 15
+path	43.94,80.45	42.95,78.82	41.82,73.65	42.34,70.36	44.35,68.05
+path	46.11,67.01	48.07,66.78	49.92,66.99	51.93,65.08	53.01,62.72
+path	54.20,59.17	55.43,56.24	55.89,55.50
+talk Terryn##202277
+Tell him _"Delivery!"_
+|tip Don't dismount the snail or you will have to return to get another one.
+|tip Run through the circles for a speed boost.
+|tip Follow the path into Loamm.
+Deliver the Package to Loamm |q 74515/2
+|only if haveq(74515) or completedq(74515)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74515
+|only if haveq(74515) or completedq(74515)
+step
 click Glowing Crystal##387725+
 |tip They look like small blue crystals on the ground around this area.
 collect 5 Glowing Crystal##204067 |q 74518/1 |goto 38.02,70.67
@@ -6743,63 +6740,63 @@ use the Conch Whistle##203708
 Ride Big Slick |invehicle |goto Ohn'ahran Plains/0 78.12,29.75 |q 74517
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 1 |goto 77.00,33.84
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 1 |goto 78.00,29.66
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 2 |goto 76.19,31.86
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 2 |goto 78.51,32.13
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 3 |goto 78.00,29.66
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 3 |goto 77.39,32.14
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 4 |goto 78.51,32.13
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 4 |goto 77.00,33.84
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 5 |goto 77.39,32.14
-|only if haveq(74517) or completedq(74517)
-step
-Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
-|only if haveq(74517) or completedq(74517)
-step
-use the Conch Whistle##203708
-Ride Big Slick |invehicle |goto The Waking Shores/0 77.91,46.70 |q 74517
-|only if haveq(74517) or completedq(74517)
-step
-Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 1 |goto 77.91,46.70
-|only if haveq(74517) or completedq(74517)
-step
-Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 2 |goto 78.22,44.73
-|only if haveq(74517) or completedq(74517)
-step
-Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 3 |goto 79.26,44.59
-|only if haveq(74517) or completedq(74517)
-step
-Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 4 |goto 80.02,44.57
-|only if haveq(74517) or completedq(74517)
-step
-Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 5 |goto 79.09,46.83
+Place the Snail Marker in the Wanderer's Steppe |q 74517/2 |count 5 |goto 76.19,31.86
 |only if haveq(74517) or completedq(74517)
 step
 Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
 |only if haveq(74517) or completedq(74517)
 step
 use the Conch Whistle##203708
-Ride Big Slick |invehicle |goto Thaldraszus/0 57.72,81.14 |q 74517
+Ride Big Slick |invehicle |goto The Waking Shores/0 79.09,46.83 |q 74517
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Shifting Sands |q 74517/4 |count 1 |goto 57.72,81.14
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 1 |goto 79.09,46.83
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Shifting Sands |q 74517/4 |count 2 |goto 58.43,81.68
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 2 |goto 77.91,46.70
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Shifting Sands |q 74517/4 |count 3 |goto 58.94,82.28
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 3 |goto 78.22,44.73
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Shifting Sands |q 74517/4 |count 4 |goto 58.92,79.61
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 4 |goto 79.26,44.59
 |only if haveq(74517) or completedq(74517)
 step
-Place the Snail Marker in the Shifting Sands |q 74517/4 |count 5 |goto 58.15,79.59
+Place the Snail Marker in the Restless Wetlands |q 74517/1 |count 5 |goto 80.02,44.57
+|only if haveq(74517) or completedq(74517)
+step
+Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+use the Conch Whistle##203708
+Ride Big Slick |invehicle |goto Thaldraszus/0 58.92,79.61 |q 74517
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 1 |goto 58.92,79.61
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 2 |goto 58.15,79.59
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 3 |goto 57.72,81.14
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 4 |goto 58.43,81.68
+|only if haveq(74517) or completedq(74517)
+step
+Place the Snail Marker in the Shifting Sands |q 74517/4 |count 5 |goto 58.94,82.28
 |only if haveq(74517) or completedq(74517)
 step
 Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
@@ -6827,16 +6824,23 @@ step
 Stop Riding Big Slick |outvehicle |script VehicleExit() |q 74517
 |only if haveq(74517) or completedq(74517)
 step
+Kill Zaqali enemies around this area
+collect 10 Stolen Supplies##204273 |q 74520/1 |goto 39.98,49.25
+|only if haveq(74520) or completedq(74520)
+step
 talk Briggul##201752
 turnin Resistance Training##74518 |goto Zaralek Cavern/0 44.25,79.92 |only if haveq(74518) or completedq(74518)
 turnin A Snail's Pace##74516 |goto 44.25,79.92 |only if haveq(74516) or completedq(74516)
 turnin The Slowest Fan Club##74514 |goto 44.25,79.92 |only if haveq(74514) or completedq(74514)
 turnin Good for Goo##74519 |goto 44.25,79.92 |only if haveq(74519) or completedq(74519)
 turnin All Terrain Snail##74517 |goto 44.25,79.92 |only if haveq(74517) or completedq(74517)
+turnin Snail Mail##74515 |goto 44.25,79.92 |only if haveq(74515) or completedq(74515)
+turnin Less Cargo##74520 |goto 44.25,79.92 |only if haveq(74520) or completedq(74520)
 step
 You have completed the daily quest for the day
 |tip You can gain additional Glimmerogg Racer reputation by acquiring certain snail battle pets and leveling them to 25.
 You can complete the following snail pet quests:
+|tip Level them to level 25 and summon them next to Briggul to get the quest.
 |tip Amethyst Softshell |only if not completedq(74948)
 |tip Blackchasm Crawler |only if not completedq(74950)
 |tip Microlicid |only if not completedq(74952)
@@ -6851,7 +6855,7 @@ You can complete the following snail pet quests:
 |tip Silkbead Snail |only if not completedq(74966)
 |tip Spireshell Snail |only if not completedq(74967)
 |tip Zoom |only if not completedq(74968)
-'|complete not completedq(74518,74516,74514,74519,74517) |next "Begin_Daily_Quests" |or
+'|complete not completedq(74518,74516,74514,74519,74517,74515,74520) |next "Begin_Daily_Quests" |or
 '|complete petlevel(2697) >= 25 and not completedq(74948) |next "Begin_Daily_Quests" |or
 '|complete petlevel(2657) >= 25 and not completedq(74950) |next "Begin_Daily_Quests" |or
 '|complete petlevel(3235) >= 25 and not completedq(74952) |next "Begin_Daily_Quests" |or
@@ -6866,5 +6870,392 @@ You can complete the following snail pet quests:
 '|complete petlevel(568) >= 25 and not completedq(74966) |next "Begin_Daily_Quests" |or
 '|complete petlevel(2653) >= 25 and not completedq(74967) |next "Begin_Daily_Quests" |or
 '|complete petlevel(1903) >= 25 and not completedq(74968) |next "Begin_Daily_Quests" |or
+]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Suffusion Camp (Ohn'ahran Plains)",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100100',
+areapoiid=7471,
+areapoitype="Fyrakk",
+},[[
+step
+talk Kalecgos##205647+
+accept Fyrakk's Forces##75887 |goto Zaralek Cavern/0 55.65,54.93
+step
+talk Somnikus##201648
+turnin Fyrakk's Forces##75887 |goto Ohn'ahran Plains/0 75.21,69.31
+accept Suffusion Camp##75888 |goto 75.21,69.31
+stickystart "Fyrakk_is_Coming"
+stickystart "Slay_the_Disciple_of_Fyrakk"
+step
+label "Begin_Dailies"
+Talk to NPCs around this area
+accept Aerial Support##74573 |goto 75.30,69.70 |only if questpossible |or 3
+accept Volunteer Fire Fighters##75181 |goto 75.30,69.70 |only if questpossible |or 3
+accept Air Control##75168 |goto 75.30,69.70 |only if questpossible |or 3
+accept They Who Would Burn Us##74568 |goto 75.30,69.70 |only if questpossible |or 3
+accept Deny Them Resources##74569 |goto 75.30,69.70 |only if questpossible |or 3
+accept Aid Our Wounded##74570 |goto 75.30,69.70 |only if questpossible |or 3
+Accept the Weelky Quests |complete false |goto 75.30,69.70 |or 3
+|tip Accept the weekly quests around the camp.
+step
+clicknpc Water Elemental##203244
+Activate the Water Spout Totem |q 75181/1 |goto 75.63,69.21
+|only if haveq(75181) or completedq(75181)
+step
+Extinguish the Fires |q 75181/2
+|tip Use the buttons on your vehicle bar to put out the fires in front of you.
+|only if haveq(75181) or completedq(75181)
+stickystart "Collect_Ward_of_Igira"
+stickystart "Collect_Ward_of_Fyrakk"
+stickystart "Kill_Primal_Nightflame"
+stickystart "Slay_Fyrakk's_Forces"
+stickystart "Heal_Allies"
+stickystart "Collect_Suffused_Ingots"
+step
+clicknpc Primalist Portal##203460
+Weaken the Primalist Portal |q 74573/1 |goto 73.47,70.06 |count 1
+|only if haveq(74573) or completedq(74573)
+step
+clicknpc Primalist Portal##203485
+Weaken the Primalist Portal |q 74573/1 |goto 73.13,72.29 |count 2
+|only if haveq(74573) or completedq(74573)
+step
+clicknpc Primalist Portal##203488
+Weaken the Primalist Portal |q 74573/1 |goto 74.75,72.02 |count 3
+|only if haveq(74573) or completedq(74573)
+step
+label "Collect_Ward_of_Igira"
+Kill enemies around this area
+collect 5 Ward of Igira##203430 |goto 73.88,71.44 |q 75888
+|only if haveq(75888) or completedq(75888)
+step
+click Suffusion Crucible
+|tip You can find several more nearby.
+|tip They appear on your minimap as yellow dots.
+Loot the Suffusion Crucible |q 75888/1 |goto 73.88,71.20
+|tip Looting the crucible will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+|only if haveq(75888) or completedq(75888)
+step
+label "Collect_Ward_of_Fyrakk"
+Kill enemies around this area
+|tip More powerful elite enemies will sometimes drop wards.
+|tip You can also acquire them looting Suffusion Crucibles.
+collect 5 Ward of Fyrakk##203683 |goto 73.88,71.44 |q 75888
+|only if haveq(75888) or completedq(75888)
+step
+click Suffusion Mold
+Loot the Suffusion Mold |q 75888/2 |goto 74.27,72.28
+|tip Looting the mold will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+|only if haveq(75888) or completedq(75888)
+step
+label "Kill_Primal_Nightflame"
+kill 4 Primal Nightflame##200931 |q 75168/1 |goto 74.97,69.57
+|tip These enemies are elite and may require a group.
+|tip You can use your "Whirling Surge" dragonriding ability through the non-attackble flying mobs.
+|only if haveq(75168) or completedq(75168)
+step
+label "Slay_Fyrakk's_Forces"
+Kill enemies around this area
+Slay #8# Fyrakk's Forces |q 74568/1 |goto 75.03,69.52
+|only if haveq(74568) or completedq(74568)
+step
+label "Heal_Allies"
+clicknpc Wounded Guardian##201896+
+|tip They look like wounded NPCs kneeling with blood drops over their heads.
+use the Enchanted Bandage##203731
+Heal #6# Allies |q 74570/1 |goto 73.75,71.30
+|only if haveq(74570) or completedq(74570)
+step
+label "Collect_Suffused_Ingots"
+click Infusion Supplies##386649+
+|tip They look like large pots on the ground around this area.
+collect 6 Suffused Ingots##204699 |q 74569/1 |goto 73.75,71.30
+|only if haveq(74569) or completedq(74569)
+step
+talk Mayla Highmountain##201090
+|tip She may run away periodically and come back.
+turnin Air Control##75168 |goto 74.97,69.57 |only if haveq(75168) or completedq(75168)
+turnin They Who Would Burn Us##74568 |goto 74.97,69.57 |only if haveq(74568) or completedq(74568)
+step
+talk Somnikus##201648
+turnin Suffusion Camp##75888 |goto 75.21,69.31 |only if haveq(75888) and not completedq(75888)
+turnin Aerial Support##74573 |goto 75.21,69.31 |only if haveq(74573) or completedq(74573)
+|only if (haveq(75888) and not completedq(75888)) or haveq(74573) or completedq(74573)
+step
+talk Khanam Matra Sarest##201860
+turnin Deny Them Resources##74569 |goto 75.62,69.91 |only if haveq(74569) or completedq(74569)
+turnin Disciple of Fyrakk: Kretchenwrath##74775 |goto 75.63,69.92 |only if readyq(74775)
+|only if haveq(74569) or completedq(74569) or readyq(74775)
+step
+talk Tigari Khan##201861
+turnin Aid Our Wounded##74570 |goto 75.56,69.34 |only if haveq(74570) or completedq(74570)
+turnin Volunteer Fire Fighters##75181 |goto 75.69,69.09 |only if haveq(75181) or completedq(75181)
+|only if haveq(74570,75181) or completedq(74570,75181)
+step
+You have completed the available quests and this Suffusion Camp
+|tip This guide will reset when more become available.
+|tip You can continue to farm Wards for future weekly quests.
+'|complete not completedq(75168,74568,74573,74569,74570,75181) |next "Begin_Dailies"
+step
+label "Fyrakk_is_Coming"
+Fyrakk is Coming! |scenariostage 1 |goto Ohn'ahran Plains/0 73.70,71.41
+|tip Fyrakk will arrive in a couple of minutes and you will be attacked by his Disciple.
+|only if scenariostage(1)
+step
+label "Slay_the_Disciple_of_Fyrakk"
+Slay the Disciple of Fyrakk |scenariogoal 2/0 |goto 75.68,69.33
+|tip Kill the elite that spawns.
+|tip You will need a large group for this.
+|tip Move out of areas on the ground and be prepared to be knocked back frequently.
+|only if scenariostage(2)
+]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Suffusion Camp (The Azure Span)",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100100',
+areapoiid=7433,
+areapoitype="Fyrakk",
+},[[
+step
+talk Kalecgos##205647
+accept Fyrakk's Forces##75887 |goto Zaralek Cavern/0 55.65,54.93
+step
+talk The Blubberwall##203601
+turnin Fyrakk's Forces##75887 |goto The Azure Span/0 57.82,34.45
+accept Suffusion Camp##75888 |goto 57.82,34.45
+stickystart "Fyrakk_is_Coming"
+stickystart "Slay_the_Disciple_of_Fyrakk"
+step
+label "Begin_Dailies"
+Talk to NPCs around this area
+accept Hideaway No More##75383 |goto 58.24,34.30 |only if questpossible |or 3
+accept Payback's a Mammoth##75384 |goto 58.24,34.30 |only if questpossible |or 3
+accept Charge of the Ottuk Brigade##75373 |goto 58.24,34.30 |only if questpossible |or 3
+Accept the Weekly Quests |complete false |goto 58.24,34.30 |or 3
+|tip Accept the weekly quests around the camp.
+step
+clicknpc Water Elemental##203244
+Activate the Water Spout Totem |q 75383/1 |goto 58.51,31.94
+|only if haveq(75383) or completedq(75383)
+step
+Extinguish the Fires |q 75383/2
+|tip Use the buttons on your vehicle bar to put out the fires in front of you.
+|only if haveq(75383) or completedq(75383)
+stickystart "Collect_Ward_of_Igira"
+stickystart "Collect_Ward_of_Fyrakk"
+step
+click Djaradin Barricade+
+|tip They look like small walls with tusks sticking out of them around this area.
+Destroy #6# Djaradin Barricades |q 75373/1 |goto 57.14,34.08
+You can find more around:
+[54.16,34.10]
+[52.38,32.89]
+[56.26,31.68]
+|only if haveq(75373) or completedq(75373)
+step
+clicknpc Overladen Hauler##203296
+Liberate an Overladen Hauler |q 75384/2 |goto 54.68,32.45
+|only if haveq(75384) or completedq(75384)
+stickystop "Collect_Ward_of_Igira"
+stickystop "Collect_Ward_of_Fyrakk"
+step
+Return the Mammoth to Safety |q 75384/2 |goto 58.46,33.50
+|tip Run it back to this location.
+|tip Attack any enemies that climb aboard to knock them off.
+|only if haveq(75384) or completedq(75384)
+step
+label "Collect_Ward_of_Igira"
+Kill enemies around this area
+collect 5 Ward of Igira##203430 |goto 54.57,33.49 |q 75888
+|only if haveq(75888) or completedq(75888)
+step
+click Suffusion Crucible
+|tip You can find several more nearby.
+|tip They appear on your minimap as yellow dots.
+Loot the Suffusion Crucible |q 75888/1 |goto 54.77,33.18
+|tip Looting the crucible will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+|only if haveq(75888) or completedq(75888)
+step
+label "Collect_Ward_of_Fyrakk"
+Kill enemies around this area
+|tip More powerful elite enemies will sometimes drop wards.
+|tip You can also acquire them looting Suffusion Crucibles.
+collect 5 Ward of Fyrakk##203683 |goto 54.57,33.49 |q 75888
+|only if haveq(75888) or completedq(75888)
+step
+click Suffusion Mold
+Loot the Suffusion Mold |q 75888/2 |goto 55.43,35.22
+|tip Looting the mold will cause a pair of elite enemies to spawn and attack you.
+|tip Clear the area and get some help to kill them.
+|only if haveq(75888) or completedq(75888)
+step
+talk The Blubberwall##203601
+turnin Suffusion Camp##75888 |goto 57.82,34.44 |only if haveq(75888) and not completedq(75888)
+turnin Charge of the Ottuk Brigade##75373 |goto 57.82,34.44 |only if haveq(75373) or completedq(75373)
+|only if (haveq(75888) and not completedq(75888)) or haveq(75373) or completedq(75373)
+step
+talk Old Grimtusk##203604
+turnin Hideaway No More##75383 |goto 58.46,33.51 |only if haveq(75383) or completedq(75383)
+turnin Payback's a Mammoth##75384 |goto 58.46,33.51 |only if haveq(75384) or completedq(75384)
+|only if haveq(75383,75384) or completedq(75383,75384)
+step
+talk Brena##203603
+turnin Disciple of Fyrakk: Shadeisethal##75239 |goto 58.64,34.35
+|only if readyq(75239)
+step
+You have completed the available quests and this Suffusion Camp
+|tip This guide will reset when more become available.
+|tip You can continue to farm Wards for future weekly quests.
+'|complete not completedq(75373) or readyq(75239) |next "Begin_Dailies" |or
+'|complete inscenario() |or
+step
+label "Fyrakk_is_Coming"
+Fyrakk is Coming! |schenariogoal 1/58008 |goto 58.17,31.75
+|tip Fyrakk will arrive in a couple of minutes and you will be attacked by his Disciple.
+|only if scenariostage(1)
+step
+label "Slay_the_Disciple_of_Fyrakk"
+Slay the Disciple of Fyrakk |scenariogoal 2/0 |goto 58.17,31.75 |next "Begin_Dailies"
+|tip Kill the elite that spawns.
+|tip You will need a large group for this.
+|tip Move out of areas on the ground and be prepared to be knocked back frequently.
+|only if scenariostage(2)
+]])
+ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Researchers Under Fire",{
+author="support@zygorguides.com",
+startlevel=68,
+patch='100100',
+areapoiid=7461,
+areapoitype="RUF",
+},[[
+step
+label "Begin_Scenario"
+Wait for the Scenario to Begin |complete areapoi(2133,7461) and inscenario() |goto Zaralek Cavern/0 47.59,56.72
+|tip The scenario starts every hour on the half hour.
+|tip Steps that have progress bars are currently bugged and may complete early.
+|tip This scenario has been heavily bugged.
+step
+Kill enemies around this area
+Defeat the Three Patrols |scenariostage 1 |goto 48.00,55.19
+You can find the other patrols at:
+[48.65,57.94]
+[46.64,57.96]
+|only if scenariostage(1)
+step
+Kill enemies around this area
+Clear the Titan Forces |scenariogoal 2/0 |goto 46.05,61.85
+|only if scenariostage(2)
+stickystart "Gather_Titan_Parts"
+step
+Destroy #2# Large Boulders |scenariogoal 3/58766 |goto 45.99,61.39
+|tip Return Titan parts to clear the boulders.
+|only if scenariogoal(58766)
+step
+label "Gather_Titan_Parts"
+Click Titan objects around this area
+|tip They look like gears and random objects on the ground around this area.
+|tip Run them to the console nearby.
+Gather #50# Titan Parts |scenariogoal 3/58836 |goto 45.99,61.39
+|only if scenariogoal(58836)
+step
+Kill enemies that attack in waves
+Defeat the Attacking Wildlife |scenariogoal 4/0 |goto 45.99,61.39
+|only if scenariostage(4)
+step
+kill Fallen Boulder##204071+
+Destroy #12# Cave Boulders |scenariogoal 5/58841 |goto 44.84,62.42
+|only if scenariostage(5)
+step
+kill Contaminated Titan Watcher##203834 |scenariogoal 6/58842 |goto 45.05,62.13
+|tip It comes out of the cave.
+|only if scenariostage(6)
+step
+click Curious Ore Sample+
+|tip They look like small rocks on the ground around this area.
+Collect #60# Curious Ore Samples |scenariogoal 7/58837 |goto 46.45,62.98
+Run them to consoles at:
+[46.37,62.14]
+[45.85,61.03]
+|only if scenariostage(7)
+step
+Complete the Scenario Stage |scenariogoal 8/0
+|tip Scenario info coming soon.
+|only if scenariostage(8)
+step
+Complete the Scenario Stage |scenariogoal 9/0
+|tip Scenario info coming soon.
+|only if scenariostage(9)
+stickystart "Defeat_the_Titan_Forces"
+step
+kill Response Team Watcher##202318 |scenariogoal 10/58864 |goto 47.62,63.05
+|only if scenariogoal(58864)
+step
+label "Defeat_the_Titan_Forces"
+Kill enemies around this area
+Defeat the Titan Forces |scenariogoal 10/0 |goto 47.62,63.05
+|only if scenariostage(10)
+step
+Kill enemies around this area
+Clear the Wildlife |scenariogoal 11/0 |goto 47.58,57.61
+|only if scenariostage(11)
+step
+kill Cavern Flayer Matriarch##202309 |scenariogoal 12/58849 |goto 45.62,57.70
+|only if scenariogoal(58849)
+step
+Kill enemies around this area
+Clear the Ruin Wildlife |scenariogoal 13/0 |goto 43.90,56.49
+|only if scenariostage(13)
+step
+Complete the Scenario Stage |scenariogoal 14/0
+|tip Scenario info coming soon.
+|only if scenariostage(14)
+step
+Complete the Scenario Stage |scenariogoal 15/0
+|tip Scenario info coming soon.
+|only if scenariostage(15)
+step
+Complete the Scenario Stage |scenariogoal 16/0
+|tip Scenario info coming soon.
+|only if scenariostage(16)
+step
+Complete the Scenario Stage |scenariogoal 17/0
+|tip Scenario info coming soon.
+|only if scenariostage(17)
+step
+Complete the Scenario Stage |scenariogoal 18/0
+|tip Scenario info coming soon.
+|only if scenariostage(18)
+step
+Complete the Scenario Stage |scenariogoal 19/0
+|tip Scenario info coming soon.
+|only if scenariostage(19)
+step
+Kill enemies around this area
+|tip They appear on your minimap as yellow dots.
+Defeat the Sundered Flame Forces |scenariogoal 20/0 |goto 48.14,54.71
+You can find more around:
+[48.86,58.63]
+[46.56,58.41]
+|only if scenariostage(20)
+step
+kill Captain Reykal##203355 |scenariogoal 21/58609 |goto 49.12,57.70
+|only if scenariogoal(58609)
+step
+talk Rannan Korren##203274
+Tell him _"We are clear to withdraw the rest of the expedition"_
+Talk to Rannan to Complete this Expedition |scenariogoal 22/58255 |goto 47.70,57.86
+|only if scenariostage(22)
+step
+Wait for a New Scenario Stage |complete areapoi(2133,7461) and inscenario() |goto 47.59,56.72 |next "Begin_Scenario"
+|tip This scenario has been heavily bugged.
+|only if inscenario()
+step
+Wait for the Researchers to Assemble |complete areapoi(2133,7461) and inscenario() |goto 47.59,56.72 |next "Begin_Scenario"
+|tip The scenario starts every hour on the half hour.
+|tip This scenario has been heavily bugged.
 ]])
 ZGV.BETAEND()

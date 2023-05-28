@@ -604,16 +604,7 @@ local ConditionEnv = {
 		return ((numCollected or 0) > 0)
 	end,
 	petlevel = function(speciesID) 
-		-- do we even have that pet?
-		if not Parser.ConditionEnv.haspet then return 0 end
-
-		local numPets = C_PetJournal.GetNumPets();
-		local maxlevel = 0
-		for i = 1,numPets do
-			local _, petspeciesID, _, _, level = C_PetJournal.GetPetInfoByIndex(i);
-			if petspeciesID==speciesID then maxlevel=max(maxlevel,level) end
-		end
-		return maxlevel
+		return ZGV.PetBattle.PetLevels[speciesID] or 0
 	end,	
 	hastoy = function(toyId)
 		return PlayerHasToy(toyId)
@@ -815,8 +806,11 @@ local ConditionEnv = {
 	intutorial = function()
 		return IsBoostTutorialScenario()
 	end,
-	inscenario = function()
-		return C_Scenario.IsInScenario()
+	inscenario = function() 
+		-- we no longer can just use IsInScenario, as there are open world scenarios that are always active
+		if not C_Scenario.IsInScenario() then return false end
+		local _,s,p = C_Scenario.GetInfo()
+		return (p or 0)>0
 	end,
 	scenariostage = function(stage)
 		if not C_Scenario.IsInScenario() then return false end
@@ -873,15 +867,14 @@ local ConditionEnv = {
 	questpossible = function(questid) -- user is on quest, or has quest dialog open
 		local goal = not questid and Parser.ConditionEnv.goal
 
-		if goal and Parser.ConditionEnv.haveq(goal.questid) then return true end
-		if questid and Parser.ConditionEnv.haveq(questid) then return true end
+		local qid = questid or (goal and goal.questid)
+		if not qid then return false end
 
+		if (Parser.ConditionEnv.haveq(qid) or Parser.ConditionEnv.completedq(qid)) then return true end
 
 		if goal and not goal.L then
 			return false -- we don't have quest title. at all.
 		end
-
-		local qid = questid or goal.questid
 
 		if qid then
 			if GossipFrame and GossipFrame:IsVisible() and C_GossipInfo and C_GossipInfo.GetAvailableQuests then

@@ -1411,6 +1411,12 @@ local default_global_data = {
 --/run Details.breakdown_spell_tab.statusbar_alpha = 0.823
 	--breakdown spell tab
 	breakdown_spell_tab = {
+		--player spells
+		nest_players_spells_with_same_name = true,
+		--pet spells
+		nest_pet_spells_by_name = false,
+		nest_pet_spells_by_caster = true,
+
 		blockcontainer_width = 430,
 		blockcontainer_height = 270,
 		blockcontainer_islocked = true,
@@ -1429,8 +1435,6 @@ local default_global_data = {
 		blockspell_spark_width = 4,
 		blockspell_spark_show = true,
 		blockspell_spark_color = {1, 1, 1, 0.7},
-
-		blockspellline_height = 18,
 
 		spellcontainer_width = 429,
 		spellcontainer_height = 311,

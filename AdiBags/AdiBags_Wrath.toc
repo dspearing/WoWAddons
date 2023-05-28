@@ -22,9 +22,9 @@
 ## Title: AdiBags
 ## Notes: Adirelle's bag addon.
 ## Author: Adirelle
-## Version: v1.10.8
+## Version: v1.10.17
 ## SavedVariables: AdiBagsDB
-## X-Date: 2023-05-07T19:38:52Z
+## X-Date: 2023-05-28T6:17:22Z
 ## X-License: GPL v3
 ## OptionalDeps: LibStub, CallbackHandler-1.0, Ace3, LibSharedMedia-3.0, Scrap, BrainDead, SyLevel
 #@alpha@
@@ -43,8 +43,12 @@ libs\LibSharedMedia-3.0\lib.xml
 
 libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
 
-Localization.lua
 core\EventHandlers.lua
+core\Boot.lua
+
+Localization.lua
+
+core\Experiments.lua
 core\Fonts.lua
 core\Constants.lua
 core\Utility.lua

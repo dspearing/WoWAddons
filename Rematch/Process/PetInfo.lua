@@ -157,7 +157,7 @@ local apiByStat = {
 local hiddenTables = {}
 
 -- for Breed stat group
-local breedSource -- addon that's providing breed data: "BattlePetBreedID", "PetTracker_Breeds" or "LibPetBreedInfo-1.0"
+local breedSource -- addon that's providing breed data: "BattlePetBreedID", "PetTracker_Breeds"
 local breedLib -- for LibPetBreedInfo-1.0 only
 local breedNames = {nil,nil,"B/B","P/P","S/S","H/H","H/P","P/S","H/S","P/B","S/B","H/B"}
 
@@ -466,14 +466,6 @@ local queryAPIs = {
             if breedID and not RematchSettings.PetTrackerLetterBreeds then
                breedName = PetTracker.Breeds:Icon(breedID,0.85)
             end
-         elseif source=="LibPetBreedInfo-1.0" then
-            if idType=="pet" then
-               breedID = breedLib:GetBreedByPetID(self.petID)
-            elseif idType=="link" then
-               breedID = breedLib:GetBreedByStats(self.speciesID,self.level,self.rarity,self.maxHealth,self.power,self.speed)
-            elseif idType=="battle" then
-               breedID = breedLib:GetBreedByPetBattleSlot(self.battleOwner,self.battleIndex)
-            end
          end
          -- make unknown breeds breedID 0 and named "NEW" if no known breeds or "???" otherwise
          if type(breedID)~="number" then
@@ -508,8 +500,6 @@ local queryAPIs = {
             data = PetTracker.Breeds[speciesID]
          elseif source=="PetTracker" then
             data = PetTracker.SpecieBreeds[speciesID]
-         elseif source=="LibPetBreedInfo-1.0" then
-            data = breedLib:GetAvailableBreeds(speciesID)
          end
          -- if there's a table of breeds, copy them to possibleBreeds
          if data and type(data)=="table" then
@@ -611,7 +601,7 @@ local queryAPIs = {
 -- rematch:GetBreedSource() is used by the Breed and PossibleBreeds API
 -- the first time this runs it looks for a breed addon enabled and returns it
 -- future runs will just return the saved source (so this only looks for a breed addon once)
--- addons are used in this priority: BattlePetBreedID, PetTracker_Breeds then LibPetBreedInfo-1.0
+-- addons are used in this priority: BattlePetBreedID, PetTracker_Breeds
 function rematch:GetBreedSource()
    if breedSource==nil then
       if RematchSettings.PreferPetTrackerBreeds and IsAddOnLoaded("BattlePetBreedID") and IsAddOnLoaded("PetTracker") then
@@ -620,7 +610,7 @@ function rematch:GetBreedSource()
       elseif IsAddOnLoaded("BattlePetBreedID") then
          breedSource = "BattlePetBreedID"
          return "BattlePetBreedID"
-      elseif IsAddOnLoaded("PetTracker_Breeds") and GetAddOnMetadata("PetTracker_Breeds","Version")~="7.1.4" then
+      elseif IsAddOnLoaded("PetTracker_Breeds") and C_AddOns.GetAddOnMetadata("PetTracker_Breeds","Version")~="7.1.4" then
          if not PetTracker.Pet then -- only set this source if new PetTracker isn't enabled (PetTracker has its own issues when this is enabled alongside newer versions that don't include this)
             breedSource = "PetTracker_Breeds"
             return "PetTracker_Breeds"
@@ -628,19 +618,6 @@ function rematch:GetBreedSource()
       elseif IsAddOnLoaded("PetTracker") and PetTracker and PetTracker.Pet and PetTracker.Pet.GetBreed then
          breedSource = "PetTracker"
          return "PetTracker"
-      end
-      -- one of the sources is not loaded, try loading LibPetBreedInfo separately
-      LoadAddOn("LibPetBreedInfo-1.0")
-      if LibStub then
-         for lib in LibStub:IterateLibraries() do
-            if lib=="LibPetBreedInfo-1.0" then
-			   breedLib = LibStub("LibPetBreedInfo-1.0")
-			   if lib then
-				 breedSource = lib
-				 return lib
-			   end
-            end
-         end
       end
       breedSource = false -- none found, only attempt to find a source once
    end

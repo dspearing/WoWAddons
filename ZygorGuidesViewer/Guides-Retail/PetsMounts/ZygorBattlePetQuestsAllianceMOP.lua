@@ -24,7 +24,9 @@ talk Audrey Burnhep##63596
 accept Battle Pet Tamers: Cataclysm##31966 |goto Stormwind City/0 69.48,25.15
 step
 talk Brok##66819
-accept Brok##31972 |goto Mount Hyjal/0 61.37,32.71 |only if completedq(31970)
+accept Brok##31972 |goto Mount Hyjal/0 61.37,32.71
+step
+talk Brok##66819
 Defeat Brok |q 31966/1 |goto Mount Hyjal/0 61.37,32.71
 |tip Brok's pet team consists of level 25 Magic, Beast, and Critter battle pets.
 |tip Dragonkin battle pets are strong against Magic battle pets.
@@ -34,10 +36,11 @@ Defeat Brok |q 31966/1 |goto Mount Hyjal/0 61.37,32.71
 step
 talk Brok##66819
 turnin Brok##31972 |goto 61.37,32.71
-|only if completedq(31970)
 step
 talk Bordin Steadyfist##66815
-accept Bordin Steadyfist##31973 |goto Deepholm/0 49.87,57.05 |only if completedq(31970)
+accept Bordin Steadyfist##31973 |goto Deepholm/0 49.87,57.05
+step
+talk Bordin Steadyfist##66815
 Defeat Bordin Steadyfist |q 31966/2 |goto Deepholm/0 49.87,57.05
 |tip Bordin's pet team consists of level 25 Elemental and Critter battle pets.
 |tip Aquatic battle pets are strong against Elemental battle pets.
@@ -46,10 +49,11 @@ Defeat Bordin Steadyfist |q 31966/2 |goto Deepholm/0 49.87,57.05
 step
 talk Bordin Steadyfist##66815
 turnin Bordin Steadyfist##31973 |goto 49.87,57.05
-|only if completedq(31970)
 step
 talk Goz Banefury##66822
-accept Goz Banefury##31974 |goto Twilight Highlands/0 56.59,56.80 |only if completedq(31970)
+accept Goz Banefury##31974 |goto Twilight Highlands/0 56.59,56.80
+step
+talk Goz Banefury##66822
 Defeat Goz Banefury |q 31966/3 |goto Twilight Highlands/0 56.59,56.80
 |tip Goz's pet team consists of level 25 Elemental, Magic, and Beast battle pets.
 |tip Aquatic battle pets are strong against Elemental battle pets.
@@ -59,15 +63,21 @@ Defeat Goz Banefury |q 31966/3 |goto Twilight Highlands/0 56.59,56.80
 step
 talk Goz Banefury##66822
 turnin Goz Banefury##31974 |goto 56.59,56.80
-|only if completedq(31970)
 step
 _Click the quest completion box that appears_
 turnin Battle Pet Tamers: Cataclysm##31966 |goto 56.59,56.80
-accept Grand Master Obalis##31970 |goto 56.59,56.80 |only if not completedq(31970)
+accept Grand Master Obalis##31970 |goto 56.59,56.80
+step
+talk Zidormi##162419
+Ask her _"Can you show me what Uldum was like during the time of the Cataclysm?"_
+Travel Back in Time |goto Uldum/0 56.02,35.14 < 10
+'|complete ZGV.InPhase("OldUldum") |or
+'|complete completedq(31970) |or
 step
 talk Obalis##66824
 Defeat Obalis |q 31970/1 |goto Uldum/0 56.56,41.98
-|tip Payne's pet team consists of level 25 Beast, Flying, and Critter battle pets.
+|tip On top of the bridge.
+|tip Obalis's pet team consists of level 25 Beast, Flying, and Critter battle pets.
 |tip Mechanical battle pets are strong against Beast battle pets.
 |tip Magic battle pets are strong against Flying battle pets.
 |tip Beast battle pets are strong against Critter battle pets.
@@ -75,11 +85,10 @@ Defeat Obalis |q 31970/1 |goto Uldum/0 56.56,41.98
 step
 talk Obalis##66824
 turnin Grand Master Obalis##31970 |goto 56.56,41.98
-accept The Triumphant Return##31985 |goto 56.56,41.98 |only if not completedq(31985) and not completedq(31986)
+accept The Triumphant Return##31985 |goto 56.56,41.98
 step
 talk Audrey Burnhep##63596
 turnin The Triumphant Return##31985 |goto Stormwind City/0 69.48,25.15
-|only if not completedq(31985) and not completedq(31986)
 step
 Congratulations!
 You have completed the _Battle Pet Tamers: Cataclysm_ questline!
@@ -95,51 +104,115 @@ patch='50004',
 condition_suggested=function() return level>=1 and level<=30 end,
 },[[
 step
-talk Audrey Burnhep##63596
-Learn the Battle Pet Training ability |learnspell Revive Battle Pets##125439 |goto Stormwind City/0 69.48,25.15
+talk Marcus Jensen##63014
+Learn the Battle Pet Training ability |learnspell Revive Battle Pets##125439 |goto Elwynn Forest/0 40.32,66.02
+step
+talk Marcus Jensen##63014
+Ask him _"Interested in catching some rare pets?"_
+Train a New Battle Pet |goto Elwynn Forest/0 40.32,66.02
+|tip The type of pet he offers is determined by your character's race.
+|tip If you don't see a pet offered in his inventory, you may have to purchase one from the auction house in Stormwind City.
+'|complete haspet(43) |or
+'|complete haspet(68) |or
+'|complete haspet(72) |or
+'|complete haspet(138) |or
+'|complete haspet(630) |or
+'|complete haspet(792) |or
+step
+Assign the new Pet to Pet Battle Slot 1 in Your Pet Journal
+|tip Open your Pet Journal with "Shift+P" and click + drag your new pet to the unlocked pet battle slot.
+Click Here to Proceed |confirm
+step
+talk Marcus Jensen##63014
+accept Learning the Ropes##31308 |goto Elwynn Forest/0 40.32,66.02
+step
+Defeat a Wild Battle Pet
+|tip Begin a pet battle with any battle pet you can find in or around Stormwind.
+|tip Click the tiny binoculars to the left of your mini map name and check _Track Pets_.
+|tip Right-click a wild battle pet around this area to join a pet battle.
+|tip Weaken the opponent battle pet using your battle pet's skill until you have defeated it.
+|tip If the pet battle isn't starting, try logging out and back in, and starting again.
+Win a Pet Battle |q 31308/1 |goto Elwynn Forest/0 34.21,65.07
+You can find more around:
+[43.46,56.05]
+[41.02,73.59]
+[51.14,73.97]
+[35.61,65.27]
+[31.90,72.39]
+[37.13,57.11]
+step
+talk Marcus Jensen##63014
+turnin Learning the Ropes##31308 |goto Elwynn Forest/0 40.32,66.02
+accept On The Mend##31309 |goto 40.32,66.02
+step
+talk Erma##6749
+Tell her _"I'd like to heal and revive my battle pets."_
+Battle Pets Healed |q 31309/1 |goto Elwynn Forest/0 42.85,65.94
+step
+talk Marcus Jensen##63014
+turnin On The Mend##31309 |goto Elwynn Forest/0 40.32,66.02
+accept Level Up!##31785 |goto 40.32,66.02
+step
+Raise the Level of a Battle Pet to Level 3
+|tip Continue battling wild battle pets until your pet reaches level 3.
+Raise a Battle Pet to level 3 |q 31785/1 |goto Elwynn Forest/0 34.21,65.07
+You can find more around:
+[43.46,56.05]
+[41.02,73.59]
+[51.14,73.97]
+[35.61,65.27]
+[31.90,72.39]
+[37.13,57.11]
+step
+Click the Quest Accept Box
+accept Audrey Burnhep##32008
+|tip You will accept this quest automatically when your first battle pet reaches level 3.
+step
+talk Marcus Jensen##63014
+turnin Level Up!##31785 |goto Elwynn Forest/0 40.32,66.02
+accept Got one!##31550 |goto 40.32,66.02
+step
+Capture a Wild Battle Pet
+|tip Right-click a wild battle pet around this area to join a pet battle.
+|tip Weaken the opponent battle pet using your battle pet's skill until your _Trap_ ability activates (procs).
+|tip Use the _Trap_ ability until the wild pet is captured.
+|tip You may have to use the _Trap_ more than once.
+|tip If you kill the wild pet, you will have to start again.
+|tip If the pet battle isn't starting, try logging out and back in, and starting again.
+Wild Battle Pet Caught |q 31550/1 |goto Elwynn Forest/0 34.21,65.07
+You can find more around:
+[43.46,56.05]
+[41.02,73.59]
+[51.14,73.97]
+[35.61,65.27]
+[31.90,72.39]
+[37.13,57.11]
+step
+Assign the new Pet to an open Pet Battle Slot in Your Pet Journal
+|tip Open your Pet Journal with "Shift+P" and click + drag your new pet to the unlocked pet battle slot.
+Click Here to Proceed |confirm
+step
+talk Marcus Jensen##63014
+turnin Got one!##31550 |goto Elwynn Forest/0 40.32,66.02
+step
+Raise the Level of a Battle Pet to Level 5
+|tip Continue battling wild battle pets until your pet reaches level 5.
+Raise a Battle Pet to level 5 |goto Elwynn Forest/0 34.21,65.07
+Click Here to Proceed |confirm
+You can find more around:
+[43.46,56.05]
+[41.02,73.59]
+[51.14,73.97]
+[35.61,65.27]
+[31.90,72.39]
+[37.13,57.11]
 step
 talk Audrey Burnhep##63596
-learnpet Snowshoe Rabbit##7560 |goto 69.48,25.15
-|tip Train it from her.
+turnin Audrey Burnhep##32008 |goto Stormwind City/0 69.49,25.15
 step
 talk Audrey Burnhep##63596
-accept Learning the Ropes##31591 |goto 69.48,25.15
-step
-clicknpc Rabbit##61080
-|tip It could also be a Squirrel.
-Win a Pet Battle |q 31591/1 |goto 70.1,23.4
-|tip Open your Pet Journal with "Shift+P" and assign pets to your battle slots if you can't start the battle.
-step
-talk Audrey Burnhep##63596
-turnin Learning the Ropes##31591 |goto 69.48,25.15
-accept On The Mend##31592 |goto 69.48,25.15
-step
-talk Jenova Stoneshield##11069
-Tell her: _"I'd like to heal and revive my battle pets."_
-Heal your Battle Pets |q 31592/1 |goto 67.3,37.7
-step
-talk Audrey Burnhep##63596
-turnin On The Mend##31592 |goto 69.48,25.15
-accept Level Up!##31821 |goto 69.48,25.15
-step
-clicknpc Rabbit##61080
-|tip It could also be a Squirrel.
-Raise a Battle Pet to level 3 |q 31821/1 |goto 70.1,23.4
-|tip Keep battling critters around this area to accomplish this.
-step
-talk Audrey Burnhep##63596
-turnin Level Up!##31821 |goto 69.48,25.15
-turnin Audrey Burnhep##32008 |goto 69.48,25.15 |only if haveq(32008)
-accept Julia, The Pet Tamer##31316 |goto 69.48,25.15
-accept Got one!##31593 |goto 69.48,25.15
-step
-clicknpc Rabbit##61080
-|tip It could also be a Fawn.
-|tip When it reaches 35% health or lower, use your Trap ability to capture it.
-Catch a Pet |q 31593/1 |goto Elwynn Forest/0 32.65,50.65
-step
-talk Audrey Burnhep##63596
-turnin Got one!##31593 |goto Stormwind City/0 69.48,25.15
+|tip Keep leveling your battle pets until this quest becomes available.
+accept Julia, The Pet Tamer##31316 |goto Stormwind City/0 69.48,25.15
 step
 talk Julia Stevens##64330
 Defeat Julia Stevens |q 31316/1 |goto Elwynn Forest/0 41.66,83.67
@@ -259,11 +332,12 @@ Defeat Lydia Accoste |q 31915/1 |goto Deadwind Pass/0 40.05,76.45
 step
 talk Lydia Accoste##66522
 turnin Grand Master Lydia Accoste##31915 |goto 40.05,76.45
-accept The Returning Champion##31976 |goto 40.05,76.45 |only if not completedq(31977) and not completedq(31976)
+accept The Returning Champion##31976 |goto 40.05,76.45 |only if completedq(31915) and completedq(31897) and not haveq(31977) and not completedq(31977)
+|tip You may have to reload your UI to accept this quest. |only if completedq(31915) and completedq(31897) and not haveq(31977) and not completedq(31977)
 step
 talk Audrey Burnhep##63596
 turnin The Returning Champion##31976 |goto Stormwind City/0 69.48,25.15
-|only if not completedq(31977) and not completedq(31976)
+|only if haveq(31976)
 step
 Congratulations!
 You have completed the _Battle Pet Tamers: Eastern Kingdoms_ questline!
@@ -317,7 +391,25 @@ Defeat Elena Flutterfly |q 31889/5 |goto Moonglade/0 46.14,60.26
 |tip Defeat her in battle pet combat.
 step
 _Click the quest completion box that appears_
-turnin Battle Pet Tamers: Kalimdor##31889 |goto 46.14,60.26
+turnin Battle Pet Tamers: Kalimdor##31891
+accept Grand Master Trixxy##31897
+step
+talk Stone Cold Trixxy##66466
+Defeat Stone Cold Trixxy |q 31897/1 |goto Winterspring/0 65.63,64.52
+|tip Trixxy's pet team consists of level 19 Dragonkin, Beast, and Flying battle pets.
+|tip Humanoid battle pets are strong against Dragonkin battle pets.
+|tip Mechanical battle pets are strong against Beast battle pets.
+|tip Magic battle pets are strong against Flying battle pets.
+|tip Defeat her in battle pet combat.
+step
+talk Stone Cold Trixxy##66466
+turnin Grand Master Trixxy##31897 |goto 65.63,64.52
+accept The Returning Champion##31975 |only if completedq(31915) and completedq(31897)
+|tip You may have to reload or relog to receive it. |only if completedq(31915) and completedq(31897)
+step
+talk Audrey Burnhep##63596
+turnin The Returning Champion##31975 |goto Stormwind City/0 69.48,25.15
+|only if haveq(31975)
 step
 Congratulations!
 You have completed the _Battle Pet Tamers: Kalimdor_ questline!
@@ -508,9 +600,10 @@ step
 talk Hyuna of the Shrines##66730
 accept Grand Master Hyuna##31953 |goto The Jade Forest/0 47.96,54.17 |only if completedq(31951)
 Defeat Hyuna of the Shrines |q 31930/1 |goto The Jade Forest/0 47.96,54.17
-|tip Hyuna's pet team consists of level 25 Dragonkin and Magic battle pets.
-|tip Humanoid battle pets are strong against Dragonkin battle pets.
-|tip Dragonkin battle pets are strong against Magic battle pets.
+|tip Hyuna's pet team consists of level 25 Flying, Beast and Aquatic battle pets.
+|tip Magic battle pets are strong against Flying battle pets.
+|tip Mechanical battle pets are strong against Beast battle pets.
+|tip Flying battle pets are strong against Aquatic battle pets.
 |tip Defeat her in battle pet combat.
 step
 talk Hyuna of the Shrines##66730
@@ -520,9 +613,9 @@ step
 talk Farmer Nishi##66734
 accept Grand Master Nishi##31955 |goto Valley of the Four Winds/0 46.07,43.68 |only if completedq(31951)
 Defeat Farmer Nishi |q 31930/2 |goto Valley of the Four Winds/0 46.07,43.68
-|tip Nishi's pet team consists of level 25 Beast and Elemental battle pets.
-|tip Mechanical battle pets are strong against Beast battle pets.
+|tip Nishi's pet team consists of level 25 Elementals and a Critter battle pet.
 |tip Aquatic battle pets are strong against Elemental battle pets.
+|tip Beast battle pets are strong against Critter battle pets.
 |tip Defeat her in battle pet combat.
 step
 talk Farmer Nishi##66734

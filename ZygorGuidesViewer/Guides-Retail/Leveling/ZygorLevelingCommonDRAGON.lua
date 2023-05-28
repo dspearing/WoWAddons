@@ -14227,7 +14227,7 @@ talk Greyzik Cobblefinger##196066
 accept Crafting Orders##72783 |goto 85.02,54.45
 step
 talk Head Clerk Mimzy Sprazzlerock##185542
-View Crafting Orders from Mimzy Sprazzlerock |q 72783/1 |goto 34.64,62.95
+View Crafting Orders from Mimzy Sprazzlerock |q 72783/1 |goto 34.59,63.03
 step
 Click the Complete Quest Box
 |tip It appears attached to your quest log.
@@ -15507,6 +15507,7 @@ Find Viridia in the Forbidden Reach |q 73076/2 |goto The Forbidden Reach/5 34.61
 step
 talk Scalecommander Viridia##199201
 turnin Return to the Reach##73076 |goto 34.61,57.69
+|tip This might be completed at Scalecommander Emberthal nearby instead.
 accept Wings of Mercy##73157 |goto 34.61,57.69
 accept Stemming the Irontide##74769 |goto 34.61,57.69
 accept An Eclectic Accord##75050 |goto 34.61,57.69
@@ -15555,50 +15556,12 @@ talk Scalecommander Viridia##199201
 turnin Wings of Mercy##73157 |goto 34.61,57.69
 turnin Stemming the Irontide##74769 |goto 34.61,57.69
 accept Helping Hand and Claw##73160 |goto 34.61,57.69
-accept Emberthal Awaits##74847 |goto 34.61,57.69
 step
 talk Atrenosh Hailstone##200010
 accept Plunder Siege##74359 |goto 34.65,57.57
 step
 talk Treysh##200559
 accept Still Within Reach##74379 |goto 35.61,59.49
-step
-talk Tukkaraq##200558
-accept Driftwood Derby##73715 |goto 34.37,58.57
-|only if not completedq(74847)
-step
-Return to Morquet Village |outvehicle |goto 35.24,58.97
-|only if not completedq(73159)
-step
-clicknpc Tukkaraq's Boat##201122
-Board Tukkaraq's Boat |q 73715/1 |goto 36.60,57.61
-|only if not completedq(74847)
-step
-clicknpc Driftwood##201138
-|tip Use the abilities on your vehicle bar to catch driftwood in the water.
-|tip Toss Net at pieces of driftwood.
-|tip Throw fish to stun enemies.
-|tip Water Shield to reduce damage and heal.
-Net #24# Driftwood |q 73715/2
-|only if not completedq(74847)
-step
-talk Tukkaraq##200558
-turnin Driftwood Derby##73715 |goto 34.37,58.57
-|only if not completedq(74847)
-step
-Meet with Scalecommander Emberthal Above Morqut Village |q 74847/1 |goto 32.56,60.58
-step
-talk Scalecommander Emberthal##199532
-turnin Emberthal Awaits##74847 |goto 32.57,60.58
-step
-talk Scalecommander Emberthal##199532
-turnin Emberthal Awaits##74847 |goto 32.57,60.58
-accept The Best We Have##72712 |goto 32.57,60.58
-step
-Watch the dialogue
-talk Talon Damos##199212
-Tell him _"Let's fly."_
-Give Talon Damos His Orders |q 72712/1 |goto 32.63,60.54
 step
 Locate Jeb and Tacha on the Sharpscale Coast |q 73160/1 |goto 36.79,80.39
 step
@@ -15617,6 +15580,23 @@ kill Karkinus the Capsizer##200907 |q 74377/1 |goto 37.44,81.67
 step
 talk Pathfinder Tacha##200903
 turnin Helping Hand and Claw##73160 |goto 37.18,79.06
+step
+talk Scalecommander Viridia##199201
+accept Emberthal Awaits##74847 |goto 34.61,57.69
+step
+Meet with Scalecommander Emberthal Above Morqut Village |q 74847/1 |goto 32.56,60.58
+step
+talk Scalecommander Emberthal##199532
+turnin Emberthal Awaits##74847 |goto 32.57,60.58
+step
+talk Scalecommander Emberthal##199532
+turnin Emberthal Awaits##74847 |goto 32.57,60.58
+accept The Best We Have##72712 |goto 32.57,60.58
+step
+Watch the dialogue
+talk Talon Damos##199212
+Tell him _"Let's fly."_
+Give Talon Damos His Orders |q 72712/1 |goto 32.63,60.54
 step
 talk Scalecommander Viridia##199201
 accept Exploring Our Past##73159 |goto 34.61,57.69
@@ -16309,7 +16289,7 @@ patch='100007',
 },[[
 step
 label "Active_Quests_Available"
-Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141)
+Wait for a Quest to Become Available |complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141,73140,73398,73194)
 step
 talk Volethi##200727
 accept Creche Cache##73189 |goto The Forbidden Reach/5 34.84,57.47 |only if questactive(73189)
@@ -16319,7 +16299,8 @@ step
 talk Tukkaraq##200558
 accept Up to the Highest Height!##75026 |goto 34.36,58.57 |only if questactive(75026)
 accept Everburning Embers##73141 |goto 34.36,58.57 |only if questactive(73141)
-|only if questactive(75026,73141)
+accept Driftwood Derby##73715 |goto 34.36,58.57 |only if questactive(73715)
+|only if questactive(75026,73141,73715)
 step
 talk Scalecommander Viridia##199201
 accept Stuck in Stasis##73694 |goto 34.60,57.67
@@ -16341,11 +16322,26 @@ talk Scalecommander Cindrethresh##199199
 accept Toxic Infestation##73190 |goto 35.31,59.49 |only if questactive(73190)
 accept Busting Blues##73142 |goto 35.31,59.50 |only if questactive(73142)
 accept Soupocalypse Now!##73179 |goto 35.30,59.49 |only if questactive(73179)
-|only if questactive(73190,73142,73179)
+accept Up Close and Personal##73194 |goto 35.30,59.49 |only if questactive(73194)
+|only if questactive(73190,73142,73179,73194)
 step
 talk Scalecommander Azurathel##199204
-accept Hands Off Our Booty!##73178 |goto 35.53,58.69
-|only if questactive(73178)
+accept Hands Off Our Booty!##73178 |goto 35.53,58.69 |only if questactive(73178)
+accept Sunder the Crater##73140 |goto 35.53,58.69 |only if questactive(73140)
+accept Too Far Forward##73398 |goto 35.53,58.69 |only if questactive(73398)
+|only if questactive(73178,73140,73398)
+step
+clicknpc Tukkaraq's Boat##201122
+Board Tukkaraq's Boat |q 73715/1 |goto 36.60,57.61
+|only if haveq(73715) or completedq(73715)
+step
+clicknpc Driftwood##201138
+|tip Use the abilities on your vehicle bar to catch driftwood in the water.
+|tip Toss Net at pieces of driftwood.
+|tip Throw fish to stun enemies.
+|tip Water Shield to reduce damage and heal.
+Net #24# Driftwood |q 73715/2
+|only if haveq(73715) or completedq(73715)
 stickystart "Slay_Irontide_Cutthroats"
 step
 click Stolen Booty##385999+
@@ -16354,10 +16350,12 @@ collect 10 Stolen Goods##202647 |q 73178/2 |goto 38.56,64.50
 You can find more around:
 [37.67,78.67]
 [34.25,45.30]
+|only if haveq(73178) or completedq(73178)
 step
 label "Slay_Irontide_Cutthroats"
 Kill Irontide enemies around this area
 Slay #10# Irontide Cutthroats |q 73178/1 |goto 37.67,78.67
+|only if haveq(73178) or completedq(73178)
 step
 talk Fusethrian##200987
 Choose _<Ask for explosive... soup?>_
@@ -16375,6 +16373,18 @@ stickystart "Kill_Dragonbane_Beetles"
 step
 kill Pestilent Pincher##200910 |q 73190/2 |goto 41.04,35.84
 |only if haveq(73190) or completedq(73190)
+step
+use the Proto-Killing Spear##202642
+|tip Use it on a proto dragon flying around one of these areas.
+|tip While on the proto dragon, attack it until your bar switches to a vehicle bar.
+|tip Spam the ability to deal damage to the proto dragon.
+|tip Repeat this until it dies.
+Slay a Proto-dragon with the Proto-Killing Spear |q 73194/1 |goto 39.60,52.62
+You can find more around:
+[50.33,53.11]
+[60.69,60.44]
+[69.68,58.47]
+|only if haveq(73194) or completedq(73194)
 step
 click Infuser Shard+
 |tip They look like tiny crystals on the ground around this area.
@@ -16441,6 +16451,34 @@ Kill enemies around this area
 |tip Inside and outside The Siege Creche.
 collect 14 Everburning Ember##202364 |q 73141/1 |goto The Siege Creche/0 58.82,38.53
 |only if haveq(73141) or completedq(73141)
+stickystart "Slay_Sundered_Flame_Enemies"
+step
+Click NPCs around this area
+|tip They look like Dracthyr NPCs laying on the ground around this area.
+|tip You can find them inside and outside buildings.
+use the Healing Draught##202874
+|tip Use it on Injured Dracthyr around this area.
+Heal #8# Injured Dracthyr |q 73398/1 |goto The Forbidden Reach/5 58.18,67.15
+|only if haveq(73398) or completedq(73398)
+step
+label "Slay_Sundered_Flame_Enemies"
+Kill Sundered enemies around this area
+Slay #10# Sundered Flame Enemies |q 73398/2 |goto 58.18,67.15
+|only if haveq(73398) or completedq(73398)
+step
+kill Adept Stormbringer##200711 |q 73140/3 |goto 69.80,59.62
+|only if haveq(73140) or completedq(73140)
+step
+label "Destroy_Primalist_Totems"
+click Primalist Totem
+|tip They look like roots tipped with white light growing from the ground around this area.
+Destroy #6# Primalist Totems |q 73140/2 |goto 69.80,59.62
+|only if haveq(73140) or completedq(73140)
+step
+label "Slay_Air_or_Earth_Primalists"
+Kill Primalist enemies around this area
+Slay #8# Air or Earth Primalists |q 73140/1 |goto 69.80,59.62
+|only if haveq(73140) or completedq(73140)
 step
 use the Toxin Antidote##202620 |only if subzone("The Support Creche")
 |tip Use it to reduce your toxin level before it overwhelms you. |only if subzone("The Support Creche")
@@ -16462,21 +16500,25 @@ step
 talk Tukkaraq##200558
 turnin Up to the Highest Height!##75026 |goto 34.36,58.57 |only if haveq(75026) or completedq(75026)
 turnin Everburning Embers##73141 |goto 34.36,58.57 |only if haveq(73141) or completedq(73141)
-|only if haveq(75026,73141) or completedq(75026,73141)
+turnin Driftwood Derby##73715 |goto 34.36,58.57 |only if haveq(73715) or completedq(73715)
+|only if haveq(75026,73141,73715) or completedq(75026,73141,73715)
 step
 talk Scalecommander Cindrethresh##199199
 turnin Toxic Infestation##73190 |goto 35.31,59.49 |only if haveq(73190) or completedq(73190)
 turnin Busting Blues##73142 |goto 35.31,59.50 |only if haveq(73142) or completedq(73142)
 turnin Soupocalypse Now!##73179 |goto 35.30,59.49 |only if haveq(73179) or completedq(73179)
-|only if haveq(73190,73142,73179) or completedq(73190,73142,73179)
+turnin Up Close and Personal##73194 |goto 35.30,59.49 |only if haveq(73194) or completedq(73194)
+|only if haveq(73190,73142,73179,73194) or completedq(73190,73142,73179,73194)
 step
 talk Scalecommander Azurathel##199204
-turnin Hands Off Our Booty!##73178 |goto 35.53,58.69
-|only if haveq(73178) or completedq(73178)
+turnin Hands Off Our Booty!##73178 |goto 35.53,58.69 |only if haveq(73178) or completedq(73178)
+turnin Sunder the Crater##73140 |goto 35.53,58.69 |only if haveq(73140) or completedq(73140)
+turnin Too Far Forward##73398 |goto 35.53,58.69 |only if haveq(73398) or completedq(73398)
+|only if haveq(73178,73140,73398) or completedq(73178,73140,73398)
 step
 You have completed all available side quests in The Forbidden Reach
 |tip This guide will reset when more become available.
-'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141) |next "Active_Quests_Available"
+'|complete questactive(73189,75024,75026,73191,75025,73190,73142,73179,73178,73694,73141,73715,73140,73398,73194) |next "Active_Quests_Available"
 ]])
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)",{
@@ -16534,6 +16576,8 @@ patch='100100',
 step
 accept The Land Beneath: Zaralek Cavern!##72975
 |tip You will accept this quest automatically.
+|tip If you do not see this quest, you must complete the first chapter of "The Forbidden Reach" leveling guide.
+|tip Completing the quest "Return to Viridia" unlocks Zaralek Cavern.
 step
 talk Ebyssian##201281
 |tip At the top of the tower.
@@ -16718,11 +16762,6 @@ talk Mimuup##204254
 |tip Inside the building.
 Introduce Yourself to the Keeper of Renown |q 75643/1 |goto 56.53,55.66
 step
-talk Mimuup##204254
-|tip Inside the building.
-accept A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66 |or
-'|complete completedq(75643) |or
-step
 talk Harlowe Marl##202468
 |tip Inside the building.
 Introduce Yourself to the Renown Quartermaster |q 75643/2 |goto 56.48,55.62
@@ -16797,6 +16836,11 @@ talk Vaskarn##203404
 |tip Inside the building.
 turnin Flightstones##72658 |goto 56.52,56.08
 accept Shadowflame Crests##75506 |goto 56.52,56.08
+step
+talk Mimuup##204254
+|tip Inside the building.
+accept A Worthy Ally: Loamm Niffen##75665 |goto Zaralek Cavern/0 56.53,55.66 |or
+'|complete completedq(75506) |or
 step
 talk Spinsoa##203602
 Visit Spinsoa |q 75506/1 |goto Zaralek Cavern/0 55.92,55.47
@@ -17543,6 +17587,9 @@ talk Ebyssian##202523
 turnin Break Them Out##74562 |goto 53.60,30.21
 turnin Worst of the Worst##74563 |goto 53.60,30.21
 step
+use the Regurgitated Half-Digested Fish##205992
+Use the Reputation Token |complete itemcount(205992) == 0
+step
 talk Ebyssian##202995
 accept Fading Embers##72922 |goto 53.42,30.24
 step
@@ -17581,12 +17628,12 @@ talk Ebyssian##199965
 turnin With Our Powers Combined##72925 |goto 47.18,27.90
 accept Forward Camp##72931 |goto 47.18,27.90
 step
+talk Sabellian##199973
+accept Wipe Them Out##72928 |goto 47.06,28.08
+step
 Watch the dialogue
 talk Wrathion##200101
 accept In the Right Hands##72926 |goto 47.23,27.82
-step
-talk Sabellian##199973
-accept Wipe Them Out##72928 |goto 47.06,28.08
 stickystart "Defeat_Enemies_Around_Brimstone_Garrison"
 step
 click 'The Resting Blade'##385569
@@ -17641,6 +17688,9 @@ turnin Stopping Sarkareth##72930 |goto 47.87,14.90
 step
 talk Ebyssian##199965
 accept Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto 47.89,14.97
+step
+use the Sign of Respect##205998
+Use the Reputation Token |complete itemcount(205998) == 0
 step
 talk Mimuup##204254
 |tip Inside the building.
@@ -18113,14 +18163,18 @@ Use the Reputation Token |complete itemcount(205251) == 0
 step
 talk Briggul##201752
 accept Come Snail Away##74787 |goto 44.25,79.93
+|only if factionrenown(2564) >= 7
 step
 clicknpc Big Slick in the City##202731
 Meet Slick |q 74787/1 |goto 44.17,79.98
+|only if haveq(74787) or completedq(74787)
 step
 talk Briggul##201752
 turnin Come Snail Away##74787 |goto 44.26,79.93
+|only if haveq(74787) or completedq(74787)
 step
 kill Scalecommander Sarkareth |q 75694/1 |goto Aberrus, the Shadowed Crucible/4 48.97,71.21
+|tip This is the final boss of the Aberrus, the Shadowed Crucible raid.
 step
 talk Ebyssian##199965
 turnin Aberrus, the Shadowed Crucible: Sarkareth##75694 |goto Zaralek Cavern/0 47.89,14.97
@@ -18131,6 +18185,10 @@ author="support@zygorguides.com",
 startlevel=68,
 patch='100100',
 },[[
+step
+Reach Renown Level 7 with the Loamm Niffen |complete factionrenown(2564) >= 7
+|tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
+|tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
 step
 click TICKET: Glimmerogg Games
 accept TICKET: Glimmerogg Games##73707 |goto Zaralek Cavern/0 55.61,54.56
@@ -18208,8 +18266,13 @@ step
 talk Briggul##201752
 turnin Come Snail Away##74787 |goto 44.26,79.93
 step
+label "Begin_Snail_Racing"
 talk Grogul##201099
-accept A Race to the Finish##75662 |goto 44.45,80.40
+accept A Race to the Finish##75662 |goto 44.45,80.40 |only if not completedq(75662) |or
+accept A Race to the Finish##75706 |goto 44.46,80.40 |only if not completedq(75706) |or
+accept A Race to the Finish##75707 |goto 44.46,80.40 |only if not completedq(75707) |or
+|tip You will only be offered one of these quests occasionally.
+|tip If it is not available you will need to wait for it to spawn at a later time.
 step
 talk Corry##204672
 Ask it _"Is there any other way I can affect the outcome of a race?"_
@@ -18234,15 +18297,6 @@ extraaction Bashful Treats##409176
 Help Bashful Win a Race |q 75662/3 |goto 44.54,81.21
 |only if haveq(75662) or completedq(75662)
 step
-talk Grogul##201099
-turnin A Race to the Finish##75662 |goto 44.46,80.39
-step
-Wait for a New Race to Begin |complete not completedq(75708)
-|tip A new race will begin at the next daily reset.
-step
-talk Grogul##201099
-accept A Race to the Finish##75706 |goto 44.46,80.40
-step
 talk Corry##204672
 Ask it _"Is there any other way I can affect the outcome of a race?"_
 Tell it _"I'd like treats to help Tricky win."_
@@ -18265,15 +18319,6 @@ extraaction Tricky Treats##409203
 |tip Otherwise, they will attack and slow the competition.
 Help Tricky Win a Race |q 75706/3 |goto 44.54,81.21
 |only if haveq(75706) or completedq(75706)
-step
-talk Grogul##201099
-turnin A Race to the Finish##75706 |goto 44.46,80.40
-step
-Wait for a New Race to Begin |complete not completedq(75708)
-|tip A new race will begin at the next daily reset.
-step
-talk Grogul##201099
-accept A Race to the Finish##75707 |goto 44.46,80.40
 step
 talk Corry##204672
 Ask it _"Is there any other way I can affect the outcome of a race?"_
@@ -18299,38 +18344,683 @@ Help Brulee Win a Race |q 75707/3 |goto 44.54,81.21
 |only if haveq(75707) or completedq(75707)
 step
 talk Grogul##201099
-turnin A Race to the Finish##75707 |goto 44.46,80.40
+turnin A Race to the Finish##75662 |goto 44.46,80.39 |only if readyq(75662)
+turnin A Race to the Finish##75706 |goto 44.46,80.40 |only if readyq(75706)
+turnin A Race to the Finish##75707 |goto 44.46,80.40 |only if readyq(75707)
+|only if readyq(75662,75706,75707)
 step
-Wait for a New Race to Begin |complete not completedq(75708)
-|tip A new race will begin at the next daily reset.
-step
-talk Grogul##201099
-accept A Race to the Finish##75708 |goto 44.46,80.40
-step
-talk Corry##204672
-Ask it _"Is there any other way I can affect the outcome of a race?"_
-Tell it _"I'd like treats to help Roggy win."_
-|tip You will only see this dialogue option when the race is starting.
-Speak with Corry and get Roggy's Treats |q 75708/1 |goto 44.40,80.42
-|only if haveq(75708) or completedq(75708)
-step
-clicknpc Roggy##204618
-extraaction Roggy Treats##409206
-|tip Drop the treat right in front of Roggy.
-|tip It's a blue snail on the race track.
-Use Treats on the Snail Racer Roggy |q 75708/2 |goto 44.80,80.73
-|only if haveq(75708) or completedq(75708)
-step
-clicknpc Roggy##204618
-extraaction Roggy Treats##409206
-|tip Drop the treat right in front of Roggy.
-|tip Continue using "Roggy Treats" as you follow it.
-|tip Only kill attacking enemies if they attack your snail.
-|tip Otherwise, they will attack and slow the competition.
-Help Roggy Win a Race |q 75708/3 |goto 44.54,81.21
-|only if haveq(75708) or completedq(75708)
-step
-talk Grogul##201099
-turnin A Race to the Finish##75708 |goto 44.46,80.40
+Click Here When a New Race is Available |confirm  |goto 44.46,80.39 |next "Begin_Snail_Racing"
+|tip A new race will begin at a future daily reset.
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Blue Dragonflight's Legacy",{
+author="support@zygorguides.com",
+description="This guide will help you complete the campaign for the blue dragonflight.",
+condition_suggested=function() return level == 70 and not completedq(72951) end,
+startlevel=68,
+patch='100100',
+},[[
+step
+talk Kalecgos##187676
+|tip At the top of the tower.
+accept Keeper of the Ossuary##72900 |goto Valdrakken/0 61.69,36.05
+step
+talk Senegos##199923
+Ask him _"I'm here to help you, Senegos. Can you tell me more of this place?"_
+|tip You will receive a warning that the first chapter of The Azure Span questline will be completed.
+|tip If you agree to this, click yes to continue this questline.
+Speak to Senegos Within the Veiled Ossuary |q 72900/1 |goto Thaldraszus/0 62.23,17.89
+step
+talk Senegos##199923
+turnin Keeper of the Ossuary##72900 |goto 62.23,17.89
+accept On the Trail Again##72921 |goto 62.23,17.89
+step
+talk Senegos##199923
+Tell him _"I'm ready to receive the spell to find your arcane tomes."_
+Watch the dialogue
+Speak to Senegos |q 72921/1 |goto 62.23,17.89
+step
+talk Stellagosa##200099
+Tell her _"I'm ready to receive the spell to find Senegos's arcane tomes."_
+Speak to Stellagosa |q 72921/2 |goto 62.21,17.88
+step
+Enter the building |goto 61.21,16.19 < 10 |walk
+click Hidden Tome##385562
+|tip Inside the building.
+collect 1 Tome of Fanciful Spheres##202240 |q 72921/3 |goto 60.86,16.73
+step
+Enter the building |goto 62.02,13.41 < 10 |walk
+click Hidden Tome##385563
+|tip Inside the building.
+collect 1 Tome of Rolling##202241 |q 72921/4 |goto 61.70,12.73
+step
+Enter the building |goto 64.05,14.78 < 10 |walk
+click Hidden Tome##385564
+|tip Inside the building.
+collect 1 Tome of Sticking##202242 |q 72921/5 |goto 64.47,15.14
+step
+talk Senegos##199961
+turnin On the Trail Again##72921 |goto 63.95,12.33
+accept Rolling Out##72933 |goto 63.95,12.33
+step
+talk Senegos##199961
+Tell him _"I'm ready to use the Arcane Ball to clean up the Veiled Ossuary."_
+Activate the Arcane Ball |q 72933/1 |goto 63.95,12.33
+step
+Clean Up the Veiled Ossuary |q 72933/2 |goto 65.98,12.36
+|tip You will need to fill the Arcane Energy 3 times.
+|tip The first time, roll the ball over Skittering Boneborers, avoiding the other bugs.
+|tip When the ball grows larger, run it over Skittering Boneborer beetles and Veiled Damselflies all over the area.
+|tip When the ball grows the final time, run it over all of the bug types.
+|tip Then use the "Launch" ability that appears on your vehicle bar at the large glowing circle.
+step
+Enter the building |goto 66.37,12.15 < 10 |walk
+talk Senegos##199969
+|tip Inside the building.
+turnin Rolling Out##72933 |goto 66.73,11.97
+accept Lest We Forget##72934 |goto 66.73,11.97
+step
+click Fresh Gravestone
+|tip Inside the building.
+Place the First Gravestone |q 72934/2 |goto 66.83,11.84 |count 1
+step
+click Fresh Gravestone
+|tip Inside the building.
+Place the Second Gravestone |q 72934/2 |goto 66.88,11.69 |count 2
+step
+click Faded Gravestone
+|tip Inside the building.
+Choose _<Update gravestone>_
+Update the First Gravestone |q 72934/1 |goto 66.93,11.64 |count 1
+step
+click Fresh Gravestone
+|tip Inside the building.
+Place the Third Gravestone |q 72934/2 |goto 66.98,12.08 |count 3
+step
+click Faded Gravestone
+|tip Inside the building.
+Choose _<Update gravestone>_
+Update the Second Gravestone |q 72934/1 |goto 67.03,12.06 |count 2
+step
+click Fresh Gravestone
+|tip Inside the building.
+Place the Fourth Gravestone |q 72934/2 |goto 67.08,12.02 |count 4
+step
+click Faded Gravestone
+|tip Inside the building.
+Choose _<Update gravestone>_
+Update the Second Gravestone |q 72934/1 |goto 67.11,11.79 |count 3
+step
+talk Senegos##200447
+|tip Inside the building.
+turnin Lest We Forget##72934 |goto 67.09,11.77
+accept Sindragosa and Malygos's Rest##73069 |goto 67.09,11.77
+step
+talk Senegos##200447
+|tip Inside the building.
+Choose _"<Await Alexstrasza and Kalecgos's arrival.>"_
+Watch the dialogue
+Speak with Senegos |q 73069/1 |goto 67.09,11.77
+step
+talk Kalecgos##200007
+|tip Inside the building.
+turnin Sindragosa and Malygos's Rest##73069 |goto 67.03,11.81
+step
+talk Senegos##200447
+|tip Inside the building.
+accept Memories of Sindragosa and Malygos##75023 |goto 67.09,11.77
+step
+talk Memory of a Master##202941
+|tip Inside the building.
+Choose  _"<Swing your weapon to dismiss the image.>"_
+Dispel the Memory of a Master |q 75023/2 |goto 67.04,12.02
+step
+talk Memory of a Betrayer##202943
+|tip Inside the building.
+Choose _"<Swing your weapon to dismiss the image.>"_
+Dispel the Memory of a Betrayer |q 75023/1 |goto 66.85,11.92
+step
+talk Memory of a Traitorous Sister##202940
+|tip Inside the building.
+Choose _"<Swing your weapon to dismiss the image.>"_
+Dispel the Memory of a Traitorous Sister |q 75023/3 |goto 66.92,11.68
+step
+talk Senegos##200447
+turnin Memories of Sindragosa and Malygos##75023 |goto 67.09,11.77
+accept Archives Return##72935 |goto 67.09,11.77
+step
+talk Kalecgos##190000
+turnin Archives Return##72935 |goto The Azure Span/0 39.47,63.05
+accept Azuregos's Support##72936 |goto 39.47,63.05
+step
+click Portal to the Nexus##248574 |goto The Azure Span/0 39.40,63.00
+Teleport to the Nexus |goto Borean Tundra/0 22.27,23.65 < 50 |noway |c |q 72936
+step
+Find Azuregos within the Nexus in Northrend |q 72936/1 |goto Borean Tundra/0 22.50,23.83
+step
+talk Azuregos##199976
+turnin Azuregos's Support##72936 |goto 22.50,23.83
+accept Unusual Disruptions##72937 |goto 22.50,23.83
+step
+clicknpc Disruptive Arcana##200524
+use Azuregos's Staff##205931
+|tip Use it until the memory spawns.
+kill Memory of a Defender##200527
+Contain the Northern Disruption |q 72937/1 |goto 26.61,24.61
+step
+clicknpc Disruptive Arcana##200532
+use Azuregos's Staff##205931
+|tip Use it until the memory spawns.
+kill Memory of a Torturer##202555
+Contain the Eastern Disruption |q 72937/3 |goto 29.20,26.63
+step
+clicknpc Disruptive Arcana##205311
+use Azuregos's Staff##205931
+|tip Use it until the memory spawns.
+kill Memory of a Torturer##200529
+Contain the Southern Disruption |q 72937/2 |goto 26.76,28.99
+step
+talk Azuregos##199976
+turnin Unusual Disruptions##72937 |goto 22.50,23.83
+accept Archival Arrival##72938 |goto 22.50,23.83
+step
+click Portal to the Azure Archives |goto 22.23,23.62
+Teleport to the Azure Archives |goto The Azure Span/0 39.43,62.97 < 50 |noway |c |q 72938
+step
+talk Kalecgos##190000
+turnin Archival Arrival##72938 |goto The Azure Span/0 39.47,63.05
+accept Where in the World is a Lost Blue Dragon?##72940 |goto 39.47,63.05 |only if not completedq(73090)
+step
+click Dragon Locator
+accept Crystalsong Forest##73091 |goto 39.48,63.03 |or
+|only if not completedq(73090)
+step
+talk Kalecgos##190000
+turnin Crystalsong Forest##73091 |goto 39.47,63.05 |only if not completedq(73090)
+accept Regrets in Crystal##73090 |goto 39.47,63.05
+step
+click Portal to Crystalsong Forest |goto 39.40,63.01
+Teleport to Crystalsong Forest |goto Zul'Drak/0 12.29,66.77 < 50 |c |noway |q 73090
+step
+talk Lanigosa##199184
+turnin Regrets in Crystal##73090 |goto Crystalsong Forest/0 91.33,57.22
+accept Those We Left Behind##72670 |goto 91.33,57.22
+accept A Shattered Legacy##72674 |goto 91.33,57.22
+stickystart "Sooth_Echoes"
+step
+click Crystalline Remains##384960+
+|tip They look like large piles of purple dust on the ground around this area.
+collect 6 Crystal Focus Fragment##202044 |q 72674/1 |goto 87.69,60.31
+step
+label "Sooth_Echoes"
+talk Frightened Memory##200171
+|tip Choose a dialogue option and kill them if they attack you.
+Sooth #6# Echoes |q 72670/1 |goto 87.69,60.31
+step
+talk Lanigosa##199184
+turnin Those We Left Behind##72670 |goto 91.33,57.22
+turnin A Shattered Legacy##72674 |goto 91.33,57.22
+accept An Arcane Requiem##72679 |goto 91.33,57.22
+step
+click Crystal Focus
+|tip Click it and kill the mobs that spawn until the Amalgam appears.
+kill Amalgam of Desperation##199423 |q 72679/2 |goto 86.49,69.12
+step
+talk Lanigosa##199184
+turnin An Arcane Requiem##72679 |goto 91.33,57.22
+accept The Sound of Silence##74783 |goto 91.33,57.22
+step
+click Portal to the Azure Archives |goto 91.50,56.93
+Teleport to the Azure Archives |goto The Azure Span/0 39.47,63.05 < 50 |c |noway |q 74783
+step
+talk Kalecgos##190000
+turnin The Sound of Silence##74783 |goto The Azure Span/0 39.47,63.05
+accept The Search for Blue Dragons##73399 |goto 39.47,63.05 |only if not completedq(72988)
+step
+click Dragon Locator
+accept Booty Bay##73026 |goto 39.49,63.03
+|only if not completedq(72988)
+step
+talk Senegos##186240
+turnin Booty Bay##73026 |goto 39.47,62.99 |only if not completedq(72988)
+accept The Booty Bay Journal##72988 |goto 39.47,62.99
+step
+talk Senegos##186240
+Tell him _"Help me neutralize my reputation in Booty Bay so we can get started."_
+Speak to Senegos to Neutralize your Standing with Booty Bay |q 72988/1 |goto 39.47,62.99
+step
+click Portal to Booty Bay
+Take the Portal from Azure Archives to Booty Bay |q 72988/3 |goto 39.51,62.92
+step
+talk Zeros##199185
+turnin The Booty Bay Journal##72988 |goto The Cape of Stranglethorn/0 41.32,73.06
+accept No Such Thing as Bad Luck##72527 |goto 41.32,73.06
+step
+talk Zeros##199185
+turnin No Such Thing as Bad Luck##72527 |goto 42.77,74.01
+step
+talk Blixrez Goodstitch##2846
+|tip Inside the building.
+accept Information is King##72529 |goto 42.83,74.13
+step
+kill Sandy Crocolisk##199196+
+|tip You can offer 1,000 gold but this is quick to farm.
+collect 3 Crocolisk Skin##201986 |q 72529/2 |goto 35.05,63.13
+step
+talk Blixrez Goodstitch##2846
+|tip Inside the building.
+Choose _"<Hand over the Crocolisk Skins.>"_
+Get information from Blixrez Goodstitch |q 72529/1 |goto 42.83,74.13
+step
+talk Blixrez Goodstitch##2846
+|tip Inside the building.
+turnin Information is King##72529 |goto 42.83,74.13
+step
+talk Zeros##199185
+|tip Inside the building.
+accept Anyway, I Started Bribing##72530 |goto 42.77,74.02
+step
+clicknpc Hired Bodyguard##199211
+Bribe #6# Hired Bodyguards |q 72530/1 |goto 56.43,60.58
+step
+talk Prospector Arty##199213
+Choose _"<Demand information about Zeros' crystals.>"_
+Confront Prospector Arty |q 72530/2 |goto 56.20,60.10
+step
+talk Zeros##199185
+turnin Anyway, I Started Bribing##72530 |goto 42.32,77.36
+accept Money, Money, Money!##72532 |goto 42.32,77.36
+accept Crystals Shmystals##72533 |goto 42.32,77.36
+stickystart "Collect_1500_Gold_Coins"
+step
+kill Captain Grub Redcut##199351
+collect 1 Worn Brass Key##202284 |q 72533/1 |goto 33.67,83.93
+step
+click Treasure Chest##385765
+|tip Downstairs inside the ship.
+collect 1 Gold Ingot##202281 |q 72533/2 |goto 33.88,84.00
+step
+label "Collect_1500_Gold_Coins"
+Kill enemies on the ship
+collect 1500 Gold Coins##204705 |q 72532/1 |goto 34.35,84.77
+step
+talk Zeros##199185
+turnin Money, Money, Money!##72532 |goto 42.31,77.36
+turnin Crystals Shmystals##72533 |goto 42.31,77.36
+accept Settled with the Baron##72534 |goto 42.31,77.36
+step
+talk Baron Revilgaz##200473
+Choose _"<Hand over the treasure.>"_
+Give the Treasure to Baron Revilgaz |q 72534/1 |goto 42.16,77.41
+step
+Watch the dialogue
+talk Zeros##199185
+turnin Settled with the Baron##72534 |goto 42.31,77.36
+step
+talk Senegos##200478
+accept Zeroing Debt##73181 |goto 42.06,77.58
+step
+click Portal to Azure Archives
+Use the Portal to Return to the Azure Archives |q 73181/1 |goto 42.33,77.51
+step
+talk Senegos##186240
+turnin Zeroing Debt##73181 |goto The Azure Span/0 39.47,62.98
+step
+talk Kalecgos##190000
+accept Lost Blue Dragons##73404 |goto 39.47,63.05
+|only if not completedq(72657)
+step
+click Dragon Locator
+accept Winterspring##72656 |goto 39.49,63.03
+|only if not completedq(72657)
+step
+talk Sindragosa##186188
+turnin Winterspring##72656 |goto 39.48,63.07 |only if not completedq(72657)
+accept A Protector of Magic##72657 |goto 39.48,63.07
+step
+click Portal to Winterspring
+Use the Portal to Go to Winterspring |q 72657/1 |goto 39.51,63.09
+step
+talk Haleh##199370
+turnin A Protector of Magic##72657 |goto Winterspring/0 48.07,59.06
+accept Artifacts Abound##74354 |goto 48.07,59.06
+step
+click Owlkin Totem
+collect 1 Totemic Ruins##203459 |q 74354/1 |goto 61.62,26.59
+step
+click Owlkin Totem
+collect 2 Totemic Ruins##203459 |q 74354/1 |goto 62.41,26.56
+step
+click Owlkin Totem
+collect 3 Totemic Ruins##203459 |q 74354/1 |goto 62.66,25.81
+step
+click Owlkin Totem
+collect 4 Totemic Ruins##203459 |q 74354/1 |goto 62.64,25.12
+step
+click Owlkin Totem
+collect 5 Totemic Ruins##203459 |q 74354/1 |goto 61.83,25.17
+step
+talk Haleh##199370
+turnin Artifacts Abound##74354 |goto 48.07,59.06
+accept Test Subject##72659 |goto 48.07,59.06
+step
+click Icy Book
+Icy Book tested |q 72659/2 |goto 48.16,58.92
+step
+click Bottled Spirits
+Bottled Spirits tested |q 72659/1 |goto 48.22,58.93
+step
+click Left Boot
+Left Boot tested |q 72659/3 |goto 48.24,58.98
+step
+talk Haleh##199370
+turnin Test Subject##72659 |goto 48.06,59.06
+accept Owl of a Sudden##72660 |goto 48.06,59.06
+step
+talk Haleh##199370
+Tell her _"I am ready."_
+Speak to Haleh to Begin the Test |q 72660/1 |goto 47.34,60.53
+step
+click Half-Restored Totem
+Test the Half-Restored Totem |q 72660/2 |goto 47.49,60.75
+step
+talk Haleh##199370
+|tip Use the abilities on your action bar to attack Haleh until she stops.
+turnin Owl of a Sudden##72660 |goto 47.33,60.53
+step
+talk Sindragosa##199404
+accept A Wyrm Rest##72661 |goto 47.53,60.22
+step
+Watch the Dialogue
+talk Sindragosa##199404
+Ask her _"What is the plan?"_
+Speak to Sindragosa |q 72661/1 |goto 47.53,60.22
+step
+clicknpc Sindragosa##199404
+Go to the Frostfire Hot Springs |q 72661/2 |goto 32.17,48.96
+step
+Move Into the Hot Springs Water |q 72661/3 |goto 32.12,49.32
+step
+talk Sindragosa##199404
+turnin A Wyrm Rest##72661 |goto 32.30,49.13
+accept Back with the Blues##74356 |goto 32.30,49.13
+step
+click Portal to Azure Archives
+Use the Portal to Return to the Azure Archives |q 74356/1 |goto 32.33,49.02
+step
+talk Sindragosa##186188
+turnin Back with the Blues##74356 |goto The Azure Span/0 39.48,63.07
+step
+talk Kalecgos##190000
+accept A Pair of Blue Dragons##73405 |goto 39.47,63.05
+|only if not completedq(73188)
+step
+click Dragon Locator
+accept Theramore##72939 |goto 39.48,63.03
+|only if not completedq(73188)
+step
+talk Kalecgos##190000
+turnin Theramore##72939 |goto 39.47,63.06 |only if not completedq(73188)
+accept The Sullied Banner##73188 |goto 39.47,63.06
+step
+click Portal to Theramore |goto 39.40,63.04
+Teleport to Theramore |goto Dustwallow Marsh/0 57.18,55.51 < 50 |c |noway |q 73188
+step
+talk Surigosa##199736
+turnin The Sullied Banner##73188 |goto 62.93,49.67
+accept Aftershocks##72832 |goto 62.93,49.67
+step
+talk Kalecgos##199737
+accept Creative Solutions##72831 |goto 62.79,49.73
+stickystart "Kill_Militant_Arcanists"
+step
+click Prototype Mana Bomb
+Teleport #5# Prototype Mana Bombs |q 72832/1 |goto 64.34,48.77
+step
+label "Kill_Militant_Arcanists"
+kill 8 Militant Arcanist##199739 |q 72831/1 |goto 64.34,48.77
+step
+talk Kalecgos##199737
+turnin Creative Solutions##72831 |goto 67.04,55.03
+step
+talk Surigosa##199736
+turnin Aftershocks##72832 |goto 67.03,54.59
+accept Breaking the Cycle##72833 |goto 67.03,54.59
+step
+kill Turi Flickerflame##199740 |q 72833/1 |goto 67.79,51.12
+step
+talk Surigosa##199736
+turnin Breaking the Cycle##72833 |goto 67.04,54.55
+accept A Moment of Reflection##74335 |goto 67.04,54.55
+step
+click Portal to the Azure Span
+|tip Inside the building.
+Take the Portal to Kalec in the Azure Archives |q 74335/1 |goto 66.84,53.17
+step
+talk Kalecgos##190000
+turnin A Moment of Reflection##74335 |goto The Azure Span/0 39.47,63.05
+accept The Last Missing Blue Dragon##73406 |goto 39.47,63.05 |only if not completedq(72650)
+step
+click Dragon Locator
+accept Jade Forest##73227 |goto 39.48,63.03
+|only if not completedq(72650)
+step
+talk Kalecgos##190000
+turnin Jade Forest##73227 |goto 39.47,63.05 |only if not completedq(72650)
+accept Warm Winds and Water##72650 |goto 39.47,63.05
+step
+click Portal to Jade Forest
+|tip Inside the building.
+Take the Portal from the Azure Archives to The Jade Forest |q 72650/1 |goto 39.42,63.02
+step
+talk Kirygosa##199361
+turnin Warm Winds and Water##72650 |goto The Jade Forest/0 46.51,44.51
+accept Carp Care##72651 |goto 46.51,44.51
+accept Local Deliveries##72653 |goto 46.51,44.51
+stickystart "Feed_Carps_and_Clean_Ponds"
+step
+talk Yol##56778
+Tell her _"These flowers are from Kirygosa."_
+Deliver to Yol the Noodlemonger |q 72653/4 |goto 46.38,45.66
+step
+talk Ni Gentlepaw##56777
+Tell her _"These flowers are from Kirygosa."_
+Deliver to Ni Gentlepaw |q 72653/2 |goto 46.55,46.02
+step
+talk Kai Wanderbrew##59173
+Tell him _"These flowers are from Kirygosa."_
+Deliver to Kai Wanderbrew |q 72653/1 |goto 46.97,46.01
+step
+talk Old Man Misteye##59383
+Tell him _"These flowers are from Kirygosa."_
+Deliver to Old Man Misteye |q 72653/3 |goto 48.32,46.06
+step
+label "Feed_Carps_and_Clean_Ponds"
+clicknpc Veridian Carp##59311+
+|tip Use the Fish Food on them.
+use the Fish Food##203182
+click Pond Scum+
+|tip They look like trash floating on the top of the water.
+Feed Carps and Clean Ponds |q 72651/1 |goto 46.94,45.23
+You can find more around [48.04,48.00]
+step
+talk Kirygosa##199361
+turnin Carp Care##72651 |goto 46.51,44.51
+turnin Local Deliveries##72653 |goto 46.51,44.51
+accept Up, Up, and Home##72654 |goto 46.51,44.51
+step
+Watch the dialogue
+talk Kirygosa##199361
+Tell her _"I'm ready to visit your home."_
+Begin Flying with Kirygosa |goto 46.51,44.51 > 20 |c |q 72654
+step
+Watch the dialogue
+Fly with Kirygosa |q 72654/1 |goto 49.24,43.20
+|tip It will take a bit to complete after landing.
+step
+talk Kirygosa##199361
+|tip Inside the building.
+turnin Up, Up, and Home##72654 |goto 49.17,42.47
+step
+talk Kalecgos##201019
+|tip Inside the building.
+accept Self Care##72652 |goto 49.20,42.50
+step
+click Dust Clump
+|tip Inside the building.
+Clean Kirygosa's Home |q 72652/1 |goto 49.24,42.51 |count 1
+step
+click Fallen Pillow
+|tip Inside the building.
+Clean Kirygosa's Home |q 72652/1 |goto 49.23,42.57 |count 2
+step
+click Food Scraps
+|tip Inside the building.
+Clean Kirygosa's Home |q 72652/1 |goto 49.14,42.54 |count 3
+step
+click Crooked Painting
+|tip Inside the building.
+Clean Kirygosa's Home |q 72652/1 |goto 49.09,42.53 |count 4
+step
+click Dead Flower Bunch
+|tip Inside the building.
+Clean Kirygosa's Home |q 72652/1 |goto 49.15,42.42 |count 5
+step
+talk Kalecgos##201019
+|tip Inside the building.
+turnin Self Care##72652 |goto 49.21,42.50
+accept A Drink with Kalecgos##72655 |goto 49.21,42.50
+step
+click Mug of Roasted Barley Tea
+|tip Inside the building.
+Drink with Kalecgos in The Drunken Hozen |q 72655/1 |goto 45.90,43.65
+step
+talk Kalecgos##201019
+|tip Inside the building.
+turnin A Drink with Kalecgos##72655 |goto 45.87,43.61
+accept Blue is My Favorite Color##74291 |goto 45.87,43.61
+step
+talk Kirygosa##199361
+|tip Inside the building.
+Ask her _"Will you return to the Dragon Isles with us?"_
+Speak to Kirygosa |q 74291/1 |goto 45.90,43.57
+step
+Watch the dialogue
+talk Kalecgos##201019
+|tip Inside the building.
+Tell him _"I'm ready to return to the Azure Archives."_
+Speak to Kalecgos |q 74291/2 |goto 45.87,43.60
+step
+click Portal to the Azure Archives
+|tip Inside the building.
+Use the Portal to Return to the Azure Archives |q 74291/3 |goto 45.81,43.47
+step
+talk Kalecgos##190000
+turnin Blue is My Favorite Color##74291 |goto The Azure Span/0 39.47,63.05
+accept Reunited Again##75244 |goto 39.47,63.05
+step
+talk Kalecgos##190000
+Tell him _"I'm ready to hear your speech to the blue dragons."_
+Watch the dialogue
+Listen to Kalecgos's speech |q 75244/1 |goto 39.47,63.05
+step
+talk Kalecgos##190000
+turnin Reunited Again##75244 |goto 39.47,63.05
+accept Veiled Trouble##72942 |goto 39.47,63.05
+step
+click Portal to the Veiled Ossuary |goto 39.40,63.01
+Teleport to the Veiled Ossuary |goto Thaldraszus/0 65.79,12.47 < 50 |c |noway |q 72942
+step
+talk Azuregos##200019
+turnin Veiled Trouble##72942 |goto 66.20,12.26
+accept Veiled Ossuary Chaos##72946 |goto 66.20,12.26
+accept Memories of Old##72947 |goto 66.20,12.26
+stickystart "Weaken_the_Arcane_Invaders"
+step
+Enter the building |goto 63.46,16.09 < 10 |walk
+kill Memory of a Traitorous Sister##200826 |q 72947/1 |goto 64.04,16.30
+|tip Inside the building.
+step
+kill Memory of a Master##200827 |q 72947/2 |goto 59.95,14.95
+step
+Enter the building |goto 62.04,13.45 < 10 |walk
+kill Memory of a Betrayer##200828 |q 72947/3 |goto 61.68,12.72
+|tip Inside the building.
+step
+label "Weaken_the_Arcane_Invaders"
+clicknpc Bound Spirit##200866+
+|tip They look like stunned dragonkin with blue flames above them.
+Kill enemies around this area
+Weaken the Arcane Invaders |q 72946/1 |goto 62.70,15.05
+step
+talk Azuregos##200019
+turnin Veiled Ossuary Chaos##72946 |goto 66.20,12.26
+turnin Memories of Old##72947 |goto 66.20,12.26
+accept What Still Remains##72948 |goto 66.20,12.26
+step
+talk Azuregos##200019
+Tell him _"I'm ready to go beyond the arcane barrier."_
+Watch the dialogue
+|tip Follow him into the building.
+Speak with Azuregos |q 72948/1 |goto 66.20,12.26
+step
+click Sindragosa's Lingering Essence##386116
+|tip Inside the building.
+collect 1 Sindragosa's Lingering Essence##203183 |q 72948/3 |goto 67.10,11.75
+step
+click Malygos's Lingering Essence##386117
+|tip Inside the building.
+collect 1 Malygos's Lingering Essence##203184 |q 72948/2 |goto 67.11,11.83
+step
+talk Azuregos##201061
+|tip Inside the building.
+turnin What Still Remains##72948 |goto 67.07,11.83
+accept Swiftly to the Archives##72949 |goto 67.07,11.83
+step
+click Portal to the Azure Archives |goto 65.64,12.57
+Teleport to the Azure Archives |goto The Azure Span/0 39.43,62.97 < 50 |c |noway |q 72949
+step
+talk Kalecgos##190000
+turnin Swiftly to the Archives##72949 |goto 39.47,63.06
+step
+talk Sindragosa##186188
+accept The Last Conflict##72950 |goto 39.48,63.07
+step
+talk Sindragosa##186188
+Tell her _"I'm ready to enter the Azure Vaults to free Malygos and Sindragosa's essences."_
+Enter the Azure Vault |goto 39.48,63.07 > 50 |c |q 72950
+step
+talk Kalecgos##201087
+Tell him _"I'm ready."_
+|tip Coordinates do not function in this room.
+Watch the dialogue
+Speak to Kalecgos |scenariogoal 1/57829 |q 72950
+step
+extraaction Azure Assault##406529
+kill Remnants of Sindragosa##201089 |scenariogoal 2/57830 |q 72950
+|tip During "Tomb of Tears," run behind an ice block.
+|tip Use the "Azure Assault" button on the screen to interrupt "Bound to Her Will."
+|tip Run away from spots targeted on the ground.
+|tip Run away from "Devastation."
+|tip Don't stand in front of her during "Arcane Breath"
+step
+Watch the dialogue
+talk Kalecgos##201087
+Tell him _"I'm ready."_
+Speak to Kalecgos |scenarioend |q 72950
+step
+Complete the Scenario "The Last Conflict" |q 72950/1 |goto 0.00,0.00
+step
+talk Kalecgos##201128
+turnin The Last Conflict##72950 |goto 39.33,63.88
+step
+talk Senegos##201125
+accept A Peaceful Farewell##72951 |goto 39.31,63.59
+step
+talk Senegos##201125
+Tell him _"Goodbye, Senegos."_
+Speak with Senegos One Last Time |q 72951/1 |goto 39.31,63.59
+step
+talk Kalecgos##190000
+turnin A Peaceful Farewell##72951 |goto 39.47,63.06
+]])

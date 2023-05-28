@@ -131,7 +131,7 @@ function Tabs:Initialize()
 
 	for tabnum,guidedata in pairs(ZGV.db.char.tabguides) do
 		local tab = Tabs:GetTabFromPool()
-		tab:AssignGuide(guidedata.title,guidedata.step)
+		tab:AssignGuide(guidedata.title,guidedata.step,false,"guidechange")
 		if guidedata.title==ZGV.db.char.guidename then -- this was the last guide used, make the tab active
 			tab:SetAsCurrent()
 		end
@@ -157,7 +157,7 @@ function Tabs:LoadGuideToTab(guide,step,special,shared,prev)
 
 	local tab = Tabs:TryToActivateGuide(guide,prev)
 	if tab then 
-		tab:AssignGuide(guide,step,shared)
+		tab:AssignGuide(guide,step,shared,"guidechange")
 		return
 	else
 		if special then
@@ -166,7 +166,7 @@ function Tabs:LoadGuideToTab(guide,step,special,shared,prev)
 			tab = Tabs:GetTabFromPool()
 		end
 		tab:SetAsCurrent()
-		tab:AssignGuide(guide,step,shared)
+		tab:AssignGuide(guide,step,shared,"guidechange")
 		tab:ActivateGuide()
 	end
 end
@@ -412,7 +412,7 @@ function Tabs:ToggleRemainingMenu()
 end
 
 -- update guide for current tab, select tab if none was activated before
-function Tabs:UpdateCurrentTab()
+function Tabs:UpdateCurrentTab(mode)
 	if not ZGV.CurrentGuide then return end
 
 	local tab
@@ -436,7 +436,7 @@ function Tabs:UpdateCurrentTab()
 	end
 
 	tab:SetAsCurrent()
-	tab:AssignGuide(ZGV.CurrentGuide.title,ZGV.CurrentGuide.CurrentStepNum,ZGV.CurrentGuide.type=="SHARED")
+	tab:AssignGuide(ZGV.CurrentGuide.title,ZGV.CurrentGuide.CurrentStepNum,ZGV.CurrentGuide.type=="SHARED",mode)
 end
 
 function Tabs:DoesTabExist(title)
@@ -728,7 +728,7 @@ function Tabs:ActivateGuide()
 end
 
 local MAX_GUIDES_HISTORY = 30
-function Tabs:AssignGuide(guidetitle,step,shared)
+function Tabs:AssignGuide(guidetitle,step,shared,mode)
 	local guide
 	if shared then
 		guide = ZGV.Sync.SharedGuide
@@ -769,7 +769,7 @@ function Tabs:AssignGuide(guidetitle,step,shared)
 		ZGV.db.char.tabguides[self.Num] = {title=guidetitle, step=step}
 	end
 
-	ZGV.Frame:SetSpecialState("normal")
+	if ZGV.Frame.specialstate ~= "normal" then ZGV.Frame:SetSpecialState("normal") end
 	Tabs:ReanchorTabs()
 
 	local headerdata = guide.headerdata
@@ -790,7 +790,7 @@ function Tabs:AssignGuide(guidetitle,step,shared)
 	tinsert(history,1,{guidetitle,step,guide.headerdata.worldquestzone and "worldquest"})
 
 	ZGV.db.char.unloadedguide=false
-	ZGV:SendMessage("GUIDE_CHANGED")
+	if mode=="guidechange" then ZGV:SendMessage("GUIDE_CHANGED") end
 end
 
 function Tabs:RemoveTab()
@@ -841,12 +841,14 @@ function Tabs:RemoveTab()
 	Tabs:ReanchorTabs()
 
 	if not Tabs.Pool[1].guide then 
+		-- this was the last guide we had. turn off the lights, we are done. 
 		ZGV.CurrentGuide=nil
 		ZGV.CurrentStep=nil
 		ZGV.db.char.guidename=nil
 		ZGV.db.char.step=nil
 		ZGV.Frame:SetSpecialState("select")
-		ZGV:ShowWaypoints()
+		ZGV.Pointer:ClearWaypoints() 
+		LibRover:Abort()
 		ZGV.db.char.unloadedguide=true
 
 		if ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then

@@ -1410,13 +1410,12 @@ model={26424},
 description="\nThis guide will help you acquire the Wooly Mammoth mount.",
 },[[
 step
-You will need _10,000 gold_ to complete this achievement
-|tip The price can be reduced by Kirin Tor discounts based on current reputation
-|confirm
+talk Mei Francis##32216
+buy Reins of the Wooly Mammoth##44231 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(59793) |or
 step
-talk Mei Francis##32216 |goto Dalaran 58.1,42.1
-buy 1 Reins of the Wooly Mammoth##44231
-learnmount Wooly Mammoth##59793 |use Reins of the Wooly Mammoth##44231
+use the Reins of the Wooly Mammoth##44231
+Learn the "Wooly Mammoth" Mount |learnmount Wooly Mammoth##59793
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
 author="support@zygorguides.com",
@@ -3290,14 +3289,12 @@ model={27821},
 description="\nThis guide will help you acquire the Armored Brown Bear mount.",
 },[[
 step
-This _mount_ costs _750_ gold.
-|tip It could be cheaper based on your reputation with the Kirin Tor.
-confirm
-step
 talk Mei Francis##32216
-buy 1 Reins of the Armored Brown Bear##44226 |goto Dalaran,58.1,42.1
+buy Reins of the Armored Brown Bear##44226 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(60116) |or
 step
-learnmount Armored Brown Bear##60116 |use Reins of the Armored Brown Bear##44226
+use the Reins of the Armored Brown Bear##44226
+Learn the "Armored Brown Bear" Mount |learnmount Armored Brown Bear##60116
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
 keywords={"traveler's","tundra","mammoth","vendor","mount","ground"},
@@ -3308,13 +3305,12 @@ model={25451},
 description="\nThis guide will help you acquire the Traveler's Tundra Mammoth mount.",
 },[[
 step
-You will need _20,000 gold_ to complete this achievement
-|tip The price can be reduced by Kirin Tor discounts based on current reputation
-confirm
+talk Mei Francis##32216
+buy Reins of the Traveler's Tundra Mammoth##44235 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(61425) |or
 step
-talk Mei Francis##32216 |goto Dalaran 58.1,42.1
-buy 1 Reins of the Traveler's Tundra Mammoth##44234
-learnmount Traveler's Tundra Mammoth##61447 |use Reins of the Traveler's Tundra Mammoth##44234
+use Reins of the Traveler's Tundra Mammoth##44235
+Learn the "Traveler's Tundra Mammoth" Mount |learnmount Traveler's Tundra Mammoth##61425
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
 keywords={"albino","drake","flying","mount"},
@@ -5670,300 +5666,343 @@ description="\nThis guide will help you acquire the Azure Netherwing Drake, Coba
 mounts={41516,41514,41515,41513,41517,41518},
 },[[
 step
-Go to Shadowmoon Valley in Outland |goto Shadowmoon Valley |noway |c
+talk Mordenai##22113
+|tip He a blood elf with a bow that walks around here.
+|tip He often runs off the path to kill the flayers.
+accept Kindness##10804 |goto Shadowmoon Valley/0 61.37,59.09
+You can find him somewhere between:
+[59.11,58.71]
+[63.19,60.34]
+step
+kill Rocknail enemies around this area
+|tip The Rocknail Flayers will drop Rocknail Flayer Carcasses.
+|tip The Rocknail Rippers will drop Rocknail Giblets.
+|tip When you've collected 5 Rocknail Giblets, right-click them to turn them into a Rocknail Flayer Carcass.
+|tip You can only carry 5 Rocknail Giblets at a time.
+|tip Do not destroy any excess Rocknail Giblets until you have turned in the quest.
+collect 8 Rocknail Flayer Carcass##31372 |q 10804 |goto 61.31,54.79
+step
+|use Rocknail Flayer Carcass##31372
+Feed 8 Netherwing Drakes |q 10804/1 |goto Shadowmoon Valley/0 60.5,57.7
 step
 talk Mordenai##22113
-accept Kindness##10804 |goto Shadowmoon Valley,62.9,59.5
-step
-kill Rocknail Ripper##21478+, Rocknail Flayer##21477+
-|tip The Rocknail Flayers will drop Rocknail Flayer Carcasses, instead of Rocknail Flayer Giblets.
-collect Rocknail Flayer Giblets##31373 |n
-Click the Rocknail Flayer Giblets in your bags, once you have 5 of them, to combine them into a Rocknail Flayer Carcass |use Rocknail Flayer Giblets##31373
-collect 8 Rocknail Flayer Carcass##31372 |q 10804 |goto 60.5,57.7
-step
-Use the Rocknail Flayer Carcasses in your bags |use Rocknail Flayer Carcass##31372
-Feed 8 Netherwing Drakes |q 10804/1 |goto 60.5,57.7
-step
-talk Mordenai##22113
-turnin Kindness##10804 |goto 62.9,59.5
-accept Seek Out Neltharaku##10811 |goto 62.9,59.5
+turnin Kindness##10804 |goto Shadowmoon Valley/0 61.37,59.09
+accept Seek Out Neltharaku##10811 |goto 61.37,59.09
+You can find him somewhere between:
+[59.11,58.71]
+[63.19,60.34]
 step
 talk Neltharaku##21657
-turnin Seek Out Neltharaku##10811
-accept Neltharaku's Tale##10814
+|tip He looks like a large, semi-transparent green drake that flies slowly in the air around this area.
+turnin Seek Out Neltharaku##10811 |goto Shadowmoon Valley/0 63.19,60.34
+accept Neltharaku's Tale##10814 |goto 63.19,60.34
+You can find him somewhere between:
+[57.16,55.44]
+[63.35,55.97]
+[71.46,63.28]
+[68.91,61.00]
+step
 talk Neltharaku##21657
-Listen to the Tale of Neltharaku |q 10814/1 |goto 68.2,60.4
-turnin Neltharaku's Tale##10814 |goto 68.2,60.4
-accept Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
+Listen to the Tale of Neltharaku |q 10814/1 |goto Shadowmoon Valley/0 63.19,60.34
+turnin Neltharaku's Tale##10814 |goto 63.19,60.34
+accept Infiltrating Dragonmaw Fortress##10836 |goto 63.19,60.34
+You can find him somewhere between:
+[57.16,55.44]
+[63.35,55.97]
+[71.46,63.28]
+[68.91,61.00]
 step
 kill Dragonmaw Drake-Rider##21719+, Dragonmaw Wrangler##21717+, Dragonmaw Subjugator##21718+
-kill 15 Dragonmaw Orc |q 10836/1 |goto 66.4,60.0
+kill 15 Dragonmaw Orc |q 10836/1 |goto Shadowmoon Valley/0 67.86,60.92
 step
 talk Neltharaku##21657
-turnin Infiltrating Dragonmaw Fortress##10836 |goto 68.2,60.4
-accept To Netherwing Ledge!##10837 |goto 68.2,60.4
+turnin Infiltrating Dragonmaw Fortress##10836 |goto 63.19,60.34
+accept To Netherwing Ledge!##10837 |goto 63.19,60.34
+You can find him somewhere between:
+[57.16,55.44]
+[63.35,55.97]
+[71.46,63.28]
+[68.91,61.00]
 step
 Click the Nethervine Crystals
 |tip They look like big thorny plants with a small puff of red smoke near the top of them, on the ground around this area.
-collect 12 Nethervine Crystal##31504 |q 10837/1 |goto 64.1,80.7
+collect 12 Nethervine Crystal##31504 |q 10837/1 |goto Shadowmoon Valley/0 64.08,80.64
 step
 talk Neltharaku##21657
-turnin To Netherwing Ledge!##10837 |goto 68.2,60.4
-accept The Force of Neltharaku##10854 |goto 68.2,60.4
+turnin To Netherwing Ledge!##10837 |goto Shadowmoon Valley/0 63.19,60.34
+accept The Force of Neltharaku##10854 |goto 63.19,60.34
+You can find him somewhere between:
+[57.16,55.44]
+[63.35,55.97]
+[71.46,63.28]
+[68.91,61.00]
 step
-Use your Enchanted Nethervine Crystal on Enslaved Netherwing Drakes |use Enchanted Nethervine Crystal
-|tip Help the Enslaved Netherwing Drakes kill their Dragonmaw Subjugator after you free them.
-Free 5 Enslaved Netherwing Drakes |q 10854/1 |goto 67.4,59.3
+use Enchanted Nethervine Crystal##31652
+|tip Use it on the Netherwing Drakes inside the camp.
+|tip Help the Enslaved Netherwing Drakes kill their Dragonmaw Subjugators after you free them.
+Free Enslaved Netherwing Drakes |q 10854/1 |goto Shadowmoon Valley/0 67.20,60.13
 step
 talk Neltharaku##21657
-turnin The Force of Neltharaku##10854 |goto 68.2,60.4
-accept Karynaku##10858 |goto 68.2,60.4
+turnin The Force of Neltharaku##10854 |goto Shadowmoon Valley/0 63.19,60.34
+accept Karynaku##10858 |goto 63.19,60.34
+You can find him somewhere between:
+[57.16,55.44]
+[63.35,55.97]
+[71.46,63.28]
+[68.91,61.00]
 step
 talk Karynaku##22112
-turnin Karynaku##10858 |goto 69.9,61.5
-accept Zuluhed the Whacked##10866 |goto 69.9,61.5
+turnin Karynaku##10858 |goto Shadowmoon Valley/0 69.85,61.43
+accept Zuluhed the Whacked##10866 |goto 69.85,61.43
 step
-kill Zuluhed the Whacked |q 10866/2 |goto 70.9,61.5
-|tip You will probably need a group to kill Zuluhed the Whacked.  He will summon demons through a portal to help him fight.  To avoid having to fight the demons, pull Zuluhed the Whacked into one of the small buildings, on either side of him, when he casts the portal.
-collect Zuluhed's Key##31664 |q 10866 |goto 70.9,61.5
+kill Zuluhed the Whacked
+collect Zuluhed's Key##31664 |q 10866/2 |goto Shadowmoon Valley/0 70.89,61.45
 step
 Click Zuluhed's Chains
 |tip It looks like a big metal ball and chain.
-Free Karynaku |q 10866/1 |goto 69.8,61.3
+Free Karynaku |q 10866/1 |goto Shadowmoon Valley/0 69.83,61.29
 step
 talk Karynaku##22112
-turnin Zuluhed the Whacked##10866 |goto 69.9,61.5
-accept Ally of the Netherwing##10870 |goto 69.9,61.5
+turnin Zuluhed the Whacked##10866 |goto Shadowmoon Valley/0 69.83,61.29
+accept Ally of the Netherwing##10870 |goto 69.83,61.29
+|tip She will fly you to Mordenai.
 step
 talk Mordenai##22113
-turnin Ally of the Netherwing##10870 |goto 62.9,59.5
-accept Blood Oath of the Netherwing##11012 |goto 62.9,59.5
-accept In Service of the Illidari##11013 |goto 62.9,59.5
+turnin Ally of the Netherwing##10870 |goto Shadowmoon Valley/0 59.32,58.69
+accept Blood Oath of the Netherwing##11012 |goto 59.32,58.69
+accept In Service of the Illidari##11013 |goto 59.32,58.69
 step
 talk Overlord Mor'ghor##23139
-turnin In Service of the Illidari##11013 |goto 66.2,85.7
-accept Enter the Taskmaster##11014 |goto 66.2,85.7
+turnin In Service of the Illidari##11013 |goto Shadowmoon Valley/0 66.22,85.66
+accept Enter the Taskmaster##11014 |goto 66.22,85.66
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Enter the Taskmaster##11014 |goto 66.1,86.4
+turnin Enter the Taskmaster##11014 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Yarzill the Merc##23141
-accept Your Friend on the Inside##11019 |goto 66.0,86.5
-accept The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
+accept Your Friend on the Inside##11019 |goto Shadowmoon Valley/0 66.00,86.46
+accept The Great Netherwing Egg Hunt##11049 |goto 66.00,86.46
 step
 Click a Netherwing Egg
 |tip They look like dark purple eggs with blue crystals on them.  They spawn in random places, so you will probably need to search for them.  For help finding a Netherwing Egg, use the Netherwing Egg Hunting - Optimized Path section of this guide.
-collect 1 Netherwing Egg##32506 |q 11049/1 |goto 68.5,61.2
+collect 1 Netherwing Egg##32506 |q 11049/1 |goto Shadowmoon Valley/0 68.5,61.2
 step
 talk Yarzill the Merc##23141
-turnin The Great Netherwing Egg Hunt##11049 |goto 66.0,86.5
+turnin The Great Netherwing Egg Hunt##11049 |goto Shadowmoon Valley/0 66.00,86.46
 step
 label "Daily"
 talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+accept A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 kill Dragonmaw Transporter##23188+
-|tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic##32509 |q 11035/1 |goto 72.1,75.2
+|tip Kill them when they fly low over these floating rocks.
+collect 10 Netherwing Relic##32509 |q 11035/1 |goto Shadowmoon Valley/0 71.42,75.16
 step
 kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+collect 12 Fel Gland##32502 |q 11020 |goto Shadowmoon Valley/0 58.88,41.37
+You can find more around:
+[57.31,51.87]
+[47.06,60.63]
+[56.41,70.04]
 step
-Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+use Yarzill's Mutton##32503
+|tip Use it next to the working peons.
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto Shadowmoon Valley/0 71.98,88.52
 step
 Click Netherdust Bushes
-|tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen##32468 |q 11017/1 |goto 62.6,86.2
+|tip They look like small green bushes that sparkle.
+collect 40 Netherdust Pollen##32468 |q 11017/1 |goto Shadowmoon Valley/0 71.98,88.52
 step
 Click Nethercite Deposits
 |tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore##32464 |q 11018/1 |goto 70.0,91.4
+collect 40 Nethercite Ore##32464 |q 11018/1 |goto Shadowmoon Valley/0 71.98,88.52
 step
-The entrance to the mine starts here |goto Shadowmoon Valley,65.3,90.2 < 5 |walk
-kill Nethermine Flayer##23169+, Black Blood of Draenor##23286+
-collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 70.8,84.4
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 70.8,84.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Enter the Mine |goto Shadowmoon Valley/0 65.30,90.03 < 5 |walk
+kill Nethermine Flayer##23169+
+kill Black Blood of Draenor##23286
+kill Nethermine Burster##23285+
+collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 68.19,83.71
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
-Leave the mine |goto Shadowmoon Valley,65.3,90.2 < 5 |walk
 talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto 66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
+turnin A Slow Death##11020 |goto 66.00,86.46
+turnin The Not-So-Friendly Skies##11035 |goto 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
-Click here to go back to the first daily for tomorrow. |confirm |next "Daily"
+Click here tomorrow to go back to the first daily |confirm |next "Daily"
 Become Friendly with the Netherwing. |complete rep('Netherwing')>=Friendly |next "F_PreQuest"
 step
 label "F_PreQuest"
 talk Taskmaster Varkule Dragonbreath##23140
-accept Rise, Overseer!##11053 |goto Shadowmoon Valley,66.1,86.4
+accept Rise, Overseer!##11053 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Overlord Mor'ghor##23139
-turnin Rise, Overseer!##11053 |goto 66.2,85.7
+turnin Rise, Overseer!##11053 |goto Shadowmoon Valley/0 66.22,85.66
 step
 talk Taskmaster Varkule Dragonbreath##23140
-accept The Netherwing Mines##11075 |goto 66.1,86.4
+accept The Netherwing Mines##11075 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Chief Overseer Mudlump##23291
-accept Overseeing and You: Making the Right Choices##11054 |goto 66.8,86.1
+accept Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Mistress of the Mines##23149
-turnin The Netherwing Mines##11075 |goto 65.4,90.2
+turnin The Netherwing Mines##11075 |goto Shadowmoon Valley/0 65.4,90.2
 step
-Go inside the mine |goto 71.6,87.6 |walk
+Go inside the mine
 talk Ronag the Slave Driver##23166
-accept Crazed and Confused##11083
-stickystart "blackblood"
+accept Crazed and Confused##11083 |goto Shadowmoon Valley/0 71.6,87.6
 step
-kill 1 Crazed Murkblood Foreman |q 11083/1 |goto 73.7,88.1
-kill 5 Crazed Murkblood Miner |q 11083/2 |goto 73.7,88.1
+kill 1 Crazed Murkblood Foreman |q 11083/1 |goto Shadowmoon Valley/0 73.7,88.1
+kill 5 Crazed Murkblood Miner |q 11083/2 |goto Shadowmoon Valley/0 73.7,88.1
 step
 talk Ronag the Slave Driver##23166
-turnin Crazed and Confused##11083 |goto 71.6,87.6
+turnin Crazed and Confused##11083 |goto Shadowmoon Valley/0 71.6,87.6
 step
-label "blackblood"
 kill Black Blood of Draenor##23286+
 collect Sludge-covered Object##32724+ |n
 Click the Sludge-covered Objects in your bags to open them |use Sludge-covered Object##32724
 collect Murkblood Escape Plans##32726 |n
 Click the Murkblood Escape Plans in your bags |use Murkblood Escape Plans##32726
-accept The Great Murkblood Revolt##11081 |goto 64.8,85.6
+accept The Great Murkblood Revolt##11081 |goto Shadowmoon Valley/0 64.8,85.6
 step
-Leave the mine |goto Shadowmoon Valley,65.3,90.2 < 5 |walk
 talk Mistress of the Mines##23149
-turnin The Great Murkblood Revolt##11081 |goto 65.4,90.2
+turnin The Great Murkblood Revolt##11081 |goto Shadowmoon Valley/0 65.4,90.2
 accept Seeker of Truth##11082 |goto 65.4,90.2
 step
-Go inside the mine and follow the path to 73.0,82.2
+Enter the Mine |goto Shadowmoon Valley/0 65.31,90.02 |walk
 talk Murkblood Overseer##23309
+|tip Inside the mine.
+|tip These will spawn and despawn randomly in a few places.
 Tell him you are here for him
-Gather Murkblood Information |q 11082/1
+Gather Murkblood Information |q 11082/1 |goto Shadowmoon Valley/0 68.30,79.45
 collect Hand of the Overseer##32734 |q 11082/2
+You can find more around:
+[69.33,80.47]
+[71.09,80.71]
+[72.98,82.18]
+[73.88,82.69]
 step
-Leave the mine |goto Shadowmoon Valley,65.3,90.2 < 5 |walk
 talk Mistress of the Mines##23149
 turnin Seeker of Truth##11082 |goto 65.4,90.2
 step
 collect 10 Knothide Leather##21887 |q 11054/1
 |tip You can get the 10 Knothide Leather from the Auction House, or by Skinning mobs for the leather.
-If you want to get the 10 Knothide Leather by skinning, kill the mobs around 60.4,45.2
+If you want to get the 10 Knothide Leather by skinning, kill the mobs around Shadowmoon Valley/0 60.4,45.2
 step
 kill Tyrantus##20931
-collect Hardened Hide of Tyrantus##32666 |q 11054/2 |goto Netherstorm,46.4,10.8
+collect Hardened Hide of Tyrantus##32666 |q 11054/2 |goto Netherstorm/0 46.4,10.8
 step
 talk Chief Overseer Mudlump##23291
-turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley,66.8,86.1
+turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley/0 66.8,86.1
 step
 label "Daily2"
 talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+accept A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
 step
 kill Dragonmaw Transporter##23188+
 |tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic##32509 |q 11035/1 |goto 72.1,75.2
+collect 10 Netherwing Relic##32509 |q 11035/1 |goto Shadowmoon Valley/0 72.1,75.2
 step
 kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+collect 12 Fel Gland##32502 |q 11020 |goto Shadowmoon Valley/0 60.4,45.2
 step
 Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto Shadowmoon Valley/0 73.6,80.0
 Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
-Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
+Discipline 20 Dragonmaw Peons |q 11055/1 |goto Shadowmoon Valley/0 73.6,80.0
 step
 Click Netherdust Bushes
 |tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen##32468 |q 11017/1 |goto 62.6,86.2
+collect 40 Netherdust Pollen##32468 |q 11017/1 |goto Shadowmoon Valley/0 62.6,86.2
 step
 Click Nethercite Deposits
 |tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore##32464 |q 11018/1 |goto 70.0,91.4
+collect 40 Nethercite Ore##32464 |q 11018/1 |goto Shadowmoon Valley/0 70.0,91.4
 step
 talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+accept Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
-Go inside the mine to |goto 65.1,87.5 |walk
+Go inside the mine to |goto Shadowmoon Valley/0 65.1,87.5 |walk
 talk Dragonmaw Foreman##23376
 accept Dragons are the Least of Our Problems##11077
-stickystart "netherhide"
 step
 Click Nethermine Cargo
 |tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-collect 15 Nethermine Cargo##32723 |q 11076/1 |goto 66.9,84.0
+collect 15 Nethermine Cargo##32723 |q 11076/1 |goto Shadowmoon Valley/0 66.9,84.0
 step
-label "netherhide"
-kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
+kill 15 Nethermine Flayer |q 11077/1 |goto Shadowmoon Valley/0 71.5,83.9
 kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
 talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+turnin Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
 step
 talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+turnin Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
 talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto 66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto 66.0,86.5
+turnin A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+turnin The Not-So-Friendly Skies##11035 |goto 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
-turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
 step
-Click here to go back to the daillies for tomorrow. |confirm |next "Daily2"
+Click here tomorrow to go back to the dailies |confirm |next "Daily2"
 Become Honored with the Netherwing. |complete rep('Netherwing')>=Honored |next "H_PreQuest"
 step
 label "H_PreQuest"
 talk Taskmaster Varkule Dragonbreath##23140
-accept Stand Tall, Captain!##11084 |goto Shadowmoon Valley,66.1,86.4
+accept Stand Tall, Captain!##11084 |goto Shadowmoon Valley/0 66.1,86.4
 step
 talk Overlord Mor'ghor##23139
-turnin Stand Tall, Captain!##11084 |goto 66.2,85.7
+turnin Stand Tall, Captain!##11084 |goto Shadowmoon Valley/0 66.1,86.4
 step
 talk Ja'y Nosliw##22433
 accept Earning Your Wings...##11063 |goto 65.9,87.2
@@ -5972,138 +6011,137 @@ talk Murg "Oldie" Muckjaw##23340
 accept Dragonmaw Race: The Ballad of Oldie McOld##11064 |goto 65.2,85.7
 Follow Murg "Oldie" Muckjaw as he flies
 |tip He will throw pumpkins at you as he flies, and you have to dodge them.  The easiest strategy is to fly sort of far behind him, and above him, so that you are looking down on him as you fly.  Don't let any of the pumpkins hit you and you will win the race.
-Defeat Murg "Oldie" Muckjaw |q 11064/1 |goto 65.2,85.7
+Defeat Murg "Oldie" Muckjaw |q 11064/1 |goto Shadowmoon Valley/0 65.2,85.7
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: The Ballad of Oldie McOld##11064 |goto 65.9,87.2
+turnin Dragonmaw Race: The Ballad of Oldie McOld##11064 |goto Shadowmoon Valley/0 65.9,87.2
 step
 talk Trope the Filth-Belcher##23342
-accept Dragonmaw Race: Trope the Filth-Belcher##11067 |goto 65.2,85.5
+accept Dragonmaw Race: Trope the Filth-Belcher##11067 |goto Shadowmoon Valley/0 65.2,85.5
 Follow Trope the Filth-Belcher as he flies
 |tip He will throw green bombs at you as he flies, and you have to dodge them.  The easiest strategy is to fly far behind him, and under him.  Strafe to the sides when he throws the bombs and you can dodge them easily.  Don't let any of the bombs hit you and you will win the race.
-Defeat Trope the Filth-Belcher |q 11067/1 |goto 65.2,85.5
+Defeat Trope the Filth-Belcher |q 11067/1 |goto Shadowmoon Valley/0 65.2,85.5
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Trope the Filth-Belcher##11067 |goto 65.9,87.2
+turnin Dragonmaw Race: Trope the Filth-Belcher##11067 |goto Shadowmoon Valley/0 65.9,87.2
 step
 talk Corlok the Vet##23344
-accept Dragonmaw Race: Corlok the Vet##11068 |goto 65.2,85.2
+accept Dragonmaw Race: Corlok the Vet##11068 |goto Shadowmoon Valley/0 65.2,85.2
 Follow Corlok the Vet as he flies
 |tip He will throw groups of skulls at you as he flies, and you have to dodge them.  The easiest strategy is to fly close behind him, but above him, while looking down at him.  Strafe to the sides when he throws the skulls and you can dodge them easily.  Don't let any of the skulls hit you and you will win the race.
 Defeat Corlok the Vet |q 11068/1 |goto 65.2,85.2
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Corlok the Vet##11068 |goto 65.9,87.2
+turnin Dragonmaw Race: Corlok the Vet##11068 |goto Shadowmoon Valley/0 65.9,87.2
 step
 talk Wing Commander Ichman##13437
-accept Dragonmaw Race: Wing Commander Ichman##11069 |goto 65.2,85.0
+accept Dragonmaw Race: Wing Commander Ichman##11069 |goto Shadowmoon Valley/0 65.2,85.0
 Follow Wing Commander Ichman as he flies
 |tip He will throw fireballs at you as he flies, and you have to dodge them.  The easiest strategy is to fly behind him, but far above him, while looking down at him.  Strafe to the sides when he throws the fireballs and you can dodge them easily.  Don't let any of the fireballs hit you and you will win the race.  Also, be careful because he does sharp turns and maneuvers, so it's easy to lose track of him if you aren't careful.
 Defeat Wing Commander Ichman |q 11069/1 |goto 65.2,85.0
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Wing Commander Ichman##11069 |goto 65.9,87.2
+turnin Dragonmaw Race: Wing Commander Ichman##11069 |goto Shadowmoon Valley/0 65.9,87.2
 step
 talk Wing Commander Mulverick##13181
-accept Dragonmaw Race: Wing Commander Mulverick##11070 |goto 65.2,84.9
+accept Dragonmaw Race: Wing Commander Mulverick##11070 |goto Shadowmoon Valley/0 65.2,84.9
+step
 Follow Wing Commander Mulverick as he flies
 |tip He will throw lightning bolts at you as he flies, and you have to dodge them.  The lightning bolts will follow you, unlike the previous race quests, where the objects they throw did not follow you.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Don't let any of the lightning bolts hit you and you will win the race.
-Defeat Wing Commander Mulverick |q 11070/1 |goto 65.2,84.9
+Defeat Wing Commander Mulverick |q 11070/1 |goto Shadowmoon Valley/0 65.2,84.9
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Wing Commander Mulverick##11070 |goto 65.9,87.2
+turnin Dragonmaw Race: Wing Commander Mulverick##11070 |goto Shadowmoon Valley/0 65.9,87.2
 step
 talk Captain Skyshatter##23348
-accept Dragonmaw Race: Captain Skyshatter##11071 |goto 65.5,85.3
+accept Dragonmaw Race: Captain Skyshatter##11071 |goto Shadowmoon Valley/0 65.5,85.3
 Follow Captain Skyshatter as he flies
 |tip Meteors fall all around you as you fly with Captain Skyshatter, and you have to dodge them.  The easiest strategy is to fly beside him, while strafing, and almost ahead of him, if you can.  Stay close to him and the meteors will hit him, as well as you, which will stop him for a second, allowing you to catch up to him, if needed.  You will not get knocked off your mount by the meteors, just stunned for a second, so there's nothing to worry about.
 Defeat Captain Skyshatter |q 11071/1 |goto 65.5,85.3
 step
 talk Ja'y Nosliw##22433
-turnin Dragonmaw Race: Captain Skyshatter##11071 |goto 65.9,87.2
+turnin Dragonmaw Race: Captain Skyshatter##11071 |goto Shadowmoon Valley/0 65.9,87.2
 step
 label "Daily3"
 talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+accept A Slow Death##11020 |goto SShadowmoon Valley/0 66.00,86.46
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
 step
 talk Overlord Mor'ghor##23139
-accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
+accept Disrupting the Twilight Portal##11086 |goto Shadowmoon Valley/0 66.2,85.7
 step
 kill Dragonmaw Transporter##23188+
 |tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic##32509 |q 11035/1 |goto 72.1,75.2
+collect 10 Netherwing Relic##32509 |q 11035/1 |goto Shadowmoon Valley/0 72.1,75.2
 step
 kill Greater Felfire Diemetradon##21462+, Felboar##21878+
 collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
 step
 Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto Shadowmoon Valley/0 73.6,80.0
 Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
 Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
 step
 Click Netherdust Bushes
 |tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen##32468 |q 11017/1 |goto 62.6,86.2
+collect 40 Netherdust Pollen##32468 |q 11017/1 |goto Shadowmoon Valley/0 62.6,86.2
 step
 Click Nethercite Deposits
 |tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore##32464 |q 11018/1 |goto 70.0,91.4
+collect 40 Nethercite Ore##32464 |q 11018/1 |goto Shadowmoon Valley/0 70.0,91.4
 step
 talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+accept Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
-Go inside the mine to |goto 65.1,87.5 |walk
+Go inside the mine
 talk Dragonmaw Foreman##23376
-accept Dragons are the Least of Our Problems##11077
-stickystart "netherflay2"
+accept Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
 step
 Click Nethermine Cargo
 |tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-collect 15 Nethermine Cargo##32723 |q 11076/1 |goto 66.9,84.0
+collect 15 Nethermine Cargo##32723 |q 11076/1 |goto Shadowmoon Valley/0 66.9,84.0
 step
-label "netherflay2"
-kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
+kill 15 Nethermine Flayer |q 11077/1 |goto Shadowmoon Valley/0 71.5,83.9
 kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
 talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+turnin Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
 step
 talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+turnin Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
 kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
 kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
 step
 talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+turnin A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
 turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
@@ -6111,15 +6149,15 @@ step
 talk Overlord Mor'ghor##23139
 turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
 step
-Click here to go back to the daillies for tomorrow. |confirm |next "Daily3"
+Click here tomorrow to go back to the dailies. |confirm |next "Daily3"
 Become Revered with the Netherwing. |complete rep('Netherwing')>=Revered |next "R_PreQuest"
 step
 label "R_PreQuest"
 talk Taskmaster Varkule Dragonbreath##23140
-accept Hail, Commander!##11092 |goto Shadowmoon Valley,66.1,86.4
+accept Hail, Commander!##11092 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Overlord Mor'ghor##23139
-turnin Hail, Commander!##11092 |goto 66.2,85.7
+turnin Hail, Commander!##11092 |goto Shadowmoon Valley/0 66.2,85.7
 accept Kill Them All!##11094 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
 accept Kill Them All!##11099 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
 step
@@ -6127,29 +6165,29 @@ kill Arvoar the Rapacious##23267+
 |tip He looks like a big Flayer mob that walks in a circle in this spot.
 collect Partially Digested Hand##32621 |n
 Click the Partially Digested Hand in your bags |use Partially Digested Hand##32621
-accept A Job Unfinished...##11041 |goto 74.5,86.3
-stickystart "overmineflay"
+accept A Job Unfinished...##11041 |goto Shadowmoon Valley/0 74.5,86.3
+stickystart "overmineflayer"
 step
-kill Barash the Den Mother |q 11041/2 |goto 70.2,84.3
+kill Barash the Den Mother |q 11041/2 |goto Shadowmoon Valley/0 70.2,84.3
 |tip She looks like a big yellow Flayer mob that walks in a circle in this spot.
 step
-label "overmineflay"
-kill 10 Overmine Flayer |q 11041/1 |goto 71.3,85.8
+label "overmineflayer"
+kill 10 Overmine Flayer |q 11041/1 |goto Shadowmoon Valley/0 71.3,85.8
 step
 talk Overlord Mor'ghor##23139
-turnin A Job Unfinished...##11041 |goto 66.2,85.7
+turnin A Job Unfinished...##11041 |goto Shadowmoon Valley/0 66.2,85.7
 step
 talk Arcanist Thelis##21955
-turnin Kill Them All!##11094 |goto 56.3,59.6
+turnin Kill Them All!##11094 |goto Shadowmoon Valley/0 56.3,59.6
 accept Commander Hobb##11095 |goto 56.3,59.6
 only if rep ('The Scryers') >= Friendly
 step
 talk Commander Hobb##23434
-turnin Commander Hobb##11095 |goto 56.5,58.7
+turnin Commander Hobb##11095 |goto Shadowmoon Valley/0 56.5,58.7
 only if rep ('The Scryers') >= Friendly
 step
 talk Anchorite Ceyla##21402
-turnin Kill Them All!##11099 |goto 62.6,28.4
+turnin Kill Them All!##11099 |goto Shadowmoon Valley/0 62.6,28.4
 accept Commander Arcus##11100 |goto 62.6,28.4
 only if rep ('The Aldor') >= Friendly
 step
@@ -6159,72 +6197,70 @@ only if rep ('The Aldor') >= Friendly
 step
 label "Daily4"
 talk Yarzill the Merc##23141
-accept A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+accept A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+accept The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
-accept Netherwing Crystals##11015 |goto 66.1,86.4
-accept Nethermine Flayer Hide##11016 |goto 66.1,86.4 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.1,86.4 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.1,86.4 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
-accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
+accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
 step
 talk Overlord Mor'ghor##23139
-accept Disrupting the Twilight Portal##11086 |goto 66.2,85.7
+accept Disrupting the Twilight Portal##11086 |goto Shadowmoon Valley/0 66.2,85.7
 step
 kill Dragonmaw Transporter##23188+
 |tip They fly low to the ground near this floating rock and the floating rock just to the east, so you can easily pull them while standing on these floating rocks.
-collect 10 Netherwing Relic##32509 |q 11035/1 |goto 72.1,75.2
+collect 10 Netherwing Relic##32509 |q 11035/1 |goto Shadowmoon Valley/0 72.1,75.2
 step
 talk Commander Hobb##23434
-accept The Deadliest Trap Ever Laid##11097
+accept The Deadliest Trap Ever Laid##11097 |goto Shadowmoon Valley/0 56.5,58.7
 Follow Commander Hobb and help him fight the Dragonmaw Skybreakers
 Protect Commander Hobb, he must survive
 Defeat the Dragonmaw Forces |q 11097/1 |goto 56.5,58.7
 only if rep ('The Scryers') >= Friendly
 step
 kill Greater Felfire Diemetradon##21462+, Felboar##21878+
-collect 12 Fel Gland##32502 |q 11020 |goto 60.4,45.2
+collect 12 Fel Gland##32502 |q 11020 |goto Shadowmoon Valley/0 60.4,45.2
 step
 talk Commander Arcus##23452
-accept The Deadliest Trap Ever Laid##11101
+accept The Deadliest Trap Ever Laid##11101 |goto Shadowmoon Valley/0 62.4,29.3
 Follow Commander Arcus and help him fight the Dragonmaw Skybreakers
 Protect Commander Arcus, he must survive
 Defeat the Dragonmaw Forces |q 11101/1 |goto 62.4,29.3
 only if rep ('The Aldor') >= Friendly
 step
 Use Yarzill's Mutton next to groups of Dragonmaw Peons |use Yarzill's Mutton##32503
-Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto 73.6,80.0
+Poison 12 Dragonmaw Peon Camps |q 11020/1 |goto Shadowmoon Valley/0 73.6,80.0
 Use your Booterang on Disobedient Dragonmaw Peons |use Booterang##32680
 Discipline 20 Dragonmaw Peons |q 11055/1 |goto 73.6,80.0
 step
 Click Netherdust Bushes
 |tip They look like small green bushes that sparkle and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be and Herbalist with an Herbalism skill of at least 350 to be able to complete this step.
-collect 40 Netherdust Pollen##32468 |q 11017/1 |goto 62.6,86.2
+collect 40 Netherdust Pollen##32468 |q 11017/1 |goto Shadowmoon Valley/0 62.6,86.2
 step
 Click Nethercite Deposits
 |tip They look like dark blue ore deposits with light blue crystals on them and can be found all around Netherwing Ledge, and on the small floating rock islands on the outskirts of Netherwing Ledge.  You must be a Miner with a Mining skill of at least 350 to be able to complete this step.
-collect 40 Nethercite Ore##32464 |q 11018/1 |goto 70.0,91.4
+collect 40 Nethercite Ore##32464 |q 11018/1 |goto Shadowmoon Valley/0 70.0,91.4
 step
 talk Mistress of the Mines##23149
-accept Picking Up the Pieces...##11076 |goto 65.4,90.2
+accept Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
-Go inside the mine to |goto 65.1,87.5 |walk
+Go inside the mine
 talk Dragonmaw Foreman##23376
-accept Dragons are the Least of Our Problems##11077
-stickystart "netherhide3"
+accept Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
 step
 Click Nethermine Cargo
 |tip They look like carts full of ore and crystals all around inside the Netherwing Mines.
-collect 15 Nethermine Cargo##32723 |q 11076/1 |goto 66.9,84.0
+collect 15 Nethermine Cargo##32723 |q 11076/1 |goto Shadowmoon Valley/0 66.9,84.0
 step
-label "netherhide3"
 kill 15 Nethermine Flayer |q 11077/1 |goto 71.5,83.9
 kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 71.5,83.9
@@ -6233,50 +6269,50 @@ collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 71.5,83.9 |only if ski
 |tip This quest is only available if you have your Skinning skill to at least 350.
 step
 talk Dragonmaw Foreman##23376
-turnin Dragons are the Least of Our Problems##11077 |goto 65.1,87.5
+turnin Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
 step
 talk Mistress of the Mines##23149
-turnin Picking Up the Pieces...##11076 |goto 65.4,90.2
+turnin Picking Up the Pieces...##11076 |goto Shadowmoon Valley/0 65.4,90.2
 step
 kill Deathshadow Overlord##22393+, Deathshadow Warlock##22363+, Deathshadow Spellbinder##22342+, Deathshadow Archon##22343+, Deathshadow Acolyte##22341+
 kill 20 Deathshadow Agent |q 11086/1 |goto Nagrand,12.7,38.9
 step
 talk Yarzill the Merc##23141
-turnin A Slow Death##11020 |goto Shadowmoon Valley,66.0,86.5
-turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley,66.0,86.5
+turnin A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
+turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
 turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
 step
 talk Overlord Mor'ghor##23139
-turnin Disrupting the Twilight Portal##11086 |goto 66.2,85.7
-turnin The Deadliest Trap Ever Laid##11097 |goto 66.2,85.7 |only if rep ('The Scryers') >= Friendly
-turnin The Deadliest Trap Ever Laid##11101 |goto 66.2,85.7 |only if rep ('The Aldor') >= Friendly
+turnin Disrupting the Twilight Portal##11086 |goto 66.8,86.1
+turnin The Deadliest Trap Ever Laid##11097 |goto 66.8,86.1 |only if rep ('The Scryers') >= Friendly
+turnin The Deadliest Trap Ever Laid##11101 |goto 66.8,86.1 |only if rep ('The Aldor') >= Friendly
 step
-Click here to go back to the daillies for tomorrow. |confirm |next "Daily4"
+Click here tomorrow to go back to the dailies |confirm |next "Daily4"
 Become Exalted with the Netherwing. |complete rep('Netherwing')==Exalted |next "E_PreQuest"
 step
 label "E_PreQuest"
 talk Taskmaster Varkule Dragonbreath##23140
-accept Bow to the Highlord##11107 |goto Shadowmoon Valley,66.1,86.4
+accept Bow to the Highlord##11107 |goto Shadowmoon Valley/0 66.12,86.36
 step
 talk Overlord Mor'ghor##23139
-turnin Bow to the Highlord##11107 |goto 66.2,85.7
+turnin Bow to the Highlord##11107 |goto Shadowmoon Valley/0 66.2,85.7
 accept Lord Illidan Stormrage##11108 |goto 66.2,85.7
 Watch the cut scene
-You will be taken to Shattrath City |goto Shattrath City,65.8,18.6,0.5 |noway |c
+You will be taken to Shattrath City |goto Shattrath City/0 65.8,18.6,0.5 |noway |c
 step
 talk Barthamus##23433
-turnin Lord Illidan Stormrage##11108 |goto Shattrath City,66.6,16.4
+turnin Lord Illidan Stormrage##11108 |goto Shattrath City/0 66.6,16.4
 step
 Look at the netherdrakes sitting around this area.  Pick whichever one you like the best and complete the quest it offers you:
 accept Voranaku the Violet Netherwing Drake##11113 |goto 66.8,17.6 |or
@@ -6287,19 +6323,25 @@ accept Malfas the Purple Netherwing Drake##11110 |goto 66.8,17.6 |or
 accept Jorus the Cobalt Netherwing Drake##11109 |goto 66.8,17.6 |or
 step
 talk Drake Dealer Hurlunk##23489
-buy 1 Reins of the Azure Netherwing Drake##32858 |goto Shadowmoon Valley,65.7,86.0
-buy 1 Reins of the Cobalt Netherwing Drake##32859 |goto Shadowmoon Valley,65.7,86.0
-buy 1 Reins of the Violet Netherwing Drake##32862 |goto Shadowmoon Valley,65.7,86.0
-buy 1 Reins of the Purple Netherwing Drake##32860 |goto Shadowmoon Valley,65.7,86.0
-buy 1 Reins of the Veridian Netherwing Drake##32861 |goto Shadowmoon Valley,65.7,86.0
-buy 1 Reins of the Onyx Netherwing Drake##32857 |goto Shadowmoon Valley,65.7,86.0
+buy 1 Reins of the Azure Netherwing Drake##32858 |goto Shadowmoon Valley/0 65.7,86.0
+buy 1 Reins of the Cobalt Netherwing Drake##32859 |goto Shadowmoon Valley/0 65.7,86.0
+buy 1 Reins of the Violet Netherwing Drake##32862 |goto Shadowmoon Valley/0 65.7,86.0
+buy 1 Reins of the Purple Netherwing Drake##32860 |goto Shadowmoon Valley/0 65.7,86.0
+buy 1 Reins of the Veridian Netherwing Drake##32861 |goto Shadowmoon Valley/0 65.7,86.0
+buy 1 Reins of the Onyx Netherwing Drake##32857 |goto Shadowmoon Valley/0 65.7,86.0
 step
-learnmount Azure Netherwing Drake##41514 |use Reins of the Azure Netherwing Drake##32858
-learnmount Cobalt Netherwing Drake##41515 |use Reins of the Cobalt Netherwing Drake##32859
-learnmount Violet Netherwing Drake##41518 |use Reins of the Violet Netherwing Drake##32862
-learnmount Purple Netherwing Drake##41516 |use Reins of the Purple Netherwing Drake##32860
-learnmount Veridian Netherwing Drake##41517 |use Reins of the Veridian Netherwing Drake##32861
-learnmount Oynx Netherwing Drake##41513 |use Reins of the Onyx Netherwing Drake##32857
+use Reins of the Azure Netherwing Drake##32858
+use Reins of the Cobalt Netherwing Drake##32859
+use Reins of the Violet Netherwing Drake##32862
+use Reins of the Purple Netherwing Drake##32860
+use Reins of the Veridian Netherwing Drake##32861
+use Reins of the Onyx Netherwing Drake##32857
+Learn the "Azure Netherwing Drake" Mount |learnmount Azure Netherwing Drake##41514
+Learn the "Cobalt Netherwing Drake" Mount |learnmount Cobalt Netherwing Drake##41515
+Learn the "Violet Netherwing Drake" Mount |learnmount Violet Drake##41518
+Learn the "Purple Netherwing Drake" Mount |learnmount Purple Netherwing Drake##41516
+Learn the "Veridian Netherwing Drake" Mount |learnmount Veridian Netherwing Drake##41517
+Learn the "Oynx Netherwing Drake" Mount |learnmount Oynx Netherwing Drake##41513
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
@@ -6549,7 +6591,8 @@ label "exalted"
 talk Cielstrasza##32533
 buy 1 Reins of the Red Drake##43955 |goto Dragonblight,59.8,53.0
 step
-learnmount Red Drake##59570 |use Reins of the Red Drake##43955
+use Reins of the Red Drake##43955
+Learn the "Red Drake" Mount |learnmount Red Drake##59570
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Riding Nether Ray\\Skyguard Faction Dailies",{
 keywords={"green","red","purple","blue","silver","riding","nether","ray","skyguard","exalted","mount","flying"},
@@ -6977,21 +7020,37 @@ model={34955},
 description="\nThis guide will help you acquire the Subdued Seahorse mount.",
 },[[
 step
+The Following Steps Will Unlock the Portal to Vashj'ir
+talk Commander Thorak##41621
+|tip Inside the building.
+accept Call of Duty##25924 |goto Durotar/0 55.82,12.32 |or
+'|complete completedq(25924) |or
+step
+Wait for the Ship at the Docks
+Watch the dialogue
+|tip It takes about 3 minutes for the dialogue and ship's journey.
+Ride the mercenary ship to Vashj'ir |q 25924/1 |goto 57.69,10.47 |or
+'|complete completedq(25924) |or
+step
+talk Erunak Stonespeaker##41618
+turnin Call of Duty##25924 |goto Kelp'thar Forest/0 38.75,31.70 |or
+'|complete completedq(25924) |or
 step
 _Poseidus_ has a 72-120 hour spawn timer.
-|tip This is another extremely rare mount but you cna realm hop to other servers to increases your chances of finding him spawned.
+|tip This is another extremely rare mount but you can realm hop to other servers to increases your chances of finding him spawned.
 |tip This mount is also BOE which means it can be sold on the AH.
 It is subject to server restarts, meaning it may spawn right after weekly maintenance.
-Search for it at the provided locations below:
+Search for it at the provided locations below: |goto Shimmering Expanse
 [Shimmering Expanse 65.4,41.4]
 [Shimmering Expanse 38.8,68.8]
 [Shimmering Expanse 58.4,82.2]
 [Shimmering Expanse 46.0,50.1]
 [Abyssal Depths 40.0,74.2]
-kill Poseidus |n
-collect 1 Reins of Poseidus##67151
+kill Poseidus
+collect Reins of Poseidus##67151
 step
-learnmount Subdued Seahorse##98718 |use Reins of Poseidus##67151
+|use Reins of Poseidus##67151
+Learn the "Subdued Seahorse" Mount |learnmount Subdued Seahorse##98718
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Aquatic Mounts\\Vashj'ir Seahorse",{
 keywords={"vashj'ir","seahorse","aquatic","water","mount"},
@@ -7002,19 +7061,24 @@ model={34956},
 description="\nThis guide will help you acquire the Vashj'ir Seahorse mount.",
 },[[
 step
-click Warchief's Command Board##207325
-accept Warchief's Command: Vashj'ir!##27718 |goto Orgrimmar,49.6,76.5
-step
+The Following Steps Will Unlock the Portal to Vashj'ir
 talk Commander Thorak##41621
-turnin Warchief's Command: Vashj'ir!##27718 |goto Durotar,55.9,12.3
-accept Call of Duty##25924 |goto Durotar,55.9,12.3
+|tip Inside the building.
+accept Call of Duty##25924 |goto Durotar/0 55.82,12.32 |or
+'|complete completedq(25924) |or
 step
-Ride the mercenary ship to Vashj'ir |q 25924/1 |goto 57.8,10.4
-|tip Wait on the docks, it could take a little while for the boat to finally show up.
+Wait for the Ship at the Docks
+Watch the dialogue
+|tip It takes about 3 minutes for the dialogue and ship's journey.
+Ride the mercenary ship to Vashj'ir |q 25924/1 |goto 57.69,10.47 |or
+'|complete completedq(25924) |or
 step
 talk Erunak Stonespeaker##41618
-turnin Call of Duty##25924 |goto Kelp'thar Forest,38.7,31.7
-accept Sea Legs##25929 |goto Kelp'thar Forest,38.7,31.7
+turnin Call of Duty##25924 |goto Kelp'thar Forest/0 38.75,31.70 |or
+'|complete completedq(25924) |or
+step
+talk Erunak Stonespeaker##41618
+accept Sea Legs##25929 |goto Kelp'thar Forest/0 38.7,31.7
 step
 click Saltwater Star##205989
 collect 3 Saltwater Starfish##54828 |q 25929/1 |goto 42.1,31.3
@@ -7109,7 +7173,8 @@ talk Moanah Stormhoof##41248
 turnin The Abyssal Ride##25371 |goto 46.0,46.9
 collect 1 Vashj'ir Seahorse##54465 |goto 46.0,46.9
 step
-learnmount Vashj'ir Seahorse##75207 |use Vashj'ir Seahorse##54465
+|use Vashj'ir Seahorse##54465
+Learn the "Vashj'ir Seahorse" Mount |learnmount Vashj'ir Seahorse##75207
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Argent Tournament Guides\\Crusader Title\\Blood Elf Champion Rank",{
 author="support@zygorguides.com",
@@ -9629,7 +9694,7 @@ You will not be able to do some of the quests in this section if you are not a B
 confirm
 step
 talk Magistrix Erona##15278
-accept Reclaiming Sunstrider Isle##8325 |goto Eversong Woods,38.0,21.0
+accept Reclaiming Sunstrider Isle##8325 |goto Eversong Woods/0 38.0,21.0
 step
 kill 8 Mana Wyrm |q 8325/1 |goto 36.2,20.5
 step
@@ -10016,10 +10081,10 @@ talk Magistrix Landra Dawnstrider##16210
 turnin Research Notes##9255 |goto 44.0,70.8
 step
 talk Vinemaster Suntouched##16442
-buy Suntouched Special Reserve##22775 |q 9067/1 |goto 79.5,58.5
+buy Suntouched Special Reserve##22775 |q 9067/1 |goto Silvermoon City/0 79.5,58.5
 step
 talk Zalene Firstlight##16443
-buy Springpaw Appetizers##22776 |q 9067/2 |goto 60.4,62.5
+buy Springpaw Appetizers##22776 |q 9067/2 |goto Eversong Woods/0 60.4,62.5
 step
 talk Lieutenant Dawnrunner##15399
 turnin Farstrider Retreat##9359 |goto 60.3,62.8

@@ -2672,7 +2672,7 @@ step
 kill Scuttleclaw Sandshell##169436+
 |tip Underwater.
 |tip You can use the Elixer of Water Breathing in your inventory to breath underwater for 30 mins.
-collect Meaty Crab Chunk##180010 |q 60606/1 |goto Grizzly Hills/0 22.02,90.73
+collect 10 Meaty Crab Chunk##180010 |q 60606/1 |goto Grizzly Hills/0 22.02,90.73
 step
 talk Glimmergut##169414
 |tip He is downstairs inside of the sunken ship.
@@ -2748,9 +2748,6 @@ collect Glimr's Cracked Egg##180034
 step
 use the Glimr's Cracked Egg##180034
 Learn the "Glimr" Battle Pet |learnpet Glimr##2888
-step
-_Congratulations!_
-You Collected the "Glimr" Battle Pet.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts\\Battle Pets\\Humanoid Pets\\Quest Pets\\Gurgl",{
 pet=3107,

@@ -111,7 +111,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Fierce Razorwing")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Foresworn Aquilon")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Garnet Razorwing")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Hand of Bahmehthra")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Hand of Bahmethra")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Lord of the Corpseflies")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Maldraxxian Corpsefly")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Obsidian Gravewing")

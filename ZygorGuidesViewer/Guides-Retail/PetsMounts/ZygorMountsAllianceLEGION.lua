@@ -3590,6 +3590,7 @@ Once the Puzzle is complete the next note will appear
 click Inconspicuous Note##272181 |goto Ulduar/1 48.5,16.1
 Click here to continue |confirm
 step
+Go to Silithus |goto Silithus/0 35.91,82.26
 Enter the Temple of Ahn'Qiraj |goto Ahn'Qiraj/2 51.4,26.5 < 1000 |c
 step
 To get to the next note you must defeat all of the bosses up to and including the last boss
@@ -3695,18 +3696,17 @@ _Warning:_ If you DC or log out it will reset the Endless Halls, meaning you wil
 Click here to continue |confirm
 step
 Exit the Endless Halls through the Final Room of the Maze
-|tip This is mandatory.
-|tip If you leave without leaving properly, you will need to complete the previous step again.
+|tip DO NOT HEARTH.
+|tip If you do not leave properly you will need to complete the previous step again.
 Click here to continue |confirm
 step
 Enter the Tomb |goto Deadwind Pass/0 39.85,73.59 < 5 |walk
 Follow the path in the Tomb until you get to a huge pile of Bones in an area called The Pit of Criminals
 Click the Puzzler's Desire
-collect Lucid Nightmare##151623 |n
-learnmount Lucid Nightmare##247402 |use Lucid Nightmare##151623
+collect Lucid Nightmare##151623
 step
-_Congratulations!_
-You collected the _Lucid Nightmare_ mount
+use Lucid Nightmare##151623
+Learn the "Lucid Nightmare" Mount |learnmount Lucid Nightmare##247402
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Maddened Chaosrunner",{
 author="support@zygorguides.com",
@@ -3770,9 +3770,6 @@ step
 kill Argus the Unmaker##124828
 collect Shackled Ur'zul##152789 |n
 learnmount Shackled Ur'zul##243651 |goto Antorus/9 50.1,53.0 |use Shackled Ur'zul##152789
-step
-_Congratulations!_
-You Collected the _Shackled Ur'zul_ Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Long-Forgotten Hippogryph",{
 author="support@zygorguides.com",
@@ -3788,417 +3785,889 @@ step
 label "Begin_Guide"
 You _must not die, log off, or leave Azsuna_ or you will have to collect the Crystals all over
 |tip If another player gets them first, you will have to wait for the crystals to reset.
+|tip Complete all Azuna world quests before you begin this guide.
 |tip Collect five Ephemeral Crystals around Azsuna to collect this mount.
-Click Here to Continue |confirm
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 stickystart "Ephemeral_Crystal_Information"
 step
 click Ephemeral Crystal##251187
+|tip Between the water and the cliff near a giant tree at Challiane's Terrace.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 45.50,45.40 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 38.72,9.28
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip On the hillside.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 46.95,48.93 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 42.19,8.53
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Carefully jump down |goto 48.27,47.63 < 5 |only if walking
-Continue jumping down the ledge |goto 48.31,48.29 < 5 |only if walking
 click Ephemeral Crystal##251187
+|tip In the Lost Orchard, next to a tree.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 48.70,48.50 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 46.56,8.53
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Enter the cave |goto 50.11,48.88 < 10 |walk
 click Ephemeral Crystal##251187
+|tip On top of a rock, inside The Lair of the Deposed Cave.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 50.73,49.89 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.00,8.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 48.29,45.89 < 20 |only if walking
-Follow the path |goto 46.35,45.77 < 25 |only if walking
-Follow the path |goto 46.29,50.36 < 25 |only if walking
-Carefully jump down |goto 45.45,53.95 < 10 |only if walking
-Follow the path |goto 44.76,58.47 < 25 |only if walking
 click Ephemeral Crystal##251187
+|tip Next to a tree on Rhut'van Passage.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 44.10,59.80 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 52.00,13.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 45.46,58.68 < 20 |only if walking
-Follow the path |goto 46.84,59.88 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip Up the side of the cliff.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 47.10,61.70 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 55.55,10.30
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 48.56,61.09 < 30 |only if walking
-Follow the path |goto 50.70,60.66 < 5 |only if walking
 click Ephemeral Crystal##251187
+|tip By the pink flower.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 51.00,61.00 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 56.01,12.03
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 52.47,62.39 < 25 |only if walking
-Follow the path |goto 53.89,65.87 < 25 |only if walking
-Follow the path |goto 52.98,67.64 < 25 |only if walking
 click Ephemeral Crystal##251187
+|tip At the Ley-Ruins of Zarkhenar on the edge of a hill.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.00,71.00 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 57.40,16.79
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 57.30,56.49 < 25 |only if walking
-Follow the path |goto 58.61,54.15 < 25 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.00,54.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.10,53.20 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 62.00,54.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 62.53,52.36 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 61.58,50.98 < 30 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 60.00,49.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 61.46,50.96 < 30 |only if walking
-Follow the path |goto 63.55,51.24 < 30 |only if walking
-Follow the path |goto 66.55,51.60 < 5 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,52.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 65.87,48.45 < 30 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,46.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path down |goto Azsuna/0 65.97,42.66 < 10 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 65.49,42.47 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path up |goto 65.11,38.93 < 15 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 64.80,37.90 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 67.00,33.70 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 67.15,32.32 < 20 |only if walking
-Follow the path |goto 68.39,29.33 < 20 |only if walking
-Follow the path |goto 68.67,26.91 < 20 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 68.19,24.03 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 68.00,23.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 65.40,29.50 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 63.48,31.76 < 25 |only if walking
-Follow the path |goto 61.37,34.64 < 25 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.37,38.33 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.70,38.60 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 61.10,38.90 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 59.18,42.32 < 20 |only if walking
-Follow the path |goto 61.12,45.12 < 20 |only if walking
-Follow the path |goto 62.43,47.27 < 20 |only if walking
-Follow the path |goto 61.08,46.68 < 20 |only if walking
-Follow the path |goto 59.88,48.78 < 20 |only if walking
-Follow the path |goto 58.41,48.70 < 20 |only if walking
-Carefully jump down |goto 58.91,45.66 < 5 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 58.70,45.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 59.08,44.88 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Carefully drop down |goto 58.58,45.19 < 5 |only if walking
-Jump down |goto 57.26,46.99 < 10 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 57.90,42.60 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Jump down |goto 58.70,42.87 < 15 |only if walking
-Follow the path |goto 57.05,41.27 < 30 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground underwater.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 56.00,40.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 54.82,39.12 < 20 |only if walking
-Follow the path |goto 53.16,37.67 < 20 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground underwater.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 51.40,37.60 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground underwater.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 53.08,36.03 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 54.50,33.50 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 54.84,33.35 < 20 |only if walking
-Follow the path |goto 56.21,33.12 < 25 |only if walking
-Follow the path |goto 59.24,31.08 < 25 |only if walking
-Enter the cave |goto 60.88,30.50 < 10 |walk
-click Ephemeral Crystal##251187
+|tip Next to a tree.
 |tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 61.15,30.42 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.00,17.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 59.55,29.48 < 20 |only if walking
-Follow the path |goto 58.31,27.92 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip North of the demon camp.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 57.50,26.60 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 68.20,24.30
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip Near the water.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 54.10,27.60 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 67.71,32.80
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip At Felblaze, inside the stump of a big tree.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 53.40,27.90 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 65.40,29.50
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 52.95,28.46 < 20 |only if walking
-Follow the path |goto 51.72,26.63 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip Near the table, at a crossroads.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.29,25.24 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 64.00,34.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 51.06,24.49 < 20 |only if walking
-Follow the path |goto 50.86,22.63 < 20 |only if walking
-Follow the path |goto 50.77,19.94 < 20 |only if walking
-Follow the path |goto 51.15,15.75 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip On a hill behind a tree.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 52.41,13.44 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 61.91,30.91
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 51.32,10.70 < 20 |only if walking
-Follow the path |goto 50.18,8.75 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip In a cave, on a rock on the right.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 50.40,7.80 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 61.10,30.39
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path up |goto 49.37,7.22 < 20 |only if walking
-Follow the path |goto 48.58,10.76 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip Behind a tree.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 45.70,9.20 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.00,27.80
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip Next to the tree in the middle of the circle.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 45.50,17.20 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 57.00,31.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Enter the cave |goto 44.15,17.57 < 20 |walk
 click Ephemeral Crystal##251187
+|tip In between the 3 pillars to the right of Pridelord Meowl's building.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 55.90,29.40
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the road.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 57.51,26.61
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip By the tree on top of the cliff.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 58.22,24.65
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+Enter the cave |goto Azsuna/0 55.74,25.46 < 10 |walk
+click Ephemeral Crystal##251187
+|tip Inside the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 56.92,26.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 1 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the roots of a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 54.33,26.03
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind the tree, next to the lake.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 54.80,28.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the cave, by the river.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 53.70,28.05
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind the cement hut, in the bushes.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 54.10,27.60
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Between the 3 trees to the left of the path.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 53.36,26.08
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Off of the road, hidden next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 52.29,25.10
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Hidden next to the tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.39,27.70
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to Senagos's blue crystal lake.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 47.08,25.08
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the bushes behind the shrine on a hill overlooking Azurewing Repose.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.40,24.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside Leyhollow cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 50.50,20.30
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Between 3 trees.
 |tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 43.00,18.00 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 50.50,16.40
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto Azsuna/0 43.04,10.96 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip At the top of the slope.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 42.40,8.80 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 46.90,17.75
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip Next to the lake where it turns into a river.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 42.20,8.50 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 45.50,17.18
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 40.74,10.36 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip Inside Runa's Hovel Cave on the rock between the spine and the skull.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 38.76,9.29 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 42.66,18.06
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 38.41,12.52 < 20 |only if walking
-Follow the path |goto 37.80,14.80 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip On top of a stone hill.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 34.85,17.14 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 36.60,12.20
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
+|tip Behind the ruins.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 35.00,22.00 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 34.91,17.15
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Follow the path |goto 35.41,26.83 < 20 |only if walking
-Follow the path |goto 32.89,30.60 < 20 |only if walking
-Follow the path |goto 31.68,33.59 < 20 |only if walking
-Follow the path |goto 30.51,35.39 < 20 |only if walking
 click Ephemeral Crystal##251187
+|tip By the tree.
 |tip It looks like a large purple crystal floating above the ground.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 29.90,36.00 |complete hasmount(215159) |or
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 37.00,21.75
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 30.98,34.37 < 20 |only if walking
-Enter the cave |goto 32.94,34.38 < 20 |walk
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 34.80,35.30 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Leave the cave |goto 34.37,36.00 < 20 |walk
-Follow the path |goto 34.5,36.7 < 20 |only if walking
-Follow the path |goto 38.1,37.9 < 20 |only if walking
-Follow the path |goto 41.4,35.5 < 20 |only if walking
-Follow the path up |goto 40.6,34.6 < 20 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 40.30,32.80 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 37.04,32.20 |complete hasmount(215159) |or
+|tip Between 2 trees on the side of the road.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 36.00,23.00
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path up |goto 39.53,34.34 < 20 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 36.00,36.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
-step
-Follow the path |goto 42.09,34.06 < 20 |only if walking
-Follow the path |goto 44.18,32.17 < 20 |only if walking
-click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 47.20,33.00 |complete hasmount(215159) |or
-|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 click Ephemeral Crystal##251187
-|tip It looks like a large purple crystal floating above the ground inside the cave.
-collect Reins of the Long-Forgotten Hippogryph##138258 |goto 49.93,32.95 |complete hasmount(215159) |or
+|tip Beachside, near the water.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 35.11,21.98
 |tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
-Click Here if There Isn't an Ephemeral Crystal Present |confirm |or
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
-Click Here to Return to the Start |confirm |next "Begin_Guide" |complete hasmount(215159) or itemcount(138258) >= 1
+click Ephemeral Crystal##251187
+|tip In the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 30.30,23.95
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the island.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 29.90,26.55
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside a crack in the rock.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 30.00,36.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Between some dead trees.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 29.85,35.87
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the cave, under an overhang, at the bottom of the ridge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 34.60,35.70
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On a cliff edge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 34.79,35.32
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 35.60,37.80
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the cliff edge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 36.00,36.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind the wall, next to the bush and the tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 37.50,32.90
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the center of the road next to the tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 40.55,37.57
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 40.72,35.90
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 40.30,32.80
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave full of Lothien Grizzly bears to the right.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 41.40,31.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind the tree, next to Doomlord Kazrok.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 43.00,28.03
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the river.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 47.20,33.01
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the hill behind a bush.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.30,31.50
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to shells near a hut.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 50.02,33.11
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Under water.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 51.39,37.59
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Under water near Narthalas Academy.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 52.95,35.94
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip By the shrine.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 52.15,31.87
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the lake next to the basilisks.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 54.50,33.49
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip At the bottom of the cliff, next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 55.56,32.72
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the lake, under the bridge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 56.00,40.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip At the water's edge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 56.91,38.84
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Near the Night Elf statue.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 59.06,37.48
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind a tent.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 59.30,38.30
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On a hill, next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 59.70,37.69
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the broken pillar.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.09,35.01
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to some trees.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 62.25,35.90
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the hill.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 65.41,38.40
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tent.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 62.29,40.50
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 61.61,40.10
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave with a giant.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 57.69,42.31
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the cave, on the rock, between the spine and the skull.
+|tip Beware of elite mob.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 58.81,45.02
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip To the right of the blue teleporter cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.40,46.69
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip At the bottom of the hill.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.00,49.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Under a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 63.38,46.14
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the water, near a bridge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 65.50,42.41
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a log.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 67.00,46.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Outside the door to the The Ruined Sanctum.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 67.11,52.01
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Under a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 65.15,50.82
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 62.65,52.46
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 63.48,54.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 62.20,54.69
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Under the little half-tent.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 60.19,54.61
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the torch in the alcove.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 53.61,63.37
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the poles with rope tied around them.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 51.00,65.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave near some roots.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 51.00,75.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the hill near the Cove Skrog.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 42.20,62.30
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On the tiny hill next to the ship.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 44.10,59.79
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Between 2 rocks.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 47.30,61.89
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the broken ship, inside the Giant's cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 48.57,57.28
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip By the broken pillar next to the bride and groom.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.28,58.03
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 50.48,56.99
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip In the corner, next to the broken ship.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 51.81,57.57
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Up on a hill near some giants.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 52.69,57.89
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip At the bottom of the hill.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 55.00,55.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 54.85,52.25
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 50.75,49.87
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Behind the sleeping giant.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.30,50.57
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On a cliff just above a bridge.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 49.18,53.54
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Inside the cave next to some piles of gold.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 48.05,52.70
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to 2 giants.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 48.00,48.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Between some rocks by the sleeping bears.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 46.58,53.60
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Hidden inside the broken half of the ship.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 45.98,53.60
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Above some neutral giants, behind a tree.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 46.89,49.00
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip On a rock.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 48.88,45.61
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+click Ephemeral Crystal##251187
+|tip Next to the tree east of Illidari Stand flight path.
+|tip It looks like a large purple crystal floating above the ground.
+collect Reins of the Long-Forgotten Hippogryph##138258 |goto Azsuna/0 45.42,45.42
+|tip It will appear in your inventory if you collect 5 Ephemeral Crystals.
+Click Here to Continue |confirm |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
+step
+Click Here to Return to the Start |confirm |next "Begin_Guide" |or
+'|complete hasmount(215159) or itemcount(138258) >= 5 |or
 step
 label "Ephemeral_Crystal_Information"
 When anyone collects 5 Ephemeral Crystals, the following message appears in chat:
 _You hear a faint caw in the distance and then silence._
 |tip You will have to wait at least 4 hours before the Crystals respawn.
+'|complete hasmount(215159) or itemcount(138258) >= 5
 step
 use the Reins of the Long-Forgotten Hippogryph##138258
-learnmount Long-Forgotten Hippogryph##215159
-step
-_Congratulations!_
-You collected the _Long-Forgotten Hippogryph_ mount
+Learn the "Long-Forgotten Hippogryph" Mount |learnmount Long-Forgotten Hippogryph##215159
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Riddler's Mind-Worm",{
 author="support@zygorguides.com",
@@ -4315,145 +4784,178 @@ model={71939},
 description="\nThis guide will help you acquire the Fathom Dweller Mount.",
 },[[
 step
-talk Drak'thul##102695 |goto Broken Shore/0 37.08,71.62
-|tip Glide down from Dalaran, or buy Water Walking potions to reach him.
-Speak with him until he has no more dialogue available
-Click here to continue |confirm
+You may need a few things before beginning this guide:
+- Invisibility potions to avoid elite mobs.
+- Swim speed potions, or some method of underwater breathing.
+- Goblin Glider Kits, if you do not have flying yet.
+Click Here to Proceed |confirm
 step
-Follow the path |goto 39.31,77.36 < 30
-Follow the path |goto 40.77,77.81 < 30
-Follow the path |goto 42.91,74.03 < 30
-Follow the path |goto 45.35,69.45 < 30
-Follow the path |goto 50.30,64.29 < 30
-Follow the path |goto 53.70,59.74 < 30
-Follow the path |goto 54.61,53.78 < 30
-Enter the cave |goto Broken Shore/0 58.54,54.14 < 30
+talk Drak'thul##102695 |goto Broken Shore/0 37.08,71.62
+Speak with him until he has no more dialogue available
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
+step
+Follow the path |goto 39.31,77.36 < 30 |only if walking
+Follow the path |goto 40.77,77.81 < 30 |only if walking
+Follow the path |goto 42.91,74.03 < 30 |only if walking
+Follow the path |goto 45.35,69.45 < 30 |only if walking
+Follow the path |goto 50.30,64.29 < 30 |only if walking
+Follow the path |goto 53.70,59.74 < 30 |only if walking
+Follow the path |goto 54.61,53.78 < 30 |only if walking
+Enter the cave |goto Broken Shore/0 58.54,54.14 < 30 |walk
 |tip You can relog to try and get the rocks to disappear if it is blocked off.
 |tip You can also die nearby and rez on the other side.
 click Mound of Dirt##216161
-collect 1 Weathered Relic##139783 |goto 57.47,56.01
+collect 1 Weathered Relic##139783 |goto 57.47,56.01 |or
+'|complete hasmount(223018) |or
 step
-Follow the path |goto 51.64,53.24 < 30
-Follow the path |goto 54.22,56.63 < 30
-Follow the path |goto 53.53,61.42 < 30
-Follow the path |goto 50.74,68.94 < 30
-Follow the path |goto 39.11,74.66 < 30
-Follow the path |goto 37.41,74.29 < 30
+Follow the path |goto 51.64,53.24 < 30 |only if walking
+Follow the path |goto 54.22,56.63 < 30 |only if walking
+Follow the path |goto 53.53,61.42 < 30 |only if walking
+Follow the path |goto 50.74,68.94 < 30 |only if walking
+Follow the path |goto 39.11,74.66 < 30 |only if walking
+Follow the path |goto 37.41,74.29 < 30 |only if walking
 talk Drak'thul##102695 |goto Broken Shore/0 37.08,71.62
 Speak with him until he has no more dialogue available
 |tip You will need to speak with him multiple times.
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
 For the next portion of the guide, you _MUST_ attune yourself with the orbs in the order that they are presented
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
 Enter the hidden cave |goto Azsuna/0 37.97,37.41 < 15
-|tip The entrance is a bit hidden among bushes.
+|tip The entrance is hidden under bushes next to a large tree.
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto 37.94,35.47
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Follow the path |goto Suramar/0 63.18,34.59 < 10 |notravel
-Follow the path |goto 62.54,34.02 < 10 |notravel
-Follow the path |goto 62.70,33.17 < 10 |notravel
-Enter the cave |goto Stormheim/0 32.79,75.66 < 10 |notravel
+Follow the path |goto Suramar/0 63.18,34.59 < 10 |only if walking
+Follow the path |goto 62.54,34.02 < 10 |only if walking
+Follow the path |goto 62.70,33.17 < 10 |only if walking
+Enter the cave |goto Stormheim/0 32.79,75.66 < 10 |walk
+|tip The cave is behind a large orange tree and some smaller purple trees.
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto Stormheim/0 31.95,74.06
-|tip The mob in the cave will likely one shot you, so try to avoid it.
-Click here to continue |confirm
+|tip Beware the elite mob in the cave.
+|tip You can use an invisibility potion here.
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
 Follow the path |goto Val'sharah/0 41.39,79.70 < 10
-Enter the hidden cave |goto 41.50,81.37 < 10
-Go through the narrow passage |goto 41.48,82.11 < 10
+Enter the hidden cave |goto 41.50,81.37 < 10 |walk
+|tip The entrance is hidden under green bushes behinds the larger clump of orange flowers between a huge tree, a medium-sized tree. and a small tree.
+Go past the table, over the rocks, and through the narrow passage |goto 41.48,82.11 < 10
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto 41.93,81.70
-|tip There will be an elite that hits fairly hard, try and keep it stunned.
-Click here to continue |confirm
+|tip Beware the elite mob in the cave.
+|tip You can use an invisibility potion here.
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Enter the cave |goto Broken Shore/0 29.64,78.06 < 15
+Enter the cave |goto Broken Shore/0 29.64,78.06 < 15 |walk
 |tip It is underwater.
 |tip You will be fatigued until you go a bit further into the cave.
+|tip You can use a swim speed potion here.
 click Hungering Orb##252562
 Attuned yourself with the Hungering Orb |goto 32.98,74.62
 |tip Avoid the steam coming out of the ground.
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Enter the hidden cave |goto Azsuna/0 59.37,13.15 < 10
+Enter the hidden cave |goto Azsuna/0 59.37,13.15 < 10 |walk
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto 60.13,14.59
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Enter cave |goto Stormheim/0 79.54,-6.00 < 30
+Enter cave |goto Stormheim/0 79.54,-6.00 < 30 |walk
+|tip The entrance is between some large pillar-like rocks underneath a Toothless Great White.
 Swim underwater |goto 79.79,-5.55 < 30
 Swim underwater |goto 79.32,-3.89 < 30
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto 78.91,-2.71
 |tip Avoid the steam on the ground.
 |tip It will start to mist up when the steam vents are about to shoot.
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Follow the path |goto Highmountain/0 52.39,40.67 < 20
-Follow the path |goto Highmountain/0 52.33,38.62 < 20
-Follow the path |goto 52.42,36.22 < 20
-Follow the path |goto 53.68,35.56 < 20
-Follow the path |goto 55.14,37.52 < 20
-Jump down here |goto 55.12,38.57 < 20
-|tip Use a glider if you have one.
-Enter the hidden cave |goto 55.84,38.37 < 5
+Follow the path |goto Highmountain/0 52.39,40.67 < 20 |only if walking
+Follow the path |goto Highmountain/0 52.33,38.62 < 20 |only if walking
+Follow the path |goto 52.42,36.22 < 20 |only if walking
+Follow the path |goto 53.68,35.56 < 20 |only if walking
+Follow the path |goto 55.14,37.52 < 20 |only if walking
+Jump down here |goto 55.12,38.57 < 20 |only if walking
+|tip Use a glider if you have one. |only if walking
+Enter the hidden cave |goto Highmountain/0 55.84,38.37 < 5 |walk
+|tip It is to the right of the small, obvious cave.
+|tip Go to the right and through the bush that is behind the bag hanging from the archway.
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto 55.80,37.92
-|tip It's inside of the bones on the ground.
-Click here to continue |confirm
+|tip It's inside of the skull attached to rib bones on the ground.
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Enter the hidden cave |goto Azsuna/0 54.06,26.20 < 10
+Enter the hidden cave |goto Azsuna/0 54.06,26.20 < 10 |walk
+|tip The entrance is under berry bushes, behind a flat, oval stone that is lying between two small trees in front of a giant tree.
 click Hungering Orb##252562
+|tip Hidden under a fern at the base of the second stone cave pillar.
 Attune yourself with the Hungering Orb |goto 54.36,24.37
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-You will need to glide down from Dalaran if you don't have an Eye of Azshara flight path already
-Follow the path |goto Dalaran L/10 78.76,46.55 < 20
-Follow the path |goto 73.44,86.12 < 20
-Glide down to Eye of Azshara from here |goto 62.27,99.09 < 30
-Reach Eye of Azshara |goto Eye of Azshara Map/0 45.38,-2.13
-Follow the path |goto Eye of Azshara Map/0 41.01,48.71 < 30
-Follow the path |goto 43.83,54.07 < 30
-Follow the path |goto 45.16,60.95 < 30
-Follow the path |goto 46.22,65.87 < 30
-Follow the path |goto 48.62,67.49 < 30
-Follow the path |goto 52.00,67.63 < 30
-Follow the path |goto 56.86,67.81 < 30
-Follow the path |goto 61.01,64.57 < 30
-Follow the path |goto 62.62,61.19 < 30
-Follow the path |goto 64.43,58.43 < 30
-Follow the path |goto 68.51,59.35 < 30
-Follow the path |goto 70.86,64.19 < 30
-Follow the path |goto 74.29,71.84 < 30
-Follow the path |goto 75.91,78.58 < 30
-Enter the ship |goto 79.19,89.02 < 5
-|tip The entrance is slightly hidden.
-Navigate through and swim through the second hidden hole |goto 77.55,88.96 < 5
-|tip Swim up, then back down towards the destination.
+Follow the path |goto Dalaran L/10 78.76,46.55 < 20 |only if walking
+Follow the path |goto 73.44,86.12 < 20 |only if walking
+Glide down to Eye of Azshara from here |goto 62.27,99.09 < 30 |only if walking
+Reach Eye of Azshara |goto Eye of Azshara Map/0 45.38,-2.13 |only if walking
+Follow the path |goto Eye of Azshara Map/0 41.01,48.71 < 30 |only if walking
+Follow the path |goto 43.83,54.07 < 30 |only if walking
+Follow the path |goto 45.16,60.95 < 30 |only if walking
+Follow the path |goto 46.22,65.87 < 30 |only if walking
+Follow the path |goto 48.62,67.49 < 30 |only if walking
+Follow the path |goto 52.00,67.63 < 30 |only if walking
+Follow the path |goto 56.86,67.81 < 30 |only if walking
+Follow the path |goto 61.01,64.57 < 30 |only if walking
+Follow the path |goto 62.62,61.19 < 30 |only if walking
+Follow the path |goto 64.43,58.43 < 30 |only if walking
+Follow the path |goto 68.51,59.35 < 30 |only if walking
+Follow the path |goto 70.86,64.19 < 30 |only if walking
+Follow the path |goto 74.29,71.84 < 30 |only if walking
+Follow the path |goto 75.91,78.58 < 30 |only if walking
+Enter the ship |goto Eye of Azshara Map/0 79.27,89.07 < 5 |walk
+|tip You may need a swim speed potion here, or underwater breathing.
+|tip The entrance is under the wreck here where some tiny fish are swimming next to a big anchor.
+|tip Go through the seaweed covering the hole from the inside.
+Navigate through and swim through the second hole hidden also by seaweed |goto 77.55,88.96 < 5
+|tip Swim up into the large cave.
 click Hungering Orb##252562
+|tip It is in the shallow water to the right, by the northeast wall, between three jagged stalagmites with water falling.
 Attune yourself with the Hungering Orb |goto 75.02,83.36
-Click here to continue |confirm
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
 click Hungering Orb##252562
 Attune yourself with the Hungering Orb |goto Broken Shore/0 37.49,71.62
-|tip Glide down from Dalaran, or buy Water Walking potions to reach him.
-Click here to continue |confirm
+|tip Glide down from Dalaran, or buy Water Walking potions to reach him. |only if walking
+Click here to continue |confirm |or
+'|complete hasmount(223018) |or
 step
-Once you have completed the previous steps, a World Quest for Kosumoth the Hungering will appear in the Eye of Azshara World Map
-The reward for the quest resets every 2 weeks, so you will need to wait patiently if what you want isn't available
-accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.6,49.2
+Wait for the World Quest "Kosumoth the Hungering" to Become Available |complete questactive(43798)
+step
+accept DANGER: Kosumoth the Hungering##43798 |goto Eye of Azshara Map/0 46.6,49.2 |or
+|tip He can drop the Fathom Dweller mount or the Hungering Claw pet.
+|tip The map tooltip will tell you which item he is rewarding.
+'|complete hasmount(223018) |or
 step
 kill Kosumoth the Hungering##111573 |q 43798/1 |goto Eye of Azshara Map/0 46.6,49.2
 |tip He patrols around.
-collect Fathom Dweller##138201 |n
-Use the Fathom Dweller |use Fathom Dweller##138201
-learnmount Fathom Dweller Mount##223018
+collect Fathom Dweller##138201 |or
+'|complete hasmount(223018) |or
 step
-_Congratulations!_
-You collected the _Fathom Dweller_ mount
+|use Fathom Dweller##138201
+Learn the "Fathom Dweller" Mount |learnmount Fathom Dweller##223018
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Ratstallion",{
 author="support@zygorguides.com",
@@ -4809,18 +5311,17 @@ description="\nThis guide will help you acquire the Prestigious War Steed.",
 },[[
 step
 This is an Alliance mount reward for completing the achievement "Free for All, More For Me"
-|tip This achievement requires you to complete each of the 4 differenet PvP related world quests 20 times each.
+|tip This achievement requires you to complete each of the 4 different PvP related world quests 20 times each.
 |tip These being: Operation Murloc Freedom located in Aszuna, Bareback Brawl located in Stormheim, Black Rook Rumble located in Val'sharah, and Darkbrul Arena located in Highmountain.
 |tip Check out our World Quests guide to complete these.
 Click here to load our "World Quests" guide |confirm |next "Daily Guides\\Legion\\Azsuna World Quests" |or
 |achieve 11474 |or
 step
-collect Reins of the Prestigious War Steed##143864 |n
+collect Reins of the Prestigious War Steed##143864
 |tip Once this achievement is completed, check your in-game mail.
-learnmount Prestigious War Steed##193695 |use Reins of the Prestigious War Steed##143864
 step
-_Congratulations!_
-You collected the _Prestigious War Steed_ mount
+use Reins of the Prestigious War Steed##143864
+Learn the "Prestigious War Steed" Mount |learnmount Prestigious War Steed##193695
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Vicious Gilnean Warhorse",{
 keywords={"vicious","Gilnean","Warhorse","ground","mount"},
@@ -5089,32 +5590,44 @@ model={70874},
 description="\nThis guide will help you acquire Spirit of Eche'ro Mount",
 },[[
 step
-This mount is awarded from the Bi-Weekly Archaeology quests that appear once you reach level 45
-If it doesn't appear to be available, you will have to wait for it to show up
+Reach level 45 |ding 45
+step
 talk Dariness the Learned##93538
-|tip She walks around inside.
+|tip She walks around inside the building.
+Train Apprentice Archeology |complete hasprof("Archaeology",1,75) |goto Dalaran L/10 40.74,27.39
+step
+Wait for "The Right Path" Quest to Become Available |complete questactive(41192)
+|tip This quest is available about once every 6 months.
+|tip Check wowhead.com comments for the quest, _The Right Path_, to see a schedule of dates this quest should be available.
+|tip If you do not see the quest when it should be available, be sure you do not have an incomplete Archaeology quest already active in your quest log.
+step
+talk Dariness the Learned##93538
+|tip She walks around inside the building.
 accept The Right Path##41192 |goto Dalaran L/10 40.72,24.35
 step
 talk Lessah Moonwater##103485
 turnin The Right Path##41192 |goto Thunder Totem/0 45.90,45.06
 accept Laying to Rest##41193 |goto Thunder Totem/0 45.90,45.06
 step
-Open your map on complete Archaeology Digsites while in Highmountain
+Open your Map and Complete Archaeology Digsites in Highmountain
+|tip All 3 Archaeology digsites will be in Highmountain while the quest is active.
+|tip You will receive 0 to 5 Bone Fragments of Eche'ro with each Highmountain digsite solved.
+|tip The _Angry Tauren Spirit_ that can spawn will drop more Bone Fragments of Eche'ro.
+|tip This may take some time.
 collect 600 Bone Fragment of Eche'ro##134095 |q 41193/1
 step
-Observe the burial ceremony |q 41193/2 |goto Thunder Totem/0 45.90,45.06
+talk Lessah Moonwater##103485
+|tip Inside the cave at the end of the rope bridges from Thunder Totem.
+Observe the burial ceremony |q 41193/2 |goto Thunder Totem/0 64.85,50.09
 |tip Wait for the dialogue to complete.
 step
 talk Lessah Moonwater##103485
-turnin Laying to Rest##41193 |goto Thunder Totem/0 45.90,45.06
+|tip Inside the cave at the end of the rope bridges from Thunder Totem.
+turnin Laying to Rest##41193 |n |goto Thunder Totem/0 65.11,50.62
+collect Spirit of Eche'ro##131734
 step
-collect Spirit of Eche'ro##131734 |n
-|tip You will find it in your mailbox.
-Use the Spirit of Eche'ro |use Spirit of Eche'ro##131734
-learnmount Spirit of Eche'ro##196681
-step
-_Congratulations!_
-You collected the _Spirit of Eche'ro_ mount
+use Spirit of Eche'ro##131734
+Learn the "Spirit of Eche'ro" Mount |learnmount Spirit of Eche'ro##196681
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Profession Mounts\\Steelbound Devourer",{
 author="support@zygorguides.com",

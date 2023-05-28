@@ -1,6 +1,6 @@
 --[[
 Name: LibTourist-3.0
-Revision: $Rev: 291 $
+Revision: $Rev: 294 $
 Author(s): Odica (owner), originally created by ckknight and Arrowmaster
 Documentation: https://www.wowace.com/projects/libtourist-3-0/pages/api-reference
 SVN: svn://svn.wowace.com/wow/libtourist-3-0/mainline/trunk
@@ -9,7 +9,7 @@ License: MIT
 ]]
 
 local MAJOR_VERSION = "LibTourist-3.0"
-local MINOR_VERSION = 90000 + tonumber(("$Revision: 291 $"):match("(%d+)"))
+local MINOR_VERSION = 90000 + tonumber(("$Revision: 294 $"):match("(%d+)"))
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 local C_Map = C_Map
@@ -1873,13 +1873,29 @@ local MapIdLookupTable = {
 	[2130] = "Thaldraszus",
 	[2131] = "The Forbidden Reach",
 	[2132] = "The Azure Span",
+    [2133] = "Zaralek Cavern",
 	[2134] = "Valdrakken",
 	[2135] = "Valdrakken",	
+    [2146] = "The Eastern Glades",
 	[2149] = "Ohn'ahran Plains",
 	[2150] = "Dragonskull Island",
 	[2151] = "The Forbidden Reach",
 	[2154] = "Froststone Vault",
 	[2162] = "Alterac Valley",
+	[2165] = "The Throughway",
+	[2166] = "Aberrus, the Shadowed Crucible",
+	[2167] = "Aberrus, the Shadowed Crucible",
+	[2168] = "Aberrus, the Shadowed Crucible",
+	[2169] = "Aberrus, the Shadowed Crucible",
+	[2170] = "Aberrus, the Shadowed Crucible",
+	[2171] = "Aberrus, the Shadowed Crucible",
+	[2172] = "Aberrus, the Shadowed Crucible",
+	[2173] = "Aberrus, the Shadowed Crucible",
+	[2174] = "Aberrus, the Shadowed Crucible",
+	[2175] = "Zaralek Cavern",
+	[2176] = "The Maelstrom",
+	[2183] = "The Azure Vault",
+	[2184] = "Zaralek Cavern",
 }
 
 
@@ -2821,6 +2837,7 @@ local flightNodeIgnoreList = {
 	[2731] = "Domination's Grasp",
 	[2715] = "Ephemeral Plains Alpha",
 	[2716] = "Ephemeral Plains Omega",
+	[2860] = "Aberrus Upper Platform"  -- 10.1 UG - Campaign - Ch6 - Aberrus Upper Platform (SMART) (Neutral)
 }
 
 local function GatherFlightnodeData()
@@ -10442,6 +10459,7 @@ do
 			[BZ["The Waking Shores"]] = true,
 			[BZ["The Azure Span"]] = true,
 			[BZ["The Nokhud Offensive"]] = true,
+			[BZ["Zaralek Cavern"]] = true,
 		},
 		flightnodes = {
 			[2790] = true,   -- Timberstep Outpost, Ohn'ahran Plains (N)
@@ -10474,6 +10492,7 @@ do
 			[BZ["Thaldraszus"]] = true,
 			[BZ["The Azure Vault"]] = true,
 			[BZ["Brackenhide Hollow"]] = true,
+			[BZ["Zaralek Cavern"]] = true,
 		},
 		flightnodes = {
 			[2773] = true,   -- Azure Archives, Azure Span (N)
@@ -10521,17 +10540,42 @@ do
 		expansion = DragonFlight,
 	}
 
-
+	-- 10.0.7
 	-- Previously: Dracthyr Evokers starting zone (UIMapID 2026)
 	zones[BZ["The Forbidden Reach"]] = {
 		low = 70,
 		high = 70,
 		flightnodes = {
 			[2855] = true,   -- Morqut Village, The Forbidden Reach (N)
+			[2862] = true,   -- Morqut Islet, Forbidden Reach (Neutral)
 		},
 		continent = Dragon_Isles,
 		expansion = DragonFlight,
 	}
+
+	-- 10.1.0
+	-- 14022
+	zones[BZ["Zaralek Cavern"]] = {
+		low = 70,
+		high = 70,
+		instances = {
+			[BZ["Aberrus, the Shadowed Crucible"]] = true,
+		},
+		paths = {
+			[BZ["Ohn'ahran Plains"]] = true,
+			[BZ["The Azure Span"]] = true,
+			[BZ["Aberrus, the Shadowed Crucible"]] = true,
+		},
+		flightnodes = {
+			[2864] = true,   -- Obsidian Rest, Zaralek Cavern (Neutral)
+			[2865] = true,   -- Dragonscale Camp, Zaralek Cavern (Neutral)
+			[2863] = true,   -- Loamm, Zaralek Cavern (Neutral)
+		},
+		continent = Dragon_Isles,
+		expansion = DragonFlight,
+	}
+
+
 
 
 	-- ============= DUNGEONS ===============
@@ -12695,7 +12739,20 @@ do
 		entrancePortal = { BZ["Thaldraszus"], 73.14, 55.60 },
 	}	
 	
-	
+	-- 14663
+	zones[BZ["Aberrus, the Shadowed Crucible"]] = {
+		low = 70,
+		high = 70,
+		continent = Dragon_Isles,
+		expansion = DragonFlight,
+		paths = BZ["Zaralek Cavern"],
+		groupMinSize = 10,
+		groupMaxSize = 30,
+		type = "Instance",
+		--entrancePortal = { BZ["Zaralek Cavern"], 73.14, 55.60 }, -- todo
+	}	
+
+
 	
 	-- ==============BATTLEGROUNDS================
 

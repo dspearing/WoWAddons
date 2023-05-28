@@ -111,7 +111,8 @@ function Details:OpenBreakdownWindow(instanceObject, actorObject, bFromAttribute
 			Details:CloseBreakdownWindow()
 			return
 		end
-		return Details.row_singleclick_overwrite[mainAttribute][subAttribute](_, actorObject, instanceObject, bIsShiftKeyDown, bIsControlKeyDown)
+		Details.row_singleclick_overwrite[mainAttribute][subAttribute](_, actorObject, instanceObject, bIsShiftKeyDown, bIsControlKeyDown)
+		return
 	end
 
 	if (instanceObject:GetMode() == DETAILS_MODE_RAID) then
@@ -417,17 +418,17 @@ end
 Details222.BreakdownWindow.ExpandedSpells = {}
 
 ---set a spell as expanded or not in the breakdown window
----@param spellID number
+---@param key any
 ---@param bIsExpanded boolean
-function Details222.BreakdownWindow.SetSpellAsExpanded(spellID, bIsExpanded)
-	Details222.BreakdownWindow.ExpandedSpells[spellID] = bIsExpanded
+function Details222.BreakdownWindow.SetSpellAsExpanded(key, bIsExpanded)
+	Details222.BreakdownWindow.ExpandedSpells[key] = bIsExpanded
 end
 
 ---get the state of the expanded for a spell
----@param spellID number
+---@param key any
 ---@return boolean
-function Details222.BreakdownWindow.IsSpellExpanded(spellID)
-	return Details222.BreakdownWindow.ExpandedSpells[spellID]
+function Details222.BreakdownWindow.IsSpellExpanded(key)
+	return Details222.BreakdownWindow.ExpandedSpells[key]
 end
 
 ---receives spell data to show in the summary tab
@@ -507,6 +508,7 @@ function Details:CreateBreakdownWindow()
 	breakdownWindow:EnableMouse(true)
 	breakdownWindow:SetResizable(true)
 	breakdownWindow:SetMovable(true)
+	breakdownWindow:SetClampedToScreen(true)
 
 	--make the window movable
 	if (not breakdownWindow.registeredLibWindow) then

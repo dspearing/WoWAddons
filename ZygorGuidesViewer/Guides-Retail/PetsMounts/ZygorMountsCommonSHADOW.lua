@@ -1700,28 +1700,192 @@ model={97379},
 description="\nThis mount is dropped by the rare spawn, Worldedge Gorger, in Revendreth.",
 },[[
 step
-Kill Aberration enemies around this area
-|tip Mite, Devourer, and Gorger enemies can drop this item.
-collect 1 Enticing Anima##173939 |goto Revendreth/0 67.46,60.32 |or
-You can find more around [45.86,68.36]
+Reach Level 50 |ding 50
+|tip You must be level 50 to proceed.
+step
+talk Tessle the Snitch##168618
+accept The Endmire##60480 |goto Revendreth/0 65.12,63.52
+step
+click Stolen Infused Ruby##352431
+|tip These look like red gems lying around on the ground in this area.
+collect Infused Ruby |q 60480/1 |goto 66.40,61.30
+step
+talk Tessle the Snitch##168618
+turnin The Endmire##60480 |goto Revendreth/0 65.12,63.52
+|tip He will give you the ability to activate _Soulguard Braziers_.
+step
+label "NO_IMPRESSIONABLE_GORGER_SPAWN_YET"
+Kill Encroaching, Ravenous, Invasive, and Hulking enemies around this area
+|tip Mite, Devourer, Thirstlurker, Doomfang, and Gorger enemies along the riverbed here can drop this item.
+|tip You can collect the Enticing Anima, but you can only loot the elite once per day for the mount item.
+|tip You can only have one of these at a time.
+|tip If the item isn't dropping, check your bank to see if you have one already.
+collect Enticing Anima##173939 |goto Revendreth/0 44.48,68.54 |or
 '|complete hasmount(333027) |or
 step
 use the Enticing Anima##173939
-|tip Use it to summon the Worldedge Gorger.
-|tip It's 62 elite.
-|tip You will need to farm a new Enticing Anima every time you want to summon it.
+|tip Use it near the two braziers here to summon the Worldedge Gorger.
+|tip Stay away from the edge so you don't get knocked off.
 kill Worldedge Gorger##160821
+|tip This summoned mob is a 62 elite.
 |tip You may need help with this.
-|tip You can only loot this rare once per day.
-collect Loyal Gorger##182589 |goto 38.64,72.15 |or
-|tip This mount has a very low drop rate.
+collect Impressionable Gorger Spawn##180583 |goto Revendreth/0 38.64,72.15 |or
+|tip This item will not be in your bag.
+|tip You can only loot the Worldedge Gorger for the Impressionable Gorger Spawn once per day.
+|tip This item has a very low drop rate.
+|tip You will need to farm a new Enticing Anima every time you want to summon it.
+Click Here to Return to Previous Step |confirm |next "NO_IMPRESSIONABLE_GORGER_SPAWN_YET"
 '|complete hasmount(333027) |or
 step
-use the Loyal Gorger##182589
-Learn the "Loyal Gorger" Mount |learnmount Loyal Gorger##333027
+Reach Level 60 |ding 60 |or
+'|complete hasmount(333027) |or
 step
-_Congratulations!_
-You Collected the "Loyal Gorger" Mount.
+talk Impressionable Gorger Spawn##174475
+|tip It will appear next to you.
+accept Nipping at the Undergrowth##61839 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+click Endmire Vineroot##358404
+|tip They are all along the riverbed here.
+collect 18 Endmire Vineroot##182314 |q 61839/1 |goto Revendreth/0 65.20,55.40 |or
+You can find more around:
+[60.10,56.90]
+[57.57,60.48]
+[69.39,59.92]
+[71.49,63.02]
+[66.09,61.89]
+[65.20,65.19]
+'|complete hasmount(333027) |or
+step
+talk Impressionable Gorger Spawn##174475
+|tip Next to you.
+turnin Nipping at the Undergrowth##61839 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Impressionable Gorger Spawn##174475
+accept Vineroot on the Menu##61840 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+click Endmire Vineroot##358406
+|tip They are all along the riverbed here.
+collect 35 Endmire Vineroot##182314 |q 61839/1 |goto Revendreth/0 65.20,55.40 |or
+You can find more around:
+[60.10,56.90]
+[57.57,60.48]
+[69.39,59.92]
+[71.49,63.02]
+[66.09,61.89]
+[65.20,65.19]
+'|complete hasmount(333027) |or
+step
+talk Gorger Spawn##174475
+|tip Next to you.
+turnin Vineroot on the Menu##61840 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Gorger Spawn##174475
+accept Vineroot Will Not Do##61842 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Kill Mite enemies
+|tip Animus Mites, Devourer Mites, Invasive Mites, Ravenous Mites, and Encroaching Mites all drop these items.
+collect 10 Infused Endmire Fruit##182315 |q 61842/1 |goto Revendreth/0 58.20,59.40 |or
+You can find more around:
+[62.80,47.56]
+[66.19,65.39]
+[46.78,66.56]
+[68.19,62.01]
+[40.60,71.59]
+'|complete hasmount(333027) |or
+step
+talk Juvenile Gorger##174475
+|tip Next to you.
+turnin Vineroot Will Not Do##61842 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Impressionable Gorger Spawn##174475
+|tip It will appear next to you.
+accept Hungry Hungry Gorger##61844 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Kill Mite enemies
+|tip Animus Mites, Devourer Mites, Invasive Mites, Ravenous Mites, and Encroaching Mites all drop these items.
+collect 16 Infused Endmire Fruit##182315 |q 61844/1 |goto Revendreth/0 58.20,59.40 |or
+You can find more around:
+[62.80,47.56]
+[66.19,65.39]
+[46.78,66.56]
+[68.19,62.01]
+[40.60,71.59]
+'|complete hasmount(333027) |or
+step
+talk Juvenile Gorger##174475
+|tip Next to you.
+turnin Hungry Hungry Gorger##61844 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Juvenile Gorger##174475
+|tip It will appear next to you.
+accept Standing Toe To Toe##62044 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Kill Gorger enemines around here
+|tip Dread Gorgers and End Gorgers both count for this quest.
+Slay 3 Gorgers |q 62044/1 |goto Revendreth/0 57.58,60.19 |or
+You can find more around [62.79,46.20]
+'|complete hasmount(333027) |or
+step
+talk Juvenile Gorger##174475
+|tip Next to you.
+turnin Standing Toe To Toe##62044 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Juvenile Gorger##174475
+|tip It will appear next to you.
+accept Ready for More##62045 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Kill Gorger enemines around here
+|tip Dread Gorgers and End Gorgers both count for this quest.
+Slay 7 Gorgers |q 62045/1 |goto Revendreth/0 57.58,60.19 |or
+You can find more around [62.79,46.20]
+'|complete hasmount(333027) |or
+step
+talk Juvenile Gorger##174475
+|tip Next to you.
+turnin Ready for More##62045 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+Wait for the Next Quest to Become Active
+|tip The next quest becomes active after daily reset.
+talk Loyal Gorger##174475
+|tip It will appear next to you.
+accept A New Pack##62046 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+kill Unbidden Worldeater##157698
+Slay Unbidden Worldeater |q 62046/1 |goto Revendreth/0 65.57,56.02 |or
+You can find more around [67.59,61.20]
+'|complete hasmount(333027) |or
+step
+talk Loyal Gorger##174475
+|tip Next to you.
+turnin A New Pack##62046 |n
+collect Loyal Gorger##182589 |goto Revendreth/0 63.10,56.20 |or
+'|complete hasmount(333027) |or
+step
+use Loyal Gorger##182589
+Learn the "Loyal Gorger" Mount |learnmount Loyal Gorger##333027
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Mawsworn Soulhunter",{
 author="support@zygorguides.com",
@@ -2468,7 +2632,7 @@ step
 Reach Tentative Reputation with Ve'nari |complete rep("Ve'nari") >= Tentative
 |tip Gain reputation by completing dailies, killing rares, and doing events in The Maw.
 step
-Collect 1,050 Stygia |complete curcount(1767) >= 1050 |q 63217 |future
+Collect 1050 Stygia |complete curcount(1767) >= 1050 |q 63217 |future
 |tip Stygia can be obtained by killing enemies and doing quests or events in The Maw.
 step
 talk Ve'nari##162804
@@ -2486,7 +2650,7 @@ step
 talk Ve'nari##162804
 buy 1 Stygia Dowser##184870 |goto 46.91,41.70 |q 63641 |future
 step
-click Grapple Point |goto 23.33,66.58 |only if walking
+click Grapple Point |goto 23.74,68.20 |only if walking
 |tip On the wall above you. |only if walking
 Cross the bridge |goto 22.56,72.21 < 20 |c |q 63641 |future
 step
@@ -2614,9 +2778,6 @@ turnin Feral Shadehound##63684
 step
 use the Bound Shadehound##184168
 Learn the "Bound Shadehound" Mount |learnmount Bound Shadehound##344577
-step
-_Congratulations!_
-You Collected the "Bound Shadehound" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Corridor Creeper",{
 author="support@zygorguides.com",
@@ -2690,7 +2851,14 @@ click Sack of Oats##2724+
 |tip They look like brown sacks on the ground near buildings around this area.
 collect 8 Handful of Oats##182581 |goto Westfall/0 52.22,33.57 |q 62038 |future
 |tip You can also purchase them from the Auction House.
-You can find more around [46.51,37.86]
+You can find more around:
+[46.51,37.86]
+[47.24,37.47]
+[48.70,20.16] - Inside a barn
+[50.48,25.08]
+[51.45,32.27] - Inside a stables
+[55.16,27.47]
+[56.54,36.53]
 step
 talk Mims##167815
 buy 3 Dredhollow Apple##179271 |goto Revendreth/0 40.86,46.66 |or
@@ -2706,7 +2874,7 @@ collect 1 Empty Water Bucket##182620 |goto 63.26,61.55 |q 62049 |future
 step
 click Discarded Horseshoe##357541+
 |tip They look like small glittering objects on the ground around this area.
-|tip They're usually found along the road.
+|tip They're usually found along the paved roads where the carriages run.
 |tip It's usually easiest to stand in the same spot after finding one and wait for it to respawn.
 collect 4 Sturdy Horseshoe##182595 |goto 70.25,72.03 |q 62047 |future
 step
@@ -2799,9 +2967,6 @@ collect Blanchy's Reins##182614 |goto 63.21,42.87 |or
 step
 use Blanchy's Reins##182614
 Learn the "Sinrunner Blanchy" Mount |learnmount Sinrunner Blanchy##339588
-step
-_Congratulations!_
-You Collected the "Sinrunner Blanchy" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Warstitched Darkhound",{
 author="support@zygorguides.com",
@@ -3449,7 +3614,7 @@ step
 _Congratulations!_
 You Collected the "Garnet Razorwing" Mount.
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Hand of Bahmehthra",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Hand of Bahmethra",{
 author="support@zygorguides.com",
 startlevel=60.0,
 keywords={"Ground, Mount, Tomentors, Of, Torghast"},
@@ -3460,25 +3625,22 @@ model={101220},
 description="\nThis mount can be created after collecting 200 Bahmeht Chain Links during the Tormentors of Torghast event.",
 },[[
 step
-Kill enemies around this area
+Kill enemies within the "Torment of Torghast" Event
 |tip The "Tormentors of Torghast" event will spawn every hour in a random location in The Maw.
 |tip Look for the POI icon on your map and head towards that area.
 |tip Each "Tormentors of Torghast" event will spawn 3 elite lieutenants and 1 boss to kill.
 collect 200 Bahmeht Chain Link##185974 |or
 |tip The Lieutenants have a chance to drop 1 "Bahmeht Chain Link".
 |tip The boss will always drop 1 "Bahmeht Chain Link".
-|tip This will take a while to get.
-'|learnmount Hand of Bahmeht##352309 |or
+|tip This will take a while.
+'|complete hasmount(352309) |or
 step
 use the Bahmeht Chain Link##185974
-collect Chain of Bahmehthra##185973 |or
-'|learnmount Hand of Bahmeht##352309 |or
+collect Chain of Bahmethra##185973 |or
+'|complete hasmount(352309) |or
 step
 use the Chain of Bahmehthra##185973
 Learn the "Hand of Bahmeht" Mount |learnmount Hand of Bahmeht##352309
-step
-_Congratulations!_
-You Collected the "Hand of Bahmeht" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Lord of the Corpseflies",{
 author="support@zygorguides.com",

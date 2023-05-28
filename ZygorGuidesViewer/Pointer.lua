@@ -1440,7 +1440,6 @@ function Pointer:SetupArrow()
 	if not self.ArrowFrame.ArrowIcon then
 		self.ArrowFrame.ArrowIcon = CHAINC(CreateFrame("Button","ZygorGuidesViewerPointerArrow_Icon",self.ArrowFrameCtrl,"SecureActionButtonTemplate,SecureHandlerStateTemplate"))
 			:SetPoint("CENTER",self.ArrowFrame,"CENTER",0,-1)
-			:RegisterForClicks("LeftButtonUp","LeftButtonDown")
 			:SetFrameLevel(self.ArrowFrame:GetFrameLevel()+2)
 			:RegisterForDrag(not ZGV.db.profile.arrowfreeze and "LeftButton" or "none")
 			:Hide()
@@ -1450,6 +1449,10 @@ function Pointer:SetupArrow()
 			:SetPushedTexture("Interface\\Buttons\\CheckButtonHilight")
 			:SetAttribute("_onstate-combathide", "if newstate == 'show' then self:Show(); else self:Hide(); end")
 			.__END
+		if ZGV.IsRetail then
+			self.ArrowFrame.ArrowIcon:RegisterForClicks("LeftButtonUp","LeftButtonDown")
+		end
+
 		self.ArrowFrame.ArrowIcon:GetPushedTexture():SetBlendMode("ADD")
 		self.ArrowFrame.ArrowIcon.texture = self.ArrowFrame.ArrowIcon:CreateTexture("ZygorGuidesViewerPointerArrow_IconTexture","BACKGROUND")
 		self.ArrowFrame.ArrowIcon.cooldown = CHAINC(CreateFrame("Cooldown","",self.ArrowFrame.ArrowIcon,"CooldownFrameTemplate")) :SetAllPoints() :Show() .__END
@@ -3214,8 +3217,11 @@ function Pointer.ArrowFrame_OnClick(frame,button)
 					ZGV.PointerMap:HidePreview("manual")
 				end
 			else
-				--LibRover:UpdateNow()
-				ZGV:ShowWaypoints()
+				if Pointer.DestinationWaypoint and Pointer.DestinationWaypoint.type=="manual" then
+					LibRover:UpdateNow()
+				else
+					ZGV:ShowWaypoints()
+				end
 			end
 		end
 	elseif button=="RightButton" then

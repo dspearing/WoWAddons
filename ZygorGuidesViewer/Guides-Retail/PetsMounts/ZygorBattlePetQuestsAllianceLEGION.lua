@@ -201,9 +201,11 @@ author="support@zygorguides.com",
 description="\nThis guide will walk you through the Uuna Scenario.",
 },[[
 step
-Learn the Uuna Pet |learnpet Uuna##128396
+Learn the Uuna Pet
 |tip Uuna drops from the Many-Faced Devourer rare in Antoran Wastes, Argus.
-|tip Use the POI rare guide for this rare to kill it and learn the pet.
+|tip Use the "Uuna" Battle Pet Guide to achieve this.
+Click Here to Open the "Uuna" Battle Pet Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pets\\Humanoid Pets\\Uuna"
+Click Here to Proceed with This Guide |confirm
 step
 Summon Uuna |complete activepet(2136) |q 50098 |future
 |tip Summon Uuna from your Pet Journal interface panel.

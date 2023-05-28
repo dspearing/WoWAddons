@@ -227,7 +227,7 @@ function ZGV:QuestTracking_CacheQuestLog(from)
 
 	for i=1,C_QuestLog.GetNumWorldQuestWatches() do
 		local questID = C_QuestLog.GetQuestIDForWorldQuestWatchIndex(i)
-		if questID then
+		if questID and not logbyid[questID] then
 			local isInArea, isOnMap, numObjectives, taskName, displayAsObjective = GetTaskInfo(questID)
 			local quest = self.questsbyid[questID] or {}
 			quest.title = taskName

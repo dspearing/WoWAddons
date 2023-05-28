@@ -32,14 +32,14 @@ data.basenodes.transit = {
 
 	--## Neutral ##--
 
-		-- Valdrakken -to- Shadowmoon Valley
-		"Valdrakken/0 53.56,55.00 -to- Shadowmoon Valley D/0 50.50,35.40 {mode:PORTAL} {title:Click the Portal to Shadowmoon Valley}",
+		-- Valdrakken -to- Tiragarde Sound
+		"Valdrakken/0 53.98,55.68 -to- Tiragarde Sound/0 63.59,57.17 {mode:PORTAL} {title:Click the Portal to Tiragarde Sound}",
 
-		-- Valdrakken -to- Dalaran
-		"Valdrakken/0 53.97,55.64 -to- Dalaran/1 56.25,90.27 {mode:PORTAL}",
+		-- Valdrakken -to- Uldum
+		"Valdrakken/0 54.06,54.57 -to- Uldum New/0 66.93,62.94 {mode:PORTAL} {title:Click the Portal to Uldum}",
 
-		-- Valdrakken -to- Jade Forest
-		"Valdrakken/0 54.06,54.57 -to- The Jade Forest/0 44.66,67.12 {mode:PORTAL} {title:Click the Portal to Jade Forest}",
+		-- Valdrakken -to- Nazmir
+		"Valdrakken/0 53.54,54.99 -to- Nazmir/0 49.77,60.70 {mode:PORTAL} {title:Click the Portal to Nazmir}",
 
 	--------------------
 	-- THE AZURE SPAN --
@@ -1140,7 +1140,7 @@ data.basenodes.transit = {
 				"{cond:PlayerIsOnQuest(47330) or PlayerIsOnQuest(46206)}",
 
 		-- Waygate - Sholazar Basin, Northrend -to- Waygate - Un'Goro Crater, Kalimdor --CHECKED
-		"Sholazar Basin/0 40.38,83.20 -x- Un'Goro Crater/0 50.53,7.71 {mode:PORTAL} {title:Walk into the light}",
+		"Sholazar Basin/0 40.38,83.20 -x- Un'Goro Crater/0 50.53,7.71 {mode:PORTAL} {title:Walk into the light} {cond:PlayerCompletedQuest(12546)}",
 
 	--------------
 	-- PANDARIA --

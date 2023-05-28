@@ -7,9 +7,9 @@ author="support@zygorguides.com",
 description="This guide will walk you through the introductory questline for the Shadowlands expansion.\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."ShadowlandsIntro",
-condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+condition_suggested=function() return level >= 10 and level <= 50 end,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 accept A Chilling Summons##60545 |goto Stormwind City/0 76.71,42.75
@@ -375,7 +375,7 @@ label "Skip_The_Maw_Intro"
 click Eroded Waystone
 turnin Stand as One##59770 |goto 42.37,42.16
 step
-Leave the Maw |goto Oribos/0 19.24,50.31 < 10 |noway |c |q 60129 |future
+Leave the Maw |goto 42.37,42.16 > 50 |noway |c |q 60129 |future
 step
 _Detecting Threads of Fate Eligibility:_
 Threads of Fate Unlocked	|havebuff spell:343980		|q 62704	|future		|or	|next "Threads_Of_Fate_Choice"
@@ -925,8 +925,8 @@ description="This guide will assist you in completing the Bastion\n"..
 "\nzone quests and storyline.\n",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 image=ZGV.IMAGESDIR.."Bastion",
 },[[
 step
@@ -2422,8 +2422,8 @@ description="Complete the following zone quest storylines in Maldraxxus:\n\n",
 image=ZGV.IMAGESDIR.."Maldraxxus",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Grandmaster Vole##164244
@@ -2835,8 +2835,8 @@ step
 talk Au'narim##159830
 turnin This Thing Of Ours##59879 |goto 53.60,47.51
 step
-Reach Level 55 |ding 55 |q 59203 |future
-|tip The next quest in this chain requires level 55 to accept.
+Reach Level 10 |ding 10 |q 59203 |future
+|tip The next quest in this chain requires level 10 to accept.
 |tip You can grind or do dungeons.
 step
 talk Au'narim##159830
@@ -3911,8 +3911,8 @@ description="Complete the following zone quest storylines in Ardenweald:\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."Ardenweald",
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Lady Moonberry##168341
@@ -5347,8 +5347,8 @@ description="Complete the following zone quest storylines in Revendreth:\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."Revendreth",
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Rendle##155537
@@ -6953,8 +6953,8 @@ description="This guide will assist you in completing The Maw\n"..
 "\nzone quests and storyline.\n",
 patch='90001',
 condition_suggested=function() return level == 60 end,
-startlevel=60.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 Reach Apprehensive Reputation with Ve'nari |complete rep("Ve'nari") >= Apprehensive
@@ -7062,8 +7062,8 @@ description="This guide will assist you in completing the Bastion\n"..
 "\nzone quests and storyline.\n",
 condition_suggested=function() return level >= 50 and level <= 60 end,
 patch='90001',
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 image=ZGV.IMAGESDIR.."BfAIntro",
 },[[
 step
@@ -7606,8 +7606,8 @@ author="support@zygorguides.com",
 description="Complete the following zone quest storylines in Maldraxxus:\n\n",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=40.0,
+endlevel=50.0,
 },[[
 step
 talk Slumbar Valorum##161702
@@ -7859,8 +7859,8 @@ step
 talk Au'narim##159830
 turnin This Thing Of Ours##59879 |goto 53.60,47.51
 step
-Reach Level 55 |ding 55 |q 59203 |future
-|tip The next quest in this chain requires level 55 to accept.
+Reach Level 10 |ding 10 |q 59203 |future
+|tip The next quest in this chain requires level 10 to accept.
 |tip You can grind or do dungeons.
 step
 talk Au'narim##159830
@@ -8279,8 +8279,8 @@ author="support@zygorguides.com",
 description="Complete the following zone quest storylines in Ardenweald:\n\n",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=40.0,
+endlevel=50.0,
 },[[
 step
 talk Nolon##162446
@@ -8925,8 +8925,8 @@ author="support@zygorguides.com",
 description="Complete the following zone quest storylines in Revendreth:\n\n",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=40.0,
+endlevel=50.0,
 },[[
 step
 talk Courier Gevoraal##158526
@@ -9832,8 +9832,8 @@ description="This guide will assist you in completing the Bastion\n"..
 "\nzone quests and storyline.\n",
 patch='90001',
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=40.0,
+endlevel=50.0,
 image=ZGV.IMAGESDIR.."Bastion",
 },[[
 step
@@ -10428,8 +10428,8 @@ step
 talk Kleia##156238
 turnin Purity's Prerogative##57447 |goto 53.83,73.66
 step
-Reach Level 51 |ding 51
-|tip You must be level 51 to continue the questline.
+Reach Level 10 |ding 10
+|tip You must be level 10 to continue the questline.
 |tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
@@ -10690,8 +10690,8 @@ talk Polemarch Adrestes##160037
 |tip Upstairs on Archon's Rise.
 turnin The Wards of Bastion##59200 |goto 55.65,41.95
 step
-Reach Level 53 |ding 53
-|tip You must be level 53 to continue the questline.
+Reach Level 10 |ding 10
+|tip You must be level 10 to continue the questline.
 |tip Use the "Bastion (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
@@ -10889,8 +10889,8 @@ description="Complete the following zone quest storylines in Maldraxxus:\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."Maldraxxus",
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Grandmaster Vole##164244
@@ -11695,8 +11695,8 @@ turnin Front and Center##60733 |goto 50.31,67.72
 turnin Her Rightful Place##59009 |goto 50.31,67.72
 turnin Fathomless Power##59231 |goto 50.31,67.72
 step
-Reach Level 55 |ding 55
-|tip You must be level 55 to continue the questline.
+Reach Level 10 |ding 10
+|tip You must be level 10 to continue the questline.
 |tip Use the "Maldraxxus (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
@@ -11879,8 +11879,8 @@ description="Complete the following zone quest storylines in Ardenweald:\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."Ardenweald",
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Lady Moonberry##168341
@@ -12244,8 +12244,8 @@ step
 talk Lady Moonberry##169031
 turnin Audience with the Winter Queen##60519 |goto 63.59,36.27
 step
-Reach Level 56 |ding 56
-|tip You must be level 56 to continue the questline.
+Reach Level 10 |ding 10
+|tip You must be level 10 to continue the questline.
 |tip Use the "Ardenweald (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
@@ -12632,8 +12632,8 @@ talk Dreamweaver##160962
 turnin Visions of the Dreamer: Origins##58590 |goto 60.06,52.96
 turnin Visions of the Dreamer: The Betrayal##60578 |goto 60.06,52.96
 step
-Reach Level 58 |ding 58
-|tip You must be level 58 to continue the questline.
+Reach Level 10 |ding 10
+|tip You must be level 10 to continue the questline.
 |tip Use the "Ardenweald (Threads of Fate)" leveling guide to complete side quests.
 |tip You can also run dungeons, if you prefer.
 step
@@ -12796,8 +12796,8 @@ description="Complete the following zone quest storylines in Revendreth:\n\n",
 patch='90001',
 image=ZGV.IMAGESDIR.."Revendreth",
 condition_suggested=function() return level >= 50 and level <= 60 end,
-startlevel=48.0,
-endlevel=60.0,
+startlevel=10.0,
+endlevel=50.0,
 },[[
 step
 talk Rendle##155537
@@ -21707,7 +21707,6 @@ Tell her _"Show me the Sanctum."_
 |tip Select the "Anima Conductor" node and click the "Activate" button to begin the upgrade.
 Upgrade your Anima Conductor to Tier 3 |complete covenantfeature("Anima Conductor") >= 3 |goto Seat of the Primus/0 52.75,38.27
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Kyrian Covenant\\Path of Ascension\\Kyrian Path of Ascension",{
 author="support@zygorguides.com",
 description="This guide will walk you through unlocking and upgrading the Path of Ascension of the Kyrian covenant.",
@@ -34579,7 +34578,6 @@ You have completed The Ember Court
 |tip This guide will reset weekly when it becomes available again.
 Click Here After the Weekly Reset |confirm |next "Unlock_The_Ember_Court"
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Torghast\\Torghast Questline",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the Torghast questline.",
@@ -38111,7 +38109,6 @@ step
 _Congratulations!_
 You Completed the _"Chains of Domination"_ Leveling Guide.
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Chains of Domination\\Archivists of Korthia Questline",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the Korthia "..
@@ -38686,7 +38683,6 @@ turnin Lang Family Wood-Carving##63923 |goto 62.77,22.60
 step
 Reach Tier 6 Reputation with The Archivists' Codex |complete rep("The Archivists' Codex") >= Tier6
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Chains of Domination\\They Could Be Anyone Questline",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the Korthia "..
@@ -38797,7 +38793,6 @@ step
 talk Highlord Bolvar Fordragon##177228
 turnin They Could Be Anyone##63763 |goto 62.76,25.00
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Chains of Domination\\Archivists of Korthia and They Could Be Anyone Questlines",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the Korthia "..
@@ -39486,7 +39481,6 @@ turnin Lang Family Wood-Carving##63923 |goto 62.77,22.60
 step
 Reach Tier 6 Reputation with The Archivists' Codex |complete rep("The Archivists' Codex") >= Tier6
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Eternity's End\\Zereth Mortis",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the \"Zereth Mortis\" "..
@@ -41862,7 +41856,6 @@ step
 talk Shandris Feathermoon##187733
 turnin A Gift of Hope##66243 |goto 45.86,60.85
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Shadowlands (50-60)\\Eternity's End\\Cyphers of the First Ones",{
 author="support@zygorguides.com",
 description="This guide will assist you in completing the \"Zereth Mortis\" "..
@@ -42008,4 +42001,3 @@ step
 click Mercurial Concordance##373582
 Decipher the Mercurial Concordance Console Entry |q 65211 |future |goto 51.59,91.35
 ]])
-ZGV.BETAEND()

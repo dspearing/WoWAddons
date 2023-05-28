@@ -709,23 +709,26 @@ step
 talk The Great Swog##191608
 turnin The Great Swog##72729 |goto Ohn'ahran Plains/0 82.31,73.21
 step
-talk The Great Swog##191608
-|tip Inside the cave.
-buy Gold Coin of the Isles##199340 |goto 82.31,73.21 |or
-|tip This is a very rare drop from fishing in the Dragon Isles, opening Tuskaar Tackeboxes, or killing "Lunkers" with your Iskaaran Harpoon.
-|tip You can also purchase it with five Silver Coins of the Isles using the same method.
-|tip 15 Copper Coins of the Isles can be used to purchase silver coins as well.
+collect Gold Coin of the Isles##199340 |or
+|tip This is a very rare drop from fishing in the Dragon Isles, opening Tuskaar Tackleboxes, or killing "Lunkers" with your Iskaaran Harpoon.
+|tip You can purchase the Gold Coin of the Isles from The Great Swog with 5 Silver Coins of the Isles.
+|tip You can purchase the Silver Coin of the Isles from The Great Swog with 15 Copper Coins of the Isles.
+|tip All of the coins can be fished up or looted from fishing reward caches and lunkers.
 |tip Fishing holes on the map are a good spot to share lunker kills with other players.
-'|learnmount Otto##376873 |or
+|tip Use the "Fishing Gear Crafting" Reputation Guide to unlock the ways to achieve this.
+Click Here to Open the "Fishing Gear Crafting" Reputation Guide |confirm |loadguide "Reputation Guides\\Dragonflight Reputations\\Iskaara Tuskarr\\Fishing Gear Crafting"
+|tip This might take some time.
+'|complete hasmount(376873) |or
 step
 talk The Great Swog##191608
 |tip Inside the cave.
 buy Immaculate Sac of Swog Treasures##202102 |goto 82.31,73.21 |or
-'|learnmount Otto##376873 |or
+|tip It costs 1 Gold Coin of the Isles.
+'|complete hasmount(376873) |or
 step
 use the Immaculate Sac of Swog Treasures##202102
 collect Aquatic Shades##202042 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 use the Aquatic Shades##202042
 Obtain the "Aquatic Shades" Toy |toy Aquatic Shades##202042
@@ -733,14 +736,14 @@ step
 use the Aquatic Shades##202042
 |tip Use it underwater at the disco pad in The Bubble Bath bar.
 Gain the "Cooler Than You" Buff |havebuff spell:396358 |goto The Waking Shores/0 19.62,36.50 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 '|script DoEmote("Dance")
 Begin Dancing |havebuff spell:396539 |goto 19.62,36.50 |or
 |tip You will need to stand still and dance for five minutes.
 |tip At the end of the five minutes, the "Dance, Dance 'Til You're Dead" buff will wear off and you will be teleported.
 |tip If you don't get credit, move away from the pad, use the Aquatic Shades again, and then step on the pad again.
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 Dance for Five Minutes Uninterrupted |nobuff spell:396539 |goto 19.62,36.50
 |tip You will need to stand still and dance for five minutes.
@@ -748,37 +751,37 @@ Dance for Five Minutes Uninterrupted |nobuff spell:396539 |goto 19.62,36.50
 step
 click Empty Fish Barrel##385001
 collect Empty Fish Barrel##202061 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 cast Fishing##131474
 |tip Fish them from open water around Iskaara.
 |tip It may take a while to catch these.
 collect 100 Frigid Floe Fish##202072 |goto The Azure Span/0 13.20,48.02 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 use the Empty Fish Barrel##202061
 collect Half-Filled Fish Barrel##202066 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 cast Fishing##131474
 |tip Fish them from the lava.
 |tip It may take a while to catch these.
 collect 25 Calamitous Carp##202073 |goto The Waking Shores/0 33.16,61.20 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 use the Half-Filled Fish Barrel##202066
 collect Brimming Fish Barrel##202068 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 cast Fishing##131474
 |tip Fish them from the the waters around Algeth'ar Academy.
 |tip It may take a while to catch these.
 collect Kingfin, the Wise Whiskerfish##202074 |goto Thaldraszus/0 57.84,44.23 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 use the Brimming Fish Barrel##202068
 collect Overflowing Fish Barrel##202069 |or
-'|learnmount Otto##376873 |or
+'|complete hasmount(376873) |or
 step
 use the Overflowing Fish Barrel##202069
 |tip Use the barrel at this spot in the Hissing Grotto.

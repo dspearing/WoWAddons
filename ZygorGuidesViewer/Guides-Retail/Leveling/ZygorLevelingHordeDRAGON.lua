@@ -6,7 +6,6 @@ ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Orgrimmar Trading Post Unlock",{
 author="support@zygorguides.com",
 description="This guide will walk you through unlocking the Orgrimmar Trading Post.",
-startlevel=60,
 patch='100005',
 },[[
 step

@@ -3940,10 +3940,12 @@ ZygorGuidesViewer:RegisterGuide("GOLD\\Alliance Daily Runs\\Eastern Kingdoms Bat
 		accept Old MacDonald##31780 |goto Westfall 60.9,18.6
 	step
 		talk Old MacDonald##65648
-		|tip You will not be able to challenge Old MacDonald if you have the "Pet Recovery" debuff, wait for it to fall off.
-		Let's fight!
-		|tip Old MacDonald has 3 Beast type Pets. Use Mechanical type attacks on the Beast Pets. Old MacDonald's pets are level 3 so you shouldn't have any issues here.
-		Defeat Old MacDonald |q 31780/1 |goto Westfall 60.9,18.6
+		Defeat Old MacDonald |q 31724/1 |goto Westfall/0 60.86,18.49
+		|tip MacDonald's pet team consists of level 3 Mechanical, Flying, and Critter battle pets.
+		|tip Elemental battle pets are strong against Mechanical battle pets.
+		|tip Magic battle pets are strong against Flying battle pets.
+		|tip Beast battle pets are strong against Critter battle pets.
+		|tip Defeat him in battle pet combat.
 	step
 		talk Old MacDonald##65648
 		turnin Old MacDonald##31780 |goto Westfall 60.9,18.6

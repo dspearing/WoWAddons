@@ -6189,12 +6189,12 @@ Reach Renown Level 10 with the Loamm Niffen |complete factionrenown(2564) >= 10
 step
 _Next to you:_
 talk Newsy##205127
-accept Dragon Isles Supplies##76028
+accept The Smelliest Tabard##75727
 |tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.
-turnin Dragon Isles Supplies##76028 |goto Zaralek Cavern/0 56.53,55.66
+turnin The Smelliest Tabard##75727 |goto 56.53,55.66
 step
 Reach Renown Level 11 with the Loamm Niffen |complete factionrenown(2564) >= 11
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
@@ -6225,15 +6225,6 @@ talk Harlowe Marl##202468
 |tip Inside the building.
 turnin Slitherdrake Watching##75730 |goto 56.49,55.62
 step
-_Next to you:_
-talk Newsy##205127
-accept Airborne Winding##76030
-|tip You may need to relog to see this quest or leave Zaralek Cavern.
-step
-talk Harlowe Marl##202468
-|tip Inside the building.
-turnin Airborne Winding##76030 |goto 56.49,55.62
-step
 Reach Renown Level 14 with the Loamm Niffen |complete factionrenown(2564) >= 14
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
 |tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
@@ -6263,6 +6254,15 @@ step
 Reach Renown Level 16 with the Loamm Niffen |complete factionrenown(2564) >= 16
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
 |tip Completing the "Zaralek Cavern" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Newsy##205127
+accept Airborne Winding##76030
+|tip You may need to relog to see this quest or leave Zaralek Cavern.
+step
+talk Harlowe Marl##202468
+|tip Inside the building.
+turnin Airborne Winding##76030 |goto 56.49,55.62
 step
 Reach Renown Level 17 with the Loamm Niffen |complete factionrenown(2564) >= 17
 |tip Complete daily quests, weekly quests, and zone quests in Zaralek Caverns to gain renown.
@@ -6300,12 +6300,10 @@ step
 _Next to you:_
 talk Newsy##205127
 accept A Token of Our Gratitude##75744
-accept The Smelliest Tabard##75727
 |tip You may need to relog to see this quest or leave Zaralek Cavern.
 step
 talk Mimuup##204254
 |tip Inside the building.
 turnin A Token of Our Gratitude##75744 |goto 56.53,55.66
-turnin The Smelliest Tabard##75727 |goto 56.53,55.66
 ]])
 ZGV.BETAEND()

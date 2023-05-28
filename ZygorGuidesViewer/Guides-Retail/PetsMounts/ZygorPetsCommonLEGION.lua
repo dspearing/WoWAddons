@@ -305,35 +305,28 @@ pet=2047,
 step
 This pet is only available to Monks |confirm
 |tip You can earn it by completing this guide on a Horde or Alliance Monk.
-|only if not Monk
+Click Here to Confirm |confirm |or
+|only if not Monk |or
+'|complete haspet(2047) |or
 step
 You must first complete the Broken Shore Campaign quest line before being able to start the quest line to obtain your Class Hall mount
 Check out our "Broken Shore Campaign" guide to accomplish this |confirm |or |next "Leveling Guides\\Legion (10-60)\\Broken Shore Campaign"
 |tip You must complete the Broken Shore Campaign and 7.2 Order Hall quests to purchase this pet.
-Complete the "Broken Shore Campaign" guide |complete completedq(46246)
-|only Monk
+Complete the "Broken Shore Campaign" guide |complete completedq(46246) |or
+'|complete haspet(2047) |or
 step
 Once the Broken Shore Campaign is completed, you will then need to complete your Class Hall mount quest line
 Click here to load the "Monk 7.2 Order Hall Quest" leveling guide |confirm |next "Leveling Guides\\Legion (10-60)\\Monk\\Monk 7.2 Order Hall Quests"
 |tip You must complete the Broken Shore Campaign and 7.2 Order Hall quests to purchase this pet.
-Complete the "7.2 Order Hall Quests" guide |complete completedq(46246)
-|only Monk
-step
-This pet can be bought after achieving _Power Ascended_ in one of the 3 specs
-|tip To earn the "Power Ascended" achievement, you will need to unlock 52 artifact weapon traits from a single artifact weapon.
-|tip Once you accomplish this, you will be able to purchase this pet.
-Earn the _"Power Ascended"_ achievement |achieve 11772
-|only Monk
+|tip The "Monk 7.2 Order Hall Quest" Leveling Guide includes the class mount quests.
+Complete the "7.2 Order Hall Quests" guide |complete completedq(46785) |or
+'|complete haspet(2047) |or
 step
 talk Mei Chele##99154
-buy 1 Ban-Fu, Cub of Ban-Lu##147542 |n |use Ban-Fu, Cub of Ban-Lu##147542 |goto The Wandering Isle/0 54.8,62.2
-|tip This pet costs 1,000 Order Resources.
-learnpet Ban-Fu, Cub of Ban-Lu##240794
-|only Monk
+buy 1 Ban-Fu, Cub of Ban-Lu##147542 |goto The Wandering Isle/0 54.8,62.2
 step
-Congratulations!
-You are now the proud owner of Ban-Fu, Cub of Ban-Lu.
-|only Monk
+|use Ban-Fu, Cub of Ban-Lu##147542
+Learn the "Ban-Fu, Cub of Ban-Lu" Battle Pet |learnpet Ban-Fu, Cub of Ban-Lu##2047
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Bile Larva",{
 patch='73000',
@@ -2926,43 +2919,141 @@ author="support@zygorguides.com",
 description="\nThis guide will walk you through obtaining the Humanoid pet: Uuna",
 },[[
 step
-Follow the path |goto Antoran Wastes/0 68.36,45.17 < 20
-Follow the path |goto 66.63,45.86 < 20
-Follow the path |goto 64.12,44.38 < 20
-Follow the path |goto 60.00,44.38 < 20
-Follow the path |goto 54.58,41.24 < 20
-kill Antoran Defender##126193, Tormented Ritualist##126171
-collect Call of the Devourer##152786 |goto 52.09,37.68
+talk Archmage Khadgar##90417
+|tip Inside the building.
+accept Uniting the Isles##45727 |goto Dalaran L/10 28.51,48.33 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##90417
+|tip Inside the building.
+turnin Uniting the Isles##45727 |goto 28.51,48.33 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##120215
+accept Armies of Legionfall##46730 |goto 66.21,41.96 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##120215
+turnin Armies of Legionfall##46730 |goto 69.34,43.88
+accept Assault on Broken Shore##46734 |goto 69.34,43.88 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##120215
+Select  _"I've heard this tale before... <Skip the scenario and begin your journey on Broken Shore.>"_
+Speak to Khadgar |q 46734/1 |goto 69.34,43.88 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##116302
+turnin Assault on Broken Shore##46734 |goto Broken Shore/0 44.74,63.27 |or
+'|complete completedq(47224) |or
+step
+talk Archmage Khadgar##90417
+|tip Inside the building.
+accept The Hand of Fate##48506 |goto Dalaran L/10 28.51,48.33 |only if Alliance |or
+accept The Hand of Fate##48507 |goto Dalaran L/10 28.55,48.31 |only if Horde |or
+'|complete completedq(47224) |or
+step
+talk Vereesa Windrunner##121754
+|tip On the deck of the ship.
+turnin The Hand of Fate##48506 |goto Stormwind City/0 21.37,30.43 |or
+accept Two If By Sea##47222 |goto 21.37,30.43 |or
+'|complete completedq(47224) |or
+|only if Alliance
+step
+talk Lady Liadrin##122065
+|tip On the deck of the ship.
+turnin The Hand of Fate##48507 |goto Durotar/0 58.29,12.09
+accept Two If By Sea##47867 |goto 58.29,12.09 |or
+'|complete completedq(47224) |or
+|only if Horde
+step
+talk Vereesa Windrunner##121754
+|tip On the deck of the ship.
+Tell her _"I'm ready."_
+Set sail for the Exodar |q 47222/1 |goto 21.37,30.43 |or
+'|complete completedq(47224) |or
+|only if Alliance
+step
+talk Lady Liadrin##122065
+|tip On the deck of the ship.
+Tell her _"I'm ready."_
+Set sail for the Exodar |q 47867/1 |goto 58.29,12.09 |or
+'|complete completedq(47224) |or
+|only if Horde
+step
+talk Vindicator Boros##121756
+|tip On the deck of the ship.
+turnin Two If By Sea##47222 |goto Azuremyst Scenario/0 20.64,53.27
+accept Light's Exodus##47223 |goto 20.64,53.27 |or
+'|complete completedq(47224) |or
+|only if Alliance
+step
+talk Vindicator Boros##121756
+turnin Two If By Sea##47867 |goto Azuremyst Scenario/0 21.38,55.08
+accept Light's Exodus##47223 |goto 21.38,55.08 |or
+'|complete completedq(47224) |or
+|only if Horde
+step
+Enter the Exodar |goto Azuremyst Scenario/1 41.91,72.88
+talk Prophet Velen##120977
+turnin Light's Exodus##47223 |goto 33.78,65.56
+accept The Vindicaar##47224 |goto 33.78,65.56 |or
+'|complete completedq(47224) |or
+step
+clicknpc Light Crystal##122052
+|tip It looks like a large yellow crystal.
+|tip Listen to the dialogue.
+Beacon activated |q 47224/1 |goto 33.64,66.36 |or
+'|complete completedq(47224) |or
+step
+clicknpc Lightforged Beacon
+Board the Vindicaar |q 47224/2 |goto Azuremyst Scenario/2 59.10,23.08 |notravel |or
+'|complete completedq(47224) |or
+step
+talk Prophet Velen##120977
+turnin The Vindicaar##47224 |goto 39.20,78.32
+accept Into the Night##48440 |goto 39.20,78.32 |or
+'|complete completedq(47224) |or
+step
+talk Prophet Velen##120977
+Tell him _"I am ready."_
+Depart for Argus |q 48440/1 |goto 39.20,78.32 |or
+'|complete completedq(46816) |or
+step
+talk Prophet Velen##126307
+|tip On the deck of the ship.
+turnin Into the Night##48440 |goto Krokuun/1 40.27,23.60 |or
+'|complete completedq(46816) |or
+step
+label "UUNA_DOLL_START_OVER"
+Take the Lightforged Beacon to Hope's Landing in Antoran Wastes
+kill Antoran Defender##126193+
+kill Tormented Ritualist##126171+
+collect Call of the Devourer##152786 |goto Antoran Wastes/0 52.09,37.68
 step
 click Intact Fiend Bone##276425
 collect Fiend Bone##152991 |goto 52.36,35.29
 step
-Follow the path |goto 53.34,43.52 < 20
-Follow the path |goto 51.57,49.89 < 20
 click Intact Ur'zul Bone##276426
 collect Ur'zul Bone##152993 |goto 50.45,56.05
 step
-Follow the path |goto 67.71,33.87 < 20
-Follow the path |goto 65.37,30.76 < 20
-Enter the cave |goto 65.6,26.3 < 20
-Follow the path |goto Antoran Wastes/0 66.49,22.61 < 20
-Follow the path |goto 67.73,20.19 < 20
 click Intact Imp Bones##276424
 collect Imp Bone##152992 |goto 65.89,19.40
 step
 clicknpc Bone Effigy##127577
 |tip You will need to click it twice.
 |tip Once you've created the Bone Effigy you won't have to farm the bones from the previous step again.
+kill The Many-Faced Devourer##127581 |goto Antoran Wastes/0 52.09,37.68
 |tip You will only be able to loot this once per day.
+collect Uuna's Doll##153195
 |tip Uuna is a companion pet and cannot battle.
-kill The Many-Faced Devourer##127581
-collect Uuna's Doll##153195 |n
+Click Here to Return to the Beginning of This Guide |confirm |next "UUNA_DOLL_START_OVER"
+step
 use Uuna's Doll##153195
 Collect the "Uuna" Pet |learnpet Uuna##2136 |goto 54.7,39.1
-Click Here to Continue |confirm
-step
-Congratulations!
-You have collected the _Uuna_ battle pet
+|tip You can use the "Uuna Storyline" Pet Quest Guide to complete Uuna's Storyline.
+Click Here to Open the "Uuna Storyline" Pet Quest Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pet Quests\\Uuna Storyline"
+Click Here to Complete this Guide |confirm
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pets\\Wyrmy Tunkins",{
 patch='71000',

@@ -1062,46 +1062,78 @@ end
 
 -- my event handling. Multiple handlers allowed, just for the heck of it.
 
+-- Handler is either:
+-- - function - called as f(event,...)
+-- - string - called as self[f](event,...)
+-- - table {obj,str} - called as obj[str](obj,event,...)
+-- - table {obj,fun} - called as fun(obj,event,...)
+-- - true - called as self[event](event,...)
+
 local meta_newtables = {__index = function(tbl, key) tbl[key] = {} return tbl[key] end}
-ZGV.Events=setmetatable({},meta_newtables)
+ZGV.Events_Events=setmetatable({},meta_newtables)
 function ZGV:AddEventHandler(event,handler)
-	tinsert(self.Events[event],handler or true)
-	if #self.Events[event]==1 then self:RegisterEvent(event,"EventHandler") end
+	tinsert(self.Events_Events[event],handler or true)
+	if #self.Events_Events[event]==1 then self:RegisterEvent(event,"EventHandler_Events") end
+	return handler
 end
 
+ZGV.Events_Messages=setmetatable({},meta_newtables)
 function ZGV:AddMessageHandler(event,handler)
-	tinsert(self.Events[event],handler or true)
-	if #self.Events[event]==1 then self:RegisterMessage(event,"EventHandler") end
+	tinsert(self.Events_Messages[event],handler or true)
+	if #self.Events_Messages[event]==1 then self:RegisterMessage(event,"EventHandler_Messages") end
+	return handler
 end
 
-function ZGV:RemoveHandler(event,removehandler)
-    for num,handler in ipairs(self.Events[event]) do
-        if handler == removehandler then
-            tremove(self.Events[event],num)
-			return
-        end
-    end
-end
-
-function ZGV:EventHandler(event,...)
-	for i,hand in ipairs(self.Events[event]) do
-		local func
-		if type(hand)=="function" then  -- call given function
-			hand(self,event,...)
-		elseif type(hand)=="string" then  -- call function in self by name
-			assert(self[hand],"No function "..hand.." in event handler!")
-			self[hand](self,event,...)
-		elseif type(hand)=="table" then  -- call method in object, given as {object,"method"}
-			assert(hand[1][hand[2]],"No function "..hand[2].." in given object!")
-			hand[1][hand[2]](hand[1],event,...)
-		elseif hand==true then  -- call self:EVENT_NAME
-			assert(type(self[event])=="function","No function "..event.." in event handler!")
-			self[event](self,event,...)
-		else
-			error("What's "..tostring(hand).."? Not a valid message/event handler!")
+local function _RemoveHandler(tab,removehandler)
+	for num,handler in ipairs(tab) do
+		if handler == removehandler then
+			return tremove(tab,num)
 		end
 	end
 end
+
+function ZGV:RemoveEventHandler(event,removehandler)
+	return _RemoveHandler(self.Events_Events[event],removehandler)
+end
+
+function ZGV:RemoveMessageHandler(event,removehandler)
+	return _RemoveHandler(self.Events_Messages[event],removehandler)
+end
+
+
+local handleit = function(self,handler,event,...)
+	if type(handler)=="function" then  -- call given function
+		handler(self,event,...)
+	elseif type(handler)=="string" then  -- call function in self by name
+		assert(self[handler],"No function "..handler.." in event handler object!")
+		self[handler](self,event,...)
+	elseif type(handler)=="table" then  -- call method in object, given as {object,"method"} or {object,object.function}
+		local obj,call = unpack(handler)
+		if type(call)=="string" then
+			local fun=obj[call]
+			assert(fun,"No function "..call.." in given object!")
+			fun(obj,event,...)
+		elseif type(call=="function") then
+			call(obj,event,...)
+		end
+	elseif handler==true then  -- call self:EVENT_NAME
+		assert(type(self[event])=="function","No function "..event.." in event handler!")
+		self[event](self,event,...)
+	else
+		error("What's "..tostring(handler).."? Not a valid message/event handler!")
+	end
+end
+function ZGV:EventHandler_Events(event,...)
+	for i,handler in ipairs(self.Events_Events[event]) do
+		handleit(self,handler,event,...)
+	end
+end
+function ZGV:EventHandler_Messages(event,...)
+	for i,handler in ipairs(self.Events_Messages[event]) do
+		handleit(self,handler,event,...)
+	end
+end
+
 
 
 local UpdateCentral_Mixin = {}
@@ -1494,7 +1526,7 @@ function ZGV:SetGuide(name,step,hack,silent,source) --hack used for testing
 	self:UpdateFrame(true)
 
 	ZGV.ProgressBar:Update()
-	ZGV.Tabs:UpdateCurrentTab()
+	ZGV.Tabs:UpdateCurrentTab("guidechange")
 end
 
 function ZGV:FindSuggestedGuides()
@@ -1744,7 +1776,7 @@ function ZGV:FocusStep(num,forcefocus)
 		ZGV.Gold.Appraiser:AddGuideItemsToBuy()
 	end
 
-	ZGV.Tabs:UpdateCurrentTab()
+	ZGV.Tabs:UpdateCurrentTab("focus")
 
 	-- if user changed guide/step, he may need to equip/dequip quest gear
 	if not self.skipping then
@@ -2195,6 +2227,7 @@ function ZGV:TryToCompleteStep(force)
 				if self.db.profile.flashborder then
 					self.delayFlash=1
 				end
+				self:SendMessage("STEP_COMPLETED",self.CurrentStepNum)
 			end
 
 			-- do, do, do the SKIP!
@@ -2844,6 +2877,7 @@ function ZGV:SetVisible(info,onoff)
 	self.Frame:SetShown(onoff) 
 	self.db.profile.enable_viewer = not not onoff
 	if onoff then ZGV.Tabs:ReanchorTabs() end
+	self:SendMessage("WINDOW_SHOWN",not not onoff)
 end
 
 function ZGV:ToggleFrame()
@@ -5112,7 +5146,7 @@ function ZGV:StartFPSFrame()
 		end
 		ZGV.FPSFrame.fpsbar = ZGV.ChainCall(ZGV.FPSFrame:CreateTexture()) :SetPoint("BOTTOMLEFT",ZGV.FPSFrame.bars[SIZE],"BOTTOMRIGHT",3,0) :SetSize(5,MAXFPS) :SetColorTexture(1,1,1) :SetDrawLayer("ARTWORK",1) .__END
 		ZGV.FPSFrame.hicbar = ZGV.ChainCall(ZGV.FPSFrame:CreateTexture()) :SetPoint("BOTTOMLEFT",ZGV.FPSFrame.bars[SIZE],"BOTTOMRIGHT",10,0) :SetSize(5,MAXFPS) :SetColorTexture(1,1,1) :SetDrawLayer("ARTWORK",1) .__END
-
+		ZGV.FPSFrame.value = ZGV.ChainCall(ZGV.FPSFrame:CreateFontString()) :SetPoint("TOPLEFT",5,-5) :SetFont("Fonts\\ARIALN.TTF",14,"OUTLINE") .__END
 		tinsert(ZGV.FPSFrame.bars,ZGV.FPSFrame.fpsbar)
 
 		local barheights={}
@@ -5164,6 +5198,8 @@ function ZGV:StartFPSFrame()
 			local r=(h1<0.5) and h1*2 or 1
 			local g=(h1<0.5) and 1 or 2-(h1*2)
 			self.hicbar:SetColorTexture(r,g,0)
+
+			ZGV.FPSFrame.value:SetText(math.floor(tonumber(fps)))
 
 		end
 		ZGV.FPSFrame:SetScript("OnUpdate",ZGV.FPSFrame.OnUpdate)
@@ -5897,3 +5933,12 @@ end
 function ZGV.DevStart() 	ZGV.DevGuides = true	end
 function ZGV.DevEnd()	 	ZGV.DevGuides = nil	end
 
+function ZGV:EnableMessageDebugging()
+	local Orig_SendMessage = ZGV.SendMessage
+	ZGV.SendMessage = function(self,...)
+		EventRegistry:TriggerEvent("ZGV SendMessage",...)
+		Orig_SendMessage(self,...)
+	end
+end
+
+--ZGV:EnableMessageDebugging()

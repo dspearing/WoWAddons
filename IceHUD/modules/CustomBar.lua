@@ -83,6 +83,7 @@ function IceCustomBar.prototype:Enable(core)
 	self:FixupTextColors()
 	self:SetCustomTextColor(self.frame.bottomUpperText, self.moduleSettings.upperTextColor)
 	self:SetCustomTextColor(self.frame.bottomLowerText, self.moduleSettings.lowerTextColor)
+	self:UpdateAuraIcon()
 end
 
 function IceCustomBar.prototype:Disable(core)
@@ -204,6 +205,7 @@ end
 function IceCustomBar.prototype:Redraw()
 	IceCustomBar.super.prototype.Redraw(self)
 
+	self:UpdateAuraIcon()
 	self:UpdateCustomBar(self.unit)
 end
 
@@ -822,7 +824,11 @@ function IceCustomBar.prototype:UpdateCustomBar(unit, fromUpdate)
 
 		self:UpdateBar(self.auraDuration ~= 0 and remaining / self.auraDuration or 0, "undef")
 	else
-		self:UpdateBar(0, "undef")
+		local updateVal = 0
+		if self.moduleSettings.displayMode == displayModes.MISSING then
+			updateVal = 1
+		end
+		self:UpdateBar(updateVal, "undef")
 		self:Show(false)
 		if not self:ShouldAlwaysSubscribe() then
 			self.handlesOwnUpdates = false
@@ -883,9 +889,14 @@ function IceCustomBar.prototype:Show(bShouldShow, bForceHide)
 	end
 
 	if self.moduleSettings.displayMode == displayModes.MISSING then
-		IceCustomBar.super.prototype.Show(self, not bShouldShow)
+		local show = not bShouldShow
+		if show and not self:IsEnabled() then
+			show = false
+		end
+
+		IceCustomBar.super.prototype.Show(self, show)
 	elseif self.moduleSettings.displayMode == displayModes.WHEN_TARGETING and self.target then
-		IceCustomBar.super.prototype.Show(self, true)
+		IceCustomBar.super.prototype.Show(self, self:IsEnabled())
 	elseif self.moduleSettings.displayMode == displayModes.ALWAYS then
 		if not self.bIsVisible then
 			IceCustomBar.super.prototype.Show(self, true)
@@ -893,4 +904,14 @@ function IceCustomBar.prototype:Show(bShouldShow, bForceHide)
 	else
 		IceCustomBar.super.prototype.Show(self, bShouldShow)
 	end
+end
+
+function IceCustomBar.prototype:UpdateAuraIcon()
+	if not self.barFrame or not self.barFrame.icon then
+		return
+	end
+
+	local _, _, auraIcon = GetSpellInfo(self.moduleSettings.buffToTrack)
+
+	self.barFrame.icon:SetTexture(auraIcon)
 end

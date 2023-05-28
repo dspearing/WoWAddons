@@ -198,7 +198,9 @@ function widget:Update()
 end
 
 function widget:OnEvent(event)
-	self:Update()
+	if self.frame and self.frame:IsVisible() then
+		self:Update()
+	end
 end
 
 ZGV.Widgets:RegisterWidget(widget)

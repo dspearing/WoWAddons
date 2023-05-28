@@ -4223,60 +4223,54 @@ Complete the "Uuna" Questline and Worldtour
 Click Here to Open the "Uuna Scenario" Guide |confirm |loadguide "Pets & Mounts Guides\\Battle Pet Quests\\Uuna Storyline"
 '|complete completedq(50109)
 step
-Cross the bridge |goto Nazmir/0 44.40,53.95 < 15 |only if walking
-Cross the bridge |goto 46.39,54.03 < 10 |only if walking
-Follow the path |goto 50.26,58.08 < 15 |only if walking
-Carefully jump down here |goto 51.42,58.29 < 5 |only if walking
-|tip You will need a "Goblin Glider" in order to reach the note.
+You will need:
+- About 4 potions that grant invisibility, such as the Draenic Invisibility Potion, or stealth capability.
+- At least 2 swim speed potions or another way to increase swim speed.
+- At least 3 Goblin Gliders, probably more, or BFA flight skill.
+Click Here to Proceed |confirm
+step
 click Conspicious Note
-|tip It's on the side of the golden symbol.
-Read the Conspicious Note |goto 51.77,59.05
+|tip You will need a "Goblin Glider" in order to reach the note. |only if not knowspell(34090) or not knowspell(90265)
+|tip It is just over the eastern side off the top of the Heart of Darkness temple.
+|tip It looks like a piece of paper lying on a little ledge.
+Read the Conspicious Note |goto Nazmir/0 51.77,59.05
 |tip Purple smoke will rise from the scroll once you have read it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
 click Ordinary Pebble
 |tip It's a tiny rock sitting on a table to the left of a purple orb.
+|tip You might have to talk to Drak'thul to get him to turn away from the table in order to click the pebble.
 Read the description of an Ordinary Pebble |goto Broken Shore/0 37.47,71.61
 |tip You won't be able to interact with it again once you've read it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Walk through the net |goto Boralus/0 49.63,40.00
-|tip Once you do, a path will be hidden under the rubbish on the ground.
+Walk through the Net here |goto Boralus/0 49.58,40.00
 click Ordinary Pebble
+|tip Walk through the net.
+|tip Once you do, a path will be hidden under the rubbish on the ground.
 |tip Inside the cave.
 Find an Ordinary Pebble |goto Boralus/0 44.71,38.50
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-_Be sure to have a Goblin Glider or something similar available before starting this step_
-Follow the road up |goto Zuldazar/0 44.03,38.16 < 15 |only if walking
-Continue following the road |goto 44.00,37.17 < 15 |only if walking
-Continue following the road |goto 44.03,35.77 < 15 |only if walking
-Continue following the road |goto 43.63,36.79 < 15 |only if walking
-Continue following the road |goto 42.62,35.91 < 15 |only if walking
-Run up the stairs |goto 41.99,35.71 < 15 |only if walking
-Follow the path |goto 41.06,33.42 < 10 |only if walking
-Continue following the path |goto 40.59,32.68 < 5 |only if walking
-Continue following the path |goto 39.96,32.69 < 5 |only if walking
-Continue following the path |goto 39.21,33.97 < 10 |only if walking
-Run up the ramp |goto 38.72,33.93 < 15 |only if walking
-Jump down here |goto 38.28,34.63 < 15 |only if walking
-Run down the ramp |goto 37.98,35.26 < 10 |only if walking
-Jump down here |goto 38.02,35.86 < 10 |only if walking
-Click Here to Continue |confirm |or
-'|complete haspet(2352) |or
-step
-Jump up the wedge |goto Zuldazar/0 37.60,36.24
-|tip Keep jumping and moving forward until you make your way up.
-Continue up the wedge  |goto 37.24,36.20
-Follow the path up |goto 36.39,35.49 < 15 |only if walking
-Continue up the path |goto 35.51,34.31 < 15 |only if walking
-use the Goblin Glider Kit##109076
-Use your Goblin Glider Kit once you reach this spot |goto 34.57,34.15 < 10 |only if walking
-Enter the cave |goto 31.55,35.98 < 5 |only if walking
+Follow the path up |goto Zuldazar/0 44.03,38.01 < 7 |only if walking
+Follow the path up |goto 44.07,35.99 < 10 |only if walking
+Follow the path |goto 43.38,36.64 < 7 |only if walking
+Follow the path |goto 41.66,34.85 < 10 |only if walking
+Follow the path |goto 40.46,32.67 < 7 |only if walking
+Follow the path |goto 38.98,34.08 < 10 |only if walking
+Follow the path up |goto 38.71,33.94 < 7 |only if walking
+Cross the water |goto 37.99,35.15 < 10 |only if walking
+Jump down here |goto 37.93,36.35 < 10 |only if walking
+Keep jumping up here |goto 37.28,36.17 < 7 |only if walking
+Run up the hill |goto 36.18,34.60 < 10 |only if walking
+Run down the between the hills |goto 34.02,34.44 < 7 |only if walking
+Jump and use your Goblin Glider Kit once you reach this spot |goto 34.00,34.42 < 7 |only if walking
+use the Goblin Glider Kit##109076 |only if walking
+Enter the cave |goto Zuldazar/0 31.55,35.98 < 5 |walk
 click Ordinary Pebble
 |tip It's a tiny rock next to a vine inside the cave.
 Find an Ordinary Pebble |goto 31.93,35.30
@@ -4284,14 +4278,8 @@ Find an Ordinary Pebble |goto 31.93,35.30
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path up |goto Drustvar/0 34.88,67.70 < 15 |only if walking
-Continue up the path |goto 37.33,68.69 < 10 |only if walking
-Continue up the path |goto 38.10,67.94 < 10 |only if walking
-Continue following the path |goto 37.64,63.04 < 15 |only if walking
-Continue following the path |goto 36.50,60.66 < 15 |only if walking
-Jump down carefully here |goto 35.23,57.40 < 5 |only if walking
-Enter the cave |goto 35.03,54.86 < 10 |only if walking
-|tip Jump on the right side of the rock to climb up.
+Enter the cave |goto Drustvar/0 35.03,54.86 < 10 |walk
+|tip The entrance is behind the waterfall.
 click Ordinary Pebble
 |tip It's in the eye of the effigy inside of the cave.
 Find an Ordinary Pebble |goto Drustvar/0 36.31,53.83
@@ -4299,22 +4287,16 @@ Find an Ordinary Pebble |goto Drustvar/0 36.31,53.83
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Jump down here |goto Vol'dun/0 62.22,21.98 < 10 |only if walking
-Jump down here |goto 62.85,21.83 < 5 |only if walking
-Enter the cave |goto 63.21,21.26 < 5 |only if walking
 click Ordinary Pebble
-|tip It's on the left wall, on the floor between two larger rocks inside the cave.
-|tip Bring some sort of Invisibility potion to avoid aggroing Clatterback.
-Find an Ordinary Pebble |goto 63.04,21.59
+|tip The entrance to the cave is a hole in the ground next to a tree.
+|tip The pebble is on the left wall, on the floor between two larger rocks inside the cave.
+|tip Use your Invisibility potion here to avoid aggroing the elite Clatterback.
+Find an Ordinary Pebble |goto Vol'dun/0 63.04,21.59
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path |goto Stormsong Valley/0 69.00,9.46 < 5 |only if walking
-Continue up the path |goto 68.27,9.64 < 5 |only if walking
-Continue up the path |goto 68.33,10.19 < 5 |only if walking
-Enter the cave |goto 68.38,10.86 < 5 |only if walking
-Follow the path down |goto 68.67,11.89 < 10 |only if walking
+Enter the cave under a clump of trees |goto Stormsong Valley/0 66.91,14.59
 click Ordinary Pebble
 |tip It's in the cart next to the water.
 Find an Ordinary Pebble |goto Stormsong Valley/0 67.93,12.97
@@ -4323,92 +4305,63 @@ Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
 click Ordinary Pebble
-|tip It will be on a ship deep underwater.
-|tip You will take fatigue damage and eventually die when trying to reach this stone.
-|tip You NEED an item that will increase your swimspeed in order to reach this in time.
+|tip It will be on the back of a ship deep underwater.
+|tip You will take fatigue damage and die.
+|tip You will need increase your swimspeed in order to reach and find this before you die.
 |tip As soon as you see the fatigue bar, use whatever swim speed item you have to reach the boat.
-Find an Ordinary Pebble |goto Zandalar/0 54.54,7.3
-|tip There will be a skull decoration with five notches underneath it.
+Find an Ordinary Pebble |goto Zandalar/0 54.53,7.30
+|tip There will be a skull stained-glass type decoration with five round buttons underneath it in the shape of a smile.
 |tip The Ordinary Pebble will be the second from the left.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Cross the water |goto Tiragarde Sound/0 69.57,46.02 < 20 |only if walking
-Follow the path up |goto Boralus/0 40.25,88.32 < 10 |only if walking
-Run up the ramp |goto 42.75,84.09 < 10 |only if walking
-Run up the stairs |goto 42.70,80.88 < 5 |only if walking
-Follow the path |goto 41.39,78.54 < 5 |only if walking
-|tip Use an invisibility ability to avoid aggroing the town guards.
-Continue following the path |goto 37.47,79.53 < 5 |only if walking
-Run down the stairs |goto 37.46,80.34 < 5 |walk
+Enter the hidden basement under the tree in the maze |goto Boralus/0 37.56,80.42
 click Ordinary Pebble
 |tip It's between a barrel and a crate in the basement.
-Find an Ordinary Pebble |goto 37.20,79.80
+Find an Ordinary Pebble |goto Boralus/0 37.20,79.80
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path down |goto Drustvar/0 22.47,15.08 < 15 |only if walking
-Jump down here |goto 22.03,14.58 10 |only if walking
-Follow the path down |goto 21.50,14.09 < 10 |only if walking
-Continue down the path |goto 21.47,13.45 < 10 |only if walking
-Cross the water |goto 20.46,13.95 < 15 |only if walking
-Follow the path up |goto 18.86,10.39 < 15
-Continue following the path |goto 17.57,10.42 < 15 |only if walking
-Continue following the path |goto 17.16,10.25 < 15 |only if walking
-Follow the path up |goto 16.71,8.66 < 15 |only if walking
-Continue following the path |goto 16.67,7.20 < 15 |only if walking
-Jump off the ledge here, using a _Goblin Glider Kit_ |goto 16.43,6.56
+Jump off the ledge here, using a _Goblin Glider Kit_ |goto Drustvar/0 16.43,6.56 |only if walking
 click Ordinary Pebble
-|tip It is on a rock at the entrance to the cave.
-Find an Ordinary Pebble |goto 17.23,6.45
-|tip You need a Goblin Glider Kit to access the platform if you aren't a Demon Hunter.
+|tip It is on the top of the entrance to the cave.
+Find an Ordinary Pebble |goto Drustvar/0 17.23,6.45
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path up |goto Tiragarde Sound/0 78.33,70.99 < 15 |only if walking
-Continue up the path |goto 77.92,70.52 < 15 |only if walking
-Continue up the path |goto 77.45,71.03 < 15 |only if walking
-Continue following the path |goto 76.47,70.45 < 15 |only if walking
-Enter the cave |goto 75.45,70.64 < 10 |walk
+Enter the cave |goto Tiragarde Sound/0 75.45,70.64 < 10 |walk
 click Ordinary Pebble
-|tip It's on the ground with an icy boulder to the left and a slab of meat to the right.
-|tip There will be 3 Clatterbacks that burrow up inside the cave.
+|tip It is inside the cave on the ground with an icy boulder to the left and a slab of meat to the right.
+|tip Use invisibility to avoid the 3 Clatterbacks that may attack you inside the cave.
 Find an Ordinary Pebble |goto 74.29,70.87
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path up |goto 81.47,21.93 < 15 |only if walking
-Continue following the path |goto 81.15,21.13 < 15 |only if walking
-Continue following the path |goto 80.45,21.04 < 15 |only if walking
-Jump up the rocks  |goto 80.34,19.62 < 10 |only if walking
-|tip Jump between the wedges to make your way up.
 Enter the cave |goto 80.18,19.32 < 10 |walk
 click Ordinary Pebble
-|tip It's underneath a long scroll that is hanging on the wall and covering some of the ground.
+|tip The entrance to the cave is behind some long hanging moss, a pine tree, and a waterfall.
+|tip The Ordinary Pebble is underneath a long scroll that is hanging on the wall and covering some of the ground.
+|tip Use your camera angle to see under the scroll.
 Find an Ordinary Pebble |goto 79.66,17.99
 |tip You won't be able to interact with it again once you've clicked it.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Cross the water |goto 68.61,46.83 < 15 |only if walking
-Enter the underwater cave |goto Boralus/0 9.99,82.49 < 10 |only if walking
-|tip It's covered by foliage.
+Enter the seaweed-covered cave underwater |goto Boralus/0 10.09,82.78
 click Ordinary Pebble
 Find an Ordinary Pebble |goto Tiragarde Sound/0 59.70,41.84
-|tip It's underneath some foliage, close to the water.
+|tip It's underneath some seaweed that is between two rocks, close to the water.
+|tip Use your camera angle to see under the seaweed.
 Click Here to Continue |confirm |or
 '|complete haspet(2352) |or
 step
-Follow the path |goto Zandalar/0 45.87,3.78
-Continue following the path |goto 47.7,-3
-|tip Once you reach this spot, the fatigue will reset.
-|tip On your way to the next coordinate, if you enter fatigue zone again correct your path so that it goes away.
-Enter the Underwater Cave |goto 55.72,-10.21
-|tip On your way to the cave, the fatigue bar will appear again.
-|tip Prepare Swim Speed Potions.
+Start from this spot and head North |goto Zandalar/0 56.73,11.96
+Enter the Underwater Cave |goto Zandalar/0 55.72,10.21
+|tip You will experience fatigue, but it should go away before you die.
+|tip Use your Swim Speed increase when you see the fatigue bar.
 click Ordinary Pebble
 |tip It will be inside the cave, just underneath the entrance.
 Find an Ordinary Pebble
@@ -4426,7 +4379,7 @@ collect Baa'ls Darksign##162578 |goto Frostfire Ridge/0 62.27,22.86 |or
 '|complete haspet(2352) |or
 step
 use Baa'ls Darksign##162578
-Learn the "Baa'l" Battle Pet |learnpet Baa'l##2352
+Collect the "Baa'l" Battle Pet |learnpet Baa'l##2352
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\Enchanted Tiki Mask",{
 patch='80100',

@@ -142,6 +142,7 @@
 	<Script file="Libs/HBDragons.lua"/>
 
 	<Script file="Sync.lua"/>
+	<Script file="Telemetry.lua"/>
 
 	<Include file="Widgets.lua"/>
 	<Include file="Widgets\files.xml"/>

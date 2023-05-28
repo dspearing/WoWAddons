@@ -144,10 +144,16 @@ local function GetScenarioGoalData(scenariogoalid,count,stage)
 		if criteriaID==scenariogoalid then
 			if not totalQuantity or totalQuantity==0 then totalQuantity=1 end
 			needed = min(count or 9999,totalQuantity)
+			if isWeightedProgress then -- weightedProgress go from 0 to 100, and quantity/totalQuantity are not reliable for them. quantityString is "50%", so parse progress out of it
+				local progressquantity = quantityString:match("(%d+)")
+				if tonumber(progressquantity) then
+					needed = 100
+					quantity = tonumber(progressquantity)
+				end
+			end
 			return quantity,needed,needed-quantity,criteriaString,nil
 		end
 	end
-
 	--return
 	return 0,count or 0,count or 0, nil,"error: bad goal id"
 end

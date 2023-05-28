@@ -780,7 +780,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		bugreport_step_message_addon = "Please describe the problem you are having with this part of the addon and any info you can provide on how to reproduce the issue.",
 		bugreport_step_submit = "Submit",
 		bugreport_step_title = "User Feedback",
-		bugreport_step_tooltip = "Submit feedback for this step",
+		bugreport_step_tooltip = "Report an issue you're having with the guide or addon.",
 		bugreport_step_tooltip2 = "|cff00ff00Comments are uploaded via Zygor Client when you log out.|r",
 		bugreport_step_type = "Please select a feedback type:",
 		bugreport_step_default = "|cff959d95Click to pick a value.",

@@ -1237,21 +1237,21 @@ TA.Builds = {
 				Spear Hand Strike##101504
 				Celerity##101503
 				Profound Rebuttal##101526
+				Disable##101495
 				Diffuse Magic##101515
 				Fast Feet##101523
 				Fast Feet##101523
-				Improved Touch of Death##101501
-				Generous Pour##101500
-				Generous Pour##101500
 				Close to Heart##101525
 				Close to Heart##101525
 				Save Them All##101533
 				Save Them All##101533
-				Fatal Touch##101521
-				Fatal Touch##101521
-				Resonant Fists##101520
-				Resonant Fists##101520
-				Paralysis##101506
+				Fortifying Brew##101496
+				Expeditious Fortification##101497
+				Strength of Spirit##101499
+				Generous Pour##101500
+				Generous Pour##101500
+				Bounce Back##101536
+				Bounce Back##101536
 				Soothing Mist##101509
 			]],[[
 				Enveloping Mist##101370
@@ -1262,13 +1262,15 @@ TA.Builds = {
 				Revival##101378
 				Invigorating Mists##101358
 				Mastery of Mist##101395
+				Healing Elixir##101374
+				Mana Tea##101379
 				Mists of Life##101369
-				Font of Life##101386
+				Uplifted Spirits##101398
 				Invoke Chi-Ji, the Red Crane##101396
 				Enveloping Breath##101388
 				Mist Wrap##101363
-				Zen Pulse##101368
-				Echoing Reverberation##101365
+				--Zen Pulse##101368
+				--Echoing Reverberation##101365
 				Teachings of the Monastery##101403
 				Spirit of the Crane##101361
 				Burst of Life##114297
@@ -1303,10 +1305,10 @@ TA.Builds = {
 				Fast Feet##101523
 				Transcendence##101512
 				Ring of Peace##101516
+				Eye of the Tiger##101518
 				Dampen Harm##101522
 				Profound Rebuttal##101526
-				Improved Paralysis##101505
-				Fortifying Brew##101496
+				Diffuse Magic##101515
 				Fatal Touch##101521
 				Fatal Touch##101521
 				Resonant Fists##101520
@@ -1316,7 +1318,7 @@ TA.Builds = {
 				Generous Pour##101500
 				Close to Heart##101525
 				Close to Heart##101525
-				Diffuse Magic##101515
+				Escape from Reality##101534
 				Calming Presence##101511
 				Rising Sun Kick##101508
 			]],[[
@@ -1342,12 +1344,12 @@ TA.Builds = {
 				Teachings of the Monastery##101426
 				Fury of Xuen##101472
 				Xuen's Battlegear##101478
-				Skyreach##101479
 				Invoker's Delight##101477
 				Empowered Tiger Lightning##101475
 				Transfer the Power##101476
 				Crane Vortex##101483
 				Crane Vortex##101483
+				Bonedust Brew##101485
 				Fatal Flying Guillotine##101482
 				Open Palm Strikes##101494
 			]]
@@ -1355,8 +1357,8 @@ TA.Builds = {
 	},
 	PALADIN = {
 		["Holy"] = {1,false, [[
-				Blessing of Freedom##102587
 				Hammer of Wrath##102479
+				Auras of Swift Vengeance##102588
 				Greater Judgment##114292
 				Divine Steed##102625
 				Improved Cleanse##102477
@@ -1374,7 +1376,6 @@ TA.Builds = {
 				Crusader's Reprieve##102518
 				Sanctified Plates##115034
 				Sanctified Plates##115034
-				Punishment##115444
 				Divine Purpose##115489
 				Divine Toll##102465
 				Divine Resonance##115466
@@ -1386,6 +1387,7 @@ TA.Builds = {
 				Seal of Alacrity##102609
 				Strength of Conviction##102444
 				Strength of Conviction##102444
+				Fist of Justice##102589
 				Lay on Hands##102583
 				Auras of the Resolute##102586
 			]],[[
@@ -1495,16 +1497,16 @@ TA.Builds = {
 				Cavalier##102592
 				Lay on Hands##102583
 				Cleanse Toxins##102476
-				Blinding Light##102584
 				Seasoned Warhorse##102624
-				Punishment##115444
+				Auras of the Resolute##102586
+				Justification##102478
+				Unbound Freedom##115454
 				Lightforged Blessing##115239
 				Crusader's Reprieve##102518
 				Avenging Wrath##102593
 				Sanctified Plates##115034
 				Sanctified Plates##115034
 				Unbreakable Spirit##102603
-				Justification##102478
 				Holy Aegis##102597
 				Holy Aegis##102597
 				Blessing of Sacrifice##102602
@@ -1520,8 +1522,6 @@ TA.Builds = {
 				Seal of the Crusader##102617
 				Seal of the Crusader##102617
 				Vengeful Wrath##115457
-
-
 				Hammer of Wrath##102479
 				Blessing of Freedom##102587
 				Auras of Swift Vengeance##102588
@@ -1534,12 +1534,12 @@ TA.Builds = {
 				Art of War##102493
 				Expurgation##114830
 				Guided Prayer##115020
+				Vanguard's Momentum##114826
 				Tempest of the Lightbringer##115452
 				Jurisdiction##102516
 				Boundless Judgment##115021
 				Heart of the Crusader##115483
 				Vanguard of Justice##115453
-				Rush of Light##115475
 				Blade of Vengeance##102521
 				Shield of Vengeance##102519
 				Templar Strikes##115473
@@ -1547,15 +1547,15 @@ TA.Builds = {
 				Consecrated Blade##102485
 				Blessed Champion##102515
 				Adjudication##102511
-				Blades of Light##115443
-				Divine Arbiter##102514
 				Aegis of Protection##102526
 				Final Reckoning##102513
 				Wake of Ashes##115043
+				Seething Flames##102525
 				Truth's Wake##114824
 				Blessed Champion##102515
 				Penitence##115024
 				Burning Crusade##102510
+				Searing Light##102530
 			]]
 		},
 	},
@@ -1565,32 +1565,32 @@ TA.Builds = {
 				Protective Light##103858
 				Leap of Faith##103868
 				Angelic Feather##103853
-				Dispel Magic##103867
 				Void Tendrils##103859
+				Dispel Magic##103867
 				Shadow Word: Death##103864
-				Death and Madness##103863
+				Phantasm##103834
 				Power Infusion##103844
 				Twins of the Sun Priestess##103832
+				Twist of Fate##103833
+				Twist of Fate##103833
 				Mass Dispel##103849
 				Inspiration##103846
+				Unwavering Will##103847
+				Unwavering Will##103847
 				Vampiric Embrace##103841
 				San'layn##103840
 				Throes of Pain##103861
 				Throes of Pain##103861
-				Twist of Fate##103833
-				Twist of Fate##103833
-				Unwavering Will##103847
-				Unwavering Will##103847
+				Mindgames##103837
 				Binding Heals##103824
+				Halo##103830
 				Surge of Light##103823
 				Surge of Light##103823
 				Power Word: Life##103822
-				Divine Star##103831
+				Crystalline Reflection##103829
+				Crystalline Reflection##103829
 				Translucent Image##103835
-				Light's Inspiration##103826
-				Light's Inspiration##103826
-				Improved Fade##103836
-				Improved Fade##103836
+				Death and Madness##103863
 				Tithe Evasion##103838
 				Renew##103869
 				Shadowfiend##103865
@@ -1600,63 +1600,63 @@ TA.Builds = {
 				Protector of the Frail##103714
 				Power Word: Barrier##103687
 				Power Word: Radiance##103722
-				Power of the Dark Side##103724
-				Schism##103704
 				Light's Promise##103721
-				Power Word: Solace##103716
-				Rapture##103727
 				Bright Pupil##103720
-				Purge the Wicked##103718
-				Revel in Purity##103690
-				Dark Indulgence##103725
-				Shadow Covenant##103706
-				Embrace Shadow##103708
+				Power of the Dark Side##103724
+				Rapture##103727
 				Pain and Suffering##103703
 				Pain and Suffering##103703
 				Castigation##103702
+				Purge the Wicked##103718
+				Revel in Purity##103690
+				Dark Indulgence##103725
+				Schism##103704
+				Shadow Covenant##103706
+				Embrace Shadow##103708
 				Abyssal Reverie##103709
 				Abyssal Reverie##103709
 				Lenience##103692
-				Mindbender##103710
-				Inescapable Torment##103712
-				Inescapable Torment##103712
-				Void Summoner##103695
-				Expiation##103711
-				Expiation##103711
 				Harsh Discipline##103697
 				Harsh Discipline##103697
+				Twilight Equilibrium##103696
+				Train of Thought##103731
+				Blaze of Light##103693
+				Blaze of Light##103693
+				Weal and Woe##103694
+				Expiation##103711
+				Expiation##103711
 			]]
 		},
 		["Holy (Healer)"] = {2,false, [[
-				Shadowfiend##103865
+				Holy Nova##103851
+				Rhapsody##103850
 				Improved Flash Heal##103866
 				Protective Light##103858
-				Spell Warding##103872
-				Angelic Feather##103853
 				Leap of Faith##103868
-				Dispel Magic##103867
-				Shadow Word: Death##103864
+				Angelic Feather##103853
+				Void Tendrils##103859
+				Shadowfiend##103865
 				Power Infusion##103844
 				Twins of the Sun Priestess##103832
 				Twist of Fate##103833
 				Twist of Fate##103833
+				Mass Dispel##103849
 				Inspiration##103846
 				Unwavering Will##103847
 				Unwavering Will##103847
-				Mass Dispel##103849
-				Death and Madness##103863
-				Tithe Evasion##103838
-				Apathy##103839
-				Throes of Pain##103861
+				Dispel Magic##103867
+				Sanguine Teachings##114735
+				San'layn##103840
+				Spell Warding##103872
 				Binding Heals##103824
 				Surge of Light##103823
 				Surge of Light##103823
 				Power Word: Life##103822
+				Light's Inspiration##103826
+				Light's Inspiration##103826
+				Angelic Bulwark##103821
 				Divine Star##103831
-				Throes of Pain##103861
-				Mindgames##103837
 				Translucent Image##103835
-				Improved Mass Dispel##103848
 				Improved Fade##103836
 				Improved Fade##103836
 				Renew##103869
@@ -1674,14 +1674,14 @@ TA.Builds = {
 				Divine Hymn##103755
 				Symbol of Hope##103751
 				Renewed Faith##103754
-				Enlightenment##103752
 				Trail of Light##103770
 				Trail of Light##103770
 				Everlasting Light##103756
 				Crisis Management##103762
 				Crisis Management##103762
+				Prayers of the Virtuous##103750
+				Prayers of the Virtuous##103750
 				Searing Light##103739
-				Censure##103753
 				Apotheosis##103743
 				Desperate Times##103741
 				Desperate Times##103741
@@ -1689,9 +1689,9 @@ TA.Builds = {
 				Harmonious Apparatus##103744
 				Harmonious Apparatus##103744
 				Divine Word##103675
-				Pontifex##103763
-				Resonant Words##103735
-				Resonant Words##103735
+				Say Your Prayers##103749
+				Burning Vehemence##103738
+				Burning Vehemence##103738
 			]]
 		},
 		["Shadow (DPS)"] = {3,true, [[
@@ -1702,7 +1702,7 @@ TA.Builds = {
 				Improved Flash Heal##103866
 				Protective Light##103858
 				Leap of Faith##103868
-				Phantasm##103834
+				Angelic Feather##103853
 				Power Infusion##103844
 				Twins of the Sun Priestess##103832
 				Twist of Fate##103833
@@ -1724,41 +1724,41 @@ TA.Builds = {
 				Manipulation##103818
 				Shattered Perceptions##103819
 				Translucent Image##103835
-				Angelic Feather##103853
+				Improved Fade##103836
 				Improved Fade##103836
 				Shadowfiend##103865
 				Shadow Word: Death##103864
 			]],[[
 				Devouring Plague##103808
+				Shadowy Apparitions##103809
+				Misery##115448
+				Thought Harvester##103795
+				Surge of Insanity##103812
+				Psychic Link##103814
 				Dispersion##103806
 				Silence##103792
-				Shadowy Apparitions##103809
-				Misery##103791
-				Mind Sear##103807
-				Mind Spike##103812
-				Coalescing Shadows##103795
 				Void Eruption##103674
-				Shadow Crash##103803
 				Ancient Madness##103798
-				Ancient Madness##103798
-				Auspicious Spirits##103811
-				Surge of Darkness##103813
-				Mind Melt##103682
-				Psychic Link##103814
-				Psychic Link##103814
-				Dark Evangelism##103802
-				Dark Evangelism##103802
+				Phantasmal Pathogen##103686
+				Phantasmal Pathogen##103686
+				Mind Spike##103803
+				Mind Melt##115449
+				Mind's Eye##103786
+				Shadow Crash##103813
+				Whispering Shadows##103682
+				Maddening Touch##103784
+				Maddening Touch##103784
 				Shadowy Insight##103805
-				Mental Decay##103804
-				Void Torrent##103679
-				Malediction##103797
-				Malediction##103797
-				Idol of N'Zoth##103781
-				Encroaching Shadows##103685
-				Mind Devourer##103684
-				Mind Devourer##103684
+				Auspicious Spirits##103811
+				Void Torrent##103796
+				Tormented Spirits##103810
+				Tormented Spirits##103810
 				Idol of Yogg-Saron##103817
-				Mind Flay: Insanity##103681
+				Malediction##103797
+				Idol of C'Thun##103782
+				Screams of the Void##103789
+				Screams of the Void##103789
+				Idol of N'Zoth##103781
 			]]
 		},
 	},
@@ -1773,14 +1773,14 @@ TA.Builds = {
 				Gouge##112631
 				Tricks of the Trade##112574
 				Shadowstep##112583
-				Tight Spender##112582
+				Master Poisoner##112521
 				Fleet Footed##112654
 				Virulent Poisons##112653
 				Deadly Precision##112652
 				Deadly Precision##112652
 				Vigor##112651
 				Improved Sprint##112636
-				Unbreakable Stride##112638
+				Deadened Nerves##112633
 				Thief's Versatility##112645
 				Thief's Versatility##112645
 				Acrobatic Strikes##112644
@@ -1815,7 +1815,7 @@ TA.Builds = {
 				Lethal Dose##112509
 				Lethal Dose##112509
 				Elaborate Planning##112512
-				Improved Poisons##112519
+				Lightweight Shiv##112518
 				Improved Poisons##112519
 				Poison Bomb##112660
 				Poison Bomb##112660
@@ -1890,9 +1890,9 @@ TA.Builds = {
 				Precise Cuts##112554
 				Fan the Hammer##112553
 				Fan the Hammer##112553
-				Greenskin's Wickers##112552
 				Loaded Dice##112542
 				Audacity##112527
+				Count the Odds##112541
 			]]
 		},
 		["Subtlety (DPS)"] = {3,false, [[
@@ -1964,70 +1964,70 @@ TA.Builds = {
 	},
 	SHAMAN = {
 		["Elemental (DPS)"] = {1,false, [[
+				Fire and Ice##101956
 				Wind Shear##101957
-				Astral Shift##101945
-				Spirit Wolf##101963
-				Chain Heal##101951
-				Earth Shield##102004
-				Capacitor Totem##101961
-				Healing Stream Totem##101998
-				Brimming with Life##101979
-				Swirling Currents##101999
-				Swirling Currents##101999
-				Spiritwalker's Grace##101955
-				Nature's Fury##101980
-				Nature's Fury##101980
-				Elemental Orbit##102003
 				Earth Elemental##101952
-				Planes Traveler##101944
+				Frost Shock##101965
+				Brimming with Life##101979
+				Capacitor Totem##101961
 				Static Charge##101960
-				Earthgrab Totem##101975
+				Astral Shift##101945
+				Nature's Fury##101980
+				Nature's Fury##101980
 				Winds of Al'Akir##101981
 				Winds of Al'Akir##101981
+				Wind Rush Totem##101976
+				Elemental Warding##101978
+				Elemental Warding##101978
+				Spiritwalker's Grace##101955
+				Thunderstorm##101995
+				Nature's Guardian##101974
+				Nature's Guardian##101974
+				Thunderous Paws##101962
+				Graceful Spirit##101954
 				Ancestral Guidance##102000
+				Nature's Swiftness##101997
 				Gust of Wind##101982
 				Go with the Flow##101984
 				Go with the Flow##101984
 				Totemic Recall##101987
 				Call of the Elements##101986
-				Nature's Guardian##101974
-				Nature's Guardian##101974
-				Fire and Ice##101956
-				Elemental Warding##101978
-				Elemental Warding##101978
+				Hex##101972
+				Astral Bulwark##101943
+				Ancestral Defense##114819
 				Lava Burst##101950
 				Chain Lightning##101949
 			]],[[
 				Earth Shock##101854
-				Earthquake##101855
-				Fire Elemental##101850
 				Elemental Fury##101853
-				Primordial Bond##101847
-				Lava Surge##101846
+				Primordial Fury##101852
+				Flow of Power##101871
+				Storm Elemental##101849
+				Earthquake##101855
 				Tumultuous Fissures##101857
 				Call of Thunder##101858
+				Swelling Maelstrom##101893
+				Surge of Power##101873
+				Power of the Maelstrom##101892
+				Power of the Maelstrom##101892
+				Master of the Elements##101879
+				Master of the Elements##101879
 				Unrelenting Calamity##101859
 				Stormkeeper##101860
-				Echo of the Elements##101872
-				Surge of Power##101873
-				Master of the Elements##101879
-				Master of the Elements##101879
-				Call of Fire##101888
-				Flames of the Cauldron##101887
-				Improved Flametongue Weapon##101886
+				Flash of Lightning##101861
+				Icefury##101870
+				Electrified Shocks##101868
 				Eye of the Storm##101867
-				Eye of the Storm##101867
-				Power of the Maelstrom##101892
-				Elemental Blast##101866
-				Deeply Rooted Elements##101878
+				Echo Chamber##101890
+				Echo Chamber##101890
+				Mountains Will Fall##101889
 				Liquid Magma Totem##101884
-				Primordial Wave##101891
-				Rolling Magma##101843
-				Rolling Magma##101843
-				Splintered Elements##101844
-				Magma Chamber##101883
-				Magma Chamber##101883
-				Skybreaker's Fiery Demise##101881
+				Echoes of Great Sundering##101862
+				Echoes of Great Sundering##101862
+				Lightning Rod##101864
+				Elemental Blast##101866
+				Eye of the Storm##101867
+				Elemental Equilibrium##101865
 			]]
 		},
 		["Enhancement (DPS)"] = {2,true, [[
@@ -2124,8 +2124,8 @@ TA.Builds = {
 				Thundershock##101994
 				Graceful Spirit##101954
 				Nature's Swiftness##101997
-				Totemic Focus##101990
-				Totemic Focus##101990
+				Elemental Warding##101978
+				Elemental Warding##101978
 				Purge##101968
 				Planes Traveler##101944
 				Capacitor Totem##101961
@@ -2133,35 +2133,35 @@ TA.Builds = {
 				Chain Heal##101951
 			]],[[
 				Riptide##101905
-				Healing Wave##101904
 				Healing Stream Totem##101900
+				Healing Wave##101904
 				Resurgence##101902
-				Stormkeeper##101901
-				Ancestral Vigor##101909
-				Ancestral Vigor##101909
 				Deluge##101906
 				Deluge##101906
 				Healing Rain##101923
+				Ancestral Vigor##101909
+				Ancestral Vigor##101909
 				Spirit Link Totem##101913
-				Flow of the Tides##101910
 				Healing Tide Totem##101912
+				Ancestral Reach##101911
 				Undulation##101919
+				Mana Tide Totem##101929
+				Spiritwalker's Tidal Totem##114817
 				Tidal Waves##101899
 				Water Totem Mastery##101895
-				Master of the Elements##101896
 				Cloudburst Totem##101933
+				Master of the Elements##101896
 				Lava Surge##101894
-				Echo of the Elements##101928
-				Ancestral Awakening##101927
-				Ancestral Awakening##101927
+				Primordial Wave##101917
+				Tidebringer##101924
+				Tidebringer##101924
 				High Tide##101925
 				Earthen Harmony##101941
 				Earthen Harmony##101941
 				Ascendance##101942
-				Downpour##101842
-				Tidebringer##101924
-				Tidebringer##101924
 				Acid Rain##101922
+				Echo of the Elements##101928
+				Stormkeeper##101901
 			]]
 		},
 	},
@@ -2211,7 +2211,7 @@ TA.Builds = {
 				Kindled Malice##91561
 				Vile Taint##91556
 				Siphon Life##91574
-				Soul Flame##91562
+				Soul Swap##91558
 				Soul Flame##91562
 				Withering Bolt##91577
 				Withering Bolt##91577
@@ -2225,10 +2225,10 @@ TA.Builds = {
 				Malevolent Visionary##91504
 				Malevolent Visionary##91504
 				Grim Reach##91419
-				Soul Rot##91578
-				Soul-Eater's Gluttony##91428
-				Soul-Eater's Gluttony##91428
-				Dark Harvest##91579
+				Malefic Affliction##91429
+				Malefic Affliction##91429
+				Doom Blossom##91503
+				Wrath of Consumption##91553
 				Creeping Death##91580
 			]]
 		},
@@ -2241,7 +2241,6 @@ TA.Builds = {
 				Demonic Inspiration##91436
 				Fel Armor##91461
 				Fel Armor##91461
-				Horrify##115459
 				Sweet Souls##91435
 				Dark Pact##91444
 				Frequent Donor##91445
@@ -2256,13 +2255,14 @@ TA.Builds = {
 				Sargerei Technique##115462
 				Soul Link##91433
 				Soul Conduit##91431
-				Soul Conduit##91431
+				Soul Conduit##91431Fel
+				Synergy##91425
 				Summon Soulkeeper##91448
 				Soulburn##91469
 				Grimoire of Synergy##91432
 				Grimoire of Synergy##91432
 				Demonic Fortitude##91430
-				Amplify Curse##91442
+				Fiendish Stride##91459
 				Demonic Embrace##91438
 				Demonic Circle##91441
 			]],[[
@@ -2277,7 +2277,7 @@ TA.Builds = {
 				Fel and Steel##91534
 				Grimoire: Felguard##91531
 				Demonic Meteor##91530
-				Fel Might##91532
+				Power Siphon##91521
 				Fel Sunder##91528
 				Ripped through the Portal##91527
 				Ripped through the Portal##91527
@@ -2289,12 +2289,12 @@ TA.Builds = {
 				Summon Demonic Tyrant##91550
 				Soulbound Tyrant##91510
 				Soulbound Tyrant##91510
-				Grand Warlock's Design##91508
+				Reign of Tyranny##91509
 				Antoran Armaments##91526
 				Infernal Command##91524
 				Infernal Command##91524
-				Guillotine##91523
-				The Expendables##91512
+				Guillotine##115460
+				Bloodbound Imps##91519
 				Imp Gang Boss##91516
 			]]
 		},
@@ -2308,6 +2308,7 @@ TA.Builds = {
 				Demon Skin##91463
 				Demon Skin##91463
 				Demonic Gateway##91466
+				Shadowfury##91452
 				Dark Accord##91467
 				Curses of Enfeeblement##91462
 				Demonic Inspiration##91436
@@ -2327,9 +2328,8 @@ TA.Builds = {
 				Soulburn##91469
 				Grimoire of Synergy##91432
 				Grimoire of Synergy##91432
-				Fiendish Stride##91459
 				Demonic Embrace##91438
-				Profane Bargain##91426
+				Fel Synergy##91425
 				Demonic Circle##91441
 			]],[[
 				Chaos Bolt##91591
@@ -2342,8 +2342,9 @@ TA.Builds = {
 				Rain of Fire##91592
 				Pyrogenics##91489
 				Inferno##91488
-				Rolling Havoc##91474
-				Rolling Havoc##91474
+				Channel Demonfire##91586
+				Raging Demonfire##91585
+				Raging Demonfire##91585
 				Backlash##91500
 				Flashpoint##91485
 				Flashpoint##91485
@@ -2351,7 +2352,6 @@ TA.Builds = {
 				Eradication##91501
 				Ashen Remains##91482
 				Ashen Remains##91482
-				Explosive Potential##91581
 				Summon Infernal##91502
 				Diabolic Embers##91481
 				Ritual of Ruin##91483
@@ -2547,12 +2547,12 @@ TA.Builds = {
 				Anger Management##112166
 				Impenetrable Wall##112164
 				Enduring Defenses##112169
-				Brutal Vitality##112325
+				Fueled by Violence##112326
 				Challenging Shout##112163
 				Show of Force##112177
 				Heavy Repercussions##112176
 				Bloodsurge##112154
-				Spell Block##112110
+				Tough as Nails##112324
 				Punish##112323
 				Shield Specialization##112171
 				Shield Specialization##112171

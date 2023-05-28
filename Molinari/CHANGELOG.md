@@ -1,4 +1,5 @@
-### Changes in 100100.102-Release:
+### Changes in 100100.105-Release:
 
-- Fixed: Sounds and frame spikes when moving after login (Retail)
+- Fixed: Disenchanting wrong item when holding shift
+- Fixed: Sparkles not respecting modifiers and settings
 

@@ -15,6 +15,18 @@ How to support Altoholic's development :
 If you like the addon, consider supporting it, this has been the long term effort and commitment of a single person. #ArmyOfOne
 
 
+10.1.005 (18/05/2023)
+
+- DataStore_Agenda is now generic and works will all versions of the game.
+- DataStore_Currencies is now generic and works will all versions of the game.
+- Fixed texture coordinates in the QuestLogRow template. (Technohunter)
+
+10.1.004 (12/05/2023)
+
+- Summary Tab : fixed garrison enums in the activity panel.
+- DataStore_Pets : updated scanning functions for the new API. (Technohunter)
+
+
 10.1.003 (11/05/2023)
 
 - DataStore_Quests : fixed scanning of spell rewards.

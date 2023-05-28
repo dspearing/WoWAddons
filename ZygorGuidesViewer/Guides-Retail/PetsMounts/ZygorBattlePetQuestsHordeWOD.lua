@@ -136,16 +136,22 @@ step
 talk Serr'ah##79858
 turnin Scrappin'##36662 |goto Frostwall 32.5,41.0 |only if haveq(36662)
 turnin Mastering the Menagerie##37645 |goto Frostwall 32.5,41.0 |only if haveq(37645)
+|only if not questactive(38300) |next "start"
+|only if questactive(38300) |next "KURA"
 step
+label "KURA"
 talk Kura Thunderhoof##91361
 accept Critters of Draenor##38300 |goto 33.36,42.83
+|only if questactive(38300)
 step
 talk Kura Thunderhoof##91361
 Tell her: "_Let's do this!_"
 |tip Her pets are different each day, so choose to fight her, then Forfeit after you see which pets she is using. Choose the pets you need to counter her, then fight her again.
 Defeat Kura Thunderhoof In a Pet Battle |q 38300/1 |goto 33.40,41.97
+|only if questactive(38300)
 step
 talk Kura Thunderhoof##91361
 turnin Critters of Draenor##38300 |goto 33.36,42.83
+|only if questactive(38300)
 |next "start"
 ]])

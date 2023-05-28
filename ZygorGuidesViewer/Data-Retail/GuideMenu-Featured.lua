@@ -15,7 +15,14 @@ table.insert(GuideMenu.Featured,{
 	{"columns",
 	{"item", text=[[**Zaralek Cavern**]], guide="LEVELING\\Dragonflight (60-70)\\Zaralek Cavern"},
 	{"item", text=[[**Dragon Glyphs (Zaralek Cavern)**]], guide="LEVELING\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)"},
+	{"item", text=[[**Snail Racing**]], guide="LEVELING\\Dragonflight (60-70)\\Snail Racing"},
 	}, --columnsend
+
+	{"section", text=[[DUNGEONS]]},
+	{"banner", image=ZGV.IMAGESDIR.."Patch101Dungeons",showcaseonly=true},
+{"columns",
+{"item", text=[[**Aberrus, The Shadowed Cruible**]], guide="DUNGEONS\\Dragonflight Raids\\Aberrus, The Shadowed Crucible"},
+}, --columnsend
 	
 {"section", text=[[DAILIES]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch101Dailies",showcaseonly=true},

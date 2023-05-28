@@ -19,7 +19,9 @@ You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
-local addonName, addon = ...
+local addonName = ...
+---@class AdiBags: AceAddon
+local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
 local L = addon.L
 
 -- Constants for detecting WoW version.
@@ -218,6 +220,7 @@ addon.DEFAULT_SETTINGS = {
 			freeSpace = true,
 			notWhenTrading = 1,
 		},
+		experiments = {},
 		theme = {
 			currentTheme = "default",
 			backpack = {

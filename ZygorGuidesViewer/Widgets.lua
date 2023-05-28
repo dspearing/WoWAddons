@@ -103,6 +103,8 @@ function Widgets:SetupWidgets()
 			object:SystemInitialise()
 			object:SystemApplySkin()
 			object:SetInteractive(false)
+
+			object.frame:Hide()
 			if object.system then
 				object:Enable()
 			end

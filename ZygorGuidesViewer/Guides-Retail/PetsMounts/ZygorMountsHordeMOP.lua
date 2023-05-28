@@ -241,14 +241,12 @@ description="\nThis mount is a very rare drop from Galleon in the Valley of the 
 step
 kill Galleon##62346
 |tip It has about a 15 minute respawn timer.
-collect Son of Galleon's Saddle##89783 |goto Valley of the Four Winds/0 70.74,63.79 |complete hasmount(130965)
+collect Son of Galleon's Saddle##89783 |goto Valley of the Four Winds/0 70.74,63.79 |or
 |tip This has an extremely low drop rate.
+'|complete hasmount(130965)
 step
 use the Son of Galleon's Saddle##89783
 Learn the "Son of Galleon" Mount |learnmount Son of Galleon##130965
-step
-_Congratulations!_
-You Collected the "Son of Galleon" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Faction Mounts\\Black Dragon Turtle",{
 keywords={"black","dragon","turtle","ground","mount"},

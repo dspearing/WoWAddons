@@ -1168,19 +1168,21 @@ description="\nThis mount is acquired from Doomrider Helgrim while the Alliance 
 step
 talk Zidormi##141649
 Ask her _"Can you return me to the present time?"_
-Return to the Present |complete not ZGV.InPhase('Old Arathi') |goto Arathi Highlands/0 38.24,90.09 |or
-'|learnmount Highland Mustang##279456 |or
+Time Travel to Present-Day Arathi Highlands |complete not ZGV.InPhase("Old Arathi") |or
+Find her at [Arathi Highlands/0 38.25,90.09]
+'|complete hasmount(279456) |or
+step
+Wait for the Battle for Stromgarde in the Arathi Highlands to Begin |complete ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279456) |or
 step
 kill Doomrider Helgrim##142741
 |tip He only appears when the Alliance controls Stromgarde.
 |tip This mount has a small chance to drop.
-collect Highland Mustang##163579 |goto 53.97,56.96 |complete hasmount(279456)
+collect Highland Mustang##163579 |goto 53.97,56.96 |or
+'|complete hasmount(279456)
 step
 use the Highland Mustang##163579
 Learn the "Highland Mustang" Mount |learnmount Highland Mustang##279456
-step
-_Congratulations!_
-You Collected the "Highland Mustang" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Lil' Donkey",{
 author="support@zygorguides.com",
@@ -1195,20 +1197,21 @@ description="\nThis mount is acquired from Knight-Captain Aldrin while the Horde
 step
 talk Zidormi##141649
 Ask her _"Can you return me to the present time?"_
-Return to the Present |complete not ZGV.InPhase('Old Arathi') |goto Arathi Highlands/0 38.24,90.09 |or
-'|learnmount learnmount Lil'Donkey##279608 |or
+Time Travel to Present-Day Arathi Highlands |complete not ZGV.InPhase("Old Arathi") |or
+Find her at [Arathi Highlands/0 38.25,90.09]
+'|complete hasmount(279608) |or
 step
-Enter the mine |goto 33.68,36.79 < 10 |walk
+Wait for the Battle for Stromgarde in the Arathi Highlands to Begin |complete ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279608) |or
+step
+Enter the mine |goto Arathi Highlands/0 27.48,55.58 < 10 |walk
 kill Overseer Krix##142423
 |tip Inside the mine.
-|tip He will appear after the Horde take control of Stromgarde.
-collect Lil' Donkey##163646 |goto 33.27,38.28 |complete hasmount(279608)
+collect Lil' Donkey##163646 |goto Arathi Highlands/0 33.27,38.28 |or
+'|complete hasmount(279608) |or
 step
 use the Lil' Donkey##163646
 Learn the "Lil' Donkey" Mount |learnmount Lil'Donkey##279608
-step
-_Congratulations!_
-You Collected the "Lil' Donkey" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Skullripper",{
 author="support@zygorguides.com",
@@ -1223,18 +1226,20 @@ description="\nThis mount is acquired from Skullripper in Arathi Highlands.",
 step
 talk Zidormi##141649
 Ask her _"Can you return me to the present time?"_
-Return to the Present |complete not ZGV.InPhase('Old Arathi') |goto Arathi Highlands/0 38.24,90.09 |or
-'|learnmount Skullripper##279611 |or
+Time Travel to Present-Day Arathi Highlands |complete not ZGV.InPhase("Old Arathi") |or
+Find her at [Arathi Highlands/0 38.25,90.09]
+'|complete hasmount(279608) |or
+step
+Wait for the Battle for Stromgarde in the Arathi Highlands to Begin |complete ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279608) |or
 step
 kill Skullripper##142437
 |tip It will appear when the Alliance take control of Stromgarde.
-collect Skullripper##163645 |goto 38.24,90.09 |complete hasmount(279611)
+collect Skullripper##163645 |goto Arathi Highlands/0 38.24,90.09 |or
+'|complete hasmount(279611) |or
 step
 use Skullripper##163645
 Learn the "Skullripper" Mount |learnmount Skullripper##279611
-step
-_Congratulations!_
-You Collected the "Skullripper" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Swift Albino Raptor",{
 author="support@zygorguides.com",
@@ -1249,19 +1254,21 @@ description="\nThis mount is dropped by Beastrider Kama in Arathi Highlands when
 step
 talk Zidormi##141649
 Ask her _"Can you return me to the present time?"_
-Return to the Present |complete not ZGV.InPhase('Old Arathi') |goto Arathi Highlands/0 38.24,90.09 |or
-'|learnmount Swift Albino Raptor##279569 |or
+Time Travel to Present-Day Arathi Highlands |complete not ZGV.InPhase("Old Arathi") |or
+Find her at [Arathi Highlands/0 38.25,90.09]
+'|complete hasmount(279569) |or
+step
+Wait for the Battle for Stromgarde in the Arathi Highlands to Begin |complete ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279569) |or
 step
 kill Beastrider Kama##142709
 |tip He's on a spawn timer.
 |tip He will appear when Alliance take control of Stromgarde.
-collect Swift Albino Raptor##163644 |goto 65.64,70.41 |complete hasmount(279569)
+collect Swift Albino Raptor##163644 |goto 65.64,70.41 |complete hasmount(279569) |or
+'|complete hasmount(279569) |or
 step
 use Swift Albino Raptor##163644
 Learn the "Swift Albino Raptor" Mount |learnmount Swift Albino Raptor##279569
-step
-_Congratulations!_
-You Collected the "Swift Albino Raptor" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Terrified Pack Mule",{
 author="support@zygorguides.com",
@@ -1343,19 +1350,22 @@ model={706},
 description="\nThis mount is acquired from the Rarespawn Blackpaw in Darkshore.",
 },[[
 step
-Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
-'|complete hasmount(288505) |or
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Time Travel to Present-Day Darkshore |goto Darkshore/0 48.86,24.46 |noway |complete not ZGV.InPhase("Old Darnassus") |or
+'|complete hasmount(288438) |or
 step
-kill Blackpaw##149660
-|tip You will be flagged for PvP.
-collect Blackpaw##166428 |goto Darkshore/0 49.65,24.96 |complete hasmount(288438)
+Wait for the Horde Assault to Begin |complete ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288438) |or
+step
+kill Agathe Wyrmwood##149652
+collect Blackpaw##166428 |goto Darkshore/0 49.65,24.96 |complete hasmount(288438) |or
+|tip You can only get rewards from the first kill.
 |tip This has about a 6% drop rate.
+'|complete hasmount(288438) |or
 step
 use Blackpaw##166428
 Learn the "Blackpaw" Mount |learnmount Blackpaw##288438
-step
-_Congratulations!_
-You Collected the "Blackpaw" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Kaldorei Nightsaber",{
 author="support@zygorguides.com",
@@ -1368,12 +1378,17 @@ model={89247},
 description="\nThis mount is acquired from the Rarespawn Croz Bloodrage in Darkshore.",
 },[[
 step
-Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Time Travel to Present-Day Darkshore |goto Darkshore/0 48.86,24.46 |noway |complete not ZGV.InPhase("Old Darnassus") |or
+'|complete hasmount(288505) |or
+step
+Wait for the Horde Assault to Begin |complete ZGV.InPhase("Warfront Darkshore Control") |or
 '|complete hasmount(288505) |or
 step
 kill Croz Bloodrage##149655
-|tip You will be flagged for PVP.
-collect Kaldorei Nightsaber##166435 |goto Darkshore/0 58.61,51.20 |or
+collect Kaldorei Nightsaber##166435 |goto Darkshore/0 50.81,32.24 |or
+|tip You can only get rewards from the first kill.
 '|complete hasmount(288505) |or
 step
 use the Kaldorei Nightsaber##166435
@@ -1390,14 +1405,19 @@ model={89246},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
 },[[
 step
-Wait for the Darkshore Assault to Begin |only if ZGV.InPhase("Warfront Darkshore Control") |or
-'|complete hasmount(288505) |or
+talk Zidormi##141489
+Ask her _"Can you return me to the present time?"_
+Time Travel to Present-Day Darkshore |goto Darkshore/0 48.86,24.46 |noway |complete not ZGV.InPhase("Old Darnassus") |noway |or
+'|complete hasmount(288503) |or
+step
+Wait for the Horde Assault to Begin |complete ZGV.InPhase("Warfront Darkshore Control") |or
+'|complete hasmount(288503) |or
 step
 kill Moxo the Beheader##147701
 |tip He walks around this area.
-|tip You will be flagged for PVP.
 collect Captured Umber Nightsaber##166434 |goto Darkshore/0 65.08,20.13 |or
-'|complete hasmount(288505) |or
+|tip You can only get rewards from the first kill.
+'|complete hasmount(288503) |or
 step
 use Captured Umber Nightsaber##166434
 Learn the "Umber Nightsaber" Mount |learnmount Umber Nightsaber##288503
@@ -1413,15 +1433,22 @@ model={86091},
 description="\nThis mount is acquired from the Rarespawn Shadowclaw in Arathi Highlands.",
 },[[
 step
+talk Zidormi##141649
+Ask her _"Can you return me to the present time?"_
+Time Travel to Present-Day Arathi Highlands |complete not ZGV.InPhase("Old Arathi") |or
+Find her at [Arathi Highlands/0 38.25,90.09]
+'|complete hasmount(279868) |or
+step
+Wait for the Battle for Stromgarde in the Arathi Highlands to Begin |complete ZGV.InPhase("Warfront Arathi Control") |or
+'|complete hasmount(279868) |or
+step
 kill Nimar the Slayer##142692
 |tip He walks around this area.
-|tip You will be flagged for PVP if your faction does not control Arathi Highlands.
-collect Witherbark Direwing##163706 |n
-use the Witherbark Direwing##163706
-Learn the "Witherbark Direwing" Mount |learnmount Witherbark Direwing##279868 |goto Arathi Highlands/0 67.63,60.86
+collect Witherbark Direwing##163706 |goto Arathi Highlands/0 67.63,60.86 |or
+'|complete hasmount(279868) |or
 step
-_Congratulations!_
-You Collected the "Witherbark Direwing" Mount.
+use the Witherbark Direwing##163706
+Learn the "Witherbark Direwing" Mount |learnmount Witherbark Direwing##279868
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Frightened Kodo",{
 author="support@zygorguides.com",
@@ -1761,99 +1788,146 @@ Read the First Letter |q 40397 |future |goto 65.53,69.48
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 500 Seashell##156791 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 500 Seashell##156791 |goto Shimmering Expanse/0 44.57,20.20 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Volatile Violetscale##132568
 |tip It looks like a purple eel that swims around this area.
-buy 100 Cavity-Free Great Shark Tooth##156780 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 39.70,80.15
+buy 100 Cavity-Free Great Shark Tooth##156780 |goto Abyssal Depths/0 39.70,80.15 |or
+|tip These have a duration of 5 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Manta Stargazer##132570
 |tip It looks like a blue manta ray that swims around this area near the surface.
-buy 50 Razoreel Larva##156786 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 54.26,23.23
+buy 50 Razoreel Larva##156786 |goto Shimmering Expanse/0 54.26,23.23 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Lil' Whaley##132569
 |tip It looks like a large blue whale that swims around this area.
-buy 250 Well-Fed Doctor Fish##156783 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 70.16,49.40
+buy 250 Well-Fed Doctor Fish##156783 |goto Shimmering Expanse/0 70.16,49.40 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Gloomy Bluefin##132572
 |tip It looks like a large blue fish that swims around this area near the sea floor.
-buy 10 Freshly Molted Crab Skin##156782 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 65.44,42.41
+buy 10 Freshly Molted Crab Skin##156782 |goto Abyssal Depths/0 65.44,42.41 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Ol' Fishbreath##132562
 |tip It looks like a small blue shark that swims around this area.
-buy 50 Glittergill Glitter##156790 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Kelp'thar Forest/0 60.86,60.32
+buy 50 Glittergill Glitter##156790 |goto Kelp'thar Forest/0 60.86,60.32 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 80 Seashell##156791 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 80 Seashell##156791 |goto Shimmering Expanse/0 44.57,20.20 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Gloomy Bluefin##132572
 |tip It looks like a large blue fish that swims around this area near the sea floor.
-buy 2 Giant Giant Toenail Clipping##156775 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 65.44,42.41
+buy 2 Giant Giant Toenail Clipping##156775 |goto Abyssal Depths/0 65.44,42.41 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Little Carp##132571
 |tip It looks like a brown and purple fish with a large head that swims around this area.
-buy 4 Makrura Eye##156776 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 45.47,17.47
+buy 4 Makrura Eye##156776 |goto Abyssal Depths/0 45.47,17.47 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Volatile Violetscale##132568
 |tip It looks like a purple eel that swims around this area.
-buy 1 Accidentally-Severed Seahorse Fin##156773 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 39.70,80.15
+buy 1 Accidentally-Severed Seahorse Fin##156773 |goto Abyssal Depths/0 39.70,80.15 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Crimson Angerfish##132565
 |tip It looks like a red pufferfish that swims around this area.
-buy 3 Shiny Sea Serpent Scale##156774 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 54.62,90.04
+buy 3 Shiny Sea Serpent Scale##156774 |goto Shimmering Expanse/0 54.62,90.04 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Manta Stargazer##132570
 |tip It looks like a blue manta ray that swims around this area near the surface.
-buy 40 Symbiotic Plankton##156789 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 54.26,23.23
+buy 40 Symbiotic Plankton##156789 |goto Shimmering Expanse/0 54.26,23.23 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 5 Scintillating Murloc Skin Lotion##156793 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 5 Scintillating Murloc Skin Lotion##156793 |goto Shimmering Expanse/0 44.57,20.20 |or
+|tip These have a duration of 1 hour before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 300 Seashell##156791 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 300 Seashell##156791 |goto Shimmering Expanse/0 44.57,20.20 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Ol' Fishbreath##132562
 |tip It looks like a small blue shark that swims around this area.
-buy 30 Vantus Black Squid Ink##156771 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Kelp'thar Forest/0 60.86,60.32
+buy 30 Vantus Black Squid Ink##156771 |goto Kelp'thar Forest/0 60.86,60.32 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk The Blackfish##132566
 |tip It looks like a black and white orca that swims around this area.
-buy 30 Super Slick Eel Slime##156770 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 15.85,84.84 |notravel
+buy 30 Super Slick Eel Slime##156770 |goto Abyssal Depths/0 15.85,84.84 |notravel |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Volatile Violetscale##132568
 |tip It looks like a purple eel that swims around this area.
-buy 3 Rock-Encrusted Whelk Shell##156767 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 39.70,80.15
+buy 3 Rock-Encrusted Whelk Shell##156767 |goto Abyssal Depths/0 39.70,80.15 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Little Carp##132571
 |tip It looks like a brown and purple fish with a large head that swims around this area.
-buy 5 Potent Gastropod Gloop##156788 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 45.47,17.47
+buy 6 Potent Gastropod Gloop##156788 |goto Abyssal Depths/0 45.47,17.47 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 1500 Seashell##156791 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 1500 Seashell##156791 |goto Shimmering Expanse/0 44.57,20.20 |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Lil' Whaley##132569
 |tip It looks like a large blue whale that swims around this area.
-buy 300 Very Pretty Coral##156761 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 70.16,49.40
+buy 300 Very Pretty Coral##156761 |goto Shimmering Expanse/0 70.16,49.40 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Ol' Fishbreath##132562
 |tip It looks like a small blue shark that swims around this area.
-buy 100 Iridescent Shimmerray Skin##156758 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Kelp'thar Forest/0 60.86,60.32
+buy 100 Iridescent Shimmerray Skin##156758 |goto Kelp'thar Forest/0 60.86,60.32 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Crimson Angerfish##132565
 |tip It looks like a red pufferfish that swims around this area.
-buy 20 Luxurous Luxscale Scale##156764 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 54.62,90.04
+buy 20 Luxurous Luxscale Scale##156764 |goto Shimmering Expanse/0 54.62,90.04 |or
+|tip These have a duration of 5 minutes before they disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk The Blackfish##132566
 |tip It looks like a black and white orca that swims around this area.
-buy 5 Captured Cavitation Bubble##156787 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Abyssal Depths/0 15.85,84.84 |notravel
+buy 5 Captured Cavitation Bubble##156787 |goto Abyssal Depths/0 15.85,84.84 |notravel |or
+|tip These have a duration of 30 minutes before they will disappear from your bags.
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 talk Sir Finley Mrrgglton##132583
 |tip It looks like a green Murloc on land at the top of a tower.
-buy 1 Red Crystal Monocle##156725 |complete itemcount(156725) >= 1 or hasmount(261395) |goto Shimmering Expanse/0 44.57,20.20
+buy 1 Red Crystal Monocle##156725 |goto Shimmering Expanse/0 44.57,20.20 |or
+'|complete itemcount(156725) >= 1 or hasmount(261395) |or
 step
 Enter The Halls of Origination Dungeon |goto Halls of Origination/1 49.35,93.54 < 1000 |c |complete itemcount(156726) >= 1 or hasmount(261395)
 step
@@ -2035,7 +2109,7 @@ Jumping Puzzle Continued:
 4LF
 2FL
 3B
-4FRRR
+5FRRR
 3F
 5F
 1RF
@@ -2125,10 +2199,7 @@ clicknpc The Hivemind##132609
 collect 1 The Hivemind##156798 |complete hasmount(261395)
 step
 use The Hivemind##156798
-learnmount The Hivemind##261395
-step
-_Congratulations!_
-You Collected "The Hivemind" Mount.
+Learn "The Hivemind" Mount |learnmount The Hivemind##261395
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\X-995 Mechanocat",{
 author="support@zygorguides.com",
@@ -2674,9 +2745,6 @@ collect 1 Keys to the Explorer's Jungle Hopper##173299 |or
 step
 use the Keys to the Explorer's Jungle Hopper##173299
 Learn the "Explorer's Jungle Hopper" Mount |learnmount Explorer's Jungle Hopper##307256
-step
-_Congratulations!_
-You Collected the "Explorer's Jungle Hopper" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Mighty Caravan Brutosaur",{
 author="support@zygorguides.com",
@@ -2686,17 +2754,21 @@ mounts={264058},
 patch='80100',
 mounttype='Ground',
 model={83632},
-description="\nThis mount is acquired by purchasing the mount for 5,000,000 gold.",
+description="\nThis mount is acquired from the Black Market Auction House.",
 },[[
 step
-talk Tricky Nick##142691
-buy Reins of the Mighty Caravan Brutosaur##163042 |n
-|tip You will need 5,000,000 gold.
-use the Reins of the Mighty Caravan Brutosaur##163042
-Learn the "Mighty Caravan Brutosaur" Mount |learnmount Mighty Caravan Brutosaur##264058 |goto Boralus/0 56.77,47.08
+Reach Level 60 |ding 60
 step
-_Congratulations!_
-You Collected the "Mighty Caravan Brutosaur" Mount.
+Enter the Black Market Auction House |goto Valdrakken/0 20.24,49.13 < 10
+talk Madam Goya##189676
+|tip Inside the building.
+Bid on the Reins of the Mighty Caravan Brutosaur##163042
+|tip This item may not be available.
+|tip If it is available, you must be the highest bidder by the time the auction ends.
+collect Reins of the Mighty Caravan Brutosaur##163042 |goto Valdrakken/0 20.24,49.13
+step
+use Reins of the Mighty Caravan Brutosaur##163042
+Learn the "Mighty Caravan Brutosaur" Mount |learnmount Mighty Caravan Brutosaur##264058
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Palehide Direhorn",{
 author="support@zygorguides.com",
@@ -3464,7 +3536,7 @@ You Collected the "Clutch of Ha-Li" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Drake of the Four Winds",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Ishak of the Four Winds rare spawn in Uldum during the Amathet Advance assault.",
+description="\nThis mount drops from the Ishak of the Four Winds rare spawn in Uldum during the Uldum assault.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Ishak"},
 mounts={315847},
@@ -3473,26 +3545,35 @@ mounttype='Flying',
 model={92913},
 },[[
 step
-label "Time_Travel"
+Reach Level 50 |ding 50
+step
+label "BEGIN_AGAIN"
+Unlock Uldum Assaults
+|tip You must complete the "Visions of N'zoth" Questline to unlock the N'zoth Assaults in Uldum.
+|tip Use the "Magni's Plan" Leveling Guide to accomplish this.
+Complete the guide through the quest "The Uldum Accord" |complete completedq(56472) |or
+Click Here to Open the "Magni's Plan" Leveling Guide |confirm |loadguide "Leveling Guides\\Battle for Azeroth (10-60)\\Heart of Azeroth\\Magni's Plan"
+'|complete hasmount(315847) |or
+step
 talk Zidormi##162419
 Ask her _"Can you return me to the present time?"_
-Return to the Present |complete not ZGV.InPhase('OldUldum') |goto Uldum/0 56.02,35.14 |or
-'|learnmount Drake of the Four Winds##315847 |or
+Return to the Present |complete not ZGV.InPhase("OldUldum") |goto Uldum/0 56.02,35.14 |or
+'|complete hasmount(315847) |or
 step
-label "Wait_for_Amathet_Invasion"
-Wait for the "Assault: Amathet Advance" Assault |complete ZGV.InPhase("UldumInvasionRight") |or
+Wait for the Assault in Uldum to Begin |goto Uldum New/0 73.64,52.20
 |tip Non-N'zoth assaults alternate every few days.
-'|learnmount Drake of the Four Winds##315847 |or
-'|complete ZGV.InPhase('OldUldum') and not hasmount(315847) |next "Time_Travel" |or
+'|complete ZGV.InPhase("UldumInvasionLeft") |or
+'|complete ZGV.InPhase("UldumInvasionCenter") |or
+'|complete ZGV.InPhase("UldumInvasionRight") |or
+'|complete hasmount(315847) |or
 step
 kill Ishak of the Four Winds##157134
 |tip It flies around the floating platform.
 |tip You can only loot it once per day.
 collect Reins of the Drake of the Four Winds##174641 |goto Uldum New/0 73.90,83.53 |or
 |tip This mount is not a guaranteed drop.
-'|learnmount Drake of the Four Winds##315847 |or
-'|complete ZGV.InPhase('OldUldum') and not hasmount(315847) |next "Time_Travel" |or
-'|complete not ZGV.InPhase("UldumInvasionRight") and not hasmount(315847) |next "Wait_for_Amathet_Invasion" |or
+Click Here to Return to the Beginning of this Guide |confirm |next "BEGIN_AGAIN" |or
+'|complete hasmount(315847) |or
 step
 use the Reins of the Drake of the Four Winds##174641
 Learn the "Drake of the Four Winds" Mount |learnmount Drake of the Four Winds##315847
@@ -3631,16 +3712,13 @@ model={91874},
 step
 kill Dunegorger Kraulok##138794
 |tip Kraulok only spawns when the "Sandswept Bones" world quest is active.
-|tip You can only loot it once per day.
+|tip You can only loot it once a week.
 collect 1 Slightly Damp Pile of Fur##174842 |goto Vol'dun/0 44.37,56.06 |or
 |tip This mount is not a guaranteed drop.
 '|learnmount Mollie##298367 |or
 step
 use the Slightly Damp Pile of Fur##174842
 Learn the "Mollie" Mount |learnmount Mollie##298367
-step
-_Congratulations!_
-You Collected the "Mollie" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Ren's Stalwart Hound",{
 author="support@zygorguides.com",

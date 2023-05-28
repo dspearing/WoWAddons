@@ -131,22 +131,28 @@ accept Mastering the Menagerie##37644 |or |only if hasbuilding(168) |goto Lunarf
 step
 clicknpc Challenge Post##85626
 |tip The pets are different each day, so choose to fight, then Forfeit after you see which pets are used. Choose the pets you need to counter, then fight again.
-Defeat the Pets in the Small Arena |q 36483/1 |or |only if hasbuilding(42) or hasbuilding(167) | goto Lunarfall/0 28.7,43.5
-Defeat the Pets in the Small Arena |q 36483/1 |or |only if hasbuilding(168) |goto Lunarfall/0 28.7,43.5
+Defeat the Pets in the Small Arena |q 36483/1 |or |only if hasbuilding(42) or hasbuilding(167) |goto Lunarfall/0 28.7,43.5
+Defeat the Pets in the Small Arena |q 37644/1 |or |only if hasbuilding(168) |goto Lunarfall/0 28.7,43.5
 step
 talk Lio the Lioness##85418
 turnin Battle Pet Roundup##36483 |only if haveq(36483) or hasbuilding(167) |goto Lunarfall 29.2,40.4
 turnin Mastering the Menagerie##37644 |only if haveq(37644) |goto Lunarfall 29.2,40.4
+|only if not questactive(38299) |next "start"
+|only if questactive(38299) |next "ERRIS"
 step
+label "ERRIS"
 talk Erris the Collector##91014
 accept Critters of Draenor##38299 |goto Lunarfall/0 31.1,39.6
+|only if questactive(38299)
 step
 talk Erris the Collector##91014
 Tell her "_Let's do this!_"
 |tip Her pets are different each day, so choose to fight her, then Forfeit after you see which pets she is using. Choose the pets you need to counter her, then fight her again.
 Defeat Erris the Collector In a Pet Battle |q 38299/1 |goto Lunarfall/0 31.1,39.6
+|only if questactive(38299)
 step
 talk Erris the Collector##91014
 turnin Critters of Draenor##38299 |goto Lunarfall/0 31.1,39.6
+|only if questactive(38299)
 |next "start"
 ]])

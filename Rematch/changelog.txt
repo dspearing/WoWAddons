@@ -1,3 +1,7 @@
+05/14/2023 version 4.14.18
+- Removed support for LibPetBreedInfo (last update was 2017) which seems to be causing issues when present
+- GetAddOnMetadata calls updated
+
 05/02/2023 version 4.14.17
 - Added Zaralek Cavern targets
 - Added compartment launcher support

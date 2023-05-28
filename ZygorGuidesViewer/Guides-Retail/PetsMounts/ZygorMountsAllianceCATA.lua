@@ -989,13 +989,12 @@ model={26424},
 description="\nThis guide will help you acquire the Wooly Mammoth mount.",
 },[[
 step
-You will need _10,000 gold_ to complete this achievement
-|tip The price can be reduced by Kirin Tor discounts based on current reputation
-confirm
-step
 talk Mei Francis##32216
-buy 1 Reins of the Wooly Mammoth##44230 |goto Dalaran 58.1,42.1
-learnmount Wooly Mammoth##59791 |goto Dalaran 58.1,42.1 |use Reins of the Wooly Mammoth##44230
+buy Reins of the Wooly Mammoth##44231 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(59793) |or
+step
+use the Reins of the Wooly Mammoth##44231
+Learn the "Wooly Mammoth" Mount |learnmount Wooly Mammoth##59793
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Event Mounts\\Brewfest\\Brewfest Rams",{
 keywords={"brewfest","ram","swift","ground","mount"},
@@ -1223,28 +1222,36 @@ model={14332},
 description="\nThis guide will help you acquire the Swift Frostsaber, Swift Mistsaber, Swift Stormsaber, Spotted Frostsaber, Striped Dawnsaber, Striped Frostsaber, and Striped Nightsaber mounts. These mounts are Alliance only.",
 },[[
 step
-#include main_rep_mount,rep="Darnassus",tabard="DarnTabard"
-only Dwarf,Human,Gnome,Draenei,Worgen
+talk Moon Priestess Lasara##50305
+buy Darnassus Tabard##45579 |goto Darnassus/0 36.21,48.48 |or
 |tip These mounts are Alliance only.
-step
-Go to Darnassus |goto Darnassus |noway |c
+|tip Run dungeons wearing the Darnassus tabard.
+|tip You can also create and level a Night Elf character to obtain these mounts.
+|only if not raceclass("NightElf")
 step
 talk Lelanai##4730
-buy 1 Reins of the Swift Frostsaber##18766 |goto 42.4,32.8
-buy 1 Reins of the Swift Mistsaber##18767 |goto 42.4,32.8
-buy 1 Reins of the Swift Stormsaber##18902 |goto 42.4,32.8
-buy 1 Reins of the Spotted Frostsaber##8632 |goto 42.4,32.8
-buy 1 Reins of the Striped Dawnsaber##47100 |goto 42.4,32.8
-buy 1 Reins of the Striped Frostsaber##8631 |goto 42.4,32.8
-buy 1 Reins of the Striped Nightsaber##8629 |goto 42.4,32.8
+buy Reins of the Swift Frostsaber##18766 |goto Darnassus/0 42.49,32.59 |complete hasmount(23221)
+buy Reins of the Swift Mistsaber##18767 |goto Darnassus/0 42.49,32.59 |complete hasmount(23219)
+buy Reins of the Swift Stormsaber##18902 |goto Darnassus/0 42.49,32.59 |complete hasmount(23338)
+buy Reins of the Spotted Frostsaber##8632 |goto Darnassus/0 42.49,32.59 |complete hasmount(10789)
+buy Reins of the Striped Dawnsaber##47100 |goto Darnassus/0 42.49,32.59 |complete hasmount(66847)
+buy Reins of the Striped Frostsaber##8631 |goto Darnassus/0 42.49,32.59 |complete hasmount(8394)
+buy Reins of the Striped Nightsaber##8629 |goto Darnassus/0 42.49,32.59 |complete hasmount(10793)
 step
-learnmount Swift Frostsaber##23221 |use Reins of the Swift Frostsaber##18766
-learnmount Swift Mistsaber##23219 |use Reins of the Swift Mistsaber##18767
-learnmount Swift Stormsaber##23338 |use Reins of the Swift Stormsaber##18902
-learnmount Spotted Frostsaber##10789 |use Reins of the Spotted Frostsaber##8632
-learnmount Striped Dawnsaber##66847 |use Reins of the Striped Dawnsaber##47100
-learnmount Striped Frostsaber##8394 |use Reins of the Striped Frostsaber##8631
-learnmount Striped Nightsaber##10793 |use Reins of the Striped Nightsaber##8629
+use Reins of the Swift Frostsaber##18766
+use Reins of the Swift Mistsaber##18767
+use Reins of the Swift Stormsaber##18902
+use Reins of the Spotted Frostsaber##8632
+use Reins of the Striped Dawnsaber##47100
+use Reins of the Striped Frostsaber##8631
+use Reins of the Striped Nightsaber##8629
+Learn the "Swift Frostsaber" Mount |learnmount Swift Frostsaber##23221
+Learn the "Swift Mistsaber" Mount |learnmount Swift Mistsaber##23219
+Learn the "Swift Stormsaber" Mount |learnmount Swift Stormsaber##23338
+Learn the "Spotted Frostsaber" Mount |learnmount Spotted Frostsaber##10789
+Learn the "Striped Dawnsaber" Mount |learnmount Striped Dawnsaber##66847
+Learn the "Striped Frostsaber" Mount |learnmount Striped Frostsaber##8394
+Learn the "Striped Nightsaber" Mount |learnmount Striped Nightsaber##10793
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black Battlestrider",{
 keywords={"black","battlestrider","ground","mount"},
@@ -1277,9 +1284,11 @@ step
 Earn the _"For the Horde"_ achievement |achieve 614
 |tip This mount is a reward for completing the "For the Alliance!" achievement.
 step
-collect 1 Black War Bear##44224 |n
+collect 1 Black War Bear##44224
 |tip When you complete the achievement check your in-game mailbox for the mount.
-learnmount Black War Bear##60119 |use Black War Bear##44224
+step
+use Black War Bear##44224
+Learn the "Black War Bear" Mount |learnmount Black War Bear##60119
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Player vs. Player Mounts\\Black War Elekk",{
 keywords={"black","war","elekk","ground","mount"},
@@ -1793,34 +1802,35 @@ model={27242},
 description="\nThis guide will help you acquire the Ice Mammoth and Grand Ice Mammoth mounts.",
 },[[
 step
-Proceeding to next step |next |only if rep('The Sons of Hodir')<=Neutral
-Proceeding to Friendly |next "friendly" |only if rep('The Sons of Hodir')==Friendly
-Proceeding to Honored |next "honored" |only if rep('The Sons of Hodir')==Honored
-Proceeding to Revered |next "revered" |only if rep('The Sons of Hodir')==Revered
-Proceeding to Buy Mount |next "BuyMount" |only if rep('The Sons of Hodir')==Exalted
+Proceeding to next step |next |only if rep("The Sons of Hodir") <= Neutral
+Proceeding to Friendly |next "friendly" |only if rep("The Sons of Hodir") == Friendly
+Proceeding to Honored |next "honored" |only if rep("The Sons of Hodir") == Honored
+Proceeding to Revered |next "revered" |only if rep("The Sons of Hodir") == Revered
+Proceeding to Buy Mount |next "BuyMount" |only if rep("The Sons of Hodir") == Exalted
 step
 #include "Hodir_Quests"
 step
 label "hub"
-Proceeding to Friendly Dailies |next "friendly" |only if rep('The Sons of Hodir')<=Friendly
-Proceeding to Honored Dailies |next "honored" |only if rep('The Sons of Hodir')==Honored
-Proceeding to Revered Dailies |next "revered" |only if rep('The Sons of Hodir')>=Revered
+Proceeding to Friendly Dailies |next "friendly" |only if rep("The Sons of Hodir") <= Friendly
+Proceeding to Honored Dailies |next "honored" |only if rep("The Sons of Hodir") == Honored
+Proceeding to Revered Dailies |next "revered" |only if rep("The Sons of Hodir") >= Revered
 step
 label "friendly"
 click Hodir's Helm##192080
-accept A Viscious Cleaning##13006 |goto The Storm Peaks,64.2,59.2
+accept A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 click Fjorn's Anvil##192071
-accept Hot and Cold##12981 |goto 63.2,62.9
+accept Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
 click Hodir's Horn##192078
-accept Hodir's Call##12977 |goto 64.1,65.1
+|tip You may have to wait a minute for this to spawn.
+accept Hodir's Call##12977 |goto The Storm Peaks/0 64.21,65.03
 step
 kill Viscous Oil##30325+
 collect 5 Viscous Oil##42640 |q 13006/1 |goto 55.6,63.4
 step
 click Hodir's Helm##192080
-turnin A Viscious Cleaning##13006 |goto 64.2,59.2
+turnin A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 kill Brittle Revenant##30160+
 collect 6 Essence of Ice##42246 |q 12981 |goto 69.7,60.2
@@ -1844,38 +1854,39 @@ collect Relic of Ulduar##42780+|n
 confirm
 step
 click Fjorn's Anvil##192071
-turnin Hot and Cold##12981 |goto 63.2,62.9
+turnin Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
 Click Hodir's Horn##7352
-turnin Hodir's Call##12977 |goto 64.1,65.1
+|tip You may have to wait a minute for this to spawn.
+turnin Hodir's Call##12977 |goto The Storm Peaks/0 64.21,65.03
 step
 talk Lillehoff##32540
-accept Hodir's Tribute##13559 |goto 66.2,61.4
+accept Hodir's Tribute##13559 |goto The Storm Peaks/0 66.15,61.42
 |tip This is a repeatable quest.  Turn in all of your Relics of Ulduar.
 |next "hub"
 step
 label "honored"
 talk Lorekeeper Randvir##30252
-accept Forging Hodir's Spear##13001 |goto The Storm Peaks,64.8,59.1
+accept Forging Hodir's Spear##13001 |goto The Storm Peaks/0 64.84,59.06
 step
 kill Stoic Mammoth##30260+
-collect 3 Stoic Mammoth Hide##42542 |q 13001/2 |goto 59.0,61.2
+collect 3 Stoic Mammoth Hide##42542 |q 13001/2 |goto The Storm Peaks/0 59.0,61.2
 step
-The entrance to the cave starts here |goto 55.9,64.2 < 5 |c |q 13001 |walk
+The entrance to the cave starts here |goto The Storm Peaks/0 55.9,64.2 < 5 |c |q 13001 |walk
 click Everfrost Shard##192191
 collect 3 Everfrost Shard##42541 |q 13001/1 |goto 54.7,60.8
 step
 Leave the cave |goto 55.9,64.2 < 5 |c |q 13001 |walk
 talk Lorekeeper Randvir##30252
-turnin Forging Hodir's Spear##13001 |goto 64.8,59.1
+turnin Forging Hodir's Spear##13001 |goto The Storm Peaks/0 64.84,59.06
 |tip This quest will unlock the How to Slay Your Dragon daily quest.
 step
 talk Frostworg Denmother##30294
-accept Spy Hunter##12994 |goto The Storm Peaks,63.5,59.8
+accept Spy Hunter##12994 |goto The Storm Peaks/0 63.49,59.73
 step
 Click Hodir's Helm
 |tip It's a huge helm on the tip of this ice spike.
-accept A Viscious Cleaning##13006 |goto 64.2,59.2
+accept A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 Click Hodir's Spear
 |tip It's a huge spear hanging from 2 chains.
@@ -1883,40 +1894,40 @@ accept How to Slay Your Dragon##13003 |goto 65.1,60.8
 step
 Click Fjorn's Anvil
 |tip It's a huge anvil on an ice platform.
-accept Hot and Cold##12981 |goto 63.2,62.9
+accept Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
 Click Hodir's Horn
-|tip It's a huge bone war horn.
-accept Hodir's Call##12977 |goto 64.1,65.1
+|tip You may have to wait a minute for this to spawn.
+accept Hodir's Call##12977 |goto The Storm Peaks/0 64.1,65.1
 stickystart "visoil"
 step
 Use your Ethereal Worg's Fang next to the Corpse of the Fallen Worg |use Ethereal Worg's Fang##42479
 Follow the wolf that spawns and kill the Stormforged Infiltrator it finds
 Repeat this process 2 more times
-Kill 3 Stormforged Infiltrators |q 12994/1 |goto 57.2,64.0
+Kill 3 Stormforged Infiltrators |q 12994/1 |goto The Storm Peaks/0 57.2,64.0
 step
 label "visoil"
 kill Viscous Oil##30325+
 |tip They look like slimes inside this cave.
-collect 5 Viscous Oil##42640 |q 13006/1 |goto 55.6,63.4
+collect 5 Viscous Oil##42640 |q 13006/1 |goto The Storm Peaks/0 55.6,63.4
 step
 Use the Spear of Hodir on a Wild Wyrm flying around in the sky |use Spear of Hodir##42769
 While fighting the Wild Wyrm, there will be 2 phases to the fight.  Phase 1:
 |tip In phase 1 of the fight, you will be underneath the Wild Wyrm.  Use your Grab On ability to keep your grip high, or you will fall off and die.  Repeatedly use your Thrust Spear ability, until you get a message the Wild Wyrm is about to use its claw attack.  When you see that message, use your Dodge Claws ability, and then immediately use your Mighty Spear Thrust ability after that.  Remember to keep your grip up by using your Grab On ability, and repeat this process until phase 2 of the fight begins.
 In phase 2 of the fight with the Wild Wyrm, the strategy changes:
 |tip In phase 2 of the fight, you will be inside the Wild Wyrm's mouth.  Repeatedly use your Pry Jaws Open ability, try to stack it 20 times.  After you stack your Pry Jaws ability 20 times (which will give your Fatal Strike ability 100% chance to hit), use your Fatal Strike ability to kill the Wild Wyrm.  If you are close to dying, just stack your Pry Jaws Open ability as many times as you can, then use your Fatal Strike ability before you die, and hope it kills the Wild Wyrm.
-Kill the Wild Wyrm |q 13003/1 |goto 56.6,64.3
+Kill the Wild Wyrm |q 13003/1 |goto The Storm Peaks/0 56.6,64.3
 step
 talk Frostworg Denmother##30294
-turnin Spy Hunter##12994 |goto 63.5,59.8
+turnin Spy Hunter##12994 |goto The Storm Peaks/0 63.5,59.8
 step
 Click Hodir's Helm
 |tip It's a huge helm on the tip of this ice spike.
-turnin A Viscious Cleaning##13006 |goto 64.2,59.2
+turnin A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 Click Hodir's Spear
 |tip It's a huge spear hanging from 2 chains.
-turnin How to Slay Your Dragon##13003 |goto 65.1,60.8
+turnin How to Slay Your Dragon##13003 |goto The Storm Peaks/0 65.1,60.8
 step
 kill Brittle Revenant##30160+
 collect 6 Essence of Ice##42246 |q 12981 |goto 69.7,60.2
@@ -1940,23 +1951,24 @@ collect Relic of Ulduar##42780+ |goto 67.0,45.1 |n
 confirm
 step
 Click Fjorn's Anvil|tip It's a huge anvil on an ice platform.
-turnin Hot and Cold##12981 |goto 63.2,62.9
+turnin Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
-Click Hodir's Horn|tip It's a huge bone war horn.
+Click Hodir's Horn
+|tip You may have to wait a minute for this to spawn.
 turnin Hodir's Call##12977 |goto 64.1,65.1
 step
 talk Lillehoff##32540
-accept Hodir's Tribute##13559 |goto 66.2,61.4
+accept Hodir's Tribute##13559 |goto The Storm Peaks/0 66.15,61.42
 |tip This is a repeatable quest.  Turn in all of your Relics of Ulduar.
 |next "hub"
 step
 label "revered"
 talk Frostworg Denmother##30294
-accept Spy Hunter##12994 |goto The Storm Peaks,63.5,59.8
+accept Spy Hunter##12994 |goto The Storm Peaks/0 63.5,59.8
 step
 Click Hodir's Helm
 |tip It's a huge helm on the tip of this ice spike.
-accept A Viscious Cleaning##13006 |goto 64.2,59.2
+accept A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 Click Hodir's Spear
 |tip It's a huge spear hanging from 2 chains.
@@ -1966,20 +1978,21 @@ Click Arngrim the Insatiable
 accept Feeding Arngrim##13046 |goto 67.6,59.9
 step
 Click Fjorn's Anvil |tip It's a huge anvil on an ice platform.
-accept Hot and Cold##12981 |goto 63.2,62.9
+accept Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
-Click Hodir's Horn |tip It's a huge bone war horn.
+Click Hodir's Horn
+|tip You may have to wait a minute for this to spawn.
 accept Hodir's Call##12977 |goto 64.1,65.1
 stickystart "viscousoil"
 step
 Use your Ethereal Worg's Fang next to the Corpse of the Fallen Worg |use Ethereal Worg's Fang##42479
 Follow the wolf that spawns and kill the Stormforged Infiltrator it finds
 Repeat this process 2 more times
-Kill 3 Stormforged Infiltrators |q 12994/1 |goto 57.2,64.0
+Kill 3 Stormforged Infiltrators |q 12994/1 |goto The Storm Peaks/0 57.2,64.0
 step
 Use Arngrim's Tooth on Roaming Jormungars |use Arngrim's Tooth##42774
 Fight Disembodied Jormungars until Arngrim the Insatiable comes to eat them
-Feed Arngrim's Spirit 5 Times |q 13046/1 |goto 56.4,65.0
+Feed Arngrim's Spirit 5 Times |q 13046/1 |goto The Storm Peaks/0 56.4,65.0
 step
 Use the Spear of Hodir on a Wild Wyrm flying around in the sky |use Spear of Hodir##42769
 While fighting the Wild Wyrm, there will be 2 phases to the fight.  Phase 1:
@@ -1991,21 +2004,21 @@ step
 label "viscousoil"
 kill Viscous Oil##30325+
 |tip They look like slimes inside this cave.
-collect 5 Viscous Oil##42640 |q 13006/1 |goto 55.6,63.4
+collect 5 Viscous Oil##42640 |q 13006/1 |goto The Storm Peaks/0 55.6,63.4
 step
 talk Frostworg Denmother##30294
-turnin Spy Hunter##12994 |goto 63.5,59.8
+turnin Spy Hunter##12994 |goto The Storm Peaks/0 63.5,59.8
 step
 Click Hodir's Helm
 |tip It's a huge helm on the tip of this ice spike.
-turnin A Viscious Cleaning##13006 |goto 64.2,59.2
+turnin A Viscious Cleaning##13006 |goto The Storm Peaks/0 64.21,59.31
 step
 Click Hodir's Spear
 |tip It's a huge spear hanging from 2 chains.
-turnin How to Slay Your Dragon##13003 |goto 65.1,60.8
+turnin How to Slay Your Dragon##13003 |goto The Storm Peaks/0 65.1,60.8
 step
 Click Arngrim the Insatiable
-turnin Feeding Arngrim##13046 |goto 67.6,59.9
+turnin Feeding Arngrim##13046 |goto The Storm Peaks/0 67.6,59.9
 step
 kill Brittle Revenant##30160+
 collect 6 Essence of Ice##42246 |q 12981 |goto 69.7,60.2
@@ -2024,29 +2037,29 @@ If you want to grind mobs for Relics of Ulduar, or buy them on the Auction House
 kill Scion of Storm##30184+
 |tip They are air elementals all around inside this big cave.
 You can also buy the Relics of Ulduar on the Auction House, if you'd like to get the reputation much faster.
-collect Relic of Ulduar##42780+ |goto 67.0,45.1 |n
+collect Relic of Ulduar##42780+ |goto The Storm Peaks/0 67.0,45.1 |n
 |tip You turn these in in multiples of 10.
 confirm
 step
 Click Fjorn's Anvil
 |tip It's a huge anvil on an ice platform.
-turnin Hot and Cold##12981 |goto 63.2,62.9
+turnin Hot and Cold##12981 |goto The Storm Peaks/0 63.14,62.94
 step
 Click Hodir's Horn
-|tip It's a huge bone war horn.
+|tip You may have to wait a minute for this to spawn.
 turnin Hodir's Call##12977 |goto 64.1,65.1
 step
 talk Lillehoff##32540
-accept Hodir's Tribute##13559 |goto 66.2,61.4 |n
+accept Hodir's Tribute##13559 |goto The Storm Peaks/0 66.15,61.42 |n
 |tip This is a repeatable quest.  Turn in all of your Relics of Ulduar.
-Click here to return to the beginning of the Dailies |confirm
-|next "hub" |only if rep('The Sons of Hodir')<Exalted
-|next "BuyMount" |only if rep('The Sons of Hodir')==Exalted
+Click here to Continue |confirm
+|next "hub" |only if rep("The Sons of Hodir") < Exalted
+|next "BuyMount" |only if rep("The Sons of Hodir") == Exalted
 step
 label "BuyMount"
 talk Lillehoff##32540
-buy 1 Reins of the Ice Mammoth##44080 |goto 66.0,61.4
-buy 1 Reins of the Grand Ice Mammoth##43961 |goto 66.0,61.4
+buy 1 Reins of the Ice Mammoth##44080 |goto The Storm Peaks/0 66.0,61.4
+buy 1 Reins of the Grand Ice Mammoth##43961 |goto The Storm Peaks/0 66.0,61.4
 step
 learnmount Ice Mammoth##59799 |use Reins of the Ice Mammoth##43958
 learnmount Grand Ice Mammoth##61470 |use Reins of the Grand Ice Mammoth##43961
@@ -3027,14 +3040,12 @@ model={27821},
 description="\nThis guide will help you acquire the Armored Brown Bear mount.",
 },[[
 step
-This _mount_ costs _750_ gold.
-|tip It could be cheaper based on your reputation with the Kirin Tor.
-confirm
-step
 talk Mei Francis##32216
-buy 1 Reins of the Armored Brown Bear##44225 |goto Dalaran,58.1,42.1
+buy Reins of the Armored Brown Bear##44226 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(60116) |or
 step
-learnmount Armored Brown Bear##60116 |use Reins of the Armored Brown Bear##44225
+use the Reins of the Armored Brown Bear##44226
+Learn the "Armored Brown Bear" Mount |learnmount Armored Brown Bear##60116
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Traveler's Tundra Mammoth",{
 keywords={"traveler's","tundra","mammoth","vendor","mount","ground"},
@@ -3045,13 +3056,12 @@ model={25451},
 description="\nThis guide will help you acquire the Traveler's Tundra Mammoth mount.",
 },[[
 step
-You will need _20,000 gold_ to complete this achievement
-|tip The price can be reduced by Kirin Tor discounts based on current reputation
-confirm
-step
 talk Mei Francis##32216
-buy Reins of the Traveler's Tundra Mammoth##44235 |n
-learnmount Traveler's Tundra Mammoth##61425 |goto Dalaran 58.1,42.1 |use Reins of the Traveler's Tundra Mammoth##44235
+buy Reins of the Traveler's Tundra Mammoth##44235 |goto Dalaran/1 58.11,42.09 |or
+'|complete hasmount(61425) |or
+step
+use Reins of the Traveler's Tundra Mammoth##44235
+Learn the "Traveler's Tundra Mammoth" Mount |learnmount Traveler's Tundra Mammoth##61425
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Albino Drake",{
 keywords={"albino","drake","flying","mount"},
@@ -5462,7 +5472,7 @@ You can find him somewhere between:
 [63.19,60.34]
 step
 talk Neltharaku##21657
-|tip He looks like a large, semi-transparent cyan drake that flies slowly in the air around this area.
+|tip He looks like a large, semi-transparent green drake that flies slowly in the air around this area.
 turnin Seek Out Neltharaku##10811 |goto Shadowmoon Valley/0 63.19,60.34
 accept Neltharaku's Tale##10814 |goto 63.19,60.34
 You can find him somewhere between:
@@ -5567,12 +5577,12 @@ You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
-accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.12,86.36 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 kill Dragonmaw Transporter##23188+
 |tip Kill them when they fly low over these floating rocks.
@@ -5580,6 +5590,10 @@ collect 10 Netherwing Relic##32509 |q 11035/1 |goto Shadowmoon Valley/0 71.42,75
 step
 kill Greater Felfire Diemetradon##21462+, Felboar##21878+
 collect 12 Fel Gland##32502 |q 11020 |goto Shadowmoon Valley/0 58.88,41.37
+You can find more around:
+[57.31,51.87]
+[47.06,60.63]
+[56.41,70.04]
 step
 use Yarzill's Mutton##32503
 |tip Use it next to the working peons.
@@ -5598,9 +5612,9 @@ kill Nethermine Flayer##23169+
 kill Black Blood of Draenor##23286
 kill Nethermine Burster##23285+
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 68.19,83.71
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
 talk Yarzill the Merc##23141
 turnin A Slow Death##11020 |goto 66.00,86.46
@@ -5608,12 +5622,12 @@ turnin The Not-So-Friendly Skies##11035 |goto 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
 turnin Netherwing Crystals##11015 |goto 66.12,86.36
-turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.12,86.36
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.12,86.36
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 Click here tomorrow to go back to the first daily |confirm |next "Daily"
 Become Friendly with the Netherwing. |complete rep('Netherwing')>=Friendly |next "F_PreQuest"
@@ -5655,11 +5669,18 @@ talk Mistress of the Mines##23149
 turnin The Great Murkblood Revolt##11081 |goto Shadowmoon Valley/0 65.4,90.2
 accept Seeker of Truth##11082 |goto 65.4,90.2
 step
-Go inside the mine and follow the path |goto Shadowmoon Valley/0 73.0,82.2
+Enter the Mine |goto Shadowmoon Valley/0 65.31,90.02 |walk
 talk Murkblood Overseer##23309
+|tip Inside the mine.
+|tip These will spawn and despawn randomly in a few places.
 Tell him you are here for him
-Gather Murkblood Information |q 11082/1
+Gather Murkblood Information |q 11082/1 |goto Shadowmoon Valley/0 68.30,79.45
 collect Hand of the Overseer##32734 |q 11082/2
+You can find more around:
+[69.33,80.47]
+[71.09,80.71]
+[72.98,82.18]
+[73.88,82.69]
 step
 talk Mistress of the Mines##23149
 turnin Seeker of Truth##11082 |goto 65.4,90.2
@@ -5669,7 +5690,7 @@ collect 10 Knothide Leather##21887 |q 11054/1
 If you want to get the 10 Knothide Leather by skinning, kill the mobs around Shadowmoon Valley/0 60.4,45.2
 step
 kill Tyrantus##20931
-collect Hardened Hide of Tyrantus##32666 |q 11054/2 |goto Netherstorm,46.4,10.8
+collect Hardened Hide of Tyrantus##32666 |q 11054/2 |goto Netherstorm/0 46.4,10.8
 step
 talk Chief Overseer Mudlump##23291
 turnin Overseeing and You: Making the Right Choices##11054 |goto Shadowmoon Valley/0 66.8,86.1
@@ -5682,12 +5703,12 @@ You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
-accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if skill ("Skinning") >= 350
-|tip This quest is only available if yu have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.12,86.36 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
 accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
@@ -5726,9 +5747,9 @@ step
 kill 15 Nethermine Flayer |q 11077/1 |goto Shadowmoon Valley/0 71.5,83.9
 kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
 talk Dragonmaw Foreman##23376
 turnin Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
@@ -5741,13 +5762,13 @@ turnin A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
 turnin The Not-So-Friendly Skies##11035 |goto 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.1,86.4
-turnin Nethermine Flayer Hide##11016 |goto 66.1,86.4
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.1,86.4
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.1,86.4
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
 turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
@@ -5828,12 +5849,12 @@ You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
-accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.12,86.36 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
 accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
@@ -5875,9 +5896,9 @@ step
 kill 15 Nethermine Flayer |q 11077/1 |goto Shadowmoon Valley/0 71.5,83.9
 kill 5 Nethermine Ravager |q 11077/2 |goto 71.5,83.9
 collect 30 Netherwing Crystal##32427 |q 11015/1 |goto 71.5,83.9
-Skin Nethermine Flayers |only if skill ("Skinning") >= 350
-collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 71.5,83.9 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350.
+Skin Nethermine Flayers |only if haveq(11016)
+collect 35 Nethermine Flayer Hide##32470 |q 11016/1 |goto 65.06,82.89 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
 step
 talk Dragonmaw Foreman##23376
 turnin Dragons are the Least of Our Problems##11077 |goto Shadowmoon Valley/0 65.1,87.5
@@ -5893,13 +5914,13 @@ turnin A Slow Death##11020 |goto Shadowmoon Valley/0 66.00,86.46
 turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
-turnin Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
-turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.12,86.36
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.12,86.36
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Netherwing Crystals##11015 |goto 66.12,86.36
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
 turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
@@ -5961,12 +5982,12 @@ You can use the Netherwing Egg Hunting guide to gain reputation as well.
 step
 talk Taskmaster Varkule Dragonbreath##23140
 accept Netherwing Crystals##11015 |goto Shadowmoon Valley/0 66.12,86.36
-accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if skill ("Skinning") >= 350
-|tip This quest is only available if you have your Skinning skill to at least 350. |or
-accept Nethercite Ore##11018 |goto 66.12,86.36 |only if skill ("Mining") >= 350
-|tip This quest is only available if you have your Mining skill to at least 350. |or
-accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if skill ("Herbalism") >= 350
-|tip This quest is only available if you have your Herbalism skill to at least 350. |or
+accept Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if questpossible(11016)
+|tip This quest is available if you have the Skinning skill. |only if questpossible(11016)
+accept Nethercite Ore##11018 |goto 66.12,86.36 |only if questpossible(11018)
+|tip This quest is only available if you have the Mining skill. |only if questpossible(11018)
+accept Netherdust Pollen##11017 |goto 66.12,86.36 |only if questpossible(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if questpossible(11017)
 step
 talk Chief Overseer Mudlump##23291
 accept The Booterang: A Cure For The Common Worthless Peon##11055 |goto Shadowmoon Valley/0 66.8,86.1
@@ -6041,12 +6062,12 @@ turnin The Not-So-Friendly Skies##11035 |goto Shadowmoon Valley/0 66.00,86.46
 step
 talk Taskmaster Varkule Dragonbreath##23140
 turnin Netherwing Crystals##11015 |goto 66.12,86.36
-turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36
-|tip This quest is only available if you have your Skinning skill to at least 350.
-turnin Nethercite Ore##11018 |goto 66.12,86.36
-|tip This quest is only available if you have your Mining skill to at least 350.
-turnin Netherdust Pollen##11017 |goto 66.12,86.36
-|tip This quest is only available if you have your Herbalism skill to at least 350.
+turnin Nethermine Flayer Hide##11016 |goto 66.12,86.36 |only if haveq(11016)
+|tip This quest is only available if you have the Skinning skill. |only if haveq(11016)
+turnin Nethercite Ore##11018 |goto 66.12,86.36 |only hasprof("Mining",1,300) |only if haveq(11018)
+|tip This quest is only available if you have the Mining skill. |only if haveq(11018)
+turnin Netherdust Pollen##11017 |goto 66.12,86.36 |only if haveq(11017)
+|tip This quest is only available if you have the Herbalism skill. |only if haveq(11017)
 step
 talk Chief Overseer Mudlump##23291
 turnin The Booterang: A Cure For The Common Worthless Peon##11055 |goto 66.8,86.1
@@ -6067,10 +6088,10 @@ talk Overlord Mor'ghor##23139
 turnin Bow to the Highlord##11107 |goto Shadowmoon Valley/0 66.2,85.7
 accept Lord Illidan Stormrage##11108 |goto 66.2,85.7
 Watch the cut scene
-You will be taken to Shattrath City |goto Shattrath City,65.8,18.6,0.5 |noway |c
+You will be taken to Shattrath City |goto Shattrath City/0 65.8,18.6,0.5 |noway |c
 step
 talk Barthamus##23433
-turnin Lord Illidan Stormrage##11108 |goto Shattrath City,66.6,16.4
+turnin Lord Illidan Stormrage##11108 |goto Shattrath City/0 66.6,16.4
 step
 Look at the netherdrakes sitting around this area.  Pick whichever one you like the best and complete the quest it offers you:
 accept Voranaku the Violet Netherwing Drake##11113 |goto 66.8,17.6 |or
@@ -6088,12 +6109,18 @@ buy 1 Reins of the Purple Netherwing Drake##32860 |goto Shadowmoon Valley/0 65.7
 buy 1 Reins of the Veridian Netherwing Drake##32861 |goto Shadowmoon Valley/0 65.7,86.0
 buy 1 Reins of the Onyx Netherwing Drake##32857 |goto Shadowmoon Valley/0 65.7,86.0
 step
-learnmount Azure Netherwing Drake##41514 |use Reins of the Azure Netherwing Drake##32858
-learnmount Cobalt Netherwing Drake##41515 |use Reins of the Cobalt Netherwing Drake##32859
-learnmount Violet Drake##41518 |use Reins of the Violet Netherwing Drake##32862
-learnmount Purple Netherwing Drake##41516 |use Reins of the Purple Netherwing Drake##32860
-learnmount Veridian Netherwing Drake##41517 |use Reins of the Veridian Netherwing Drake##32861
-learnmount Oynx Netherwing Drake##41513 |use Reins of the Onyx Netherwing Drake##32857
+use Reins of the Azure Netherwing Drake##32858
+use Reins of the Cobalt Netherwing Drake##32859
+use Reins of the Violet Netherwing Drake##32862
+use Reins of the Purple Netherwing Drake##32860
+use Reins of the Veridian Netherwing Drake##32861
+use Reins of the Onyx Netherwing Drake##32857
+Learn the "Azure Netherwing Drake" Mount |learnmount Azure Netherwing Drake##41514
+Learn the "Cobalt Netherwing Drake" Mount |learnmount Cobalt Netherwing Drake##41515
+Learn the "Violet Netherwing Drake" Mount |learnmount Violet Drake##41518
+Learn the "Purple Netherwing Drake" Mount |learnmount Purple Netherwing Drake##41516
+Learn the "Veridian Netherwing Drake" Mount |learnmount Veridian Netherwing Drake##41517
+Learn the "Oynx Netherwing Drake" Mount |learnmount Oynx Netherwing Drake##41513
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Netherwing Drakes\\Netherwing Egg Hunting - Optimized Path",{
 keywords={"Azure","netherwing","drake","cobalt","violet","purple","veridan","onyx","mount","flying"},
@@ -7017,23 +7044,36 @@ model={34955},
 description="\nThis guide will help you acquire the Subdued Seahorse mount.",
 },[[
 step
-This mount is dropped by a rare spawn in Vashj'ir called Poseidus.
-confirm
+The Following Steps Will Unlock the Portal to Vashj'ir
+talk Recruiter Burns##36799
+accept Call of Duty##14482 |goto Stormwind City/0 27.36,24.15 |or
+'|complete completedq(14482) |or
+step
+Wait for the Ship at the Docks
+Watch the dialogue
+|tip It takes about 3 minutes for the dialogue and ship's journey.
+Ride the mercenary ship to Vashj'ir |q 14482/1 |goto 18.34,25.76 |or
+'|complete completedq(14482) |or
+step
+talk Erunak Stonespeaker##41618
+turnin Call of Duty##14482 |goto Kelp'thar Forest/0 38.75,31.70 |or
+'|complete completedq(14482) |or
 step
 _Poseidus_ has a 72-120 hour spawn timer.
-|tip This is another extremely rare mount but you cna realm hop to other servers to increases your chances of finding him spawned.
+|tip This is another extremely rare mount but you can realm hop to other servers to increases your chances of finding him spawned.
 |tip This mount is also BOE which means it can be sold on the AH.
-It is subject to server restarts, meaning it may spawn right after weekly maintenance.
+|tip It is subject to server restarts, meaning it may spawn right after weekly maintenance.
 Search for it at the provided locations below:
 [Shimmering Expanse 65.4,41.4]
 [Shimmering Expanse 38.8,68.8]
 [Shimmering Expanse 58.4,82.2]
 [Shimmering Expanse 46.0,50.1]
 [Abyssal Depths 40.0,74.2]
-kill Poseidus |n
-collect 1 Reins of Poseidus##67151
+kill Poseidus
+collect Reins of Poseidus##67151
 step
-learnmount Subdued Seahorse##98718 |use Reins of Poseidus##67151
+|use Reins of Poseidus##67151
+Learn the "Subdued Seahorse" Mount |learnmount Subdued Seahorse##98718
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Aquatic Mounts\\Vashj'ir Seahorse",{
 keywords={"vashj'ir","seahorse","aquatic","water","mount"},
@@ -7044,19 +7084,23 @@ model={34956},
 description="\nThis guide will help you acquire the Vashj'ir Seahorse mount.",
 },[[
 step
-click Hero's Call Board##250720
-accept Hero's Call Vashj'ir##27724 |goto Stormwind City,62.9,71.6
-step
+The Following Steps Will Unlock the Portal to Vashj'ir
 talk Recruiter Burns##36799
-turnin Hero's Call Vashj'ir##27724 |goto 27.4,24.1
-accept Call of Duty##14482 |goto 27.4,24.1
+accept Call of Duty##14482 |goto Stormwind City/0 27.36,24.15 |or
+'|complete completedq(14482) |or
 step
-Ride the mercenary ship to Vashj'ir |q 14482/1 |goto 18.5,25.4
-|tip Wait on the docks, it could take a little while for the boat to finally show up.
+Wait for the Ship at the Docks
+Watch the dialogue
+|tip It takes about 3 minutes for the dialogue and ship's journey.
+Ride the mercenary ship to Vashj'ir |q 14482/1 |goto 18.34,25.76 |or
+'|complete completedq(14482) |or
+step
+talk Erunak Stonespeaker##41618
+turnin Call of Duty##14482 |goto Kelp'thar Forest/0 38.75,31.70 |or
+'|complete completedq(14482) |or
 step
 talk Erunak Stonespeaker##36915
-turnin Call of Duty##14482 |goto Kelp'thar Forest,45.2,23.4
-accept Sea Legs##24432 |goto Kelp'thar Forest,45.2,23.4
+accept Sea Legs##24432 |goto Kelp'thar Forest/0 45.2,23.4
 step
 click Saltwater Stars##205989
 collect 3 Saltwater Starfish##54828 |q 24432/1 |goto 44.5,25.0
@@ -7154,7 +7198,8 @@ talk Moanah Stormhoof##41248
 turnin The Abyssal Ride##25371 |goto 46.0,46.9
 collect 1 Vashj'ir Seahorse##54465 |goto 46.0,46.9
 step
-learnmount Vashj'ir Seahorse##75207 |use Vashj'ir Seahorse##54465
+|use Vashj'ir Seahorse##54465
+Learn the "Vashj'ir Seahorse" Mount |learnmount Vashj'ir Seahorse##75207
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Argent Tournament Guides\\Crusader Title Guide\\Draenei Champion Rank",{
 author="support@zygorguides.com",

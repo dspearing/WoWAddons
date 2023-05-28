@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 101107
+local MINOR_VERSION = 101108
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -2794,21 +2794,19 @@ function FishLib:Translate(addon, source, target, forced)
     local locale = forced or GetLocale();
 	local addonCount = GetNumAddOns();
 	for addonIndex = 1, addonCount do
-		local name, title, notes, loadable, reason, security = GetAddOnInfo(addon);
-        print(name, addon, addonIndex, target.VERSION)
+		local name, title, notes, loadable, reason, security = GetAddOnInfo(addonIndex);
         if name == addon then
             target.VERSION = C_AddOns.GetAddOnMetadata(addonIndex, "Version");
-            LoadTranslation(source, locale, target);
-            if ( locale ~= "enUS" ) then
-                LoadTranslation(source, "enUS", target, forced);
-            end
-            LoadTranslation(source, "Inject", target);
-            visited = {}
-            FixupStrings(target);
-            FixupBindings(target);
-            if (forced) then
-                return missing;
-            end
+        end
+        LoadTranslation(source, locale, target);
+        if ( locale ~= "enUS" ) then
+            LoadTranslation(source, "enUS", target, forced);
+        end
+        LoadTranslation(source, "Inject", target);
+        FixupStrings(target);
+        FixupBindings(target);
+        if (forced) then
+            return missing;
         end
     end
 end

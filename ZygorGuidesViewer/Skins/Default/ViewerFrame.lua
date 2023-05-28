@@ -1068,6 +1068,7 @@ ZGV_DefaultSkin_StepLineClicker_Mixin = {}
 	end
 
 	function ZGV_DefaultSkin_StepLineClicker_Mixin:OnClick(button)
+		ZGV:SendMessage("CLICKED_GOAL",button,self.parentLine.goal and self.parentLine.goal.num)
 		ZGV:GoalOnClick(self.parentLine,button)
 	end
 
@@ -1141,12 +1142,14 @@ local function CreateProgressBar(frame)
 		ProgressBar:SetTooltip(tooltiptext)
 	end
 
-	local function ProgressBar_OnClick()
+	local function ProgressBar_OnClick(self)
 		if ZGV.db.profile.progressbarmode == "quests" then
 			ZGV.db.profile.progressbarmode = "steps"
 		else
 			ZGV.db.profile.progressbarmode = "quests"
 		end
+
+		ZGV:SendMessage("CLICKED_PROGRESSBAR",ZGV.db.profile.progressbarmode)
 
 		ProgressBar:Update()
 		ProgressBar:GetScript("OnEnter")(ProgressBar)
@@ -1157,6 +1160,10 @@ local function CreateProgressBar(frame)
 	ZGV.ProgressBar = ProgressBar
 	return ProgressBar
 end
+
+---@class FrameXMLWidget
+---@field GetObjectType fun()
+---@field GetParentKey fun()
 
 --ZGV_DefaultSkin_Frame_Mixin
 	local profile
@@ -1169,6 +1176,7 @@ end
 		local Scroll = self.Border.Scroll		
 
 		-- exports
+		---@type {[string]:FrameXMLWidget}
 		self.Controls = {
 			--LockButton = Border.TitleBar.LockButton,
 			TitleBar = TitleBar or error(),
@@ -1293,13 +1301,28 @@ end
 		-- flash
 		
 		-- COMMENTING for WoD crashes..?  Not anymore, Blizz fixed their shit
+		self:SetupBorderFlash()
+
+		self.mouseCount=0
+		self.leftCount=0
+
+		self.oldxPos,self.oldyPos = 0,0
+
+		self:SetupDragWithAnything()
+	
+		self:CreateStepPools()
+		self:HookControlMessages()
+		self:SetSpecialState("loading")
+	end
+
+	function ZGV_DefaultSkin_Frame_Mixin:SetupBorderFlash()
 		local bg = self:CreateAnimationGroup()
 		bg:SetLooping("NONE")
 		local f = bg:CreateAnimation("Animation","ZygorGuidesViewerFrame_bdflash")
 		f:SetDuration(1.0)
 		if f.SetMaxFramerate then f:SetMaxFramerate(99) end  -- 4.1 PTR issue? is SetMaxFramerate gone?
 		f:SetSmoothing("OUT")
-		f:SetScript("OnUpdate",doborderrgb)
+		f:SetScript("OnUpdate",doborderrgb)  -- TODO: fix this unknown var
 		f.target = self.Border
 		f.StartRGB = function(self,r,g,b,a,r2,g2,b2,a2)
 			self.fromr,self.fromg,self.fromb,self.froma = r,g,b,a
@@ -1309,13 +1332,23 @@ end
 		end
 		self.bdflash = f
 
-
 		self.ThinFlash:SetBackdrop({bgFile="Interface\\Buttons\\white8x8",edgeFile=ZGV.DIR.."\\Skins\\glowborder", tile = true, edgeSize=32, tileSize = 128, insets = { left = 20, right = 20, top = 20, bottom = 20 }})
 		self.ThinFlash:SetBackdropColor(1,1,1,0.5)
 		self.ThinFlash:SetAlpha(0.0)
+	end
 
+	function ZGV_DefaultSkin_Frame_Mixin:HookControlMessages()
+		-- add debug/telemetry wrapper
+		for k,v in pairs(self.Controls) do
+			if v.GetObjectType and v:GetObjectType()=="Button" then
+				local old_func = v:GetScript("OnClick")
+				v:SetScript("OnClick",function(f,but,...)  ZGV:SendMessage("BUTTON_CLICKED",k,but)  return old_func(f,but,...)  end)
+			end
+		end
+	end
 
-		-- make stuff drag me
+	-- make stuff drag me
+	function ZGV_DefaultSkin_Frame_Mixin:SetupDragWithAnything()
 		self.everything = {}
 		local function grab_all_children(tab)
 			for _,c in ipairs(tab) do
@@ -1335,14 +1368,6 @@ end
 				control:EnableMouse(true)
 			end
 		end
-	
-		self.mouseCount=0
-		self.leftCount=0
-
-		self.oldxPos,self.oldyPos = 0,0
-
-		self:CreateStepPools()
-		self:SetSpecialState("loading")
 	end
 
 	function ZGV_DefaultSkin_Frame_Mixin:CreateStepPools()
@@ -1854,6 +1879,15 @@ end
 -- Popup menus
 -------------------------------------
 
+local function HookMenuMessages(menu,message)
+	-- add debug/telemetry wrapper
+	for i,v in ipairs(menu) do
+		if v.func then
+			local old_func = v.func
+			v.func=function(item,state)  ZGV:SendMessage(message,v.text,state)  return old_func(item,state)  end
+		end
+	end
+end
 
 
 function ZGV_DefaultSkin_Frame_Mixin:MenuSettingsButton_OnClick()
@@ -1953,6 +1987,8 @@ function ZGV_DefaultSkin_Frame_Mixin:MenuSettingsButton_OnClick()
 		end
 	end
 
+	HookMenuMessages(setting_menu,"MAINMENU_ITEM")
+
 	UIDropDownFork_SetAnchor(self.MenuHostSettings, 0, 0, "TOP", self.Controls.MenuSettingsButton, "BOTTOM")
 	EasyFork(setting_menu,self.MenuHostSettings,nil,0,0,"MENU",10)
 	DropDownForkList1:SetPoint("LEFT",self,"LEFT")
@@ -2020,6 +2056,8 @@ function ZGV_DefaultSkin_Frame_Mixin:MenuAdditionalButton_OnClick()
 			v.tCoordBottom = texcoord[1][4]
 		end
 	end
+
+	HookMenuMessages(additional_menu,"ADDITIONALMENU_ITEM")
 
 	UIDropDownFork_SetAnchor(self.MenuHostAdditional, 0, 0, "TOP", self.Controls.MenuAdditionalButton, "BOTTOM")
 	EasyFork(additional_menu,self.MenuHostAdditional,nil,0,0,"MENU",10)

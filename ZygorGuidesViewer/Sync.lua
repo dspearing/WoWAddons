@@ -797,6 +797,7 @@ end
 function Sync:ActivateAsMaster()
 	ZGV:SetOption("StepDisplay","sync_enabled on")
 	ZGV:SetOption("StepDisplay","share_masterslave 1")  -- causes Sync:UpdateMode()
+	ZGV:SendMessage("ZGV_SHAREMODE","master")
 	self:RequestSlaveMode()
 end
 
@@ -804,6 +805,7 @@ function Sync:ActivateAsSlave()
 	--ZGV:SetOption("StepDisplay","share_masterslave 2")
 	ZGV:SetOption("StepDisplay","sync_enabled on")
 	ZGV:SetOption("StepDisplay","share_masterslave 2")  -- causes Sync:UpdateMode()
+	ZGV:SendMessage("ZGV_SHAREMODE","slave")
 end
 
 function Sync:Deactivate()
@@ -817,6 +819,7 @@ function Sync:Deactivate()
 		if tab then tab:RemoveTab() end
 	end
 	if skip_afterwards then  ZGV:SkipStep()  end
+	ZGV:SendMessage("ZGV_SHAREMODE","off")
 end
 
 local function comma_and(tab)

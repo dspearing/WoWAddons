@@ -1,11 +1,11 @@
 # Profession Shopping List
 
-## [v10.1.0-004](https://github.com/Sluimerstand/ProfessionShoppingList/tree/v10.1.0-004) (2023-05-11)
-[Full Changelog](https://github.com/Sluimerstand/ProfessionShoppingList/compare/v10.1.0-003...v10.1.0-004) [Previous Releases](https://github.com/Sluimerstand/ProfessionShoppingList/releases)
+## [v10.1.0-007](https://github.com/Sluimerstand/ProfessionShoppingList/tree/v10.1.0-007) (2023-05-26)
+[Full Changelog](https://github.com/Sluimerstand/ProfessionShoppingList/compare/v10.1.0-006...v10.1.0-007) [Previous Releases](https://github.com/Sluimerstand/ProfessionShoppingList/releases)
 
 - Version bump  
-- Added a tooltip when hovering over the list headers containing the mouse interactions  
-- Added buttons for Cooking Fire and Thermal Anvil. These and the Chef's Hat button now also show their cooldown  
-- Minor code tweaks  
-- Added slash commands for recipe (un)tracking again - love you Freddie <3  
-- Really fixed Cooking Hat desaturation this time - maybe one day I'll remember to actually test what I commit  
+- Some minor code tweaks to allow for AddOnSkins support  
+- Merge pull request #84 from reddraggone9/add-forbidden-reach-rares  
+    Add Forbidden Reach rares  
+- Tweaked quick orders so they fail even less, and don't show error messages if they succeed  
+- Add Forbidden Reach rares  

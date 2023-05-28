@@ -24,8 +24,10 @@ talk Varzok##63626
 accept Battle Pet Tamers: Cataclysm##31967 |goto Orgrimmar/1 52.56,59.27
 step
 talk Brok##66819
-accept Brok##31972 |goto Mount Hyjal/0 61.37,32.71 |only if completedq(31970)
-Defeat Brok |q 31967/1 |goto Mount Hyjal/0 61.37,32.71
+accept Brok##31972 |goto Mount Hyjal/0 61.37,32.71
+step
+talk Brok##66819
+Defeat Brok |q 31966/1 |goto Mount Hyjal/0 61.37,32.71
 |tip Brok's pet team consists of level 25 Magic, Beast, and Critter battle pets.
 |tip Dragonkin battle pets are strong against Magic battle pets.
 |tip Mechanical battle pets are strong against Beast battle pets.
@@ -34,11 +36,12 @@ Defeat Brok |q 31967/1 |goto Mount Hyjal/0 61.37,32.71
 step
 talk Brok##66819
 turnin Brok##31972 |goto 61.37,32.71
-|only if completedq(31970)
 step
 talk Bordin Steadyfist##66815
-accept Bordin Steadyfist##31973 |goto Deepholm/0 49.87,57.05 |only if completedq(31970)
-Defeat Bordin Steadyfist |q 31967/2 |goto Deepholm/0 49.87,57.05
+accept Bordin Steadyfist##31973 |goto Deepholm/0 49.87,57.05
+step
+talk Bordin Steadyfist##66815
+Defeat Bordin Steadyfist |q 31966/2 |goto Deepholm/0 49.87,57.05
 |tip Bordin's pet team consists of level 25 Elemental and Critter battle pets.
 |tip Aquatic battle pets are strong against Elemental battle pets.
 |tip Beast battle pets are strong against Critter battle pets.
@@ -46,11 +49,12 @@ Defeat Bordin Steadyfist |q 31967/2 |goto Deepholm/0 49.87,57.05
 step
 talk Bordin Steadyfist##66815
 turnin Bordin Steadyfist##31973 |goto 49.87,57.05
-|only if completedq(31970)
 step
 talk Goz Banefury##66822
-accept Goz Banefury##31974 |goto Twilight Highlands/0 56.59,56.80 |only if completedq(31970)
-Defeat Goz Banefury |q 31967/3 |goto Twilight Highlands/0 56.59,56.80
+accept Goz Banefury##31974 |goto Twilight Highlands/0 56.59,56.80
+step
+talk Goz Banefury##66822
+Defeat Goz Banefury |q 31966/3 |goto Twilight Highlands/0 56.59,56.80
 |tip Goz's pet team consists of level 25 Elemental, Magic, and Beast battle pets.
 |tip Aquatic battle pets are strong against Elemental battle pets.
 |tip Dragonkin battle pets are strong against Magic battle pets.
@@ -59,15 +63,21 @@ Defeat Goz Banefury |q 31967/3 |goto Twilight Highlands/0 56.59,56.80
 step
 talk Goz Banefury##66822
 turnin Goz Banefury##31974 |goto 56.59,56.80
-|only if completedq(31970)
 step
 _Click the quest completion box that appears_
-turnin Battle Pet Tamers: Cataclysm##31967 |goto 56.59,56.80
-accept Grand Master Obalis##31970 |goto 56.59,56.80 |only if not completedq(31970)
+turnin Battle Pet Tamers: Cataclysm##31966 |goto 56.59,56.80
+accept Grand Master Obalis##31970 |goto 56.59,56.80
+step
+talk Zidormi##162419
+Ask her _"Can you show me what Uldum was like during the time of the Cataclysm?"_
+Travel Back in Time |goto Uldum/0 56.02,35.14 < 10 |c |or
+'|complete ZGV.InPhase("OldUldum") |or
+'|complete completedq(31970) |or
 step
 talk Obalis##66824
 Defeat Obalis |q 31970/1 |goto Uldum/0 56.56,41.98
-|tip Payne's pet team consists of level 25 Beast, Flying, and Critter battle pets.
+|tip On top of the bridge.
+|tip Obalis's pet team consists of level 25 Beast, Flying, and Critter battle pets.
 |tip Mechanical battle pets are strong against Beast battle pets.
 |tip Magic battle pets are strong against Flying battle pets.
 |tip Beast battle pets are strong against Critter battle pets.
@@ -75,11 +85,10 @@ Defeat Obalis |q 31970/1 |goto Uldum/0 56.56,41.98
 step
 talk Obalis##66824
 turnin Grand Master Obalis##31970 |goto 56.56,41.98
-accept The Triumphant Return##31986 |goto 56.56,41.98 |only if not completedq(31985) and not completedq(31986)
+accept The Triumphant Return##31986 |goto 56.56,41.98
 step
 talk Varzok##63626
 turnin The Triumphant Return##31986 |goto Orgrimmar/1 52.56,59.27
-|only if not completedq(31985) and not completedq(31986)
 step
 Congratulations!
 You have completed the _Battle Pet Tamers: Cataclysm_ questline!
@@ -156,7 +165,8 @@ talk Varzok##63626
 Learn the Battle Pet Training ability |learnspell Revive Battle Pets##125439 |goto 52.56,59.27
 step
 clicknpc Dung Beetle##62115
-|tip It could also be a Spiny Lizard.
+|tip Begin a pet battle with a Dung Beetle or a Spiny Lizard in Orgrimmar.
+|tip Weaken the opponent battle pet until it reaches 35% health or lower, then use the _Trap_ ability to capture it.
 Win a Pet Battle |q 31588/1 |goto 49.96,57.40
 |tip Open your Pet Journal with "Shift+P" and assign pets to your battle slots if you can't start the battle.
 step
@@ -188,8 +198,8 @@ accept Zunta, The Pet Tamer##31812 |goto Orgrimmar 52.5,59.3
 accept Got one!##31590 |goto Orgrimmar 52.5,59.3
 step
 clicknpc Dung Beetle##62115
-|tip It could also be a Spiny Lizard.
-|tip When it reaches 35% health or lower, use your Trap ability to capture it.
+|tip Begin a pet battle with a Dung Beetle or a Spiny Lizard in Orgrimmar.
+|tip Weaken the opponent battle pet until it reaches 35% health or lower, then use the _Trap_ ability to capture it.
 Catch a Pet |q 31590/1 |goto 49.96,57.40
 step
 talk Varzok##63626
@@ -303,8 +313,8 @@ Defeat Elena Flutterfly |q 31891/5 |goto Moonglade/0 46.14,60.26
 |tip Defeat her in battle pet combat.
 step
 _Click the quest completion box that appears_
-turnin Battle Pet Tamers: Kalimdor##31891 |goto 46.14,60.26
-accept Grand Master Trixxy##31897 |goto 46.14,60.26
+turnin Battle Pet Tamers: Kalimdor##31891
+accept Grand Master Trixxy##31897
 step
 talk Stone Cold Trixxy##66466
 Defeat Stone Cold Trixxy |q 31897/1 |goto Winterspring/0 65.63,64.52
@@ -316,11 +326,12 @@ Defeat Stone Cold Trixxy |q 31897/1 |goto Winterspring/0 65.63,64.52
 step
 talk Stone Cold Trixxy##66466
 turnin Grand Master Trixxy##31897 |goto 65.63,64.52
-accept The Returning Champion##31977 |goto 65.63,64.52 |only if not completedq(31977) and not completedq(31976)
+accept The Returning Champion##31977 |goto 65.63,64.52 |only if completedq(31891) and completedq(31903) and not haveq(31976) and not completedq(31976)
+|tip You may have to reload your UI to accept this quest. |only if completedq(31891) and completedq(31903) and not haveq(31976) and not completedq(31976)
 step
 talk Varzok##63626
-turnin The Returning Champion##31977 |goto Orgrimmar/1 52.56,59.27
-|only if not completedq(31977) and not completedq(31976)
+turnin The Returning Champion##31977 |goto Orgrimmar/1 52.56,59.27 |or
+|only if haveq(31977)
 step
 Congratulations!
 You have completed the _Battle Pet Tamers: Kalimdor_ questline!
@@ -512,8 +523,9 @@ talk Hyuna of the Shrines##66730
 accept Grand Master Hyuna##31953 |goto The Jade Forest/0 47.96,54.17 |only if completedq(31951)
 Defeat Hyuna of the Shrines |q 31952/1 |goto The Jade Forest/0 47.96,54.17
 |tip Hyuna's pet team consists of level 25 Dragonkin and Magic battle pets.
-|tip Humanoid battle pets are strong against Dragonkin battle pets.
-|tip Dragonkin battle pets are strong against Magic battle pets.
+|tip Magic battle pets are strong against Flying battle pets.
+|tip Mechanical battle pets are strong against Beast battle pets.
+|tip Flying battle pets are strong against Aquatic battle pets.
 |tip Defeat her in battle pet combat.
 step
 talk Hyuna of the Shrines##66730
@@ -523,9 +535,9 @@ step
 talk Farmer Nishi##66734
 accept Grand Master Nishi##31955 |goto Valley of the Four Winds/0 46.07,43.68 |only if completedq(31951)
 Defeat Farmer Nishi |q 31952/2 |goto Valley of the Four Winds/0 46.07,43.68
-|tip Nishi's pet team consists of level 25 Beast and Elemental battle pets.
-|tip Mechanical battle pets are strong against Beast battle pets.
+|tip Nishi's pet team consists of level 25 Elementals and a Critter battle pet.
 |tip Aquatic battle pets are strong against Elemental battle pets.
+|tip Beast battle pets are strong against Critter battle pets.
 |tip Defeat her in battle pet combat.
 step
 talk Farmer Nishi##66734
@@ -598,9 +610,6 @@ Defeat Aki the Chosen |q 31951/1 |goto Vale of Eternal Blossoms/0 31.27,74.09
 step
 talk Aki the Chosen##66741
 turnin Grand Master Aki##31951 |goto 31.27,74.09
-step
-Congratulations!
-You have completed the _Battle Pet Tamers: Pandaria_ questline!
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pet Quests\\Beasts of Fable",{
 author="support@zygorguides.com",

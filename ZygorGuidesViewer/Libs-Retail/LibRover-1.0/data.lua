@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 483,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 484,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.

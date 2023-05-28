@@ -1,7 +1,6 @@
 # GSE: Advanced Macro Compiler
 
-## [3.1.33](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/tree/3.1.33) (2023-05-05)
-[Full Changelog](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/compare/3.1.32...3.1.33) [Previous Releases](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/releases)
+## [3.1.36](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/tree/3.1.36) (2023-05-25)
+[Full Changelog](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/compare/3.1.35...3.1.36) [Previous Releases](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/releases)
 
-- #1318 Linting update  
-- #1318 Update GSE for Wrath 3.4.2  
+- #1327 When editing an action leaving a blank line breaks the editor.  

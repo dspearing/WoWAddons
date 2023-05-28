@@ -19978,11 +19978,11 @@ talk Ambassador Blackguard##133407
 turnin For the Horde##49933 |goto Orgrimmar/1 39.40,79.56
 accept Stranger in a Strange Land##50303 |goto Orgrimmar/1 39.40,79.56
 step
-click Warchief's Command Board
-Find the Warchief's Command Board |q 50303/1 |goto 49.67,76.47
+talk Chromie##167032
+Talk to Chromie |q 50303/1 |goto 40.82,80.15
 step
 talk Melitier Vahlouran##131328
-turnin Stranger in a Strange Land##50303 |goto 49.79,76.41
+turnin Stranger in a Strange Land##50303 |goto 40.78,80.39
 |next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Highmountain Tauren Starter",{
@@ -20005,11 +20005,11 @@ talk Ambassador Blackguard##133407
 turnin For the Horde##49773 |goto Orgrimmar/1 39.40,79.56
 accept Stranger in a Strange Land##50319 |goto Orgrimmar/1 39.40,79.56
 step
-click Warchief's Command Board
-Find the Warchief's Command Board |q 50319/1 |goto 49.67,76.47
+talk Chromie##167032
+Talk to Chromie |q 50319/1 |goto 40.82,80.15
 step
 talk Halian Shlavahawk##131201
-turnin Stranger in a Strange Land##50319 |goto 49.79,76.41
+turnin Stranger in a Strange Land##50319 |goto 40.78,80.39
 |next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Mag'har Orc Starter",{
@@ -20031,11 +20031,11 @@ talk Ambassador Blackguard##133407
 turnin For the Horde##51485 |goto Orgrimmar/1 39.40,79.56
 accept Stranger in a Strange Land##53502 |goto Orgrimmar/1 39.40,79.56
 step
-click Warchief's Command Board
-Find the Warchief's Command Board |q 53502/1 |goto 49.67,76.47
+talk Chromie##167032
+Talk to Chromie |q 53502/1 |goto 40.82,80.15
 step
 talk Limbflayer Lasha##143979
-turnin Stranger in a Strange Land##53502 |goto 49.79,76.41
+turnin Stranger in a Strange Land##53502 |goto 40.78,80.39
 |next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Zandalari Troll Starter",{
@@ -20060,11 +20060,11 @@ talk Ambassador Blackguard##133407
 turnin For the Horde##55137 |goto Orgrimmar/1 39.40,79.56
 accept Stranger in a Strange Land##55138 |goto Orgrimmar/1 39.40,79.56
 step
-click Warchief's Command Board
-Find the Warchief's Command Board |q 55138/1 |goto 49.67,76.47
+talk Chromie##167032
+Talk to Chromie |q 55138/1 |goto 40.82,80.15
 step
 talk Natal'hakata##150909
-turnin Stranger in a Strange Land##55138 |goto 49.79,76.41
+turnin Stranger in a Strange Land##55138 |goto 40.78,80.39
 |next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
 ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Vulpera Starter",{
@@ -20086,19 +20086,19 @@ talk Ambassador Blackguard##133407
 turnin For the Horde##58122 |goto Orgrimmar/1 39.40,79.56
 accept Stranger in a Strange Land##58124 |goto Orgrimmar/1 39.40,79.56
 step
-click Warchief's Command Board
-Find the Warchief's Command Board |q 58124/1 |goto 49.67,76.47
+talk Chromie##167032
+Talk to Chromie |q 58124/1 |goto 40.82,80.15
 step
 talk Nilsa##160452
-turnin Stranger in a Strange Land##58124 |goto 64.64,46.51
+turnin Stranger in a Strange Land##58124 |goto 40.78,80.39
 |next Leveling Guides\\Starter Guides\\Chromie Time
 ]])
-ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Battle for Azeroth (10-60)\\Allied Race Death Knight Starter",{
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Starter Guides\\Allied Race Death Knight Starter",{
 author="support@zygorguides.com",
 description="This guide will walk you through completing the brief introduction for Pandaren and Allied Race Death Knights.",
 condition_suggested=function() return raceclass{'pandaren','highmountaintauren','zandalaritroll','nightborne','magharorc','vulpera'} and raceclass('DeathKnight') and level < 10.5 end,
 condition_suggested_exclusive=true,
-condition_valid="suggested",
+condition_valid=function() return raceclass{'pandaren','highmountaintauren','zandalaritroll','nightborne','magharorc','vulpera'} and raceclass('DeathKnight') and level < 10.5 end,
 condition_valid_msg="You must be a Pandaren or Allied Race Death Knight to complete this guide!",
 condition_end=function() return completedq(58903) end,
 },[[
@@ -20106,7 +20106,7 @@ step
 talk The Lich King##163016
 accept Death's Power Grows##58877 |goto The Frozen Throne/0 49.51,90.71
 step
-Use the _"Swear Fealty"_ ability
+extraaction Swear Fealty##316907
 |tip It appears as a button on the screen.
 Swear Fealty |q 58877/1 |goto 49.51,90.71
 step
@@ -20122,7 +20122,7 @@ click Death Gate
 Use the Death Gate |q 58903/3 |goto 49.97,38.80
 step
 click Warchief's Command Board
-Use the Warchief's Command Board |q 58903/4 |goto Orgrimmar/0 49.66,76.46
+Use the Warchief's Command Board |q 58903/4 |goto Orgrimmar/1 49.66,76.46
 step
 Click the Complete Quest Box:
 turnin Defender of Azeroth##58903
@@ -20161,6 +20161,7 @@ Wrath of the Lich King	|confirm	|or	|next "Wrath_Of_The_Lich_King"
 Mists of Pandaria	|confirm	|or	|next "Mists_Of_Pandaria"
 Warlords of Draenor	|confirm	|or	|next "Warlords_Of_Draenor"
 Legion			|confirm	|or	|next "Legion"
+Shadowlands		|confirm	|or	|next "Shadowlands"
 step
 label "The_Cataclysm"
 accept Onward to Adventure: Kalimdor##60887
@@ -20349,4 +20350,340 @@ Click Here to Load the "Warlock Intro & Artifacts" Leveling Guide |confirm |next
 Click Here to Load the "Warrior Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Warrior\\Warrior Intro & Artifacts" |only if Warrior
 |tip
 Click Here to Return to Chromie |confirm |next "Chromie_Time_Start"
+step
+label "Shadowlands"
+accept Shadowlands: A Chilling Summons##61874 |goto Orgrimmar/1 51.64,81.09
+|tip You will automatically accept this quest.
+step
+talk Nazgrim##171791
+Tell him _"Tell me what happened."_
+Learn About Your Leaders' Fate |q 61874/1 |goto 50.39,76.57
+_Or:_
+Tell him _"I have heard this tale before."_
+|tip This option is available if you have completed the Shadowlands "Through the Shattered Sky" intro.
+|tip Choosing this option will skip this intro quest chain in The Maw, along with any potential rewards.
+Skip the "Through the Shattered Sky" Intro |complete completedq(59770) |goto 50.39,76.57 |next "Skip_The_Maw_Intro" |or
+step
+Watch the dialogue
+click Death Gate to Acherus
+Take the Death Gate to Acherus |q 61874/2 |goto 48.45,77.25
+step
+Take the Teleporter to the Frozen Throne |q 61874/3 |goto Icecrown Citadel Intro/0 59.83,21.14
+|tip Walk onto the teleport pad nearby this location.
+step
+talk Highlord Bolvar Fordragon##169076
+turnin A Chilling Summons##61874 |goto Icecrown Citadel Intro/2 50.78,53.71
+accept Through the Shattered Sky##59751 |goto Icecrown Citadel Intro/2 50.78,53.71
+step
+Watch the dialogue
+Hear Bolvar's Instructions |q 59751/1 |goto 50.78,53.71
+step
+click Shard of Domination
+Carry the First Shard |havebuff 968649 |goto 49.79,51.71 |q 59751
+step
+click Place Shard
+Place the First Shard |q 59751/2 |goto 54.90,44.70
+step
+click Shard of Domination
+Carry the Second Shard |havebuff 968649 |goto 49.79,51.71 |q 59751
+step
+click Place Shard
+Place the Second Shard |q 59751/3 |goto 54.87,59.64
+step
+click Shard of Domination
+Carry the Third Shard |havebuff 968649 |goto 49.79,51.71 |q 59751
+step
+click Place Shard
+Place the Third Shard |q 59751/4 |goto 44.88,59.79
+step
+click Shard of Domination
+Carry the Fourth Shard |havebuff 968649 |goto 49.79,51.71 |q 59751
+step
+click Place Shard
+Place the Fourth Shard |q 59751/5 |goto 44.74,44.91
+step
+click Shard of Domination
+Watch the dialogue
+Complete the Ritual |q 59751/6 |goto 49.79,51.71
+step
+Enter the Maw |goto The Maw Intro/0 19.19,57.51 < 10 |noway |c |q 59751
+step
+talk Highlord Darion Mograine##165918
+turnin Through the Shattered Sky##59751 |goto 19.31,57.22
+accept A Fractured Blade##59752 |goto 19.31,57.22
+step
+_Next to you:_
+talk Highlord Darion Mograine
+accept Mawsworn Menace##59907
+stickystart "Rally_Death_Knights"
+stickystart "Slay_Mawsworn_Forces"
+step
+talk Wilona Thorne##170624
+accept Ruiner's End##59753 |goto 22.96,51.90
+step
+label "Rally_Death_Knights"
+talk Knight of the Ebon Blade##166963+
+|tip They look like friendly Death Knight NPC's on the ground around this area.
+|tip If they are fighting, kill the enemies they are fighting to rally them.
+Rally #10# Death Knights |q 59752/1 |goto 22.37,51.41
+step
+label "Slay_Mawsworn_Forces"
+Kill enemies around this area
+Slay #8# Mawsworn Forces |q 59907/1 |goto 22.37,51.41
+step
+_Next to you:_
+talk Highlord Darion Mograine
+turnin A Fractured Blade##59752
+turnin Mawsworn Menace##59907
+step
+kill Ruiner Maroth##166714 |q 59753/1 |goto 19.32,46.08
+|tip Use the "Ebon Clarion" ability to summon allies to help you fight.
+|tip It appears as a button on the screen.
+step
+Regroup with Mograine |q 59753/2 |goto 21.50,41.96
+step
+talk Highlord Darion Mograine##165918
+turnin Ruiner's End##59753 |goto 21.50,41.96
+accept Fear to Tread##59914 |goto 21.50,41.96
+step
+Find the First Clue |q 59914/1 |goto 22.21,43.12
+step
+Find the Second Clue |q 59914/2 |goto 20.90,38.90
+step
+Find the Third Clue |q 59914/3 |goto 21.70,35.69
+step
+Watch the dialogue
+Find Jaina |q 59914/4 |goto 22.30,32.94
+step
+talk Lady Jaina Proudmoore##166980
+turnin Fear to Tread##59914 |goto 22.30,32.94
+accept On Blackened Wings##59754 |goto 22.30,32.94
+step
+Watch the dialogue
+Follow Jaina |q 59754/1 |goto 22.30,32.94
+step
+kill 6 Mawsworn Kyrian##165983 |q 59754/2 |goto 22.30,32.94
+step
+talk Lady Jaina Proudmoore##166980
+turnin On Blackened Wings##59754 |goto 23.16,31.72
+accept A Flight from Darkness##59755 |goto 23.16,31.72
+step
+talk Lady Jaina Proudmoore##166980
+Tell her _"I am ready."_
+Begin Following Lady Jaina Proudmoore |goto 23.16,31.72 > 15 |c |q 59755
+step
+Watch the dialogue
+|tip Follow Lady Jaina Proudmoore and protect her as she walks.
+|tip She eventually walks to this location inside the cave.
+Escort Jaina to Forlorn Respite |q 59755/1 |goto 24.46,36.23
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+turnin A Flight from Darkness##59755 |goto 24.46,36.23
+accept A Moment's Respite##59756 |goto 24.46,36.23
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+Tell her _"Tell me about this place."_
+Watch the dialogue
+Speak to Jaina |q 59756/1 |goto 24.46,36.23
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+Tell her _"Tell me more of the Jailer."_
+Watch the dialogue
+Ask About the Jailer |q 59756/2 |goto 24.85,36.27
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+Ask her _"What about the others who were taken?"_
+Watch the dialogue
+Ask About the Other Captives |q 59756/3 |goto 24.88,36.01
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+turnin A Moment's Respite##59756 |goto 24.46,36.23
+step
+talk Highlord Darion Mograine##165918
+|tip Inside the cave.
+accept Field Seance##59757 |goto 24.54,36.04
+step
+Leave the cave |goto 25.49,32.58 < 15 |walk
+kill Malice Shadow##165909+
+|tip They will become weakened and unattackable.
+use the Shattered Helm of Domination##178495 |only if default
+use the Shattered Helm of Domination##184313 |only if itemcount(184313) >= 1
+|tip Use it on weakened Malice Shadows.
+Command #5# Malice Shadows |q 59757/1 |goto 27.59,32.11
+step
+_Next to you:_
+talk Highlord Darion Mograine
+turnin Field Seance##59757
+accept Speaking to the Dead##59758
+step
+kill Tormented Amalgamation##165976
+|tip It will become weakened and unattackable.
+use the Shattered Helm of Domination##178495 |only if default
+use the Shattered Helm of Domination##184313 |only if itemcount(184313) >= 1
+|tip Use it on the weakened Tormented Amalgamation.
+Command the Tormented Amalgamation |q 59758/1 |goto 27.95,30.86
+step
+_Next to you:_
+talk Highlord Darion Mograine
+turnin Speaking to the Dead##59758
+accept Soul in Hand##59915
+step
+Enter the cave |goto 25.50,32.56 < 15 |walk
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+turnin Soul in Hand##59915 |goto 24.46,36.23
+accept The Lion's Cage##59759 |goto 24.46,36.23
+step
+Leave the cave |goto 25.49,32.58 < 15 |walk
+Cross the bridge |goto 24.05,25.87 < 20 |only if walking
+Reach the Upper Tremaculum |q 59759/1 |goto 27.61,17.47
+|tip Walk onto the teleport pad.
+step
+Watch the dialogue
+Find Anduin |q 59759/2 |goto 25.85,14.98
+step
+talk Lady Jaina Proudmoore##166980
+Choose _<Lie low and observe.>_
+Speak to Jaina |q 59759/3 |goto 25.85,14.98
+step
+talk Anduin Wrynn##167833
+turnin The Lion's Cage##59759 |goto 25.05,13.41
+accept The Afflictor's Key##59760 |goto 25.05,13.41
+accept An Undeserved Fate##59761 |goto 25.05,13.41
+stickystart "Release_Shackled_Souls"
+step
+Locate the Teleport Pad |goto 28.26,19.02 < 20 |c |q 59761
+step
+Use the Teleport Pad |goto 28.26,19.02
+|tip Walk onto the teleport pad.
+Teleport to the Ground |goto 27.54,17.32 < 10 |noway |c |q 59761
+step
+Run up the stairs |goto 27.49,14.45 < 15 |only if walking
+kill Phael the Afflictor##167834
+collect Afflictor's Key##178558 |q 59760/1 |goto 28.62,11.95
+step
+label "Release_Shackled_Souls"
+Kill Mawsworn enemies around this area
+collect Mawsworn Key##178553+ |n
+click Mawsteel Cage+
+|tip They look like silver cages on the ground around this area.
+Release #15# Shackled Souls |q 59761/1 |goto 29.37,15.33
+step
+Use the Teleport Pad |goto 27.63,17.41
+|tip Walk onto the teleport pad.
+Teleport Back Up to Anduin |goto 28.20,18.90 < 10 |noway |c |q 59760
+step
+click Mawforged Lock
+Open the Mawforged Lock |q 59760/2 |goto 24.95,13.52 |count 1
+step
+click Mawforged Lock
+Open the Mawforged Lock |q 59760/2 |goto 25.15,13.28 |count 2
+step
+talk Anduin Wrynn##167833
+turnin The Afflictor's Key##59760 |goto 25.05,13.41
+turnin An Undeserved Fate##59761 |goto 25.05,13.41
+accept From the Mouths of Madness##59776 |goto 25.05,13.41
+step
+Watch the dialogue
+click Portal to Forlorn Respite
+Take the Portal to Forlorn Respite |q 59776/1 |goto 25.36,13.91
+step
+talk Highlord Darion Mograine##165918
+|tip Inside the cave.
+Tell him _"Make it talk."_
+Watch the dialogue
+Speak to Darion Mograine |q 59776/2 |goto 24.31,37.18
+step
+Watch the dialogue
+|tip Inside the cave.
+talk Highlord Darion Mograine##165918
+turnin From the Mouths of Madness##59776 |goto 24.31,37.18
+step
+talk Lady Jaina Proudmoore##166980
+|tip Inside the cave.
+accept By and Down the River##59762 |goto 24.28,37.04
+step
+Leave the cave |goto 25.52,32.58 < 15 |walk
+Cross the bridge |goto 29.03,36.11 < 20 |only if walking
+Watch the dialogue
+Cross the River of Souls |q 59762/1 |goto 30.02,36.60
+step
+Escape the River |q 59762/2 |goto 29.45,41.41
+step
+talk Lady Jaina Proudmoore##166980
+turnin By and Down the River##59762 |goto 29.78,42.44
+step
+talk Thrall##166981
+accept Wounds Beyond Flesh##59765 |goto 29.50,43.80
+step
+_Next to you:_
+talk Thrall
+accept A Good Axe##59766
+stickystart "Find_A_Suitable_Weapon"
+step
+kill Mawsworn Soulrender##169687+
+collect Wither Blade##180050 |q 59765/1 |goto 31.84,41.78
+step
+label "Find_A_Suitable_Weapon"
+click Mawsworn Armaments+
+|tip They look like weapon racks on the ground around this area.
+Find a Suitable Weapon |q 59766/1 |goto 31.84,41.78
+step
+_Next to you:_
+talk Thrall
+turnin Wounds Beyond Flesh##59765
+turnin A Good Axe##59766
+accept Draw Out the Darkness##60644
+step
+click Place Blade
+Watch the dialogue
+kill Withering Presence##169759 |q 60644/2 |goto 29.51,43.88
+step
+Watch the dialogue
+talk Baine Bloodhoof##168162
+turnin Draw Out the Darkness##60644 |goto 29.46,43.88
+step
+talk Lady Jaina Proudmoore##166980
+accept The Path to Salvation##59767 |goto 29.47,44.02
+step
+Watch the dialogue
+talk Lady Jaina Proudmoore##166980
+|tip She walks to this location.
+Tell her _"I am ready."_
+Speak to Jaina |q 59767/1 |goto 31.83,44.41
+step
+Watch the dialogue
+Become Invisible |havebuff spell:327876 |goto 31.83,44.41 |q 59767
+step
+Watch the dialogue
+|tip Follow your allies as they walk.
+|tip They eventually walk to this location.
+|tip Avoid the enemies with blue circles beneath them.
+Reach the Eroded Waygate |q 59767/2 |goto 42.49,42.36
+step
+talk Anduin Wrynn##167833
+turnin The Path to Salvation##59767 |goto 42.49,42.18
+accept Stand as One##59770 |goto 42.49,42.18
+step
+click Eroded Waystone
+Touch the Eroded Waystone |q 59770/1 |goto 42.38,42.16
+step
+Kill the enemies that attack in waves
+|tip Fill the blue bar at the bottom of the screen.
+|tip The bar will not fill up completely.
+Survive the Jailer's Onslaught |q 59770/2 |goto 42.57,42.17
+step
+label "Skip_The_Maw_Intro"
+click Eroded Waystone
+turnin Stand as One##59770 |goto 42.37,42.16
+step
+_Begin Leveling in Shadowlands:_
+Click Here to Load the "Shadowlands Intro & Main Story Questline" Leveling Guide |confirm |next "Leveling Guides\\Shadowlands (50-60)\\Shadowlands Intro & Main Story Questline" |or
+|tip
+Click Here to Return to Chromie |confirm |next "Chromie_Time_Start" |or
 ]])

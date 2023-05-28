@@ -29,6 +29,7 @@ tinsert(ZGV.startups,{"PetBattle hooks",function(self)
 	if IsFrameLockActive("PETBATTLES") then
 		ZGV.PetBattle:ShowInterface()
 	end
+	PetBattle:PrepareCachePets()
 end})
 
 PetBattle.petQuality = {
@@ -1182,9 +1183,27 @@ end
 
 --EVENTS
 
-local hits_per_round = {}
+function PetBattle:PetRegEvents()
+	local tracked = {
+		"PLAYER_ENTERING_WORLD",
+		"PET_BATTLE_CLOSE",
+		"PET_BATTLE_OPENING_DONE",
+		"PET_BATTLE_OPENING_START",
+		"PET_BATTLE_FINAL_ROUND",
+		"PET_BATTLE_PET_ROUND_PLAYBACK_COMPLETE",
+		"PET_BATTLE_PET_CHANGED",
+		"PET_JOURNAL_LIST_UPDATE",
+		"CHAT_MSG_PET_BATTLE_COMBAT_LOG",
+		"PET_BATTLE_HEALTH_CHANGED",
+		"PET_BATTLE_LEVEL_CHANGED",
+	}
+	for _,event in pairs(tracked) do
+		ZGV:AddEventHandler(event,PetBattle.OnEvent)
+	end
+end
 
-local function OnEvent(self,event,...)
+local hits_per_round = {}
+function PetBattle:OnEvent(event,...)
 	--print("Event Name: "..event.." Other Data: ",...)
 
 	if event=="PET_JOURNAL_LIST_UPDATE" and PetBattle.PetJournal.loaded then
@@ -1233,74 +1252,51 @@ local function OnEvent(self,event,...)
 		hits_per_round[owner..pet] = (hits_per_round[owner..pet] or 0) + hp_delta
 
 		--RaidNotice_AddMessage(RaidBossEmoteFrame,("%d (%d%%)"):format(hp_delta,hits_per_round[owner..pet]/maxhp*100),hp_delta>0 and ChatTypeInfo.GUILD or ChatTypeInfo.YELL,3)
+	elseif event=="PET_BATTLE_LEVEL_CHANGED" or event=="PET_JOURNAL_LIST_UPDATE" then
+		PetBattle:CachePets()
 	end
 end
 
-local ReviveJustCooled=true
-local REVIVE_PETS=125439
+PetBattle.PetLevels = {}
+-- when running on startup, set initial state without filters, cache, and then restore user settings
+function PetBattle:PrepareCachePets()
+	-- store filters
+	local filters_collected = {
+		[LE_PET_JOURNAL_FILTER_COLLECTED] = C_PetJournal.IsFilterChecked(LE_PET_JOURNAL_FILTER_COLLECTED),
+		[LE_PET_JOURNAL_FILTER_NOT_COLLECTED] = C_PetJournal.IsFilterChecked(LE_PET_JOURNAL_FILTER_NOT_COLLECTED),
+	}
 
-function PetBattle:PetRegEvents()
+	local filters_types = {}
+	for i=1, C_PetJournal.GetNumPetTypes() do
+		filters_types[i] = C_PetJournal.IsPetTypeChecked(i)
+	end
 
-	PetBattle.EventFrame=CreateFrame("Frame")
+	local filters_sources = {}
+	for i=1, C_PetJournal.GetNumPetSources() do
+		filters_sources[i] = C_PetJournal.IsPetSourceChecked(i)
+	end
 
-	local event=PetBattle.EventFrame
+	-- reset
+	table.wipe(PetBattle.PetLevels)
+	C_PetJournal.SetDefaultFilters();
+	-- as a result of ^ PET_JOURNAL_LIST_UPDATE will fire and all pets will be cached
 
-	event:RegisterEvent("PLAYER_ENTERING_WORLD")
-	event:RegisterEvent("PET_BATTLE_CLOSE")
-	event:RegisterEvent("PET_BATTLE_OPENING_DONE")
-	event:RegisterEvent("PET_BATTLE_OPENING_START")
-	event:RegisterEvent("PET_BATTLE_FINAL_ROUND")
-	event:RegisterEvent("PET_BATTLE_PET_ROUND_PLAYBACK_COMPLETE")
-	event:RegisterEvent("PET_BATTLE_PET_CHANGED")
-	event:RegisterEvent("PET_JOURNAL_LIST_UPDATE")
-	event:RegisterEvent("CHAT_MSG_PET_BATTLE_COMBAT_LOG")
-
-
-	-- Sinus tinkering:
-
-	-- Announce revive cooldown
-	ZGV:ScheduleRepeatingTimer(function()
-		if ZGV.db.profile.pet_notifyrevive then
-			if InCombatLockdown() or PetBattleFrame:IsVisible() or not IsUsableSpell(REVIVE_PETS) then return end
-			local cd = GetSpellCooldown(REVIVE_PETS)
-			if cd>0 then
-				ReviveJustCooled=false
-				return
-			end
-			if cd==0 and not ReviveJustCooled then
-				ReviveJustCooled=true
-				RaidNotice_AddMessage(RaidBossEmoteFrame,"You can revive your pets now.",ChatTypeInfo.SYSTEM,5)
-			end
-		end
-	end, 5)
-
-	event:RegisterEvent("PET_BATTLE_HEALTH_CHANGED")
-
-
-	--[[event:RegisterEvent("PET_BATTLE_ABILITY_CHANGED")
-	event:RegisterEvent("PET_BATTLE_ACTION_SELECTED")
-	event:RegisterEvent("PET_BATTLE_AURA_APPLIED")
-	event:RegisterEvent("PET_BATTLE_AURA_CANCELED")
-	event:RegisterEvent("PET_BATTLE_AURA_CHANGED")
-	event:RegisterEvent("PET_BATTLE_CAPTURED")
-	event:RegisterEvent("PET_BATTLE_HEALTH_CHANGED")
-	event:RegisterEvent("PET_BATTLE_LEVEL_CHANGED")
-	event:RegisterEvent("PET_BATTLE_MAX_HEALTH_CHANGED")
-	event:RegisterEvent("PET_BATTLE_OVER")
-	event:RegisterEvent("PET_BATTLE_PET_ROUND_RESULTS")
-	event:RegisterEvent("PET_BATTLE_PVP_DUEL_REQUESTED")
-	event:RegisterEvent("PET_BATTLE_PVP_DUEL_REQUEST_CANCEL")
-	event:RegisterEvent("PET_BATTLE_QUEUE_PROPOSAL_ACCEPTED")
-	event:RegisterEvent("PET_BATTLE_QUEUE_PROPOSAL_DECLINED")
-	event:RegisterEvent("PET_BATTLE_QUEUE_PROPOSE_MATCH")
-	event:RegisterEvent("PET_BATTLE_QUEUE_STATUS")
-	event:RegisterEvent("PET_BATTLE_TURN_STARTED")
-	event:RegisterEvent("PET_BATTLE_XP_CHANGED")--]]
-
-	event:SetScript("OnEvent", OnEvent)
+	-- restore filters
+	for i,v in pairs(filters_collected) do C_PetJournal.SetFilterChecked(i, v) end
+	for i,v in pairs(filters_types) do C_PetJournal.SetPetTypeFilter(i, v) end
+	for i,v in pairs(filters_sources) do C_PetJournal.SetPetSourceChecked(i, v) end
 end
 
-local petTypes = PetBattle.petType
+
+-- actual cache, called directly when anything in list changes
+function PetBattle:CachePets()
+	local numPets = C_PetJournal.GetNumPets();
+
+	for i = 1,numPets do
+		local _, speciesID, _, _, level = C_PetJournal.GetPetInfoByIndex(i)
+		if level>0 then PetBattle.PetLevels[speciesID] = max(PetBattle.PetLevels[speciesID] or 0,level) end
+	end
+end
 
 PetBattle.RarityMod = {
 	[0] = 0.5,
