@@ -635,6 +635,8 @@ function ItemScore:IsValidItem(itemlink, future, name, spec)
 		playerlevel = cdata.level
 	end
 
+	if not ruleset then return false,false,false, "No ruleset found" end
+
 
 	if not item.slot then 
 		item.validated = true

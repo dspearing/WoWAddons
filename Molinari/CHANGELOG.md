@@ -1,5 +1,5 @@
-### Changes in 100100.105-Release:
+### Changes in 100105.109-Release:
 
-- Fixed: Disenchanting wrong item when holding shift
-- Fixed: Sparkles not respecting modifiers and settings
+- Changed: Update Interface version (retail)
+- Fixed: Not working with items in the reagent bag
 

@@ -1,41 +1,35 @@
-# [5.5.4](https://github.com/WeakAuras/WeakAuras2/tree/5.5.4) (2023-05-21)
+# [5.6.0](https://github.com/WeakAuras/WeakAuras2/tree/5.6.0) (2023-07-10)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.5.3...5.5.4)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.5.7...5.6.0)
 
 ## Highlights
 
- - Add an option to un-ignore aura updates from Wago
-- Include TaintLess so we..taint less
-- Add a 4th tooltip for people to use
-- The usual amount of bugfixes 
+ - Support new specialization and patch features
+- Fixes for DBM/BW triggers
+- Condition titles are now dynamic and pretty 
 
 ## Commits
 
 InfusOnWoW (4):
 
-- Hide tip popup on minimze and switching pages
-- Clean up code showing the bottom buttons
-- BT2: Limit size of returned tooltip for options display
-- Add a tooltip4, since a user actually wants that
+- BT2: Fix GROUP_ROSTER_UPDATE handling
+- Fix Item Set equipped trigger
+- Fix delayed anchoring of dynamic groups
+- Change SpinBox to emit MouseUp/OnValueChanged
 
-Jods (1):
+Stanzilla (1):
 
-- add unignoring uption for WagoUpdates (#4443)
+- Update TOC for retail patch 10.1.5
 
-Stanzilla (5):
+mrbuds (9):
 
-- Load TaintLess in Wrath as well
-- Fix typo
-- Include TaintLess as as lib (#4437)
-- Add a few more blocked functions that were added in 10.1
-- Fix up some types
-
-emptyrivers (1):
-
-- simplify dragonriding detection
-
-mrbuds (2):
-
-- Fix anchored to nameplate preview with aura trigger
-- Essence trigger: fix nil error happening on import of an aura
+- Add new type of glow called "Proc Glow"
+- DBM Triggers: use count from callback instead of parsing text
+- Action - Chat message: fix sending to a unit on an other server #4517
+- Fix error with bogus update data #4518
+- add Augmentation spec templates
+- Fix error in DBM Timer trigger when extending timer
+- Change WeakAurasOptions background to match PANEL_BACKGROUND_COLOR
+- Pretty condition titles
+- Give triggers titles slightly more descriptive names
 

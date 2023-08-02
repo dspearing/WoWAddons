@@ -178,10 +178,12 @@ do
 		}
 
 		Lib.cfgNodeOverride = {}
+		Lib.cfgNodeStepOverride = {}
 
 		function Lib:GetCFG(field)
-			if self.cfgNodeOverride[field]==nil then return self.cfg[field] end
-			return self.cfgNodeOverride[field]
+			if self.cfgNodeOverride[field]~=nil then return self.cfgNodeOverride[field] end
+			if self.cfgNodeStepOverride[field]~=nil then return self.cfgNodeStepOverride[field] end
+			return self.cfg[field]
 		end
 
 		Lib.COST_FORCED = COST_FORCED

@@ -1,36 +1,10 @@
-lightweight tag 2c6b69b836ec3aead3f07c250525300d4a5186d1 v1.10.17
-Author:	GitHub <noreply@github.com>
-Date:	Sat May 27 23:17:22 2023 -0700
+lightweight tag 5d8437438768e934fe2ece74e3c0d8424ab26b29 v1.10.19
+Author:	Antonio Lobato <aj.lobato@gmail.com>
+Date:	Thu Jul 27 22:08:21 2023 -0700
 
-commit 2c6b69b836ec3aead3f07c250525300d4a5186d1
+commit 5d8437438768e934fe2ece74e3c0d8424ab26b29
 Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Sat May 27 23:17:22 2023 -0700
+Date:   Thu Jul 27 22:08:21 2023 -0700
 
-    General bug fixes for Vanilla and Wrath. (#972)
-    
-    Updated experiments framework for Vanilla and Wrath.
-
-commit 62834edd970670c0932aab5dc0641d28518c88a9
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Sat May 27 23:07:54 2023 -0700
-
-    Bag Lag Experiment (#971)
-    
-    * Added bag lag fix feature flag.
-
-commit 93a77d62b2359f93b10002aa6c0d82907a531a7d
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Sat May 27 22:39:41 2023 -0700
-
-    Annotations v2 (#970)
-    
-    * Added more code annotations.
-
-commit c46775ded5d62f2b0478b4fdbebb061367f4e0c2
-Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Sat May 27 15:36:04 2023 -0700
-
-    Experiments Framework (#968)
-    
-    * Added experiments framework for safer releases of new features.
+    Updated config TOC.
 

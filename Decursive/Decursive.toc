@@ -1,5 +1,5 @@
-## Interface: 100007
-## X-Max-Interface: 100100
+## Interface: 100105
+## X-Max-Interface: 100105
 ## X-Min-Interface: 11403
 
 ## Title: Decursive |cffff00ff -Ace3-|r
@@ -15,10 +15,11 @@
 ## Notes-ptBR: Exibição de aflições e limpeza para uso solo, em grupo e raides, com filtragem avançada e sistema de proriodades.
 ## Notes-itIT: Afflictions display and cleaning for solo, group and raid with advanced filtering and priority system.
 
+## IconTexture: Interface/AddOns/Decursive/iconON.tga
 
 ## SavedVariables: DecursiveDB
 
-## Version: 2.7.9.1
+## Version: 2.7.9.3
 ## Author: John Wellesz
 
 ## X-License: GNU GPL V3
@@ -32,7 +33,7 @@
 
 ## X-Embeds: Ace3, LibQTip-1.0, LibDataBroker-1.1, LibDBIcon-1.0, !BugGrabber, LibDualSpec-1.0
 
-## X-ReleaseDate: "2023-04-02T21:35:33Z"
+## X-ReleaseDate: "2023-07-16T11:30:22Z"
 ## X-Category: Combat
 ## X-Website: http://www.2072productions.com/to/decursive.php
 ## X-Credits: Sylvin (Full french translation), Peter Sun, Ananhaid (ZhTW and zhCN translation), Fenlis, Chkid (koKR translation), Hemathio, Swix, Athariel, StingerSoft (Russian Translation), Freydis88, Floyddotnet, Vilogity, Dessa, Farook (German translation)

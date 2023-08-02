@@ -435,7 +435,7 @@ GRM_UI.LoadToolFrames = function ( isManual )
                     end
 
                     if GRM_UI.GRM_RosterFrame ~= nil and GRM_UI.GRM_RosterFrame:IsVisible() then
-                        GRM_UI.RefreshRosterName();
+                        GRM_R.RefreshRosterName();
                     end
 
                     if not GRM_G.AuditWindowRefresh and GRM_UI.GRM_RosterChangeLogFrame.GRM_AuditFrame:IsVisible() then
@@ -454,13 +454,12 @@ GRM_UI.LoadToolFrames = function ( isManual )
 
         GRM_UI.GRM_ToolCoreFrame:SetScript ( "OnHide" , function()
             -- Clear the macro!
-            GRM.CreateMacro ( "" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , GRM_G.MacroHotKey );
+            GRM.CreateMacro ( "/run GRM.Report(\"" .. GRM.L ( "Reserved for GRM Macro Tool Usage. Please do not delete." ) .."\")" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , "CTRL-SHIFT-K" , true );
             GRM_G.MacroInProgress = false;
             GRM_UI.GRM_ToolCoreFrame.GRM_ToolIgnoreListFrame:Hide();
             GRM_UI.GRM_ToolCoreFrame.GRM_ToolCustomRulesFrame:Hide();
             GRM_UI.GRM_ToolCoreFrame.GRM_ToolContextMenu:Hide();
             GRM.ScanRecommendationsList();
-            
         end);
 
         -- Text
@@ -604,7 +603,6 @@ GRM_UI.LoadToolFrames = function ( isManual )
                 GRM.S().ignoreFilter = false;
                 GRM.TriggerIgnoredQueuedWindowRefresh();
             end
-            GRM.SyncSettings();
         end);
 
         GRM_UI.GRM_ToolCoreFrame.GRM_MacroToolDisableLogSpamCheckbutton:SetPoint ( "RIGHT" , GRM_UI.GRM_ToolCoreFrame.GRM_MacroToolDisableLogSpamCheckbuttonText , "LEFT" , - 2 , 0 );
@@ -616,7 +614,6 @@ GRM_UI.LoadToolFrames = function ( isManual )
                 else
                     GRM.S().disableMacroToolLogSpam = false;
                 end
-                GRM.SyncSettings();
             end
         end);
 
@@ -645,7 +642,6 @@ GRM_UI.LoadToolFrames = function ( isManual )
                         GRM.TriggerIgnoredQueuedWindowRefresh();
                     end
 
-                    GRM.SyncSettings();
                 else
                     if self:GetChecked() then
                         self:SetChecked ( false );
@@ -1876,7 +1872,6 @@ GRM_UI.LoadToolFrames = function ( isManual )
                     GRM_UI.GRM_ToolCoreFrame.GRM_ToolCustomRulesFrame:Hide();
                     GRM.RefreshNumberOfHoursTilRecommend();
                     GRM_UI.FullMacroToolRefresh();
-                    GRM.SyncAddonSettings();
                 end
             end
         end);
@@ -5793,7 +5788,7 @@ end
 -- What it Does:    Resets Macro
 -- Purpose:         Clear the macro after each use so it can be rebuilt - prevents double use of macro by spam clicking.
 GRM.RMM = function()
-    GRM.CreateMacro ( "" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , GRM_G.MacroHotKey );
+    GRM.CreateMacro ( "" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , "CTRL-SHIFT-K" , true );
     GRM_G.HK = true;
 end
 
@@ -5819,7 +5814,8 @@ GRM.BuildMacrodScrollFrame = function ( showAll , fullRefresh )
         end
 
     elseif not fullRefresh then
-        GRM.CreateMacro ( "" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , GRM_G.MacroHotKey );    -- Clear the macro
+        -- Clear the macro
+        GRM.CreateMacro ( "" , "GRM_Tool" , "INV_MISC_QUESTIONMARK" , "CTRL-SHIFT-K" , true );
     end
 
 
@@ -8752,7 +8748,6 @@ end
 GRM_UI.FullMacroToolRefresh = function()
     GRM.RefreshNumberOfHoursTilRecommend();
     GRM_UI.RefreshManagementTool();
-    GRM.SyncSettings();
 end
 
 -- Method:          GRM_UI.GRM_ToolCoreFrame()

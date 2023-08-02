@@ -1,5 +1,31 @@
-Decursive 2.7.9.1
+Decursive 2.7.9.3
 =================
+
+
+Decursive 2.7.9.3 (2023-07-16)
+------------------------------
+
+- Fix Improved Purify Spirit talent detection for resto shamans.
+
+- Remove new DF shaman spells from Classic versions
+
+- TOC updates
+
+
+
+**New Way to support Decursive:** If you are an [ADA/Cardano](https://cardano.org) holder you can
+delegate your stake to my pool: [anfra.io](https://anfra.io)
+
+
+
+Decursive 2.7.9.2 (2023-05-30)
+------------------------------
+
+- TOC update for WoW 10.1 with icon support
+
+- Shamans (Dragonflight):
+   - Add cleansing totem support.
+   - Fix Purify Spirit to only cure curses when Improved Purify Spirit talent is not detected.
 
 
 Decursive 2.7.9.1 (2023-04-02)
@@ -10,10 +36,6 @@ Decursive 2.7.9.1 (2023-04-02)
 - WotLK:Fix GetItemCooldown() Lua error
 
 - WoW 10.1.0 (PTR): Fix GetAddOnMetadata Lua error
-
-
-**New Way to support Decursive:** If you are an [ADA/Cardano](https://cardano.org) holder you can
-delegate your stake to my pool: [anfra.io](https://anfra.io)
 
 
 Decursive 2.7.9 (2023-02-25)

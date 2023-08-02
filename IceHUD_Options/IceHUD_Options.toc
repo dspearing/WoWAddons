@@ -1,7 +1,7 @@
-## Interface: 100100
+## Interface: 100105
 ## Title: IceHUD |cff7fff7f-Options-|r
 ## Author: Parnic
-## Version: v1.14.21
+## Version: v1.14.24
 ## Notes: Configuration options for IceHUD
 ## OptionalDeps: AceGUI-3.0-SharedMediaWidgets
 ## Dependencies: IceHUD

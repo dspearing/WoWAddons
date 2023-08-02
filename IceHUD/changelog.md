@@ -1,5 +1,19 @@
 # Changelog
 
+v1.14.24:
+
+- Fixed an error when targeting a player and right-clicking a module that should show a menu in 10.1.5.
+
+v1.14.23:
+
+- Update Dragonflight TOC for 10.1.5
+
+v1.14.22:
+
+- Fixed reported issue with a Lua error on Wrath Classic clients. https://www.wowace.com/projects/ice-hud/issues/344
+- Fixed Vigor module not working when riding Grotto Netherwing Drake (and theoretically all future Dragonriding mount types).
+- Updated TOC for Wrath-Classic.
+
 v1.14.21:
 
 - Increased maximum scale/zoom to 400%, by request.

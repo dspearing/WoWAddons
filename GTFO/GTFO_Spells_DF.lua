@@ -401,6 +401,30 @@ GTFO.SpellID["404751"] = {
   sound = 1;
 };
 
+GTFO.SpellID["398370"] = {
+  --desc = "Petrifying Bite (Calcifying Crawler)";
+  sound = 2;
+};
+
+GTFO.SpellID["412411"] = {
+  --desc = "Magma Spit (Flowfy)";
+  sound = 1;
+};
+
+GTFO.SpellID["411473"] = {
+  --desc = "Foul Smell (Calibrating Scent Matrix)";
+  sound = 1;
+};
+
+GTFO.SpellID["412490"] = {
+  --desc = "Volcanic Overload (Colossian)";
+  sound = 1;
+};
+
+GTFO.SpellID["417288"] = {
+  --desc = "Defile (The Lich King)";
+  sound = 1;
+};
 
 
 --- *******************
@@ -547,7 +571,7 @@ GTFO.SpellID["377807"] = {
 GTFO.SpellID["377830"] = {
   --desc = "Bladestorm (Rira Hackclaw)";
   sound = 1;
-  test = true; -- Need more info about this one
+  tankSound = 2;
 };
 
 GTFO.SpellID["374245"] = {
@@ -629,6 +653,22 @@ GTFO.SpellID["385168"] = {
   --desc = "Thunderstorm (Primalist Galesinger)";
   sound = 1;
 };
+
+GTFO.SpellID["374389"] = {
+  --desc = "Gulp Swog Toxin (Curious Swoglet)";
+  applicationOnly = true;
+  soundFunction = function() 
+	local stacks = GTFO_DebuffStackCount("player", 374389);
+	if (stacks == 10) then
+		return 3;
+	elseif (stacks >= 7) then
+		return 1;
+	elseif (stacks >= 4) then
+		return 2;
+	end
+  end;
+};
+
 
 --- *********************
 --- * Algeth'ar Academy *
@@ -803,6 +843,16 @@ GTFO.SpellID["376325"] = {
 
 GTFO.SpellID["413319"] = {
   --desc = "Downwind of Altairus (Altairus)";
+  ignoreEvent = "Downwind";
+  soundFunction = function() -- Reduce spamming
+	GTFO_AddEvent("Downwind", 1.1);
+	return 2;
+  end
+};
+
+GTFO.SpellID["88286"] = {
+  --desc = "Downwind of Altairus (Altairus)";
+  applicationOnly = true;
   sound = 2;
 };
 
@@ -811,11 +861,11 @@ GTFO.SpellID["413275"] = {
   sound = 1;
 };
 
-GTFO.SpellID["88963"] = {
-  --desc = "Lightning Lash (Minister of Air)";
+GTFO.SpellID["413386"] = {
+  --desc = "Overload Grounding Field (Minister of Air)";
   sound = 1;
-  test = true;
 };
+
 
 --- ***************************
 --- * Vault of the Incarnates *
@@ -1208,6 +1258,155 @@ GTFO.SpellID["402051"] = {
   applicationOnly = true;
   sound = 1;
   negatingDebuffSpellID = 401383; -- Oppressing Howl
+};
+
+GTFO.SpellID["404499"] = {
+  --desc = "Abyssal Breath (Sarkareth)";
+  sound = 1;
+  tankSound = 2;
+  negatingDebuffSpellID = 404218; -- Void Fracture
+};
+
+
+
+--- ************************
+--- * Dawn of the Infinite *
+--- ************************
+
+GTFO.SpellID["412065"] = {
+  --desc = "Timerip (Epoch Ripper)";
+  sound = 1;
+};
+
+GTFO.SpellID["401794"] = {
+  --desc = "Withering Sandpool - Pool (Chronikar)";
+  sound = 1;
+};
+
+GTFO.SpellID["419447"] = {
+  --desc = "Bronze Radiance";
+  sound = 1;
+};
+
+GTFO.SpellID["413332"] = {
+  --desc = "Sand Zone (Manifested Timeways)";
+  sound = 1;
+};
+
+--[[
+GTFO.SpellID["403912"] = {
+  --desc = "Accelerating Time (Manifested Timeways)";
+  soundFunction = function() 
+	if (GTFO_HasDebuff("player", 404141)) then -- Chrono-faded
+		return 0;
+	end
+	return 2;
+  end;
+};
+]]--
+
+GTFO.SpellID["403910"] = {
+  --desc = "Decaying Time (Manifested Timeways)";
+  soundFunction = function() 
+	if (GTFO_HasDebuff("player", 404141)) then -- Chrono-faded
+		return 1;
+	end
+	return 0;
+  end;
+};
+
+GTFO.SpellID["405448"] = {
+	--desc = "Chronofade (Manifested Timeways)";
+	ignoreApplication = true;
+	soundFunction = function() 
+		-- Alert if hit more than 2 times
+		if (not GTFO.VariableStore.Chronofade) then
+			GTFO.VariableStore.Chronofade = 0;
+		end
+		if (GTFO.VariableStore.Chronofade == 0) then
+			GTFO_AddEvent("ResetChronofadeCounter", 2.5, function() GTFO.VariableStore.Chronofade = 0; end);
+		end
+		GTFO.VariableStore.Chronofade = GTFO.VariableStore.Chronofade + 1;
+		if (GTFO.VariableStore.Chronofade > 1) then
+			return 1;
+		end
+	end;
+};
+
+GTFO.SpellID["414307"] = {
+  --desc = "Radiant (Manifested Timeways)";
+  tankSound = 1;
+  sound = 0;
+};
+
+GTFO.SpellID["408177"] = {
+  --desc = "Incinerating Blightbreath (Dazhak)";
+  sound = 1;
+};
+
+GTFO.SpellID["407147"] = {
+  --desc = "Blight Seep (Blight of Galakrond)";
+  sound = 1;
+};
+
+GTFO.SpellID["414376"] = {
+  --desc = "Punctured Ground (Iridikron the Stonescaled)";
+  sound = 1;
+};
+
+GTFO.SpellID["403724"] = {
+  --desc = "Consecrated Ground (Tyr, the Infinite Keeper)";
+  sound = 1;
+};
+
+GTFO.SpellID["418092"] = {
+  --desc = "Twisted Timeways";
+  sound = 1;
+};
+
+GTFO.SpellID["412769"] = {
+  --desc = "Anachronistic Decay (Morchie)";
+  sound = 1;
+};
+
+GTFO.SpellID["407123"] = {
+  --desc = "Rain of Fire (Horde Warlock)";
+  sound = 1;
+};
+
+GTFO.SpellID["407906"] = {
+  --desc = "Earthquake (Horde Farseer)";
+  sound = 1;
+};
+
+GTFO.SpellID["407315"] = {
+  --desc = "Embers (Horde Destroyer)";
+  sound = 1;
+};
+
+GTFO.SpellID["410238"] = {
+  --desc = "Bladestorm (Anduin Lothar/Grommash Hellscream)";
+  sound = 1;
+};
+
+GTFO.SpellID["417413"] = {
+  --desc = "Temporal Scar (Chrono-Lord Deios)";
+  sound = 1;
+};
+
+GTFO.SpellID["414922"] = {
+  --desc = "Shrouding Sandstorm (Spurlok, Timesworn Sentinel)";
+  sound = 1;
+};
+
+GTFO.SpellID["417002"] = {
+  --desc = "Consecration (Paladin of the Silver Hand)";
+  sound = 1;
+};
+
+GTFO.SpellID["417026"] = {
+  --desc = "Blizzard (Alliance Conjuror)";
+  sound = 1;
 };
 
 end

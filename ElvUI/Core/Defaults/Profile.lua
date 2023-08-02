@@ -177,6 +177,7 @@ P.general = {
 		width = 325,
 		height = 30,
 		spacing = 4,
+		maxBars = 5,
 		buttonSize = 20,
 		style = 'halfbar',
 		statusBarTexture = 'ElvUI Norm',
@@ -365,6 +366,7 @@ P.bags = {
 	disableBankSort = false,
 	showAssignedColor = true,
 	useBlizzardCleanup = false,
+	useBlizzardJunk = true,
 	strata = 'HIGH',
 	qualityColors = true,
 	specialtyColors = true,
@@ -710,6 +712,11 @@ P.nameplates = {
 		ElvUI_Target = {triggers = {enable = true}},
 		ElvUI_NonTarget = {triggers = {enable = true}},
 		ElvUI_Incorporeal = {triggers = {enable = true}},
+	},
+	widgets = {
+		below = true,
+		xOffset = 0,
+		yOffset = -3
 	},
 	colors = {
 		auraByType = true,

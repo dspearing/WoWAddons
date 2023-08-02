@@ -226,6 +226,18 @@ function rematch:InitSavedVars()
 	RematchSettings = RematchSettings or {}
 	settings = RematchSettings
 	saved = RematchSaved
+
+	-- in Rematch 5.0, Rematch 4's teams and settings are copied to Rematch4Saved/Rematch4Settings
+	-- if the following code runs, it means we reverted back from 5 to 4; restore previously saved settings
+	if type(Rematch4Saved)=="table" then
+		RematchSaved = CopyTable(Rematch4Saved)
+		Rematch4Saved = nil
+	end
+	if type(Rematch4Settings)=="table" then
+		RematchSettings = CopyTable(Rematch4Settings)
+		Rematch4Settings = nil
+	end
+
 	-- create settings sub-tables and default values if they don't exist
 	for k,v in pairs({"TeamGroups","Filters","FavoriteFilters","Sort","Sanctuary","LevelingQueue","PetNotes","ScriptFilters","SpecialSlots","QueueSanctuary"}) do
 		if type(settings[v])~="table" then
@@ -235,15 +247,15 @@ function rematch:InitSavedVars()
 				settings[v] = {Order=1,FavoritesFirst=true}
 			elseif v=="SpecialSlots" then
 				settings[v] = {}
-            if settings.LevelingSlots then -- if old LevelingSlots system is used
-               -- convert old leveling slots to new special slot system
-               for i=1,3 do
-                  rematch:SetSpecialSlot(i,settings.LevelingSlots and "leveling" or nil)
-               end
-               settings.LevelingSlots = nil
-            else -- otherwise setup new slot handling
-               rematch:AssignSpecialSlots()
-            end
+				if settings.LevelingSlots then -- if old LevelingSlots system is used
+					-- convert old leveling slots to new special slot system
+					for i=1,3 do
+						rematch:SetSpecialSlot(i,settings.LevelingSlots and "leveling" or nil)
+					end
+					settings.LevelingSlots = nil
+				else -- otherwise setup new slot handling
+					rematch:AssignSpecialSlots()
+				end
 			else
 				settings[v] = {}
 			end

@@ -14,7 +14,7 @@ patch='60001',
 condition_suggested=function() return level>=40 and level<=43 end,
 keywords={"ID, Gorgrond, Draenor"},
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Iron Docks dungeon.",
+description="This guide will walk you through the Iron Docks dungeon.",
 },[[
 step
 Press _I_ and queue for Iron Docks or enter the dungeon with your group |goto Iron Docks/1 30.6,44.5 |c

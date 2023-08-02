@@ -15,7 +15,7 @@ patch='70003',
 condition_suggested=function() return level>=40 and level<=45 end,
 keywords={"Legion, Val'sharah, DHT, DT, Broken, Isles"},
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Darkheart Thicket dungeon.",
+description="This guide will walk you through the Darkheart Thicket dungeon.",
 },[[
 step
 Press _I_ and queue for Darkheart Thicket or enter the dungeon with your group |goto Darkheart Thicket/0 36.6,14.1 < 100 |c
@@ -104,7 +104,7 @@ patch='70003',
 condition_suggested=function() return level>=40 and level<=45 end,
 keywords={"Legion, EoA, Broken, Isles"},
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Eye of Azshara dungeon.",
+description="This guide will walk you through the Eye of Azshara dungeon.",
 },[[
 step
 Press _I_ and queue for Eye of Azshara or enter the dungeon with your group |goto Eye of Azshara/1 47.4,87.5 < 100 |c

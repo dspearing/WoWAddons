@@ -264,13 +264,20 @@ end
 
 -- used in Info functions to gather info by speciesID (42)
 local function fillInfoBySpeciesID(self,speciesID)
-   local speciesName, canBattle -- prevent a __index lookup if speciesID is invalid
-   speciesName,self.icon,self.petType,self.creatureID,self.sourceText,
+   local speciesName, icon, canBattle -- prevent a __index lookup if speciesID is invalid
+   speciesName,icon,self.petType,self.creatureID,self.sourceText,
    self.loreText,self.isWild,canBattle,self.isTradable,self.isUnique,
    self.isObtainable,self.displayID = GetPetInfoBySpeciesID(speciesID)
+   -- when speciesID is invalid, it returns the GetPetInfoBySpeciesID function now for some reason
+   if type(speciesName)=="function" then
+      speciesName = nil
+      icon = nil
+      canBattle = nil
+   end
    self.speciesName = speciesName
    self.name = speciesName
    self.speciesID = speciesID
+   self.icon = icon
    if not self.icon then
       self.icon = "Interface\\Icons\\INV_Pet_BattlePetTraining"
    end

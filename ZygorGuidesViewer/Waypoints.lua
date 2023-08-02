@@ -233,6 +233,14 @@ function ZGV:ShowWaypoints(command)
 			ZGV:Debug("&waypoints Finding path to: arrowpoint")
 			ZGV.Pointer:FindTravelPath(arrowpoint)
 		elseif (waypath or waypath_poi) and not pointed and ZGV.Pointer.nummanual==0 then
+			-- setup step specific overrides
+			table.wipe(LibRover.cfgNodeStepOverride)
+			if step.travelcfg then
+				for i,v in pairs(step.travelcfg) do
+					LibRover.cfgNodeStepOverride[i]=v
+				end
+			end
+
 			ZGV:Debug("&waypoints Finding path to: waypath")
 			-- TRY TO POINT TO A FARM PATH.
 			-- find center of farm path and point there

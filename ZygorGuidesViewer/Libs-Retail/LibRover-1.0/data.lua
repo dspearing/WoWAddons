@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 484,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 486,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -67,9 +67,9 @@ data.MapIDsByName = {
 ["Zaralek Cavern"]={[0]=2133},
 ["The Throughway"]={[0]=2165},
 ["Deepflayer Nest"]={[0]=2184},
-["Aberrus, the Shadowed Crucible"]={[0]=2166,[1]=2167,[2]=2168,[3]=2169,[4]=2170},
+["Aberrus, the Shadowed Crucible"]={[0]=2166,[1]=2167,[2]=2168,[3]=2169,[4]=2170,[5]=2171,[6]=2172,[7]=2173,[8]=2174},
 ["Alterac Valley Heritage"]={[0]=2162},
-
+["The Eastern Glades"]={[0]=2146},
 
 
 ---------------------------------------------------------------

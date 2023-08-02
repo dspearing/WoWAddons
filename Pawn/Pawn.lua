@@ -7,13 +7,14 @@
 -- Main non-UI code
 ------------------------------------------------------------
 
-PawnVersion = 2.0801
+PawnVersion = 2.0803
 
 -- Pawn requires this version of VgerCore:
 local PawnVgerCoreVersionRequired = 1.17
 
 -- Floating point math
 local PawnEpsilon = 0.0000000001
+local PawnInfinity = 1.79769313E308
 
 -- Set to true once initialization completes
 local PawnIsInitialized
@@ -359,6 +360,13 @@ function PawnInitialize()
 
 	-- Dragonflight replaces SetCompareItem with ProcessInfo. (ProcessInfo is now used internally by lots of
 	-- methods, but only in Dragonflight.)
+	
+	-- Dragonflight 10.1.0 has a bug (fixed in 10.1.5) where the underlying tooltip data for the "currently equipped" tooltips gets "stuck" on
+	-- past items that were shown in that tooltip and stops updating as new items are displayed. When running on those builds, disable annotating
+	-- comparison tooltips.
+	local PawnIsDragonflightWithBrokenCompareTooltips = VgerCore.IsDragonflight and select(4, GetBuildInfo()) < 100105
+	if not PawnIsDragonflightWithBrokenCompareTooltips then
+
 	if ShoppingTooltip1.ProcessInfo then
 		hooksecurefunc(ShoppingTooltip1, "ProcessInfo", function(self)
 			local _, ItemLink = TooltipUtil.GetDisplayedItem(ShoppingTooltip1)
@@ -369,6 +377,8 @@ function PawnInitialize()
 			if ItemLink then PawnUpdateTooltip("ShoppingTooltip2", "SetHyperlink", ItemLink) end
 		end)
 	end
+
+	end -- end of PawnIsDragonflightWithBrokenCompareTooltips hack
 
 	-- MultiTips compatibility
 	if MultiTips then
@@ -3056,7 +3066,7 @@ local SpecNameToIDMap =
 	[10] = { BREWMASTER = 1, MISTWEAVER = 2, WINDWALKER = 3 },
 	[11] = { BALANCE = 1, FERAL = 2, GUARDIAN = 3, RESTORATION = 4 },
 	[12] = { HAVOC = 1, VENGEANCE = 2 },
-	[13] = { DEVASTATION = 1, PRESERVATION = 2}
+	[13] = { DEVASTATION = 1, PRESERVATION = 2, AUGMENTATION = 3 },
 }
 local ClassIDToEnglishNameMap =
 {
@@ -3076,7 +3086,7 @@ local SpecIDToEnglishNameMap =
 	[10] = { [1] = "Brewmaster", [2] = "Mistweaver", [3] = "Windwalker" },
 	[11] = { [1] = "Balance", [2] = "Feral", [3] = "Guardian", [4] = "Restoration" },
 	[12] = { [1] = "Havoc", [2] = "Vengeance" },
-	[13] = { [1] = "Devastation", [2] = "Preservation" },
+	[13] = { [1] = "Devastation", [2] = "Preservation", [3] = "Augmentation" },
 }
 
 -- Returns a class ID number (1-12) from the string passed in, or nil if the string isn't a class name.
@@ -3591,14 +3601,14 @@ function PawnIsItemAnUpgrade(Item, DoNotRescan)
 						else
 							if Item1 then
 								if PawnNeverShowUpgradesFor[Item1.ID] then
-									Value1 = 1/0
+									Value1 = PawnInfinity
 								else
 									_, Value1 = PawnGetSingleValueFromItem(Item1, ScaleName)
 								end
 							end
 							if Item2 then
 								if PawnNeverShowUpgradesFor[Item2.ID] then
-									Value2 = 1/0
+									Value2 = PawnInfinity
 								else
 									_, Value2 = PawnGetSingleValueFromItem(Item2, ScaleName)
 								end

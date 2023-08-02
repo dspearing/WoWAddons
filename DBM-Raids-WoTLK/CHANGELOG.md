@@ -1,12 +1,15 @@
-# <DBM> Raids (WoTLK)
+# <DBM Mod> Raids (WoTLK)
 
-## [r314](https://github.com/DeadlyBossMods/DBM-WotLK/tree/r314) (2023-05-23)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-WotLK/compare/r313...r314) [Previous Releases](https://github.com/DeadlyBossMods/DBM-WotLK/releases)
+## [r318](https://github.com/DeadlyBossMods/DBM-WotLK/tree/r318) (2023-07-25)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-WotLK/compare/r317...r318) [Previous Releases](https://github.com/DeadlyBossMods/DBM-WotLK/releases)
 
-- Fixed minor bug where runa way alert for legion flame was not combined iwth other options  
-- Fix pkgmeta again  
-- Fix case  
-- Combined all wrath raid modules into a single module  
-- tweak GTFO to give spellname  
-- Add guids to faction champion timers so they can use plater nameplate timer auras  
-- Tweaks to modernize the api a little on charge detection on beasts  
+- module -- > Mod due to bad truncating  
+- Fix replace script that got too zealous  
+- Set module classifications  
+- reassign raid color  
+- Fix one missed flag  
+- more changes for better key matching, in addition update for upcoming revisions to core for handling GUI grouping with custom off keys  
+- Fix the fix  
+- Fix texture paths.  
+- Fixed other occurances. Woops  
+- Fix WTF3 sounds due to rename.  

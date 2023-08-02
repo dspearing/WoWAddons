@@ -1035,6 +1035,10 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		guidemenu_section_search = "Search",
 		guidemenu_section_search_results = "Search: %d results",
 		guidemenu_section_search_titleresults = "Search '%s': %d result%s",
+		guidemenu_section_search_noresults = "|cffA8A5A5Couldn't find what you were looking for?",
+		guidemenu_section_search_request = "Request a guide for \"|c%s%s|r\"",
+		guidemenu_section_search_submitted = "Guide request submitted.",
+		guidemenu_section_search_submitted_chat = "Request submission saved for upload.",
 		guidemenu_section_suggested = "Suggested",
 		guidemenu_missing_message = "Zygor Elite guide.|nNot in trial.",
 
@@ -1477,6 +1481,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		widgets_menu_exitadd = "Cancel",
 
 		widget_uncapped = "No cap",
+		widget_capped_general = "%s/%s",
+		widget_capped_weekly = "Weekly %s/%s",
 
 		widget_renown_name = "Covenant Renown",
 		widget_renown_description = "Displays current and maximum renown level",

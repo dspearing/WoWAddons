@@ -415,7 +415,11 @@ L["ConnectedTip"] = "Gruppenverbindungen in MDT spiegeln nicht wider, ob NPCs in
 --[[Translation missing --]]
 L["Containment Apparatus"] = "Containment Apparatus"
 L["Control Undead"] = "Untote kontrollieren"
+--[[Translation missing --]]
+L["copiedToClipboard"] = "copied!"
 L["Copy"] = "Kopieren"
+--[[Translation missing --]]
+L["Copy error"] = "Copy error"
 L["Cordana Felsong"] = "Cordana Teufelsang"
 L["Corpse Collector"] = "Leichensammler"
 L["Corpse Harvester"] = "Leichenernter"
@@ -767,6 +771,9 @@ L["Empyrean Assassin"] = "Empyrean Assassin"
 L["Enable Minimap Button"] = "Minimap Button zeigen"
 L["Enchanted Broodling"] = "Verzauberter Brutling"
 L["Enchanted Emissary"] = "Verwunschene Abgesandte"
+--[[Translation missing --]]
+L["encounteredErrors"] = [=[MDT has encountered errors.
+Click to view them.]=]
 L["Encrypted"] = "Verschlüsselt"
 L["Enemies related to seasonal affixes are currently hidden"] = "Gegner die zum saisonalen Affix gehören sind aktuell versteckt"
 L["Enemy Info"] = "Gegnerinformation"
@@ -796,6 +803,14 @@ L["Erekem"] = "Erekem"
 --[[Translation missing --]]
 L["Eric \"The Swift\""] = "Eric \"The Swift\""
 L["Erkhart Stormvein"] = "Erkhart Sturmader"
+--[[Translation missing --]]
+L["Error Message:"] = "Error Message:"
+--[[Translation missing --]]
+L["errorLabel1"] = "MDT has encountered errors."
+--[[Translation missing --]]
+L["errorLabel2"] = "Please visist either GitHub or Discord and report the error message below."
+--[[Translation missing --]]
+L["errorLabel3"] = "Press CTRL + C to copy!"
 L["Erudite Slayer"] = "Kultivierte Schlächterin"
 L["Etherdiver"] = "Äthertaucher"
 L["Ethereal Restorer"] = "Ätherischer Wiederhersteller"
@@ -1431,6 +1446,8 @@ L["MausoleumOfLegends"] = "Mausoleum der Legenden"
 L["Maw of Souls"] = "Der Seelenschlund"
 L["Mchimba the Embalmer"] = "Mchimba der Balsamierer"
 L["MDI Mode"] = "MDI Modus"
+--[[Translation missing --]]
+L["MDT Error"] = "MDT Error"
 L["MDT: Error importing preset"] = "MDT: Fehler beim importieren der Route"
 L["MDT: Spells for %s:"] = "Zauber für %s:"
 L["MDT: Use /mdt minimap to show the minimap icon again"] = "MDT: Verwenden Sie /mdt minimap, um das Minimap-Icon wieder anzuzeigen"
@@ -1971,6 +1988,8 @@ L["Seaspray Crab"] = "Seegischtkrabbe"
 L["Seat of the Archon"] = "Sitz des Archon"
 L["Seat of the Triumvirate"] = "Sitz des Triumpfads"
 L["Seat of the Triumvirate Sublevel"] = "Sitz des Triumpfads"
+--[[Translation missing --]]
+L["Select all"] = "Select all"
 L["Select the dungeon level"] = "Wähle die Instanz Stufe"
 L["Sending: %.1f"] = "Sende: %.1f"
 L["Seneschal M'bara"] = "Seneschall M'bara"

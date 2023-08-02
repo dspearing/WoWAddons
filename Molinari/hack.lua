@@ -15,7 +15,7 @@
 
 -- in case other addons copies this, make sure it never loads multiple times unless there is a
 -- newer version of it, in which case we disable it and load anyways
-local version = 2
+local version = 3
 if _G['ForceLoadTradeSkillData'] then
 	if _G['ForceLoadTradeSkillData'].version < version then
 		_G['ForceLoadTradeSkillData']:UnregisterAllEvents()
@@ -29,7 +29,9 @@ hack.version = version
 hack:SetPropagateKeyboardInput(true) -- make sure we don't own the keyboard
 hack:RegisterEvent('PLAYER_LOGIN')
 hack:SetScript('OnEvent', function(self, event)
-	if event == 'PLAYER_LOGIN' then
+	if event == 'PLAYER_LOGIN' or event == 'SKILL_LINES_CHANGED' then
+		self:UnregisterEvent(event)
+
 		local professionID = self:GetAnyProfessionID()
 		if not professionID then
 			-- player has no professions, wait for them to learn one
@@ -44,13 +46,7 @@ hack:SetScript('OnEvent', function(self, event)
 			-- we've triggered the tradeskill UI, close it again and bail out
 			C_TradeSkillUI.CloseTradeSkill()
 			self:UnregisterEvent(event)
-			UIParent:RegisterEvent('TRADE_SKILL_SHOW')
-		end
-	elseif event == 'SKILL_LINES_CHANGED' then
-		if self:GetAnyProfessionID() then
-			-- player has learned a profession, listen for key event
-			self:SetScript('OnKeyDown', self.OnKeyDown)
-			self:UnregisterEvent(event)
+			UIParent:RegisterEvent(event)
 		end
 	end
 end)

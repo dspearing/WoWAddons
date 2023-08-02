@@ -37,28 +37,27 @@ local tostring = _G.tostring
 local UIParent = _G.UIParent
 local UnitAffectingCombat = _G.UnitAffectingCombat
 
-local GameMenuFrame = _G.GameMenuFrame
-local HideUIPanel = _G.HideUIPanel
+--~ local GameMenuFrame = _G.GameMenuFrame
+--~ local HideUIPanel = _G.HideUIPanel
 local InterfaceOptions_AddCategory = _G.InterfaceOptions_AddCategory
-local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCategory
-local InterfaceOptionsFrameCancel_OnClick = _G.InterfaceOptionsFrameCancel_OnClick
-local InterfaceOptionsFrame = _G.InterfaceOptionsFrame
-local Settings = _G.Settings
+--~ local InterfaceOptionsFrame_OpenToCategory = _G.InterfaceOptionsFrame_OpenToCategory
+--~ local InterfaceOptionsFrameCancel_OnClick = _G.InterfaceOptionsFrameCancel_OnClick
+--~ local InterfaceOptionsFrame = _G.InterfaceOptionsFrame
+--~ local Settings = _G.Settings
 
---~ local WorldFrame = _G.WorldFrame
-local CloseDropDownMenus = _G.CloseDropDownMenus
-local UIDropDownMenu_CreateInfo = _G.UIDropDownMenu_CreateInfo
-local UIDropDownMenu_Initialize = _G.UIDropDownMenu_Initialize
-local UIDropDownMenu_AddButton = _G.UIDropDownMenu_AddButton
-local UIDropDownMenu_SetText = _G.UIDropDownMenu_SetText
-local UIDropDownMenu_SetWidth = _G.UIDropDownMenu_SetWidth
-local UIDropDownMenu_SetButtonWidth = _G.UIDropDownMenu_SetButtonWidth
-local UIDropDownMenu_JustifyText = _G.UIDropDownMenu_JustifyText
+--~ local CloseDropDownMenus = _G.CloseDropDownMenus
+--~ local UIDropDownMenu_CreateInfo = _G.UIDropDownMenu_CreateInfo
+--~ local UIDropDownMenu_Initialize = _G.UIDropDownMenu_Initialize
+--~ local UIDropDownMenu_AddButton = _G.UIDropDownMenu_AddButton
+--~ local UIDropDownMenu_SetText = _G.UIDropDownMenu_SetText
+--~ local UIDropDownMenu_SetWidth = _G.UIDropDownMenu_SetWidth
+--~ local UIDropDownMenu_SetButtonWidth = _G.UIDropDownMenu_SetButtonWidth
+--~ local UIDropDownMenu_JustifyText = _G.UIDropDownMenu_JustifyText
 
-----local UIDropDownMenu_GetText = _G.UIDropDownMenu_GetText
-----local UIDropDownMenuButton_GetChecked = _G.UIDropDownMenuButton_GetChecked
-----local UIDropDownMenu_EnableDropDown = _G.UIDropDownMenu_EnableDropDown
-----local UIDropDownMenu_DisableDropDown = _G.UIDropDownMenu_DisableDropDown
+--~ local UIDropDownMenu_GetText = _G.UIDropDownMenu_GetText
+--~ local UIDropDownMenuButton_GetChecked = _G.UIDropDownMenuButton_GetChecked
+--~ local UIDropDownMenu_EnableDropDown = _G.UIDropDownMenu_EnableDropDown
+--~ local UIDropDownMenu_DisableDropDown = _G.UIDropDownMenu_DisableDropDown
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Declare Namespace                                 ]]
@@ -636,12 +635,6 @@ function OptionsFrame_Create()
         end
         OptionsFrame:SetScript("OnKeyDown", onKeyDown_ChangeBaseVals)
     end
-
---~     -- Make clicking anywhere outside a dropdown menu close it.
---~     if not bWorldFrame_OnMouseDown_CloseDropDownMenus then
---~         WorldFrame:HookScript("OnMouseDown", function() CloseDropDownMenus() end)
---~         bWorldFrame_OnMouseDown_CloseDropDownMenus = true
---~     end
 
     traceCfg("OUT OptionsFrame_Create().")
 end

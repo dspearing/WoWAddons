@@ -1,4 +1,4 @@
-## Interface: 100100
+## Interface: 100105
 ## Title: |cff0000FFGSE:|r |cFF00D1FFElfyau Monk Macros|r
 ## Notes: GSE3 Elfyau Monk Macros
 ## Author: Elfyau

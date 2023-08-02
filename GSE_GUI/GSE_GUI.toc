@@ -1,10 +1,10 @@
-## Interface: 100100
+## Interface: 100105
 
 
 ## Title: |cff0000ffGSE:|r |cFF00D1FFGUI|r
 ## Notes: GSE GUI
 ## Author: TimothyLuke
-## Version: 3.1.36
+## Version: 3.1.39
 ## Dependencies: GSE
 ## LoadOnDemand: 1
 ## IconTexture: Interface\Addons\GSE_GUI\Assets\GSE_Logo_Dark_512

@@ -470,7 +470,11 @@ L["ConnectedTip"] = "Group connections in MDT do not reflect if NPCs are linked 
 --[[Translation missing --]]
 L["Containment Apparatus"] = "Containment Apparatus"
 L["Control Undead"] = "언데드 지배"
+--[[Translation missing --]]
+L["copiedToClipboard"] = "copied!"
 L["Copy"] = "복사"
+--[[Translation missing --]]
+L["Copy error"] = "Copy error"
 L["Cordana Felsong"] = "콜다나 펠송"
 L["Corpse Collector"] = "시체 수집꾼"
 L["Corpse Harvester"] = "시체 수확자"
@@ -855,6 +859,9 @@ L["Enable Minimap Button"] = "미니맵 아이콘을 켜기"
 L["Enchanted Broodling"] = "마력 깃든 무리거미"
 L["Enchanted Emissary"] = "마력에 빠진 사절"
 --[[Translation missing --]]
+L["encounteredErrors"] = [=[MDT has encountered errors.
+Click to view them.]=]
+--[[Translation missing --]]
 L["Encrypted"] = "Encrypted"
 L["Enemies related to seasonal affixes are currently hidden"] = "시즌 접두사와 관련된 적들이 숨겨지고 있습니다 "
 L["Enemy Info"] = "적의 정보"
@@ -885,6 +892,14 @@ L["Erekem"] = "Erekem"
 L["Eric \"The Swift\""] = "Eric \"The Swift\""
 --[[Translation missing --]]
 L["Erkhart Stormvein"] = "Erkhart Stormvein"
+--[[Translation missing --]]
+L["Error Message:"] = "Error Message:"
+--[[Translation missing --]]
+L["errorLabel1"] = "MDT has encountered errors."
+--[[Translation missing --]]
+L["errorLabel2"] = "Please visist either GitHub or Discord and report the error message below."
+--[[Translation missing --]]
+L["errorLabel3"] = "Press CTRL + C to copy!"
 L["Erudite Slayer"] = "똘똘한 학살자"
 L["Etherdiver"] = "에테르 새끼고룡"
 --[[Translation missing --]]
@@ -1574,6 +1589,8 @@ L["MausoleumOfLegends"] = "Mausoleum Of Legends"
 L["Maw of Souls"] = "영혼의 아귀"
 L["Mchimba the Embalmer"] = "장의사 음침바"
 L["MDI Mode"] = "MDI 모드"
+--[[Translation missing --]]
+L["MDT Error"] = "MDT Error"
 L["MDT: Error importing preset"] = "MDT: 길을 가져오기 오류 "
 L["MDT: Spells for %s:"] = "MDT: %s의 마법"
 L["MDT: Use /mdt minimap to show the minimap icon again"] = "MDT: /mdt minimap 명령어로 미니맵 아이콘을 다시 띄울 수 있습니다."
@@ -2169,6 +2186,8 @@ L["Seaspray Crab"] = "바다안개 게"
 L["Seat of the Archon"] = "집정관의 권좌"
 L["Seat of the Triumvirate"] = "삼두정의 권좌"
 L["Seat of the Triumvirate Sublevel"] = "삼두정의 권좌"
+--[[Translation missing --]]
+L["Select all"] = "Select all"
 L["Select the dungeon level"] = "던전 레벨을 고르기"
 L["Sending: %.1f"] = "보내는중: %.1f"
 L["Seneschal M'bara"] = "사무장 음바라"

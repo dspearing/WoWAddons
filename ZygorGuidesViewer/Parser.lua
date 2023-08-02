@@ -1131,6 +1131,9 @@ local ConditionEnv = {
 	language = function(skill)
 		return ZGV.Languages:GetLanguageSkill(skill)
 	end,
+	hardcore = function() -- fake check for now
+		return ZGV.db.char.fakehardcore
+	end,
 }
 setmetatable(ConditionEnv,{__index=function(t,k) local lower=rawget(t,k:lower())  if lower~=nil then return lower end  return _G[k]  end})
 
@@ -2034,6 +2037,11 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 
 						elseif cmd=="nomovieskip" then
 							step.nomovieskip = true
+
+						elseif cmd=="travelcfg" then
+							step.travelcfg = step.travelcfg or {}
+							local field,value = params:match("^(.+),(.+)$")
+							step.travelcfg[field] = value:lower()=="true"
 
 						-- NEW: catch-all from the goals table.
 						elseif GOALTYPES[cmd] and GOALTYPES[cmd].parse then

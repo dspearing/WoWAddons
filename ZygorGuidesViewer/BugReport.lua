@@ -1819,6 +1819,8 @@ function GuideRating:CreateAltFrame()
 		end)
 	.__END
 
+	GuideRating:Position()
+
 end
 
 function GuideRating:CreateCancelledFrame()
@@ -1922,6 +1924,7 @@ function GuideRating:ShowGuideRating()
 		GuideRating:HideRatingWidgets()
 		if not GuideRating.CancelledRatingFrame then
 			GuideRating:CreateCancelledFrame()
+			GuideRating:Position()
 			GuideRating.CancelledRatingFrame:Show()
 		else
 			if ZGV.CurrentGuide.next then
@@ -1929,41 +1932,33 @@ function GuideRating:ShowGuideRating()
 			else
 				GuideRating.CancelledRatingFrame.nextFS:SetText(L['viewer_special_cancelled_menu'])
 			end
+			GuideRating:Position()
 			GuideRating.CancelledRatingFrame:Show()
 		end
 	else --if the ratings are enabled and guide was not rated or cancelled yet
 		if ZGV.Frame.Border:GetHeight() >= 274 or not ZGV.db.profile.fixedheight then  --if auto-resize is on or the vertically resized frame is large enough for in-viewer rating
 			if not GuideRating.GuideRatingViewer then
 				GuideRating:CreateFrame()
-				GuideRating.GuideRatingViewer:SetParent(ZGV.Frame.Border)
-				GuideRating.GuideRatingViewer:SetPoint("TOPLEFT",ZGV.Frame.Border,8,0) 
-				GuideRating.GuideRatingViewer:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border,-8,20)
-				GuideRating.GuideRatingViewer.frameFS:SetPoint("TOP",GuideRating.GuideRatingViewer,0,-80)
-				GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_rate']:format("cfffe610",ZGV.CurrentGuide.title_short))
+				GuideRating:Position()
 				ZGV:ResizeFrame("ratingframe")
-				GuideRating.GuideRatingViewer:Show()
+				GuideRating:UpdateText()
 				GuideRating:ClearRateState()
 			else
 				GuideRating:ClearRateState()
 				GuideRating.GuideRatingViewer:ClearAllPoints()
-				GuideRating.GuideRatingViewer:SetParent(ZGV.Frame.Border)
-				GuideRating.GuideRatingViewer.frameFS:SetPoint("TOP",GuideRating.GuideRatingViewer,0,-80)
-				GuideRating.GuideRatingViewer:SetPoint("TOPLEFT",ZGV.Frame.Border,8,0) 
-				GuideRating.GuideRatingViewer:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border,-8,20)
+				GuideRating:Position()
 				ZGV:ResizeFrame("ratingframe")
 				if GuideRating.ZygorPopupOn then GuideRating.ZygorPopupOn:Hide() end
-				GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_rate']:format("cfffe610",ZGV.CurrentGuide.title_short))
-				GuideRating.GuideRatingViewer:Show()
+				GuideRating:UpdateText()
 			end
 		else --if the verically resized frame is not large enough for in-viewer rating
 			if not GuideRating.GuideRatingViewer then
 				GuideRating:CreateFrame()
-				GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_popup']:format("cfffe610",ZGV.CurrentGuide.title_short))
+				GuideRating:UpdateText()
 				GuideRating:Popup()
 			else
 				GuideRating:ClearRateState()
-				GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_popup']:format("cfffe610",ZGV.CurrentGuide.title_short))
-				GuideRating.GuideRatingViewer:Show()
+				GuideRating:UpdateText()
 				GuideRating:Popup()
 			end
 		end
@@ -2076,4 +2071,57 @@ function GuideRating:Popup()
 	GuideRating.ZygorPopup:Show()
 	GuideRating.ZygorPopupOn:Show()
 
+end
+
+function GuideRating:Position()
+	if not ZGV.db.profile.resizeup then
+		if GuideRating.GuideRatingViewer then
+			GuideRating.GuideRatingViewer:SetParent(ZGV.Frame.Border)
+			GuideRating.GuideRatingViewer.frameFS:SetPoint("TOP",GuideRating.GuideRatingViewer,0,-80)
+			GuideRating.GuideRatingViewer:SetPoint("TOPLEFT",ZGV.Frame.Border,8,0) 
+			GuideRating.GuideRatingViewer:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border,-8,20)
+		end
+
+		if GuideRating.NoRatingFrame then
+			GuideRating.NoRatingFrame:SetPoint("TOPLEFT",ZGV.Frame.Border,0,-60) 
+			GuideRating.NoRatingFrame:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border)
+			GuideRating.NoRatingFrame.frameFS:SetPoint("TOPLEFT",ZGV.Frame.Border,10,-60) 
+			GuideRating.NoRatingFrame.frameFS:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border)
+		end
+	
+		if GuideRating.CancelledRatingFrame then
+			GuideRating.CancelledRatingFrame.centeranchor:SetPoint("TOP",ZGV.Frame.Border,"CENTER",0,-33)
+			GuideRating.CancelledRatingFrame.centeranchor:SetPoint("BOTTOM",ZGV.Frame.Border,"CENTER",0,-40)
+		end
+		
+	else
+		if GuideRating.GuideRatingViewer then
+			GuideRating.GuideRatingViewer:SetParent(ZGV.Frame.Border)
+			GuideRating.GuideRatingViewer.frameFS:SetPoint("TOP",GuideRating.GuideRatingViewer,0,-15)
+			GuideRating.GuideRatingViewer:SetPoint("TOPLEFT",ZGV.Frame.Border,8,0) 
+			GuideRating.GuideRatingViewer:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border,-8,95)
+		end
+
+		if GuideRating.NoRatingFrame then
+			GuideRating.NoRatingFrame:SetPoint("TOPLEFT",ZGV.Frame.Border,0,0) 
+			GuideRating.NoRatingFrame:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border)
+			GuideRating.NoRatingFrame.frameFS:SetPoint("TOPLEFT",ZGV.Frame.Border,10,30) 
+			GuideRating.NoRatingFrame.frameFS:SetPoint("BOTTOMRIGHT",ZGV.Frame.Border)
+		end
+
+		if GuideRating.CancelledRatingFrame then
+			GuideRating.CancelledRatingFrame.centeranchor:SetPoint("TOP",ZGV.Frame.Border,"CENTER",0,23)
+			GuideRating.CancelledRatingFrame.centeranchor:SetPoint("BOTTOM",ZGV.Frame.Border,"CENTER",0,23)
+		end
+	end
+end
+
+function GuideRating:UpdateText()
+	if ZGV.Frame.Border:GetHeight() >= 274 or not ZGV.db.profile.fixedheight then
+		GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_rate']:format("cfffe610",ZGV.CurrentGuide.title_short))
+		GuideRating.GuideRatingViewer:Show()
+	else
+		GuideRating.GuideRatingViewer.frameFS:SetText(L['viewer_special_popup']:format("cfffe610",ZGV.CurrentGuide.title_short))
+		GuideRating.GuideRatingViewer:Show()
+	end
 end

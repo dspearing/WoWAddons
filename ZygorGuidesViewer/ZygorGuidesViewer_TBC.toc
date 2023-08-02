@@ -1,4 +1,4 @@
-## Interface: 30401
+## Interface: 30402
 ## Title: |cffff0000Zygor Guide Viewer 8|r
 ## Notes: Free multi-purpose leveling guide viewer, Classic edition.
 ## Author: Zygor Guides
@@ -9,6 +9,7 @@
 ## X-eMail: zygor@zygorguides.com
 ## X-Website: http://zygorguides.com/
 ## X-License: GPL
+## IconTexture: Interface\Addons\ZygorGuidesViewer\Skins\addon-icon
 ## Version: 2.1
 
 Flavour.lua

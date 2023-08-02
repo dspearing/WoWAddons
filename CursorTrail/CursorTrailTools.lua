@@ -38,6 +38,7 @@ local table = _G.table
 local tonumber = _G.tonumber
 local type = _G.type
 local UIParent = _G.UIParent
+local WorldFrame = _G.WorldFrame
 local xpcall = _G.xpcall
 
 --[[                       Declare Namespace                                 ]]
@@ -255,7 +256,7 @@ function dbg(msg)
 end
 
 -------------------------------------------------------------------------------
-function errHandler(msg)  -- Used by xpcall().  See also the lua function, geterrorhandler().
+function errHandler(msg)  -- Used by xpcall().  See also the Blizzard function, geterrorhandler().
     dbg(msg)
     print("Call Stack ...\n" .. debugstack(2, 3, 2))
 end
@@ -703,8 +704,8 @@ function HandleToolSwitches(params)
     elseif (params:sub(1,3) == "pos") then  -- Set position (0,0), (1,1), (2,2), etc.
         local delta = tonumber(params:sub(4))
         CursorModel:SetPosition(0, delta, delta)
-    elseif (params:sub(1,4) == "test") then
-        local modelID = tonumber(params:sub(5))
+    elseif (params:sub(1,9) == "testmodel") then
+        local modelID = tonumber(params:sub(10))
         if not TestCursorModel then
             TestCursorModel = CreateFrame("PlayerModel", nil, kGameFrame)
         end
@@ -761,37 +762,48 @@ end
 
 -------------------------------------------------------------------------------
 function Screen_Dump(heading)
-    -- Print the current resolution to chat
+    -- Print the current resolution to chat.
     local origGameFrame = kGameFrame
-    local currentResolutionIndex = GetCurrentResolution()
-    local resolution = select(currentResolutionIndex, GetScreenResolutions())
-    local dumpStr = (heading or "SCREEN INFO") .. " ..."
-            .."\n  Screen Size = "..(resolution or "Unknown")
+    local width, height
+    local indents = "    "
+    
+    print((heading or "SCREEN INFO") .. " ...")
+    
+    if GetCurrentResolution then  -- Use old API?
+        ----NOT WORKING CORRECTLY ANYMORE ...
+        ----local currentResolutionIndex = GetCurrentResolution()
+        ----local resolution = select(currentResolutionIndex, GetScreenResolutions())
+        ----print(indents.."Screen Resolution = "..(resolution or "Unknown"))
+    else -- Use new API introduced in 10.0.
+        ----width, height = Globals.GetPhysicalScreenSize()  SEEMS TO RETURN RESOLUTION, NOT PHYSICAL SIZE.
+        ----print("  Screen Physical Size =", floor(width), "x", floor(height))
+        local gameWindowSize = Globals.C_VideoOptions.GetCurrentGameWindowSize()
+        width, height = gameWindowSize:GetXY()
+        print(indents.."Screen Resolution =", floor(width), "x", floor(height))
+    end
 
     for i = 1, 2 do
         if (i == 1) then
-            dumpStr = dumpStr .. "\n  -----[ WORLD FRAME ]-----"
-            kGameFrame = Globals.WorldFrame
+            print(indents.."-----[ WORLD FRAME ]-----")
+            kGameFrame = WorldFrame
         else
-            dumpStr = dumpStr .. "\n  -----[ PARENT FRAME ]-----"
-            kGameFrame = Globals.UIParent
+            print(indents.."-----[ UI PARENT FRAME ]-----")
+            kGameFrame = UIParent
         end
 
-        local unscaledW, unscaledH = getScreenSize()  -- Uses kGameFrame.
+        local unscaledW, unscaledH = kGameFrame:GetSize()  -- i.e. getScreenSize()
         local scaledW, scaledH, scaledMidX, scaledMidY, uiscale, hypotenuse = getScreenScaledSize()  -- Uses kGameFrame.
 
-        dumpStr = dumpStr
-            .."\n  Window Size = "..round(unscaledW,2).." x "..round(unscaledH,2)
-            .."\n  Aspect Ratio = "..round(scaledW/scaledH,2)
-            .."\n  UI Scale = "..round(uiscale,3)
-            .."\n  Scaled Size = "..round(scaledW,2).." x "..round(scaledH,2)
-            .."\n  Scaled Center = ("..round(scaledMidX,2)..", "..round(scaledMidY,2)..")"
-            .."\n  Scaled Hypotenuse = "..round(hypotenuse,2)
+        print(indents.."Window Size = "..round(unscaledW,2).." x "..round(unscaledH,2))
+        print(indents.."Aspect Ratio = "..round(scaledW/scaledH,2))
+        print(indents.."UI Scale = "..round(uiscale,3))
+        print(indents.."Scaled Size = "..round(scaledW,2).." x "..round(scaledH,2))
+        print(indents.."Scaled Center = ("..round(scaledMidX,2)..", "..round(scaledMidY,2)..")")
+        print(indents.."Scaled Hypotenuse = "..round(hypotenuse,2))
     end
 
-    print(dumpStr)
     local z, x, y = CursorModel:GetPosition()
-    print("  Cursor Position (x,y,z): ("..round(x,1)..", "..round(y,1)..", "..round(z,1)..")")
+    print("  Model Position (x,y,z): ("..round(x,1)..", "..round(y,1)..", "..round(z,1)..")")
 
     kGameFrame = origGameFrame
 end

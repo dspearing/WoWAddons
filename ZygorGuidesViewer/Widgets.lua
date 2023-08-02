@@ -1079,6 +1079,7 @@ function ZGV_Widget_Object_Mixin:HidePopup()
 end
 
 function ZGV_Widget_Object_Mixin:TogglePopup()
+	if not self.popup then return end
 	if self.popup:IsVisible() then
 		self:HidePopup()
 	else

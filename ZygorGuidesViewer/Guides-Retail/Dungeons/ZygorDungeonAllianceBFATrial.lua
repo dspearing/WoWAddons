@@ -11,7 +11,7 @@ patch='80001',
 condition_suggested=function() return level>=47 and level <= 50 end,
 keywords={"battle", "for", "azeroth", "skycap'n", "kragg", "captain", "eudora", "jolly", "raoul", "trothak", "harlan", "sweete", "tiragarde", "sound"},
 author="support@zygorguides.com",
-description="\nTo complete this dungeon, you will need to kill the following bosses:\n\nSkycap'n Kragg\nCouncil o' Captains\nRing of Booty\nHarlan Sweete",
+description="To complete this dungeon, you will need to kill the following bosses:\n\nSkycap'n Kragg\nCouncil o' Captains\nRing of Booty\nHarlan Sweete",
 image=ZGV.IMAGESDIR.."Freehold",
 },[[
 step

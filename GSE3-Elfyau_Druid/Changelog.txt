@@ -24,3 +24,5 @@
 0.23 - Updated TOC
 0.24 - Updated Balance Druid
 0.25 - Fixed Balance Druid ST and AOE not being AOE and ST
+0.26 - Updated Feral Druid
+0.27 - Updated Balance Druid

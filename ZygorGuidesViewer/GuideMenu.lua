@@ -29,6 +29,75 @@ end
 
 GuideMenu.STATUS_COLORS=STATUS_COLORS -- used in popups, so let us make it public
 
+function GuideMenu:CreateRequestFrame()
+	local frame = CHAIN(ui:Create("Frame",GuideMenu.MainFrame))
+		:SetSize(600,300)
+		:SetPoint("TOPLEFT", GuideMenu.MainFrame.MenuGuides.SearchEdit, "TOPRIGHT", 25, -30)
+		:SetBackdropColor(0,0,0,0)
+		:CanDrag(false)
+		:Hide()
+		.__END
+	GuideMenu.Request = frame
+
+	frame.text = CHAIN(frame:CreateFontString())
+		:SetFont(FONT,12,"")
+		:SetJustifyH("LEFT")
+		:SetPoint("TOPLEFT", frame)
+		:SetText(L['guidemenu_section_search_noresults'])
+		.__END
+	
+	frame.img = frame:CreateTexture()
+	frame.img:SetPoint("TOPLEFT", frame, 0, -23)
+	frame.img:SetTexture(ZGV.DIR.."/Skins/guide_request.tga","REPEAT","REPEAT")
+	frame.img:SetSize(13,12)
+
+	frame.requestbtn = CHAIN(CreateFrame("Button","RequestGuideBtn",frame))
+		:SetPoint("TOPLEFT", frame.img, "TOPRIGHT", 5, 10)
+		:SetScript("OnClick", function()
+			ZGV:Print(L['guidemenu_section_search_submitted_chat'])
+			frame.text:SetText(L['guidemenu_section_search_submitted'])
+			GuideMenu:SaveDump(self.search_lastquery, time())
+			frame.requestbtn:Hide()
+			frame.img:Hide()
+		end)
+		:SetSize(500,30)
+		:Show()
+		.__END
+
+	frame.requestbtnFS = CHAIN(frame.requestbtn:CreateFontString())
+		:SetPoint("TOPLEFT",frame.requestbtn,"TOPLEFT")
+		:SetFont(FONT,12,"")
+		:SetTextColor(1,1,1,1)
+		:SetSize(500,40)
+		:SetJustifyH("LEFT")
+		:SetText("")
+	.__END
+
+end
+
+function GuideMenu:HideRequestFrame()
+	if GuideMenu.Request then GuideMenu.Request:Hide() end
+end
+
+function GuideMenu:SaveDump(text,timestamp,header)
+	timestamp = timestamp or time()
+	ZGV.db.global.bugreports = ZGV.db.global.bugreports or {}
+	ZGV.db.global.bugreports[timestamp]=GuideMenu:FormatDumpForUpload(text)
+end
+
+function GuideMenu:FormatDumpForUpload(content,more_headers)
+	local header = ""
+	header = header .. "bug_report_id="..ZGV.BugReport:GetUniqueId().."\n"
+	header = header .. "bug_report_sent=0\n"
+	header = header .. "bug_report_time="..time().."\n"
+	header = header .. "bug_report_version="..ZGV.version.."\n"
+	header = header .. "bug_report_player="..ZGV.BugReport:GetReport_Player_Basic().."\n"
+	header = header .. "bug_report_guiderequest="..content.."\n"
+	if more_headers then header = header .. more_headers end
+
+	return ("%s\n%s\n---->>\n%s\n<<----\n%s"):format("%%BUG_REPORT_START%%",header,"","%%BUG_REPORT_END%%")
+end
+
 function GuideMenu:ShowHome()
 	if not GuideMenu.HomeReady then
 		GuideMenu:CreateHome()
@@ -45,6 +114,7 @@ local temp_structure={}
 function GuideMenu:Search()
 	table.wipe(temp_structure)
 	table.wipe(GuideMenu.Guides)
+	GuideMenu.Request:Hide()
 	local searchtext=GuideMenu.MainFrame.MenuGuides.SearchEdit:GetText()
 	local category
 
@@ -108,6 +178,8 @@ function GuideMenu:Search()
 		end
 	end
 
+--	Spoo(temp_structure)
+--	Spoo(GuideMenu.Guides)
 	-- Get list of matching quests, and add it to beggining of results
 
 	local quests = ZGV.QuestDB:GetQuestsByTitle(searchtext)
@@ -121,7 +193,15 @@ function GuideMenu:Search()
 		tinsert(GuideMenu.Guides,#quests+2,{header=true})
 	end
 
-	if #searchtext>0 then
+	if #searchtext>0 and not GuideMenu.Guides[1] then
+		GuideMenu.Request:Show()
+		GuideMenu.Request.text:SetText(L['guidemenu_section_search_noresults'])
+		GuideMenu.Request.requestbtn:Show()
+		GuideMenu.Request.img:Show()
+		GuideMenu:SetSectionHeader(L['guidemenu_section_search_results']:format(nresults),false)
+		GuideMenu.Request.requestbtnFS:SetText(L['guidemenu_section_search_request']:format("ff88e899",searchtext))
+	elseif #searchtext>0 then
+		GuideMenu.Request:Hide()
 		GuideMenu:SetSectionHeader(L['guidemenu_section_search_results']:format(nresults),false)
 	else
 		GuideMenu:SetSectionHeader(L['guidemenu_section_search'],false)
@@ -230,7 +310,8 @@ function GuideMenu:SearchQuest(questID)
 end
 
 GuideMenu.Guides = {}
-function GuideMenu:ShowGuides(path,iscurrent) 
+function GuideMenu:ShowGuides(path,iscurrent)
+	GuideMenu:HideRequestFrame()
 	GuideMenu:SetFocusedRow()
 	if iscurrent then 
 		GuideMenu.FocusedGuide=ZGV.CurrentGuide 
@@ -884,4 +965,5 @@ end
 tinsert(ZGV.startups,{"Guide Menu",function(self)
 	GuideMenu:CreateFrames()
 	GuideMenu:CreateHome()
+	GuideMenu:CreateRequestFrame()
 end})

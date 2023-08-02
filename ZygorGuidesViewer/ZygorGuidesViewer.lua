@@ -2362,7 +2362,8 @@ function ZGV:SetDisplayMode(mode)
 end
 
 local getstickies_temp={}
-function ZGV:GetStickiesAt(stepnum,show_complete)
+function ZGV:GetStickiesAt(stepnum,laststepnum) -- was stepnum,show_complete but second param was no longer used
+	local laststepnum = laststepnum or stepnum
 	local changed = false
 	for _,stickystep in ipairs(getstickies_temp) do
 		if stickystep:IsComplete() or not stickystep:CanBeSticky() then
@@ -2375,7 +2376,7 @@ function ZGV:GetStickiesAt(stepnum,show_complete)
 	wipe(getstickies_temp)
 	if step.stickies then
 		for _,stickystep in ipairs(step.stickies) do
-			if (show_complete or not stickystep:IsComplete()) and stickystep:CanBeSticky() then
+			if (stickystep.num>laststepnum) and not stickystep:IsComplete() and stickystep:CanBeSticky() then
 				tinsert(getstickies_temp,stickystep)
 			end
 		end
@@ -2524,7 +2525,7 @@ function ZGV:DoUpdateFrame(full,onupdate)
 		
 		local stickies
 		if self.db.profile.stickyon and (self.db.profile.stickydisplay==3 or self.db.profile.stickydisplay==4) and not showallsteps then
-			stickies,changed = self:GetStickiesAt(firststep)
+			stickies,changed = self:GetStickiesAt(firststep,laststep)
 			if changed then
 				self:SendMessage("ZGV_STEP_CHANGED",num)
 			end
@@ -5938,6 +5939,27 @@ function ZGV:EnableMessageDebugging()
 	ZGV.SendMessage = function(self,...)
 		EventRegistry:TriggerEvent("ZGV SendMessage",...)
 		Orig_SendMessage(self,...)
+	end
+end
+
+function ZygorGuidesViewer_OnAddonCompartmentEnter(addonName,buttonFrame)
+	GameTooltip:SetOwner(buttonFrame) --GameTooltip moved above the Viewer
+	GameTooltip:ClearAllPoints()
+	GameTooltip:AddLine(("|cffffffff%s|r |cffaaaaaav|r|cffcccccc%s|r"):format(ZGV.L.name,ZGV.version))
+	GameTooltip:AddLine(ZGV.L['minimap_tooltip'],0,1,0,1)
+	GameTooltip:Show()
+end
+
+function ZygorGuidesViewer_OnAddonCompartmentLeave(addonName,buttonFrame)
+	GameTooltip:Hide()
+end
+
+---@param mouseButton "LeftButton"|"RightButton"|"MiddleButton"
+function ZygorGuidesViewer_OnAddonCompartmentClick(addonName,mouseButton,buttonFrame)
+	if mouseButton=="LeftButton" then
+		ZGV:ToggleFrame()
+	else
+		ZGV:OpenOptions()
 	end
 end
 

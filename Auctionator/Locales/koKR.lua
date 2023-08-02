@@ -23,6 +23,8 @@ L["AUCTION_AGE_TOOLTIP_TOOLTIP_TEXT"] = "Show auction information age in days fo
 L["AUCTION_DURATION_12"] = "12시간"
 L["AUCTION_DURATION_24"] = "24시간"
 L["AUCTION_DURATION_48"] = "48시간"
+--[[Translation missing --]]
+L["AUCTION_MEAN"] = "Auction Mean"
 L["AUCTION_TOOLTIP_TOOLTIP_HEADER"] = "경매 툴팁 정보"
 L["AUCTION_TOOLTIP_TOOLTIP_TEXT"] = "마우스를 위로  가져갔을 때 경매 정보를 표시하기"
 L["AUCTIONATOR"] = "옥셔네이터"
@@ -38,6 +40,8 @@ L["BUG_REPORT"] = "오류를 보고하기"
 L["BUG_TOOLTIP_HEADER"] = "GitHub에 버그 보고"
 L["BUG_TOOLTIP_TEXT"] = "옥셔네이터 사용 도중 오류가 발생하면 깃허브에 어떤 상황에 오류가 났는지 알려주시기 바랍니다. !BugGrabber와 Bugssack 애드온 또한 사용 가능합니다."
 L["BUY"] = "구매"
+--[[Translation missing --]]
+L["BUY_NOW"] = "Buy Now"
 L["BUY_STACK"] = "묶음 구매"
 L["BUYING"] = "구매"
 L["BUYING_X_FOR_X"] = "%s를 %s에 구매"
@@ -49,6 +53,8 @@ L["CANCEL_UNDERCUT"] = "최저가 경매취소"
 L["CANCELLING_TAB"] = "취소하기"
 L["CANCELLING_TAB_HEADER"] = "옥셔네이터 - 취소하기"
 L["CANNOT_AUCTION"] = "경매 불가"
+--[[Translation missing --]]
+L["CAREFUL_CAPS"] = "CAREFUL"
 L["CHAIN_BUY"] = "묶음 구매"
 L["CHAIN_BUY_TOOLTIP_HEADER"] = "여러 묶음 구매"
 L["CHAIN_BUY_TOOLTIP_TEXT"] = "현재 가격과 묶음 개수 구매가 완료되면 다음 가격과 묶음 갯수를 선택합니다."
@@ -201,6 +207,8 @@ L["CONFIG_SELLING_NOT_LIFO_TEXT"] = "장비/펫의 최저가를 %로 계산할 �
 L["CONFIG_SELLING_POST_SHORTCUT"] = "현재 아이템을 게시하는 키보드/마우스 단축키는"
 --[[Translation missing --]]
 L["CONFIG_SELLING_POST_SHORTCUT_TOOLTIP_TEXT"] = "Click and then press the buttons that you wish to use as the shortcut. This shortcut will only be active in the Selling tab and won't affect any other shortcuts bound to the buttons."
+--[[Translation missing --]]
+L["CONFIG_SELLING_PREV_SHORTCUT"] = "A shortcut to go back to the previously selected item"
 L["CONFIG_SELLING_SHORTCUTS_CATEGORY"] = "판매: 단축키"
 L["CONFIG_SELLING_SHORTCUTS_TEXT"] = "판매 탭 내 키보드 및 마우스 단축키 옵션"
 --[[Translation missing --]]
@@ -216,6 +224,12 @@ L["CONFIG_SELLING_SPLIT_PANELS_TOOLTIP_HEADER"] = "분할 패널 보기"
 L["CONFIG_SELLING_SPLIT_PANELS_TOOLTIP_TEXT"] = "Normally the historical prices are on a tab inside the Selling tab, instead this makes the current prices always visible, but the historical prices show as a panel below them."
 L["CONFIG_SELLING_TBC_ALL_ITEMS"] = "모든 아이템에 대한 기본 게시 설정을 지정하는 옵션입니다."
 L["CONFIG_SELLING_TEXT"] = "판매하기 탭의 설정을 변경합니다."
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY"] = "Always type quantity twice when purchasing commodities from the shopping tab"
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_HEADER"] = "Confirm quantity every time"
+--[[Translation missing --]]
+L["CONFIG_SHOPPING_ALWAYS_CONFIRM_QUANTITY_TOOLTIP_TEXT"] = "By default the quantity is confirmed just once, this makes it so you have to type it a second time to confirm the purchase."
 L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE"] = "항상 사용 가능한 모든 결과를 불러옵니다."
 L["CONFIG_SHOPPING_ALWAYS_LOAD_MORE_TOOLTIP_HEADER"] = "항상 더 불러오기"
 --[[Translation missing --]]
@@ -233,6 +247,10 @@ L["CONFIG_STACK_TOOLTIP"] = "쉬프트로 전체 가격 표시"
 L["CONFIG_TOOLTIPS_CATEGORY"] = "툴팁"
 L["CONFIG_TOOLTIPS_TEXT"] = "게임 내 툴팁에 대한 설정을 변경합니다."
 --[[Translation missing --]]
+L["CONFIG_UNDERCUT_ITEMS_AHEAD"] = "How many items can be ahead of your listings before they count as undercut"
+--[[Translation missing --]]
+L["CONFIG_UNDERCUT_ITEMS_AHEAD_CLASSIC"] = "How many items can be ahead of your listings before they count as undercut (max 50)"
+--[[Translation missing --]]
 L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS"] = "For gear use item level and title when doing undercut checks"
 --[[Translation missing --]]
 L["CONFIG_UNDERCUT_SCAN_MATCH_ILVL_VARIANTS_TOOLTIP_HEADER"] = "Gear Use Item Level and Title"
@@ -246,6 +264,8 @@ L["CONFIRM"] = "확인"
 L["CONFIRM_POST_BELOW_VENDOR"] = "상인에게 판매하면 더 많은 골드를 벌 수 있습니다. 정말 그 가격에 게시할까요?"
 L["CONFIRM_POST_LOW_PRICE"] = "%s의 가격이 약간 낮아 보입니다. 정말 그 가격에 게시할까요?"
 L["CONFIRM_POST_PRICE_DROP"] = "%s의 단가는 큰 가격 하락입니다. 정말 그 가격에 게시할까요?"
+--[[Translation missing --]]
+L["CONFIRM_PURCHASE_OF_X_FOR_X"] = "Confirm purchase of %s for %s?"
 --[[Translation missing --]]
 L["CONFIRM_UNHIDE_ALL"] = "Are you sure you want to unhide all hidden items?"
 --[[Translation missing --]]
@@ -292,6 +312,8 @@ L["EDIT_ITEM"] = "내용편집"
 L["ENCHANT_TOOLTIP_TOOLTIP_HEADER"] = "마법부여 툴팁 정보"
 L["ENCHANT_TOOLTIP_TOOLTIP_TEXT"] = "마법부여 정보를 툴팁에 표시합니다."
 L["ENGAGE_HEADER"] = "옥셔네이터와 함께하기"
+--[[Translation missing --]]
+L["ENTER_QUANTITY_TO_CONFIRM_PURCHASE"] = "Enter the quantity of %s to confirm purchase:"
 L["ERROR_REOPEN_AUCTION_HOUSE"] = "작업을 완료할 수 없습니다. 경매장을 닫았다가 다시 여십시오."
 L["EXACT_SEARCH"] = "정확한 이름 검색"
 --[[Translation missing --]]
@@ -325,6 +347,8 @@ L["ITEM_CLASS"] = "품목 분류"
 L["ITEM_LEVEL"] = "아이템 레벨"
 L["ITEM_LEVEL_COLUMN"] = "아이템 레벨"
 L["ITEM_PRICE_HISTORY"] = "아이템 가격 내역"
+--[[Translation missing --]]
+L["ITEMS_AHEAD"] = "Items Ahead"
 L["LEFT_CLICK"] = "클릭"
 L["LEVEL"] = "레벨"
 L["LIMITED_FUNCTIONALITY_MESSAGE"] = "8.3 경매장 업데이트로 인한 기능 제한"
@@ -385,6 +409,8 @@ L["NUMBER_SEPARATOR"] = ","
 L["OPEN_ADDON_OPTIONS"] = "애드온 설정 열기"
 L["OPEN_IN_SHOPPING_TAB"] = "쇼핑 탭에서 열기"
 L["OWNED_COLUMN"] = "소유 여부"
+--[[Translation missing --]]
+L["PAYING_X"] = "Paying %s for one item"
 L["PERCENTAGE"] = "백분율"
 L["PERCENTAGE_SUFFIX"] = "% 최저가"
 L["PERCENTAGE_TOOLTIP_HEADER"] = "최저가 설정"
@@ -394,11 +420,19 @@ L["PET_TOOLTIP_TOOLTIP_TEXT"] = "우리에 담긴 펫의 경매장 가격을 표
 L["POST"] = "경매 시작"
 --[[Translation missing --]]
 L["POST_ATTEMPT_FAILED"] = "Your last post attempt didn't work. Try again."
+--[[Translation missing --]]
+L["PREVIOUS"] = "Previous"
 L["PRICE"] = "가격"
 L["PRICE_HISTORY"] = "가격 기록"
 L["PRICE_INCREASE_WARNING"] = "가격 %s 오름, %s초 대기 중"
 --[[Translation missing --]]
 L["PRICE_INCREASE_WARNING_2"] = "Price increased by %s. Do you want to continue?"
+--[[Translation missing --]]
+L["PRICE_INCREASED"] = "The price has increased!"
+--[[Translation missing --]]
+L["PRICE_INCREASED_X_X"] = "The price has increased: %s (%s each)"
+--[[Translation missing --]]
+L["PRICE_VARIES_WARNING"] = "The prices varies a lot between items."
 L["PROFILE_TOGGLE_TOOLTIP_HEADER"] = "캐릭터별 설정 사용"
 L["PROFILE_TOGGLE_TOOLTIP_TEXT"] = "캐릭터 별 옥셔네이터 설정을 적용합니다."
 L["PROFIT_COLON"] = "수익:"
@@ -441,6 +475,10 @@ L["SAVE_THIS_LIST_AS"] = "이 목록을 저장..."
 L["SCANNING_PAGE_X"] = "%s 페이지 검색중..."
 L["SEARCH"] = "검색"
 L["SEARCH_ALL"] = "전체 검색"
+--[[Translation missing --]]
+L["SEARCH_FOR_QUANTITY"] = "Search For Quantity"
+--[[Translation missing --]]
+L["SEARCH_OPTIONS"] = "Search Options"
 L["SEARCH_TERM"] = "이름 추가"
 --[[Translation missing --]]
 L["SEARCH_TERM_COLON"] = "Search Term:"
@@ -498,6 +536,52 @@ L["SPLASH_100015_RETAIL_2"] = "Selling tab has an expanded prices view with hist
 --[[Translation missing --]]
 L["SPLASH_100015_RETAIL_3"] = "Reagents value on the auction house is shown when listing a crafting order."
 L["SPLASH_100015_RETAIL_HEADER"] = "본섭의 최신 기능"
+--[[Translation missing --]]
+L["SPLASH_100106_CRAFTING_INFO_1"] = "Craft profits in crafting windows now warn if the price data is out of date."
+--[[Translation missing --]]
+L["SPLASH_100106_CRAFTING_INFO_2"] = "For retail: Optional minimum craft cost entry for crafting values in crafting windows."
+--[[Translation missing --]]
+L["SPLASH_100106_CRAFTING_INFO_3"] = "For classic: Enchants now show a profit value."
+--[[Translation missing --]]
+L["SPLASH_100106_CRAFTING_INFO_HEADER"] = "Crafting Info"
+--[[Translation missing --]]
+L["SPLASH_100106_DESCRIPTION"] = "The highlight of last 6 months is the reworked Shopping tab to be much more user friendly. As always there's bugfixes and other minor improvements, but those aren't listed."
+--[[Translation missing --]]
+L["SPLASH_100106_OTHER_1"] = "For classic: Optional stack price column in cancelling tab"
+--[[Translation missing --]]
+L["SPLASH_100106_OTHER_2"] = "Optional \"Auction Age\" tooltip entry to show how long it was since the price was scanned."
+--[[Translation missing --]]
+L["SPLASH_100106_OTHER_HEADER"] = "Other features"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_CLASSIC_1"] = "Option to post partial stacks after posting your full stacks"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_CLASSIC_2"] = "Warning about the price being abnormally low due to post bait auctions"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_CLASSIC_HEADER"] = "Selling tab (for classic)"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_RETAIL_1"] = "More options, level/id/name/name-and-level, when deciding what prices your item should be compared against when posting."
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_RETAIL_2"] = "Shows grey gear in the item list"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_RETAIL_3"] = "Clicking on an auction with a bid listed will populate the bid price field if enabled"
+--[[Translation missing --]]
+L["SPLASH_100106_SELLING_TAB_RETAIL_HEADER"] = "Selling tab (for retail)"
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_BOTH_1"] = "All lists now show on the left of the tab without a dropdown."
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_BOTH_2"] = "Lists expand and collapse to show and hide search terms and have a one-click search button for the entire list."
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_BOTH_3"] = "Just one place for searches and adding entries to a shopping list now rather than 2."
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_BOTH_HEADER"] = "Shopping tab (retail and classic)"
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_RETAIL_1"] = "New purchase screens, with item purchases having fewer clicks and commodity purchases getting new purchase warnings when the prices are erratic."
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_RETAIL_2"] = "WoW expansion filter for search terms."
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_RETAIL_3"] = "Dragonflight item quality filter for crafting reagents"
+--[[Translation missing --]]
+L["SPLASH_100106_SHOPPING_TAB_RETAIL_HEADER"] = "Shopping tab (for retail)"
 L["SPLASH_830_BUGS_1"] = "옥셔네이터 디스코드 서버에 참가하세요. %s"
 L["SPLASH_830_BUGS_2"] = "오류가 발생하면 깃헙으로 알려주세요. %s"
 L["SPLASH_830_BUGS_3"] = "디스코드가 활성화되어 있으니 curseforge 혹은 옥셔네이터 포럼에 오류를 올리지 말아주세요."
@@ -680,10 +764,14 @@ L["TOO_BIG_PERCENTAGE"] = "%%는 100이거나 그 이하여야 합니다. (입�
 L["TOO_MANY_SEARCH_RESULTS"] = "검색 결과가 너무 많습니다. 제한된 결과만 표시됩니다."
 L["TOO_SMALL_PERCENTAGE"] = "%%는 0이거나 그 이상이여야 합니다. (입력값:%s)"
 L["TOTAL_ITEMS_COLORED"] = "전체 |cFFAAAAFF %s 개s|r"
+--[[Translation missing --]]
+L["TOTAL_OF_X_FOR_UNIT_PRICE_OF_X"] = "Total of %s for unit price of %s"
 L["TOTAL_ON_SALE"] = "총 판매: %s"
 --[[Translation missing --]]
 L["TOTAL_PENDING"] = "(%s pending)"
 L["TOTAL_PRICE"] = "전체 판매가"
+--[[Translation missing --]]
+L["TOTAL_PRICE_PLAIN"] = "Total Price"
 L["TRANSLATORS_BRAZIL_PORTUGUEUSE"] = "브라질리언 포르투갈어"
 L["TRANSLATORS_FRENCH"] = "프랑스어"
 L["TRANSLATORS_GERMAN"] = "독일어"
@@ -714,6 +802,8 @@ L["UNHIDE"] = "숨기기 해제"
 L["UNHIDE_ALL"] = "모두 숨기기 해제"
 L["UNHIDE_ALL_HIDDEN_ITEMS"] = "숨겨진 아이템 모두 보이기"
 L["UNIT_PRICE"] = "가격"
+--[[Translation missing --]]
+L["UNIT_PRICE_RANGE"] = "Unit price: %s - %s"
 L["UNKNOWN"] = "모름"
 L["UNSELECT_ALL"] = "모두선택 취소"
 L["UPPER_UNIT_PRICE"] = "상한가"

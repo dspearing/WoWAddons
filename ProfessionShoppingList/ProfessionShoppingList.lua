@@ -1,7 +1,7 @@
 -- Initialise some stuff
 local api = CreateFrame("Frame")	-- To register API events
 local ScrollingTable = LibStub("ScrollingTable")	-- To refer to the ScrollingTable library
-if not C_TradeSkillUI then UIParentLoadAddOn("C_TradeSkillUI") end	-- To refer to the TradeSkillUI
+if not Blizzard_Professions then UIParentLoadAddOn("Blizzard_Professions") end	-- To refer to the TradeSkillUI
 if not Blizzard_ProfessionsCustomerOrders then UIParentLoadAddOn("Blizzard_ProfessionsCustomerOrders") end	-- To refer to the ProfessionsCustomerOrders
 
 -- API Events
@@ -16,8 +16,11 @@ api:RegisterEvent("CRAFTINGORDERS_ORDER_PLACEMENT_RESPONSE")
 api:RegisterEvent("CRAFTINGORDERS_RELEASE_ORDER_RESPONSE")
 api:RegisterEvent("CRAFTINGORDERS_FULFILL_ORDER_RESPONSE")
 api:RegisterEvent("TRACKED_RECIPE_UPDATE")
+api:RegisterEvent("PLAYER_ENTERING_WORLD")
 api:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW")
 api:RegisterEvent("AUCTION_HOUSE_SHOW")
+api:RegisterEvent("LFG_PROPOSAL_SHOW")
+api:RegisterEvent("PET_BATTLE_QUEUE_PROPOSE_MATCH")
 
 -- Might as well keep this in here, it's useful
 local function dump(o)
@@ -43,6 +46,7 @@ function pslInitialise()
 	if not recipeLibrary then recipeLibrary = {} end
 	if not reagentTiers then reagentTiers = {} end
 	if not personalOrders then personalOrders = {} end
+	if not recipeCooldowns then recipeCooldowns = {} end
 	
 	-- Set default window position
 	if not windowPosition then
@@ -84,6 +88,11 @@ function pslInitialise()
 	if userSettings["pcWindowPosition"] == nil then userSettings["pcWindowPosition"] = false end
 	if userSettings["pcRecipesTracked"] == nil then userSettings["pcRecipesTracked"] = false end
 	if userSettings["headerTooltip"] == nil then userSettings["headerTooltip"] = true end
+	if userSettings["showRecipeCooldowns"] == nil then userSettings["showRecipeCooldowns"] = true end
+	if userSettings["backpackCount"] == nil then userSettings["backpackCount"] = true end
+	if userSettings["queueSound"] == nil then userSettings["queueSound"] = false end
+	if userSettings["backpackCleanup"] == nil then userSettings["backpackCleanup"] = "default" end
+	if userSettings["backpackLoot"] == nil then userSettings["backpackLoot"] = "default" end
 
 	-- Load personal recipes, if the setting is enabled
 	if userSettings["pcRecipesTracked"] == true then
@@ -177,19 +186,16 @@ function pslTrackingWindows()
 	pslTable1:SetDisplayRows(userSettings["reagentRows"], 15)
 	pslTable1:SetDisplayCols(cols)
 	pslFrame1:SetSize(userSettings["reagentWidth"]+userSettings["reagentNoWidth"]+30, userSettings["reagentRows"]*15+45)
-	pslFrame1:SetScript("OnMouseDown", function()
-		pslFrame1:StartMoving()
+	pslFrame1:SetScript("OnMouseDown", function(self, button)
+		if button == "LeftButton" and not IsModifierKeyDown() then
+			pslFrame1:StartMoving()
+			GameTooltip:ClearLines()
+			GameTooltip:Hide()
+		end
 	end)
 	pslFrame1:SetScript("OnMouseUp", function()
 		pslSaveWindowPosition()
 	end)
-
-	pslFrame1:ClearAllPoints()
-	if userSettings["pcWindowPosition"] == true then
-		pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame1"].left, pcWindowPosition["pslFrame1"].bottom)
-	else
-		pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame1"].left, windowPosition["pslFrame1"].bottom)
-	end
 
 	-- Column formatting, Recipes
 	local cols = {}
@@ -260,19 +266,16 @@ function pslTrackingWindows()
 	pslTable2:SetDisplayCols(cols)
 	pslFrame2:SetSize(userSettings["recipeWidth"]+userSettings["recipeNoWidth"]+30, userSettings["recipeRows"]*15+45)
 	
-	pslFrame2:SetScript("OnMouseDown", function()
-		pslFrame2:StartMoving()
+	pslFrame2:SetScript("OnMouseDown", function(self, button)
+		if button == "LeftButton" and not IsModifierKeyDown() then
+			pslFrame2:StartMoving()
+			GameTooltip:ClearLines()
+			GameTooltip:Hide()
+		end
 	end)
 	pslFrame2:SetScript("OnMouseUp", function()
 		pslSaveWindowPosition()
 	end)
-
-	pslFrame2:ClearAllPoints()
-	if userSettings["pcWindowPosition"] == true then
-		pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame2"].left, pcWindowPosition["pslFrame2"].bottom)
-	else
-		pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame2"].left, windowPosition["pslFrame2"].bottom)
-	end
 end
 
 -- Get reagents for recipe
@@ -382,13 +385,13 @@ function pslUpdateNumbers()
 		local itemAmount = ""
 		if math.max(0,amount-reagentAmountHave) == 0 then
 			itemAmount = "|cff9d9d9d"
-			itemLink = string.gsub(itemLink, "|cff9d9d9d|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Poor
-			itemLink = string.gsub(itemLink, "|cffffffff|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Common
-			itemLink = string.gsub(itemLink, "|cff1eff00|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Uncommon
-			itemLink = string.gsub(itemLink, "|cff0070dd|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Rare
-			itemLink = string.gsub(itemLink, "|cffa335ee|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Epic
-			itemLink = string.gsub(itemLink, "|cffff8000|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Legendary
-			itemLink = string.gsub(itemLink, "|cffe6cc80|", "|T"..READY_CHECK_READY_TEXTURE..":0|t |cff9d9d9d|") -- Artifact
+			itemLink = string.gsub(itemLink, "|cff9d9d9d|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Poor
+			itemLink = string.gsub(itemLink, "|cffffffff|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Common
+			itemLink = string.gsub(itemLink, "|cff1eff00|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Uncommon
+			itemLink = string.gsub(itemLink, "|cff0070dd|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Rare
+			itemLink = string.gsub(itemLink, "|cffa335ee|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Epic
+			itemLink = string.gsub(itemLink, "|cffff8000|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Legendary
+			itemLink = string.gsub(itemLink, "|cffe6cc80|", "|T"..iconReady..":0|t |cff9d9d9d|") -- Artifact
 		end
 
 		-- Set the displayed amount based on settings
@@ -451,6 +454,45 @@ function pslUpdateRecipes()
 	end
 end
 
+-- Show windows and update numbers
+function pslShow()
+	-- Set the reagents window to its proper coordinates
+	pslFrame1:ClearAllPoints()
+	if userSettings["pcWindowPosition"] == true then
+		pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame1"].left, pcWindowPosition["pslFrame1"].bottom)
+	else
+		pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame1"].left, windowPosition["pslFrame1"].bottom)
+	end
+	
+	-- Set the recipes window to its proper coordinates
+	pslFrame2:ClearAllPoints()
+	if userSettings["pcWindowPosition"] == true then
+		pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", pcWindowPosition["pslFrame2"].left, pcWindowPosition["pslFrame2"].bottom)
+	else
+		pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame2"].left, windowPosition["pslFrame2"].bottom)
+	end
+
+	-- Show the windows
+	pslFrame1:Show()
+	pslFrame2:Show()
+
+	-- Update numbers
+	pslUpdateRecipes()
+end
+
+-- Toggle windows
+function pslToggle()
+	-- Toggle tracking windows
+	if pslFrame1:IsShown() then
+		pslFrame1:Hide()
+		pslFrame2:Hide()
+	else
+		pslShow()
+	end
+end
+
+
+
 -- Track recipe
 function pslTrackRecipe(recipeID, recipeQuantity)
 	-- 2 = Salvage, recipes without reagents | Disable these, cause they shouldn't be tracked
@@ -483,19 +525,18 @@ function pslTrackRecipe(recipeID, recipeQuantity)
 	-- Add recipe link for crafted items
 	if recipeType == 1 then
 		local itemID = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).outputItemID
+		local _, itemLink
+		if itemID ~= nil then
+			-- Cache item
+			if not C_Item.IsItemDataCachedByID(itemID) then local item = Item:CreateFromItemID(itemID) end
 
-		-- Cache item
-		if not C_Item.IsItemDataCachedByID(itemID) then local item = Item:CreateFromItemID(itemID) end
-
-		-- Get item info
-		local _, itemLink = GetItemInfo(itemID)
-
-		-- Try again if error
-		if itemLink == nil then
-			RunNextFrame(pslTrackRecipe(recipeID, recipeQuantity))
-			do return end
+			-- Get item info
+			_, itemLink = GetItemInfo(itemID)
+		-- Exception for stuff like Abominable Stitching
+		else
+			itemLink = C_TradeSkillUI.GetRecipeSchematic(recipeID,false).name
 		end
-		
+
 		-- Exceptions for SL legendary crafts
 		if slLegendaryRecipeIDs[recipeID] then
 			itemLink = itemLink.." (Rank "..slLegendaryRecipeIDs[recipeID].rank..")" -- Append the rank
@@ -517,11 +558,7 @@ function pslTrackRecipe(recipeID, recipeQuantity)
 	end
 
 	-- Show windows
-	pslFrame1:Show()
-	pslFrame2:Show()
-
-	-- Update numbers
-	pslUpdateRecipes()
+	pslShow()
 
 	-- Update the editbox
 	ebRecipeQuantityNo = recipesTracked[recipeID] or 0
@@ -620,8 +657,7 @@ function pslCreateAssets()
 			pslUntrackRecipe(pslSelectedRecipeID, 1)
 	
 			-- Show windows
-			pslFrame1:Show()
-			pslFrame2:Show()
+			pslShow()
 		end)
 	end
 
@@ -667,8 +703,7 @@ function pslCreateAssets()
 			pslUntrackRecipe(pslSelectedRecipeID, 1)
 	
 			-- Show windows
-			pslFrame1:Show()
-			pslFrame2:Show()
+			pslShow()
 		end)
 	end
 
@@ -769,21 +804,21 @@ function pslCreateAssets()
 			local next = next
 			if next(craftingReagentInfo) ~= nil and userSettings["useLocalReagents"] == true then
 				for i, _ in ipairs (craftingReagentInfo) do
-					craftingReagentInfo[i].dataSlotIndex = craftingReagentInfo[i].dataSlotIndex - 1
+					craftingReagentInfo[i].dataSlotIndex = math.max(craftingReagentInfo[i].dataSlotIndex - 1, 0)
 				end
 
 				-- Place the alternative order (only one can succeed, worst case scenario it'll fail again)
 				C_CraftingOrders.PlaceNewOrder({ skillLineAbilityID=recipeLibrary[pslSelectedRecipeID].abilityID, orderType=2, orderDuration=0, tipAmount=100, customerNotes="", orderTarget=personalOrders[pslSelectedRecipeID], reagentItems=reagentInfo, craftingReagentItems=craftingReagentInfo })
 			
 				for i, _ in ipairs (craftingReagentInfo) do
-					craftingReagentInfo[i].dataSlotIndex = craftingReagentInfo[i].dataSlotIndex - 1
+					craftingReagentInfo[i].dataSlotIndex = math.max(craftingReagentInfo[i].dataSlotIndex - 1, 0)
 				end
 
 				-- Place the alternative order (only one can succeed, worst case scenario it'll fail again)
 				C_CraftingOrders.PlaceNewOrder({ skillLineAbilityID=recipeLibrary[pslSelectedRecipeID].abilityID, orderType=2, orderDuration=0, tipAmount=100, customerNotes="", orderTarget=personalOrders[pslSelectedRecipeID], reagentItems=reagentInfo, craftingReagentItems=craftingReagentInfo })
 			
 				for i, _ in ipairs (craftingReagentInfo) do
-					craftingReagentInfo[i].dataSlotIndex = craftingReagentInfo[i].dataSlotIndex - 1
+					craftingReagentInfo[i].dataSlotIndex = math.max(craftingReagentInfo[i].dataSlotIndex - 1, 0)
 				end
 
 				-- Place the alternative order (only one can succeed, worst case scenario it'll fail again)
@@ -884,8 +919,7 @@ function pslCreateAssets()
 			end
 
 			-- Show windows
-			pslFrame1:Show()
-			pslFrame2:Show()
+			pslShow()
 		end)
 	end
 
@@ -904,8 +938,7 @@ function pslCreateAssets()
 			end
 
 			-- Show windows
-			pslFrame1:Show()
-			pslFrame2:Show()
+			pslShow()
 		end)
 	end
 
@@ -1077,7 +1110,7 @@ function pslCreateAssets()
 		reagentHeaderTooltipText = reagentHeaderTooltip:CreateFontString("ARTWORK", nil, "GameFontNormal")
 		reagentHeaderTooltipText:SetPoint("TOPLEFT", reagentHeaderTooltip, "TOPLEFT", 10, -10)
 		reagentHeaderTooltipText:SetJustifyH("LEFT")
-		reagentHeaderTooltipText:SetText("Drag|cffFFFFFF: Move the window.\n|RShift+click Reagent|cffFFFFFF: Link the reagent.\n|RCtrl+click Reagent|cffFFFFFF: Add recipe for the selected subreagent, if it exists.\n(This only works for professions that have been opened with PSL active.)")
+		reagentHeaderTooltipText:SetText("Drag|cffFFFFFF: Move the window.\n|RShift+click Reagent|cffFFFFFF: Link the reagent.\n|RCtrl+click Reagent|cffFFFFFF: Add recipe for the selected subreagent, if it exists.\n(This only works for professions that have been opened with PSL active.)\nThe reagents listed here can also be imported to a new Auctionator shopping list.")
 
 		-- Set the tooltip size to fit its contents
 		reagentHeaderTooltip:SetHeight(reagentHeaderTooltipText:GetStringHeight()+20)
@@ -1255,21 +1288,6 @@ function pslClear()
 	reagentLinks = nil
 end
 
--- Toggle windows
-function pslToggle()
-	-- Toggle tracking windows
-	if pslFrame1:IsShown() then
-		pslFrame1:Hide()
-		pslFrame2:Hide()
-	else
-		pslFrame1:Show()
-		pslFrame2:Show()
-	end
-
-	-- Update numbers
-	pslUpdateRecipes()
-end
-
 -- Open settings
 function pslOpenSettings()
 	InterfaceOptionsFrame_OpenToCategory("Profession Shopping List")
@@ -1278,7 +1296,7 @@ end
 -- Settings and minimap icon
 function pslSettings()
 	-- Initialise the Settings page so the Minimap button can go there
-	local settings = CreateFrame("Frame")			
+	local settings = CreateFrame("Frame")
 	settings.name = "Profession Shopping List"
 	InterfaceOptions_AddCategory(settings)
 
@@ -1312,24 +1330,25 @@ function pslSettings()
 	end
 
 	-- Settings frame
-	local scrollFrame = CreateFrame("ScrollFrame", nil, settings, "UIPanelScrollFrameTemplate")
-	scrollFrame:SetPoint("TOPLEFT", 3, -4)
-	scrollFrame:SetPoint("BOTTOMRIGHT", -27, 4)
+	local scrollFrame = CreateFrame("ScrollFrame", nil, settings, "ScrollFrameTemplate")
+	scrollFrame:SetPoint("TOPLEFT", 0, 0)
+	scrollFrame:SetPoint("BOTTOMRIGHT", -25, 0)	-- Allow space for the scrollbar
 
 	local scrollChild = CreateFrame("Frame")
 	scrollFrame:SetScrollChild(scrollChild)
-	scrollChild:SetWidth(SettingsPanel.Container.SettingsCanvas:GetWidth()-18)
-	scrollChild:SetHeight(1) 
+	scrollChild:SetWidth(1)	-- This is automatically defined, so long as the attribute exists at all
+	scrollChild:SetHeight(1)	-- This is automatically defined, so long as the attribute exists at all
 
 	-- Settings
+	-- TODO: functions for checkboxes, sliders, header and include cb:SetHitRectInsets(0,0 - cb.Text:GetWidth(),0,0);
 	local title = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormalLarge")
 	title:SetPoint("TOPLEFT", 0, 0)
 	title:SetText("Profession Shopping List")
 
-	local addonversion = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormalLarge")
-	addonversion:SetPoint("CENTER", title, "CENTER", 0, 0)
-	addonversion:SetPoint("RIGHT", -20, 0)
-	addonversion:SetText(GetAddOnMetadata("ProfessionShoppingList", "Version"))
+	local addonVersion = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormalLarge")
+	addonVersion:SetPoint("CENTER", title, 0, 0)
+	addonVersion:SetPoint("RIGHT", 0, 0)
+	addonVersion:SetText(GetAddOnMetadata("ProfessionShoppingList", "Version"))
 
 	-- General
 	local cbMinimapButton = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
@@ -1348,7 +1367,7 @@ function pslSettings()
 	end)
 
 	local cbHeaderTooltip = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
-	cbHeaderTooltip.Text:SetText("Show header tooltip")
+	cbHeaderTooltip.Text:SetText("Header tooltip")
 	cbHeaderTooltip.Text:SetTextColor(1, 1, 1, 1)
 	cbHeaderTooltip.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
 	cbHeaderTooltip:SetPoint("TOPLEFT", cbMinimapButton, "BOTTOMLEFT", 0, 0)
@@ -1638,21 +1657,245 @@ function pslSettings()
 	titleOtherFeatures:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
 	titleOtherFeatures:SetText("Other features")
 
+	local cbShowRecipeCooldowns = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	cbShowRecipeCooldowns.Text:SetText("Recipe cooldown reminders")
+	cbShowRecipeCooldowns.Text:SetTextColor(1, 1, 1, 1)
+	cbShowRecipeCooldowns.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbShowRecipeCooldowns:SetPoint("TOPLEFT", titleOtherFeatures, "BOTTOMLEFT", 0, 0)
+	cbShowRecipeCooldowns:SetChecked(userSettings["showRecipeCooldowns"])
+	cbShowRecipeCooldowns:SetScript("OnClick", function(self)
+		userSettings["showRecipeCooldowns"] = cbShowRecipeCooldowns:GetChecked()
+	end)
+
 	local cbVendorAll = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
 	cbVendorAll.Text:SetText("Always set vendor filter to 'All'")
 	cbVendorAll.Text:SetTextColor(1, 1, 1, 1)
 	cbVendorAll.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	cbVendorAll:SetPoint("TOPLEFT", titleOtherFeatures, "BOTTOMLEFT", 0, 0)
+	cbVendorAll:SetPoint("TOPLEFT", cbShowRecipeCooldowns, "BOTTOMLEFT", 0, 0)
 	cbVendorAll:SetChecked(userSettings["vendorAll"])
 	cbVendorAll:SetScript("OnClick", function(self)
 		userSettings["vendorAll"] = cbVendorAll:GetChecked()
 	end)
 
+	local cbQueueSounds = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	cbQueueSounds.Text:SetText("Play sound when any queue pops")
+	cbQueueSounds.Text:SetTextColor(1, 1, 1, 1)
+	cbQueueSounds.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbQueueSounds:SetPoint("TOPLEFT", cbVendorAll, "BOTTOMLEFT", 0, 0)
+	cbQueueSounds:SetChecked(userSettings["queueSound"])
+	cbQueueSounds:SetScript("OnClick", function(self)
+		userSettings["queueSound"] = cbQueueSounds:GetChecked()
+	end)
+
+	-- Category: Backpack
+	local titleBackpack = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
+	titleBackpack:SetPoint("LEFT", titleKnowledgeTracker, "LEFT", 0, 0)
+	titleBackpack:SetPoint("TOP", cbKnowledgeAlwaysShowDetails, "BOTTOM", 0, -5)
+	titleBackpack:SetJustifyH("LEFT")
+	titleBackpack:SetFont("Fonts\\FRIZQT__.TTF", 14, "")
+	titleBackpack:SetText("Backpack")
+
+	local cbBackpackCount = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	cbBackpackCount.Text:SetText("Split reagent bag count")
+	cbBackpackCount.Text:SetTextColor(1, 1, 1, 1)
+	cbBackpackCount.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbBackpackCount:SetPoint("TOPLEFT", titleBackpack, "BOTTOMLEFT", 0, 0)
+	cbBackpackCount:SetChecked(userSettings["backpackCount"])
+	cbBackpackCount:SetScript("OnClick", function(self)
+		userSettings["backpackCount"] = cbBackpackCount:GetChecked()
+
+		-- Get number of free bag slots
+		local freeSlots1 = C_Container.GetContainerNumFreeSlots(0) + C_Container.GetContainerNumFreeSlots(1) + C_Container.GetContainerNumFreeSlots(2) + C_Container.GetContainerNumFreeSlots(3) + C_Container.GetContainerNumFreeSlots(4)
+		local freeSlots2 = C_Container.GetContainerNumFreeSlots(5)
+
+		-- If the setting for split reagent bag count is enabled and the player has a reagent bag
+		if userSettings["backpackCount"] == true and C_Container.GetContainerNumSlots(5) ~= 0 then
+			-- Replace the bag count text
+			MainMenuBarBackpackButtonCount:SetText("(" .. freeSlots1 .. "+" .. freeSlots2 .. ")")
+		else
+			-- Reset the bag count text
+			MainMenuBarBackpackButtonCount:SetText("(" .. freeSlots1 + freeSlots2 .. ")")
+		end
+	end)
+
+		-- Cleanup and Loot order tooltip
+		local orderTooltip = CreateFrame("Frame", nil, scrollChild, "BackdropTemplate")
+		orderTooltip:SetPoint("TOPLEFT", cbBackpackCount, "BOTTOMLEFT", 0, 0)
+		orderTooltip:SetFrameStrata("TOOLTIP")
+		orderTooltip:SetBackdrop({
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 },
+		})
+		orderTooltip:SetBackdropColor(0, 0, 0, 0.9)
+		orderTooltip:EnableMouse(false)
+		orderTooltip:SetMovable(false)
+		orderTooltip:Hide()
+
+		orderTooltipText = orderTooltip:CreateFontString("ARTWORK", nil, "GameFontNormal")
+		orderTooltipText:SetPoint("TOPLEFT", orderTooltip, "TOPLEFT", 10, -10)
+		orderTooltipText:SetJustifyH("LEFT")
+		orderTooltipText:SetText("Default means PSL will not adjust this hidden game setting.\nThe other options let PSL enforce that particular setting.")
+
+		-- Set the tooltip size to fit its contents
+		orderTooltip:SetHeight(orderTooltipText:GetStringHeight()+20)
+		orderTooltip:SetWidth(orderTooltipText:GetStringWidth()+20)
+
+	local textCleanUpBags = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
+	textCleanUpBags:SetPoint("TOPLEFT", cbBackpackCount, "BOTTOMLEFT", 3, 0)
+	textCleanUpBags:SetJustifyH("LEFT")
+	textCleanUpBags:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	textCleanUpBags:SetText("|cffFFFFFFClean Up Bags")
+	textCleanUpBags:EnableMouse(true)
+	textCleanUpBags:SetScript("OnEnter", function(self)
+		orderTooltip:Show()
+	end)
+	textCleanUpBags:SetScript("OnLeave", function(self)
+		orderTooltip:Hide()
+	end)
+
+	local cbCleanupDefault = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	local cbCleanupLtoR = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	local cbCleanupRtoL = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+
+		-- Radio button
+		local function cbCleanupToggle(state)
+			-- Grab user setting if we're not toggling but just loading
+			if not state then state = userSettings["backpackCleanup"] end
+
+			-- Set the user setting (either doesn't change, or gets set to what the user clicked)
+			userSettings["backpackCleanup"] = state
+
+			-- Make the checkboxes act like radio buttons
+			if state == "default" then
+				cbCleanupDefault:SetChecked(true)
+				cbCleanupLtoR:SetChecked(false)
+				cbCleanupRtoL:SetChecked(false)
+			elseif state == "ltor" then
+				cbCleanupDefault:SetChecked(false)
+				cbCleanupLtoR:SetChecked(true)
+				cbCleanupRtoL:SetChecked(false)
+
+				-- Enforce the setting
+				C_Container.SetSortBagsRightToLeft(false)
+			elseif state == "rtol" then
+				cbCleanupDefault:SetChecked(false)
+				cbCleanupLtoR:SetChecked(false)
+				cbCleanupRtoL:SetChecked(true)
+
+				-- Enforce the setting
+				C_Container.SetSortBagsRightToLeft(true)
+			end
+		end
+		cbCleanupToggle()
+
+	cbCleanupDefault.Text:SetText("Default")
+	cbCleanupDefault.tooltip = "Test."
+	cbCleanupDefault.Text:SetTextColor(1, 1, 1, 1)
+	cbCleanupDefault.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbCleanupDefault:SetPoint("TOPLEFT", textCleanUpBags, "BOTTOMLEFT", -3, 0)
+	cbCleanupDefault:SetScript("OnClick", function(self)
+		cbCleanupToggle("default")
+	end)
+
+	cbCleanupLtoR.Text:SetText("Left-to-Right")
+	cbCleanupLtoR.Text:SetTextColor(1, 1, 1, 1)
+	cbCleanupLtoR.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbCleanupLtoR:SetPoint("LEFT", cbCleanupDefault.Text, "RIGHT", 3, 0)
+	cbCleanupLtoR:SetPoint("TOP", cbCleanupDefault, "TOP", 0, 0)
+	cbCleanupLtoR:SetScript("OnClick", function(self)
+		cbCleanupToggle("ltor")
+	end)
+
+	cbCleanupRtoL.Text:SetText("Right-to-Left")
+	cbCleanupRtoL.Text:SetTextColor(1, 1, 1, 1)
+	cbCleanupRtoL.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbCleanupRtoL:SetPoint("LEFT", cbCleanupLtoR.Text, "RIGHT", 3, 0)
+	cbCleanupRtoL:SetPoint("TOP", cbCleanupLtoR, "TOP", 0, 0)
+	cbCleanupRtoL:SetScript("OnClick", function(self)
+		cbCleanupToggle("rtol")
+	end)
+
+	local textLootOrder = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
+	textLootOrder:SetPoint("TOPLEFT", cbCleanupDefault, "BOTTOMLEFT", 3, 0)
+	textLootOrder:SetJustifyH("LEFT")
+	textLootOrder:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	textLootOrder:SetText("|cffFFFFFFLoot Order")
+	textLootOrder:EnableMouse(true)
+	textLootOrder:SetScript("OnEnter", function(self)
+		orderTooltip:Show()
+	end)
+	textLootOrder:SetScript("OnLeave", function(self)
+		orderTooltip:Hide()
+	end)
+
+	local cbLootDefault = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	local cbLootLtoR = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+	local cbLootRtoL = CreateFrame("CheckButton", nil, scrollChild, "InterfaceOptionsCheckButtonTemplate")
+
+	-- Radio button
+	local function cbLootToggle(state)
+		-- Grab user setting if we're not toggling but just loading
+		if not state then state = userSettings["backpackLoot"] end
+
+		-- Set the user setting (either doesn't change, or gets set to what the user clicked)
+		userSettings["backpackLoot"] = state
+
+		-- Make the checkboxes act like radio buttons
+		if state == "default" then
+			cbLootDefault:SetChecked(true)
+			cbLootLtoR:SetChecked(false)
+			cbLootRtoL:SetChecked(false)
+		elseif state == "ltor" then
+			cbLootDefault:SetChecked(false)
+			cbLootLtoR:SetChecked(true)
+			cbLootRtoL:SetChecked(false)
+
+			-- Enforce the setting
+			C_Container.SetInsertItemsLeftToRight(true)
+		elseif state == "rtol" then
+			cbLootDefault:SetChecked(false)
+			cbLootLtoR:SetChecked(false)
+			cbLootRtoL:SetChecked(true)
+
+			-- Enforce the setting
+			C_Container.SetInsertItemsLeftToRight(false)
+		end
+	end
+	cbLootToggle()
+
+	cbLootDefault.Text:SetText("Default")
+	cbLootDefault.Text:SetTextColor(1, 1, 1, 1)
+	cbLootDefault.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbLootDefault:SetPoint("TOPLEFT", textLootOrder, "BOTTOMLEFT", -3, 0)
+	cbLootDefault:SetScript("OnClick", function(self)
+		cbLootToggle("default")
+	end)
+
+	cbLootLtoR.Text:SetText("Left-to-Right")
+	cbLootLtoR.Text:SetTextColor(1, 1, 1, 1)
+	cbLootLtoR.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbLootLtoR:SetPoint("LEFT", cbLootDefault.Text, "RIGHT", 3, 0)
+	cbLootLtoR:SetPoint("TOP", cbLootDefault, "TOP", 0, 0)
+	cbLootLtoR:SetScript("OnClick", function(self)
+		cbLootToggle("ltor")
+	end)
+
+	cbLootRtoL.Text:SetText("Right-to-Left")
+	cbLootRtoL.Text:SetTextColor(1, 1, 1, 1)
+	cbLootRtoL.Text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+	cbLootRtoL:SetPoint("LEFT", cbLootLtoR.Text, "RIGHT", 3, 0)
+	cbLootRtoL:SetPoint("TOP", cbLootLtoR, "TOP", 0, 0)
+	cbLootRtoL:SetScript("OnClick", function(self)
+		cbLootToggle("rtol")
+	end)
+
 	-- Extra text
 	local pslSettingsText1 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
-	pslSettingsText1:SetPoint("TOPLEFT", cbKnowledgeAlwaysShowDetails, "BOTTOMLEFT", 3, -20)
+	pslSettingsText1:SetPoint("TOPLEFT", cbLootDefault, "BOTTOMLEFT", 3, -15)
 	pslSettingsText1:SetJustifyH("LEFT")
-	pslSettingsText1:SetText("Chat commands:\n/psl |cffFFFFFF- Toggle the PSL windows.\n|R/psl settings |cffFFFFFF- Open the PSL settings.\n|R/psl clear |cffFFFFFF- Clear all tracked recipes.\n|R/psl track |cff1B9C85recipeID quantity |R|cffFFFFFF- Track a recipe.\n|R/psl untrack |cff1B9C85recipeID quantity |R|cffFFFFFF- Untrack a recipe.\n|R/psl untrack |cff1B9C85recipeID |Rall |cffFFFFFF- Untrack all of a recipe.")
+	pslSettingsText1:SetText("Chat commands:\n/psl |cffFFFFFF- Toggle the PSL windows.\n|R/psl resetpos |cffFFFFFF- Reset the PSL window positions.\n|R/psl settings |cffFFFFFF- Open the PSL settings.\n|R/psl clear |cffFFFFFF- Clear all tracked recipes.\n|R/psl track |cff1B9C85recipeID quantity |R|cffFFFFFF- Track a recipe.\n|R/psl untrack |cff1B9C85recipeID quantity |R|cffFFFFFF- Untrack a recipe.\n|R/psl untrack |cff1B9C85recipeID |Rall |cffFFFFFF- Untrack all of a recipe.")
 
 	local pslSettingsText2 = scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	pslSettingsText2:SetPoint("TOPLEFT", pslSettingsText1, "BOTTOMLEFT", 0, -15)
@@ -1689,7 +1932,7 @@ function pslWindowFunctions()
 			reagentHeaderTooltip:Hide()
 		end,
 		["OnMouseDown"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, button, ...)
-			if button == "LeftButton" then
+			if button == "LeftButton" and not IsModifierKeyDown() then
 				pslFrame1:StartMoving()
 				GameTooltip:ClearLines()
 				GameTooltip:Hide()
@@ -2131,8 +2374,7 @@ function pslWindowFunctions()
 				end
 
 				-- Show windows
-				pslFrame1:Show()
-				pslFrame2:Show()
+				pslShow()
 			-- Left-click on recipe
 			elseif column == 1 and button == "LeftButton" and row ~= nil and realrow ~= nil then
 				-- If Shift is held also
@@ -2155,7 +2397,7 @@ function pslWindowFunctions()
 			end
 		end,
 		["OnMouseDown"] = function(rowFrame, cellFrame, data, cols, row, realrow, column, scrollingTable, button, ...)
-			if button == "LeftButton" then
+			if button == "LeftButton" and not IsModifierKeyDown() then
 				pslFrame2:StartMoving()
 				GameTooltip:ClearLines()
 				GameTooltip:Hide()
@@ -2197,6 +2439,28 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			-- Clear list
 			elseif command == "clear" then
 				pslClear()
+			-- Reset window positions
+			elseif command == "resetpos" then
+				-- Set the window positions back to default
+				windowPosition = {
+					["pslFrame1"] = {
+						["left"] = 1168,
+						["bottom"] = 529,
+					},
+					["pslFrame2"] = {
+						["left"] = 1168,
+						["bottom"] = 782,
+					},
+				}
+
+				-- Copy these values from global to personal window position, so if they use that setting that one is also reset
+				pcWindowPosition = windowPosition
+
+				-- Actually move the windows to their new positions
+				pslFrame1:ClearAllPoints()
+				pslFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame1"].left, windowPosition["pslFrame1"].bottom)
+				pslFrame2:ClearAllPoints()
+				pslFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", windowPosition["pslFrame2"].left, windowPosition["pslFrame2"].bottom)
 			-- Track recipe
 			elseif command == 'track' then
 				-- Split entered recipeID and recipeQuantity and turn them into real numbers
@@ -2226,14 +2490,12 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 						pslUntrackRecipe(recipeID, 0)
 
 						-- Show windows
-						pslFrame1:Show()
-						pslFrame2:Show()
+						pslShow()
 					elseif type(recipeQuantity) == "number" and recipeQuantity ~= 0 and recipeQuantity <= recipesTracked[recipeID] then
 						pslUntrackRecipe(recipeID, recipeQuantity)
 
 						-- Show windows
-						pslFrame1:Show()
-						pslFrame2:Show()
+						pslShow()
 					else
 						print("PSL: Invalid parameters. Please enter a valid recipe quantity.")
 					end
@@ -2358,63 +2620,63 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 
 			local function kpTooltip()
 				-- Treatise
-				local treatiseStatus = READY_CHECK_NOT_READY_TEXTURE
+				local treatiseStatus = iconNotReady
 				local treatiseNumber = 0
 				
 				if treatiseQuest ~= nil then
 					if C_QuestLog.IsQuestFlaggedCompleted(treatiseQuest) then
-						treatiseStatus = READY_CHECK_READY_TEXTURE
+						treatiseStatus = iconReady
 						treatiseNumber = 1
 					end
 
-					if treatiseStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if treatiseStatus == iconNotReady then progress = false end
 				end
 
 				-- Crafting order quest
-				local orderQuestStatus = READY_CHECK_NOT_READY_TEXTURE
+				local orderQuestStatus = iconNotReady
 				local orderQuestNumber = 0
 
 				if orderQuest ~= nil then 
 					if C_QuestLog.IsQuestFlaggedCompleted(orderQuest) then
-						orderQuestStatus = READY_CHECK_READY_TEXTURE
+						orderQuestStatus = iconReady
 						orderQuestNumber = 1
 					end
 
-					if orderQuestStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if orderQuestStatus == iconNotReady then progress = false end
 				end
 
 				-- Gather quests
-				local gatherQuestStatus = READY_CHECK_NOT_READY_TEXTURE
+				local gatherQuestStatus = iconNotReady
 				local gatherQuestNumber = 0
 
 				if gatherQuests ~= nil then
 					for no, questID in pairs (gatherQuests) do
 						if C_QuestLog.IsQuestFlaggedCompleted(questID) then
-							gatherQuestStatus = READY_CHECK_READY_TEXTURE
+							gatherQuestStatus = iconReady
 							gatherQuestNumber = 1
 						end
 					end
 
-					if gatherQuestStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if gatherQuestStatus == iconNotReady then progress = false end
 				end
 
 				-- Craft quests
-				local craftQuestStatus = READY_CHECK_NOT_READY_TEXTURE
+				local craftQuestStatus = iconNotReady
 				local craftQuestNumber = 0
 
 				if craftQuests ~= nil then
 					for no, questID in pairs (craftQuests) do
 						if C_QuestLog.IsQuestFlaggedCompleted(questID) then
 							craftQuestNumber = 1
-							craftQuestStatus = READY_CHECK_READY_TEXTURE
+							craftQuestStatus = iconReady
 						end
 					end
 
-					if craftQuestStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if craftQuestStatus == iconNotReady then progress = false end
 				end
 
 				-- Drops
-				local dropsStatus = READY_CHECK_NOT_READY_TEXTURE
+				local dropsStatus = iconNotReady
 				local dropsNoCurrent = 0
 				local dropsNoTotal = 0
 
@@ -2427,15 +2689,15 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 					end
 
 					if dropsNoCurrent == dropsNoTotal then
-						dropsStatus = READY_CHECK_READY_TEXTURE
+						dropsStatus = iconReady
 					end
 
-					if dropsStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if dropsStatus == iconNotReady then progress = false end
 				end
 
 				-- Dragon Shards
 				local shardQuests = {67295, 69946, 69979, 67298}
-				local shardStatus = READY_CHECK_NOT_READY_TEXTURE
+				local shardStatus = iconNotReady
 				local shardNo = 0
 
 				for _, questID in pairs (shardQuests) do
@@ -2444,25 +2706,25 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 					end
 				end
 
-				if shardNo == 4 then shardStatus = READY_CHECK_READY_TEXTURE end
+				if shardNo == 4 then shardStatus = iconReady end
 
-				if shardStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+				if shardStatus == iconNotReady then progress = false end
 
 				-- Hidden profession master
-				local hiddenStatus = READY_CHECK_NOT_READY_TEXTURE
+				local hiddenStatus = iconNotReady
 				local hiddenNumber = 0
 
 				if hiddenMaster ~= nil then 
 					if C_QuestLog.IsQuestFlaggedCompleted(hiddenMaster) then
 						hiddenNumber = 1
-						hiddenStatus = READY_CHECK_READY_TEXTURE
+						hiddenStatus = iconReady
 					end
 
-					if hiddenStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if hiddenStatus == iconNotReady then progress = false end
 				end
 
 				-- Treasures
-				local treasureStatus = READY_CHECK_NOT_READY_TEXTURE
+				local treasureStatus = iconNotReady
 				local treasureNoCurrent = 0
 				local treasureNoTotal = 0
 
@@ -2474,13 +2736,13 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 						treasureNoTotal = treasureNoTotal + 1
 					end
 
-					if treasureNoCurrent == treasureNoTotal then treasureStatus = READY_CHECK_READY_TEXTURE end
+					if treasureNoCurrent == treasureNoTotal then treasureStatus = iconReady end
 
-					if treasureStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if treasureStatus == iconNotReady then progress = false end
 				end
 
 				-- Books
-				local bookStatus = READY_CHECK_NOT_READY_TEXTURE
+				local bookStatus = iconNotReady
 				local bookNoCurrent = 0
 				local bookNoTotal = 0
 
@@ -2492,9 +2754,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 						bookNoTotal = bookNoTotal + 1
 					end
 
-					if bookNoCurrent == bookNoTotal then bookStatus = READY_CHECK_READY_TEXTURE end
+					if bookNoCurrent == bookNoTotal then bookStatus = iconReady end
 
-					if bookStatus == READY_CHECK_NOT_READY_TEXTURE then progress = false end
+					if bookStatus == iconNotReady then progress = false end
 				end
 				
 				-- Weekly knowledge (text)
@@ -2547,9 +2809,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 							end
 		
 							if C_QuestLog.IsQuestFlaggedCompleted(dropInfo.questID) then
-								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_READY_TEXTURE..":0|t "..itemLink.." - "..dropInfo.source)
+								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconReady..":0|t "..itemLink.." - "..dropInfo.source)
 							else
-								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_NOT_READY_TEXTURE..":0|t "..itemLink.." - "..dropInfo.source)
+								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconNotReady..":0|t "..itemLink.." - "..dropInfo.source)
 							end
 						end
 					end
@@ -2592,9 +2854,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 							end
 
 							if C_QuestLog.IsQuestFlaggedCompleted(questID) then
-								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_READY_TEXTURE..":0|t ".."|cffffff00|Hquest:"..questID.."62|h["..questTitle.."]|h|r")
+								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconReady..":0|t ".."|cffffff00|Hquest:"..questID.."62|h["..questTitle.."]|h|r")
 							else
-								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_NOT_READY_TEXTURE..":0|t ".."|cffffff00|Hquest:"..questID.."62|h["..questTitle.."]|h|r")
+								knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconNotReady..":0|t ".."|cffffff00|Hquest:"..questID.."62|h["..questTitle.."]|h|r")
 							end
 						end
 					end
@@ -2631,9 +2893,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 								end
 			
 								if C_QuestLog.IsQuestFlaggedCompleted(questID) then
-									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_READY_TEXTURE..":0|t "..itemLink)
+									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconReady..":0|t "..itemLink)
 								else
-									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_NOT_READY_TEXTURE..":0|t "..itemLink)
+									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconNotReady..":0|t "..itemLink)
 								end
 							end
 						end
@@ -2663,9 +2925,9 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 								end
 			
 								if C_QuestLog.IsQuestFlaggedCompleted(bookInfo.questID) then
-									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_READY_TEXTURE..":0|t "..itemLink)
+									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconReady..":0|t "..itemLink)
 								else
-									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..READY_CHECK_NOT_READY_TEXTURE..":0|t "..itemLink)
+									knowledgePointTooltipText:SetText(oldText.."\n   ".."|T"..iconNotReady..":0|t "..itemLink)
 								end
 							end
 						end
@@ -2680,7 +2942,10 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 				knowledgePointTooltip:SetWidth(knowledgePointTooltipText:GetStringWidth()+20)
 
 				-- Make progress bar green if everything is done
-				if progress == true then
+				local minValue, maxValue = knowledgePointTracker.Bar:GetMinMaxValues() 
+				local currentValue = knowledgePointTracker.Bar:GetValue()
+
+				if progress == true or maxValue == currentValue then
 					knowledgePointTracker.Bar:SetStatusBarColor(0, 1, 0)
 				else
 					knowledgePointTracker.Bar:SetStatusBarColor(1, .5, 0)
@@ -3122,6 +3387,31 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 			C_Timer.After(0.1, function() pslUpdateAssets() end)
 		end
 	
+		-- Run only when the spell cast is a known recipe
+		if recipeLibrary[spellID] then
+			-- With a delay due to how quickly that info is updated after UNIT_SPELLCAST_SUCCEEDED
+			C_Timer.After(0.1, function()
+				-- Get character info
+				local character = UnitName("player")
+				local realm = GetNormalizedRealmName()
+
+				-- Get spell cooldown info
+				local recipeName = C_TradeSkillUI.GetRecipeSchematic(spellID, false).name
+				local _, recipeCooldown = GetSpellCooldown(spellID)
+				local recipeStart = GetServerTime()
+
+				-- Set timer to 7 days for the Alchemy sac transmutes
+				if spellID == 213256 or spellID == 251808 then
+					recipeCooldown = 7 * 24 * 60 * 60
+				end
+
+				-- If the spell cooldown is 1 minute or more, track it
+				if recipeCooldown >= 60 then
+					recipeCooldowns[spellID] = {name = recipeName, cooldown = recipeCooldown, start = recipeStart, user = character .. "-" .. realm}
+				end
+			end)
+		end
+
 		-- Run only when crafting a tracked recipe, and if the remove craft option is enabled
 		if recipesTracked[spellID] and userSettings["removeCraft"] == true then
 			-- Remove 1 tracked recipe when it has been crafted (if the option is enabled)
@@ -3142,6 +3432,19 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 		local next = next
 		if next(recipesTracked) ~= nil then
 			pslUpdateNumbers()
+		end
+
+		-- If the setting for split reagent bag count is enabled
+		if userSettings["backpackCount"] == true then
+			-- Get number of free bag slots
+			local freeSlots1 = C_Container.GetContainerNumFreeSlots(0) + C_Container.GetContainerNumFreeSlots(1) + C_Container.GetContainerNumFreeSlots(2) + C_Container.GetContainerNumFreeSlots(3) + C_Container.GetContainerNumFreeSlots(4)
+			local freeSlots2 = C_Container.GetContainerNumFreeSlots(5)
+
+			-- If a reagent bag is equipped
+			if C_Container.GetContainerNumSlots(5) ~= 0 then
+				-- Replace the bag count text
+				MainMenuBarBackpackButtonCount:SetText("(" .. freeSlots1 .. "+" .. freeSlots2 .. ")")
+			end
 		end
 	end
 
@@ -3169,6 +3472,7 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 		-- Add 1 to the pslQuickOrderActive, so we can use it to count the number of fails
 		pslQuickOrderActive = pslQuickOrderActive + 1
 	end
+
 	-- Save the order recipeID if the order has been started, because SPELL_LOAD_RESULT does not fire for it anymore
 	if event == "CRAFTINGORDERS_CLAIM_ORDER_RESPONSE" then
 		pslOrderRecipeID = pslSelectedRecipeID
@@ -3189,49 +3493,92 @@ api:SetScript("OnEvent", function(self, event, arg1, arg2, ...)
 
 	-- When the Auction House is opened
 	if event == "AUCTION_HOUSE_SHOW" then
-		-- Create a temporary variable
-		if not auctionatorReagents then local auctionatorReagents end
+		-- If Auctionator is loaded
+		local loaded, finished = IsAddOnLoaded("Auctionator")
+		if finished == true then
+			-- Create a temporary variable
+			if not auctionatorReagents then local auctionatorReagents end
 
-		-- Grab all item names for tracked reagents
-		local function getReagentNames()
-			-- Reset the reagents list
-			auctionatorReagents = "PSL"
+			-- Grab all item names for tracked reagents
+			local function getReagentNames()
+				-- Reset the reagents list
+				auctionatorReagents = "PSL"
 
-			for reagentID, _ in pairs(reagentsTracked) do
-				-- Cache item
-				if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
-				
-				-- Get item info
-				local itemName = GetItemInfo(reagentID)
-		
-				-- Try again if error
-				if itemName == nil then
-					RunNextFrame(getReagentNames)
-					do return end
+				for reagentID, _ in pairs(reagentsTracked) do
+					-- Cache item
+					if not C_Item.IsItemDataCachedByID(reagentID) then local item = Item:CreateFromItemID(reagentID) end
+					
+					-- Get item info
+					local itemName = GetItemInfo(reagentID)
+			
+					-- Try again if error
+					if itemName == nil then
+						RunNextFrame(getReagentNames)
+						do return end
+					end
+
+					-- Put the item names in the temporary variable
+					auctionatorReagents = auctionatorReagents .. '^"' .. itemName .. '";;0;0;0;0;0;0;0;0;;#;'
+				end
+			end
+
+			-- Wait 3 seconds, because Auctionator needs to create its frames
+			C_Timer.After(3, function()
+				-- Create PSL Import button for Auctionator, if the frame exists (and the AddOn is loaded)
+				if AuctionatorImportListFrame and not auctionatorImportButton then
+					auctionatorImportButton = CreateFrame("Button", nil, AuctionatorImportListFrame.Import, "UIPanelButtonTemplate")
+					auctionatorImportButton:SetText("Copy from PSL")
+					auctionatorImportButton:SetWidth(110)
+					auctionatorImportButton:SetPoint("BOTTOMRIGHT", AuctionatorImportListFrame.Import, "BOTTOMLEFT", 0, 0)
+					auctionatorImportButton:SetScript("OnClick", function()
+						pslUpdateRecipes()
+						-- Add another delay because I have no idea how to optimise my AddOn
+						C_Timer.After(0.5, function()
+							getReagentNames()
+							AuctionatorImportListFrame.EditBoxContainer:SetText(auctionatorReagents)
+						end)
+					end)
+				end
+			end)
+		end
+	end
+
+	-- When the user encounters a loading screen
+	if event == "PLAYER_ENTERING_WORLD" then
+		-- Check all tracked recipe cooldowns
+		for recipeID, recipeInfo in pairs (recipeCooldowns) do
+			-- Check the remaining cooldown
+			local cooldownRemaining = recipeInfo.start + recipeInfo.cooldown - GetServerTime()
+
+			-- If the recipe is off cooldown
+			if cooldownRemaining <= 0 then
+				-- If the option to show recipe cooldowns is enabled
+				if userSettings["showRecipeCooldowns"] == true then
+					-- Show the reminder
+					print("PSL: " .. recipeInfo.name .. " (ID: " .. recipeID .. ") is ready to craft again on " .. recipeInfo.user .. ".")
 				end
 
-				-- Put the item names in the temporary variable
-				auctionatorReagents = auctionatorReagents .. '^"' .. itemName .. '";;0;0;0;0;0;0;0;0;;#;'
+				-- Remove the recipe from recipeCooldowns
+				recipeCooldowns[recipeID] = nil
 			end
 		end
+	end
 
-		-- Wait 3 seconds, because Auctionator needs to create its frames
-		C_Timer.After(3, function()
-			-- Create PSL Import button for Auctionator, if the frame exists (and the AddOn is loaded)
-			if AuctionatorImportListFrame and not auctionatorImportButton then
-				auctionatorImportButton = CreateFrame("Button", nil, AuctionatorImportListFrame.Import, "UIPanelButtonTemplate")
-				auctionatorImportButton:SetText("Copy from PSL")
-				auctionatorImportButton:SetWidth(110)
-				auctionatorImportButton:SetPoint("BOTTOMRIGHT", AuctionatorImportListFrame.Import, "BOTTOMLEFT", 0, 0)
-				auctionatorImportButton:SetScript("OnClick", function()
-					pslUpdateRecipes()
-					-- Add another delay because I have no idea how to optimise my AddOn
-					C_Timer.After(0.5, function()
-						getReagentNames()
-						AuctionatorImportListFrame.EditBoxContainer:SetText(auctionatorReagents)
-					end)
-				end)
-			end
-		end)
+	-- When a LFG queue or pet battle queue pops up
+	if event == "LFG_PROPOSAL_SHOW" or event == "PET_BATTLE_QUEUE_PROPOSE_MATCH" then
+		-- If the setting for queue sounds is enabled
+		if userSettings["queueSound"] == true then
+			-- Play the DBM-style sound
+			PlaySoundFile(567478, "Master")
+		end
+	end
+end)
+
+-- When a PvP queue pops up
+hooksecurefunc("PVPReadyDialog_Display", function()
+	-- If the setting for queue sounds is enabled
+	if userSettings["queueSound"] == true then
+		-- Play the DBM-style sound
+		PlaySoundFile(567478, "Master")
 	end
 end)

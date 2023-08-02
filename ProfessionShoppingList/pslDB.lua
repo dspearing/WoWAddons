@@ -1,3 +1,8 @@
+-- Used textures
+iconQuestion = "Interface\\RaidFrame\\ReadyCheck-Waiting"
+iconReady = "Interface\\RaidFrame\\ReadyCheck-Ready"
+iconNotReady = "Interface\\RaidFrame\\ReadyCheck-NotReady"
+
 -- Shadowlands Legendary craft SpellIDs
 slLegendaryRecipeIDs = {}
 slLegendaryRecipeIDs[307705] = { rank = 1, one = 307705, two = 332006, three = 332041, four = 338976 }

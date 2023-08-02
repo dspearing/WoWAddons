@@ -270,7 +270,6 @@
         GRM_L["Please choose between 1 and 180 days!"] = "Bitte eine Zahl zwischen 1 und 180 auswählen!"
         GRM_L["Announce Events"] = "Ereignisse"                         -- Context: "Announce Events X number of days in advance" -- the X is the editbox to modify number of days. Please include the location of where to pin that.
         GRM_L["Days in Advance"] = "Tage vorher ankündigen"
-        GRM_L["Please choose between 1 and 28 days!"] = "Bitte eine Zahl zwischen 1 und 28 auswählen!"
         GRM_L["Add Events to Calendar"] = "Ereignisse zum Kalender hinzufügen"
         GRM_L["SYNC Changes With Guildies at Rank"] = "Änderungen teilen mit"      -- Context: at Rank [DROPDOWNRANKSELECTION] or Higher. - Please note where to place dropdown box in the position of the sentence.
         GRM_L["Reactivating Data SYNC with Guildies..."] = "Synchronisation der Änderungen |cff00FF00aktiviert|r"
@@ -1658,6 +1657,33 @@
     GRM_L["Whisper"] = true
     GRM_L["{custom1} to Whisper"] = true
 
+    -- R1.979
+    GRM_L["{name}'s Settings"] = true
+    GRM_L["Reserved for GRM Macro Tool Usage. Please do not delete."] = true
+    GRM_L["Verify Promotion Dates"] = true
+    GRM_L["Verify Join Dates"] = true
+    GRM_L["Number of Unverified Promotion Dates: {num}"] = true
+    GRM_L["Number of Unverified Join Dates: {num}"] = true
+    GRM_L["Verify Only if Within Number of Days:"] = true
+    GRM_L["Confirm All"] = true
+    GRM_L["Only Confirm Dates Within {num} Days"] = true
+    GRM_L["1 Promotion Date Has Been Confirmed."] = true;
+    GRM_L["{num} Promotion Dates Have Been Confirmed."] = true
+    GRM_L["1 Join Date Has Been Confirmed."] = true;
+    GRM_L["{num} Join Dates Have Been Confirmed."] = true
+    GRM_L["Searching Log..."] = true
+    
+    -- R1.990
+    GRM_L["M+ Score" ] = true
+    GRM_L["Search Public and Officer Notes"] = true
+    GRM_L["Note Search"] = true
+    GRM_L["Tips"] = true    -- Options > Help tab - "Tips" as in helpful info.
+    GRM_L["Hold the CONTROL key down to scroll 3x the speed"] = true
+    GRM_L["Hold the SHIFT key down to scroll instantly to the top or bottom"] = true
+    
+    -- R1.981
+    GRM_L["Player Level Range:"] = true
+    
 end
     
     -- THANK YOU @Nehry for this full translation up to R1.20

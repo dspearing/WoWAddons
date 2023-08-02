@@ -13,6 +13,10 @@
 ## X-Website: http://zygorguides.com/
 ## X-License: GPL
 ## Version: 9.0
+## IconTexture: Interface\Addons\ZygorGuidesViewer\Skins\addon-icon
+## AddonCompartmentFunc: ZygorGuidesViewer_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: ZygorGuidesViewer_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: ZygorGuidesViewer_OnAddonCompartmentLeave
 
 Libs\Libs.xml
 Libs-Retail\Libs.xml

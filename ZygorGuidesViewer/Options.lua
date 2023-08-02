@@ -548,6 +548,7 @@ function ZGV:Options_DefineOptionTables()
 				self:UpdateFrame(true)
 				self.Frame:ApplySkin()
 				self.Tabs:ApplySkin()
+				ZGV.BugReport.GuideRating:Position()
 
 				C_Timer.After(0.001,function()
 					--self.frameNeedsResizing = self.frameNeedsResizing + 1
@@ -1216,12 +1217,22 @@ function ZGV:Options_DefineOptionTables()
 					set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not (self.db.profile.autogear and self.db.profile.gear_8) end, })
 			end
 			if ZGV.IsClassicWOTLK then 
-				AddOption('gear_99',{ name="Titan Rune", type='toggle', width="100", _default=false, 
+				AddOptionSpace()
+				AddOption('gear_91',{ name="Titan Rune Alpha", type='toggle', width="100", _default=false, 
 					set = function(i,v) 
 						Setter_Simple(i,v) 
 						ZGV.ItemScore.GearFinder:ClearResults() 
 						ZGV.ItemScore.GearFinder:SetTitanRune() 
 					end, 
+					width="double", 
+					disabled=function() return not self.db.profile.autogear end, }) 
+				AddOption('gear_92',{ name="Titan Rune Beta", type='toggle', width="100", _default=false, 
+					set = function(i,v) 
+						Setter_Simple(i,v) 
+						ZGV.ItemScore.GearFinder:ClearResults() 
+						ZGV.ItemScore.GearFinder:SetTitanRune() 
+					end, 
+					width="double", 
 					disabled=function() return not self.db.profile.autogear end, }) 
 			end
 
@@ -1966,8 +1977,10 @@ function ZGV:Options_DefineOptionTables()
 					if ZGV.BugReport.GuideRating.GuideRatingViewer and ZGV.BugReport.GuideRating.GuideRatingViewer:IsVisible() then
 						ZGV.BugReport.GuideRating:ShowGuideRating()
 					else 
-						ZGV.BugReport.GuideRating.GuideRatingViewer:Hide() ZGV.BugReport.GuideRating:ShowGuideRating()
+						ZGV.BugReport.GuideRating:ShowGuideRating() ZGV.BugReport.GuideRating.GuideRatingViewer:Hide() ZGV.BugReport.GuideRating:ShowGuideRating()
 					end
+				else
+					ZGV.BugReport.GuideRating:ShowGuideRating()
 				end
 			end
 		})

@@ -721,8 +721,28 @@ P.maps = {
             stopAlertIfCompleted = true,
             stopAlertIfPlayerNotEnteredDragonlands = true
         },
-        iskaaranFishingNet = {
+        researchersUnderFire = {
             enable = true,
+            desaturate = false,
+            alert = true,
+            sound = true,
+            soundFile = "OnePlus Surprise",
+            second = 600,
+            stopAlertIfCompleted = true,
+            stopAlertIfPlayerNotEnteredDragonlands = true
+        },
+        timeRiftThaldraszus = {
+            enable = true,
+            desaturate = false,
+            alert = true,
+            sound = true,
+            soundFile = "OnePlus Surprise",
+            second = 600,
+            stopAlertIfCompleted = false,
+            stopAlertIfPlayerNotEnteredDragonlands = true
+        },
+        iskaaranFishingNet = {
+            enable = false,
             alert = true,
             sound = true,
             soundFile = "OnePlus Surprise",

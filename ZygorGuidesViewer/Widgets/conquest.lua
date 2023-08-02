@@ -35,11 +35,10 @@ function widget:Initialise()
 		:SetText("")
 		:SetIgnoreParentAlpha(true)
 	.__END
-	self.frame.uncapped = CHAIN(self.frame:CreateFontString())
+	self.frame.cap = CHAIN(self.frame:CreateFontString())
 		:SetPoint("TOP",self.frame.text,"BOTTOM",0,-2)
-		:SetFont(FONT,12) 
+		:SetFont(FONT,16) 
 		:SetTextColor(1,1,1,1)
-		:SetText(L["widget_uncapped"])
 		:SetIgnoreParentAlpha(true)
 	.__END
 
@@ -51,12 +50,18 @@ end
 
 function widget:Update()
 	local currency = C_CurrencyInfo.GetCurrencyInfo(1602)
+
 	if currency.maxQuantity>0 then
-		self.frame.text:SetText(L["widget_conquest_format"]:format(currency.quantity,currency.maxQuantity))
-		self.frame.uncapped:Hide()
+		self.frame.text:SetText(L["widget_capped_general"]:format(currency.quantity,currency.maxQuantity))
 	else
 		self.frame.text:SetText(currency.quantity)
-		self.frame.uncapped:Show()
+	end
+
+	if (currency.maxWeeklyQuantity or 0) > 0 then
+		self.frame.cap:SetText(L["widget_capped_weekly"]:format(currency.quantityEarnedThisWeek,currency.maxWeeklyQuantity))
+		self.frame.cap:Show()
+	else
+		self.frame.cap:Hide()
 	end
 end
 

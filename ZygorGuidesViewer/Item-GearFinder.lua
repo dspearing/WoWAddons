@@ -667,7 +667,7 @@ function GearFinder:CreateMainFrame()
 			:SetPoint("BOTTOMRIGHT",-10,10)
 			:SetSize(175,15)
 			:SetScript("OnClick", function() 
-				ZGV.db.profile.gear_99 = not ZGV.db.profile.gear_99
+				ZGV.db.profile.gear_91 = not ZGV.db.profile.gear_91
 				GearFinder:ClearResults()
 				GearFinder:SetTitanRune()
 				ZGV:RefreshOptions()
@@ -677,18 +677,44 @@ function GearFinder:CreateMainFrame()
 		MF.TitanToggle.Text = CHAIN(MF.TitanToggle:CreateFontString())
 			:SetPoint("RIGHT")
 			:SetFont(FONT,11)
-			:SetText("Use Titan Rune drops")
+			:SetText("Titan Rune Alpha drops")
 			:SetSize(150,15)
 			:SetJustifyH("LEFT")
 			:SetWordWrap(false)
 		.__END
+
+		MF.TitanToggleBeta = CHAIN(CreateFrame("Button",nil,MF.CenterColumn))
+			:SetPoint("BOTTOMRIGHT",-10,30)
+			:SetSize(175,15)
+			:SetScript("OnClick", function() 
+				ZGV.db.profile.gear_92 = not ZGV.db.profile.gear_92
+				GearFinder:ClearResults()
+				GearFinder:SetTitanRune()
+				ZGV:RefreshOptions()
+			end)
+			:Show()
+			.__END
+		MF.TitanToggleBeta.Text = CHAIN(MF.TitanToggleBeta:CreateFontString())
+			:SetPoint("RIGHT")
+			:SetFont(FONT,11)
+			:SetText("Titan Rune Beta drops")
+			:SetSize(150,15)
+			:SetJustifyH("LEFT")
+			:SetWordWrap(false)
+		.__END
+
 		GearFinder:SetTitanRune()
+
 		CHAIN(MF.TitanToggle:GetNormalTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
 		CHAIN(MF.TitanToggle:GetPushedTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
 		CHAIN(MF.TitanToggle:GetHighlightTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
 		CHAIN(MF.TitanToggle:GetDisabledTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
 
-	
+		CHAIN(MF.TitanToggleBeta:GetNormalTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
+		CHAIN(MF.TitanToggleBeta:GetPushedTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
+		CHAIN(MF.TitanToggleBeta:GetHighlightTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
+		CHAIN(MF.TitanToggleBeta:GetDisabledTexture()):ClearAllPoints():SetPoint("LEFT"):SetSize(17,17)
+
 	end
 
 	local left_column = {
@@ -848,11 +874,18 @@ end
 function GearFinder:SetTitanRune()
 	if not ZGV.IsClassicWOTLK then return end
 	if not GearFinder.MainFrame then return end
-	if ZGV.db.profile.gear_99 then
+	if ZGV.db.profile.gear_91 then
 		ZGV.ButtonSets.Interactions.CHECKBOX_ON:AssignToButton(GearFinder.MainFrame.TitanToggle)
 	else
 		ZGV.ButtonSets.Interactions.CHECKBOX:AssignToButton(GearFinder.MainFrame.TitanToggle)
 	end
+
+	if ZGV.db.profile.gear_92 then
+		ZGV.ButtonSets.Interactions.CHECKBOX_ON:AssignToButton(GearFinder.MainFrame.TitanToggleBeta)
+	else
+		ZGV.ButtonSets.Interactions.CHECKBOX:AssignToButton(GearFinder.MainFrame.TitanToggleBeta)
+	end
+
 end
 
 
@@ -974,7 +1007,7 @@ function GearFinder:DisplayResults()
 	-- find best dungeon
 	local sorted_dungeons = {}
 	for i,v in pairs(dungeons) do
-		if i~="titanrune" then
+		if i~="titanrune_alpha" and i~="titanrune_beta" then
 			table.insert(sorted_dungeons,{i,v})
 		end
 	end

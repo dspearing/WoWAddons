@@ -220,18 +220,23 @@ options.help = {
                     type = "description",
                     name = "404Polaris"
                 },
-                ["ryanfys"] = {
+                ["fubaWoW"] = {
                     order = 9,
+                    type = "description",
+                    name = "fubaWoW"
+                },
+                ["ryanfys"] = {
+                    order = 10,
                     type = "description",
                     name = format("%s: %s", "ryanfys", "阿尔托利亜 @ " .. L["Demon Fall Canyon"] .. " (CN)")
                 },
                 ["MouJiaoZi"] = {
-                    order = 10,
+                    order = 11,
                     type = "description",
                     name = format("%s: %s", "MouJiaoZi", E.InfoColor .. "某餃子" .. "|r")
                 },
                 ["Jaenichen"] = {
-                    order = 11,
+                    order = 12,
                     type = "description",
                     name = format("%s: %s", "Jaenichen", E.InfoColor .. "beejayjayn" .. "|r")
                 }
@@ -346,7 +351,8 @@ do -- 本地化
             F.CreateClassColorString("헬리오스의방패<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "WARRIOR"),
             F.CreateClassColorString("불광불급옹<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "HUNTER"),
             F.CreateClassColorString("다크어쌔신<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "DEMONHUNTER"),
-            F.CreateClassColorString("크림슨프릴<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "MAGE")
+            F.CreateClassColorString("크림슨프릴<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "MAGE"),
+            "Sang Jeon @ GitHub"
         },
         ["français (frFR)"] = {
             "PodVibe @ CurseForge",

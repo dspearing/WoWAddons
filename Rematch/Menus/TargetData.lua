@@ -124,7 +124,7 @@ rematch.targetData = {
     -- mapID 2025: Thaldraszus
     {9,2025,197336,71166,4,25,3396}, -- Enyobon
     {9,2025,197350,71180,4,25,393,459,646}, -- Setimothes
-    {9,2025,202458,74794,4,25,3474,3473,3472}, -- Stargazer Zenoth
+    {9,2025,202458,74792,4,25,3474,3473,3472}, -- Stargazer Zenoth
     {9,2025,202452,74794,4,25,3466}, -- Malfunctioning Matrix
     -- mapID 2151: Forbidden Reach
     {9,2151,200677,73146,4,25,3444}, -- Storm-Touched Swoglet

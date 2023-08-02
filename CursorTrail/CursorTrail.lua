@@ -26,6 +26,7 @@ local floor = _G.floor
 local GetAddOnMetadata = _G.GetAddOnMetadata
 local GetBuildInfo = _G.GetBuildInfo
 local GetCursorPosition = _G.GetCursorPosition
+local GetCVar = _G.GetCVar
 local GetTime = _G.GetTime
 local geterrorhandler = _G.geterrorhandler
 local ipairs = _G.ipairs
@@ -41,6 +42,7 @@ local select = _G.select
 local string = _G.string
 local table = _G.table
 local tonumber = _G.tonumber
+local UIParent = _G.UIParent
 local UnitAffectingCombat = _G.UnitAffectingCombat
 local xpcall = _G.xpcall
 
@@ -75,7 +77,7 @@ GREEN2      = "|cff80FF00"  -- Bright Green
 ORANGE      = "|cffEE5500"
 RED         = "|cffFF0000"
 RED2        = "|cffFF2020"  -- Bright Red
-WHITE       = "|cffffffff"
+WHITE       = "|cffFFFFFF"
 YELLOW      = "|cffFDDA0D"
 
 -- Misc.
@@ -98,10 +100,11 @@ kScreenBottomFourthMult = 1.077
 kNewFeatures =  -- For flagging new features in the UI.
 {
     ----"OffsetLabel", "MouseLookCheckbox", -- For testing.
-    
-    -- Added in version 10.1.0.1 ...
-    "ShapeLabel",
-    "HelpBtn",
+
+--~ Disabled this notification in 10.1.5.2 ...
+--~     -- Added in version 10.1.0.1 ...
+--~     "ShapeLabel",
+--~     "HelpBtn",
 }
 
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
@@ -109,17 +112,21 @@ kNewFeatures =  -- For flagging new features in the UI.
 kDefaultModelID = 166498  -- "Electric, Blue & Long"
 kDefaultConfig =
 {
+    ShapeFileName = nil,
     ModelID = kDefaultModelID,
+    ShapeColorR = 1.0, ShapeColorG = 1.0, ShapeColorB = 1.0,
+    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - --
+    UserShadowAlpha = 0.0,  -- (Solid = 1.0.  Transparent = 0.0)
     UserScale = 1.0,  -- (User model scale.  It is 1/100th the value shown in the UI.)
     UserAlpha = 1.00,  -- (Solid = 1.0.  Transparent = 0.0)
-    UserShadowAlpha = 0.0,  -- (Solid = 1.0.  Transparent = 0.0)
+    Strata = "HIGH",
     UserOfsX = 0, UserOfsY = 0,  -- (User model offsets.  They are 1/10th the values shown in the UI.)
+    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - --
+    FadeOut = false,
     UserShowOnlyInCombat = false,
     UserShowMouseLook = false,
-    FadeOut = false,
-    Strata = "HIGH",
-    ShapeFileName = nil,
-    ShapeColorR = 1.0, ShapeColorG = 1.0, ShapeColorB = 1.0,
+    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - --
+--~     -- Preserve window location.
 --~     OptionsSetPoint1 = nil,
 --~     OptionsSetPoint2 = nil,
 --~     OptionsSetPoint3 = nil,
@@ -144,8 +151,8 @@ kDefaultConfig3.UserAlpha = 1.0
 --~ kDefaultConfig3.FadeOut = true
 
 kDefaultConfig4 = CopyTable(kDefaultConfig)
-kDefaultConfig4.ModelID = 166926  -- "Soul Skull"
 kDefaultConfig4.ShapeFileName = kMediaPath.."Ring Soft 2.tga"
+kDefaultConfig4.ModelID = 166926  -- "Soul Skull"
 kDefaultConfig4.ShapeColorR = 0.984
 kDefaultConfig4.ShapeColorG = 0.714
 kDefaultConfig4.ShapeColorB = 0.82
@@ -192,6 +199,22 @@ kDefaultConfig10.UserAlpha = 0.80
 kDefaultConfig10.UserShadowAlpha = 0.50
 kDefaultConfig10.FadeOut = true
 
+--~ -- NOTE: The next config only works for Retail WoW.
+--~ kDefaultConfig11 = CopyTable(kDefaultConfig)
+--~ kDefaultConfig11.ShapeFileName = kMediaPath.."Ring 3.tga"
+--~ kDefaultConfig11.ModelID = 1417024  -- "Sparkling, Rainbow"
+--~ kDefaultConfig11.ShapeColorR = 1.0
+--~ kDefaultConfig11.ShapeColorG = 0.882
+--~ kDefaultConfig11.ShapeColorB = 0.882
+--~ kDefaultConfig11.UserScale = 0.6
+--~ kDefaultConfig11.UserAlpha = 1.0
+--~ kDefaultConfig11.UserShadowAlpha = 0.99
+--~ kDefaultConfig11.Strata = "HIGH"
+--~ kDefaultConfig11.FadeOut = false
+--~ kDefaultConfig11.UserShowOnlyInCombat = true
+--~ kDefaultConfig11.UserShowMouseLook = true
+
+
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Switches                                          ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -219,38 +242,24 @@ kTimer1Interval = 0.250 -- seconds
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 -------------------------------------------------------------------------------
-function setGameFrame()
---~     local w1, h1 = Globals.WorldFrame:GetSize()
---~     local scale1 = Globals.WorldFrame:GetEffectiveScale()
---~     w1, h1 = floor(w1*scale1), floor(h1*scale1)
-
---~     local w2, h2 = Globals.UIParent:GetSize()
---~     local scale2 = Globals.UIParent:GetEffectiveScale()
---~     w2, h2 = floor(w2*scale2), floor(h2*scale2)
-
---~     if (w1 ~= w2 or h1 ~= h2) then
---~         -- Use UIParent to be compatible with addons that change game's view port size.
-        kGameFrame = Globals.UIParent
---~         ----print(kAddonName.." using UIParent.")
---~     else
---~         -- Use WorldFrame so fullscreen world map doesn't break this addon.
---~         kGameFrame = Globals.WorldFrame
---~         ----print(kAddonName.." using WorldFrame.")
---~     end
-end
-setGameFrame() -- Sets kGameFrame.
--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-function getScreenSize()        return kGameFrame:GetSize()           end
-function getScreenScale()       return kGameFrame:GetEffectiveScale() end
+kGameFrame = UIParent
 function getScreenScaledSize()
-    local uiScale = getScreenScale()
-    local w, h =  getScreenSize()
+    local uiScale = kGameFrame:GetEffectiveScale()  -- i.e. getScreenScale()
+    ----print("uiScale:", round(uiScale,4), "  GetCVar(uiScale):", round(GetCVar("uiScale"),4))
+    local w, h = kGameFrame:GetSize()  -- i.e. getScreenSize()
     w = w * uiScale
     h = h * uiScale
     local midX = w / 2
     local midY = h / 2
     local hypotenuse = (w^2 + h^2) ^ 0.5
     return w, h, midX, midY, uiScale, hypotenuse
+end
+
+-------------------------------------------------------------------------------
+function updateScaleVars()
+    ScreenW, ScreenH, ScreenMidX, ScreenMidY, ScreenScale, ScreenHypotenuse = getScreenScaledSize()
+    ScreenFourthH = ScreenH * 0.25  -- 1/4th screen height.
+    ----print("ScreenScale:", round(ScreenScale,4), " GetCVar(uiScale):", GetCVar("uiScale"), " ScreenW:", round(ScreenW,1), " ScreenH:", round(ScreenH,1))
 end
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -315,6 +324,7 @@ Globals.SlashCmdList[kAddonName] = function (params)
     -- - - - - - - - - - - - - - - - - - - - - - - - - - -
     elseif (params == "reload") then
         if (OptionsFrame and OptionsFrame:IsShown()) then OptionsFrame:Hide() end
+        updateScaleVars()
         CursorTrail_Load()
         CursorTrail_ON()
         ----if (OptionsFrame and OptionsFrame:IsShown()) then OptionsFrame_UpdateUI(PlayerConfig) end
@@ -374,7 +384,12 @@ Globals.SlashCmdList[kAddonName] = function (params)
         CursorTrail_Hide()
         printMsg(kAddonName..": "..ORANGE.."OFF|r  (Automatically turns back on at next reload, or by opening the options window.)")
     -- - - - - - - - - - - - - - - - - - - - - - - - - - -
-    elseif (HandleToolSwitches(params) ~= true) then
+--~     elseif (params == "test") then
+--~         ----print("UIParent:GetEffectiveScale():", UIParent:GetEffectiveScale())
+--~         ----UIParent:SetScale(0.7)
+--~         updateScaleVars()
+    -- - - - - - - - - - - - - - - - - - - - - - - - - - -
+    elseif not HandleToolSwitches(params) then
         printMsg(kAddonName..": Invalid slash command ("..params..").")
         ----DebugText(kAddonName..": Invalid slash command ("..params..").")
     end
@@ -391,7 +406,7 @@ local EventFrame = CreateFrame("Frame")
 EventFrame:SetScript("OnEvent", function(self, event, ...)
 	-- This calls a method named after the event, passing in all the relevant args.
     -- Example:  MyAddon.frame:RegisterEvent("XYZ") calls function MyAddon.frame:XYZ()
-    --           with arguments named arg1, arg2, etc.
+    --           with any arguments passed in the "..." part.
 	self[event](self, ...)
 end)
 
@@ -407,6 +422,16 @@ function       EventFrame:ADDON_LOADED(addonName)
 end
 
 -------------------------------------------------------------------------------
+--~ EventFrame:RegisterEvent("CVAR_UPDATE")
+--~ function       EventFrame:CVAR_UPDATE(varName, varValue)
+--~     ----dbg("CVAR_UPDATE("..(varName or "nil")..", "..(varValue or "nil")..")")
+--~     if (varName and varName == "uiScale") then
+--~         ----dbg("*** Calling updateScaleVars() ***")
+--~         updateScaleVars()
+--~     end
+--~ end
+
+-------------------------------------------------------------------------------
 EventFrame:RegisterEvent("PLAYER_ENTERING_WORLD") --VARIABLES_LOADED
 function       EventFrame:PLAYER_ENTERING_WORLD()
     ----dbg("PLAYER_ENTERING_WORLD")
@@ -420,12 +445,17 @@ end
 EventFrame:RegisterEvent("UI_SCALE_CHANGED")
 function       EventFrame:UI_SCALE_CHANGED()
     ----dbg("UI_SCALE_CHANGED")
-    ScreenW, ScreenH, ScreenMidX, ScreenMidY, ScreenScale, ScreenHypotenuse = getScreenScaledSize()
-    ScreenFourthH = ScreenH * 0.25  -- 1/4th screen height.
+    updateScaleVars()
     if CursorModel then
         -- Reload the cursor model to apply the new UI scale.
         CursorTrail_Load()
     end
+end
+
+-------------------------------------------------------------------------------
+EventFrame:RegisterEvent("LOADING_SCREEN_DISABLED")
+function       EventFrame:LOADING_SCREEN_DISABLED()
+    updateScaleVars()
 end
 
 -------------------------------------------------------------------------------
@@ -553,6 +583,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
     -- Follow mouse cursor.
     -- - - - - - - - - - - - - - - - - - - - - - - - --
     local cursorX, cursorY = GetCursorPosition()
+    ----DebugText("x: "..cursorX..",  y: "..cursorY)
     if (cursorX ~= gPreviousX or cursorY ~= gPreviousY) then
         -- Cursor position changed.  Keep model position in sync with it.
 
@@ -900,7 +931,7 @@ function CursorTrail_ApplyModelSettings(userScale, userOfsX, userOfsY, userAlpha
     -- UPDATE MODEL --
     CursorModel:SetScale(finalScale)
     CursorModel:SetAlpha(userAlpha)
-    ----print("CursorModel:GetEffectiveScale():", CursorModel:GetEffectiveScale()) -- i.e. finalScale * getScreenScale()
+    ----print("CursorModel:GetEffectiveScale():", CursorModel:GetEffectiveScale()) -- i.e. finalScale * kGameFrame:GetEffectiveScale()
     ----if (CursorModel:GetEffectiveScale() < 0.0113) then printMsg(kAddonName.." WARNING - Model scaled too small.  ") end
 
     -- Compute model step size and offset.

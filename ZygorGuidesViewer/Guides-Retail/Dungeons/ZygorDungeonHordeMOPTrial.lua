@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Bl
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Blackrock Depths: Detention Block")
 ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Deadmines",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Deadmines dungeon. This dungeon is located in Westfall on the continent of Eastern Kingdoms and is home to the Defias Brotherhood, led by Edwin VanCleef. This dungeon ranges from level 10 to 30.",
+description="This guide will walk you through completing the Deadmines dungeon. This dungeon is located in Westfall on the continent of Eastern Kingdoms and is home to the Defias Brotherhood, led by Edwin VanCleef. This dungeon ranges from level 10 to 30.",
 mapid=291,
 achieveid={628},
 patch='30002',
@@ -276,7 +276,7 @@ Congratulations, you have completed The Deadmines (Heroic)! |only if heroic_dung
 ]])
 ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Dire Maul: Capital Gardens",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Dire Maul: Capital Gardens dungeon. This dungeon is located in Feralas on the continent of Kalimdor and is home to undead and arcane creatures imprisoned by Prince Tortheldrin. This dungeon ranges from level 15 to 30.",
+description="This guide will walk you through completing the Dire Maul: Capital Gardens dungeon. This dungeon is located in Feralas on the continent of Kalimdor and is home to undead and arcane creatures imprisoned by Prince Tortheldrin. This dungeon ranges from level 15 to 30.",
 mapid=236,
 achieveid={644},
 patch='30002',
@@ -521,7 +521,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Sc
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Scarlet Monastery")
 ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Scholomance",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Scholomance dungeon. This dungeon is located in the Western Plaguelands on the continent of Eastern Kingdoms and is the academy for Scourge necromancers. This dungeon ranges from level 15 to 30.",
+description="This guide will walk you through completing the Scholomance dungeon. This dungeon is located in the Western Plaguelands on the continent of Eastern Kingdoms and is the academy for Scourge necromancers. This dungeon ranges from level 15 to 30.",
 mapid=476,
 achieveid={645},
 patch='30002',
@@ -678,7 +678,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Su
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Classic Dungeons\\Uldaman")
 ZygorGuidesViewer:RegisterGuide("Dungeon Guides\\Classic Dungeons\\Wailing Caverns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Wailing Caverns dungeon. This dungeon is located in the Northern Barrens on the continent of Kalimdor and is home to the Druids of the Fang. This dungeon ranges from level 10 to 30.",
+description="This guide will walk you through completing the Wailing Caverns dungeon. This dungeon is located in the Northern Barrens on the continent of Kalimdor and is home to the Druids of the Fang. This dungeon ranges from level 10 to 30.",
 mapid=279,
 achieveid={630},
 patch='30002',
@@ -900,7 +900,7 @@ patch='40100',
 condition_suggested=function() return level>=15 and level<=30 end,
 keywords={"Terokkar, Forest"},
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Auchindoun: Sethekk Halls dungeon.",
+description="This guide will walk you through the Auchindoun: Sethekk Halls dungeon.",
 },[[
 step
 label "start"
@@ -1020,7 +1020,7 @@ patch='30003',
 condition_suggested=function() return level>=10 and level<=30 end,
 keywords={"HC, BF, HFC, HFP, Peninsula"},
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Hellfire Citadel: The Blood Furnace dungeon.",
+description="This guide will walk you through the Hellfire Citadel: The Blood Furnace dungeon.",
 },[[
 step
 label "start"
@@ -1129,7 +1129,7 @@ achieveid={484},
 patch='50004',
 condition_suggested=function() return level>=20 and level<=30 end,
 keywords={"Zul'Drak"},
-description="\nThis guide will walk you through the Gundrak dungeon.",
+description="This guide will walk you through the Gundrak dungeon.",
 },[[
 step
 label "lfg"
@@ -1272,7 +1272,7 @@ achieveid={477},
 patch='40100',
 condition_suggested=function() return level>=10 and level<=30 end,
 keywords={"Howling, Fjord, UK"},
-description="\nThis guide will walk you through the Utgarde Keep: Utgarde Keep dungeon.",
+description="This guide will walk you through the Utgarde Keep: Utgarde Keep dungeon.",
 },[[
 step
 label "lfg"
@@ -1392,7 +1392,7 @@ achieveid={4833},
 patch='40003',
 condition_suggested=function() return level>=30 and level<=35 end,
 keywords={"Searing, Gorge, Burning, Steppes, BRM, BRC"},
-description="\nThis guide will walk you through the Blackrock Caverns dungeon.",
+description="This guide will walk you through the Blackrock Caverns dungeon.",
 },[[
 step
 label "lfg"
@@ -1562,7 +1562,7 @@ achieveid={4846},
 patch='40003',
 condition_suggested=function() return level>=30 and level<=35 end,
 keywords={"Deepholm"},
-description="\nThis guide will walk you through the Stonecore dungeon.",
+description="This guide will walk you through the Stonecore dungeon.",
 },[[
 step
 label "start"
@@ -1679,7 +1679,7 @@ achieveid={6761},
 patch='50004',
 condition_suggested=function() return level>=35 and level<=35 end,
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Scarlet Monastery dungeon.",
+description="This guide will walk you through the Scarlet Monastery dungeon.",
 },[[
 step
 Press _I_ and queue for Scarlet Monastery or enter the dungeon with your group |goto Scarlet Monastery/1 74.2,46.2 |c

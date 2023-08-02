@@ -20,3 +20,6 @@
 0.19 - Updated TOC
 0.20 - Updated TOC
 0.21 - Updated Brewmaster Monk
+0.22 - Updated Windwalker Monk
+0.23 - Fixed spelling error in Windwalker Macro
+0.24 - Updated TOC and Brewmaster Monk

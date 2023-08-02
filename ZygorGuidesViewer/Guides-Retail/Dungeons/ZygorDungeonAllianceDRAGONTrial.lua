@@ -10,7 +10,7 @@ patch='80001',
 condition_suggested=function() return level>=47 and level <= 50 end,
 keywords={"battle","for","azeroth","priestess","alun'za","Vol'kaal","rezan","yazma","zuldazar","Atal'Dazar"},
 author="support@zygorguides.com",
-description="\nTo complete this dungeon, you will need to kill the following bosses:\n\nPriestess Alun'za\nVol'kaal\nRezan\nYazma",
+description="To complete this dungeon, you will need to kill the following bosses:\n\nPriestess Alun'za\nVol'kaal\nRezan\nYazma",
 image=ZGV.IMAGESDIR.."AtalDazar",
 },[[
 step

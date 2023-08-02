@@ -1149,6 +1149,8 @@ data.basenodes.DungeonFloors = --[[LIBROVER]] {
 			"Aberrus, the Shadowed Crucible/1 48.71,73.17 -x- Aberrus, the Shadowed Crucible/2 45.58,68.61",
 			"Aberrus, the Shadowed Crucible/2 55.52,89.13 -x- Aberrus, the Shadowed Crucible/3 50.74,90.64",
 			"Aberrus, the Shadowed Crucible/3 50.98,13.52 -x- Aberrus, the Shadowed Crucible/4 48.95,10.04",
+
+			"Aberrus, the Shadowed Crucible/5 33.54,44.55 <radius:15> -x- Aberrus, the Shadowed Crucible/6 57.03,61.35 <radius:15>",
 		},
 }
 

@@ -1,52 +1,22 @@
-lightweight tag 2fdf02d92c7f143321c8cee739fc42ff3c8f9aad 10.1.0-04
+lightweight tag c9c4bb2bd6d88fe50c30a3070e9e84a3af3d282b 10.1.5-02
 Author:	Dave Hendler <sollaires@gmail.com>
-Date:	Sun May 7 14:24:02 2023 -0700
+Date:	Tue Jul 11 14:14:48 2023 -0700
 
-commit 2fdf02d92c7f143321c8cee739fc42ff3c8f9aad
+commit c9c4bb2bd6d88fe50c30a3070e9e84a3af3d282b
 Author: Dave Hendler <sollaires@gmail.com>
-Date:   Sun May 7 14:24:02 2023 -0700
+Date:   Tue Jul 11 14:14:48 2023 -0700
 
-    Set logo to show up in addon list
+    Bump version again
 
-commit 823f284ecffb9eb365676a387512dab014b1c31c
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 17:38:26 2023 +0200
+commit d19a3851f80fd45004e69b6a5135efcf488ec996
+Author: Dave Hendler <sollaires@gmail.com>
+Date:   Tue Jul 11 14:14:33 2023 -0700
 
-    style: fix identation
+    Bump a change to see if CurseForge finds it?
 
-commit 823f284ecffb9eb365676a387512dab014b1c31c
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 17:38:26 2023 +0200
+commit d6833ae1d7da67cdde4cad1607b3a006e0fc82fc
+Author: Dave Hendler <sollaires@gmail.com>
+Date:   Tue Jul 11 12:13:47 2023 -0700
 
-    style: fix identation
-
-commit 42bb2bb1fc3caf02ccaaadb22acd6e1ae07280aa
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 17:10:23 2023 +0200
-
-    refactor: move to AddonCompartmentFrame:RegisterAddon
-
-commit 7279bb73ae38ea95b95942415ac7722b1934a398
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 17:03:11 2023 +0200
-
-    docs: changelog
-
-commit a705ab607114fd062c616c456674a0fbdee830e8
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 17:02:30 2023 +0200
-
-    fix: namespace AddonCompartment handler
-
-commit 14aa71d69f3114bb55d788fc65fca6f3a6d12abc
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 16:47:31 2023 +0200
-
-    build: changelog + version bump
-
-commit 9173155ccb7a21b9ad74854a711210606d8eaeb9
-Author: Alex <alexander.spieslechner@gmail.com>
-Date:   Sun May 7 16:46:18 2023 +0200
-
-    feat: move minimap button to addon compartment
+    Bump TOC version for 10.1.5
 

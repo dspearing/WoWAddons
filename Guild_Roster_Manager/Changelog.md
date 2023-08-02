@@ -1,4 +1,121 @@
 
+## **VERSION 1.981 RELEASE - July 29th 2023**
+
+
+***QUALITY OF LIFE***
+
+> The GRM Roster window is slowly being improved. 2 Additional "minor" quality of life additions:
+
+* Buttons to the right side of each of the search boxes to just instantly clear the text in there without needing to click inside and delete everything manually. Just clear with the click of the "X" button.
+
+* Columns will now indicate which is selected for sorting, including if you are double sorting, like "Last online" and "Rank" at the same time.
+
+![Column Sorting indication](https://i.imgur.com/YeqcsaQ.jpg)
+
+
+* Announcing events for anniversaries and birthdays defaulted to 14 days in advance, with a max announcement of 4 weeks, or 28 days in advance. I have expanded that so you can configure it to be notified of these events up to 99 days in advance, and you can add them to the calendar far in advance as a result.
+
+![Announce events much earlier](https://i.imgur.com/uSA47ny.png)
+
+* Added level filtering to the data export, as well as cleaned up the frames a little. I noticed in some of the localization/translations they were too compacted together to cause overlap in some languages. They are now spaced a little better to accomodate.
+
+![Level range filtering added to expot](https://i.imgur.com/QoHPDHS.jpg)
+
+* AddOnSkins file has been updated. Please download it directly from the [AddOnSkins Git Repository](https://github.com/TheGeneticsGuy/Guild_Roster_Manager_AddonSkinsFile), where you can then copy it into the following location: `Interface\Addons\AddOnSkins\Skins\AddOns\Guild_Roster_Manager.lua`
+
+*Please note, I have sent a "pull request" through github to merge my update to the main AddOnSkins release, but it has not yet been approved and sometimes this can take many weeks for the dev to take a look. In the meantime, if you don't want to wait, just follow the above instructions.
+
+***BUG FIXES***
+
+* Fixed some issues with the GRM export. Some of the headers were not being added or removed properly. I ended up rewriting much of the backend of this process to just optimize it a bit, so probably won't be noticeable on the front-end, but if I ever decide to do more with this it will be all the easier.
+
+* Fixed a bug that made it so GRM would not load at all when trying to configure the settings. I typo'd a version check so some edge cases that would refer back were getting nil instead of a string. Oops!
+
+* Fixed some alignment issues with a few frames.
+
+
+
+## **VERSION 1.980 RELEASE - July 24th 2023**
+
+***QUALITY OF LIFE***
+
+* GRM's Custom Guild Roster has been expanded. Added M+ Column, Note, and Officer note, as well as the ability to search note and officer notes. More to come soon!
+
+![Expanded GRM Guild Roster](https://i.imgur.com/aVcbX9J.jpg)
+
+* The GRM Guild Roster log sorting is SMARTER! If you are sorting the roster by level, name, or last online, you can carry that sorting over when you sort by rank. In other words, let's say you are sorting by names alphabetically. If you click on the rank column to sort the roster by rank, then each rank will now be properly in order, but also within each rank they will be sorted alphabetically. The same applies to level, and last online. This can be done ascending, or descending. 
+
+* Added a new "Tips" section to the Options > Help tab. Just a couple items for now regarding the CTRL and SHFT modifiers when scrolling, but I will likely expand this eventually. Not quire sure what to do with tips atm.
+
+![Tips Section](https://i.imgur.com/u8hSy2Z.jpg)
+
+* Small note, the "Mass verify" of the unverified join and promotion dates, I have decided to restrict those EXCLUSIVELY to officer use only. I have never had any guild trolls in my own guild, so I have allowed people of most ranks, aside from the starter rank, to be able to make their own changes, like set alts and so on. However, mass verify is a bit of a powerful tool that should really be very limited in use and I don't want to see someone come in and mass-verify a bunch dates that has been in the guild a short while and maybe doesn't sync ever or often. The mass verify button will ONLY appear if you are an officer. This applies to Classic and Retail.
+
+***BUG FIXES***
+
+* Fixed a Lua error if you are searching a log that is fairly massive in size (tens of thousands of entries), if you tried to mousewheel up/down while in the middle of the deep search it could throw a lua error. That will no longer happen. In addition, it should no longer re-search the log when you click on a different tab. Oops!
+
+* Missing key message when opening the macro tool no longer will happen
+
+* The log should no longer automatically open every single game session if you have it set to only open if there are changes.
+
+* Fixed a lua error that could occur for some people immediately after login. It didn't break anything, but it would be annoying to get an indefinite bug every session.
+
+* Fixed a scaling bug that could occur after updating the last time... If yours was broken, it fixes the problem and then resets the scaling, so if you had resized your window you may need to do it again. It does attempt to retain your setting, but in some cases the value was corrupted so had to be reset. 
+
+* "---------CHANGES---------" was showing everytime you opened the log on the first time, even if there was none. This will no longer happen unless there were actual changes on login. In addition, the indication of the start of the "OLD LOG" entries should now properly show.
+
+* Fixed a lua error that occurred when patching GRM from a previous version that was a bit older. The patch would fail thus GRM would never load. This should now be fixed.
+
+* Fixed a lua error that could occur when setting someone as main. It didn't break anything, but it was sort of a UI error where it wouldn't refresh the mouseover window properly after setting as main. This would not always happen, just in some cases.
+
+* Fixed an issue that seemed to only plague Classic Era, where when a person left the guild it would multi-spam. I haven't actually tested this but I found the vulnerability where it could happen so I assume that fixed it. Let me know!
+
+
+## **VERSION 1.979 RELEASE - July 22nd 2023**
+
+***QUALITY OF LIFE***
+
+* You can now mass verify Unverified Join dates and rank promotion dates. You will notice these as when you mouse over the player, or look at them in the audit you will see a "!!" tag on the date. This can happen from a couple of ways. First, there was a bug recently that left some dates unverified that is resolved in this update. Second, the guild event log on Blizz's server only stores the last 100 events from within the guild. If you are in a highly active guild and 100 events have already occurred since you last logged in, GRM will not know what happened, so GRM will find a change, like someone joined while you were offline, but not be able to verify exactly when. And third, if you are on Classic Era Vanilla WOW, since there is no guild event log yet in the game (it wasn't introduced until patch 2.3), then GRM is unable to query the server for the info.
+
+![Mass Confirm Unverified Dates](https://i.imgur.com/OKr6tJg.jpg)
+
+* The GRM_Tool macro now has a default message stored inside it explaining why the macro exists with a request not to delete it. This is a necessary placeholder macro GRM uses for the GRM Macro Tool. When not in use the text used to be blank, which has caused some confusion why it gets deleted and GRM recreates it next time you login or reload.
+
+* The Mythic+ rating that shows on the player mouseover now scales dozens of colors to match the [RAIDER.IO color scale](https://raiderio-color.wisak.me/). I will be doing more with M+ rating soon, but I need to wrap up a few more things first.
+
+* For people with MASSIVE Logs, the search on the log could end up freezing up your game or it would timeout. This search is very detailed and it normalizes special characters so you can easily find hard to type names, but since that requires a few extra conversion steps the actual search of logs in the tens of thousands of lines can be a little laggy. As such, I added a preventative measure to prevent the lockup. I even tested it on a log > 100,000 lines long just to be sure it works. To prevent any confusion, I also added a new message "Searching Log" for people. This will not even be noticeable to people until you have > 10,000 log entries, and even then it is very minimal, like 1 sec delay per 10k lines.
+
+![Delayed Search to prevent Lockups](https://i.imgur.com/RfLN3GF.jpg)
+
+***BUG FIXES***
+
+* Fixed an issue where for some who updated to 1.978, it would update the settings DB properly, but then faily to load the DB that session. A simple /reload would resolve the issue, but this should no longer occur anymore and the update should be more seemless for most.
+
+* Fixed a small issue where the "FRIEND" tag would show on the players logging on when it shouldn't.
+
+* Removed the old macro that doesn't need to exist anymore that was used to Ctrl-J access the old guild roster, since it is no longer necessary after Blizz removed it. 
+
+* I THINK I added a fix for the issue with GRM failing to auto-verify the dates when doing a scan of the log. With that being said, be aware that the built-in guild log only shows the last 100 events in the guild, be it invites, promotes, demotions, joins, kicks, leaves. If you are in a highly active guild and you have been offline for a longer time, maybe even just a whole day in one of these mega guilds, 100 events may have already occurred so GRM is unable to verify the exact date say someone joined, but GRM can determine someone joined. With that being said, GRM should show the promotion dates as verified now consistently if it can find them.
+
+* Mythic+ rating was not showing the correct number for some people. Be warned, this is sometimes an outdated number as if a player is inactive and hasn't logged in in a long time, it may still show a previous season's rating. Unfortunately this info is pulled directly from Warcraft's servers. GRM should only now reflect what the servers give us.
+
+* Fixed an issue that plagued non-English clients saying missing key.
+
+
+## **VERSION 1.978 RELEASE - July 11th, 2023**
+
+* Rebuilt the addon settings DB as some were reporting the macros were disappearing at times. The settings have been rebuilt and are more robust now and a bit leaner in the database as well. They will exist as a single entry per guild. However, if you choose to set the settings to character specific, it will create a new entry for just that player as well. If you uncheck the box to remove them from being character specific, the player will be returned to the guild-wide settings. These cannot overwrite each other, which was actually what was happening... it was a logic flaw when swapping alts and then trying to sync the save data. There is no reason to sync data between alts now since the DB will only have 1 instance of the settings, which obviously makes more sense. This is a VERY old legacy format of the DB that had a bunch of spaghetti code that just needed to finally be fixed.
+
+* Fixed an issue where the game wouldn't load properly for some who hadn't updated in a while.
+
+* The name should now be class colorized on the right click dropdown selection on the custom GRM roster.
+
+* Fixed an issue where if you were NOT in a guild, created a new toon, some keybinds could be lost because it was crashing as GRM was trying to set the guild window keybind, which doesn't make sense to do if not in a guild. This shouldn't happen anymore.
+
+* Fixed an issue where the new GRM roster player search wasn't working if you used capital or special letters. The search should now work properly.
+
+
 ## **VERSION 1.977 RELEASE - May 7th, 2023**
 
 ***NEW FEATURE***
@@ -4881,7 +4998,7 @@ Bug5: Fixed an issue where sync message was stating the wrong person was adding 
 
 ***MAJOR SYNC ISSUE BUG FIX***
 
-*Ok, I won't get into the technical details, but suffice it to say a few updates back I kind of went in and did some behind-the-scenes updates, optimizing the process, improving some speed aspects of the sync, making the process leaner and so on. I also apparently broke it some aspects of it lol. This was not an easy fix. This was pretty gritty actually, largely because of how much extra work I need to do to actually get a dynamic, retroactive sync working, with this much data, within the limits of this API, and within the limits of throttled server comms by Blizz, all while doing it in a way that is seemless and invisible to the addon user. Welp, ya, I broke a few things without realizing it and I believe I have them working now. Yay!*
+*Ok, I won't get into the technical details, but suffice it to say a few updates back I kind of went in and did some behind-the-scenes updates, optimizing the process, improving some speed aspects of the sync, making the process leaner and so on. I also apparently broke it some aspects of it lol. This was not an easy fix. This was pretty gritty actually, largely because of how much extra work I need to do to actually get a dynamic, retroactive sync working, with this much data, within the limits of this API, and within the limits of throttled server comms by Blizz, all while doing it in a way that is seamless and invisible to the addon user. Welp, ya, I broke a few things without realizing it and I believe I have them working now. Yay!*
 
 * *Of note, I have not yet tested this beyond 5 accounts syncing in a large guild, and it seemed fine. I will need people to report back and if there are issues, so we can get them resolved ASAP!!!*
 

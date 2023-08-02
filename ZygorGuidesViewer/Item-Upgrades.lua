@@ -1720,7 +1720,11 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 		frame.img:Hide()
 
 		frame.leftbtnFS:SetText("View Upgrades")
-		frame.rightbtnFS:SetText("Equip All")
+		if ZGV.ItemScore.Upgrades.UpgradeQueueCount == 1 then
+			frame.rightbtnFS:SetText("Equip")
+		else
+			frame.rightbtnFS:SetText("Equip All")
+		end
 
 		frame.leftbtn:SetScript("OnClick", function()
 			Upgrades.forcefull = true
@@ -1831,7 +1835,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 			if not F:IsVisible() then
 				F:Show()
 			end
-		end,ZGV.db.profile.toastfadetimer+5)
+		end,3)
 	else
 		F:Show()
 	end

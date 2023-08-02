@@ -7,8 +7,7 @@ local L = LibStub("AceLocale-3.0"):NewLocale("GSE", "ruRU")
 -- Options translation
 L["  The Alternative ClassID is "] = "Альтернативный ClassID"
 L[" Deleted Orphaned Macro "] = "Удаленный Осиротевший Макрос"
---[[Translation missing --]]
-L[" from "] = " from "
+L[" from "] = "от"
 L[" has been added as a new version and set to active.  Please review if this is as expected."] = "Была добавлена ​​как новая версия и активирована.  Проверьте, соответствует ли это требованиям."
 L[" is not available.  Unable to translate sequence "] = "недоступно. Невозможно перевести последовательность"
 L[" macros per Account.  You currently have "] = "макросов на Учетной записи.  В настоящее время у вас есть"
@@ -19,47 +18,29 @@ L[" tried to overwrite the version already loaded from "] = "попытался 
 L[" was imported as a new macro."] = "был импортирован как новый макрос."
 L[" was imported with the following errors."] = "был импортирован со следующими ошибками."
 L[" was updated to new version."] = "был обновлен до новой версии."
---[[Translation missing --]]
-L["%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."] = "%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."
---[[Translation missing --]]
-L["%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"] = "%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"
+L["%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."] = "Макрос %s может вызвать ошибку 'RestrictedExecution.lua:431', так как при компиляции он имеет действия %s. Это становится интересным, когда вы проходите мимо 255 действий. Возможно, вам придется упростить этот макрос."
+L["%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"] = "%sMACRO VALIDATION ERROR|r — PostMacro найден с недопустимым LoopLimit. PostMacro не будет сохранен для версии %s"
 L[". This version was not loaded."] = ". Эта версия не была загружена."
---[[Translation missing --]]
-L["/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."] = "/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."
---[[Translation missing --]]
-L["/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."] = "/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."
---[[Translation missing --]]
-L["/gse help|r to get started."] = "/gse help|r to get started."
---[[Translation missing --]]
-L["/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."] = "/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."
---[[Translation missing --]]
-L["/gse|r again."] = "/gse|r again."
+L["/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."] = "/gse checkmacrosforerrors|r прокрутит ваши макросы и проверит наличие поврежденных версий макросов. Затем будет показано, как исправить эти проблемы."
+L["/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."] = "/gse cleanorphans|r прокрутит ваши макросы и удалит все оставшиеся макросы GSE, которые больше не имеют последовательности, соответствующей им."
+L["/gse help|r to get started."] = "/gse help|r для начала работы."
+L["/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."] = "/gse showspec|r покажет вашу текущую специализацию и SPECID, необходимый для пометки любых существующих макросов."
+L["/gse|r again."] = "/gse|r еще раз."
 L["/gse|r to get started."] = "/gse Запустить GSE"
---[[Translation missing --]]
-L["/gse|r will list any macros available to your spec.  This will also add any macros available for your current spec to the macro interface."] = "/gse|r will list any macros available to your spec.  This will also add any macros available for your current spec to the macro interface."
---[[Translation missing --]]
-L[":|r To get started "] = ":|r To get started "
---[[Translation missing --]]
-L[":|r You cannot delete the only copy of a sequence."] = ":|r You cannot delete the only copy of a sequence."
---[[Translation missing --]]
-L[":|r Your current Specialisation is "] = ":|r Your current Specialisation is "
---[[Translation missing --]]
-L["|r Incomplete Sequence Definition - This sequence has no further information "] = "|r Incomplete Sequence Definition - This sequence has no further information "
---[[Translation missing --]]
-L["|r.  As a result this macro was not created.  Please delete some macros and reenter "] = "|r.  As a result this macro was not created.  Please delete some macros and reenter "
---[[Translation missing --]]
-L["|r.  You can also have a  maximum of "] = "|r.  You can also have a  maximum of "
+L["/gse|r will list any macros available to your spec.  This will also add any macros available for your current spec to the macro interface."] = "/gse|r выведет список всех макросов, доступных для вашей спецификации. Это также добавит все макросы, доступные для вашей текущей спецификации, в интерфейс макросов."
+L[":|r To get started "] = ":|r Начало работы"
+L[":|r You cannot delete the only copy of a sequence."] = ":|r Нельзя удалить единственную копию последовательности."
+L[":|r Your current Specialisation is "] = ":|r Ваша текущая специализация"
+L["|r Incomplete Sequence Definition - This sequence has no further information "] = "|r Неполное определение последовательности — эта последовательность не содержит дополнительной информации"
+L["|r.  As a result this macro was not created.  Please delete some macros and reenter "] = "|р. В результате этот макрос не был создан. Пожалуйста, удалите некоторые макросы и введите их заново"
+L["|r.  You can also have a  maximum of "] = "|р. Вы также можете иметь максимум"
 L["<DEBUG> |r "] = "<DEBUG> |r "
 L["<SEQUENCEDEBUG> |r "] = "<SEQUENCEDEBUG> |r"
---[[Translation missing --]]
 L[ [=[A pause can be measured in either clicks or seconds.  It will either wait 5 clicks or 1.5 seconds.
-If using seconds, you can also wait for the GCD by entering ~~GCD~~ into the box.]=] ] = [=[A pause can be measured in either clicks or seconds.  It will either wait 5 clicks or 1.5 seconds.
-If using seconds, you can also wait for the GCD by entering ~~GCD~~ into the box.]=]
+If using seconds, you can also wait for the GCD by entering ~~GCD~~ into the box.]=] ] = "Пауза может измеряться как щелчками, так и секундами. Он будет ждать либо 5 кликов, либо 1,5 секунды. Если вы используете секунды, вы также можете дождаться GCD, введя ~~GCD~~ в поле."
 L["A sequence collision has occured. "] = "Произошла коллизия последовательностей."
---[[Translation missing --]]
-L["A sequence collision has occured.  Extra versions of this macro have been loaded.  Manage the sequence to determine how to use them "] = "A sequence collision has occured.  Extra versions of this macro have been loaded.  Manage the sequence to determine how to use them "
---[[Translation missing --]]
-L["A sequence collision has occured.  Your local version of "] = "A sequence collision has occured.  Your local version of "
+L["A sequence collision has occured.  Extra versions of this macro have been loaded.  Manage the sequence to determine how to use them "] = "Произошло столкновение последовательностей. Загружены дополнительные версии этого макроса. Управляйте последовательностью, чтобы определить, как их использовать"
+L["A sequence collision has occured.  Your local version of "] = "Произошло столкновение последовательностей. Ваша локальная версия"
 --[[Translation missing --]]
 L["About"] = "About"
 L["About GSE"] = "О GSE"
@@ -73,19 +54,15 @@ L["Add a Repeat Block."] = "Добавьте повторяющийся блок
 L["Add a substitution variable for this macro.  This can either be a straight string swap or can be a function.  If a lua function the function needs to return a value."] = "Добавьте подстановочную переменную для этого макроса. Это может быть либо прямая замена строк, либо функция. Если функция lua, функция должна возвращать значение."
 L["Add Action"] = "Добавить действие"
 L["Add an Action Block."] = "Добавьте блок действий."
---[[Translation missing --]]
-L["Add an If Block.  If Blocks allow you to shoose between blocks based on the result of a variable that returns a true or false value."] = "Add an If Block.  If Blocks allow you to shoose between blocks based on the result of a variable that returns a true or false value."
---[[Translation missing --]]
-L["Add If"] = "Add If"
+L["Add an If Block.  If Blocks allow you to shoose between blocks based on the result of a variable that returns a true or false value."] = "Добавьте блок if. Если блоки позволяют переключаться между блоками на основе результата переменной, возвращающей истинное или ложное значение."
+L["Add If"] = "Добавить Если"
 L["Add Loop"] = "Добавить цикл"
 L["Add Pause"] = "Добавить паузу"
 L["Add Repeat"] = "Добавить повтор"
 L["Add Variable"] = "Добавить переменную"
 L["Add WeakAura"] = "Добавить WeakAura"
---[[Translation missing --]]
-L["Addin Version %s contained versions for the following macros:"] = "Addin Version %s contained versions for the following macros:"
---[[Translation missing --]]
-L["All macros are now stored as upper case names.  You may need to re-add your old macros to your action bars."] = "All macros are now stored as upper case names.  You may need to re-add your old macros to your action bars."
+L["Addin Version %s contained versions for the following macros:"] = "%s — это переменная, которая будет заменена при выполнении именем макроса. Он должен оставаться на месте."
+L["All macros are now stored as upper case names.  You may need to re-add your old macros to your action bars."] = "Все макросы теперь хранятся в верхнем регистре. Возможно, вам придется повторно добавить старые макросы на панели действий."
 L["Alt Keys."] = "Клавиши Alt."
 L["Any Alt Key"] = "Любая Клавиша Alt"
 L["Any Control Key"] = "Любая Клавиша Ctrl "
@@ -94,29 +71,21 @@ L["Are you sure you want to delete %s?  This will delete the macro and all versi
 L["Arena"] = "Арена"
 --[[Translation missing --]]
 L["Arena setting changed to Default."] = "Arena setting changed to Default."
---[[Translation missing --]]
-L["As GSE is updated, there may be left over macros that no longer relate to sequences.  This will check for these automatically on logout.  Alternatively this check can be run via /gse cleanorphans"] = "As GSE is updated, there may be left over macros that no longer relate to sequences.  This will check for these automatically on logout.  Alternatively this check can be run via /gse cleanorphans"
---[[Translation missing --]]
-L["Auras included in GSE Macros"] = "Auras included in GSE Macros"
+L["As GSE is updated, there may be left over macros that no longer relate to sequences.  This will check for these automatically on logout.  Alternatively this check can be run via /gse cleanorphans"] = "По мере обновления GSE могут остаться макросы, которые больше не относятся к последовательностям. Это автоматически проверит их при выходе из системы. Кроме того, эта проверка может быть выполнена через /gse cleanorphans"
+L["Auras included in GSE Macros"] = "Ауры, включенные в макросы GSE"
 L["Author"] = "Автор"
 L["Author Colour"] = "Цвет Автора"
---[[Translation missing --]]
-L["Auto Create Class Macro Stubs"] = "Auto Create Class Macro Stubs"
---[[Translation missing --]]
-L["Auto Create Global Macro Stubs"] = "Auto Create Global Macro Stubs"
+L["Auto Create Class Macro Stubs"] = "Автоматическое создание заглушек макросов классов"
+L["Auto Create Global Macro Stubs"] = "Автоматическое создание глобальных заглушек макросов"
 L["Automatically Create Macro Icon"] = "Автоматически создавать иконку макроса"
 L["Available Addons"] = "Доступные Модификации"
 L["Belt"] = "Пояс"
 --[[Translation missing --]]
 L["Blizzard Functions Colour"] = "Blizzard Functions Colour"
---[[Translation missing --]]
-L["Block Path"] = "Block Path"
---[[Translation missing --]]
-L["Block Type: %s"] = "Block Type: %s"
---[[Translation missing --]]
-L["Boolean Functions"] = "Boolean Functions"
---[[Translation missing --]]
-L["Boolean Functions are GSE variables that return either a true or false value."] = "Boolean Functions are GSE variables that return either a true or false value."
+L["Block Path"] = "Путь к блоку"
+L["Block Type: %s"] = "Тип блока: %s"
+L["Boolean Functions"] = "Логические функции"
+L["Boolean Functions are GSE variables that return either a true or false value."] = "Логические функции — это переменные GSE, которые возвращают либо истинное, либо ложное значение."
 --[[Translation missing --]]
 L["Boolean not found.  There is a problem with %s not returning true or false."] = "Boolean not found.  There is a problem with %s not returning true or false."
 L["By setting the default Icon for all macros to be the QuestionMark, the macro button on your toolbar will change every key hit."] = "Иконка макроса на панели действий будет изменяться после каждого нажатия клавиши, по умолчанию для всех макросов установлен значок QuestionMark."
@@ -894,12 +863,9 @@ L["This CVAR makes WoW use your abilities when you press the key not when you re
 L["This function will clear the spell cache and any mappings between individual spellIDs and spellnames.."] = "This function will clear the spell cache and any mappings between individual spellIDs and spellnames.."
 --[[Translation missing --]]
 L["This function will open a window enabling you to edit the spell cache and any mappings between individual spellIDs and spellnames.."] = "This function will open a window enabling you to edit the spell cache and any mappings between individual spellIDs and spellnames.."
---[[Translation missing --]]
-L["This function will remove the SHIFT+N, ALT+N and CTRL+N keybindings for this character.  Useful if [mod:shift] etc conditions don't work in game."] = "This function will remove the SHIFT+N, ALT+N and CTRL+N keybindings for this character.  Useful if [mod:shift] etc conditions don't work in game."
---[[Translation missing --]]
-L["This function will update macro stubs to support listening to the options below.  This is required to be completed 1 time per character."] = "This function will update macro stubs to support listening to the options below.  This is required to be completed 1 time per character."
---[[Translation missing --]]
-L["This is a small addon that allows you create a sequence of macros to be executed at the push of a button."] = "This is a small addon that allows you create a sequence of macros to be executed at the push of a button."
+L["This function will remove the SHIFT+N, ALT+N and CTRL+N keybindings for this character.  Useful if [mod:shift] etc conditions don't work in game."] = "Эта функция удалит привязки клавиш SHIFT+N, ALT+N и CTRL+N для этого персонажа. Полезно, если условия [mod:shift] и т.д. не работают в игре."
+L["This function will update macro stubs to support listening to the options below.  This is required to be completed 1 time per character."] = "Эта функция обновит заглушки макросов для поддержки прослушивания приведенных ниже параметров. Это требуется выполнить 1 раз для каждого персонажа."
+L["This is a small addon that allows you create a sequence of macros to be executed at the push of a button."] = "Это небольшой аддон, который позволяет создавать последовательность макросов, которые будут выполняться одним нажатием кнопки."
 --[[Translation missing --]]
 L["This is needed for ConsolePort and BindPad."] = "This is needed for ConsolePort and BindPad."
 L["This is the only version of this macro.  Delete the entire macro to delete this version."] = "Это единственная версия этого макроса. Удалите весь макрос, чтобы удалить эту версию."
