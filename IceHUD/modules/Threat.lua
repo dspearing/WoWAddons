@@ -231,7 +231,7 @@ end
 
 -- create the aggro range indicator bar
 function IceThreat.prototype:CreateAggroBar()
-	self.aggroBar = self:BarFactory(self.aggroBar, "BACKGROUND","ARTWORK", "Aggro")
+	self.aggroBar = self:BarFactory(self.aggroBar, "BACKGROUND", "ARTWORK", "Aggro")
 
 	local r, g, b = self:GetColor("ThreatPullAggro")
 	if (self.settings.backgroundToggle) then

@@ -1946,3 +1946,38 @@ Change Log:
 * Added Dragonflight spells (world)
 * Added Dragonflight spells for Aberrus, the Shadowed Crucible
 * Added Dragonflight spells for Dawn of the Infinite
+
+5.5.1
+* Updated for patch 10.1.7
+* Added Dragonflight spells (world)
+* Added Legion spells (world)
+* Added Battle for Azeroth spells (world)
+
+5.5.2
+* Fixed Pandaria spells for Darkmoon Faire
+* Added Dragonflight spells (world)
+* Added Battle for Azeroth spells (world)
+* Fixed Wrath spells for Violet Hold (thanks Jirachimon)
+
+5.5.3
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Headless Horseman
+* Added Wrath spells (Heroic+) (thanks daevert)
+
+5.5.4
+* Added Dragonflight spells for Headless Horseman
+
+5.5.5
+* Updated for patch 10.2
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Amirdrassil, The Dream's Hope
+
+5.5.6
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Amirdrassil, The Dream's Hope
+
+5.5.7
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Amirdrassil, The Dream's Hope
+* Added Cataclysm spells for Throne of the Tides (Mythic+) (thanks swgam12)
+* Added WoD spells for the Everbloom (Mythic+) (thanks aisenfaire)

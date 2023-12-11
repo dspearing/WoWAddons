@@ -1111,6 +1111,7 @@ local TitleBar
 
 local function CreateProgressBar(frame)
 	local ProgressBar = ZGV.UI:Create("ProgressBar",frame)
+	local modes = {"quests","steps","exp"}
 
 	function ProgressBar:Update()
 		local current_guide = ZGV.CurrentGuide
@@ -1123,31 +1124,54 @@ local function CreateProgressBar(frame)
 
 		-- progress
 		local percent,num,total = current_guide:GetCompletion(mode)
+		if mode=="exp" then
+			num = UnitXP("player");
+			total = UnitXPMax("player");
+			percent = max(num / total, 0);
+		end
 
 		-- color
 		local r,g,b,a
 		if mode == "quests" then
-			r,g,b,a = 0.7,0.7,0.7,1
-		else -- steps
-			r,g,b,a =  1,1,1,1
+			r,g,b,a = 0,204/255,1/255,1
+		elseif mode=="steps" then
+			r,g,b,a = 0,204/255,1/255,1
+		else -- exp
+			local rested = GetRestState()
+			if rested==1 then -- rested
+				r,g,b,a =  56/255,90/255,215/255,1
+			else
+				r,g,b,a =  127/255,63/255,156/255,1
+			end
 		end
+
 
 		-- text and tooltip
 		local tooltiptext = L['frame_guide_'..mode..'completed']:format(num,total)
-		local maintext = (percent==1) and L['frame_guide_complete'] or L['frame_guide_progress']:format(floor(percent*100))
+		local maintext = (percent==1) and L['frame_guide_complete'] or L['frame_guide_'..mode..'progress']:format(floor(percent*100))
 
-		--ProgressBar:SetColor(r,g,b,a)
+		ProgressBar:SetColor(r,g,b,a)
 		ProgressBar:SetPercent(percent*100)
 		ProgressBar:SetText(maintext)
 		ProgressBar:SetTooltip(tooltiptext)
 	end
 
 	local function ProgressBar_OnClick(self)
-		if ZGV.db.profile.progressbarmode == "quests" then
-			ZGV.db.profile.progressbarmode = "steps"
-		else
-			ZGV.db.profile.progressbarmode = "quests"
+		local modeindex = 1
+		-- find current mode
+		for i,v in ipairs(modes) do 
+			if ZGV.db.profile.progressbarmode==v then modeindex=i end 
 		end
+	
+		-- loop through modes array
+		if modeindex==#modes then 
+			modeindex = 1 
+		else
+			modeindex = modeindex + 1
+		end
+
+		-- update profile
+		ZGV.db.profile.progressbarmode = modes[modeindex] 
 
 		ZGV:SendMessage("CLICKED_PROGRESSBAR",ZGV.db.profile.progressbarmode)
 
@@ -1155,6 +1179,7 @@ local function CreateProgressBar(frame)
 		ProgressBar:GetScript("OnEnter")(ProgressBar)
 	end
 	ProgressBar:SetScript("OnClick",function(self) ProgressBar_OnClick(self) end)
+	ZGV:AddEventHandler("PLAYER_XP_UPDATE",ProgressBar.Update)
 
 	frame.ProgressBar = ProgressBar
 	ZGV.ProgressBar = ProgressBar

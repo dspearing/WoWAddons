@@ -9,7 +9,6 @@ local internal = {
   DOUBLECLICK_MIN_SECONDS = 0.04,
   previousClickTime = 0,
   isClassic = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE,
-  isClassicEra = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 }
 
 local soundCache = {}
@@ -91,9 +90,17 @@ function BetterFishing:GetSecureButton()
   return self.secureButton
 end
 
+function BetterFishing:IsFlying()
+  -- Check for Zen Flight
+  if C_UnitAuras and C_UnitAuras.GetPlayerAuraBySpellID(125883) then
+    return false
+  else
+    return IsFlying()
+  end
+end
+
 function BetterFishing_Run()
-  if internal.isClassicEra then return end
-  if IsTaintable() or IsFlying() or GetNumLootItems() ~= 0 or BetterFishing:IsFishing() or (not BetterFishingDB.overrideLunker and BetterFishing:IsLunkerActive()) then return end
+  if IsTaintable() or BetterFishing:IsFlying() or GetNumLootItems() ~= 0 or BetterFishing:IsFishing() or (not BetterFishingDB.overrideLunker and BetterFishing:IsLunkerActive()) then return end
   local key1, key2 = GetBindingKey("BETTERFISHINGKEY")
   local localizedName = BetterFishing:GetFishingName()
   if key1 then
@@ -152,7 +159,7 @@ function BetterFishing:AllowFishing()
   or internal.isClassic and not self:IsFishingpoleEquipped()
   or IsPlayerMoving()
   or IsMounted()
-  or IsFlying()
+  or BetterFishing:IsFlying()
   or IsFalling()
   or IsStealthed()
   or IsSwimming()
@@ -296,30 +303,33 @@ function BetterFishing:EnhanceSounds(enable)
     SetCVar("Sound_MasterVolume", BetterFishingDB.enhanceSoundsScale)
   end
 end
-local NewSettings = Settings and Settings.RegisterCanvasLayoutCategory or false
 function BetterFishing:CreateSettings()
   local optionsFrame
-  if NewSettings then
-    optionsFrame = CreateFrame("Frame")
-    local category, layout = Settings.RegisterCanvasLayoutCategory(optionsFrame, "Better Fishing |Tinterface/cursor/crosshair/fishing:18:18:0:0|t");
-    category.ID = "Better Fishing";
-    Settings.RegisterAddOnCategory(category);
-  else
-    optionsFrame = CreateFrame("Frame", addonName.."_OptionsFrame", InterfaceOptionsFramePanelContainer)
-    optionsFrame.name = "Better Fishing"
-  end
+  optionsFrame = CreateFrame("Frame", nil, nil, "VerticalLayoutFrame")
+  optionsFrame.spacing = 4
+  local category, layout = Settings.RegisterCanvasLayoutCategory(optionsFrame, "Better Fishing |Tinterface/cursor/crosshair/fishing:18:18:0:0|t");
+  category.ID = "Better Fishing";
+  Settings.RegisterAddOnCategory(category);
 
-  local header = optionsFrame:CreateFontString(nil, "ARTWORK", "GameFontHighlightHuge")
-  header:SetPoint("TOPLEFT", 7, -22)
-  header:SetText("Better Fishing")
+  local layoutIndex = 0
+	local function GetLayoutIndex()
+		layoutIndex = layoutIndex + 1
+		return layoutIndex
+	end
 
+  local Header = CreateFrame("Frame", nil, optionsFrame)
+  Header:SetSize(150, 50)
+  local headerText = Header:CreateFontString(nil, "ARTWORK", "GameFontHighlightHuge")
+  headerText:SetPoint("TOPLEFT", 7, -22)
+  headerText:SetText("Better Fishing")
+  local divider = Header:CreateTexture(nil, "ARTWORK")
+  divider:SetAtlas("Options_HorizontalDivider", true)
+  divider:SetPoint("BOTTOMLEFT", -50)
+  Header.layoutIndex = GetLayoutIndex()
+  Header.bottomPadding = 10
   local function makeCheckButton(text)
     local checkBox
-    if NewSettings then
-      checkBox = CreateFrame("CheckButton", addonName.."CheckBox", optionsFrame, "SettingsCheckBoxTemplate")
-    else
-      checkBox = CreateFrame("CheckButton", addonName.."CheckBox", optionsFrame, "UICheckButtonTemplate")
-    end
+    checkBox = CreateFrame("CheckButton", addonName.."CheckBox", optionsFrame, "SettingsCheckBoxTemplate")
     checkBox.text = checkBox:CreateFontString(addonName.."CheckBoxText", "ARTWORK", "GameFontNormal")
     checkBox.text:SetText(text)
     checkBox.text:SetPoint("LEFT", checkBox, "RIGHT", 4, 0)
@@ -330,18 +340,15 @@ function BetterFishing:CreateSettings()
     { option = "enhanceSounds", detail = "Enhance Sounds" },
     { option = "doubleClickEnabled", detail = "Double Click to cast" },
     { option = "recastOnDoubleClick", detail = "When Double Click is enabled allow recasting while fishing" },
-    { option = "overrideLunker", detail = "Allow Fishing while \"Looking for Lunkers\" buff is active", minExpansion = LE_EXPANSION_DRAGONFLIGHT },
+    { option = "overrideLunker", detail = "Allow Fishing while \"Looking for Lunkers\" (Dragonflight) buff is active", minExpansion = LE_EXPANSION_DRAGONFLIGHT },
     { option = "objectIconDisabled", detail = "Disable icon above bobber (visibility varies for nameplate addons)", minExpansion = LE_EXPANSION_DRAGONFLIGHT }
   }
-  local prevCheckButton
+
   for _, keyInfo in ipairs(settingsInfo) do
     if not keyInfo.minExpansion or LE_EXPANSION_LEVEL_CURRENT >= keyInfo.minExpansion then
       local checkButton = makeCheckButton(keyInfo.detail)
-      if not prevCheckButton then
-        checkButton:SetPoint("TOPLEFT", header, "TOPLEFT", 0, -16)
-      else
-        checkButton:SetPoint("TOPLEFT", prevCheckButton, "BOTTOMLEFT", 0, 0)
-      end
+      checkButton.layoutIndex = GetLayoutIndex()
+      checkButton:SetHitRectInsets(0,-checkButton.text:GetWidth(), 0, 0)
       checkButton.HoverBackground = nil
       checkButton:SetChecked(BetterFishingDB[keyInfo.option])
       checkButton:SetScript("OnClick", function()
@@ -349,56 +356,27 @@ function BetterFishing:CreateSettings()
         checkButton:SetChecked(BetterFishingDB[keyInfo.option])
       end)
 
-      prevCheckButton = checkButton
     end
   end
-  if NewSettings then
-    local function FormatPercentageRound(value)
-      return FormatPercentage(value, true);
-    end
 
-    local right = MinimalSliderWithSteppersMixin.Label.Right
-    local slider = CreateFrame("Slider", addonName.."Slider", optionsFrame, "MinimalSliderWithSteppersTemplate")
-    local formatters = {}
-    formatters[right] = CreateMinimalSliderFormatter(right, FormatPercentageRound);
-    slider:Init(BetterFishingDB.enhanceSoundsScale or 1, 0, 1, 20, formatters)
-    slider:SetPoint("LEFT", addonName.."CheckBoxText", "RIGHT", 10, 0)
-    local function OnValueChanged(_, value)
-      BetterFishingDB.enhanceSoundsScale = value
-    end
-    slider:RegisterCallback(MinimalSliderWithSteppersMixin.Event.OnValueChanged, OnValueChanged)
-  else
-    local slider = CreateFrame("Slider", addonName.."_Slider", optionsFrame, "OptionsSliderTemplate")
-    slider:SetWidth(120)
-    slider:SetHeight(16)
-    slider:SetPoint("LEFT", addonName.."CheckBox", "RIGHT", 120, 0)
-    slider:SetMinMaxValues(0, 100)
-    slider:SetValueStep(5)
-    slider:SetOrientation('HORIZONTAL')
-    slider:SetObeyStepOnDrag(true)
-    BetterFishing_SliderLow:SetText('0')
-    BetterFishing_SliderHigh:SetText('100')
-
-    slider:SetScript("OnValueChanged", function(self, value)
-      BetterFishingDB.enhanceSoundsScale = value*0.01
-      BetterFishing_SliderText:SetText(FormatPercentage(value*0.01))
-    end)
-
-    slider:Show()
-    BetterFishingDB.enhanceSoundsScale = BetterFishingDB.enhanceSoundsScale or 1
-    optionsFrame:SetScript('OnShow', function(self)
-      slider:SetValue(BetterFishingDB.enhanceSoundsScale*100 or 50)
-    end)
-    InterfaceOptions_AddCategory(optionsFrame)
+  local function FormatPercentageRound(value)
+    return FormatPercentage(value, true);
   end
+
+  local right = MinimalSliderWithSteppersMixin.Label.Right
+  local slider = CreateFrame("Slider", addonName.."Slider", optionsFrame, "MinimalSliderWithSteppersTemplate")
+  local formatters = {}
+  formatters[right] = CreateMinimalSliderFormatter(right, FormatPercentageRound);
+  slider:Init(BetterFishingDB.enhanceSoundsScale or 1, 0, 1, 20, formatters)
+  slider:SetPoint("LEFT", addonName.."CheckBoxText", "RIGHT", 10, 0)
+  local function OnValueChanged(_, value)
+    BetterFishingDB.enhanceSoundsScale = value
+  end
+  slider:RegisterCallback(MinimalSliderWithSteppersMixin.Event.OnValueChanged, OnValueChanged)
+  optionsFrame:Layout()
 end
 
 SLASH_BETTERFISHING1, SLASH_BETTERFISHING2 = '/bf', '/betterfishing'
 SlashCmdList.BETTERFISHING = function(msg)
-  if NewSettings then
-    Settings.OpenToCategory("Better Fishing")
-  else
-    InterfaceOptionsFrame_OpenToCategory("Better Fishing")
-    InterfaceOptionsFrame_OpenToCategory("Better Fishing")
-  end
+  Settings.OpenToCategory("Better Fishing")
 end

@@ -349,7 +349,7 @@ local copyfuncs = {};
 
 function FBR:BAG_UPDATE_COOLDOWN()
 	if self.itemID then
-		local start, duration, enable = GetItemCooldown(self.itemID)
+		local start, duration, enable = C_Container.GetItemCooldown(self.itemID)
 		if(duration > 0) then
 			self.Cooldown:SetCooldown(start, duration)
 			self.Cooldown:Show()

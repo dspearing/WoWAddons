@@ -43,7 +43,7 @@ GuideMenu.Home={
 
 
 --toast content
-GuideMenu.Toast1={	--Welcome Toast
+GuideMenu.Welcome={	--Welcome Toast
 
 	{"title", text=[[Welcome to Zygor Guides]], fontsize = 12, center = true, volume = ZGV.FontBold},
 
@@ -52,7 +52,7 @@ GuideMenu.Toast1={	--Welcome Toast
 	{"list", text=[[Review **the new features**]], fontsize = 10, size = "S", onclick=function() ZGV.GuideMenu:Show("Home") ZGV.Widgets.Registered.zygormessage:ShowPopup() GuideMenu.ToastQueuePush() end },
 
 }
-GuideMenu.Toast2={	--General Updates Toast
+GuideMenu.Updates={	--General Updates Toast
 
 	{"title", text=[[New in this update:]], fontsize = 12, center = true, volume = ZGV.FontBold},
 
@@ -60,7 +60,7 @@ GuideMenu.Toast2={	--General Updates Toast
 
 
 }
-GuideMenu.Toast3={	--Orientation Guide Toast
+GuideMenu.Orientation={	--Orientation Guide Toast
 
 	{"title", text=[[Zygor Messages:]], fontsize = 12, center = true, volume = ZGV.FontBold},
 
@@ -68,7 +68,7 @@ GuideMenu.Toast3={	--Orientation Guide Toast
 	{"text", text=[[Would you like to load this in a new tab?]], fontsize = 9},
 
 }
-GuideMenu.Toast4={	--Ongoing Event Toast
+GuideMenu.Events={	--Ongoing Event Toast
 	event = "Love is in the Air",
 	{"title", text=[[Zygor Messages:]], fontsize = 12, center = true, volume = ZGV.FontBold},
 	{"banner", image=ZGV.IMAGESDIR.."LoveIsInTheAir", top=0, left=0, bottom=512/512, right=128/128},

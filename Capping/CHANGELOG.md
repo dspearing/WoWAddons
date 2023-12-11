@@ -1,6 +1,6 @@
 # Capping
 
-## [v10.1.4](https://github.com/BigWigsMods/Capping/tree/v10.1.4) (2023-07-15)
-[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v10.1.3...v10.1.4) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
+## [v10.2.2](https://github.com/BigWigsMods/Capping/tree/v10.2.2) (2023-11-18)
+[Full Changelog](https://github.com/BigWigsMods/Capping/compare/v10.2.1...v10.2.2) [Previous Releases](https://github.com/BigWigsMods/Capping/releases)
 
-- Modules/IsleOfConquest\_Wrath: Update gate hp  
+- Modules/AlteracValley: Add an extra id, closes #143  

@@ -12,3 +12,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeon
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeons\\The Azure Vault")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Raids\\Vault of the Incarnates")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Raids\\Aberrus, The Shadowed Crucible")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeons\\Dawn of the Infinite Intro Questline")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Dungeons\\Dawn of the Infinite")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Old Scholomance Unlock")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Dungeon Guides\\Dragonflight Raids\\Amirdrassil, The Dream's Hope")

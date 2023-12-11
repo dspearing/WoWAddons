@@ -92,6 +92,10 @@ data.point_context_templates = {
 	{'zerethlocus',"Use Locus Shift\nand teleport to {next_name}"},
 	{'ancientwaygate',"Use the Ancient Waygate\nto Teleport to {next_name}"},
 
+	{'toylocation',"Go to location and use {arrivaltoy} to open portal to {next_map}"},
+	{'*_*__toylocation_*',"Go to location and use {arrivaltoy} to open portal to {next_map}"},
+
+
 	{'walk_border',"walk_map"}, {'border_border',"walk_map"},
 
 	{'arrive',"Arrive at {map}"},

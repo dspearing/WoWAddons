@@ -2486,6 +2486,8 @@ function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 	local spell = node.spell or (node.link and node.link.spell)
 	local item = node.item or (node.link and node.link.item)
 	local toy = node.toy or (node.link and node.link.toy)
+	local arrivaltoy = node.arrivaltoy or (node.link and node.link.arrivaltoy)
+	local arrivaltoytext = node.arrivaltoytext or (node.link and node.link.arrivaltoytext)
 	local cooltime,cooldur,coolcharges = LibRover:GetCooldownWithoutGCD((spell and "spell") or (item and "item"),item or spell)
 
 	if safe then
@@ -2506,6 +2508,18 @@ function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 				name,_,_,_,_,_,_,_,equiptype,texture = ZGV:GetItemInfo(item)
 				icon:SetAttribute("type","item")
 				icon:SetAttribute("item",name)
+		elseif arrivaltoy then -- toys that are only usable when player is in specific location
+			local px,py,pm = ZGV.LibRover:GetPlayerPosition()
+			local angle,dist = Mangle(pm,px,py,waypoint.m,waypoint.x,waypoint.y)
+			dist=dist or 99999999
+			if dist <= (waypoint.radius or self:GetDefaultStepDist()) then
+				_,name,texture,_ = C_ToyBox.GetToyInfo(arrivaltoy)
+				icon:SetAttribute("type","toy")
+				icon:SetAttribute("toy",name)
+				cooltime,cooldur,coolcharges = LibRover:GetCooldownWithoutGCD("item",arrivaltoy)
+			else
+				arrivaltoytext = nil
+			end
 		end
 		icon.cooldown:SetCooldown(cooltime,cooldur,coolcharges)  
 	end
@@ -2528,12 +2542,12 @@ function Pointer.ArrowFrame_ShowSpellArrow(self,waypoint)
 
 		if cooltime>0 then
 			local time = Pointer.FormatTime(cooltime+cooldur-GetTime())
-			pretext = L['pointer_arrow_itemcooldown']:format(time,item and ZGV:GetItemInfo(item) or GetSpellInfo(spell)) .. "\n"
+			pretext = L['pointer_arrow_itemcooldown']:format(time,(item or arrivaltoy) and ZGV:GetItemInfo(item or arrivaltoy) or GetSpellInfo(spell)) .. "\n"
 			--else
 			--	pretext = L['pointer_arrow_itemuse']:format(ZGV:GetItemInfo(item)) .. "\n"
 		end
 
-		self:ShowText(pretext or waypoint:GetArrowTitle() or waypoint:GetTitle())
+		self:ShowText(pretext or arrivaltoytext or waypoint:GetArrowTitle() or waypoint:GetTitle())
 		return true
 	end
 end
@@ -3669,7 +3683,7 @@ function Pointer:DoCorpseCheck(event)
 			end
 		else
 			DoCorpseCheckRetry = DoCorpseCheckRetry - 1
-			ZGV:Debug("DoCorpseCheck (%s) (dead)",event or "no event")
+			ZGV:Debug("&startup DoCorpseCheck (%s) (dead)",event or "no event")
 			-- corpse arrow
 			if (DoCorpseCheckRetry==0) or not (self.ArrowFrame.waypoint and (self.ArrowFrame.waypoint.type=="corpse" or self.ArrowFrame.waypoint.type=="manual")) then 
 				DoCorpseCheckRetry = 10
@@ -3682,7 +3696,7 @@ function Pointer:DoCorpseCheck(event)
 		end
 	else
 		DoCorpseCheckRetry = 10
-		ZGV:Debug("DoCorpseCheck (%s) (not dead)",event or "no event")
+		ZGV:Debug("&startup DoCorpseCheck (%s) (not dead)",event or "no event")
 		local n=self:ClearWaypoints("corpse")
 		if n>0 then ZGV:ShowWaypoints() end
 	end
@@ -5800,9 +5814,6 @@ end
 function Pointer.Provider:OnHide()
 end
 
-WorldMapFrame:AddDataProvider(Pointer.Provider)
-
-
 
 local function DrawLineZygor(texture, canvasFrame, startX, startY, endX, endY, lineWidth, lineFactor, relPoint, lenTile)
 	if (not relPoint) then relPoint = "BOTTOMLEFT"; end
@@ -6157,4 +6168,5 @@ end
 
 tinsert(ZGV.startups,{"Pointer additional",function(self)
 	WorldMapFrame:AddDataProvider(Pointer.OverlayProvider)
+	WorldMapFrame:AddDataProvider(Pointer.Provider)
 end})

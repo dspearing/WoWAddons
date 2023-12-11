@@ -47,7 +47,7 @@ local classspecs=
 	["SHAMAN"]		= { "Elemental","Enhancement","Restoration",nil,"Starter" },
 	["DRUID"]		= { "Balance","Feral","Guardian","Restoration","Starter" },
 	["DEMONHUNTER"]		= { "Havoc","Vengeance",nil,nil,"Starter" },
-	["EVOKER"]		= { "Devastation", "Preservation", nil, nil, "Starter" },
+	["EVOKER"]		= { "Devastation", "Preservation", "Augmentation", nil, "Starter" },
 	["ADVENTURER"]		= { nil, nil, nil, nil, "Starter" },
 }
 if ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then
@@ -244,7 +244,7 @@ function ZGV:DumpMapIDsByName()
 		end
 	end
 	s=s.."}"
-	self:ShowDump(s,"Map IDs",true)
+	self:ShowDump(s,"Map IDs",{readonly=true})
 end
 
 
@@ -1131,9 +1131,21 @@ local ConditionEnv = {
 	language = function(skill)
 		return ZGV.Languages:GetLanguageSkill(skill)
 	end,
-	hardcore = function() -- fake check for now
-		return ZGV.db.char.fakehardcore
+	hardcore = function()
+		if type(ZGV.db.char.fakehardcore)~="nil" then return ZGV.db.char.fakehardcore end
+		return ZGV.IsClassicHardcore
 	end,
+	widgetactive = function(widgetSetID,widgetID)
+		local setWidgets = C_UIWidgetManager.GetAllWidgetsBySetID(widgetSetID);
+		for _, wData in ipairs(setWidgets) do
+			local id = wData.widgetID
+			if id==widgetID then
+				local widgetTypeInfo =  UIWidgetManager:GetWidgetTypeInfo(wData.widgetType)
+				local widgetInfo = widgetTypeInfo.visInfoDataFunction(id);
+				if widgetInfo then return true end
+			end
+		end
+	end
 }
 setmetatable(ConditionEnv,{__index=function(t,k) local lower=rawget(t,k:lower())  if lower~=nil then return lower end  return _G[k]  end})
 
@@ -1335,18 +1347,23 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 	local function assign_label_from(params)
 		local label = params:gsub("^\"(.-)\"$","%1") -- strip quotes
 		if label=="" or not label then return end
-		step.label=label
-		autolabel=label
-		if open_stickies[label] then
-			for i=#open_stickies_ord,1,-1 do
-				if open_stickies_ord[i]==label then  -- close it
-					ZGV:Debug("&sticky (parser) closing %s",label)
-					tremove(open_stickies_ord,i)
+		if step.label then
+			step.extralabels = step.extralabels or {}
+			table.insert(step.extralabels,label)
+		else
+			step.label=label
+			autolabel=label
+			if open_stickies[label] then
+				for i=#open_stickies_ord,1,-1 do
+					if open_stickies_ord[i]==label then  -- close it
+						ZGV:Debug("&sticky (parser) closing %s",label)
+						tremove(open_stickies_ord,i)
+					end
 				end
+				open_stickies[label]=nil
 			end
-			open_stickies[label]=nil
+			step.is_sticky = used_stickies[label]
 		end
-		step.is_sticky = used_stickies[label]
 	end
 
 	local betasection = false
@@ -2238,6 +2255,12 @@ function Parser:ParseEntry(guide,fully_parse,lastparsed)
 			if label then
 				if not steplabels[label] then steplabels[label]={} end
 				tinsert(steplabels[label],si)
+			end
+			if step.extralabels then
+				for _,extralabel in ipairs(step.extralabels) do
+					if not steplabels[extralabel] then steplabels[extralabel]={} end
+					tinsert(steplabels[extralabel],si)
+				end
 			end
 		end
 

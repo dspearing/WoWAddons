@@ -213,6 +213,10 @@ L["Contributed by: "] = "Contributed by: "
 --[[Translation missing --]]
 L["Control Keys."] = "Control Keys."
 --[[Translation missing --]]
+L["Convert"] = "Convert"
+--[[Translation missing --]]
+L["Convert this to a GSE3 Template"] = "Convert this to a GSE3 Template"
+--[[Translation missing --]]
 L["Copy this link and open it in a Browser."] = "Copy this link and open it in a Browser."
 --[[Translation missing --]]
 L["Copy this link and paste it into a chat window."] = "Copy this link and paste it into a chat window."
@@ -436,6 +440,12 @@ L["GSE: Left Click to open the Sequence Editor"] = "GSE: Left Click to open the 
 L["GSE: Middle Click to open the Transmission Interface"] = "GSE: Middle Click to open the Transmission Interface"
 --[[Translation missing --]]
 L["GSE: Right Click to open the Sequence Debugger"] = "GSE: Right Click to open the Sequence Debugger"
+--[[Translation missing --]]
+L["GSE2 Retro Importer available."] = "GSE2 Retro Importer available."
+--[[Translation missing --]]
+L["GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."] = "GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."
+--[[Translation missing --]]
+L["GSE2 Retro:"] = "GSE2 Retro:"
 --[[Translation missing --]]
 L["Head"] = "Head"
 --[[Translation missing --]]

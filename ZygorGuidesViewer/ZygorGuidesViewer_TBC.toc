@@ -1,4 +1,4 @@
-## Interface: 30402
+## Interface: 30403
 ## Title: |cffff0000Zygor Guide Viewer 8|r
 ## Notes: Free multi-purpose leveling guide viewer, Classic edition.
 ## Author: Zygor Guides

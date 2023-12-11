@@ -433,9 +433,13 @@ do -- Add options for bars
                             values = {
                                 NONE = L["None"],
                                 OUTLINE = L["OUTLINE"],
+                                THICKOUTLINE = L["THICKOUTLINE"],
+                                SHADOW = L["SHADOW"],
+                                SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                                SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                                 MONOCHROME = L["MONOCHROME"],
                                 MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                                THICKOUTLINE = L["THICKOUTLINE"]
+                                MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                             }
                         },
                         size = {
@@ -507,9 +511,13 @@ do -- Add options for bars
                             values = {
                                 NONE = L["None"],
                                 OUTLINE = L["OUTLINE"],
+                                THICKOUTLINE = L["THICKOUTLINE"],
+                                SHADOW = L["SHADOW"],
+                                SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                                SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                                 MONOCHROME = L["MONOCHROME"],
                                 MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                                THICKOUTLINE = L["THICKOUTLINE"]
+                                MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                             }
                         },
                         size = {
@@ -559,7 +567,7 @@ do -- Add options for bars
                     type = "input",
                     name = L["Button Groups"],
                     desc = format(
-                        "%s %s\n" .. strrep("\n%s", 20),
+                        "%s %s\n" .. strrep("\n%s", 21),
                         L["Set the type and order of button groups."],
                         L["You can separate the groups with a comma."],
                         desc("QUEST", L["Quest Items"]),
@@ -584,6 +592,7 @@ do -- Add options for bars
                         desc("UTILITY", L["Utilities"]),
                         desc("OPENABLE", L["Openable Items"]),
                         desc("PROF", L["Profession Items"]),
+                        desc("SEEDS", L["Dream Seeds"]),
                         desc("CUSTOM", L["Custom Items"])
                     ),
                     width = "full"
@@ -848,8 +857,20 @@ options.contacts = {
             type = "toggle",
             name = L["Enable"]
         },
-        defaultPage = {
+        updateAlts = {
             order = 2,
+            type = "toggle",
+            name = L["Update Alts"],
+            desc = L["Update the alt list when you log in."],
+            get = function()
+                return E.global.WT.item.contacts.updateAlts
+            end,
+            set = function(_, value)
+                E.global.WT.item.contacts.updateAlts = value
+            end
+        },
+        defaultPage = {
+            order = 3,
             type = "select",
             name = L["Default Page"],
             values = {
@@ -866,7 +887,7 @@ do
     local selectedKey
 
     options.contacts.args.alts = {
-        order = 2,
+        order = 4,
         type = "group",
         inline = true,
         name = L["Alternate Character"],
@@ -914,6 +935,17 @@ do
                         end
                     end
                 end
+            },
+            clearAlts = {
+                order = 3,
+                type = "execute",
+                name = L["Clear All"],
+                desc = L["Clear the alt list."],
+                confirm = true,
+                confirmText = L["Are you sure to clear the alt list?"],
+                func = function()
+                    E.global.WT.item.contacts.alts = {}
+                end
             }
         }
     }
@@ -924,7 +956,7 @@ do
     local tempName, tempRealm
 
     options.contacts.args.favorite = {
-        order = 3,
+        order = 5,
         type = "group",
         inline = true,
         name = L["My Favorites"],
@@ -1134,9 +1166,13 @@ options.inspect = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -1175,9 +1211,13 @@ options.inspect = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -1216,9 +1256,13 @@ options.inspect = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -1257,9 +1301,13 @@ options.inspect = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -1372,9 +1420,13 @@ options.itemLevel = {
                             values = {
                                 NONE = L["None"],
                                 OUTLINE = L["OUTLINE"],
+                                THICKOUTLINE = L["THICKOUTLINE"],
+                                SHADOW = L["SHADOW"],
+                                SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                                SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                                 MONOCHROME = L["MONOCHROME"],
                                 MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                                THICKOUTLINE = L["THICKOUTLINE"]
+                                MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                             }
                         },
                         size = {
@@ -1511,9 +1563,13 @@ options.itemLevel = {
                             values = {
                                 NONE = L["None"],
                                 OUTLINE = L["OUTLINE"],
+                                THICKOUTLINE = L["THICKOUTLINE"],
+                                SHADOW = L["SHADOW"],
+                                SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                                SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                                 MONOCHROME = L["MONOCHROME"],
                                 MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                                THICKOUTLINE = L["THICKOUTLINE"]
+                                MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                             }
                         },
                         size = {

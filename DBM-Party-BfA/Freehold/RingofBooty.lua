@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2094, "DBM-Party-BfA", 2, 1001)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230517222230")
+mod:SetRevision("20231117105343")
 mod:SetCreatureID(126969)
 mod:SetEncounterID(2095)
 mod:SetHotfixNoticeRev(20230505000000)
@@ -35,7 +35,6 @@ local warnGreasy					= mod:NewCountAnnounce(257829, 2)
 local warnRearm						= mod:NewSpellAnnounce(256489, 4)
 
 local specWarnSharkToss				= mod:NewSpecialWarningYou(256358, nil, nil, nil, 1, 2)
-local specWarnSharkTossNear			= mod:NewSpecialWarningClose(256358, nil, nil, nil, 1, 2)
 local yellSharkToss					= mod:NewYell(256358)
 local specWarnSharknado				= mod:NewSpecialWarningRun(256405, nil, nil, nil, 4, 2)
 --local specWarnRearm					= mod:NewSpecialWarningDodge(256489, nil, nil, nil, 2, 2)
@@ -43,7 +42,7 @@ local specWarnGTFO					= mod:NewSpecialWarningGTFO(256552, nil, nil, nil, 1, 8)
 
 local timerRP						= mod:NewRPTimer(68)
 --local timerSharkTossCD			= mod:NewCDTimer(31.5, 194956, nil, nil, nil, 3)--Disabled until more data, seems highly variable, even pull to pull
-local timerSharknadoCD				= mod:NewCDTimer(26.9, 256405, nil, nil, nil, 3)--Only timer that's really accurate
+local timerSharknadoCD				= mod:NewCDTimer(26.7, 256405, nil, nil, nil, 3)--Only timer that's really accurate
 local timerRearmCD					= mod:NewCDCountTimer("d19", 256489, nil, nil, nil, 3)--heavily affected by spell queues and may be disabled again if it leads to confusion/complaints
 
 mod:AddRangeFrameOption(8, 256358)
@@ -86,9 +85,6 @@ function mod:SPELL_CAST_SUCCESS(args)
 			specWarnSharkToss:Show()
 			specWarnSharkToss:Play("runaway")
 			yellSharkToss:Yell()
-		elseif self:CheckNearby(10, args.destName) then
-			specWarnSharkTossNear:Show(args.destName)
-			specWarnSharkTossNear:Play("watchstep")
 		else
 			warnSharkToss:Show(args.destName)
 		end
@@ -117,9 +113,6 @@ function mod:SPELL_DAMAGE(sourceGUID, _, _, _, destGUID, destName, _, _, spellId
 				specWarnSharkToss:Show()
 				specWarnSharkToss:Play("runaway")
 				yellSharkToss:Yell()
-			elseif self:CheckNearby(10, destName) then
-				specWarnSharkTossNear:Show(destName)
-				specWarnSharkTossNear:Play("watchstep")
 			else
 				warnSharkToss:Show(destName)
 			end

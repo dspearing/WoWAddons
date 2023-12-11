@@ -134,6 +134,10 @@ L["Configuration"] = "结构"
 L["Continue"] = "继续"
 L["Contributed by: "] = "贡献者: "
 L["Control Keys."] = "Ctrl键."
+--[[Translation missing --]]
+L["Convert"] = "Convert"
+--[[Translation missing --]]
+L["Convert this to a GSE3 Template"] = "Convert this to a GSE3 Template"
 L["Copy this link and open it in a Browser."] = "复制此链接并在浏览器中打开它."
 L["Copy this link and paste it into a chat window."] = "复制此链接并将其粘贴到聊天窗口中."
 L["Create a new macro."] = "创建一个新宏."
@@ -295,6 +299,12 @@ L["GSE: Import a Macro String."] = "GSE: Import a Macro String."
 L["GSE: Left Click to open the Sequence Editor"] = "GSE: 左键单击以打开序列编辑器"
 L["GSE: Middle Click to open the Transmission Interface"] = "GSE: 中键单击以打开传输接口"
 L["GSE: Right Click to open the Sequence Debugger"] = "GSE: 右键单击以打开序列调试器"
+--[[Translation missing --]]
+L["GSE2 Retro Importer available."] = "GSE2 Retro Importer available."
+--[[Translation missing --]]
+L["GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."] = "GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."
+--[[Translation missing --]]
+L["GSE2 Retro:"] = "GSE2 Retro:"
 L["Head"] = "头部"
 L["Help Colour"] = "帮助颜色"
 L["Help Information"] = "帮助信息"

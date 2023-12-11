@@ -313,7 +313,10 @@ info.maxWidth = [nil, NUMBER] -- Maximum width for this line
 info.forceWidth = [nil, NUMBER] -- Static width for this line
 info.customFrame = frame -- Allows this button to be a completely custom frame, should inherit from UIDropDownCustomMenuEntryTemplate and override appropriate methods.
 info.icon = [TEXTURE] -- An icon for the button.
+info.iconcolor = [R,G,B,A] -- Color for custom icon, defaults to 1,1,1,1.
 info.mouseOverIcon = [TEXTURE] -- An override icon when a button is moused over.
+info.iconset = array -- Optional zygor iconset to be used
+info.iconkey = string -- Key for iconset
 ]]
 
 local UIDropDownFork_ButtonInfo = {};
@@ -464,7 +467,13 @@ function UIDropDownFork_AddButton(info, level)
 			button:SetText(info.text);
 		end
 
-		-- Set icon
+		-- Use icon based on iconset if possible
+		if info.iconset then
+			info.icon = info.iconset.file
+			info.tCoordLeft, info.tCoordRight, info.tCoordTop, info.tCoordBottom = unpack(info.iconset[info.iconkey].texcoord or info.iconset[info.iconkey].texcoords[1])
+		end
+
+
 		if ( info.icon or info.mouseOverIcon ) then
 			icon:SetSize(16,16);
 			icon:SetTexture(info.icon);
@@ -496,6 +505,7 @@ function UIDropDownFork_AddButton(info, level)
 
 	button.iconOnly = nil;
 	button.icon = nil;
+	button.iconcolor = nil;
 	button.iconInfo = nil;
 
 	if (info.iconInfo) then
@@ -539,6 +549,7 @@ function UIDropDownFork_AddButton(info, level)
 	button.noClickSound = info.noClickSound;
 	button.padding = info.padding;
 	button.icon = info.icon;
+	button.iconcolor = info.iconcolor;
 	button.mouseOverIcon = info.mouseOverIcon;
 	button.onEnterFunc = info.onEnterFunc;
 	button.onLeaveFunc = info.onLeaveFunc;
@@ -546,6 +557,8 @@ function UIDropDownFork_AddButton(info, level)
 	button.isSeparator = info.isSeparator
 	button.paddingtop = info.paddingtop
 	button.paddingbottom = info.paddingbottom
+	button.iconset = info.iconset
+	button.iconkey = info.iconkey
 
 
 	if ( info.value ) then
@@ -1514,7 +1527,11 @@ function UIDropDownFork_ApplySkin()
 				icon:SetTexture(ZGV.SKINSDIR.."white");
 				icon:SetVertexColor(unpack(SkinData("FloatMenuSeparatorolor")))
 			else
-				icon:SetVertexColor(1,1,1,1)
+				if button.iconcolor  then
+					icon:SetVertexColor(unpack(button.iconcolor))
+				else
+					icon:SetVertexColor(1,1,1,1)
+				end
 			end
 
 			local highlight = _G[buttonName.."Highlight"]

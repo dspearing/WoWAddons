@@ -322,6 +322,15 @@ L= DBM:GetModLocalization(112)
 ------------------------
 L= DBM:GetModLocalization(113)
 
+---------
+--Trash--
+---------
+L = DBM:GetModLocalization("StonecoreTrash")
+
+L:SetGeneralLocalization({
+	name =	"바위심장부 일반몹"
+})
+
 ---------------------------
 --  The Vortex Pinnacle  --
 ---------------------------
@@ -381,6 +390,20 @@ L:SetTimerLocalization{
 L:SetOptionLocalization{
 	TimerPhase		= "2 단계 바 보기"
 }
+
+L:SetMiscLocalization{
+	RolePlay		= "야수가 돌아왔다! 놈이 물을 오염시키게 두면 안 된다!"
+}
+
+---------
+--Trash--
+---------
+L = DBM:GetModLocalization("ThroneofTidesTrash")
+
+L:SetGeneralLocalization({
+	name =	"파도의 왕좌 일반몹"
+})
+
 ----------------
 --  Zul'Aman  --
 ----------------

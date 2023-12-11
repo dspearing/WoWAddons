@@ -16,6 +16,7 @@ local item_gem_types = ItemScore.Item_Gem_Types
 
 local ItemCache = {}
 ItemScore.ItemCache = ItemCache
+local ItemCacheRequested = {}
 
 local locale=GetLocale()
 if locale=="enGB" then locale="enUS" end  -- just in case.
@@ -38,7 +39,7 @@ function ItemScore:Initialise()
 			local stats = rule["stats"]
 			local types = rule["itemtypes"]
 
-			stats.DAMAGE_PER_SECOND = stats.DPS stats.DPS = nil -- Switch DPS to the full string.
+			stats.DAMAGE_PER_SECOND = stats.DAMAGE_PER_SECOND or stats.DPS stats.DPS = nil -- Switch DPS to the full string.
 
 			-- players use only final armor types, so no fallbacks to lower ones anymore
 
@@ -62,8 +63,6 @@ function ItemScore:Initialise()
 		ZGV:AddEventHandler("CHARACTER_POINTS_CHANGED",ItemScore.OnEvent)
 		ZGV:AddEventHandler("SKILL_LINES_CHANGED",ItemScore.OnEvent)
 	end
-
-	ZGV.UpdateCentral:AddHandler(ItemScore.ItemDetailsHandler)
 
 	ZGV:AddMessageHandler("ZGV_STEP_FINALISED",ItemScore.OnEvent)
 	ZGV:AddMessageHandler("LIBROVER_TRAVEL_REPORTED",ItemScore.OnEvent)
@@ -279,6 +278,7 @@ function ItemScore:SetStatWeights(playerclass,playerspec,playerlevel)
 	-- if anything in user info has changed, all cached scores are no longer valid, and item stats could have changed due to level scaling
 	-- wipe cached data, we are starting anew
 	table.wipe(ItemCache)
+	table.wipe(ItemCacheRequested)
 
 	ItemScore.GearFinder:ClearResults()
 end
@@ -306,39 +306,42 @@ function ItemScore:NormaliseStatName(statname)
 	return statname
 end
 
-ItemScore.GetItemDetailsQueue = {}
 function ItemScore:GetItemDetails(itemlink,callback,force)
 	if not itemlink then return false end
 	itemlink = strip_link(itemlink)
 
-	if not ItemCache[itemlink] then
-		table.insert(ItemScore.GetItemDetailsQueue,{itemlink,callback,force})
+	if not itemlink then return false end -- not really an item - keystone, pet, toy
+
+	local cached = ItemCache[itemlink]
+
+	if not cached then
+		if not ItemCacheRequested[itemlink] then
+			local item = Item:CreateFromItemLink(itemlink);
+			if item:IsItemEmpty() then return false end -- whatever it is, it does not exist
+			item:ContinueOnItemLoad(function()
+				ItemScore:GetItemDetailsQueued(itemlink,force)
+				ItemCacheRequested[itemlink] = nil
+			end);
+			ItemCacheRequested[itemlink] = true
+		end
+		return false
 	else
 		return ItemCache[itemlink]
 	end
 end
 
-function ItemScore:ItemDetailsHandler()
-	if ItemScore.GetItemDetailsQueue[1] then
-		local itemlink,callback,force = unpack(table.remove(ItemScore.GetItemDetailsQueue,1))
-		local result = ItemScore:GetItemDetailsQueued(itemlink,force)
-		if result then
-			if callback and type(callback)=="function" then callback(result) end
-		else
-			table.insert(ItemScore.GetItemDetailsQueue,{itemlink,callback,force})
-		end
-	end
-end
-
-local SKIP_CACHE = false
+local SKIP_CACHE = true
 function ItemScore:GetItemDetailsQueued(itemlink,force)
 	if not itemlink then return false end
 	local itemlinkfull = itemlink
 	itemlink = strip_link(itemlink)
 	if not itemlink then return false end
 
-	-- if item is not yet cached, grab its data
-	if not ItemCache[itemlink] or SKIP_CACHE or force then
+	local cached = ItemCache[itemlink]
+	local i
+
+	-- if item is not yet cached or not cached fully, grab its data
+	if not cached or SKIP_CACHE or force then
 		-- that is a new one
 		local itemName,_,itemRarity,_,itemMinLevel,_,_,_,itemEquipLoc,texture,_,itemClassID,itemSubClassID = ZGV:GetItemInfo(itemlink) 
 		local itemlvl,_,baseitemlvl = GetDetailedItemLevelInfo(itemlink) 
@@ -355,8 +358,9 @@ function ItemScore:GetItemDetailsQueued(itemlink,force)
 				quality = itemRarity,
 				validated = false,
 				texture = texture,
+				equipment = false,
 			}
-			return
+			return false
 		end
 
 		-- class, spec check, and level check. we need to scan tooltip for those. meh.
@@ -377,7 +381,9 @@ function ItemScore:GetItemDetailsQueued(itemlink,force)
 			end
 		end
 
-		for _,line in ipairs(tooltip) do
+		local found_enchant, found_equip, found_proc, found_use, found_flavour = false, false, false, false, false
+
+		for i,line in ipairs(tooltip) do
 			local found_class = line:match( gsub(ITEM_CLASSES_ALLOWED,"%%s","(.*)")) 
 			if found_class then playerclass = found_class end
 
@@ -388,17 +394,22 @@ function ItemScore:GetItemDetailsQueued(itemlink,force)
 			local found_level = line:match( gsub(ITEM_MIN_LEVEL,"%%d","(.*)"))
 			if found_level then itemMinLevel = tonumber(found_level) end
 
+			if line:match(gsub(ENCHANTED_TOOLTIP_LINE,"%%s","(.*)")) then found_enchant=true end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONEQUIP) then found_equip=true end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONPROC) then found_proc=true end
+			if line:match("^"..ITEM_SPELL_TRIGGER_ONUSE) then found_use=true end
+			if i>1 and line:match('"') then found_flavour=true end
+
 			if ZGV.IsRetail then -- early exists are only valid on retail. classic has normal stats as equip: effects
 				if line==" " then break end -- empty lines denote end of stats and beggining of extras. 
-
-				-- we reached enchancement or triggered effect line, no more stats. 
-				if line:match(gsub(ENCHANTED_TOOLTIP_LINE,"%%s","(.*)")) then break end
-				if line:match("^"..ITEM_SPELL_TRIGGER_ONEQUIP) then break end
-				if line:match("^"..ITEM_SPELL_TRIGGER_ONPROC) then break end
-				if line:match("^"..ITEM_SPELL_TRIGGER_ONUSE) then break end
 				if line:match("^"..ITEM_SET_BONUS_GRAY) then break end
 				if line:match("^"..ITEM_SET_BONUS) then break end
+				if (found_enchant or found_equip or found_proc or found_use) then break end
 			end
+
+			--if (found_enchant or found_equip or found_proc or found_use or found_flavour) then
+			--	stats.FOUND_EFFECTS = 1
+			--end
 
 			local socket_bonus = line:match( ITEM_SOCKET_BONUS:gsub("%%s","(.*)"))
 			local set_bonus = line:match( ITEM_SET_BONUS_GRAY:gsub("%%s","(.*)"))
@@ -448,10 +459,9 @@ function ItemScore:GetItemDetailsQueued(itemlink,force)
 			itemlvl = itemlvl,
 			playerclass = playerclass,
 			playerspec = playerspec,
+			equipment = true,
+			tooltip = tooltip,
 		}
-
-		if ItemScore.SaveTooltip then ItemCache[itemlink].tooltip = tooltip end
-
 
 		local slot_1, slot_2, twohander = ItemScore:GetValidSlots(ItemCache[itemlink])
 		ItemCache[itemlink].slot = slot_1
@@ -481,7 +491,9 @@ end
 --	comment - string - description
 function ItemScore:GetItemScore(itemlink,verbose)
 	local item = ItemScore:GetItemDetails(itemlink)
-	if not item then return -1, -1, false, "no info yet" end
+	if not item then return -1, false, "no info yet" end
+	if not item.equipment then return 0,true,"not equipment" end
+	--if not next(item.stats) then return -1, false, "no item stats yet" end
 
 	if item.score then return item.score, true, "scored cache ok" end
 
@@ -1194,6 +1206,7 @@ function ItemScore:GetEquipmentSkills()
 
 	table.wipe(ItemScore.Skills)
 	table.wipe(ItemCache) -- since items that were rejected due to skill may be valid now
+	table.wipe(ItemCacheRequested)
 
 	for i=1, GetNumSkillLines() do
 		local skillName, _, _, skillRank, numTempPoints, skillModifier, skillMaxRank, isAbandonable, stepCost, rankCost, minLevel, skillCostType = GetSkillLineInfo(i);

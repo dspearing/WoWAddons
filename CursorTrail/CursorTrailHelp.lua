@@ -38,13 +38,15 @@ setfenv(1, _G.CursorTrail)  -- Everything after this uses our namespace rather t
 kHelpText_Options = [[
 The options window can be opened from the standard addons window, or by typing "/ct" or "/cursortrail".  Settings are saved separately for each of your WoW characters, so your tank (for example) can have different cursor effects than your other characters.
 
-* Shape:  A list of shape effects to choose from.  The color of each shape can be changed by clicking the color swatch button to the right of the Shape selection.
+* Shape:  A list of shape effects to choose from.  
+The shape's color can be changed by clicking the color swatch button to the right of the Shape selection.  
+When "Sparkle" is turn on, the chosen shape color is ignored and the shape "sparkles" instead.  (Sparkle does not affect model color.)
 
 * Model:  A list of animated cursor effects to choose from.  Models can be repositioned using "Model Offsets" described below.
 
 * Shadow %:  Controls how intense the black background circle is.  99% is darkest, while 0% is invisible (off).
 
-* Scale %:  Controls the size of the effect.  Can be 1 - 999.
+* Scale %:  Controls the size of the effect.  Can be 1 to 998.
 
 * Opacity %:  Controls how transparent Shape and Model are.  100% is fully visible, while 0% is invisible (off).
 
@@ -62,7 +64,7 @@ The options window can be opened from the standard addons window, or by typing "
 ]]
 
 kHelpText_ProfileCommands = [[
-Profiles (your settings) can be saved and loaded using slash commands:
+Profiles (your settings) can be saved and loaded between all your characters using slash commands:
 
         /ct save  <profile name>
         /ct load  <profile name>
@@ -75,7 +77,11 @@ Type "/ct help" to see a list of all slash commands.
 ]]
 
 kHelpText_Troubleshooting = [[
-If the cursor effects unexpectedly disappear, you can quickly get them back by typing "/ct reload".
+- Some models disappear if scaling is set too low.  If you select a model and it doesn't show up, try a larger Scale %.  (All models work at 100% scale.)
+
+- If the cursor effects unexpectedly disappear, you can quickly get them back by typing "/ct reload".
+
+- If shapes and shadows do not follow the mouse cursor properly, and you are using an addon to change the game's UI scale below the normal minimum (64%), type "/ct reload" (or do a normal game reload) so CursorTrail uses the new scale value.
 ]]
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

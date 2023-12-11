@@ -13,6 +13,18 @@ local ITEMQUALITY_ARTIFACT = Enum.ItemQuality.Artifact
 local CurrencyContainerUtil_GetCurrencyContainerInfo = CurrencyContainerUtil.GetCurrencyContainerInfo
 local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo
 
+local function HandleRoleButton(button)
+	local checkbox = button.checkButton
+	checkbox:SetFrameLevel(checkbox:GetFrameLevel() + 1)
+	S:HandleCheckBox(checkbox)
+
+	button:Size(40)
+
+	if button.IconPulse then button.IconPulse:Size(40) end
+	if button.EdgePulse then button.EdgePulse:Size(40) end
+	if button.shortageBorder then button.shortageBorder:Size(40) end
+end
+
 function S:Blizzard_PVPUI()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.pvp) then return end
 
@@ -74,7 +86,7 @@ function S:Blizzard_PVPUI()
 
 		reward.EnlistmentBonus:StripTextures()
 		reward.EnlistmentBonus:SetTemplate()
-		reward.EnlistmentBonus:Size(20, 20)
+		reward.EnlistmentBonus:Size(20)
 		reward.EnlistmentBonus:Point('TOPRIGHT', 2, 2)
 
 		local EnlistmentBonusIcon = reward.EnlistmentBonus:CreateTexture()
@@ -112,9 +124,9 @@ function S:Blizzard_PVPUI()
 		if s.bg then s.bg:SetDesaturated(true) end
 	end)
 
-	S:HandleCheckBox(HonorFrame.TankIcon.checkButton)
-	S:HandleCheckBox(HonorFrame.HealerIcon.checkButton)
-	S:HandleCheckBox(HonorFrame.DPSIcon.checkButton)
+	HandleRoleButton(HonorFrame.TankIcon)
+	HandleRoleButton(HonorFrame.HealerIcon)
+	HandleRoleButton(HonorFrame.DPSIcon)
 
 	-- Conquest Frame
 	local ConquestFrame = _G.ConquestFrame
@@ -123,9 +135,9 @@ function S:Blizzard_PVPUI()
 
 	S:HandleButton(_G.ConquestJoinButton)
 
-	S:HandleCheckBox(ConquestFrame.TankIcon.checkButton)
-	S:HandleCheckBox(ConquestFrame.HealerIcon.checkButton)
-	S:HandleCheckBox(ConquestFrame.DPSIcon.checkButton)
+	HandleRoleButton(ConquestFrame.TankIcon)
+	HandleRoleButton(ConquestFrame.HealerIcon)
+	HandleRoleButton(ConquestFrame.DPSIcon)
 
 	for _, bu in pairs({ConquestFrame.RatedSoloShuffle, ConquestFrame.Arena2v2, ConquestFrame.Arena3v3, ConquestFrame.RatedBG}) do
 		local reward = bu.Reward
@@ -226,27 +238,24 @@ end
 function S:PVPReadyDialog()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.pvp) then return end
 
-	--PVP QUEUE FRAME
-	_G.PVPReadyDialog:StripTextures()
-	_G.PVPReadyDialog:SetTemplate('Transparent')
-	S:HandleButton(_G.PVPReadyDialogEnterBattleButton)
-	S:HandleButton(_G.PVPReadyDialogLeaveQueueButton)
 	S:HandleCloseButton(_G.PVPReadyDialogCloseButton)
+	S:SkinReadyDialog(_G.PVPReadyDialog, 54)
 
-	hooksecurefunc('PVPReadyDialog_Display', function(s, _, _, _, queueType, _, role)
-		if role == 'DAMAGER' then
-			_G.PVPReadyDialogRoleIcon.texture:SetTexCoord(_G.LFDQueueFrameRoleButtonDPS.background:GetTexCoord())
-		elseif role == 'TANK' then
-			_G.PVPReadyDialogRoleIcon.texture:SetTexCoord(_G.LFDQueueFrameRoleButtonTank.background:GetTexCoord())
-		elseif role == 'HEALER' then
-			_G.PVPReadyDialogRoleIcon.texture:SetTexCoord(_G.LFDQueueFrameRoleButtonHealer.background:GetTexCoord())
+	hooksecurefunc('PVPReadyDialog_Display', function(dialog, _, _, isRated, queueType)
+		dialog.enterButton:ClearAllPoints()
+
+		if dialog.leaveButton:IsShown() then
+			dialog.enterButton:Point('BOTTOMRIGHT', dialog, 'BOTTOM', -7, 16)
+
+			dialog.leaveButton:ClearAllPoints()
+			dialog.leaveButton:Point('BOTTOMLEFT', dialog, 'BOTTOM', 7, 16)
+		else
+			dialog.enterButton:Point('BOTTOM', 0, 16)
 		end
 
-		if queueType == 'ARENA' then
-			s:Height(100)
+		if queueType == 'BATTLEGROUND' and not isRated then
+			dialog.background:SetTexCoord(0, 1, 0.01, 1)
 		end
-
-		s.background:Hide()
 	end)
 end
 

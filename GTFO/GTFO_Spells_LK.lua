@@ -772,12 +772,12 @@ GTFO.SpellID["72097"] = {
 
 GTFO.SpellID["71271"] = {
 	--desc = "Arctic Chill (ICC Frostwing Trash - 10)";
-	sound = 1;
+	sound = 2;
 };
 
 GTFO.SpellID["71829"] = {
 	--desc = "Arctic Chill (ICC Frostwing Trash - 25)";
-	sound = 1;
+	sound = 2;
 };
 
 GTFO.SpellID["71086"] = {
@@ -882,11 +882,13 @@ GTFO.SpellID["70305"] = {
 GTFO.SpellID["54251"] = {
 	--desc = "Lava Burn (Lavanthor - VH)";
 	sound = 2;
+	applicationOnly = true;
 };
 
 GTFO.SpellID["59470"] = {
 	--desc = "Lava Burn (Lavanthor - VH)";
 	sound = 1;
+	applicationOnly = true;
 };
 
 GTFO.SpellID["71045"] = {
@@ -1269,5 +1271,15 @@ GTFO.SpellID["398140"] = {
 	sound = 1;
 	ignoreApplication = true;
 };
+
+GTFO.SpellID["392731"] = {
+	--desc = "Glaciate (UP/UK - Heroic+)";
+	sound = 1;
+}
+
+GTFO.SpellID["412964"] = {
+	--desc = "Glaciate (UP/UK - Heroic+)";
+	sound = 1;
+}
 
 end

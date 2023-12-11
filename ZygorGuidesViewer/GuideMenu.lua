@@ -547,7 +547,7 @@ function GuideMenu:Update()
 		local ROW_COUNT = GuideMenu.MainFrame.GuideListScrollFrame:CountRows()
 		local results=#GuideMenu.Guides
 
-		GuideMenu.GuideListOffset = max(0,min(GuideMenu.GuideListOffset,results-ROW_COUNT))
+		GuideMenu.GuideListOffset = max(0,min((GuideMenu.GuideListOffset or 0),results-ROW_COUNT))
 		local rowoff=GuideMenu.GuideListOffset
 
 		local itemindex = 1
@@ -649,7 +649,12 @@ function GuideMenu:Update()
 					end
 				end
 
-				row.title:SetText((object.name or object.title_short or object.header_name or "") .. (object.beta and ZGV.L['guidebeta'] or "") .. (object.devonly and ZGV.L['guidedev'] or "") .. (object.devpartial and ZGV.L['guidedevpart'] or ""))
+				row.title:SetText((object.name or object.title_short or object.header_name or "")
+					.. (object.beta and ZGV.L['guidebeta'] or "")
+					.. (object.devonly and ZGV.L['guidedev'] or "")
+					.. (object.devpartial and ZGV.L['guidedevpart'] or "")
+					.. (object.hardcore and ZGV.L['guidehardcore'] or "")
+				)
 				if suggested and ZGV.db.profile.gmstarsuggested then
 					row.iconover:Show()
 					row.iconover.anim:Play()
@@ -967,3 +972,7 @@ tinsert(ZGV.startups,{"Guide Menu",function(self)
 	GuideMenu:CreateHome()
 	GuideMenu:CreateRequestFrame()
 end})
+
+tinsert(ZGV.startups,{"Guide Menu Featured",function(self)
+	GuideMenu:StartFeatured()
+end,after="guides_loaded"})

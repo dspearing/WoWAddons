@@ -21,6 +21,8 @@ local function OnEvent(self, event)
 	if not ZGV.ActionBar or not ZGV.ActionBar.Frame then return end -- we are too early
 	if not ZGV.CurrentStep then return end -- we will retry on step focus
 	if event=="BAG_UPDATE_DELAYED" and not ZGV.db.profile.actionbar_trash then return end -- trasher is disabled, we do not care about bag changes
+	if event=="PLAYER_REGEN_DISABLED" then ActionBar.Lockdown = true end
+	if event=="PLAYER_REGEN_ENABLED" then ActionBar.Lockdown = false end
 		
 	if event=="ZGV_STARTED_SKIPPING" then 
 		ActionBar:ClearBar("forcehide")
@@ -34,7 +36,7 @@ local function OnEvent(self, event)
 end
 
 local function DragStart(self)
-	if InCombatLockdown() then return false end
+	if InCombatLockdown() or ActionBar.Lockdown then return false end
 
 	local objtype = self:GetAttribute("type")
 	local object = self:GetAttribute(objtype)
@@ -63,6 +65,7 @@ function ActionBar:Initialise()
 
 	ZGV:AddMessageHandler("ZGV_NPC_TRANSLATED",OnEvent)
 	ZGV:AddEventHandler("PLAYER_REGEN_ENABLED",OnEvent)
+	ZGV:AddEventHandler("PLAYER_REGEN_DISABLED",OnEvent)
 	if ZGV.IsRetail then ZGV:AddEventHandler("UPDATE_VEHICLE_ACTIONBAR",OnEvent) end
 	ZGV:AddEventHandler("BAG_UPDATE_DELAYED",OnEvent)
 
@@ -126,7 +129,7 @@ end
 
 function ActionBar:SetActionButtons()
 	if ActionBar.SetTimer then ZGV:CancelTimer(ActionBar.SetTimer) end
-	if InCombatLockdown() then
+	if InCombatLockdown() or ActionBar.Lockdown then
 		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:SetActionButtons()
 		end, 1)
@@ -200,7 +203,7 @@ function ActionBar:SetActionButtonsQueued()
 		end -- if goal visible
 	end -- for goal in step
 
-local counter = 0
+	local counter = 0
 	for _,data in ipairs(actions) do 
 		counter = counter + 1
 		ZGV.ActionBar:SetButton(data[1],data[2],data[3],counter) 
@@ -289,7 +292,7 @@ function ActionBar:CreateFrame()
 
 	ZGV:AddMessageHandler("SKIN_UPDATED",ActionBar.ApplySkin)
 	ActionBar:SetCombatHiding()
-	if not InCombatLockdown() then ActionBar.Frame:Hide() end
+	if not (InCombatLockdown() or ActionBar.Lockdown) then ActionBar.Frame:Hide() end
 
 	ActionBar:ApplySkin()
 end
@@ -353,7 +356,7 @@ end
 local old_x,old_y
 function ActionBar:SnapToZGVFrame(force)
 	if ActionBar.SnapTimer then ZGV:CancelTimer(ActionBar.SnapTimer) end
-	if InCombatLockdown() then
+	if InCombatLockdown() or ActionBar.Lockdown then
 		ActionBar.SnapTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:SnapToZGVFrame(force)
 		end, 1)
@@ -392,7 +395,7 @@ function ActionBar:ToggleFrame()
 	end
 
 	if ActionBar.ToggleTimer then ZGV:CancelTimer(ActionBar.ToggleTimer) end
-	if InCombatLockdown() then 
+	if InCombatLockdown() or ActionBar.Lockdown then 
 		ActionBar.ToggleTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:ToggleFrame()
 		end, 1)
@@ -556,11 +559,18 @@ function ActionBar:SetButton(btype,object,fallbackname,counter)
 		macro_tooltip = L["stepgoal_create"] :format(macro_name)
 	end
 
+	if InCombatLockdown() or ActionBar.Lockdown then -- just in case we got into combat state while function was running
+		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
+			ActionBar:SetActionButtons()
+		end, 1)
+		return
+	end
+
 	if macro_text~="" then
 		EditMacro(macro_index,nil,macro_texture,macro_text)
 	end
 
-button:SetAttribute("type","macro")
+	button:SetAttribute("type","macro")
 	button:SetAttribute("macro",macro_index)
 
 	if btype=="item" then 		local macro_name = macro_name or (tonumber(object) and "item:"..object) or object
@@ -592,7 +602,7 @@ end
 function ActionBar:ClearBar(forcehide) 
 	if not ActionBar.Frame then return end
 	if ActionBar.ClearTimer then ZGV:CancelTimer(ActionBar.ClearTimer) end
-	if InCombatLockdown() then
+	if InCombatLockdown() or ActionBar.Lockdown then
 		ActionBar.ClearTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:ClearBar(forcehide)
 		end, 1)
@@ -624,6 +634,14 @@ function ActionBar:ClearBar(forcehide)
 end
 
 function ActionBar:ReanchorButtons(force) 
+	if ActionBar.SetTimer then ZGV:CancelTimer(ActionBar.SetTimer) end
+	if InCombatLockdown() or ActionBar.Lockdown then
+		ActionBar.SetTimer = ZGV:ScheduleTimer(function() 
+			ActionBar:SetActionButtons()
+		end, 1)
+		return
+	end
+
 	if not ActionBar.Frame then return end
 	if not ZGV.db.profile.enable_viewer then ActionBar.Frame.Overlay:Hide() ActionBar.Frame:Hide() return end -- viewer is hidden, go away
 	if not ZGV.db.profile.enable_actionbuttons and not force then return end -- everything is disabled, abort
@@ -633,7 +651,7 @@ function ActionBar:ReanchorButtons(force)
 	local space = 5
 	local width = space
 	local active = false
-	ActionBar.Frame:Show()
+	--ActionBar.Frame:Show()
 
 	for _,button in ipairs(ActionBar.Buttons) do
 		button:ClearAllPoints()
@@ -688,7 +706,7 @@ end
 
 function ActionBar:SetScale() 
 	if ActionBar.ScaleTimer then ZGV:CancelTimer(ActionBar.ScaleTimer) end
-	if InCombatLockdown() then 
+	if InCombatLockdown() or ActionBar.Lockdown then 
 		ActionBar.ScaleTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:SetScale()
 		end, 1)
@@ -699,7 +717,7 @@ end
 
 function ActionBar:SetAlpha(value) 
 	if ActionBar.OpacityTimer then ZGV:CancelTimer(ActionBar.OpacityTimer) end
-	if InCombatLockdown() then 
+	if InCombatLockdown() or ActionBar.Lockdown then 
 		ActionBar.OpacityTimer = ZGV:ScheduleTimer(function() 
 			ActionBar:SetAlpha()
 		end, 1)
@@ -734,8 +752,15 @@ ZygorActionButtonOverlay_Mixin = {}
 function ZygorActionButtonOverlay_Mixin:OnEnter()
 	if self.tooltipDisabled then return end
 	if not self.button then return end
-	GameTooltip:SetOwner(self,"ANCHOR_BOTTOM")
 
+	local top = self.button:GetTop()
+	local screenh = UIParent:GetHeight()
+	if top>screenh/2 then
+		GameTooltip:SetOwner(self,"ANCHOR_BOTTOM")
+	else
+		GameTooltip:SetOwner(self,"ANCHOR_TOP")
+	end
+	
 	local button = self.button
 
 	if button:GetAttribute("itemid") then
@@ -800,7 +825,7 @@ function ZygorActionButtonOverlay_Mixin:UpdateCooldown()
 
 	local starts,dur,ends = 0,0,0
 	if button:GetAttribute("itemid") and tonumber(button:GetAttribute("itemid")) then
-		starts,dur,ends = ZGV.F.GetItemCooldown(button:GetAttribute("itemid"))
+		starts,dur,ends = C_Container.GetItemCooldown(button:GetAttribute("itemid"))
 	elseif button:GetAttribute("spellid") and tonumber(button:GetAttribute("spellid")) then
 		starts,dur,ends = GetSpellCooldown(button:GetAttribute("spellid"))
 	elseif button:GetAttribute("petid") and tonumber(button:GetAttribute("petid")) then

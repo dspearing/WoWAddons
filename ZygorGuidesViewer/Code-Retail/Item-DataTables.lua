@@ -228,33 +228,37 @@ ItemScore.Item_Armor_Types = {
 -- Hey Dugi. We know you are watching this file. 
 ItemScore.MythicPlusMods = {
 	-- level, prefix, item level
-	 [2]={p=3410,lvl=402}, -- ranks "3399:7363"
-	 [3]={p=3411,lvl=405}, -- ranks "3399:7364"
-	 [4]={p=3412,lvl=405}, -- ranks "3399:7365"
-	 [5]={p=3413,lvl=408}, -- ranks "3399:7366"
-	 [6]={p=3414,lvl=408}, -- ranks "3399:7367"
-	 [7]={p=3415,lvl=411}, -- ranks "3399:7368"
-	 [8]={p=3416,lvl=411}, -- ranks "3399:7369"
-	 [9]={p=3417,lvl=415}, -- ranks "3399:7370"
-	[10]={p=3418,lvl=415}, -- ranks "3399:7371"
-	[11]={p=3509,lvl=418}, -- ranks "3399:7372"
-	[12]={p=3510,lvl=418}, -- ranks "3399:7373"
-	[13]={p=3534,lvl=421},
-	[14]={p=3535,lvl=421},
-	[15]={p=3536,lvl=424},
-	[16]={p=1806,lvl=424}, -- no mythic 16+ itemmod, show just mythic
-	[17]={p=1806,lvl=428},
-	[18]={p=1806,lvl=428},
-	[19]={p=1806,lvl=431},
-	[20]={p=1806,lvl=431},
+	 [2]={p=3524,lvl=441}, -- veteran1 9552     3410 -- ranks "3399:7363"
+	 [3]={p=3524,lvl=444}, -- veteran2 9553     3411 -- ranks "3399:7364"
+	 [4]={p=3524,lvl=444}, -- veteran2 9553     3412 -- ranks "3399:7365"
+	 [5]={p=3524,lvl=447}, -- veteran3 9554     3413 -- ranks "3399:7366"
+	 [6]={p=3524,lvl=447}, -- veteran3 9554     3414 -- ranks "3399:7367"
+	 [7]={p=3524,lvl=450}, -- veteran4 9555     3415 -- ranks "3399:7368"
+	 [8]={p=3524,lvl=450}, -- veteran4 9555     3416 -- ranks "3399:7369"
+	 [9]={p=3524,lvl=454}, -- champion1 9560    3417 -- ranks "3399:7370"
+	[10]={p=3524,lvl=454}, -- champion1 9560    3418 -- ranks "3399:7371"
+	[11]={p=3524,lvl=457}, -- champion2 9561    3509 -- ranks "3399:7372"
+	[12]={p=3524,lvl=457}, -- champion2 9561    3510 -- ranks "3399:7373"
+	[13]={p=3524,lvl=460}, -- champion3 9562    3534 			   
+	[14]={p=3524,lvl=460}, -- champion3 9562    3535 			   
+	[15]={p=3524,lvl=463}, -- champion4 9563    3536 			   
+	[16]={p=3524,lvl=463}, -- champion4 9563    1806			   
+	[17]={p=3524,lvl=467}, -- hero1 9568        1806                     
+	[18]={p=3524,lvl=467}, -- hero1 9568        1806 			   
+	[19]={p=3524,lvl=470}, -- hero2 9569        1806 			   
+	[20]={p=3524,lvl=470}, -- hero2 9569        1806 			   
 }
 
 ItemScore.MythicItemBaseLevels = {
-	[5] = 44, -- wod
-	[6] = 50, -- legion
-	[7] = 78, -- bfa
-	[8] = 155, -- shadowlands
-	[9] = 250, -- dragonflight
+	[1] = 441, -- wod
+	[2] = 441, -- wod
+	[3] = 441, -- wod
+	[4] = 441, -- wod
+	[5] = 441, -- wod
+	[6] = 441, -- legion
+	[7] = 441, -- bfa
+	[8] = 441, -- shadowlands
+	[9] = 441, -- dragonflight
 }
 
 -- level delta item bonus:

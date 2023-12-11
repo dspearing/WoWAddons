@@ -5,50 +5,28 @@ end
 local L = LibStub("AceLocale-3.0"):NewLocale("GSE", "esES")
 
 -- Options translation
---[[Translation missing --]]
-L["  The Alternative ClassID is "] = "  The Alternative ClassID is "
---[[Translation missing --]]
-L[" Deleted Orphaned Macro "] = " Deleted Orphaned Macro "
---[[Translation missing --]]
-L[" from "] = " from "
---[[Translation missing --]]
-L[" has been added as a new version and set to active.  Please review if this is as expected."] = " has been added as a new version and set to active.  Please review if this is as expected."
---[[Translation missing --]]
-L[" is not available.  Unable to translate sequence "] = " is not available.  Unable to translate sequence "
---[[Translation missing --]]
-L[" macros per Account.  You currently have "] = " macros per Account.  You currently have "
---[[Translation missing --]]
-L[" macros per character.  You currently have "] = " macros per character.  You currently have "
---[[Translation missing --]]
-L[" saved as version "] = " saved as version "
---[[Translation missing --]]
-L[" sent"] = " sent"
---[[Translation missing --]]
-L[" tried to overwrite the version already loaded from "] = " tried to overwrite the version already loaded from "
---[[Translation missing --]]
-L[" was imported as a new macro."] = " was imported as a new macro."
---[[Translation missing --]]
-L[" was imported with the following errors."] = " was imported with the following errors."
---[[Translation missing --]]
-L[" was updated to new version."] = " was updated to new version."
---[[Translation missing --]]
-L["%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."] = "%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."
---[[Translation missing --]]
-L["%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"] = "%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"
---[[Translation missing --]]
-L[". This version was not loaded."] = ". This version was not loaded."
---[[Translation missing --]]
-L["/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."] = "/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."
---[[Translation missing --]]
-L["/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."] = "/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."
---[[Translation missing --]]
-L["/gse help|r to get started."] = "/gse help|r to get started."
---[[Translation missing --]]
-L["/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."] = "/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."
---[[Translation missing --]]
-L["/gse|r again."] = "/gse|r again."
---[[Translation missing --]]
-L["/gse|r to get started."] = "/gse|r to get started."
+L["  The Alternative ClassID is "] = "El ClassID Alternativo es"
+L[" Deleted Orphaned Macro "] = "Borrada Macro desasignada"
+L[" from "] = "de"
+L[" has been added as a new version and set to active.  Please review if this is as expected."] = "se ha agregado como una nueva versión y se ha configurado como activo. Por favor revise si es correcto."
+L[" is not available.  Unable to translate sequence "] = "No está disponible. No se puede traducir la secuencia"
+L[" macros per Account.  You currently have "] = "macros por cuenta. Actualmente tienes"
+L[" macros per character.  You currently have "] = "macros por personaje. Actualmente tienes"
+L[" saved as version "] = "guardado como versión"
+L[" sent"] = "enviado"
+L[" tried to overwrite the version already loaded from "] = "Intenté sobrescribir la versión ya cargada desde"
+L[" was imported as a new macro."] = "se ha importado como una nueva macro."
+L[" was imported with the following errors."] = "se ha importado con los siguientes errores."
+L[" was updated to new version."] = "se ha actualizado a la nueva versión."
+L["%s macro may cause a 'RestrictedExecution.lua:431' error as it has %s actions when compiled.  This get interesting when you go past 255 actions.  You may need to simplify this macro."] = "La macro %s puede causar un error 'RestrictedExecution.lua:431' ya que tiene %s acciones cuando se compila. Esto se vuelve inestable cuando pasas de 255 acciones. Es posible que necesites simplificar esta macro."
+L["%sMACRO VALIDATION ERROR|r - PostMacro found with invalid LoopLimit.  PostMacro will not be saved for version %s"] = "%sERROR DE VALIDACIÓN DE MACRO|r - Se encontró una PostMacro con un limite de bucles no válido. PostMacro no se guardará para la versión %s"
+L[". This version was not loaded."] = "Esta versión no se ha cargado."
+L["/gse checkmacrosforerrors|r will loop through your macros and check for corrupt macro versions.  This will then show how to correct these issues."] = "/gse checkmacrosforerrors|r recorrerá sus macros y comprobará si hay versiones de macro corruptas. Esto mostrará cómo corregir estos problemas."
+L["/gse cleanorphans|r will loop through your macros and delete any left over GSE macros that no longer have a sequence to match them."] = "/gse cleanorphans|r recorrerá sus macros y eliminará las macros GSE sobrantes que ya no tengan una secuencia que coincida con ellas."
+L["/gse help|r to get started."] = "/gse help|r para comenzar."
+L["/gse showspec|r will show your current Specialisation and the SPECID needed to tag any existing macros."] = "/gse showspec|r mostrará su especialización actual y el SPECID necesario para coincidir con cualquier macro existente."
+L["/gse|r again."] = "/gse|r de nuevo."
+L["/gse|r to get started."] = "/gse|r para comenzar."
 --[[Translation missing --]]
 L["/gse|r will list any macros available to your spec.  This will also add any macros available for your current spec to the macro interface."] = "/gse|r will list any macros available to your spec.  This will also add any macros available for your current spec to the macro interface."
 --[[Translation missing --]]
@@ -233,6 +211,10 @@ L["Continue"] = "Continue"
 L["Contributed by: "] = "Contributed by: "
 --[[Translation missing --]]
 L["Control Keys."] = "Control Keys."
+--[[Translation missing --]]
+L["Convert"] = "Convert"
+--[[Translation missing --]]
+L["Convert this to a GSE3 Template"] = "Convert this to a GSE3 Template"
 --[[Translation missing --]]
 L["Copy this link and open it in a Browser."] = "Copy this link and open it in a Browser."
 --[[Translation missing --]]
@@ -473,6 +455,12 @@ L["GSE: Left Click to open the Sequence Editor"] = "GSE: Left Click to open the 
 L["GSE: Middle Click to open the Transmission Interface"] = "GSE: Middle Click to open the Transmission Interface"
 --[[Translation missing --]]
 L["GSE: Right Click to open the Sequence Debugger"] = "GSE: Right Click to open the Sequence Debugger"
+--[[Translation missing --]]
+L["GSE2 Retro Importer available."] = "GSE2 Retro Importer available."
+--[[Translation missing --]]
+L["GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."] = "GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."
+--[[Translation missing --]]
+L["GSE2 Retro:"] = "GSE2 Retro:"
 --[[Translation missing --]]
 L["Head"] = "Head"
 --[[Translation missing --]]

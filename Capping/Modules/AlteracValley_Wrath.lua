@@ -12,9 +12,13 @@ do
 		[30907] = true, -- alliance
 		[30908] = true, -- alliance
 		[30909] = true, -- alliance
+		[97829] = true, -- alliance (classic era)
+		[97830] = true, -- alliance (classic era)
 		[35739] = true, -- horde
 		[35740] = true, -- horde
 		[35741] = true, -- horde
+		[97507] = true, -- horde (classic era)
+		[97508] = true, -- horde (classic era)
 	}
 	function mod:GOSSIP_SHOW()
 		if not cap.db.profile.autoTurnIn then return end
@@ -37,6 +41,11 @@ do
 					self:SelectGossipID(35737) -- Upgrade to veteran units!
 				elseif self:GetGossipID(35738) then -- Horde
 					self:SelectGossipID(35738) -- Upgrade to champion units!
+				-- Classic
+				elseif self:GetGossipID(97833) then -- Alliance (classic era)
+					self:SelectGossipID(97833) -- Upgrade to seasoned units!
+				elseif self:GetGossipID(90270) then -- Alliance (WotLK classic)
+					self:SelectGossipID(90270) -- Upgrade to seasoned units!
 				else
 					local gossipOptions = GetGossipOptions()
 					if gossipOptions[1] then
@@ -45,6 +54,8 @@ do
 							if not blockedIds[gossipTable.gossipOptionID] then
 								print("|cFF33FF99Capping|r: NEW ID FOUND, TELL THE DEVS!", gossipTable.gossipOptionID, mobId, gossipTable.name)
 								geterrorhandler()("|cFF33FF99Capping|r: NEW ID FOUND, TELL THE DEVS! ".. tostring(gossipTable.gossipOptionID) ..", ".. mobId ..", ".. tostring(gossipTable.name))
+								BasicMessageDialog.Text:SetText("Capping error, see chat for details")
+								BasicMessageDialog:Show()
 								return
 							end
 						end
@@ -230,15 +241,14 @@ end
 
 do
 	local RequestBattlefieldScoreData = RequestBattlefieldScoreData
-	function mod:EnterZone()
-		--local _, _, _, _, _, _, _, id = GetInstanceInfo()
-		--if id == 1537 then
-		--	self:StartFlagCaptures(242, 1537) -- Korrak's Revenge (WoW 15th)
-		--else
-		--	self:StartFlagCaptures(242, 91)
-		--end
-		currentWorldMapId = 1459
-		self:StartFlagCaptures(245, currentWorldMapId)
+	function mod:EnterZone(id)
+		if id == 2197 then
+			currentWorldMapId = 1537
+			self:StartFlagCaptures(241, currentWorldMapId) -- Korrak's Revenge (WoW 15th)
+		else
+			currentWorldMapId = 1459
+			self:StartFlagCaptures(245, currentWorldMapId)
+		end
 		self:SetupHealthCheck("11946", L.hordeBoss, "Horde Boss", 236452, "colorAlliance") -- Interface/Icons/Achievement_Character_Orc_Male
 		self:SetupHealthCheck("11948", L.allianceBoss, "Alliance Boss", 236444, "colorHorde") -- Interface/Icons/Achievement_Character_Dwarf_Male
 		self:SetupHealthCheck("11947", L.galvangar, "Galvangar", 236452, "colorAlliance") -- Interface/Icons/Achievement_Character_Orc_Male
@@ -265,4 +275,4 @@ function mod:ExitZone()
 end
 
 mod:RegisterZone(30)
---mod:RegisterZone(2197) -- Korrak's Revenge (WoW 15th)
+mod:RegisterZone(2197) -- Korrak's Revenge (WoW 15th)

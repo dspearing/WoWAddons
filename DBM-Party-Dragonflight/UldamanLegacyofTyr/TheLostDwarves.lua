@@ -1,10 +1,9 @@
 local mod	= DBM:NewMod(2475, "DBM-Party-Dragonflight", 2, 1197)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230710194051")
+mod:SetRevision("20231029212301")
 mod:SetCreatureID(184580, 184581, 184582)
 mod:SetEncounterID(2555)
---mod:SetUsedIcons(1, 2, 3)
 mod:SetBossHPInfoToHighest()
 mod:SetHotfixNoticeRev(20230508000000)
 mod:SetMinSyncRevision(20230508000000)
@@ -14,10 +13,7 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 369573 369563 369791 369677 375924",
---	"SPELL_CAST_SUCCESS",
 	"SPELL_AURA_APPLIED 369602 377825",
---	"SPELL_AURA_APPLIED_DOSE",
---	"SPELL_AURA_REMOVED"
 	"SPELL_PERIODIC_DAMAGE 377825",
 	"SPELL_PERIODIC_MISSED 377825"
 )
@@ -62,11 +58,7 @@ local timerLongboatRaidCD						= mod:NewCDTimer(27.4, 375924, nil, nil, nil, 6)
 
 local specWarnGTFO								= mod:NewSpecialWarningGTFO(377825, nil, nil, nil, 1, 8)
 
---local berserkTimer							= mod:NewBerserkTimer(600)
-
 mod:AddRangeFrameOption(5, 369677)
---mod:AddInfoFrameOption(361651, true)
---mod:AddSetIconOption("SetIconOnStaggeringBarrage", 361018, true, false, {1, 2, 3})
 
 function mod:ShieldTarget(targetname)
 	if not targetname then return end
@@ -109,9 +101,6 @@ function mod:OnCombatEnd()
 	if self.Options.RangeFrame then
 		DBM.RangeCheck:Hide()
 	end
---	if self.Options.InfoFrame then
---		DBM.InfoFrame:Hide()
---	end
 end
 
 function mod:SPELL_CAST_START(args)
@@ -134,14 +123,14 @@ function mod:SPELL_CAST_START(args)
 		local bossUid = DBM:GetUnitIdFromGUID(args.sourceGUID)
 		local bossPower = UnitPower(bossUid)--If boss power is ever less than 100 when this is cast, they're defeated
 		if bossPower == 100 and self:AntiSpam(8, 1) then--at least one caster is alive, start next timer
-			timerLongboatRaidCD:Start(79)
+			timerLongboatRaidCD:Start(77.7)
 		end
 		local cid = self:GetCIDFromGUID(args.sourceGUID)
 		if cid == 184581 then--Baelog
 			timerHeavyArrowCD:Stop(args.sourceGUID)
 			timerWildCleaveCD:Stop(args.sourceGUID)
 			if bossPower == 100 then--Alive, restart timers
-				timerWildCleaveCD:Start(24.9, args.sourceGUID)
+				timerWildCleaveCD:Start(23.8, args.sourceGUID)
 				timerHeavyArrowCD:Start(35, args.sourceGUID)
 			end
 		elseif cid == 184580 then--Olaf
@@ -160,15 +149,6 @@ function mod:SPELL_CAST_START(args)
 	end
 end
 
---[[
-function mod:SPELL_CAST_SUCCESS(args)
-	local spellId = args.spellId
-	if spellId == 362805 then
-
-	end
-end
---]]
-
 function mod:SPELL_AURA_APPLIED(args)
 	local spellId = args.spellId
 	if spellId == 369602 then
@@ -182,7 +162,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		specWarnGTFO:Play("watchfeet")
 	end
 end
---mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
 
 function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId, spellName)
 	if spellId == 377825 and destGUID == UnitGUID("player") and self:AntiSpam(3, 2) then

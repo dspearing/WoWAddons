@@ -16,7 +16,7 @@ local wipe = wipe
 local GetLocale = GetLocale
 local GetMaxLevelForPlayerExpansion = GetMaxLevelForPlayerExpansion
 local InCombatLockdown = InCombatLockdown
-local IsAddOnLoaded = IsAddOnLoaded
+local C_AddOns_IsAddOnLoaded = C_AddOns.IsAddOnLoaded
 
 local C_CVar_GetCVarBool = C_CVar.GetCVarBool
 local C_LFGList = C_LFGList
@@ -30,7 +30,7 @@ W.PlainTitle = gsub(W.Title, "|c........([^|]+)|r", "%1")
 W.Locale = GetLocale()
 W.ChineseLocale = strsub(W.Locale, 0, 2) == "zh"
 W.MaxLevelForPlayerExpansion = GetMaxLevelForPlayerExpansion()
-W.SupportElvUIVersion = 13.36
+W.SupportElvUIVersion = 13.52
 W.ClassColor = _G.RAID_CLASS_COLORS[E.myclass]
 
 W.RegisteredModules = {}
@@ -63,7 +63,7 @@ E.PopupDialogs.WINDTOOLS_BUTTON_FIX_RELOAD = {
     text = format(
         "%s\n%s\n\n|cffaaaaaa%s|r",
         format(L["%s detects CVar %s has been changed."], W.Title, "|cff209ceeActionButtonUseKeyDown|r"),
-        L["It will cause some buttons not work properly before UI reloading."],
+        L["It will cause some buttons not to work properly before UI reloading."],
         format(L["You can disable this alert in [%s]-[%s]-[%s]"], W.Title, L["Advanced"], L["Game Fix"])
     ),
     button1 = L["Reload UI"],
@@ -149,7 +149,7 @@ function W:GameFixing()
     -- -- fix duplicated party in lfg frame
     -- -- from: https://wago.io/tWVx_hIx3/4
     if E.global.WT.core.noDuplicatedParty then
-        if not _G["ShowLFGRemoveDuplicates"] and not IsAddOnLoaded("LFMPlus") then
+        if not _G["ShowLFGRemoveDuplicates"] and not C_AddOns_IsAddOnLoaded("LFMPlus") then
             hooksecurefunc(
                 "LFGListUtil_SortSearchResults",
                 function(results, ...)

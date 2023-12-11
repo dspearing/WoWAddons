@@ -537,7 +537,7 @@ local update_line = function(self, target_frame)
 			ball:SetSize(16, 16)
 			ball:SetAlpha(0.3)
 			ball:SetTexCoord(410/512, 426/512, 2/512, 18/512)
-			tinsert(guide_balls, ball)
+			table.insert(guide_balls, ball)
 		end
 
 		ball:ClearAllPoints()
@@ -1165,7 +1165,7 @@ end
 local check_snap_side = function(instanceid, snap, id, container)
 	local instance = Details:GetInstance(instanceid)
 	if (instance and instance.snap [snap] and instance.snap [snap] == id) then
-		tinsert(container, instance)
+		table.insert(container, instance)
 		return true
 	end
 end
@@ -1260,7 +1260,7 @@ function Details:InstanciasVerticais(instance)
 		end
 		bottom_clamp = bottom_clamp + 20
 		bottom_clamp = bottom_clamp + this_instance.baseframe:GetHeight()
-		tinsert(on_top, this_instance)
+		table.insert(on_top, this_instance)
 	end
 
 	return on_top, bottom_clamp, top_clamp
@@ -2076,7 +2076,6 @@ local iconFrame_OnEnter = function(self)
 
 
 		elseif (actor.nome) then --ensure it's an actor table
-
 			local serial = actor.serial
 			local name = actor:name()
 			local class = actor:class()
@@ -2210,7 +2209,7 @@ local iconFrame_OnEnter = function(self)
 					local previousScore = rioProfile.previousScore or 0
 					local currentScore = rioProfile.currentScore or 0
 
-					if (previousScore > currentScore) then
+					if (false and previousScore > currentScore and time() > 1700562401) then --2023.11.21 midday
 						GameCooltip:AddLine("M+ Score:", previousScore .. " (|cFFFFDD11" .. currentScore .. "|r)", 1, "white")
 						addedInfo = true
 					else
@@ -2255,6 +2254,21 @@ local iconFrame_OnEnter = function(self)
 				GameCooltip:AddLine("Evoker Predicted Damage:", Details:Format(damageDone) .. " (" .. Details:Format(damageDone / Details:GetCurrentCombat():GetCombatTime()) .. ")", 1, "white")
 				GameCooltip:AddIcon([[]], 1, 1, 1, 20)
 				Details:AddTooltipBackgroundStatusbar()
+				height = height + 19
+			end
+
+			if (actor.classe == "UNKNOW") then
+				local npcId = tonumber(actor.aID)
+				if (not npcId) then
+					npcId = Details:GetNpcIdFromGuid(actor.serial)
+				end
+
+				if (npcId) then
+					GameCooltip:AddLine("NpcID:", npcId)
+					GameCooltip:AddIcon([[]], 1, 1, 1, 20)
+					Details:AddTooltipBackgroundStatusbar()
+					height = height + 19
+				end
 			end
 
 			GameCooltip:SetOption("FixedHeight", height)
@@ -2286,7 +2300,7 @@ function icon_frame_events:EnterCombat()
 	for anim, _ in pairs(Details.icon_animations.load.in_use) do
 		anim.anim:Stop()
 		anim:Hide()
-		tinsert(Details.icon_animations.load.available, anim)
+		table.insert(Details.icon_animations.load.available, anim)
 
 		anim.icon_frame.icon_animation = nil
 		anim.icon_frame = nil
@@ -2318,7 +2332,7 @@ function icon_frame_events:CancelAnim(anim)
 		end
 
 		Details.icon_animations.load.in_use[frame] = nil
-		tinsert(Details.icon_animations.load.available, frame)
+		table.insert(Details.icon_animations.load.available, frame)
 		frame.anim:Stop()
 		frame:Hide()
 
@@ -2335,7 +2349,7 @@ local icon_frame_inspect_callback = function(guid, unitid, iconFrame)
 
 	local inUse = Details.icon_animations.load.in_use[iconFrame.icon_animation]
 	if (inUse) then
-		tinsert(Details.icon_animations.load.available, iconFrame.icon_animation)
+		table.insert(Details.icon_animations.load.available, iconFrame.icon_animation)
 		Details.icon_animations.load.in_use[iconFrame.icon_animation] = nil
 	end
 
@@ -2363,7 +2377,7 @@ local icon_frame_create_animation = function()
 	t:SetAlpha(0.7)
 	t:SetAllPoints()
 
-	tinsert(Details.icon_animations.load.available, f)
+	table.insert(Details.icon_animations.load.available, f)
 end
 
 local icon_frame_on_click_down = function(self)
@@ -3585,12 +3599,7 @@ function gump:CriaJanelaPrincipal (ID, instancia, criando)
 		baseframe:EnableMouseWheel(false)
 		baseframe:EnableMouse(true)
 
-		if (not DetailsFramework.IsDragonflight() and not DetailsFramework.IsWotLKWowWithRetailAPI()) then
-			baseframe:SetMinResize (150, 7)
-			baseframe:SetMaxResize (Details.max_window_size.width, Details.max_window_size.height)
-		else
-			--baseframe:SetResizeBounds(150, 7, _detalhes.max_window_size.width, _detalhes.max_window_size.height)
-		end
+	    baseframe:SetResizeBounds(150, 7, _detalhes.max_window_size.width, _detalhes.max_window_size.height)
 
 		baseframe:SetBackdrop(defaultBackdropSt)
 		baseframe:SetBackdropColor(instancia.bg_r, instancia.bg_g, instancia.bg_b, instancia.bg_alpha)
@@ -4085,9 +4094,12 @@ function gump:CreateNewLine(instance, index)
 	newLine.extraStatusbar:SetMinMaxValues(0, 100)
 	newLine.extraStatusbar.texture = newLine.extraStatusbar:CreateTexture(nil, "overlay")
 	newLine.extraStatusbar:SetStatusBarTexture(newLine.extraStatusbar.texture)
+
 	--by default painting the extraStatusbar with the evoker color
 	local evokerColor = Details.class_colors["EVOKER"]
+	--newLine.extraStatusbar.texture:SetTexture([[Interface\AddOns\Details\images\bar_textures\bar_of_bars.png]]) --setColorTexture is very expensive, so set the color once and use vertex color to change it
 	newLine.extraStatusbar.texture:SetColorTexture(1, 1, 1, 1) --setColorTexture is very expensive, so set the color once and use vertex color to change it
+
 	newLine.extraStatusbar.texture:SetVertexColor(unpack(evokerColor))
 	newLine.extraStatusbar:SetAlpha(0.7)
 	newLine.extraStatusbar.defaultAlpha = 0.7
@@ -8387,7 +8399,7 @@ function Details:GetInstanceGroup (instance_id)
 				if (this_instance and this_instance:IsEnabled()) then
 					for side, id in pairs(this_instance.snap) do
 						if (id == last_id) then
-							tinsert(current_group, this_instance)
+							table.insert(current_group, this_instance)
 							got = true
 							last_id = i
 						end
@@ -8405,7 +8417,7 @@ function Details:GetInstanceGroup (instance_id)
 				if (this_instance and this_instance:IsEnabled()) then
 					for side, id in pairs(this_instance.snap) do
 						if (id == last_id) then
-							tinsert(current_group, this_instance)
+							table.insert(current_group, this_instance)
 							got = true
 							last_id = i
 						end
@@ -8991,6 +9003,16 @@ end
 		gameCooltip:SetOption("IgnoreButtonAutoHeight", false)
 
 		Details:SetTooltipMinWidth()
+
+		gameCooltip:AddLine("Remove Common Segments", nil, 1, "white", nil, Details.font_sizes.menus, Details.font_faces.menus)
+		gameCooltip:AddIcon([[Interface\Buttons\UI-StopButton]], 1, 1, 14, 14, 0, 1, 0, 1, "orange")
+		gameCooltip:AddMenu(1, function() Details.tabela_historico:ResetDataByCombatType("generic"); GameCooltip:Hide() end)
+
+		gameCooltip:AddLine("Reset, but keep Mythic+ Overall Segments", nil, 1, "white", nil, Details.font_sizes.menus, Details.font_faces.menus)
+		gameCooltip:AddIcon([[Interface\Buttons\UI-StopButton]], 1, 1, 14, 14, 0, 1, 0, 1, "orange")
+		gameCooltip:AddMenu(1, function() Details.tabela_historico:ResetDataByCombatType("m+overall"); GameCooltip:Hide() end)
+
+		gameCooltip:AddLine("$div", nil, 1, nil, -5, -11)
 
 		gameCooltip:AddLine(Loc["STRING_ERASE_DATA_OVERALL"], nil, 1, "white", nil, Details.font_sizes.menus, Details.font_faces.menus)
 		gameCooltip:AddIcon([[Interface\Buttons\UI-StopButton]], 1, 1, 14, 14, 0, 1, 0, 1, "orange")

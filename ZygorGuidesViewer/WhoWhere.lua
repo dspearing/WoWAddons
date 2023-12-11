@@ -21,22 +21,22 @@ WW.Types = {}
 
 function WW:SetupMenuArray()
 	local Tradeskills = {
-		{text="Alchemy",	iconkey="ALCHEMY"},
+		{text="Alchemy",		iconkey="ALCHEMY"},
 		{text="Archaeology",	iconkey="ARCHAEOLOGY"},
-		{text="Bandages",	iconkey="FIRSTAID"},
+		{text="Bandages",		iconkey="FIRSTAID"},
 		{text="Blacksmithing",	iconkey="BLACKSMITHING"},
-		{text="Cooking",	iconkey="COOKING"},
-		{text="Enchanting",	iconkey="ENCHANTING"},
+		{text="Cooking",		iconkey="COOKING"},
+		{text="Enchanting",		iconkey="ENCHANTING"},
 		{text="Engineering",	iconkey="ENGINEERING"},
-		{text="First Aid",	iconkey="FIRSTAID"},
-		{text="Fishing",	iconkey="FISHING"},
-		{text="Herbalism",	iconkey="HERBALISM"},
+		{text="First Aid",		iconkey="FIRSTAID"},
+		{text="Fishing",		iconkey="FISHING"},
+		{text="Herbalism",		iconkey="HERBALISM"},
 		{text="Inscription",	iconkey="INSCRIPTION"},
 		{text="Jewelcrafting",	iconkey="JEWELCRAFTING"},
 		{text="Leatherworking",	iconkey="LEATHERWORKING"},
-		{text="Mining",		iconkey="MINING"},
-		{text="Skinning",	iconkey="SKINNING"},
-		{text="Tailoring",	iconkey="TAILORING"},
+		{text="Mining",			iconkey="MINING"},
+		{text="Skinning",		iconkey="SKINNING"},
+		{text="Tailoring",		iconkey="TAILORING"},
 	}
 
 	if ZGV.IsRetail then
@@ -56,11 +56,21 @@ function WW:SetupMenuArray()
 		v.func = v.func or function() ZGV.WhoWhere:FindNPC("Trainer"..(v.type or v.text)) CloseDropDownForks() end 
 		v.notCheckable = 1
 		v.icon = ZGV.IconSets.WorldQuest.file
-		local texcoord=ZGV.IconSets.WorldQuest[v.iconkey].texcoord
-		v.tCoordLeft = texcoord[1]
-		v.tCoordRight = texcoord[2]
-		v.tCoordTop = texcoord[3]
-		v.tCoordBottom = texcoord[4]
+		v.tCoordLeft,v.tCoordRight,v.tCoordTop,v.tCoordBottom = unpack(ZGV.IconSets.WorldQuest[v.iconkey].texcoord)
+		if (not ZGV.Professions.SkillsKnown[v.text]) then v.colorCode = "|cff888888" end
+	end
+
+	local Tradeskills_Workshops
+	if ZGV.IsRetail then
+		Tradeskills_Workshops = ZGV.F.DeepCopy(Tradeskills)
+		table.remove(Tradeskills_Workshops,14) -- skinning
+		table.remove(Tradeskills_Workshops,13) -- mining
+		table.remove(Tradeskills_Workshops,9) -- herbalism
+		table.remove(Tradeskills_Workshops,8) -- fishing
+		table.remove(Tradeskills_Workshops,5) -- cooking
+		table.remove(Tradeskills_Workshops,3) -- bandages
+		table.remove(Tradeskills_Workshops,2) -- arch
+		for i,v in ipairs(Tradeskills_Workshops) do v.func = function() ZGV.WhoWhere:FindNPC("Trainer"..(v.type or v.text).."Workshop") CloseDropDownForks() end  end
 	end
 
 	local Classes = {
@@ -77,7 +87,7 @@ function WW:SetupMenuArray()
 	}
 
 	for i,v in ipairs(Classes) do
-		v.func = v.func or function() ZGV.WhoWhere:FindNPC("Class"..(v.type or v.text)) CloseDropDownForks() end 
+		v.func = v.func or function() WW:FindNPC("Class"..(v.type or v.text)) CloseDropDownForks() end 
 		v.notCheckable = 1
 		v.icon = "Interface\\TargetingFrame\\UI-Classes-Circles"
 		local texcoord=CLASS_ICON_TCOORDS[(v.overicon or v.text):upper()]
@@ -96,6 +106,7 @@ function WW:SetupMenuArray()
 		{text="Innkeeper",icon="Interface\\Minimap\\Tracking\\Innkeeper"},
 		{text="Mailbox",icon="Interface\\Minimap\\Tracking\\Mailbox",func = function() ZGV.WhoWhere:FindMailbox() CloseDropDownForks() end},
 		{text="Profession Trainers",icon="Interface\\Minimap\\Tracking\\Profession", nofunc = true, hasArrow = true, menuList = Tradeskills},
+		{text="Profession Workshops",icon="Interface\\Minimap\\Tracking\\Profession", nofunc = true, hasArrow = true, menuList = Tradeskills_Workshops},
 		{text="Repair",icon="Interface\\Minimap\\Tracking\\Repair"},
 		{text="Riding Trainer",icon="Interface\\Minimap\\Tracking\\StableMaster", type="TrainerRiding"},
 		{text="Stable Master",icon="Interface\\Minimap\\Tracking\\StableMaster"},
@@ -108,14 +119,15 @@ function WW:SetupMenuArray()
 	if ZGV.IsRetail then
 		table.remove(WW.Types ,4) -- class trainers
 	elseif ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then
-		table.remove(WW.Types ,13) -- void storage
-		table.remove(WW.Types ,11) -- transmog
-		table.remove(WW.Types ,9) -- riding
+		table.remove(WW.Types ,14) -- void storage
+		table.remove(WW.Types ,12) -- transmog
+		table.remove(WW.Types ,10) -- riding
+		table.remove(WW.Types ,8) -- prof. workshop
 		table.remove(WW.Types ,3) -- barber
 	end
 
 	for i,v in ipairs(WW.Types) do
-		if not v.nofunc then v.func = v.func or function() ZGV.WhoWhere:FindNPC(v.type or v.text) CloseDropDownForks()  end end
+		if not v.nofunc then v.func = v.func or function() WW:FindNPC(v.type or v.text) CloseDropDownForks()  end end
 		v.notCheckable = 1
 		if v.iconkey then
 			local texcoord=ZGV.IconSets.WorldQuest[v.iconkey].texcoord
@@ -146,7 +158,7 @@ local function CalcStep()
 end
 
 
-local function CalcThread()
+local function CalcThread_Direct()
 	local typ,m,x,y=WW.typ,WW.m,WW.x,WW.y
 	if not m then x,y,m=LibRover:GetPlayerPosition() end
 	local parse=ZGV.NPCData.parseNPC
@@ -187,7 +199,7 @@ function WW:FindNPC_Direct(typ,m,f,x,y)
 	self.typ,self.m,self.f,self.x,self.y=typ,m,f,x,y
 
 	self.WorkerFrame:SetScript("OnUpdate",CalcStep)
-	self.thread = coroutine.create(CalcThread)
+	self.thread = coroutine.create(CalcThread_Direct)
 end
 
 function WW:FindNPC_Smart(typ,goal,handler)
@@ -354,6 +366,9 @@ function WW:Initialise()
 
 	-- Remove hostiles
 	if badfact then for t,d in pairs(ZGV._NPCData) do ZGV._NPCData[t]=d:gsub("%d+=s"..badfact..".-\n","") end end
+
+	-- Remove commented out
+	for t,d in pairs(ZGV._NPCData) do ZGV._NPCData[t]=d:gsub("%-%-.-\n","\n") end
 
 	-- localize
 

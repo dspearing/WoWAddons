@@ -17,6 +17,11 @@ MDT.mapInfo[dungeonIndex] = {
   }
 };
 
+local zones = { 2082, 2083 }
+for _, zone in ipairs(zones) do
+  MDT.zoneIdToDungeonIdx[zone] = dungeonIndex
+end
+
 MDT.dungeonMaps[dungeonIndex] = {
   [0] = "HallsOfInfusion",
   [1] = "HallsOfInfusion_A",
@@ -919,6 +924,13 @@ MDT.dungeonEnemies[dungeonIndex] = {
       [28] = {
         ["x"] = 487.31156673994,
         ["y"] = -334.66420668668,
+        ["g"] = 15,
+        ["sublevel"] = 1,
+        ["scale"] = 1.4,
+      },
+      [29] = {
+        ["x"] = 477.19122407541,
+        ["y"] = -337.76660804463,
         ["g"] = 15,
         ["sublevel"] = 1,
         ["scale"] = 1.4,

@@ -8093,6 +8093,10 @@ ZGV._NPCData={
 		198950=sB|m2024|x47.04|y40.17|wInside the building -- The Azure Span/0,Sommelier Zesh
 		185545=sB|m2112|x36.39|y71.70 -- Valdrakken/0,Conflago
 	]],
+	["TrainerAlchemyWorkshop"]=[[
+		185545=sB|m2112|x36.18|y71.10 -- Valdrakken/0,Conflago
+		185545=sB|m2112|x36.73|y72.13 -- Valdrakken/0,Conflago
+	]],
 	["TrainerArchaeology"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -8557,6 +8561,10 @@ ZGV._NPCData={
 		189208=sB|m2024|x46.12|y40.99|wInside the building -- The Azure Span/0,Custodian Vernagos
 		185546=sB|m2112|x36.96|y47.10 -- Valdrakken/0,Metalshaper Kuroko
 	]],
+	["TrainerBlacksmithingWorkshop"]=[[
+		185546=sB|m2112|x38.44|y53.78 -- Valdrakken/0,Metalshaper Kuroko
+		185546=sB|m2112|x37.78|y52.86 -- Valdrakken/0,Metalshaper Kuroko
+	]],
 	["TrainerCooking"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -8897,6 +8905,10 @@ ZGV._NPCData={
 		189344=sB|m2025|x50.99|y40.70|wInside the building -- Thaldraszus/0,Alagosa
 		193744=sB|m2112|x31.03|y61.36|wBeneath the canopy -- Valdrakken/0,Soragosa
 	]],
+	["TrainerEnchantingWorkshop"]=[[
+		193744=sB|m2112|x30.80|y59.68 -- Valdrakken/0,Soragosa
+		193744=sB|m2112|x31.27|y62.33 -- Valdrakken/0,Soragosa
+	]],
 	["TrainerEngineering"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -9071,6 +9083,10 @@ ZGV._NPCData={
 		198911=sB|m2023|x62.45|y41.39 -- Ohn'ahran Plains/0,Tinkerer Abiru
 		196545=sB|m2024|x65.94|y25.27 -- The Azure Span/0,Polky Cogzapper
 		185548=sB|m2112|x42.25|y48.64 -- Valdrakken/0,Clinkyclick Shatterboom
+	]],
+	["TrainerEngineeringWorkshop"]=[[
+		185548=sB|m2112|x42.27|y48.85 -- Valdrakken/0,Clinkyclick Shatterboom
+		185548=sB|m2112|x41.09|y48.62 -- Valdrakken/0,Clinkyclick Shatterboom
 	]],
 	["TrainerFishing"]=[[
 		----------------------
@@ -9579,6 +9595,10 @@ ZGV._NPCData={
 		189952=sB|m2024|x46.01|y38.30|wInside the building -- The Azure Span/0,Custodian Cynegos
 		185540=sB|m2112|x38.85|y73.36 -- Valdrakken/0,Talendara
 	]],
+	["TrainerInscriptionWorkshop"]=[[
+		185540=sB|m2112|x38.04|y73.50 -- Valdrakken/0,Talendara
+		185540=sB|m2112|x39.61|y73.69 -- Valdrakken/0,Talendara
+	]],
 	["TrainerJewelcrafting"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -9732,6 +9752,10 @@ ZGV._NPCData={
 		198908=sB|m2023|x30.63|y56.83 -- Ohn'ahran Plains/0,Midelys
 		198240=sB|m2024|x46.17|y40.72|wInside the building -- The Azure Span/0,Herrod
 		190094=sB|m2112|x40.81|y61.10|wInside the building -- Valdrakken/0,Tuluradormi
+	]],
+	["TrainerJewelcraftingWorkshop"]=[[
+		190094=sB|m2112|x40.74|y60.51|wInside the building -- Valdrakken/0,Tuluradormi
+		190094=sB|m2112|x39.61|y63.90|wInside the building -- Valdrakken/0,Tuluradormi
 	]],
 	["TrainerLeatherworking"]=[[
 		----------------------
@@ -9909,6 +9933,10 @@ ZGV._NPCData={
 		196016=sB|m2024|x14.02|y49.43 -- The Azure Span/0,Lontupit
 		185551=sB|m2112|x28.51|y61.33|wBeneath the canopy -- Valdrakken/0,Hideshaper Koruz
 	]],
+	["TrainerLeatherworkingWorkshop"]=[[
+		185551=sB|m2112|x28.19|y62.96|wBeneath the canopy -- Valdrakken/0,Hideshaper Koruz
+	]],
+
 	["TrainerMining"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -10245,6 +10273,7 @@ ZGV._NPCData={
 		186568=sB|m2024|x12.51|y49.80 -- The Azure Span/0,Bukarakikk
 		193846=sB|m2112|x28.56|y60.39|wBeneath the canopy -- Valdrakken/0,Ralathor the Rugged
 	]],
+
 	["TrainerTailoring"]=[[
 		----------------------
 		-- Eastern Kingdoms --
@@ -10401,14 +10430,9 @@ ZGV._NPCData={
 		156681=sB|m1670|x45.20|y31.50--Oribos, Shadowlands (Stitcher Au'phes)
 
 
-
-
-
-
-
-
-
-
+		------------------
+		-- Dragon Isles --
+		------------------
 
 		191894=sB|m2022|x61.40|y70.19 -- The Waking Shores/0,Krillonn
 		192565=sB|m2022|x75.84|y33.23|wBeneath the canopy -- The Waking Shores/0,Zayn Starmaker
@@ -10417,6 +10441,10 @@ ZGV._NPCData={
 		196018=sB|m2024|x14.01|y49.34 -- The Azure Span/0,Omapurita
 		198959=sB|m2024|x47.01|y40.49|wInside the building -- The Azure Span/0,Gibble Hemsworth
 		195850=sB|m2112|x32.15|y66.28|wBeneath the canopy -- Valdrakken/0,Threadfinder Pax
+		193649=sB|m2112|x31.93|y67.18 -- Valdrakken/0,Threadfinder Fulafong
+	]],
+	["TrainerTailoringWorkshop"]=[[
+		195850=sB|m2112|x31.65|y65.31|wBeneath the canopy -- Valdrakken/0,Threadfinder Pax
 		193649=sB|m2112|x31.93|y67.18 -- Valdrakken/0,Threadfinder Fulafong
 	]],
 	["TrainerRiding"]=[[

@@ -22,11 +22,12 @@ local SendChatMessage = SendChatMessage
 
 local StaticPopup_Show = StaticPopup_Show
 
-local Enum_WeeklyRewardChestThresholdType_MythicPlus = Enum.WeeklyRewardChestThresholdType.MythicPlus
+local Enum_WeeklyRewardChestThresholdType_Activities = Enum.WeeklyRewardChestThresholdType.Activities
 
 local KeystoneAbbrev = {
   -- Cataclysm
   [438] = L["VP"], -- The Vortex Pinnacle
+  [456] = L["TOTT"], -- Throne of the Tides
 
   -- Mists of Pandaria
   [2]   = L["TJS"],  -- Temple of the Jade Serpent
@@ -34,6 +35,7 @@ local KeystoneAbbrev = {
   -- Warlords of Draenor
   [165] = L["SBG"],   -- Shadowmoon Burial Grounds
   [166] = L["GD"],    -- Grimrail Depot
+  [168] = L["EB"],    -- Everbloom
   [169] = L["ID"],    -- Iron Docks
 
   -- Legion
@@ -86,6 +88,8 @@ local KeystoneAbbrev = {
   [404] = L["NELT"],  -- Neltharus
   [405] = L["BH"],    -- Brackenhide Hollow
   [406] = L["HOI"],   -- Halls of Infusion
+  [463] = L["FALL"],  -- Dawn of the Infinite: Galakrond's Fall
+  [464] = L["RISE"],  -- Dawn of the Infinite: Murozond's Rise
 }
 SI.KeystoneAbbrev = KeystoneAbbrev
 
@@ -168,7 +172,7 @@ do
     t.MythicKeyBest.rewardWaiting = C_WeeklyRewards_HasAvailableRewards() or C_WeeklyRewards_CanClaimRewards()
     t.MythicKeyBest.ResetTime = SI:GetNextWeeklyResetTime()
 
-    local activities = C_WeeklyRewards_GetActivities(Enum_WeeklyRewardChestThresholdType_MythicPlus)
+    local activities = C_WeeklyRewards_GetActivities(Enum_WeeklyRewardChestThresholdType_Activities)
     sort(activities, activityCompare)
 
     local lastCompletedIndex = 0

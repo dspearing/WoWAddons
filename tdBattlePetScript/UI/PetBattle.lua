@@ -13,16 +13,6 @@ local Director = ns.Director
 local Module   = Addon:NewModule('UI.PetBattle', 'AceEvent-3.0', 'AceHook-3.0', 'AceTimer-3.0')
 local LibSharedMedia = LibStub("LibSharedMedia-3.0")
 
-local ElvUIAlsoPresent = function()
-    if not ElvUI then
-        return false
-    end
-
-    local E, L, V, P, G = unpack(ElvUI)
-    local blizzardSkinsTable = E.private.skins.blizzard
-    return blizzardSkinsTable.enable and blizzardSkinsTable.petbattleui
-end
-
 function Module:OnInitialize()
     local TurnTimer = PetBattleFrame.BottomFrame.TurnTimer
     local SkipButton = TurnTimer.SkipButton
@@ -31,19 +21,13 @@ function Module:OnInitialize()
     TurnTimer.ArtFrame2.Show = nop
 
     local ToolButton = CreateFrame('Button', nil, PetBattleFrame) do
-        if not ElvUIAlsoPresent() then
-            ToolButton:SetPoint('TOP')
-            ToolButton:SetSize(155, 50)
+        ToolButton:SetPoint('TOP')
+        ToolButton:SetSize(155, 50)
 
-            local Highlight = ToolButton:CreateTexture(nil, 'HIGHLIGHT') do
-                Highlight:SetPoint('TOP')
-                Highlight:SetAtlas('BattleHUD-Versus', true)
-                Highlight:SetBlendMode('ADD')
-            end
-        else
-            ToolButton:ClearAllPoints()
-            ToolButton:Point('TOPLEFT', PetBattleFrame.TopVersusText, 'TOPLEFT', 0, 0)
-            ToolButton:Point('BOTTOMRIGHT', PetBattleFrame.TopVersusText, 'BOTTOMRIGHT', 0, 0)
+        local Highlight = ToolButton:CreateTexture(nil, 'HIGHLIGHT') do
+            Highlight:SetPoint('TOP')
+            Highlight:SetAtlas('BattleHUD-Versus', true)
+            Highlight:SetBlendMode('ADD')
         end
 
         ToolButton:RegisterForClicks('LeftButtonUp', 'RightButtonUp')
@@ -54,7 +38,7 @@ function Module:OnInitialize()
             GameTooltip:SetOwner(ToolButton, 'ANCHOR_BOTTOM')
             GameTooltip:SetText(L.ADDON_NAME)
             GameTooltip:AddLine(' ')
-            GameTooltip:AddLine(UI.LEFT_MOUSE_BUTTON .. L.TOGGLE_SCRIPT_SELECTOR, HIGHLIGHT_FONT_COLOR:GetRGB())
+            GameTooltip:AddLine(UI.LEFT_MOUSE_BUTTON .. L.SCRIPT_SELECTOR_TOGGLE, HIGHLIGHT_FONT_COLOR:GetRGB())
             -- GameTooltip:AddLine(UI.RIGHT_MOUSE_BUTTON .. L.TOOLTIP_CREATE_OR_DEBUG_SCRIPT, HIGHLIGHT_FONT_COLOR:GetRGB())
             GameTooltip:Show()
         end)
@@ -76,11 +60,11 @@ function Module:OnInitialize()
     end
 
     local AutoButton = CreateFrame('Button', 'tdBattlePetScriptAutoButton', SkipButton:GetParent(), 'UIPanelButtonTemplate') do
-		local width, height = SkipButton:GetSize()
-		SkipButton:SetSize(width + 20, height)
+        local width, height = SkipButton:GetSize()
+        SkipButton:SetSize(width + 20, height)
         AutoButton:SetSize(SkipButton:GetSize())
         AutoButton:SetPoint('LEFT', SkipButton, 'RIGHT')
-        AutoButton:SetText(L['Auto'])
+        AutoButton:SetText(L.IN_BATTLE_EXECUTE)
         AutoButton:SetEnabled(SkipButton:IsEnabled())
         AutoButton:SetScript('OnClick', function()
             self:OnAutoButtonClick()
@@ -97,53 +81,42 @@ function Module:OnInitialize()
         AutoButton.HotKey:SetText('')
     end
 
-    if ElvUIAlsoPresent() then
-        local E, L, V, P, G = unpack(ElvUI)
-        local S = E:GetModule('Skins')
-        S:HandleButton(AutoButton)
-        -- It would be great to not attach auto button right of skip button, but ElvUI
-        -- doesn't really help there by hooking turnTimer.SkipButton:SetPoint to re-set
-        -- points, so @bloerwald really doesn't want to bother with it. Bad enough we
-        -- have to hack around their UI skining anyway.
-    else
-        local ArtFrame2 = CreateFrame('Frame', nil, TurnTimer) do
-            ArtFrame2:SetSize(248, 32)
-            ArtFrame2:SetPoint('CENTER', 0, -2)
+    local ArtFrame2 = CreateFrame('Frame', nil, TurnTimer) do
+        ArtFrame2:SetSize(248, 32)
+        ArtFrame2:SetPoint('CENTER', 0, -2)
 
-            local Left = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
-                Left:SetParent(ArtFrame2)
-                Left:ClearAllPoints()
-                Left:SetSize(32, 32)
-                Left:SetPoint('TOPLEFT')
-                Left:SetTexture([[Interface\PetBattles\PassButtonFrame]])
-                Left:SetTexCoord(0, 0.25, 0, 1)
-            end
-
-            local Right = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
-                Right:SetSize(32, 32)
-                Right:SetPoint('TOPRIGHT')
-                Right:SetTexture([[Interface\PetBattles\PassButtonFrame]])
-                Right:SetTexCoord(0.75, 1, 0, 1)
-            end
-
-            local Middle = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
-                Middle:SetPoint('TOPLEFT', Left, 'TOPRIGHT')
-                Middle:SetPoint('BOTTOMRIGHT', Right, 'BOTTOMLEFT')
-                Middle:SetTexture([[Interface\PetBattles\PassButtonFrame]])
-                Middle:SetTexCoord(0.25, 0.75, 0, 1)
-            end
-
-            SkipButton:SetFrameLevel(ArtFrame2:GetFrameLevel() + 10)
-            AutoButton:SetFrameLevel(ArtFrame2:GetFrameLevel() + 10)
+        local Left = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
+            Left:SetParent(ArtFrame2)
+            Left:ClearAllPoints()
+            Left:SetSize(32, 32)
+            Left:SetPoint('TOPLEFT')
+            Left:SetTexture([[Interface\PetBattles\PassButtonFrame]])
+            Left:SetTexCoord(0, 0.25, 0, 1)
         end
-        self.ArtFrame2   = ArtFrame2
+
+        local Right = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
+            Right:SetSize(32, 32)
+            Right:SetPoint('TOPRIGHT')
+            Right:SetTexture([[Interface\PetBattles\PassButtonFrame]])
+            Right:SetTexCoord(0.75, 1, 0, 1)
+        end
+
+        local Middle = ArtFrame2:CreateTexture(nil, 'OVERLAY') do
+            Middle:SetPoint('TOPLEFT', Left, 'TOPRIGHT')
+            Middle:SetPoint('BOTTOMRIGHT', Right, 'BOTTOMLEFT')
+            Middle:SetTexture([[Interface\PetBattles\PassButtonFrame]])
+            Middle:SetTexCoord(0.25, 0.75, 0, 1)
+        end
+
+        SkipButton:SetFrameLevel(ArtFrame2:GetFrameLevel() + 10)
+        AutoButton:SetFrameLevel(ArtFrame2:GetFrameLevel() + 10)
     end
 
     local ScriptFrame = GUI:GetClass('BasicPanel'):New(PetBattleFrame) do
         ScriptFrame:Hide()
         ScriptFrame:SetFrameStrata('DIALOG')
         ScriptFrame:SetSize(200, 200)
-        ScriptFrame:SetText(L['Script selector'])
+        ScriptFrame:SetText(L.SCRIPT_SELECTOR_TITLE)
         ScriptFrame:RegisterConfig(Addon.db.profile.scriptSelectorPosition)
         ScriptFrame:RestorePosition()
     end
@@ -159,7 +132,7 @@ function Module:OnInitialize()
         ScriptList:SetItemClass(Addon:GetClass('ScriptItem'))
 
         local EmptyLabel = ScriptList:CreateFontString(nil, 'OVERLAY', 'GameFontNormalOutline') do
-            EmptyLabel:SetText(L['No script'])
+            EmptyLabel:SetText(L.IN_BATTLE_NO_SCRIPT)
             EmptyLabel:SetPoint('CENTER', ScriptFrame, 'CENTER', 0, -10)
             EmptyLabel:Hide()
         end
@@ -200,13 +173,13 @@ function Module:OnInitialize()
             if button.script then
                 local tip = UI.OpenScriptTooltip(button.script, button, 'ANCHOR_BOTTOMRIGHT')
                 tip:AddLine(' ')
-                tip:AddLine(UI.LEFT_MOUSE_BUTTON .. L['Select script'])
-                tip:AddLine(UI.RIGHT_MOUSE_BUTTON .. L['Debugging script'])
+                tip:AddLine(UI.LEFT_MOUSE_BUTTON .. L.IN_BATTLE_SELECT_SCRIPT)
+                tip:AddLine(UI.RIGHT_MOUSE_BUTTON .. L.IN_BATTLE_DEBUGGING_SCRIPT)
                 tip:Show()
             else
                 local tip = UI.OpenPluginTooltip(plugin, button.key, button, 'ANCHOR_BOTTOMRIGHT')
                 tip:AddLine(' ')
-                tip:AddLine(UI.LEFT_MOUSE_BUTTON .. L['Create script'])
+                tip:AddLine(UI.LEFT_MOUSE_BUTTON .. L.EDITOR_CREATE_SCRIPT)
                 tip:Show()
             end
         end)
@@ -227,6 +200,7 @@ function Module:OnInitialize()
     self.ToolButton  = ToolButton
     self.SkipButton  = SkipButton
     self.AutoButton  = AutoButton
+    self.ArtFrame2   = ArtFrame2
     self.ScriptList  = ScriptList
     self.ScriptFrame = ScriptFrame
 end
@@ -294,7 +268,7 @@ function Module:UpdateAutoButton()
     local isEnabled = Director:GetScript() and (C_PetBattles.IsSkipAvailable() or C_PetBattles.ShouldShowPetSelect())
     self.AutoButton:SetEnabled(isEnabled)
     if isEnabled and Addon:GetSetting('notifyButtonActive') then
-        PlaySoundFile(LibSharedMedia:Fetch("sound", Addon:GetSetting('notifyButtonActiveSound')), "Master")
+        PlaySoundFile(LibSharedMedia:Fetch(LibSharedMedia.MediaType.SOUND, Addon:GetSetting('notifyButtonActiveSound')), "Master")
     end
 end
 

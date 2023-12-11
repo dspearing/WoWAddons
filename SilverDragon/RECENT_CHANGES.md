@@ -1,5 +1,4 @@
-## Changed in v2023.6
+## Changed in v2023.10.1
 
-* More Zaralek Cavern data
-* Suppress alerts while a cinematic is running
+* Blizzard hotfixed out the range-check API that I was using to only announce rares that nearby group members saw, so I've switched to a different API for that.
 

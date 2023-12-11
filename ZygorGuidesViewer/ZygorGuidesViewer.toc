@@ -1,4 +1,4 @@
-## Interface: 100100
+## Interface: 100200
 ## Title: |cffffffffZygor Guide Viewer|r |cffc20436(Dragonflight)|r
 ## Notes: Free multi-purpose leveling guide viewer.
 ## Author: Zygor Guides
@@ -23,5 +23,6 @@ Libs-Retail\Libs.xml
 
 Retrofit.lua
 Localization\Localization.xml
+Localization-Retail\Localization.xml
 
 files-Retail.xml

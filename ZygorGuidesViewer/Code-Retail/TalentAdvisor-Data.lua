@@ -38,7 +38,6 @@ TA.Builds = {
 				Abomination Limb##96177
 				Permafrost##96212
 				Insidious Chill##96217
-				Death Strike##96200
 				Icy Talons##96179
 				Icy Talons##96179
 				Empower Rune Weapon##96178
@@ -213,136 +212,134 @@ TA.Builds = {
 	DEMONHUNTER = {
 		["Havoc (DPS)"] = {1,true, [[
 				Unrestrained Fury##112852
-				Unrestrained Fury##112852
 				Blazing Path##112928
-				Sigil of Flame##112854
-				Improved Disrupt##112849
-				Felblade##112842
-				Pursuit##112851
-				Imprison##112927
-				Rush of Chaos##112844
-				Soul Rending##112847
-				Soul Rending##112847
-				Demonic##112923
-				Consume Magic##112926
+				Shattered Restoration##112863
 				Charred Warblades##112861
-				Precise Sigils##112855
-				Sigil of Misery##112859
-				Master of the Glaive##112912
+				Consume Magic##112926
+				Bouncing Glaives##112841
+				Improved Disrupt##112849
 				Chaos Nova##112911
-				Will of the Illidari##112918
+				Aura of Pain##112844
+				Infernal Armor##112924
+				Infernal Armor##112924
+				Demonic##112923
+				Felblade##117759
+				Soul Rending##112847
+				Soul Rending##112847
+				Champion of the Glaive##117768
+				Pursuit##112851
 				Will of the Illidari##112918
 				Illidari Knowledge##112846
+				Sigil of Misery##112859
 				Darkness##112921
+				Rush of Chaos##117757
+				Rush of Chaos##117757
 				The Hunt##112837
-				Unnatural Malice##112836
-				Illidari Knowledge##112846
 				Internal Struggle##112845
 				Erratic Felheart##112914
 				Erratic Felheart##112914
-				Collective Anguish##112913
-				Bouncing Glaives##112841
-				Misery in Defeat##112857
+				Collective Anguish##117762
+				Quickened Sigils##117758
+				Flames of Fury##112862
+				Flames of Fury##112862
 				Vengeful Retreat##112853
 			]],[[
 				Eye Beam##112939
 				Demon Blades##112940
-				Felfire Heart##112938
+				Burning Hatred##112832
 				First Blood##112834
+				Deflecting Dance##115246
 				Critical Chaos##112951
-				Critical Chaos##112951
-				Dancing with Fate##112936
-				Dancing with Fate##112936
-				Chaotic Transformation##112831
-				Looks Can Kill##112830
-				Initiative##112950
-				Unbound Chaos##112942
-				Unbound Chaos##112942
-				Tactical Retreat##112944
+				Netherwalk##115247
+				Demon Hide##112938
 				Trail of Ruin##112824
 				Growing Inferno##112825
-				Growing Inferno##112825
 				Burning Wound##112826
-				Furious Throws##115244
-				Blind Fury##112949
-				Momentum##112943
+				Serrated Glaive##112934
+				Dancing with Fate##112936
+				Dancing with Fate##112936
+				Furious Gaze##112948
+				Chaotic Transformation##112831
+				Initiative##112950
+				Tactical Retreat##112944
+				Unbound Chaos##112942
+				Scars of Suffering##112823
+				Inner Demon##112947
 				Know Your Enemy##112957
 				Know Your Enemy##112957
+				Inertia##117744
 				Essence Break##112956
-				Accelerating Blade##112932
-				Fodder to the Flame##112931
+				A Fire Inside##117741
 				Ragefire##112827
-				Soulrend##112829
-				Soulrend##112829
+				Chaotic Disposition##117754
+				Chaotic Disposition##117754
 				Any Means Necessary##112828
 			]]
 		},
 		["Vengeance (Tank)"] = {2,false, [[
 				Blazing Path##112928
-				Vengeful Retreat##112853
 				Unrestrained Fury##112852
-				Imprison##112927
-				Improved Disrupt##112849
-				Pursuit##112851
-				--Consume Magic##112926
-				Aura of Pain##112843
 				Shattered Restoration##112863
-				Rush of Chaos##112844
+				Charred Warblades##112861
+				Aldrachi Design##112917
+				Bouncing Glaives##112841
+				Chaos Nova##112911
+				Improved Disrupt##112849
+				Felblade##117759
 				Infernal Armor##112924
 				Infernal Armor##112924
 				Demonic##112923
 				Will of the Illidari##112918
-				Will of the Illidari##112918
-				Master of the Glaive##112912
-				Chaos Nova##112911
-				Illidari Knowledge##112846
-				Illidari Knowledge##112846
+				Aura of Pain##112844
 				Soul Rending##112847
 				Soul Rending##112847
-				Soul Sigils##112839
+				Champion of the Glaive##117768
+				Illidari Knowledge##112846
+				Vengeful Retreat##112853
+				Imprison##112927
+				Darkness##112921
+				Rush of Chaos##117757
+				Rush of Chaos##117757
 				The Hunt##112837
-				Aldrachi Design##112917
+				Pitch Black##112919
 				Internal Struggle##112845
-				Erratic Felheart##112914
-				Erratic Felheart##112914
-				Collective Anguish##112913
-				Extended Sigils##112916
-				Extended Sigils##112916
-				Quickened Sigils##112915
-				Shattered Restoration##112863
-				Sigil of Flame##112854
+				Soul Sigils##112839
+				Quickened Sigils##117758
+				Flames of Fury##112862
+				Flames of Fury##112862
+				Elysian Decree##117755
+				Sigil of Misery##112859
 			]],[[
 				Fel Devastation##112908
-				Frailty##112907
 				Fiery Brand##112864
 				Deflecting Spikes##112906
 				Sigil of Silence##112904
-				Perfectly Balanced Glaive##112883
+				Frailty##112907
 				Fracture##112885
 				Calcified Spikes##112882
+				Perfectly Balanced Glaive##112883
 				Spirit Bomb##112894
+				Extended Spikes##112881
 				Burning Blood##112903
-				Burning Blood##112903
-				Agonizing Flames##112887
+				Fel Flame Fortification##112868
+				Fiery Demise##112872
+				Fiery Demise##112872
 				Agonizing Flames##112887
 				Fallout##112888
-				Volatile Flameblood##112902
-				Darkglare Boon##112901
-				Darkglare Boon##112901
 				Void Reaver##112893
-				Soul Furnace##112890
-				Fiery Demise##112872
-				Fiery Demise##112872
-				Focused Cleave##112891
-				Vulnerability##112897
-				Vulnerability##112897
-				Soul Carver##112898
+				Painbringer##112892
+				Painbringer##112892
+				Chains of Anger##112879
 				Burning Alive##112873
 				Charred Flesh##112877
 				Charred Flesh##112877
-				Elysian Decree##112874
+				Illuminated Sigils##117760
+				Darkglare Boon##112901
+				Focused Cleave##112891
+				Vulnerability##112897
+				Vulnerability##112897
 				Soulcrush##112896
-				Down in Flames##112876
+				Cycle of Binding##112878
 			]]
 		},
 	},
@@ -500,13 +497,11 @@ TA.Builds = {
 				Astral Influence##103288
 				Astral Influence##103288
 				Typhoon##103287
-				Incessant Tempest##114298
+				Rising Light, Falling Night##103285
 				Nurturing Instinct##103292
 				Nurturing Instinct##103292
 				Thick Hide##103306
 				Ursol's Vortex##103321
-				Innervate##103323
-				Nature's Vigil##103324
 				Lycara's Teachings##103311
 				Lycara's Teachings##103311
 				Lycara's Teachings##103311
@@ -514,40 +509,42 @@ TA.Builds = {
 				Heart of the Wild##103309
 				Improved Stampeding Roar##103308
 				Incapacitating Roar##103316
+				Well-Honed Instincts##103326
 				Thick Hide##103306
+				Verdant Heart##103296
 				Frenzied Regeneration##103298
 				Thrash##103301
 			]],[[
 				Maul##103191
-				Gore##103190
-				Brambles##103231
 				Survival Instincts##103193
 				Mangle##103195
 				Berserk##103216
-				Gory Fur##103196
+				Gore##103190
+				Dream of Cenarius##103218
 				Innate Resolve##103229
-				Vulnerable Flesh##103228
-				Vulnerable Flesh##103228
-				Tooth and Claw##103197
-				Fury of Nature##103203
-				Fury of Nature##103203
+				Gory Fur##103196
 				Survival of the Fittest##103210
 				Survival of the Fittest##103210
-				Vicious Cycle##103227
 				After the Wildfire##103206
 				Berserk##103211
+				Thorns of Iron##114698
+				Vulnerable Flesh##103228
+				Vulnerable Flesh##103228
 				Soul of the Forest##103208
+				Vicious Cycle##103227
 				Berserk##103224
-				Scintillating Moonlight##103213
-				Scintillating Moonlight##103213
-				Galactic Guardian##103214
-				Rage of the Sleeper##103207
+				Tooth and Claw##103197
+				Layered Mane##103215
+				Rend and Tear##103221
+				Ursoc's Fury##103219
 				Circle of Life and Death##103202
 				Incarnation: Guardian of Ursoc##103201
+				Rage of the Sleeper##103207
+				Raze##114701
 				Ursoc's Guidance##103199
 				Blood Frenzy##103209
-				Raze##114701
-				Twin Moonfire##103212
+				Flashing Claws##103223
+				Flashing Claws##103223
 			]]
 		},
 		["Restoration (Healer)"] = {4,false, [[
@@ -567,7 +564,7 @@ TA.Builds = {
 				Wild Charge##103276
 				Soothe##103307
 				Stampeding Roar##103312
-				Rip##103300
+				Improved Sunfire##116102
 				Thrash##103301
 				Improved Swipe##103304
 				Improved Sunfire##103285
@@ -578,7 +575,7 @@ TA.Builds = {
 				Lycara's Teachings##103311
 				Lycara's Teachings##103311
 				Renewal##103310
-				Heart of the Wild##103309
+				Improved Nature's Cure##103281
 				Ironfur##103305
 				Thick Hide##103306
 				Thick Hide##103306
@@ -620,135 +617,204 @@ TA.Builds = {
 	},
 	EVOKER = {
 		["Devastation (DPS)"] = {1,true, [[
-				Natural Convergence##87709
-				Quell##87692
-				Obsidian Scales##87702
-				Permeating Chill##87703
-				Enkindled##87704
-				Enkindled##87704
-				Expunge##87716
-				Verdant Embrace##87715
-				Tip the Scales##87713
-				Instinctive Arcana##87693
-				Instinctive Arcana##87693
-				Blast Furnace##87694
-				Blast Furnace##87694
-				Extended Flight##87706
-				Extended Flight##87706
-				Panacea##87707
-				Scarlet Adaptation##87714
-				Clobbering Sweep##87585
-				Draconic Legacy##87712
-				Draconic Legacy##87712
-				Inherent Resistance##87697
-				Inherent Resistance##87697
-				Renewing Blaze##87679
-				Fire Within##87680
-				Protracted Talons##87688
-				Leaping Flames##87689
-				Terror of the Skies##87675
-				Rescue##87685
-				Aerial Mastery##87686
-				Obsidian Bulwark##87701
-				Cauterizing Flame##87700
-				Landslide##87708
+				Quell##115620
+				Innate Magic##115611
+				Innate Magic##115611
+				Expunge##115615
+				Verdant Embrace##115655
+				Enkindled##115603
+				Enkindled##115603
+				Obsidian Scales##115613
+				Tip the Scales##115665
+				Permeating Chill##115612
+				Instinctive Arcana##115619
+				Instinctive Arcana##115619
+				Regenerative Magic##115668
+				Blast Furnace##115618
+				Extended Flight##115664
+				Extended Flight##115664
+				Panacea##115663
+				Draconic Legacy##115609
+				Source of Magic##115669
+				Inherent Resistance##115670
+				Protracted Talons##115616
+				Leaping Flames##115657
+				Terror of the Skies##115656
+				Renewing Blaze##115658
+				Fire Within##115659
+				Zephyr##115661
+				Rescue##115596
+				Potent Mana##116103
+				Aerial Mastery##115667
+				Inherent Resistance##115670
+				Obsidian Bulwark##115597
+				Landslide##115614
+				Natural Convergence##115621
 			]],[[
-				Pyre##87669
-				Azure Essence Burst##87668
-				Inner Radiance##87666
-				Dragonrage##87665
-				Eternity Surge##87647
-				Arcane Intensity##87646
-				Arcane Intensity##87646
-				Ruby Essence Burst##87670
-				Animosity##87664
-				Essence Attunement##87649
-				Eye of Infinity##87640
-				Shattering Star##87641
-				Eternity's Span##87645
-				Heat Wave##87661
-				Heat Wave##87661
-				Tyranny##87662
-				Catalyze##87660
-				Dense Energy##87671
-				Volatility##87672
-				Volatility##87672
-				Arcane Vigor##87642
-				Power Swell##87644
-				Iridescence##87638
-				Spellweaver's Dominance##87652
-				Hoarded Power##87591
-				Scintillation##87653
-				Titanic Wrath##87663
-				Titanic Wrath##87663
-				Causality##115682
-				Burnout##87657
+				Pyre##115647
+				Ruby Essence Burst##115593
+				Azure Essence Burst##115646
+				Imposing Presence##115645
+				Dragonrage##115643
+				Dense Energy##115592
+				Eternity Surge##115581
+				Arcane Intensity##115580
+				Arcane Intensity##115580
+				Animosity##115642
+				Heat Wave##115588
+				Heat Wave##115588
+				Catalyze##115587
+				Tyranny##115640
+				Essence Attunement##115631
+				Eye of Infinity##115630
+				Eternity's Span##115632
+				Shattering Star##115627
+				Volatility##115591
+				Volatility##115591
+				Arcane Vigor##115625
+				Power Swell##115634
+				Iridescence##115633
+				Spellweaver's Dominance##115635
+				Titanic Wrath##115578
+				Titanic Wrath##115578
+				Causality##115683
+				Hoarded Power##115637
+				Scintillation##115636
+				Burnout##115624
 			]]
 		},
 		["Preservation (Healer)"] = {2,false, [[
-				Verdant Embrace##87715
-				Cauterizing Flame##87700
-				Enkindled##87704
-				Enkindled##87704
-				Obsidian Scales##87702
-				Permeating Chill##87703
-				Landslide##87708
-				Natural Convergence##87709
-				Attuned to the Dream##87699
-				Attuned to the Dream##87699
-				Tip the Scales##87713
-				Extended Flight##87706
-				Extended Flight##87706
-				Panacea##87707
-				Quell##87692
-				Instinctive Arcana##87693
-				Instinctive Arcana##87693
-				Blast Furnace##87694
-				Blast Furnace##87694
-				Scarlet Adaptation##87714
-				Draconic Legacy##87712
-				Lush Growth##87678
-				Lush Growth##87678
-				Zephyr##87682
-				Rescue##87685
-				Renewing Blaze##87679
-				Aerial Mastery##87686
-				Oppressing Roar##87695
-				Leaping Flames##87689
-				Obsidian Bulwark##87701
-				Draconic Legacy##87712
-				Expunge##87716
+				Scarlet Adaptation##115654
+				Enkindled##115603
+				Enkindled##115603
+				Obsidian Scales##115613
+				Permeating Chill##115612
+				Innate Magic##115611
+				Innate Magic##115611
+				Quell##115620
+				Tip the Scales##115665
+				Cauterizing Flame##115602
+				Attuned to the Dream##115600
+				Attuned to the Dream##115600
+				Bountiful Bloom##115599
+				Panacea##115663
+				Instinctive Arcana##115619
+				Instinctive Arcana##115619
+				Regenerative Magic##115668
+				Draconic Legacy##115609
+				Source of Magic##115669
+				Obsidian Bulwark##115597
+				Potent Mana##116103
+				Aerial Mastery##115667
+				Time Spiral##115666
+				Lush Growth##115662
+				Lush Growth##115662
+				Zephyr##115661
+				Renewing Blaze##115658
+				Fire Within##115659
+				Rescue##115596
+				Oppressing Roar##115607
+				Leaping Flames##115657
+				Expunge##115615
+				Verdant Embrace##115655
 			]],[[
-				Echo##87628
-				Dream Breath##87627
-				Essence Burst##87630
-				Essence Attunement##87631
-				Temporal Compression##87626
-				Spiritbloom##87625
-				Reversion##87629
-				Rewind##87612
-				Life-Giver's Flame##87616
-				Life-Giver's Flame##87616
-				Emerald Communion##87594
-				Dreamwalker##87593
-				Call of Ysera##87618
-				Time Dilation##87613
-				Temporal Anomaly##87611
-				Resonating Sphere##87609
-				Punctuality##87607
-				Golden Hour##87614
-				Time Lord##87615
-				Time Lord##87615
-				Lifebind##87634
-				Temporal Artificer##87619
-				Timeless Magic##87605
-				Timeless Magic##87605
-				Stasis##87603
-				Lifeforce Mender##87617
-				Lifeforce Mender##87617
-				Font of Magic##87596
-				Grace Period##87621
-				Grace Period##87621
+				Echo##115653
+				Dream Breath##115542
+				Temporal Compression##115543
+				Spiritbloom##115546
+				Reversion##115652
+				Rewind##115651
+				Time Dilation##115650
+				Essence Burst##115541
+				Spiritual Clarity##115544
+				Emerald Communion##115549
+				Rush of Vitality##115547
+				Call of Ysera##115554
+				Golden Hour##115559
+				Temporal Anomaly##115561
+				Resonating Sphere##115563
+				Essence Attunement##115540
+				Time Lord##115558
+				Time Lord##115558
+				Exhilarating Burst##115550
+				Exhilarating Burst##115550
+				Spark of Insight##115575
+				Renewing Breath##115574
+				Renewing Breath##115574
+				Dream Flight##115573
+				Lifebind##115557
+				Temporal Artificer##115569
+				Timeless Magic##115568
+				Timeless Magic##115568
+				Stasis##115567
+				Ouroboros##115555
+			]]
+		},
+		["Augmentation (DPS)"] = {3,false, [[
+				Natural Convergence##115621
+				Permeating Chill##115612
+				Quell##115620
+				Enkindled##115603
+				Enkindled##115603
+				Innate Magic##115611
+				Innate Magic##115611
+				Expunge##115615
+				Tip the Scales##115665
+				Inherent Resistance##115670
+				Inherent Resistance##115670
+				Blast Furnace##115618
+				Instinctive Arcana##115619
+				Instinctive Arcana##115619
+				Extended Flight##115664
+				Extended Flight##115664
+				Panacea##115663
+				Draconic Legacy##115609
+				Source of Magic##115669
+				Verdant Embrace##115655
+				Potent Mana##116103
+				Aerial Mastery##115667
+				Time Spiral##115666
+				Renewing Blaze##115658
+				Fire Within##115659
+				Zephyr##115661
+				Oppressing Roar##115607
+				Leaping Flames##115657
+				Rescue##115596
+				Twin Guardian##115595
+				Obsidian Bulwark##115597
+				Landslide##115614
+				Obsidian Scales##115613
+			]],[[
+				Ebon Might##115496
+				Eruption##115498
+				Essence Burst##115520
+				Ricocheting Pyroclast##115507
+				Upheaval##115502
+				Breath of Eons##115536
+				Pupil of Alexstrasza##115521
+				Essence Attunement##115519
+				Chrono Ward##115706
+				Draconic Attunements##115518
+				Volcanism##115505
+				Blistering Scales##115508
+				Tectonic Locus##115500
+				Font of Magic##115506
+				Stretch Time##115534
+				Spatial Paradox##115526
+				Power Nexus##115499
+				Defy Fate##115522
+				Aspects' Favor##115517
+				Aspects' Favor##115517
+				Ignition Rush##115531
+				Time Skip##115533
+				Interwoven Threads##115686
+				Prescience##115675
+				Anachronism##115523
+				Fate Mirror##115685
+				Hoarded Power##115512
+				Inferno's Blessing##115495
+				Momentum Shift##115532
+				Accretion##115530
 			]]
 		},
 	},
@@ -956,8 +1022,8 @@ TA.Builds = {
 	MAGE = {
 		["Arcane (DPS)"] = {1,false, [[
 				Overflowing Energy##80179
-				Rune of Power##80171
-				Invisibility##80177
+				Shifting Power##80171
+				Incanter's Flow##80177
 				Remove Curse##80175
 				Alter Time##80174
 				Ice Block##80181
@@ -967,189 +1033,189 @@ TA.Builds = {
 				Blast Wave##80160
 				Tome of Antonidas##80155
 				Quick Witted##80161
-				Ice Floes##80162
+				Shimmer##80163
 				Ice Nova##80186
 				Tome of Rhonin##80187
 				Energized Barriers##80157
-				Incantation of Swiftness##80170
-				Incantation of Swiftness##80170
-				Tempest Barrier##80169
-				Tempest Barrier##80169
-				Flow of Time##80153
-				Flow of Time##80153
-				Greater Invisibility##80152
-				Temporal Warp##80150
+				Winter's Protection##80182
+				Winter's Protection##80182
+				Cryo-Freeze##80165
+				Cryo-Freeze##80165
 				Temporal Velocity##80156
 				Temporal Velocity##80156
 				Dragon's Breath##80147
+				Mass Barrier##80148
+				Accumulative Shielding##80149
+				Temporal Warp##80150
+				Greater Invisibility##115877
 				Frigid Winds##80188
 				Frigid Winds##80188
-				Ice Ward##80142
-				Shifting Power##80141
+				Freezing Cold##80143
+				Ice Cold##80141
 				Prismatic Barrier##80180
 			]],[[
-				Arcane Barrage##80306
 				Arcane Missiles##80307
-				Clearcasting##80298
-				Arcane Orb##80308
+				Reverberate##115762
 				Arcane Surge##80299
+				Concentrated Power##80298
+				Arcane Orb##80308
 				Arcane Tempo##80205
 				Nether Precision##80295
 				Crackling Energy##80297
-				Arcane Power##80190
-				Arcane Familiar##80207
-				Presence of Mind##80208
-				Resonance##80200
-				Nether Tempest##80199
-				Touch of the Magi##80302
-				Arcing Cleave##80201
-				Slipstream##80296
 				Amplification##80294
 				Improved Clearcasting##80293
+				Arcane Familiar##80207
+				Presence of Mind##80208
 				Charged Orb##80310
+				Resonance##80200
+				Nether Tempest##80198
+				Arcing Cleave##80201
+				Touch of the Magi##80302
+				Slipstream##80296
+				Impetus##80291
 				Crackling Energy##80297
 				Arcane Echo##80191
 				Radiant Spark##80304
 				Harmonic Echo##80305
-				Evocation##80209
-				Illuminated Thoughts##80292
-				Illuminated Thoughts##80292
-				Concentration##80194
-				Arcane Harmony##80195
 				Arcane Bombardment##80303
+				Enlightened##80204
+				Prodigious Savant##80197
+				Prodigious Savant##80197
+				Orb Barrage##80196
+				Evocation##80209
 				Siphon Storm##80210
 			]]
 		},
 		["Fire (DPS)"] = {2,false, [[
 				Overflowing Energy##80179
-				Rune of Power##80171
-				Invisibility##80177
+				Shifting Power##80171
+				Incanter's Flow##80177
 				Remove Curse##80175
 				Alter Time##80174
 				Ice Block##80181
 				Spellsteal##80140
 				Mirror Image##80183
+				Quick Witted##80161
+				Ice Floes##80162
+				Ice Nova##80186
 				Master of Time##80159
 				Blast Wave##80160
+				Energized Barriers##80157
 				Tome of Antonidas##80155
-				Quick Witted##80161
-				Ice Nova##80186
 				Tome of Rhonin##80187
-				Ring of Frost##80144
-				Shimmer##80163
-				Tempest Barrier##80169
-				Tempest Barrier##80169
-				Arcane Warding##80173
-				Arcane Warding##80173
-				Flow of Time##80153
-				Flow of Time##80153
-				Greater Invisibility##80152
-				Temporal Warp##80150
+				Winter's Protection##80182
+				Winter's Protection##80182
+				Diverted Energy##80158
+				Diverted Energy##80158
 				Temporal Velocity##80156
 				Temporal Velocity##80156
 				Dragon's Breath##80147
+				Mass Barrier##80148
+				Accumulative Shielding##80149
+				Temporal Warp##80150
+				Greater Invisibility##115877
 				Frigid Winds##80188
 				Frigid Winds##80188
 				Ice Ward##80142
-				Shifting Power##80141
+				Ice Cold##80141
 				Blazing Barrier##80178
 			]],[[
 				Pyroblast##80283
 				Fire Blast##80282
 				Phoenix Flames##80285
 				Scorch##80281
-				Fervent Flickering##80284
-				Flamestrike##80258
-				Firestarter##80139
 				Searing Touch##80280
-				Improved Flamestrike##80257
+				Pyrotechnics##80284
+				Surging Blaze##80258
+				Fuel the Fire##80257
 				Flame On##80256
 				Flame On##80256
 				Combustion##80275
+				Critical Mass##80287
+				Critical Mass##80287
 				Improved Combustion##80269
-				Critical Mass##80287
-				Critical Mass##80287
-				From the Ashes##80289
-				Call of the Sun King##80278
 				Feel the Burn##80261
-				Feel the Burn##80261
-				Flame Patch##80259
-				Wildfire##80270
-				Wildfire##80270
-				Fiery Rush##80271
-				Master of Flame##80262
-				Kindling##80265
-				Pyroclasm##80277
-				Controlled Destruction##80272
-				Controlled Destruction##80272
-				Sun King's Blessing##80273
 				Firemind##80276
+				Alexstrasza's Fury##80288
+				Call of the Sun King##80278
+				Flame Patch##80259
+				Incendiary Eruptions##80255
+				Kindling##80265
+				Wildfire##80270
+				Wildfire##80270
+				Sun King's Blessing##80273
+				Fiery Rush##80271
+				Conflagration##80262
+				Meteor##80253
+				Fevered Incantation##80277
+				Phoenix Reborn##80266
+				Fervent Flickering##80286
 			]]
 		},
 		["Frost (DPS)"] = {3,true, [[
 				Overflowing Energy##80179
-				Rune of Power##80171
-				Invisibility##80177
+				Shifting Power##80171
+				Incanter's Flow##80177
 				Remove Curse##80175
 				Alter Time##80174
 				Ice Block##80181
 				Spellsteal##80140
 				Mirror Image##80183
-				Master of Time##80159
-				Blast Wave##80160
-				Tome of Antonidas##80155
 				Quick Witted##80161
 				Ice Nova##80186
 				Tome of Rhonin##80187
-				Shimmer##80163
-				Volatile Detonation##80145
-				Incantation of Swiftness##80170
-				Incantation of Swiftness##80170
-				Arcane Warding##80173
-				Arcane Warding##80173
-				Flow of Time##80153
-				Flow of Time##80153
-				Greater Invisibility##80152
+				Master of Time##80159
+				Blast Wave##80160
+				Ice Floes##80162
+				Tome of Antonidas##80155
+				Energized Barriers##80157
+				Diverted Energy##80158
+				Diverted Energy##80158
+				Cryo-Freeze##80165
+				Cryo-Freeze##80165
+				Frigid Winds##80188
+				Frigid Winds##80188
+				Time Manipulation##80189
 				Temporal Warp##80150
+				Freezing Cold##80143
+				Ice Cold##80141
 				Temporal Velocity##80156
 				Temporal Velocity##80156
 				Dragon's Breath##80147
-				Frigid Winds##80188
-				Frigid Winds##80188
-				Ice Ward##80142
-				Shifting Power##80141
+				Mass Barrier##80148
+				Greater Invisibility##115877
 				Ice Barrier##80176
 			]],[[
 				Ice Lance##80241
 				Frozen Orb##80242
 				Flurry##80243
-				Blizzard##80240
-				Cold Snap##80239
 				Fingers of Frost##80227
 				Shatter##80228
+				Frostbite##102428
+				Winter's Blessing##80239
+				Everlasting Frost##102429
 				Piercing Cold##80229
-				Bone Chilling##80230
-				Lonely Winter##80238
-				Flash Freeze##80231
+				Lonely Winter##80237
 				Wintertide##80236
 				Wintertide##80236
 				Icy Veins##80235
-				Everlasting Frost##102429
-				Frostbite##102428
-				Splintering Cold##80225
-				Splintering Cold##80225
 				Brain Freeze##80244
+				Perpetual Winter##80247
+				Comet Storm##80248
 				Ice Caller##80233
-				Icy Propulsion##80217
-				Freezing Rain##80212
-				Snap Freeze##80215
-				Freezing Winds##80214
-				Slick Ice##80216
-				Chain Reaction##80218
-				Thermal Void##80219
+				Flash Freeze##80231
+				Bone Chilling##80230
+				Subzero##80223
+				Subzero##80223
 				Splitting Ice##80224
 				Hailstones##80221
 				Hailstones##80221
+				Glacial Spike##80220
+				Thermal Void##80217
+				Freezing Rain##80212
+				Freezing Winds##80214
+				Coldest Snap##80218
+				Glacial Assault##80249
 			]]
 		},
 	},
@@ -1221,71 +1287,70 @@ TA.Builds = {
 			]]
 		},
 		["Mistweaver (Healer)"] = {2,false, [[
-				Improved Vivify##101510
-				Improved Vivify##101510
-				Vivacious Vivification##101513
 				Calming Presence##101511
 				Improved Detox##102627
 				Ferocity of Xuen##101524
 				Ferocity of Xuen##101524
-				Rising Sun Kick##101508
+				Vigorous Expulsion##101530
+				Vivacious Vivification##101513
 				Tiger's Lust##101507
-				Chi Burst##101527
+				Improved Vivify##101510
 				Transcendence##101512
-				Ring of Peace##101516
-				Dampen Harm##101522
 				Spear Hand Strike##101504
 				Celerity##101503
-				Profound Rebuttal##101526
-				Disable##101495
+				Ring of Peace##101516
+				Dampen Harm##101522
 				Diffuse Magic##101515
+				Chi Burst##101527
+				Profound Rebuttal##101526
 				Fast Feet##101523
 				Fast Feet##101523
+				Improved Touch of Death##101501
+				Improved Vivify##101510
+				Fatal Touch##101521
+				Fatal Touch##101521
+				Resonant Fists##101520
+				Resonant Fists##101520
 				Close to Heart##101525
 				Close to Heart##101525
 				Save Them All##101533
 				Save Them All##101533
-				Fortifying Brew##101496
-				Expeditious Fortification##101497
-				Strength of Spirit##101499
 				Generous Pour##101500
 				Generous Pour##101500
-				Bounce Back##101536
-				Bounce Back##101536
+				Paralysis##101506
 				Soothing Mist##101509
+				Rising Sun Kick##101508
 			]],[[
 				Enveloping Mist##101370
 				Renewing Mist##101394
 				Essence Font##101406
 				Thunder Focus Tea##101410
-				Life Cocoon##101390
 				Revival##101378
-				Invigorating Mists##101358
-				Mastery of Mist##101395
-				Healing Elixir##101374
-				Mana Tea##101379
-				Mists of Life##101369
-				Uplifted Spirits##101398
-				Invoke Chi-Ji, the Red Crane##101396
-				Enveloping Breath##101388
-				Mist Wrap##101363
-				--Zen Pulse##101368
-				--Echoing Reverberation##101365
+				Life Cocoon##101390
+				Mana Tea##101395
 				Teachings of the Monastery##101403
-				Spirit of the Crane##101361
-				Burst of Life##114297
-				Rapid Diffusion##101385
+				Mists of Life##101369
+				Chrysalis##101389
+				Healing Elixir##101374
+				Invoke Chi-Ji, the Red Crane##101396
+				Mist Wrap##101363
+				Zen Pulse##101368
+				Energizing Brew##101380
+				Celestial Harmony##101388
+				Dancing Mists##101393
+				Uplifted Spirits##101398
+				Invigorating Mists##101358
 				Rapid Diffusion##101385
 				Sheilun's Gift##101392
 				Veil of Pride##101405
-				Tear of Morning##101357
+				Rising Mist##101356
+				Legacy of Wisdom##114821
+				Ancient Teachings##101408
 				Gift of the Celestials##101381
 				Faeline Stomp##101359
 				Ancient Concordance##101371
-				Ancient Concordance##101371
 				Awakened Faeline##101383
-				Ancient Teachings##101408
-				Legacy of Wisdom##114821
+				Rapid Diffusion##101385
 			]]
 		},
 		["Windwalker (DPS)"] = {3,true,  [[
@@ -1357,136 +1422,137 @@ TA.Builds = {
 	},
 	PALADIN = {
 		["Holy"] = {1,false, [[
-				Hammer of Wrath##102479
-				Auras of Swift Vengeance##102588
-				Greater Judgment##114292
 				Divine Steed##102625
-				Improved Cleanse##102477
-				Blinding Light##102584
+				Hammer of Wrath##102479
+				Greater Judgment##114292
 				Rebuke##102591
 				Cavalier##102592
+				Obduracy##102622
+				Improved Cleanse##102477
+				Blinding Light##102584
 				Avenging Wrath##102593
+				Blessing of Protection##102604
+				Crusader's Reprieve##102518
 				Holy Aegis##102597
 				Holy Aegis##102597
+				Echoing Blessings##115872
+				Afterimage##102601
+				Sanctified Plates##115034
+				Sanctified Plates##115034
+				Unbreakable Spirit##102603
 				Blessing of Sacrifice##102602
 				Sacrifice of the Just##102595
-				Afterimage##102601
-				Blessing of Protection##102604
-				Unbreakable Spirit##102603
-				Crusader's Reprieve##102518
-				Sanctified Plates##115034
-				Sanctified Plates##115034
 				Divine Purpose##115489
+				Seal of Alacrity##102609
+				Seal of Alacrity##102609
 				Divine Toll##102465
-				Divine Resonance##115466
+				Quickened Invocation##115465
 				Seal of Might##102612
 				Seal of Might##102612
 				Of Dusk and Dawn##115673
-				Fading Light##115169
-				Seal of Alacrity##102609
-				Seal of Alacrity##102609
+				Seal of Order##102614
 				Strength of Conviction##102444
 				Strength of Conviction##102444
-				Fist of Justice##102589
 				Lay on Hands##102583
 				Auras of the Resolute##102586
+				Blessing of Freedom##102587
 			]],[[
 				Holy Shock##102534
 				Light of Dawn##102545
-				Holy Light##102550
-				Divine Protection##102549
 				Aura Mastery##102548
-				Divine Insight##102554
-				Unending Light##102544
+				Glimmer of Light##102550
+				Beacon of the Lightbringer##102549
+				Holy Infusion##102543
+				Light's Conviction##116376
 				Moment of Compassion##102553
+				Divine Favor##102551
+				Illumination##102542
+				Glistening Radiance##102559
+				Holy Prism##102560
 				Imbued Infusions##102536
+				Light's Protection##115874
 				Tower of Radiance##102571
-				Second Sunrise##102567
-				Second Sunrise##102567
-				Shining Savior##102559
-				Light's Hammer##102561
-				Radiant Onslaught##102557
-				Commanding Light##102564
-				Commanding Light##102564
+				Shining Righteousness##102541
 				Divine Glimpse##102570
-				Divine Glimpse##102570
-				Echoing Blessings##102535
+				Righteous Judgment##115875
+				Divine Revelations##102562
+				Commanding Light##102564
+				Beacon of Faith##102533
+				Daybreak##102563
+				Rising Sunlight##102581
 				Avenging Wrath##102569
-				Awakening##102578
-				Awakening##102578
-				Empyrean Legacy##102576
-				Blessing of Summer##102579
-				Beacon of Virtue##102532
-				Sanctified Wrath##102563
-				Glimmer of Light##102581
-				Breaking Dawn##102566
-				Relentless Inquisitor##102575
+				Blessing of Summer##116183
+				Awakening##116205
+				Inflorescence of the Sunwell##102577
+				Glorious Dawn##115873
+				Reclamation##102537
+				Veneration##102565
 			]]
 		},
 		["Protection (Tank)"] = {2,false, [[
-				Blessing of Freedom##102587
+				Divine Steed##102625
+				Cavalier##102592
 				Hammer of Wrath##102479
 				Greater Judgment##102590
 				Rebuke##102591
-				Divine Steed##102625
+				Blessing of Freedom##102587
+				Obduracy##102622
 				Cleanse Toxins##102476
-				Cavalier##102592
-				Blinding Light##102584
 				Avenging Wrath##102593
-				Holy Aegis##102597
-				Holy Aegis##102597
 				Blessing of Sacrifice##102602
-				Unbreakable Spirit##102603
-				Sacrifice of the Just##102595
 				Blessing of Protection##102604
+				Unbreakable Spirit##102603
 				Crusader's Reprieve##102518
-				Sanctified Plates##115034
-				Sanctified Plates##115034
-				Justification##102478
+				Punishment##115444
 				Lightforged Blessing##115447
-				Seal of Might##102612
-				Seal of Might##102612
+				Justification##102478
+				Sanctified Plates##115034
+				Sanctified Plates##115034
+				Holy Aegis##102597
+				Holy Aegis##102597
+				Seal of Alacrity##102609
+				Seal of Alacrity##102609
 				Divine Toll##102465
 				Divine Resonance##102443
+				Seal of Might##102612
+				Seal of Might##102612
 				Of Dusk and Dawn##115672
 				Seal of Order##102614
-				Seal of Alacrity##102609
-				Seal of Alacrity##102609
-				Seal of the Crusader##102617
-				Seal of the Crusader##102617
+				Seal of the Crusader##116065
+				Seal of the Crusader##116065
 				Zealot's Paragon##102616
 				Lay on Hands##102583
 				Auras of the Resolute##102586
 			]],[[
 				Avenger's Shield##102471
 				Redoubt##102462
+				Grand Crusader##102453
+				Ardent Defender##102445
 				Holy Shield##102455
 				Blessed Hammer##102430
 				Sanctuary##102451
-				Grand Crusader##102453
-				Ardent Defender##102445
 				Shining Light##102467
 				Consecration in Flame##102432
+				Strength in Adversity##102461
 				Bulwark of Order##102468
 				Bulwark of Order##102468
 				Sentinel##102447
 				Guardian of Ancient Kings##102456
-				Strength in Adversity##102461
-				Crusader's Judgment##102436
-				Barricade of Faith##102470
-				Tyr's Enforcer##102437
-				Tyr's Enforcer##102437
-				Bastion of Light##102454
 				Relentless Inquisitor##102475
+				Bastion of Light##102454
+				Crusader's Judgment##102436
+				Tyr's Enforcer##102437
+				Tyr's Enforcer##102437
+				Barricade of Faith##102470
 				Soaring Shield##102434
+				Eye of Tyr##102466
 				Avenging Wrath##102611
+				Inmost Light##115167
+				Bulwark of Righteous Fury##102457
+				Final Stand##102473
 				Resolute Defender##102433
 				Resolute Defender##102433
 				Righteous Protector##102440
-				Final Stand##102473
-				Eye of Tyr##102466
-				Inmost Light##115167
-				Bulwark of Righteous Fury##102457
 				Gift of the Golden Val'kyr##102449
 			]]
 		},
@@ -1500,7 +1566,7 @@ TA.Builds = {
 				Seasoned Warhorse##102624
 				Auras of the Resolute##102586
 				Justification##102478
-				Unbound Freedom##115454
+				Blessing of Protection##102604
 				Lightforged Blessing##115239
 				Crusader's Reprieve##102518
 				Avenging Wrath##102593
@@ -1534,25 +1600,27 @@ TA.Builds = {
 				Art of War##102493
 				Expurgation##114830
 				Guided Prayer##115020
-				Vanguard's Momentum##114826
+				Zealot's Fervor##115165
 				Tempest of the Lightbringer##115452
 				Jurisdiction##102516
 				Boundless Judgment##115021
-				Heart of the Crusader##115483
-				Vanguard of Justice##115453
+				--Heart of the Crusader##115483
+				--Vanguard of Justice##115453
 				Blade of Vengeance##102521
 				Shield of Vengeance##102519
+				Divine Wrath##115439
 				Templar Strikes##115473
 				Avenging Wrath##102497
 				Consecrated Blade##102485
 				Blessed Champion##102515
+				Blessed Champion##102515
 				Adjudication##102511
+				Blades of Light##115443
 				Aegis of Protection##102526
 				Final Reckoning##102513
 				Wake of Ashes##115043
 				Seething Flames##102525
 				Truth's Wake##114824
-				Blessed Champion##102515
 				Penitence##115024
 				Burning Crusade##102510
 				Searing Light##102530
@@ -1765,200 +1833,200 @@ TA.Builds = {
 	ROGUE = {
 		["Assassination (DPS)"] = {1,false, [[
 				Evasion##112657
-				Numbing Poison##112656
-				Sap##112573
-				Cloak of Shadows##112585
-				Blind##112572
 				Cheat Death##114737
-				Gouge##112631
-				Tricks of the Trade##112574
+				Cloak of Shadows##112585
 				Shadowstep##112583
 				Master Poisoner##112521
-				Fleet Footed##112654
-				Virulent Poisons##112653
-				Deadly Precision##112652
-				Deadly Precision##112652
-				Vigor##112651
+				Nimble Fingers##112635
+				Blind##112572
 				Improved Sprint##112636
-				Deadened Nerves##112633
-				Thief's Versatility##112645
-				Thief's Versatility##112645
-				Acrobatic Strikes##112644
-				Recuperator##112526
-				Echoing Reprimand##112525
-				Resounding Clarity##112524
-				Alacrity##112643
-				Alacrity##112643
-				Deeper Stratagem##112642
-				Leeching Poison##112650
-				Seal Fate##112649
-				Seal Fate##112649
-				Thistle Tea##112648
-				Lethality##112640
-				Shiv##112630
-			]],[[
-				Deadly Poison##112676
-				Shadowstep##112675
-				Bloody Mess##112510
-				Bloody Mess##112510
-				Improved Shiv##112513
-				Cut to the Chase##112514
-				Venomous Wounds##112520
-				Elaborate Planning##112512
-				Thrown Precision##112515
-				Crimson Tempest##112517
-				Improved Garrote##112673
-				Deathmark##112662
-				Amplifying Poison##112505
-				Exsanguinate##112672
-				Iron Wire##112671
-				Lethal Dose##112509
-				Lethal Dose##112509
-				Elaborate Planning##112512
-				Lightweight Shiv##112518
-				Improved Poisons##112519
-				Poison Bomb##112660
-				Poison Bomb##112660
-				Dashing Scoundrel##112659
-				Dashing Scoundrel##112659
-				Dragon-Tempered Blades##112658
-				Shrouded Suffocation##112669
-				Scent of Blood##112668
-				Scent of Blood##112668
-				Scent of Blood##112668
-				Indiscriminate Carnage##112667
-			]]
-		},
-		["Outlaw (DPS)"] = {2,true, [[
-				Sap##112573
-				Cloak of Shadows##112585
-				Shadowrunner##112575
-				Cheat Death##114737
-				Tricks of the Trade##112574
-				Shiv##112630
-				Evasion##112657
-				Numbing Poison##112656
-				Subterfuge##112576
-				Tight Spender##112582
-				Nightstalker##112581
-				Nightstalker##112581
-				Improved Ambush##112580
 				Fleet Footed##112654
+				Numbing Poison##112656
+				Deadly Precision##112652
+				Blackjack##117143
+				Shadowrunner##112575
+				Subterfuge##112576
+				Featherfoot##117146
+				Graceful Guile##117145
+				Tight Spender##117152
+				Iron Stomach##112634
 				Deadened Nerves##112633
-				Deadly Precision##112652
-				Deadly Precision##112652
-				Vigor##112651
-				Thief's Versatility##112645
-				Thief's Versatility##112645
+				Airborne Irritant##117740
 				Soothing Darkness##112579
-				Find Weakness##112578
-				Find Weakness##112578
+				Nightstalker##112581
+				Nightstalker##112581
 				Shadow Dance##112577
 				Alacrity##112643
 				Alacrity##112643
 				Deeper Stratagem##112642
-				Acrobatic Strikes##112644
-				Lethality##112640
-				Lethality##112640
-				Cold Blood##112639
-				Blind##112572
+				Leeching Poison##112650
+				Vigor##112651
+				Vigor##112651
+				Thistle Tea##112648
+				Shiv##112630
 			]],[[
-				Opportunity##112571
-				Blade Flurry##112561
-				Combat Potency##112532
-				Adrenaline Rush##112545
-				Grappling Hook##112570
-				Weaponmaster##112533
-				Combat Stamina##112534
-				Ambidexterity##112546
-				Restless Blades##112544
-				Roll the Bones##112543
-				Ruthlessness##112568
-				Devious Stratagem##112567
-				Heavy Hitter##112528
-				Triple Threat##112566
-				Triple Threat##112566
-				Fatal Flourish##112548
-				Quick Draw##112549
-				Dancing Steel##112556
-				Improved Main Gauche##112555
-				Improved Main Gauche##112555
-				Blade Rush##112530
-				Take 'em by Surprise##112563
-				Take 'em by Surprise##112563
-				Hidden Opportunity##112562
-				Precise Cuts##112554
-				Fan the Hammer##112553
-				Fan the Hammer##112553
-				Loaded Dice##112542
-				Audacity##112527
-				Count the Odds##112541
+				Deadly Poison##112676
+				Path of Blood##117106
+				Bloody Mess##112510
+				Improved Garrote##112673
+				Improved Shiv##112513
+				Cut to the Chase##117139
+				Seal Fate##112649
+				Caustic Spatter##117137
+				Deathmark##112662
+				Thrown Precision##112515
+				Crimson Tempest##112517
+				Master Assassin##112508
+				Iron Wire##117134
+				Sanguine Blades##112672
+				Fatal Concoction##112511
+				Amplifying Poison##112505
+				Lethal Dose##112509
+				Lethal Dose##112509
+				Venomous Wounds##112520
+				Lightweight Shiv##112518
+				Dashing Scoundrel##112659
+				Poison Bomb##112660
+				Poison Bomb##112660
+				Kingsbane##117130
+				Dragon-Tempered Blades##117131
+				Indiscriminate Carnage##112667
+				Shrouded Suffocation##112669
+				Scent of Blood##112668
+				Scent of Blood##112668
+				Sudden Demise##117129
 			]]
 		},
-		["Subtlety (DPS)"] = {3,false, [[
-				Cloak of Shadows##112585
+		["Outlaw (DPS)"] = {2,true, [[
 				Shiv##112630
 				Evasion##112657
-				Atrophic Poison##112655
-				Blind##112572
 				Cheat Death##114737
-				Tricks of the Trade##112574
-				Gouge##112631
+				Cloak of Shadows##112585
 				Shadowstep##112583
-				Tight Spender##112582
-				Nightstalker##112581
-				Nightstalker##112581
-				Improved Ambush##112580
+				Tricks of the Trade##112574
+				Shadowrunner##112575
+				Nimble Fingers##112635
+				Subterfuge##112576
 				Fleet Footed##112654
+				Numbing Poison##112656
+				Deadly Precision##112652
+				Improved Sprint##112636
+				Featherfoot##117146
+				Graceful Guile##117145
+				Recuperator##112526
+				Improved Ambush##112580
+				Airborne Irritant##117740
+				Iron Stomach##112634
 				Deadened Nerves##112633
-				Deadly Precision##112652
-				Deadly Precision##112652
-				Vigor##112651
-				Thief's Versatility##112645
-				Thief's Versatility##112645
-				Acrobatic Strikes##112644
+				Soothing Darkness##112579
+				Nightstalker##112581
+				Nightstalker##112581
+				Shadow Dance##112577
 				Alacrity##112643
 				Alacrity##112643
 				Deeper Stratagem##112642
 				Leeching Poison##112650
-				Seal Fate##112649
-				Seal Fate##112649
-				Thistle Tea##112648
-				Lethality##112640
-				Lethality##112640
-				Cold Blood##112639
-				Sap##112573
+				Vigor##112651
+				Vigor##112651
+				Acrobatic Strikes##112644
+				Blind##112572
 			]],[[
-				Improved Shuriken Storm##112598
-				Relentless Strikes##112597
+				Opportunity##112571
+				Adrenaline Rush##112545
+				Combat Potency##112532
+				Sting Like a Bee##117173
+				Hit and Run##112560
+				Precision Shot##112533
+				Retractable Hook##112569
+				Combat Stamina##112534
+				Devious Stratagem##112567
+				Fatal Flourish##112548
+				Loaded Dice##112542
+				Improved Adrenaline Rush##112540
+				Ruthlessness##112568
+				Audacity##112527
+				Quick Draw##112549
+				Ace Up Your Sleeve##112557
+				Improved Between the Eyes##112558
+				Dancing Steel##112556
+				Deft Maneuvers##112559
+				Thief's Versatility##112645
+				Underhanded Upper Hand##112564
+				Ghostly Strike##112530
+				Count the Odds##112541
+				Take 'em by Surprise##112563
+				Take 'em by Surprise##112563
+				Hidden Opportunity##112562
+				Crackshot##117148
+				Precise Cuts##112554
+				Fan the Hammer##112553
+				Fan the Hammer##112553
+			]]
+		},
+		["Subtlety (DPS)"] = {3,false, [[
+				Shadowstep##112583
+				Tricks of the Trade##112574
+				Cheat Death##114737
+				Shiv##112630
+				Evasion##112657
+				Shadowrunner##112575
+				Master Poisoner##112521
+				Nimble Fingers##112635
+				Fleet Footed##112654
+				Numbing Poison##112656
+				Deadly Precision##112652
+				Subterfuge##112576
+				Improved Sprint##112636
+				Featherfoot##117146
+				Graceful Guile##117145
+				Improved Ambush##112580
+				Recuperator##112526
+				Blind##112572
+				Iron Stomach##112634
+				Deadened Nerves##112633
+				Soothing Darkness##112579
+				Nightstalker##112581
+				Nightstalker##112581
+				Shadow Dance##112577
+				Alacrity##112643
+				Alacrity##112643
+				Deeper Stratagem##112642
+				Leeching Poison##112650
+				Vigor##112651
+				Vigor##112651
+				Thistle Tea##112648
+				Cloak of Shadows##112585
+			]],[[
+				Find Weakness##112578
 				Shadow Blades##112614
-				Black Powder##112600
+				Ephemeral Bond##112613
+				Fade to Nothing##112621
+				Quick Decisions##112616
+				Without a Trace##112590
 				Improved Backstab##112629
-				Weaponmaster##112628
-				Premeditation##112627
-				Silent Storm##112602
+				Improved Shuriken Storm##112598
+				The First Dance##112625
 				Secret Technique##112603
-				Gloomblade##112587
+				Relentless Strikes##112597
 				Replicating Shadows##112605
 				Shuriken Tornado##112604
-				Veiltouched##112601
-				Deepening Shadows##112612
-				Improved Shadow Dance##112623
-				Improved Shadow Dance##112623
-				Without a Trace##112590
-				Shadowed Finishers##112611
 				Shadowed Finishers##112611
 				Secret Stratagem##112610
+				Veiltouched##112601
+				Deepening Shadows##112612
+				Improved Shadow Techniques##112626
+				Planned Execution##112591
+				Premeditation##112627
+				Flagellation##112606
+				Deeper Daggers##112609
 				Dark Shadow##112620
 				Dark Shadow##112620
-				Lingering Shadow##112619
-				Lingering Shadow##112619
 				Danse Macabre##112618
-				Deeper Daggers##112609
-				Deeper Daggers##112609
+				Shadowcraft##117168
 				Finality##112608
 				Finality##112608
 				Dark Brew##112607
+				Improved Shadow Dance##112623
 			]]
 		},
 	},
@@ -2225,11 +2293,11 @@ TA.Builds = {
 				Malevolent Visionary##91504
 				Malevolent Visionary##91504
 				Grim Reach##91419
-				Malefic Affliction##91429
-				Malefic Affliction##91429
+				Creeping Death##91580
+				Xavius' Gambit##91429
+				Xavius' Gambit##91429
 				Doom Blossom##91503
 				Wrath of Consumption##91553
-				Creeping Death##91580
 			]]
 		},
 		["Demonology (DPS)"] = {2,true, [[
@@ -2267,35 +2335,35 @@ TA.Builds = {
 				Demonic Circle##91441
 			]],[[
 				Call Dreadstalkers##91543
-				Demonbolt##91544
-				Demonic Knowledge##91546
-				Implosion##91520
 				Dreadlash##91539
 				Demonic Strength##91540
-				Annihilan Training##91542
-				From the Shadows##91533
-				Fel and Steel##91534
-				Grimoire: Felguard##91531
-				Demonic Meteor##91530
-				Power Siphon##91521
-				Fel Sunder##91528
-				Ripped through the Portal##91527
-				Ripped through the Portal##91527
 				Carnivorous Stalkers##91536
+				Demonbolt##91544
+				Annihilan Training##91542
+				Fel and Steel##91534
+				Demonic Knowledge##91546
+				Implosion##91520
+				Grimoire: Felguard##91531
+				Power Siphon##91521
+				The Houndmaster's Stratagem##91533
+				Demonic Calling##91535
+				Fel Sunder##91528
+				Heavy Handed##91532
+				Bloodbound Imps##91519
 				Inner Demons##91547
-				Inner Demons##91547
-				Dread Calling##91517
 				Imp Gang Boss##91516
+				Imp Gang Boss##91516
+				Dread Calling##91517
 				Summon Demonic Tyrant##91550
 				Soulbound Tyrant##91510
 				Soulbound Tyrant##91510
 				Reign of Tyranny##91509
+				Dread Calling##91517
 				Antoran Armaments##91526
 				Infernal Command##91524
 				Infernal Command##91524
 				Guillotine##115460
-				Bloodbound Imps##91519
-				Imp Gang Boss##91516
+				The Expendables##91512
 			]]
 		},
 		["Destruction (DPS)"] = {3,false, [[

@@ -212,7 +212,11 @@ function WorldQuests:Startup()
 	hooksecurefunc(WorldMap_WorldQuestPinMixin,"OnClick", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
 	hooksecurefunc(BonusObjectivePinMixin,"OnClick", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
 	hooksecurefunc(VignettePinMixin,"OnAcquired", function(self) 
-		self:SetScript("OnMouseUp",function(self) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
+		if self:GetScript("OnMouseUp") then
+			hooksecurefunc(self,"OnMouseUp", function(self,button) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
+		else
+			self:SetScript("OnMouseUp",function(self) WorldQuests:SuggestWorldQuestGuideFromMap(self) end)
+		end
 	end)	
 	hooksecurefunc(WorldMapFrame,"OnMapChanged", function() 
 		if not ZGV.db.profile.worldquestenable then return end
@@ -277,7 +281,6 @@ local function guide_exists(questID)
 end
 
 local function find_world_quest_step(questID,mapID,vignetteID)
-	local labelstep, zoneguide
 	local mapid = mapID or WorldMapFrame and WorldMapFrame:GetMapID()
 
 	if not mapid then
@@ -285,20 +288,21 @@ local function find_world_quest_step(questID,mapID,vignetteID)
 		return false,false
 	end
 	
-	local prefix = "quest-"
-	zoneguide = WorldQuests.Guides[mapid]
-	if vignetteID then prefix="vignette-" end
+	local zoneguide = WorldQuests.Guides[mapid]
+	local prefix = vignetteID and "vignette-" or "quest-"
+	local objectID = questID or vignetteID
 
 	if zoneguide then
 		zoneguide:Parse(true)
 		for labelname,labeldata in pairs(zoneguide.steplabels) do
-			if labelname == prefix..(questID or vignetteID) then
+			if labelname == prefix..objectID then
 				return zoneguide,labeldata[1]
 			end
 		end
 	end
 	return false,false
 end
+
 
 function WorldQuests:SuggestWorldQuestGuide(object,questID,force,mapID)
 	local questID = object and (object.worldQuest or object.isCombatAllyQuest) and object.questID or questID or object.vignetteID
@@ -308,8 +312,10 @@ function WorldQuests:SuggestWorldQuestGuide(object,questID,force,mapID)
 		local guide,labelstep = find_world_quest_step(questID,mapID,object and object.vignetteID)
 
 		if not labelstep then
-			ZGV:Print("Selected World Quest is not yet in our guides.")
-			ZGV:Debug("&_SUB &worldquests no label for %s %s",object.vignetteID and "vignette" or "quest",questID)
+			if object and object.questID then
+				ZGV:Print("Selected World Quest is not yet in our guides.")
+				ZGV:Debug("&_SUB &worldquests no label for %s %s",object.vignetteID and "vignette" or "quest",questID)
+			end
 			return false
 		end
 		

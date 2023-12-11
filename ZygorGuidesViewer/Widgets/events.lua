@@ -228,9 +228,10 @@ function widget:DisplayResults()
 			if eventdata.group then 
 				row:SetScript("OnClick",function() ZGV.GuideMenu:Show(eventdata.group.fullpath) end)
 				row.tex:Show()
-				if eventdata.title == ZGV.GuideMenu.Toast4.event and ZGV.db.profile.n_popup_msg_events and ZGV.db.global.eventsmsg ~= eventdata.title then
+				if eventdata.title == ZGV.GuideMenu.Events.event and ZGV.db.profile.n_popup_msg_events and ZGV.db.global.eventsmsg ~= eventdata.title then
 					ZGV:ScheduleTimer(function()
-						ZGV.NotificationCenter:CreateFloatingFrame("message", nil, ZGV.NotificationCenter.MsgTstEvents,"events")
+						local eventtoast = ZGV.Visuals:Render(ZGV.GuideMenu.Events,290)
+						ZGV.NotificationCenter:CreateFloatingFrame("message", nil, eventtoast,"events")
 						ZGV.db.global.eventsmsg = eventdata.title
 					end,5)
 				end

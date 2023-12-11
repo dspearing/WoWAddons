@@ -119,7 +119,8 @@ function Node:DoLinkage(n2,dryrun)
 	local n1=self
 
 	local D_DL = DEBUG_DOLINKAGE
-	local _t = debugprofilestop()
+	local _t
+	if D_DL then _t = debugprofilestop() end
 
 	if n1.type=="end" then return false,false,"src is end" end
 	if n2.type=="start" or n2.type=="inn" then return false,false,"dest is start or inn" end
@@ -182,15 +183,6 @@ function Node:DoLinkage(n2,dryrun)
 		if not dryrun then n1:AddNeigh(n2,meta) end
 
 		--if n2.type=="end" and n1.status=="closed" then n1.status="canopen"  end  --##start_end_optimization: off
-
-		if n1.dark or n2.dark then
-			if n1==Lib.startnode then
-				meta.mud=10  -- let's be a little bit lenient on the starts
-			elseif n2.type=="end" then
-				meta.mud=100  -- ends better be damn close.
-			end
-			-- This difference causes routes to have easy starts, but precise endings.
-		end
 
 		-- The "dark" nodes can still see start/end nodes, but through a "mud" penalty.
 		-- This guarantees that starts/ends within some special low-visibility areas get connected to the closest explicit node only, with no excessive beelining.
@@ -275,6 +267,8 @@ function Node:GetText(prevnode,nextnode,dir)
 		return ("%s ferry dock"):format(self.name)
 	elseif self.taxioperator=="eternalgateway" then
 		return ("%s Eternal Gateway"):format(self.name)
+	elseif self.taxioperator=="ancientwaygate" then
+		return ("%s Ancient Waygate"):format(self.name)
 	elseif self.type=="taxi" then
 		return ("%s flight point"):format(self.name)
 	elseif self.type=="ship" then
@@ -465,8 +459,8 @@ local MAPENUM_ARDENWEALD=1565
 local MAPENUM_REVENDRETH=1525
 local MAPENUM_ELYSIANHOLD1=1707
 local MAPENUM_ELYSIANHOLD2=1708
-
 local MAPENUMARRAY_ISLEOFTHUNDER = { [MAPENUM_ISLEOFTHUNDER]=1,[MAPENUM_ISLEOFTHUNDER_LVMINE]=1,[MAPENUM_ISLEOFTHUNDER_SWVAULT]=1,[MAPENUM_ISLEOFTHUNDER_SCENARIO1]=1,[MAPENUM_ISLEOFTHUNDER_SCENARIO2]=1}
+local MAPENUM_EMERALDDREAM=2200
 
 local ZoneIsOutdoor
 
@@ -529,6 +523,7 @@ function Node:CanFlyTo(dest,debug)
 	if m==MAPENUM_TIMELESSISLE then return false,debug and "no flying out of Timeless Isle" end --Can fly into this area, but not fly out of it, or around it
 	if m==MAPENUM_ISLEOFQUELDANAS or dest_m==MAPENUM_ISLEOFQUELDANAS then return false,debug and "Isle of Quel'Danas no flying there!" end
 	if (m==MAPENUM_UNDERCITY and dest_m~=MAPENUM_UNDERCITY) or (m~=MAPENUM_UNDERCITY and dest_m==MAPENUM_UNDERCITY) then return false,debug and "'no flying' in Undercity" end
+	if (self.m==MAPENUM_EMERALDDREAM) ~= (dest.m==MAPENUM_EMERALDDREAM) then return false,"no connection to emerald dream" end
 	
 	if self.region~=dest.region and self.regionobj and self.regionobj.in_flight then return false,debug and "src in diff in_flight region" end
 	if self.region~=dest.region and dest.regionobj and dest.regionobj.in_flight then return false,debug and "dest in diff in_flight region" end

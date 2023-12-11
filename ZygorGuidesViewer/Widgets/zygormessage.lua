@@ -90,56 +90,9 @@ end
 function widget:InitialisePopup()
 	if self.popupready then return end
 
-	local GuideMenu = ZGV.GuideMenu
-	GuideMenu.Parsers.WIDTH = 552
-	GuideMenu.Parsers.ICONS = false
-	
-	local height = 0
-	local parent = self.popup.contentinner
-	local prev
+	ZGV.Visuals:Render(ZGV.GuideMenu.Home,552,self.popup.contentinner,{TOPLEFT={10,0},EXTRASPACE=5})
 
-	local current_faction
-	for i,e in ipairs(GuideMenu.Home) do
-		if e[1]~="list" and e[1]~="item" then current_faction = e.faction end
-		e.faction = e.faction or current_faction
-
-		if e[1]=="section" then e.space=20 end
-	end
-
-
-	local subsection_counter = 0
-	GuideMenu.Parsers.lasttick = debugprofilestop()
-
-	for i,e in ipairs(GuideMenu.Home) do
-		if (not e.faction or (e.faction==faction)) and (not e.beta or ZGV.BETA) then
-			local object, e_height, space
-			if GuideMenu.Parsers[e[1]] then
-				object,e_height,space = GuideMenu.Parsers[e[1]=="item" and "list" or e[1]](parent,e,nil,true)
-			else
-				print("Unknown home element at",i,e[1])
-				return false
-			end
-
-			subsection_counter = subsection_counter + 1
-
-			space=space+5
-
-			if subsection_counter>1 and e[1]=="text" then space=space+5 end
-			if e[1]=="section" then subsection_counter=0 end
-
-			e.object = object
-
-			if prev then
-				object:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-space)
-			else
-				object:SetPoint("TOPLEFT",parent,"TOPLEFT",10,0)
-			end
-			height=height+e_height+space
-			prev=object
-
-			object:Show()
-		end
-	end
+	local height = self.popup.contentinner:GetHeight()
 
 	self.popup.contentinner:SetHeight(height)
 	self.popup.content:TotalValue(height)

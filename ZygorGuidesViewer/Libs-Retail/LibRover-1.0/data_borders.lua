@@ -12,8 +12,8 @@ data.basenodes.borders = --[[LIBROVER]] {
 		"The Maw/0 23.01,68.40 -x- Altar of Domination/0 89.73,34.52 {title_atob:Enter the building} {title_btoa:Leave the building}",
 		"The Maw/0 27.87,20.52 -x- Extractor's Sanatorium/0 19.94,73.08 {title_atob:Enter the building} {title_btoa:Leave the building}",
 		"Bastion/0 44.03,24.70 -x- Path of Wisdom/0 48.04,90.71 {title_atob:Enter the building} {title_btoa:Leave the building}",
-		"The Maw/0 65.61,80.80 <border_in_flight:true> -x- Korthia/0 58.48,13.67 {title_atob:Follow the path up} {title_btoa:Follow the path down} <border_in_flight:true>",
-		"The Maw/0 51.53,90.46 <border_in_flight:true> -x- Korthia/0 40.04,25.94 {title_atob:Follow the path up} {title_btoa:Follow the path down} <border_in_flight:true>",
+		"The Maw/0 65.61,80.80 -x- Korthia/0 58.48,13.67 {title_atob:Follow the path up} {title_btoa:Follow the path down}",
+		"The Maw/0 51.53,90.46 -x- Korthia/0 40.04,25.94 {title_atob:Follow the path up} {title_btoa:Follow the path down}",
 
 	-- Kalimdor
 		"Ashenvale 20.7,15.8 -x- Darkshore 38.8,96.4",

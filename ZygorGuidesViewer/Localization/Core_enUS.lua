@@ -118,6 +118,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_kill_done"] = "Killed %s",
 	["stepgoal_killboss"] = "Defeat %s",
 	["stepgoal_killboss_done"] = "Defeated %s",
+	["stepgoal_bosshp"] = "Reduce %s to %d%% hp",
 	["stepgoal_learn"] = "Learn %s",
 	["stepgoal_learnmount"] = "Earn the %s Mount",
 	["stepgoal_learnpet"] = "Earn the %s Pet",
@@ -149,6 +150,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_perform_jewelcrafting"] = "Craft %s %s",
 	["stepgoal_petaction"] = "Use pet action %s",
 	["stepgoal_petlevel"] = "Train %s Pet to level %s",
+	["stepgoal_phase"] = "You've reached the end of content that is currently available to complete for this guide. The game content beyond this point is gated and inaccessible until Blizzard makes another update to unlock additional content.",
+	["stepgoal_phase_done"] = "Phase unlocked. Continuing the guide.",
 		--stepgoal_petding
 		--stepgoal_petspecies
 		--stepgoal_playerchoice
@@ -412,6 +415,10 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	opt_group_display = "Guide Viewer",
 		opt_enable_viewer = "Enable Viewer",
 		opt_windowlocked = "Lock viewer",
+		opt_hidetracker = "Hide objective tracker",
+		opt_hidetracker_desc = "Hide WoW quest objective tracker when Zygor is visible",
+		opt_hideexptracker = "Hide experience bar",
+		opt_hideexptracker_desc = "Hide WoW experience bar when Zygor is visible and set to show exp progress bar",
 		opt_skinstyle = "Viewer skin:",
 		opt_opacitytoggle = "Enable Transparency",
 		opt_opacity = "Viewer opacity",
@@ -1028,6 +1035,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		guidebeta = " (BETA)",
 		guidedev = " |cffff0000(DEV)|r",
 		guidedevpart = " |cffff0000(DEV parts)|r",
+		guidehardcore = " |cfffe6100(Hardcore)|r",
 		guidemenu_guidetooltips_loadguide = "Load Guide",
 		guidemenu_guidetooltips_showquests = "Show guides for this quest",
 		guidemenu_section_favourites = "Favorites",
@@ -1297,6 +1305,9 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		frame_selectguide_left = "<<Left-click>>: open the guide selection window.",
 		tabs_guide_new = "Click here to open guide in new tab",
 		tabs_guide_switch = "Click here to switch to tab with this guide",
+		tabsmenu_new_guide = "Open a new guide",
+		tabsmenu_suggested = "Suggested guides:",
+		tabsmenu_recent = "Recent guides:",
 
 	-- Tutorial ---------------------------------------------------------------------------------------------------
 		guidetutorial_backbutton = "Back",
@@ -1311,9 +1322,19 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	-- ViewerFrame ---------------------------------------------------------------------------------------------------
 		frame_guide_complete = "Guide complete!",
 		frame_guide_progress = "Guide progress: %d%%",
+
 		frame_guide_step = "Step: %d/%d",
 		frame_guide_stepscompleted = "Steps Completed: %d/%d",
+		frame_guide_stepsprogress = "Guide progress: %d%%",
+
+		frame_guide_quests = "Quests: %d/%d",
 		frame_guide_questscompleted = "Quests Completed: %d/%d",
+		frame_guide_questsprogress = "Guide progress: %d%%",
+
+		frame_guide_exp = "Exp: %d/%d",
+		frame_guide_expcompleted = "Exp: %d/%d",
+		frame_guide_expprogress = "Level progress: %d%%",
+
 		frame_helpbutton = "Help",
 		frame_helpbutton_desc = "<<Click>> to run the tutorial.",
 		frame_minright = "<<Right-click>> to set number of steps",
@@ -1672,6 +1693,7 @@ local plurals = {
 	Leather=1,
 	Lumber=1,
 	Lotus="Lotuses",
+	Man="Men",
 	Mageroyal=1,
 	Meat=1,
 	Milk=1,
@@ -1973,6 +1995,13 @@ ZygorGuidesViewer_L("zta", "enUS", function() return {
 	['status_black_complete'] = "This build is now complete.\nGo forth and be awesome.",
 	['status_black_different'] = "This is a different build, but your character's build is complete.\nYou'll have to reset your talents to use this build.",
 	--['status_black_differentspec'] = "This is a build for a '%s' specialization, while you have chosen '%s'.\nYou'll have to reset your talents or dualspec to use this build.",
+	['warning_learn1_orange'] = "|cffffbb00Notice:|r\nFor the selected build, |cff5588ff%s|r, it is advised that you learn the %s talent |cffffff55%s|r at this point.\nThe talent you selected is indeed in this build, but it is not recommended at this point yet. Learning talents out of order may result in less than optimal progress.\nAre you sure you wish to learn |cffff5555%s|r now?",
+	['warning_learn1_red0'] = "|cffff0000Warning!|r\nFor the selected build, |cff5588ff%s|r, you should |cffff7777never|r learn this talent!\nZygor Talent Advisor will be unable to help you with this build anymore.\nAre you absolutely sure you wish to learn it?",
+	['warning_learn1_red'] = "|cffff0000Warning!|r\nFor the selected build, |cff5588ff%s|r, you should |cffff7777never|r exceed rank %s of |cffffff55%s|r.\nZygor Talent Advisor will be unable to help you with this build anymore.\nAre you absolutely sure you wish to do this?",
+	['warning_preview_green'] = "|cff00ff00Note:|r These talents match the |cff5588ff%s|r build plan, it is safe to learn them.",
+	['warning_preview_orange'] = "|cffffbb00Notice:|r\nThe talents selected in the preview do not quite match the talents suggested for the selected build, |cff5588ff%s|r.\nIf you learn them, you will have to gain %d |1more talent point;more talent points; to again proceed with the build plan.\nAre you sure you wish to learn the talents you selected?",
+	['warning_preview_red'] = "|cffff0000Warning!|r\nThe talents selected in the preview |cffff7777will prevent you|r from ever completing the selected build, |cff5588ff%s|r.\nZygor Talent Advisor will be unable to help you with this build anymore.\nAre you absolutely sure you wish to learn them anyway?",
+	['warning_preview_black'] = "|cffff0000Warning!|r\nThe build is either broken or doesn't match your specialization.|n|n%s|n|nAre you absolutely sure you wish to learn it anyway?",
 
 	['statusglyph_red'] = "RED glyph status? WTF? Please report this.",
 	['statusglyph_orange'] = "You need to remove some of the glyphs you have.",

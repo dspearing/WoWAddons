@@ -1339,10 +1339,7 @@ buy Fishing Pole##6256 |goto 55.03,69.70
 step
 Fish in the open water
 |tip You can fish anywhere and gain skill.
-Reach 300 Fishing |skill Fishing,300 |goto 54.88,68.10
-step
-_Congratulations!_
-You Reached 300 Fishing Skill.
+Reach 300 Fishing |skill Fishing,300 |goto Elwynn Forest/0 33.77,62.66
 ]])
 ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Leveling Guides\\Outland Fishing 1-75")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Fishing\\Leveling Guides\\Northrend Fishing 1-75")

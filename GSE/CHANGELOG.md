@@ -1,7 +1,6 @@
-# GSE: Advanced Macro Compiler
+# GSE
 
-## [3.1.39](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/tree/3.1.39) (2023-07-09)
-[Full Changelog](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/compare/3.1.38...3.1.39) [Previous Releases](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/releases)
+## [3.1.50](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/tree/3.1.50) (2023-11-19)
+[Full Changelog](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/compare/3.1.43...3.1.50) [Previous Releases](https://github.com/TimothyLuke/GSE-Advanced-Macro-Compiler/releases)
 
-- #1341 TOC Updates  
-- #1341 Augmentation Support  
+- #1372 Infrastructure Updates for WoW Classic Season of Discovery  

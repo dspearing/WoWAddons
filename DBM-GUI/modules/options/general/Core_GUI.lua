@@ -53,7 +53,7 @@ end)
 
 local bmtestmode = generaloptions:CreateButton(L.Button_TestBars, 120, 30)
 bmtestmode.myheight = 0
-bmtestmode:SetPoint("TOP", bmrange, "BOTTOM", 2, 0)
+bmtestmode:SetPoint("TOP", bminfo, "BOTTOM", 2, 0)--bmrange
 bmtestmode:SetScript("OnClick", function()
 	DBM:DemoMode()
 end)
@@ -65,7 +65,7 @@ moveme:SetScript("OnClick", function()
 end)
 
 local latencySlider = generaloptions:CreateSlider(L.Latency_Text, 50, 750, 5, 210)
-latencySlider:SetPoint("BOTTOMLEFT", bmrange, "BOTTOMLEFT", 10, -70)
+latencySlider:SetPoint("BOTTOMLEFT", bminfo, "BOTTOMLEFT", 10, -70)--bmrange
 latencySlider:SetValue(DBM.Options.LatencyThreshold)
 latencySlider:HookScript("OnValueChanged", function(self)
 	DBM.Options.LatencyThreshold = self:GetValue()
@@ -128,13 +128,7 @@ resetbutton2:SetScript("OnClick", function()
 	optionsFrame:SetSize(DBM.Options.GUIWidth, DBM.Options.GUIHeight)
 end)
 
-local minWidth, minHeight, maxWidth, maxHeight
-if DBM:GetTOC() < 11404 then -- Is Legacy API
-	minWidth, minHeight = optionsFrame:GetMinResize()
-	maxWidth, maxHeight = optionsFrame:GetMaxResize()
-else -- Is Modern API
-	minWidth, minHeight, maxWidth, maxHeight = optionsFrame:GetResizeBounds()
-end
+local minWidth, minHeight, maxWidth, maxHeight = optionsFrame:GetResizeBounds()
 
 local resizeWidth = resizeOptions:CreateEditBox(L.Editbox_WindowWidth, math.floor(DBM.Options.GUIWidth * 10 ^ 2 + 0.5) / 10 ^ 2)
 resizeWidth:SetPoint("TOPLEFT", 20, -40)
@@ -179,8 +173,8 @@ optionsFrame:HookScript("OnSizeChanged", function(self)
 end)
 
 local UIGroupingOptions = coreoptions:CreateArea(L.UIGroupingOptions)
-UIGroupingOptions:CreateCheckButton(L.GroupOptionsBySpell, true, nil, "GroupOptionsBySpell")
 UIGroupingOptions:CreateCheckButton(L.GroupOptionsExcludeIcon, true, nil, "GroupOptionsExcludeIcon")
+UIGroupingOptions:CreateCheckButton(L.GroupOptionsExcludePAura, true, nil, "GroupOptionsExcludePAura")
 UIGroupingOptions:CreateCheckButton(L.AutoExpandSpellGroups, true, nil, "AutoExpandSpellGroups")
 UIGroupingOptions:CreateCheckButton(L.ShowWAKeys, true, nil, "ShowWAKeys")
 --UIGroupingOptions:CreateCheckButton(L.ShowSpellDescWhenExpanded, true, nil, "ShowSpellDescWhenExpanded")

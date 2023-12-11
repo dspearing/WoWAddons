@@ -39,6 +39,17 @@ function Guide:New(title,header,data)
 
 	local filepath = debugstack(2):gsub(".*@",""):gsub('"]:'," line "):gsub(': in main chunk\n',""):gsub("Interface/AddOns/",""):gsub("\\","\\ "):gsub("_","_ ")
 
+	if ZGV.IsClassicHardcore and not header.hardcore then
+		-- append there be dragons warning
+		data = "step\nThis guide has not been optimized for Hardcore servers and its instructions may result in the death of your character.  If you understand this and are willing to risk a death and restart:  Click here to continue.|confirm\n"..data
+	elseif not ZGV.IsClassicHardcore and header.only_hardcore then
+		-- skip only_hardcore guides
+		return nil
+	elseif not ZGV.IsClassicHardcore and header.hardcore then
+		header.hardcore=false
+		header.hardcore__off=true
+	end
+
 	local guide = {
 		title=title,
 		title_short=tit or title,
@@ -54,10 +65,11 @@ function Guide:New(title,header,data)
 		guidepath=path
 	}
 
-	if not path:find("SHARED") and ZGV:NeedsAnimatedPopup(guide) then
+	if not path:find("SHARED") and ZGV:NeedsAnimatedPopup(guide) then -- guides with fancy popups are loaded from said popups
 		ZGV.AnimatePopup = true
 		return nil
 	end
+
 
 	ZGV.RegisteredGuidesTitles[title]=true
 
@@ -453,6 +465,12 @@ function Guide:Parse(fully)
 					if label then
 						if not self.steplabels[label] then self.steplabels[label]={} end
 						tinsert(self.steplabels[label],si)
+					end
+					if step.extralabels then
+						for _,extralabel in ipairs(step.extralabels) do
+							if not self.steplabels[extralabel] then self.steplabels[extralabel]={} end
+							tinsert(self.steplabels[extralabel],si)
+						end
 					end
 				end
 

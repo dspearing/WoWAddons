@@ -8,6 +8,13 @@ data.basenodes.inns = {
 	--------------------------------
 	-----     DRAGON ISLES     -----
 	--------------------------------
+	["The Emerald Dream"]={
+		{name="Verdant Landing",faction="B",npc="Athera",npcid=208286,x=69.53,y=53.24},
+		{name="Central Encampment",faction="B",npc="Saelienne",npcid=207627,x=49.85,y=61.64},
+		{name="Eye of Ysera",faction="B",npc="Taladan",npcid=211352,x=52.50,y=25.10},
+		{name="Wellspring Overlook",faction="B",npc="Rulfe Deepriver",npcid=209430,x=36.56,y=32.62},
+	},
+
 	["The Waking Shores"]={
 		{name="Wild Coast",faction="B",npc="Happy Hal",npcid=187412,x=81.31,y=31.90},
 		{name="Wild Coast",faction="B",npc="Sil'nori Crestshade",npcid=187403,x=80.40,y=27.82},

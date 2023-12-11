@@ -356,7 +356,7 @@ function Sync:HandleReceivedPacket(packet)
 		self.SharedGuideSource = guidesource
 		--if Spoo then Spoo(self.StepDataBuffer) end
 
-		self.SharedGuide = ZGV.GuideProto:New("SHARED\\"..mainstep.guide,{shared=true,singlestep=mainstep.stepnum},guidesource)
+		self.SharedGuide = ZGV.GuideProto:New("SHARED\\"..mainstep.guide,{shared=true,singlestep=mainstep.stepnum,hardcore=true},guidesource)
 		self.SharedGuide:Parse(true)
 
 		for si,step in ipairs(self.SharedGuide.steps) do step.is_shared=true end

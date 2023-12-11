@@ -432,7 +432,7 @@ function ZGV.IconSets:Create()
 				end
 			end
 		end
-		setmetatable(set,{__index=function(self,name) local def=self[self.default]  return {def[1],def[2],label=def.label,texcoord=def.texcoord} end})
+		setmetatable(set,{__index=function(self,name) local def=self[self.default]  return {def[1],def[2],label=def.label,texcoord=def.texcoord,default=true} end})
 	end end
 
 end

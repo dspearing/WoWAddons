@@ -1082,14 +1082,6 @@ Follow Lindie Springstock to the Stable Master in Old Town |q 58908/3 |goto 77.6
 step
 talk Curly##163007
 turnin Finding Your Way##58908 |goto 77.28,66.95
-accept License to Ride##58909 |goto 77.28,66.95
-step
-talk Darlene Stokx##43693
-|tip She walks around this area on a horse.
-Learn the Apprentice Riding Skill |q 58909/1 |goto 77.40,67.76
-step
-talk Curly##163007
-turnin License to Ride##58909 |goto 77.28,66.94
 step
 _Next to you:_
 talk Lindie Springstock##163097
@@ -1517,13 +1509,6 @@ talk Chromie##167032
 turnin Adventurers Wanted: Chromie's Call##62567 |goto Stormwind City/0 56.26,17.32
 |only if haveq(62567) or completedq(62567)
 step
-_Are You Eligible For Chromie Time?_
-|tip If you have another character who reached max level previously, you are eligible for Chromie Time.
-|tip If not, you must level through the Battle for Azeroth zones before moving on to the Dragon Isles.
-|tip Chromie Time allows you to choose a different expansion to level up to 60 in, before moving on to the Dragon Isles.
-No - Level in Battle for Azeroth Zones	|confirm	|or	|next "Leveling Guides\\Battle for Azeroth (10-60)\\Kul Tiras\\Tiragarde Sound (10-60)"
-Yes - Choose a Different Expansion	|confirm	|or	|next "Chromie_Time_Start"
-step
 label "Chromie_Time_Start"
 talk Chromie##167032
 Tell her _"Select a timeline."_
@@ -1533,13 +1518,13 @@ Tell her _"I'd like to return to the present timeline, Chromie."_
 Click Here After Choosing an Expansion |confirm |goto 56.26,17.32
 step
 _Which Expansion Did You Choose?_
-Battle for Azeroth	|confirm	|or	|next "Leveling Guides\\Battle for Azeroth (10-60)\\Kul Tiras\\Tiragarde Sound (10-60)"
 The Cataclysm		|confirm	|or	|next "The_Cataclysm"
 Burning Crusade		|confirm	|or	|next "Burning_Crusade"
 Wrath of the Lich King	|confirm	|or	|next "Wrath_Of_The_Lich_King"
 Mists of Pandaria	|confirm	|or	|next "Mists_Of_Pandaria"
 Warlords of Draenor	|confirm	|or	|next "Warlords_Of_Draenor"
 Legion			|confirm	|or	|next "Legion"
+Battle for Azeroth	|confirm	|or	|next "BFA"
 Shadowlands		|confirm	|or	|next "Shadowlands"
 step
 label "The_Cataclysm"
@@ -1725,6 +1710,24 @@ Click Here to Load the "Rogue Intro & Artifacts" Leveling Guide |confirm |next "
 Click Here to Load the "Shaman Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Shaman\\Shaman Intro & Artifacts" |only if Shaman
 Click Here to Load the "Warlock Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Warlock\\Warlock Intro & Artifacts" |only if Warlock
 Click Here to Load the "Warrior Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Warrior\\Warrior Intro & Artifacts" |only if Warrior
+|tip
+Click Here to Return to Chromie |confirm |next "Chromie_Time_Start"
+step
+label "BFA"
+Watch the dialogue
+|tip Inside the building.
+Attend the War Council in Stormwind Keep |q 46727/1 |goto Stormwind City/0 80.41,33.37
+step
+click Vision of Sailor's Memory
+|tip Inside the building.
+Witness the Vision of Sailor's Memory |q 46727/2 |goto 80.48,33.50
+step
+talk Anduin Wrynn##120756
+|tip Inside the building.
+turnin Tides of War##46727 |goto 80.26,33.13
+step
+_Begin Leveling in Kul Tiras:_
+Click Here to Load the "Tiragarde Sound (10-60)" Leveling Guide |confirm |next "Leveling Guides\\Battle for Azeroth (10-60)\\Kul Tiras\\Tiragarde Sound (10-60)"
 |tip
 Click Here to Return to Chromie |confirm |next "Chromie_Time_Start"
 step

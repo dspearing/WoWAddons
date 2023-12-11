@@ -1,6 +1,6 @@
-## Interface: 100105
+## Interface: 100200
 ## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
-## Version: v3.10.0
+## Version: v3.10.1
 ## IconTexture: Interface\Icons\INV_Enchant_EssenceCosmicGreater
 ## SavedVariables: MogIt_TwoHandedDB
 ## LoadOnDemand: 1

@@ -151,6 +151,10 @@ L["Continue"] = "계속"
 --[[Translation missing --]]
 L["Contributed by: "] = "Contributed by: "
 L["Control Keys."] = "Ctrl 키"
+--[[Translation missing --]]
+L["Convert"] = "Convert"
+--[[Translation missing --]]
+L["Convert this to a GSE3 Template"] = "Convert this to a GSE3 Template"
 L["Copy this link and open it in a Browser."] = "이 링크를 복사하고 브라우저에서 엽니다."
 L["Copy this link and paste it into a chat window."] = "이 링크를 복사하여 대화창에 붙여넣습니다."
 L["Create a new macro."] = "새 매크로를 만듭니다."
@@ -290,6 +294,12 @@ L["GSE: Import a Macro String."] = "GSE: 매크로 문자열을 가져옵니다.
 L["GSE: Left Click to open the Sequence Editor"] = "GSE: 좌클릭으로 시퀀스 편집기 열기"
 L["GSE: Middle Click to open the Transmission Interface"] = "GSE: 휠클릭으로 전송 인터페이스 열기"
 L["GSE: Right Click to open the Sequence Debugger"] = "GSE: 우클릭으로 시퀀스 디버거 열기"
+--[[Translation missing --]]
+L["GSE2 Retro Importer available."] = "GSE2 Retro Importer available."
+--[[Translation missing --]]
+L["GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."] = "GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."
+--[[Translation missing --]]
+L["GSE2 Retro:"] = "GSE2 Retro:"
 L["Head"] = "머리"
 L["Help Colour"] = "도움말 색상"
 L["Help Information"] = "도움말 정보"

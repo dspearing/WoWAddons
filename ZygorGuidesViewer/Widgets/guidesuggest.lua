@@ -163,14 +163,18 @@ function widget:Update()
 	local maxlevel = GetMaxLevelForExpansionLevel(expansion)
 	local capped = UnitLevel("player")==maxlevel
 	table.wipe(results)
-	if capped then 
-		table.insert(results, suggested.LEVELING[1])
-	else
-		for i=1,4 do
-			table.insert(results, suggested.LEVELING[i])
+	if suggested.LEVELING then
+		if capped then 
+			table.insert(results, suggested.LEVELING[1])
+		else
+			for i=1,4 do
+				table.insert(results, suggested.LEVELING[i])
+			end
 		end
 	end
-	table.insert(results, suggested.DUNGEONS[1])
+	if suggested.DUNGEONS then
+		table.insert(results, suggested.DUNGEONS[1])
+	end
 	for skill,_ in pairs(primary) do if suggested[skill] then table.insert(results, suggested[skill][1]) end end
 	for skill,_ in pairs(secondary) do if suggested[skill] then table.insert(results, suggested[skill][1]) end end
 		

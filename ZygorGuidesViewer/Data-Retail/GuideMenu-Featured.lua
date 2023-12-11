@@ -7,26 +7,141 @@ local GuideMenu = ZGV.GuideMenu
 GuideMenu.Featured={}
 
 table.insert(GuideMenu.Featured,{
+	title="Patch 10.2.0 - Guardians of the Dream Overview", group="patch_102",
+{"section", text=[[LEVELING]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch102Leveling",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**Emerald Dream Campaign**]], guide="Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign"},
+	{"item", text=[[**Emerald Dream Campaign + Side Quests**]], guide="Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign + Side Quests"},
+	{"item", text=[[**Wrathion's Questline**]], guide="Leveling Guides\\Dragonflight (60-70)\\Wrathion's Questline"},
+	}, --columnsend
+	{"text", text=[[NOTE: To start The Emerald Dream Campaign, you need to complete "The Coalition of Flame" on at least one character.]]},
+	
+{"section", text=[[DAILIES]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch102Dailies",showcaseonly=true},
+	{"content", text=[[World Quests]]},
+	{"columns",
+	{"item", text=[[**The Emerald Dream World Quests**]], guide="Daily Guides\\Dragonflight (60-70)\\The Emerald Dream World Quests"},
+	}, --columnsend
+	{"text", text=[[NOTE: The world boss will be added in the first week.]]},
+
+{"section", text=[[REPUTATIONS]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch102Reputations",showcaseonly=true},
+	{"content", text=[[Earn renown with the Dream Wardens faction]]},
+	{"columns",
+	{"item", text=[[**Dream Wardens Reputation**]], guide="REPUTATIONS\\Dragonflight Reputations\\Dream Wardens"},
+	}, --columnsend
+
+{"section", text=[[EVENTS]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch102Events",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**The Emerald Dream Superbloom**]], guide="Events Guides\\Dragonflight\\The Emerald Dream Superbloom"},
+	}, --columnsend
+
+{"section", text=[[ACHIEVEMENTS]]},
+	{"banner", image=ZGV.IMAGESDIR.."DragonflightAchievements",showcaseonly=true},
+
+	{"guideslist", content=[[Exploration Achievements]],filters={patch="100200",keywords="Exploration"},columns=4},
+	{"guideslist", content=[[Expansion Feature Achievements]],filters={patch="100200",keywords={"Expansion", "Features"}},columns=4},
+
+}) 
+
+
+
+
+
+table.insert(GuideMenu.Featured,{
+	title="Patch 10.1.7 - Fury Incarnate", group="patch_1017",
+{"section", text=[[LEVELING]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch1017Leveling",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**Forsaken Heritage Armor**]], guide="Leveling Guides\\Dragonflight (60-70)\\Heritage Armor\\Forsaken Heritage Armor",faction="H"},
+	{"item", text=[[**Night Elf Heritage Armor**]], guide="Leveling Guides\\Dragonflight (60-70)\\Heritage Armor\\Night Elf Heritage Armor",faction="A"},
+	}, --columnsend
+
+{"section", text=[[EVENTS]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch1017Events",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**Emerald Dreamsurge (The Azure Span)**]], guide="Events Guides\\Dragonflight\\Emerald Dreamsurge (The Azure Span)"},
+	{"item", text=[[**Emerald Dreamsurge (Ohn'ahran Plains)**]], guide="Events Guides\\Dragonflight\\Emerald Dreamsurge (Ohn'ahran Plains)"},
+	{"item", text=[[**Emerald Dreamsurge (Thaldraszus)**]], guide="Events Guides\\Dragonflight\\Emerald Dreamsurge (Thaldraszus)"},
+	{"item", text=[[**Emerald Dreamsurge (The Waking Shores)**]], guide="Events Guides\\Dragonflight\\Emerald Dreamsurge (The Waking Shores)"},
+	}, --columnsend
+}) 
+table.insert(GuideMenu.Featured,{
+	title="Patch 10.1.5 - Fractures in Time", group="patch_1015",
+{"section", text=[[LEVELING]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch1015Leveling",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**Some Wicked Things (Warlock)**]], guide="Leveling Guides\\Dragonflight (60-70)\\Some Wicked Things (Warlock)"},
+	{"item", text=[[**Augmentation Questline (Evoker)**]], guide="Leveling Guides\\Dragonflight (60-70)\\Augmentation Questline (Evoker)"},
+	}, --columnsend
+
+{"section", text=[[DUNGEONS]]},
+	{"banner", image=ZGV.IMAGESDIR.."Patch1015Dungeons",showcaseonly=true},
+	{"columns",
+	{"item", text=[[**Dawn of the Infinite Intro Questline**]], guide="Dungeon Guides\\Dragonflight Dungeons\\Dawn of the Infinite Intro Questline"},
+	}, --columnsend
+	{"text", text=[[NOTE: The intro questline is required to unlock access to the Dawn of the Infinite dungeon.]]},
+	{"columns",
+	{"item", text=[[**Dawn of the Infinite**]], guide="Dungeon Guides\\Dragonflight Dungeons\\Dawn of the Infinite"},
+	}, --columnsend
+	
+{"section", text=[[DAILIES]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch1015Dailies",showcaseonly=true},
+	{"content", text=[[Complete time rifts]]},
+	{"columns",
+	{"item", text=[[**Time Rifts**]], guide="Daily Guides\\Dragonflight (60-70)\\Time Rifts"},
+	}, --columnsend
+	{"text", text=[[NOTE: This event spawns in Thaldraszus at the beginning of every hour and lasts for 15 minutes. New scenario stages are still being added.]]},
+
+	{"content", text=[[Correct timeline anomolies in Eon's Fringe]]},
+	{"columns",
+	{"item", text=[[**Eon's Fringe Dailies**]], guide="Daily Guides\\Dragonflight (60-70)\\Eon's Fringe Dailies"},
+	}, --columnsend
+	{"text", text=[[Complete the daily quest to earn an Encapsulated Destiny, guaranteeing a reward when completing your next time rift event.]]},
+
+	{"content", text=[[Assist the whelptenders in raising the next lineage of dragons]]},
+	{"columns",
+	{"item", text=[[**Little Scales Daycare**]], guide="Daily Guides\\Dragonflight (60-70)\\Little Scales Daycare"},
+	}, --columnsend
+	{"text", text=[[NOTE: This guide must be completed over the course of several days. Access to various daily quests will unlock as you complete it.]]},
+	{"columns",
+	}, --columnsend
+	{"columns",
+	{"item", text=[[**Little Scales Daycare Dailies**]], guide="Daily Guides\\Dragonflight (60-70)\\Little Scales Daycare Dailies"},
+	}, --columnsend
+
+{"section", text=[[PETSMOUNTS]]},
+	{"banner", image=ZGV.IMAGESDIR.."Patch1015Mounts",showcaseonly=true},
+
+	{"guideslist", content=[[Ground Mounts]],filters={patch="100105", mounts="*", mounttype={"Ground"}},columns=4},
+	{"guideslist", content=[[Flying Mounts]],filters={patch="100105", mounts="*", mounttype={"Flying"}},columns=4},
+
+	{"guideslist", content=[[Battle Pets - Source: Vendor]],filters={patch="100105", source="Vendor"},columns=4},
+}) 
+
+
+table.insert(GuideMenu.Featured,{
 	title="Patch 10.1 - Embers of Neltharion", group="patch_101",
 {"section", text=[[LEVELING]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch101Leveling",showcaseonly=true},
-	{"text", text=[[NOTE: The last chapter of the Zaralek Cavern questline won't be available until Blizzard releases it.
-]]},
 	{"columns",
 	{"item", text=[[**Zaralek Cavern**]], guide="LEVELING\\Dragonflight (60-70)\\Zaralek Cavern"},
 	{"item", text=[[**Dragon Glyphs (Zaralek Cavern)**]], guide="LEVELING\\Dragonflight (60-70)\\Dragon Glyphs\\Dragon Glyphs (Zaralek Cavern)"},
 	{"item", text=[[**Snail Racing**]], guide="LEVELING\\Dragonflight (60-70)\\Snail Racing"},
 	}, --columnsend
 
-	{"section", text=[[DUNGEONS]]},
+{"section", text=[[DUNGEONS]]},
 	{"banner", image=ZGV.IMAGESDIR.."Patch101Dungeons",showcaseonly=true},
-{"columns",
-{"item", text=[[**Aberrus, The Shadowed Cruible**]], guide="DUNGEONS\\Dragonflight Raids\\Aberrus, The Shadowed Crucible"},
-}, --columnsend
+	--{"text", text=[[NOTE: ]]},
+	{"columns",
+	{"item", text=[[**Aberrus, The Shadowed Cruible**]], guide="DUNGEONS\\Dragonflight Raids\\Aberrus, The Shadowed Crucible"},
+	}, --columnsend
 	
 {"section", text=[[DAILIES]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch101Dailies",showcaseonly=true},
-	{"text", text=[[NOTE: This should be nearly all of the Zaralek Cavern World Quests. You can now load rare guides from rare icons. Strategies for those are still in progress. The new world quest type appears only when you are near it on the map and will not function in the world quest planner.]]},
+	{"text", text=[[NOTE: You can now load rare guides from rare icons. The new world quest type appears only when you are near it on the map and will not function in the world quest planner.]]},
 	{"columns",
 	{"item", text=[[**Zaralek Cavern World Quests**]], guide="DAILIES\\Dragonflight (60-70)\\Zaralek Cavern World Quests"},
 	{"item", text=[[**Sniffenseeking!**]], guide="DAILIES\\Dragonflight (60-70)\\Sniffenseeking!"},
@@ -34,8 +149,7 @@ table.insert(GuideMenu.Featured,{
 
 {"section", text=[[REPUTATIONS]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch101Reputations",showcaseonly=true},
-	{"content", text=[[Complete the Sepulcher of the First Ones Raid]]},
-	{"text", text=[[NOTE: This guide is in a beta state and complete up to renown 10/20.]]},
+	{"content", text=[[Earn reputation with the Loamm Niffen faction.]]},
 	{"columns",
 	{"item", text=[[**Loamm Niffen Reputation**]], guide="REPUTATIONS\\Dragonflight Reputations\\Loamm Niffen"},
 	}, --columnsend
@@ -281,8 +395,8 @@ table.insert(GuideMenu.Featured,{
 {"section", text=[[PROFESSIONS]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch92Professions",showcaseonly=true},
 		{"content", text=[[Unlock the Protoform Synthesis crafting system and Collect Schematics]]},
-		{"text", text=[[Zereth Mortis introduces a new crafting system called Protoform Synthesis that allows you to craft Battle Pets and Mounts.|n|nAfter you complete Chapter 3 of the Zereth Mortis campaign you will gain access to the Cypher Research Console. To unlock Protoform Synthesis, you will need to use the Dealic section of the Cypher Research Console to research the talents Dealic Understanding (for crafting Battle Pets) and Sopranian Understanding (for crafting Mounts).|n|nYou can then use the following guides to obtain schematics which teach you how to craft different creatures.|n|nNote: Some aspects of this content is time-gated until week 4 of the Patch 9.2 release.
-]]},
+		{"text", text=[[Zereth Mortis introduces a new crafting system called Protoform Synthesis that allows you to craft Battle Pets and Mounts.|n|nAfter you complete Chapter 3 of the Zereth Mortis campaign you will gain access to the Cypher Research Console. To unlock Protoform Synthesis, you will need to use the Dealic section of the Cypher Research Console to research the talents Dealic Understanding (for crafting Battle Pets) and Sopranian Understanding (for crafting Mounts).|n|nYou can then use the following guides to obtain schematics which teach you how to craft different creatures.|n|nNote: Some aspects of this content is time-gated until week 4 of the Patch 9.2 release.]]},
+
 		{"columns",
 		{"item", text=[[**Schematic: Adorned Vombata**]], guide="PROFESSIONS\\Protoform Synthesis\\Schematic: Adorned Vombata"},
 		{"item", text=[[**Schematic: Bronze Helicid**]], guide="PROFESSIONS\\Protoform Synthesis\\Schematic: Bronze Helicid"},
@@ -299,11 +413,9 @@ table.insert(GuideMenu.Featured,{
 		{"item", text=[[**Schematic: Raptora Swooper**]], guide="PROFESSIONS\\Protoform Synthesis\\Schematic: Tarachnid Creeper"},
 		}, --columnsend
 
-		{"section", text=[[PETSMOUNTS]]},
+{"section", text=[[PETSMOUNTS]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch92PetsMounts",showcaseonly=true},
-		{"text", text=[[You can obtain the following collectibles in Patch 9.2.|n|nNote: Some aspects of this content is time-gated until week 4 of the Patch 9.2 release.
-]]},
-
+		{"text", text=[[You can obtain the following collectibles in Patch 9.2.|n|nNote: Some aspects of this content is time-gated until week 4 of the Patch 9.2 release.]]},
 
 	{"guideslist", content=[[Battle Pets - Source: Vendor]],filters={patch="90200", source="Vendor"},columns=4},
 	{"guideslist", content=[[Battle Pets - Source: Drop]],filters={patch="90200", source="Drop"},columns=4},
@@ -316,7 +428,6 @@ table.insert(GuideMenu.Featured,{
 	{"guideslist", content=[[Source: Promotion]],filters={patch="90200", source="Promotion"},columns=4},
 	{"guideslist", content=[[Source: Trading Card Game]],filters={patch="90200", source="TradingCardGame"},columns=4},
 	{"guideslist", content=[[Source: World Event]],filters={patch="90200", source="WorldEvent"},columns=4}, 
-	
 
 	{"guideslist", content=[[Ground Mounts]],filters={patch="90200", mounts="*", mounttype={"Ground"}},columns=4},
 	{"guideslist", content=[[Flying Mounts]],filters={patch="90200", mounts="*", mounttype={"Flying"}},columns=4},

@@ -6,6 +6,7 @@ local GetLocale = GetLocale
 P.announcement = {
     enable = true,
     emoteFormat = ": %s",
+    sameMessageInterval = 10,
     combatResurrection = {
         enable = true,
         onlySourceIsPlayer = false,
@@ -526,7 +527,7 @@ P.item = {
                     b = 1
                 }
             },
-            include = "MAGEFOOD,FOODVENDOR,FOODDF,RUNE,CUSTOM"
+            include = "MAGEFOOD,FOODVENDOR,FOODDF,SEEDS,RUNE,CUSTOM"
         },
         bar4 = {
             enable = false,
@@ -722,7 +723,7 @@ P.maps = {
             stopAlertIfPlayerNotEnteredDragonlands = true
         },
         researchersUnderFire = {
-            enable = true,
+            enable = false,
             desaturate = false,
             alert = true,
             sound = true,
@@ -739,6 +740,16 @@ P.maps = {
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = false,
+            stopAlertIfPlayerNotEnteredDragonlands = true
+        },
+        superBloom = {
+            enable = true,
+            desaturate = false,
+            alert = true,
+            sound = false,
+            soundFile = "OnePlus Surprise",
+            second = 600,
+            stopAlertIfCompleted = true,
             stopAlertIfPlayerNotEnteredDragonlands = true
         },
         iskaaranFishingNet = {

@@ -50,6 +50,8 @@ ZGV.IsClassicTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 ZGV.IsClassicWOTLK = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) or ((WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) and (LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING))
 ZGV.IsRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 ZGV.IsClassicSoM =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.SeasonOfMastery)
+ZGV.IsClassicSoD =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.SeasonOfDiscovery)
+ZGV.IsClassicHardcore =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.Hardcore)
 
 ZGV.CLASSIC_SCALE_ADJUST = ZGV.IsRetail and 1 or UIParent:GetEffectiveScale()
 
@@ -73,17 +75,18 @@ BINDING_NAME_ZYGOR_WAYPOINT_NEXT = L["binding_waypoint_next"]
 BINDING_NAME_ZYGOR_WAYPOINT_PREV = L["binding_waypoint_prev"]
 
 
-local version, build, date, tocversion = GetBuildInfo()
-build = tonumber(build)
-tocversion = tonumber(tocversion)
-ZGV.Expansion_Cata = true
-ZGV.Expansion_Mists = (build>=15799)
-ZGV.Expansion_Warlords = (build>=18566)
-ZGV.Expansion_Legion = (build>=22248)
-ZGV.Expansion_Shadowlands = (tocversion>=90000)
+do
+	local version, build, date, tocversion = GetBuildInfo()
+	build = tonumber(build)
+	tocversion = tonumber(tocversion)
+	ZGV.Expansion_Cata = true
+	ZGV.Expansion_Mists = (build>=15799)
+	ZGV.Expansion_Warlords = (build>=18566)
+	ZGV.Expansion_Legion = (build>=22248)
+	ZGV.Expansion_Shadowlands = (tocversion>=90000)
 
-ZGV.Patch_7_2 = (build>=23721)
-
+	ZGV.Patch_7_2 = (build>=23721)
+end
 
 
 
@@ -486,6 +489,14 @@ function ZGV:OnEnable()  --PLAYER_LOGIN
 		self:SetScript("OnMouseUp",function(self) ZGV:SuggestGuideFromBlizzardIcon(self) end)
 	end)	
 
+	hooksecurefunc(VignettePinMixin,"OnAcquired", function(self)
+		if self:GetScript("OnMouseUp") then
+			hooksecurefunc(self,"OnMouseUp", function(self,button) ZGV:SuggestGuideFromBlizzardIcon(self) end)
+		else
+			self:SetScript("OnMouseUp",function(self) ZGV:SuggestGuideFromBlizzardIcon(self) end)
+		end
+	end)	
+
 	--self.Localizers:PruneNPCs()  -- off until we start doing it by data, not by name. ~sinus 2013-04-09
 
 	self.Log.entries = self.db.char.debuglog
@@ -627,7 +638,7 @@ function ZGV:Startup_LoadGuides_Threaded()
 	self:CheckGuideJumps()
 
 	if #self.ParseLog>0 then
-		self:ShowDump(self.ParseLog,"Errors in guides",true)
+		self:ShowDump(self.ParseLog,"Errors in guides",{readonly=true})
 	end
 
 	yield("loadguides: complete.")
@@ -685,6 +696,7 @@ function ZGV:StartupModule_Threaded(startup,timeleft)  -- resumed in _StartupThr
 
 	local t0=debugprofilestop()
 	local t=t0
+	--local gc=0
 	repeat
 		if self.db.profile.safe_startup then t=debugprofilestop() yield("Before startup module: ".. startup.name .." ...") end
 		local t1 = debugprofilestop()
@@ -700,6 +712,7 @@ function ZGV:StartupModule_Threaded(startup,timeleft)  -- resumed in _StartupThr
 			"ZGV v"..ZGV.version..", WoW v"..table.concat({table.removemulti({GetBuildInfo()},1,2)},".").."\n"
 		)  end
 		---
+		--gc=gc+1  if gc%30==0 then collectgarbage("step",1) end
 
 		local progress,msg=ret,r2
 
@@ -898,9 +911,9 @@ local function _StartupThread()
 
 
 
-	self:Debug("Loading time - guides: %.2f",self.startuptimes["Loading guides"] or -1)
-	self:Debug("Loading time - DEV: %.2f",self.loading_time_DEV or -1)
-	self:Debug("Loading time - total: %.2f",self.startuptimes["Loading libs"]+self.startuptimes["Loading guides"]+self.startuptimes["Loading code"])
+	self:Debug("&startup Loading time - guides: %.2f",self.startuptimes["Loading guides"] or -1)
+	self:Debug("&startup Loading time - DEV: %.2f",self.loading_time_DEV or -1)
+	self:Debug("&startup Loading time - total: %.2f",self.startuptimes["Loading libs"]+self.startuptimes["Loading guides"]+self.startuptimes["Loading code"])
 
 	--if ZGV.AnimatePopup then ZGV:ShowAnimatedPopup() end -- if we have animated popup, show it
 
@@ -1012,9 +1025,9 @@ function ZGV:StartupStep()  -- called from MasterFrame
 			break
 		elseif status(thread)=="dead" then
 			self:Debug("&startup COMPLETE!");
-			self:Debug("Startup complete in %.2f (%d ticks in %d frames)",startup_time,startup_ticks,startup_frames)
-			self:Debug("From file load to variables = %.2f",ZGV.timestamp_initing-ZGV.timestamp_loaded)
-			self:Debug("Total startup (realtime) = %.2f",debugprofilestop()-ZGV.timestamp_initing)
+			self:Debug("&startup Startup complete in %.2f (%d ticks in %d frames)",startup_time,startup_ticks,startup_frames)
+			self:Debug("&startup From file load to variables = %.2f",ZGV.timestamp_initing-ZGV.timestamp_loaded)
+			self:Debug("&startup Total startup (realtime) = %.2f",debugprofilestop()-ZGV.timestamp_initing)
 			self.startuptimes['Total (realtime)']=debugprofilestop()-ZGV.timestamp_initing
 			self.startuptimes['Total (pure)']=startup_time
 			self.loading=nil
@@ -1041,13 +1054,13 @@ function ZGV:StartupStep()  -- called from MasterFrame
 end
 
 function ZGV:LOADING_SCREEN_DISABLED()
-	self:Debug("LOADING_SCREEN_DISABLED! Let's go!")
+	self:Debug("&events LOADING_SCREEN_DISABLED! Let's go!")
 	self.startuptimestamps:Punch("loading_screen_disabled")
 	self.loading_screen_disabled=true
 end
 
 function ZGV:LOADING_SCREEN_ENABLED()
-	self:Debug("LOADING_SCREEN_ENABLED! Freeze!")
+	self:Debug("&events LOADING_SCREEN_ENABLED! Freeze!")
 	self.loading_screen_disabled=false
 end
 
@@ -1231,7 +1244,7 @@ function ZGV:LoadInitialGuide(fastload)
 				ZGV.Gold.generate_guide()
 			end
 		else
-			ZGV:Debug("Loading initial guide: %s step %d",self.db.char.guidename or "?",self.db.char.step or 0)
+			ZGV:Debug("&startup Loading initial guide: %s step %d",self.db.char.guidename or "?",self.db.char.step or 0)
 			self:SetGuide(self.db.char.guidename,self.db.char.step)
 		end
 
@@ -1440,7 +1453,7 @@ function ZGV:SetGuide(name,step,hack,silent,source) --hack used for testing
 
 	local err
 
-	self:Debug("SetGuide to %s",guide.title)
+	self:Debug("&startup SetGuide to %s",guide.title)
 
 	if guide then
 		if source ~= nil then
@@ -1482,7 +1495,7 @@ function ZGV:SetGuide(name,step,hack,silent,source) --hack used for testing
 				
 				 -- don't announce switched world quest guides
 				if not silent then self:Print(L["message_loadedguide"]:format(name,step)) end
-				self:Debug("Guide loaded: %s",name)
+				self:Debug("&step Guide loaded: %s",name)
 
 				self:SendMessage("ZGV_GUIDE_LOADED",guide.title)
 
@@ -1596,7 +1609,7 @@ function ZGV:ClearRecentActivities()
 end
 
 function ZGV:FocusStep(num,forcefocus)
-	if type(num)=="string" and self.CurrentGuide.steplabels then local s=num  num=self.CurrentGuide.steplabels[num]  if num then num=num[1] end  self:Debug("FocusStep: %s = %s",s,tostring(num))  end
+	if type(num)=="string" and self.CurrentGuide.steplabels then local s=num  num=self.CurrentGuide.steplabels[num]  if num then num=num[1] end  self:Debug("&step FocusStep: %s = %s",s,tostring(num))  end
 	if type(num)=="table" then num=num.num end
 	if not num or num<=0 then return end
 	if not self.CurrentGuide then return end
@@ -1609,7 +1622,7 @@ function ZGV:FocusStep(num,forcefocus)
 	ZGV.CreatureViewer.Frame:Hide()
 	--]]
 	local quiet
-	self:Debug("FocusStep %d%s",num,(quiet and " (quiet)" or ""))
+	self:Debug("&step FocusStep %d%s",num,(quiet and " (quiet)" or ""))
 
 	if self.CurrentGuide.type ~= "SHARED" then  -- don't store history for those, it just doesn't work
 		-- Record step into history
@@ -1683,7 +1696,7 @@ function ZGV:FocusStep(num,forcefocus)
 	self.CurrentStep:PrepareCompletion(true)
 	self.CurrentStep:OnEnter()
 
-	if (cs~=self.CurrentStep) or (cg~=self.CurrentGuide) then self:Debug("FocusStep: guide or step changed! bailing.") return end
+	if (cs~=self.CurrentStep) or (cg~=self.CurrentGuide) then self:Debug("&step FocusStep: guide or step changed! bailing.") return end
 
 	self.stepchanged = true
 
@@ -3305,7 +3318,7 @@ function ZGV:NEW_WMO_CHUNK()
 end
 
 function ZGV:PLAYER_ENTERING_WORLD()
-	self:Debug("PLAYER_ENTERING_WORLD! Let's go!")
+	self:Debug("&events PLAYER_ENTERING_WORLD! Let's go!")
 	self.loading_screen_disabled=true
 	self:CacheCurrentMapID()
 end
@@ -3390,7 +3403,7 @@ end
 
 function ZGV:Frame_OnShow()
 	if ZGV.initialized then PlaySound(SOUNDKIT.IG_QUEST_LOG_OPEN) end
-	self:Debug("ZGV:Frame_OnShow")
+	self:Debug("&events ZGV:Frame_OnShow")
 	--ZygorGuidesViewerFrame_Filter()
 	--[[
 	if UnitFactionGroup("player")=="Horde" then
@@ -3467,7 +3480,7 @@ function ZGV:SetStepFocus(step)
 
 	step.isFocused = true
 	
-	self:Debug("Focus changed to step %s (%s)",step.num, "guide")
+	self:Debug("&step Focus changed to step %s (%s)",step.num, "guide")
 	
 	
 	if ZGV.focusedguide ~= step.parentGuide then 
@@ -3996,7 +4009,7 @@ function ZGV:OpenQuickStepMenu(stepframe,goalframe)
 					func = function()
 						if IsShiftKeyDown() then
 							local s = LightHeaded:GetPageText(goal.quest.id)
-							self:ShowDump(s,"Quest info - courtesy of LightHeaded",false)
+							self:ShowDump(s,"Quest info - courtesy of LightHeaded")
 						else
 							ShowUIPanel(QuestLogFrame)
 							LightHeaded:UpdateFrame(goal.quest.id, LightHeaded.db.profile.singlepage and -1 or 1)
@@ -4463,7 +4476,7 @@ function ZGV:ProfilerReport()
 			s=s..v.fulltime..","..v.puretime..","..v.count..","..v.fullavg..","..v.pureavg..","..v.name.."\n"
 		end
 
-		self:ShowDump(s,"Profiler Report",true) -- TODO emails and stuff,make it readonly
+		self:ShowDump(s,"Profiler Report",{readonly=true}) -- TODO emails and stuff,make it readonly
 		self:Print("Profiler report created.")
 		self.ProfilerRunning=nil
 	else
@@ -4620,6 +4633,7 @@ function ZGV:Debug (msg,...)
 		else
 			message = ("|cffffee77Z|r: %s%06.03f+%03d|r |cff00ddbb#%d:|r %s%s"):format(timecolor,(t-self.timestamp_loaded_GT),debugms,self.DebugI,debugcolor,formatted_msg)
 		end
+		--if ZGV.timeshift then message = date().."."..("%03d"):format((GetTime()+ZGV.timeshift-time())*1000).." "..message end
 
 		local replace_at
 		if replace_id then  -- find same message in history
@@ -5028,6 +5042,68 @@ function ZGV:FindGuides(sub)
 		firstword=false
 	end
 	return found
+end
+
+local function value_find(haystack,needle)
+	needle = needle:lower()
+	if type(haystack)=="table" then
+		for _,straw in pairs(haystack) do
+			if straw:lower()==needle then
+				return true
+			end
+		end
+		return false
+	else
+		return haystack:lower()==needle
+	end
+end
+local FindFilteredGuidesCache = {}
+function ZGV:FindFilteredGuides(filters)
+	local filterstring = ""
+	for i,v in pairs(filters) do
+		if type(v)=="table" then
+			filterstring = filterstring .. i
+			for j,w in ipairs(v) do
+				filterstring = filterstring .. w
+			end
+		else
+			filterstring = filterstring .. i..v
+		end
+	end
+	if not FindFilteredGuidesCache[filterstring] then
+		FindFilteredGuidesCache[filterstring] = {}
+
+		for _,guide in ipairs(ZGV.registeredguides) do
+			local valid = true
+			for key,value in pairs(filters) do
+				if guide[key] then
+					if value~="*" then
+						if type(value)=="table" then
+							local mode_and = value[1]=="AND"
+							local lvalid = mode_and
+							for _,subvalue in pairs(value) do
+								if mode_and then
+									if subvalue~="AND" then
+										lvalid = lvalid and value_find(guide[key],subvalue)
+									end
+								else
+									lvalid = lvalid or value_find(guide[key],subvalue)
+								end
+							end
+							valid = valid and lvalid
+						else
+							valid = valid and value_find(guide[key],value)
+						end
+					end
+					-- value=="*" is always true
+				else
+					valid=false
+				end
+			end
+			if valid then table.insert(FindFilteredGuidesCache[filterstring],{guide.title,guide.title_short}) end
+		end
+	end
+	return FindFilteredGuidesCache[filterstring]
 end
 
 function ZGV:UnloadUnusedGuides()
@@ -5545,7 +5621,8 @@ ZGV.POIcache=POIcache
 -- checks all steps for rare-12345 label matching poiID number
 function ZGV:SuggestGuideFromBlizzardIcon(object)
 	local poiID = object and object.areaPoiID
-	if not poiID then return end
+	local vignetteID = object and object.vignetteID
+	if not (poiID or vignetteID) then return end
 
 	local guidetitles = {
 		["Dailies Guides\\Legion\\Broken Shore Rares"] = {content="rare elite", prefix="rare"},
@@ -5555,15 +5632,22 @@ function ZGV:SuggestGuideFromBlizzardIcon(object)
 	local step_guide, step_label, content, prefix
 
 	for _,guide in pairs(ZGV.registeredguides) do
-		if guide.headerdata.areapoiid==poiID then
+		if poiID and guide.headerdata.areapoiid==poiID then
 			step_guide = guide
 			step_label = 1
 			content = guide.headerdata.areapoitype
 			break
 		end
+		if vignetteID and guide.headerdata.vignetteID==vignetteID then
+			step_guide = guide
+			step_label = 1
+			content = guide.headerdata.vignettetype
+			break
+		end
+
 	end
 
-	if not step_label then
+	if not step_label and poiID then
 		for guidetitle,guidedata in pairs(guidetitles) do
 			local guide = self:GetGuideByTitle(guidetitle)
 			if not guide then return end
@@ -5963,4 +6047,21 @@ function ZygorGuidesViewer_OnAddonCompartmentClick(addonName,mouseButton,buttonF
 	end
 end
 
+local last_time=0
+local timer
+timer = C_Timer.NewTicker(0.01,function()
+	local tm=time()
+	if tm-last_time==1 then
+		ZGV.timeshift=tm-GetTime()
+		timer:Cancel()
+	else
+		--print (tm-last_time)
+	end
+	last_time=tm
+end)
+-- and now you can use GetTime()+ZGV.timeshift instead of time() if needed
+
 --ZGV:EnableMessageDebugging()
+
+
+

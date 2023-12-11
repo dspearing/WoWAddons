@@ -155,12 +155,6 @@ end
 -- end
 
 
--- GRM_API.GetPronouns = function()    -- Pending GRM Feature (as requested)
-
--- end
-
-
-
 ------------------------------------------------------
 ------------------------------------------------------
 ---- TOOLBOX FOR UNIQUE API POWER TOOLS --------------
@@ -266,7 +260,7 @@ GRM_API.RestoreAllPublicNotes = function( name )
                     name = GetGuildRosterInfo ( i );
                     for n , player in pairs ( guildData ) do 
                         if type ( player ) == "table" and name == n then 
-                            print("Setting Note: " .. player.note)
+
                             GuildRosterSetPublicNote ( i , player.note);
                             break;
                         end
@@ -323,7 +317,7 @@ GRM_API.SetAllUnknownPromoteDates = function ( day , month , year )
                     player.rankHist[1][2] = day;
                     player.rankHist[1][3] = month;
                     player.rankHist[1][4] = year;
-                    player.rankHist[1][5] = GRM.TimeStampToEpoch ( { day , month , year } );
+                    player.rankHist[1][5] = GRM.ConvertToStandardFormatDate ( day , month , year );
                     player.rankHist[1][6] = time();
                     player.rankHist[1][7] = true;
                     player.rankHist[1][8] = 1;
@@ -358,7 +352,7 @@ GRM_API.SetAllUnknownJoinDates = function ( day , month , year )
                 if player.joinDateUnknown or player.joinDateHist[1][1] == 0 then
 
                     player.joinDateHist = {};
-                    table.insert ( player.joinDateHist , { day , month , year , GRM.TimeStampToEpoch ( { day , month , year } ) , time() , true , 1 } );
+                    table.insert ( player.joinDateHist , { day , month , year , GRM.ConvertToStandardFormatDate ( day , month , year ) , time() , true , 1 } );
 
                     player.joinDateUnknown = false;
 

@@ -134,7 +134,7 @@ options.help = {
                     name = L["QQ Group"],
                     image = W.Media.Icons.qq,
                     func = function()
-                        E:StaticPopup_Show("WINDTOOLS_EDITBOX", nil, nil, "336069019")
+                        E:StaticPopup_Show("WINDTOOLS_EDITBOX", nil, nil, "948518444")
                     end,
                     width = 0.7
                 },
@@ -352,7 +352,8 @@ do -- 本地化
             F.CreateClassColorString("불광불급옹<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "HUNTER"),
             F.CreateClassColorString("다크어쌔신<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "DEMONHUNTER"),
             F.CreateClassColorString("크림슨프릴<주부월드> @ " .. L["Burning Legion"] .. "(KR)", "MAGE"),
-            "Sang Jeon @ GitHub"
+            "Sang Jeon @ GitHub",
+            "Reim @ Discord"
         },
         ["français (frFR)"] = {
             "PodVibe @ CurseForge",

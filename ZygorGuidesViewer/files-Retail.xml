@@ -46,6 +46,7 @@
 	<Script file="MacroGuide.lua"/>
 	<Script file="Step.lua"/>
 	<Script file="Goal.lua"/>
+	<Script file="Code-Retail\Goal-Dragonrace.lua"/>
 
 	<Script file="Code-Retail\PetBattle.lua"/>
 

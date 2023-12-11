@@ -247,7 +247,7 @@ function CreatureDetector:DetectMinipet(silent_mode)
 			button1 = YES,
 			button2 = NO,
 			OnAccept = function()
-				ZGV:ShowDump(text,"Report",true)
+				ZGV:ShowDump(text,"Report",{readonly=true})
 			end,
 			timeout = 0,
 			whileDead = true,
@@ -323,7 +323,7 @@ function CreatureDetector:DetectMount(silent_mode)
 			button1 = YES,
 			button2 = NO,
 			OnAccept = function()
-				ZGV:ShowDump(text,"Report",true)
+				ZGV:ShowDump(text,"Report",{readonly=true})
 			end,
 			timeout = 0,
 			whileDead = true,

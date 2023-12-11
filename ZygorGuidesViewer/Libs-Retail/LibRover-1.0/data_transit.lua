@@ -15,6 +15,21 @@ data.basenodes.transit = {
 	-----     DRAGONFLIGHT     -----
 	--------------------------------
 
+	-----------------------
+	-- THE EMERALD DREAM --
+	-----------------------
+	--## ALLIANCE ##--
+
+	--## HORDE ##--
+
+	--## Neutral ##--
+
+		"Ohn'ahran Plains/0 18.37,52.37 -x- The Emerald Dream/0 73.05,52.52 {mode:PORTAL} {title:Pass through the Portal}",
+			--"{cond:PlayerCompletedQuest(76318) or PlayerIsOnQuest(76318)}",
+
+		"Valdrakken/0 62.60,57.42 -to- The Emerald Dream/0 50.61,62.50 {mode:PORTAL} {title:Click the Portal to Central Encampment} "..
+			"{cond:PlayerCompletedQuest(76318)}",
+
 	-----------------
 	-- THALDRASZUS --
 	-----------------
@@ -40,6 +55,9 @@ data.basenodes.transit = {
 
 		-- Valdrakken -to- Nazmir
 		"Valdrakken/0 53.54,54.99 -to- Nazmir/0 49.77,60.70 {mode:PORTAL} {title:Click the Portal to Nazmir}",
+
+		-- Valdrakken -to- Badlands
+		"Valdrakken/0 26.10,40.99 -to- Badlands/0 64.66,37.27 {mode:PORTAL} {title:Click the Portal to Badlands\ninside the building}",
 
 	--------------------
 	-- THE AZURE SPAN --
@@ -2246,16 +2264,13 @@ data.basenodes.transit = {
 
 		--## MAGE ##--
 
+		-- ALLIANCE --
 		-- Teleport: Exodar --
 		"The Exodar/0 47.62,59.82				<spell:32271>	<faction:A>",
 		-- Teleport: Theramore --
 		"Dustwallow Marsh/0 66.00,48.99				<spell:49359>	<faction:A>",
 		-- Teleport: Shattrath --
 		"Shattrath City/0 54.97,40.23				<spell:33690>	<faction:A>",
-		-- Ancient Teleport: Dalaran - Eastern Kingdoms --
-		"Hillsbrad Foothills/0 30.81,36.47			<spell:120145>	<faction:B>	<title:Teleport to Old Dalaran Crater\n\n|cffff1100 Cast Slow Fall After Loading!|r\n>",
-		-- Teleport: Dalaran - Northrend --
-		"Dalaran/1 55.92,46.79					<spell:53140>	<faction:B>",
 		-- Teleport: Darnassus --
 		"Darkshore/0 45.95,18.74				<spell:3565>	<faction:A>	<cond:not ZGV.InPhase('Old Darnassus')>",
 		"Darnassus/0 43.47,78.67				<spell:3565>	<faction:A>	<cond:ZGV.InPhase('Old Darnassus')>",
@@ -2266,36 +2281,49 @@ data.basenodes.transit = {
 		-- Teleport: Tol Barad --
 		"Tol Barad Peninsula/0 73.67,60.92			<spell:88342>	<faction:A>",
 		-- Teleport: Vale of Eternal Blossoms --
-		"Vale of Eternal Blossoms/0 86.30,61.05			<spell:132621>	<faction:A>",
+		"Vale of Eternal Blossoms/0 86.30,61.05			<spell:132621>	<faction:A>	<cond:ZGV.InPhase('Old Vale')>",
+		"Vale of Eternal Blossoms New/0 86.85,59.09		<spell:132621>	<faction:A>	<cond:not ZGV.InPhase('Old Vale')>",
 		-- Teleport: Stormshield --
 		"Stormshield/0 62.67,35.78				<spell:176248>	<faction:A>",
+		-- Teleport: Boralus --
+		"Boralus/0 69.80,15.75					<spell:281403>	<faction:A>",
+
+		-- HORDE --
+		-- Teleport: Orgrimmar --
+		"Orgrimmar/1 57.10,89.81				<spell:3567>   <faction:H>",
+		-- Teleport: Silvermoon City --
+		"Silvermoon City 58.3,19.2				<spell:32272>  <faction:H>",
+		-- Teleport: Stonard --
+		"Swamp of Sorrows 49.8,55.8				<spell:49358>  <faction:H>",
+		-- Teleport: Thunder Bluff --
+		"Thunder Bluff 22.2,16.9				<spell:3566>   <faction:H>",
+		-- Teleport: Shattrath City --
+		"Shattrath City 53.0,49.2				<spell:35715>  <faction:H>",
+		-- Teleport: Undercity --
+		"Undercity 84.58,16.33					<spell:3563>   <faction:H>",
+		-- Teleport: Tol Barad --
+		"Tol Barad Peninsula 55.8,80.1				<spell:88344>  <faction:H>",
+		-- Teleport: Vale of Eternal Blossoms --
+		"Vale of Eternal Blossoms/0 62.21,21.54			<spell:132627> <faction:H>	<cond:ZGV.InPhase('Old Vale')>",
+		"Vale of Eternal Blossoms New/0 62.68,19.30		<spell:132627> <faction:H>	<cond:not ZGV.InPhase('Old Vale')>",
+		-- Teleport: Warspear --
+		"Warspear/0 58.8,51.4					<spell:176242>  <faction:H>",
+		-- Teleport: Dazar'alor --
+		"Dazar'alor/1 68.28,64.58				<spell:281404>	<faction:H>",
+
+		-- BOTH --
+		-- Ancient Teleport: Dalaran - Eastern Kingdoms --
+		"Hillsbrad Foothills/0 30.81,36.47			<spell:120145>	<faction:B>	<title:Teleport to Old Dalaran Crater\n\n|cffff1100 Cast Slow Fall After Loading!|r\n>",
+		-- Teleport: Dalaran - Northrend --
+		"Dalaran/1 55.92,46.79					<spell:53140>	<faction:B>",
 		-- Teleport: Hall of the Guardian --
 		"Hall of the Guardian/1 57.63,86.13			<spell:193759>	<faction:B>",
 		-- Teleport: Dalaran - Broken Isles --
 		"Dalaran L/10 60.92,44.73				<spell:224869>	<faction:B>",
+		-- Teleport: Oribos --
+		"Oribos/0 20.37,50.32					<spell:344587>	<faction:B>",
 		-- Teleport: Valdrakken --
-		"Valdrakken/0 57.13,42.33				<spell:395277>	<faction:B>",
-		-- Teleport:  --
-		-- Teleport:  --
-		-- Teleport:  --
-		-- Teleport:  --
-		-- Teleport:  --
-		-- Teleport:  --
-
-
-
-		"Orgrimmar/1 57.10,89.81				<spell:3567>   <faction:H>",
-		"Silvermoon City 58.3,19.2				<spell:32272>  <faction:H>",
-		"Swamp of Sorrows 49.8,55.8				<spell:49358>  <faction:H>",	-- Stonard
-		"Thunder Bluff 22.2,16.9				<spell:3566>   <faction:H>",
-		"Shattrath City 53.0,49.2				<spell:35715>  <faction:H>",
-		"Undercity 84.6,16.3					<spell:3563>   <faction:H>",
-		"Tol Barad Peninsula 55.8,80.1				<spell:88344>  <faction:H>",
-		"Vale of Eternal Blossoms/0 62.21,21.54			<spell:132627> <faction:H>",
-		"Warspear/0 58.8,51.4					<spell:176242>  <faction:H>",
-		"Boralus/0 69.80,15.75					<spell:281403>",		-- Alliance
-		"Dazar'alor/1 68.28,64.58				<spell:281404>",		-- Horde
-		"Oribos/0 20.37,50.32					<spell:344587>",
+		"Valdrakken/0 57.13,42.33				<spell:395277>	<faction:B> <cost:35>", -- have to run out of the building; default is 20
 
 		--[[ Note: node cond functions work only for teleport spells --]]
 		-- DRUIDS
@@ -2348,4 +2376,23 @@ data.basenodes.transit = {
 		"Uldum 76.81,84.55				<spell:88775>",--Keystone Hero: The Vortex Pinnacle (Teleport to The Vortex Pinnacle)
 		"Uldum New/0 76.84,84.61			<spell:88775>",--Keystone Hero: The Vortex Pinnacle (Teleport to The Vortex Pinnacle)
 		--"X			<spell:>",--Keystone Hero:  ()
+
+		--Ever Shifting Mirror toy portals
+		"Nagrand D/0 50.35,57.21 -x- Nagrand/0 41.27,59.04 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Nagrand D/0 88.36,22.84 -x- Zangarmarsh/0 68.20,88.46 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", -- On top of the mushroom --
+		"Nagrand D/0 71.41,21.94 -x- Nagrand/0 60.36,25.56 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Nagrand D/0 81.13,8.97 -x- Zangarmarsh/0 49.19,55.37 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}",  -- Underwater on top of the mushroom 
+		"Frostfire Ridge/0 21.82,45.31 -x- Blade's Edge Mountains/0 46.40,64.05 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", -- On top of the bridge --
+		"Frostfire Ridge/0 37.53,60.71 -x- Blade's Edge Mountains/0 39.63,77.39 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Gorgrond/0 49.41,73.66 -x- Blade's Edge Mountains/0 59.11,71.69 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Gorgrond/0 50.82,31.43 -x- Blade's Edge Mountains/0 66.20,26.33 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Tanaan Jungle/0 70.30,54.53 -x- Hellfire Peninsula/0 80.38,51.60 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Tanaan Jungle/0 49.56,50.73 -x- Hellfire Peninsula/0 54.98,48.87 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Tanaan Jungle/0 56.34,26.83 -x- Hellfire Peninsula/0 64.04,21.73 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Shadowmoon Valley D/0 60.02,48.37 -x- Shadowmoon Valley/0 61.53,46.07 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Shadowmoon Valley D/0 32.33,28.76 -x- Shadowmoon Valley/0 27.10,33.36 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Spires of Arak/0 47.40,12.45 -x- Terokkar Forest/0 70.78,75.88 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Talador/0 57.85,80.53 -x- Terokkar Forest/0 45.37,47.53 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Talador/0 50.41,35.19 -x- Terokkar Forest/0 35.26,12.51 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
+		"Talador/0 68.42,9.32 -x- Zangarmarsh/0 82.59,66.13 {mode:PORTAL} {template:toylocation} {cond:PlayerHasToy(129929)} {arrivaltoy:129929}", 
 }

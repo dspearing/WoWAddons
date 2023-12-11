@@ -376,6 +376,10 @@ function ZGV:Options_DefineOptionTables()
 		})
 
 		AddOption('windowlocked',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  self:UpdateLocking()  end, })
+ 
+		AddOptionSep()
+		AddOption('hidetracker',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  ZGV.Replacements:UpdateVisibility()  end, _default=false, width=200,})
+		AddOption('hideexptracker',{ type = 'toggle', set = function(i,v) Setter_Simple(i,v)  ZGV.Replacements:UpdateVisibility()  end, _default=false, })
 		AddOptionSep()
 
 		local style_sort_order = {
@@ -1391,15 +1395,13 @@ function ZGV:Options_DefineOptionTables()
 		AddOptionSep()
 		AddOption('gearshowallstats',{ type = 'toggle', _default=false, width="full"})
 
-		local altDB = ZGV.IsRetail and ZGV.db.realm.characters or ZGV.db.factionrealm.characters
-
 		local function display_stat(class,spec,name)
 			-- always show everything?
 			if ZGV.db.profile.gearshowallstats then return true end
 
 			local prefix = spec..'_'
 			local statset = ZGV.ItemScore.rules[class][spec].stats
-			local profile = altDB[playername].statweights
+			local profile = ZGV.ItemScore.altDB[playername].statweights
 
 			-- user unset the stat, don't show
 			if profile[prefix..name]=="" or profile[prefix..name]=="0" then return false end
@@ -1417,7 +1419,7 @@ function ZGV:Options_DefineOptionTables()
 		local function get_stat(class,spec,name)
 			local prefix = spec..'_'
 			local statset = ZGV.ItemScore.rules[class][spec].stats
-			local profile = altDB[playername].statweights
+			local profile = ZGV.ItemScore.altDB[playername].statweights
 
 			-- user unset the stat, don't show
 			if profile[prefix..name]=="" or profile[prefix..name]=="0" then return nil end
@@ -1435,7 +1437,7 @@ function ZGV:Options_DefineOptionTables()
 		local function set_stat(class,spec,name,value)
 			local prefix = spec..'_'
 			local statset = ZGV.ItemScore.rules[class][spec].stats
-			local profile = altDB[playername].statweights
+			local profile = ZGV.ItemScore.altDB[playername].statweights
 			
 			if value=="" or value==nil then value=0 end
 			profile[prefix..name]=tostring(tonumber(value or 0))
@@ -1559,7 +1561,7 @@ function ZGV:Options_DefineOptionTables()
 					type = 'execute',	
 					name = "Reset",
 					func=function ()
-						table.wipe(altDB[playername].statweights)
+						table.wipe(ZGV.ItemScore.altDB[playername].statweights)
 						ZGV.ItemScore:DelayedRefreshUserData()
 					end,
 					width='single',
@@ -2411,6 +2413,25 @@ function ZGV:Options_DefineOptionTables()
 				set = function(i,v) Setter_Simple(i,v)  if (v and not UnitAffectingCombat("player")) or (not v and UnitAffectingCombat("player")) then self:PLAYER_REGEN_DISABLED() else self:PLAYER_REGEN_ENABLED() end  end,
 			})
 			AddOptionSep()
+			if ZGV.IsClassic then
+				AddOption('fakeHC',{
+					name = "Fake HC/non-HC",
+					desc = "Select the realm type to fake, or reset to default.",
+					type = 'select',
+					values = {
+						[0]="Hardcore",
+						[1]="Normal",
+						[2]="Default",
+					},
+					set = function(i,v)
+						Setter_Simple(i,v)
+							if ZGV.db.profile.fakeHC == 0 then ZGV.db.char.fakehardcore=true end
+							if ZGV.db.profile.fakeHC == 1 then ZGV.db.char.fakehardcore=false end
+							if ZGV.db.profile.fakeHC == 2 then ZGV.db.char.fakehardcore=nil end
+					end,
+				_default = 2,
+				})
+			end
 
 			do -- Fake skills
 				local skills={"Alchemy","Archaeology","Blacksmithing","Cooking","Enchanting","Engineering","First Aid","Fishing","Herbalism","Inscription","Jewelcrafting","Leatherworking","Mining","Skinning","Tailoring"}
@@ -2927,7 +2948,7 @@ function ZGV:Options_DefineOptionTables()
 				AddOption('sep00faketoasts',{ type="header", name="Message Toasts" })
 				AddOption('faketoast_1', { type = 'execute', width=160, 
 					name="Welcome Message", 
-					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.MsgTstWelcome,"welcome") end
+					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.WelcomeToast, "welcome") end
 				})
 				AddOption('faketoast_2', { type = 'execute', width=160, 
 					name="World Quests", 
@@ -2938,15 +2959,15 @@ function ZGV:Options_DefineOptionTables()
 				})
 				AddOption('faketoast_3', { type = 'execute', width=160, 
 					name="Events", 
-					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.MsgTstEvents,"events") end
+					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.Visuals:Render(ZGV.GuideMenu.Events,290),"events") end
 				})
 				AddOption('faketoast_4', { type = 'execute', width=160, 
 					name="Orientation Guide", 
-					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.MsgTstOrientation,"orientation") end
+					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.OrientationToast, "orientation") end
 				})
 				AddOption('faketoast_5', { type = 'execute', width=160, 
 					name="General Updates", 
-					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.MsgTstGeneral,"updates") end
+					func=function(info,val) ZGV.NotificationCenter:CreateFloatingFrame("message", true, ZGV.NotificationCenter.UpdatesToast, "updates") end
 				})
 
 				AddOption('sep00fakepopups',{ type="header", name="Popups" })
@@ -4106,7 +4127,24 @@ local defaults = {
 	},
 	profile = {
 		debug = false,
-		debug_flags = {["display"]=false, ['sticky']={enabled=true,color="ffff5500"}, ['LibRover']={enabled=true,color="ffffbb00"}, ['pointer']={enabled=true,color="ff00ff00"}, ['waypoints']={enabled=true,color="ff99ff00"}, ['startup']={enabled=true,color="ffff3300"}, ['lr_initpath_v']=false },
+		debug_flags = {
+			["display"]=false, 
+			['sticky']={enabled=true,color="ffff5500"},		--orange
+			['LibRover']={enabled=true,color="ffffbb00"},		--yellow
+			['pointer']={enabled=true,color="ff00ff00"},		--green
+			['waypoints']={enabled=true,color="ffc3ff69"},		--light green
+			['startup']={enabled=true,color="ffff3300"},		--red
+			['popup']={enabled=true,color="ff31f5f2"},		--teal
+			['petguides']={enabled=true,color="ff3199f5"},		--blue
+			['itemscore']={enabled=true,color="fffefaf7"},		--white
+			['step_setup']={enabled=true,color="ffff8caf"},		--peach
+			['LibTaxi']={enabled=true,color="ffcb8437"},		--light brown
+			['sync']={enabled=true,color="ffcc56fc"},		--purple
+			['greenlines']={enabled=true,color="ff0c994a"},		--dark green
+			['toasts']={enabled=true,color="ff1761d4"},		--dark blue
+			['inventory']={enabled=true,color="ffeef5ff"},		--very light blue, almost white
+			['lr_initpath_v']=false 
+		},
 		--autosizemini = true,
 		--minimode = false,
 		visible = true,

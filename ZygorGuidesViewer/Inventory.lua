@@ -502,6 +502,14 @@ function SIP:CreateFrame()
 
 	SIP.ScrollContainer:SetFrameStrata(SIP.Popup:GetFrameStrata())
 	SIP.ScrollContainer:SetFrameLevel(SIP.Popup:GetFrameLevel()+1)
+
+	SIP.Popup.LayoutFull = function(self)
+
+	end
+
+	SIP.Popup.LayoutFloaty = function(self)
+
+	end
 end
 
 local function create_row()
@@ -623,8 +631,10 @@ local function OnEvent(self, event)
 		if ZGV.db.profile.autosell and ZGV.db.profile.enable_vendor_tools then Inventory:SellGreyItems() end
 		if ZGV.db.profile.autosellother and ZGV.db.profile.enable_vendor_tools then Inventory:SellUnusableItems() end
 		Inventory.FindItemsToBuyMissedNames = false
-		Inventory:FindItemsToBuy() 
-		Inventory:AutoRepair()
+		ZGV:ScheduleTimer(function()  -- MERCHANT_SHOW now fires before MerchantFrame is visible, delay till next onupdate
+			Inventory:FindItemsToBuy() 
+			Inventory:AutoRepair()
+		end,0)
 	elseif event=="MERCHANT_UPDATE" then
 		ZGV:ScheduleTimer(function() Inventory:FindItemsToBuy() end,1)		
 	elseif event=="MERCHANT_CLOSED" then

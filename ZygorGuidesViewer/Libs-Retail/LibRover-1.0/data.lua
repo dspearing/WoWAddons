@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 486,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 504,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -70,6 +70,28 @@ data.MapIDsByName = {
 ["Aberrus, the Shadowed Crucible"]={[0]=2166,[1]=2167,[2]=2168,[3]=2169,[4]=2170,[5]=2171,[6]=2172,[7]=2173,[8]=2174},
 ["Alterac Valley Heritage"]={[0]=2162},
 ["The Eastern Glades"]={[0]=2146},
+["Dawn of the Infinite"]={[0]=2190,[1]=2191,[2]=2192,[3]=2193,[4]=2194,[5]=2195,[6]=2196,[7]=2197,[8]=2198},
+["The Black Empire 2"]={[0]=2228},
+["The Emerald Dream"] = {[0]=2200},
+["Barrows of Reverie"] = {[0]=2254},
+["Halls of Valor D"] = {[0]=2230,[1]=2231},
+["Amirdrassil, The Dream's Hope"]={[0]=2244,[1]=2240,[2]=2232,[3]=2233,[4]=2234,[5]=2238,[6]=2237,[7]=2236,[8]=2235},
+["Sor'theril Barrow Den"] = {[0]=2253},
+["Amirdrassil"]={[0]=2239},
+["The Nighthold T"]={[0]=2221,[1]=2220},
+
+
+
+
+--Time Rifts--
+["Tyrhold Reservoir"]={[0]=2199},
+["The Warlands"]={[0]=2207},
+["Azq'roth"]={[0]=2201},
+["A.Z.E.R.O.T.H."]={[0]=2206},
+["Azmerloth"]={[0]=2204},
+["Azmourne"]={[0]=2203},
+["Ulderoth"]={[0]=2205},
+["Azewrath"]={[0]=2202},
 
 
 ---------------------------------------------------------------
@@ -392,6 +414,7 @@ data.MapIDsByName = {
 ["Val'sharah"] = {[0]=641,[13]=642,[14]=643,[15]=644},
 
 --Dungeons
+["Old Scholomance"] = {[3]=306,[2]=307,[1]=308,[0]=309},
 ["Ahn'kahet: The Old Kingdom"] = {[1]=132},
 ["Ahn'Qiraj"] = {[1]=319,[2]=320,[3]=321},
 ["The Arcatraz"] = {[1]=269,[2]=270,[3]=271},
@@ -998,6 +1021,7 @@ data.greenborders = {
 	{"Ohn'ahran Plains/0","Thaldraszus/0"},
 	{"The Azure Span/0","Thaldraszus/0"},
 	{"Valdrakken/0","Thaldraszus/0"},
+	{"Ohn'ahran Plains/0","Amirdrassil/0"},
 
 
 

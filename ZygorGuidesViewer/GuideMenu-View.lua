@@ -1152,717 +1152,7 @@ local function featured_colourise(str,gray,dev)
 	return str
 end
 
-GuideMenu.Parsers = {}
-GuideMenu.Parsers.WIDTH = 552
-GuideMenu.Parsers.ICONS = false
-	GuideMenu.Parsers.generic = function(parent,e)
-		if coroutine.running() then
-			local now = debugprofilestop()
-			if now>GuideMenu.Parsers.lasttick+100 then
-				GuideMenu.Parsers.lasttick = now
-				coroutine.yield()
-			end
-		end
-
-		local object = CHAIN(ui:Create("Button",parent))
-			:SetNormalBackdropColor(0,0,0,0)
-			:SetBackdropBorderColor(0,0,0,0)
-			:RegisterForClicks("AnyUp")
-			:SetPoint("LEFT")
-			:SetScript("OnEnter",function(self) 
-				if self.cursor then SetCursor(self.cursor) end
-				if self.onenterfunc then
-					self:onenterfunc()
-				elseif self.tooltip then 
-					local text = type(self.tooltip)=="function" and self.tooltip() or self.tooltip
-					GameTooltip:SetOwner(self, "ANCHOR_CURSOR")
-					GameTooltip:AddLine(text)
-					GameTooltip:Show()
-				end
-			end)
-			:SetScript("OnLeave",function(self) 
-				if self.cursor then SetCursor(nil) end 
-				if self.onleavefunc then
-					 self:onleavefunc()
-				else
-					GameTooltip:Hide()
-				end
-			end)
-		.__END
-		object.text = CHAIN(object:GetFontString())
-			:SetFont(FONT,13)
-			:ClearAllPoints()
-			:SetPoint("LEFT")
-			:SetPoint("RIGHT")
-			:SetJustifyH("LEFT")
-		.__END
-		
-		object.tooltip = e.tooltip
-
-		if e.onclick then
-			object:SetScript("OnClick", function() e.onclick() end)
-		elseif e.guide then
-			if not e.text then
-				local guide = ZGV:GetGuideByTitle(e.guide)
-				if guide and not guide.missing then 
-					e.text = "**"..(guide.title_short or e.guide).."**"
-				else
-					local folder,title = e.guide:match("^(.+)\\(.-)$")
-					e.text = "**"..(title).."**"
-				end
-			end
-
-			if e.action=="select" then
-				object:SetScript("OnClick", function() 
-					local folder,_ = e.guide:match("^(.+)\\(.-)$")
-					GuideMenu:Show(folder)
-					GuideMenu.FocusedGuide = ZGV:GetGuideByTitle(e.guide)
-					GuideMenu:ShowGuideDetails(GuideMenu.FocusedGuide)
-					GuideMenu:Update()
-				end)
-			else
-				local guide = ZGV:GetGuideByTitle(e.guide)
-				if guide and not guide.missing then
-					object:SetScript("OnClick", function() -- maybe OnDoubleClick?
-						GuideMenu:ActivateGuide(ZGV:GetGuideByTitle(e.guide))
-					end)
-				end
-			end
-		elseif e.folder then
-			e.folder = e.folder:gsub("\\$","")
-			if not e.text then
-				local path,tit = e.folder:match("^(.*)\\+(.-)$")
-				e.text = tit
-			end
-
-			object:SetScript("OnClick", function() GuideMenu:Show(e.folder) end)
-		else
-			object:SetPushedTextOffset(0,0)
-		end
-		return object
-	end
-
-	GuideMenu.Parsers.title = function(parent,e,width,fontsize,center,volume)
-		local space = e.space or 30
-		width = width or e.width or 552
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetWidth(width)
-			:SetText(featured_colourise(e.text))
-			:SetFont(e.volume or FONT,e.fontsize or 18)
-		.__END
-		if e.center then object.text:SetJustifyH("CENTER") end
-		object.text:SetWordWrap(false)
-		local text_height = object.text:GetStringHeight()
-		object:SetHeight(text_height)
-
-		object.ztype = "title"
-		object.space = space
-		return object,text_height,space
-	end
-
-	GuideMenu.Parsers.banner = function(parent,e,width)
-		local space = e.space or 16
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetSize(width,e.height or 109)
-		.__END
-
-		object:SetTexture(e.image)
-		--object.cursor = "Interface\\CURSOR\\vehichleCursor"
-
-		if e.top then object:SetTexCoord(e.top, e.bottom, e.left, e.right) end
-
-		if e.onclick then
-			object:SetHighlightTexture(ZGV.DIR.."\\Skins\\white")
-			--object:GetHighlightTexture()
-			CHAIN(object:GetHighlightTexture())
-				:SetBlendMode("ADD")
-				:SetAlpha(0.1)
-		end
-
-
-		object.ztype = "banner"
-		object.space = space
-		return object,e.height or 109,space
-	end
-
-	GuideMenu.Parsers.text = function(parent,e,width,fontsize,center)
-		local space = e.space or 5
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetFont(FONT,e.fontsize or 13)
-			:SetWidth(width)
-			:SetText(featured_colourise(e.text))
-			
-		.__END
-		CHAIN(object.text)
-			:SetWordWrap(true)
-			:SetWidth(width)
-			:SetSpacing(6)
-			:ClearAllPoints()
-			:SetPoint("LEFT",2,0)
-
-		if e.center then
-			object.text:SetJustifyH("CENTER") 
-		else
-			object.text:SetJustifyH("LEFT")
-		end
-
-		local text_height = object.text:GetStringHeight()
-		object:SetHeight(text_height)
-
-		object.ztype = "text"
-		object.space = space
-		return object,text_height,space
-	end
-
-	GuideMenu.Parsers.section = function(parent,e,width)
-		local space = e.space or 10
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetWidth(width)
-			:SetText(featured_colourise(e.text))
-			:SetFont(FONTBOLD,14)
-		.__END
-
-		local text_height = object.text:GetStringHeight()
-		object:SetHeight(text_height)
-
-		object.ztype = "section"
-		object.space = space
-		return object,text_height,space
-	end
-
-	GuideMenu.Parsers.item = function(parent,e,width,mode,size)
-		local space = e.space or 5
-		mode = mode or e.mode
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetWidth(width)
-			:SetFont(FONT,13)
-			:SetTexture(ZGV.IconSets.StepLineIcons.file)
-		.__END
-		if size == "S" then
-			object:SetTexCoord(unpack(ZGV.IconSets.StepLineIcons['DOT'].texcoord))
-		else
-			object:SetTexCoord(unpack(ZGV.IconSets.StepLineIcons['BIGDOT'].texcoord))
-		end
-	
-		
-		local guide = (object.guide or e.guide) and ZGV:GetGuideByTitle(object.guide or e.guide)
-		local folder = (object.folder or e.folder) and ZGV:FindOrCreateGroup(ZGV.registered_groups,object.folder or e.folder,"onlyfind")
-		
-		if (guide and not guide.missing) or folder then
-			object:SetText(featured_colourise(e.text,false,guide and guide.devonly))
-		else
-			object:SetText(featured_colourise(e.text,(object.guide or e.guide or object.folder or e.folder)))
-		end
-		
-		if not mode or mode=="overview" then -- if non standard call (list, home page) don't show background and don't set tooltip functions
-			CHAIN(object)
-				:SetBackdrop(SkinData("MainBackdrop"))
-				:SetBackdropColor(ZGV.F.HTMLColor("#222222"))
-				:SetBackdropBorderColor(0,0,0,0)
-
-			function object:onenterfunc()
-				local guide = ZGV:GetGuideByTitle(e.guide)
-				local tooltip = GuideMenu.FeaturedTooltip
-
-				if guide and not guide.missing then 
-					if not guide.description or guide.description=="" then return end
-					tooltip.Text:SetText(object.tooltip or guide.description)
-
-					if guide.headerdata.model then
-						tooltip.GuideModel:SetModels(guide.headerdata.model)
-						tooltip.GuideModel:Show()
-						tooltip.Text:SetWidth(150)
-						tooltip:SetHeight(max(GuideMenu.FeaturedTooltip.Text:GetStringHeight()+10,100))
-					else
-						tooltip.GuideModel:Hide()
-						tooltip.Text:SetWidth(250)
-						tooltip:SetHeight(GuideMenu.FeaturedTooltip.Text:GetStringHeight()+10)
-					end
-				else
-					tooltip.GuideModel:Hide()
-					tooltip.Text:SetText(L["guidemenu_missing_guide"])
-					tooltip.Text:SetWidth(250)
-					tooltip:SetHeight(GuideMenu.FeaturedTooltip.Text:GetStringHeight()+10)
-				end
-				
-				tooltip:SetPoint("BOTTOMLEFT",object,"TOPLEFT")
-				--tooltip:SetParent(object)
-				tooltip:Show()
-			end
-
-			function object:onleavefunc()
-				GuideMenu.FeaturedTooltip:Hide()
-			end
-		end
-
-
-		CHAIN(object.tex)
-			:ClearAllPoints()
-			:SetPoint("TOPLEFT",3,1)
-			:SetSize(16,16)
-			:SetVertexColor(ZGV.F.HTMLColor("#fe6100ff"))
-
-		CHAIN(object.text)
-			--:SetPoint("TOP")
-			:SetPoint("LEFT",object.tex,"RIGHT",7,0)
-			:SetWidth(width-15)
-			:SetWordWrap(mode~="overview")
-			:SetSpacing(4)
-
-		if e.icon then
-			CHAIN(object.tex)
-				:ClearAllPoints()
-				:SetSize(14,14)
-				:SetVertexColor(1,1,1,1)
-				:SetPoint("LEFT",3,0)
-			if e.guide then
-				local guide = ZGV:GetGuideByTitle(e.guide)
-				ZGV.IconSets.TabsIcons[e.guide.type]:AssignToTexture(object.tex)
-			else
-				ZGV.IconSets.TabsIcons[e.icon]:AssignToTexture(object.tex)
-			end
-		end
-
-		if GuideMenu.Parsers.ICONS and mode~="home" then
-			CHAIN(object.tex)
-				:ClearAllPoints()
-				:SetSize(14,14)
-				:SetVertexColor(1,1,1,1)
-				:SetPoint("LEFT",3,0)
-				:SetTexture(ZGV.IconSets.GuideIconsSmall.file)
-			object.text:SetPoint("LEFT",object.tex,"RIGHT",4,-1)
-			function object:updatefunc()
-				if e.guide then
-					local guide = ZGV:GetGuideByTitle(e.guide)
-					local status=guide and guide.GetStatus and guide:GetStatus("detailed")
-					local complete=(status=="COMPLETE")
-
-					if complete then
-						self.tex:SetTexture(ZGV.IconSets.StepLineIcons.file)
-						self.tex:SetTexCoord(unpack(ZGV.IconSets.StepLineIcons['CHECK'].texcoord))
-						if not mode then
-							CHAIN(self)
-								:SetBackdropColor(ZGV.F.HTMLColor(ZGV_Override_BG or "#003300"))
-								:SetBackdropBorderColor(ZGV.F.HTMLColor(ZGV_Override_BD or "#004400"))
-						end
-					else
-						self.tex:SetTexCoord(unpack(ZGV.IconSets.GuideIconsSmall['GUIDE'].texcoord))
-						if not mode then
-							CHAIN(self)
-								:SetBackdropColor(ZGV.F.HTMLColor("#222222"))
-								:SetBackdropBorderColor(0,0,0,0)
-						end
-					end
-				elseif e.folder then
-					self.tex:SetTexCoord(unpack(ZGV.IconSets.GuideIconsSmall['FOLDER'].texcoord))
-				end
-			end
-
-			object:updatefunc()
-		end
-
-		local text_height = object.text:GetStringHeight()+5
-		if not mode then
-			text_height = text_height+10
-			space = 0
-		end
-
-		object:SetHeight(text_height)
-
-		object.ztype = "item"
-		object.space = space
-		return object,text_height,space
-	end
-
-	GuideMenu.Parsers.list = function(parent,e,width,fontsize)
-		-- item, but without icon and wordwrapped 
-		local object,height,space,_,size = GuideMenu.Parsers.item(parent,e,width,"home",e.size)
-
-		local text_height = object.text:GetStringHeight()
-		object:SetHeight(text_height)
-
-		if fontsize then object:SetFont(FONT,e.fontsize) end
-		
-		object.ztype = "list"
-		return object,text_height,space,size
-	end
-
-	GuideMenu.Parsers.separator = function(parent,e,width)
-		local space = e and e.space or 15
-		width = width or (e and e.width) or GuideMenu.Parsers.WIDTH
-		local object = CHAIN(parent:CreateTexture())
-			:SetTexture(ZGV.DIR.."\\Skins\\white")
-			:SetSize(width,1)
-			:SetVertexColor(ZGV.F.HTMLColor("#363636ff"))
-		.__END
-
-		object.ztype = "separator"
-		object.space = space
-		return object,1,space
-	end
-
-	GuideMenu.Parsers.columns = function(parent,e,width)
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-		local space = 5
-	
-		local object = CHAIN(CreateFrame("Frame", nil, parent))
-			:SetWidth(width)
-			:SetHeight(20)
-		.__END
-		object.Columns = {}
-
-		local count = 0
-		for i=2,#e do
-			if e[i][1]=="column" then count=count+1 end
-		end
-
-		local c_width = math.floor((width - 5*(count-1)) / max(1,count))
-
-		local current_column
-		local height = 0
-		local max_height = 0
-		local prev
-
-		local padding = 5
-
-
-		if count>0 then
-			for i=2,#e do -- from 2, since 1 is the "columns" keyword
-				local element = e[i]
-				if element[1]=="column" then
-					local column = CHAIN(CreateFrame("Frame", nil, object)):SetWidth(c_width).__END
-					current_column = column
-					height = 0
-					prev = nil
-					column.Elements = {}
-					table.insert(object.Columns,column)
-					if #object.Columns==1 then
-						column:SetPoint("TOPLEFT",object,"TOPLEFT",0,0)
-					else
-						column:SetPoint("TOPLEFT",object.Columns[#object.Columns-1],"TOPRIGHT",5,0)
-					end
-
-				else
-					if (not element.faction or (element.faction==faction)) then	
-						local subobject, s_height, s_space
-						if GuideMenu.Parsers[element[1]] then
-							subobject,s_height,s_space = GuideMenu.Parsers[element[1]](current_column,element,c_width)
-						else
-							print("Unknown column element at",i,element[1])
-							return false
-						end
-
-						table.insert(current_column.Elements,subobject)
-
-						element.object = subobject
-
-
-						if prev then
-							subobject:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-padding)
-						else
-							subobject:SetPoint("TOPLEFT",current_column,"TOPLEFT",0,-padding)
-						end
-						height=height+s_height+padding
-						prev=subobject
-					end
-				end
-				max_height = math.max(max_height,height)
-			end
-		else -- no columns defined, auto assign two column layout
-			for i=2,#e do -- from 2, since 1 is the "columns" keyword
-				local element = e[i]
-				if (not element.faction or (element.faction==faction)) then
-					count = count + 1
-				end
-			end
-
-			if count==0 then count = 1 end
-
-			count = math.min((e.count or 2),count)
-			c_width = math.floor((width - 5*(count-1)) / count)
-			for i=1,count do
-				local column = CHAIN(CreateFrame("Frame", nil, object)):SetWidth(c_width).__END
-				height = 0
-				column.Elements = {}
-				table.insert(object.Columns,column)
-				if #object.Columns==1 then
-					column:SetPoint("TOPLEFT",object,"TOPLEFT",-3,0)
-				else
-					column:SetPoint("TOPLEFT",object.Columns[#object.Columns-1],"TOPRIGHT",5,0)
-				end
-			end
-
-			local prev = {}
-
-			local validcount = 1
-			for i=2,#e do -- from 2, since 1 is the "columns" keyword
-				local element = e[i]
-				if (not element.faction or (element.faction==faction)) then
-					validcount = validcount + 1
-					local subobject, s_height, s_space
-
-					local position = (validcount-2)%count+1
-
-					if GuideMenu.Parsers[element[1]] then
-						subobject,s_height,s_space = GuideMenu.Parsers[element[1]](object.Columns[position],element,c_width)
-					else
-						print("Unknown subcolumn element at",i,element[1])
-						return false
-					end
-
-					table.insert(object.Columns[position].Elements,subobject)
-					element.object = subobject
-
-
-					if prev[position] then
-						subobject:SetPoint("TOPLEFT",prev[position],"BOTTOMLEFT",0,-padding)
-					else
-						subobject:SetPoint("TOPLEFT",object.Columns[position],"TOPLEFT",0,-padding)
-					end
-					
-					if position==1 then height=height+s_height+padding end
-					prev[position]=subobject
-
-					max_height = math.max(max_height,height)
-				end
-			end
-		end
-
-		max_height = max_height + padding
-
-
-		for i,column in ipairs(object.Columns) do
-			column:SetHeight(max_height)
-		end
-
-		object:SetHeight(max_height+space)
-
-
-		object.ztype = "columns"
-		object.space = space
-	
-		return object,max_height,space
-	end
-
-	GuideMenu.Parsers.content = function(parent,e,width)
-		local space = e.space or 10
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-	
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetWidth(width)
-			:SetText(featured_colourise(e.text))
-			:SetFont(FONTBOLD,16)
-		.__END
-		object.text:SetWordWrap(false)
-
-		object.Toggle = CHAIN(parent:CreateTexture())
-			:SetTexture(ZGV.ButtonSets.TitleButtons.file)
-			:SetSize(14,14)
-			:SetVertexColor(1,1,1,1)
-			:SetPoint("RIGHT",object,"RIGHT",0,0)
-		.__END
-
-		object:SetScript("OnClick",function(self) 
-			self.displayed = not self.displayed
-			self:UpdateText()
-
-			GuideMenu.ActiveFeatured[3][self.zident] = not self.displayed
-			GuideMenu:ShowFeatured(unpack(GuideMenu.ActiveFeatured))
-		end) 
-
-		function object:UpdateText() -- after loading of clicking
-			if self.displayed then
-				object.Toggle:SetTexCoord(unpack(ZGV.ButtonSets.TitleButtons['MINUS'].texcoords[1]))
-			else
-				object.Toggle:SetTexCoord(unpack(ZGV.ButtonSets.TitleButtons['PLUS'].texcoords[1]))
-			end
-		end
-
-		object.Decor = CHAIN(parent:CreateTexture())
-			:SetTexture(ZGV.DIR.."\\Skins\\white")
-			:SetSize(width,1)
-			:SetVertexColor(ZGV.F.HTMLColor("#363636ff"))
-			:SetPoint("TOP",object,"BOTTOM",0,5)
-		.__END
-
-		object.Elements = {}
-
-		local text_height = object.text:GetStringHeight() + 30 -- added space for decor
-		object:SetHeight(text_height)
-
-		object.ztype = "content"
-		object.space = space
-		return object,text_height,space
-	end
-
-	local function value_find(haystack,needle)
-		needle = needle:lower()
-		if type(haystack)=="table" then
-			for _,straw in pairs(haystack) do
-				if straw:lower()==needle then
-					return true
-				end
-			end
-			return false
-		else
-			return haystack:lower()==needle
-		end
-	end
-
-	GuideMenu.Parsers.guideslist = function(parent,e,width,prepare)
-		local space = e and e.space or 15
-		width = width or (e and e.width) or GuideMenu.Parsers.WIDTH
-
-		e.text = e.text or e.content
-
-		local results = {}
-
-		-- get all guides with properties matching given filters
-		for _,guide in ipairs(ZGV.registeredguides) do
-			local valid = true
-			for key,value in pairs(e.filters) do
-				if guide[key] then
-					if value~="*" then
-						if type(value)=="table" then
-							local mode_and = value[1]=="AND"
-							local lvalid = mode_and
-							for _,subvalue in pairs(value) do
-								if mode_and then
-									if subvalue~="AND" then
-										lvalid = lvalid and value_find(guide[key],subvalue)
-									end
-								else
-									lvalid = lvalid or value_find(guide[key],subvalue)
-								end
-							end
-							valid = valid and lvalid
-						else
-							valid = valid and value_find(guide[key],value)
-						end
-					end
-					-- value=="*" is always true
-				else
-					valid=false
-				end
-			end
-			if valid then table.insert(results,{guide.title,guide.title_short}) end
-		end
-		e.columns = e.columns or 2
-
-		table.sort(results,function(a,b) return a[2]<b[2] end)
-
-		local guideslist_content
-		if e.text and not prepare then
-			guideslist_content = GuideMenu.Parsers.content(parent,e,width)
-		end
-
-		if #results==0 and e.text then
-			if guideslist_content then 
-				guideslist_content.force_hidden=true 
-				guideslist_content.displayed=false 
-				guideslist_content:Hide()
-				guideslist_content.Toggle:Hide()
-				guideslist_content.Decor:Hide()
-			end
-			return false,0,0,guideslist_content
-		end
-		
-		-- create placeholder to be fed to columns parser later
-		local creator = {count=e.columns}
-
-		-- add guides to columns, spreading evenly
-		local counter = 0
-		for i,v in ipairs(results) do
-			counter = counter + 1
-			table.insert(creator,{"item",guide=v[1]})
-			if e.limit and counter == e.limit then break end
-		end
-
-		-- set creator to be columns
-		table.insert(creator,1,"columns")
-
-		if prepare then
-			return creator
-		end		
-
-		-- make columns
-		local object, height, space = GuideMenu.Parsers.columns(parent,creator,width)
-
-		object.ztype = "guideslist"
-		return object,1,space,guideslist_content
-	end
-
-	GuideMenu.Parsers.showcase_container = function(parent,e,width) -- not used by hand, creates container for guide type in showcase mode (icon, title, frame)
-		local space = e.space or 10
-		width = width or e.width or GuideMenu.Parsers.WIDTH
-		local object = CHAIN(GuideMenu.Parsers.generic(parent,e))
-			:SetWidth(width)
-			:SetText(featured_colourise(e.text))
-			:SetFont(FONTBOLD,14)
-		.__END
-
-		if ZGV.IconSets.TabsIcons[e.type] then
-			object:SetTexture(ZGV.IconSets.TabsIcons.file)
-			CHAIN(object.tex)
-				:ClearAllPoints()
-				:SetPoint("LEFT")
-				:SetSize(18,18)
-				:Show()
-			object.text:SetPoint("LEFT",20,0)
-
-			object.tex:SetTexCoord(unpack(ZGV.IconSets.TabsIcons[e.type].texcoord))
-		end
-		
-		local text_height = object.text:GetStringHeight()
-		object:SetHeight(text_height)
-		--object:SetBackdropBorderColor(1,1,1,1)
-
-		object.ztype = "section"
-		object.space = space
-		return object,text_height,space
-	end
-
-	GuideMenu.Parsers.expanded_container = function(parent,e,width) -- not used by hand, creates container for guide type in expanded mode (back arrow, title, frame)
-		local object = CHAIN(ui:Create("Frame",parent))  -- main frame of showcase display for given section
-			:SetPoint("TOP",0,-5)
-			:SetPoint("LEFT",5,0)
-			:SetWidth(GuideMenu.Parsers.WIDTH)
-			:SetHeight(100)
-			:Hide()
-			:SetClampedToScreen(false)
-		.__END
-		local header,h_height,hspace = GuideMenu.Parsers.section(object,e)
-		header:SetPoint("TOPLEFT",10,-10)
-		object.header = header
-		if e.title then header:SetText(featured_colourise(e.title)) end
-
-		header.backicon = CHAIN(header:CreateTexture())
-			:SetSize(12,12)
-			:SetPoint("LEFT")
-			:SetTexture(ZGV.ButtonSets.TitleButtons.file)
-			:SetTexCoord(unpack(ZGV.ButtonSets.TitleButtons['STEP_PREV'].texcoords[1]))
-		.__END
-		CHAIN(header.text)
-			:ClearAllPoints()
-			:SetPoint("LEFT",header.backicon,"RIGHT",5,0)
-			:SetFont(FONTBOLD,15)
-
-		object.ztype = "expanded_container"
-		object.space = hspace+10
-		object.storedheight = h_height+10
-		return object, h_height+10, hspace+10
-	end
-
-
 function GuideMenu:CreateHome()
-	GuideMenu.Parsers.WIDTH = 552
-	GuideMenu.Parsers.ICONS = false
-	
 	ZGV.Widgets.Config = CHAIN(ZGV.CreateFrameWithBG("Frame", nil, GuideMenu.MainFrame.WideColumnHomeInner))
 		:SetBackdropColor(0,0,0,0)
 		:SetMovable(true)
@@ -1949,478 +1239,145 @@ function GuideMenu:UpdateHomeWidgets()
 	end
 end
 
-local function grab_featured(element,array,hash)
-	if (element[1]=="item") and (element.guide or element.folder) and (not element.faction or (element.faction==faction)) and (not element.beta or ZGV.BETA) and (not element.roadmaponly) then
-		if not hash[element.guide or element.folder] then 
-			if element.guide then
-				table.insert(array,{"item",guide=element.guide,text=element.text})
-			else
-				table.insert(array,{"item",folder=element.folder,text=element.text})
-			end
-			hash[element.guide or element.folder] = true
+function GuideMenu:StartFeatured()
+	ZGV.db.profile.featuredhide = ZGV.db.profile.featuredhide or {}
+
+	GuideMenu.FeaturedThread = coroutine.create(GuideMenu.ParseFeatured)
+	GuideMenu.FeaturedThreadTimer = ZGV:ScheduleRepeatingTimer(function()
+		local ok,ret = coroutine.resume(GuideMenu.FeaturedThread)
+		if not ok then print(ok,ret) end
+
+		if coroutine.status(GuideMenu.FeaturedThread )=="dead" then
+			ZGV:CancelTimer(GuideMenu.FeaturedThreadTimer)
+			GuideMenu.FeaturedThreadTimer = nil
+		end
+	end, 0)
+end
+
+local function grab_showcase(element,array,source)
+	local guide = element.guide
+	local folder = element.folder
+
+	if source=="guideslist" then -- from guideslist
+		if not array.hash[element[1]] then 
+			table.insert(array,{"item",guide=element[1],text="**"..element[2].."**"})
+			array.hash[element[1]] = true
+			return 1
+		end
+	elseif (element[1]=="item") and (element.guide or element.folder) and (not element.faction or (element.faction==faction)) and (not element.beta or ZGV.BETA) and (not element.roadmaponly) then
+		if not array.hash[element.guide or element.folder] then 
+			table.insert(array,{"item",guide=element.guide,folder=element.folder,text=element.text})
+			array.hash[element.guide or element.folder] = true
 			return 1
 		end
 	end
 	return 0
 end
 
+function GuideMenu:ParseFeatured()
+	GuideMenu.FeaturedShowcase = {}
+	GuideMenu.FeaturedRoadmap = {}
 
-GuideMenu.ActiveFeatured = {}
-local function CreateFeatured(index,section,featuredhide)
-	local MF = GuideMenu.MainFrame
-	local data = GuideMenu.Featured[index]
-
-	local auto_featured_limit = 10
-
-	MF.FullColumnFeatured.Dropdown:SetCurrentSelectedByValue(index)
-	GuideMenu.Parsers.lasttick = debugprofilestop()
-
-	-- hide previous set
-	for _,dataset in ipairs(GuideMenu.Featured) do
-		for i,e in ipairs(dataset) do if e.object then e.object:Hide() end end
-		if dataset.Blocks then for _,block in ipairs(dataset.Blocks) do block:Hide() end end
-		if dataset.Expanded then for _,block in ipairs(dataset.Expanded) do block:Hide() end end
-		if dataset.Showcase then for _,block in ipairs(dataset.Showcase) do block:Hide() end end
-	end
-
-	if not data.Blocks then
-		--------------------------- preparation
-		local parent = MF.FullColumnFeaturedInner
-		local prev
-
-		GuideMenu.Parsers.WIDTH = FEATURED_COLUMN_WIDTH
-		GuideMenu.Parsers.ICONS = true
-		
-		-- prepare proper structer
-		local section
-
-		local content_block_faction
-		for ei,element in ipairs(data) do
-			-- inherit faction filters from sections
-			if element[1]=="content" or (element[1]=="guideslist" and element[1].text) then 
-				content_block_faction=element.faction
-			elseif element[1]=="columns" then
-				for si,subelement in ipairs(element) do if type(subelement)=="table" then
-					subelement.faction = subelement.faction or content_block_faction
-				end end
-			else
-				element.faction = element.faction or content_block_faction
-			end
-
-
-
-			
+	-- split featured groups into sections
+	local featured = {}
+	for _,group in ipairs(GuideMenu.Featured) do
+		local parsedgroup = {}
+		local parsedsection
+		for _,element in ipairs(group) do
 			if element[1]=="section" then
-				if element.text~="SHOWCASE" then
-					data[element.text]={}
-					section=element.text
-				end
-			elseif section then
-				if element[1]=="featured" then
-					if element.featured_filters then
-						data[section].featured_filters = element.featured_filters
-					else
-						data[section].featured = element
-						table.remove(data[section].featured,1)
-					end
-				else
-					table.insert(data[section],element)
-				end
-				if element[1]=="banner" and element.showcaseonly then
-					data[section].featuredbanner = element
-				end
-				data[ei]=nil
-			end			
-		end
-
-		-- cleanup, add guide names
-		local cname,category
-		for cname,category in pairs(data) do if type(category)=="table" then
-			if category.featured_filters then
-				category.featured = {}
-
-				-- get all guides with properties matching given filters
-				local results = {}
-				for _,guide in ipairs(ZGV.registeredguides) do
-					local valid = true
-					for key,value in pairs(category.featured_filters) do
-						valid = valid and guide[key]==value
-					end
-					if valid then table.insert(results,{guide.title,guide.title_short}) end
-				end
-
-				table.sort(results,function(a,b) return a[2]<b[2] end)
-				for i=1,auto_featured_limit do if results[i] then
-					table.insert(category.featured,{"item",guide=results[i][1]}) 
-				end end
-
+				parsedsection = {name=element.text}
+				table.insert(parsedgroup,parsedsection)
 			end
 
-			if not category.featured then -- build showcase featured from existing expanded elements
-				category.featured = {}
-				local hash = {}
-				local count=0
-				category.force_showcase = false
-				for ci,element in ipairs(category) do
-					if element[1]=="columns" then
-						for si,subelement in ipairs(element) do
-							if count<auto_featured_limit then
-								count = count + grab_featured(subelement,category.featured,hash)
-							end
-							if element.roadmaponly then category.force_showcase=true end
+			table.insert(parsedsection,element)
+		end
+		parsedgroup.title = group.title
+		parsedgroup.group = group.group
+
+		table.insert(featured,parsedgroup)
+	end
+	coroutine.yield()
+
+	-- build showcase data
+	local auto_showcase_limit = 7 -- how many guides to pull into showcase view
+	for _,group in ipairs(featured) do
+		local parsedgroup = {}
+		parsedgroup.title = group.title
+		parsedgroup.group = group.group
+		parsedgroup.separators = {}
+		table.insert(GuideMenu.FeaturedShowcase,parsedgroup)
+
+		for _,section in ipairs(group) do
+			parsedsection = {name = section.name, hash={}}
+			local forced = false
+			local count=0
+
+			for _,element in ipairs(section) do
+				if element.showcaseonly then table.insert(parsedsection,element) end 
+				if element[1]=="section" then table.insert(parsedsection,element) end 
+
+				if element.roadmaponly then forced=true end -- if anything is set to be forced in roadmap, we want to show the section in showcase 
+
+				if element[1]=="columns" then
+					for si,subelement in ipairs(element) do
+						if count<auto_showcase_limit then
+							count = count + grab_showcase(subelement,parsedsection,"columns")
 						end
-					elseif element[1]=="guideslist" then
-						if element.filters then element.filters.type=element.filters.type or cname end
-						local res = GuideMenu.Parsers.guideslist(parent,element,0,"prepare")
-						if res then
-							for si,subelement in ipairs(res) do
-								if count<auto_featured_limit then
-									count = count + grab_featured(subelement,category.featured,hash)
-								end
+						if element.roadmaponly then forced=true end
+					end
+				elseif element[1]=="guideslist" then
+					local res = ZGV:FindFilteredGuides(element.filters)
+					if res then
+						for si,subelement in ipairs(res) do
+							if count<auto_showcase_limit then
+								count = count + grab_showcase(subelement,parsedsection,"guideslist")
 							end
 						end
-					else
-						if count<auto_featured_limit then
-							count = count + grab_featured(element,category.featured,hash)
-						end
-					end
-
-				end
-			end
-
-			for i=#category.featured,1,-1 do
-				local e=category.featured[i]
-				if not ((not e.faction or (e.faction==faction)) and (not e.beta or ZGV.BETA)) then
-					table.remove(category.featured,i)
-				end
-			end
-		end end
-
-		--------------------------- showcase
-		-- add elements to overview page
-		for i,e in ipairs(data) do
-			if (not e.faction or (e.faction==faction)) and (not e.beta or ZGV.BETA) then
-				local object, e_height, space
-				if GuideMenu.Parsers[e[1]] then
-					if e[1]~="section" then
-						object,e_height,space= GuideMenu.Parsers[e[1]](parent,e,785)
 					end
 				else
-					print("Unknown showcase element at",i,e[1])
-					return false
-				end
-
-				if object then
-					e.object = object
-					object:Hide()
-
-					if prev then
-						object:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-space)
-					else
-						object:SetPoint("TOPLEFT",parent,"TOPLEFT",12,-7)
-					end
-					prev = object
-				end
-			end
-		end
-
-		-- build containers
-		local blockindex = 1
-		data.Blocks = {}
-		data.Showcase = {}
-		for i,group in pairs(ZGV.registered_groups.groups) do
-			if group and data[group.name] and (data[group.name].force_showcase or data[group.name].featured and #data[group.name].featured>0) then
-				local parentindex = (blockindex-1)%3+1
-				local block = CHAIN(ui:Create("Frame",MF.FullColumnFeaturedInner,nil))
-					:SetPoint("TOP",0,-5)
-					:SetPoint("LEFT",FEATURED_COLUMN_WIDTH*(parentindex-1)+5+(5*parentindex-5),0)
-					:SetWidth(FEATURED_COLUMN_WIDTH)
-					:SetClampedToScreen(false)
-					:SetBackdropColor(ZGV.F.HTMLColor("#222222"))
-					:SetBackdropBorderColor(0,0,0,0)
-					:Hide()
-				.__END
-				block.footer = CHAIN(CreateFrame("Button", nil, block, nil))
-					:SetPoint("BOTTOMLEFT",5,0)
-					:SetPoint("BOTTOMRIGHT",-5,0)
-					:SetHeight(20)
-				.__END
-
-				block.footer.intext = CHAIN(block.footer:CreateFontString())
-					:SetAllPoints()
-					:SetHeight(20)
-					:SetFont(ZGV.Font,10)
-					:SetJustifyH("LEFT")
-					:SetTextColor(1,1,1,1)
-					:SetText("See more")
-					:SetIgnoreParentAlpha(true)
-				.__END
-				block.footer.decor = CHAIN(block.footer:CreateTexture())
-					:SetVertexColor(0.2,0.2,0.2,1)
-					:SetPoint("TOPLEFT",block.footer.intext,0,2)
-					:SetPoint("TOPRIGHT",block.footer.intext,0,2)
-					:SetHeight(1)
-					:SetTexture(ZGV.SKINSDIR.."white")
-				.__END
-				block.footer.arrow = CHAIN(block.footer:CreateTexture())
-					:SetPoint("RIGHT",block.footer.intext)
-					:SetVertexColor(0.9,0.9,0.9,1)
-					:SetSize(12,12)
-				.__END
-				ZGV.ButtonSets.TitleButtons.STEP_NEXT:AssignToTexture(block.footer.arrow)
-				
-				data.Blocks[blockindex] = block
-				if prev then
-					block:SetPoint("TOP",prev,"BOTTOM",0,-5)
-				end
-
-				block.type=group.name
-				block.text=ZGV.IconSets.TabsIcons[group.name].label
-				block.title=data[group.name].title
-
-				blockindex = blockindex + 1
-			end
-		end
-
-		-- fill containers
-		local prev,object,e_height
-		local prev_row = 0
-		data.Separators = {}
-		for i,block in ipairs(data.Blocks) do
-			GuideMenu.Parsers.WIDTH = FEATURED_COLUMN_WIDTH
-
-			-- make header
-			block.Objects = {}
-
-			local object,e_height,space = GuideMenu.Parsers.showcase_container(block,block,252)
-			object:SetScript("OnClick",function() GuideMenu:ShowFeatured(index,i) end)
-			block.footer:SetScript("OnClick",function() GuideMenu:ShowFeatured(index,i) end)
-			
-			object:SetPoint("TOPLEFT",block,"TOPLEFT",5,-7)
-			prev = object
-
-
-			-- make entries
-			local height = e_height + 14 + 20 -- start with header and space, plus see more footer
-
-			if data[block.type].featuredbanner then
-				data[block.type].featuredbanner.onclick = function() ZGV.GuideMenu:ShowFeatured(index,block.type) end
-				local object, e_height, space = GuideMenu.Parsers.banner(block,data[block.type].featuredbanner,252)
-
-				height = height + e_height + space
-				
-				object:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-space)
-				prev=object
-
-				table.insert(block.Objects,object)
-			end
-
-			for j,e in ipairs(data[block.type].featured) do
-				local object, e_height, space = GuideMenu.Parsers.item(block,e,252,"overview")
-
-				height = height + e_height + space
-
-				object:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-space)
-				prev=object
-
-				table.insert(block.Objects,object)
-			
-			end
-
-			-- resize, position and display category
-			local row = math.floor((i-1)/3)+1
-
-			if i%3==1 then -- first block of row, make separator, we will attach next rows to it. 
-				local object,e_height,space = GuideMenu.Parsers.separator(block)
-
-				data.Separators[row] = object
-				data.Separators[row]:SetVertexColor(0,0,0,0)
-				data.Separators[row]:SetPoint("TOP",block,"BOTTOM",0,0)
-			end
-
-			-- store the height the row has, expanding to tallest element
-			data.Separators[row].rowheight = math.max(data.Separators[row].rowheight or 0,height)
-
-			if row>1 then
-				block:SetPoint("TOP",data.Separators[row-1],"BOTTOM",0,-5)
-			end
-		end
-	end
-
-	MF.FullColumn.Name:SetText("Featured: "..data.title)
-	GuideMenu.GuideCategory=nil
-
-	local total_height = 0
-	if not section then -- overview mode, set this up now, so we can work on expanded in background
-		-- set all overview mode blocks in a row to a single height
-		for i,block in ipairs(data.Blocks) do 
-			local row = math.floor((i-1)/3)+1
-			block:SetHeight(data.Separators[row].rowheight)
-		end			
-
-		-- get height of all elements
-		for i,e in ipairs(data) do
-			if e.object then 
-				e.object:Show()
-				total_height = total_height + e.object:GetHeight() + e.object.space
-			end
-		end
-
-		-- and rows
-		for i,separator in ipairs(data.Separators) do
-			total_height = total_height + separator.rowheight + 5
-		end
-
-
-		for _,block in ipairs(data.Blocks) do
-			block:Show()
-		end
-
-		MF.FullColumnFeaturedInner:SetHeight(total_height)
-		MF.FullColumnFeatured:TotalValue(total_height)
-		MF.FullColumnFeatured:SetValue(0)
-		MF.FullColumnFeatured:SetVerticalScroll(0)
-	end
-
-	--------------------------- expanded
-	data.Expanded = data.Expanded or {}
-
-	local function show_section(section)
-		-- all elements are ready, get total size, show what is needed
-		-- reanchor, since visibility of secions may have been changed
-		-- make expanded mode container
-		GuideMenu.Parsers.WIDTH = MAINFRAME_WIDTH
-		
-		local expanded_frame = data.Expanded[section]
-		if not expanded_frame then return end
-		
-		local expanded_height = expanded_frame.storedheight + expanded_frame.space
-
-		local prev = expanded_frame.header
-		for ci,element in ipairs(expanded_frame.Elements) do
-			if not element.parentblock or element.parentblock.displayed then
-				element:Show()
-				if element.ztype=="list" and (expanded_frame.Elements[ci-1] and expanded_frame.Elements[ci-1].ztype~="list") then
-					element.space = element.space + 5 -- additional margin before first list element
-				end
-
-				expanded_height = expanded_height + element:GetHeight() + element.space
-				element:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-element.space-(ci==1 and 5 or 0))
-
-				if element.updatefunc then element:updatefunc() end -- update guide status markers
-
-				if element.Columns then
-					for _,column in ipairs(element.Columns) do
-						for _,celement in ipairs(column.Elements) do
-							if celement.updatefunc then celement:updatefunc() end -- update guide status markers
-						end
-					end
-				end
-
-				prev = element
-			else
-				element:Hide()
-			end
-		end
-
-		CHAIN(expanded_frame)
-			:SetHeight(expanded_height)
-			:SetBackdrop(SkinData("GuideMenuExpandedBackdrop"))
-			:SetBackdropColor(unpack(SkinData("GuideMenuExpandedBackdropColor")))
-			:SetBackdropBorderColor(unpack(SkinData("GuideMenuExpandedBackdropBorderColor")))
-
-		data.Expanded[section]:Show()
-		total_height = data.Expanded[section]:GetHeight()
-		
-		MF.FullColumnFeaturedInner:SetHeight(total_height)
-		MF.FullColumnFeatured:TotalValue(total_height)
-		MF.FullColumnFeatured:SetValue(0)
-		MF.FullColumnFeatured:SetVerticalScroll(0)
-
-
-	end
-
-	local function make_section(i,block)
-		if data.Expanded[i] and data.Expanded[i].ready then return end
-
-		-- make expanded mode container
-		GuideMenu.Parsers.WIDTH = MAINFRAME_WIDTH
-
-		local expanded_frame, expanded_height, espace = GuideMenu.Parsers.expanded_container(MF.FullColumnFeaturedInner,block,805)
-		expanded_frame.header:SetScript("OnClick",function() GuideMenu:ShowFeatured(index) end)
-		data.Expanded[i] = expanded_frame
-		expanded_frame.blocktype = block.type
-
-		expanded_height = expanded_height + espace
-
-		expanded_frame.Elements = {}
-
-		local current_content_block = nil
-		for ci,element in ipairs(data[block.type]) do
-			if element[1]=="guideslist" and element.filters then element.filters.type=element.filters.type or block.type end
-
-			if (not element.faction or (element.faction==faction)) and (not element.beta or ZGV.BETA) and (not element.showcaseonly) then
-				local object,guideslist_content
-
-				if GuideMenu.Parsers[element[1]] then
-					object, _, _, guideslist_content = GuideMenu.Parsers[element[1]](expanded_frame,element,785)
-				else
-					print("Unknown section element at",ci,element[1])
-					return false
-				end
-
-				if guideslist_content then
-					current_content_block = guideslist_content 
-					guideslist_content.zident = ("%s_%s_%d"):format(data.group,block.type,ci)
-					guideslist_content.displayed = (not guideslist_content.force_hidden) and not (element.collapsed or featuredhide[guideslist_content.zident])
-					guideslist_content:UpdateText()
-					if object then table.insert(expanded_frame.Elements,guideslist_content) end
-				end
-
-				if object then
-					element.object = object
-
-					-- store contents elements, we will need that for hiding/showing blocks
-					if current_content_block and element[1]~="content" and not (element[1]=="guideslist" and element[1].header) then
-						table.insert(current_content_block.Elements,object) 
-						object.parentblock = current_content_block
-					end
-
-					table.insert(expanded_frame.Elements,object)
-
-					-- move pointer to new content storage
-					if element[1]=="content" or (element[1]=="guideslist" and element[1].header) then 
-						current_content_block = object 
-						object.zident = ("%s_%s_%d"):format(data.group,block.type,ci)
-						object.displayed = not (element.collapsed or featuredhide[object.zident])
-						object:UpdateText()
+					if count<auto_showcase_limit then
+						count = count + grab_showcase(element,parsedsection,"element")
 					end
 				end
 			end
-		end
-		expanded_frame.ready = true
-	end
-
-	-- if we are to show section, make it if it is not ready, then show it. 
-	if section then
-		make_section(section,data.Blocks[section])
-		show_section(section) 
-	end
-
-	-- make everything else in background
-	for i,block in ipairs(data.Blocks) do
-		if not (data.Expanded[i] and data.Expanded[i].ready) then
-			make_section(i,block)
+			parsedsection.hash = nil
+			if forced or #parsedsection>0 then
+				table.insert(parsedgroup,parsedsection)
+			end
+			coroutine.yield()
 		end
 	end
+
+	-- build roadmap data
+	for _,group in ipairs(featured) do
+		local parsedgroup = {}
+		table.insert(GuideMenu.FeaturedRoadmap,parsedgroup)
+		for _,section in ipairs(group) do
+			parsedsection = {}
+			for _,element in ipairs(section) do
+				if not (element.showcaseonly or element[1]=="section") then
+					table.insert(parsedsection,element)
+				elseif element[1]=="section" then
+					table.insert(parsedsection,{"roadmap_section",text=element.text})
+				end
+			end
+			table.insert(parsedgroup,parsedsection)
+			coroutine.yield()
+		end
+	end
+	GuideMenu.FeaturedReady = true
 end
 
-function GuideMenu:ShowFeatured(index,section)
-	index = index or ZGV.db.char.lastfeatured or 1
 
+GuideMenu.ActiveFeatured = {}
+function GuideMenu:ShowFeatured(index,sectionindex)
+	local MF = GuideMenu.MainFrame
+	local total_height = 0
+	local index = index or ZGV.db.char.lastfeatured or 1
 	
+	-- if we are given string idents for group and/or section, find their numeric values
 	if type(index)=="string" then
-		for i,dataset in ipairs(GuideMenu.Featured) do
+		for i,dataset in ipairs(GuideMenu.FeaturedShowcase) do
 			if dataset.group == index then 
 				index = i 
 				break
@@ -2432,43 +1389,201 @@ function GuideMenu:ShowFeatured(index,section)
 	local data = GuideMenu.Featured[index]
 	if not data then return end
 
-	if type(section)=="string" then
-		for i,dataset in ipairs(data.Expanded) do
-			if dataset.blocktype == section then 
-				section = i 
+	if type(sectionindex)=="string" then
+		for i,dataset in ipairs(GuideMenu.FeaturedShowcase[index]) do
+			if dataset.name == sectionindex then 
+				sectionindex = i 
 				break
 			end
 		end
 	end
-	if type(section)=="string" then section = 1 end
+	if type(sectionindex)=="string" then sectionindex = 1 end
 
-
-	ZGV.db.profile.featuredhide = ZGV.db.profile.featuredhide or {}
-
-	local featuredhide = ZGV.db.profile.featuredhide
-
-	GuideMenu.ActiveFeatured[1] = index
-	GuideMenu.ActiveFeatured[2] = section
-	GuideMenu.ActiveFeatured[3] = featuredhide
-
-	GuideMenu.FeaturedThread = nil
-	GuideMenu.FeaturedThread = coroutine.create(CreateFeatured)
-	if GuideMenu.FeaturedThreadTimer then
-			ZGV:CancelTimer(GuideMenu.FeaturedThreadTimer)
-			GuideMenu.FeaturedThreadTimer = nil
-			collectgarbage() -- we orphaned old thread, so let's clean up a little
-
-	end
-	
-	GuideMenu.FeaturedThreadTimer = GuideMenu.FeaturedThreadTimer or ZGV:ScheduleRepeatingTimer(function()
-		local ok,ret = coroutine.resume(GuideMenu.FeaturedThread,index,section,featuredhide)
-		if not ok then print(ok,ret) end
-
-		if coroutine.status(GuideMenu.FeaturedThread )=="dead" then
-			ZGV:CancelTimer(GuideMenu.FeaturedThreadTimer)
-			GuideMenu.FeaturedThreadTimer = nil
+	-- hide currently visible
+	if GuideMenu.ActiveFeatured[1] then
+		for i,section in ipairs(GuideMenu.FeaturedShowcase[GuideMenu.ActiveFeatured[1]]) do
+			if section.frame then section.frame:Hide() end
 		end
-	end, 0.01)
+		for i,section in ipairs(GuideMenu.FeaturedRoadmap[GuideMenu.ActiveFeatured[1]]) do
+			if section.frame then section.frame:Hide() end
+		end
+	end
+
+	-- if needed, build frames for given group/section, lay them out, and display
+	if not sectionindex then -- we are showing showcase mode
+		local category = GuideMenu.FeaturedShowcase[index]
+
+		local blockindex = 1
+		for i,section in ipairs(category) do
+			if not section.frame then
+				local parentindex = (blockindex-1)%3+1
+				section.frame = CHAIN(CreateFrame("Button",nil,MF.FullColumnFeaturedInner,"BackdropTemplate"))
+					:SetPoint("TOP",0,-5)
+					:SetPoint("LEFT",FEATURED_COLUMN_WIDTH*(parentindex-1)+5+(5*parentindex-5),0)
+					:SetWidth(FEATURED_COLUMN_WIDTH)
+					:SetClampedToScreen(false)
+					:SetBackdrop(SkinData("MainBackdrop"))
+					:SetBackdropColor(ZGV.F.HTMLColor("#222222"))
+					:SetBackdropBorderColor(0,0,0,0)
+					:Show()
+				.__END
+
+				ZGV.Visuals:Render(section,FEATURED_COLUMN_WIDTH,section.frame,{TOPLEFT={0,0}, GUIDESTATUS=true, NOWORDWRAP=true, BOTTOMPADDING={banner=10,item=0}})
+
+				section.frame:SetScript("OnClick", function() ZGV.GuideMenu:ShowFeatured(index,i) end)
+
+				section.frame.footer = CHAIN(CreateFrame("Frame", nil, section.frame, nil))
+					:SetPoint("BOTTOMLEFT",5,0)
+					:SetPoint("BOTTOMRIGHT",-5,0)
+					:SetHeight(20)
+				.__END
+
+				section.frame.footer.intext = CHAIN(section.frame.footer:CreateFontString())
+					:SetAllPoints()
+					:SetHeight(20)
+					:SetFont(ZGV.Font,10)
+					:SetJustifyH("LEFT")
+					:SetTextColor(1,1,1,1)
+					:SetText("See more")
+					:SetIgnoreParentAlpha(true)
+				.__END
+				section.frame.footer.decor = CHAIN(section.frame.footer:CreateTexture())
+					:SetVertexColor(0.2,0.2,0.2,1)
+					:SetPoint("TOPLEFT",section.frame.footer.intext,0,2)
+					:SetPoint("TOPRIGHT",section.frame.footer.intext,0,2)
+					:SetHeight(1)
+					:SetTexture(ZGV.SKINSDIR.."white")
+				.__END
+				section.frame.footer.arrow = CHAIN(section.frame.footer:CreateTexture())
+					:SetPoint("RIGHT",section.frame.footer.intext)
+					:SetVertexColor(0.9,0.9,0.9,1)
+					:SetSize(12,12)
+				.__END
+				ZGV.ButtonSets.TitleButtons.STEP_NEXT:AssignToTexture(section.frame.footer.arrow)
+				
+				if prev then
+					section.frame:SetPoint("TOP",prev,"BOTTOM",0,-5)
+				end
+
+				section.frame:SetHeight(section.frame:GetHeight() + 15) -- add space for footer
+				section.frame.type = section.name
+				section.frame.text = ZGV.IconSets.TabsIcons[section.name].label
+				section.frame.title = section.name
+
+				blockindex = blockindex + 1
+			end
+
+			section.frame:Show()
+
+			-- resize, position and display category
+			local row = math.floor((i-1)/3)+1
+			section.row = row
+
+			if i%3==1 then -- first block of row, make separator, we will attach next rows to it. 
+				local object,e_height,space = ZGV.Visuals:separator(section.frame,100)
+
+				category.separators[row] = object
+				category.separators[row]:SetVertexColor(0,0,0,0)
+				category.separators[row]:SetPoint("TOP",section.frame,"BOTTOM",0,0)
+			end
+
+			-- store the height the row has, expanding to tallest element
+			category.separators[row].rowheight = math.max(category.separators[row].rowheight or 0,section.frame:GetHeight())
+
+			if row>1 then
+				section.frame:SetPoint("TOP",category.separators[row-1],"BOTTOM",0,-5)
+			end		
+		end
+
+		for i,section in ipairs(category) do -- set all sections in given row to rows height
+			section.frame:SetHeight(category.separators[section.row].rowheight)
+		end
+
+		for i,row in pairs(category.separators) do
+			total_height = total_height + row.rowheight + 5 -- + vertical offset
+		end	
+	else -- we are showing roadmap for given section
+		local section = GuideMenu.FeaturedRoadmap[index][sectionindex]
+		if not section.frame then
+			section.frame = CHAIN(CreateFrame("Button",nil,MF.FullColumnFeaturedInner,"BackdropTemplate"))
+				:SetPoint("TOPLEFT")
+				:SetPoint("RIGHT")
+				:SetClampedToScreen(false)
+				:SetBackdrop(SkinData("MainBackdrop"))
+				:SetBackdropColor(0,0,0,0)
+				:SetBackdropBorderColor(0,0,0,0)
+				:Show()
+			.__END
+
+			ZGV.Visuals:Render(section,785,section.frame,{GUIDESTATUS=true,GUIDESTATUSBACKGROUND=true})
+
+			local group_ident = GuideMenu.FeaturedShowcase[index].group
+			local section_ident = GuideMenu.FeaturedShowcase[index][sectionindex].name
+
+			local content_group
+			for i,object in ipairs(section.frame.Objects) do
+				if object.ztype=="content" then
+					object.group_ident = ("%s_%s_%d"):format(group_ident,section_ident,i)
+					content_group = object.group_ident
+				end
+
+				if content_group and object.ztype~="content" then
+					object.zident = content_group
+				end
+
+				if object.ztype == "roadmap_section" then
+					object:SetScript("OnClick",function() GuideMenu:ShowFeatured(index) end)
+				end
+			end
+		end
+
+		section.frame:Show()
+
+		local featuredhide = ZGV.db.profile.featuredhide
+		total_height = 0
+		local prev
+		-- we can't just check height of section frame, since player can show/hide blocks within
+		-- calculate height really used, and reanchor stuff. 
+		for i,object in ipairs(section.frame.Objects) do
+			if object.group_ident then
+				object.group_visible = not featuredhide[object.group_ident]
+				object:UpdateText()
+			end
+			if object.zident then
+				if featuredhide[object.zident] then
+					object:Hide()
+				else
+					object:Show()
+				end
+			end
+
+			if object:IsVisible() then
+				if prev then
+					object:SetPoint("TOPLEFT",prev,"BOTTOMLEFT",0,-object.space)
+				else
+					object:SetPoint("TOPLEFT",section.frame,"TOPLEFT",10,-5)
+				end
+				prev = object
+				total_height = total_height + object:GetHeight() + object.space
+			end
+		end
+	end
+
+	-- update scrollframe dimensions
+	MF.FullColumnFeaturedInner:SetHeight(total_height)
+	MF.FullColumnFeatured:TotalValue(total_height)
+	MF.FullColumnFeatured:SetValue(0)
+	MF.FullColumnFeatured:SetVerticalScroll(0)
+
+	-- save which sectioni is currently visible
+	GuideMenu.ActiveFeatured[1] = index
+	GuideMenu.ActiveFeatured[2] = sectionindex
+
+	-- update header
+	GuideMenu.MainFrame.FullColumn.Name:SetText("Featured: "..data.title)
+	GuideMenu.MainFrame.FullColumnFeatured.Dropdown:SetCurrentSelectedByValue(data.group)
+	GuideMenu.GuideCategory=nil
+
 end
 
 function GuideMenu:GetSectionMenu()

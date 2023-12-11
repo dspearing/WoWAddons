@@ -3,6 +3,7 @@ if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("DailiesCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Azure Span World Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Emerald Dream World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\The Forbidden Reach World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Ohn'ahran Plains World Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Thaldraszus World Quests")
@@ -30,3 +31,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Suffusion Camp (The Azure Span)")
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Researchers Under Fire")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Time Rifts")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Little Scales Daycare")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Eon's Fringe Dailies")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Daily Guides\\Dragonflight (60-70)\\Little Scales Daycare Dailies")

@@ -16,6 +16,8 @@ L["A custom mana bar has been created and can be configured through Module Setti
 L["Abbreviate estimated health"] = "Сокращать оценочное здоровье"
 L["Abbreviate health"] = "Сокращать здоровье"
 L["Absorb bar alpha"] = "Полоса поглощения альфа"
+--[[Translation missing --]]
+L["Added strata"] = "Added strata"
 L["Adjust the horizontal position of the aura icon"] = "Настройка горизонтального положения иконки "
 L["Adjust the vertical placement of this bar"] = "Настройка вертикального размещение этой панели"
 L["Adjust the vertical position of the aura icon"] = "Настройка вертикального положения иконки"
@@ -582,6 +584,8 @@ L["Potential SnD time bar alpha"] = "Прозрачность полосы 'Пр
 L["Predefined settings for different bars"] = "Предустановленные настройки для разных полос"
 L["Presets"] = "Заготовки"
 L["Pulse when full"] = "Пульсировать, если полный"
+--[[Translation missing --]]
+L["Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."] = "Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."
 L["PvP icon"] = "PvP иконка"
 L["PvP Icon Horizontal Offset"] = "Горизонтальное смещение иконки PvP"
 L["PvP Icon Scale"] = "Масштаб иконки PvP"

@@ -149,13 +149,13 @@ function ActionButton:UpdateCooldown()
 	if self:GetAttribute("type")=="spell" then
 		starts,dur,ends = GetSpellCooldown(self:GetAttribute("spell"))
 	elseif self:GetAttribute("type")=="item" then
-		starts,dur,ends = ZGV.F.GetItemCooldown(self:GetAttribute("itemid"))
+		starts,dur,ends = C_Container.GetItemCooldown(self:GetAttribute("itemid"))
 	elseif self:GetAttribute("type")=="petaction" then
 		starts,dur,ends = GetPetActionCooldown(self:GetAttribute("petaction"))
 	elseif self:GetAttribute("type")=="macro" then
 		local macro_index = self:GetAttribute("macro")
 		if self:GetAttribute("itemid") and tonumber(self:GetAttribute("itemid")) then
-			starts,dur,ends = ZGV.F.GetItemCooldown(self:GetAttribute("itemid"))
+			starts,dur,ends = C_Container.GetItemCooldown(self:GetAttribute("itemid"))
 		elseif self:GetAttribute("spellid") and tonumber(self:GetAttribute("spellid")) then
 			starts,dur,ends = GetSpellCooldown(self:GetAttribute("spellid"))
 		elseif self:GetAttribute("petid") and tonumber(self:GetAttribute("petid")) then

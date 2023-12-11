@@ -27,6 +27,7 @@ farmPathEvent:SetScript("OnEvent", onChangeZone)
 
 function ZGV:ShowWaypoints(command)  
 	local t1=debugprofilestop()  repeat
+	table.wipe(LibRover.cfgNodeStepOverride)
 
 	if (ZGV.CurrentStep and ZGV.CurrentStep.zombiewalk) then
 		ZGV.Pointer:ClearWaypoints("corpse")
@@ -234,7 +235,6 @@ function ZGV:ShowWaypoints(command)
 			ZGV.Pointer:FindTravelPath(arrowpoint)
 		elseif (waypath or waypath_poi) and not pointed and ZGV.Pointer.nummanual==0 then
 			-- setup step specific overrides
-			table.wipe(LibRover.cfgNodeStepOverride)
 			if step.travelcfg then
 				for i,v in pairs(step.travelcfg) do
 					LibRover.cfgNodeStepOverride[i]=v

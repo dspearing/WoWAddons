@@ -112,13 +112,14 @@ do
 		end
 	end
 
+	local dragonisles_extra = {2175,2241}
 	function Lib:GetMapContinent(mapID)
 		local cont = ZGV.GetMapContinent(mapID)
 		if cont==ZONE_ARGUS_KROKUUN or cont==ZONE_ARGUS_MACAREE or cont==ZONE_ARGUS_ANTORAN then cont=ZONE_ARGUS end  -- Argus zones need to have a common continent (not so much for ants!).
 		local cont_scan = cont
 		if cont==113 then cont_scan=988 end -- wotlk classic taxis are not findable via regular contient id
 		local extracont
-		if cont==1978 then extracont=2175 end -- dragonflight needs to have subcontinent scanned
+		if cont==1978 then extracont=dragonisles_extra end -- dragonflight needs to have subcontinent scanned
 		return cont,cont_scan,extracont
 	end		
 
@@ -147,7 +148,7 @@ do
 			node1n=Lib:FindTaxiByNodeID(node1)
 			node2n=Lib:FindTaxiByNodeID(node2)
 		end
-		local dist = ZGV.MapCoords.Mdist(node1n.m,node1n.x,node1n.y,node2n.m,node2n.x,node2n.y)
+		local dist = ZGV.MapCoords.Mdist(node1n.m,node1n.x,node1n.y,node2n.m,node2n.x,node2n.y) or 0
 		local est = dist * 1.2 / (7*4.5)
 		return est,false
 	end
@@ -188,7 +189,7 @@ do
 						taxis={{Lib:FindTaxiByNodeID(lastnode),1}} 
 					end
 				end
-				if taxis and taxis[1] and taxis[1][2]<50 then
+				if taxis and taxis[1] and taxis[1][1] and taxis[1][2]<50 then
 					Lib.traveltime_dep=taxis[1][1]
 					Lib.traveltime_time=GetTime()
 					ZGV:Print(("DEV: Departed from |cff00ff00%s|r to |cff00ff00%s|r, counting taxi trip time."):format(Lib.traveltime_dep.name,Lib.LastTaxi and Lib.LastTaxi.name or "?"))
@@ -419,8 +420,10 @@ do
 		local _,cont,extracont = Lib:GetCurrentMapContinent()
 		local taxidata = C_TaxiMap.GetAllTaxiNodes(cont)
 		if extracont then 
-			local extradata = C_TaxiMap.GetAllTaxiNodes(extracont)
-			for i,taxi in pairs(extradata) do table.insert(taxidata,taxi) end
+			for _,excont in ipairs(extracont) do
+				local extradata = C_TaxiMap.GetAllTaxiNodes(excont)
+				for i,taxi in pairs(extradata) do table.insert(taxidata,taxi) end
+			end
 		end
 		return taxidata
 	end
@@ -922,6 +925,7 @@ do
 							listed[start_ident.."_"..end_ident]=true
 							missingtimes = missingtimes + 1
 							hops = hops .. ((" |cffff8800Missing time: |cffffff00%s|r to |cffffff00%s|r|r,"):format(fcstart.name,fcend.name))
+							if hop==1 and TaxiNodeGetType(endnode)=="REACHABLE" and IsControlKeyDown() then print((" |cffff8800Scouting time?: |cffffff00%s|r to |cffffff00%s|r|r,"):format(fcstart.name,fcend.name)) TakeTaxiNode(endnode) return end
 						end
 					else
 						print("unknown connection",startnode,endnode)
@@ -1543,7 +1547,7 @@ do
 
 
 	function Lib:SetupTaxiTooltips()
-		do return end
+		if ZGV.IsClassic or ZGV.IsClassicWOTLK then return end
 		-- dev function disabled, broken on classic
 
 		if not ZGV.DEV then return end
@@ -1678,11 +1682,12 @@ do
 
 					--[[
 					local lineContainer = flightProvider.backgroundLinePool:Acquire();
-					lineContainer.Fill:SetStartPoint("CENTER", startPin);
-					lineContainer.Fill:SetEndPoint("CENTER", destinationPin);
+					lineContainer.Fill:SetStartPoint("CENTER", currentPin);
+					lineContainer.Fill:SetEndPoint("CENTER", mousePin);
 					lineContainer.Fill:SetThickness(300)
 					lineContainer:Show();
 					--]]
+					
 				else
 					totaltime = totaltime + time
 				end

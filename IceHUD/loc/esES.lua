@@ -25,6 +25,8 @@ L["Abbreviate estimated health"] = "Acortar salud estimada"
 L["Abbreviate health"] = "Abreviar salud"
 --[[Translation missing --]]
 L["Absorb bar alpha"] = "Absorb bar alpha"
+--[[Translation missing --]]
+L["Added strata"] = "Added strata"
 L["Adjust the horizontal position of the aura icon"] = "Ajustar la posicion horizontal del icono de aura"
 L["Adjust the vertical placement of this bar"] = "Ajustar la posicion vertical de esta barra"
 L["Adjust the vertical position of the aura icon"] = "Ajustar la posicion vertical del icono de aura"
@@ -879,6 +881,8 @@ L["Predefined settings for different bars"] = "Predefined settings for different
 L["Presets"] = "Presets"
 --[[Translation missing --]]
 L["Pulse when full"] = "Pulse when full"
+--[[Translation missing --]]
+L["Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."] = "Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."
 --[[Translation missing --]]
 L["PvP icon"] = "PvP icon"
 --[[Translation missing --]]

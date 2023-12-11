@@ -42,7 +42,7 @@ options.general = {
             order = 1,
             type = "select",
             name = L["Modifier Key"],
-            desc = format(L["The modifer key to show additional information from %s."], W.Title),
+            desc = format(L["The modifier key to show additional information from %s."], W.Title),
             set = function(info, value)
                 E.private.WT.tooltips[info[#info]] = value
             end,
@@ -426,25 +426,28 @@ options.progression = {
 do
     local raids = {
         "Vault of the Incarnates",
-        "Aberrus, the Shadowed Crucible"
+        "Aberrus, the Shadowed Crucible",
+        "Amirdrassil, the Dream's Hope"
     }
 
     local dungeons = {
-        "Neltharion's Lair",
-        "Freehold",
-        "The Underrot",
-        "Uldaman: Legacy of Tyr",
-        "Neltharus",
-        "Brackenhide Hollow",
-        "Halls of Infusion",
-        "The Vortex Pinnacle"
+        "The Everbloom",
+        "Darkheart Thicket",
+        "Black Rook Hold",
+        "Atal'Dazar",
+        "Waycrest Manor",
+        "Throne of the Tides",
+        "Dawn of the Infinites: Galakrond's Fall",
+        "Dawn of the Infinites: Murozond's Rise"
     }
 
     local special = {
         "Dragonflight Keystone Master: Season One",
         "Dragonflight Keystone Hero: Season One",
         "Dragonflight Keystone Master: Season Two",
-        "Dragonflight Keystone Hero: Season Two"
+        "Dragonflight Keystone Hero: Season Two",
+        "Dragonflight Keystone Master: Season Three",
+        "Dragonflight Keystone Hero: Season Three"
     }
 
     for index, name in ipairs(raids) do

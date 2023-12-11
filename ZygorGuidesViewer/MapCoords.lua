@@ -314,6 +314,7 @@ local function FixMAPDATA()
 	--MAPDATA[418]={870, 2866.66,-304.16,4356.25,2904.17}
 	--if KRASARANG_IS_BUGGED then MAPDATA[418]={870, 2949.921,-114.152,2949.921+1738.47,3234.15-114.152} end
 	if MAPDATA[1527] then MAPDATA[1527][1]=1 end -- Uldum New - also on Kalimdor
+	if MAPDATA[2239] then MAPDATA[2239][1]=2444 end -- Amirdrassil on Dragon Isles
 
 	for mapid,_ in pairs(LibRover.data.InstanceMapsRev) do
 		MAPDATA[mapid] = {mapid,0,0,0,0}
@@ -340,14 +341,14 @@ end
 function MapCoords.Mdist(map1,x1,y1,map2,x2,y2)
 	local dx,dy
 	local dm1=MAPDATA[map1]
-	if not dm1 or not x1 or not x2 then return nil end
+	if not dm1 or not x1 or not x2 then return nil,nil,nil,"err, no start" end
 	if map1==map2 then  -- same map
 		dx = ((x1-x2)*dm1[4]) -- should be x2-x1, of course, but world coords are inane.
 		dy = ((y1-y2)*dm1[5])
 	else
 		local dm2=MAPDATA[map2]
-		if not dm2 then return nil end
-		if dm1[1]~=dm2[1] then return nil end  -- diff continent
+		if not dm2 then return nil,nil,nil,"err, dest unknown" end
+		if dm1[1]~=dm2[1] then return nil,nil,nil,"err, diff continent" end  -- diff continent
 		local gx1 = dm1[2]-dm1[4]*x1
 		local gy1 = dm1[3]-dm1[5]*y1
 		local gx2 = dm2[2]-dm2[4]*x2

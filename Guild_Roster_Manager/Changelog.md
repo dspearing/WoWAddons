@@ -1,4 +1,232 @@
 
+## **VERSION 1.9901 RELEASE - November 8th, 2023**
+
+* Slight .toc issue on mainline build for 10.2 compatibility. Updated!
+
+* Accidentally left in a debug print, now removed.
+
+* Macro tool you could edit the rules if you didn't have access, this is now fixed, and was just from some testing I forgot to reset back.
+
+## **VERSION 1.990 RELEASE - November 7th, 2023**
+
+*Compatibility update for 10.2 Dragonflight release*
+
+*Compatibility update for latest Classic Wrath Build*
+
+***BUG FIXES***
+
+* Due to some recent changes by Blizz, on the backend, some certain actions that should not cause "taint" (the error that says your action has been blocked), are causing taint. I have resolved a few of them that could occur where in combat. There are some that are erroneously triggering, however, for many many addons. There is a crowd effort among addon devs right now, but it seems like the general consensus is wait and see if Blizz fixes the error for 10.2 in just a week and we'll see. So, if you are still getting them after this patch, just wait til 10.2 drops and we'll see what happens from there.
+
+* Fixed an issue where GRM could throw errors when entering combat if the addon is enabled when NOT in a guild. Now, the addon should not be doing inCombat status cheecks if you are not in a guild.
+
+* Cleaned up the settings data to ensure no deprecated settings existed. The game now does a validation check. I had found a few save files I was given where people had rolled back to far earlier versions and it caused a lot of issues or added some ghost db entries to the saves. This now  cleans it up at start of your session. Very lightweight pre-check and prevents the endless amount of issues that can result because of this.
+
+* FIxed an issue where a Lua error could happen in the error message to the player indicating the person they were syncing with went offline, effectively stopping to que with the next person who might be in que to sync.
+
+* Fixed an issue where you were not able to add someone to the ban list manually. 
+
+* The player window or the search log should open when you shift-click or ctrl-shift-click names in the chat box. This was not working properly.
+
+
+## **VERSION 1.989 RELEASE - October 6th, 2023**
+
+***BUG FIXES***
+
+* GRM was causing there to be a closing frame sound in Classic builds when a new person joined the guild. This should no longer happen!
+
+* GRM ctrl-click to open player names was not properly refreshing to the next player if you had already open the mouseover window by doing so. You would have to close and reopen to refresh. It should now properly refresh. This was not an issue in retail build.
+
+
+## **VERSION 1.988 RELEASE - October 1st, 2023**
+
+***QUALITY OF LIFE***
+
+* GRM will now auto-hide all GRM frames when entering combat. The frames that were hidden will return when combat ends. This is to prevent any issues of GRM getting in the way when every second counts, especially in hardcore mode. This can be completely disabled in the GRM > Options > UI Settings
+
+***BUG FIXES***
+
+* There was an issue with GRM frame eating your keystrokes when entering combat. This should no longer happen, even if you choose to disable the option to auto-hide the frames. That is only an extra feature. 
+
+* Fixed an issue with the join date and rank date hist not storing properly when important data from another person who has been banned.
+
+* Fixed an issue which left the epoch timestamp of a data change incorrectly as a string instead of an int, causing a lua error whentrying to sync.
+
+* Fixed an issue where in some languages you were not able to unban a player if they were still in your guild.
+
+* Fixed an issue where when adding a ban it would say you had a missing "key" whilst referencing a Class name, which clearly didn't make sense.
+
+
+## **VERSION 1.987 RELEASE - September 27th, 2023**
+
+***BUG FIXES***
+
+* Fixed an issue affecting Classic builds that would cause the GRM mouseover not to properly display
+
+* Fixed an issue where a player joining the guild was not always registering immediately so there would be no data on the player on mouseover.
+
+* Fixed an issue where when GRM modifies a join date, or a rejoin date with the advanced join date tool, or just when someone rejoins the guild, if the custom join tag or rejoin tag were similar, like "J:" and "RJ:", for example, then GRM was parsing the string incorrectly and correcting the date, but adding an extra char on the tail end of the note. It should now properly remove it. Unfortunately, this will not retroactively fix any notes that were modified, but it will prevent it going forward.
+
+*Please note, I am aware of reports of the main designation being lost among alt groups, and in some cases, some alts, during sync. It appears to be affecting the same group over and over. This is something I am working on but it will take some time as I am possibly going to rewrite the whole sync protocol I wrote. I am seeing if it is necessary. Sorry about the hassle but I will have a fix for it soon!*
+
+
+## **VERSION 1.986 RELEASE - September 14th, 2023**
+
+***NEW FEATURE***
+
+**CLASSIC HARDCORE DEATH TRACKING**
+
+*Please note, this is somewhat limited in its ability in that the server does not provide player information on people who have died while you were offline and will require some crowd sourcing for better results.*
+
+*Please provide additional feedback on where I can add more features or improve this. It is fairly barebones right now in its first form*
+ 
+* Automatically Records the death of a player in your guild when the die, including the time of their death.
+
+* To assist ALL GRM users of who has died, and since some go offline and never quit the guild after  dying, a special "[D]" death tag will be added to the player note, as well as the timestamp of when they died, thus your fellow GRM users, and others, will be indicated that a player has died while you were offline.
+
+* Ability to export the hardcore deaths history, as well as sort by level, class, date, etc...
+
+* The mouseover will have a strong indicator that a player is dead and is still in the guild.
+
+* The GRM Roster will also indicate a player has died in the interface (and the status CAN be removed if someone erroneously or manually adds the death tag to a player note).
+
+![Death Notification](https://i.imgur.com/cOKJlSQ.jpg)
+
+![Death Log Tracking](https://i.imgur.com/q6BaAus.jpg)
+
+![Roster Indication](https://i.imgur.com/YlEU6Qd.jpg)
+
+![Deaths Export](https://i.imgur.com/O0rLBwO.jpg)
+
+***BUG FIXES***
+
+* GRM was erroneously spamming the chat when someone left or was kicked from the guild. Just an error trace I accidentally left in that is now cleaned up.
+
+* GRM could lua error out when joining a guild. It would self-resolve on a reload, but this should no longer be an issue when joining and GRM should properly configure.
+
+* Fixed an OnUpdate Lua error that would cycle if you had the roster window open when you quit a guild.
+
+* Fixed an error where in the Options > UI tab, in Classic builds a player could enable the Mythic+ rating score, which doesn't make sense in classic!
+
+* FIxed a bug that could cause GRM to not be able to load again if a player "rolled back" the addon to a much earlier version.
+
+* Fixed a lua error that could cause sync to fail.
+
+* On occasion, when someone joined the guild, GRM was blocking the reporting of the system message to chat. This happened because GRM was supposed to replace that message. However, the problem is that when someone joins, sometimes the server can take several seconds to report back all of the player details, so while GRM is waiting to build the profile, it was not reporting properly to the chat, coupled with a couple lua errors in there that shouldn't have happened, and boom, the system message would never show. This should no longer happen.
+
+* The old "alts" save Variable on players is removed. This was deprecated a very long time ago and I just realized I still was adding the unused variable to each player profile. It is now removed from the database completely.
+
+* Fixed a lua error where if importing a guild using the transfer tool, some remnants of players in the alt groups got left around. This resolves that.
+
+* Fixed several miscellaneous lua errors that were causing people some issues...
+
+* Fixed an issue causing an error where a player in the DB was not able to be loaded due to a mismatched server on merged realms... This could actually affect things like when a player logs off, or comes online, and so on, it can't match their name
+
+
+## **VERSION 1.985 RELEASE - September 10th, 2023**
+
+***BUG FIXES***
+
+* Some lua errors causing the scan for changes to fail at times, particularly when logging in. This is a side effect of a previous fix I overlooked and it popped up. This is one error that caused many downstream errors so it will resolve many issues people have reported.
+
+* Apparently GRM has been reporting people that got KICKED as having LEFT the guild, not kicked. This was a 1 line error oversight and easy fix. It didn't apply to people LIVE detected when online, but if they were kicked by an officer whilst you were offline it was not reporting it properly and indicating they had left the guild.
+
+* The position of the GRM custom Roster button was hidden behind the "Groups" tab in Classic builds. I didn't realize there was a groups tab, but I guess that's a thing in Wrath! This has been adjusted to compensate.
+
+## **VERSION 1.984 RELEASE - September 6th, 2023**
+
+***QUALITY OF LIFE***
+
+* **Customizable Macro Hot Key**
+  - In addition to the macro key now being able to be changed easily to whatever you want, it does also have protection built-in to warn you if you would be overwriting an existing keybind, and what that keybind is for. So feel free to safely "Confirm" be warned before finalizing.
+
+***BUG FIXES***
+
+* Issue with sync being broken with previous release. Sorry about that! Was rushing to get out the door when I saw servers were up 4 hours early! This should be fixed now.
+
+
+## **VERSION 1.983 RELEASE - September 5th, 2023**
+
+*Please note - I am working on a few features and I just couldn't get them out in time for 10.1.7, so I am releasing a compatibility update as well as bug fixes, mainly. You will see some remnants of incompleted stuff, like the "Special" tab in the macro tools. Coming soon, but I wanted to make sure compatibility was ready for the latest update.*
+aaaa
+*Also of note, I am considering ways to support Hardcore on Classic. I have the ability to implement live death tracking, but not if they die when offline. The API appears to be limited right now in Classic Era hardcore. If you have any suggestions on Hardcore support for guilds, I'd be curious to hear. Please report them to the Discord channel!*
+
+**QUALITY OF LIFE**
+
+* You can now sort rank and note/officer note together on the GRM custom roster.
+
+* The "Show offline Members" option and the "Group Alts with Main" now correctly unchecks the grouping alts with main if you wish to only show online members. The reason why is you cannot actually have a grouping of main/alts since technically only 1 will be online anyway, so it can kind of confuse things.
+
+***BUG FIXES***
+
+* Fixed an error that could occur preventing loading/patching of the GRM database for some who had maybe not used the addon in a while, and added some redundancy protection in case a person say, crashed in the middle of patching the addon
+
+* Fixed an issue where syncing the ban lists some meta data on the player being sync'd and then created was not built correctly. This would not be obvious if the player was no longer in the guild, but if they ever rejoined, it would cause some data and UI errors.
+
+* Fixed an issue with the syncing that could cause it to crash in some circumstances.
+
+* Fixed an issue where the note and officer note fonts on the mouseover were not properly changing when reconfiguring the fonts. This could make certain Cyrilic fonts unreadable, for example, or asian character compatible.
+
+* Fixed an issue that could cause verified join dates to be off by 1 day. This does not retroactively fix, but it will not cause issue moving forward. WARNING - Your events will not be entirely sorted in order that have already been reported, but going forward they will sort properly. It would have required a little more effort to retroactively update that, but with zero additional effort and a couple of weeks it will self-fix as the old bdays and anniversaries pass. Forgive me for my laziness on this one lol.
+
+* Fixed a "taint" bug that could occur if a player presses the ESCAPE key to hide a window. This is normally not an issue, but if you were in combat when it occurred, it introduced taint and could block actions. This will no longer happen.
+
+* Fixed an issue where the "Remove all Events" was not actually removing all of the events in the events tab for bdays and anniversaries. This is now resolved.
+
+
+
+## **VERSION 1.9821 RELEASE - August 24, 2023**
+
+** CLASSIC BUILD UPDATE ONLY ** - Hardcore Mode compatible
+
+## **VERSION 1.982 RELEASE - August 14, 2023**
+
+***QUALITY OF LIFE***
+
+* Mythic+ Filtering added to the macro tool. You can kick, promote, and demote based on the person's Mythinc+ rating! Just one heads up, since the M+ rating is pulled directly from the server, for players that have not logged on, it still shows their old rating, even from previous expansions. As such, it is highly recommended to use the player level filter (set to max level), asn well as player activity.
+
+![Mythic+ Filtering](https://i.imgur.com/OUXJNkY.jpg)
+
+* The Custom GRM Roster now has many more UI controls.
+
+* You can now choose to track only anniversaries or birthdays, not be forced to track both. You will find this in the normal GRM Options window, under the "Scan" tab. If you disable tracking, they will automatically be removed from the list, but they will also be re-added to your events list if you re-enable.
+
+![Additional filtering](https://i.imgur.com/2OYEXm2.jpg)
+
+* In Classic Era I have expanded the events information to be accessible, so even though there is no in-game Calendar as that was not added until WOTLK, I have at least given access to the information on upcoming birthdays and anniversaries.
+
+if CalendarTrust_CalcUserTrustExplicit(gGroupCalendar_PlayerName) >= 2 then
+	/dump gGroupCalendar_GuildDatabase.Events
+end
+
+***BUG FIXES***
+
+* Fixed an iossue where if you logged to a non-guilded alt GRM could trigger a lua error. This didn't break anything, but annoying to have your Lua error tracking catch a needless error. This is resolved.
+
+* Fixed an issue where chat could stop working after loading GRM because settings crashed on load. Not good! This is resolved now.
+sss 
+
+* Group Info was throwing a couple Lua errors. They should be gone now.
+
+* Fixed an issue where in some cases, if a player logged out in the middle of a sync your chat could be spammed for a second with an error that they were no longer online. This should not happen now.
+
+* Occasionally the mouseover was not working on all names. That shouldn't be a problem anymore. It was particularly noticeable if you moused past the top or bottom names in the window then moused back the mouseover wouldn't work. It now properly refreshed. Also, the window will no longer show for players whos names are not yet registered in the guild, so the very short window when someone joins to when GRM is configuring the name. This should literally be mere seconds, but it was causing some confusion for some as it kept the previous mouseover window open for the previous player.
+
+* Fixed an issue on the GRM Roster where if you sort the officer or player notes, it was not properly considering case and that has been fixed.
+
+* Regarding the public and officer notes search in the GRM Roster, it was removing any white space before/after (trimming). For the note search this makes sense to allow this whitespace so the search will now all you to search something like "  Re" instead of it reverting it to "Re", for example.
+
+* Fixed an issue where if you Control-Clicked a player's name in the GRM roster, or audit, or various GRM frames, it would show the mouseover window, but to ctrl-click another player you'd have to close the window. This should now properly allow subsequent control-clicks without doing this.
+
+* Fixed an issue where if you tried to /grm or /roster, and the addon was in the process of applying a patch, it would still try to open the window before it was fully configured. Clicking the minimap button was ok, but the slash commands would cause an error. This has been fixed.
+
+* In some cases the GRM messages to the player would be lost if the addon was in the middle to being configured, like if it was applying a patch and you tried to open the window, it should give you a message to chat that GRM was still being configured. Well, the message would never print out the text. It should now properly function.
+
+* The tooltip on the left side of the GRM Custom Roster was not clearing if mousing off of the note or officer notes. This should now properly reset or clear on moving off the roster frame.
+
+* Fixed an issue causing GRM to fail to update the log because it was crashing the process of scanning for changes right after login.
+
+
+
 ## **VERSION 1.981 RELEASE - July 29th 2023**
 
 
@@ -32,7 +260,6 @@
 * Fixed a bug that made it so GRM would not load at all when trying to configure the settings. I typo'd a version check so some edge cases that would refer back were getting nil instead of a string. Oops!
 
 * Fixed some alignment issues with a few frames.
-
 
 
 ## **VERSION 1.980 RELEASE - July 24th 2023**

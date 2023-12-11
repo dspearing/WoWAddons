@@ -1065,13 +1065,6 @@ Follow Cork Fizzlepop to the Stable Master |q 60344/3 |goto 62.02,33.31
 step
 talk Rohaka Tuskmaul##168540
 turnin Finding Your Way##60344 |goto 61.43,32.77
-accept License to Ride##60345 |goto 61.43,32.77
-step
-talk Kildar##4752
-Learn the Apprentice Riding Skill |q 60345/1 |goto 61.32,34.59
-step
-talk Rohaka Tuskmaul##168540
-turnin License to Ride##60345 |goto 61.43,32.77
 step
 _Next to you:_
 talk Cork Fizzlepop##168545
@@ -1418,13 +1411,6 @@ endlevel=50.0,
 image=ZGV.IMAGESDIR.."BfAIntro",
 },[[
 step
-_Are You Eligible For Chromie Time?_
-|tip If you have another character who reached max level previously, you are eligible for Chromie Time.
-|tip If not, you must level through the Battle for Azeroth zones before moving on to the Dragon Isles.
-|tip Chromie Time allows you to choose a different expansion to level up to 60 in, before moving on to the Dragon Isles.
-No - Level in Battle for Azeroth Zones	|confirm	|or	|next "Leveling Guides\\Battle for Azeroth (10-60)\\Zandalar\\Zuldazar (10-60)"
-Yes - Choose a Different Expansion	|confirm	|or	|next "Chromie_Time_Start"
-step
 label "Chromie_Time_Start"
 talk Chromie##167032
 Tell her _"Select a timeline."_
@@ -1434,13 +1420,13 @@ Tell her _"I'd like to return to the present timeline, Chromie."_
 Click Here After Choosing an Expansion |confirm |goto Orgrimmar/1 40.82,80.14
 step
 _Which Expansion Did You Choose?_
-Battle for Azeroth	|confirm	|or	|next "Leveling Guides\\Battle for Azeroth (10-60)\\Zandalar\\Zuldazar (10-60)"
 The Cataclysm		|confirm	|or	|next "The_Cataclysm"
 Burning Crusade		|confirm	|or	|next "Burning_Crusade"
 Wrath of the Lich King	|confirm	|or	|next "Wrath_Of_The_Lich_King"
 Mists of Pandaria	|confirm	|or	|next "Mists_Of_Pandaria"
 Warlords of Draenor	|confirm	|or	|next "Warlords_Of_Draenor"
 Legion			|confirm	|or	|next "Legion"
+Battle for Azeroth	|confirm	|or	|next "BFA"
 Shadowlands		|confirm	|or	|next "Shadowlands"
 step
 label "The_Cataclysm"
@@ -1628,6 +1614,23 @@ Click Here to Load the "Rogue Intro & Artifacts" Leveling Guide |confirm |next "
 Click Here to Load the "Shaman Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Shaman\\Shaman Intro & Artifacts" |only if Shaman
 Click Here to Load the "Warlock Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Warlock\\Warlock Intro & Artifacts" |only if Warlock
 Click Here to Load the "Warrior Intro & Artifacts" Leveling Guide |confirm |next "Leveling Guides\\Legion (10-60)\\Warrior\\Warrior Intro & Artifacts" |only if Warrior
+|tip
+Click Here to Return to Chromie |confirm |next "Chromie_Time_Start"
+step
+label "BFA"
+Speak to Warchief Sylvanas Windrunner in Orgrimmar |q 51443/1 |goto Orgrimmar/1 48.61,71.98
+|tip Inside the building.
+step
+Watch the dialogue
+|tip Inside the building.
+Meet your Team |q 51443/2 |goto 54.52,78.40
+step
+talk Nathanos Blightcaller##135205
+|tip Inside the building.
+turnin Battle for Azeroth: Mission Statement##51443 |goto 54.45,78.42
+step
+_Begin Leveling in Zuldazar:_
+Click Here to Load the "Zuldazar (10-60)" Leveling Guide |confirm |next "Leveling Guides\\Battle for Azeroth (10-60)\\Zandalar\\Zuldazar (10-60)"
 |tip
 Click Here to Return to Chromie |confirm |next "Chromie_Time_Start"
 step

@@ -12,4 +12,5 @@
 	<Script file="QuestDBData.lua"/>
 	<Script file="Foglight.lua"/>
 	<Script file="Dungeons.lua"/>
+	<Script file="Phases.lua"/>
 </Ui>

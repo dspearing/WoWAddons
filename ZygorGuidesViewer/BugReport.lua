@@ -967,10 +967,8 @@ function BugReport:GetDumpBody(report)
 	return report:match("%-%-%-%->>\n(.-)\n<<%-%-%-%-")
 end
 
-
-function ZGV:ShowDump(text,title,editable,action,cursorpos)
+function ZGV:ShowDump(text,title,options)
 	local f
-
 	HideUIPanel(InterfaceOptionsFrame)
 	HideUIPanel(ZygorGuidesViewerMaintenanceFrame)
 
@@ -980,13 +978,26 @@ function ZGV:ShowDump(text,title,editable,action,cursorpos)
 	if not self.BugReport.dumpFrameBasic then CreateDumpFrameBasic() end
 	f = self.BugReport.dumpFrameBasic
 
+	width = max(250,options and options.width or 900)
+	height = max(130,options and options.height or 570)
+
+	f:SetSize(width,height)
+
 	f.editBox:SetText(text:gsub("[^%w%p%s]",function(c) return ("\\%d"):format(strbyte(c)) end)) -- fix for out-of-ascii chars
 	f.title:SetText(title or "Generic dump:")
 	f:SetFrameLevel(999)
 
-	if action == "copy" then
-		self.dumpFrame.editBox:HighlightText(0)
-		self.dumpFrame.editBox:SetFocus(true)
+	if options and options.copy then
+		f.editBox:HighlightText(0)
+		f.editBox:SetFocus(true)
+	end
+
+	if f.oldreports then
+		if options and options.hidedev then
+			f.oldreports:Hide()
+		else
+			f.oldreports:Show()
+		end
 	end
 
 	ShowUIPanel(f)
@@ -1322,6 +1333,7 @@ function StepFeedback:CreateFrame()
 
 			if StepFeedback.ReportMode == "guide" then
 				if self:GetParent().editBox:GetText() ~= L["bugreport_step_message"] then
+
 					StepFeedback:Save(self:GetParent().editBox:GetText())
 					frame.errEditbox:Hide()
 					frame.errMessage:Hide()
@@ -1939,25 +1951,31 @@ function GuideRating:ShowGuideRating()
 		if ZGV.Frame.Border:GetHeight() >= 274 or not ZGV.db.profile.fixedheight then  --if auto-resize is on or the vertically resized frame is large enough for in-viewer rating
 			if not GuideRating.GuideRatingViewer then
 				GuideRating:CreateFrame()
+
 				GuideRating:Position()
 				ZGV:ResizeFrame("ratingframe")
+
 				GuideRating:UpdateText()
 				GuideRating:ClearRateState()
 			else
 				GuideRating:ClearRateState()
 				GuideRating.GuideRatingViewer:ClearAllPoints()
+
 				GuideRating:Position()
 				ZGV:ResizeFrame("ratingframe")
 				if GuideRating.ZygorPopupOn then GuideRating.ZygorPopupOn:Hide() end
+
 				GuideRating:UpdateText()
 			end
 		else --if the verically resized frame is not large enough for in-viewer rating
 			if not GuideRating.GuideRatingViewer then
 				GuideRating:CreateFrame()
+
 				GuideRating:UpdateText()
 				GuideRating:Popup()
 			else
 				GuideRating:ClearRateState()
+
 				GuideRating:UpdateText()
 				GuideRating:Popup()
 			end

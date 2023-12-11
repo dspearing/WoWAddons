@@ -355,7 +355,8 @@ WorldMapFrame.pinPools["HereBeDragonsPinsTemplateZGV"] = worldmapPinsPool
 
 -- provider base API
 function worldmapProvider:RemoveAllData()
-    self:GetMap():RemoveAllPinsByTemplate("HereBeDragonsPinsTemplateZGV")
+	if not self:GetMap() then return end -- not yet properly initialised
+	self:GetMap():RemoveAllPinsByTemplate("HereBeDragonsPinsTemplateZGV")
 end
 
 function worldmapProvider:RemovePinByIcon(icon)
@@ -469,7 +470,13 @@ function worldmapProviderPin:OnReleased()
 end
 
 -- register with the world map
-WorldMapFrame:AddDataProvider(worldmapProvider)
+-- but not instantly, as that taints ui on classic. wait for player to load
+local provideradded
+local function Startup()
+	if provideradded then return end
+	WorldMapFrame:AddDataProvider(worldmapProvider)
+	provideradded = true
+end
 
 -- map event handling
 local function UpdateMinimap()
@@ -509,6 +516,7 @@ local function OnEventHandler(frame, event, ...)
     elseif event == "PLAYER_ENTERING_WORLD" then
         UpdateMinimap()
         UpdateWorldMap()
+        Startup()
     end
 end
 

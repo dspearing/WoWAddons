@@ -110,7 +110,7 @@ function ZGV:QuestAutoAccept_InGossip()
 	local quests=C_GossipInfo.GetAvailableQuests()
 
 	for qnum,questInfo in ipairs(quests) do
-		local qIdent = ZGV.IsClassic and qnum or questInfo.questID
+		local qIdent = questInfo.questID
 		if self.CurrentStep then
 			for i,goal in ipairs(self.CurrentStep.goals) do
 				if goal.action=="accept" and goal.quest and goal.questid==questInfo.questID and goal:GetStatus()=="incomplete" and not goal.noautoaccept then
@@ -213,7 +213,7 @@ function ZGV:QuestAutoTurnin_InGossip()
 	local quests=C_GossipInfo.GetActiveQuests()
 
 	for qnum, questInfo in ipairs(quests) do
-		local qIdent = ZGV.IsClassic and qnum or questInfo.questID
+		local qIdent = questInfo.questID
 		if self.CurrentStep then
 			for i,goal in ipairs(self.CurrentStep.goals) do
 				if goal.action=="turnin" and goal.questid == questInfo.questID and goal:GetStatus()=="incomplete" then

@@ -3,10 +3,17 @@ local name,addon = ...
 addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
-data.basenodes.FloorCrossings = {
+data.basenodes.FloorCrossings = --[[LIBROVER]] {
 
 	
 	-- DRAGONFLIGHT
+		["The Nighthold T"] = {
+			"The Nighthold T/0 54.99,63.81 <radius:15> -x- The Nighthold T/1 50.13,55.05 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",		-- Kargpaw's Den (Main Entrance)
+		},
+		["The Emerald Dream"] = {
+			"The Emerald Dream/0 63.47,71.71 <radius:15> -x- Barrows of Reverie/0 67.41,21.23 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Kargpaw's Den (Main Entrance)
+			"The Emerald Dream/0 51.09,42.75 <radius:15> -x- Sor'theril Barrow Den/0 71.46,88.04 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Sor'theril Barrow Den (Main Entrance)
+		},
 		["The Azure Span"] = {
 			"The Azure Span/0 34.03,30.81 <radius:15> -x- The Azure Span/1 35.06,90.20 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Kargpaw's Den (Main Entrance)
 			"The Azure Span/0 34.96,30.01 <radius:15> -x- The Azure Span/1 53.14,82.77 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",		-- Kargpaw's Den (Side Entrance)
@@ -22,31 +29,9 @@ data.basenodes.FloorCrossings = {
 		["Zaralek Cavern"] = {
 			"Zaralek Cavern/0 60.36,37.23 <radius:15> -x- Deepflayer Nest/0 11.43,50.25 <radius:10> {title_atob:Enter the cave} {title_btoa:Leave the cave}",--Deepflayer Nest
 		},
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
 	-- SHADOWLANDS
 
 		
@@ -59,20 +44,17 @@ data.basenodes.FloorCrossings = {
 			"Zereth Mortis/0 58.10,44.33 -x- Nexus of Actualization/0 31.16,61.21 <radius:10> {title_atob:Enter the building} {title_btoa:Leave the building}",
 		},
 
-
 		["The Maw"] = {
 			"The Maw/0 23.01,68.40 -x- Altar of Domination/0 89.73,34.52 {title_atob:Enter the building} {title_btoa:Leave the building}",
 			"The Maw/0 27.87,20.52 -x- Extractor's Sanatorium/0 19.94,73.08 {title_atob:Enter the building} {title_btoa:Leave the building}",
-			"The Maw/0 65.61,80.80 <border_in_flight:true> -x- Korthia/0 58.48,13.67 {title_atob:Follow the path up} {title_btoa:Follow the path down} <border_in_flight:true>",
-			"The Maw/0 51.53,90.46 <border_in_flight:true> -x- Korthia/0 40.04,25.94 {title_atob:Follow the path up} {title_btoa:Follow the path down} <border_in_flight:true>",
+			"The Maw/0 65.61,80.80 -x- Korthia/0 58.48,13.67 {title_atob:Follow the path up} {title_btoa:Follow the path down}",
+			"The Maw/0 51.53,90.46 -x- Korthia/0 40.04,25.94 {title_atob:Follow the path up} {title_btoa:Follow the path down}",
 		},
-
 
 		["Korthia"] = {
 				"Korthia/0 60.15,31.97 <radius:15> -x- Caverns of Contemplation/0 42.59,88.16 <radius:15> {title_atob:Enter the cave} {title_btoa:Leave the cave}",
 				"Korthia/0 30.15,55.13 <radius:15> -x- Gromit Hollow/0 65.79,35.02 <radius:15> {title_atob:Enter the cave} {title_btoa:Leave the cave}",
 		},
-
 
 		["Oribos"] = {
 			-- The Idyllia, Oribos -x- Downstairs, Oribos --
@@ -364,9 +346,9 @@ data.basenodes.FloorCrossings = {
 		["Vale of Eternal Blossoms"] = {
 			"Vale of Eternal Blossoms/0 22.2,26.3 <radius:7> -x- Vale of Eternal Blossoms/1 54.0,88.2 <radius:7> {template:building}", -- Guo-Lai Halls
 
-			"Shrine of Seven Stars/1 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3 {B:WALK}",  -- main door
-			"Shrine of Seven Stars/1 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4 {B:WALK}",  -- west door
-			"Shrine of Seven Stars/1 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5 {B:WALK}",  -- east door
+			"Shrine of Seven Stars/1 40.18,31.47 <nofly:1> -x- Vale of Eternal Blossoms/0 86.71,64.21 {B:WALK} {title_atob:Leave the building} {title_btoa:Enter the building}",  -- main door
+			"Shrine of Seven Stars/1 26.48,57.37 <nofly:1> -x- Vale of Eternal Blossoms/0 85.54,67.35 {B:WALK} {title_atob:Leave the building} {title_btoa:Enter the building}",  -- west door
+			"Shrine of Seven Stars/1 61.36,20.32 <nofly:1> -x- Vale of Eternal Blossoms/0 89.02,63.29 {B:WALK} {title_atob:Leave the building} {title_btoa:Enter the building}",  -- east door
 
 			"Shrine of Seven Stars/1 33.6,78.3 <radius:5> -x- Shrine of Seven Stars/2 32.3,75.5 <radius:5> <region:shrine7star_west>", -- west staircase
 			"Shrine of Seven Stars/1 70.4,33.5 <radius:5> -x- Shrine of Seven Stars/2 61.7,18.4 <radius:5> <region:shrine7star_east>", -- east staircase
@@ -377,9 +359,9 @@ data.basenodes.FloorCrossings = {
 			"Shrine of Seven Stars/2 43.3,44.3 <radius:5> <region:shrine7star_west> -to- Shrine of Seven Stars/1 44.9,47.6 <radius:5>", -- west balcony jump
 			"Shrine of Seven Stars/2 52.6,33.7 <radius:5> <region:shrine7star_east> -to- Shrine of Seven Stars/1 46.4,44.8 <radius:5>", -- east balcony jump
 
-			"Shrine of Seven Stars/1 38.6,28.4 <nofly:1> -x- Vale of Eternal Blossoms 86.8,64.3",  -- main door
-			"Shrine of Seven Stars/1 25.5,55.8 <nofly:1> -x- Vale of Eternal Blossoms 85.6,67.4",  -- west door
-			"Shrine of Seven Stars/1 60.3,18.0 <nofly:1> -x- Vale of Eternal Blossoms 89.1,63.5",  -- east door
+			"Shrine of Seven Stars/1 40.18,31.47 <nofly:1> -x- Vale of Eternal Blossoms/0 86.71,64.21 {title_atob:Leave the building} {title_btoa:Enter the building}",  -- main door
+			"Shrine of Seven Stars/1 26.48,57.37 <nofly:1> -x- Vale of Eternal Blossoms/0 85.54,67.35 {title_atob:Leave the building} {title_btoa:Enter the building}",  -- west door
+			"Shrine of Seven Stars/1 61.36,20.32 <nofly:1> -x- Vale of Eternal Blossoms/0 89.02,63.29 {title_atob:Leave the building} {title_btoa:Enter the building}",  -- east door
 		},
 		["The Veiled Stair"] = {
 			"Kun-Lai Summit/0 73.2,94.6 -x- The Veiled Stair/5 25.1,12.5", -- The Ancient Passage

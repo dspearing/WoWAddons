@@ -1,5 +1,36 @@
 # Changelog
 
+## Changed in v2023.10.1
+
+* Blizzard hotfixed out the range-check API that I was using to only announce rares that nearby group members saw, so I've switched to a different API for that.
+
+## Changed in v2023.10
+
+* Fix for an issue that was preventing icons appearing on the world map in Classic for some people
+* Some minor data fixes for past expansions
+
+## Changed in v2023.9
+
+* More loot and ids for Emerald Dream rares
+* Fix Primal Scythid Queen's location in Waking Shores
+* Remove a stray Lost Gilnean Wardog from Thunder Bluff
+
+## Changed in v2023.8
+
+* Updated for 10.2.0
+* New rares for the Emerald Dream, still missing a few quest IDs so expect another update soon
+* Update some rares from the last few patches, and include various assault rares as hidden-mobs
+
+## Changed in v2023.7
+
+* Updated for 10.1.5 and then 10.1.7
+* Fixed error in classic_era (Vanilla)
+* Fixed some errors causing permission errors in combat (10.1.5 protected SetPassThroughButtons)
+
+## Changed in v2023.6.1
+
+* Removed Skornak's Lava Ball, which never made it to live servers
+
 ## Changed in v2023.6
 
 * More Zaralek Cavern data

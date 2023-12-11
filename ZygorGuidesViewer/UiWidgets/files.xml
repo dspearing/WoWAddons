@@ -17,4 +17,6 @@
 	<Script file="ProgressBar.lua"/>
 	<Script file="Multiselect.lua"/>
 
+	<Script file="Visuals.lua"/>
+
 </Ui>

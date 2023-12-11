@@ -116,6 +116,8 @@ function IceCore.prototype:SetupDefaults()
 			bHideInBarberShop = true,
 			bHideDuringShellGame = true,
 			bHideDuringCataloging = true,
+			
+			addedStrata = 0,
 		},
 		global = {
 			lastRunVersion = 0,
@@ -161,7 +163,7 @@ StaticPopupDialogs["ICEHUD_UPDATE_PERIOD_MATTERS"] =
 function IceCore.prototype:CheckDisplayUpdateMessage()
 	local thisVersion
 --@non-debug@
-	thisVersion = 20230717081423
+	thisVersion = 20231108153317
 --@end-non-debug@
 --[==[@debug@
 	thisVersion = 99999999999999
@@ -610,7 +612,7 @@ function IceCore.prototype:IsEnabled()
 end
 
 function IceCore.prototype:DrawFrame()
-	self.IceHUDFrame:SetFrameStrata("BACKGROUND")
+	self.IceHUDFrame:SetFrameStrata(self:DetermineStrata("BACKGROUND"))
 	self.IceHUDFrame:SetWidth(self.settings.gap)
 	self.IceHUDFrame:SetHeight(20)
 
@@ -931,6 +933,48 @@ function IceCore.prototype:SetColor(color, r, g, b)
 	self:Redraw()
 end
 
+function IceCore.prototype:GetAddedStrata()
+	return self.settings.addedStrata
+end
+
+function IceCore.prototype:SetAddedStrata(value)
+	self.settings.addedStrata = value
+end
+
+-- Preventing ugly if-else blocks in module creations
+-- (but could probably itself be smarter/prettier)
+-- Frisbees/AddonWhiner
+function IceCore.prototype:DetermineStrata(baseStrata)
+	if self.settings.addedStrata == 0 then
+		return baseStrata
+	end
+	
+	if self.settings.addedStrata == 1 then
+		if baseStrata == "BACKGROUND" then
+			return "LOW"
+		elseif baseStrata == "LOW" then
+			return "MEDIUM"
+		elseif baseStrata == "MEDIUM" then
+			return "HIGH"
+		elseif baseStrata == "HIGH" then
+			return "DIALOG"
+		end
+	end
+	
+	if self.settings.addedStrata == 2 then
+		if baseStrata == "BACKGROUND" then
+			return "MEDIUM"
+		elseif baseStrata == "LOW" then
+			return "HIGH"
+		elseif baseStrata == "MEDIUM" then
+			return "DIALOG"
+		elseif baseStrata == "HIGH" then
+			return "FULLSCREEN"
+		end
+	end
+	
+	return baseStrata -- failsafe
+end
 
 function IceCore.prototype:IsInConfigMode()
 	return self.bConfigMode

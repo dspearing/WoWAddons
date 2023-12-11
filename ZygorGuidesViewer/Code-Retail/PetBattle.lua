@@ -100,9 +100,15 @@ PetBattle.TypePassive = {
 }
 
 function PetBattle:GetAbilityText(id,maxHp,power,speed)
+	local _,name = C_PetBattles.GetAbilityInfoByID(id)
+	return name
+	--[[
+	print("id",id,"maxHp",maxHp,"power",power,"speed",speed)
 	FloatingPetBattleAbility_Show(id,maxHp,power,speed)
 	FloatingPetBattleAbilityTooltip:Hide()
+	Spoo(FloatingPetBattleAbilityTooltip.Description)
 	return FloatingPetBattleAbilityTooltip.Description:GetText()
+	--]]
 end
 
 function PetBattle_MainFrameUpdateRound(round)

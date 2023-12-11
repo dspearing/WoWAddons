@@ -38,6 +38,7 @@ local min =_G.math.min
 local next = _G.next
 local pairs = _G.pairs
 local print = _G.print
+local random = _G.math.random
 local select = _G.select
 local string = _G.string
 local table = _G.table
@@ -99,12 +100,21 @@ kScreenBottomFourthMult = 1.077
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
 kNewFeatures =  -- For flagging new features in the UI.
 {
-    ----"OffsetLabel", "MouseLookCheckbox", -- For testing.
+    -- Added in version 10.1.7.2 ...
+    {anchor="BOTTOMLEFT", relativeTo="SparkleCheckbox", relativeAnchor="TOPRIGHT", x=-13, y=-5.3},
+    {anchor="LEFT", relativeTo="DefaultsBtn11", relativeAnchor="RIGHT", x=0, y=0.7},
 
 --~ Disabled this notification in 10.1.5.2 ...
 --~     -- Added in version 10.1.0.1 ...
 --~     "ShapeLabel",
 --~     "HelpBtn",
+
+    -- FOR TESTING ...
+--~     {anchor="RIGHT", relativeTo="ShapeLabel", relativeAnchor="LEFT", x=-2, y=1},
+--~     {anchor="LEFT", relativeTo="SparkleCheckbox.label", relativeAnchor="RIGHT", x=2, y=1.25},
+--~     {anchor="RIGHT", relativeTo="OffsetLabel", relativeAnchor="LEFT", x=-2, y=1},
+--~     {anchor="RIGHT", relativeTo="MouseLookCheckbox", relativeAnchor="LEFT", x=-2, y=2},
+--~     {anchor="BOTTOM", relativeTo="HelpBtn", relativeAnchor="TOP", x=0, y=-1},
 }
 
 -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
@@ -115,6 +125,7 @@ kDefaultConfig =
     ShapeFileName = nil,
     ModelID = kDefaultModelID,
     ShapeColorR = 1.0, ShapeColorG = 1.0, ShapeColorB = 1.0,
+    ShapeSparkle = false,
     -- - - - - - - - - - - - - - - - - - - - - - - - - - - - --
     UserShadowAlpha = 0.0,  -- (Solid = 1.0.  Transparent = 0.0)
     UserScale = 1.0,  -- (User model scale.  It is 1/100th the value shown in the UI.)
@@ -199,21 +210,31 @@ kDefaultConfig10.UserAlpha = 0.80
 kDefaultConfig10.UserShadowAlpha = 0.50
 kDefaultConfig10.FadeOut = true
 
---~ -- NOTE: The next config only works for Retail WoW.
---~ kDefaultConfig11 = CopyTable(kDefaultConfig)
---~ kDefaultConfig11.ShapeFileName = kMediaPath.."Ring 3.tga"
---~ kDefaultConfig11.ModelID = 1417024  -- "Sparkling, Rainbow"
---~ kDefaultConfig11.ShapeColorR = 1.0
---~ kDefaultConfig11.ShapeColorG = 0.882
---~ kDefaultConfig11.ShapeColorB = 0.882
---~ kDefaultConfig11.UserScale = 0.6
---~ kDefaultConfig11.UserAlpha = 1.0
---~ kDefaultConfig11.UserShadowAlpha = 0.99
---~ kDefaultConfig11.Strata = "HIGH"
---~ kDefaultConfig11.FadeOut = false
---~ kDefaultConfig11.UserShowOnlyInCombat = true
---~ kDefaultConfig11.UserShowMouseLook = true
+kDefaultConfig11 = CopyTable(kDefaultConfig)
+kDefaultConfig11.ShapeFileName = kMediaPath.."Ring 3.tga"
+kDefaultConfig11.ModelID = 0
+kDefaultConfig11.ShapeColorR = 1.0
+kDefaultConfig11.ShapeColorG = 1.0
+kDefaultConfig11.ShapeColorB = 1.0
+kDefaultConfig11.ShapeSparkle = true
+kDefaultConfig11.UserScale = 0.65
+kDefaultConfig11.UserAlpha = 1.0
+kDefaultConfig11.UserShadowAlpha = 0.65
+kDefaultConfig11.Strata = "FULLSCREEN"
+kDefaultConfig11.FadeOut = false
 
+--~ -- NOTE: The next config only works for Retail WoW.
+--~ kDefaultConfig12 = CopyTable(kDefaultConfig)
+--~ kDefaultConfig12.ShapeFileName = kMediaPath.."Ring 3.tga"
+--~ kDefaultConfig12.ModelID = 1417024  -- "Sparkling, Rainbow"
+--~ kDefaultConfig12.ShapeColorR = 1.0
+--~ kDefaultConfig12.ShapeColorG = 0.882
+--~ kDefaultConfig12.ShapeColorB = 0.882
+--~ kDefaultConfig12.UserScale = 0.6
+--~ kDefaultConfig12.UserAlpha = 1.0
+--~ kDefaultConfig12.UserShadowAlpha = 0.99
+--~ kDefaultConfig12.Strata = "HIGH"
+--~ kDefaultConfig12.FadeOut = false
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Switches                                          ]]
@@ -232,6 +253,18 @@ gMotionIntensity = 0  -- Ranges 0.0 to 1.0, increases the longer the mouse is mo
 gShowOrHide = nil  -- Can be kShow, kHide, or nil (no change).
 gPreviousX = nil
 gPreviousY = nil
+
+-- Sparkling shape color arrays:
+gShapeSparkleIndex = 1
+gShapeSparkleMax = 60
+gShapeSparkleR = {}
+gShapeSparkleG = {}
+gShapeSparkleB = {}
+for i = 1, gShapeSparkleMax do
+    gShapeSparkleR[i] = random(3,9) * 0.1
+    gShapeSparkleG[i] = random(3,9) * 0.1
+    gShapeSparkleB[i] = random(3,9) * 0.1
+end
 
 -- Timer variables:
 gTimer1 = 0
@@ -279,6 +312,7 @@ function printUsageMsg()
         .."  (Automatically turns back on at next reload, or by typing "..BLUE.."/ct on"..GREEN2..".)")
     printMsg(BLUE.."  /ct reload"..GREEN2.." - Reloads the current cursor settings.")
     printMsg(BLUE.."  /ct reset"..GREEN2.." - Resets cursor to original settings.")
+    printMsg(BLUE..'  /ct sparkle'..GREEN2..' - Toggles shape color between normal and "sparkle".')
     printMsg(GREEN2.."PROFILE COMMANDS:")
     printMsg(BLUE.."    /ct delete <profile name>")
     printMsg(BLUE.."    /ct list")
@@ -359,6 +393,13 @@ Globals.SlashCmdList[kAddonName] = function (params)
         if (PlayerConfig.FadeOut == true) then gMotionIntensity = 0.5 end
         printMsg(kAddonName..GREEN2.." 'Fade out when idle' |r= "
             ..ORANGE..(PlayerConfig.FadeOut==true and "ON" or "OFF"))
+    -- - - - - - - - - - - - - - - - - - - - - - - - - - -
+    elseif (params == "sparkle") then
+        if (OptionsFrame and OptionsFrame:IsShown()) then OptionsFrame:Hide() end
+        CursorTrail_SetShapeSparkle( not PlayerConfig.ShapeSparkle )
+        PlayerConfig_Save()
+        printMsg(kAddonName..GREEN2.." 'Shape Sparkle' |r= "
+            ..ORANGE..(PlayerConfig.ShapeSparkle==true and "ON" or "OFF"))
     -- - - - - - - - - - - - - - - - - - - - - - - - - - -
     elseif (params:sub(1,4) == "list") then
         Profiles_List()
@@ -521,10 +562,10 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
     ----DebugText("CPU: "..round(elapsedSeconds,3), 76)
     ----local t0 = GetTime()
     local bIsMouseLooking = IsMouselooking()
-    
+
     if (PlayerConfig.UserShowMouseLook == true) then
         gTimer1 = 0  -- Prevents hiding during "mouse look".
-        if (bIsMouseLooking == true and PlayerConfig.FadeOut == true) then 
+        if (bIsMouseLooking == true and PlayerConfig.FadeOut == true) then
             gMotionIntensity = 1.0  -- Force show during mouse look.
         end
     else
@@ -537,7 +578,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
             if (OptionsFrame and OptionsFrame:IsShown() ~= true) then
                 if (bIsMouseLooking == true) then
                     gLButtonDownCount = 1
-                    if ( CursorModel.IsHidden ~= true 
+                    if ( CursorModel.IsHidden ~= true
                         or (ShadowTexture and ShadowTexture:GetAlpha() > 0)
                         or (ShapeTexture and ShapeTexture:GetAlpha() > 0) )
                       then
@@ -546,7 +587,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
                 elseif IsMouseButtonDown("LeftButton") then
                     gLButtonDownCount = gLButtonDownCount + 1
                     if (gLButtonDownCount > 1) then
-                        if ( CursorModel.IsHidden ~= true 
+                        if ( CursorModel.IsHidden ~= true
                             or (ShadowTexture and ShadowTexture:GetAlpha() > 0)
                             or (ShapeTexture and ShapeTexture:GetAlpha() > 0) )
                           then
@@ -580,6 +621,17 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
     end
 
     -- - - - - - - - - - - - - - - - - - - - - - - - --
+    -- Update shape color if sparkle mode is on.
+    -- - - - - - - - - - - - - - - - - - - - - - - - --
+    if (ShapeTexture and PlayerConfig.ShapeSparkle) then
+        ShapeTexture:SetVertexColor(gShapeSparkleR[gShapeSparkleIndex]
+                                  , gShapeSparkleG[gShapeSparkleIndex]
+                                  , gShapeSparkleB[gShapeSparkleIndex])
+        gShapeSparkleIndex = gShapeSparkleIndex + 1
+        if gShapeSparkleIndex > gShapeSparkleMax then gShapeSparkleIndex = 1 end
+    end
+
+    -- - - - - - - - - - - - - - - - - - - - - - - - --
     -- Follow mouse cursor.
     -- - - - - - - - - - - - - - - - - - - - - - - - --
     local cursorX, cursorY = GetCursorPosition()
@@ -589,7 +641,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
 
         ----local dx, dy = cursorX-(gPreviousX or 0), cursorY-(gPreviousY or 0)
         gPreviousX, gPreviousY = cursorX, cursorY
-        
+
         local tX, tY   -- (x, y) position of texture objects.
         if (ShadowTexture or ShapeTexture) then
             tX = ((cursorX - ScreenMidX) / ScreenScale)
@@ -615,11 +667,11 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
             local modelY = ((cursorY - ScreenMidY) / CursorModel.StepY) + CursorModel.OfsY
             CursorModel:SetPosition(0, modelX, modelY)
         end
-        
+
         -- Update position of shape.
         if ShapeTexture then
             ShapeTexture:SetPoint("CENTER", kGameFrame, "CENTER", tX+0.5, tY-0.5)
-        end        
+        end
 
         -- - - - - - - - - - - - - - - - - - - - - - - - --
         -- Fade in, if necessary.
@@ -676,7 +728,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
                 ----print("shadow alpha:", round(alpha,2))
             end
         end
-        
+
         -- Fade out shape.
         if ShapeTexture then
             if (ShapeTexture:GetAlpha() > 0) then
@@ -686,7 +738,7 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
             end
         end
     end
-    
+
     ----DebugText("dt: "..GetTime()-t0, 200)
 end
 
@@ -730,9 +782,9 @@ function Addon_Initialize()
     -- Global Settings
     -------------------
     Globals.CursorTrail_Config.Profiles = Globals.CursorTrail_Config.Profiles or {}
-    
+
     ------ Changelog stuff.
-    ---->>> NOT IMPLEMENTED YET. 
+    ---->>> NOT IMPLEMENTED YET.
     ----Globals.CursorTrail_Config.LastChangelogVersion = Globals.CursorTrail_Config.LastChangelogVersion or ""
     ----
     ------ Show change log?
@@ -740,11 +792,12 @@ function Addon_Initialize()
     ----    CursorTrail_ShowChangelog()
     ----    Globals.CursorTrail_Config.LastChangelogVersion = kAddonVersion
     ----end
-    
+
     -- New features notification.
     Globals.CursorTrail_Config.NewFeaturesSeen = Globals.CursorTrail_Config.NewFeaturesSeen or {}
     local newFeaturesCount = 0
-    for _, newFeatureName in pairs(kNewFeatures) do
+    for _, pt in pairs(kNewFeatures) do
+        local newFeatureName = pt.relativeTo
         ----print("Addon_Initialize(), newFeatureName:", newFeatureName)
         if not Globals.CursorTrail_Config.NewFeaturesSeen[newFeatureName] then
             newFeaturesCount = newFeaturesCount + 1
@@ -769,7 +822,7 @@ end
 -------------------------------------------------------------------------------
 function printNewFeaturesMsg(bIncludeInstructions)
     local msg = kAddonAlertHeading..GREEN.."NEW FEATURES available!"..kTextColorDefault
-    if bIncludeInstructions then 
+    if bIncludeInstructions then
         msg = msg.."  (Type either "..WHITE.."/ct|r or "..WHITE.."/"..kAddonName.."|r to see them.)"
     end
     printMsg(msg)
@@ -801,7 +854,7 @@ function PlayerConfig_Validate()
     if ( not PlayerConfig.ModelID or not tonumber(PlayerConfig.ModelID) ) then
         PlayerConfig.ModelID = kDefaultModelID
     end
-    
+
     -- Clear obsolete fields.
     if (PlayerConfig.BaseScale ~= nil) then
         PlayerConfig.BaseScale = nil
@@ -853,7 +906,7 @@ function CursorTrail_Load(config)
     Shape_SetTexture(config.ShapeFileName)
     ----Shape_SetColor()  -- Set texture's original color(s).
     Shape_SetColor(config.ShapeColorR, config.ShapeColorG, config.ShapeColorB)
-    
+
     ----------------
     -- LOAD MODEL --
     ----------------
@@ -927,6 +980,10 @@ function CursorTrail_ApplyModelSettings(userScale, userOfsX, userOfsY, userAlpha
     local mult = kBaseMult * ScreenHypotenuse
     local baseScale = CursorModel.Constants.BaseScale
     local finalScale = userScale * baseScale
+    ---->>> DIDN'T HELP.  CHANGING UI SCALE ALSO CHANGES THE ScaleMin VALUE.  WAS UNABLE TO DETERMINE CORRECT VALUE.
+    ----if (CursorModel.Constants.ScaleMin and finalScale < CursorModel.Constants.ScaleMin) then
+    ----    finalScale = CursorModel.Constants.ScaleMin
+    ----end
 
     -- UPDATE MODEL --
     CursorModel:SetScale(finalScale)
@@ -949,11 +1006,11 @@ function CursorTrail_ApplyModelSettings(userScale, userOfsX, userOfsY, userAlpha
         ----ShadowTexture.OfsX = (CursorModel.StepX * userOfsX)
         ----ShadowTexture.OfsY = (CursorModel.StepY * userOfsY)
     end
-    
+
     -- UPDATE SHAPE --
     if ShapeTexture then
         ShapeTexture:SetAlpha(userAlpha)
-        
+
         -- Update shape size based on current user scale.
         local shapeSize = kDefaultShapeSize * userScale
         ShapeTexture:SetSize(shapeSize, shapeSize)
@@ -1007,6 +1064,14 @@ function CursorTrail_SetFadeOut(bFadeOut)
         if ShapeTexture then
             ShapeTexture:SetAlpha(PlayerConfig.UserAlpha)
         end
+    end
+end
+
+-------------------------------------------------------------------------------
+function CursorTrail_SetShapeSparkle(bSparkle)
+    PlayerConfig.ShapeSparkle = bSparkle or false
+    if not PlayerConfig.ShapeSparkle then
+        Shape_SetColor(PlayerConfig.ShapeColorR, PlayerConfig.ShapeColorG, PlayerConfig.ShapeColorB)
     end
 end
 

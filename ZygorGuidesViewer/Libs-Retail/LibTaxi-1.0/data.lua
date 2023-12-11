@@ -11,13 +11,22 @@ data.taxipoints = {
 -----     DRAGON ISLES    -----
 -------------------------------
 [1978]={
+	['The Emerald Dream']={
+
+		-- NEUTRAL --
+		{name="Verdant Landing",faction="B",npc="Occarim",npcid=208280,x=68.82,y=54.79},
+		{name="Wellspring Overlook",faction="B",npc="Thevelo",npcid=209427,x=35.65,y=33.66},
+		{name="Central Encampment",faction="B",npc="Leora",npcid=207636,x=51.09,y=62.35},
+		{name="Eye of Ysera",faction="B",npc="Eladriel",npcid=211353,x=55.29,y=29.57},
+	},
+
 	['The Waking Shores']={
 
 		-- NEUTRAL --
 		{name="Wingrest Embassy",faction="B",npc="Tixxa Mixxa",npcid=192490,x=76.03,y=35.05},
 		{name="Uktulut Pier",faction="B",npc="Pana",npcid=192472,x=45.84,y=27.48},
-		-- {name="Uktulut Backwater",faction="B",npc="Janatak",npcid=192472,x=54.32,y=36.97},			-- Can't learn this fpath in beta, for some reason
-		{name="Skytop Observatory",taxinodeID=2817,faction="B",npc="Azerastrasz",npcid=193477,x=72.77,y=51.91},
+		{name="Uktulut Backwater",faction="B",npc="Janatak",npcid=189731,x=54.32,y=36.97},			-- Can't learn this fpath in beta, for some reason
+		{name="Skytop Observatory",faction="B",npc="Azerastrasz",npcid=193477,x=72.77,y=51.91,taxinodeID=2817},
 		{name="Life Vault Ruins",faction="B",npc="Tallevia Mistsong",npcid=192484,x=65.03,y=57.36},
 		{name="Ruby Life Pools",faction="B",npc="Vaknai",npcid=192491,x=57.80,y=68.12},
 		{name="Dragonscale Basecamp",faction="B",npc="Art Raskins",npcid=192843,x=47.91,y=83.32},
@@ -25,8 +34,8 @@ data.taxipoints = {
 		{name="Obsidian Throne",faction="B",npc="Foehn Breezeskimmer",npcid=188336,x=25.27,y=56.83},
 		{name="Apex Observatory",faction="B",npc="Hjorik",npcid=192493,x=23.79,y=83.14},
 		{name="Uktulut Outpost",faction="B",npc="Nulia",npcid=192494,x=17.51,y=88.70},
-		--{name="Skytop Observatory",taxinodeID=2841,faction="B",npc="Ancient Waygate",npcid="aw",x=75.28,y=57.02,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71157) or c.completedq(71157)) and not c.hasbuff("spell:392960") end},
-		--{name="Rubyscale Outpost",taxinodeID=2842,faction="B",npc="Ancient Waygate",npcid="aw",x=47.28,y=90.30,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(70156) or c.completedq(70156)) and not c.hasbuff("spell:392960") end},
+		{name="Skytop Observatory",faction="B",npc="Ancient Waygate",npcid="aw",x=75.28,y=57.02,taxinodeID=2841,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71157) or c.completedq(71157)) and not c.hasbuff("spell:392960") end},
+		{name="Rubyscale Outpost", faction="B",npc="Ancient Waygate",npcid="aw",x=47.28,y=90.30,taxinodeID=2842,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(70156) or c.completedq(70156)) and not c.hasbuff("spell:392960") end},
 	},
 
 	['Ohn\'ahran Plains']={
@@ -42,10 +51,10 @@ data.taxipoints = {
 		{name="Ohn'iri Springs",faction="B",npc="Huraq",npcid=195235,x=56.68,y=76.59},
 		{name="Forkriver Crossing",faction="B",npc="Rynaam",npcid=192838,x=71.65,y=79.07},
 		{name="Pinewood Post",faction="B",npc="Nakeena",npcid=191622,x=80.44,y=57.89},
-		--{name="Rusza'thar Reach",taxinodeID=2839,faction="B",npc="Ancient Waygate",npcid="aw",x=81.31,y=38.98,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71138) or c.completedq(71138)) and not c.hasbuff("spell:392960") end},
-		--{name="Shady Sanctuary",taxinodeID=2840,faction="B",npc="Ancient Waygate",npcid="aw",x=30.66,y=55.48,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71178) or c.completedq(71178)) and not c.hasbuff("spell:392960") end},
-		{name = "Cascades Canyon, Ohn'ahran Plains", taxinodeID = 2866,taxihidden=true, faction="B", x=88.75, y=27.66}, -- zaralek cavern crossmap point
-		{name = "Old Loamm Road, Ohn'ahran Plains", taxinodeID = 2874,taxihidden=true, faction="B", x=36.02, y=59.11}, -- zaralek cavern crossmap point
+		{name="Rusza'thar Reach",faction="B",npc="Ancient Waygate",npcid="aw",x=81.31,y=38.98,taxinodeID=2839,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71138) or c.completedq(71138)) and not c.hasbuff("spell:392960") end},
+		{name="Shady Sanctuary", faction="B",npc="Ancient Waygate",npcid="aw",x=30.66,y=55.48,taxinodeID=2840,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71178) or c.completedq(71178)) and not c.hasbuff("spell:392960") end},
+		{name="Cascades Canyon, Ohn'ahran Plains", taxinodeID = 2866,taxihidden=true, faction="B", x=88.75, y=27.66}, -- zaralek cavern crossmap point
+		{name="Old Loamm Road, Ohn'ahran Plains", taxinodeID = 2874,taxihidden=true, faction="B", x=36.02, y=59.11}, -- zaralek cavern crossmap point
 	},
 
 	['The Azure Span']={
@@ -59,8 +68,8 @@ data.taxipoints = {
 		{name="Camp Nowhere",faction="B",npc="Camilla Highwind",npcid=186782,x=63.45,y=58.67},
 		{name="Rhonin's Shield",faction="B",npc="Portia Striat",npcid=191976,x=66.00,y=25.39},
 		{name="Theron's Watch",faction="B",npc="Taelmyr Blazewing",npcid=186742,x=65.37,y=16.39},
-		--{name="Cobalt Assembly",taxinodeID=2838,faction="B",npc="Ancient Waygate",npcid="aw",x=48.33,y=30.13,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(70156) or c.completedq(70156)) and not c.hasbuff("spell:392960") end},
-		--{name="Vakthros",taxinodeID=2837,faction="B",npc="Ancient Waygate",npcid="aw",x=77.59,y=30.79,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71161) or c.completedq(71161)) and not c.hasbuff("spell:392960") end},
+		{name="Cobalt Assembly",faction="B",npc="Ancient Waygate",npcid="aw",x=48.33,y=30.13,taxinodeID=2838,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(70156) or c.completedq(70156)) and not c.hasbuff("spell:392960") end},
+		{name="Vakthros",       faction="B",npc="Ancient Waygate",npcid="aw",x=77.59,y=30.79,taxinodeID=2837,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71161) or c.completedq(71161)) and not c.hasbuff("spell:392960") end},
 		{name = "Lookout Breach, Azure Span", taxinodeID=2877, taxihidden=true, faction="B", x=18.75, y=22.87}, -- zaralek cavern crossmap point
 	},
 
@@ -74,8 +83,8 @@ data.taxipoints = {
 		{name="Vault of the Incarnates",faction="B",npc="Nirazal",npcid=193508,x=72.14,y=56.45},
 		{name="Veiled Ossuary",faction="B",npc="Officer Obernax",npcid=189237,x=62.07,y=18.93},
 		{name="Algeth'era",taxinodeID=2813,faction="B",npc="Vesri",npcid=189339,x=49.47,y=41.95},
-		--{name="Algeth'era",taxinodeID=2836,faction="B",npc="Ancient Waygate",npcid="aw",x=62.42,y=40.47,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71162) or c.completedq(71162)) and not c.hasbuff("spell:392960") end},
-		--{name="Eon's Fringe",taxinodeID=2834,faction="B",npc="Ancient Waygate",npcid="aw",x=52.34,y=78.54,taxioperator="ancientwaygate",cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71165) or c.completedq(71165)) and not c.hasbuff("spell:392960") end},
+		{name="Algeth'era",  faction="B",npc="Ancient Waygate",npcid="aw",x=62.42,y=40.47,taxinodeID=2836,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71162) or c.completedq(71162)) and not c.hasbuff("spell:392960") end},
+		{name="Eon's Fringe",faction="B",npc="Ancient Waygate",npcid="aw",x=52.34,y=78.54,taxinodeID=2834,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(71165) or c.completedq(71165)) and not c.hasbuff("spell:392960") end},
 	},
 
 	['Valdrakken']={
@@ -84,10 +93,11 @@ data.taxipoints = {
 		{name="Valdrakken",faction="B",npc="Aluri",npcid=193321,x=44.04,y=67.97},
 	},
 
-	['The Forbidden Reach']={
+	['The Forbidden Reach/5']={ -- The Forbidden Reach/5
 
 		-- NEUTRAL --
 		{name="Morqut Village",faction="B",npc="Renpiaq",npcid=200561,x=33.62,y=54.86},
+		{name="Morqut Islet",faction="B",npc="Ancient Waygate",npcid="aw",x=29.08,y=62.45,taxinodeID=2862,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(75154) or c.completedq(75154)) and not c.hasbuff("spell:392960") end},
 	},
 
 	['Zaralek Cavern']={
@@ -222,10 +232,10 @@ data.taxipoints = {
 		{name="Sepulcher of the First Ones",faction="B",npc="Ancient Translocator",npcid=184332,x=73.00,y=53.39,taxioperator="zerethportal3"},
 		{name="Primus Locus",faction="B",npc="Locus Shift",npcid=184386,x=48.43,y=26.35,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,3) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
 		{name="Secundus Locus",faction="B",npc="Locus Shift",npcid=184387,x=47.96,y=27.91,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,5) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Quartus Locus",faction="B",npc="Locus Shift",npcid=184385,x=48.52,y=29.70,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,9) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Ultimus Locus",faction="B",npc="Locus Shift",npcid=184364,x=48.89,y=31.43,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,13) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
 		{name="Tertius Locus",faction="B",npc="Locus Shift",npcid=184388,x=51.91,y=27.11,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,7) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Quartus Locus",faction="B",npc="Locus Shift",npcid=184385,x=48.52,y=29.70,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,9) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
 		{name="Quintus Locus",faction="B",npc="Locus Shift",npcid=184384,x=50.67,y=32.60,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,11) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Ultimus Locus",faction="B",npc="Locus Shift",npcid=184364,x=48.89,y=31.43,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,13) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
 	},
 	['Gravid Repose']={
 		{name="Gravid Repose Locus",faction="B",npc="Locus Shift",npcid=184329,x=59.35,y=41.51,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.haveq(64889) or (c.specialtalent(1907) and c.completedq(64889)) end}, -- known_fun=function() local c=ZGV.Parser.ConditionEnv return c.haveq(123456) or c.completedq(123456) end
@@ -9492,7 +9502,7 @@ data.flightcost = {
 				[2774] = 43, -- Camp Antonidas
 				[2775] = 67, -- Iskaara
 				[2784] = 83, -- Camp Nowhere
-				[2789] = 0, -- Three-Falls Lookout
+				[2789] = 76, -- Three-Falls Lookout
 			},
 		},
 		{
@@ -9501,9 +9511,9 @@ data.flightcost = {
 			name = "Camp Antonidas",
 			neighbors = {
 				[2773] = 43, -- Azure Archives
-				[2775] = 0, -- Iskaara
+				[2775] = 86, -- Iskaara
 				[2784] = 64, -- Camp Nowhere
-				[2786] = 0, -- Rhonin's Shield
+				[2786] = 55, -- Rhonin's Shield
 				[2787] = 34, -- Cobalt Assembly
 				[2789] = 94, -- Three-Falls Lookout
 			},
@@ -9514,9 +9524,9 @@ data.flightcost = {
 			name = "Iskaara",
 			neighbors = {
 				[2773] = 67, -- Azure Archives
-				[2774] = 0, -- Camp Antonidas
-				[2789] = 54, -- Three-Falls Lookout
-				[2796] = 0, -- Shady Sanctuary
+				[2774] = 86, -- Camp Antonidas
+				[2789] = 52, -- Three-Falls Lookout
+				[2796] = 82, -- Shady Sanctuary
 			},
 		},
 		{
@@ -9534,9 +9544,9 @@ data.flightcost = {
 			nodeID = 2786,
 			name = "Rhonin's Shield",
 			neighbors = {
-				[2774] = 0, -- Camp Antonidas
-				[2784] = 64, -- Camp Nowhere
-				[2787] = 0, -- Cobalt Assembly
+				[2774] = 55, -- Camp Antonidas
+				[2784] = 59, -- Camp Nowhere
+				[2787] = 43, -- Cobalt Assembly
 				[2788] = 18, -- Theron's Watch
 			},
 		},
@@ -9546,12 +9556,12 @@ data.flightcost = {
 			name = "Cobalt Assembly",
 			neighbors = {
 				[2774] = 34, -- Camp Antonidas
-				[2786] = 0, -- Rhonin's Shield
-				[2788] = 0, -- Theron's Watch
-				[2789] = 0, -- Three-Falls Lookout
-				[2793] = 0, -- Forkriver Crossing
-				[2798] = 0, -- Pinewood Post
-				[2815] = 0, -- Garden Shrine
+				[2786] = 43, -- Rhonin's Shield
+				[2788] = 43, -- Theron's Watch
+				[2789] = 91, -- Three-Falls Lookout
+				[2793] = 32, -- Forkriver Crossing
+				[2798] = 29, -- Pinewood Post
+				[2815] = 51, -- Garden Shrine
 			},
 		},
 		{
@@ -9560,9 +9570,9 @@ data.flightcost = {
 			name = "Theron's Watch",
 			neighbors = {
 				[2786] = 18, -- Rhonin's Shield
-				[2787] = 0, -- Cobalt Assembly
+				[2787] = 44, -- Cobalt Assembly
 				[2815] = 37, -- Garden Shrine
-				[2816] = 0, -- Shifting Sands
+				[2816] = 37, -- Shifting Sands
 			},
 		},
 		{
@@ -9570,13 +9580,14 @@ data.flightcost = {
 			nodeID = 2789,
 			name = "Three-Falls Lookout",
 			neighbors = {
-				[2773] = 0, -- Azure Archives
+				[2773] = 76, -- Azure Archives
 				[2774] = 94, -- Camp Antonidas
 				[2775] = 54, -- Iskaara
-				[2787] = 0, -- Cobalt Assembly
-				[2792] = 0, -- Maruukai
-				[2793] = 0, -- Forkriver Crossing
-				[2794] = 0, -- Teerakai
+				[2787] = 91, -- Cobalt Assembly
+				[2792] = 73, -- Maruukai
+				[2793] = 77, -- Forkriver Crossing
+				[2794] = 43, -- Teerakai
+				[2796] = 51, -- Shady Sanctuary
 				[2877] = 0, -- Lookout Breach
 			},
 		},
@@ -9585,12 +9596,12 @@ data.flightcost = {
 			nodeID = 2790,
 			name = "Timberstep Outpost",
 			neighbors = {
-				[2792] = 0, -- Maruukai
+				[2792] = 42, -- Maruukai
 				[2797] = 31, -- Emberwatch
 				[2799] = 17, -- Rusza'thar Reach
-				[2807] = 0, -- Ruby Life Pools
-				[2809] = 0, -- Dragonscale Basecamp
-				[2810] = 0, -- Valdrakken
+				[2807] = 40, -- Ruby Life Pools
+				[2809] = 23, -- Dragonscale Basecamp
+				[2810] = 30, -- Valdrakken
 			},
 		},
 		{
@@ -9598,14 +9609,14 @@ data.flightcost = {
 			nodeID = 2792,
 			name = "Maruukai",
 			neighbors = {
-				[2789] = 0, -- Three-Falls Lookout
-				[2790] = 0, -- Timberstep Outpost
-				[2793] = 0, -- Forkriver Crossing
-				[2794] = 0, -- Teerakai
-				[2795] = 30, -- Broadhoof Outpost
+				[2789] = 73, -- Three-Falls Lookout
+				[2790] = 42, -- Timberstep Outpost
+				[2793] = 45, -- Forkriver Crossing
+				[2794] = 46, -- Teerakai
+				[2795] = 28, -- Broadhoof Outpost
 				[2797] = 23, -- Emberwatch
 				[2798] = 36, -- Pinewood Post
-				[2799] = 0, -- Rusza'thar Reach
+				[2799] = 37, -- Rusza'thar Reach
 				[2825] = 42, -- Ohn'iri Springs
 			},
 		},
@@ -9614,10 +9625,10 @@ data.flightcost = {
 			nodeID = 2793,
 			name = "Forkriver Crossing",
 			neighbors = {
-				[2787] = 0, -- Cobalt Assembly
-				[2789] = 0, -- Three-Falls Lookout
-				[2792] = 0, -- Maruukai
-				[2794] = 0, -- Teerakai
+				[2787] = 32, -- Cobalt Assembly
+				[2789] = 77, -- Three-Falls Lookout
+				[2792] = 45, -- Maruukai
+				[2794] = 55, -- Teerakai
 				[2798] = 31, -- Pinewood Post
 				[2825] = 28, -- Ohn'iri Springs
 			},
@@ -9627,10 +9638,10 @@ data.flightcost = {
 			nodeID = 2794,
 			name = "Teerakai",
 			neighbors = {
-				[2789] = 0, -- Three-Falls Lookout
-				[2792] = 0, -- Maruukai
-				[2793] = 0, -- Forkriver Crossing
-				[2795] = 0, -- Broadhoof Outpost
+				[2789] = 43, -- Three-Falls Lookout
+				[2792] = 50, -- Maruukai
+				[2793] = 55, -- Forkriver Crossing
+				[2795] = 28, -- Broadhoof Outpost
 				[2796] = 21, -- Shady Sanctuary
 				[2825] = 34, -- Ohn'iri Springs
 				[2874] = 0, -- Old Loamm Road
@@ -9642,9 +9653,9 @@ data.flightcost = {
 			name = "Broadhoof Outpost",
 			neighbors = {
 				[2792] = 30, -- Maruukai
-				[2794] = 0, -- Teerakai
+				[2794] = 28, -- Teerakai
 				[2796] = 36, -- Shady Sanctuary
-				[2800] = 0, -- Uktulut Outpost
+				[2800] = 31, -- Uktulut Outpost
 			},
 		},
 		{
@@ -9652,9 +9663,11 @@ data.flightcost = {
 			nodeID = 2796,
 			name = "Shady Sanctuary",
 			neighbors = {
-				[2775] = 0, -- Iskaara
+				[2775] = 82, -- Iskaara
+				[2789] = 51, -- Three-Falls Lookout
 				[2794] = 21, -- Teerakai
 				[2795] = 36, -- Broadhoof Outpost
+				[2874] = 0, -- Old Loamm Road
 			},
 		},
 		{
@@ -9663,10 +9676,10 @@ data.flightcost = {
 			name = "Emberwatch",
 			neighbors = {
 				[2790] = 31, -- Timberstep Outpost
-				[2792] = 23, -- Maruukai
-				[2801] = 0, -- Apex Observatory
-				[2808] = 0, -- Obsidian Bulwark
-				[2809] = 0, -- Dragonscale Basecamp
+				[2792] = 22, -- Maruukai
+				[2801] = 37, -- Apex Observatory
+				[2808] = 41, -- Obsidian Bulwark
+				[2809] = 29, -- Dragonscale Basecamp
 			},
 		},
 		{
@@ -9674,11 +9687,11 @@ data.flightcost = {
 			nodeID = 2798,
 			name = "Pinewood Post",
 			neighbors = {
-				[2787] = 0, -- Cobalt Assembly
+				[2787] = 29, -- Cobalt Assembly
 				[2792] = 36, -- Maruukai
 				[2793] = 31, -- Forkriver Crossing
 				[2799] = 25, -- Rusza'thar Reach
-				[2815] = 0, -- Garden Shrine
+				[2815] = 40, -- Garden Shrine
 			},
 		},
 		{
@@ -9687,10 +9700,11 @@ data.flightcost = {
 			name = "Rusza'thar Reach",
 			neighbors = {
 				[2790] = 17, -- Timberstep Outpost
-				[2792] = 0, -- Maruukai
+				[2792] = 37, -- Maruukai
 				[2798] = 25, -- Pinewood Post
 				[2810] = 32, -- Valdrakken
-				[2815] = 0, -- Garden Shrine
+				[2815] = 31, -- Garden Shrine
+				[2866] = 55, -- Cascades Canyon
 			},
 		},
 		{
@@ -9698,7 +9712,7 @@ data.flightcost = {
 			nodeID = 2800,
 			name = "Uktulut Outpost",
 			neighbors = {
-				[2795] = 0, -- Broadhoof Outpost
+				[2795] = 31, -- Broadhoof Outpost
 				[2801] = 18, -- Apex Observatory
 			},
 		},
@@ -9707,10 +9721,10 @@ data.flightcost = {
 			nodeID = 2801,
 			name = "Apex Observatory",
 			neighbors = {
-				[2797] = 0, -- Emberwatch
+				[2797] = 37, -- Emberwatch
 				[2800] = 18, -- Uktulut Outpost
 				[2802] = 45, -- Obsidian Throne
-				[2808] = 0, -- Obsidian Bulwark
+				[2808] = 38, -- Obsidian Bulwark
 			},
 		},
 		{
@@ -9719,8 +9733,8 @@ data.flightcost = {
 			name = "Obsidian Throne",
 			neighbors = {
 				[2801] = 45, -- Apex Observatory
-				[2804] = 0, -- Uktulut Backwater
-				[2808] = 0, -- Obsidian Bulwark
+				[2804] = 57, -- Uktulut Backwater
+				[2808] = 31, -- Obsidian Bulwark
 			},
 		},
 		{
@@ -9728,7 +9742,7 @@ data.flightcost = {
 			nodeID = 2803,
 			name = "Uktulut Pier",
 			neighbors = {
-				[2804] = 0, -- Uktulut Backwater
+				[2804] = 24, -- Uktulut Backwater
 			},
 		},
 		{
@@ -9736,11 +9750,11 @@ data.flightcost = {
 			nodeID = 2804,
 			name = "Uktulut Backwater",
 			neighbors = {
-				[2802] = 0, -- Obsidian Throne
-				[2803] = 0, -- Uktulut Pier
-				[2805] = 0, -- Wingrest Embassy
-				[2806] = 0, -- Life Vault Ruins
-				[2808] = 0, -- Obsidian Bulwark
+				[2802] = 57, -- Obsidian Throne
+				[2803] = 24, -- Uktulut Pier
+				[2805] = 42, -- Wingrest Embassy
+				[2806] = 32, -- Life Vault Ruins
+				[2808] = 55, -- Obsidian Bulwark
 			},
 		},
 		{
@@ -9748,11 +9762,11 @@ data.flightcost = {
 			nodeID = 2805,
 			name = "Wingrest Embassy",
 			neighbors = {
-				[2804] = 0, -- Uktulut Backwater
-				[2806] = 0, -- Life Vault Ruins
-				[2814] = 0, -- Veiled Ossuary
+				[2804] = 42, -- Uktulut Backwater
+				[2806] = 37, -- Life Vault Ruins
+				[2814] = 58, -- Veiled Ossuary
 				[2817] = 25, -- Skytop Observatory
-				[2855] = 0, -- Morqut Village
+				[2855] = 30, -- Morqut Village
 			},
 		},
 		{
@@ -9760,10 +9774,10 @@ data.flightcost = {
 			nodeID = 2806,
 			name = "Life Vault Ruins",
 			neighbors = {
-				[2804] = 0, -- Uktulut Backwater
-				[2805] = 0, -- Wingrest Embassy
+				[2804] = 32, -- Uktulut Backwater
+				[2805] = 40, -- Wingrest Embassy
 				[2807] = 25, -- Ruby Life Pools
-				[2813] = 0, -- Algeth'era
+				[2813] = 44, -- Algeth'era
 				[2817] = 22, -- Skytop Observatory
 			},
 		},
@@ -9772,12 +9786,12 @@ data.flightcost = {
 			nodeID = 2807,
 			name = "Ruby Life Pools",
 			neighbors = {
-				[2790] = 0, -- Timberstep Outpost
-				[2806] = 25, -- Life Vault Ruins
-				[2808] = 0, -- Obsidian Bulwark
+				[2790] = 40, -- Timberstep Outpost
+				[2806] = 26, -- Life Vault Ruins
+				[2808] = 40, -- Obsidian Bulwark
 				[2809] = 32, -- Dragonscale Basecamp
 				[2810] = 50, -- Valdrakken
-				[2813] = 0, -- Algeth'era
+				[2813] = 51, -- Algeth'era
 			},
 		},
 		{
@@ -9785,11 +9799,11 @@ data.flightcost = {
 			nodeID = 2808,
 			name = "Obsidian Bulwark",
 			neighbors = {
-				[2797] = 0, -- Emberwatch
-				[2801] = 0, -- Apex Observatory
-				[2802] = 0, -- Obsidian Throne
-				[2804] = 0, -- Uktulut Backwater
-				[2807] = 0, -- Ruby Life Pools
+				[2797] = 41, -- Emberwatch
+				[2801] = 38, -- Apex Observatory
+				[2802] = 31, -- Obsidian Throne
+				[2804] = 55, -- Uktulut Backwater
+				[2807] = 40, -- Ruby Life Pools
 				[2809] = 27, -- Dragonscale Basecamp
 			},
 		},
@@ -9798,8 +9812,8 @@ data.flightcost = {
 			nodeID = 2809,
 			name = "Dragonscale Basecamp",
 			neighbors = {
-				[2790] = 0, -- Timberstep Outpost
-				[2797] = 0, -- Emberwatch
+				[2790] = 23, -- Timberstep Outpost
+				[2797] = 29, -- Emberwatch
 				[2807] = 32, -- Ruby Life Pools
 				[2808] = 27, -- Obsidian Bulwark
 			},
@@ -9809,12 +9823,13 @@ data.flightcost = {
 			nodeID = 2810,
 			name = "Valdrakken",
 			neighbors = {
-				[2790] = 0, -- Timberstep Outpost
+				[2790] = 30, -- Timberstep Outpost
 				[2799] = 32, -- Rusza'thar Reach
 				[2807] = 50, -- Ruby Life Pools
-				[2811] = 0, -- Gelikyr Post
+				[2811] = 30, -- Gelikyr Post
 				[2813] = 45, -- Algeth'era
 				[2815] = 30, -- Garden Shrine
+				[2855] = 158, -- Morqut Village
 				[2866] = 0, -- Cascades Canyon
 			},
 		},
@@ -9823,11 +9838,11 @@ data.flightcost = {
 			nodeID = 2811,
 			name = "Gelikyr Post",
 			neighbors = {
-				[2810] = 0, -- Valdrakken
-				[2813] = 0, -- Algeth'era
-				[2815] = 0, -- Garden Shrine
-				[2816] = 0, -- Shifting Sands
-				[2818] = 0, -- Vault of the Incarnates
+				[2810] = 30, -- Valdrakken
+				[2813] = 37, -- Algeth'era
+				[2815] = 46, -- Garden Shrine
+				[2816] = 27, -- Shifting Sands
+				[2818] = 51, -- Vault of the Incarnates
 			},
 		},
 		{
@@ -9835,7 +9850,7 @@ data.flightcost = {
 			nodeID = 2812,
 			name = "Temporal Conflux",
 			neighbors = {
-				[2816] = 0, -- Shifting Sands
+				[2816] = 8, -- Shifting Sands
 			},
 		},
 		{
@@ -9843,13 +9858,13 @@ data.flightcost = {
 			nodeID = 2813,
 			name = "Algeth'era",
 			neighbors = {
-				[2806] = 0, -- Life Vault Ruins
-				[2807] = 0, -- Ruby Life Pools
+				[2806] = 44, -- Life Vault Ruins
+				[2807] = 51, -- Ruby Life Pools
 				[2810] = 45, -- Valdrakken
-				[2811] = 0, -- Gelikyr Post
-				[2814] = 47, -- Veiled Ossuary
-				[2817] = 0, -- Skytop Observatory
-				[2818] = 0, -- Vault of the Incarnates
+				[2811] = 37, -- Gelikyr Post
+				[2814] = 48, -- Veiled Ossuary
+				[2817] = 38, -- Skytop Observatory
+				[2818] = 63, -- Vault of the Incarnates
 			},
 		},
 		{
@@ -9857,11 +9872,11 @@ data.flightcost = {
 			nodeID = 2814,
 			name = "Veiled Ossuary",
 			neighbors = {
-				[2805] = 0, -- Wingrest Embassy
+				[2805] = 58, -- Wingrest Embassy
 				[2813] = 47, -- Algeth'era
-				[2817] = 0, -- Skytop Observatory
-				[2818] = 0, -- Vault of the Incarnates
-				[2855] = 0, -- Morqut Village
+				[2817] = 43, -- Skytop Observatory
+				[2818] = 86, -- Vault of the Incarnates
+				[2855] = 30, -- Morqut Village
 			},
 		},
 		{
@@ -9869,13 +9884,13 @@ data.flightcost = {
 			nodeID = 2815,
 			name = "Garden Shrine",
 			neighbors = {
-				[2787] = 0, -- Cobalt Assembly
+				[2787] = 51, -- Cobalt Assembly
 				[2788] = 37, -- Theron's Watch
-				[2798] = 0, -- Pinewood Post
-				[2799] = 0, -- Rusza'thar Reach
+				[2798] = 40, -- Pinewood Post
+				[2799] = 31, -- Rusza'thar Reach
 				[2810] = 30, -- Valdrakken
-				[2811] = 0, -- Gelikyr Post
-				[2816] = 0, -- Shifting Sands
+				[2811] = 46, -- Gelikyr Post
+				[2816] = 54, -- Shifting Sands
 			},
 		},
 		{
@@ -9883,10 +9898,10 @@ data.flightcost = {
 			nodeID = 2816,
 			name = "Shifting Sands",
 			neighbors = {
-				[2788] = 0, -- Theron's Watch
-				[2811] = 0, -- Gelikyr Post
-				[2812] = 0, -- Temporal Conflux
-				[2815] = 0, -- Garden Shrine
+				[2788] = 37, -- Theron's Watch
+				[2811] = 27, -- Gelikyr Post
+				[2812] = 10, -- Temporal Conflux
+				[2815] = 54, -- Garden Shrine
 			},
 		},
 		{
@@ -9896,8 +9911,8 @@ data.flightcost = {
 			neighbors = {
 				[2805] = 25, -- Wingrest Embassy
 				[2806] = 22, -- Life Vault Ruins
-				[2813] = 0, -- Algeth'era
-				[2814] = 0, -- Veiled Ossuary
+				[2813] = 38, -- Algeth'era
+				[2814] = 43, -- Veiled Ossuary
 			},
 		},
 		{
@@ -9905,9 +9920,9 @@ data.flightcost = {
 			nodeID = 2818,
 			name = "Vault of the Incarnates",
 			neighbors = {
-				[2811] = 0, -- Gelikyr Post
-				[2813] = 0, -- Algeth'era
-				[2814] = 0, -- Veiled Ossuary
+				[2811] = 51, -- Gelikyr Post
+				[2813] = 63, -- Algeth'era
+				[2814] = 86, -- Veiled Ossuary
 			},
 		},
 		{
@@ -9916,7 +9931,7 @@ data.flightcost = {
 			name = "Ohn'iri Springs",
 			neighbors = {
 				[2792] = 42, -- Maruukai
-				[2793] = 28, -- Forkriver Crossing
+				[2793] = 30, -- Forkriver Crossing
 				[2794] = 34, -- Teerakai
 			},
 		},
@@ -9926,21 +9941,26 @@ data.flightcost = {
 			name = "Eon's Fringe",
 			taxioperator = "ancientwaygate",
 			neighbors = {
-				[2837] = 0.1, -- Vakthros
-				[2838] = 0.1, -- Cobalt Assembly
-				[2840] = 0.1, -- Shady Sanctuary
-				[2842] = 0.1, -- Rubyscale Outpost
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
 			},
 		},
 		{
 			tag = "639:682",
 			nodeID = 2837,
 			name = "Vakthros",
+			taxioperator = "ancientwaygate",
 			neighbors = {
-				[2834] = 0.1, -- Eon's Fringe
-				[2838] = 0.1, -- Cobalt Assembly
-				[2840] = 0.1, -- Shady Sanctuary
-				[2842] = 0.1, -- Rubyscale Outpost
+				[2834] = 3, -- Eon's Fringe
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
 			},
 		},
 		{
@@ -9949,8 +9969,26 @@ data.flightcost = {
 			name = "Cobalt Assembly",
 			taxioperator = "ancientwaygate",
 			neighbors = {
-				[2834] = 0.1, -- Eon's Fringe
-				[2837] = 0.1, -- Vakthros
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
+			},
+		},
+		{
+			tag = "497:528",
+			nodeID = 2839,
+			name = "Rusza'thar Reach",
+			taxioperator = "ancientwaygate",
+			neighbors = {
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
 			},
 		},
 		{
@@ -9959,8 +9997,12 @@ data.flightcost = {
 			name = "Shady Sanctuary",
 			taxioperator = "ancientwaygate",
 			neighbors = {
-				[2834] = 0.1, -- Eon's Fringe
-				[2837] = 0.1, -- Vakthros
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
 			},
 		},
 		{
@@ -9969,8 +10011,12 @@ data.flightcost = {
 			name = "Rubyscale Outpost",
 			taxioperator = "ancientwaygate",
 			neighbors = {
-				[2834] = 0.1, -- Eon's Fringe
-				[2837] = 0.1, -- Vakthros
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2862] = 3, -- Morqut Islet
 			},
 		},
 		{
@@ -9978,8 +10024,23 @@ data.flightcost = {
 			nodeID = 2855,
 			name = "Morqut Village",
 			neighbors = {
-				[2805] = 0, -- Wingrest Embassy
-				[2814] = 0, -- Veiled Ossuary
+				[2805] = 70, -- Wingrest Embassy
+				[2810] = 158, -- Valdrakken
+				[2814] = 30, -- Veiled Ossuary
+			},
+		},
+		{
+			tag = "612:125",
+			nodeID = 2862,
+			name = "Morqut Islet",
+			taxioperator = "ancientwaygate",
+			neighbors = {
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
 			},
 		},
 		{
@@ -9987,9 +10048,9 @@ data.flightcost = {
 			nodeID = 2863,
 			name = "Loamm",
 			neighbors = {
-				[2864] = 0, -- Obsidian Rest
-				[2865] = 0, -- Dragonscale Camp
-				[2867] = 0, -- The Throughway
+				[2864] = 44, -- Obsidian Rest
+				[2865] = 45, -- Dragonscale Camp
+				[2867] = 40, -- The Throughway
 			},
 		},
 		{
@@ -9997,8 +10058,8 @@ data.flightcost = {
 			nodeID = 2864,
 			name = "Obsidian Rest",
 			neighbors = {
-				[2863] = 0, -- Loamm
-				[2865] = 0, -- Dragonscale Camp
+				[2863] = 44, -- Loamm
+				[2865] = 64, -- Dragonscale Camp
 			},
 		},
 		{
@@ -10006,8 +10067,8 @@ data.flightcost = {
 			nodeID = 2865,
 			name = "Dragonscale Camp",
 			neighbors = {
-				[2863] = 0, -- Loamm
-				[2864] = 0, -- Obsidian Rest
+				[2863] = 45, -- Loamm
+				[2864] = 64, -- Obsidian Rest
 				[2867] = 0, -- The Throughway
 				[2875] = 0, -- Old Loamm Road
 				[2876] = 0, -- Lookout Breach
@@ -10017,28 +10078,31 @@ data.flightcost = {
 			tag = "521:500",
 			nodeID = 2866,
 			name = "Cascades Canyon",
+			comment = "connector",
 			neighbors = {
 				[2810] = 0, -- Valdrakken
-				[2867] = 5, -- The Throughway
+				[2867] = 15, -- The Throughway
 			},
 		},
 		{
 			tag = "731:495",
 			nodeID = 2867,
 			name = "The Throughway",
+			comment = "connector",
 			neighbors = {
-				[2863] = 0, -- Loamm
+				[2863] = 40, -- Loamm
 				[2865] = 0, -- Dragonscale Camp
-				[2866] = 5, -- Cascades Canyon
+				[2866] = 15, -- Cascades Canyon
 			},
 		},
 		{
 			tag = "361:590",
 			nodeID = 2874,
 			name = "Old Loamm Road",
+			comment = "connector",
 			neighbors = {
 				[2794] = 0, -- Teerakai
-				[2796] = 0, -- Shady Sanctuary : added by hand
+				[2796] = 0, -- Shady Sanctuary
 				[2875] = 5, -- Old Loamm Road
 			},
 		},
@@ -10046,6 +10110,7 @@ data.flightcost = {
 			tag = "348:800",
 			nodeID = 2875,
 			name = "Old Loamm Road",
+			comment = "connector",
 			neighbors = {
 				[2865] = 0, -- Dragonscale Camp
 				[2874] = 5, -- Old Loamm Road
@@ -10055,6 +10120,7 @@ data.flightcost = {
 			tag = "359:907",
 			nodeID = 2876,
 			name = "Lookout Breach",
+			comment = "connector",
 			neighbors = {
 				[2865] = 0, -- Dragonscale Camp
 				[2877] = 5, -- Lookout Breach
@@ -10064,9 +10130,48 @@ data.flightcost = {
 			tag = "388:649",
 			nodeID = 2877,
 			name = "Lookout Breach",
+			comment = "connector",
 			neighbors = {
 				[2789] = 0, -- Three-Falls Lookout
 				[2876] = 5, -- Lookout Breach
+			},
+		},
+		{
+			tag = "510:624",
+			nodeID = 2902,
+			name = "Central Encampment",
+			neighbors = {
+				[2903] = 31, -- Verdant Landing
+				[2904] = 37, -- Eye of Ysera
+				[2905] = 65, -- Wellspring Overlook
+			},
+		},
+		{
+			tag = "688:546",
+			nodeID = 2903,
+			name = "Verdant Landing",
+			neighbors = {
+				[2902] = 31, -- Central Encampment
+				[2904] = 42, -- Eye of Ysera
+			},
+		},
+		{
+			tag = "553:296",
+			nodeID = 2904,
+			name = "Eye of Ysera",
+			neighbors = {
+				[2902] = 37, -- Central Encampment
+				[2903] = 42, -- Verdant Landing
+				[2905] = 36, -- Wellspring Overlook
+			},
+		},
+		{
+			tag = "357:336",
+			nodeID = 2905,
+			name = "Wellspring Overlook",
+			neighbors = {
+				[2902] = 65, -- Central Encampment
+				[2904] = 36, -- Eye of Ysera
 			},
 		},
 	},

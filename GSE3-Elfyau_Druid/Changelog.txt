@@ -26,3 +26,6 @@
 0.25 - Fixed Balance Druid ST and AOE not being AOE and ST
 0.26 - Updated Feral Druid
 0.27 - Updated Balance Druid
+0.28 - Updated TOC and Guardian Druid
+0.29 - Updated Feral Druid
+0.30 - Updated TOC and Guardian Druid Talent String

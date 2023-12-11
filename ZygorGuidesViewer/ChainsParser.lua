@@ -108,7 +108,7 @@ function ZGV:ParseQuestChains_yielding(text,Chains)
 	end
 
 	index = 1
-	ZGV:Debug("Starting parsing quest chains; "..maxlines.." lines")
+	ZGV:Debug("&startup Starting parsing quest chains; "..maxlines.." lines")
 
 	debug_chunks={}
 
@@ -182,7 +182,7 @@ function ZGV:ParseQuestChains_yielding(text,Chains)
 		yield()
 	end
 
-	ZGV:Debug("Pruning duplicates in quest chains")
+	ZGV:Debug("&startup Pruning duplicates in quest chains")
 	-- now prune it; no dupes allowed!
 	for q,req in pairs(Chains) do
 		if type(req)=="table" then
@@ -210,7 +210,7 @@ function ZGV:ParseQuestChains_yielding(text,Chains)
 		end
 	end
 
-	ZGV:Debug("Parsed quest chains.")
+	ZGV:Debug("&startup Parsed quest chains.")
 end
 
 function ZGV:CreateReverseQuestChains_yielding()

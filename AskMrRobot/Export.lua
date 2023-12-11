@@ -173,8 +173,7 @@ local function scanBags()
 	local bagItems = {}
 	local itemsAndCounts = {}
 	
-	scanBag(BACKPACK_CONTAINER, false, bagItems, itemsAndCounts) -- backpack
-	for bagId = 1, NUM_BAG_SLOTS do
+	for bagId = BACKPACK_CONTAINER, NUM_TOTAL_EQUIPPED_BAG_SLOTS do
 		scanBag(bagId, false, bagItems, itemsAndCounts)
 	end
 	
@@ -191,7 +190,7 @@ local function scanBank()
 	local bagList = {}
 	table.insert(bagList, BANK_CONTAINER)
 	table.insert(bagList, REAGENTBANK_CONTAINER)
-	for bagId = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
+	for bagId = NUM_TOTAL_EQUIPPED_BAG_SLOTS + 1, NUM_TOTAL_EQUIPPED_BAG_SLOTS + NUM_BANKBAGSLOTS do
 		table.insert(bagList, bagId)
 	end
 
@@ -225,7 +224,7 @@ end
 
 -- if a bank bag is updated while the bank is open, re-scan that bag
 local function onBankUpdated(bagID)
-	if _bankOpen and (bagID == BANK_CONTAINER or bagID == REAGENTBANK_CONTAINER or (bagID >= NUM_BAG_SLOTS + 1 and bagID <= NUM_BAG_SLOTS + NUM_BANKBAGSLOTS)) then
+	if _bankOpen and (bagID == BANK_CONTAINER or bagID == REAGENTBANK_CONTAINER or (bagID >= NUM_TOTAL_EQUIPPED_BAG_SLOTS + 1 and bagID <= NUM_TOTAL_EQUIPPED_BAG_SLOTS + NUM_BANKBAGSLOTS)) then
 		local bagItems = {}
 		local bagItemsAndCounts = {}
 		scanBag(bagID, true, bagItems, bagItemsAndCounts)
@@ -416,7 +415,8 @@ local function readTalentConfig(configId)
     	for _, nodeId in pairs(C_Traits.GetTreeNodes(treeIds[i])) do
       		local node = C_Traits.GetNodeInfo(configId, nodeId)
 			if node.ID and node.isVisible and node.maxRanks > 0 then
-				if #node.entryIDs > 1 then
+				-- need to check node type b/c blizz abandoned a few selection node entries in the data which still show up in a scan here... super annoying and gross
+				if #node.entryIDs > 1  and node.type == 2 then
 					talMap[node.ID] = {}
 					for e = 1, #node.entryIDs do
 						if node.activeEntry and node.entryIDs[e] == node.activeEntry.entryID then

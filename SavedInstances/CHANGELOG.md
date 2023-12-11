@@ -1,11 +1,13 @@
 # SavedInstances
 
-## [10.1.5](https://github.com/SavedInstances/SavedInstances/tree/10.1.5) (2023-07-15)
-[Full Changelog](https://github.com/SavedInstances/SavedInstances/compare/10.1.4...10.1.5) [Previous Releases](https://github.com/SavedInstances/SavedInstances/releases)
+## [10.2.1](https://github.com/SavedInstances/SavedInstances/tree/10.2.1) (2023-11-13)
+[Full Changelog](https://github.com/SavedInstances/SavedInstances/compare/10.2.0...10.2.1) [Previous Releases](https://github.com/SavedInstances/SavedInstances/releases)
 
-- feat: add Time Rift Weekly Gear Token  
-- feat: add Paracausal Flakes  
-- feat: mark When Time Needs Mending account weekly  
-- fix: fix bonus roll tooltip error  
-- feat: add Aiding the Accord: Time Rift  
-- fix: replace READY\_CHECK\_READY\_TEXTURE and READY\_CHECK\_WAITING\_TEXTURE to build-in string since it changed to atlas in Patch 10.1.5  
+- test: add C\_AddOns to luacheckrc  
+- feat: add more 10.2 weeklies to Progress and Quest  
+    The Superbloom, Blooming Dreamseeds, Great Crates!, Crate of the Art  
+- refactor: parallel numbers use "|" instand of " / " to save space  
+    closes #749  
+- feat: add Dream Wardens to Dragonflight Renown  
+- refactor: global func deprecated to C\_AddOns  
+- fix(MythicPlus): use updated enum to calculate reward thresholds  

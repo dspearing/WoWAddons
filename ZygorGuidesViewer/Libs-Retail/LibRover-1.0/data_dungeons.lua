@@ -92,6 +92,10 @@ data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 		--Eastern Kingdom
 			--Scholomance
 			"Western Plaguelands 69.1,72.9 -x- Scholomance/1 18.1,60.9 {autotype:portal_dungeon}",
+			--Old Scholomance
+			"Western Plaguelands/0 69.76,71.79 -to- Old Scholomance/3 0.00,0.00 {mode:PORTAL} {title:Click Eva's Enchanted Journal and read the history}", --Requires quest 76249 complete to access dungeon
+			"Old Scholomance/3 0.00,0.00 -to- Western Plaguelands/0 69.76,71.79 {mode:PORTAL} {title:Run through the portal}",
+			
 			-- STRATHOLME: MAIN GATE
 			"Eastern Plaguelands/0 27.61,11.63 -x- Stratholme/1 68.02,88.46 {autotype:portal_dungeon}",
 			"Eastern Plaguelands/0 26.51,11.67 -x- Stratholme/1 64.46,88.52 {autotype:portal_dungeon}",
@@ -372,6 +376,15 @@ data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 			--Brackenhide Hollow--
 			"Thaldraszus/0 58.27,42.22 -x- Algeth'ar Academy/0 0.00,0.00 {autotype:portal_dungeon}",
 
+
+
+
+
+
+
+
+
+
 	-- RAID ENTRANCE/EXITS
 		--Eastern Kingdom
 			--Molten Core
@@ -448,7 +461,7 @@ data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 			--Mogu'Shan Vaults
 			"Kun-Lai Summit/0 59.58,39.20 -x- Mogu'shan Vaults/1 75.2,73.1 {autotype:portal_dungeon}",
 			--Siege of Orgrimmar
-			"Vale of Eternal Blossoms/0 73.96,42.15 -x- Siege of Orgrimmar/1 0.00,0.00 {autotype:portal_dungeon}",
+			"Vale of Eternal Blossoms/0 73.96,42.15 -x- Siege of Orgrimmar/1 0.00,0.00 {autotype:portal_dungeon} {cond:ZGV.InPhase('OldVale')}",
 			"Vale of Eternal Blossoms New/0 72.86,41.91 -x- Siege of Orgrimmar/1 0.00,0.00 {autotype:portal_dungeon} {cond:not ZGV.InPhase('OldVale')}",
 			--Terrace of Endless Spring
 			"The Veiled Stair/0 48.45,61.44 -x- Terrace of Endless Spring/0 93.4,49.7 {autotype:portal_dungeon}",
@@ -549,6 +562,10 @@ data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 			"Thaldraszus/0 73.15,55.61 -x- Vault of the Incarnates/2 0.00,0.00 {autotype:portal_dungeon}",
 			--Aberrus, the Shadowed Crucible--
 			"Zaralek Cavern/0 48.46,9.94 -x- Aberrus, the Shadowed Crucible/0 51.10,95.59 {autotype:portal_dungeon}",
+			--Dawn of the Infinite--
+			"Thaldraszus/0 61.16,84.49 -x- Dawn of the Infinite/0 33.17,20.88 {autotype:portal_dungeon} {title:Enter the Portal to\nDawn of the Infinite}",
+			--Dawn of the Infinite--
+			"The Emerald Dream/0 27.29,31.04 -x- Amirdrassil, The Dream's Hope/2 27.29,31.04 {autotype:portal_dungeon} {title:Enter the Portal to\nAmirdrassil, The Dream's Hope}",
 }
 
 data.basenodes.DungeonFloors = --[[LIBROVER]] {
@@ -745,6 +762,10 @@ data.basenodes.DungeonFloors = --[[LIBROVER]] {
 			"Algeth'ar Academy/0 57.02,72.26 <radius:15> -x- Algeth'ar Academy/1 16.11,24.29 <radius:15>",
 			"Algeth'ar Academy/0 60.02,28.46 <radius:15> -x- Algeth'ar Academy/2 54.09,84.28 <radius:15>",
 			"Algeth'ar Academy/0 42.81,7.49 <radius:15> -x- Algeth'ar Academy/2 54.09,84.28 <radius:15>",
+		},
+
+		["Halls Of Valor D"] = {
+			"Halls of Valor D/0 47.72,71.74 <radius:15> -x- Halls of Valor D/1 51.35,6.34 <radius:15>",
 		},
 
 
@@ -1151,6 +1172,36 @@ data.basenodes.DungeonFloors = --[[LIBROVER]] {
 			"Aberrus, the Shadowed Crucible/3 50.98,13.52 -x- Aberrus, the Shadowed Crucible/4 48.95,10.04",
 
 			"Aberrus, the Shadowed Crucible/5 33.54,44.55 <radius:15> -x- Aberrus, the Shadowed Crucible/6 57.03,61.35 <radius:15>",
+		},
+
+		----------------------------
+		--- DAWN OF THE INFINITE ---
+		----------------------------
+		["Dawn of the Infinite"] = {
+			"Dawn of the Infinite/0 64.97,80.52 -x- Dawn of the Infinite/1 44.88,50.11 {title_atob:Enter Millennia's Threshold} {title_btoa:Enter the Temporal Vestibule}",
+			"Dawn of the Infinite/1 76.92,62.30 -x- Dawn of the Infinite/2 33.17,50.04 {title_atob:Enter the Locus of Eternity} {title_btoa:Enter Millennia's Threshold}",
+			"Dawn of the Infinite/2 75.13,64.74 -x- Dawn of the Infinite/3 21.81,36.30 {title_atob:Enter the Spoke of Endless Winter} {title_btoa:Enter the Locus of Eternity}",
+			"Dawn of the Infinite/3 79.08,56.38 -x- Dawn of the Infinite/4 32.09,13.27 {title_atob:Enter the Crossroads of Fate} {title_btoa:Enter the Spoke of Endless Winter}",
+			"Dawn of the Infinite/4 56.48,55.77 -x- Dawn of the Infinite/5 59.35,77.91 {title_atob:Enter the Infinite Conflux} {title_btoa:Enter the Crossroads of Fate}",
+			"Dawn of the Infinite/5 50.86,21.59 -x- Dawn of the Infinite/6 59.95,20.80 {title_atob:Enter the Twisting Approach} {title_btoa:Enter the Infinite Conflux}",
+			"Dawn of the Infinite/6 37.59,86.44 -x- Dawn of the Infinite/7 67.12,89.67 {title_atob:Enter the Immemorial Battlefield} {title_btoa:Enter the Twisting Approach}",
+		},
+
+		-------------------------------------
+		--- AMIRDRASSIL, THE DREAM'S HOPE ---
+		-------------------------------------
+		["Amirdrassil, The Dream's Hope"] = {
+			"Amirdrassil, The Dream's Hope/2 42.97,20.16 -x- Amirdrassil, The Dream's Hope/0 77.88,89.13",
+			"Amirdrassil, The Dream's Hope/2 41.06,29.12 -x- Amirdrassil, The Dream's Hope/2 29.22,21.52",
+			"Amirdrassil, The Dream's Hope/2 60.07,29.30 -x- Amirdrassil, The Dream's Hope/1 67.48,22.42",
+			"Amirdrassil, The Dream's Hope/2 58.39,20.16 -x- Amirdrassil, The Dream's Hope/1 17.38,95.59",
+			"Amirdrassil, The Dream's Hope/2 50.86,13.16 -x- Amirdrassil, The Dream's Hope/3 49.90,96.13",
+			"Amirdrassil, The Dream's Hope/3 46.68,33.00 -x- Amirdrassil, The Dream's Hope/4 36.70,87.83",
+			"Amirdrassil, The Dream's Hope/4 61.46,64.47 -x- Amirdrassil, The Dream's Hope/5 67.12,89.67",
+			"Amirdrassil, The Dream's Hope/4 38.06,88.32 -x- Amirdrassil, The Dream's Hope/6 28.62,38.92",
+			"Amirdrassil, The Dream's Hope/4 62.10,64.81 -x- Amirdrassil, The Dream's Hope/7 29.70,50.93",
+			"Amirdrassil, The Dream's Hope/7 29.70,50.93 -x- Amirdrassil, The Dream's Hope/5 67.12,89.67",
+			"Amirdrassil, The Dream's Hope/4 47.27,43.47 -x- Amirdrassil, The Dream's Hope/8 34.12,32.46",
 		},
 }
 

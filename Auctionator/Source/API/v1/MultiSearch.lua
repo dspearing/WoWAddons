@@ -41,9 +41,7 @@ local function StartSearch(callerID, cloned)
 
   local list = Auctionator.Shopping.ListManager:GetByName(listName)
 
-  for _, item in ipairs(cloned) do
-    list:InsertItem(item)
-  end
+  list:AppendItems(cloned)
 
   Auctionator.EventBus:RegisterSource(StartSearch, "API v1 Multi search start")
     :Fire(StartSearch, Auctionator.Shopping.Tab.Events.ListSearchRequested, list)
@@ -99,7 +97,7 @@ local function ValidateExtendedSearchTerms(callerID, searchTerms)
 end
 
 function Auctionator.API.v1.MultiSearchAdvanced(callerID, searchTerms)
-  local cleanedTerms = ValidateExtendedSearchTerms(calledID, searchTerms)
+  local cleanedTerms = ValidateExtendedSearchTerms(callerID, searchTerms)
 
   local internalSearchTerms = {}
   for _, term in ipairs(cleanedTerms) do

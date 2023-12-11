@@ -9,6 +9,7 @@ local FONT=ZGV.Font
 local FONTBOLD=ZGV.FontBold
 local CHAIN = ZGV.ChainCall
 local Enum = ZGV.Retrofit.Enum
+local Notification = ZGV.NotificationCenter
 
 local tinsert,tremove,print,ipairs,pairs,wipe,debugprofilestop=tinsert,tremove,print,ipairs,pairs,wipe,debugprofilestop
 
@@ -58,7 +59,8 @@ Upgrades.UniqueEquipped = {}
 function Upgrades:ScoreEquippedItems(forced)
 	if not ZGV.db.profile.autogear then return end -- disabled
 	if Upgrades.StopScanning then return end	--if scanning needs to be paused
-	if Upgrades.UpgradeQueueCount == 0 then table.wipe(Upgrades.ToastExistingUpgrades) Upgrades.forcefull = false end	--stop enforcing standard popup over floaties if there are no upgrades to be processed
+
+	if Upgrades.UpgradeQueueCount == 0 then table.wipe(Upgrades.ToastExistingUpgrades) Upgrades.forcefull = false Notification:RemoveEntry("ZygorItemPopup") end	--stop enforcing standard popup over floaties if there are no upgrades to be processed
 
 	ZGV:Debug("&itemscore ScoreEquippedItems")
 	table.wipe(Upgrades.UniqueEquipped)
@@ -105,6 +107,8 @@ function Upgrades:ScoreEquippedItems(forced)
 						-- cache counts of unique-equipped items
 						local family, _ = Upgrades:GetItemUniqueness(item.itemid)
 						if (family or 0)>0 then Upgrades.UniqueEquipped[family]=(Upgrades.UniqueEquipped[family] or 0)+1 end
+					else
+						skipped = true
 					end
 				else
 					skipped = true
@@ -146,6 +150,7 @@ function Upgrades:ScoreEquippedItems(forced)
 		table.wipe(bestgearsaved)
 	end
 
+	if Upgrades.UpgradeQueueCount == 0 then table.wipe(Upgrades.ToastExistingUpgrades) Upgrades.forcefull = false Notification:RemoveEntry("ZygorItemPopup") end	--stop enforcing standard popup over floaties if there are no upgrades to be processed
 	ZGV:Debug("&itemscore SEI complete")
 end
 
@@ -385,6 +390,7 @@ function Upgrades:IsUpgradeFor(itemlink,name,spec)
 
 	local details = ItemScore:GetItemDetails(itemlink)
 	if not details then return end
+	if not details.scores then return end
 
 	local score = details.scores[name][spec]
 	if not gear then return false,false,"unknown character" end
@@ -896,7 +902,7 @@ function Upgrades:ScoreBagsItems(forced)
 	local skipped = false
 
 	for itemlink,details in pairs(Upgrades.BagsItems) do
-		if not (itemlink:find("battlepet:") or details.itemlink) then
+		if itemlink:find("item:") and not details.itemlink then
 			if tonumber(itemlink) then 
 				itemlink = C_Container.GetContainerItemLink(details.bagnum,details.bagslot)
 				skipped = true
@@ -1017,6 +1023,7 @@ function Upgrades:ScoreBagsItems(forced)
 
 	if onlyscan then return end
 
+	if Upgrades.UpgradeQueueCount == 0 then ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup") end
 	Upgrades:ProcessPossibleUpgrades(forced)
 end
 
@@ -1049,7 +1056,7 @@ function Upgrades:ProcessPossibleUpgrades(forced)
 			local minimize = ZGV.NotificationCenter:EntryExists("ZygorItemPopup")
 			Upgrades:ShowEquipmentChangePopup(process_slot, forced)
 			if minimize and ZGV.db.profile.n_popup_toast and not Upgrades.forcefull then
-				ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+			--	ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
 			elseif minimize then
 				self.EquipPopup.private:Minimize(self.EquipPopup)
 			end
@@ -1303,6 +1310,7 @@ function Upgrades:CreatePopup()
 		self.selfHidden = true
 		Upgrades:Equip(self.n_item) --equip it!
 		ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+		ZGV:Debug("Item equipped via static popup, removing NC entry")
 	end
 
 	F.OnDecline = function(self)
@@ -1317,6 +1325,7 @@ function Upgrades:CreatePopup()
 		-- Send it to BadUpgrades because they don't want it suggested again.
 		Upgrades:SetBadUpgrade(self.n_item.itemlink,self.n_item.slot)
 		ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+		ZGV:Debug("Upgrade declined, removing NC entry")
 	end
 
 	F.OnEscape = function(self)
@@ -1443,7 +1452,7 @@ function Upgrades:ShowGearReport()
 
 	if new_item and new_item.itemlink then
 		out = out .. "\n\n*** New item: " 
-		out = out .. "\nTooltip: " 
+		out = out .. "\nTooltip Live: " 
 		local tooltip = ZGV.TooltipScanner:GetTooltip(new_item.itemlink)
 		for _,line in ipairs(tooltip) do
 			out = out .. "\n " .. line
@@ -1463,7 +1472,7 @@ function Upgrades:ShowGearReport()
 
 	if old_item and old_item.itemlink then
 		out = out .. "\n\n*** Old item: " 
-		out = out .. "\nTooltip: " 
+		out = out .. "\nTooltip Live: " 
 		local tooltip = ZGV.TooltipScanner:GetTooltip(old_item.itemlink)
 		for _,line in ipairs(tooltip) do
 			out = out .. "\n " .. line
@@ -1500,6 +1509,7 @@ end
 function Upgrades:ShowEquipmentChangePopup(slot, forced)
 	if not ZGV.db.profile.n_popup_gear then return end
 	if ZygorItemPopup and ZygorItemPopup:IsVisible() then return end
+	if Notification.prioritytoast then return end
 
 	if forced == false or nil then		--exception for the 'Show Upgrades' button in the gear toast
 		ZygorItemPopup.QueueUsed = ZygorItemPopup.QueueUsed or {}
@@ -1523,7 +1533,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 		end
 	end
 
-	ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+	ZGV:Debug("&itemscore Gear NC bubble cleared")
 
 	if not slot then return nil,"no slot" end
 	local n_item = Upgrades.UpgradeQueue[slot]
@@ -1729,6 +1739,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 		frame.leftbtn:SetScript("OnClick", function()
 			Upgrades.forcefull = true
 			ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+			ZGV:Debug("User requested to cycle through upgrades via static popups. Removing NC entry")
 			table.wipe(Upgrades.ToastExistingUpgrades)
 			Upgrades:ScoreEquippedItems(true)
 		--	Upgrades:ProcessPossibleUpgrades()
@@ -1745,6 +1756,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 				Upgrades.StopScanning = false
 			end
 			ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+			ZGV:Debug("Equipping all upgrades. Removing NC entry")
 			table.wipe(Upgrades.ToastExistingUpgrades)
 			frame:Hide()
 		end)
@@ -1790,6 +1802,17 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 
 		Upgrades.StopScanning = false
 
+		--Remove entry from ToastExistingUpgrades if the same item is already equipped
+		if Upgrades.EquippedItems then
+			for i=1,17,1 do
+				if Upgrades.EquippedItems[i] and Upgrades.EquippedItems[i].itemlink ~= nil then
+					if Upgrades.EquippedItems[i].itemlink == Upgrades.ToastExistingUpgrades[i] then
+						Upgrades.ToastExistingUpgrades[i] = nil
+					end
+				end
+			end
+		end
+
 		--Check for changes
 		if Upgrades.ToastExistingUpgrades[1] then
 			for i=1,17,1 do
@@ -1801,7 +1824,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 				elseif (Upgrades.ToastNewUpgrades[i] and Upgrades.ToastNewUpgrades[i].itemlink ~= nil) and (Upgrades.ToastNewUpgrades[i].itemlink ~= Upgrades.ToastExistingUpgrades[i]) then
 					Upgrades.NewUpgrade = true
 					break
-			--If the player equipped the upgrade and has no other upgrade for the given slot (not sure if that condition works... need to re-test)
+			--If the player equipped the upgrade and has no other upgrade for the given slot
 				elseif Upgrades.ToastExistingUpgrades[i] ~= "" and (not Upgrades.ToastNewUpgrades[i] or not Upgrades.ToastNewUpgrades[i].itemlink) then
 					Upgrades.NewUpgrade = false
 				else
@@ -1826,7 +1849,8 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 				end
 			end
 			Upgrades.NewUpgrade = false
-			
+		else
+			ZGV:CancelTimer(Notification.ToastTimer)
 		end
 	end
 
@@ -1850,12 +1874,9 @@ function Upgrades:Equip(item,retry)
 		return false
 	end
 
-	local _,itemID
-	
-	local data = C_Container.GetContainerItemInfo(item.bagnum,item.bagslot)
-	itemID = data.itemID
 
-	if not itemID then -- item is not there. what the hell? rerun upgrade search
+	local data = C_Container.GetContainerItemInfo(item.bagnum,item.bagslot)
+	if not (data and data.itemID) then -- item is not there. what the hell? rerun upgrade search
 		Upgrades:ScoreEquippedItems()
 		return false 
 	end 

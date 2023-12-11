@@ -18,10 +18,10 @@ Dungeons.ExpansionsLimits = {
 }
 
 Dungeons.Phases = {
-	["aberrus1"] = true,
-	["aberrus2"] = false,
-	["aberrus3"] = false,
-	["aberrus4"] = false,
+	["amirdrassil1"] = true,
+	["amirdrassil2"] = false,
+	["amirdrassil3"] = false,
+	["amirdrassil4"] = false,
 
 }
 
@@ -93,11 +93,13 @@ Dungeons.hardcoded_dungeons = {
 	["e_1028_14"] = {expansionLevel=7, minLevel=50, --[[min_ilevel=280,--]] difficulty=14, name="World Bosses"}, 
 
 	-- mythic+
-	["e_800_8"] = {expansionLevel=6, minLevel=70, difficulty=8, name="Court of Stars"},
-	["e_721_8"] = {expansionLevel=6, minLevel=70, difficulty=8, name="Halls of Valor"},
-	["e_537_8"] = {expansionLevel=5, minLevel=70, difficulty=8, name="Shadowmoon Burial Grounds"},
-	["e_313_8"] = {expansionLevel=4, minLevel=70, difficulty=8, name="Temple of the Jade Dragon"},
-
+	["e_65_8"] =   {expansionLevel=3, minLevel=70, difficulty=8, name="Throne of the Tides"},
+	["e_556_8"] =  {expansionLevel=5, minLevel=70, difficulty=8, name="The Everbloom"},
+	["e_740_8"] =  {expansionLevel=6, minLevel=70, difficulty=8, name="Black Rook Hold"},
+	["e_762_8"] =  {expansionLevel=6, minLevel=70, difficulty=8, name="Darkheart Thicket"},
+	["e_968_8"] =  {expansionLevel=7, minLevel=70, difficulty=8, name="Atal'Dazar"},
+	["e_1021_8"] = {expansionLevel=7, minLevel=70, difficulty=8, name="Waycrest Manor"},
+	["e_1209_8"] = {expansionLevel=9, minLevel=70, difficulty=8, name="Dawn of the Infinite"},
 }
 
 Dungeons.max_levels = {
@@ -148,10 +150,10 @@ Dungeons.add_flags = {
 	[1115] = { attunement_achieve=11547 }, -- Return to Karazhan HC
 	[1488] = { attunement_queston=46244 }, -- Cathedral of Eternal Night HC
 
-	[2399] = { phase="aberrus1" },
-	[2400] = { phase="aberrus2" },
-	[2401] = { phase="aberrus3" },
-	[2402] = { phase="aberrus4" },
+	[2466] = { phase="amirdrassil1" },
+	[2468] = { phase="amirdrassil2" },
+	[2467] = { phase="amirdrassil3" },
+	[2469] = { phase="amirdrassil4" },
 
 
 }

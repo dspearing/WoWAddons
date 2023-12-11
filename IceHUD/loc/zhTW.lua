@@ -23,6 +23,8 @@ L["Abbreviate estimated health"] = "縮短判斷治療"
 L["Abbreviate health"] = "縮短治療"
 --[[Translation missing --]]
 L["Absorb bar alpha"] = "Absorb bar alpha"
+--[[Translation missing --]]
+L["Added strata"] = "Added strata"
 L["Adjust the horizontal position of the aura icon"] = "調整光環圖示的水平位置"
 L["Adjust the vertical placement of this bar"] = "調整垂直條列的放置"
 L["Adjust the vertical position of the aura icon"] = "調整光環圖示的垂直位置"
@@ -649,6 +651,8 @@ L["Potential SnD time bar alpha"] = "Potential SnD time bar alpha"
 L["Predefined settings for different bars"] = "預先定義設定為不同條列"
 L["Presets"] = "預先環置"
 L["Pulse when full"] = "當充滿脈衝"
+--[[Translation missing --]]
+L["Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."] = "Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."
 L["PvP icon"] = "PvP 圖示"
 L["PvP Icon Horizontal Offset"] = "PvP 圖示水平位移"
 L["PvP Icon Scale"] = "PvP 圖示刻度"

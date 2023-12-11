@@ -842,12 +842,10 @@ function CameraMover:UpdateMovementMethodForDynamicCam()
 	function self:MakeActive()
 		f.lastZoom = -1;
 		f:Show();
-		print("Active")
 	end
 
 	function self:MakeInactive()
 		f:Hide();
-		print("Inactive")
 	end
 end
 
@@ -1191,7 +1189,7 @@ end
 
 function NarciItemButtonSharedMixin:AnchorAlertFrame()
 	self:RegisterErrorEvent();
-	Narci_AlertFrame_Autohide:SetAnchor(self, -24, true);
+	Narci_AlertFrame_Autohide:SetAnchor(self, -12, true);
 end
 
 function NarciItemButtonSharedMixin:PlayGamePadAnimation()
@@ -1836,7 +1834,7 @@ function NarciEquipmentSlotMixin:OnLoad()
 	self:SetAttribute("type2", "item");
 	self:SetAttribute("item", slotID);
 	self:RegisterForDrag("LeftButton");
-	self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
+	self:RegisterForClicks("LeftButtonUp", "RightButtonDown", "RightButtonUp");
 	if self:GetParent() then
 		if not self:GetParent().slotTable then
 			self:GetParent().slotTable = {}
@@ -1976,9 +1974,7 @@ function NarciEquipmentSlotMixin:OnHide()
 end
 
 function NarciEquipmentSlotMixin:PreClick(button)
-	if button == "RightButton" then
-		NarciAPI.SecureActionButtonPreClick();
-	end
+
 end
 
 function NarciEquipmentSlotMixin:PostClick(button)
@@ -1997,9 +1993,13 @@ function NarciEquipmentSlotMixin:PostClick(button)
 			return;
 		elseif IsShiftKeyDown() and button == "LeftButton" then
 			if self.hyperlink then
-				SendChatMessage(self.hyperlink)
+				if ChatEdit_InsertLink(self.hyperlink) then
+					return
+				elseif SocialPostFrame and Social_IsShown() then
+					Social_InsertLink(self.hyperlink);
+					return
+				end
 			end
-			--ShareHyperLink()
 		else
 			PaperDollItemSlotButton_OnModifiedClick(self, button);
 			TakeOutFrames(true);
@@ -2171,8 +2171,13 @@ function NarciItemLevelFrameMixin:OnLoad()
 			end
 
 			local function UnlockOrderSort(faction1, faction2)
-				return faction1.unlockOrder < faction2.unlockOrder;
+				if faction1.uiPriority then
+					return faction1.uiPriority < faction2.uiPriority;
+				else
+					return faction1.unlockOrder < faction2.unlockOrder;
+				end
 			end
+
 			table.sort(factionList, UnlockOrderSort);
 
 			--Embedded Frame
@@ -2232,6 +2237,36 @@ function NarciItemLevelFrameMixin:OnLoad()
 			local numButtons = #factionList;
 			f.FactionListFrame:SetHeight((28 + 6)*numButtons - 12);
 			f.FactionListFrame:SetWidth(floor(maxTextWidth + 0.5) + 28 + 6);
+
+			local function GameTooltip_InsertFrame(tooltipFrame, frame, verticalPadding)	-- this is an exact copy of GameTooltip_InsertFrame to avoid "Execution tainted"
+				verticalPadding = verticalPadding or 0;
+				local textSpacing = tooltipFrame:GetCustomLineSpacing() or 2;
+				local textHeight = Round(_G[tooltipFrame:GetName().."TextLeft2"]:GetLineHeight());
+				local neededHeight = Round(frame:GetHeight() + verticalPadding);
+				local numLinesNeeded = math.ceil(neededHeight / (textHeight + textSpacing));
+				local currentLine = tooltipFrame:NumLines();
+
+				if numLinesNeeded ~= nil then
+					for i = 1, numLinesNeeded do
+						tooltipFrame:AddLine(" ");
+					end
+				end
+
+				frame:SetParent(tooltipFrame);
+				frame:ClearAllPoints();
+				frame:SetPoint("TOPLEFT", tooltipFrame:GetName().."TextLeft"..(currentLine + 1), "TOPLEFT", 0, -verticalPadding);
+				if not tooltipFrame.insertedFrames then
+					tooltipFrame.insertedFrames = { };
+				end
+				local frameWidth = frame:GetWidth();
+				if tooltipFrame:GetMinimumWidth() < frameWidth then
+					tooltipFrame:SetMinimumWidth(frameWidth);
+				end
+				frame:Show();
+				tinsert(tooltipFrame.insertedFrames, frame);
+				return (numLinesNeeded * textHeight) + (numLinesNeeded - 1) * textSpacing;
+			end
+
 			GameTooltip_InsertFrame(DefaultTooltip, f.FactionListFrame, 6);
 		else
 			DefaultTooltip:AddLine(MAJOR_FACTION_BUTTON_FACTION_LOCKED, 0.5, 0.5, 0.5, true);
@@ -3087,10 +3122,6 @@ function Narci_AttributeFrame_OnLoad(self)
 	Narci_AttributeFrame_UpdateBackgroundColor(self);
 end
 
-function XmogList_OnLoad(self)
-	Narci_AttributeFrame_UpdateBackgroundColor(self);
-end
-
 local function RefreshStats(id, frame)
 	frame = frame or "Detailed";
 	if frame == "Detailed" then
@@ -3845,6 +3876,12 @@ do
 			end
 		end);
 	end
+
+	--local f = CreateFrame("Frame");
+	--f:RegisterEvent("EXECUTE_CHAT_LINE");
+	--f:SetScript("OnEvent", function(self, event, line)
+	--	print(line)
+	--end)
 end
 
 ----------------

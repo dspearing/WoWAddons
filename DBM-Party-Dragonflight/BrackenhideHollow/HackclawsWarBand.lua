@@ -1,10 +1,9 @@
 local mod	= DBM:NewMod(2471, "DBM-Party-Dragonflight", 1, 1196)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20230614234505")
+mod:SetRevision("20231029212301")
 mod:SetCreatureID(186122, 186124, 186125)
 mod:SetEncounterID(2570)
---mod:SetUsedIcons(1, 2, 3)
 mod:SetBossHPInfoToHighest()
 mod:SetHotfixNoticeRev(20221205000000)
 --mod:SetMinSyncRevision(20211203000000)
@@ -16,12 +15,7 @@ mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 381694 378029 381470 377950 378208",
 	"SPELL_CAST_SUCCESS 377965",
 	"SPELL_AURA_APPLIED 381461 381835 381835 377844 381387 381379 378229 381466",
---	"SPELL_AURA_APPLIED_DOSE",
---	"SPELL_AURA_REMOVED 361966 361018 361651"
---	"SPELL_PERIODIC_DAMAGE",
---	"SPELL_PERIODIC_MISSED",
 	"UNIT_DIED"
---	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
 --TODO, two version of decayed senses, which used? Both?
@@ -54,7 +48,7 @@ local specWarnMarkedforButchery					= mod:NewSpecialWarningDefensive(378229, nil
 
 local timerDecayedSensesCD						= mod:NewCDTimer(59.4, 381379, nil, nil, nil, 3)
 local timerGashFrenzyCD							= mod:NewCDCountTimer(59.4, 378029, nil, nil, nil, 5, nil, DBM_COMMON_L.HEALER_ICON..DBM_COMMON_L.BLEED_ICON)
-local timerMarkedforButcheryCD					= mod:NewCDCountTimer(60.2, 378229, nil, nil, nil, 3, nil, DBM_COMMON_L.HEALER_ICON)
+local timerMarkedforButcheryCD					= mod:NewCDCountTimer(59.5, 378229, nil, nil, nil, 3, nil, DBM_COMMON_L.HEALER_ICON)
 --Tricktotem
 mod:AddTimerLine(DBM:EJ_GetSectionInfo(24734))
 local warnHextrick								= mod:NewTargetNoFilterAnnounce(381466, 3)
@@ -62,14 +56,9 @@ local warnBloodlust								= mod:NewSpellAnnounce(377965, 3)
 
 local specWarnHextrickTotem						= mod:NewSpecialWarningSwitch(381470, "-Healer", nil, nil, 1, 2)
 local specWarnGreaterHealingRapids				= mod:NewSpecialWarningInterrupt(377950, "HasInterrupt", nil, nil, 1, 2)
---local specWarnGTFO							= mod:NewSpecialWarningGTFO(340324, nil, nil, nil, 1, 8)
 
 local timerHexrickTotemCD						= mod:NewCDTimer(59.4, 381470, nil, nil, nil, 1, nil, DBM_COMMON_L.DAMAGE_ICON)
 local timerGreaterHealingRapidsCD				= mod:NewCDCountTimer(15.7, 377950, nil, nil, nil, 4, nil, DBM_COMMON_L.INTERRUPT_ICON)
-
---mod:AddRangeFrameOption("8")
---mod:AddInfoFrameOption(361651, true)
---mod:AddSetIconOption("SetIconOnStaggeringBarrage", 361018, true, false, {1, 2, 3})
 
 mod.vb.healingRapidsCount = 0
 mod.vb.frenzyCount = 0
@@ -82,7 +71,7 @@ local function scanBosses(self, delay)
 			local cid = self:GetUnitCreatureId(unitID)
 			local bossGUID = UnitGUID(unitID)
 			if cid == 186122 then--Rira Hackclaw
-				timerBladestormCD:Start(19.7-delay, bossGUID)
+				timerBladestormCD:Start(19.2-delay, bossGUID)
 				timerSavageChargeCD:Start(48.3-delay, bossGUID)
 			elseif cid == 186124 then--Gashtooth
 				timerGashFrenzyCD:Start(2.7-delay, 1, bossGUID)
@@ -91,7 +80,7 @@ local function scanBosses(self, delay)
 					timerMarkedforButcheryCD:Start(12.4-delay, 1, bossGUID)
 				end
 			else--Tricktotem
-				timerGreaterHealingRapidsCD:Start(11-delay, 1, bossGUID)
+				timerGreaterHealingRapidsCD:Start(10.7-delay, 1, bossGUID)
 				timerHexrickTotemCD:Start(44.8-delay, bossGUID)
 			end
 		end
@@ -114,15 +103,6 @@ function mod:OnCombatStart(delay)
 	self.vb.markedCount = 0
 	self:Schedule(1, scanBosses, self, delay)--1 second delay to give IEEU time to populate boss guids
 end
-
---function mod:OnCombatEnd()
---	if self.Options.RangeFrame then
---		DBM.RangeCheck:Hide()
---	end
---	if self.Options.InfoFrame then
---		DBM.InfoFrame:Hide()
---	end
---end
 
 function mod:SPELL_CAST_START(args)
 	local spellId = args.spellId
@@ -198,14 +178,6 @@ function mod:SPELL_AURA_APPLIED(args)
 		warnHextrick:Show(args.destName)
 	end
 end
-----mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
---
---function mod:SPELL_AURA_REMOVED(args)
---	local spellId = args.spellId
---	if spellId == 361966 then
---
---	end
---end
 
 function mod:UNIT_DIED(args)
 	local cid = self:GetCIDFromGUID(args.destGUID)
@@ -214,30 +186,10 @@ function mod:UNIT_DIED(args)
 		timerBladestormCD:Stop(args.destGUID)
 	elseif cid == 186124 then--Gashtooth
 		timerDecayedSensesCD:Stop(args.destGUID)
-		timerGashFrenzyCD:Stop(args.destGUID)--This one is mainly for plater, which expects a GUID to be passed
-		timerGashFrenzyCD:Stop()--This will actually stop the timers regardless of count
-		timerMarkedforButcheryCD:Stop(args.destGUID)--This one is mainly for plater, which expects a GUID to be passed
-		timerMarkedforButcheryCD:Stop()--This will actually stop the timers regardless of count
+		timerGashFrenzyCD:HardStop(args.destGUID)
+		timerMarkedforButcheryCD:HardStop(args.destGUID)
 	elseif cid == 186125 then--Tricktotem
 		timerHexrickTotemCD:Stop(args.destGUID)
-		timerGreaterHealingRapidsCD:Stop(args.destGUID)--This one is mainly for plater, which expects a GUID to be passed
-		timerGreaterHealingRapidsCD:Stop()--This will actually stop the timers regardless of count
+		timerGreaterHealingRapidsCD:HardStop(args.destGUID)
 	end
 end
-
---[[
-
-function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId, spellName)
-	if spellId == 340324 and destGUID == UnitGUID("player") and not playerDebuff and self:AntiSpam(2, 4) then
-		specWarnGTFO:Show(spellName)
-		specWarnGTFO:Play("watchfeet")
-	end
-end
-mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
-
-function mod:UNIT_SPELLCAST_SUCCEEDED(uId, _, spellId)
-	if spellId == 353193 then
-
-	end
-end
---]]

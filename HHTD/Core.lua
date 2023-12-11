@@ -3,7 +3,7 @@ H.H.T.D. World of Warcraft Add-on
 Copyright (c) 2009-2018 by John Wellesz (hhtd@2072productions.com)
 All rights reserved
 
-Version 2.4.13
+Version 2.4.16
 
 In World of Warcraft healers have to die. This is a cruel truth that you're
 taught very early in the game. This add-on helps you influence this unfortunate
@@ -37,7 +37,7 @@ local INFO      = 3;
 local INFO2     = 4;
 
 local UNPACKAGED = "@pro" .. "ject-version@";
-local VERSION = "2.4.13";
+local VERSION = "2.4.16";
 
 local ADDON_NAME, T = ...;
 local GetAddOnMetadata  = _G.C_AddOns and _G.C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata;
@@ -561,7 +561,7 @@ do
                 name = L["OPT_VERSION"],
                 desc = L["OPT_VERSION_DESC"],
                 guiHidden = true,
-                func = function () HHTD:Print(L["VERSION"], '2.4.13,', L["RELEASE_DATE"], '2023-07-16T11:44:06Z') end,
+                func = function () HHTD:Print(L["VERSION"], '2.4.16,', L["RELEASE_DATE"], '2023-11-22T21:42:34Z') end,
                 order = -5,
             },
             ShowGUI = {
@@ -579,7 +579,7 @@ do
                 args = {
                     Info_Header = {
                         type = 'header',
-                        name = L["VERSION"] .. ' 2.4.13 -- ' .. L["RELEASE_DATE"] .. ' 2023-07-16T11:44:06Z',
+                        name = L["VERSION"] .. ' 2.4.16 -- ' .. L["RELEASE_DATE"] .. ' 2023-11-22T21:42:34Z',
                         order = 1,
                     },
                     Pve = {
@@ -1537,7 +1537,7 @@ do
 
     local band                      = _G.bit.band;
     local sub                       = _G.string.sub;
-    local CheckInteractDistance     = _G.CheckInteractDistance;
+    local UnitInRange               = _G.UnitInRange;
 
     local HOSTILE_OUTSIDER          = bit.bor (COMBATLOG_OBJECT_AFFILIATION_OUTSIDER, COMBATLOG_OBJECT_REACTION_HOSTILE);
     local HOSTILE                   = COMBATLOG_OBJECT_REACTION_HOSTILE;
@@ -1699,7 +1699,7 @@ do
             if (_amount and event:sub(-7) == "_DAMAGE") then
 
                 -- the healer is nearby
-                if HHTD_C.PLAYER_GUID == destGUID or CheckInteractDistance(destName, 1) then
+                if HHTD_C.PLAYER_GUID == destGUID or (UnitInRange(destName)) then
 
                     -- first attack?
                     if not self.Friendly_Healers_Attacked_by_GUID[destGUID] then

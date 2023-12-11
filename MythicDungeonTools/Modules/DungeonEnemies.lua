@@ -66,6 +66,46 @@ function MDTDungeonEnemyMixin:updateSizes(scale)
   end
 end
 
+function MDT:DisplayBlipModifierLabels(modifier)
+  for _, blip in pairs(blips) do
+    blip.textLocked = true
+    local text = (modifier == "alt" and blip.clone.g) or (modifier == "ctrl" and blip.data.count) or ""
+    blip.fontstring_Text1:SetText(text)
+    blip.fontstring_Text1:Show()
+  end
+end
+
+function MDT:HideAllBlipLabels()
+  for _, blip in pairs(blips) do
+    if not blip.textLocked then return end
+    blip.fontstring_Text1:Hide()
+    blip.textLocked = nil
+  end
+end
+
+function MDT:SetUpModifiers(frame)
+  if MDT:GetDB().devMode then return end
+  local ONUPDATE_INTERVAL = 0.1
+  local timeSinceLastUpdate = 0
+  frame:SetScript("OnUpdate", function(self, elapsed)
+    timeSinceLastUpdate = timeSinceLastUpdate + elapsed
+    if timeSinceLastUpdate >= ONUPDATE_INTERVAL then
+      timeSinceLastUpdate = 0
+      local modifier = (IsAltKeyDown() and "alt") or (IsControlKeyDown() and "ctrl")
+      local overMDT = MouseIsOver(frame) or MouseIsOver(frame.sidePanel) or MouseIsOver(frame.topPanel) or MouseIsOver(frame.bottomPanel)
+      if modifier and overMDT then
+        MDT:DisplayBlipModifierLabels(modifier)
+        local statusText = (modifier == "alt" and L["altKeyDownStatusText"]) or (modifier == "ctrl" and L["ctrlKeyDownStatusText"])
+        MDT.main_frame.statusString:SetText(statusText)
+        MDT.main_frame.statusString:Show()
+      else
+        MDT:HideAllBlipLabels()
+        MDT.main_frame.statusString:Hide()
+      end
+    end
+  end)
+end
+
 function MDTDungeonEnemyMixin:OnEnter()
   self:updateSizes(1.2)
   self:SetFrameLevel(self:GetFrameLevel() + 5)
@@ -96,15 +136,15 @@ function MDTDungeonEnemyMixin:OnEnter()
     end
   end
   if not db.devMode then
+    if self.textLocked then return end
     self.fontstring_Text1:SetText(MDT:IsCurrentPresetTeeming() and self.data.teemingCount or self.data.count)
-    if not self.clone.g then
-      self.fontstring_Text1:Show()
-      return
-    end
-    for _, blip in pairs(blips) do
-      if blip.clone.g == self.clone.g then
-        blip.fontstring_Text1:SetText(MDT:IsCurrentPresetTeeming() and blip.data.teemingCount or blip.data.count)
-        blip.fontstring_Text1:Show()
+    self.fontstring_Text1:Show()
+    if self.clone.g then
+      for _, blip in pairs(blips) do
+        if blip.clone.g == self.clone.g then
+          blip.fontstring_Text1:SetText(MDT:IsCurrentPresetTeeming() and blip.data.teemingCount or blip.data.count)
+          blip.fontstring_Text1:Show()
+        end
       end
     end
   end
@@ -136,10 +176,9 @@ function MDTDungeonEnemyMixin:OnLeave()
     end
   end
   if not db.devMode then
-    if not self.clone.g then
-      self.fontstring_Text1:Hide()
-      return
-    end
+    if self.textLocked then return end
+    self.fontstring_Text1:Hide()
+    if not self.clone.g then return end
     for _, blip in pairs(blips) do
       if blip.clone.g == self.clone.g then
         blip.fontstring_Text1:Hide()
@@ -297,22 +336,10 @@ end
 function MDTDungeonEnemyMixin:OnClick(button, down)
   if button == "LeftButton" then
     if IsShiftKeyDown() and not self.selected then
-      local x, y = MDT:GetCursorPosition()
-      local newPullIdx = MDT:FindClosestPull(x, y)
-      newPullIdx = newPullIdx or MDT:GetCurrentPull()
-      newPullIdx = newPullIdx + 1
+      local newPullIdx = MDT:GetCurrentPull() + 1
       MDT:PresetsAddPull(newPullIdx)
       MDT:GetCurrentPreset().value.selection = { newPullIdx }
-      MDT:ReloadPullButtons()
       MDT:SetSelectionToPull(newPullIdx)
-      local _
-      MDT:ColorAllPulls(_, newPullIdx)
-      --if MDT:GetPullsNum() == 2 then MDT:SetAutomaticColor(1) end
-    else
-      if self.selected then
-        local pIdx = MDT:FindPullOfBlip(self)
-        MDT:SetSelectionToPull(pIdx)
-      end
     end
     MDT:DungeonEnemies_AddOrRemoveBlipToCurrentPull(self, not self.selected, IsControlKeyDown())
     MDT:DungeonEnemies_UpdateSelected(MDT:GetCurrentPull())
@@ -510,7 +537,7 @@ function MDT:DisplayBlipTooltip(blip, shown)
       occurence..
       group..
       "\n"..
-      string.format(L["Level %d %s"], data.level, L[data.creatureType])..
+      string.format(L["Level %d %s"], data.level, L[data.creatureType]).." "..data.id..
       "\n"..string.format(L["%s HP"], MDT:FormatEnemyHealth(health)).."\n"
 
   local count = MDT:IsCurrentPresetTeeming() and data.teemingCount or data.count
@@ -622,6 +649,7 @@ local function blipDevModeSetup(blip)
       WrapTextInColorCode((blip.clone.scale or ""), "ffffffff"))
     if blip.clone.g then blip.fontstring_Text1:SetTextColor(unpack(groupColors[blip.clone.g % 5 + 1])) end
   end
+  blip.UpdateBlipText = updateBlipText
 
   local xOffset, yOffset
   blip:SetScript("OnMouseDown", function()
@@ -634,23 +662,49 @@ local function blipDevModeSetup(blip)
     xOffset = x - nx
     yOffset = y - ny
   end)
+  local moveGroup
   blip:SetScript("OnDragStart", function()
     if not db.devModeBlipsMovable then return end
+    if IsShiftKeyDown() then
+      moveGroup = true
+    end
     blip:StartMoving()
   end)
   blip:SetScript("OnDragStop", function()
     if not db.devModeBlipsMovable then return end
+    if IsShiftKeyDown() then
+      moveGroup = true
+    end
     local x, y = MDT:GetCursorPosition()
     local scale = MDT:GetScale()
     x = x * (1 / scale)
     y = y * (1 / scale)
     x = x - xOffset
     y = y - yOffset
+    local deltaX = x - MDT.dungeonEnemies[db.currentDungeonIdx][blip.enemyIdx].clones[blip.cloneIdx].x
+    local deltaY = y - MDT.dungeonEnemies[db.currentDungeonIdx][blip.enemyIdx].clones[blip.cloneIdx].y
+    if moveGroup then
+      for enemyIdx, data in pairs(MDT.dungeonEnemies[db.currentDungeonIdx]) do
+        for cloneIdx, clone in pairs(data.clones) do
+          if clone.g == blip.clone.g then
+            clone.x = clone.x + deltaX
+            clone.y = clone.y + deltaY
+            --move blip
+            local cloneBlip = MDT:GetBlip(enemyIdx, cloneIdx)
+            if cloneBlip then
+              cloneBlip:ClearAllPoints()
+              cloneBlip:SetPoint("CENTER", MDT.main_frame.mapPanelTile1, "TOPLEFT", clone.x * scale, clone.y * scale)
+            end
+          end
+        end
+      end
+    end
     blip:StopMovingOrSizing()
     blip:ClearAllPoints()
     blip:SetPoint("CENTER", MDT.main_frame.mapPanelTile1, "TOPLEFT", x * scale, y * scale)
     MDT.dungeonEnemies[db.currentDungeonIdx][blip.enemyIdx].clones[blip.cloneIdx].x = x
     MDT.dungeonEnemies[db.currentDungeonIdx][blip.enemyIdx].clones[blip.cloneIdx].y = y
+    moveGroup = nil
   end)
   blip:SetScript("OnMouseWheel", function(self, delta)
     if not db.devModeBlipsScrollable then return end
@@ -697,9 +751,23 @@ local function blipDevModeSetup(blip)
         end
         blip.clone.g = maxGroup
       else
-        blip.clone.g = blip.clone.g + delta
+        local blipGroup = blip.clone.g
+        if IsShiftKeyDown() then
+          --change group of all connected blips
+          for enemyIdx, data in pairs(MDT.dungeonEnemies[db.currentDungeonIdx]) do
+            for cloneIdx, clone in pairs(data.clones) do
+              if clone.g == blipGroup then
+                clone.g = blipGroup + delta
+                local cloneBlip = MDT:GetBlip(enemyIdx, cloneIdx)
+                cloneBlip.UpdateBlipText()
+              end
+            end
+          end
+        else
+          blip.clone.g = blip.clone.g + delta
+          updateBlipText()
+        end
       end
-      updateBlipText()
     end
   end)
   updateBlipText()
@@ -802,8 +870,9 @@ function MDT:DungeonEnemies_HideAllBlips()
   MDT.dungeonEnemies_framePools:ReleaseAll()
 end
 
-function MDT:DungeonEnemies_UpdateEnemies()
+function MDT:DungeonEnemies_UpdateEnemiesAsync()
   MDT.dungeonEnemies_framePools:ReleaseAll()
+  coroutine.yield()
   twipe(blips)
   if not db then db = MDT:GetDB() end
   local enemies = MDT.dungeonEnemies[db.currentDungeonIdx]
@@ -823,6 +892,7 @@ function MDT:DungeonEnemies_UpdateEnemies()
           blip:SetUp(data, clone)
           blip.enemyIdx = enemyIdx
           blip.cloneIdx = cloneIdx
+          coroutine.yield()
         end
       end
     end
@@ -838,6 +908,7 @@ function MDT:DungeonEnemies_UpdateEnemies()
               blip:SetUp(data, clone)
               blip.enemyIdx = enemyIdx
               blip.cloneIdx = cloneIdx
+              coroutine.yield()
             end
           end
         end
@@ -867,7 +938,7 @@ function MDT:FindPullOfBlip(blip)
   end
 end
 
-function MDT:GetBlip(enemyIdx, cloneIdx, preset)
+function MDT:GetBlip(enemyIdx, cloneIdx)
   for blipIdx, blip in pairs(blips) do
     if blip.enemyIdx == enemyIdx and blip.cloneIdx == cloneIdx then
       return blip
@@ -894,7 +965,7 @@ function MDT:DungeonEnemies_AddOrRemoveBlipToCurrentPull(blip, add, ignoreGroupe
         end
       end
     end
-    if not ignoreUpdates then self:UpdatePullButtonNPCData(pullIdx) end
+    -- if not ignoreUpdates then self:UpdatePullButtonNPCData(pullIdx) end
   end
   if add then
     if blip then blip.selected = true end
@@ -921,7 +992,7 @@ function MDT:DungeonEnemies_AddOrRemoveBlipToCurrentPull(blip, add, ignoreGroupe
       end
     end
   end
-  if not ignoreUpdates then self:UpdatePullButtonNPCData(pull) end
+  -- if not ignoreUpdates then self:UpdatePullButtonNPCData(pull) end
 end
 
 ---DungeonEnemies_UpdateBlipColors
@@ -931,6 +1002,7 @@ function MDT:DungeonEnemies_UpdateBlipColors(pull, r, g, b, pulls)
   local isInspiring = MDT:IsWeekInspiring(week)
   pulls = pulls or preset.value.pulls
   local p = pulls[pull]
+  if not p then return end
   for enemyIdx, clones in pairs(p) do
     if tonumber(enemyIdx) then
       for _, cloneIdx in pairs(clones) do
@@ -1014,13 +1086,14 @@ function MDT:DungeonEnemies_UpdateSelected(pull, pulls, ignoreHulls)
       end
     end
   end
-  if not ignoreHulls then MDT:DrawAllHulls(pulls) end
+  -- if not ignoreHulls then MDT:DrawAllHulls(pulls) end
 end
 
 ---DungeonEnemies_SetPullColor
 ---Sets a custom color for a pull
 function MDT:DungeonEnemies_SetPullColor(pull, r, g, b)
   preset = MDT:GetCurrentPreset()
+  if not preset.value.pulls[pull] then return end
   preset.value.pulls[pull]["color"] = MDT:RGBToHex(r, g, b)
 end
 

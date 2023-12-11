@@ -1,5 +1,26 @@
 # Changelog
 
+v1.14.29:
+
+- Fix Stagger bar error for 10.2.0 (wowace ticket #348)
+
+v1.14.28:
+
+- Update TOC for Dragonflight to 10.2.0
+
+v1.14.27:
+
+- Update TOC for Dragonflight to 10.1.7
+
+v1.14.26:
+
+- Update TOC for classic-era to 1.14.4
+
+v1.14.25:
+
+- Fixed lua error that would appear when targetting webwrapped players in heroic alpha/beta titan rune dungeons.
+- Added ability to adjust strata globally.
+
 v1.14.24:
 
 - Fixed an error when targeting a player and right-clicking a module that should show a menu in 10.1.5.

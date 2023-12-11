@@ -12,7 +12,8 @@ local strsplit = strsplit
 local type = type
 
 local CreateFrame = CreateFrame
-local IsAddOnLoaded = IsAddOnLoaded
+
+local C_AddOns_IsAddOnLoaded = C_AddOns.IsAddOnLoaded
 
 function W:ConstructCompatibilityFrame()
     local frame = CreateFrame("Frame", "WTCompatibilityFrame", E.UIParent)
@@ -221,7 +222,7 @@ local function GetDatabaseRealValue(path)
 end
 
 local function GetCheckCompatibilityFunction(targetAddonName, targetAddonLocales)
-    if not IsAddOnLoaded(targetAddonName) then
+    if not C_AddOns_IsAddOnLoaded(targetAddonName) then
         return E.noop
     end
 
@@ -319,7 +320,7 @@ function W:CheckCompatibility()
         L["Rectangle Minimap"],
         L["Rectangle Minimap"],
         "db.WT.maps.rectangleMinimap.enable",
-        "db.mui.maps.minimap.rectangleMinimap.enable"
+        "db.mui.maps.rectangleMinimap.enable"
     )
 
     CheckMerathilisUI(L["Chat Bar"], L["Chat Bar"], "db.WT.social.chatBar.enable", "db.mui.chat.chatBar.enable")
@@ -428,13 +429,6 @@ function W:CheckCompatibility()
 
     -- S&L
     CheckShadowAndLight(
-        L["Move Frames"],
-        L["Move Blizzard frames"],
-        "private.WT.misc.moveFrames.enable",
-        "private.sle.module.blizzmove.enable"
-    )
-
-    CheckShadowAndLight(
         format("%s-%s", L["Skins"], L["Shadow"]),
         L["Enhanced Shadow"],
         "private.WT.skins.shadow",
@@ -495,21 +489,21 @@ function W:CheckCompatibility()
         format("%s-%s", L["Tooltips"], L["Icon"]),
         L["Tooltip Icons"],
         "private.WT.tooltips.icon",
-        "db.mMediaTag.mTIcon"
+        "db.mMT.tooltip.enable"
     )
 
     CheckmMediaTag(
         L["Objective Tracker"],
         L["ObjectiveTracker Skin"],
         "private.WT.quest.objectiveTracker.enable",
-        "db.mMediaTag.mObjectiveTracker.enable"
+        "db.mMT.objectivetracker.enable"
     )
 
     CheckmMediaTag(
         L["Role Icon"],
         L["Role Symbols"],
         "private.WT.unitFrames.roleIcon.enable",
-        "db.mMediaTag.mRoleSymbols.enable"
+        "db.mMT.roleicons.enable"
     )
 
     -- Enhanced Again

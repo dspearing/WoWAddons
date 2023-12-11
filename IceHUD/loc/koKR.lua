@@ -16,6 +16,8 @@ L["A custom mana bar has been created and can be configured through Module Setti
 L["Abbreviate estimated health"] = "추정 생명력 간소화"
 L["Abbreviate health"] = "생명력 간소화"
 L["Absorb bar alpha"] = "중첩 바 투명도"
+--[[Translation missing --]]
+L["Added strata"] = "Added strata"
 L["Adjust the horizontal position of the aura icon"] = "아이콘의 수평 위치 조정"
 L["Adjust the vertical placement of this bar"] = "이 바의 수직 배치를 조정"
 L["Adjust the vertical position of the aura icon"] = "아이콘의 수직 위치 조정"
@@ -532,6 +534,8 @@ L["Potential SnD time bar alpha"] = "잠재적 난도질 타이머 바 투명도
 L["Predefined settings for different bars"] = "다른 바에 대한 사전 정의된 설정"
 L["Presets"] = "사전 설정"
 L["Pulse when full"] = "가득 차면 맥박"
+--[[Translation missing --]]
+L["Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."] = "Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."
 L["PvP icon"] = "PvP 아이콘"
 L["PvP Icon Horizontal Offset"] = "PvP 아이콘 수평 보정값"
 L["PvP Icon Scale"] = "PvP 아이콘 비율"

@@ -11,6 +11,7 @@ local IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted
 local hearthcost = 30
 local otheritem = 30
 data.portkeys = { -- smile if you're a muggle
+
 	{item=6948,   destination="_HEARTH", cost=hearthcost, mode="hearth"}, -- Hearthstone!!!
 
 	{item=64488,  destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- The Innkeeper's Daughter
@@ -26,6 +27,7 @@ data.portkeys = { -- smile if you're a muggle
 	{item=168907, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Holographic Digitalization Hearthstone
 	{item=172179, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Eternal Traveler's Hearthstone
 	{item=193588, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Timewalker's Hearthstone
+	{item=209035, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Hearthstone of the Flame
 
 	{item=182773, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth", cond=function() return ZGV.Parser.ConditionEnv.Necrolord end}, -- Necrolord Hearthstone
 	{item=184353, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth", cond=function() return ZGV.Parser.ConditionEnv.Kyrian end}, -- Kyrian Hearthstone
@@ -39,7 +41,7 @@ data.portkeys = { -- smile if you're a muggle
 
 	{spell=556,   destination="_HEARTH", cost=hearthcost, is_astral=1 }, -- Astral Recall
 
-	{item=110560, destination="_G_HEARTH", cost=hearthcost, mode="ghearth", type="garrison_inn"}, -- Garri Hstone
+	{item=110560, destination="_G_HEARTH", cost=hearthcost, toy=true, mode="ghearth", type="garrison_inn"}, -- Garri Hstone
 
 	{item=63352,  destination="@!sw_tp_dst", cost=otheritem, cooldown=28800}, -- Shroud of Cooperation
 	{item=63206,  destination="@!sw_tp_dst", cost=otheritem, cooldown=14400}, -- Wrap of Unity
@@ -104,7 +106,7 @@ data.portkeys = { -- smile if you're a muggle
 	--------------
 	--- LEGION ---
 	--------------
-	{item=140192, destination="Dalaran L/10 60.92,44.72", cost=30, cooldown=1200, mode="dhearth", cond=function() local m=ZGV.CurrentMapID return m~=625 and m~=626 and m~=627 and m~=628 and m~=629 and m~=695 and m~=717 and m~=718 and m~=715 and m~=734 and m~=735 and m~=672 and m~=673 and m~=674 and m~=675 and m~=719 and m~=720 and m~=721 and m~=702 and m~=747 and m~=739 and m~=725 and m~=726 and m~=709 and m~=24 end}, -- Dalaran Hearthstone: never use from Dala or class halls
+	{item=140192, destination="Dalaran L/10 60.92,44.72", cost=30, toy=true, cooldown=1200, mode="dhearth", cond=function() local m=ZGV.CurrentMapID return (IsQuestFlaggedCompleted(44663) or IsQuestFlaggedCompleted(44184)) and m~=625 and m~=626 and m~=627 and m~=628 and m~=629 and m~=695 and m~=717 and m~=718 and m~=715 and m~=734 and m~=735 and m~=672 and m~=673 and m~=674 and m~=675 and m~=719 and m~=720 and m~=721 and m~=702 and m~=747 and m~=739 and m~=725 and m~=726 and m~=709 and m~=24 end}, -- Dalaran Hearthstone: never use from Dala or class halls
 	{item=141605, destination="_TAXIWHISTLE", cost=15, cooldown=60, mode="whistle", cond=function() return ZGV.LibRover.TaxiWhistlePredictor:IsOnValidMap() end }, -- Flight Master's Whistle
 
 
@@ -197,7 +199,7 @@ data.portkeys = { -- smile if you're a muggle
 	-- Lucky Tortollan Charm
 	{item=202046, destination="Stormsong Valley/0 40.28,36.53", cost=15, cooldown=60},
 	-- Niffen Diggin' Mitts
-	{item=205255, destination="Zaralek Cavern/0 56.45,55.80", cost=15, cooldown=60},
+	{item=205255, destination="Zaralek Cavern/0 56.45,55.80", cost=15, cooldown=60, cond=function() local m=ZGV.CurrentMapID return m==2133 end},
 	-- Aylaag Windstone Fragment
 	--{item=200613, destination="Ohn'ahran Plains/0 71.33,31.48", cost=15, cooldown=15 , cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7102)>0 end}, --Rusza'thar Reach location
 	--{item=200613, destination="Ohn'ahran Plains/0 70.58,63.34", cost=15, cooldown=15, cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7101)>0 end}, --Pinewood Post location

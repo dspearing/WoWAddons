@@ -172,9 +172,353 @@ function Notification:FloatFontSize()
 	end
 end
 
-function Notification:QueueToast(notiftype,guide,param,param1,param2)
+function Notification:SendToastToNC(object)
+	local onClick = function()
+		Notification:CreateFloatingFrame("message", nil, ZGV.NotificationCenter.MsgTstEvents,"events")
+		Notification:RemoveEntry("Events")
+	end
+	
+	local tooltipText = ZGV.GuideMenu.Events.event
+	local texture = ZGV.IconSets.TabsIcons.file
+	local texcoords = ZGV.IconSets.TabsIcons['EVENTS'].texcoord
+
+--	local text,title,tooltipText,priority,poptime,removetime,quiet,OnOpen,data
+	--function Notification:AddEntry(id, title, text, texture, texcoords, onClick, tooltip,  priority, poptime, removetime, quiet,onShow )
+
+	ZGV.NotificationCenter:AddEntry(
+		"Events",
+		"Events",
+		tooltipText,
+		texture,
+		texcoords,
+		onClick,
+		tooltipText,
+		priority or 10,
+		poptime,
+		removetime,
+		quiet,
+		OnOpen,
+		nil,
+		data,
+		"nocounter")
+
+end
+
+Notification.MenuItems = {}
+function Notification:ShowNotifications()
+	table.wipe(Notification.MenuItems)
+
+	for index,entry in ipairs(Notification.Entries) do
+		local data = {
+			text = entry.text,
+			icon = entry.texture,
+			func = entry.onClick,
+			notCheckable=1,
+			spacing = 5,
+		}
+
+		if entry.texcoords then
+			data.tCoordLeft = entry.texcoords[1]
+			data.tCoordRight = entry.texcoords[2]
+			data.tCoordTop = entry.texcoords[3]
+			data.tCoordBottom = entry.texcoords[4]
+		end
+
+		table.insert(Notification.MenuItems,data)
+		if index<#Notification.Entries then table.insert(Notification.MenuItems,UIDropDownFork_separatorInfo) end
+	end
+
+
+	if #Notification.Entries==0 then
+		table.insert(Notification.MenuItems,Notification.Empty)
+	else
+		table.insert(Notification.MenuItems,UIDropDownFork_separatorInfo)
+		table.insert(Notification.MenuItems,Notification.Reset)
+	end
+
+	UIDropDownFork_SetAnchor(ZGV.Frame.Controls.MenuHostNotifications, 0, 0, "TOP", ZGV.Frame.Controls.Notifications, "BOTTOM")
+	EasyFork(Notification.MenuItems,ZGV.Frame.Controls.MenuHostNotifications,nil,0,0,"MENU",10)
+	DropDownForkList1:SetPoint("RIGHT",ZGV.Frame,"RIGHT")
+
+	ZGV.db.char.NotificationsCounterHidden = true
+	ZGV.Frame.Controls.Notifications.Counter:Hide()
+end
+
+function Notification:ShowOneNotification(ident)
+	local entry
+	for index,notification in ipairs(Notification.Entries) do
+		if notification.ident==ident then
+			entry = notification
+			break
+		end
+	end
+
+	if not entry then return end
+
+	table.wipe(Notification.MenuItems)
+
+	local data = {
+		text = entry.text,
+		icon = entry.texture,
+		func = entry.onClick,
+		notCheckable=1,
+		spacing = 5,
+	}
+	
+	if entry.texcoords then
+		data.tCoordLeft = entry.texcoords[1]
+		data.tCoordRight = entry.texcoords[2]
+		data.tCoordTop = entry.texcoords[3]
+		data.tCoordBottom = entry.texcoords[4]
+	end
+
+	table.insert(Notification.MenuItems,data)
+
+	function Notification:CheckNCBubble()
+		if not Notification.FloatingToast or not Notification.FloatingToast:IsVisible() then
+			UIDropDownFork_SetAnchor(ZGV.Frame.Controls.MenuHostNotifications, 0, 0, "TOPRIGHT", ZGV.Frame.Controls.Notifications, "BOTTOMRIGHT")
+			EasyFork(Notification.MenuItems,ZGV.Frame.Controls.MenuHostNotifications,nil,0,0,"MENU",10)
+			ZGV:ScheduleTimer(Notification.HideNotifications, 2.0)
+		else
+			ZGV:ScheduleTimer(function()
+				Notification:CheckNCBubble()
+			end,1)
+		end
+	end
+
+	Notification:CheckNCBubble()
+
+end
+
+function Notification:HideNotifications()
+	if DropDownForkList1 and DropDownForkList1:IsShown() and DropDownForkList1.dropdown==ZGV.Frame.Controls.MenuHostNotifications then CloseDropDownForks() return end
+end
+
+function Notification:AddedSavedNotifications()
+	if not ZGV.db.char.notifications then return end
+
+	local hide_counter = ZGV.db.char.NotificationsCounterHidden
+
+	for id,info in pairs(ZGV.db.char.notifications) do
+		local myId,title,text,texture,texCoord,OnClick,OnEnter,priority,poptime,removetime,quiet,OnOpen,myType,addtime,guideData,data
+
+		local guide = ZGV:GetGuideByTitle(id)
+
+		myId = id
+		myType = info[1]
+		title = info[2]
+		text = info[3]
+		addtime = info[4]
+		texture = info[5] or ""
+		texCoord = info[6]
+		data = info[7] or {}
+		quiet = true -- don't pop saved notifies
+
+		if info[1] == "pet" then
+			ZGV.CreatureDetector:AddGuideToDetectedGuides(guide)
+			if data.owned then
+				OnClick = function(self)
+					ZGV.CreatureDetector.OnClick_owned(guide) end
+			else
+				OnClick = function(self)
+					ZGV.CreatureDetector.OnClick(guide) end
+			end
+
+			OnEnter = function(self) local position,x,y = Notification:GetTooltipPosition() ZGV.CreatureDetector:ShowTooltip(guide,self,position,x,y) end
+			guide.is_hunter_pet = data.is_hunter_pet
+			guideData = guide
+		elseif info[1] == "sis" or info[1] == "mount" or info[1] == "monk" then
+			guideData = guide
+			OnClick = function(self) ZGV.Tabs:LoadGuideToTab(guide) Notification:RemoveEntry(myId) Notification:UpdateCounter() end
+		elseif info[1] == "legion" then
+			guideData = guide
+			OnClick = function(self) ZGV:PLAYER_LEVEL_UP(nil,data.level) Notification:RemoveEntry(myId) Notification:UpdateCounter() end
+		end
+
+		data.time = addtime
+		data.guide = guideData
+
+		Notification:AddEntry(
+			myId,
+			title,
+			text,
+			texture,
+			texCoord,
+			OnClick,
+			OnEnter,
+			priority,
+			poptime,
+			removetime,
+			quiet,
+			OnOpen,
+			myType,
+			data)
+	end
+
+	if hide_counter then
+		ZGV.db.char.NotificationsCounterHidden = true -- need to set it back, since AddEntry defaults to showing the counter
+		ZGV.Frame.Controls.Notifications.Counter:Hide()
+	end
+
+	--Notification:UpdateCounter()
+end
+
+function Notification:SaveNotifications()
+	ZGV.db.char.notifications  = ZGV.db.char.notifications or {}
+	wipe(ZGV.db.char.notifications)
+
+	local saved = ZGV.db.char.notifications
+
+	for i,notif in ipairs(Notification.Entries) do
+		-- Loop through all current notifcations
+		if notif.dontSave then
+			-- noop
+			-- entry is shown, but not stored in saved vars
+		elseif notif.notiftype == "pet" then
+			saved[notif.ident] = {
+				notif.notiftype,
+				notif.title,
+				notif.text,
+				notif.addtime,
+				notif.texture,
+				notif.texcoords,
+				notif.data,
+			}
+		elseif notif.notiftype == "sis" or notif.notiftype == "mount" or notif.notiftype == "monk" or notif.notiftype == "legion" then
+			local guideTitle = notif.data.guide.title
+			saved[guideTitle] = {
+				notif.notiftype,
+				notif.title,
+				notif.text,
+				notif.addtime,
+				notif.texture,
+				notif.texcoords,
+				notif.data,
+			}
+		end
+	end
+end
+
+
+function Notification:ApplySkin()
+	ZGV.Frame.Controls.Notifications.Counter.BG:SetVertexColor(unpack(SkinData("NotificationBubbleColor")))
+	if ZGV.Frame.Controls.MenuHostNotifications then
+		CHAIN(ZGV.Frame.Controls.MenuHostNotifications)
+			:SetBackdrop(SkinData("NotificationBackdrop"))
+			:SetBackdropColor(unpack(SkinData("NotificationBackdropColor")))
+			:SetBackdropBorderColor(unpack(SkinData("NotificationBackdropBorderColor")))
+	end
+end
+
+function Notification:RemoveEntry(ident)
+	for index,entry in ipairs(Notification.Entries) do
+		if entry.ident==ident then
+			table.remove(Notification.Entries,index)
+			Notification:HideNotifications()
+			return
+		end
+	end
+end
+
+function Notification:RemoveAllEntries()
+	table.wipe(Notification.Entries)
+	Notification:HideNotifications()
+	Notification:UpdateCounter()
+end
+
+
+function Notification:EntryExists(ident)
+	for index,entry in ipairs(Notification.Entries) do
+		if entry.ident==ident then
+		--	Spoo(entry)
+			return true
+		end
+	end
+	return false
+end
+
+function Notification:UpdateEnable()
+
+end
+
+function Notification:GetButton()
+	for _,button in ipairs(Notification.Buttons) do
+		if not button.Used then return button end
+	end
+
+	local button = CreateFrame("BUTTON",nil,ZGV.Frame,"ZGV_Notification_Button_Template")
+	table.insert(Notification.Buttons,button)
+
+	return button
+end
+
+function Notification:CreateStaticToastFrame()
+
+    Notification.StaticToast=CHAIN(CreateFrame("Frame",nil,UIParent))
+        :SetSize(100,100)
+        :SetPoint("CENTER")
+        :Show()
+    .__END
+
+    Notification.StaticToast.Text = CHAIN(Notification.StaticToast:CreateFontString())
+        :SetFont(FONT,16,"OUTLINE")
+        :SetPoint("CENTER")
+        :SetJustifyH("CENTER")
+        :SetJustifyV("TOP")
+        :SetText()
+        :SetTextColor(unpack(SkinData("Accent")))
+        :SetWidth(300)
+        :SetHeight(300)
+        :SetWordWrap(true)
+        :Show()
+    .__END
+
+    Notification.StaticToast.ShowAnim = CHAIN(Notification.StaticToast:CreateAnimationGroup())
+        :SetLooping("NONE")
+        :SetScript("OnPlay", function() 
+		Notification.StaticToast:Show()
+        end)
+      .__END
+
+      Notification.StaticToast.HideAnim = CHAIN(Notification.StaticToast:CreateAnimationGroup())
+        :SetLooping("NONE")
+        :SetScript("OnFinished", function() 
+		Notification.StaticToast:Hide()
+        end)
+	 :SetScript("OnStop", function() 
+	 	Notification.StaticToast:Hide()
+        end)
+      .__END
+
+    Notification.StaticToast.HideAnim.anim = CHAIN(Notification.StaticToast.HideAnim:CreateAnimation("Alpha"))
+        :SetDuration(0.5)
+	:SetFromAlpha(1)
+        :SetToAlpha(0)
+    .__END
+
+    Notification.StaticToast.ShowAnim.anim = CHAIN(Notification.StaticToast.ShowAnim:CreateAnimation("Alpha"))
+        :SetDuration(0.5)
+        :SetToAlpha(1)
+    .__END
+
+end
+
+
+function Notification:DisplayStaticToast(text,purpose)
+	Notification.StaticToast.Text:SetText(text)
+	Notification.StaticToast.Text:SetTextColor(unpack(SkinData(purpose or "MessageNotify")))
+	Notification.StaticToast.ShowAnim:Play()
+	if Notification.StaticHideTimer then ZGV:CancelTimer(Notification.StaticHideTimer) end
+	Notification.StaticHideTimer = ZGV:ScheduleTimer(function() 
+		Notification.StaticToast.HideAnim:Play()
+    end,3)
+end
+
+function Notification:QueueToast(notiftype,guide,param,param1,param2,popup)
 
 	if not ZGV.db.profile.n_popup_toast then table.wipe(Notification.QueuedToasts) return end
+	if not notiftype and not Notification.QueuedToasts[1] then Notification.prioritytoast = false return end
+	ZGV:Debug("&toasts Toast queue for %s initiated", notiftype or "")
 
 	--Check if entry [1] exists. If not, create it if notiftype is not empty and run toast function.
 	--Add a new entry. Remove record [1] when the running toast fades and call this function without parameters.
@@ -185,10 +529,12 @@ function Notification:QueueToast(notiftype,guide,param,param1,param2)
 
 	if param1 and not Notification.QueuedToasts[1] then
 		table.insert(Notification.QueuedToasts,savedtoast)
-		Notification:CreateFloatingFrame("message",nil,param,param1,true)
+		Notification:CreateFloatingFrame(notiftype,nil,param,param1,true)
 	elseif param1 and Notification.QueuedToasts[1] then
+		ZGV:Debug("&toasts A queued toasts found: %s.", Notification.QueuedToasts[1].notiftype or "")
 		for i, queuedtoast in ipairs(Notification.QueuedToasts) do		--check if a message toast of this type is already queued
 			if queuedtoast.param1 == param1 then
+				ZGV:Debug("&toasts Duplicate toast found.")
 				dupetoast = true
 				break
 			end
@@ -196,13 +542,15 @@ function Notification:QueueToast(notiftype,guide,param,param1,param2)
 	
 		if dupetoast == false then
 			table.insert(Notification.QueuedToasts,savedtoast)	--queue the toast, will be released as soon as the previous toast disappears
+			ZGV:Debug("&toasts Toast of %s type added to the queue.", savedtoast.notiftype)
 		else
 			dupetoast = false
+			ZGV:Debug("&toasts Skipping queue.")
 		end
 	elseif not notiftype and Notification.QueuedToasts[1] and not Notification.FloatingToast:IsVisible() then	--queue is called by something else than a new message toast request
 		Notification:CreateFloatingFrame("message", nil, Notification.QueuedToasts[1].param,Notification.QueuedToasts[1].param1, true)
 	else
-		return
+		Notification.prioritytoast = false
 	end
 end
 
@@ -211,18 +559,17 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 --	if not ZGV.Frame:IsVisible() then return end
 	if notiftype == "creature" and not ZGV.db.profile.n_popup_toast then return end
 	if notiftype ~= "message" and Notification.prioritytoast then return end
+	ZGV:Debug("&toasts Attempting to load a floating toast of %s type",notiftype or "unknown")
 
 	--Frame already created - show it, schedule hide and call the layout function
 	if Notification.FloatingToast then
+		ZGV:Debug("&toasts Toast frame already created, refreshing for %s",notiftype or "unknown")
 		--For message toasts, guide is a bool which indicates if the toast is fake (fakes get overridden by other toasts, real message toasts do not);
 		--param2 == true means that the message toast has been released from the queue, so it does not get re-queued.
 		if notiftype == "message" and not param2 and not guide then
-	--		print("queueing message toasts")
 			Notification.prioritytoast = true
 			Notification:QueueToast("message",nil,param,param1)
 		else
-	--		print(Notification.prioritytoast)
-		--	if notiftype then print("lauching "..notiftype) end
 			local frame = Notification.FloatingToast
 		--	frame:ClearAllPoints()
 			if ZGV.GuideMenu.FeaturesFrame then ZGV.GuideMenu.FeaturesFrame:Hide() end
@@ -257,6 +604,7 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 			
 			frame.closebtn:SetScript("OnClick",function()
 				if popup then popup.private:Minimize(popup) end
+				ZGV:Debug("&toasts Toast manually closed and sent to NC")
 				ZGV.UIFrameFade.UIFrameFadeOut(frame, ZGV.db.profile.toastfadetimer, 1, 0)
 				ZGV:CancelTimer(Notification.ToastTimer)
 				frame:Hide()
@@ -265,13 +613,12 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 				Notification.prioritytoast = false
 				Notification:QueueToast()
 			end)
-
-			Notification:ScheduleToastHide(notiftype,guide,param,param1,param2,popup)
+			Notification:ScheduleToastHide(notiftype,guide,param,param1,param2,popup,"framecreated")
 		end
 			
 	else
+		ZGV:Debug("&toasts Toast frame not created yet, initializing for %s",notiftype or "unknown")
 		local toastfontsize = ZGV.db.profile.toastfontsize
-		
 
 	--Container frame
 		local frame
@@ -282,7 +629,7 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 			:SetBackdrop(SkinData("NotificationPopupHeaderBackdrop"))
 			:SetBackdropColor(set_alpha(OPACITY,34/255,34/255,34/255,1))
 			:SetBackdropBorderColor(set_alpha(OPACITY,34/255,34/255,34/255,1))
-			:SetFrameStrata("MEDIUM")
+			:SetFrameStrata("HIGH")
 		--	:SetScript("OnEnter", function()
 		--		frame.settingsbtn:Show()
 		--		frame.closebtn:Show()
@@ -538,12 +885,18 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 			:SetPoint("TOPRIGHT",frame, "TOPRIGHT", -5,-5)
 			:SetScript("OnClick",function()
 				if popup then popup.private:Minimize(popup) end
+				if popup then local tname = popup:GetDebugName() end
+				ZGV:Debug("&toasts %s manually closed and sent to NC", tname or "toast wihout")
 				ZGV.UIFrameFade.UIFrameFadeOut(frame, ZGV.db.profile.toastfadetimer, 1, 0)
 				frame:Hide()
 				ZGV:CancelTimer(Notification.ToastTimer)
-				if Notification.QueuedToasts[1] then table.remove(Notification.QueuedToasts,1) end
+				if Notification.QueuedToasts[1] then
+					table.remove(Notification.QueuedToasts,1)
+					if not Notification.QueuedToast or not Notification.QueuedToast[1] then
+						Notification.prioritytoast = false
+					end
+				end
 				if notiftype == "message" then ZGV.db.global.bannedtoasts[param1] = true end
-				Notification.prioritytoast = false
 				Notification:QueueToast()
 			end)
 		--	:Hide()
@@ -553,15 +906,19 @@ function Notification:CreateFloatingFrame(notiftype,guide,param,param1,param2,po
 	
 	--Call the layout function and schedule hide
 		if notiftype == "creature" or notiftype == "message" then
-			Notification:FloatingToastLayout(notiftype,guide,param,param1,param2)
+			Notification:FloatingToastLayout(notiftype,guide,param,param1,param2,popup)
 		end
 	
-		if ZGV.Frame:IsVisible() then Notification:ScheduleToastHide(notiftype,guide,popup) end
+		if ZGV.Frame:IsVisible() then
+			Notification:ScheduleToastHide(notiftype,guide,param,param1,param2,popup,"newframe")
+	end
 	end
 end
 
-function Notification:ScheduleToastHide(notiftype,guide,param,param1,param2,popup)
+function Notification:ScheduleToastHide(notiftype,guide,param,param1,param2,popup,source)
 	local t = ZGV.db.profile.nctoastduration * 5
+	ZGV:Debug("&toasts Scheduling fade-out of the %s toast in %d seconds.", notiftype or "", t)
+
 	if not Notification.ToastTimer then
 		Notification.ToastTimer = ZGV:ScheduleTimer(function()
 			local isOver = MouseIsOver(Notification.FloatingToast)
@@ -593,6 +950,7 @@ function Notification:HideFloatingToast(notiftype,guide,param,param1,param2,popu
 	
 	if Notification.QueuedToasts[1] then table.remove(Notification.QueuedToasts,1) end
 	if frame:IsVisible() and frame:GetAlpha() == 1 then
+		ZGV:Debug("&toasts %s toast fading out in %d", notiftype or "", ZGV.db.profile.toastfadetimer)
 		ZGV.UIFrameFade.UIFrameFadeOut(frame, ZGV.db.profile.toastfadetimer, 1, 0)
 		ZGV:ScheduleTimer(function()
 			Notification.prioritytoast = false
@@ -605,8 +963,10 @@ function Notification:HideFloatingToast(notiftype,guide,param,param1,param2,popu
 --Send to NC if nothing was clicked
 	if popup and (popup.type ~= "gear" or (ZGV.ItemScore.Upgrades.UpgradeQueueCount > 0 and not ZGV.ItemScore.Upgrades.forcefull)) then
 		popup.private:Minimize(popup)
+		ZGV:Debug("&toasts %s minimized to NC because it is not a gear popup or there are still upgrades pending", popup:GetDebugName() or "toast wihout")
 	elseif popup and popup.type == "gear" and (ZGV.ItemScore.Upgrades.UpgradeQueueCount == 0 or ZGV.ItemScore.Upgrades.forcefull) then
 		ZGV.NotificationCenter:RemoveEntry("ZygorItemPopup")
+		ZGV:Debug("&toasts %s removed from NC because there are no more upgrades pending, or static popup has been triggered", popup:GetDebugName() or "toast wihout")
 	end
 end
 
@@ -645,27 +1005,22 @@ function Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 		frame.frameFSNormal:SetPoint("TOPLEFT",frame,0,-25)
 		frame.frameFSNormal:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT")
 		frame.frameFSNormal:SetJustifyH("CENTER")
-	--	frame.frameFSNormal:SetJustifyV("TOP")
+
 		frame.frameFSNormal:SetText(param)
 	else
 		frame:SetWidth(320)
 		frame:SetClipsChildren(true)
 		frame:SetScale(ZGV.db.profile.framescale)
-		local frameheight = param.height
+
+		local frameheight = param:GetHeight()
 	
 		Notification.messagetoast = param
 		Notification.FloatingToast.sticky = ZGV.GuideMenu.Sticky[param1]
+		Notification.messagetoast:SetParent(frame)
+		Notification.messagetoast:SetPoint("TOPLEFT",frame,10,-10)
+		Notification.messagetoast:SetPoint("BOTTOMRIGHT",frame,-10,-10)
+		Notification.messagetoast:Show()
 
-		param[1]:ClearAllPoints()
-		param[1]:SetParent(frame)
-		param[1]:SetPoint("TOPLEFT",frame,"TOPLEFT", 10, -10)
-		param[1]:SetPoint("TOPRIGHT",frame,"TOPRIGHT", -10, -10)
-
-		local prev
-		for i, object in ipairs(param) do
-			object:Show()
-			object:SetParent(frame)
-		end
 
 		local bgimage
 		if ZGV.IsRetail then
@@ -682,41 +1037,62 @@ function Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 		frame.img:SetPoint("TOP",frame,0,-5)
 		frame.img:SetHeight(360)
 
-		if param == Notification.MsgTstOrientation then
+
+		if param == Notification.OrientationToast then
 			frame.leftbtnFS:SetText("Accept")
 			frame.rightbtnFS:SetText("Decline")
 			frame.leftbtn:SetScript("OnClick", function()
 				ZGV.Tabs:LoadGuideToTab("Leveling Guides\\Startup Guide Wizard")
 				frame:Hide()
-				if Notification.QueuedToasts[1] then table.remove(Notification.QueuedToasts,1) end
+				if Notification.QueuedToasts[1] then
+					table.remove(Notification.QueuedToasts,1)
+					if not Notification.QueuedToast or not Notification.QueuedToast[1] then
+						Notification.prioritytoast = false
+					end
+				else
+					Notification.prioritytoast = false
+				end
 				Notification:QueueToast()
 			end)
 			frame.rightbtn:SetScript("OnClick", function()
 				frame:Hide()
-				if Notification.QueuedToasts[1] then table.remove(Notification.QueuedToasts,1) end
+				if Notification.QueuedToasts[1] then
+					table.remove(Notification.QueuedToasts,1)
+					if not Notification.QueuedToast or not Notification.QueuedToast[1] then
+						Notification.prioritytoast = false
+					end
+				end
 				ZGV.db.global.bannedtoasts[param1] = true
 				Notification:QueueToast()
 			end)
 			frame.leftbtn:Show()
 			frame.rightbtn:Show()
 		end
-		
-		if param == Notification.MsgTstWelcome and frameheight < 120 then
-			frame:SetHeight(120)
-			frame.img:Show()
-		elseif param == Notification.MsgTstOrientation then
-			frame:SetHeight(135)
-			frame.img:Show()
-		elseif frameheight < 120 then
-			frame:SetHeight(frameheight)
+
+	
+		if param ~= nil and frameheight then
+			if param == Notification.WelcomeToast and frameheight < 120 then
+				frame:SetHeight(120)
+				frame.img:Show()
+			elseif param == Notification.OrientationToast then
+				frame:SetHeight(135)
+				frame.img:Show()
+			elseif frameheight < 120 then
+				frame:SetHeight(frameheight)
+			else
+				frame:SetHeight(frameheight)
+				frame.img:Show()
+			end
+
+			if param1 == "events" then
+				frame.img:Hide()
+			end
 		else
-			frame:SetHeight(frameheight)
+
+			frame:SetHeight(200)
 			frame.img:Show()
 		end
 
-		if param1 == "events" then
-			frame.img:Hide()
-		end
 	end
 	frame:Show()
 
@@ -731,7 +1107,7 @@ function Notification:FloatingToastLayout(notiftype,guide,param,param1,param2,po
 	if notiftype == "message" then			--Zygor messages
 		Notification:HideAllToasts()
 		Notification.prioritytoast = true
-	
+
 		if ZGV.GuideMenu.DisplayMode[param1] == "show" then
 			Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 		elseif ZGV.GuideMenu.DisplayMode[param1] == "dev" then
@@ -739,6 +1115,7 @@ function Notification:FloatingToastLayout(notiftype,guide,param,param1,param2,po
 				Notification:DisplayMessageToast(notiftype,guide,param,param1,param2)
 			else
 				if popup then popup.private:Minimize(popup) end
+				ZGV:Debug("&toasts %s popup overridden by priority toast and sent to NC",popup:GetDebugName() or "toast wihout")
 				ZGV.UIFrameFade.UIFrameFadeOut(frame, ZGV.db.profile.toastfadetimer, 1, 0)
 				frame:Hide()
 				ZGV:CancelTimer(Notification.ToastTimer)
@@ -748,6 +1125,7 @@ function Notification:FloatingToastLayout(notiftype,guide,param,param1,param2,po
 			end
 		else
 			if popup then popup.private:Minimize(popup) end
+			if popup then ZGV:Debug("&toasts %s popup overridden by priority toast and sent to NC",popup:GetDebugName()) end
 			ZGV.UIFrameFade.UIFrameFadeOut(frame, ZGV.db.profile.toastfadetimer, 1, 0)
 			frame:Hide()
 			ZGV:CancelTimer(Notification.ToastTimer)
@@ -792,337 +1170,6 @@ function Notification:FloatingToastLayout(notiftype,guide,param,param1,param2,po
 
 end
 
-function Notification:SendToastToNC(object)
-	local onClick = function()
-		Notification:CreateFloatingFrame("message", nil, ZGV.NotificationCenter.MsgTstEvents,"events")
-		Notification:RemoveEntry("Events")
-	end
-	
-	local tooltipText = ZGV.GuideMenu.Toast4.event
-	local texture = ZGV.IconSets.TabsIcons.file
-	local texcoords = ZGV.IconSets.TabsIcons['EVENTS'].texcoord
-
---	local text,title,tooltipText,priority,poptime,removetime,quiet,OnOpen,data
-	--function Notification:AddEntry(id, title, text, texture, texcoords, onClick, tooltip,  priority, poptime, removetime, quiet,onShow )
-
-	ZGV.NotificationCenter:AddEntry(
-		"Events",
-		"Events",
-		tooltipText,
-		texture,
-		texcoords,
-		onClick,
-		tooltipText,
-		priority or 10,
-		poptime,
-		removetime,
-		quiet,
-		OnOpen,
-		nil,
-		data,
-		"nocounter")
-
-end
-
-Notification.MenuItems = {}
-function Notification:ShowNotifications()
-	table.wipe(Notification.MenuItems)
-
-	for index,entry in ipairs(Notification.Entries) do
-		local data = {
-			text = entry.text,
-			icon = entry.texture,
-			func = entry.onClick,
-			notCheckable=1,
-			spacing = 5,
-		}
-
-		if entry.texcoords then
-			data.tCoordLeft = entry.texcoords[1]
-			data.tCoordRight = entry.texcoords[2]
-			data.tCoordTop = entry.texcoords[3]
-			data.tCoordBottom = entry.texcoords[4]
-		end
-
-		table.insert(Notification.MenuItems,data)
-		if index<#Notification.Entries then table.insert(Notification.MenuItems,UIDropDownFork_separatorInfo) end
-	end
-
-
-	if #Notification.Entries==0 then
-		table.insert(Notification.MenuItems,Notification.Empty)
-	else
-		table.insert(Notification.MenuItems,UIDropDownFork_separatorInfo)
-		table.insert(Notification.MenuItems,Notification.Reset)
-	end
-
-	UIDropDownFork_SetAnchor(ZGV.Frame.Controls.MenuHostNotifications, 0, 0, "TOP", ZGV.Frame.Controls.Notifications, "BOTTOM")
-	EasyFork(Notification.MenuItems,ZGV.Frame.Controls.MenuHostNotifications,nil,0,0,"MENU",10)
-	DropDownForkList1:SetPoint("RIGHT",ZGV.Frame,"RIGHT")
-
-	ZGV.db.char.NotificationsCounterHidden = true
-	ZGV.Frame.Controls.Notifications.Counter:Hide()
-end
-
-function Notification:ShowOneNotification(ident)
-	local entry
-	for index,notification in ipairs(Notification.Entries) do
-		if notification.ident==ident then
-			entry = notification
-			break
-		end
-	end
-
-	if not entry then return end
-
-	table.wipe(Notification.MenuItems)
-
-	local data = {
-		text = entry.text,
-		icon = entry.texture,
-		func = entry.onClick,
-		notCheckable=1,
-		spacing = 5,
-	}
-
-	if entry.texcoords then
-		data.tCoordLeft = entry.texcoords[1]
-		data.tCoordRight = entry.texcoords[2]
-		data.tCoordTop = entry.texcoords[3]
-		data.tCoordBottom = entry.texcoords[4]
-	end
-
-	table.insert(Notification.MenuItems,data)
-
-	UIDropDownFork_SetAnchor(ZGV.Frame.Controls.MenuHostNotifications, 0, 0, "TOPRIGHT", ZGV.Frame.Controls.Notifications, "BOTTOMRIGHT")
-	EasyFork(Notification.MenuItems,ZGV.Frame.Controls.MenuHostNotifications,nil,0,0,"MENU",10)
-
-	ZGV:ScheduleTimer(Notification.HideNotifications, 2.0)
-
-end
-
-function Notification:HideNotifications()
-	if DropDownForkList1 and DropDownForkList1:IsShown() and DropDownForkList1.dropdown==ZGV.Frame.Controls.MenuHostNotifications then CloseDropDownForks() return end
-end
-
-function Notification:AddedSavedNotifications()
-	if not ZGV.db.char.notifications then return end
-
-	local hide_counter = ZGV.db.char.NotificationsCounterHidden
-
-	for id,info in pairs(ZGV.db.char.notifications) do
-		local myId,title,text,texture,texCoord,OnClick,OnEnter,priority,poptime,removetime,quiet,OnOpen,myType,addtime,guideData,data
-
-		local guide = ZGV:GetGuideByTitle(id)
-
-		myId = id
-		myType = info[1]
-		title = info[2]
-		text = info[3]
-		addtime = info[4]
-		texture = info[5] or ""
-		texCoord = info[6]
-		data = info[7] or {}
-		quiet = true -- don't pop saved notifies
-
-		if info[1] == "pet" then
-			ZGV.CreatureDetector:AddGuideToDetectedGuides(guide)
-			if data.owned then
-				OnClick = function(self)
-					ZGV.CreatureDetector.OnClick_owned(guide) end
-			else
-				OnClick = function(self)
-					ZGV.CreatureDetector.OnClick(guide) end
-			end
-
-			OnEnter = function(self) local position,x,y = Notification:GetTooltipPosition() ZGV.CreatureDetector:ShowTooltip(guide,self,position,x,y) end
-			guide.is_hunter_pet = data.is_hunter_pet
-			guideData = guide
-		elseif info[1] == "sis" or info[1] == "mount" or info[1] == "monk" then
-			guideData = guide
-			OnClick = function(self) ZGV.Tabs:LoadGuideToTab(guide) Notification:RemoveEntry(myId) Notification:UpdateCounter() end
-		elseif info[1] == "legion" then
-			guideData = guide
-			OnClick = function(self) ZGV:PLAYER_LEVEL_UP(nil,data.level) Notification:RemoveEntry(myId) Notification:UpdateCounter() end
-		end
-
-		data.time = addtime
-		data.guide = guideData
-
-		Notification:AddEntry(
-			myId,
-			title,
-			text,
-			texture,
-			texCoord,
-			OnClick,
-			OnEnter,
-			priority,
-			poptime,
-			removetime,
-			quiet,
-			OnOpen,
-			myType,
-			data)
-	end
-
-	if hide_counter then
-		ZGV.db.char.NotificationsCounterHidden = true -- need to set it back, since AddEntry defaults to showing the counter
-		ZGV.Frame.Controls.Notifications.Counter:Hide()
-	end
-
-	--Notification:UpdateCounter()
-end
-
-function Notification:SaveNotifications()
-	ZGV.db.char.notifications  = ZGV.db.char.notifications or {}
-	wipe(ZGV.db.char.notifications)
-
-	local saved = ZGV.db.char.notifications
-
-	for i,notif in ipairs(Notification.Entries) do
-		-- Loop through all current notifcations
-		if notif.dontSave then
-			-- noop
-			-- entry is shown, but not stored in saved vars
-		elseif notif.notiftype == "pet" then
-			saved[notif.ident] = {
-				notif.notiftype,
-				notif.title,
-				notif.text,
-				notif.addtime,
-				notif.texture,
-				notif.texcoords,
-				notif.data,
-			}
-		elseif notif.notiftype == "sis" or notif.notiftype == "mount" or notif.notiftype == "monk" or notif.notiftype == "legion" then
-			local guideTitle = notif.data.guide.title
-			saved[guideTitle] = {
-				notif.notiftype,
-				notif.title,
-				notif.text,
-				notif.addtime,
-				notif.texture,
-				notif.texcoords,
-				notif.data,
-			}
-		end
-	end
-end
-
-
-function Notification:ApplySkin()
-	ZGV.Frame.Controls.Notifications.Counter.BG:SetVertexColor(unpack(SkinData("NotificationBubbleColor")))
-	if ZGV.Frame.Controls.MenuHostNotifications then
-		CHAIN(ZGV.Frame.Controls.MenuHostNotifications)
-			:SetBackdrop(SkinData("NotificationBackdrop"))
-			:SetBackdropColor(unpack(SkinData("NotificationBackdropColor")))
-			:SetBackdropBorderColor(unpack(SkinData("NotificationBackdropBorderColor")))
-	end
-end
-
-function Notification:RemoveEntry(ident)
-	for index,entry in ipairs(Notification.Entries) do
-		if entry.ident==ident then
-			table.remove(Notification.Entries,index)
-			Notification:HideNotifications()
-			return
-		end
-	end
-end
-
-function Notification:RemoveAllEntries()
-	table.wipe(Notification.Entries)
-	Notification:HideNotifications()
-	Notification:UpdateCounter()
-end
-
-
-function Notification:EntryExists(ident)
-	for index,entry in ipairs(Notification.Entries) do
-		if entry.ident==ident then
-		--	Spoo(entry)
-			return true
-		end
-	end
-	return false
-end
-
-function Notification:UpdateEnable()
-
-end
-
-function Notification:GetButton()
-	for _,button in ipairs(Notification.Buttons) do
-		if not button.Used then return button end
-	end
-
-	local button = CreateFrame("BUTTON",nil,ZGV.Frame,"ZGV_Notification_Button_Template")
-	table.insert(Notification.Buttons,button)
-
-	return button
-end
-
-function Notification:CreateStaticToastFrame()
-
-    Notification.StaticToast=CHAIN(CreateFrame("Frame",nil,UIParent))
-        :SetSize(100,100)
-        :SetPoint("CENTER")
-        :Show()
-    .__END
-
-    Notification.StaticToast.Text = CHAIN(Notification.StaticToast:CreateFontString())
-        :SetFont(FONT,16,"OUTLINE")
-        :SetPoint("CENTER")
-        :SetJustifyH("CENTER")
-        :SetJustifyV("TOP")
-        :SetText()
-	:SetTextColor(unpack(SkinData("Accent")))
-        :SetWidth(300)
-        :SetHeight(300)
-        :SetWordWrap(true)
-        :Show()
-    .__END
-
-    Notification.StaticToast.ShowAnim = CHAIN(Notification.StaticToast:CreateAnimationGroup())
-        :SetLooping("NONE")
-        :SetScript("OnPlay", function() 
-		Notification.StaticToast:Show()
-        end)
-      .__END
-
-      Notification.StaticToast.HideAnim = CHAIN(Notification.StaticToast:CreateAnimationGroup())
-        :SetLooping("NONE")
-        :SetScript("OnFinished", function() 
-		Notification.StaticToast:Hide()
-        end)
-	 :SetScript("OnStop", function() 
-	 	Notification.StaticToast:Hide()
-        end)
-      .__END
-
-    Notification.StaticToast.HideAnim.anim = CHAIN(Notification.StaticToast.HideAnim:CreateAnimation("Alpha"))
-        :SetDuration(0.5)
-	:SetFromAlpha(1)
-        :SetToAlpha(0)
-    .__END
-
-    Notification.StaticToast.ShowAnim.anim = CHAIN(Notification.StaticToast.ShowAnim:CreateAnimation("Alpha"))
-        :SetDuration(0.5)
-        :SetToAlpha(1)
-    .__END
-
-end
-
-function Notification:DisplayStaticToast(text,purpose)
-	Notification.StaticToast.Text:SetText(text)
-	Notification.StaticToast.Text:SetTextColor(unpack(SkinData(purpose or "MessageNotify")))
-	Notification.StaticToast.ShowAnim:Play()
-	if Notification.StaticHideTimer then ZGV:CancelTimer(Notification.StaticHideTimer) end
-	Notification.StaticHideTimer = ZGV:ScheduleTimer(function() 
-		Notification.StaticToast.HideAnim:Play()
-    end,3)
-end
 
 function Notification:HideAllToasts()
 	if Notification.FloatingToast then
@@ -1140,9 +1187,8 @@ function Notification:HideAllToasts()
 		frame.frameFSNormal:SetText("")
 		if ZGV.GuideMenu.FeaturesFrame then ZGV.GuideMenu.FeaturesFrame:Hide() end
 		if Notification.messagetoast then
-			for i, object in ipairs(Notification.messagetoast) do
-				object:Hide()
-			end
+
+			Notification.messagetoast:Hide()
 		end
 		Notification:HideIcons()
 	end
@@ -1163,6 +1209,89 @@ tinsert(ZGV.startups,{"NC startup",function(self)
 	Notification:AddedSavedNotifications()
 	Notification:CreateStaticToastFrame()
 end})
+
+local capitals = {
+	[87] = "Ironforge",
+	[84] = "Stormwind City",
+	[90] = "Undercity",
+	[89] = "Darnassus",
+	[85] = "Orgrimmar",
+	[86] = "Orgrimmar",
+	[88] = "Thunder Bluff",
+	[110] = "Silvermoon City",
+	[103] = "The Exodar",
+	[111] = "Shattrath City",
+	[125] = "Dalaran",
+	[126] = "Dalaran",
+--	Booty Bay
+--	Everlook
+--	Gadgetzan
+	[622] = "Stormshield",
+	[624] = "Warspear",
+}
+
+function Notification:CheckCitiesMate(iterate)
+	local x,y,m=LibRover:GetPlayerPosition()
+
+	if m and m>0 then
+		if (self.LastMap ~= m or (self.city ~= m and capitals[m]) or iterate) then
+			if capitals[m] then
+				self.city = m
+				if ZGV.db.profile.n_popup_msg_orientation and not ZGV.db.global.bannedtoasts["orientation"] and not LibTaxi:IsContinentKnown() then
+					ZGV:ScheduleTimer(function()
+						Notification:CreateFloatingFrame("message", nil, Notification.OrientationToast, "orientation")
+					end,2)
+				end
+			end
+		end
+		self.LastMap = m
+	end
+end
+
+tinsert(ZGV.startups,{"StartupToasts",function(self)
+
+
+	ZGV.NotificationCenter:CreateFloatingFrame("startup",nil,nil,nil,nil,nil,"startup")
+
+	Notification.WelcomeToast = ZGV.Visuals:Render(ZGV.GuideMenu.Welcome,290)
+	Notification.UpdatesToast = ZGV.Visuals:Render(ZGV.GuideMenu.Updates,290)
+	Notification.OrientationToast = ZGV.Visuals:Render(ZGV.GuideMenu.Orientation,290)
+	Notification.EventsToast = ZGV.Visuals:Render(ZGV.GuideMenu.Events,290)
+
+	local welcome = Notification.WelcomeToast.Objects[1]:GetParent()
+	local updates = Notification.UpdatesToast.Objects[1]:GetParent()
+
+	local ver_welcome
+	local ver_general
+
+
+	for i, object in ipairs(welcome.Objects) do
+		ver_welcome = (ver_welcome or "")..string.sub(object:GetText(), 1, 3)..string.len(object:GetText())
+	end
+
+
+	for i, object in ipairs(updates.Objects) do
+		ver_general = (ver_general or "")..string.sub(object:GetText(), 1, 3)..string.len(object:GetText())
+	end
+
+	if ZGV.db.global.welcomemsg ~= ver_welcome and ZGV.db.profile.n_popup_msg_welcome and not ZGV.db.global.bannedtoasts["welcome"] then
+		Notification:CreateFloatingFrame("message", nil, Notification.WelcomeToast, "welcome")
+		ZGV.db.global.welcomemsg = ver_welcome
+	end
+
+	if ZGV.db.global.generalmsg ~= ver_general and ZGV.db.profile.n_popup_msg_general and not ZGV.db.global.bannedtoasts["general"] then
+		Notification:CreateFloatingFrame("message", nil, Notification.UpdatesToast, "updates")
+		ZGV.db.global.generalmsg = ver_general
+	end
+
+
+	ZGV:ScheduleRepeatingTimer(function()
+		Notification:CheckCitiesMate()
+	end,2)
+
+	Notification.toastinit = true
+
+end,after="all"})
 
 ZGV_Notification_Button_Mixin = {}
 function ZGV_Notification_Button_Mixin:SetButton(data)
@@ -1212,4 +1341,13 @@ function ZGV_Notification_Button_Mixin:OnHide()
 	self.Icon:SetTexture(nil)
 	self:SetScript("OnClick",nil)
 	self.Used = false
+end
+
+function Notification:ToastDebug()
+	if Notification.FloatingToast then
+		print(Notification.FloatingToast.sticky)
+		print(Notification.FloatingToast.prioritytoast)
+	else
+		print("Floating toast not found")
+	end
 end

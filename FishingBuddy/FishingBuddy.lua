@@ -304,6 +304,84 @@ local GeneralOptions = {
     },
 };
 
+local EnablingOptions = {
+    ["WalkDistance"] = {
+        ["tooltip"] = FBConstants.CONFIG_WALKDISTANCE_INFO,
+        ["button"] = "FishingBuddyOption_WalkDistanceSlider",
+        ["margin"] = { 12, 8 },
+    },
+    ["RaftDistance"] = {
+        ["tooltip"] = FBConstants.CONFIG_RAFTDISTANCE_INFO,
+        ["button"] = "FishingBuddyOption_RaftDistanceSlider",
+        ["margin"] = { 12, 8 },
+    },
+    ["IdleTimeSlider"] = {
+        ["tooltip"] = FBConstants.CONFIG_IDLETIMER_INFO,
+        ["button"] = "FishingBuddyOption_IdleTimeSlider",
+        ["margin"] = { 12, 8 },
+    },
+}
+
+local WalkDistanceSlider =
+{
+    ["name"] = "FishingBuddyOption_WalkDistanceSlider",
+    ["format"] = FBConstants.DISTANCE.." - %d yards",
+    ["min"] = 0,
+    ["max"] = 100,
+    ["step"] = 5,
+    ["scale"] = 1,
+    ["rightextra"] = 32,
+    ["setting"] = "Enabling_WalkDistance"
+};
+local RaftDistanceSlider =
+{
+    ["name"] = "FishingBuddyOption_RaftDistanceSlider",
+    ["format"] = FBConstants.DISTANCE.." - %d yards",
+    ["min"] = 0,
+    ["max"] = 100,
+    ["step"] = 5,
+    ["scale"] = 1,
+    ["rightextra"] = 32,
+    ["setting"] = "Enabling_RaftDistance"
+};
+local FishingIdleTimeSlider =
+{
+    ["name"] = "FishingBuddyOption_IdleTimeSlider",
+    ["format"] = FBConstants.DISTANCE.." - %d seconds",
+    ["min"] = 0,
+    ["max"] = 120,
+    ["step"] = 15,
+    ["scale"] = 1,
+    ["rightextra"] = 32,
+    ["setting"] = "Enabling_IdleTimeSlider"
+};
+
+local function PrepareEnablingSliders()
+    WalkDistanceSlider['getter'] = function(...) return FBI:GetSetting(...); end;
+    WalkDistanceSlider['setter'] = function(...) return FBI:SetSetting(...); end;
+    LO:CreateSlider(WalkDistanceSlider);
+    RaftDistanceSlider['getter'] = function(...) return FBI:GetSetting(...); end;
+    RaftDistanceSlider['setter'] = function(...) return FBI:SetSetting(...); end;
+    LO:CreateSlider(RaftDistanceSlider);
+    FishingIdleTimeSlider['getter'] = function(...) return FBI:GetSetting(...); end;
+    FishingIdleTimeSlider['setter'] = function(...) return FBI:SetSetting(...); end;
+    LO:CreateSlider(FishingIdleTimeSlider);
+end
+
+
+local VolumeSlider =
+{
+    ["name"] = "FishingBuddyOption_MaxVolumeSlider",
+    ["format"] = VOLUME.." - %d%%",
+    ["min"] = 0,
+    ["max"] = 100,
+    ["step"] = 5,
+    ["scale"] = 1,
+    ["rightextra"] = 32,
+    ["setting"] = "EnhanceSound_MasterVolume"
+};
+
+
 -- x87bliss has implemented IsFishWardenEnabled as a public function, so
 -- we can retire the GUID based check
 local function IsWardenEnabled()
@@ -418,14 +496,14 @@ local function AutoPoleCheck(self, ...)
     if (self.zone) then
         local distance = FL:GetDistanceTo(self.zone, self.x, self.y)
         if distance then
-            if distance > 50 or (not FBI:HasRaftBuff() and distance > 20) then
+            if distance > FBI:GetSetting("Enabling_RaftDistance") or (not FBI:HasRaftBuff() and distance > FBI:GetSetting("Enabling_WalkDistance")) then
                 self:EmitStopFishing()
             end
         end
     end
     if LastCastTime then
         local elapsed = (GetTime() - LastCastTime);
-        if ( elapsed > FISHINGSPAN ) then
+        if ( elapsed > FBI:GetSetting("Enabling_IdleTimeSlider") ) then
             self:EmitStopFishing()
             return
         end
@@ -725,6 +803,18 @@ local InvisibleOptions = {
     },
     ["FishDebug"] = {
         ["default"] = false,
+    },
+    ["Enabling_WalkDistance"] = {
+        ["scale"] = 1,
+        ["default"] = 20,
+    },
+    ["Enabling_RaftDistance"] = {
+        ["scale"] = 1,
+        ["default"] = 50,
+    },
+    ["Enabling_IdleTimeSlider"] = {
+        ["scale"] = 1,
+        ["default"] = FISHINGSPAN,
     },
 }
 
@@ -1694,6 +1784,7 @@ function FBI:OnEvent(event, ...)
         PLANS = FBI.FishingPlans;
         FBI:Initialize();
         PrepareVolumeSlider()
+        PrepareEnablingSliders()
         FBI.OptionsFrame.HandleOptions(GENERAL, nil, GeneralOptions);
         FBI:AddSchoolFish();
 
@@ -1701,6 +1792,7 @@ function FBI:OnEvent(event, ...)
         FBI:CreateFBMappedDropDown("FBMouseEvent", "MouseEvent", FBConstants.CONFIG_MOUSEEVENT_ONOFF, FBConstants.CastingKeyLabel)
 
         FBI.OptionsFrame.HandleOptions(name, "Interface\\Icons\\INV_Fishingpole_02", CastingOptions);
+        FBI.OptionsFrame.HandleOptions(ENABLE, "Interface\\CIons\\IMV\\NV_misc_pocketwatch_03", EnablingOptions);
         FBI.OptionsFrame.HandleOptions(nil, nil, InvisibleOptions);
 
         -- defaults to true

@@ -175,7 +175,19 @@ local reptypes = {  -- OVERRIDDEN in Classic/WOTLK
 			return fid==2550
 		end
 	},
-	
+	['soridormi'] = {
+		standings = {
+			{ name="Anomaly", from=0, color="ffff00"},
+			{ name="Future Friend", from=7000, color="00ff00"},
+			{ name="Rift-Mender", from=14000, color="00ff88" },
+			{ name="Timewalker", from=24000, color="00ffff" },
+			{ name="Legend of the Multiverse", from=42000, color="cc88ff" },
+		},
+		check = function(id,fid,ftex)
+			return fid==2553
+		end
+	},
+
 	['basic_friend'] = {
 		standings = {
 			{ name="Neutral",  from=0, color="ffff00" },
@@ -227,9 +239,13 @@ end
 local LF=ZygorGuidesViewer_L("Faction")
 
 tinsert(ZGV.startups,{"Faction startup",function(self)
-	Faction:UPDATE_FACTION()
+	Faction:UPDATE_FACTION("ZGV_STARTUP")
 	--self:AddEventHandler("PLAYER_ENTERING_WORLD","UPDATE_FACTION_Faction")
 	self:AddEventHandler("UPDATE_FACTION",{Faction,"UPDATE_FACTION"})
+	if ZGV.IsRetail then
+		self:AddEventHandler("COVENANT_SANCTUM_RENOWN_LEVEL_CHANGED",{Faction,"UPDATE_FACTION"})
+		self:AddEventHandler("MAJOR_FACTION_RENOWN_LEVEL_CHANGED",{Faction,"UPDATE_FACTION"})
+	end
 	--self:AddEventHandler("CHAT_MSG_COMBAT_FACTION_CHANGE","CHAT_MSG_COMBAT_FACTION_CHANGE_Faction")
 
 	-- translate
@@ -318,7 +334,7 @@ function Faction:ReportChange(name,delta,progdelta,going)
 end
 
 function Faction:ReportNoChange(name,going)
-	print(("|cffbbbbff%s|r: - %s"):format(
+	print(("|cffbbbbff%s|r: %s"):format(
 		name,
 		going
 	))
@@ -344,9 +360,9 @@ function Faction:CacheRepByID(id) -- OVERRIDDEN in Classic
 
 	if reptype=="major" then -- whole different set of data
 		local majorFacData = C_MajorFactions.GetMajorFactionData(id)
+		val = majorFacData.renownReputationEarned
 		bmin = 0
 		bmax = majorFacData.renownLevelThreshold
-		val = majorFacData.renownReputationEarned
 		standing = majorFacData.renownLevel
 	end
 
@@ -365,11 +381,12 @@ function Faction:CacheRepByID(id) -- OVERRIDDEN in Classic
 
 	-- data gathered, let's put it in
 
-	local oldval,oldmin,oldprog
+	local oldval,oldsta,oldmin,oldprog
 	local rep = self.reputations[id]
 	if rep then
-		if rep.val~=val then
+		if rep.val~=val or rep.standing~=standing then
 			oldval=rep.val
+			oldsta=rep.standing
 			oldmin=rep.min
 			oldprog=rep.progress
 		end
@@ -393,14 +410,20 @@ function Faction:CacheRepByID(id) -- OVERRIDDEN in Classic
 	rep.friendID = friendID
 	rep.friendRep = friendRep
 
-	if oldval and oldval~=val then self:Debug("Rep change: %s (%d) by %d to %d",rep.name,rep.id,rep.val-oldval,rep.val) end
+	-- Dinging a majorfac renown level goes like this:
+	-- U_F changes val from 990 to 10 (for example)
+	-- M_F_R_L_C changes standing
+
+	if (oldval and oldval~=val) or (oldsta and oldsta~=standing) then self:Debug("Rep change: %s (%d) by %d to %d, standing %d",rep.name,rep.id,rep.val-oldval,rep.val,rep.standing) end
 	
 	if ZGV.db.profile.analyzereps then
-		if oldval and oldval~=val then
-			if rep.reptype~="major" or rep.val>oldval then -- don't report negative rep changes for major factions
-				self:ReportChange(rep.name, rep.val-oldval, (oldmin~=rep.min and rep.progress or rep.progress-oldprog), rep:Going(true))
-			else
+		if (oldval and oldval~=val) or (oldsta and oldsta~=standing) then
+			if rep.reptype=="major" and rep.val<oldval then -- don't report negative rep changes for major factions; probably M_F_R_L_C incoming next, with no val change but with standing change
+				--self:ReportNoChange(rep.name, rep:Going(true))
+			elseif rep.reptype=="major" and rep.val==oldval and oldsta~=standing then -- report just new standing, this is likely M_F_R_L_C
 				self:ReportNoChange(rep.name, rep:Going(true))
+			else
+				self:ReportChange(rep.name, rep.val-oldval, (oldmin~=rep.min and rep.progress or rep.progress-oldprog), rep:Going(true))
 			end
 		end
 	end
@@ -675,6 +698,14 @@ function RepProto:GetRawReputation()
 end
 function RepProto:GetRawFriendship()
 	return setmetatable({C_GossipInfo.GetFriendshipReputation(self.id)},{__desc={'ID', 'Rep', 'MaxRep', 'Name', 'Text', 'Texture', 'TextLevel', 'Thresh', 'ThreshNext'}})
+end
+
+function RepProto:ReportNoChange()
+	Faction:ReportNoChange(self.name, self:Going(true))
+end
+
+function RepProto:UpdateRep()
+	Faction:CacheRepByID(self.id)
 end
 
 

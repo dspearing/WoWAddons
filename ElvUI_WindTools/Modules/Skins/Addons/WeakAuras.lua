@@ -132,6 +132,13 @@ local function Skin_WeakAuras(f, fType)
             end
             f.backdrop.Center:StripTextures()
             f.backdrop:SetFrameLevel(0)
+            hooksecurefunc(
+                f,
+                "SetFrameStrata",
+                function()
+                    f.backdrop:SetFrameLevel(0)
+                end
+            )
             f.backdrop.icon = f.icon
             f.backdrop:HookScript(
                 "OnUpdate",
@@ -150,6 +157,13 @@ local function Skin_WeakAuras(f, fType)
             f:CreateBackdrop()
             f.backdrop.Center:StripTextures()
             f.backdrop:SetFrameLevel(0)
+            hooksecurefunc(
+                f,
+                "SetFrameStrata",
+                function()
+                    f.backdrop:SetFrameLevel(0)
+                end
+            )
             if E.private.WT.skins.weakAurasShadow then
                 S:CreateBackdropShadow(f, true)
             end
@@ -183,30 +197,50 @@ function S:WeakAuras()
         return
     end
 
-    -- Handle the options region type registration
-    if WeakAuras and WeakAuras.RegisterRegionOptions then
-        self:RawHook(WeakAuras, "RegisterRegionOptions", "WeakAuras_RegisterRegionOptions")
+    -- Only works for WeakAurasPatched
+    if not WeakAuras or not WeakAuras.Private then
+        local alertMessage =
+            format(
+            "%s: %s %s %s",
+            W.Title,
+            L["You are using Official WeakAuras, the skin of WeakAuras will not be loaded due to the limitation."],
+            L["If you want to use WeakAuras skin, please install |cffff0000WeakAurasPatched|r (https://wow-ui.net/wap)."],
+            L["You can disable this alert via disabling WeakAuras Skin in Skins - Addons."]
+        )
+        E:Delay(10, print, alertMessage)
+        return
     end
 
     -- Handle the options region type registration
-    -- from NDui
-    local function OnPrototypeCreate(region)
-        Skin_WeakAuras(region, region.regionType)
+    if WeakAuras.Private.RegisterRegionOptions then
+        self:RawHook(WeakAuras.Private, "RegisterRegionOptions", "WeakAuras_RegisterRegionOptions")
     end
 
-    local function OnPrototypeModifyFinish(_, region)
-        Skin_WeakAuras(region, region.regionType)
+    -- from 雨夜独行客@NGA
+    if WeakAuras.Private.SetTextureOrAtlas then
+        hooksecurefunc(
+            WeakAuras.Private,
+            "SetTextureOrAtlas",
+            function(icon)
+                local parent = icon:GetParent()
+                local region = parent.regionType and parent or parent:GetParent()
+                if region and region.regionType then
+                    Skin_WeakAuras(region, region.regionType)
+                end
+            end
+        )
     end
-
-    self:SecureHook(WeakAuras.regionPrototype, "create", OnPrototypeCreate)
-    self:SecureHook(WeakAuras.regionPrototype, "modifyFinish", OnPrototypeModifyFinish)
 
     -- Real Time Profiling Window
     local profilingWindow = WeakAuras.RealTimeProfilingWindow
     if profilingWindow then
         self:CreateShadow(profilingWindow)
-        self:SecureHook(profilingWindow, "UpdateButtons", "ProfilingWindow_UpdateButtons")
-        self:SecureHook(WeakAuras, "PrintProfile", "WeakAuras_PrintProfile")
+        if profilingWindow.UpdateButtons then
+            self:SecureHook(profilingWindow, "UpdateButtons", "ProfilingWindow_UpdateButtons")
+        end
+        if WeakAuras.PrintProfile then
+            self:SecureHook(WeakAuras, "PrintProfile", "WeakAuras_PrintProfile")
+        end
     end
 end
 

@@ -7,14 +7,6 @@ ___ZGV_TIMESTAMP_LOADLOCALIZATIONXML_START = debugprofilestop()
 
 <Script file="Base.lua"/>
 
-<Script file="Quests_deDE.lua"/>
-<Script file="Quests_enUS.lua"/>
-<Script file="Quests_esES.lua"/>
-<Script file="Quests_esMX.lua"/>
-<Script file="Quests_frFR.lua"/>
-<Script file="Quests_ptBR.lua"/>
-<Script file="Quests_ruRU.lua"/>
-
 <Script file="Core_enUS.lua"/>
 <Script file="Core_deDE.lua"/>
 <Script file="Core_esES.lua"/>
@@ -33,15 +25,6 @@ ___ZGV_TIMESTAMP_LOADLOCALIZATIONXML_START = debugprofilestop()
 <Script file="Guides_Leveling_ruRU.lua"/>
 <Script file="Guides_Leveling_zhCN.lua"/>
 -->
-
-<Script file="NPCs_enUS.lua"/>
-<Script file="NPCs_deDE.lua"/>
-<Script file="NPCs_esES.lua"/>
-<Script file="NPCs_frFR.lua"/>
-<Script file="NPCs_koKR.lua"/>
-<Script file="NPCs_ruRU.lua"/>
-<Script file="NPCs_zhCN.lua"/>
-<Script file="NPCs_zhTW.lua"/>
 
 <!-- bfa alpha change
 <Script file="Core_esES.lua"/>

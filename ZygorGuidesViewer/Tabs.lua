@@ -752,9 +752,9 @@ function Tabs:AssignGuide(guidetitle,step,shared,mode)
 
 	self.guide = guide
 	self.title = guide.title
-	self.title_short = guide.title_short
+	self.title_short = guide.title_short .. ((guide.hardcore or guide.headerdata.hardcore) and ZGV.L['guidehardcore'] or "")
 	self.step = step
-	self.Button:SetText(guide.title_short)
+	self.Button:SetText(self.title_short)
 	
 	if self.guide.headerdata.orientation then self.guide.type = "STARTUPWIZ" end
 

@@ -251,6 +251,7 @@ function OptionsFrame_Create()
 
     -- DEFAULT BUTTON 1 --
     local defaultsBtnHeight = kBtnHeight - 4
+    yPos = yPos - kRowHeight - kRowSpacing - 8
     OptionsFrame.DefaultsBtn1 = CreateFrame("Button", nil, OptionsFrame, kButtonTemplate)
     OptionsFrame.DefaultsBtn1:SetText("Defaults 1")
     ----OptionsFrame.DefaultsBtn1:SetPoint("TOPRIGHT", OptionsFrame, "TOPRIGHT", -kFrameMargin, -kTopMargin-kButtonSpacing+2)
@@ -321,6 +322,13 @@ function OptionsFrame_Create()
     OptionsFrame.DefaultsBtn10:SetSize(kBtnWidth, defaultsBtnHeight)
     OptionsFrame.DefaultsBtn10:SetScript("OnClick", OptionsFrame_OnDefaults)
 
+    -- DEFAULT BUTTON 11 --
+    OptionsFrame.DefaultsBtn11 = CreateFrame("Button", nil, OptionsFrame, kButtonTemplate)
+    OptionsFrame.DefaultsBtn11:SetText("Defaults 11")
+    OptionsFrame.DefaultsBtn11:SetPoint("TOP", OptionsFrame.DefaultsBtn10, "BOTTOM", 0, -kButtonSpacing)
+    OptionsFrame.DefaultsBtn11:SetSize(kBtnWidth, defaultsBtnHeight)
+    OptionsFrame.DefaultsBtn11:SetScript("OnClick", OptionsFrame_OnDefaults)
+
 --~     -- TEST BUTTON --
 --~     OptionsFrame.TestBtn = CreateFrame("Button", nil, OptionsFrame, kButtonTemplate)
 --~     OptionsFrame.TestBtn:SetText("TEST")
@@ -331,20 +339,20 @@ function OptionsFrame_Create()
 --~                 if (OptionsFrame.TestBtn.tsf ~= nil) then OptionsFrame.TestBtn.tsf = nil end  -- Destroy old window first.
 --~                 OptionsFrame.TestBtn.tsf = createTextScrollFrame(OptionsFrame, "*** "..kAddonName.." Changelog ***", 500)
 --~                 ----OptionsFrame.TestBtn.tsf = createTextScrollFrame(OptionsFrame, nil, 333)
---~  
+--~
 --~                 local tsf = OptionsFrame.TestBtn.tsf
 --~                 local dy = 6
---~  
+--~
 --~                 tsf:addText(ORANGE..kAddonName.." 10.0.7.2", 0, 0, "GameFontNormalHuge") --"OptionsFontLarge") --"GameFontNormalLarge")
 --~                 tsf:addText(BLUE.."New Features:", 0, dy, "GameTooltipHeader")
---~                 tsf:addText("* Some new feature.\n* "..RED2.."Another|r new feature.", 
+--~                 tsf:addText("* Some new feature.\n* "..RED2.."Another|r new feature.",
 --~                             0, dy, "GameTooltipText")
 --~                 tsf:addText(BLUE.."Changes:", 0, dy, "GameTooltipHeader")
---~                 tsf:addText("* Some change that was made.\n* Another change that was made.\n* Yet another change.", 
+--~                 tsf:addText("* Some change that was made.\n* Another change that was made.\n* Yet another change.",
 --~                             0, dy, "GameTooltipText")
---~                 
+--~
 --~                 tsf:addText("ISSUE - Memory still in use after scroll window is closed!\nMight take up lots of memory as your changelog history grows.\n ", 0, dy)
---~                             
+--~
 --~                 local indent = 16 -- pixels
 --~                 tsf:addText("Section 1:", 0, 8, "GameFontNormalLarge")
 --~                 tsf:addText("This is the first line.\n  (Scroll way down to see the last!)", indent)
@@ -372,7 +380,7 @@ function OptionsFrame_Create()
     OptionsFrame.HelpBtn:SetText("Help")
     OptionsFrame.HelpBtn:SetPoint("BOTTOMLEFT", OptionsFrame, "BOTTOMLEFT", kFrameMargin+4, kFrameMargin)
     OptionsFrame.HelpBtn:SetSize(kBtnWidth-24, kBtnHeight)
-    OptionsFrame.HelpBtn:SetScript("OnClick", function() 
+    OptionsFrame.HelpBtn:SetScript("OnClick", function()
             PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)
             ----PlaySound(SOUNDKIT.TELL_MESSAGE)
             ----printUsageMsg()
@@ -384,32 +392,42 @@ function OptionsFrame_Create()
     OptionsFrame.ProfilesBtn:SetText("Profiles")
     OptionsFrame.ProfilesBtn:SetPoint("LEFT", OptionsFrame.HelpBtn, "RIGHT", kButtonSpacing, 0)
     OptionsFrame.ProfilesBtn:SetSize(kBtnWidth-24, kBtnHeight)
-    OptionsFrame.ProfilesBtn:SetScript("OnClick", function() 
+    OptionsFrame.ProfilesBtn:SetScript("OnClick", function()
             PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)
             CursorTrail_ShowHelp(OptionsFrame, "PROFILE_COMMANDS")
         end)
 
     -- SHAPE --
+    yPos = -kFrameMargin - kTopMargin
     yPos = yPos + 2  -- Tweak position slightly.
     OptionsFrame.ShapeLabel = OptionsFrame_CreateLabel("Shape:", xPos, yPos)
     xPos = xPos + kColumnWidth1  -- Next column.
     OptionsFrame.ShapeDropDown = OptionsFrame_CreateShapeDropDown(xPos, yPos, 140)
-  
-    -- SHAPE COLOR SWATCH --
-    OptionsFrame.ShapeColor = Globals.CursorTrailControls.CreateColorSwatch( OptionsFrame, 22 )
-    OptionsFrame.ShapeColor:SetPoint("LEFT", OptionsFrame.ShapeDropDown, "RIGHT", 8, -1)
-    OptionsFrame.ShapeColor:SetTooltip("Click to change shape color.")
-    OptionsFrame.ShapeColor:SetColorChangedHandler(function(self) 
-                Shape_SetColor(self.r, self.g, self.b, self.a) 
-                OptionsFrame.modified = true
-            end)
-    
+
     ------ Temporarily increase the cursor FX strata levels when mouse hovers over this dropdown menu.
     ----OptionsFrame.ShapeDropDown.fullWidthButton:SetScript("OnEnter", OptionsFrame_RaiseEffectsStrata)
     ----OptionsFrame.ShapeDropDown.fullWidthButton:SetScript("OnLeave", OptionsFrame_RestoreEffectsStrata)
     ----OptionsFrame.ShapeDropDown.buttonFrame:SetScript("OnEnter", OptionsFrame_RaiseEffectsStrata)
     ----OptionsFrame.ShapeDropDown.buttonFrame:SetScript("OnLeave", OptionsFrame_RestoreEffectsStrata)
-    
+
+    -- SHAPE COLOR SWATCH --
+    OptionsFrame.ShapeColor = Globals.CursorTrailControls.CreateColorSwatch( OptionsFrame, 22 )
+    OptionsFrame.ShapeColor:SetPoint("LEFT", OptionsFrame.ShapeDropDown, "RIGHT", 8, -1)
+    OptionsFrame.ShapeColor:SetTooltip("Click to change shape color.")
+    OptionsFrame.ShapeColor:SetColorChangedHandler(function(self)
+                Shape_SetColor(self.r, self.g, self.b, self.a)
+                OptionsFrame.modified = true
+            end)
+
+    -- SHAPE SPARKLE --
+    OptionsFrame.SparkleCheckbox = OptionsFrame_CreateCheckBox("Sparkle", xPos, yPos, "SparkleCheckbox")
+    OptionsFrame.SparkleCheckbox:ClearAllPoints()
+    OptionsFrame.SparkleCheckbox:SetPoint("LEFT", OptionsFrame.ShapeColor, "RIGHT", 4, 0)
+    OptionsFrame.SparkleCheckbox:SetScript('PostClick', function(self, button)
+        CursorTrail_SetShapeSparkle( self:GetChecked() )
+        OptionsFrame_UpdateButtonStates()
+    end)
+
     -- Next row.
     xPos = kFrameMargin
     yPos = yPos - kRowHeight - kRowSpacing
@@ -438,7 +456,7 @@ function OptionsFrame_Create()
     -- Next row.
     xPos = kFrameMargin
     yPos = yPos - kRowHeight - kRowSpacing
-    
+
     -- DIVIDER LINE --
     OptionsFrame_CreateDividerLine( xPos, yPos+(kRowSpacing/2)+2, kFrameMargin+kColumnWidth1+kColumnWidth2 )
     yPos = yPos - 2  -- Tweak position slightly.
@@ -491,9 +509,9 @@ function OptionsFrame_Create()
     yPos = yPos - kRowHeight - kRowSpacing
 
     -- TAB ORDER --
-    OptionsFrame_TabOrder={ OptionsFrame.ShadowEditBox, 
-                            OptionsFrame.ScaleEditBox, 
-                            OptionsFrame.AlphaEditBox, 
+    OptionsFrame_TabOrder={ OptionsFrame.ShadowEditBox,
+                            OptionsFrame.ScaleEditBox,
+                            OptionsFrame.AlphaEditBox,
                             OptionsFrame.OfsXEditBox, OptionsFrame.OfsYEditBox }
 
     -- DIVIDER LINE --
@@ -511,7 +529,7 @@ function OptionsFrame_Create()
     -- Next row.
     xPos = kFrameMargin
     yPos = yPos - kRowHeight - kRowSpacing
-    
+
     -- SHOW ONLY IN COMBAT --
     OptionsFrame.CombatCheckbox = OptionsFrame_CreateCheckBox("Show only in combat.", xPos, yPos, "CombatCheckbox")
 
@@ -528,7 +546,7 @@ function OptionsFrame_Create()
 
     -- DIVIDER LINE --
     OptionsFrame_CreateDividerLine( xPos, yPos+(kRowSpacing/2)+2 )
-    
+
     ------ HORIZONTAL DIVIDER LINE --
     ----OptionsFrame.DividerHoriz = OptionsFrame_CreateDividerLine(kFrameWidth-kFrameMargin-kBtnWidth-8, -30, 1, 257)
 
@@ -544,7 +562,7 @@ function OptionsFrame_Create()
     --------------------------------
     OptionsFrame:SetHeight(-yPos + kBtnHeight + (2 * kFrameMargin) + 4)
     OptionsFrame:SetWidth(kFrameWidth)
-    
+
     -------------------------------------------------------
     -- Buttons for changing base steps. (Developers only!)
     -------------------------------------------------------
@@ -640,7 +658,7 @@ function OptionsFrame_Create()
 end
 
 -----------------------------------------------------------------------------------
-----function OptionsFrame_RaiseEffectsStrata() 
+----function OptionsFrame_RaiseEffectsStrata()
 ----    local level = "TOOLTIP"
 ----    CursorModel:SetFrameStrata(level)
 ----    ShapeFrame:SetFrameStrata(level)
@@ -649,43 +667,55 @@ end
 -----------------------------------------------------------------------------------
 ----function OptionsFrame_RestoreEffectsStrata()
 ----    local level = OptionsFrame_Value("strata")
-----    CursorModel:SetFrameStrata(level) 
+----    CursorModel:SetFrameStrata(level)
 ----    ShapeFrame:SetFrameStrata(level)
 ----end
 
 -------------------------------------------------------------------------------
 function OptionsFrame_HandleNewFeatures()
-    local newFeatureIndicator = GREEN..":::::[NEW]:::>|r"
+    local newFeatureIndicator = GREEN.."::::[NEW]::::|r"
     local bNewFeaturesShown = false
 
     -- Loop through all new features and for each one the user has not yet seen, change
     -- the variable label to indicate it is a new feature.
-    for _, newFeatureName in pairs(kNewFeatures) do
+    for _, pt in pairs(kNewFeatures) do
+        local newFeatureName = pt.relativeTo
         ----print("OptionsFrame_HandleNewFeatures(), newFeatureName:", newFeatureName)
         ----print("CursorTrail_Config.NewFeaturesSeen["..newFeatureName.."] =", Globals.CursorTrail_Config.NewFeaturesSeen[newFeatureName])
         if not Globals.CursorTrail_Config.NewFeaturesSeen[newFeatureName] then
-            local widget = OptionsFrame[newFeatureName]
+            local widget 
+            name1, name2, name3 = string.split(".", newFeatureName)
+            if name3 then
+                widget = OptionsFrame[name1][name2][name3]
+            elseif name2 then
+                widget = OptionsFrame[name1][name2]
+            else
+                widget = OptionsFrame[name1]
+            end
+            
             if not widget then
                 print(kAddonErrorHeading.."Invalid widget name in kNewFeatures variable!  ("
                         ..RED2..newFeatureName..WHITE..")")
             else
-                -- Show a "new feature" indicator left of the widget named [newFeatureName].
+                -- Show a "new feature" indicator by the widget named [newFeatureName].
                 ----print("OptionsFrame_HandleNewFeatures(), widget:GetText():", widget:GetText())
                 local dx = 0
                 if widget:IsObjectType("FontString") then
-                    dx = -4
                     local textWidth = widget:GetStringWidth()
                     local justify = widget:GetJustifyH()
                     if (justify == "RIGHT") then
                         dx = dx + widget:GetWidth() - textWidth
                     elseif (justify == "CENTER") then
                         dx = dx + widget:GetWidth() - (textWidth/2)
+                    elseif (justify == "LEFT") then
+                        dx = dx - widget:GetWidth() + textWidth
                     end
                 end
 
-                local newStr = OptionsFrame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+                local newStr = OptionsFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalSmall")
                 newStr:SetText(newFeatureIndicator)
-                newStr:SetPoint("RIGHT", widget, "LEFT", dx, 0)
+                --newStr:SetPoint("RIGHT", widget, "LEFT", dx, 0)
+                newStr:SetPoint(pt.anchor, widget, pt.relativeAnchor, pt.x + dx, pt.y)
 
                 -- Clear the "new feature" flag so this only happens once.
                 Globals.CursorTrail_Config.NewFeaturesSeen[newFeatureName] = true  -- No more nagging after this.
@@ -695,7 +725,7 @@ function OptionsFrame_HandleNewFeatures()
     end
 
     if (bNewFeaturesShown == true) then
-        print(kAddonAlertHeading.."New feature(s) have "..newFeatureIndicator.." next to their name.  (Cleared at next reload.)")
+        print(kAddonAlertHeading.."New feature(s) have "..newFeatureIndicator.." near their name.  (Cleared at next reload.)")
         PlaySound(1440, "MASTER") -- 1440=LevelUp, 171006=ReputationLevelUp
     end
 end
@@ -723,17 +753,17 @@ end
 -------------------------------------------------------------------------------
 function OptionsFrame_OnHide()
     traceCfg("IN OptionsFrame_OnHide().")
---~     PlayerConfig.OptionsSetPoint1, 
---~     PlayerConfig.OptionsSetPoint2, 
+--~     PlayerConfig.OptionsSetPoint1,
+--~     PlayerConfig.OptionsSetPoint2,
 --~     PlayerConfig.OptionsSetPoint3,
---~     PlayerConfig.OptionsSetPoint4, 
+--~     PlayerConfig.OptionsSetPoint4,
 --~     PlayerConfig.OptionsSetPoint5 = OptionsFrame:GetPoint()  -- Save frame position.
 --~     print("pt hide:  ", PlayerConfig.OptionsSetPoint1, PlayerConfig.OptionsSetPoint2, PlayerConfig.OptionsSetPoint3, PlayerConfig.OptionsSetPoint4, PlayerConfig.OptionsSetPoint5)
-    
+
     PlaySound(SOUNDKIT.IG_CHARACTER_INFO_CLOSE)
     if (OptionsFrame.modified == true) then
         OptionsFrame.ShapeColor:CloseColorPicker(false)
-        
+
         -- Revert to previous config.
         PlayerConfig = CopyTable( OptionsFrame.OriginalConfig )
         CursorTrail_Load( PlayerConfig )
@@ -745,7 +775,7 @@ function OptionsFrame_OnHide()
         -- Not in combat so hide the cursor model.
         CursorTrail_Hide()
     end
-    
+
     CursorTrail_HideHelp()
     traceCfg("OUT OptionsFrame_OnHide().")
 end
@@ -786,15 +816,16 @@ function OptionsFrame_OnOK()
         PlayerConfig.UserShowMouseLook = OptionsFrame_Value("MouseLook")
         PlayerConfig.FadeOut    = OptionsFrame_Value("fade")
         CursorTrail_SetFadeOut(PlayerConfig.FadeOut)
-        
+
         OptionsFrame.ShapeColor:CloseColorPicker(true)
         PlayerConfig.ShapeColorR, PlayerConfig.ShapeColorG, PlayerConfig.ShapeColorB = OptionsFrame.ShapeColor:GetColor()
+        PlayerConfig.ShapeSparkle = OptionsFrame_Value("sparkle")
 
         -- << Extra Validation. >>
         -- Prevent 1% scale because it causes many models to fill screen and stop moving.
         local minScale = 0.02  -- 2%
         if (PlayerConfig.UserScale < minScale) then PlayerConfig.UserScale = minScale end
-        
+
         -- << Save permanent data, and reload the effects. >>
         PlayerConfig_Save()
         CursorTrail_Load(PlayerConfig)
@@ -818,8 +849,8 @@ function OptionsFrame_UpdateButtonStates()  -- UpdateOkayButton()
     local modelID = OptionsFrame_Value("model")
     local shadowAlpha = OptionsFrame_Value("shadow")
     local shapeFileName = OptionsFrame_Value("shape")
-    if (modelID == 0 
-        and shadowAlpha == 0.0 
+    if (modelID == 0
+        and shadowAlpha == 0.0
         and (shapeFileName == nil or shapeFileName == ""))
       then
         OptionsFrame.OkayBtn:SetEnabled(false)
@@ -838,9 +869,9 @@ function OptionsFrame_UpdateButtonStates()  -- UpdateOkayButton()
         OptionsFrame.WarnTooltip:Hide()  -- Clear any warning message.
         ----print(kAddonName..": OK button enabled.")
     end
-    
+
     -- Enable/disable the shape's color picker button based on the selected shape.
-    if (shapeFileName == nil or shapeFileName == "") then
+    if (shapeFileName == nil or shapeFileName == "" or OptionsFrame.SparkleCheckbox:GetChecked()) then
         OptionsFrame.ShapeColor:Disable()
     else
         OptionsFrame.ShapeColor:Enable()
@@ -856,7 +887,9 @@ function OptionsFrame_OnDefaults(self)
     OptionsFrame.ShapeColor:CloseColorPicker(false)  -- Abort any active color selection.
 
     PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)
-    if btnName:find("10") then
+    if btnName:find("11") then
+        PlayerConfig = CopyTable(kDefaultConfig11)
+    elseif btnName:find("10") then
         PlayerConfig = CopyTable(kDefaultConfig10)
     elseif btnName:find("9") then
         PlayerConfig = CopyTable(kDefaultConfig9)
@@ -955,7 +988,7 @@ function OptionsFrame_IncrDecrValue(self, delta)
     num = num + delta
     local r = (num*100) % (delta*100)
     num = num - r*0.01  -- Ensure changes snap to nearest delta step.
-    
+
     self:SetFocus()
     self:SetText(num)
     local handler = self:GetScript("OnTextChanged")
@@ -1032,6 +1065,7 @@ function OptionsFrame_UpdateUI(config)
     OptionsFrame_Value("combat", config.UserShowOnlyInCombat or false)
     OptionsFrame_Value("MouseLook", config.UserShowMouseLook or false)
     OptionsFrame_Value("fade", config.FadeOut or false)
+    OptionsFrame_Value("sparkle", config.ShapeSparkle or false)
     OptionsFrame.ShapeColor:SetColor( config.ShapeColorR, config.ShapeColorG, config.ShapeColorB )
 
     OptionsFrame_UpdateButtonStates()
@@ -1066,7 +1100,7 @@ function OptionsFrame_Value(valName, newVal)
         else -- SET
             OptionsFrame.CombatCheckbox:SetChecked(newVal)
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 1.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
     -- - - - - - - - - - - - - - - - -
     elseif (valName == "mouselook") then
@@ -1075,7 +1109,7 @@ function OptionsFrame_Value(valName, newVal)
         else -- SET
             OptionsFrame.MouseLookCheckbox:SetChecked(newVal)
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 1.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
     -- - - - - - - - - - - - - - - - -
     elseif (valName == "fade") then
@@ -1084,8 +1118,17 @@ function OptionsFrame_Value(valName, newVal)
         else -- SET
             OptionsFrame.FadeCheckbox:SetChecked(newVal)
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 2.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
+    elseif (valName == "sparkle") then
+        if (newVal == nil) then  -- GET
+            retVal = OptionsFrame.SparkleCheckbox:GetChecked()
+        else -- SET
+            OptionsFrame.SparkleCheckbox:SetChecked(newVal)
+        end
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
+        return retVal
+    -- - - - - - - - - - - - - - - - -
 
     ----------------------------------
     -- DROPDOWN MENUS ...
@@ -1099,7 +1142,7 @@ function OptionsFrame_Value(valName, newVal)
             end
             OptionsFrame.ModelDropDown:SetSelectedID( newVal )
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 3.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
     elseif (valName == "strata") then
         if (newVal == nil) then  -- GET
@@ -1107,7 +1150,7 @@ function OptionsFrame_Value(valName, newVal)
         else -- SET
             OptionsFrame.StrataDropDown:SetSelectedID( newVal )
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 4.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
     elseif (valName == "shape") then
         if (newVal == nil) then  -- GET
@@ -1115,7 +1158,7 @@ function OptionsFrame_Value(valName, newVal)
         else -- SET
             OptionsFrame.ShapeDropDown:SetSelectedID( newVal )
         end
-        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early 3.")
+        traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
 
     ----------------------------------
@@ -1123,7 +1166,7 @@ function OptionsFrame_Value(valName, newVal)
     -- - - - - - - - - - - - - - - - -
     elseif (valName == "scale") then
         editbox = OptionsFrame.ScaleEditBox
-        minVal, maxVal = 0.01, 9.99  -- (1% to 999%)
+        minVal, maxVal = 0.01, 9.98  -- (1% to 998%)
         multiplier = 100
         defaultNum = 100  -- 100%
     -- - - - - - - - - - - - - - - - -
@@ -1287,7 +1330,7 @@ function OptionsFrame_CreateModelDropDown(x, y, width)
             tmpConfig.UserOfsY  = OptionsFrame_Value("OfsY")
             tmpConfig.FadeOut   = OptionsFrame_Value("fade")
             tmpConfig.ShapeColorR, tmpConfig.ShapeColorG, tmpConfig.ShapeColorB = OptionsFrame.ShapeColor:GetColor()
-            
+
             CursorTrail_Load(tmpConfig)
             CursorTrail_Show()
             OptionsFrame_UpdateButtonStates()
@@ -1342,7 +1385,7 @@ function OptionsFrame_CreateShapeDropDown(x, y, width)
             tmpConfig.UserOfsY  = OptionsFrame_Value("OfsY")
             tmpConfig.FadeOut   = OptionsFrame_Value("fade")
             tmpConfig.ShapeColorR, tmpConfig.ShapeColorG, tmpConfig.ShapeColorB = OptionsFrame.ShapeColor:GetColor()
-            
+
             CursorTrail_Load(tmpConfig)
             CursorTrail_Show()
             OptionsFrame_UpdateButtonStates()

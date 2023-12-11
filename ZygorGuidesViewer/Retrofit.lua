@@ -164,3 +164,25 @@ ZGV.Retrofit.Enum.TooltipDataType = Enum.TooltipDataType or {
 	Unit = 2,
 	UnitAura = 7,
 }
+
+ZGV.Retrofit.Enum.BagIndex = Enum.BagIndex or {
+	Bankbag 	= -4,
+	Reagentbank 	= -3,
+	Keyring 	= -2,
+	Bank 		= -1,
+	Backpack 	=  0,
+	Bag_1 		=  1,
+	Bag_2 		=  2,
+	Bag_3 		=  3,
+	Bag_4 		=  4,
+	ReagentBag 	=  5,
+	BankBag_1 	=  6,
+	BankBag_2 	=  7,
+	BankBag_3 	=  8,
+	BankBag_4 	=  9,
+	BankBag_5 	= 10,
+	BankBag_6 	= 11,
+	BankBag_7 	= 12,
+}
+
+ZGV.Retrofit.NUM_TOTAL_EQUIPPED_BAG_SLOTS = NUM_TOTAL_EQUIPPED_BAG_SLOTS or 4

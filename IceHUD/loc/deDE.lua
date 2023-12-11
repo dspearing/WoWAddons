@@ -18,6 +18,8 @@ L["Abbreviate estimated health"] = "Gekürztes geschätztes Leben"
 L["Abbreviate health"] = "Gekürztes Leben"
 --[[Translation missing --]]
 L["Absorb bar alpha"] = "Absorb bar alpha"
+--[[Translation missing --]]
+L["Added strata"] = "Added strata"
 L["Adjust the horizontal position of the aura icon"] = "Anpassen der horizontalen Position der Aura Symbole"
 L["Adjust the vertical placement of this bar"] = "Anpassen der vertikalen Platzierung dieser Leiste"
 L["Adjust the vertical position of the aura icon"] = "Anpassen der vertikalen Position der Aura Symbole"
@@ -542,6 +544,8 @@ L["Potential SnD time bar alpha"] = "Potenzielle Zeit Leisten alpha für Zerhäc
 L["Predefined settings for different bars"] = "Vordefinierte einstellungen für verschiedene Leisten"
 L["Presets"] = "Voreinstellungen"
 L["Pulse when full"] = "Pulsiert wenn voll"
+--[[Translation missing --]]
+L["Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."] = "Push IceHUD modules to the foreground. Increase if other addons are covering IceHUD. Requires reload."
 L["PvP icon"] = "PvP Sympol"
 L["PvP Icon Horizontal Offset"] = "PvP Symbol horizontal Abstand"
 L["PvP Icon Scale"] = "PvP Symbol größe"

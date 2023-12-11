@@ -6,6 +6,7 @@ ZygorGuidesViewer.GuideMenuTier = "TRI"
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Brawler's Guild\\Battle for Azeroth Brawler's Guild")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Brewfest\\Brewfest Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Brewfest\\Brewfest Dailies")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Brewfest\\A Round on the House")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Brewfest\\Brewfest Achievements")
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Battle for Azeroth\\The Burning of Teldrassil",{
 author="support@zygorguides.com",
@@ -260,736 +261,19 @@ talk Anduin Wrynn##107574
 |tip Inside the building.
 turnin From the Ashes...##53310 |goto 85.90,31.57
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Kul Tiras Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Kul Tiras questline for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-condition_end=function() return completedq(53865) end,
-startlevel=10,
-},[[
-step
-Run up the stairs |goto Boralus/0 44.22,57.84 < 15 |only if walking
-Run down the stairs |goto 41.65,44.93 < 15 |only if walking
-Enter the building |goto 48.16,39.43 < 10 |walk
-talk Orphan Matron Westerson##145291
-|tip Inside the building.
-accept Children's Week##53811 |goto 48.00,40.26
-step
-use the Kul Tiran Orphan Whistle##164772
-_Next to you:_
-talk Liam##145394
-turnin Children's Week##53811 |goto 48.00,40.26
-accept The Mountain Folk##53859 |goto 48.00,40.26
-accept Yo Ho, Yo Ho!##53861 |goto 48.00,40.26
-accept The Squid Shrine##53862 |goto 48.00,40.26
-step
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Visit the Roughnecks |q 53859/1 |goto Tiragarde Sound/0 42.46,22.61
-step
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Visit Shrine of the Storm |q 53862/1 |goto Stormsong Valley/0 72.59,49.92
-step
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Visit Freehold |q 53861/1 |goto Tiragarde Sound/0 79.82,82.50
-step
-use the Kul Tiran Orphan Whistle##164772
-_Next to you:_
-talk Liam##145394
-turnin The Mountain Folk##53859 |goto 79.82,82.50
-turnin Yo Ho, Yo Ho!##53861 |goto 79.82,82.50
-turnin The Squid Shrine##53862 |goto 79.82,82.50
-accept Bird Friends##53863 |goto 79.82,82.50
-accept Shapeshifters!##53864 |goto 79.82,82.50
-step
-Follow the path |goto Drustvar/0 38.93,49.78 < 20 |only if walking
-Continue following the path |goto 43.87,41.79 < 20 |only if walking
-Continue up the path |goto 46.61,39.29 < 15 |only if walking
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Visit Ulfar's Den |q 53864/1 |goto 46.31,44.59
-step
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Visit Arom's Stand |q 53863/1 |goto Drustvar/0 36.03,51.19
-step
-use the Kul Tiran Orphan Whistle##164772
-_Next to you:_
-talk Liam##145394
-turnin Bird Friends##53863 |goto 36.03,51.19
-turnin Shapeshifters!##53864 |goto 36.03,51.19
-accept Return to the Orphanage##53865 |goto 36.03,51.19
-step
-Run up the stairs |goto Boralus/0 44.22,57.84 < 15 |only if walking
-Run down the stairs |goto 41.65,44.93 < 15 |only if walking
-Enter the building |goto 48.16,39.43 < 10 |walk
-use the Kul Tiran Orphan Whistle##164772
-|tip Ensure that you have your orphan, Liam, summoned.
-Return to the Orphanage |q 53865/1 |goto 48.00,40.26
-step
-use the Kul Tiran Orphan Whistle##164772
-_Next to you:_
-talk Liam##145394
-turnin Return to the Orphanage##53865 |goto 48.00,40.26
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Stormwind Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Stormwind questline for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-condition_end=function() return completedq(171) end,
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-accept Children's Week##1468 |goto Stormwind City/0 56.31,54.00
-step
-use the Human Orphan Whistle##18598
-_Next to you:_
-talk Human Orphan##14305
-turnin Children's Week##1468 |goto 56.31,54.00
-accept Cruisin' the Chasm##29093 |goto 56.31,54.00
-accept The Biggest Diamond Ever!##29106 |goto 56.31,54.00
-accept Our New Friends##54130 |goto 56.31,54.00
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-Visit the Stormwind Embassy with your Orphan |q 54130/1 |goto 53.35,15.36
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-clicknpc Rental Chopper##52189
-Jump in the Chopper |invehicle |q 29093 |goto Westfall/0 57.76,53.04
-step
-Watch the dialogue
-Take a Chopper Tour of the Raging Chasm |q 29093/1
-step
-Run down the ramp |goto Ironforge/0 44.16,51.94 < 5 |walk
-Run up the stairs |goto Ironforge/1 58.29,49.21 < 5 |walk
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-Visit King Magni in Old Ironforge |q 29106/1 |goto 34.40,51.26
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-_Next to you:_
-talk Human Orphan##14305
-turnin The Biggest Diamond Ever!##29106 |goto 34.40,51.26
-turnin Cruisin' the Chasm##29093 |goto 34.40,51.26
-turnin Our New Friends##54130 |goto 34.40,51.26
-accept Let's Go Fly a Kite##29117 |goto 34.40,51.26
-accept You Scream, I Scream...##29119 |goto 34.40,51.26
-step
-talk Craggle Wobbletop##52358
-|tip He walks around the Trade District canal.
-buy 1 Dragon Kite 2-Pack##68890 |q 29117 |goto Stormwind City/0 57.33,65.64
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-use the Dragon Kite 2-Pack##68890
-Fly Dragon Kites with Your Orphan |q 29117/1
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-_Next to you:_
-talk Human Orphan##14305
-turnin Let's Go Fly a Kite##29117
-step
-talk Hans Coldhearth##52421
-buy 1 Cone of Cold##69027 |q 29119 |goto 48.97,89.74
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-use Cone of Cold##69027
-Take Your Orphan Out for Ice Cream |q 29119/1
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-_Next to you:_
-talk Human Orphan##14305
-turnin You Scream, I Scream...##29119
-accept A Warden of the Alliance##171
-step
-talk Craggle Wobbletop##52358
-|tip He walks around the Trade District canal.
-buy 1 Foam Sword Rack##69057 |q 171/1 |goto 57.33,65.64
-step
-talk Orphan Matron Nightingale##51988
-turnin A Warden of the Alliance##171 |goto 56.31,54.00
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Shattrath Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Shattrath questline for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-condition_end=function() return completedq(10966) end,
-startlevel=10,
-},[[
-step
-talk Orphan Matron Mercy##22819
-accept Children's Week##10943 |goto Shattrath City/0 75.08,47.90
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan.
-_Next to you:_
-talk Draenei Orphan##22818
-turnin Children's Week##10943 |goto 75.08,47.90
-accept Auchindoun and the Ring of Observance##10950 |goto 75.08,47.90
-accept A Trip to the Dark Portal##10952 |goto 75.08,47.90
-accept Jheel is at Aeris Landing!##10954 |goto 75.08,47.90
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to Aeris Landing |q 10954/1 |goto Nagrand/0 31.47,57.49
-step
-talk Jheel##22836
-turnin Jheel is at Aeris Landing!##10954 |goto 31.49,57.61
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to the Ring of Observance |q 10950/1 |goto Terokkar Forest/0 39.90,64.69
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-_Next to you:_
-talk Draenei Orphan##22818
-turnin Auchindoun and the Ring of Observance##10950 |goto 39.90,64.69
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to the Dark Portal |q 10952/1 |goto Hellfire Peninsula/0 88.68,50.22
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-_Next to you:_
-talk Draenei Orphan##22818
-turnin A Trip to the Dark Portal##10952 |goto 88.68,50.22
-accept The Seat of the Naaru##10956 |goto 88.68,50.22
-accept Time to Visit the Caverns##10962 |goto 88.68,50.22
-step
-Follow the path down |goto Tanaris/17 63.40,30.36 < 15 |only if walking
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to the Caverns of Time |q 10962/2 |goto Tanaris/18 53.14,56.80
-step
-talk Alurmi##21643
-buy 1 Toy Dragon##31951 |q 10962/1 |goto Tanaris/17 39.94,77.30
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-_Next to you:_
-talk Draenei Orphan##22818
-turnin Time to Visit the Caverns##10962 |goto 39.94,77.30
-step
-Follow the path |goto The Exodar/0 63.31,41.65 < 10 |only if walking
-Run down the ramp |goto 59.68,33.99 < 10 |only if walking
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to the Seat of the Naaru |q 10956/1 |goto 57.59,41.21
-step
-talk O'ros##17538
-turnin The Seat of the Naaru##10956
-accept Call on the Farseer##10968 |goto 57.94,41.42
-step
-Run up the ramp |goto 54.69,36.29 < 10 |only if walking
-Follow the path |goto 42.78,32.19 < 10 |only if walking
-Continue following the path |goto 36.91,31.41 < 10 |only if walking
-Continue following the path |goto 31.63,36.27 < 10 |only if walking
-Run up the ramp |goto 26.97,29.79 < 7 |only if walking
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-Take Dornaa to Farseer Nobundo |q 10968/1 |goto 31.09,28.11
-step
-talk Farseer Nobundo##17204
-|tip He walks around this area.
-turnin Call on the Farseer##10968 |goto 30.82,30.80
-step
-use the Draenei Orphan Whistle##31881
-|tip Use it to summon your Draenei Orphan, if needed.
-_Next to you:_
-talk Draenei Orphan##22818
-accept Back to the Orphanage##10966
-step
-talk Orphan Matron Mercy##22819
-turnin Back to the Orphanage##10966 |goto Shattrath City/0 75.08,47.90
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Dalaran Oracles questline for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-condition_end=function() return completedq(28880) or completedq(13960) or completedq(13959) or completedq(28879) end,
-startlevel=10,
-},[[
-step
-talk Orphan Matron Aria##34365
-accept Little Orphan Roo Of The Oracles##13926 |goto Dalaran/1 49.36,63.26
-step
-talk Orphan Matron Aria##34365
-Choose _<Ask about the orphans.>_
-Speak to Orphan Matron Aria |q 13926/1 |goto 49.36,63.26
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin Little Orphan Roo Of The Oracles##13926 |goto 49.36,63.26
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan.
-_Next to you:_
-talk Oracle Orphan##33533
-accept The Biggest Tree Ever!##13929 |goto 49.36,63.26
-accept The Bronze Dragonshrine##13933 |goto 49.36,63.26
-accept Playmates!##13950 |goto 49.36,63.26
-step
-Follow the path |goto Grizzly Hills/0 50.39,46.40 < 10 |only if walking
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-Take Roo to Visit Grizzlemaw |q 13929/1 |goto 50.68,44.09
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin The Biggest Tree Ever!##13929 |goto 50.68,44.09
-step
-Follow the path |goto Dragonblight/0 69.66,46.14 < 10 |only if walking
-Follow the path up |goto 69.51,44.06 < 10 |only if walking
-Continue up the path |goto 69.77,42.63 < 10 |only if walking
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-Take Roo to Visit the Bronze Dragonshrine |q 13933/1 |goto 71.11,41.10
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin The Bronze Dragonshrine##13933 |goto 71.11,41.10
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-Take Roo to Visit Winterfin Retreat |q 13950/1 |goto Borean Tundra/0 43.55,13.65
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin Playmates!##13950 |goto 43.55,13.65
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-accept The Dragon Queen##13954 |goto 43.55,13.65
-accept Meeting a Great One##13956 |goto 43.55,13.65
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-Take Roo to Visit The Etymidian |q 13956/1 |goto Un'Goro Crater/0 47.60,9.17
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin Meeting a Great One##13956 |goto 47.60,9.17
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-|tip She is at the top of Wyrmrest Temple.
-Take Roo to Visit Alexstrasza the Life-Binder |q 13954/1 |goto Dragonblight/0 59.84,54.59
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin The Dragon Queen##13954 |goto 59.84,54.59
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-accept A Trip To The Wonderworks##13937 |goto 59.84,54.59
-step
-Run up the stairs |goto Dalaran/1 41.92,47.99 < 5 |only if walking
-Enter the building |goto 43.27,45.30 < 5 |walk
-talk Jepetto Joybuzz##29478
-|tip Inside the building.
-buy 1 Small Paper Zeppelin##46693 |q 13937 |goto 44.82,45.63
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-use the Small Paper Zeppelin##46693
-|tip Use it on your Oracle Orphan.
-Throw the Small Paper Zeppelin to Roo |q 13937/1 |goto 44.82,45.63
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-turnin A Trip To The Wonderworks##13937 |goto 44.82,45.63
-step
-use the Oracle Orphan Whistle##46397
-|tip Use it to summon your Oracle Orphan, if needed.
-_Next to you:_
-talk Oracle Orphan##33533
-accept Back To The Orphanage##28879 |goto 44.82,45.63 |or
-accept Back To The Orphanage##13959 |goto 44.82,45.63 |or
-step
-Leave the building |goto 43.17,45.17 < 3 |walk
-talk Orphan Matron Aria##34365
-turnin Back To The Orphanage##28879 |goto 49.35,63.25 |only if haveq(28879) or completedq(28879)
-turnin Back To The Orphanage##13959 |goto 49.35,63.25 |only if haveq(13959) or completedq(13959)
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Dalaran Wolvar questline for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-condition_end=function() return completedq(28880) or completedq(13960) or completedq(13959) or completedq(28879) end,
-startlevel=10,
-},[[
-step
-talk Orphan Matron Aria##34365
-accept Little Orphan Kekek Of The Wolvar##13927 |goto Dalaran/1 49.35,63.25
-step
-talk Orphan Matron Aria##34365
-Choose _<Ask about the orphans.>_
-Speak to Orphan Matron Aria |q 13927/1 |goto 49.35,63.25
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin Little Orphan Kekek Of The Wolvar##13927 |goto 49.35,63.25
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan.
-_Next to you:_
-talk Wolvar Orphan##33532
-accept Home Of The Bear-Men##13930 |goto 49.35,63.25
-accept The Bronze Dragonshrine##13934 |goto 49.35,63.25
-accept Playmates!##13951 |goto 49.35,63.25
-step
-Follow the path |goto Grizzly Hills/0 50.39,46.40 < 10 |only if walking
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-Take Kekek to Visit Grizzlemaw |q 13930/1 |goto 50.68,44.09
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin Home Of The Bear-Men##13930 |goto 50.68,44.09
-step
-Follow the path |goto Dragonblight/0 69.66,46.14 < 10 |only if walking
-Follow the path up |goto 69.51,44.06 < 10 |only if walking
-Continue up the path |goto 69.77,42.63 < 10 |only if walking
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-Take Kekek to Visit the Bronze Dragonshrine |q 13934/1 |goto 71.11,41.10
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin The Bronze Dragonshrine##13934 |goto 71.11,41.10
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-Take Kekek to Visit Snowfall Glade |q 13951/1 |goto Dragonblight/0 45.28,63.29
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin Playmates!##13951 |goto 45.28,63.29
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-accept The Dragon Queen##13955 |goto 45.28,63.29
-accept The Mighty Hemet Nesingwary##13957 |goto 45.28,63.29
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-|tip She is at the top of Wyrmrest Temple.
-Take Kekek to Visit Alexstrasza the Life-Binder |q 13955/1 |goto Dragonblight/0 59.84,54.59
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin The Dragon Queen##13955 |goto 59.84,54.59
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-Take Kekek to Visit Hemet Nesingwary |q 13957/1 |goto Sholazar Basin/0 27.13,59.23
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin The Mighty Hemet Nesingwary##13957 |goto 27.13,59.23
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-accept A Visit To The Wonderworks##13938 |goto 27.13,59.23
-step
-Run up the stairs |goto Dalaran/1 41.92,47.99 < 5 |only if walking
-Enter the building |goto 43.27,45.30 < 5 |walk
-talk Jepetto Joybuzz##29478
-|tip Inside the building.
-buy 1 Small Paper Zeppelin##46693 |q 13938 |goto 44.82,45.63
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-use Small Paper Zeppelin##46693
-|tip Use it on your Wolvar Orphan.
-Throw the Small Paper Zeppelin to Kekek |q 13938/1 |goto 44.82,45.63
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-turnin A Visit To The Wonderworks##13938 |goto 44.82,45.63
-step
-use the Wolvar Orphan Whistle##46396
-|tip Use it to summon your Wolvar Orphan, if needed.
-_Next to you:_
-talk Wolvar Orphan##33532
-accept Back To The Orphanage##28880 |goto 44.82,45.63 |or
-accept Back To The Orphanage##13960 |goto 44.82,45.63 |or
-step
-Leave the building |goto 43.17,45.17 < 3 |walk
-talk Orphan Matron Aria##34365
-turnin Back To The Orphanage##28880 |goto 49.35,63.25 |only if haveq(28880) or completedq(28880)
-turnin Back To The Orphanage##13960 |goto 49.35,63.25 |only if haveq(13960) or completedq(13960)
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Aw, Isn't It Cute?",{
-author="support@zygorguides.com",
-description="\nObtain one of the Children's Week reward pets through questing.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1792},
-patch='30009',
-startlevel=10,
-},[[
-leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
-step
-_Congratulations!_
-You Earned the "Aw, Isn't It Cute?" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Bad Example",{
-author="support@zygorguides.com",
-description="\nEat the following sweets while your orphan is watching:\n\nTigule's Strawberry Ice Cream\n"..
-"Tasty Cupcake\nRed Velvet Cupcake\nDelicious Chocolate Cake\nLovely Cake Slice\nDalaran Brownie\nDalran Doughnut",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1788},
-patch='30002',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-step
-talk Emmithue Smails##14481
-buy 1 Tigule's Strawberry Ice Cream##7228 |achieve 1788 |goto Stormwind City/0 61.30,75.02
-step
-talk Auctioneer Fitch##8719
-|tip Purchase the follow items from the Auction House, or use your Cooking ability to create them.
-collect 1 Tasty Cupcake##43490 |achieve 1788 |goto 61.16,70.78
-collect 1 Delicious Chocolate Cake##33924 |achieve 1788 |goto 61.16,70.78
-step
-talk Aimee##29548
-buy 1 Red Velvet Cupcake##42429 |achieve 1788 |goto Dalaran/1 51.17,29.07
-buy 1 Lovely Cake##42438 |achieve 1788 |goto 51.17,29.07
-buy 1 Dalaran Doughnut##42430 |achieve 1788 |goto 51.17,29.07
-buy 1 Dalaran Brownie##42431 |achieve 1788 |goto 51.17,29.07
-step
-use the Lovely Cake##42438
-|tip Use it to place a cake on the ground.
-click Lovely Cake
-collect 1 Lovely Cake Slice##42434 |achieve 1788
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-use Tigule's Strawberry Ice Cream##7228
-Eat Tigule's Strawberry Ice Cream |achieve 1788/1
-step
-use the Tasty Cupcake##43490
-Eat Tasty Cupcake |achieve 1788/2
-step
-use the Red Velvet Cupcake##42429
-Eat Red Velvet Cupcake |achieve 1788/3
-step
-use the Delicious Chocolate Cake##33924
-Eat Delicious Chocolate Cake |achieve 1788/4
-step
-use the Lovely Cake Slice##42434
-Eat Lovely Cake Slice |achieve 1788/5
-step
-use the Dalaran Brownie##42431
-Eat Dalaran Brownie |achieve 1788/6
-step
-use the Dalaran Doughnut##42430
-Eat Dalaran Doughnut |achieve 1788/7
-step
-|achieve 1788
-step
-_Congratulations!_
-You Earned the "Bad Example" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Daily Chores",{
-author="support@zygorguides.com",
-description="\nComplete five daily quests with your orphan out.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1789},
-patch='30003',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-Complete any 5 daily quests of your choice:
-|tip World Quests do not count for this achievement.
-|tip Use the various daily quest guides to complete this.
-|tip Make sure your orphan is standing next to you when turning in the daily quests, or you won't get credit for this achievement.
-|achieve 1789
-step
-_Congratulations!_
-You Earned the "Daily Chores" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby",{
-author="support@zygorguides.com",
-description="\nDefeat King Ymiron in Utgarde Pinnacle with your orphan out.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1790},
-patch='30002',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-kill King Ymiron##26861
-|tip Inside the Utgarde Pinnacle dungeon.
-|tip He's the final boss of the instance.
-|achieve 1790 |goto Utgarde Pinnacle/2 42.60,53.50
-step
-_Congratulations!_
-You Earned the "Hail To The King, Baby" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Home Alone",{
-author="support@zygorguides.com",
-description="\nUse your Hearthstone while your orphan is with you.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1791},
-patch='30002',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-use Hearthstone##6948
-|tip Use it while your Orphan is standing next to you.
-|achieve 1791
-step
-_Congratulations!_
-You Earned the "Home Alone" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\School of Hard Knocks",{
-author="support@zygorguides.com",
-description="\nTake your orphan into the battlegrounds and complete the feats listed below:\n\nCapture the flag "..
-"in Eye of the Storm\nAssault a flag in Arathi Basin\nAssault a tower in Alterac Valley\nReturn a "..
-"fallen flag in Warsong Gulch",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1786},
-patch='30002',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-|tip Enter the Eye of the Storm battleground and capture the flag.
-Capture the flag in Eye of the Storm |achieve 1786/1
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-|tip Enter the Alterac Valley battleground and assault a tower.
-Assault a Tower in Alterac Valley |achieve 1786/2
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-|tip Enter the Arathi Basin battleground and assault a flag.
-Assault a Flag in Arathi Basin |achieve 1786/3
-step
-use the Human Orphan Whistle##18598
-|tip Use it to summon your Human Orphan, if needed.
-|tip Enter the Warsong Gulch battleground and return a fallen flag.
-Return a fallen Flag in Warsong Gulch |achieve 1786/4
-step
-_Congratulations!_
-You Earned the "School of Hard Knocks" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\Veteran Nanny",{
-author="support@zygorguides.com",
-description="\nAcquire Egbert's Egg, Sleepy Willy, and Elekk Training Collar on a single character.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={275},
-patch='30001',
-startlevel=10,
-},[[
-step
-This achievement takes three years to complete
-|tip You must do the following questline once each year on the same character.
-|tip Ensure that you only choose Egbert's Egg, Sleepy Willy, and the Elekk Training Collar as rewards.
-|confirm
-leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
-step
-_Congratulations!_
-You Earned the "Veteran Nanny" Achievement.
-]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Achievements\\For the Children",{
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Achievements for the Children's Week event.",
-condition_suggested=function() return isevent("Children's Week") end,
-achieveid={1793},
-patch='30002',
-startlevel=10,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Children's Week is not yet over...may I have another Orphan Whistle?"_
-collect 1 Human Orphan Whistle##18598 |achieve 1793 |goto Stormwind City/0 56.32,53.99
-leechsteps "Events Guides\\Children's Week\\Children's Week Shattrath Quests" 1-17
-leechsteps "Events Guides\\Children's Week\\Achievements\\Bad Example" 2-12
-leechsteps "Events Guides\\Children's Week\\Achievements\\Daily Chores" 2-2
-leechsteps "Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby" 2-2
-leechsteps "Events Guides\\Children's Week\\Achievements\\Home Alone" 2-2
-leechsteps "Events Guides\\Children's Week\\Achievements\\School of Hard Knocks" 2-5
-step
-|achieve 1793
-step
-_Congratulations!_
-You Earned the "For the Children" Achievement
-]])
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Kul Tiras Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Stormwind Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Shattrath Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Dalaran Oracles Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Children's Week Dalaran Wolvar Quests")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Aw, Isn't It Cute?")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Bad Example")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Daily Chores")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Hail To The King, Baby")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Home Alone")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\School of Hard Knocks")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\Veteran Nanny")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Children's Week\\Achievements\\For the Children")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Darkmoon Faire Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Darkmoon Faire Dailies")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Darkmoon Faire\\Achievements\\Ace Tonk Commander")
@@ -1247,17 +531,943 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievem
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Shake Your Bunny-Maker")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Spring Fling")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Noblegarden\\Achievements\\Sunday's Finest")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\FOOD FIGHT!")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Now We're Cookin'")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Paunch")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Peril")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Sharing is Caring")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Terokkar Turkey Time")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\Turkey Lurkey")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Pilgrim's Bounty\\Achievements\\The Turkinator")
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests",{
+author="support@zygorguides.com",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+description="\nThis guide section will walk you through completing the quests for the Pilgrim's Bounty event.",
+},[[
+step
+talk Human Commoner##18927
+accept Pilgrim's Bounty##14022 |goto Stormwind City/0 61.68,74.18
+step
+talk Gregory Tabor##34675
+turnin Pilgrim's Bounty##14022 |goto Elwynn Forest/0 34.10,51.45
+step
+talk Bountiful Table Hostess##34653
+accept Sharing a Bountiful Feast##14064 |goto 34.18,51.07
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |complete hasbuff(250623,5) |goto 34.24,51.23 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |complete hasbuff(250626,5) |goto 34.29,51.07 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |complete hasbuff(250622,5) |goto 34.40,51.06 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |complete hasbuff(250625,5) |goto 34.43,51.23 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Leave the Table |outvehicle |or |q 14064
+|tip Click the "Exit" button on your action bar.
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |complete hasbuff(250624,5) |goto 34.33,51.33 |or |q 14064
+'|q 14064/1 |next "Leave_The_Table" |or
+step
+Gain the Spirit of Sharing |q 14064/1 |goto 34.29,51.07
+step
+label "Leave_The_Table"
+Leave the Table |outvehicle |q 14064
+|tip Click the "Exit" button on your action bar.
+step
+talk Bountiful Table Hostess##34653
+turnin Sharing a Bountiful Feast##14064 |goto 34.18,51.07
+step
+talk Ellen Moore##34710
+Train Cooking |skillmax Cooking,300 |goto 33.71,50.63
+step
+talk Ellen Moore##34710
+learn Spice Bread##37836 |goto 33.71,50.63
+step
+talk Wilmina Holbeck##34682
+buy 1 Bountiful Cookbook##46809 |goto 34.14,51.53 |q 14023 |future |or
+'|learn Slow-Roasted Turkey##62045 |or
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Spice Bread Stuffing##44860 |q 14023 |future |or
+'|learn Spice Bread Stuffing##62050 |or
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Pumpkin Pie##44862 |q 14024 |future |or
+'|learn Pumpkin Pie##62044 |or
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Cranberry Chutney##44858 |q 14028 |future |or
+'|learn Cranberry Chutney##62049 |or
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Candied Sweet Potato##44859 |q 14030 |future |or
+'|learn Candied Sweet Potato##62051 |or
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Slow-Roasted Turkey##44861 |q 14035 |future |or
+'|learn Slow-Roasted Turkey##62045 |or
+step
+use the Recipe: Spice Bread Stuffing##44860
+learn Spice Bread Stuffing##62050
+step
+talk Gregory Tabor##34675
+accept Spice Bread Stuffing##14023 |goto 34.10,51.45
+step
+talk Wilmina Holbeck##34682
+buy 10 Simple Flour##30817 |goto 34.14,51.53 |q 14023
+buy 10 Mild Spices##2678 |goto 34.14,51.53 |q 14023
+buy 10 Autumnal Herbs##44835 |goto 34.14,51.53 |q 14023
+step
+create 10 Spice Bread##37836,Cooking,10 total |goto 33.82,50.84 |q 14023
+step
+create 10 Spice Bread Stuffing##62050,Cooking,10 total |goto 33.82,50.84 |q 14023
+|tip Save five for later.
+step
+create Spice Bread Stuffing##62050,Cooking,100 |goto 33.82,50.84
+|tip Continue making Spice Bread Stuffing to reach 100 Cooking.
+|tip Each one requires 1 Spice Bread and 1 Autumnal Herbs.
+|tip Each Spice Bread requires 1 Simple Flour and 1 Mild Spices.
+step
+talk Jasper Moore##34744
+turnin Spice Bread Stuffing##14023 |goto 33.89,50.81
+accept Pumpkin Pie##14024 |goto 33.89,50.81
+step
+use the Recipe: Pumpkin Pie##44862
+learn Pumpkin Pie##62044
+step
+talk Wilmina Holbeck##34682
+buy 10 Ripe Elwynn Pumpkin##46784 |goto 34.14,51.53 |q 14024
+buy 10 Honey##44853 |goto 34.14,51.53 |q 14024
+step
+create 10 Pumpkin Pie##62044,Cooking,10 total |goto 33.83,50.73 |q 14024
+|tip Click the line to open your cooking panel and create them.
+|tip Save five for later.
+step
+create Pumpkin Pie##62044,Cooking,160
+|tip Continue making Pumpkin Pie to reach 160 Cooking.
+|tip Each one requires 1 Ripe Elwynn Pumpkin and 1 Honey.
+step
+talk Edward Winslow##34644
+turnin Pumpkin Pie##14024 |goto Dun Morogh/0 59.81,34.34
+accept Cranberry Chutney##14028 |goto 59.81,34.34
+step
+use the Recipe: Cranberry Chutney##44858
+learn Cranberry Chutney##62049
+step
+talk Elizabeth Barker Winslow##34645
+buy 5 Tangy Southfury Cranberries##44854 |goto 59.77,34.34 |q 14028
+buy 5 Honey##44853 |goto 59.77,34.34 |q 14028
+step
+create 5 Cranberry Chutney##62049,Cooking,5 total |goto 60.01,34.39 |q 14028
+|tip Click the line to open your cooking panel and create them.
+step
+create Cranberry Chutney##62049,Cooking,220 |goto 60.01,34.39
+|tip Continue making Cranberry Chutneys to reach 220 Cooking.
+|tip Each one requires 1 Tangy Southfury Cranberries and 1 Honey.
+step
+talk Jasper Moore##34744
+turnin Cranberry Chutney##14028 |goto Elwynn Forest/0 33.89,50.81
+accept They're Ravenous In Darnassus##14030 |goto Elwynn Forest/0 33.89,50.81
+step
+collect 5 Spice Bread Stuffing##44837 |q 14030/1
+|tip You should have these from a previous step.
+step
+collect 5 Pumpkin Pie##44836 |q 14030/2
+|tip You should have these from a previous step.
+step
+Travel to Darnassus |goto Teldrassil/0 52.38,89.47 < 10000 |c |next "Turnin_They're_Ravenous_In_Darnassus" |or |q 14030
+'|goto Darkshore/0 47.43,18.01 < 10000 |c |noway |next "Travel_To_The_Past" |or |q 14030
+step
+label "Travel_To_The_Past"
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |q 14030
+step
+label "Turnin_They're_Ravenous_In_Darnassus"
+talk Isaac Allerton##34676
+turnin They're Ravenous In Darnassus##14030 |goto Darnassus/0 61.47,49.10
+accept Candied Sweet Potatoes##14033 |goto 61.47,49.10
+step
+use the Recipe: Candied Sweet Potato##44859
+learn Candied Sweet Potato##62051
+step
+talk Ikaneba Summerset##34681
+buy 5 Teldrassil Sweet Potato##44855 |goto 61.64,49.12 |q 14033
+buy 5 Honey##44853 |goto 61.64,49.12 |q 14033
+buy 5 Autumnal Herbs##44835 |goto 61.64,49.12 |q 14033
+step
+create 5 Candied Sweet Potato##62051,Cooking,5 total |goto 62.15,46.20 |q 14033
+|tip Click the line to open your cooking panel and create them.
+step
+create Candied Sweet Potato##62051,Cooking,280
+|tip Continue making Candied Sweet Potatoes to reach 280 Cooking.
+|tip Each one requires 1 Teldrassil Sweet Potato, 1 Autumnal Herbs, and 1 Honey.
+step
+talk Gregory Tabor##34675
+turnin Candied Sweet Potatoes##14033 |goto Elwynn Forest/0 34.10,51.45
+accept Slow-roasted Turkey##14035 |goto Elwynn Forest/0 34.10,51.45
+step
+use the Recipe: Slow-Roasted Turkey##44861
+learn Slow-Roasted Turkey##62045
+step
+kill Wild Turkey##32820+
+|tip You can find these all over Elwynn Forest.
+collect 5 Wild Turkey##44834 |q 14035 |goto 42.32,62.16
+step
+talk Wilmina Holbeck##34682
+buy 10 Honey##44853 |goto 34.15,51.52 |q 14035
+buy 5 Autumnal Herbs##44835 |goto 34.15,51.52 |q 14035
+step
+create 5 Slow-Roasted Turkey##62045,Cooking,5 total |goto 33.83,50.73 |q 14035
+|tip Click the line to open your cooking panel and create them.
+step
+talk Isaac Allerton##34676
+turnin Slow-roasted Turkey##14035 |goto Darnassus/0 61.47,49.10
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests",{
+author="support@zygorguides.com",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+description="\nThis quide will help run through the Pilgrims Bounty Dailies and Achievements to earn the Title Pilgrim.",
+},[[
+step
+label "Guide_Start"
+Complete the "Pilgrim's Bounty Quests" Event Guide |complete completedq(14035)
+step
+talk Jasper Moore##34744
+accept She Says Potato##14055 |goto Elwynn Forest/0 33.88,50.80
+step
+talk Ellen Moore##34710
+accept We're Out of Cranberry Chutney Again?##14053 |goto 33.71,50.63
+step
+talk Wilmina Holbeck##34682
+buy 20 Ripe Elwynn Pumpkin##46784 |goto 34.15,51.52 |q 14054 |future
+buy 20 Simple Flour##30817 |goto 34.15,51.52 |q 14051 |future
+buy 20 Mild Spices##2678 |goto 34.15,51.52 |q 14051 |future
+buy 60 Autumnal Herbs##44835 |goto 34.15,51.52 |q 14055
+buy 100 Honey##44853 |goto 34.15,51.52 |q 14054 |future
+step
+kill Wild Turkey##32820+
+|tip You can find these all over Elwynn Forest.
+collect 20 Wild Turkey##44834 |goto 42.32,62.16 |q 14048 |future
+step
+talk Caitrin Ironkettle##34708
+accept Don't Forget The Stuffing!##14051 |goto Dun Morogh/0 60.04,34.31
+accept Can't Get Enough Turkey##14048 |goto 60.04,34.31
+step
+talk Elizabeth Barker Winslow##34645
+buy 20 Tangy Wetland Cranberries##44854 |goto 59.77,34.34 |q 14051
+step
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |q 14055
+step
+talk Ikaneba Summerset##34681
+buy 20 Teldrassil Sweet Potato##44855 |goto Darnassus/0 61.64,49.13 |q 14055
+step
+talk Mary Allerton##34711
+accept Easy As Pie##14054 |goto 61.90,46.17
+step
+create 20 Pumpkin Pie##62044,Cooking,20 total |goto 62.19,46.22 |q 14054
+|tip Click the line to open your cooking panel and create them.
+step
+create 20 Spice Bread##37836,Cooking,20 total |goto 62.19,46.22 |q 14051
+|tip Click the line to open your cooking panel and create them.
+step
+create 20 Spice Bread Stuffing##62050,Cooking,20 total |goto 62.19,46.22 |q 14051
+|tip Click the line to open your cooking panel and create them.
+step
+create 20 Slow-Roasted Turkey##62045,Cooking,20 total |goto 62.19,46.22 |q 14048
+|tip Click the line to open your cooking panel and create them.
+step
+create 20 Candied Sweet Potato##62051,Cooking,20 total |q 14055/1 |goto 62.19,46.22
+|tip Click the line to open your cooking panel and create them.
+step
+create 20 Cranberry Chutney##62049,Cooking,20 total |goto 62.19,46.22 |q 14053
+|tip Click the line to open your cooking panel and create them.
+step
+talk Mary Allerton##34711
+turnin Easy As Pie##14054 |goto 61.90,46.17
+step
+talk Caitrin Ironkettle##34708
+turnin Can't Get Enough Turkey##14048 |goto Dun Morogh/0 60.04,34.31
+turnin Don't Forget The Stuffing!##14051 |goto 60.04,34.31
+step
+talk Ellen Moore##34710
+turnin We're Out of Cranberry Chutney Again?##14053 |goto Elwynn Forest/0 33.71,50.63
+step
+talk Jasper Moore##34744
+turnin She Says Potato##14055 |goto 33.89,50.81
+step
+Click Here to Repeat the Daily Quests |confirm |next "Guide_Start"
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\FOOD FIGHT!",{
+author="support@zygorguides.com",
+description="\nBounce food off a fellow feaster's head at a Bountiful Table.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3579},
+patch='30202',
+},[[
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Pass The Cranberries" ability to pass the food to other players at the table.
+|tip You must target the other players and use the "Pass the Cranberries" ability.
+|tip Do this repeatedly until you earn the "FOOD FIGHT!" achievement.
+Start a Food Fight! |achieve 3579 |goto Elwynn Forest/0 34.29,51.07
+step
+_Congratulations!_
+You Earned the "FOOD FIGHT!" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Now We're Cookin'",{
+author="support@zygorguides.com",
+description="\nCook up each of the following Pilgrim's Bounty dishes:\n\n"..
+"Candied Sweet Potato\nCranberry Chutney\nPumpkin Pie\n"..
+"Slow-Roasted Turkey\nSpice Bread Stuffing",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3576},
+patch='30300',
+},[[
+step
+talk Wilmina Holbeck##34682
+buy 1 Bountiful Cookbook##46809 |goto Elwynn Forest/0 34.14,51.53
+|only if not achieved(3576)
+step
+talk Ellen Moore##34710
+Train Cooking |skillmax Cooking,300 |goto 33.71,50.63
+step
+talk Ellen Moore##34710
+learn Spice Bread##37836 |goto 33.71,50.63
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Spice Bread Stuffing##44860
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Pumpkin Pie##44862
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Cranberry Chutney##44858
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Candied Sweet Potato##44859
+|only if not achieved(3576)
+step
+use the Bountiful Cookbook##46809
+collect Recipe: Slow-Roasted Turkey##44861
+|only if not achieved(3576)
+step
+use the Recipe: Spice Bread Stuffing##44860
+learn Spice Bread Stuffing##62050
+step
+talk Wilmina Holbeck##34682
+buy 1 Simple Flour##30817 |goto 34.14,51.53
+buy 1 Mild Spices##2678 |goto 34.14,51.53
+buy 1 Autumnal Herbs##44835 |goto 34.14,51.53
+|only if not achieved(3576)
+step
+create 1 Spice Bread##37836,Cooking,1 total |goto 33.82,50.84 |achieve 3576/5
+|tip Click the line to open your cooking panel and create it.
+|only if not achieved(3576)
+step
+create 1 Spice Bread Stuffing##62050,Cooking,1 total |goto 33.82,50.84 |achieve 3576/5
+|tip Click the line to open your cooking panel and create it.
+step
+use the Recipe: Pumpkin Pie##44862
+learn Pumpkin Pie##62044
+step
+talk Wilmina Holbeck##34682
+buy 1 Ripe Elwynn Pumpkin##46784 |goto 34.14,51.53
+buy 1 Honey##44853 |goto 34.14,51.53
+|only if not achieved(3576)
+step
+create 1 Pumpkin Pie##62044,Cooking,1 total |goto 33.82,50.84 |achieve 3576/3
+|tip Click the line to open your cooking panel and create it.
+step
+use the Recipe: Cranberry Chutney##44858
+learn Cranberry Chutney##62049
+step
+talk Elizabeth Barker Winslow##34645
+buy 1 Tangy Southfury Cranberries##44854 |goto Dun Morogh/0 59.77,34.34
+buy 1 Honey##44853 |goto 59.77,34.34
+|only if not achieved(3576)
+step
+create 1 Cranberry Chutney##62049,Cooking,1 total |goto 60.01,34.39 |achieve 3576/2
+|tip Click the line to open your cooking panel and create iy.
+step
+use the Recipe: Candied Sweet Potato##44859
+learn Candied Sweet Potato##62051
+step
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |achieve 3576 |future
+step
+talk Ikaneba Summerset##34681
+buy 1 Mulgore Sweet Potato##46797 |goto Darnassus/0 61.47,49.10
+buy 1 Honey##44853 |goto 61.47,49.10
+buy 1 Autumnal Herbs##44835 |goto 61.47,49.10
+|only if not achieved(3576)
+step
+create 1 Candied Sweet Potato##62051,Cooking,1 total |goto 62.15,46.20 |achieve 3576/1
+|tip Click the line to open your cooking panel and create it.
+step
+use the Recipe: Slow-Roasted Turkey##44861
+learn Slow-Roasted Turkey##62045
+step
+kill Wild Turkey##32820+
+|tip You can find these all over Elwynn Forest.
+collect 1 Wild Turkey##44834 |goto Elwynn Forest/0 42.32,62.16
+|only if not achieved(3576)
+step
+talk Wilmina Holbeck##34682
+buy 2 Honey##44853 |goto 34.15,51.52
+buy 1 Autumnal Herbs##44835 |goto 34.15,51.52
+|only if not achieved(3576)
+step
+create 1 Slow-Roasted Turkey##62045,Cooking,1 total |goto 33.83,50.73 |achieve 3576/4
+|tip Click the line to open your cooking panel and create it.
+step
+Cook a Pilgrim's Bounty Feast |achieve 3576
+step
+_Congratulations!_
+You Earned the "Now We're Cookin'" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim",{
+author="support@zygorguides.com",
+description="\nComplete the following Pilgrim's Bounty achievements:\n\n"..
+"\"FOOD FIGHT!\"\nNow We're Cookin'\nPilgrim's Paunch\n"..
+"Pilgrim's Peril\nPilgrim's Progress\nSharing is Caring\n"..
+"Terokkar Turkey Time\nThe Turkinator\nTurkey Lurkey",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3478},
+patch='30200',
+},[[
+leechsteps "Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Quests"
+leechsteps "Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests" 1-21
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\FOOD FIGHT!" 1-1
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Paunch" 1-43
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Peril" 1-9
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Sharing is Caring" 1-10
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Terokkar Turkey Time" 1-5
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\The Turkinator" 1-1
+leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Turkey Lurkey" 1-11
+step
+Earn the "Pilgrim" Achievement |achieve 3478
+step
+_Congratulations!_
+You Earned the "Pilgrim" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Paunch",{
+author="support@zygorguides.com",
+description="\nAcquire the Spirit of Sharing from a complete Bountiful Table feast at the following capital cities:\n\n"..
+"Darnassus\nThe Exodar\n"..
+"Ironforge\nStormwind",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3556},
+patch='30300',
+},[[
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |complete hasbuff(250623,5) |goto Elwynn Forest/0 34.24,51.23 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |complete hasbuff(250626,5) |goto 34.29,51.07 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |complete hasbuff(250622,5) |goto 34.40,51.06 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |complete hasbuff(250625,5) |goto 34.43,51.23 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |complete hasbuff(250624,5) |goto 34.33,51.33 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+talk Zidormi##141489
+Ask her _"Can you show me what Darkshore was like before the battle?"_
+Travel to the Past |complete ZGV.InPhase('Old Darnassus') |goto Darkshore/0 48.86,24.46 |achieve 3556 |future
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |complete hasbuff(250623,5) |goto Darnassus/0 62.82,48.49 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |complete hasbuff(250626,5) |goto 62.62,48.25 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |complete hasbuff(250622,5) |goto 62.69,47.92 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |complete hasbuff(250625,5) |goto 62.95,47.92 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |complete hasbuff(250624,5) |goto 63.02,48.27 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |complete hasbuff(250623,5) |goto The Exodar/0 77.40,53.43 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |complete hasbuff(250626,5) |goto 77.02,53.48 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |complete hasbuff(250622,5) |goto 76.87,53.01 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |complete hasbuff(250625,5) |goto 77.14,52.60 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |complete hasbuff(250624,5) |goto 77.49,52.89 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Feast On Pie" ability on your action bar five times.
+Eat Five Pie Helpings |complete hasbuff(250623,5) |goto Dun Morogh/0 59.90,34.73 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Feast On Turky" ability on your action bar five times.
+Eat Five Turkey Helpings |complete hasbuff(250626,5) |goto 59.84,34.63 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Feast On Cranberries" ability on your action bar five times.
+Eat Five Cranberry Helpings |complete hasbuff(250622,5) |goto 59.88,34.54 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Feast On Sweet Potatoes" ability on your action bar five times.
+Eat Five Sweet Potato Helpings |complete hasbuff(250625,5) |goto 59.96,34.56 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Feast On Stuffing" ability on your action bar five times.
+Eat Five Stuffing Helpings |complete hasbuff(250624,5) |goto 59.97,34.69 |or
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3556 |next "Earn_Pilgrim's_Paunch" |or
+step
+label "Earn_Pilgrim's_Paunch"
+Acquire the Spirit of Sharing |achieve 3556
+step
+_Congratulations!_
+You Earned the "Pilgrim's Paunch" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Peril",{
+author="support@zygorguides.com",
+description="\nWhile wearing either a Pilgrim's Dress, Robe, or Attire, take a seat at the following enemy capital cities:\n\n"..
+"Orgrimmar\nSilvermoon City\n"..
+"Thunder Bluff\nUndercity",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3580},
+patch='30200',
+},[[
+step
+talk Zidormi##141488
+Ask her _"Can you show me what Tirisfal Glades was like before the Battle for Lordaeron?"_
+Travel to the Past |complete ZGV.InPhase('Old Undercity') |goto Tirisfal Glades/0 69.46,62.80 |achieve 3580 |future
+step
+Collect a Pilgrim's Dress, Robe, or Attire |complete itemcount (46800) >= 1 or itemcount (44785) >= 1 or itemcount (46824) >= 1
+|tip You can choose any of these as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3580)
+step
+use Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+Equip Pilgrim's Attire |equipped Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+use Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+Equip Pilgrim's Dress |equipped Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+use Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+Equip Pilgrim's Robe |equipped Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+|only if not achieved(3580)
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Undercity |achieve 3580/4 |goto Tirisfal Glades/0 59.08,51.11
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Silvermoon City |achieve 3580/2 |goto Eversong Woods/0 55.22,53.69
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Thunder Bluff |achieve 3580/3 |goto Thunder Bluff/0 28.59,62.78
+step
+clicknpc The Turkey Chair##34812
+Pilgrim's Peril of Orgrimmar |achieve 3580/1 |goto Durotar/0 46.31,15.09
+step
+Earn the "Pilgrim's Peril" Achievement |achieve 3580
+step
+_Congratulations!_
+You Earned the "Pilgrim's Peril" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim's Progress",{
+author="support@zygorguides.com",
+description="\nComplete the following Pilgrim's Bounty dailies:\n\n"..
+"Can't Get Enough Turkey\nDon't Forget The Stuffing!\nEasy As Pie\n"..
+"She Says Potato\nWe're Out of Cranberry Chutney Again?",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3596},
+patch='30300',
+},[[
+leechsteps "Events Guides\\Pilgrim's Bounty\\Quests\\Pilgrim's Bounty Daily Quests" 1-21
+step
+Earn the "Pilgrim's Progress" Achievement |achieve 3596
+step
+_Congratulations!_
+You Earned the "Pilgrim's Progress" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Sharing is Caring",{
+author="support@zygorguides.com",
+description="\nPass each of the following dishes at a Bountiful Table:\n\n"..
+"Candied Sweet Potatoes\nCranberry Chutney\nPumpkin Pie\n"..
+"Slow-Roasted Turkey\nSpice Bread Stuffing",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3558},
+patch='30300',
+},[[
+step
+clicknpc The Pie Chair##34822
+|tip Use the "Pass the Pie" ability on your action bar five times.
+Pass the Pie |achieve 3558/3 |goto Elwynn Forest/0 34.24,51.23 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Turkey Chair##34812
+|tip Use the "Pass the Turky" ability on your action bar five times.
+Pass the Turkey |achieve 3558/4 |goto 34.29,51.07 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Cranberry Chair##34823
+|tip Use the "Pass the Cranberries" ability on your action bar five times.
+Pass the Cranberries |achieve 3558/2 |goto 34.40,51.06 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Sweet Potato Chair##34824
+|tip Use the "Pass the Sweet Potatoes" ability on your action bar five times.
+Pass the Sweet Potatoes |achieve 3558/1 |goto 34.43,51.23 |or
+step
+Leave the Table |outvehicle |or
+|tip Click the "Exit" button on your action bar.
+'|achieve 3558 |next "Earn_Sharing_Is_Caring" |or
+step
+clicknpc The Stuffing Chair##34819
+|tip Use the "Pass the Stuffing" ability on your action bar five times.
+Pass the Stuffing |achieve 3558/5 |goto 34.33,51.33 |or
+step
+label "Earn_Sharing_Is_Caring"
+Earn the "Sharing is Caring" Achievement |achieve 3558
+step
+_Congratulations!_
+You Earned the "Sharing is Caring" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Terokkar Turkey Time",{
+author="support@zygorguides.com",
+description="\nDefeat Talon King Ikiss while wearing a Pilgrim's Hat and either a Pilgrim's Dress, Robe, or Attire.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3582},
+patch='30200',
+},[[
+step
+Collect a Pilgrim's Dress, Robe, or Attire |complete itemcount (46800) >= 1 or itemcount (44785) >= 1 or itemcount (46824) >= 1
+|tip You can choose any of these as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3582)
+step
+collect 1 Pilgrim's Hat##46723
+|tip You can choose this as a reward for completing a Pilgrim's Bounty daily quest.
+|tip Use the "Pilgrim's Bounty Daily Quests" event guide to accomplish this.
+|only if not achieved(3582)
+step
+use Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+Equip a Pilgrim's Attire |equipped Pilgrim's Attire##46800 |only if itemcount (46800) >= 1
+use Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+Equip a Pilgrim's Dress |equipped Pilgrim's Dress##44785 |only if itemcount (44785) >= 1
+use Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+Equip a Pilgrim's Robe |equipped Pilgrim's Robe##46824 |only if itemcount (46824) >= 1
+|only if not achieved(3582)
+step
+use Pilgrim's Hat##46723 |only if itemcount (46723) >= 1
+Equip a Pilgrim's Hat |equipped Pilgrim's Attire##46723 |only if itemcount (46723) >= 1
+|only if not achieved(3582)
+step
+kill Talon King Ikiss##18473
+Earn the "Terokkar Turkey Time" Achievement |achieve 3582 |goto Sethekk Halls/2 32.50,39.50
+|tip Use the "Auchindoun: Sethekk Halls" dungeon guide to accomplish this.
+step
+_Congratulations!_
+You Earned the "Terokkar Turkey Time" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\Turkey Lurkey",{
+author="support@zygorguides.com",
+description="\nBlast the following dirty, sneaking Rogues with your Turkey Shooter:\n\n"..
+"Blood Elf Rogue\nDwarf Rogue\nGnome Rogue\nGoblin Rogue\n"..
+"Human Rogue\nNight Elf Rogue\nOrc Rogue\nTroll Rogue\n"..
+"Undead Rogue\nWorgen Rogue",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3559},
+patch='30200',
+},[[
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Dwarf Rogue |achieve 3559/2 |goto Elwynn Forest/0 34.63,51.22
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Gnome Rogue |achieve 3559/3 |goto 34.63,51.22
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Human Rogue |achieve 3559/5 |goto 34.63,51.22
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Night Elf Rogue |achieve 3559/6 |goto 34.63,51.22
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Worgen Rogue |achieve 3559/10 |goto 34.63,51.22
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Blood Elf Rogue |achieve 3559/1 |goto Durotar/0 46.08,14.05
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Orc Rogue |achieve 3559/7 |goto 46.08,14.05
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Troll Rogue |achieve 3559/8 |goto 46.08,14.05
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Undead Rogue |achieve 3559/9 |goto 46.08,14.05
+step
+use the Turkey Shooter##44812
+|tip You get one for each Pilgrim's Bounty cache that you collect.
+|tip Use the "Pilgrim's Bounty Daily Quests" guide and select the Piglrim's Bounty reward.
+|tip You can complete this with ten shooters, but you may need more.
+|tip Make sure you don't shoot any rogues with the "Turkey Feathers" buff.
+|tip The easiest way to complete this is to have a friend create the rogue races you need.
+|tip You can also search other capital cities.
+|tip Type "/who c-rogue r-race", where race is the race of the rogue you're looking for.
+|tip You can only search for races allied with your faction.
+Shoot a Goblin Rogue |achieve 3559/4 |goto 46.08,14.05
+step
+Earn the "Turkey Lurkey" Achievement |achieve 3559
+step
+_Congratulations!_
+You Earned the "Turkey Lurkey" Achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Pilgrim's Bounty\\Achievements\\The Turkinator",{
+author="support@zygorguides.com",
+description="\nHunt enough Wild Turkeys quickly enough to gain Turkey Triumph.",
+condition_suggested=function() return isevent("Pilgrim's Bounty") end,
+achieveid={3578},
+patch='30200',
+},[[
+step
+kill Wild Turkey##32820+
+|tip Kill 40 turkeys without letting your Turkey Tracker Buff expire.
+|tip You will need to fly around Elwynn Forest.
+|tip You will be given 30 seconds for each kill to find a new turkey.
+|tip Use your "Track Beast" ability and look for yellow dots on the minimap. |only Hunter
+Earn the "Turkinator" Achievement |achieve 3578 |goto Elwynn Forest/0 42.32,62.16
+step
+_Congratulations!_
+You Earned the "The Turkinator" Achievement.
+]])
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Battle for Azeroth\\Incursions")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Battle for Azeroth\\Tyrande's Ascension (Darkshore Warfront Unlock)")

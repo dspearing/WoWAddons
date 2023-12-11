@@ -1,3 +1,6 @@
+Version 1.22
+- Upload TOC and libraries
+
 Version 1.20.7
 - Fix addon version bug that broke translations
 

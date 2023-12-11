@@ -1,3 +1,51 @@
+## v1.9.1
+
+### Other
+
+- Bumped TOC for patch 10.2.
+
+## v1.9
+
+### Compatibility with Rematch 5
+
+Together with patch 10.2 Gello releases Rematch 5, which is a major change both under the hood and in the user interface. To properly integrate again we had to make changes to this addon as well. To allow for users updating with a delay, this addon is compatible with Rematch 4 and Rematch 5 at the same time.
+
+Rematch offers `/rematch reset everything` in case anything goes wrong in the update process, which this addon hooks to also save your matching scripts and tries to restore them in a reset case as well. Hopefully, there is no reason to use it though.
+
+One small change you will encounter is that the "script button" in the team list is now non-interactive: It only shows whether there is a script or not, but you can't click it anymore to edit the script. The option to create and edit the script from the right click menu is still there, of course.
+
+### New features
+
+- Added condition `hp.diff` and `hpp.diff` allowing to compare own and enemy pet HP. `hp.diff = self.hp - enemy.hp` and `hpp.diff = self.hpp - enemy.hpp`. This can be used as condition for abilities that do more than one effect but use a condition after a subset of those effects (i.e. "does double damage if health difference is bigger than x after first damage effect").
+- An alias `hp.can_be_exploded` has been added which is equivalent to `hp.can_explode` but phrased less confusingly. Prefer this in new scripts for clarity.
+- An alias `weather(x).exists` has been added which is equivalent to `weather(x)` but more verbose.
+
+### Breaking Changes
+
+- Conditions that require to specify a pet now correctly check that. `[ hp > 1 ]` was never valid and thus never true, but did not provoke an error to hint users to change it to `[ self.hp > 1 ]`. This change only breaks scripts that are currently silently broken already.
+- Plugins that use extra data in import/export strings are now forced to import the data without user choice. The plugin API has changed from `Plugin:OnImport(extra)` to `Plugin:OnImport(script, extra)` to allow for mapping between script and extra data.
+
+### Fixes
+
+- The condition `ability.duration` now correctly also takes lockdowns (not cooldowns!) into account.
+- Allow a dynamic number of spaces between action and condition to allow both `do  (x)   [ yes ]` and  `do(x)[yes]`.
+- Add missing check that conditions with comparisons compare against numbers.
+- Script editor auto completion now correctly offers `weather`, `weather.duration` and `trap` and no longer offers the wrong `self.weather`.
+- If the same ability is available multiple times, the instance with the shortest cooldown **and** lockdown is chosen now.
+- Correctly import scripts with spaces in their name.
+- Correctly refresh the script manager if a script's name or code changes.
+- No longer break when Rematch is not loaded and script browser or the share functionality is used.
+
+### Other
+
+- Some localization strings have been adjusted and errors have been fixed. If you find translation issues, please report them.
+
+## v1.8
+
+- Restored the full set of configuration options. They were removed when the tdPetBattleScript and tdPetBattleScript_Rematch addons were merged.
+- Updated for Dragonflight 10.1.5
+- Auto button now properly fits in the ElvUI theme.
+
 ## v1.7.5
 
 - Fixed locale strings

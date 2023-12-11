@@ -5,6 +5,8 @@ Author(s): sinus (sinus@sinpi.net)
 Description: A library calculating travel paths from point A to point B.
 Dependencies: None
 License: MIT
+
+Documentation: https://docs.google.com/document/d/1YmYKS-gTP8i7S51hZBFuxZVbJrXKHRObrZU9IGhdyJo
 ]]
 
 local addonName,addon = ...
@@ -402,28 +404,17 @@ do
 			if what=="spell" then 
 				start,dur,active=GetSpellCooldown(id)
 			elseif  what=="item" then 
-				if GetItemCooldown then
-					start,dur,active=GetItemCooldown(id)
-				else
-					for bagID=0, NUM_BAG_SLOTS do
-						for bagSlotID=1,C_Container.GetContainerNumSlots(bagID) do
-							local itemid = C_Container.GetContainerItemID(bagID,bagSlotID)
-							if itemid==id then
-								start,dur,active = C_Container.GetContainerItemCooldown(bagID, bagSlotID)
-							end
-						end
-					end						
-				end
+				start,dur,active=C_Container.GetItemCooldown(id)
 			else 
 				return 0,0,0
 			end
-			if dur>0 then 
+			if (dur or 0)>0 then 
 				local gcdtime,gcd = GetSpellCooldown(COOLDOWN_SPELL) -- spell created for checking global cooldowns
 				if gcdtime>0 and dur<=gcd then -- don't flash spell cooldown for gcd, but show if cooldown is greater
 					start,dur=0,0
 				end
 			end
-			return start,dur,active
+			return (start or 0),(dur or 0),(active or 0)
 		end
 
 
@@ -821,6 +812,13 @@ do
 				link21.template = "portalDungeonExit"
 			end
 
+			if conndata.arrivaltoy then
+				n1.arrivaltoy = conndata.arrivaltoy
+				n2.arrivaltoy = conndata.arrivaltoy
+				n1.arrivaltoytext = conndata.arrivaltoytext
+				n2.arrivaltoytext = conndata.arrivaltoytext
+			end
+
 			-- delayed adding, to account for optimizations using .border data above
 			if x1 and n1 then AddNode(n1,dontlink) end
 			if x2 and n2 then AddNode(n2,dontlink) end
@@ -1051,7 +1049,7 @@ do
 				for z,zone in ZGV.OrderedPairs(cont) do
 					for n,node in ipairs(zone) do
 						if node.faction~=enemyfac then
-							local map = Lib:GetMapByNameFloor(z,node.f)
+							local map = Lib:GetMapByNameFloor(z)
 							assert(map,"initialise taxis, bad zone/floor: "..z.." "..(node.f or ""))
 							node.m = map
 							node.type = "taxi"
@@ -1362,6 +1360,7 @@ do
 
 				punchStartupTime(segment)
 				Lib.startup_framecount=Lib.startup_framecount+1
+				collectgarbage()
 				yield(segment,1)
 			end
 			
@@ -1392,6 +1391,7 @@ do
 				-- TESTING... maximize speed in greenbordered zones
 
 				punchStartupTime(segment)
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1437,6 +1437,7 @@ do
 					end
 				end
 				punchStartupTime(segment)
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1476,6 +1477,7 @@ do
 					maybeYield(segment,progress/count)
 				end
 				punchStartupTime(segment)
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1495,6 +1497,7 @@ do
 				end
 				Lib.data.basenodes.borders = nil
 				punchStartupTime(segment)  --@~230ms
+				collectgarbage()
 				yield(segment,1)
 			end
 			
@@ -1510,6 +1513,7 @@ do
 				--local t2b=debugprofilestop()  print("LibRover initialization: travel ",t2b-Lib.startup_now)  Lib.startup_now=t2b
 				--@~320ms
 				punchStartupTime(segment)  --@~320ms
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1533,6 +1537,7 @@ do
 					--i=i+1  if i%1==0 then yield(segment) end
 				end
 				punchStartupTime(segment)  --@~380ms
+				collectgarbage()
 				yield(segment,1)
 			end
 			
@@ -1552,6 +1557,7 @@ do
 					Lib.data.basenodes.indoorzones[id]=nil
 				end
 				punchStartupTime(segment)  --@~380ms
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1567,6 +1573,7 @@ do
 				--local t2b=debugprofilestop()  print("LibRover initialization: travel ",t2b-Lib.startup_now)  Lib.startup_now=t2b
 				--@~320ms
 				punchStartupTime(segment)  --@~320ms
+				collectgarbage()
 				yield(segment,1)
 			end
 
@@ -1590,6 +1597,7 @@ do
 				Lib.data.basenodes.DungeonFloors=nil
 				
 				punchStartupTime(segment)  --@~380ms
+				collectgarbage()
 				yield(segment,1)
 			end
 			
@@ -1602,6 +1610,7 @@ do
 					end
 				end
 			end
+			collectgarbage()
 				
 
 			
@@ -2054,8 +2063,9 @@ do
 					if not dest then  return "no destination"  end ---------------- continue   -- destination NOT found!
 					if port.spell and not IsSpellKnown(port.spell) then  return "spell unknown"  end
 					if port.item then
-						if port.toy and not PlayerHasToy(port.item) then return "no toy"  end -- toy not collected
-						if not port.toy and (GetItemCount(port.item)==0 or not IsUsableItem(port.item)) then return "no item"  end
+						local valid = PlayerHasToy and PlayerHasToy(port.item) -- toy collected
+						valid = valid or (GetItemCount(port.item)>0 and IsUsableItem(port.item)) -- item owned
+						if not valid then return "no item or toy"  end
 					end
 					if (port.mode=="hearth" or port.mode=="ghearth" or port.mode=="dhearth") and not Lib:GetCFG("use_hearth") then  return "use_hearth off"  end  -- obviously
 					--if port.mode=="ghearth" and not Lib:GetCFG("use_ghearth") then  return "use_ghearth off"  end  -- obviously
@@ -3749,6 +3759,7 @@ do
 						:gsub("{next_port}",nextnode and nextnode.port and TryBZL(nextnode.port)..", "..TryBZL(nextmap) or TryBZL(nextmap) or "?port?")
 						:gsub("{bordermap}",nextnode and nextnode.border==node and TryBZL(MapName(nextnode)) or TryBZL(MapName(node)))
 						:gsub("{item}", ZGV:GetItemInfo(node.item or (node.link and node.link.item) or 0) or "item")
+						:gsub("{arrivaltoy}", ZGV:GetItemInfo(node.arrivaltoy or (node.link and node.link.arrivaltoy) or 0) or "arrivaltoy")
 						:gsub("{npc}",ZGV.Localizers:GetTranslatedNPC(node.npcid,node.npc) or "?")
 						:gsub("{spell}",(GetSpellInfo(node.spell) or "Teleport"))
 
@@ -4759,6 +4770,15 @@ do
 			tinsert(menu,{ text = "Test Flight Whistle", notCheckable=true, func=function() Lib.TaxiWhistlePredictor:PredictWhistle() Lib.TaxiWhistlePredictor:AnnouncePrediction() end })
 			tinsert(menu,{ text = "Use fake starting point?", isNotRadio=true, checked=self.FAKE_STARTING_POINT_SETUP or self.FAKE_STARTING_POINT, func=function() Lib:SetupFakeStartingPoint() end})
 			tinsert(menu,{ text = "Test: fake location in Garrison",  isNotRadio=true, checked=LibRover.garrison_fix_test, func=function() LibRover.garrison_fix_test = not LibRover.garrison_fix_test end })
+			tinsert(menu,{ text = "Copy player location",  notCheckable=true, func=function()
+				local x,y,m = LibRover:GetPlayerPosition()
+				local info = C_Map.GetMapInfo(m)
+				local floor = LibRover:GetFloorByMapID(m)
+				ChatFrame1EditBox:Show()
+				ChatFrame1EditBox:SetText(ChatFrame1EditBox:GetText() .. ("%s/%d %.2f,%.2f"):format(info.name,floor,x*100,y*100))
+				ChatFrame1EditBox:SetFocus(true)
+				ChatFrame1EditBox:HighlightText()
+			end})
 
 			EasyFork(menu,Lib.debugmenu,nil,0,0,"MENU",10)
 			UIDropDownFork_SetWidth(Lib.debugmenu, 300)

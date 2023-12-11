@@ -1,8 +1,7 @@
 # Auctionator
 
-## [10.1.14](https://github.com/Auctionator/Auctionator/tree/10.1.14) (2023-07-22)
-[Full Changelog](https://github.com/Auctionator/Auctionator/compare/1.1.13...10.1.14) 
+## [10.2.3](https://github.com/Auctionator/Auctionator/tree/10.2.3) (2023-12-01)
+[Full Changelog](https://github.com/Auctionator/Auctionator/compare/10.2.2...10.2.3) 
 
-- CraftingInfo: Mainline: Dialog on right-click search to set search quantity  
-- Selling: Hidden option to revert favourites sort algorithm change  
-- [Fixes #1414] Tooltip: Error in crafting orders placing UI for some reagents  
+- [Fixes #1459] Retail: Crafting Info: Error when search enchant dreaming devotion  
+- Crafting Info: Add new enchants for 10.2 for AH search  

@@ -1,5 +1,14 @@
 # LibDBCompartment
 
+## v9
+- TOC bump.
+
+## v8
+- TOC bump.
+
+## v7
+- TOC bump.
+
 ## v6
 - Dropdown buttons are now registered for any click, instead of just left and right clicks.
 

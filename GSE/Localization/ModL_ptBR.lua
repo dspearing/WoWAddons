@@ -160,6 +160,10 @@ L["Configuration"] = "Configuração"
 L["Continue"] = "Continuar"
 L["Contributed by: "] = "Com Contribuição de: "
 L["Control Keys."] = "Teclas Ctrl."
+--[[Translation missing --]]
+L["Convert"] = "Convert"
+--[[Translation missing --]]
+L["Convert this to a GSE3 Template"] = "Convert this to a GSE3 Template"
 L["Copy this link and open it in a Browser."] = "Copie este link e abra em um Navegador."
 --[[Translation missing --]]
 L["Copy this link and paste it into a chat window."] = "Copy this link and paste it into a chat window."
@@ -321,6 +325,12 @@ L["GSE: Import a Macro String."] = "GSE: Importando um Código de Macro."
 L["GSE: Left Click to open the Sequence Editor"] = "GSE: Clique para abrir o Editor de Sequências"
 L["GSE: Middle Click to open the Transmission Interface"] = "GSE: Clique com o Botão do Meio do Mouse para abrir a Interface de Transmissão"
 L["GSE: Right Click to open the Sequence Debugger"] = "GSE: Clique com o Botão Direito do Mouse para abrir o Depurador de Sequências"
+--[[Translation missing --]]
+L["GSE2 Retro Importer available."] = "GSE2 Retro Importer available."
+--[[Translation missing --]]
+L["GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."] = "GSE2 Retro interface loaded.  Type `%s/gse2 import%s` to import an old GSE2 string or `%s/gse2 edit%s` to mock up a new template using the GSE2 editor."
+--[[Translation missing --]]
+L["GSE2 Retro:"] = "GSE2 Retro:"
 L["Head"] = "Cabeça"
 L["Help Colour"] = "Cor da Ajuda"
 L["Help Information"] = "Informações de Ajuda"

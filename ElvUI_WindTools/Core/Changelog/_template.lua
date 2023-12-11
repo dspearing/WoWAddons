@@ -1,5 +1,4 @@
 local W = unpack((select(2, ...)))
-
 W.Changelog[999] = {
     RELEASE_DATE = "TBD",
     IMPORTANT = {

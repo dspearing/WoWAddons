@@ -114,9 +114,13 @@ options.superTracker = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -439,9 +443,13 @@ options.whoClicked = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -878,9 +886,13 @@ options.instanceDifficulty = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 },
                 size = {
@@ -1042,7 +1054,7 @@ options.eventTracker = {
                     order = 4,
                     type = "range",
                     name = L["Y-Offset"],
-                    desc = L["The offset of the frame from the bottom of world map. (Default is -3)"],
+                    desc = L["The offset of the frame from the bottom of the world map. (Default is -3)"],
                     min = -300,
                     max = 300,
                     step = 1
@@ -1084,9 +1096,13 @@ options.eventTracker = {
                     values = {
                         NONE = L["None"],
                         OUTLINE = L["OUTLINE"],
+                        THICKOUTLINE = L["THICKOUTLINE"],
+                        SHADOW = L["SHADOW"],
+                        SHADOWOUTLINE = L["SHADOWOUTLINE"],
+                        SHADOWTHICKOUTLINE = L["SHADOWTHICKOUTLINE"],
                         MONOCHROME = L["MONOCHROME"],
                         MONOCHROMEOUTLINE = L["MONOCROMEOUTLINE"],
-                        THICKOUTLINE = L["THICKOUTLINE"]
+                        MONOCHROMETHICKOUTLINE = L["MONOCHROMETHICKOUTLINE"]
                     }
                 }
             }
@@ -1166,7 +1182,7 @@ options.eventTracker = {
                     order = 8,
                     type = "toggle",
                     name = L["Only DF Character"],
-                    desc = L["Stop alert when the player have not entered Dragonlands yet."],
+                    desc = L["Stop alert when the player has not entered Dragonlands yet."],
                     width = 1.5,
                     hidden = function(info)
                         return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
@@ -1249,7 +1265,7 @@ options.eventTracker = {
                     order = 8,
                     type = "toggle",
                     name = L["Only DF Character"],
-                    desc = L["Stop alert when the player have not entered Dragonlands yet."],
+                    desc = L["Stop alert when the player has not entered Dragonlands yet."],
                     width = 1.5,
                     hidden = function(info)
                         return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
@@ -1332,7 +1348,7 @@ options.eventTracker = {
                     order = 8,
                     type = "toggle",
                     name = L["Only DF Character"],
-                    desc = L["Stop alert when the player have not entered Dragonlands yet."],
+                    desc = L["Stop alert when the player has not entered Dragonlands yet."],
                     width = 1.5,
                     hidden = function(info)
                         return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
@@ -1399,7 +1415,74 @@ options.eventTracker = {
                     order = 6,
                     type = "toggle",
                     name = L["Only DF Character"],
-                    desc = L["Stop alert when the player have not entered Dragonlands yet."],
+                    desc = L["Stop alert when the player has not entered Dragonlands yet."],
+                    width = 1.5,
+                    hidden = function(info)
+                        return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
+                    end
+                }
+            }
+        },
+        superBloom = {
+            order = 9,
+            type = "group",
+            inline = true,
+            name = L["Superbloom"],
+            get = function(info)
+                return E.db.WT.maps.eventTracker[info[#info - 1]][info[#info]]
+            end,
+            set = function(info, value)
+                E.db.WT.maps.eventTracker[info[#info - 1]][info[#info]] = value
+                ET:ProfileUpdate()
+            end,
+            args = {
+                enable = {
+                    order = 1,
+                    type = "toggle",
+                    name = L["Enable"]
+                },
+                alert = {
+                    order = 2,
+                    type = "toggle",
+                    name = L["Alert"]
+                },
+                sound = {
+                    order = 3,
+                    type = "toggle",
+                    name = L["Alert Sound"],
+                    hidden = function(info)
+                        return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
+                    end,
+                    desc = L["Play sound when the alert is triggered."]
+                },
+                soundFile = {
+                    order = 4,
+                    type = "select",
+                    dialogControl = "LSM30_Sound",
+                    name = L["Sound File"],
+                    hidden = function(info)
+                        return not E.db.WT.maps.eventTracker[info[#info - 1]].alert or
+                            not E.db.WT.maps.eventTracker[info[#info - 1]].sound
+                    end,
+                    values = LSM:HashTable("sound")
+                },
+                second = {
+                    order = 5,
+                    type = "range",
+                    name = L["Alert Second"],
+                    desc = L["Alert will be triggered when the remaining time is less than the set value."],
+                    min = 0,
+                    max = 3600,
+                    step = 1,
+                    hidden = function(info)
+                        return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
+                    end
+                },
+                stopAlertIfPlayerNotEnteredDragonlands = {
+                    order = 6,
+                    type = "toggle",
+                    name = L["Only DF Character"],
+                    desc = L["Stop alert when the player has not entered Dragonlands yet."],
                     width = 1.5,
                     hidden = function(info)
                         return not E.db.WT.maps.eventTracker[info[#info - 1]].alert
@@ -1408,7 +1491,7 @@ options.eventTracker = {
             }
         },
         iskaaranFishingNet = {
-            order = 9,
+            order = 10,
             type = "group",
             inline = true,
             name = L["Iskaaran Fishing Net"],

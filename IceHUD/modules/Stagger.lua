@@ -17,6 +17,12 @@ local staggerIds = {LightID, ModerateID, HeavyID}
 
 local MinLevel = 10
 
+local STAGGER_YELLOW_TRANSITION, STAGGER_RED_TRANSITION = STAGGER_YELLOW_TRANSITION, STAGGER_RED_TRANSITION
+if STAGGER_STATES then
+	STAGGER_YELLOW_TRANSITION = STAGGER_STATES.YELLOW.threshold
+	STAGGER_RED_TRANSITION = STAGGER_STATES.RED.threshold
+end
+
 StaggerBar.prototype.StaggerDuration = 0
 StaggerBar.prototype.StaggerEndTime = 0
 
@@ -137,7 +143,7 @@ function StaggerBar.prototype:CreateFrame()
 end
 
 function StaggerBar.prototype:CreateTimerBar()
-	self.timerFrame = self:BarFactory(self.timerFrame, "MEDIUM","ARTWORK", "Timer")
+	self.timerFrame = self:BarFactory(self.timerFrame, "MEDIUM", "ARTWORK", "Timer")
 
 	self.CurrScale = 0
 

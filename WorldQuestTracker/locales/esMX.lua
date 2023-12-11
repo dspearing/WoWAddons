@@ -249,6 +249,8 @@ L["S_OPTIONS_ACCESSIBILITY_EXTRATRACKERMARK"] = "Marca extra de seguimiento"
 L["S_OPTIONS_ACCESSIBILITY_SHOWBOUNTYRING"] = "Mostrar Anillo de Recompensa"
 L["S_OPTIONS_ANIMATIONS"] = "Permitir animaciones"
 L["S_OPTIONS_GF_DONT_SHOW_IFGROUP"] = "No mostrar si se estás en Grupo"
+--[[Translation missing --]]
+L["S_OPTIONS_GF_SHOWOPTIONS_BUTTON"] = "Show Options Button"
 L["S_OPTIONS_MAPFRAME_ALIGN"] = "Ventana de mapa centrada"
 L["S_OPTIONS_MAPFRAME_ERROR_SCALING_DISABLED"] = "Necesitas habilitar 'Escala de ventana de mapa' primero, ningún valor ha cambiado"
 L["S_OPTIONS_MAPFRAME_SCALE"] = "Escala de Ventana de Mapa"

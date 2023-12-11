@@ -1,10 +1,10 @@
-lightweight tag 5d8437438768e934fe2ece74e3c0d8424ab26b29 v1.10.19
+lightweight tag 09e2b6ec25482fc54c4f777e9ad26ee48155997d v1.10.22
 Author:	Antonio Lobato <aj.lobato@gmail.com>
-Date:	Thu Jul 27 22:08:21 2023 -0700
+Date:	Sun Nov 5 13:05:25 2023 -0800
 
-commit 5d8437438768e934fe2ece74e3c0d8424ab26b29
+commit 09e2b6ec25482fc54c4f777e9ad26ee48155997d
 Author: Antonio Lobato <aj.lobato@gmail.com>
-Date:   Thu Jul 27 22:08:21 2023 -0700
+Date:   Sun Nov 5 13:05:25 2023 -0800
 
-    Updated config TOC.
+    Added a small guard for a divide by 0 bug
 

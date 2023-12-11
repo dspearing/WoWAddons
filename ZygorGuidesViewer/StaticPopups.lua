@@ -189,7 +189,7 @@ function Popup.private:Minimize(popup,time,hideDelay)
 	--ZGV:ScheduleTimer(function() popup:Hide() end, hideDelay or 1.0)
 
 	if popup.noMinimizeToNC then return end
-
+	ZGV:Debug("&popup Minimize initialized: "..popup:GetDebugName())
 	local onClick = function()
 		popup.shownFromNC=true
 		if popup:GetName() == "ZygorItemPopup" then
@@ -260,7 +260,7 @@ function PopupHandler:CreatePopup(name,skin)
 		:CanDrag(1)
 		:SetAlpha(ZGV.db.profile.opacitymain) --This only gets set once per popup. --TODO it should be able to change dynamically.
 		:SetPoint("TOP",0,-50)
-		:SetFrameStrata("HIGH")
+		:SetFrameStrata("MEDIUM")
 		:Hide() -- Done before script is set. After self.private is not intialized yet.
 		:SetScript("OnShow", function(self)
 			self:AdjustSize()
@@ -492,9 +492,19 @@ end
 
 function PopupHandler:ShowPopup(popup)
 	if not popup then return end
-	if popup.floaty and ZGV.db.profile.n_popup_toast and not PopupHandler:OverrideToast() then
+	local popuptype = popup.type
+
+	--Debug messages
+	if popup.floaty then popup:Debug("Floating toast layout type available.") end
+	if ZGV.db.profile.n_popup_toast then popup:Debug("Floating toast option enabled.") end
+	if PopupHandler:OverrideToast(popup) then popup:Debug("Floating toast layout enabled, but overridden") end
+
+	--Check which layout type should be used
+	if popup.floaty and ZGV.db.profile.n_popup_toast and not PopupHandler:OverrideToast(popuptype) then
+		popup:Debug("Initializing floating toast layout")
 		popup:LayoutFloaty()
 	else
+		popup:Debug("Initializing static popup layout")
 		popup:LayoutFull()
 	end
 
@@ -502,7 +512,8 @@ function PopupHandler:ShowPopup(popup)
 
 	-- Don't show minimize button if we not suppose to or no NC
 --	popup.minimize:SetShown( not popup.noMinimize and ZGV.db.profile.n_nc_enabled )
-	popup.minimize:SetShown(not popup.noMinimize and ZGV.db.profile.n_nc_enabled and (not ZGV.db.profile.n_popup_toast or PopupHandler:OverrideToast()))
+	local override = PopupHandler:OverrideToast(popuptype)
+	popup.minimize:SetShown(not popup.noMinimize and ZGV.db.profile.n_nc_enabled and (not ZGV.db.profile.n_popup_toast or override))
 	self:TestForPositionAdjustment(popup)
 
 	popup:SavedShow() --Show was overwrote and saved here.
@@ -535,9 +546,24 @@ function PopupHandler:IsInNC(name)
 	if self.CurrentPopup and self.CurrentPopup:GetName()==name then return true end
 end
 
-function PopupHandler:OverrideToast()
+function PopupHandler:OverrideToast(popuptype)
+	if ZGV.ItemScore.Upgrades.forcefull then ZGV:Debug("&popup Floating toast layout overridden by gear popup.") end
+	if ZGV.GuideProto.forcefull then ZGV:Debug("&popup Floating toast layout overridden by a guide popup.") end
+
 	if ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then
+	--[[
+		if ZGV.Skills.forcefull then ZGV:Debug("&popup Floating toast layout overridden by skills popup.") end
 		if ZGV.ItemScore.Upgrades.forcefull or ZGV.Skills.forcefull or ZGV.GuideProto.forcefull then
+			return true
+		end
+	--]]
+		if popuptype == "gear" and ZGV.ItemScore.Upgrades.forcefull then
+			ZGV:Debug("&popup Floating toast layout overridden by gear popup.")
+			return true
+		elseif popuptype == "skills" and ZGV.Skills.forcefull then
+			ZGV:Debug("&popup Floating toast layout overridden by skills popup.")
+			return true
+		elseif ZGV.GuideProto.forcefull then
 			return true
 		end
 	else

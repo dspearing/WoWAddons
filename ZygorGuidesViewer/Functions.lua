@@ -1453,6 +1453,10 @@ function ZGV.Licence:CheckExpirationPopup()
 	if show then
 		ZGV:SetVisible(nil,true)
 		local dialog = ZGV.PopupHandler:NewPopup("ZGVLP","default")
+
+		dialog.LayoutFull = function(self) end
+		dialog.LayoutFloaty = function(self) end
+
 		dialog:SetText(text1,text2) 
 		dialog.declinebutton:Hide()
 		dialog.acceptbutton:ClearAllPoints()
@@ -2232,21 +2236,14 @@ function ZGV.F.DeepCopy(source)
     return copy
 end
 
+--[[
 function ZGV.F.GetItemCooldown(itemID)
-	if GetItemCooldown then
-		return GetItemCooldown(itemID)
-	else
-		for bagID=0, NUM_BAG_SLOTS do
-			for bagSlotID=1,C_Container.GetContainerNumSlots(bagID) do
-				local id = C_Container.GetContainerItemID(bagID,bagSlotID)
-				if id==itemID then
-					return C_Container.GetContainerItemCooldown(bagID, bagSlotID)
-				end
-			end
-		end						
-	end
-	return 0,0,0
+	-- no longer needed, GIC is now back within C_Container. leaving as wrapper
+	return C_Container.GetItemCooldown(itemID)
 end
+--]]
+ZGV.F.GetItemCooldown = C_Container.GetItemCooldown
+
 
 function ZGV.F.IsBoosted(expansion)
 
@@ -2333,3 +2330,45 @@ function ZGV.Languages:GetLanguageSkill(name)
 	end
 	return 0
 end
+
+ZGV.Replacements = {}
+function ZGV.Replacements:UpdateVisibility()
+	if ZGV.db.profile.hidetracker and ZGV.Frame:IsVisible() then
+		ZGV.Replacements.ObjectiveTracker:Hide()
+	else
+		ZGV.Replacements.ObjectiveTracker:Show()
+	end
+
+	if ZGV.db.profile.hideexptracker and ZGV.Frame:IsVisible() and ZGV.db.profile.progressbarmode=="exp" and (not ZGV.IsRetail or ZGV.Replacements.ExpBar.shownBarIndex==4) then
+		ZGV.Replacements.ExpBar:Hide()
+	else
+		ZGV.Replacements.ExpBar:Show()
+	end
+end
+
+function ZGV.Replacements:Startup()
+	ZGV.Replacements.ObjectiveTracker = ObjectiveTrackerFrame
+	ZGV.Replacements.ExpBar = MainStatusTrackingBarContainer
+
+	if ZGV.IsClassic then
+		ZGV.Replacements.ObjectiveTracker = QuestWatchFrame
+		ZGV.Replacements.ExpBar = MainMenuExpBar
+	end
+	if ZGV.IsClassicWOTLK then
+		ZGV.Replacements.ObjectiveTracker = WatchFrame
+		ZGV.Replacements.ExpBar = MainMenuExpBar
+	end
+
+
+	ZGV.Replacements.ObjectiveTracker:HookScript("OnShow",ZGV.Replacements.UpdateVisibility)
+	ZGV.Replacements.ExpBar:HookScript("OnShow",ZGV.Replacements.UpdateVisibility)
+
+	ZGV:AddMessageHandler("ZGV_FRAME_VISIBILITY",ZGV.Replacements.UpdateVisibility)
+	ZGV:AddMessageHandler("CLICKED_PROGRESSBAR",ZGV.Replacements.UpdateVisibility)
+
+	ZGV.Replacements:UpdateVisibility()
+end
+
+tinsert(ZGV.startups,{"Replacements",function(self)
+	ZGV.Replacements:Startup()
+end})

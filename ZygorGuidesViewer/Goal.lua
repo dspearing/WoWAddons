@@ -648,7 +648,9 @@ GOALTYPES['buy'] = {
 
 GOALTYPES['kill'] = {
 	parse = GOALTYPES['_item'].parse,
-	iscompletable = function(self) return self.usekillcount end,  -- this is never used, but hey.
+	iscompletable = function(self) 
+		if (self.scenario_stagenum or self.scenario_criteriaid) then return true end
+		return self.usekillcount end,  -- this is never used, but hey.
 	iscomplete = function(self)
 		-- could get completed earlier as a quest objective.
 		if self.usekillcount then --killcount version
@@ -701,6 +703,24 @@ GOALTYPES['confirm'] = {
 	end,
 	click_to_complete = true,
 }
+
+GOALTYPES['phase'] = {
+	parse = function(self,params)
+		self.phasename = params
+	end,
+	iscomplete = function(self)
+		return self.phasename and ZGV.Phases[self.phasename],true
+	end,
+	gettext = function(self) 
+		if self.phasename and ZGV.Phases[self.phasename] then
+			return L["stepgoal_phase_done"]
+		else
+			return L["stepgoal_phase"]
+		end
+	end,
+	click_to_complete = true,
+}
+
 
 GOALTYPES['reload'] = {
 	parse = function(self)
@@ -844,7 +864,10 @@ GOALTYPES['accept'] = {
 
 		return complete, complete or (ZGV.QuestDB:IsQuestPossible(self.questid)==ZGV.QuestDB.VALID_NOW)     --[[or ZGV.recentlyAcceptedQuests[id] --]]
 	end,
-	gettext = function(self,complete,complete_extra,goalcountnow,goalcountneeded,remaining,brief) return (brief and "%s" or L["stepgoal_accept"..(complete and "_done" or "")]):format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest and self.quest.title or Lretrydots(self),self.questpart))) end,
+	gettext = function(self,complete,complete_extra,goalcountnow,goalcountneeded,remaining,brief) 
+		local title = (type(self.quest)=="string" and self.quest) or (type(self.quest)=="table" and self.quest.title) or Lretrydots(self)
+		return (brief and "%s" or L["stepgoal_accept"..(complete and "_done" or "")]):format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(title,self.questpart))) 
+	end,
 }
 
 GOALTYPES['turnin'] = {
@@ -873,7 +896,10 @@ GOALTYPES['turnin'] = {
 	onenter = function(self)
 		ZGV:QuestTracking_CacheQuestLog()
 	end,
-	gettext = function(self,complete,complete_extra,goalcountnow,goalcountneeded,remaining,brief) return (brief and "%s" or L["stepgoal_turn in"..(complete and "_done" or "")]):format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(self.quest and self.quest.title or Lretrydots(self),self.questpart))) end,
+	gettext = function(self,complete,complete_extra,goalcountnow,goalcountneeded,remaining,brief) 
+		local title = (type(self.quest)=="string" and self.quest) or (type(self.quest)=="table" and self.quest.title) or Lretrydots(self)
+		return (brief and "%s" or L["stepgoal_turn in"..(complete and "_done" or "")]):format(COLOR_QUEST((self.questpart and L['questtitle_part'] or L['questtitle']):format(title,self.questpart))) 
+	end,
 }
 
 GOALTYPES['countremains'] = { -- works with hidden quests that do not show in questlog, so are not being tracked in zgv.questsbyid
@@ -1697,8 +1723,12 @@ GOALTYPES['home'] = {
 		if not self.param then return "no parameter" end
 	end,
 	iscomplete = function(self)
+		local bind = GetBindLocation("player")
+		local engname = BZR[bind] or bind or ""
+		return engname == self.param,true
+		
 		--return GetBindLocation("player")==self.home, true  -- didn't work well
-		return ZGV.recentlyHomeChanged, true
+		--return ZGV.recentlyHomeChanged, true
 	end,
 	gettext = function(self) return L["stepgoal_home"]:format(COLOR_LOC(self.param)) end,
 }
@@ -2180,6 +2210,29 @@ GOALTYPES['killboss'] = {
 	-- gettext in Goal:GetText()
 }
 
+GOALTYPES['bosshp'] = {
+	parse = function(self,params)
+		local target,hplevel = params:match("^(.+),(%d+)$")
+		GOALTYPES['_item'].parse(self,target)
+		self.hplevel = tonumber(hplevel)
+	end,
+	iscomplete = function(self)
+		for i=1,8 do
+			local unit = "boss"..i
+			if UnitExists(unit) and ZGV.GetUnitId(unit)==self.targetid then
+				local bosshp = UnitHealth(unit)
+				local bosshpmax = UnitHealthMax(unit)
+				return bosshp*100/bosshpmax <= self.hplevel,true
+			end
+		end
+		return false,true
+	end,
+	gettext = function(self)
+		return L['stepgoal_bosshp']:format(COLOR_MONSTER(self.target),self.hplevel)
+	end,
+}
+
+
 local itemset_slots = { -- slot name to slot location
 	head=2,
 	shoulders=4,
@@ -2489,6 +2542,34 @@ GOALTYPES['specialtalentactive'] = {
 	end,
 	gettext = function(self)
 		return L['stepgoal_specialtalentactive']:format(self.target or "...",self.treename or "...")
+	end,
+}
+
+
+GOALTYPES['popuptext'] = {
+	parse = function(self,text)
+		self.message,self.title = text:match("^(.*)##(.*)$")
+		self.message = self.message or text
+
+		self.message = self.message:gsub("\\\\","//")
+	end,
+	onclick = function(self)
+		if self.message then
+			ZGV:ShowDump(self.message,self.title or "Zygor Message",{copy=true,width=10,height=10,hidedev=true})
+		end
+	end,
+	gettext = function(self) 
+		return "(Click to copy the text)"
+	end,
+}
+
+GOALTYPES['devmsg'] = {
+	parse = function(self,message)
+		self.condition_visible = function() return ZGV.DEV end
+		self.message = message
+	end,
+	gettext = function(self) 
+		return "|cfffe6100DEV:|r "..self.message
 	end,
 }
 
