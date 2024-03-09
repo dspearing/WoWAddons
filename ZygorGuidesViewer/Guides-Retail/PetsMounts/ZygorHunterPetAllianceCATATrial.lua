@@ -37,7 +37,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\B
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Beast Mastery Exotic Pets\\Silithids\\Silithid Colossi\\Orange Silithid Colossi (Rare Spawn)")
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Beast Mastery Exotic Pets\\Silithids\\Silithid Colossi\\Pink Silithid Colossi",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pink Silithid Colossi pet.",
+description="This guide will walk you through obtaining a Pink Silithid Colossi pet.",
 model={37549},
 condition_suggested=function() return level>=15 and level<=30 end,
 condition_valid=function() return raceclass('Hunter') end,
@@ -88,7 +88,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\G
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Beetles\\Scarabs\\Magenta-Spotted Indigo-Teal Scarab")
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Beetles\\Scarabs\\Red-Spotted Green Scarab",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red-Spotted Green Scarab pet.",
+description="This guide will walk you through obtaining a Red-Spotted Green Scarab pet.",
 model={34912},
 condition_suggested=function() return level>=30 and level<=35 end,
 condition_valid=function() return raceclass('Hunter') end,
@@ -128,7 +128,6 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\G
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Boars\\Yellow Boar")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lions\\Black Lion")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lions\\Gold Lions")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lions\\Maned Lion (Rare Spawn)")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lions\\White Lion (Rare Spawn)")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lynxes\\Brown Lynx")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Cats\\Lynxes\\Red Lynx")
@@ -305,7 +304,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\G
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Wolves\\Worgs\\Black Worg")
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Ground Pets\\Wolves\\Worgs\\Brown and Gray Worg",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown and Gray Worg pet.",
+description="This guide will walk you through obtaining a Brown and Gray Worg pet.",
 model={18063},
 condition_suggested=function() return level>=15 and level<=30 end,
 condition_valid=function() return raceclass('Hunter') end,
@@ -363,7 +362,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\F
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two-Headed Vultures\\Red Two-Headed Vulture")
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Flying Pets\\Carrion Birds\\Two-Headed Vultures\\White Two-Headed Vulture",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Two-Headed Vulture pet.",
+description="This guide will walk you through obtaining a White Two-Headed Vulture pet.",
 model={20348},
 condition_suggested=function() return level>=15 and level<=30 end,
 condition_valid=function() return raceclass('Hunter') end,
@@ -410,7 +409,7 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\F
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Hunter Pets\\Flying Pets\\Sporebats\\Blue Sporebat")
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Flying Pets\\Sporebats\\Brown Sporebat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Sporebat pet.",
+description="This guide will walk you through obtaining a Brown Sporebat pet.",
 model={18029},
 condition_suggested=function() return level>=10 and level<=30 end,
 condition_valid=function() return raceclass('Hunter') end,

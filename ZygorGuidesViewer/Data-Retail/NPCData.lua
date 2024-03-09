@@ -6761,7 +6761,6 @@ ZGV._NPCData={
 		142068=sA|m1161|x71.80|y13.50--Boralus, Tiragarde Sound (Warpweaver Ezil)
 
 		--Horde--
-		131470=sH|m1165|x54.50|y88.45--Dazar'alor, Zuldazar (Warpweaver Hayri)
 
 		--Neutral--
 
@@ -6772,6 +6771,7 @@ ZGV._NPCData={
 		--Alliance--
 
 		--Horde--
+		131470=sH|m1165|x54.50|y88.45--Dazar'alor, Zuldazar (Warpweaver Hayri)
 
 		--Neutral--
 
@@ -6789,6 +6789,12 @@ ZGV._NPCData={
 		175825=sB|m1708|x57.38|y30.19|cKyrian--Elysian Hold, Bastion (Forgehand Phillo)--VERIFY!
 		175408=sB|m1700|x72.96|y26.62|cVenthyr--Sinfall, Revendreth (Guy Yearmo)
 		175408=sB|m1701|x46.92|y56.90|cNightFae--Heart of the Forest, Ardenweald(Guy Yearmo)--VERIFY!
+
+		------------------
+		-- Dragonflight --
+		------------------
+		185570=sB|m2112|x74.45|y56.11--Valdrakken (Warpweaver Dayelis)
+
 	]],
 	["Barber"]=[[
 
@@ -6885,6 +6891,7 @@ ZGV._NPCData={
 		---------------
 
 		--Alliance--
+		142089=sA|m1161|x64.61|y28.15--Boralus, Kul Tiras (Teri Lockfield)
 
 		--Horde--
 
@@ -6911,6 +6918,12 @@ ZGV._NPCData={
 		--Horde--
 
 		--Neutral--
+
+		------------------
+		-- Dragonflight --
+		------------------
+		197111=sB|m2112|x30.34|y49.82--Valdrakken (Varastrasza)
+		
 	]],
 	["Stable Master"]=[[
 		----------------------
@@ -7316,11 +7329,9 @@ ZGV._NPCData={
 		164724=sB|m1565|x64.75|y19.16-- , Ardenweald (Surnol)
 		180920=sB|m1970|x34.26|y66.35--Haven, Zereth Mortis (Siloh)
 
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		188445=sB|m2022|x43.17|y67.24 -- The Waking Shores/0,Cireni
 		194605=sB|m2022|x73.86|y54.39 -- The Waking Shores/0,Bron
@@ -7876,12 +7887,9 @@ ZGV._NPCData={
 		180916=sB|m1970|x34.80|y63.96--Haven, Zereth Mortis (Anap)
 		181084=sB|m1970|x61.49|y49.18--Pilgrim's Grace, Zereth Mortis (Drim)
 
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 		
 		187389=sB|m2022|x58.06|y67.61|wInside the building -- The Waking Shores/0,Sweelin
 		191025=sB|m2022|x61.89|y73.83 -- The Waking Shores/0,Lifecaller Tzadrak
@@ -8077,14 +8085,9 @@ ZGV._NPCData={
 		--Neutral--
 		156687=sB|m1670|x39.20|y39.59--Oribos, Shadowlands (Elixirist Au'pyr)
 
-
-
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 	
 		191893=sB|m2022|x60.26|y72.19 -- The Waking Shores/0,Zherrak
 		198392=sB|m2022|x76.19|y35.78|wInside the building -- The Waking Shores/0,An'timon
@@ -8094,6 +8097,10 @@ ZGV._NPCData={
 		185545=sB|m2112|x36.39|y71.70 -- Valdrakken/0,Conflago
 	]],
 	["TrainerAlchemyWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		185545=sB|m2112|x36.18|y71.10 -- Valdrakken/0,Conflago
 		185545=sB|m2112|x36.73|y72.13 -- Valdrakken/0,Conflago
 	]],
@@ -8536,23 +8543,9 @@ ZGV._NPCData={
 		--Neutral--
 		156666=sB|m1670|x40.54|y31.80--Oribos, Shadowlands (Smith Au'berk)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192563=sB|m2022|x76.44|y34.42 -- The Waking Shores/0,Kholmar Sunrunner
 		192164=sB|m2022|x25.85|y54.39 -- The Waking Shores/0,Gringot Coldsteel
@@ -8562,6 +8555,10 @@ ZGV._NPCData={
 		185546=sB|m2112|x36.96|y47.10 -- Valdrakken/0,Metalshaper Kuroko
 	]],
 	["TrainerBlacksmithingWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		185546=sB|m2112|x38.44|y53.78 -- Valdrakken/0,Metalshaper Kuroko
 		185546=sB|m2112|x37.78|y52.86 -- Valdrakken/0,Metalshaper Kuroko
 	]],
@@ -8728,10 +8725,9 @@ ZGV._NPCData={
 		--Neutral--
 		156672=sB|m1670|x46.55|y25.65--Oribos, Shadowlands (Chef Au'krut)
 
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		198094=sB|m2022|x76.45|y35.78|wInside the building -- The Waking Shores/0,Head Chef Stacks
 		193121=sB|m2022|x47.10|y82.70|wInside the building -- The Waking Shores/0,Head Chef Stacks
@@ -8891,12 +8887,9 @@ ZGV._NPCData={
 		--Neutral--
 		156683=sB|m1670|x48.20|y29.00--Oribos, Shadowlands (Imbuer Au'vresh)
 
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192055=sB|m2022|x75.83|y33.27|wBeneath the canopy -- The Waking Shores/0,Veeno
 		198903=sB|m2023|x41.35|y61.01 -- Ohn'ahran Plains/0,Asarin
@@ -8906,6 +8899,10 @@ ZGV._NPCData={
 		193744=sB|m2112|x31.03|y61.36|wBeneath the canopy -- Valdrakken/0,Soragosa
 	]],
 	["TrainerEnchantingWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		193744=sB|m2112|x30.80|y59.68 -- Valdrakken/0,Soragosa
 		193744=sB|m2112|x31.27|y62.33 -- Valdrakken/0,Soragosa
 	]],
@@ -9071,12 +9068,9 @@ ZGV._NPCData={
 		--Neutral--
 		156691=sB|m1670|x37.50|y43.20--Oribos, Shadowlands (Machinist Au'gur)
 
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192165=sB|m2022|x42.99|y66.51|wInside the building -- The Waking Shores/0,Winnie Fingerspring
 		190535=sB|m2022|x75.93|y33.21 -- The Waking Shores/0,Quizla Blastcaps
@@ -9085,6 +9079,10 @@ ZGV._NPCData={
 		185548=sB|m2112|x42.25|y48.64 -- Valdrakken/0,Clinkyclick Shatterboom
 	]],
 	["TrainerEngineeringWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		185548=sB|m2112|x42.27|y48.85 -- Valdrakken/0,Clinkyclick Shatterboom
 		185548=sB|m2112|x41.09|y48.62 -- Valdrakken/0,Clinkyclick Shatterboom
 	]],
@@ -9235,11 +9233,9 @@ ZGV._NPCData={
 		--Neutral--
 		156671=sB|m1670|x46.45|y26.20--Oribos, Shadowlands (Retriever Au'prin)
 
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		194584=sB|m2022|x63.32|y75.82 -- The Waking Shores/0,Khuri
 		190524=sB|m2022|x81.11|y29.11 -- The Waking Shores/0,Mora Cloudwalker
@@ -9414,18 +9410,9 @@ ZGV._NPCData={
 		--Neutral--
 		156686=sB|m1670|x39.79|y38.40--Oribos, Shadowlands (Selector Au'mar)
 
-
-
-
-
-
-
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192549=sB|m2022|x76.86|y34.04 -- The Waking Shores/0,Feilin Kuan
 		192010=sB|m2022|x57.44|y65.92 -- The Waking Shores/0,Szarostrasza
@@ -9583,11 +9570,9 @@ ZGV._NPCData={
 		--Neutral--
 		156685=sB|m1670|x36.65|y36.76--Oribos, Shadowlands (Scribe Au'tehshi)
 
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		198380=sB|m2022|x76.17|y35.56|wInside the building -- The Waking Shores/0,Journalist Jessamine Spitz
 		198125=sB|m2022|x57.15|y58.27|wInside the building -- The Waking Shores/0,Isarian Shadowplume
@@ -9596,6 +9581,10 @@ ZGV._NPCData={
 		185540=sB|m2112|x38.85|y73.36 -- Valdrakken/0,Talendara
 	]],
 	["TrainerInscriptionWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		185540=sB|m2112|x38.04|y73.50 -- Valdrakken/0,Talendara
 		185540=sB|m2112|x39.61|y73.69 -- Valdrakken/0,Talendara
 	]],
@@ -9741,10 +9730,9 @@ ZGV._NPCData={
 		--Neutral--
 		156670=sB|m1670|x35.59|y41.75--Oribos, Shadowlands (Appraiser Au'vesk)
 
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		198398=sB|m2022|x76.14|y33.62 -- The Waking Shores/0,Misty Catseye
 		192121=sB|m2022|x25.44|y54.21 -- The Waking Shores/0,Falron Greygold
@@ -9754,6 +9742,10 @@ ZGV._NPCData={
 		190094=sB|m2112|x40.81|y61.10|wInside the building -- Valdrakken/0,Tuluradormi
 	]],
 	["TrainerJewelcraftingWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		190094=sB|m2112|x40.74|y60.51|wInside the building -- Valdrakken/0,Tuluradormi
 		190094=sB|m2112|x39.61|y63.90|wInside the building -- Valdrakken/0,Tuluradormi
 	]],
@@ -9918,13 +9910,9 @@ ZGV._NPCData={
 		156669=sB|m1670|x42.50|y26.90--Oribos, Shadowlands (Tanner Au'qil)
 		169854=sB|m1536|x30.33|y32.63--House of Constructs, Maldraxxus (Hildir)
 
-
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192048=sB|m2022|x76.63|y34.85 -- The Waking Shores/0,Deirdre Flemmin
 		196628=sB|m2023|x39.31|y55.42 -- Ohn'ahran Plains/0,Ekhi
@@ -9934,7 +9922,12 @@ ZGV._NPCData={
 		185551=sB|m2112|x28.51|y61.33|wBeneath the canopy -- Valdrakken/0,Hideshaper Koruz
 	]],
 	["TrainerLeatherworkingWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		185551=sB|m2112|x28.19|y62.96|wBeneath the canopy -- Valdrakken/0,Hideshaper Koruz
+		184935=sB|m2023|x84.58|y22.99 -- Ohn'ahran Plains/0,Shurom
 	]],
 
 	["TrainerMining"]=[[
@@ -10091,13 +10084,9 @@ ZGV._NPCData={
 		--Neutral--
 		156668=sB|m1670|x39.54|y33.47--Oribos, Shadowlands (Excavationist Au'fer)
 
-
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		187261=sB|m2022|x76.35|y34.64 -- The Waking Shores/0,Grun Ashbeard
 		198902=sB|m2023|x62.27|y42.21 -- Ohn'ahran Plains/0,Apprentice Gekiruun
@@ -10260,12 +10249,9 @@ ZGV._NPCData={
 		--Neutral--
 		156667=sB|m1670|x42.40|y27.40--Oribos, Shadowlands (Flayer Au'khem)
 
-
-
-
-
-
-
+		------------------
+		-- Dragonflight --
+		------------------
 
 		192558=sB|m2022|x76.69|y34.79 -- The Waking Shores/0,Toninaar
 		194185=sB|m2023|x84.52|y23.20 -- Ohn'ahran Plains/0,Makhul
@@ -10444,6 +10430,10 @@ ZGV._NPCData={
 		193649=sB|m2112|x31.93|y67.18 -- Valdrakken/0,Threadfinder Fulafong
 	]],
 	["TrainerTailoringWorkshop"]=[[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		195850=sB|m2112|x31.65|y65.31|wBeneath the canopy -- Valdrakken/0,Threadfinder Pax
 		193649=sB|m2112|x31.93|y67.18 -- Valdrakken/0,Threadfinder Fulafong
 	]],
@@ -10580,6 +10570,10 @@ ZGV._NPCData={
 		--Neutral--
 	]],
 	["TrainerPortal"] = [[
+		------------------
+		-- Dragonflight --
+		------------------
+
 		198895=sB|m2112|x59.21|y42.87|wInside the building -- Valdrakken/0,Alregosa
 	]],
 	["Main City"]=[[
@@ -11329,7 +11323,8 @@ ZGV._MailboxData = [[
 	------------------
 
 	--Neutral--
---Hero's Rest Regions	B|m1533|x53.24|y47.22|tM--Hero's Rest, Bastion
+	--Hero's Rest Regions	
+	sB|m1533|x53.24|y47.22|tM--Hero's Rest, Bastion
 	sB|m1970|x35.00|y63.91|tM--Haven, Zereth Mortis
 	sB|m1970|x61.57|y49.38|tM--Pilgrim's Grace, Zereth Mortis
 ]]

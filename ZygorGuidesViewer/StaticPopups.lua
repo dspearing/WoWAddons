@@ -162,6 +162,7 @@ function Popup.private:Escape(popup)
 	popup:OnEscape()
 
 	popup.private:Hide(popup)
+	ZGV.NotificationCenter:HideFloatingToast()
 end
 
 function Popup.private:More(popup)

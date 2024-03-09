@@ -80,6 +80,9 @@ do
 
 	local default_config = {
 		profile = {
+			ignore_maps = {
+				[1978] = false, --dragon isles
+			},
 			filters = {
 				pet_battles = true,
 				pvp = true,
@@ -92,6 +95,12 @@ do
 				trade_skill = true,
 				reputation_token = true,
 				racing = true,
+			},
+
+			dragon_racing = {
+				minimap_enabled = true,
+				minimap_scale = 1,
+				minimap_track_color = {1, 1, 1},
 			},
 
 			sort_order = {
@@ -170,7 +179,10 @@ do
 				summary_widgets_per_row = 8,
 			},
 
-			disable_world_map_widgets = false,
+			disable_world_map_widgets = false, --a
+			show_filter_button = false, --a
+			show_sort_button = false, --a
+			show_timeleft_button = true, --a
 
 			show_emissary_info = true,
 
@@ -188,6 +200,9 @@ do
 			show_world_shortcuts = false,
 
 			last_news_time = 0,
+
+			world_summary_alpha = 0.843, --parei fazendo a substituição dos valores hardcoded to these values, parei na criação da opção de mudar o alpha, parei procurando as funções que atualiza of frames com o novo alpha
+			worldmap_widget_alpha = 0.843,
 
 			hoverover_animations = true, --hover and shown slider animations
 			anchor_options = {}, --store the anchor options of each anchor
@@ -407,9 +422,6 @@ do
 		WorldMapSquareSize = 24,
 		TimeBlipSize = 14,
 	}
-
-	WorldQuestTrackerAddon.WorldWidgetAlpha = .75
-	WorldQuestTrackerAddon.WorldWidgetSmallAlpha = .75
 
 	WorldQuestTracker.ChangeLogTable = {}
 end

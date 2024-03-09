@@ -2294,7 +2294,7 @@ You Earned the "Taking Care of Business" Achievement
 ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Dungeons & Raids\\Shadowlands Raids\\Burning Bright",{
 author="support@zygorguides.com",
 description="To earn this achievement, complete the Castle Nathria raid achievement contained within this guide.",
-achieveid={14523},
+achieveid={14608},
 patch='90001',
 startlevel=60,
 keywords={"Shadowlands", "Raids", "Glory", "of", "the", "Nathria", "Raider", "Castle", "Huntsman", "Altimor"},
@@ -2309,7 +2309,7 @@ Defeat the Sun King's Salvation Encounter
 |tip The "Smouldering Brazier" must be hit by "Smoldering Plumage", left behind by Phoenix.
 |tip The easiest way to achieve this is stacking on top of each brazier until they are lit.
 |tip The Phoenix will track a player, so no need to stack for that one.
-Earn the "Burning Bright" Achievement |achieve 14523
+Earn the "Burning Bright" Achievement |achieve 14608
 step
 _Congratulations!_
 You Earned the "Burning Bright" Achievement

@@ -2,15 +2,17 @@ local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("EventsC") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight\\Emerald Dreamsurge (Thaldraszus)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight\\Emerald Dreamsurge (The Waking Shores)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight\\Emerald Dreamsurge (Ohn'ahran Plains)")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight\\Emerald Dreamsurge (The Azure Span)")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\Azerothian Archives!")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\The Big Dig: Traitor's Rest")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (Thaldraszus)")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (The Waking Shores)")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (Ohn'ahran Plains)")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (The Azure Span)")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Secrets of Azeroth\\Secrets of Azeroth")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Secrets of Azeroth\\Community Rumors")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Secrets of Azeroth\\Secrets of Azeroth Mimiron's Jumpjets Mount")
-ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight\\The Emerald Dream Superbloom")
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\19th Anniversary Event",{
+ZygorGuidesViewer:RegisterGuidePlaceholder("Events Guides\\Dragonflight (60-70)\\The Emerald Dream Superbloom")
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\19th Anniversary Event",{
 author="support@zygorguides.com",
 description="This guide will help you complete the 19th anniversary event weekly quest.",
 startlevel=30,

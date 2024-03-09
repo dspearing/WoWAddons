@@ -128,7 +128,7 @@ function rematch.queue:UpdateTopPicks()
     end
     -- if still here, then not enough preferred pets to fill 3 top picks; try unpreferred
     for _,info in ipairs(settings.LevelingQueue) do
-        if not info.preferred then
+        if not info.preferred and rematch.petInfo:Fetch(info.petID).isSummonable then
             topPicks[pick] = info.petID
             pick = pick + 1
             if pick > 3 then
@@ -235,7 +235,7 @@ end
 
 -- returns true if the petID can level (is owned, can battle, has a level and is under 25)
 function rematch.queue:PetIDCanLevel(petID)
-    local petInfo = rematch.petInfo:Fetch(petID)
+    local petInfo = rematch.altInfo:Fetch(petID)
     return petInfo.isOwned and petInfo.canBattle and petInfo.level and petInfo.level<25
 end
 

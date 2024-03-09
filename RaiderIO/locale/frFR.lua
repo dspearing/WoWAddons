@@ -1,8 +1,10 @@
--- Generated from CurseForge on Tue Jul  4 09:09:14 UTC 2023
-local ns = select(2, ...) ---@type ns @The addon namespace.
+-- Generated from CurseForge on Fri Feb 23 08:45:56 UTC 2024
+local ns = select(2, ...) ---@class ns @The addon namespace.
 
 if ns:IsSameLocale("frFR") then
+
 	local L = ns.L or ns:NewLocale()
+	ns.L = L
 
 	L.LOCALE_NAME = "frFR"
 
@@ -23,27 +25,17 @@ L["BEST_FOR_DUNGEON"] = "Meilleure clé pour le donjon"
 L["BEST_RUN"] = "Meilleure clé"
 L["BEST_SCORE"] = "Meilleur Score M+ (%s)"
 L["CANCEL"] = "Annuler"
-L["CHANGES_REQUIRES_UI_RELOAD"] = [=[Vos changements ont été sauvegardé, mais il faut recharger l'interface pour qu'elles prennent effets.
-
-Voulez-vous faire cela maintenant ?]=]
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_MPLUS"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_MPLUS_WITH_SCORE"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_PVP"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_RAID_DEFAULT"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_RAID_HEROIC"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_RAID_MYTHIC"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_RAID_NORMAL"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_GUILD_SOCIAL"] = ""--]] 
---[[Translation missing --]]
---[[ L["CHARACTER_LF_TEAM_MPLUS_DEFAULT"] = ""--]] 
+L["CHANGES_REQUIRES_UI_RELOAD"] = [=[Vos modifications ont été enregistrées, mais vous devez recharger votre interface pour qu'elles prennent effet. 
+Souhaitez-vous le faire maintenant ?]=]
+L["CHARACTER_LF_GUILD_MPLUS"] = "Cherche une guilde Mythique +"
+L["CHARACTER_LF_GUILD_MPLUS_WITH_SCORE"] = "Cherche une guilde Mythique +"
+L["CHARACTER_LF_GUILD_PVP"] = "Cherche une guilde JcJ"
+L["CHARACTER_LF_GUILD_RAID_DEFAULT"] = "Cherche une guilde pour les raids"
+L["CHARACTER_LF_GUILD_RAID_HEROIC"] = "Cherche une guilde pour les raids héroïques"
+L["CHARACTER_LF_GUILD_RAID_MYTHIC"] = "Cherche une guilde pour les raids mythiques"
+L["CHARACTER_LF_GUILD_RAID_NORMAL"] = "Cherche une guilde pour les raids \"normal\""
+L["CHARACTER_LF_GUILD_SOCIAL"] = "Cherche une guilde pour discuter"
+L["CHARACTER_LF_TEAM_MPLUS_DEFAULT"] = "Cherche une équipe Mythique +"
 --[[Translation missing --]]
 --[[ L["CHARACTER_LF_TEAM_MPLUS_WITH_SCORE"] = ""--]] 
 L["CHECKBOX_DISPLAY_WEEKLY"] = "Hebdomadaire"
@@ -75,22 +67,25 @@ Cliquez sur Confirmer pour recharger votre interface.]=]
 --[[Translation missing --]]
 --[[ L["DISABLE_RWF_MODE_RELOAD"] = ""--]] 
 L["DPS"] = "DPS"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_AA"] = ""--]] 
+L["DUNGEON_SHORT_NAME_AA"] = "AA"
+L["DUNGEON_SHORT_NAME_AD"] = "AD"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_AV"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_BH"] = ""--]] 
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_COS"] = ""--]] 
-L["DUNGEON_SHORT_NAME_DOS"] = "DOS"
+L["DUNGEON_SHORT_NAME_BRH"] = "BdF"
+L["DUNGEON_SHORT_NAME_COS"] = "CoS"
+L["DUNGEON_SHORT_NAME_DHT"] = "FS"
+L["DUNGEON_SHORT_NAME_DOS"] = "AC"
+L["DUNGEON_SHORT_NAME_EB"] = "LFé"
+L["DUNGEON_SHORT_NAME_FALL"] = "AdIRdG"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_FH"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_GD"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_GMBT"] = ""--]] 
-L["DUNGEON_SHORT_NAME_HOA"] = "HOA"
+L["DUNGEON_SHORT_NAME_HOA"] = "SdE"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_HOI"] = ""--]] 
 --[[Translation missing --]]
@@ -99,15 +94,14 @@ L["DUNGEON_SHORT_NAME_HOA"] = "HOA"
 --[[ L["DUNGEON_SHORT_NAME_ID"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_LOWR"] = ""--]] 
-L["DUNGEON_SHORT_NAME_MISTS"] = "MISTS"
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_NELT"] = ""--]] 
---[[Translation missing --]]
---[[ L["DUNGEON_SHORT_NAME_NL"] = ""--]] 
+L["DUNGEON_SHORT_NAME_MISTS"] = "BdTS"
+L["DUNGEON_SHORT_NAME_NELT"] = "NELT"
+L["DUNGEON_SHORT_NAME_NL"] = "RdN"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_NO"] = ""--]] 
 L["DUNGEON_SHORT_NAME_NW"] = "NW"
-L["DUNGEON_SHORT_NAME_PF"] = "PF"
+L["DUNGEON_SHORT_NAME_PF"] = "MP"
+L["DUNGEON_SHORT_NAME_RISE"] = "AdIcdM"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_RLP"] = ""--]] 
 --[[Translation missing --]]
@@ -119,6 +113,7 @@ L["DUNGEON_SHORT_NAME_SOA"] = "SOA"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_TJS"] = ""--]] 
 L["DUNGEON_SHORT_NAME_TOP"] = "TOP"
+L["DUNGEON_SHORT_NAME_TOTT"] = "TdM"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_ULD"] = ""--]] 
 --[[Translation missing --]]
@@ -129,6 +124,7 @@ L["DUNGEON_SHORT_NAME_TOP"] = "TOP"
 --[[ L["DUNGEON_SHORT_NAME_VOTW"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_VP"] = ""--]] 
+L["DUNGEON_SHORT_NAME_WM"] = "MM"
 --[[Translation missing --]]
 --[[ L["DUNGEON_SHORT_NAME_WORK"] = ""--]] 
 --[[Translation missing --]]
@@ -145,6 +141,10 @@ L["ENABLE_NO_SCORE_COLORS_DESC"] = "Tous les scores seront affichés en blanc."
 L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS"] = "Autoriser les améliorations du client RaiderIO "
 L["ENABLE_RAIDERIO_CLIENT_ENHANCEMENTS_DESC"] = "Activer cette option vous permettra d’afficher les données détaillées du profil RaiderIO téléchargées à partir du client RaiderIO pour les personnages réclamés. "
 --[[Translation missing --]]
+--[[ L["ENABLE_REPLAY"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["ENABLE_REPLAY_DESC"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["ENABLE_RWF_MODE_BUTTON"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["ENABLE_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
@@ -157,12 +157,10 @@ L["GENERAL_TOOLTIP_OPTIONS"] = "Options générales de l'infobulle"
 L["GUILD_BEST_SEASON"] = "Guilde: Top Saison"
 L["GUILD_BEST_TITLE"] = "Record Raider.IO"
 L["GUILD_BEST_WEEKLY"] = "Guilde : Top Semaine"
---[[Translation missing --]]
---[[ L["GUILD_LF_MPLUS_DEFAULT"] = ""--]] 
+L["GUILD_LF_MPLUS_DEFAULT"] = "Recruter des joueurs Mythique +"
 --[[Translation missing --]]
 --[[ L["GUILD_LF_MPLUS_WITH_SCORE"] = ""--]] 
---[[Translation missing --]]
---[[ L["GUILD_LF_PVP"] = ""--]] 
+L["GUILD_LF_PVP"] = "Recruter des joueurs JcJ"
 --[[Translation missing --]]
 --[[ L["GUILD_LF_RAID_DEFAULT"] = ""--]] 
 --[[Translation missing --]]
@@ -178,6 +176,8 @@ L["HIDE_OWN_PROFILE"] = "Masquer l'infobulle du profil RaiderIO personnel "
 L["HIDE_OWN_PROFILE_DESC"] = "Lorsque cette option est activée, cette option n’affichera pas votre propre info-bulle de profil RaiderIO, mais peut afficher celles des autres joueurs s’ils en ont une. "
 L["INVERSE_PROFILE_MODIFIER"] = "Inverser le modificateur de l'info bulle"
 L["INVERSE_PROFILE_MODIFIER_DESC"] = "Activer cette option va inverser le comportement de l'info-bulle lorsque l'on utilise les touches (shift/ctrl/alt)."
+--[[Translation missing --]]
+--[[ L["LOCALE_NAME"] = ""--]] 
 L["LOCKING_PROFILE_FRAME"] = "RaiderIO: Verrouiller le cadre de profil M+. "
 L["MAINS_BEST_SCORE_BEST_SEASON"] = "Meilleur score M+ du personnage principal (%s)"
 L["MAINS_RAID_PROGRESS"] = "Progression du personnage principal "
@@ -209,6 +209,15 @@ L["PROFILE_BEST_RUNS"] = "Meilleurs Donjons"
 L["PROVIDER_NOT_LOADED"] = "|cffFF0000Attention:|r |cffFFFFFF%s|r Aucune donnée trouvée pour votre faction actuelle . Veuillez vérifier vos paramètres |cffFFFFFF/raiderio|r et activer les données d'info-bulle pour |cffFFFFFF%s|r."
 --[[Translation missing --]]
 --[[ L["PVP_DATA_HEADER"] = ""--]] 
+L["RAID_BOSS_ATDH_1"] = "Racine-Noueuse"
+L["RAID_BOSS_ATDH_2"] = "Igira la Cruelle"
+L["RAID_BOSS_ATDH_3"] = "Volcoross"
+L["RAID_BOSS_ATDH_4"] = "Conseil des rêves"
+L["RAID_BOSS_ATDH_5"] = "Larodar, gardien de la flamme"
+L["RAID_BOSS_ATDH_6"] = "Nymue, la trame du cercle"
+L["RAID_BOSS_ATDH_7"] = "Fumeron"
+L["RAID_BOSS_ATDH_8"] = "Tindral Vifsage, prophète de flamme"
+L["RAID_BOSS_ATDH_9"] = "Fyrakka le Flamboyant"
 --[[Translation missing --]]
 --[[ L["RAID_BOSS_ATSC_1"] = ""--]] 
 --[[Translation missing --]]
@@ -341,22 +350,14 @@ L["RAID_BOSS_CN_9"] = "Généraux de la Légion de Pierre"
 --[[ L["RAID_BOSS_SOD_8"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RAID_BOSS_SOD_9"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_1"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_2"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_3"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_4"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_5"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_6"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_7"] = ""--]] 
---[[Translation missing --]]
---[[ L["RAID_BOSS_VOTI_8"] = ""--]] 
+L["RAID_BOSS_VOTI_1"] = "Eranog"
+L["RAID_BOSS_VOTI_2"] = "Terros"
+L["RAID_BOSS_VOTI_3"] = "Le Conseil primordial"
+L["RAID_BOSS_VOTI_4"] = "Sennarth, la Glaciale"
+L["RAID_BOSS_VOTI_5"] = "Dathéa, transcendée"
+L["RAID_BOSS_VOTI_6"] = "Kurog Totem-Sinistre"
+L["RAID_BOSS_VOTI_7"] = "Garde-couvée Diurna"
+L["RAID_BOSS_VOTI_8"] = "Raszageth la Mange-tempêtes"
 L["RAID_DIFFICULTY_NAME_HEROIC"] = "Héroïque"
 L["RAID_DIFFICULTY_NAME_MYTHIC"] = "Mythique"
 L["RAID_DIFFICULTY_NAME_NORMAL"] = "Normal"
@@ -384,6 +385,52 @@ L["RELOAD_NOW"] = "Recharger l'interface maintenant"
 --[[Translation missing --]]
 --[[ L["RELOAD_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
 --[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_DESC"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_GUILD_BEST"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_MOST_RECENT"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_PERSONAL_BEST"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_STARRED"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_AUTO_SELECTION_TEAM_BEST"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_BACKGROUND_COLOR"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_BACKGROUND_COLOR_DESC"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_DISABLE_CONFIRM"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_FRAME_ALPHA"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_FRAME_ALPHA_DESC"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_COPY_URL"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_DISABLE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_DOCK"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_LOCK"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_POSITION"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_REPLAY"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_STYLE"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_TIMING"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_UNDOCK"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_MENU_UNLOCK"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_REPLAY_CHANGING"] = ""--]] 
+--[[Translation missing --]]
 --[[ L["REPLAY_SETTINGS_TOOLTIP"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["REPLAY_STYLE_TITLE_MDI"] = ""--]] 
@@ -391,6 +438,14 @@ L["RELOAD_NOW"] = "Recharger l'interface maintenant"
 --[[ L["REPLAY_STYLE_TITLE_MODERN"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["REPLAY_STYLE_TITLE_MODERN_COMPACT"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_STYLE_TITLE_MODERN_SPLITS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_SUMMARY_LOGGED"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_TIMING_TITLE_BOSS"] = ""--]] 
+--[[Translation missing --]]
+--[[ L["REPLAY_TIMING_TITLE_DUNGEON"] = ""--]] 
 --[[Translation missing --]]
 --[[ L["RWF_MINIBUTTON_TOOLTIP"] = ""--]] 
 --[[Translation missing --]]
@@ -482,5 +537,4 @@ L["WARNING_LOCK_POSITION_FRAME_AUTO"] = "RaiderIO: Vous devez d'abord désactive
 --[[Translation missing --]]
 --[[ L["WIPE_RWF_MODE_BUTTON_TOOLTIP"] = ""--]] 
 
-	ns.L = L
 end

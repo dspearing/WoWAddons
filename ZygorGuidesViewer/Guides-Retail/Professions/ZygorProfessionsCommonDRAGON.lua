@@ -582,46 +582,116 @@ Reach Skill Level 25 in Dragon Isles Alchemy |complete skill("Dragon Isles Alche
 Click Here to Load the "Dragon Isles Alchemy 1-100" Guide |confirm |loadguide "Profession Guides\\Alchemy\\Leveling Guides\\Dragon Isles Alchemy 1-100" |or
 step
 click Frostforged Potion##380559
-collect Frostforged Potion##198663 |goto The Waking Shores/0 55.15,81.12 |q 70274 |future
+collect Frostforged Potion##198663 |goto The Waking Shores/0 55.15,81.12 |q 70289 |future
 step
 use the Frostforged Potion##198663
-Study the Frostforged Potion |complete itemcount(198663) == 0
+Study the Frostforged Potion |q 70274 |future
+step
+talk Grigori Vialtry##194829
+Tell him _"Teach me about alchemy."_
+Learn About Alchemy |q 70247 |goto The Waking Shores/0 60.83,75.90 |future
 step
 click Well Insulated Mug##380590
-collect Well Insulated Mug##198685 |goto The Waking Shores/0 25.11,74.11 |q 70289 |future
+collect Well Insulated Mug##198685 |goto The Waking Shores/0 25.11,74.11 |q 70305 |future
 step
 use the Well Insulated Mug##198685
-Study the Well Insulated Mug |complete itemcount(198685) == 0
+Study the Well Insulated Mug |complete itemcount(198685) == 0 and completedq(70289)
 step
 Enter the building |goto Ohn'ahran Plains/0 77.18,82.85 < 30 |walk
 click Canteen of Suspicious Water##380611
 |tip In the back of the cave.
-collect Canteen of Suspicious Water##198710 |goto Ohn'ahran Plains/0 79.24,83.75 |q 70305 |future
+collect Canteen of Suspicious Water##198710 |goto Ohn'ahran Plains/0 79.24,83.75 |q 70208 |future
 step
 use the Canteen of Suspicious Water##198710
-Study the Canteen of Suspicious Water |complete itemcount(198710) == 0
+Study the Canteen of Suspicious Water |complete itemcount(198710) == 0 and completedq(70305)
 step
 click Experimental Decay Cauldron##380457
-collect Experimental Decay Sample##198599 |goto The Azure Span/0 16.31,38.50 |q 70208 |future
+collect Experimental Decay Sample##198599 |goto The Azure Span/0 16.31,38.50 |q 70309 |future
 step
 use the Experimental Decay Sample##198599
-Study the Experimental Decay Sample |complete itemcount(198599) == 0
+Study the Experimental Decay Sample |complete itemcount(198599) == 0 and completedq(70208)
 step
 click Small Basket of Firewater Powder##380616
-collect Firewater Powder Sample##198712 |goto The Azure Span/0 67.06,13.16 |q 70309 |future
+collect Firewater Powder Sample##198712 |goto The Azure Span/0 67.06,13.16 |q 70278 |future
 step
 use the Firewater Powder Sample##198712
-Study the Firewater Powder Sample |complete itemcount(198712) == 0
+Study the Firewater Powder Sample |complete itemcount(198712) == 0 and completedq(70309)
 step
-clicknpc Docile Cub##194855+
-|tip Click Docile Cubs around the camp and drop one into each cauldron.
-click Mysterious Cauldron+
-|tip Click each cauldron to drop a carried cub in.
-click Furry Gloop
-collect Furry Gloop##201003 |goto Thaldraszus/0 55.23,30.54 |q 70278 |future
+click Discarded Toy
+Pick Up the Toy |havebuff spell:384769 |goto Thaldraszus/0 55.29,30.66 |q 70301 |future
 step
-use the Furry Gloop##201003
-Study the Furry Gloop |complete itemcount(201003) == 0
+click Cauldron
+|tip Click the yellow cauldron.
+Throw the Toy Into the Cauldron |havebuff spell:384785 |goto 55.26,30.59 |q 70301 |future
+step
+click Discarded Toy
+Pick Up the Toy |havebuff spell:384769 |goto 55.91,31.15 |q 70301 |future
+step
+click Cauldron
+|tip Click the purple cauldron.
+Throw the Toy Into the Cauldron |havebuff spell:384786 |goto 55.25,30.53 |q 70301 |future
+step
+click Discarded Toy
+Pick Up the Toy |havebuff spell:384769 |goto 55.61,30.02 |q 70301 |future
+step
+click Cauldron
+|tip Click the blue cauldron.
+Throw the Toy Into the Cauldron |havebuff spell:384788 |goto 55.24,30.49 |q 70301 |future
+step
+use the Tasty Candy##203471
+Study the Tasty Candy |complete itemcount(203471) == 0 and completedq(70278)
+step
+click Contraband Concoction##380605
+|tip In the grass next to the table and floating book.
+collect Contraband Concoction##198697 |goto Thaldraszus/0 59.53,38.47 |q 75649 |future
+step
+use the Contraband Concoction##198697
+Study the Contraband Concoction |complete itemcount(198697) == 0 and completedq(70301)
+step
+click Marrow-Ripened Slime##401238
+collect Marrow-Ripened Slime##205212 |goto Zaralek Cavern/0 62.10,41.12 |q 75646 |future
+step
+use the Marrow-Ripened Slime##205212
+Study the Marrow-Ripened Slime |complete itemcount(205212) == 0 and completedq(75649)
+step
+click Malnourished Specimen##401236
+collect Nutrient Diluted Protofluid##205211 |goto Zaralek Cavern/0 52.63,18.30 |q 75651 |future
+step
+use the Nutrient Diluted Protofluid##205211
+Study the Nutrient Diluted Protofluid |complete itemcount(205211) == 0 and completedq(75646)
+step
+click Suspicious Mold##401240
+|tip It hangs underneath the stone bridge.
+collect Suspicious Mold##205213 |goto Zaralek Cavern/0 40.44,59.22 |q 78269 |future
+step
+use the Suspicious Mold##205213
+Study the Suspicious Mold |complete itemcount(205213) == 0 and completedq(75651)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+Follow the path down |goto Barrows of Reverie/0 64.87,49.71 < 7 |walk
+click Splash Potion of Narcolepsy##410434
+|tip Continue following the path around down into the cave.
+|tip It's in a small alcove inside the cave.
+collect Splash Potion of Narcolepsy##210185 |goto Barrows of Reverie/0 50.91,49.43 |q 78264 |future
+step
+use the Splash Potion of Narcolepsy##210185
+Study the Splash Potion of Narcolepsy |complete itemcount(210185) == 0 and completedq(78269)
+step
+click Half-Filled Dreamless Sleep Potion##410426
+collect Half-Filled Dreamless Sleep Potion##210184 |goto The Emerald Dream/0 54.05,32.64 |q 78275 |future
+step
+use the Half-Filled Dreamless Sleep Potion##210184
+Study the Half-Filled Dreamless Sleep Potion |complete itemcount(210184) == 0 and completedq(78264)
+step
+click Root of the Problem##410442
+collect Blazeroot##210190 |goto The Emerald Dream/0 36.21,46.63
+step
+use the Blazeroot##210190
+Study the Blazeroot |complete itemcount(210190) == 0 and completedq(78275)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Blacksmithing\\Leveling Guides\\Dragon Isles Blacksmithing 1-100",{
@@ -1310,20 +1380,20 @@ path	55.12,78.57	56.50,71.05	60.66,63.30	64.02,60.01
 Follow the path
 click Draconium Deposit##379248
 |tip These share a spawn with Serevite Deposits.
-collect 5 Draconium Ore##189143 |or |q 70230 |future
+collect 5 Draconium Ore##189143 |or |q 70312 |future
 _Or_
-collect 5 Draconium Ore##188658 |or |q 70230 |future
+collect 5 Draconium Ore##188658 |or |q 70312 |future
 _Or_
-collect 5 Draconium Ore##190311 |or |q 70230 |future
+collect 5 Draconium Ore##190311 |or |q 70312 |future
 |tip Farm them with Mining or purchase them from the auction house.
 |tip Any quality will work, you only need one.
 step
 label "Collect_Khaz'gorite_Ore_71433"
-collect 4 Khaz'gorite Ore##190312 |or |q 70230 |future
+collect 4 Khaz'gorite Ore##190312 |or |q 70312 |future
 _Or_
-collect 4 Khaz'gorite Ore##190313 |or |q 70230 |future
+collect 4 Khaz'gorite Ore##190313 |or |q 70312 |future
 _Or_
-collect 4 Khaz'gorite Ore##190314 |or |q 70230 |future
+collect 4 Khaz'gorite Ore##190314 |or |q 70312 |future
 |tip Farm them with Mining or purchase them from the auction house.
 |tip Any quality will work, you only need one.
 step
@@ -1335,7 +1405,7 @@ path	52.55,32.60	51.81,33.07
 Kill Elemental enemies around this area
 collect 10 Rousing Earth##190315 |n
 use Rousing Earth##190315
-collect Awakened Earth##190316 |q 70230 |future
+collect Awakened Earth##190316 |q 70312 |future
 |tip These have a chance to be gathered from "Hardened" and "Primal" nodes.
 step
 map The Waking Shores
@@ -1346,7 +1416,7 @@ kill Blazing Manifestation##186336+
 collect 10 Rousing Fire##190320 |n
 |tip They can also be gathered from "Molten" and "Primal" Mining nodes.
 use Rousing Fire##190320
-collect Awakened Fire##190321 |q 70230 |future
+collect Awakened Fire##190321 |q 70312 |future
 step
 create 1 Primal Molten Alloy##365735,Dragon Isles Blacksmithing,1 total |n
 |tip Craft this next to the forge inside the base of the broken tower.
@@ -1354,16 +1424,21 @@ create 1 Primal Molten Alloy##365735,Dragon Isles Blacksmithing,1 total |n
 click Glimmer of Wisdom##380516
 |tip It looks like a tiny sparkle in the Slack Tub.
 |tip Your cursor will change to a bag icon when you are hovering over it.
-collect Glimmer of Blacksmithing Wisdom##198791 |goto The Waking Shores/0 56.35,19.50 |q 70230 |future
+collect Glimmer of Blacksmithing Wisdom##198791 |goto The Waking Shores/0 56.35,19.50 |q 70312 |future
 step
 use the Glimmer of Blacksmithing Wisdom##198791
-Study the Glimmer of Blacksmithing Wisdom |complete itemcount(198791) == 0
+Study the Glimmer of Blacksmithing Wisdom |complete itemcount(198791) == 0 and completedq(70230)
 step
 click Curious Ingots##380619
-collect Curious Ingots##201005 |goto The Waking Shores/0 65.60,25.69 |q 70312 |future
+collect Curious Ingots##201005 |goto The Waking Shores/0 65.60,25.69 |q 70296 |future
 step
 use the Curious Ingots##201005
-Study the Curious Ingots |complete itemcount(201005) == 0
+Study the Curious Ingots |complete itemcount(201005) == 0 and completedq(70312)
+step
+talk Grekka Anvilsmash##194829
+|tip She is outside the tower sitting next to it.
+Tell her _"Teach me about Blacksmithing."_
+Learn About Blacksmithing |q 70250 |goto The Waking Shores/0 43.27,66.63 |future
 step
 click Appetizing Ingot+
 |tip Click the three ingots on the ground.
@@ -1371,57 +1446,130 @@ kill Hungry Hungry Lava##194878
 |tip It will spawn when the ingots melt.
 click Singed Chest##380598
 |tip The Hungry Hungry Lava will drop it.
-collect Molten Ingot##201008 |goto The Waking Shores/0 35.53,64.27 |q 70296 |future
+collect Molten Ingot##201008 |goto The Waking Shores/0 35.53,64.27 |q 70310 |future
 step
 use the Molten Ingot##201008
-Study the Molten Ingot |complete itemcount(201008) == 0
+Study the Molten Ingot |complete itemcount(201008) == 0 and completedq(70296)
 step
 click Qalashi Weapon Diagram##380617
-collect Qalashi Weapon Diagram##201010 |goto The Waking Shores/0 34.52,67.16 |q 70310 |future
+collect Qalashi Weapon Diagram##201010 |goto The Waking Shores/0 34.52,67.16 |q 70246 |future
 step
 use the Qalashi Weapon Diagram##201010
-Study the Qalashi Weapon Diagram |complete itemcount(201010) == 0
+Study the Qalashi Weapon Diagram |complete itemcount(201010) == 0 and completedq(70310)
 step
 kill Enchanted Bulwark##188648+
 click Ancient Monument##376657
-collect Ancient Monument##201007 |goto The Waking Shores/0 22.25,87.62 |q 70246 |future
+collect Ancient Monument##201007 |goto The Waking Shores/0 22.25,87.62 |q 70313 |future
 |tip If you do not receive this treasure, skip this step and the next and check your mail later.
 step
 use the Ancient Monument##201007
-Study the Ancient Monument |complete itemcount(201007) == 0
+Study the Ancient Monument |complete itemcount(201007) == 0 and completedq(70246)
 step
 Enter the cave |goto Ohn'ahran Plains/0 79.35,36.50 < 15 |walk
 click Ancient Spear Shards##380620
 |tip Inside the cave.
-collect Ancient Spear Shards##201004 |goto Ohn'ahran Plains/0 81.11,37.87 |q 70313 |future
+collect Ancient Spear Shards##201004 |goto Ohn'ahran Plains/0 81.11,37.87 |q 70353 |future
 step
 use the Ancient Spear Shards##201004
-Study the Ancient Spear Shards |complete itemcount(201004) == 0
+Study the Ancient Spear Shards |complete itemcount(201004) == 0 and completedq(70313)
 step
 click Falconer Gauntlet Drawings##380709
 |tip Inside the hut.
-collect Falconer Gauntlet Drawings##201009 |goto Ohn'ahran Plains/0 50.91,66.48 |q 70353 |future
+collect Falconer Gauntlet Drawings##201009 |goto Ohn'ahran Plains/0 50.91,66.48 |q 70314 |future
 step
 use the Falconer Gauntlet Drawings##201009
-Study the Falconer Gauntlet Drawings |complete itemcount(201009) == 0
+Study the Falconer Gauntlet Drawings |complete itemcount(201009) == 0 and completedq(70353)
 step
 click Rock Wall
 |tip A skill level of 1 in Dragon Isles Mining is required to remove the wall.
 click Spelltouched Tongs##380623
 |tip This object is in a cave with an entrance blocked by debris.
 |tip You will need mining or the assistance of another player with Mining to open it.
-collect Spelltouched Tongs##201011 |goto The Azure Span/0 53.14,66.14 |q 70314 |future
+collect Spelltouched Tongs##201011 |goto The Azure Span/0 53.14,66.14 |q 76078 |future
 step
 use the Spelltouched Tongs##201011
-Study the Spelltouched Tongs |complete itemcount(201011) == 0
+Study the Spelltouched Tongs |complete itemcount(201011) == 0 and completedq(70314)
+step
+talk Temporal Investigator Tempo##195773
+accept The Chronosmith##76350 |goto Thaldraszus/0 54.77,81.62
+step
+talk Ironus Coldsteel##205679
+Ask him _"Tempo sent me to find a chronosmith named Ironormu. Do you know him?"_
+Talk to the Chronosmith |q 76350/1 |goto 52.59,80.45
+step
+talk Ironus Coldsteel##205679
+turnin The Chronosmith##76350 |goto 52.59,80.45
+accept Chronohammer Time!##76352 |goto 52.59,80.45
+accept For the Hoard!##76354 |goto 52.59,80.45
+stickystart "Destroy_Time-Displaced_Creatures"
+step
+click Chronomatic Crates##403751+
+Find and Collect #10# of Ironus's Artifacts |q 76354/1 |goto 58.93,68.81
+step
+label "Destroy_Time-Displaced_Creatures"
+Kill enemies around this area
+Destroy Time-Displaced Creatures and Rifts to Charge the Hammer |q 76352/1 |goto 58.93,68.81
+step
+talk Ironus Coldsteel##205679
+turnin Chronohammer Time!##76352 |goto 52.59,80.45
+turnin For the Hoard!##76354 |goto 52.59,80.45
+accept If a Hammer Can Break a Lock...##76355 |goto 52.59,80.45
+step
+extraaction Shatter Time Lock##418276
+Shatter the Timelock |q 76355/1 |goto 52.47,80.52
 step
 click Draconic Flux##380618
 |tip Inside the upper building.
-|tip Collect it quickly, you will take damage while in this area.
 collect Draconic Flux##201006 |goto Thaldraszus/0 52.22,80.56 |q 70311 |future
 step
 use the Draconic Flux##201006
 Study the Draconic Flux |complete itemcount(201006) == 0
+step
+Watch the dialogue
+talk Ironus Coldsteel##208825
+|tip Inside the building.
+turnin If a Hammer Can Break a Lock...##76355 |goto 52.27,80.58
+step
+click Well-Worn Kiln##402627
+collect Well-Worn Kiln##205986 |goto Zaralek Cavern/0 57.15,54.64 |q 76079 |future
+step
+use the Well-Worn Kiln##205986
+Study the Well-Worn Kiln |complete itemcount(205986) == 0 and completedq(76078)
+step
+click Brimstone Rescue Ring##402632
+collect Brimstone Rescue Ring##205987 |goto Zaralek Cavern/0 48.31,22.01 |q 76080 |future
+step
+use the Brimstone Rescue Ring##205987
+Study the Brimstone Rescue Ring |complete itemcount(205987) == 0 and completedq(76079)
+step
+click Zaqali Elder Spear##402634
+collect Zaqali Elder Spear##205988 |goto Zaralek Cavern/0 27.51,42.88 |q 78417 |future
+step
+use the Zaqali Elder Spear##205988
+Study the Zaqali Elder Spear |complete itemcount(205988) == 0 and completedq(76080)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Amirdrassil Defender's Shield##411179
+collect Amirdrassil Defender's Shield##210464 |goto The Emerald Dream/0 49.83,62.99 |q 78418 |future
+step
+use the Amirdrassil Defender's Shield##210464
+Study the Amirdrassil Defender's Shield |complete itemcount(210464) == 0 and completedq(78417)
+step
+click Deathstalker Chassis##411180
+collect Deathstalker Chassis##210465 |goto The Emerald Dream/0 36.34,46.79 |q 78419 |future
+step
+use the Deathstalker Chassis##210465
+Study the Deathstalker Chassis |complete itemcount(210465) == 0 and completedq(78418)
+step
+click Flamesworn Render##411181
+collect Flamesworn Render##210466 |goto The Emerald Dream/0 37.26,22.95
+step
+use the Flamesworn Render##210466
+Study the Flamesworn Render |complete itemcount(210466) == 0 and completedq(78419)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Cooking\\Leveling Guides\\Dragon Isles Cooking 1-100",{
@@ -2574,19 +2722,19 @@ Click Here to Load the "Dragon Isles Enchanting 1-100" Guide |confirm |loadguide
 step
 click Lava-Infused Seed##380580
 |tip Inside the flower.
-collect Lava-Infused Seed##198675 |goto The Waking Shores/0 67.91,26.78 |q 70283 |future
+collect Lava-Infused Seed##198675 |goto The Waking Shores/0 67.91,26.78 |q 70272 |future
 step
 cast Disenchant##13262
-Disenchant the Lava-Infused Seed |complete itemcount(198675) == 0
+Disenchant the Lava-Infused Seed |complete itemcount(198675) == 0 and completedq(70283)
 step
 click Disenchanted Broom
 |tip Click the broom and follow it to the end of the path.
 click Disenchanted Broom##380558
-collect Enchanted Debris##201012 |goto The Waking Shores/0 57.48,58.48 |q 70272 |future
+collect Enchanted Debris##201012 |goto The Waking Shores/0 57.48,58.48 |q 70320 |future
 Follow the broom to [59.87,57.09]
 step
 use the Enchanted Debris##201012
-Study the Enchanted Debris |complete itemcount(201012) == 0
+Study the Enchanted Debris |complete itemcount(201012) == 0 and completedq(70272)
 step
 click Flashfrozen Scroll##380643
 |tip You may not be able to normally interact with this object.
@@ -2594,47 +2742,97 @@ click Flashfrozen Scroll##380643
 |tip Under "Controls" check "Enable Interact Key."
 |tip Bind a key under "Interact With Target."
 |tip Place your mouse over the scroll and use the key you bound to loot it.
-collect Flashfrozen Scroll##198798 |goto The Waking Shores/0 57.44,83.62 |q 70320 |future
+collect Flashfrozen Scroll##198798 |goto The Waking Shores/0 57.44,83.62 |q 70291 |future
 step
 cast Disenchant##13262
-Disenchant the Flashfrozen Scroll |complete itemcount(198798) == 0
+Disenchant the Flashfrozen Scroll |complete itemcount(198798) == 0 and completedq(70320)
+step
+talk Shalasar Glimmerdusk##194837
+|tip In the top of the broken building.
+Tell her _"Teach me about Enchanting."_
+Learn About Enchanting |q 70251 |goto Ohn'ahran Plains/0 62.44,18.68 |future
 step
 click Stormbound Horn##380592
-collect Stormbound Horn##198689 |goto Ohn'ahran Plains/0 61.55,67.70 |q 70291 |future
+collect Stormbound Horn##198689 |goto Ohn'ahran Plains/0 61.55,67.70 |q 70298 |future
 step
 cast Disenchant##13262
-Disenchant the Stormbound Horn |complete itemcount(198689) == 0
+Disenchant the Stormbound Horn |complete itemcount(198689) == 0 and completedq(70291)
 step
 click Enriched Earthen Shard##380600
-collect Enriched Earthen Shard##198694 |goto The Azure Span/0 21.57,45.55 |q 70298 |future
+collect Enriched Earthen Shard##198694 |goto The Azure Span/0 21.57,45.55 |q 70336 |future
 step
 cast Disenchant##13262
-Disenchant the Enriched Earthen Shard |complete itemcount(198694) == 0
+Disenchant the Enriched Earthen Shard |complete itemcount(198694) == 0 and completedq(70298)
 step
 Enter the building |goto The Azure Span/0 38.55,59.74 < 15 |walk
 click Forgotten Arcane Tome##380647
 |tip Inside the building.
-collect Forgotten Arcane Tome##198799 |goto The Azure Span/0 38.52,59.13 |q 70336 |future
+collect Forgotten Arcane Tome##198799 |goto The Azure Span/0 38.52,59.13 |q 70290 |future
 step
 cast Disenchant##13262
-Disenchant the Forgotten Arcane Tome |complete itemcount(198799) == 0
+Disenchant the Forgotten Arcane Tome |complete itemcount(198799) == 0 and completedq(70336)
 step
 clicknpc Mana-Starved Crystal Cluster##194882
 |tip This will spawn a mob that will attack you.
 |tip Kill the mob and loot the remains.
 click Faintly Enchanted Remains##380589
-collect Faintly Enchanted Remains##201013 |goto The Azure Span/0 45.16,61.11 |q 70290 |future
+collect Faintly Enchanted Remains##201013 |goto The Azure Span/0 45.16,61.11 |q 70342 |future
 step
-use the Disenchant##201013
-Study the Faintly Enchanted Remains |complete itemcount(201013) == 0
+use the Faintly Enchanted Remains##201013
+Study the Faintly Enchanted Remains |complete itemcount(201013) == 0 and completedq(70290)
 step
 Enter the building |goto Thaldraszus/0 59.42,69.78 < 15 |walk
 click Fractured Titanic Sphere##380652
 |tip Inside the building.
-collect Fractured Titanic Sphere##198800 |goto Thaldraszus/0 59.89,70.33 |q 70342 |future
+collect Fractured Titanic Sphere##198800 |goto Thaldraszus/0 59.89,70.33 |q 75509 |future
 step
 cast Disenchant##13262
-Disenchant the Fractured Titanic Sphere |complete itemcount(198800) == 0
+Disenchant the Fractured Titanic Sphere |complete itemcount(198800) == 0 and completedq(70342)
+step
+click Shimmering Aqueous Orb##398794
+|tip Underwater in a small alcove.
+collect Shimmering Aqueous Orb##204999 |goto Zaralek Cavern/0 62.38,53.76 |q 75510 |future
+step
+cast Disenchant##13262
+Disenchant the Shimmering Aqueous Orb |complete itemcount(204999) == 0 and completedq(75509)
+step
+click Resonating Arcane Crystal##398796
+collect Resonating Arcane Crystal##205001 |goto Zaralek Cavern/0 36.66,69.33 |q 75508 |future
+step
+cast Disenchant##13262
+Disenchant the Resonating Arcane Crystal |complete itemcount(205001) == 0 and completedq(75510)
+step
+click Lava-Drenched Shadow Crystal##398793
+|tip Inside the small cave with the pipe pouring lava.
+collect Lava-Drenched Shadow Crystal##204990 |goto Zaralek Cavern/0 48.26,17.02 |q 78310 |future
+step
+cast Disenchant##13262
+Disenchant the Lava-Drenched Shadow Crystal |complete itemcount(204990) == 0 and completedq(75508)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Essence of Dreams##410582
+|tip High up in the circular vine.
+collect Essence of Dreams##210234 |goto The Emerald Dream/0 66.36,74.20 |q 78309 |future
+step
+cast Disenchant##13262
+Disenchant the Essence of Dreams |complete itemcount(210234) == 0 and completedq(78310)
+step
+click Everburning Core##410575
+collect Everburning Core##210231 |goto The Emerald Dream/0 46.16,20.60 |q 78308 |future
+step
+cast Disenchant##13262
+Disenchant the Everburning Core |complete itemcount(210231) == 0 and completedq(78309)
+step
+click Pure Dream Water##410574
+|tip Up top at the base of the waterfall at the edge of the water and rocks.
+collect Pure Dream Water##210228 |goto The Emerald Dream/0 38.37,30.20
+step
+cast Disenchant##13262
+Disenchant the Pure Dream Water |complete itemcount(210228) == 0 and completedq(78308)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Engineering\\Leveling Guides\\Dragon Isles Engineering 1-100",{
@@ -3053,37 +3251,134 @@ step
 Reach Skill Level 25 in Dragon Isles Engineering |skill Dragon Isles Engineering,25 |goto 36.96,47.08 |or
 |tip You must be at least skill level 25 to interact with profession treasures.
 step
+click Boomthyr Rocket Notes
+Read the Boomthyr Rocket Notes |havebuff spell:385201 |goto The Waking Shores/0 56.01,44.84
+step
 click Boom Fumes##380650
 |tip Inside the building.
+|tip Move quickly, you have 10 minutes before the rocket notes wear off.
 collect Boom Fumes##198814 |goto The Waking Shores/0 57.83,44.58 |q 70270 |future
 step
 click Durable Crystal##380649
 |tip Inside the building.
+|tip Move quickly, you have 10 minutes before the rocket notes wear off.
 collect Durable Crystal##198817 |goto The Waking Shores/0 58.13,44.54 |q 70270 |future
 step
 click Aerospace Grade Draconium##380651
 |tip Inside the building.
+|tip Move quickly, you have 10 minutes before the rocket notes wear off.
 collect Aerospace Grade Draconium##198816 |goto The Waking Shores/0 57.99,44.36 |q 70270 |future
 step
 click Ash##380603
 |tip It looks like 3 small stones on the floor inside the building.
+|tip Move quickly, you have 10 minutes before the rocket notes wear off.
 collect Ash##198815 |goto The Waking Shores/0 55.91,45.29 |q 70270 |future
 step
 click Boomthyr Rocket##380571
 |tip Inside the building.
-collect Boomthyr Rocket##201014 |goto The Waking Shores/0 56.02,44.81 |q 70270 |future
+|tip Move quickly, you have 10 minutes before the rocket notes wear off.
+collect Boomthyr Rocket##201014 |goto The Waking Shores/0 56.02,44.81 |q 70275 |future
 step
 use the Boomthyr Rocket##201014
-Study the Boomthyr Rocket |complete itemcount(201014) == 0
+Study the Boomthyr Rocket |complete itemcount(201014) == 0 and completedq(70270)
 step
 click Exposed Wire |goto The Waking Shores/0 49.08,78.01
 click Exposed Wire |goto The Waking Shores/0 48.87,77.52
 click Exposed Wire |goto The Waking Shores/0 49.24,77.33
 click Disabled Tesla Coil##380560
-collect Intact Coil Capacitor##198789 |goto The Waking Shores/0 49.09,77.53 |q 70275 |future
+collect Intact Coil Capacitor##198789 |goto The Waking Shores/0 49.09,77.53 |q 75188 |future
 step
 use the Intact Coil Capacitor##198789
-Study the Intact Coil Capacitor |complete itemcount(198789) == 0
+Study the Intact Coil Capacitor |complete itemcount(198789) == 0 and completedq(70275)
+step
+talk Frizz Buzzcrank##194838
+Tell her _"Teach me about Engineering."_
+Learn About Engineering |q 70252 |goto The Azure Span/0 17.77,21.68 |future
+step
+click Inconspicuous Data Miner##392593
+collect Inconspicuous Data Miner##204480 |goto Zaralek Cavern/0 49.87,59.25 |q 75184 |future
+step
+use the Inconspicuous Data Miner##204480
+Study the Inconspicuous Data Miner |complete itemcount(204480) == 0 and completedq(75188)
+step
+click Defective Survival Pack##392582
+collect Defective Survival Pack##204471 |goto Zaralek Cavern/0 50.51,47.95 |q 75180 |future
+step
+use the Defective Survival Pack##204471
+Study the Defective Survival Pack |complete itemcount(204471) == 0 and completedq(75184)
+step
+click Misplaced Aberrus Outflow Blueprints##392580
+collect Misplaced Aberrus Outflow Blueprints##204469 |goto Zaralek Cavern/0 48.48,48.64 |q 75186 |future
+step
+use the Misplaced Aberrus Outflow Blueprints##204469
+Study the Misplaced Aberrus Outflow Blueprints |complete itemcount(204469) == 0 and completedq(75180)
+step
+click Busted Wyrmhole Generator##392587
+|tip High up on the small cliff.
+collect Busted Wyrmhole Generator##204475 |goto Zaralek Cavern/0 37.84,58.85 |q 75431 |future
+step
+use the Busted Wyrmhole Generator##204475
+Study the Busted Wyrmhole Generator |complete itemcount(204475) == 0 and completedq(75186)
+step
+click Discarded Dracothyst Drill##398135
+collect Discarded Dracothyst Drill##204853 |goto Zaralek Cavern/0 49.47,79.02 |q 75430 |future
+step
+use the Discarded Dracothyst Drill##204853
+Study the Discarded Dracothyst Drill |complete itemcount(204853) == 0 and completedq(75431)
+step
+click Bolts and Brass##398133
+|tip Hidden under a small crate inside a bigger crate.
+collect Handful of Khaz'gorite Bolts##204850 |goto Zaralek Cavern/0 57.65,73.94 |q 75183 |future
+step
+use the Handful of Khaz'gorite Bolts##204850
+Study the Handful of Khaz'gorite Bolts |complete itemcount(204850) == 0 and completedq(75430)
+step
+click Haphazardly Discarded Bomb##392581
+|tip Under the bridge.
+collect Haphazardly Discarded Bomb##204470 |goto Zaralek Cavern/0 48.15,27.89 |q 75433 |future
+step
+use the Haphazardly Discarded Bomb##204470
+Study the Haphazardly Discarded Bomb |complete itemcount(204470) == 0 and completedq(75183)
+step
+click Molten Scoutbot##398138
+|tip Inside the small cave with the pipe pouring lava.
+|tip You will have to swim a short distance through the lava around the rock wall to the very back alcove.
+collect Overclocked Determination Core##204855 |goto Zaralek Cavern/0 48.11,16.60 |q 78281 |future
+step
+use the Overclocked Determination Core##204855
+Study the Overclocked Determination Core |complete itemcount(204855) == 0 and completedq(75433)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Unhatched Battery##410469
+|tip In the nest on the ground.
+collect Unhatched Battery##210197 |goto The Emerald Dream/0 62.68,36.26 |q 78278 |future
+step
+use the Unhatched Battery##210197
+Study the Unhatched Battery |complete itemcount(210197) == 0 and completedq(78281)
+step
+click Experimental Dreamcatcher##410456
+|tip Inside the middle vine ring in the air.
+collect Experimental Dreamcatcher##210193 |goto The Emerald Dream/0 39.57,52.27 |q 78279 |future
+step
+use the Experimental Dreamcatcher##210193
+Study the Experimental Dreamcatcher |complete itemcount(210193) == 0 and completedq(78278)
+step
+Follow the path down |goto Barrows of Reverie/0 64.87,49.71 < 7 |walk
+click Insomniotron##410458
+|tip Continue following the path around down into the cave.
+|tip It's in a small alcove inside the cave.
+|tip You may need to complete the "Dryad Fire Drill" world quest to make this object visible.
+collect Insomniotron##210194 |goto 49.42,69.18
+step
+use the Insomniotron##210194
+Study the Insomniotron |complete itemcount(210194) == 0 and completedq(78279)
+step
+use the Depleted Battery##210198
+Study the Depleted Battery |complete itemcount(210198) == 0 and completedq(78279)
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Fishing\\Leveling Guides\\Dragon Isles Fishing 1-100",{
 author="support@zygorguides.com",
@@ -3353,6 +3648,30 @@ Reach Skill Level 115 in Dragon Isles Herbalism |skill Dragon Isles Herbalism,11
 |tip You can eventually unlock all specialization points.
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Leveling Guides\\Herbalism Profession Master",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through learning secrets from your profession master.",
+startlevel=60.0,
+},[[
+step
+talk Agrikus##185549
+|tip He walks around this area.
+Train Herbalism |skillmax Herbalism,300 |goto Valdrakken/0 37.27,68.94
+step
+talk Agrikus##185549
+|tip He walks around this area.
+Train Dragon Isles Herbalism |skillmax Dragon Isles Herbalism,100 |goto Valdrakken/0 37.27,68.94
+step
+Reach Skill Level 25 in Dragon Isles Herbalism |skill Dragon Isles Herbalism,25 |or
+|tip You must be at least skill level 25 to interact with profession masters.
+|tip Use the "Dragon Isles Herbalism 1-100" 1-100 guide to accomplish this.
+Click Here to Load the "Dragon Isles Herbalism 1-100" Guide |confirm |loadguide "Profession Guides\\Herbalism\\Leveling Guides\\Dragon Isles Herbalism 1-100" |or
+step
+talk Hua Greenpaw##194839
+|tip Kneeling on the ground next to the tree.
+Tell her _"Teach me about Herbalism."_
+Learn About Herbalism |q 70253 |goto Ohn'ahran Plains/0 58.38,50.02 |future
+]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Herbalism\\Farming Guides\\Hochenblume",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through gathering Hochenblume.",
@@ -3967,17 +4286,17 @@ Reach Skill Level 25 in Dragon Isles Inscription |skill Dragon Isles Inscription
 |tip You must be at least skill level 25 to interact with profession treasures.
 step
 click How to Train Your Whelpling
-collect How to Train Your Whelpling##198669 |goto Valdrakken/0 13.42,63.26 |q 70281 |future
+collect How to Train Your Whelpling##198669 |goto Valdrakken/0 13.42,63.26 |q 70264 |future
 step
 use the How to Train Your Whelpling##198669
-Study the How to Train Your Whelpling |complete itemcount(198669) == 0
+Study the How to Train Your Whelpling |complete itemcount(198669) == 0 and completedq(70281)
 step
 click Forgetful Apprentice's Tome##380550
 |tip At the top of the platform.
-collect Forgetful Apprentice's Tome##198659 |goto Thaldraszus/0 56.26,41.18 |q 70264 |future
+collect Forgetful Apprentice's Tome##198659 |goto Thaldraszus/0 56.26,41.18 |q 70287 |future
 step
 use the Forgetful Apprentice's Tome##198659
-Study the Forgetful Apprentice's Tome |complete itemcount(198659) == 0
+Study the Forgetful Apprentice's Tome |complete itemcount(198659) == 0 and completedq(70264)
 step
 talk Siennagosa##194856
 Tell her _"Yes."_
@@ -4010,10 +4329,10 @@ Click Here to Confirm |confirm |goto Thaldraszus/0 56.10,41.06 |q 70287 |future
 step
 talk Siennagosa##194856
 Tell her _"Yes, here they are."_
-collect Counterfeit Darkmoon Deck##201015 |goto Thaldraszus/0 56.08,41.02 |q 70287 |future
+collect Counterfeit Darkmoon Deck##201015 |goto Thaldraszus/0 56.08,41.02 |q 70248 |future
 step
 use the Counterfeit Darkmoon Deck##201015
-Study the Counterfeit Darkmoon Deck |complete itemcount(201015) == 0
+Study the Counterfeit Darkmoon Deck |complete itemcount(201015) == 0 and completedq(70287)
 step
 click Curious Glyph
 |tip Inside the building.
@@ -4026,38 +4345,89 @@ step
 click Curious Glyph
 |tip Inside the building.
 |tip You may need to click this again to loot the treasure.
-collect Forgetful Apprentice's Tome##198659 |goto Thaldraszus/0 47.09,40.07 |q 70248 |future
+collect Forgetful Apprentice's Tome##198659 |goto Thaldraszus/0 47.09,40.07 |q 70306 |future
 step
 use the Forgetful Apprentice's Tome##198659
-Study the Forgetful Apprentice's Tome |complete itemcount(198659) == 0
+Study the Forgetful Apprentice's Tome |complete itemcount(198659) == 0 and completedq(70248)
 step
 click Pulsing Earth Rune##380610
 |tip Just under the table.
-collect Pulsing Earth Rune##198704 |goto The Waking Shores/0 67.86,57.95 |q 70306 |future
+collect Pulsing Earth Rune##198704 |goto The Waking Shores/0 67.86,57.95 |q 70307 |future
 step
 use the Pulsing Earth Rune##198704
-Study the Pulsing Earth Rune |complete itemcount(198704) == 0
+Study the Pulsing Earth Rune |complete itemcount(198704) == 0 and completedq(70306)
 step
 click Sign Language Reference Sheet##380612
-collect Sign Language Reference Sheet##198703 |goto Ohn'ahran Plains/0 85.75,25.21 |q 70307 |future
+collect Sign Language Reference Sheet##198703 |goto Ohn'ahran Plains/0 85.75,25.21 |q 70297 |future
 step
 use the Sign Language Reference Sheet##198703
-Study the Sign Language Reference Sheet |complete itemcount(198703) == 0
+Study the Sign Language Reference Sheet |complete itemcount(198703) == 0 and completedq(70307)
 step
 click Dusty Darkmoon Card##380601
 |tip Up the stairs inside the building.
 |tip There are elites inside, so you may need help.
-collect Dusty Darkmoon Card##198693 |goto The Azure Span/0 46.19,24.00 |q 70297 |future
+collect Dusty Darkmoon Card##198693 |goto The Azure Span/0 46.19,24.00 |q 70293 |future
 step
 use the Dusty Darkmoon Card##198693
-Study the Dusty Darkmoon Card |complete itemcount(198693) == 0
+Study the Dusty Darkmoon Card |complete itemcount(198693) == 0 and completedq(70297)
 step
 click Frosted Parchment##380595
 |tip There are elites around, so you may need help.
-collect Frosted Parchment##198686 |goto The Azure Span/0 43.65,30.82 |q 70293 |future
+collect Frosted Parchment##198686 |goto The Azure Span/0 43.65,30.82 |q 76120 |future
 step
 use the Frosted Parchment##198686
-Study the Frosted Parchment |complete itemcount(198686) == 0
+Study the Frosted Parchment |complete itemcount(198686) == 0 and completedq(70293)
+step
+talk Lydiara Whisperfeather##194840
+Tell her _"Teach me about Inscription."_
+Learn About Inscription |q 70254 |goto The Azure Span/0 40.14,64.35 |future
+step
+click Hissing Rune Draft##402890
+collect Hissing Rune Draft##206034 |goto Zaralek Cavern/0 53.01,74.27 |q 76117 |future
+step
+use the Hissing Rune Draft##206034
+Study the Hissing Rune Draft |complete itemcount(206034) == 0 and completedq(76120)
+step
+click Intricate Zaqali Runes##402888
+|tip It is located between two elite mobs.
+|tip You may need a group or need to use the group finder.
+|tip If you land on your normal flying mount nearby and aggro both elites, you can run them to the bridge and then fly quickly to loot it while they reset.
+collect Intricate Zaqali Runes##206031 |goto Zaralek Cavern/0 36.73,46.32 |q 76121 |future
+step
+use the Intricate Zaqali Runes##206031
+Study the Intricate Zaqali Runes |complete itemcount(206031) == 0 and completedq(76117)
+step
+Enter the building |goto Zaralek Cavern/0 52.78,18.85 < 10 |walk
+click Ancient Research##402892
+|tip Inside the building under the large table.
+collect Ancient Research##206035 |goto Zaralek Cavern/0 54.57,20.21 |q 78412 |future
+step
+use the Ancient Research##206035
+Study the Ancient Research |complete itemcount(206035) == 0 and completedq(76121)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Grove Keeper's Pillar##411169
+|tip Outside of the cave entrance.
+collect Grove Keeper's Pillar##210459 |goto The Emerald Dream/0 63.50,71.52 |q 78411 |future
+step
+use the Grove Keeper's Pillar##210459
+Study the Grove Keeper's Pillar |complete itemcount(210459) == 0 and completedq(78412)
+step
+click Winnie's Notes on Flora and Fauna##411168
+collect Winnie's Notes on Flora and Fauna##210458 |goto The Emerald Dream/0 55.64,27.51 |q 78413 |future
+step
+use the Winnie's Notes on Flora and Fauna##210458
+Study the Winnie's Notes on Flora and Fauna |complete itemcount(210458) == 0 and completedq(78411)
+step
+click Primalist Shadowbinding Rune##411170
+collect Primalist Shadowbinding Rune##210460 |goto The Emerald Dream/0 36.04,46.64
+step
+use the Primalist Shadowbinding Rune##210460
+Study the Primalist Shadowbinding Rune |complete itemcount(210460) == 0 and completedq(78413)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Jewelcrafting\\Leveling Guides\\Dragon Isles Jewelcrafting 1-100",{
@@ -4361,10 +4731,10 @@ Reach Skill Level 25 in Dragon Isles Jewelcrafting |skill Dragon Isles Jewelcraf
 step
 click Closely Guarded Shiny##380591
 |tip Behind the fallen log.
-collect Closely Guarded Shiny##198687 |goto The Waking Shores/0 50.36,45.06 |q 70292 |future
+collect Closely Guarded Shiny##198687 |goto The Waking Shores/0 50.36,45.06 |q 70273 |future
 step
 use the Closely Guarded Shiny##198687
-Study the Closely Guarded Shiny |complete itemcount(198687) == 0
+Study the Closely Guarded Shiny |complete itemcount(198687) == 0 and completedq(70292)
 step
 kill Charred Hornspike##191479+
 |tip Kill any nearby frogs before continuing.
@@ -4383,30 +4753,34 @@ click Focusing Crystal
 Click Here to Continue |confirm |goto The Waking Shores/0 33.01,64.10 |q 70273 |future
 step
 click Igneous Gem##380822
-collect Igneous Gem##201017 |goto The Waking Shores/0 33.96,63.66 |q 70273 |future
+collect Igneous Gem##201017 |goto The Waking Shores/0 33.96,63.66 |q 70263 |future
 step
 use the Igneous Gem##201017
-Study the Igneous Gem |complete itemcount(201017) == 0
+Study the Igneous Gem |complete itemcount(201017) == 0 and completedq(70273)
 step
 click Forgotten Jewelry Box##380548
 |tip This also includes a Forgotten Jewlery Box which can be unlocked with lockpicking and contains various Jewelcrafting materials.
-collect Fragmented Key##198660 |goto Ohn'ahran Plains/0 61.76,13.03 |q 70263 |future
+collect Fragmented Key##198660 |goto Ohn'ahran Plains/0 61.76,13.03 |q 70282 |future
 step
 use the Fragmented Key##198660
-Study the Fragmented Key |complete itemcount(198660) == 0
+Study the Fragmented Key |complete itemcount(198660) == 0 and completedq(70263)
 step
 Walk up the rocks |goto Ohn'ahran Plains/0 25.17,34.08 < 5 |walk
 click Lofty Malygite##380577
-collect Lofty Malygite##198670 |goto Ohn'ahran Plains/0 25.11,34.78 |q 70282 |future
+collect Lofty Malygite##198670 |goto Ohn'ahran Plains/0 25.11,34.78 |q 70277 |future
 step
 use the Lofty Malygite##198670
-Study the Lofty Malygite |complete itemcount(198670) == 0
+Study the Lofty Malygite |complete itemcount(198670) == 0 and completedq(70282)
+step
+talk Pluutar##194841
+Tell him _"Teach me about Jewelcrafting."_
+Learn About Jewelcrafting |q 70255 |goto The Azure Span/0 46.24,40.77 |future
 step
 click Crystalline Overgrowth##380569
-collect Crystalline Overgrowth##198664 |goto The Azure Span/0 45.02,61.24 |q 70277 |future
+collect Crystalline Overgrowth##198664 |goto The Azure Span/0 45.02,61.24 |q 70271 |future
 step
 use the Crystalline Overgrowth##198664
-Study the Crystalline Overgrowth |complete itemcount(198664) == 0
+Study the Crystalline Overgrowth |complete itemcount(198664) == 0 and completedq(70277)
 step
 click Resonant Key
 Gain the "Resonant Key" Buff |havebuff spell:384802 |goto The Azure Span/0 44.62,61.31 |q 70271 |future
@@ -4421,24 +4795,70 @@ click Humming Crystal
 Click Here to Continue |confirm |goto The Azure Span/0 44.72,62.14 |q 70271 |future
 step
 click Harmonic Chest##380556
-collect Harmonic Crystal Harmonizer##201016 |goto The Azure Span/0 44.65,61.37 |q 70271 |future
+collect Harmonic Crystal Harmonizer##201016 |goto The Azure Span/0 44.65,61.37 |q 70285 |future
 step
 use the Harmonic Crystal Harmonizer##201016
-Study the Harmonic Crystal Harmonizer |complete itemcount(201016) == 0
+Study the Harmonic Crystal Harmonizer |complete itemcount(201016) == 0 and completedq(70271)
 step
 click Erupted Alexstraszite Cluster##380585
-collect Alexstraszite Cluster##198682 |goto Thaldraszus/0 59.85,65.17 |q 70285 |future
+collect Alexstraszite Cluster##198682 |goto Thaldraszus/0 59.85,65.17 |q 70261 |future
 step
 use the Alexstraszite Cluster##198682
-Study the Alexstraszite Cluster |complete itemcount(198682) == 0
+Study the Alexstraszite Cluster |complete itemcount(198682) == 0 and completedq(70285)
 step
 click Painter's Pretty Jewel##380545
 |tip Inside the vase.
 |tip Point your camera towards the ground to mouse over it easier.
-collect Painter's Pretty Jewel##198656 |goto Thaldraszus/0 56.91,43.66 |q 70261 |future
+collect Painter's Pretty Jewel##198656 |goto Thaldraszus/0 56.91,43.66 |q 75654 |future
 step
 use the Painter's Pretty Jewel##198656
-Study the Painter's Pretty Jewel |complete itemcount(198656) == 0
+Study the Painter's Pretty Jewel |complete itemcount(198656) == 0 and completedq(70261)
+step
+Enter the cave |goto Zaralek Cavern/0 54.20,32.85 < 7 |walk
+click Broken Barter Boulder##401299
+|tip Inside the small cave.
+collect Broken Barter Boulder##205219 |goto Zaralek Cavern/0 54.40,32.45 |q 75653 |future
+step
+use the Broken Barter Boulder##205219
+Study the Broken Barter Boulder |complete itemcount(205219) == 0 and completedq(75654)
+step
+click Gently Jostled Jewels##401292
+collect Gently Jostled Jewels##205216 |goto Zaralek Cavern/0 34.50,45.42 |q 75652 |future
+step
+use the Gently Jostled Jewels##205216
+Study the Gently Jostled Jewels |complete itemcount(205216) == 0 and completedq(75653)
+step
+click Snubbed Snail Shells##401241
+collect Snubbed Snail Shells##205214 |goto Zaralek Cavern/0 40.37,80.66 |q 78285 |future
+step
+use the Snubbed Snail Shells##205214
+Study the Snubbed Snail Shells |complete itemcount(205214) == 0 and completedq(75652)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Coalesced Dreamstone##410484
+|tip Inside the circular vine.
+collect Coalesced Dreamstone##210202 |goto The Emerald Dream/0 58.95,53.89 |q 78283 |future
+step
+use the Coalesced Dreamstone##210202
+Study the Coalesced Dreamstone |complete itemcount(210202) == 0 and completedq(78285)
+step
+click Unpolished Blemish##410479
+|tip Behind the tree roots under the cliff.
+collect Handful of Pebbles##210201 |goto The Emerald Dream/0 43.51,33.36 |q 78282 |future
+step
+use the Handful of Pebbles##210201
+Study the Handful of Pebbles |complete itemcount(210201) == 0 and completedq(78283)
+step
+click Petrified Hope##410475
+|tip Inside the top of the tree stump.
+collect Petrified Hope##210200 |goto The Emerald Dream/0 33.21,46.55
+step
+use the Petrified Hope##210200
+Study the Petrified Hope |complete itemcount(210200) == 0 and completedq(78282)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Leatherworking\\Leveling Guides\\Dragon Isles Leatherworking 1-100",{
@@ -5043,22 +5463,26 @@ Reach Skill Level 25 in Dragon Isles Leatherworking |skill Dragon Isles Leatherw
 Click Here to Load the "Dragon Isles Leatherworking 1-100" Guide |confirm |loadguide "Profession Guides\\Leatherworking\\Leveling Guides\\Dragon Isles Leatherworking 1-100" |or
 step
 click Poacher's Pack##380615
-collect Poacher's Pack##198711 |goto The Waking Shores/0 39.36,86.38 |q 70308 |future
+collect Poacher's Pack##198711 |goto The Waking Shores/0 39.36,86.38 |q 70280 |future
 step
 use the Poacher's Pack##198711
-Study the Poacher's Pack |complete itemcount(198711) == 0
+Study the Poacher's Pack |complete itemcount(198711) == 0 and completedq(70308)
 step
 click Spare Djaradin Tools##380579
-collect Spare Djaradin Tools##198667 |goto The Waking Shores/0 64.36,25.77 |q 70280 |future
+collect Spare Djaradin Tools##198667 |goto The Waking Shores/0 64.36,25.77 |q 70300 |future
 step
 use the Spare Djaradin Tools##198667
-Study the Spare Djaradin Tools |complete itemcount(198667) == 0
+Study the Spare Djaradin Tools |complete itemcount(198667) == 0 and completedq(70280)
+step
+talk Erden##194842
+Tell him _"Teach me about Leatherworking."_
+Learn About Leatherworking |q 70256 |goto Ohn'ahran Plains/0 82.42,50.62 |future
 step
 click Wind-Blessed Hide##380602
-collect Wind-Blessed Hide##198696 |goto Ohn'ahran Plains/0 86.28,53.62 |q 70300 |future
+collect Wind-Blessed Hide##198696 |goto Ohn'ahran Plains/0 86.28,53.62 |q 70269 |future
 step
 use the Wind-Blessed Hide##198696
-Study the Wind-Blessed Hide |complete itemcount(198696) == 0
+Study the Wind-Blessed Hide |complete itemcount(198696) == 0 and completedq(70300)
 step
 Enter the building |goto The Azure Span/0 12.80,49.34 < 7 |walk
 click Broken Drum
@@ -5067,28 +5491,73 @@ Choose _<Repair the drum.>_
 |tip Wait for Raq to dance on it.
 click Well-Danced Drum##380554
 |tip It will spawn after Raq dances and jumps off.
-collect Well-Danced Drum##201018 |goto The Azure Span/0 12.51,49.41 |q 70269 |future
+collect Well-Danced Drum##201018 |goto The Azure Span/0 12.51,49.41 |q 70266 |future
 step
 use the Well-Danced Drum##201018
-Study the Well-Danced Drum |complete itemcount(201018) == 0
+Study the Well-Danced Drum |complete itemcount(201018) == 0 and completedq(70269)
 step
 click Decay-Infused Tanning Oil##380547
-collect Decay-Infused Tanning Oil##198658 |goto The Azure Span/0 16.73,38.79 |q 70266 |future
+collect Decay-Infused Tanning Oil##198658 |goto The Azure Span/0 16.73,38.79 |q 70286 |future
 step
 use the Decay-Infused Tanning Oil##198658
-Study the Decay-Infused Tanning Oil |complete itemcount(198658) == 0
+Study the Decay-Infused Tanning Oil |complete itemcount(198658) == 0 and completedq(70266)
 step
 click Crate of Treated Hides##380587
-collect Treated Hides##198683 |goto The Azure Span/0 57.50,41.34 |q 70286 |future
+collect Treated Hides##198683 |goto The Azure Span/0 57.50,41.34 |q 70294 |future
 step
 use the Treated Hides##198683
-Study the Treated Hides |complete itemcount(198683) == 0
+Study the Treated Hides |complete itemcount(198683) == 0 and completedq(70286)
 step
 click Bag of Decayed Scales##380593
-collect Decayed Scales##198690 |goto Thaldraszus/0 56.82,30.55 |q 70294 |future
+collect Decayed Scales##198690 |goto Thaldraszus/0 56.82,30.55 |q 75502 |future
 step
 use the Decayed Scales##198690
-Study the Decayed Scales |complete itemcount(198690) == 0
+Study the Decayed Scales |complete itemcount(198690) == 0 and completedq(70294)
+step
+click Sulfur-Soaked Skins##398791
+|tip Inside the broken wagon.
+collect Sulfur-Soaked Skins##204988 |goto Zaralek Cavern/0 49.53,54.74 |q 75495 |future
+step
+use the Sulfur-Soaked Skins##204988
+Study the Sulfur-Soaked Skins |complete itemcount(204988) == 0 and completedq(75502)
+step
+click Flame-Infused Scale Oil##398783
+collect Flame-Infused Scale Oil##204986 |goto Zaralek Cavern/0 41.16,48.81 |q 75496 |future
+step
+use the Flame-Infused Scale Oil##204986
+Study the Flame-Infused Scale Oil |complete itemcount(204986) == 0 and completedq(75495)
+step
+click Lava-Forged Leatherworker's "Knife"##398785
+|tip Inside the building.
+collect Lava-Forged Leatherworker's "Knife"##204987 |goto Zaralek Cavern/0 45.23,21.09 |q 78298 |future
+step
+use the Lava-Forged Leatherworker's "Knife"##204987
+Study the Lava-Forged Leatherworker's "Knife" |complete itemcount(204987) == 0 and completedq(75496)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Tuft of Dreamsaber Fur##410529
+collect Tuft of Dreamsaber Fur##210208 |goto The Emerald Dream/0 41.75,66.49 |q 78299 |future
+step
+use the Tuft of Dreamsaber Fur##210208
+Study the Tuft of Dreamsaber Fur |complete itemcount(210208) == 0 and completedq(78298)
+step
+click Molted Faerie Dragon Scales##410534
+|tip Outside in the grass by the tree.
+collect Molted Faerie Dragon Scales##210211 |goto The Emerald Dream/0 37.45,71.02 |q 78305 |future
+step
+use the Molted Faerie Dragon Scales##210211
+Study the Molted Faerie Dragon Scales |complete itemcount(210211) == 0 and completedq(78299)
+step
+click Dreamtalon Claw##410550
+|tip On the side of the tree.
+collect Dreamtalon Claw##210215 |goto The Emerald Dream/0 33.99,29.68
+step
+use the Dreamtalon Claw##210215
+Study the Dreamtalon Claw |complete itemcount(210215) == 0 and completedq(78305)
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Dragon Isles Mining 1-100",{
@@ -5122,6 +5591,27 @@ Reach Skill Level 115 in Dragon Isles Mining |skill Dragon Isles Mining,115 |onl
 |tip You can eventually unlock all specialization points.
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Leveling Guides\\Mining Profession Master",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through learning secrets from your profession master.",
+startlevel=60.0,
+},[[
+step
+talk Sekita the Burrower##185553
+Train Mining |skillmax Mining,300 |goto Valdrakken/0 38.87,51.48
+step
+talk Sekita the Burrower##185553
+Train Dragon Isles Mining |skillmax Dragon Isles Mining,100 |goto Valdrakken/0 38.87,51.48
+step
+Reach Skill Level 25 in Dragon Isles Mining |skill Dragon Isles Mining,25 |or
+|tip You must be at least skill level 25 to interact with profession masters.
+|tip Use the "Dragon Isles Mining 1-100" 1-100 guide to accomplish this.
+Click Here to Load the "Dragon Isles Mining 1-100" Guide |confirm |loadguide "Profession Guides\\Mining\\Leveling Guides\\Dragon Isles Mining 1-100" |or
+step
+talk Bridgette Holdug##194843
+Tell her _"Teach me about Mining."_
+Learn About Mining |q 70258 |goto Thaldraszus/0 61.43,76.87 |future
+]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Mining\\Farming Guides\\Rousing Air",{
 author="support@zygorguides.com",
 description="\nThis guide will walk you through gathering Rousing Air.",
@@ -5340,6 +5830,27 @@ collect Lustrous Scaled Hide##193223 |n
 collect Lustrous Scaled Hide##193224 |n
 |tip These have a low drop rate.
 confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Skinning\\Leveling Guides\\Skinning Profession Master",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through learning secrets from your profession master.",
+startlevel=60.0,
+},[[
+step
+talk Ralathor the Rugged##193846
+Train Skinning |skillmax Skinning,300 |goto Valdrakken/0 28.54,60.40
+step
+talk Ralathor the Rugged##193846
+Train Dragon Isles Skinning |skillmax Dragon Isles Skinning,100 |goto Valdrakken/0 28.54,60.40
+step
+Reach Skill Level 25 in Dragon Isles Skinning |skill Dragon Isles Skinning,25 |or
+|tip You must be at least skill level 25 to interact with profession masters.
+|tip Use the "Dragon Isles Skinning 1-100" 1-100 guide to accomplish this.
+Click Here to Load the "Dragon Isles Skinning 1-100" Guide |confirm |loadguide "Profession Guides\\Skinning\\Leveling Guides\\Dragon Isles Skinning 1-100" |or
+step
+talk Zenzi##194844
+Tell her _"Teach me about Skinning."_
+Learn About Skinning |q 70259 |goto The Waking Shores/0 73.28,69.72 |future
 ]])
 ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Dragon Isles Tailoring 1-100",{
@@ -5704,8 +6215,8 @@ ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\
 author="support@zygorguides.com",
 description="\nThis guide will walk you through collecting one-time treasures that grant Knowledge Points.",
 startlevel=60.0,
-condition_end=function() return completedallq(70302,70304,70295,70303,70284,70267,70288,70372) end,
-condition_suggested=function() return skill('Dragon Isles Tailoring') >= 25 and not completedallq(70302,70304,70295,70303,70284,70267,70288,70372) end,
+condition_end=function() return completedallq(70302,70304,70295,70303,70284,70267,70288,70372,76102,76116,76110,78414,78416,78415) end,
+condition_suggested=function() return skill('Dragon Isles Tailoring') >= 25 and not completedallq(70302,70304,70295,70303,70284,70267,70288,70372,76102,76116,76110,78414,78416,78415) end,
 },[[
 step
 talk Threadfinder Pax##195850
@@ -5722,61 +6233,66 @@ Reach Skill Level 25 in Dragon Isles Tailoring |skill Dragon Isles Tailoring,25 
 |tip Use the "Dragon Isles Tailoring 1-100" 1-100 guide to accomplish this.
 Click Here to Load the "Dragon Isles Tailoring 1-100" Guide |confirm |loadguide "Profession Guides\\Tailoring\\Leveling Guides\\Dragon Isles Tailoring 1-100" |or
 step
+talk Elysa Raywinder##194845
+|tip At the bottom of the banner on the middle level of the tower.
+Tell her _"Teach me about Tailoring."_
+Learn About Tailoring |q 70260 |goto Valdrakken/0 27.89,45.76 |future
+step
 click Mysterious Banner##380604
 |tip On the dome of the tower.
-collect Mysterious Banner##198699 |goto The Waking Shores/0 74.73,37.91 |q 70302 |future
+collect Mysterious Banner##198699 |goto The Waking Shores/0 74.73,37.91 |q 70304 |future
 step
 use the Mysterious Banner##198699
-Study the Mysterious Banner |complete itemcount(198699) == 0
+Study the Mysterious Banner |complete itemcount(198699) == 0 and completedq(70302)
 step
 click Itinerant Singed Fabric##380607
 |tip Hanging from the branch of the tree.
 |tip You will need to be carefule flying if Dragonbane Keep is not controlled to avoid cannons.
-collect Itinerant Singed Fabric##198702 |goto The Waking Shores/0 25.11,69.72 |q 70304 |future
+collect Itinerant Singed Fabric##198702 |goto The Waking Shores/0 25.11,69.72 |q 70295 |future
 step
 use the Itinerant Singed Fabric##198702
-Study the Itinerant Singed Fabric |complete itemcount(198702) == 0
+Study the Itinerant Singed Fabric |complete itemcount(198702) == 0 and completedq(70304)
 step
 click Battle Hardened Centaur Carpet##380597
 |tip This is surrounded by elites, so you may need help.
-collect Noteworthy Scrap of Carpet##198692 |goto Ohn'ahran Plains/0 35.34,40.12 |q 70295 |future
+collect Noteworthy Scrap of Carpet##198692 |goto Ohn'ahran Plains/0 35.34,40.12 |q 70303 |future
 step
 use the Noteworthy Scrap of Carpet##198692
-Study the Noteworthy Scrap of Carpet |complete itemcount(198692) == 0
+Study the Noteworthy Scrap of Carpet |complete itemcount(198692) == 0 and completedq(70295)
 step
 click Catnip Frond##380599+
-|tip They look like tlal stringy plants outlined in purple around this area.
-collect 5 Catnip Leaf##198688 |q 70303 |future
+|tip They look like tall stringy plants outlined in purple around this area.
+collect 5 Catnip Leaf##198688 |q 70303 |goto Ohn'ahran Plains/0 65.29,52.64 |future
 step
 use the Catnip Leaf##198688
 |tip Use it near the Playful Prowler.
 click Silky Surprise##380608
-collect Silky Surprise##201020 |goto Ohn'ahran Plains/0 65.59,53.01 |q 70303 |future
+collect Silky Surprise##201020 |goto Ohn'ahran Plains/0 65.59,53.01 |q 70284 |future
 step
 use the Silky Surprise##201020
-Study the Silky Surprise |complete itemcount(201020) == 0
+Study the Silky Surprise |complete itemcount(201020) == 0 and completedq(70303)
 step
 click Decaying Brackenhide Blanket##380583
 |tip It looks like a blanket hanging inside the hut.
-collect Decaying Brackenhide Blanket##198680 |goto The Azure Span/0 16.21,38.92 |q 70284 |future
+collect Decaying Brackenhide Blanket##198680 |goto The Azure Span/0 16.21,38.92 |q 70267 |future
 step
 use the Decaying Brackenhide Blanket##198680
-Study the Decaying Brackenhide Blanket |complete itemcount(198680) == 0
+Study the Decaying Brackenhide Blanket |complete itemcount(198680) == 0 and completedq(70284)
 step
 Enter the building |goto The Azure Span/0 41.00,55.03 < 7 |walk
 click Intriguing Bolt of Blue Cloth##380549
 |tip Inside the building up the stairs to the left.
-collect Intriguing Bolt of Blue Cloth##198662 |goto The Azure Span/0 40.67,54.93 |q 70267 |future
+collect Intriguing Bolt of Blue Cloth##198662 |goto The Azure Span/0 40.67,54.93 |q 70288 |future
 step
 use the Intriguing Bolt of Blue Cloth##198662
-Study the Intriguing Bolt of Blue Cloth |complete itemcount(198662) == 0
+Study the Intriguing Bolt of Blue Cloth |complete itemcount(198662) == 0 and completedq(70267)
 step
 click Miniature Bronze Dragonflight Banner##380588
 |tip The tiny banner on top of the sand on the platform.
-collect Miniature Bronze Dragonflight Banner##198684 |goto Thaldraszus/0 60.41,79.67 |q 70288 |future
+collect Miniature Bronze Dragonflight Banner##198684 |goto Thaldraszus/0 60.41,79.67 |q 70372 |future
 step
 use the Miniature Bronze Dragonflight Banner##198684
-Study the Miniature Bronze Dragonflight Banner |complete itemcount(198684) == 0
+Study the Miniature Bronze Dragonflight Banner |complete itemcount(198684) == 0 and completedq(70288)
 step
 click Ancient Dragonweave Loom
 |tip Inside the building.
@@ -5788,10 +6304,56 @@ click Ancient Dragonweave Loom
 |tip Keep doing this with each color until it connects to the center.
 |tip Triangles will only allow one color of thread to connect to them, so you can use this to your advantage.
 |tip Click the center gem when the threads all connect to it to complete the stage.
-collect Ancient Dragonweave Bolt##201019 |goto Thaldraszus/0 58.69,45.90 |q 70372 |future
+collect Ancient Dragonweave Bolt##201019 |goto Thaldraszus/0 58.69,45.90 |q 76110 |future
 step
 use the Ancient Dragonweave Bolt##201019
-Study the Ancient Dragonweave Bolt |complete itemcount(201019) == 0
+Study the Ancient Dragonweave Bolt |complete itemcount(201019) == 0 and completedq(70372)
+step
+click Used Medical Wrap Kit##402878
+collect Used Medical Wrap Kit##206025 |goto Zaralek Cavern/0 59.11,73.18 |q 76102 |future
+step
+use the Used Medical Wrap Kit##206025
+Study the Used Medical Wrap Kit |complete itemcount(206025) == 0 and completedq(76110)
+step
+click Abandoned Reserve Chute##402868
+|tip On the edge at the very top of the tower.
+collect Abandoned Reserve Chute##206019 |goto Zaralek Cavern/0 47.21,48.55 |q 76116 |future
+step
+use the Abandoned Reserve Chute##206019
+Study the Abandoned Reserve Chute |complete itemcount(206019) == 0 and completedq(76102)
+step
+click Exquisitely Embroidered Banner##402887
+|tip Hanging off the top balcony.
+collect Exquisitely Embroidered Banner##206030 |goto Zaralek Cavern/0 44.54,15.68 |q 78415 |future
+step
+use the Exquisitely Embroidered Banner##206030
+Study the Exquisitely Embroidered Banner |complete itemcount(206030) == 0 and completedq(76116)
+step
+Accept or Complete the "Emerald Welcome" Quest |complete haveq(76318) or completedq(76318) |or
+|tip Use the "Emerald Dream Campaign" leveling guide to accomplish this.
+|tip This will open the portal to The Emerald Dream.
+Click Here to Load the "Emerald Dream Campaign" Leveling Guide |confirm |loadguide "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign" |or
+step
+click Plush Pillow##411176
+|tip In the back of the tent.
+collect Plush Pillow##210462 |goto The Emerald Dream/0 49.83,61.48 |q 78416 |future
+step
+use the Plush Pillow##210462
+Study the Plush Pillow |complete itemcount(210462) == 0 and completedq(78415)
+step
+click Snuggle Buddy##411177
+collect Snuggle Buddy##210463 |goto The Emerald Dream/0 40.70,86.16 |q 78414 |future
+step
+use the Snuggle Buddy##210463
+Study the Snuggle Buddy |complete itemcount(210463) == 0 and completedq(78416)
+step
+Enter the building |goto The Emerald Dream/0 52.52,28.53 < 10 |walk
+click Exceedingly Soft Wildercloth##411171
+|tip Inside the building.
+collect Exceedingly Soft Wildercloth##210461 |goto The Emerald Dream/0 53.27,27.92
+step
+use the Exceedingly Soft Wildercloth##210461
+Study the Exceedingly Soft Wildercloth |complete itemcount(210461) == 0 and completedq(78414)
 ]])
 ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Farming Guides\\Tattered Wildercloth",{
 author="support@zygorguides.com",
@@ -5812,4 +6374,12 @@ step
 Kill Brinetooth enemies around this area
 collect Wildercloth##193922 |n |goto The Azure Span/0 10.08,43.41
 confirm
+]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Tailoring\\Leveling Guides\\Tailoring Knowledge Treasures",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through collecting one-time treasures that grant Knowledge Points.",
+startlevel=60.0,
+condition_end=function() return completedallq(70302,70304,70295,70303,70284,70267,70288,70372,76102,76116,76110,78414,78416,78415) end,
+condition_suggested=function() return skill('Dragon Isles Tailoring') >= 25 and not completedallq(70302,70304,70295,70303,70284,70267,70288,70372,76102,76116,76110,78414,78416,78415) end,
+},[[
 ]])

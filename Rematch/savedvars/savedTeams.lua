@@ -209,7 +209,10 @@ end
 function rematch.savedTeams:Create()
     local sideline = metaTeams.sideline
     assert(sideline,"Sideline team is malformed. Can't create a new team.")
-    assert(sideline.name:len()>0,"Sideline team has no name. Can't create a new team.")
+    --assert(sideline.name:len()>0,"Sideline team has no name. Can't create a new team.")
+    if not sideline.name or sideline.name:len()==0 then
+        sideline.name = L["New Team"]
+    end
     -- create a new table from a copy of the sideline
     local team = CopyTable(sideline)
     -- if name is already taken, make a unique name by appending (2) after it (or 3, 4, etc.)
@@ -233,6 +236,29 @@ function rematch.savedTeams:DeleteTeam(teamID)
         rematch.savedTeams[teamID] = nil
         rematch.savedTeams:TeamsChanged()
     end
+end
+
+-- moves teamID to groupID and returns true if teamID's groupID was successfully changed
+function rematch.savedTeams:MoveTeam(teamID,groupID)
+    local moved = false
+    if rematch.savedTeams:IsUserTeam(teamID) and groupID and rematch.savedGroups[groupID] then
+        local team = rematch.savedTeams[teamID]
+        if groupID=="group:favorites" and groupID~=team.groupID then -- moving to favorites, set homeID
+            team.homeID = team.groupID
+            team.favorite = true
+            team.groupID = groupID
+            moved = true
+        elseif team.groupID=="group:favorites" and groupID~=team.groupID then -- moving out of favorites, clear homeID
+            team.homeID = nil
+            team.favorite = nil
+            team.groupID = groupID
+            moved = true
+        end
+    end
+    if moved then -- calling procedure may call this too which is fine; this is critical to run so group.teams can be rebuilt
+        rematch.savedTeams:TeamsChanged()
+    end
+    return moved
 end
 
 -- returns a unique team name, either based off the given name or "New Team", appending a (2) (or (3), (4), etc.)

@@ -527,7 +527,7 @@ P.item = {
                     b = 1
                 }
             },
-            include = "MAGEFOOD,FOODVENDOR,FOODDF,SEEDS,RUNE,CUSTOM"
+            include = "MAGEFOOD,FOODVENDOR,FOODDF,BIGDIG,SEEDS,RUNE,CUSTOM"
         },
         bar4 = {
             enable = false,
@@ -703,20 +703,20 @@ P.maps = {
             outline = "OUTLINE"
         },
         communityFeast = {
-            enable = true,
+            enable = false,
             desaturate = false,
             alert = true,
-            sound = true,
+            sound = false,
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = true,
             stopAlertIfPlayerNotEnteredDragonlands = true
         },
         siegeOnDragonbaneKeep = {
-            enable = true,
+            enable = false,
             desaturate = false,
             alert = true,
-            sound = true,
+            sound = false,
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = true,
@@ -726,7 +726,7 @@ P.maps = {
             enable = false,
             desaturate = false,
             alert = true,
-            sound = true,
+            sound = false,
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = true,
@@ -736,7 +736,7 @@ P.maps = {
             enable = true,
             desaturate = false,
             alert = true,
-            sound = true,
+            sound = false,
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = false,
@@ -750,6 +750,16 @@ P.maps = {
             soundFile = "OnePlus Surprise",
             second = 600,
             stopAlertIfCompleted = true,
+            stopAlertIfPlayerNotEnteredDragonlands = true
+        },
+        bigDig = {
+            enable = true,
+            desaturate = false,
+            alert = true,
+            sound = true,
+            soundFile = "OnePlus Surprise",
+            second = 600,
+            stopAlertIfCompleted = false,
             stopAlertIfPlayerNotEnteredDragonlands = true
         },
         iskaaranFishingNet = {

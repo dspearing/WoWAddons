@@ -1882,25 +1882,29 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('n_popup_msg_welcome',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
 			AddOption('n_popup_msg_general',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
 			AddOption('n_popup_msg_orientation',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
-			AddOption('n_popup_msg_dailyquest',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
-			AddOption('n_popup_msg_worldquest',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
+			if not ZGV.IsClassic then
+				AddOption('n_popup_msg_dailyquest',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
+			end
+	--		AddOption('n_popup_msg_worldquest',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
 			AddOption('n_popup_msg_events',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast) end,})
 			AddOptionSep()
 			AddOption('n_popup_dungeon',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable) end,})
 			AddOption('n_popup_gear',{ type = 'toggle', width = "full", _default = true,disabled = function() return not self.db.profile.n_popup_enable end,})
-			AddOption('n_popup_gear_alt',{ type = 'toggle', width = "full", _default = true,disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_gear) end, indent=20, hidden=not ZGV.DEV})
-			AddOption('n_popup_pet',{ type = 'toggle', width = "full", _default = true, disabled = function() return not self.db.profile.n_popup_enable end,})
+			--AddOption('n_popup_gear_alt',{ type = 'toggle', width = "full", _default = true,disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_gear) end, indent=20, hidden=not ZGV.DEV})
+			if not ZGV.IsClassic then
+				AddOption('n_popup_pet',{ type = 'toggle', width = "full", _default = true, disabled = function() return not self.db.profile.n_popup_enable end,})
+			end
 			if ZGV.IsRetail then
 				AddOption('n_popup_monk',{ type = 'toggle', width = "full", _default = true, disabled=function() return not (select(3,UnitClass("player"))==10 and self.db.profile.n_popup_enable) end,})
 			end
 			if ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then
-				AddOption('n_popup_class',{ type = 'toggle', width = "full", _default = true,})
+				AddOption('n_popup_class',{ type = 'toggle', width = "full", _default = true, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end,})
 			end
 			
 
 		if ZGV.IsClassic or ZGV.IsClassicTBC or ZGV.IsClassicWOTLK then
 			AddOptionSpace()
-			AddOption('',{ type = 'description', name=L['opt_n_popup_classtitle'], font=ZGV.font_dialog, disabled = function() return not self.db.profile.n_popup_class end,})
+			AddOption('',{ type = 'description', name=L['opt_n_popup_classtitle'], font=ZGV.font_dialog, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end,})
 				AddOption('n_popup_toasttype',{
 				name = L['opt_n_popup_toasttype'],
 				type = 'select',
@@ -1911,23 +1915,22 @@ function ZGV:Options_DefineOptionTables()
 					},
 				_default = 2,
 				disabled = function()
-					return not self.db.profile.n_popup_class
+					return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_toast and self.db.profile.n_popup_class)
 				end,
 			})
-
 				AddOptionSep()
-				AddOption('',{type="description", name=L['opt_group_notify'], font=ZGV.font_dialog, disabled = function() return not self.db.profile.n_popup_class end,})
-				AddOption('n_popup_skills',{ type = 'toggle', width = "double", _default = true, disabled = function() return not self.db.profile.n_popup_class end,})
-				AddOption('n_popup_skills_optional',{ type = 'toggle', width = "single", set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not self.db.profile.n_popup_class end })
-				AddOption('n_popup_skills_future',{ type = 'toggle', width = "single",   set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not self.db.profile.n_popup_class end })
+				AddOption('',{type="description", name=L['opt_group_notify'], font=ZGV.font_dialog, disabled = function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end,})
+	--			AddOption('n_popup_skills',{ type = 'toggle', width = "double", _default = true, disabled = function() return not self.db.profile.n_popup_class end,})
+				AddOption('n_popup_skills_optional',{ type = 'toggle', width = "single", set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end })
+				AddOption('n_popup_skills_future',{ type = 'toggle', width = "single",   set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end })
 				AddOptionSep()
 				
 				AddOption('',{type="description", name=L['opt_n_popup_classtriggertitle'], font=ZGV.font_dialog })
-				AddOption('n_popup_skills_login',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_class end, indent=20, })
-				AddOption('n_popup_skills_level',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_class end, indent=20, })
-				AddOption('n_popup_skills_town',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_class end, indent=20, })
-				AddOption('n_popup_skills_dist',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_class end, indent=20, })
-				AddOption('n_popup_skills_trainer',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_class end, indent=20, })
+				AddOption('n_popup_skills_login',{ type = 'toggle', width = "double", _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end, indent=20, })
+				AddOption('n_popup_skills_level',{ type = 'toggle', width = "double", _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end, indent=20, })
+				AddOption('n_popup_skills_town',{ type = 'toggle', width = "double", _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end, indent=20, })
+				AddOption('n_popup_skills_dist',{ type = 'toggle', width = "double", _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end, indent=20, })
+				AddOption('n_popup_skills_trainer',{ type = 'toggle', width = "double", _default = true, disabled=function() return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class) end, indent=20, })
 				AddOptionSep()
 				AddOption('',{
 					type = 'execute',	
@@ -1940,7 +1943,7 @@ function ZGV:Options_DefineOptionTables()
 					end,
 					width='single',
 					disabled=function()
-						return not self.db.profile.n_popup_class
+						return not (self.db.profile.n_popup_enable and self.db.profile.n_popup_class)
 					end,
 				})
 		end
@@ -2889,7 +2892,7 @@ function ZGV:Options_DefineOptionTables()
 					end,
 				})
 				AddOptionSep()
-				for i,n in ipairs{{"flightpandaria","Pandaria"},{"flightdraenor","Draenor"},{"flightlegion","Legion"},{"flightbfa","BfA"},{"flightsl","Shadowlands"},{"flightdf","Dragonflight"}} do  --EXPANSION
+				for i,n in ipairs{{"flightpandaria","Pandaria"},{"flightdraenor","Draenor"},{"flightlegion","Legion"},{"flightbfa","BfA"},{"flightsl","Shadowlands"},{"flightdf","Dragonflight"},{"dragonriding","Dragonriding with skills"}} do  --EXPANSION
 					AddOption('debug_librover_'..n[1],{
 						name = n[2],
 						desc = "",

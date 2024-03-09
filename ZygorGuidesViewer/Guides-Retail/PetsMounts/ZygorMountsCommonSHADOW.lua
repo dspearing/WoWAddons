@@ -13,7 +13,7 @@ mounts={332903},
 patch='90001',
 mounttype='Flying',
 model={97368},
-description="\nThis mount is acquired by earning the \"Glory of the Nathria Raider\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Nathria Raider\" achievement.",
 },[[
 step
 Earn the "Glory of the Nathria Raider" Achievement |achieve 14355 |or
@@ -38,7 +38,7 @@ mounts={318051},
 patch='90001',
 mounttype='Flying',
 model={95205},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after earning the \"Ardenweald's a Stage\" achievement.",
+description="This mount is purchased for 5,000 Reservoir Anima after earning the \"Ardenweald's a Stage\" achievement.",
 },[[
 step
 Earn the "Ardenweald's a Stage" Achievement |achieve 14353 |or
@@ -66,7 +66,7 @@ mounts={340068},
 patch='90001',
 mounttype='Flying',
 model={97644},
-description="\nThis mount is acquired by earning the \"Shadowlands Keystone Master: Season One\" achievement.",
+description="This mount is acquired by earning the \"Shadowlands Keystone Master: Season One\" achievement.",
 },[[
 step
 Earn the "Shadowlands Keystone Master: Season One" Achievement |achieve 14532 |or
@@ -91,7 +91,7 @@ mounts={344659},
 patch='90001',
 mounttype='Ground',
 model={99091},
-description="\nThis mount is acquired by earning the \"Glory of the Shadowlands Hero\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Shadowlands Hero\" achievement.",
 },[[
 step
 Earn the "Glory of the Shadowlands Hero" Achievement |achieve 14322 |or
@@ -119,7 +119,7 @@ mounts={336039},
 patch='90001',
 mounttype='Flying',
 model={98153},
-description="\nThis mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"All The Colors of the Painbow\" achievement.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"All The Colors of the Painbow\" achievement.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Earn the "All The Colors of the Painbow" Achievement |achieve 14853 |or
@@ -146,7 +146,7 @@ mounts={312777},
 patch='90001',
 mounttype='Flying',
 model={97367},
-description="\nThis mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Curse of Thirst\" achievement.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Curse of Thirst\" achievement.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Earn the "Curse of Thirst" Achievement |achieve 14858 |or
@@ -173,7 +173,7 @@ mounts={334406},
 patch='90001',
 mounttype='Ground',
 model={94338},
-description="\nThis mount is acquired by completing Chapter 6 of the Kyrian covenant questline.",
+description="This mount is acquired by completing Chapter 6 of the Kyrian covenant questline.",
 },[[
 step
 Complete the "A New Age" quest |q 61697 |future |or
@@ -198,7 +198,7 @@ mounts={334409},
 patch='90001',
 mounttype='Ground',
 model={94337},
-description="\nThis mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Learning from the Masters\" achievement.",
+description="This mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Learning from the Masters\" achievement.",
 },[[
 step
 Earn the "Learning from the Masters" Achievement |achieve 14861 |or
@@ -225,7 +225,7 @@ mounts={334408},
 patch='90001',
 mounttype='Ground',
 model={94335},
-description="\nThis mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Death Foursworn\" achievement.",
+description="This mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Death Foursworn\" achievement.",
 },[[
 step
 Earn the "Death Foursworn" Achievement |achieve 14863 |or
@@ -252,7 +252,7 @@ mounts={334403},
 patch='90001',
 mounttype='Ground',
 model={94336},
-description="\nThis mount is purchased for 100 Reservoir Anima from Adjutant Galos after reaching Renown level 39 with the Kyrian covenant.",
+description="This mount is purchased for 100 Reservoir Anima from Adjutant Galos after reaching Renown level 39 with the Kyrian covenant.",
 },[[
 step
 Reach Renown Level 39 |complete covenantrenown() >= 39 or hasmount(334403)
@@ -281,7 +281,7 @@ mounts={334365},
 patch='90001',
 mounttype='Ground',
 model={94348},
-description="\nThis mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Bare Necessities\" achievement.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 2,500 Reservoir Anima from Binkiros after earning the \"Bare Necessities\" achievement.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Earn the "Bare Necessities" Achievement |achieve 14860 |or
@@ -308,7 +308,7 @@ mounts={334391},
 patch='90001',
 mounttype='Ground',
 model={94334},
-description="\nThis mount is acquired by completing Chapter 3 of the Kyrian covenant questline.",
+description="This mount is acquired by completing Chapter 3 of the Kyrian covenant questline.",
 },[[
 step
 Complete the "Building the Base" quest |q 58181 |future |or
@@ -336,7 +336,7 @@ mounts={334398},
 patch='90001',
 mounttype='Ground',
 model={94331},
-description="\nThis mount is purchased for 5000 Reservoir Anima from Adjutant Galos after reaching Renown level 23 with the Kyrian covenant.",
+description="This mount is purchased for 5000 Reservoir Anima from Adjutant Galos after reaching Renown level 23 with the Kyrian covenant.",
 },[[
 step
 Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(334398)
@@ -365,7 +365,7 @@ mounts={336064},
 patch='90001',
 mounttype='Flying',
 model={97870},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock Abominable Stitching |complete covenantfeature("Covenant Unique") >= 1
@@ -396,7 +396,7 @@ mounts={336039},
 patch='90001',
 mounttype='Flying',
 model={98153},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock Abominable Stitching |complete covenantfeature("Covenant Unique") >= 1
@@ -427,7 +427,7 @@ mounts={336045},
 patch='90001',
 mounttype='Flying',
 model={98150},
-description="\nThis mount is a rare drop from the rare spawn, Gieger, in Maldraxxus. Only members of the Necrolord covenant can loot this mount.",
+description="This mount is a rare drop from the rare spawn, Gieger, in Maldraxxus. Only members of the Necrolord covenant can loot this mount.",
 },[[
 step
 kill Gieger##162741
@@ -452,7 +452,7 @@ mounts={312777},
 patch='90001',
 mounttype='Flying',
 model={97367},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock Abominable Stitching |complete covenantfeature("Covenant Unique") >= 1
@@ -483,7 +483,7 @@ mounts={332466},
 patch='90001',
 mounttype='Ground',
 model={96471},
-description="\nThis mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Sabreil the Bonecleaver, in Maldraxxus.",
+description="This mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Sabreil the Bonecleaver, in Maldraxxus.",
 },[[
 step
 Click here to purchase the Armored Bonehoof Tauralus |confirm |next "Gather_Currencies" |or
@@ -528,7 +528,7 @@ mounts={332464},
 patch='90001',
 mounttype='Ground',
 model={96470},
-description="\nThis mount is purchased for 100 Reservoir Anima from Su Zettai after reaching Renown level 39 with the Necrolord covenant.",
+description="This mount is purchased for 100 Reservoir Anima from Su Zettai after reaching Renown level 39 with the Necrolord covenant.",
 },[[
 step
 Reach Renown Level 39 |complete covenantrenown() >= 39 or hasmount(332464)
@@ -557,7 +557,7 @@ mounts={332462},
 patch='90001',
 mounttype='Ground',
 model={96469},
-description="\nThis mount is acquired by completing Chapter 9 of the Necrolord covenant questline.",
+description="This mount is acquired by completing Chapter 9 of the Necrolord covenant questline.",
 },[[
 step
 Complete the "The Third Fall of Kel'Thuzad" quest |q 59020 |future |or
@@ -582,7 +582,7 @@ mounts={332457},
 patch='90001',
 mounttype='Ground',
 model={96467},
-description="\nThis mount is a rare drop from the rare spawn, Tahonta, in Maldraxxus. Only members of the Necrolord covenant can loot this mount.",
+description="This mount is a rare drop from the rare spawn, Tahonta, in Maldraxxus. Only members of the Necrolord covenant can loot this mount.",
 },[[
 step
 kill Tahonta##162586
@@ -610,7 +610,7 @@ mounts={334365},
 patch='90001',
 mounttype='Ground',
 model={94348},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with the Stitchmasters.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock Abominable Stitching |complete covenantfeature("Covenant Unique") >= 1
@@ -641,7 +641,7 @@ mounts={332456},
 patch='90001',
 mounttype='Ground',
 model={96466},
-description="\nThis mount is purchased for 2,000 Reservoir Anima from Su Zettai after reaching Renown level 23 with the Necrolord covenant.",
+description="This mount is purchased for 2,000 Reservoir Anima from Su Zettai after reaching Renown level 23 with the Necrolord covenant.",
 },[[
 step
 Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(332456)
@@ -670,7 +670,7 @@ mounts={332455},
 patch='90001',
 mounttype='Ground',
 model={96465},
-description="\nThis mount is acquired by completing Chapter 2 of the Necrolord covenant questline.",
+description="This mount is acquired by completing Chapter 2 of the Necrolord covenant questline.",
 },[[
 step
 Complete the "Enemy at the Door" quest |q 59555 |future |or
@@ -698,7 +698,7 @@ mounts={342667},
 patch='90001',
 mounttype='Flying',
 model={95207},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after becoming Revered with the Marasmius.",
+description="This mount is purchased for 5,000 Reservoir Anima after becoming Revered with the Marasmius.",
 },[[
 step
 Reach Revered Reputation with the Marasmius |complete rep('Marasmius') >= Revered or hasmount(342667)
@@ -724,7 +724,7 @@ mounts={312759},
 patch='90001',
 mounttype='Ground',
 model={94339},
-description="\nThis mount is acquired by completing Chapter 1 of the Night Fae covenant questline.",
+description="This mount is acquired by completing Chapter 1 of the Night Fae covenant questline.",
 },[[
 step
 Complete the "What's My Motivation?" quest |q 58159 |future |or
@@ -749,7 +749,7 @@ mounts={312761},
 patch='90001',
 mounttype='Ground',
 model={94362},
-description="\nThis mount is acquired by completing Chapter 9 of the Night Fae covenant questline.",
+description="This mount is acquired by completing Chapter 9 of the Night Fae covenant questline.",
 },[[
 step
 Complete the "Drust and Ashes" quest |q 60108 |future |or
@@ -774,7 +774,7 @@ mounts={332246},
 patch='90001',
 mounttype='Ground',
 model={94363},
-description="\nThis mount is purchased for 100 Reservoir Anima from Elwyn after reaching Renown level 39 with the Night Fae covenant.",
+description="This mount is purchased for 100 Reservoir Anima from Elwyn after reaching Renown level 39 with the Night Fae covenant.",
 },[[
 step
 Reach Renown Level 39 |complete covenantrenown() >= 39 or hasmount(332246)
@@ -806,7 +806,7 @@ mounts={332248},
 patch='90001',
 mounttype='Ground',
 model={94365},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after becoming Revered with the Marasmius.",
+description="This mount is purchased for 5,000 Reservoir Anima after becoming Revered with the Marasmius.",
 },[[
 step
 Reach Revered Reputation with the Marasmius |complete rep('Marasmius') >= Revered or hasmount(332248)
@@ -835,7 +835,7 @@ mounts={332243},
 patch='90001',
 mounttype='Ground',
 model={94340},
-description="\nThis mount is purchased for 2,000 Reservoir Anima from Elwyn after reaching Renown level 23 with the Night Fae covenant.",
+description="This mount is purchased for 2,000 Reservoir Anima from Elwyn after reaching Renown level 23 with the Night Fae covenant.",
 },[[
 step
 Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(332243)
@@ -864,7 +864,7 @@ mounts={340503},
 patch='90001',
 mounttype='Ground',
 model={94344},
-description="\nThis mount is purchased for 5,000 Reservoir Anima and 5 Grateful Offerings after becoming Revered with the Court of Night.",
+description="This mount is purchased for 5,000 Reservoir Anima and 5 Grateful Offerings after becoming Revered with the Court of Night.",
 },[[
 step
 Reach Revered Reputation with the Court of Night |complete rep('Court of Night') >= Revered or hasmount(340503)
@@ -896,7 +896,7 @@ mounts={334366},
 patch='90001',
 mounttype='Ground',
 model={97623},
-description="\nThis mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Valfir the Unrelenting, in Ardenweald.",
+description="This mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Valfir the Unrelenting, in Ardenweald.",
 },[[
 step
 Click here to purchase the Wild Glimmerfur Prowler |confirm |next "Gather_Currencies" |or
@@ -939,7 +939,7 @@ mounts={332245},
 patch='90001',
 mounttype='Ground',
 model={94342},
-description="\nThis mount is purchased for 5,000 Reservoir Anima and 5 Grateful Offerings after becoming Revered with the Court of Night.",
+description="This mount is purchased for 5,000 Reservoir Anima and 5 Grateful Offerings after becoming Revered with the Court of Night.",
 },[[
 step
 Reach Revered Reputation with the Court of Night |complete rep('Court of Night') >= Revered or hasmount(332245)
@@ -968,7 +968,7 @@ mounts={336064},
 patch='90001',
 mounttype='Flying',
 model={97870},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock The Ember Court |complete covenantfeature("Covenant Unique") >= 1
@@ -1000,7 +1000,7 @@ mounts={336039},
 patch='90001',
 mounttype='Flying',
 model={98153},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock The Ember Court |complete covenantfeature("Covenant Unique") >= 1
@@ -1032,7 +1032,7 @@ mounts={332882},
 patch='90001',
 mounttype='Flying',
 model={94350},
-description="\nThis mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Harika the Horrid, in Revendreth.",
+description="This mount is purchased for 5,000 Reservoir Anima and 100 Grateful Offerings or obtained as a rare drop from the rare, Harika the Horrid, in Revendreth.",
 },[[
 step
 Click here to purchase the Horrid Dredwing |confirm |next "Gather_Currencies" |or
@@ -1077,7 +1077,7 @@ mounts={312777},
 patch='90001',
 mounttype='Flying',
 model={97367},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock The Ember Court |complete covenantfeature("Covenant Unique") >= 1
@@ -1109,7 +1109,7 @@ mounts={333023},
 patch='90001',
 mounttype='Ground',
 model={94329},
-description="\nThis mount is a rare drop from a Broken Mirror after upgrading the Transport Network mirrors to level 3.",
+description="This mount is a rare drop from a Broken Mirror after upgrading the Transport Network mirrors to level 3.",
 },[[
 step
 talk Foreman Flatfinger##172605
@@ -1177,7 +1177,7 @@ mounts={312754},
 patch='90001',
 mounttype='Ground',
 model={94327},
-description="\nThis mount is acquired by completing Chapter 9 of the Venthyr covenant questline.",
+description="This mount is acquired by completing Chapter 9 of the Venthyr covenant questline.",
 },[[
 step
 Complete "The Medallion of Dominion" quest |q 58407 |future |or
@@ -1202,7 +1202,7 @@ mounts={332932},
 patch='90001',
 mounttype='Ground',
 model={94324},
-description="\nThis mount is acquired by completing Chapter 4 of the Venthyr covenant questline.",
+description="This mount is acquired by completing Chapter 4 of the Venthyr covenant questline.",
 },[[
 step
 Complete the "Mirror, Mirror..." quest |q 58440 |future |or
@@ -1227,7 +1227,7 @@ mounts={332949},
 patch='90001',
 mounttype='Ground',
 model={94328},
-description="\nThis mount is acquired from The Countess' Tribute in the Ember Court after reaching Best Friends reputation.",
+description="This mount is acquired from The Countess' Tribute in the Ember Court after reaching Best Friends reputation.",
 },[[
 step
 Reach Best Friend Reputation with The Countess |complete rep('The Countess') == BestFriend or hasmount(332949)
@@ -1252,7 +1252,7 @@ mounts={333021},
 patch='90001',
 mounttype='Ground',
 model={94330},
-description="\nThis mount is earned by reaching Renown level 39 with the Venthyr covenant.",
+description="This mount is earned by reaching Renown level 39 with the Venthyr covenant.",
 },[[
 step
 Reach Renown Level 39 |complete covenantrenown() >= 39 or hasmount(333021)
@@ -1275,7 +1275,7 @@ mounts={312753},
 patch='90001',
 mounttype='Ground',
 model={95369},
-description="\nThis mount is dropped for members of the Venthyr covenant by the rare, Hopecrusher, in Revendreth.",
+description="This mount is dropped for members of the Venthyr covenant by the rare, Hopecrusher, in Revendreth.",
 },[[
 step
 kill Hopecrusher##166679
@@ -1300,7 +1300,7 @@ mounts={334365},
 patch='90001',
 mounttype='Ground',
 model={94348},
-description="\nThis mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
+description="This mount is purchased for 5,000 Reservoir Anima after reaching Exalted reputation with The Ember Court.\n\nThis mount is obtainable by all Covenants.",
 },[[
 step
 Unlock The Ember Court |complete covenantfeature("Covenant Unique") >= 1
@@ -1332,7 +1332,7 @@ mounts={332927},
 patch='90001',
 mounttype='Ground',
 model={94326},
-description="\nThis mount is purchased for 2,000 Reservoir Anima from Chachi the Artiste after reaching Renown level 23 with the Venthyr covenant.",
+description="This mount is purchased for 2,000 Reservoir Anima from Chachi the Artiste after reaching Renown level 23 with the Venthyr covenant.",
 },[[
 step
 Reach Renown Level 23 |complete covenantrenown() >= 23 or hasmount(332927)
@@ -1362,7 +1362,7 @@ mounts={336038},
 patch='90001',
 mounttype='Flying',
 model={99463},
-description="\nThis mount is hatched from a Blight-Touched Egg, which has a low drop chance from chimaeras in Maldraxxus.",
+description="This mount is hatched from a Blight-Touched Egg, which has a low drop chance from chimaeras in Maldraxxus.",
 },[[
 step
 Kill enemies around this area
@@ -1394,7 +1394,7 @@ mounts={332905},
 patch='90001',
 mounttype='Flying',
 model={94353},
-description="\nThis mount is dropped by the rare spawn, Famu the Infinite, in Revendreth.",
+description="This mount is dropped by the rare spawn, Famu the Infinite, in Revendreth.",
 },[[
 step
 talk Seeker Hilda##166483
@@ -1422,7 +1422,7 @@ mounts={336042},
 patch='90001',
 mounttype='Flying',
 model={98149},
-description="\nThis mount is dropped by the rare spawn, Violet Mistake, in Maldraxxus.",
+description="This mount is dropped by the rare spawn, Violet Mistake, in Maldraxxus.",
 },[[
 step
 kill Violet Mistake##157309
@@ -1453,7 +1453,7 @@ mounts={336036},
 patch='90001',
 mounttype='Flying',
 model={98151},
-description="\nThis mount has a very small chance to drop from Nalthor the Rimebinder in The Necrotic Wake dungeon on Mythic difficulty.",
+description="This mount has a very small chance to drop from Nalthor the Rimebinder in The Necrotic Wake dungeon on Mythic difficulty.",
 },[[
 step
 Enter The Necrotic Wake Dungeon
@@ -1478,7 +1478,7 @@ mounts={332252},
 patch='90002',
 mounttype='Flying',
 model={94356},
-description="\nThis mount is acquired by completing the Mistveil Tangle maze near Root-Home in Ardenweald.",
+description="This mount is acquired by completing the Mistveil Tangle maze near Root-Home in Ardenweald.",
 },[[
 step
 Start here |goto Ardenweald/0 32.46,51.18 < 15 |walk
@@ -1511,7 +1511,7 @@ mounts={312767},
 patch='90002',
 mounttype='Flying',
 model={94357},
-description="\nThis mount is dropped by the rare spawn, Night Mare, in Ardenweald.",
+description="This mount is dropped by the rare spawn, Night Mare, in Ardenweald.",
 },[[
 step
 Start here |goto Ardenweald/0 18.06,62.08 < 7 |only if walking
@@ -1591,7 +1591,7 @@ mounts={339632},
 patch='90001',
 mounttype='Ground',
 model={98498},
-description="\nThis mount is dropped by the rare spawn, Humon'gozz, in Ardenweald.",
+description="This mount is dropped by the rare spawn, Humon'gozz, in Ardenweald.",
 },[[
 step
 Reach Level 60 |ding 60
@@ -1622,7 +1622,7 @@ mounts={344228},
 patch='90001',
 mounttype='Ground',
 model={98224},
-description="\nThis mount is a rare drop from elite enemies in the Theater of Pain in Maldraxxus.",
+description="This mount is a rare drop from elite enemies in the Theater of Pain in Maldraxxus.",
 },[[
 step
 Kill Elite enemies around this area
@@ -1647,7 +1647,7 @@ mounts={332478},
 patch='90001',
 mounttype='Ground',
 model={98169},
-description="\nThis mount is dropped by the rare spawn, Warbringer Mal'Korak, in Maldraxxus.",
+description="This mount is dropped by the rare spawn, Warbringer Mal'Korak, in Maldraxxus.",
 },[[
 step
 kill Warbringer Mal'Korak##162819
@@ -1671,7 +1671,7 @@ mounts={332480},
 patch='90001',
 mounttype='Ground',
 model={98168},
-description="\nThis mount is dropped by the rare spawn, Nerissa Heartless, in Maldraxxus.",
+description="This mount is dropped by the rare spawn, Nerissa Heartless, in Maldraxxus.",
 },[[
 step
 kill Nerissa Heartless##162690
@@ -1697,7 +1697,7 @@ mounts={333027},
 patch='90001',
 mounttype='Ground',
 model={97379},
-description="\nThis mount is dropped by the rare spawn, Worldedge Gorger, in Revendreth.",
+description="This mount is dropped by the rare spawn, Worldedge Gorger, in Revendreth.",
 },[[
 step
 Reach Level 50 |ding 50
@@ -1895,7 +1895,7 @@ mounts={312762},
 patch='90001',
 mounttype='Ground',
 model={92631},
-description="\nThis mount is dropped by the rare spawn, Gorged Shadehound, in The Maw.",
+description="This mount is dropped by the rare spawn, Gorged Shadehound, in The Maw.",
 },[[
 step
 Accept or Complete the "Rule 6: Concealment is Everything" Quest in The Maw |complete haveq(60285) or completedq(60285)
@@ -1923,7 +1923,7 @@ mounts={334364},
 patch='90001',
 mounttype='Ground',
 model={94349},
-description="\nThis mount is dropped by the rare spawn, Gormtamer Tizo, in Ardenweald.",
+description="This mount is dropped by the rare spawn, Gormtamer Tizo, in Ardenweald.",
 },[[
 step
 kill Bristlecone Terror##166736+
@@ -1951,7 +1951,7 @@ mounts={342335},
 patch='90001',
 mounttype='Flying',
 model={94293},
-description="\nThis mount is a rare drop from defeating the Ascended Council, which are summoned by ringing the five Vesper bells throughout Bastion.\n\nYou will likely need a raid group to ring the bells within time and defeat the Ascended Council.",
+description="This mount is a rare drop from defeating the Ascended Council, which are summoned by ringing the five Vesper bells throughout Bastion.\n\nYou will likely need a raid group to ring the bells within time and defeat the Ascended Council.",
 },[[
 stickystart "Group_Information"
 step
@@ -2009,7 +2009,7 @@ mounts={344574},
 patch='90001',
 mounttype='Flying',
 model={99439},
-description="\nThis mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
+description="This mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
 },[[
 step
 collect Tribute of the Ambitious##181732 |n
@@ -2044,7 +2044,7 @@ mounts={312776},
 patch='90001',
 mounttype='Flying',
 model={94355},
-description="\nThis mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
+description="This mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
 },[[
 step
 Unlock the Command Table Covenant Anima Upgrade |complete covenantfeature("Command Table") >= 1 or hasmount(312776)
@@ -2076,7 +2076,7 @@ mounts={341776},
 patch='90001',
 mounttype='Flying',
 model={93769},
-description="\nThis mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
+description="This mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
 },[[
 step
 Unlock the Command Table Covenant Anima Upgrade |complete covenantfeature("Command Table") >= 1 or hasmount(312776)
@@ -2108,7 +2108,7 @@ mounts={344576},
 patch='90001',
 mounttype='Flying',
 model={99441},
-description="\nThis mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
+description="This mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
 },[[
 step
 collect Tribute of the Ambitious##181732 |n
@@ -2143,7 +2143,7 @@ mounts={344575},
 patch='90001',
 mounttype='Flying',
 model={99440},
-description="\nThis mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
+description="This mount is a rare drop from Tribute of the Ambitious and Tribute of the Duty-Bound obtained from Covenant Callings.",
 },[[
 step
 collect Tribute of the Ambitious##181732 |n
@@ -2178,7 +2178,7 @@ mounts={334433},
 patch='90001',
 mounttype='Flying',
 model={93770},
-description="\nThis mount is acquired by finding all 50 anima crystal shards in Bastion, The Necrotic Wake dungeon and the Spires of Ascension dungeon.",
+description="This mount is acquired by finding all 50 anima crystal shards in Bastion, The Necrotic Wake dungeon and the Spires of Ascension dungeon.",
 },[[
 step
 Reach Level 60 |ding 60
@@ -2512,7 +2512,7 @@ mounts={312765},
 patch='90001',
 mounttype='Flying',
 model={94361},
-description="\nThis mount is acquired by using an Ancient Memorial buff and a glider from the Kyrian covenant to tame Sundancer in Bastion.",
+description="This mount is acquired by using an Ancient Memorial buff and a glider from the Kyrian covenant to tame Sundancer in Bastion.",
 },[[
 step
 collect Skystrider Glider##180445 |or
@@ -2568,7 +2568,7 @@ mounts={334352},
 patch='90001',
 mounttype='Flying',
 model={98594},
-description="\nThis mount is acquired by assembling the Twinklestar's Gardening Toolkit and looting the Cache of the Moon in Ardenweald.",
+description="This mount is acquired by assembling the Twinklestar's Gardening Toolkit and looting the Cache of the Moon in Ardenweald.",
 },[[
 step
 click Gardener's Basket##355212
@@ -2626,7 +2626,7 @@ mounts={344577},
 patch='90001',
 mounttype='Ground',
 model={92632},
-description="\nThis mount can be acquired by completing various activities in The Maw.",
+description="This mount can be acquired by completing various activities in The Maw.",
 },[[
 step
 Reach Tentative Reputation with Ve'nari |complete rep("Ve'nari") >= Tentative
@@ -2787,7 +2787,7 @@ mounts={344578},
 patch='90001',
 mounttype='Ground',
 model={92630},
-description="\nThis mount is acquired by reaching Layer 8 of the Twisting Corridors in Torghast, Tower of the Damned.",
+description="This mount is acquired by reaching Layer 8 of the Twisting Corridors in Torghast, Tower of the Damned.",
 },[[
 step
 Unlock the Twisting Corridors of Torghast |complete completedq(62836) or hasmount(344578)
@@ -2818,7 +2818,7 @@ mounts={312763},
 patch='90001',
 mounttype='Ground',
 model={94347},
-description="\nThis mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
+description="This mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
 },[[
 step
 clicknpc Command Table##176143 |goto Elysian Hold/0 43.34,41.24 |only if  Kirian
@@ -2844,7 +2844,7 @@ mounts={339588},
 patch='90001',
 mounttype='Ground',
 model={98449},
-description="\nThis mount is acquired by bringing 6 sets of items to Dead Blanchy in Revendreth over the course of 6 days.",
+description="This mount is acquired by bringing 6 sets of items to Dead Blanchy in Revendreth over the course of 6 days.",
 },[[
 step
 click Sack of Oats##2724+
@@ -2976,7 +2976,7 @@ mounts={341766},
 patch='90001',
 mounttype='Ground',
 model={98223},
-description="\nThis mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
+description="This mount is acquired randomly by completing Adventure missions from the Command Table inside your Covenant.",
 },[[
 step
 clicknpc Command Table##176143 |goto Elysian Hold/0 43.34,41.24 |only if  Kirian
@@ -3004,7 +3004,7 @@ mounts={342666},
 patch='90001',
 mounttype='Flying',
 model={95208},
-description="\nThis mount has a low chance to drop from Wild Hunt Supplies gained by earning paragon ranks with The Wild Hunt after reaching Exalted reputation.",
+description="This mount has a low chance to drop from Wild Hunt Supplies gained by earning paragon ranks with The Wild Hunt after reaching Exalted reputation.",
 },[[
 step
 Reach Exalted Reputation with The Wild Hunt |complete rep('The Wild Hunt') == Exalted or hasmount(342666)
@@ -3034,7 +3034,7 @@ mounts={327405},
 patch='90001',
 mounttype='Flying',
 model={98147},
-description="\nThis mount has a low chance to drop from Supplies of the Undying Army gained by earning paragon ranks with The Undying Army after reaching Exalted reputation.",
+description="This mount has a low chance to drop from Supplies of the Undying Army gained by earning paragon ranks with The Undying Army after reaching Exalted reputation.",
 },[[
 step
 Reach Exalted Reputation with The Undying Army |complete rep('The Undying Army') == Exalted or hasmount(327405)
@@ -3064,7 +3064,7 @@ mounts={332256},
 patch='90001',
 mounttype='Flying',
 model={95206},
-description="\nThis mount is purchased for 24,000 gold after becoming Exalted with The Wild Hunt.",
+description="This mount is purchased for 24,000 gold after becoming Exalted with The Wild Hunt.",
 },[[
 step
 Reach Exalted Reputation with The Wild Hunt |complete rep('The Wild Hunt') == Exalted or hasmount(332256)
@@ -3087,7 +3087,7 @@ mounts={342334},
 patch='90001',
 mounttype='Flying',
 model={93771},
-description="\nThis mount is purchased for 24,000 gold after becoming Exalted with The Ascended.",
+description="This mount is purchased for 24,000 gold after becoming Exalted with The Ascended.",
 },[[
 step
 Reach Exalted Reputation with The Ascended |complete rep('The Ascended') == Exalted or hasmount(342334)
@@ -3110,7 +3110,7 @@ mounts={341639},
 patch='90001',
 mounttype='Ground',
 model={98721},
-description="\nThis mount is purchased for 24,000 gold after becoming Exalted with the Court of Harvesters.",
+description="This mount is purchased for 24,000 gold after becoming Exalted with the Court of Harvesters.",
 },[[
 step
 Reach Exalted Reputation with the Court of Harvesters |complete rep('Court of Harvesters') == Exalted or hasmount(341639)
@@ -3135,7 +3135,7 @@ mounts={332923},
 patch='90001',
 mounttype='Ground',
 model={94325},
-description="\nThis mount is purchased for 2,000 Sinstone Fragments after becoming Exalted with The Avowed.",
+description="This mount is purchased for 2,000 Sinstone Fragments after becoming Exalted with The Avowed.",
 },[[
 step
 Complete the "Abuse of Power" Questline in Revendreth |complete completedq(57929) or hasmount(332923)
@@ -3167,7 +3167,7 @@ mounts={332484},
 patch='90001',
 mounttype='Ground',
 model={98166},
-description="\nThis mount is purchased for 24,000 gold after becoming Exalted with The Undying Army.",
+description="This mount is purchased for 24,000 gold after becoming Exalted with The Undying Army.",
 },[[
 step
 Reach Exalted Reputation with The Undying Army |complete rep('The Undying Army') == Exalted or hasmount(332484)
@@ -3192,7 +3192,7 @@ mounts={354356},
 patch='90100',
 mounttype='Ground',
 model={100422},
-description="\nThis mount can be purchased for 5,000 Stygia after becoming Revered with Death's Advance.",
+description="This mount can be purchased for 5,000 Stygia after becoming Revered with Death's Advance.",
 },[[
 step
 Reach Revered Reputation with Death's Advance |complete rep("Death's Advance") >= Revered |or
@@ -3223,7 +3223,7 @@ mounts={353856},
 patch='90100',
 mounttype='Flying',
 model={100105},
-description="\nThis mount is rewarded to you after reaching Renown level 45 with the Night Fae covenant.",
+description="This mount is rewarded to you after reaching Renown level 45 with the Night Fae covenant.",
 },[[
 step
 Join the Night Fae Covenant |complete  NightFae |or
@@ -3251,7 +3251,7 @@ mounts={353880},
 patch='90100',
 mounttype='Flying',
 model={99108},
-description="\nThis mount can be purchased for 7,500 Reservoir Anima from Adjutant Galos in Bastion.",
+description="This mount can be purchased for 7,500 Reservoir Anima from Adjutant Galos in Bastion.",
 },[[
 step
 Join the Kyrian Covenant |complete  Kyrian |or
@@ -3282,7 +3282,7 @@ mounts={353857},
 patch='90100',
 mounttype='Flying',
 model={100102},
-description="\nThis mount can be purchased for 7,500 Reservoir Anima from Elwyn in Ardenweald.",
+description="This mount can be purchased for 7,500 Reservoir Anima from Elwyn in Ardenweald.",
 },[[
 step
 Collect #7500# Reservoir Anima |complete curcount(1813) >= 7500 |or
@@ -3309,7 +3309,7 @@ mounts={347810},
 patch='90100',
 mounttype='Ground',
 model={100421},
-description="\nThis mount has a chance to drop from Death's Advance Supplies.",
+description="This mount has a chance to drop from Death's Advance Supplies.",
 },[[
 step
 Reach Exalted Reputation with Death's Advance |complete rep("Death's Advance") == Exalted |or
@@ -3344,7 +3344,7 @@ mounts={353263},
 patch='90100',
 mounttype='Flying',
 model={100051},
-description="\nThis mount has a chance to drop from So'leah in Tazavesh, The Veiled Market Mythic dungeon.",
+description="This mount has a chance to drop from So'leah in Tazavesh, The Veiled Market Mythic dungeon.",
 },[[
 step
 Enter Tazavesh, the Veiled Market |c |goto Tazavesh, the Veiled Market/7 0.00,0.00 |or
@@ -3372,7 +3372,7 @@ mounts={354357},
 patch='90100',
 mounttype='Ground',
 model={100423},
-description="\nThis mount has a chance to drop from the rare boss Malbog in Korthia.",
+description="This mount has a chance to drop from the rare boss Malbog in Korthia.",
 },[[
 step
 talk Caretaker Kah-Kay##179729
@@ -3405,7 +3405,7 @@ mounts={354358},
 patch='90100',
 mounttype='Ground',
 model={100424},
-description="\nThis mount can be obtained by feeding 6 Tasty Mawshrooms to a Darkmaul in Korthia.",
+description="This mount can be obtained by feeding 6 Tasty Mawshrooms to a Darkmaul in Korthia.",
 },[[
 step
 click Invasive Mawshroom##369332+
@@ -3440,7 +3440,7 @@ mounts={354361},
 patch='90100',
 mounttype='Flying',
 model={100254},
-description="\nThis mount can be obtained by bringing a Lost Razorwing Egg to a Razorwing Nest.",
+description="This mount can be obtained by bringing a Lost Razorwing Egg to a Razorwing Nest.",
 },[[
 step
 Kill enemies around this area
@@ -3464,7 +3464,7 @@ mounts={353875},
 patch='90100',
 mounttype='Flying',
 model={99107},
-description="\nThis mount is rewarded to you after reaching Renown level 45 with the Kyrian covenant.",
+description="This mount is rewarded to you after reaching Renown level 45 with the Kyrian covenant.",
 },[[
 step
 Join the Kyrian Covenant |complete  Kyrian |or
@@ -3492,7 +3492,7 @@ mounts={354353},
 patch='90100',
 mounttype='Ground',
 model={98542},
-description="\nThis mount has a chance to drop from Fallen Charger in The Maw.",
+description="This mount has a chance to drop from Fallen Charger in The Maw.",
 },[[
 step
 kill Fallen Charger##179460
@@ -3518,7 +3518,7 @@ mounts={354359},
 patch='90100',
 mounttype='Flying',
 model={100255},
-description="\nThis mount has a chance to drop from Death's Advance Supplies.",
+description="This mount has a chance to drop from Death's Advance Supplies.",
 },[[
 step
 Reach Exalted Reputation with Death's Advance |complete rep("Death's Advance") == Exalted |or
@@ -3553,7 +3553,7 @@ mounts={353877},
 patch='90100',
 mounttype='Flying',
 model={99106},
-description="\nThis mount is rewarded to you after completing the quest Intact Aquilon Core while aligned with the Kyrian covenant.",
+description="This mount is rewarded to you after completing the quest Intact Aquilon Core while aligned with the Kyrian covenant.",
 },[[
 step
 Join the Kyrian Covenant |complete  Kyrian |or
@@ -3598,7 +3598,7 @@ mounts={354360},
 patch='90100',
 mounttype='Flying',
 model={100253},
-description="\nThis mount has a chance to drop from Reliwik the Defiant in Korthia.",
+description="This mount has a chance to drop from Reliwik the Defiant in Korthia.",
 },[[
 step
 click Uncorrupted Razorwing Egg##369435
@@ -3622,7 +3622,7 @@ mounts={352309},
 patch='90100',
 mounttype='Ground',
 model={101220},
-description="\nThis mount can be created after collecting 200 Bahmeht Chain Links during the Tormentors of Torghast event.",
+description="This mount can be created after collecting 200 Bahmeht Chain Links during the Tormentors of Torghast event.",
 },[[
 step
 Kill enemies within the "Torment of Torghast" Event
@@ -3650,7 +3650,7 @@ mounts={347250},
 patch='90100',
 mounttype='Flying',
 model={100238},
-description="\nThis mount has a chance to drop from Fleshwing in Korthia for characters aligned with the Necrolord covenant.",
+description="This mount has a chance to drop from Fleshwing in Korthia for characters aligned with the Necrolord covenant.",
 },[[
 step
 Join the Necrolord Covenant |complete  Necrolord |or
@@ -3682,7 +3682,7 @@ mounts={353883},
 patch='90100',
 mounttype='Flying',
 model={100240},
-description="\nThis mount is rewarded to you after reaching Renown level 45 as a member of the Necrolord covenant.",
+description="This mount is rewarded to you after reaching Renown level 45 as a member of the Necrolord covenant.",
 },[[
 step
 Join the Necrolord Covenant |complete  Necrolord |or
@@ -3710,7 +3710,7 @@ mounts={353866},
 patch='90100',
 mounttype='Flying',
 model={100109},
-description="\nThis mount can be purchased for 7,500 Reservoir Anima from Chachi the Artiste in Revendreth.",
+description="This mount can be purchased for 7,500 Reservoir Anima from Chachi the Artiste in Revendreth.",
 },[[
 step
 Collect #7500# Reservoir Anima |complete curcount(1813) >= 7500 |or
@@ -3740,7 +3740,7 @@ mounts={353884},
 patch='90100',
 mounttype='Flying',
 model={100241},
-description="\nThis mount can be purchased for 7,500 Reservoir Anima from Su Zettai in Maldraxxus.",
+description="This mount can be purchased for 7,500 Reservoir Anima from Su Zettai in Maldraxxus.",
 },[[
 step
 Reach Renown 70 with the Necrolord Covenant |complete covenantrenown() >= 70
@@ -3769,7 +3769,7 @@ mounts={354351},
 patch='90100',
 mounttype='Ground',
 model={98540},
-description="\nThis mount has a chance to drop from Kyra in the Sanctum of Domination raid.",
+description="This mount has a chance to drop from Kyra in the Sanctum of Domination raid.",
 },[[
 step
 kill Kyra##178738
@@ -3792,7 +3792,7 @@ mounts={353872},
 patch='90100',
 mounttype='Flying',
 model={100110},
-description="\nThis mount is rewarded to you after reaching Renown level 45 as a member of the Venthry covenant.",
+description="This mount is rewarded to you after reaching Renown level 45 as a member of the Venthry covenant.",
 },[[
 step
 Join the Venthyr Covenant |complete  Venthyr |or
@@ -3820,7 +3820,7 @@ mounts={347251},
 patch='90100',
 mounttype='Flying',
 model={100251},
-description="\nThis mount can be purchased for 5,000 Cataloged Research after reaching Tier 6 reputation with The Archivists' Codex.",
+description="This mount can be purchased for 5,000 Cataloged Research after reaching Tier 6 reputation with The Archivists' Codex.",
 },[[
 step
 Reach Tier 6 Reputation with The Archivists' Codex |complete rep("The Archivists' Codex") == Tier6 |or
@@ -3852,7 +3852,7 @@ mounts={354352},
 patch='90100',
 mounttype='Ground',
 model={98541},
-description="\nThis mount has a chance to drop from Mysterious Gift from Ve'nari in The Maw.",
+description="This mount has a chance to drop from Mysterious Gift from Ve'nari in The Maw.",
 },[[
 step
 Reach Appreciative Reputation with Ve'nari |complete rep("Ve'nari") == Appreciative |or
@@ -3888,7 +3888,7 @@ mounts={353859},
 patch='90100',
 mounttype='Flying',
 model={101002},
-description="\nThis mount is rewarded to you after completing the quest Wilderling Saddle in Korthia as a member of the Night Fae covenant.",
+description="This mount is rewarded to you after completing the quest Wilderling Saddle in Korthia as a member of the Night Fae covenant.",
 },[[
 step
 Join the Night Fae Covenant |complete  NightFae |or
@@ -3935,7 +3935,7 @@ mounts={347536},
 patch='90100',
 mounttype='Ground',
 model={100367},
-description="\nThis mount has a chance to drop from Supplies of the Archivists' Codex in Korthia.",
+description="This mount has a chance to drop from Supplies of the Archivists' Codex in Korthia.",
 },[[
 step
 Reach Tier 6 Reputation with The Archivists' Codex |complete rep("The Archivists' Codex") == Tier6 |or
@@ -3972,7 +3972,7 @@ mounts={352742},
 patch='90100',
 mounttype='Ground',
 model={98225},
-description="\nThis mount has a chance to drop from War Chest of the Undying Army in The Maw.",
+description="This mount has a chance to drop from War Chest of the Undying Army in The Maw.",
 },[[
 step
 Complete Necrolord Assaults in The Maw
@@ -3999,7 +3999,7 @@ mounts={351195},
 patch='90100',
 mounttype='Flying',
 model={100912},
-description="\nThis mount has a chance to drop from Sylvanas Windrunner in the Sanctum of Domination Mythic raid.",
+description="This mount has a chance to drop from Sylvanas Windrunner in the Sanctum of Domination Mythic raid.",
 },[[
 step
 kill Sylvanas Windrunner##179687
@@ -4023,7 +4023,7 @@ mounts={348770},
 patch='90100',
 mounttype='Ground',
 model={100579},
-description="\nThis mount is a Shadowlands Season 2 Rated Arena and Rated Battleground seasonal reward for Alliance characters.",
+description="This mount is a Shadowlands Season 2 Rated Arena and Rated Battleground seasonal reward for Alliance characters.",
 },[[
 step
 Participate in Rated Arena or Rated Battleground
@@ -4045,7 +4045,7 @@ mounts={348769},
 patch='90100',
 mounttype='Ground',
 model={100580},
-description="\nThis mount is a Shadowlands Season 2 Rated Arena and Rated Battleground seasonal reward for Horde characters.",
+description="This mount is a Shadowlands Season 2 Rated Arena and Rated Battleground seasonal reward for Horde characters.",
 },[[
 step
 Participate in Rated Arena or Rated Battleground
@@ -4067,7 +4067,7 @@ mounts={354362},
 patch='90100',
 mounttype='Flying',
 model={94296},
-description="\nThis mount is rewarded to you after completing the quest Maelie, The Wanderer.",
+description="This mount is rewarded to you after completing the quest Maelie, The Wanderer.",
 },[[
 step
 click Maelie the Wanderer##179912
@@ -4194,7 +4194,7 @@ mounts={352441},
 patch='90100',
 mounttype='Ground',
 model={94346},
-description="\nThis mount has a chance to drop from War Chest of the Wild Hunt in The Maw.",
+description="This mount has a chance to drop from War Chest of the Wild Hunt in The Maw.",
 },[[
 step
 Complete Night Fae Assaults in The Maw
@@ -4222,7 +4222,7 @@ mounts={363701},
 patch='90200',
 mounttype='Ground',
 model={104886},
-description="\nThis guide will walk you through collecting the \"Patient Bufonid\" mount.",
+description="This guide will walk you through collecting the \"Patient Bufonid\" mount.",
 },[[
 step
 Complete "The Forces Gather" Quest |complete completedq(64958) |or
@@ -4298,7 +4298,6 @@ step
 _Congratulations!_
 You Collected the "Patient Bufonid" Mount.
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Bronze Helicid",{
 author="support@zygorguides.com",
 startlevel=60.0,
@@ -4307,7 +4306,7 @@ mounts={359376},
 patch='90200',
 mounttype='Ground',
 model={100125},
-description="\nThis guide will walk you through collecting the \"Bronze Helicid\" mount.",
+description="This guide will walk you through collecting the \"Bronze Helicid\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Bronze Helicid"
 step
@@ -4354,7 +4353,7 @@ mounts={342680},
 patch='90200',
 mounttype='Aquatic',
 model={98891},
-description="\nThis guide will walk you through collecting the \"Deepstar Aurelid\" mount.",
+description="This guide will walk you through collecting the \"Deepstar Aurelid\" mount.",
 },[[
 step
 kill Hirukon##180978
@@ -4375,7 +4374,7 @@ mounts={359364},
 patch='90200',
 mounttype='Flying',
 model={98888},
-description="\nThis guide will walk you through collecting the \"Bronzewing Vespoid\" mount.",
+description="This guide will walk you through collecting the \"Bronzewing Vespoid\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Bronzewing Vespoid"
 step
@@ -4422,7 +4421,7 @@ Mounts={365048},
 patch='90200',
 mounttype='Flying',
 model={98889},
-description="\nThis guide will walk you through collecting the \"Buzz\" mount.",
+description="This guide will walk you through collecting the \"Buzz\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Buzz"
 step
@@ -4472,7 +4471,7 @@ mounts={359367},
 patch='90200',
 mounttype='Flying',
 model={98890},
-description="\nThis guide will walk you through collecting the \"Forged Spiteflyer\" mount.",
+description="This guide will walk you through collecting the \"Forged Spiteflyer\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Forged Spiteflyer"
 step
@@ -4522,7 +4521,7 @@ mounts={359232},
 patch='90200',
 mounttype='Ground',
 model={98898},
-description="\nThis guide will walk you through collecting the \"Adorned Vombata\" mount.",
+description="This guide will walk you through collecting the \"Adorned Vombata\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Adorned Vombata"
 step
@@ -4572,7 +4571,7 @@ mounts={359278},
 patch='90200',
 mounttype='Ground',
 model={98882},
-description="\nThis guide will walk you through collecting the \"Deathrunner\" mount.",
+description="This guide will walk you through collecting the \"Deathrunner\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Deathrunner"
 step
@@ -4619,7 +4618,7 @@ mounts={359401},
 patch='90200',
 mounttype='Ground',
 model={98883},
-description="\nThis guide will walk you through collecting the \"Genesis Crawler\" mount.",
+description="This guide will walk you through collecting the \"Genesis Crawler\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Genesis Crawler"
 step
@@ -4671,7 +4670,7 @@ mounts={342671},
 patch='90200',
 mounttype='Ground',
 model={98879},
-description="\nThis guide will walk you through collecting the \"Pale Regal Cervid\" mount.",
+description="This guide will walk you through collecting the \"Pale Regal Cervid\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Pale Regal Cervid"
 step
@@ -4724,7 +4723,7 @@ mounts={359373},
 patch='90200',
 mounttype='Flying',
 model={98878},
-description="\nThis guide will walk you through collecting the \"Raptora Swooper\" mount.",
+description="This guide will walk you through collecting the \"Raptora Swooper\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Raptora Swooper"
 step
@@ -4775,7 +4774,7 @@ mounts={363706},
 patch='90200',
 mounttype='Ground',
 model={104888},
-description="\nThis guide will walk you through collecting the \"Russet Bufonid\" mount.",
+description="This guide will walk you through collecting the \"Russet Bufonid\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Russet Bufonid"
 step
@@ -4829,7 +4828,7 @@ mounts={359277},
 patch='90200',
 mounttype='Ground',
 model={98880},
-description="\nThis guide will walk you through collecting the \"Sundered Zerethsteed\" mount.",
+description="This guide will walk you through collecting the \"Sundered Zerethsteed\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Sundered Zerethsteed"
 step
@@ -4879,7 +4878,7 @@ mounts={359402},
 patch='90200',
 mounttype='Ground',
 model={98884},
-description="\nThis guide will walk you through collecting the \"Tarachnid Creeper\" mount.",
+description="This guide will walk you through collecting the \"Tarachnid Creeper\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Tarachnid Creeper"
 step
@@ -4930,7 +4929,7 @@ mounts={342678},
 patch='90200',
 mounttype='Flying',
 model={98887},
-description="\nThis guide will walk you through collecting the \"Vespoid Flutterer\" mount.",
+description="This guide will walk you through collecting the \"Vespoid Flutterer\" mount.",
 },[[
 leechsteps "Profession Guides\\Protoform Synthesis\\Schematic: Vespoid Flutterer"
 step
@@ -4970,4 +4969,3 @@ step
 _Congratulations!_
 You Collected the "Vespoid Flutterer" Mount.
 ]])
-ZGV.BETAEND()

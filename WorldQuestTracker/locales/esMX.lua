@@ -261,7 +261,15 @@ L["S_OPTIONS_PATHLINE"] = "Línea de Ruta"
 L["S_OPTIONS_QUEST_EMISSARY"] = "Información de Misiones de Emisarios"
 L["S_OPTIONS_QUESTBLACKLIST"] = "Lista negra de misiones"
 L["S_OPTIONS_RESET"] = "Restablecer"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_FILTER_BUTTON"] = "Show Filter Button"
 L["S_OPTIONS_SHOW_MINIMIZE_BUTTON"] = "Mostrar Botón de Minimizar"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_SORT_BUTTON"] = "Show Sort Button"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_TIMELEFT_BUTTON"] = "Show Time Left Button"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_WORLDSHORTCUT_BUTTON"] = "Show World Shortcuts"
 L["S_OPTIONS_SHOWFACTIONS"] = "Mostrar Facciones"
 L["S_OPTIONS_TALKINGHEADS"] = "Suprimir Burbuja de Diálogo"
 L["S_OPTIONS_TIMELEFT_NOPRIORITY"] = "No hay prioridad por tiempo restante"
@@ -275,10 +283,20 @@ L["S_OPTIONS_WORLD_ICONSPERROW"] = "Quest Amount Per Row"
 L["S_OPTIONS_WORLD_ORGANIZE_BYMAP"] = "Organizar por el Mapa"
 L["S_OPTIONS_WORLD_ORGANIZE_BYTYPE"] = "Organizar por Tipo de Misión"
 --[[Translation missing --]]
+L["S_OPTIONS_WORLD_SUMMARY_ALPHA"] = "Summary Alpha"
+--[[Translation missing --]]
 L["S_OPTIONS_WORLDMAP_ANCHOR_TO"] = "Attach To"
 --[[Translation missing --]]
 L["S_OPTIONS_WORLDMAP_ORGANIZEBY"] = "Organize Quests By"
+--[[Translation missing --]]
+L["S_OPTIONS_WORLDMAP_WIDGET_ALPHA"] = "Pin Alpha"
 L["S_OPTIONS_ZONE_SHOWONLYTRACKED"] = "Sólo con Seguimiento"
+--[[Translation missing --]]
+L["S_OPTTIONS_DRAGONRACE_MINIMAP"] = "Show Track Minimap"
+--[[Translation missing --]]
+L["S_OPTTIONS_DRAGONRACE_TRACKCOLOR"] = "Track Color"
+--[[Translation missing --]]
+L["S_OPTTIONS_TAB_DRAGONRACE_SETTINGS"] = "Dragon Race"
 --[[Translation missing --]]
 L["S_OPTTIONS_TAB_GENERAL_SETTINGS"] = "General Settings"
 --[[Translation missing --]]
@@ -325,6 +343,8 @@ L["S_RAREFINDER_TOOLTIP_SPOTTEDBY"] = "Avistado Por"
 L["S_RAREFINDER_TOOLTIP_TIMEAGO"] = "minutos atrás"
 --[[Translation missing --]]
 L["S_SCALE"] = "Scale"
+--[[Translation missing --]]
+L["S_SLASH_OPENMAP_FIRST"] = "World Quest Tracker did not loaded yet, open the map to load."
 L["S_SUMMARYPANEL_EXPIRED"] = "EXPIRADO"
 L["S_SUMMARYPANEL_LAST15DAYS"] = "Últimos 15 días"
 L["S_SUMMARYPANEL_LIFETIMESTATISTICS_ACCOUNT"] = "Estadísticas de la cuenta"
@@ -342,6 +362,8 @@ L["S_TUTORIAL_TIMELEFT"] = "indica el tiempo que queda (+4 horas, +90 minutos, +
 L["S_TUTORIAL_WORLDBUTTONS"] = "Clic aquí para alternar entre tres tipos de resúmenes: - |cFFFFAA11Por Tipo de Misión|r - |cFFFFAA11Por Zona|r - |cFFFFAA11Ninguno|r Clic |cFFFFAA11Mostrar/Ocultar Misiones|r para ocultar ubicaciones de misión."
 L["S_TUTORIAL_WORLDMAPBUTTON"] = "Este botón lo llevara al mapa de las Islas quebradas."
 L["S_UNKNOWNQUEST"] = "Misión desconocida"
+--[[Translation missing --]]
+L["S_VISIBILITY"] = "Visibility"
 L["S_WHATSNEW"] = "¿Qué hay de nuevo?"
 L["S_WORLDBUTTONS_SHOW_TYPE"] = "Mostrar Resumen"
 L["S_WORLDBUTTONS_SHOW_ZONE"] = "Ordenar por Zona"

@@ -29,11 +29,6 @@ L:SetOptionLocalization({
 -------------------------------
 L = DBM:GetModLocalization(169)
 
-L:SetWarningLocalization({
-	SpecWarnActivated			= "Wechsel Ziel zu %s!",
-	specWarnGenerator			= "Energiegenerator - Zieh %s raus!"
-})
-
 L:SetTimerLocalization({
 	timerShadowConductorCast	= "Schattenleiter",
 	timerArcaneLockout			= "Annihilator Sperre",
@@ -45,10 +40,7 @@ L:SetOptionLocalization({
 	timerShadowConductorCast	= "Zeige Zeit bis $spell:92048 gewirkt wird",
 	timerArcaneLockout			= "Zeige Zeit, in der $spell:79710 nicht gewirkt werden kann",
 	timerArcaneBlowbackCast		= "Zeige Zeit bis $spell:91879 gewirkt wird",
-	timerNefAblity				= "Zeige Abklingzeit für heroische Fähigkeitsverbesserungen",
-	SpecWarnActivated			= "Spezialwarnung, wenn ein neuer Boss aktiviert wird",
-	specWarnGenerator			= "Spezialwarnung, wenn ein Boss von $spell:79629 profitiert",
-	SetIconOnActivated			= "Setze ein Zeichen auf den zuletzt aktivierten Boss"
+	timerNefAblity				= "Zeige Abklingzeit für heroische Fähigkeitsverbesserungen"
 })
 
 L:SetMiscLocalization({
@@ -79,10 +71,6 @@ L:SetMiscLocalization({
 --  Atramedes  --
 -----------------
 L = DBM:GetModLocalization(171)
-
-L:SetOptionLocalization({
-	InfoFrame				= "Zeige Infofenster für $journal:3072"
-})
 
 L:SetMiscLocalization({
 	NefAdd					= "Atramedes, die Helden sind direkt DA DRÜBEN!",
@@ -193,10 +181,6 @@ L:SetGeneralLocalization({
 --------------------------
 L = DBM:GetModLocalization(156)
 
-L:SetOptionLocalization({
-	ShowDrakeHealth		= "Zeige die Gesundheit befreiter Drachen (benötigt aktivierte Lebensanzeige)"
-})
-
 ---------------------------
 --  Valiona & Theralion  --
 ---------------------------
@@ -204,8 +188,6 @@ L = DBM:GetModLocalization(157)
 
 L:SetOptionLocalization({
 	TBwarnWhileBlackout		= "Warne auch bei aktivem $spell:86788 vor $spell:86369",
-	TwilightBlastArrow		= "Zeige DBM-Pfeil, falls $spell:86369 in deiner Nähe ist",
-	RangeFrame				= "Zeige Abstandsfenster (10m)",
 	BlackoutShieldFrame		= "Zeige Lebensanzeige mit einem Balken für $spell:86788"
 })
 
@@ -234,9 +216,7 @@ L:SetOptionLocalization({
 	SpecWarnGrounded		= "Spezialwarnung, falls dir der $spell:83581 Buff fehlt<br/>(~10 Sekunden vor dem Wirken von $spell:83067)",
 	SpecWarnSearingWinds	= "Spezialwarnung, falls dir der $spell:83500 Buff fehlt<br/>(~10 Sekunden vor dem Wirken von $spell:83565)",
 	timerTransition			= "Dauer des Phasenübergangs anzeigen",
-	RangeFrame				= "Zeige Abstandsfenster automatisch bei Bedarf",
-	yellScrewed				= "Schreie, wenn du gleichzeitig von $spell:83099 und $spell:92307 betroffen bist",
-	InfoFrame				= "Zeige Infofenster für Spieler ohne $spell:83581 bzw. $spell:83500"
+	yellScrewed				= "Schreie, wenn du gleichzeitig von $spell:83099 und $spell:92307 betroffen bist"
 })
 
 L:SetMiscLocalization({
@@ -253,12 +233,6 @@ L:SetMiscLocalization({
 --  Cho'gall  --
 ----------------
 L = DBM:GetModLocalization(167)
-
-L:SetOptionLocalization({
-	CorruptingCrashArrow	= "Zeige DBM-Pfeil, falls $spell:81685 nahe bei dir ist",
-	InfoFrame				= "Zeige Infofenster für $journal:3165",
-	RangeFrame				= "Zeige Abstandsfenster (5m) für $journal:3165"
-})
 
 ----------------
 --  Sinestra  --

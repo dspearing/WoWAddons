@@ -29,7 +29,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Durotar.",
+description="This battle pet can be tamed in the wild around Durotar.",
 keywords={"Beast","Durotar"},
 pet=635,
 },[[
@@ -55,7 +55,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained from a random zone drop around Gavin's Naze in Hillsbrad Foothills.",
+description="This battle pet can be obtained from a random zone drop around Gavin's Naze in Hillsbrad Foothills.",
 keywords={"Beast","Hillsbrad","Foothills"},
 pet=42,
 },[[
@@ -74,7 +74,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=459,
 },[[
@@ -144,7 +144,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Central and Eastern Dun Morogh.",
+description="This battle pet can be tamed in the wild all around Central and Eastern Dun Morogh.",
 keywords={"Beast","Dun","Morogh"},
 pet=440,
 },[[
@@ -163,7 +163,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Deadeye Shore in Durotar.",
+description="This battle pet can be tamed in the wild around Deadeye Shore in Durotar.",
 keywords={"Beast","Durotar"},
 pet=466,
 },[[
@@ -187,7 +187,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
+description="This battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
 keywords={"Beast","Durotar"},
 pet=418,
 },[[
@@ -209,7 +209,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Winterspring.",
+description="This battle pet can be tamed in the wild all around Winterspring.",
 keywords={"Critter","Winterspring"},
 pet=441,
 },[[
@@ -229,7 +229,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Elwynn Forest.",
+description="This battle pet can be tamed in the wild all around Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=374,
 },[[
@@ -252,7 +252,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Durotar.",
+description="This battle pet can be tamed in the wild all around Durotar.",
 keywords={"Critter","Durotar"},
 pet=468,
 },[[
@@ -274,7 +274,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Northeast Mount Hyjal.",
+description="This battle pet can be tamed in the wild around Northeast Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=479,
 },[[
@@ -291,7 +291,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest areas of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest areas of Elwynn Forest.",
 keywords={"Critter","Mount","Hyjal"},
 pet=447,
 },[[
@@ -311,7 +311,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Mulgore.",
+description="This battle pet can be tamed in the wild all around Mulgore.",
 keywords={"Critter","Mulgore"},
 pet=477,
 },[[
@@ -336,7 +336,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Toxic Airfield in New Tinkertown.",
+description="This battle pet can be tamed in the wild around The Toxic Airfield in New Tinkertown.",
 keywords={"Critter","New","Tinkertown"},
 pet=442,
 },[[
@@ -365,7 +365,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Southern Barrens.",
+description="This battle pet can be tamed in the wild all around the Southern Barrens.",
 keywords={"Critter","Southern","Barrens"},
 pet=386,
 },[[
@@ -382,7 +382,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=378,
 },[[
@@ -412,7 +412,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=379,
 },[[
@@ -479,7 +479,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Eversong Woods.",
+description="This battle pet can be tamed in the wild all around the Eversong Woods.",
 keywords={"Elemental","Eversong","Woods"},
 pet=460,
 },[[
@@ -510,7 +510,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Eastvale Logging Camp in Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Eastvale Logging Camp in Elwynn Forest.",
 keywords={"Flying","Elwynn","Forest"},
 pet=646,
 },[[
@@ -528,7 +528,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Teldrassil.",
+description="This battle pet can be tamed in the wild all around Teldrassil.",
 keywords={"Flying","Teldrassil"},
 pet=507,
 },[[
@@ -560,7 +560,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Azuremyst Isle.",
+description="This battle pet can be tamed in the wild all around Azuremyst Isle.",
 keywords={"Flying","Azuremyst","Isle"},
 pet=464,
 },[[
@@ -682,7 +682,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Ruins of Lordaeron in Tirisfal Glades.",
+description="This battle pet can be tamed in the wild around the Ruins of Lordaeron in Tirisfal Glades.",
 keywords={"Undead","Tirisfal","Glades"},
 pet=458,
 },[[

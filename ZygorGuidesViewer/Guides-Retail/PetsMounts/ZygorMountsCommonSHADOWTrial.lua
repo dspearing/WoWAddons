@@ -130,7 +130,6 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Wild Hunt Legsplitter")
 ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Patient Bufonid")
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Bronze Helicid")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Aquatic Mounts\\Miscellaneous Mounts\\Deepstar Aurelid")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Bronzewing Vespoid")
@@ -145,4 +144,3 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Sundered Zerethsteed")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Miscellaneous Mounts\\Tarachnid Creeper")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Miscellaneous Mounts\\Vespoid Flutterer")
-ZGV.BETAEND()

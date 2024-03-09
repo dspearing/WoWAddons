@@ -4,6 +4,8 @@
     Desc:   Functions and variables for showing this addon's help text.
 -----------------------------------------------------------------------------]]
 
+local kAddonFolderName, private = ...
+
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Saved (Persistent) Variables                      ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -82,6 +84,19 @@ kHelpText_Troubleshooting = [[
 - If the cursor effects unexpectedly disappear, you can quickly get them back by typing "/ct reload".
 
 - If shapes and shadows do not follow the mouse cursor properly, and you are using an addon to change the game's UI scale below the normal minimum (64%), type "/ct reload" (or do a normal game reload) so CursorTrail uses the new scale value.
+
+- If you also use the CTMod addon, it uses the same slash command (/ct) and only one addon will open.
+If CTMod always opens when you type /ct, use /cursortrail to open CursorTrail.
+If CursorTrail always opens when you type /ct, you can manually change CursorTrail's slash command to something else, such as "/ctr".
+    IMPORTANT - You will need to repeatedly make this change after every download of CursorTrail.
+    1. Using any text editor, open "CursorTrail.lua" located in CursorTrail folder within your Warcraft addons folder.
+        (e.g. "C:\Program Files\World of Warcraft\_retail_\Interface\AddOns\CursorTrail\CursorTrail.lua")
+    2. Search in that file for "SLASH_".
+    3. The line after that needs to be modified.  Change the end of the line from,
+            Globals["SLASH_"..kAddonName.."2"] = "/ct"
+       to your new slash command,
+            Globals["SLASH_"..kAddonName.."2"] = "/ctr"
+    4. Save your changes, then reload World of Warcraft (/reload).
 ]]
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -94,7 +109,7 @@ function CursorTrail_ShowHelp(parent, scrollToTopic)
     local scrollDelaySecs = nil
     
     if not HelpFrame then
-        HelpFrame = createTextScrollFrame(parent, "*** "..kAddonName.." Help ***", 750)
+        HelpFrame = private.Controls.CreateTextScrollFrame(parent, "*** "..kAddonName.." Help ***", 750)
         HelpFrame.topicOffsets = {}
         local bigFont = "GameFontNormalHuge" --"OptionsFontLarge" --"GameFontNormalLarge"
         local smallFont = "GameTooltipText"
@@ -104,33 +119,33 @@ function CursorTrail_ShowHelp(parent, scrollToTopic)
         -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
 
         -- OPTIONS:
-        ----HelpFrame.topicOffsets["OPTIONS"] = HelpFrame:getNextVerticalPosition()
-        HelpFrame:addText(ORANGE.."Options", 0, topMargin, bigFont)
-        HelpFrame:addText(kHelpText_Options, 0, lineSpacing, smallFont)
-        ----HelpFrame:addText(BLUE.."\nTIP:|r You can use the mouse wheel or Up/Down keys to change values.", 0, lineSpacing, smallFont)
-        HelpFrame:addText(" ", 0, lineSpacing, smallFont)
+        ----HelpFrame.topicOffsets["OPTIONS"] = HelpFrame:GetNextVerticalPosition()
+        HelpFrame:AddText(ORANGE.."Options", 0, topMargin, bigFont)
+        HelpFrame:AddText(kHelpText_Options, 0, lineSpacing, smallFont)
+        ----HelpFrame:AddText(BLUE.."\nTIP:|r You can use the mouse wheel or Up/Down keys to change values.", 0, lineSpacing, smallFont)
+        HelpFrame:AddText(" ", 0, lineSpacing, smallFont)
         
         -- PROFILE COMMANDS:
-        HelpFrame.topicOffsets["PROFILE_COMMANDS"] = HelpFrame:getNextVerticalPosition() -12
-        HelpFrame:addText(ORANGE.."Profile Commands", 0, 0, bigFont)
-        HelpFrame:addText(kHelpText_ProfileCommands, 0, lineSpacing, smallFont)
-        HelpFrame:addText(" ", 0, lineSpacing, smallFont)
+        HelpFrame.topicOffsets["PROFILE_COMMANDS"] = HelpFrame:GetNextVerticalPosition() -12
+        HelpFrame:AddText(ORANGE.."Profile Commands", 0, 0, bigFont)
+        HelpFrame:AddText(kHelpText_ProfileCommands, 0, lineSpacing, smallFont)
+        HelpFrame:AddText(" ", 0, lineSpacing, smallFont)
         
         -- SLASH COMMANDS:
-        ----HelpFrame.topicOffsets["SLASH_COMMANDS"] = HelpFrame:getNextVerticalPosition()
-        HelpFrame:addText(ORANGE.."Slash Commands", 0, 0, bigFont)
-        HelpFrame:addText(kHelpText_SlashCommands, 0, lineSpacing, smallFont)
-        HelpFrame:addText(" ", 0, lineSpacing, smallFont)
+        ----HelpFrame.topicOffsets["SLASH_COMMANDS"] = HelpFrame:GetNextVerticalPosition()
+        HelpFrame:AddText(ORANGE.."Slash Commands", 0, 0, bigFont)
+        HelpFrame:AddText(kHelpText_SlashCommands, 0, lineSpacing, smallFont)
+        HelpFrame:AddText(" ", 0, lineSpacing, smallFont)
         
         -- TROUBLESHOOTING:
-        ----HelpFrame.topicOffsets["TROUBLESHOOTING"] = HelpFrame:getNextVerticalPosition()
-        HelpFrame:addText(ORANGE.."Troubleshooting", 0, 0, bigFont)
-        HelpFrame:addText(kHelpText_Troubleshooting, 0, lineSpacing, smallFont)
-        HelpFrame:addText(" ", 0, lineSpacing, smallFont)
+        ----HelpFrame.topicOffsets["TROUBLESHOOTING"] = HelpFrame:GetNextVerticalPosition()
+        HelpFrame:AddText(ORANGE.."Troubleshooting", 0, 0, bigFont)
+        HelpFrame:AddText(kHelpText_Troubleshooting, 0, lineSpacing, smallFont)
+        HelpFrame:AddText(" ", 0, lineSpacing, smallFont)
         
         -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
         -- Add space at bottom so we can scroll any topic to the top.
-        HelpFrame:addText(" ", 0, HelpFrame.scrollFrame:GetHeight() - 56, smallFont)
+        HelpFrame:AddText(" ", 0, HelpFrame.scrollFrame:GetHeight() - 56, smallFont)
         
         -- Allow moving the window.
         local w, h = HelpFrame:GetSize()
@@ -155,7 +170,7 @@ function CursorTrail_ShowHelp(parent, scrollToTopic)
             scrollOffset = 0
         end
     end
-    HelpFrame:setVerticalScroll( scrollOffset, scrollDelaySecs )
+    HelpFrame:SetVerticalScroll( scrollOffset, scrollDelaySecs )
     HelpFrame:Show()
 end
 

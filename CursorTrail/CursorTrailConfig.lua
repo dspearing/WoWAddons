@@ -4,6 +4,8 @@
     Desc:   Functions and variables for showing this addon's configuration options.
 -----------------------------------------------------------------------------]]
 
+local kAddonFolderName, private = ...
+
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Saved (Persistent) Variables                      ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -22,6 +24,7 @@ local CopyTable = _G.CopyTable
 local CreateFrame = _G.CreateFrame
 local DEFAULT_CHAT_FRAME = _G.DEFAULT_CHAT_FRAME
 local GetAddOnMetadata = _G.GetAddOnMetadata
+local InCombatLockdown = _G.InCombatLockdown
 local IsAltKeyDown = _G.IsAltKeyDown
 local IsControlKeyDown = _G.IsControlKeyDown
 local IsShiftKeyDown = _G.IsShiftKeyDown
@@ -95,9 +98,23 @@ kBtnHeight = 22
 kButtonSpacing = 4
 kDropdownListboxScale = 0.95
 
-kFrameWidth = 455
+kFrameWidth = 459
 kColumnWidth1 = 100  -- Width of the labels column.
 kColumnWidth2 = kFrameWidth-(kFrameMargin*2)-kColumnWidth1-kBtnWidth-25  -- Width of values column.
+
+--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+--[[                       Helper Function                                   ]]
+--:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+-------------------------------------------------------------------------------
+local function propagateKeyboardInput(frame, bPropagate)  -- Safely propagates keyboard input. 
+-- NOTE: Since patch 10.1.5 (2023-07-11), SetPropagateKeyboardInput() is restricted and 
+--       may no longer be called by insecure code while in combat. 
+    if not InCombatLockdown() then
+        return frame:SetPropagateKeyboardInput(bPropagate)
+    end
+    ----print(kAddonAlertHeading.."WARNING - Unable to propagate keyboard input during combat!")
+end
 
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                     StandardPanel Functions                             ]]
@@ -411,7 +428,7 @@ function OptionsFrame_Create()
     ----OptionsFrame.ShapeDropDown.buttonFrame:SetScript("OnLeave", OptionsFrame_RestoreEffectsStrata)
 
     -- SHAPE COLOR SWATCH --
-    OptionsFrame.ShapeColor = Globals.CursorTrailControls.CreateColorSwatch( OptionsFrame, 22 )
+    OptionsFrame.ShapeColor = private.Controls.CreateColorSwatch( OptionsFrame, 22 )
     OptionsFrame.ShapeColor:SetPoint("LEFT", OptionsFrame.ShapeDropDown, "RIGHT", 8, -1)
     OptionsFrame.ShapeColor:SetTooltip("Click to change shape color.")
     OptionsFrame.ShapeColor:SetColorChangedHandler(function(self)
@@ -647,7 +664,7 @@ function OptionsFrame_Create()
 
             -- If the key wasn't processed above, pass it to our parent frame.
             if bPassKeyToParent then OptionsFrame_OnKeyDown(self, key)
-            else OptionsFrame:SetPropagateKeyboardInput(false) end
+            else propagateKeyboardInput(OptionsFrame, false) end
 
             traceCfg("OUT onKeyDown_ChangeBaseVals("..(self:GetName() or "nil")..", "..(key or "nil")..")")
         end
@@ -747,6 +764,7 @@ function OptionsFrame_OnShow()
     OptionsFrame_HandleNewFeatures()  -- Flag any new features.
 
     CursorTrail_Show()  -- Show the cursor model while the options window is open.
+    EventFrame:RegisterEvent("GLOBAL_MOUSE_DOWN")
     traceCfg("OUT OptionsFrame_OnShow().")
 end
 
@@ -777,6 +795,7 @@ function OptionsFrame_OnHide()
     end
 
     CursorTrail_HideHelp()
+    EventFrame:UnregisterEvent("GLOBAL_MOUSE_DOWN")
     traceCfg("OUT OptionsFrame_OnHide().")
 end
 
@@ -790,7 +809,7 @@ function OptionsFrame_OnKeyDown(self, key)
     else bPassKeyToParent = true
     end
 
-    OptionsFrame:SetPropagateKeyboardInput(bPassKeyToParent)
+    propagateKeyboardInput(OptionsFrame, bPassKeyToParent)
     traceCfg("OUT OptionsFrame_OnKeyDown("..(self:GetName() or "nil")..", "..(key or "nil")..").")
 end
 
@@ -927,9 +946,9 @@ end
 function OptionsFrame_EditBox_OnKeyDown(self, key)
     traceCfg("IN OptionsFrame_EditBox_OnKeyDown("..(self:GetName() or "nil")..", "..(key or "nil")..").")
     if key == "/" or key == "`" then
-        self:SetPropagateKeyboardInput(true) -- Pass this key to parent.
+        propagateKeyboardInput(self, true) -- Pass this key to parent.
     else
-        self:SetPropagateKeyboardInput(false) -- Don't pass this key to parent.
+        propagateKeyboardInput(self, false) -- Don't pass this key to parent.
 
         if key == "TAB" then OptionsFrame_FocusNext()
         ----elseif key == "ESCAPE" then OptionsFrame:Hide()
@@ -1066,7 +1085,8 @@ function OptionsFrame_UpdateUI(config)
     OptionsFrame_Value("MouseLook", config.UserShowMouseLook or false)
     OptionsFrame_Value("fade", config.FadeOut or false)
     OptionsFrame_Value("sparkle", config.ShapeSparkle or false)
-    OptionsFrame.ShapeColor:SetColor( config.ShapeColorR, config.ShapeColorG, config.ShapeColorB )
+    OptionsFrame.ShapeColor:SetColor( config.ShapeColorR, config.ShapeColorG, config.ShapeColorB)
+    ----OptionsFrame.ShapeColor:SetColor( config.ShapeColorR, config.ShapeColorG, config.ShapeColorB, 0.75) --Uncomment to test opacity slider.
 
     OptionsFrame_UpdateButtonStates()
     traceCfg("OUT OptionsFrame_UpdateUI().")
@@ -1140,7 +1160,7 @@ function OptionsFrame_Value(valName, newVal)
             if (kModelConstants[newVal] == nil) then
                 newVal = kDefaultModelID
             end
-            OptionsFrame.ModelDropDown:SetSelectedID( newVal )
+            OptionsFrame.ModelDropDown:SelectID( newVal )
         end
         traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
@@ -1148,7 +1168,7 @@ function OptionsFrame_Value(valName, newVal)
         if (newVal == nil) then  -- GET
             retVal = OptionsFrame.StrataDropDown:GetSelectedID()
         else -- SET
-            OptionsFrame.StrataDropDown:SetSelectedID( newVal )
+            OptionsFrame.StrataDropDown:SelectID( newVal )
         end
         traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
@@ -1156,7 +1176,7 @@ function OptionsFrame_Value(valName, newVal)
         if (newVal == nil) then  -- GET
             retVal = OptionsFrame.ShapeDropDown:GetSelectedID()
         else -- SET
-            OptionsFrame.ShapeDropDown:SetSelectedID( newVal )
+            OptionsFrame.ShapeDropDown:SelectID( newVal )
         end
         traceCfg("OUT OptionsFrame_Value("..valName..", "..(tostring(newVal) or "nil").."), early.")
         return retVal
@@ -1306,11 +1326,11 @@ end
 --------------------------------------------------------------------------------
 function OptionsFrame_CreateModelDropDown(x, y, width)
     traceCfg("IN OptionsFrame_CreateModelDropDown().")
-    local dropdown = Globals.CursorTrailControls.CreateDropdown(OptionsFrame)
+    local dropdown = private.Controls.CreateDropDown(OptionsFrame)
     dropdown:SetPoint("TOPLEFT", OptionsFrame, "TOPLEFT", x, y+7)
     dropdown:Configure(width / kDropdownListboxScale)
-    dropdown:SetListboxHeight(ScreenH / kDropdownListboxScale)
-    dropdown.listbox:SetScale( kDropdownListboxScale )
+    dropdown:SetListBoxHeight(ScreenH / kDropdownListboxScale)
+    dropdown:GetListBoxFrame():SetScale( kDropdownListboxScale )
 
     dropdown:SetChangeHandler(
         function(self, selectedID)
@@ -1345,7 +1365,7 @@ function OptionsFrame_CreateModelDropDown(x, y, width)
     end
 
     -- Set dropdown's text to the selected model name.
-    dropdown:SetSelectedID( PlayerConfig.ModelID )
+    dropdown:SelectID( PlayerConfig.ModelID )
 
     -- Make mouse wheel over the collapsed dropdown change its selection.
     dropdown:SetScript("OnMouseWheel", function(self, delta)
@@ -1361,11 +1381,11 @@ end
 --------------------------------------------------------------------------------
 function OptionsFrame_CreateShapeDropDown(x, y, width)
     traceCfg("IN OptionsFrame_CreateShapeDropDown().")
-    local dropdown = Globals.CursorTrailControls.CreateDropdown(OptionsFrame)
+    local dropdown = private.Controls.CreateDropDown(OptionsFrame)
     dropdown:SetPoint("TOPLEFT", OptionsFrame, "TOPLEFT", x, y+7)
     dropdown:Configure(width / kDropdownListboxScale)
-    dropdown:SetListboxHeight(ScreenH / kDropdownListboxScale)
-    dropdown.listbox:SetScale( kDropdownListboxScale )
+    dropdown:SetListBoxHeight(ScreenH / kDropdownListboxScale)
+    dropdown:GetListBoxFrame():SetScale( kDropdownListboxScale )
 
     dropdown:SetChangeHandler(
         function(self, selectedID)
@@ -1399,13 +1419,13 @@ function OptionsFrame_CreateShapeDropDown(x, y, width)
 
     -- Set dropdown's text to the selected shape.
     if (PlayerConfig.ShapeFileName == nil or PlayerConfig.ShapeFileName == "") then
-        dropdown:SetSelectedIndex(1)  -- Select first item in the dropdown.
+        dropdown:SelectIndex(1)  -- Select first item in the dropdown.
     else
-        dropdown:SetSelectedID( PlayerConfig.ShapeFileName )
+        dropdown:SelectID( PlayerConfig.ShapeFileName )
         if (dropdown:GetSelectedID() == nil) then
             -- The previously selected texture no longer exists!  Clear it.
             ShapeTexture:SetTexture(nil)  -- Clear current (invalid) texture.
-            dropdown:SetSelectedIndex(1)  -- Select first item in the dropdown.
+            dropdown:SelectIndex(1)  -- Select first item in the dropdown.
         end
     end
 
@@ -1423,11 +1443,11 @@ end
 --------------------------------------------------------------------------------
 function OptionsFrame_CreateStrataDropDown(x, y, width)
     traceCfg("IN OptionsFrame_CreateStrataDropDown().")
-    local dropdown = Globals.CursorTrailControls.CreateDropdown(OptionsFrame)
+    local dropdown = private.Controls.CreateDropDown(OptionsFrame)
     dropdown:SetPoint("TOPLEFT", OptionsFrame, "TOPLEFT", x, y+7)
     dropdown:Configure(width / kDropdownListboxScale)
-    dropdown:SetListboxHeight(ScreenH / kDropdownListboxScale)
-    dropdown.listbox:SetScale( kDropdownListboxScale )
+    dropdown:SetListBoxHeight(ScreenH / kDropdownListboxScale)
+    dropdown:GetListBoxFrame():SetScale( kDropdownListboxScale )
     dropdown:SetChangeHandler(
         function(self, selectedID)
             OptionsFrame_Value("strata", selectedID)
@@ -1450,7 +1470,7 @@ function OptionsFrame_CreateStrataDropDown(x, y, width)
     dropdown:AddItem("Fullscreen Dialog", "FULLSCREEN_DIALOG")
     dropdown:AddItem("ToolTip  (Topmost)", "TOOLTIP")
 
-    dropdown:SetSelectedID( PlayerConfig.Strata )
+    dropdown:SelectID( PlayerConfig.Strata )
 
     -- Make mouse wheel over the collapsed dropdown change its selection.
     dropdown:SetScript("OnMouseWheel", function(self, delta)
@@ -1473,7 +1493,7 @@ function OptionsFrame_IncrDecrModel(delta)
 
     for index, modelData in pairs(kSortedModelChoices) do
         if (bUseNextID == true) then
-            dropdown:SetSelectedID(modelData.sortedID)
+            dropdown:SelectID(modelData.sortedID)
             dropdown:changeHandler(modelData.sortedID)
             PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)  -- Click sound.
             traceCfg("OUT OptionsFrame_IncrDecrModel(), early 1.")
@@ -1483,7 +1503,7 @@ function OptionsFrame_IncrDecrModel(delta)
                 bUseNextID = true
             else -- Decrement selection.
                 if prevID then
-                    dropdown:SetSelectedID(prevID)
+                    dropdown:SelectID(prevID)
                     dropdown:changeHandler(prevID)
                     PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)  -- Click sound.
                 end
@@ -1520,7 +1540,7 @@ function OptionsFrame_IncrDecrShape(delta)
         end
     end
 
-    dropdown:SetSelectedIndex(selectedIndex)
+    dropdown:SelectIndex(selectedIndex)
     dropdown:changeHandler( dropdown.itemIDs[selectedIndex] )
     PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)  -- Click sound.
     traceCfg("OUT OptionsFrame_IncrDecrShape().")
@@ -1548,7 +1568,7 @@ function OptionsFrame_IncrDecrStrata(delta)
         end
     end
 
-    dropdown:SetSelectedIndex(selectedIndex)
+    dropdown:SelectIndex(selectedIndex)
     dropdown:changeHandler( dropdown.itemIDs[selectedIndex] )
     PlaySound(SOUNDKIT.GS_TITLE_OPTION_OK)  -- Click sound.
     traceCfg("OUT OptionsFrame_IncrDecrStrata().")

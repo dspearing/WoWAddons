@@ -4,7 +4,7 @@ if ZGV:DoMutex("PetsMountsCDRAGON") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Otterworldly Ottuk Carrier",{
 author="support@zygorguides.com",
-description="\nSome ottuks get into the spirit of carrying people around more than others.",
+description="Some ottuks get into the spirit of carrying people around more than others.",
 mounts={376912},
 mounttype='Flying',
 startlevel=60,
@@ -25,7 +25,7 @@ Collect the "Otterworldly Ottuk Carrier" Mount |learnmount Otterworldly Ottuk Ca
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Achievement Mounts\\Hailstorm Armoredon",{
 author="support@zygorguides.com",
-description="\nBorn in the middle of an ice storm, this armoredon prefers its meals partially frozen.",
+description="Born in the middle of an ice storm, this armoredon prefers its meals partially frozen.",
 mounts={387231},
 mounttype='Ground',
 startlevel=60,
@@ -44,7 +44,7 @@ Collect the "Hailstorm Armoredon" Mount |learnmount Hailstorm Armoredon##387231
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Achievement Mounts\\Raging Magmammoth",{
 author="support@zygorguides.com",
-description="\nMost lava flows. This lava charges.",
+description="Most lava flows. This lava charges.",
 mounts={374275},
 mounttype='Ground',
 startlevel=60,
@@ -63,7 +63,7 @@ Collect the "Raging Magmammoth" Mount |learnmount Raging Magmammoth##374275
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Achievement Mounts\\Shellack",{
 author="support@zygorguides.com",
-description="\nFed by victory and hardened by glory, this snail is nothing less than a tribute to mastery.",
+description="Fed by victory and hardened by glory, this snail is nothing less than a tribute to mastery.",
 mounts={374155},
 mounttype='Ground',
 startlevel=60,
@@ -82,7 +82,7 @@ Collect the "Shellack" Mount |learnmount Shellack##374155
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Jade, Bright Foreseer",{
 author="support@zygorguides.com",
-description="\nThe presence of this majestic Pandaren rabbit spirit brings joy and happiness and is heralded as a wonderful omen. Legend says that in its eyes, you can glimpse the greatest happiness of your life, even if it is yet to come.",
+description="The presence of this majestic Pandaren rabbit spirit brings joy and happiness and is heralded as a wonderful omen. Legend says that in its eyes, you can glimpse the greatest happiness of your life, even if it is yet to come.",
 mounts={369451},
 mounttype='Ground',
 startlevel=60,
@@ -98,7 +98,7 @@ Collect the "Jade, Bright Foreseer" Mount |learnmount Jade, Bright Foreseer##369
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Blizzard Store Mounts\\Viridian Phase-Hunter",{
 author="support@zygorguides.com",
-description="\nThe otherworldly energies that transformed Draenor gave these creatures the ability to shift through space.",
+description="The otherworldly energies that transformed Draenor gave these creatures the ability to shift through space.",
 mounts={346136},
 mounttype='Ground',
 startlevel=60,
@@ -114,7 +114,7 @@ Collect the "Viridian Phase-Hunter" Mount |learnmount Viridian Phase-Hunter##346
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Lucky Yun",{
 author="support@zygorguides.com",
-description="\nPandaren elders claim he will bestow good fortune upon those who touch his glittering hide.",
+description="Pandaren elders claim he will bestow good fortune upon those who touch his glittering hide.",
 mounts={308087},
 model={93352},
 mounttype='Flying',
@@ -130,7 +130,7 @@ Collect the "Lucky Yun" Mount |learnmount Lucky Yun##308087
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Nether-Gorged Greatwyrm",{
 author="support@zygorguides.com",
-description="\nBristling with arcane energy, this mount carries you to the far horizons of whatever plane of existence your adventures require.",
+description="Bristling with arcane energy, this mount carries you to the far horizons of whatever plane of existence your adventures require.",
 mounts={367676},
 mounttype='Flying',
 startlevel=60,
@@ -149,7 +149,7 @@ Collect the "Nether-Gorged Greatwyrm" Mount |learnmount Nether-Gorged Greatwyrm#
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Sapphire Skyblazer",{
 author="support@zygorguides.com",
-description="\nThese birds burn hotter and brighter than than any avian to ever soar across the skies.",
+description="These birds burn hotter and brighter than than any avian to ever soar across the skies.",
 mounts={347812},
 mounttype='Flying',
 startlevel=60,
@@ -164,7 +164,7 @@ Collect the "Sapphire Skyblazer" Mount |learnmount Sapphire Skyblazer##347812
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Sunwarmed Furline",{
 author="support@zygorguides.com",
-description="\nThe fuzziest mount Azeroth has ever seen.",
+description="The fuzziest mount Azeroth has ever seen.",
 mounts={317177},
 model={95057},
 mounttype='Flying',
@@ -180,7 +180,7 @@ Collect the "Sunwarmed Furline" Mount |learnmount Sunwarmed Furline##317177
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Sylverian Dreamer",{
 author="support@zygorguides.com",
-description="\nA beautiful feathered dragon, born of an artist's dream in the magical city of Dalaran.",
+description="A beautiful feathered dragon, born of an artist's dream in the magical city of Dalaran.",
 mounts={290132},
 model={90396},
 mounttype='Flying',
@@ -200,7 +200,7 @@ Collect the "Sylverian Dreamer" Mount |learnmount Sylverian Dreamer##290132
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Wen Lo, the River's Edge",{
 author="support@zygorguides.com",
-description="\nThe rivers of Pandaria, like Wen Lo, are unpredictable in nature. They may remain calm, bringing water to the crops, or flood, bringing ruin. Wen Lo reminds us that we must adapt to the challenges of life.",
+description="The rivers of Pandaria, like Wen Lo, are unpredictable in nature. They may remain calm, bringing water to the crops, or flood, bringing ruin. Wen Lo reminds us that we must adapt to the challenges of life.",
 mounts={359317},
 mounttype='Flying',
 startlevel=60,
@@ -216,7 +216,7 @@ Collect the "Wen Lo, the River's Edge" Mount |learnmount Wen Lo, the River's Edg
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Gilded Ravasaur",{
 author="support@zygorguides.com",
-description="\nHorses in the Kul Tiran military are bred from an early age not to fear the sea, and revel in galloping along the shoreline and through the spray.",
+description="Horses in the Kul Tiran military are bred from an early age not to fear the sea, and revel in galloping along the shoreline and through the spray.",
 mounts={255696},
 model={80358},
 mounttype='Flying',
@@ -237,7 +237,7 @@ Collect the "Gilded Ravasaur" Mount |learnmount Gilded Ravasaur##255696
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Liberated Slyvern",{
 author="support@zygorguides.com",
-description="\nIt's difficult to tell because it's far too angry, but this slyvern is actually glad it's not owned by gnolls anymore.",
+description="It's difficult to tell because it's far too angry, but this slyvern is actually glad it's not owned by gnolls anymore.",
 mounts={359622},
 mounttype='Flying',
 startlevel=60,
@@ -258,7 +258,7 @@ Collect the "Liberated Slyvern" Mount |learnmount Liberated Slyvern##359622
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Zenet Hatchling",{
 author="support@zygorguides.com",
-description="\nThe hardest winds begin with a gust and a flap.",
+description="The hardest winds begin with a gust and a flap.",
 mounts={385266},
 mounttype='Flying',
 startlevel=60,
@@ -278,7 +278,7 @@ Collect the "Zenet Hatchling" Mount |learnmount Zenet Hatchling##385266
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Puzzle Mounts\\Divine Kiss of Ohn'ahra",{
 author="support@zygorguides.com",
-description="\n...as though welcomed by the wind itself.",
+description="...as though welcomed by the wind itself.",
 mounts={359408},
 mounttype='Flying',
 startlevel=60,
@@ -427,7 +427,7 @@ Learn the Divine Kiss of Ohn'ahra mount |learnmount Divine Kiss of Ohn'ahra##359
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Quest Mounts\\Temperamental Skyclaw",{
 author="support@zygorguides.com",
-description="\n Slyverns are rarely comfortable acting as mounts. Only those willing to feed their gluttonous appetites and keep a careful eye on them should attempt to ride.",
+description=" Slyverns are rarely comfortable acting as mounts. Only those willing to feed their gluttonous appetites and keep a careful eye on them should attempt to ride.",
 mounts={385738},
 mounttype='Flying',
 startlevel=60,
@@ -465,7 +465,7 @@ Learn the Temperamental Skyclaw Mount |learnmount Temperamental Skyclaw##385738
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Lizi, Thunderspine Tramper",{
 author="support@zygorguides.com",
-description="\nRaise your very own Thuderspine mount.",
+description="Raise your very own Thuderspine mount.",
 condition_suggested=function() return level == 60 and not achieved(16584) end,
 mounts={374247},
 mounttype='Ground',
@@ -672,9 +672,134 @@ step
 use Lizi's Reins##192799
 Collect the "Lizi, Thunderspine Tramper" Mount |learnmount Lizi, Thunderspine Tramper##374247
 ]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Ochre Dreamtalon",{
+author="support@zygorguides.com",
+description="Playful dreamtalons often decorate themselves in a myriad of colors that only autumn offers.",
+mounts={427041},
+mounttype='Ground',
+startlevel=70,
+keywords={"Dragonflight"},
+patch='100200',
+},[[
+step
+clicknpc Smoldering Sprout##209253
+Select _"<Put out the flames.>"_
+|tip You must dismount first.
+Extinguish the Flames |q 77712 |goto The Emerald Dream/0 48.67,67.90 |future
+step
+clicknpc Blackened Sprout##209468
+Select _"<Clean the plant.>"_
+|tip You must dismount first.
+Clean the Plant |q 77713 |goto 48.67,67.90 |future
+step
+clicknpc Sprout##209292
+accept Some Water...##77677 |goto 48.67,67.90
+step
+talk Professor Ash##208337
+Ask it _"Professor, what do you recommend for a plant suffering from burns and severe dehydration?"_
+Consult with an Expert in the Central Encampment |q 77677/1 |goto 49.57,62.81
+step
+clicknpc Empty Gardening Bucket
+Pick Up the Bucket |q 77677/2 |goto 49.59,62.87
+step
+use the Unfilled Bucket##208779
+Fill the Bucket |q 77677/3 |goto 51.14,65.77
+step
+clicknpc Sprout##209292
+Select _"<Water the plant with the moonwell water.>"_
+Water the Plant |q 77677/4 |goto 48.67,67.90
+step
+talk Sprout##209292
+Select _"<Tell a joke.>"_
+|tip Choose either dialogue option.
+Speak to the Plant |q 77677/5 |goto 48.67,67.90
+step
+talk Sprout##209292
+turnin Some Water...##77677 |goto 48.67,67.90
+step
+Wait for the Plant to Grow |complete not completedq(77717) or completedq(78398)
+|tip Check back after 5 days to nurture the sprout again.
+step
+talk Professor Ash##209571
+accept A Dash of Minerals...##78398 |goto 48.69,68.06
+step
+kill Fathomless Lurker##209580+
+|tip Under the water.
+collect 5 Fish Bones##210457 |q 78398/1 |goto 50.92,31.98
+step
+talk Professor Ash##209571
+turnin A Dash of Minerals...##78398 |goto 48.69,68.06
+step
+Wait for the Plant to Grow |complete not completedq(77717) or completedq(77697)
+|tip Check back after another 5 days to nurture the sprout again.
+step
+talk Dewy Sapling##209458
+accept The Right Food...##77697 |goto 48.68,67.90
+step
+talk Professor Ash##209571
+Ask it _"Professor, what do you know about feeding plants?"_
+Ask Professor Ash for Advice |q 77697/1 |goto 48.69,68.06
+step
+click Turtle Egg##408997+
+|tip They look like small eggs on the ground around this area.
+collect 3 Turtle Eggshell Shards##209416 |goto 41.63,76.48 |q 77697
+step
+Kill Lasher enemies around this area
+collect 5 Lasher Plant Matter##208644 |goto 59.46,79.81 |q 77697
+step
+talk Saelienne##207627
+|tip Inside the tent.
+buy 5 Tel'Abim Banana##4537 |q 77697 |goto 49.85,61.64
+step
+use the Lasher Plant Matter##208644
+collect Combined Fertilizer Ingredients##208646 |q 77697
+step
+collect Primed Emerald Dream Fertilizer##208647 |q 77697/4
+|tip You will receive this after 3 days of waiting.
+step
+talk Dewy Sapling##209458
+Select  _"<Spread the fertilizer underneath the plant.>"_
+clicknpc Dewy Sapling##209458
+Spread the completed fertilizer around the sapling |q 77697/5 |goto The Emerald Dream/0 48.68,67.89
+step
+talk Dewy Sapling##209458
+Select  _"<Tell a joke.>"_
+Entertain the plant with a few words |q 77697/6 |goto 48.68,67.89
+step
+talk Dewy Sapling##209458
+turnin The Right Food...##77697 |goto 48.68,67.90
+step
+Wait for the Plant to Grow |complete not completedq(77717) or completedq(77711)
+|tip Check back after another 5 days to nurture the sprout again.
+step
+talk Professor Ash##209571
+accept And a Pinch of Magic##77711 |goto 48.69,68.06
+step
+use the Druidic Totem##208705
+Kill Roottender enemies around this area
+|tip Kill them inside the green area on the ground.
+|tip Keep using the totem to maintain the green area.
+|tip Don't kill them too fast or the energy will not be drained.
+Drain Energy from Flame-Corrupted Roottender Creatures |q 77711/1 |goto 63.24,53.48
+step
+talk Professor Ash##209571
+turnin And a Pinch of Magic##77711 |goto 48.69,68.06
+step
+Wait for the Plant to Grow |complete not completedq(77717) or completedq(77762)
+|tip Check back after another 5 days to nurture the sprout again.
+step
+talk Professor Ash##209571
+accept A Little Hope is Never without Worth##77762 |goto 48.69,68.06
+step
+talk Professor Ash##209571
+turnin A Little Hope is Never without Worth##77762 |goto 48.69,68.06
+step
+use the Reins of the Ochre Dreamtalon##210774
+Learn the "Ochre Dreamtalon" Mount |learnmount Ochre Dreamtalon##427041
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Otto",{
 author="support@zygorguides.com",
-description="\nRelax. The future will unfold as it was meant to, one way or an otter.",
+description="Relax. The future will unfold as it was meant to, one way or an otter.",
 mounts={376873},
 mounttype='Ground',
 startlevel=60,
@@ -780,7 +905,7 @@ Collect the "Otto" Mount |learnmount Otto##376873
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Scrappy Worldsnail",{
 author="support@zygorguides.com",
-description="\nFor the Worldbreakers, a portable footstool. For you, a hardy mount.",
+description="For the Worldbreakers, a portable footstool. For you, a hardy mount.",
 mounts={374162},
 mounttype='Ground',
 startlevel=60,
@@ -860,7 +985,7 @@ Learn the Scrappy Worldsnail Mount |learnmount Scrappy Worldsnail##374162
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Azure Skitterfly",{
 author="support@zygorguides.com",
-description="\nOnce Granpap Whiskers finally taught them how to take riders, the azure skitterflies proved to bond closely and loyally to their riders.",
+description="Once Granpap Whiskers finally taught them how to take riders, the azure skitterflies proved to bond closely and loyally to their riders.",
 mounts={374034},
 mounttype='Flying',
 startlevel=60,
@@ -910,7 +1035,7 @@ Collect the "Azure Skitterfly" Mount |learnmount Azure Skitterfly##374034
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Verdant Skitterfly",{
 author="support@zygorguides.com",
-description="\nVerdant skitterflies are the perfect mount for the scouts of the Dragonscale Expedition scouts, as they are fast and blend into the foliage of the Dragon Isles.",
+description="Verdant skitterflies are the perfect mount for the scouts of the Dragonscale Expedition scouts, as they are fast and blend into the foliage of the Dragon Isles.",
 mounts={374048},
 mounttype='Flying',
 startlevel=60,
@@ -943,7 +1068,7 @@ Collect the "Verdant Skitterfly" Mount |learnmount Verdant Skitterfly##374048
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Reputation Mounts\\Tamed Skitterfly",{
 author="support@zygorguides.com",
-description="\nIt didn't take long for Grandpap Whiskers to tame the skitterflies around the Dragonscale Basecamp and set them to helping move Expedition personnel and cargo.",
+description="It didn't take long for Grandpap Whiskers to tame the skitterflies around the Dragonscale Basecamp and set them to helping move Expedition personnel and cargo.",
 mounts={374032},
 mounttype='Flying',
 startlevel=60,
@@ -993,7 +1118,7 @@ Collect the "Tamed Skitterfly" Mount |learnmount Tamed Skitterfly##374032
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Reputation Mounts\\Loyal Magmammoth",{
 author="support@zygorguides.com",
-description="\nLiberated from the Qalashi and harnessed by your ingenuity (and your harness) this magmammoth is ready to lava stomp wherever you want to go.",
+description="Liberated from the Qalashi and harnessed by your ingenuity (and your harness) this magmammoth is ready to lava stomp wherever you want to go.",
 mounts={373859},
 mounttype='Ground',
 startlevel=60,
@@ -1040,7 +1165,7 @@ Collect the "Loyal Magmammoth" Mount |learnmount Loyal Magmammoth##373859
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown Scouting Ottuk",{
 author="support@zygorguides.com",
-description="\nWily and playful in their natural habitat, ottuks possess keen eyes that can scout far afield as ably as they watch for predators.",
+description="Wily and playful in their natural habitat, ottuks possess keen eyes that can scout far afield as ably as they watch for predators.",
 mounts={376875},
 mounttype='Ground',
 startlevel=60,
@@ -1086,7 +1211,7 @@ Collect the "Brown Scouting Ottuk" Mount |learnmount Brown Scouting Ottuk##37687
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Brown War Ottuk",{
 author="support@zygorguides.com",
-description="\nThe tuskarr of Iskaara are loathe to war against anyone, but many tuskarr and their allies have nonetheless taken up the spear with a war ottuk beside them.",
+description="The tuskarr of Iskaara are loathe to war against anyone, but many tuskarr and their allies have nonetheless taken up the spear with a war ottuk beside them.",
 mounts={376910},
 mounttype='Ground',
 startlevel=60,
@@ -1131,7 +1256,7 @@ Collect the "Brown War Ottuk" Mount |learnmount Brown War Ottuk##376910
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow Scouting Ottuk",{
 author="support@zygorguides.com",
-description="\nThe yellow scouting ottuk love to hide and they blend in well to their surroundings. When not 'playing' hide and seek with their riders, they are perfect companions when scouting enemy encampments.",
+description="The yellow scouting ottuk love to hide and they blend in well to their surroundings. When not 'playing' hide and seek with their riders, they are perfect companions when scouting enemy encampments.",
 mounts={376880},
 mounttype='Ground',
 startlevel=60,
@@ -1176,7 +1301,7 @@ Collect the "Yellow Scouting Ottuk" Mount |learnmount Yellow Scouting Ottuk##376
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Yellow War Ottuk",{
 author="support@zygorguides.com",
-description="\nThe yellow ottuks of the Azure Span are sleek, sneaky, and smart. Those trained for war are the finest tuskarr cavalry mounts, equally capable on the ground and in the waters.",
+description="The yellow ottuks of the Azure Span are sleek, sneaky, and smart. Those trained for war are the finest tuskarr cavalry mounts, equally capable on the ground and in the waters.",
 mounts={376913},
 mounttype='Ground',
 startlevel=60,
@@ -1221,7 +1346,7 @@ Collect the "Yellow War Ottuk" Mount |learnmount Yellow War Ottuk##376913
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Ivory Trader's Ottuk",{
 author="support@zygorguides.com",
-description="\nNo adult knows why some ottuks are white, but any tuskarr child can tell you: it's because they eat too much snow.",
+description="No adult knows why some ottuks are white, but any tuskarr child can tell you: it's because they eat too much snow.",
 mounts={376879},
 mounttype='Ground',
 startlevel=60,
@@ -1278,7 +1403,7 @@ Collect the "Ivory Trader's Ottuk" Mount |learnmount Ivory Trader's Ottuk##37687
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Iskaara Trader's Ottuk",{
 author="support@zygorguides.com",
-description="\nNo adult knows why some ottuks are white, but any tuskarr child can tell you: it's because they eat too much snow.",
+description="No adult knows why some ottuks are white, but any tuskarr child can tell you: it's because they eat too much snow.",
 mounts={376879},
 mounttype='Ground',
 startlevel=60,
@@ -1312,7 +1437,7 @@ Collect the "Iskaara Trader's Ottuk" Mount |learnmount Iskaara Trader's Ottuk##3
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Perfected Juggernaut",{
 author="support@zygorguides.com",
-description="\nPerfection, like beauty, is in the eye of the beholder. But eyesight can be surgically enhanced.",
+description="Perfection, like beauty, is in the eye of the beholder. But eyesight can be surgically enhanced.",
 mounts={414328},
 mounttype='Ground',
 startlevel=70,
@@ -1422,7 +1547,7 @@ Collect the "Gold-Toed Albatross" Mount |learnmount Gold-Toed Albatross##414324
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\World Event Mounts\\Plainswalker Bearer",{
 author="support@zygorguides.com",
-description="\nThe mammoths of the Ohn'ahran Plains are unaccustomed to carrying people, as their centaur neighbors do not typically ride mounts. They can learn to bear riders, however. Some even do so enthusiastically.",
+description="The mammoths of the Ohn'ahran Plains are unaccustomed to carrying people, as their centaur neighbors do not typically ride mounts. They can learn to bear riders, however. Some even do so enthusiastically.",
 mounts={374196},
 mounttype='Ground',
 startlevel=60,
@@ -1456,7 +1581,7 @@ Collect the "Plainswalker Bearer" Mount |learnmount Plainswalker Bearer##374196
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\World Event Mounts\\Stormhide Salamanther",{
 author="support@zygorguides.com",
-description="\nSometimes when storm energies infuse a creature, it simply... becomes larger and more placid. Few salamanthers are willing to be ridden, but these children of the storm are a notable exception.",
+description="Sometimes when storm energies infuse a creature, it simply... becomes larger and more placid. Few salamanthers are willing to be ridden, but these children of the storm are a notable exception.",
 mounts={374098},
 mounttype='Ground',
 startlevel=60,

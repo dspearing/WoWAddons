@@ -251,7 +251,11 @@ L:SetMiscLocalization({
 ---------------------------
 --  Nymue, Weaver of the Cycle --
 ---------------------------
---L= DBM:GetModLocalization(2556)
+L= DBM:GetModLocalization(2556)
+
+L:SetMiscLocalization({
+	Threads			= "Потоки (%s)"
+})
 
 ---------------------------
 --  Smolderon --
@@ -265,7 +269,8 @@ L= DBM:GetModLocalization(2565)
 
 L:SetMiscLocalization({
 	TreeForm			= "Форма дерева",
-	MoonkinForm			= "Форма Лунного совуха"
+	MoonkinForm			= "Форма Лунного совуха",
+	Feathers			= "Перья"
 })
 
 ---------------------------

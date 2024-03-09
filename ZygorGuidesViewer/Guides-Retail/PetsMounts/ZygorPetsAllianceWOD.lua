@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Frostshell Pincher.",
+description="This guide will walk you through obtaining the Aquatic pet: Frostshell Pincher.",
 pet=1578,
 },[[
 step
@@ -20,7 +20,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Hydraling.",
+description="This guide will walk you through obtaining the Aquatic pet: Hydraling.",
 pet=1541,
 },[[
 step
@@ -36,7 +36,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Ironclaw Scuttler.",
+description="This guide will walk you through obtaining the Aquatic pet: Ironclaw Scuttler.",
 pet=1579,
 },[[
 step
@@ -49,7 +49,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Kelp Scuttler.",
+description="This guide will walk you through obtaining the Aquatic pet: Kelp Scuttler.",
 pet=1583,
 },[[
 step
@@ -62,7 +62,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Land Shark.",
+description="This guide will walk you through obtaining the Aquatic pet: Land Shark.",
 pet=115,
 },[[
 step
@@ -77,7 +77,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='62000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Left Shark.",
+description="This guide will walk you through obtaining the Aquatic pet: Left Shark.",
 pet=1687,
 },[[
 step
@@ -93,7 +93,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Leviathan Hatchling.",
+description="This guide will walk you through obtaining the Aquatic pet: Leviathan Hatchling.",
 pet=1623,
 },[[
 step
@@ -106,7 +106,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Moonshell Crab.",
+description="This guide will walk you through obtaining the Aquatic pet: Moonshell Crab.",
 pet=1447,
 },[[
 step
@@ -119,7 +119,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Mud Jumper.",
+description="This guide will walk you through obtaining the Aquatic pet: Mud Jumper.",
 pet=1441,
 },[[
 step
@@ -132,7 +132,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Puddle Terror.",
+description="This guide will walk you through obtaining the Aquatic pet: Puddle Terror.",
 pet=1568,
 },[[
 step
@@ -164,7 +164,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Sea Calf.",
+description="This guide will walk you through obtaining the Aquatic pet: Sea Calf.",
 pet=1448,
 },[[
 step
@@ -179,7 +179,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='61000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Slithershock Elver.",
+description="This guide will walk you through obtaining the Aquatic pet: Slithershock Elver.",
 pet=1655,
 },[[
 step
@@ -203,7 +203,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Zangar Crawler.",
+description="This guide will walk you through obtaining the Aquatic pet: Zangar Crawler.",
 pet=1582,
 },[[
 step
@@ -216,7 +216,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Albino River Calf.",
+description="This guide will walk you through obtaining the Beast pet: Albino River Calf.",
 pet=1571,
 },[[
 step
@@ -233,7 +233,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60200',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Argi.",
+description="This guide will walk you through obtaining the Beast pet: Argi.",
 pet=1603,
 },[[
 step
@@ -247,7 +247,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='62000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Cinder Pup.",
+description="This guide will walk you through obtaining the Beast pet: Cinder Pup.",
 pet=1662,
 },[[
 step
@@ -262,7 +262,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Deathwatch Hatchling.",
+description="This guide will walk you through obtaining the Beast pet: Deathwatch Hatchling.",
 pet=1449,
 },[[
 step
@@ -277,7 +277,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Flat-Tooth Calf.",
+description="This guide will walk you through obtaining the Beast pet: Flat-Tooth Calf.",
 pet=1595,
 },[[
 step
@@ -290,7 +290,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Frostwolf Pup.",
+description="This guide will walk you through obtaining the Beast pet: Frostwolf Pup.",
 pet=1542,
 },[[
 step
@@ -305,7 +305,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Icespine Hatchling.",
+description="This guide will walk you through obtaining the Beast pet: Icespine Hatchling.",
 pet=1457,
 },[[
 step
@@ -318,7 +318,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Leatherhide Runt.",
+description="This guide will walk you through obtaining the Beast pet: Leatherhide Runt.",
 pet=1435,
 },[[
 step
@@ -331,7 +331,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Meadowstomper Calf.",
+description="This guide will walk you through obtaining the Beast pet: Meadowstomper Calf.",
 pet=1446,
 },[[
 step
@@ -363,7 +363,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Mossbite Skitterer.",
+description="This guide will walk you through obtaining the Beast pet: Mossbite Skitterer.",
 pet=1455,
 },[[
 step
@@ -376,7 +376,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Mudback Calf.",
+description="This guide will walk you through obtaining the Beast pet: Mudback Calf.",
 pet=1594,
 },[[
 step
@@ -389,7 +389,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Parched Lizard.",
+description="This guide will walk you through obtaining the Beast pet: Parched Lizard.",
 pet=1615,
 },[[
 step
@@ -402,7 +402,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Thicket Skitterer.",
+description="This guide will walk you through obtaining the Beast pet: Thicket Skitterer.",
 pet=1456,
 },[[
 step
@@ -415,7 +415,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='61000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Young Talbuk.",
+description="This guide will walk you through obtaining the Beast pet: Young Talbuk.",
 pet=1656,
 },[[
 step
@@ -439,7 +439,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Bush Chicken.",
+description="This guide will walk you through obtaining the Critter pet: Bush Chicken.",
 pet=1516,
 },[[
 step
@@ -454,7 +454,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Frostfur Rat.",
+description="This guide will walk you through obtaining the Critter pet: Frostfur Rat.",
 pet=1427,
 },[[
 step
@@ -467,7 +467,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Lovebird Hatchling",
+description="This guide will walk you through obtaining the Critter pet: Lovebird Hatchling",
 pet=1511,
 },[[
 step
@@ -485,7 +485,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Pygmy Cow.",
+description="This guide will walk you through obtaining the Critter pet: Pygmy Cow.",
 pet=1543,
 },[[
 step
@@ -500,7 +500,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Albino Chimaeraling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Albino Chimaeraling.",
 pet=1385,
 },[[
 step
@@ -534,7 +534,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='112100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Bronze Whelpling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Bronze Whelpling.",
 pet=1563,
 },[[
 step
@@ -547,7 +547,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Lanticore Spawnling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Lanticore Spawnling.",
 pet=1533,
 },[[
 step
@@ -562,7 +562,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Abyssius.",
+description="This guide will walk you through obtaining the Elemental pet: Abyssius.",
 pet=1624,
 },[[
 step
@@ -575,7 +575,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Blazing Cindercrawler.",
+description="This guide will walk you through obtaining the Elemental pet: Blazing Cindercrawler.",
 pet=1517,
 },[[
 step
@@ -593,7 +593,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Crazy Carrot.",
+description="This guide will walk you through obtaining the Elemental pet: Crazy Carrot.",
 pet=1396,
 },[[
 step
@@ -606,7 +606,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Doom Bloom.",
+description="This guide will walk you through obtaining the Elemental pet: Doom Bloom.",
 pet=1564,
 },[[
 step
@@ -618,7 +618,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Forest Sproutling.",
+description="This guide will walk you through obtaining the Elemental pet: Forest Sproutling.",
 pet=1430,
 },[[
 step
@@ -635,7 +635,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Hatespark the Tiny.",
+description="This guide will walk you through obtaining the Elemental pet: Hatespark the Tiny.",
 pet=1544,
 },[[
 step
@@ -651,7 +651,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Molten Corgi.",
+description="This guide will walk you through obtaining the Elemental pet: Molten Corgi.",
 pet=1451,
 },[[
 step
@@ -666,7 +666,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Nightshade Sproutling.",
+description="This guide will walk you through obtaining the Elemental pet: Nightshade Sproutling.",
 pet=1432,
 },[[
 step
@@ -693,7 +693,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Soul of the Forge.",
+description="This guide will walk you through obtaining the Elemental pet: Soul of the Forge.",
 pet=1569,
 },[[
 step
@@ -741,7 +741,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Stout Alemental.",
+description="This guide will walk you through obtaining the Elemental pet: Stout Alemental.",
 pet=1518,
 },[[
 step
@@ -759,7 +759,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Sun Sproutling.",
+description="This guide will walk you through obtaining the Elemental pet: Sun Sproutling.",
 pet=1434,
 },[[
 step
@@ -791,7 +791,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Amberbarb Wasp.",
+description="This guide will walk you through obtaining the Flying pet: Amberbarb Wasp.",
 pet=1465,
 },[[
 step
@@ -804,7 +804,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Axebeak Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Axebeak Hatchling.",
 pet=1470,
 },[[
 step
@@ -817,7 +817,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Bloodsting Wasp.",
+description="This guide will walk you through obtaining the Flying pet: Bloodsting Wasp.",
 pet=1462,
 },[[
 step
@@ -830,7 +830,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Bone Wasp.",
+description="This guide will walk you through obtaining the Flying pet: Bone Wasp.",
 pet=1458,
 },[[
 step
@@ -846,7 +846,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Brilliant Bloodfeather.",
+description="This guide will walk you through obtaining the Flying pet: Brilliant Bloodfeather.",
 pet=1572,
 },[[
 step
@@ -859,7 +859,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Brilliant Spore.",
+description="This guide will walk you through obtaining the Flying pet: Brilliant Spore.",
 pet=1540,
 },[[
 step
@@ -871,7 +871,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Crimson Spore.",
+description="This guide will walk you through obtaining the Flying pet: Crimson Spore.",
 pet=1537,
 },[[
 step
@@ -883,7 +883,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='54700',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Dread Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Dread Hatchling.",
 pet=1386,
 },[[
 step
@@ -898,7 +898,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Everbloom Peachick.",
+description="This guide will walk you through obtaining the Flying pet: Everbloom Peachick.",
 pet=1566,
 },[[
 step
@@ -920,7 +920,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Firewing.",
+description="This guide will walk you through obtaining the Flying pet: Firewing.",
 pet=1545,
 },[[
 step
@@ -952,7 +952,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Fruit Hunter.",
+description="This guide will walk you through obtaining the Flying pet: Fruit Hunter.",
 pet=1471,
 },[[
 step
@@ -969,7 +969,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Golden Dawnfeather.",
+description="This guide will walk you through obtaining the Flying pet: Golden Dawnfeather.",
 pet=1573,
 },[[
 step
@@ -982,7 +982,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Ikky.",
+description="This guide will walk you through obtaining the Flying pet: Ikky.",
 pet=1532,
 },[[
 step
@@ -995,7 +995,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Junglebeak.",
+description="This guide will walk you through obtaining the Flying pet: Junglebeak.",
 pet=1469,
 },[[
 step
@@ -1008,7 +1008,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60200',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Kaliri Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Kaliri Hatchling.",
 pet=1597,
 },[[
 step
@@ -1020,7 +1020,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Mechanical Axebeak.",
+description="This guide will walk you through obtaining the Flying pet: Mechanical Axebeak.",
 pet=1403,
 },[[
 step
@@ -1067,7 +1067,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Mystical Spring Bouquet.",
+description="This guide will walk you through obtaining the Flying pet: Mystical Spring Bouquet.",
 pet=1514,
 },[[
 step
@@ -1082,7 +1082,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Royal Moth.",
+description="This guide will walk you through obtaining the Flying pet: Royal Moth.",
 pet=1587,
 },[[
 step
@@ -1095,7 +1095,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Royal Peacock.",
+description="This guide will walk you through obtaining the Flying pet: Royal Peacock.",
 pet=1411,
 },[[
 step
@@ -1110,7 +1110,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Sentinel's Companion.",
+description="This guide will walk you through obtaining the Flying pet: Sentinel's Companion.",
 pet=1567,
 },[[
 step
@@ -1135,7 +1135,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Shadow Sporebat.",
+description="This guide will walk you through obtaining the Flying pet: Shadow Sporebat.",
 pet=1599,
 },[[
 step
@@ -1148,7 +1148,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Sky Fry.",
+description="This guide will walk you through obtaining the Flying pet: Sky Fry.",
 pet=1575,
 },[[
 step
@@ -1163,7 +1163,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Stormwing.",
+description="This guide will walk you through obtaining the Flying pet: Stormwing.",
 pet=1546,
 },[[
 step
@@ -1178,7 +1178,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Sunfire Kaliri.",
+description="This guide will walk you through obtaining the Flying pet: Sunfire Kaliri.",
 pet=1570,
 },[[
 step
@@ -1210,7 +1210,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Swamplighter Firefly.",
+description="This guide will walk you through obtaining the Flying pet: Swamplighter Firefly.",
 pet=1590,
 },[[
 step
@@ -1223,7 +1223,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Teroclaw Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Teroclaw Hatchling.",
 pet=1416,
 },[[
 step
@@ -1235,7 +1235,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Twilight Wasp.",
+description="This guide will walk you through obtaining the Flying pet: Twilight Wasp.",
 pet=1464,
 },[[
 step
@@ -1248,7 +1248,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Umbrafen Spore.",
+description="This guide will walk you through obtaining the Flying pet: Umbrafen Spore.",
 pet=1538,
 },[[
 step
@@ -1260,7 +1260,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60200',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Veilwatcher Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Veilwatcher Hatchling.",
 pet=1596,
 },[[
 step
@@ -1273,7 +1273,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Waterfly.",
+description="This guide will walk you through obtaining the Flying pet: Waterfly.",
 pet=1593,
 },[[
 step
@@ -1286,7 +1286,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='60100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Wood Wasp.",
+description="This guide will walk you through obtaining the Flying pet: Wood Wasp.",
 pet=1463,
 },[[
 step
@@ -1299,7 +1299,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Fragment of Desire.",
+description="This guide will walk you through obtaining the Humanoid pet: Fragment of Desire.",
 pet=1627,
 },[[
 step
@@ -1312,7 +1312,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='60200',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Grommloc.",
+description="This guide will walk you through obtaining the Humanoid pet: Grommloc.",
 pet=1602,
 },[[
 step
@@ -1327,7 +1327,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Ore Eater.",
+description="This guide will walk you through obtaining the Humanoid pet: Ore Eater.",
 pet=1495,
 },[[
 step
@@ -1341,7 +1341,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Sister of Temptation.",
+description="This guide will walk you through obtaining the Humanoid pet: Sister of Temptation.",
 pet=1628,
 },[[
 step
@@ -1357,7 +1357,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='54200',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Treasure Goblin.",
+description="This guide will walk you through obtaining the Humanoid pet: Treasure Goblin.",
 pet=1365,
 },[[
 step
@@ -1372,7 +1372,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Wretched Servant.",
+description="This guide will walk you through obtaining the Humanoid pet: Wretched Servant.",
 pet=1634,
 },[[
 step
@@ -1386,7 +1386,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Chaos Pup.",
+description="This guide will walk you through obtaining the Magic pet: Chaos Pup.",
 pet=1633,
 },[[
 step
@@ -1400,7 +1400,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Elekk Plushie.",
+description="This guide will walk you through obtaining the Magic pet: Elekk Plushie.",
 pet=1426,
 },[[
 step
@@ -1429,7 +1429,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Eye of Observation.",
+description="This guide will walk you through obtaining the Magic pet: Eye of Observation.",
 pet=1576,
 },[[
 step
@@ -1444,7 +1444,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Hyjal Wisp.",
+description="This guide will walk you through obtaining the Magic pet: Hyjal Wisp.",
 pet=1631,
 },[[
 step
@@ -1457,7 +1457,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='61000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: K'ute.",
+description="This guide will walk you through obtaining the Magic pet: K'ute.",
 pet=1635,
 },[[
 step
@@ -1471,7 +1471,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Lil' Leftovers.",
+description="This guide will walk you through obtaining the Magic pet: Lil' Leftovers.",
 pet=1395,
 },[[
 step
@@ -1485,7 +1485,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Netherspawn, Spawn of Netherspawn.",
+description="This guide will walk you through obtaining the Magic pet: Netherspawn, Spawn of Netherspawn.",
 pet=1524,
 },[[
 step
@@ -1497,7 +1497,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60200',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Servant of Demidos.",
+description="This guide will walk you through obtaining the Magic pet: Servant of Demidos.",
 pet=1601,
 },[[
 step
@@ -1517,7 +1517,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Syd the Squid.",
+description="This guide will walk you through obtaining the Magic pet: Syd the Squid.",
 pet=1478,
 },[[
 step
@@ -1537,7 +1537,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='60200',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Trunks.",
+description="This guide will walk you through obtaining the Magic pet: Trunks.",
 pet=1605,
 },[[
 step
@@ -1553,7 +1553,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='41000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Ancient Nest Guardian.",
+description="This guide will walk you through obtaining the Mechanical pet: Ancient Nest Guardian.",
 pet=1531,
 },[[
 step
@@ -1577,7 +1577,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Draenei Micro Defender.",
+description="This guide will walk you through obtaining the Mechanical pet: Draenei Micro Defender.",
 pet=1450,
 },[[
 step
@@ -1592,7 +1592,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the  Mechanical pet: Iron Starlette.",
+description="This guide will walk you through obtaining the  Mechanical pet: Iron Starlette.",
 pet=1387,
 },[[
 leechsteps "Events Guides\\Warlords of Draenor\\Iron Horde Invasion" 1-37
@@ -1607,7 +1607,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Lifelike Mechanical Frostboar.",
+description="This guide will walk you through obtaining the Mechanical pet: Lifelike Mechanical Frostboar.",
 pet=1412,
 },[[
 step
@@ -1655,7 +1655,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Mechanical Scorpid.",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Scorpid.",
 pet=1565,
 },[[
 step
@@ -1703,7 +1703,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='61000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Race MiniZep.",
+description="This guide will walk you through obtaining the Mechanical pet: Race MiniZep.",
 pet=1636,
 },[[
 step
@@ -1716,7 +1716,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Sky-Bo.",
+description="This guide will walk you through obtaining the Mechanical pet: Sky-Bo.",
 pet=1467,
 },[[
 step
@@ -1774,7 +1774,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Stonegrinder.",
+description="This guide will walk you through obtaining the Mechanical pet: Stonegrinder.",
 pet=1515,
 },[[
 step
@@ -1787,7 +1787,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Sunblade Micro-Defender.",
+description="This guide will walk you through obtaining the Mechanical pet: Sunblade Micro-Defender.",
 pet=1632,
 },[[
 step
@@ -1800,7 +1800,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Bone Serpent.",
+description="This guide will walk you through obtaining the Undead pet: Bone Serpent.",
 pet=1600,
 },[[
 step
@@ -1824,7 +1824,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Cursed Birman.",
+description="This guide will walk you through obtaining the Undead pet: Cursed Birman.",
 pet=1521,
 },[[
 step
@@ -1851,7 +1851,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Fragment of Anger.",
+description="This guide will walk you through obtaining the Undead pet: Fragment of Anger.",
 pet=1625,
 },[[
 step
@@ -1864,7 +1864,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Fragment of Suffering.",
+description="This guide will walk you through obtaining the Undead pet: Fragment of Suffering.",
 pet=1626,
 },[[
 step
@@ -1877,7 +1877,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Frostwolf Ghostpup.",
+description="This guide will walk you through obtaining the Undead pet: Frostwolf Ghostpup.",
 pet=1530,
 },[[
 step
@@ -1901,7 +1901,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Ghastly Kid.",
+description="This guide will walk you through obtaining the Undead pet: Ghastly Kid.",
 pet=1442,
 },[[
 step
@@ -1933,7 +1933,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='62200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Ghastly Rat.",
+description="This guide will walk you through obtaining the Undead pet: Ghastly Rat.",
 pet=1741,
 },[[
 step
@@ -1947,7 +1947,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='62200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Ghost Maggot.",
+description="This guide will walk you through obtaining the Undead pet: Ghost Maggot.",
 pet=1740,
 },[[
 step
@@ -1961,7 +1961,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='61000',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Graves.",
+description="This guide will walk you through obtaining the Undead pet: Graves.",
 pet=1639,
 },[[
 step
@@ -1972,7 +1972,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Grotesque.",
+description="This guide will walk you through obtaining the Undead pet: Grotesque.",
 pet=1622,
 },[[
 step
@@ -1985,7 +1985,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Son of Sethe.",
+description="This guide will walk you through obtaining the Undead pet: Son of Sethe.",
 pet=1574,
 },[[
 step
@@ -2000,7 +2000,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='62200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Spectral Spinner.",
+description="This guide will walk you through obtaining the Undead pet: Spectral Spinner.",
 pet=1730,
 },[[
 step
@@ -2014,7 +2014,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='61000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Stinkrot.",
+description="This guide will walk you through obtaining the Undead pet: Stinkrot.",
 pet=1629,
 },[[
 step
@@ -2027,7 +2027,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Weebomination.",
+description="This guide will walk you through obtaining the Undead pet: Weebomination.",
 pet=1394,
 },[[
 step
@@ -2059,7 +2059,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Widget the Departed.",
+description="This guide will walk you through obtaining the Undead pet: Widget the Departed.",
 pet=1523,
 },[[
 step
@@ -2074,7 +2074,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='60100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Zomstrok.",
+description="This guide will walk you through obtaining the Undead pet: Zomstrok.",
 pet=1428,
 },[[
 step

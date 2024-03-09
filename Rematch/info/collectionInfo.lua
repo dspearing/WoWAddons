@@ -1,6 +1,7 @@
 local _,rematch = ...
 local L = rematch.localization
 local C = rematch.constants
+local settings = rematch.settings
 rematch.collectionInfo = {}
 
 --[[
@@ -70,6 +71,49 @@ local speciesStats = rematch.odTable:Create(function(self)
     end
 end)
 
+-- an unordered table of details about the collection
+local collectionStats = rematch.odTable:Create(function(self)
+    -- collection[speciesID] = {petType,source,numPets,numAt25,totalLevels,numPoor,numCommon,numUncommon,numRare}
+    local stats = rematch.collectionInfo:GetSpeciesStats()
+
+    self.numInJournal = 0
+    self.numCollectedUnique = 0
+    self.numCollectedTotal = 0
+    self.numUncollected = 0
+    self.numUniqueMax = 0 -- unique pets at max level
+    self.numTotalMax = 0 -- total pets at max level
+    self.totalLevels = 0 -- used in average level calculation
+    self.numUniqueRare = 0
+    self.numTotalRare = 0
+    self.numUncommon = 0
+    self.numCommon = 0
+    self.numPoor = 0
+    self.averageLevel = 0
+
+    for _,info in pairs(stats) do
+        self.numInJournal = self.numInJournal + 1
+        if info[3]==0 then
+            self.numUncollected = self.numUncollected + 1
+        else
+            self.numCollectedTotal = self.numCollectedTotal + info[3] -- total collected pets
+            self.numCollectedUnique = self.numCollectedUnique + 1 -- unique collected pets
+            self.numTotalMax = self.numTotalMax + info[4] -- total pets at max level
+            self.numUniqueMax = self.numUniqueMax + min(info[4],1) -- unique pets at max level
+            self.totalLevels = self.totalLevels + info[5]
+            self.numPoor = self.numPoor + info[7] -- total poor
+            self.numCommon = self.numCommon + info[8] -- total common
+            self.numUncommon = self.numUncommon + info[9] -- total uncommon
+            self.numTotalRare = self.numTotalRare + info[10] -- rare pets
+            self.numUniqueRare = self.numUniqueRare + min(info[10],1) -- unique rare pets
+        end
+    end
+
+    if self.totalLevels > 0 and self.numCollectedTotal > 0 then
+        self.averageLevel = self.totalLevels/self.numCollectedTotal
+    end
+    
+end)
+
 -- returns whether the given speciesID has a version at 25
 function rematch.collectionInfo:IsSpeciesAt25(speciesID)
     return speciesAt25[speciesID] or false
@@ -97,3 +141,49 @@ function rematch.collectionInfo:GetSpeciesStats()
     speciesStats:Start()
     return speciesStats
 end
+
+function rematch.collectionInfo:GetCollectionStats()
+    collectionStats:Start()
+    return collectionStats
+end
+
+-- returns a table of winrecord stats for all teams, including a table of the top ten teamIDs by wins/percent
+-- limit, if given, will limit the topTeams to the first limit entries (3 or 10)
+function rematch.collectionInfo:GetWinStats(limit)
+    local winStats = {battles=0,teams=0,wins=0,losses=0,draws=0,topTeams={}}
+    local teamStats = {} -- ordered table of wins, percent wins and teamID gathered while counting totals
+    for teamID,team in rematch.savedTeams:AllTeams() do
+        if team.winrecord then
+            local recordWins = team.winrecord.wins or 0
+            local recordLosses = team.winrecord.losses or 0
+            local recordDraws = team.winrecord.draws or 0
+            local recordBattles = team.winrecord.battles or recordWins+recordLosses+recordDraws
+            winStats.teams = winStats.teams + 1
+            winStats.battles = winStats.battles + recordBattles
+            winStats.wins = winStats.wins + recordWins
+            winStats.losses = winStats.losses + recordLosses
+            winStats.draws = winStats.draws + recordDraws
+            if settings.RankWinsByPercent then
+                tinsert(teamStats,format("%.5f %06d %s",recordBattles>0 and recordWins/recordBattles or 0,recordWins,teamID))
+            else
+                tinsert(teamStats,format("%09d %.5f %s",recordWins,recordBattles>0 and recordWins/recordBattles or 0,teamID))
+            end
+        end
+    end
+    table.sort(teamStats,function(e1,e2) return e1>e2 end)
+    -- from all teams in teamStats, fill ordered table with top limit(eg top 10) {teamID,totalWins,percentWins}
+    for i=1,(limit or #teamStats) do
+        if teamStats[i] then
+            local value1,value2,teamID = teamStats[i]:match("([0-9.]+) ([0-9.]+) (.+)")
+            value1 = tonumber(value1)
+            value2 = tonumber(value2)
+            if settings.RankWinsByPercent then
+                tinsert(winStats.topTeams,{teamID,value2,value1})
+            else
+                tinsert(winStats.topTeams,{teamID,value1,value2})
+            end
+        end
+    end
+    return winStats
+end
+

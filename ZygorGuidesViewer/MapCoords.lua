@@ -247,6 +247,7 @@ cache["1165_1166"]=true
 cache["1165_1167"]=true
 
 function ZGV.MapsOnDifferentFloors(m1,m2)
+	if not (m1 and m2) then return false end
 	if m1==m2 then return false end
 	if m1>m2 then m1,m2=m2,m1 end
 	if cache[m1]==false then return false end
@@ -315,6 +316,7 @@ local function FixMAPDATA()
 	--if KRASARANG_IS_BUGGED then MAPDATA[418]={870, 2949.921,-114.152,2949.921+1738.47,3234.15-114.152} end
 	if MAPDATA[1527] then MAPDATA[1527][1]=1 end -- Uldum New - also on Kalimdor
 	if MAPDATA[2239] then MAPDATA[2239][1]=2444 end -- Amirdrassil on Dragon Isles
+	--if MAPDATA[2133] then MAPDATA[2133][1]=2444 end -- Zaralek on Dragon Isles, but disabled, caverns and overworld don't mix well
 
 	for mapid,_ in pairs(LibRover.data.InstanceMapsRev) do
 		MAPDATA[mapid] = {mapid,0,0,0,0}
@@ -348,7 +350,7 @@ function MapCoords.Mdist(map1,x1,y1,map2,x2,y2)
 	else
 		local dm2=MAPDATA[map2]
 		if not dm2 then return nil,nil,nil,"err, dest unknown" end
-		if dm1[1]~=dm2[1] then return nil,nil,nil,"err, diff continent" end  -- diff continent
+		if dm1[1]~=dm2[1] then return nil,nil,nil,"err, diff continent",dm1[1],dm2[1] end  -- diff continent
 		local gx1 = dm1[2]-dm1[4]*x1
 		local gy1 = dm1[3]-dm1[5]*y1
 		local gx2 = dm2[2]-dm2[4]*x2

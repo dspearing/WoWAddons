@@ -98,8 +98,8 @@ GuideMenu.Sticky = {
 
 GuideMenu.DisplayMode = {		--values: show (display the toast when conditionsa are met), hide (never display the toast), dev (display when conditions met, but in dev clients only)
 
-	["welcome"] = "show",
-	["updates"] = "show",
+	["welcome"] = "hide",
+	["updates"] = "hide",
 	["orientation"] = "show",
 	["events"] = "show",
 	["dailyquests"] = "show",

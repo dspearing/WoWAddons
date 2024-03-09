@@ -1,5 +1,35 @@
 # Changelog
 
+v1.14.36:
+
+- Really fix IceHUD stomping on other uses of the PowerBarContainer such as the Digging bar for the Archive event.
+
+v1.14.35:
+
+- Fix IceHUD stomping on other uses of the PowerBarContainer such as the Digging bar for the Archive event.
+
+v1.14.34:
+
+- Fix Vigor showing up sometimes when it shouldn't.
+
+v1.14.33:
+
+- Update TOC for Dragonflight to 10.2.5
+
+v1.14.32:
+
+- Enable GlobalCoolDown module in Classic Era 1.15.0+
+- Enable tracking target buffs/debuffs in Classic Era 1.15.0+
+
+v1.14.31:
+
+- Fix nil concatenation error (wowace ticket #351)
+
+v1.14.30:
+
+- Update Classic-era TOC for 1.15.0
+- Enable TargetCastBar module on Classic-era 1.15+
+
 v1.14.29:
 
 - Fix Stagger bar error for 10.2.0 (wowace ticket #348)

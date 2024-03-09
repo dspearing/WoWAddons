@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Battle Pet D
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the Deadmines pet battle dungeon.",
+description="This guide will assist you in completing the Deadmines pet battle dungeon.",
 keywords={"Pet", "Battle", "DM", "Westfall", "Defias", "Eastern", "Kingdoms"},
 condition_suggested=function() return level >= 45 and completedq(45423) and not completedq(46291) end,
 condition_valid=function() return level >= 45 and completedq(45423) end,
@@ -110,7 +110,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Battle Pet D
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will assist you in completing the Wailing Caverns pet battle dungeon.",
+description="This guide will assist you in completing the Wailing Caverns pet battle dungeon.",
 keywords={"Pet", "Battle", "WC", "Barrens", "Deviate", "Kalimdor"},
 condition_suggested=function() return level >= 45 and not completedq(45423) end,
 startlevel=45.0,
@@ -198,7 +198,7 @@ You Compelted the "Wailing Caverns" Pet Battle Dungeon.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pet Quests\\Uuna Storyline",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through the Uuna Scenario.",
+description="This guide will walk you through the Uuna Scenario.",
 },[[
 step
 Learn the Uuna Pet

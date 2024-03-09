@@ -651,7 +651,8 @@ function ActionBar:ReanchorButtons(force)
 	local space = 5
 	local width = space
 	local active = false
-	--ActionBar.Frame:Show()
+	ActionBar.Frame:Show()
+	ActionBar.Frame:SetAlpha(0.01)
 
 	for _,button in ipairs(ActionBar.Buttons) do
 		button:ClearAllPoints()
@@ -679,6 +680,7 @@ function ActionBar:ReanchorButtons(force)
 		ActionBar.Frame:Hide()
 		return 
 	elseif active or force=="on" then 
+		ActionBar.Frame:SetAlpha(1)
 		ActionBar.Frame:Show()
 	-- -- actionbar_hide_useless variant
 	--elseif ZGV.db.profile.actionbar_hide_useless then

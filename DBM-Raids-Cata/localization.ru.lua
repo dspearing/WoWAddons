@@ -6,10 +6,6 @@ local L
 ----------------
 L= DBM:GetModLocalization(139)
 
-L:SetOptionLocalization({
-	SetIconOnConsuming		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(88954)
-})
-
 -----------------
 --  Occu'thar  --
 -----------------
@@ -33,11 +29,6 @@ L:SetOptionLocalization({
 -------------------------------
 L = DBM:GetModLocalization(169)
 
-L:SetWarningLocalization({
-	SpecWarnActivated			= "Смена цели на: %s!",
-	specWarnGenerator			= "Генератор энергии - Двигайтесь %s!"
-})
-
 L:SetTimerLocalization({
 	timerShadowConductorCast	= "Проводник тьмы",
 	timerArcaneLockout			= "Волшебный уничтожитель",
@@ -49,13 +40,7 @@ L:SetOptionLocalization({
 	timerShadowConductorCast	= "Отсчет времени применения заклинания $spell:92048",
 	timerArcaneLockout			= "Отсчет времени блокировки $spell:79710",
 	timerArcaneBlowbackCast		= "Отсчет времени применения заклинания $spell:91879",
-	timerNefAblity				= "Отсчет времени восстановления баффа (героический режим)",
-	SpecWarnActivated			= "Спецпредупреждение при активации нового босса",
-	specWarnGenerator			= "Спецпредупреждение, когда босс стоит в $spell:79629",
-	AcquiringTargetIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(79501),
-	ConductorIcon				= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(79888),
-	ShadowConductorIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(92053),
-	SetIconOnActivated			= "Устанавливать метку на появившегося босса"
+	timerNefAblity				= "Отсчет времени восстановления баффа (героический режим)"
 })
 
 L:SetMiscLocalization({
@@ -86,11 +71,6 @@ L:SetMiscLocalization({
 --  Atramedes  --
 -----------------
 L = DBM:GetModLocalization(171)
-
-L:SetOptionLocalization({
-	InfoFrame				= "Показывать информационное окно для $journal:3072",
-	TrackingIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(78092)
-})
 
 L:SetMiscLocalization({
 	NefAdd					= "Атрамед, они вон там!",
@@ -206,10 +186,6 @@ L:SetGeneralLocalization({
 --------------------------
 L= DBM:GetModLocalization(156)
 
-L:SetOptionLocalization({
-	ShowDrakeHealth		= "Показать здоровье подчиненного дракона<br/>(должна быть включена опция отображения здоровья босса)"
-})
-
 
 ---------------------------
 --  Valiona & Theralion  --
@@ -218,11 +194,7 @@ L= DBM:GetModLocalization(157)
 
 L:SetOptionLocalization({
 	TBwarnWhileBlackout		= "Предупреждение о $spell:86369, когда активно $spell:86788",
-	TwilightBlastArrow		= "Показывать стрелку DBM, когда $spell:86369 около Вас",
-	RangeFrame				= "Показывать окно проверки дистанции (10м)",
-	BlackoutShieldFrame		= "Показывать здоровье босса с помощью шкалы здоровья для $spell:86788",
-	BlackoutIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(86788),
-	EngulfingIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(86622)
+	BlackoutShieldFrame		= "Показывать здоровье босса с помощью шкалы здоровья для $spell:86788"
 })
 
 L:SetMiscLocalization({
@@ -250,16 +222,7 @@ L:SetOptionLocalization({
 	SpecWarnGrounded		= "Спецпредупреждение, когда у Вас не хватает ауры $spell:83581<br/>(~10сек перед началом применения)",
 	SpecWarnSearingWinds	= "Спецпредупреждение, когда у Вас не хватает ауры $spell:83500<br/>(~10сек перед началом применения)",
 	timerTransition			= "Показывать таймер перехода в другую фазу",
-	RangeFrame				= "Автоматически показывать окно проверки дистанции при необходимости",
-	yellScrewed				= "Кричать, когда на Вас одновременно $spell:83099 и $spell:92307",
-	InfoFrame				= "Показывать игроков без $spell:83581 или $spell:83500",
-	HeartIceIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(82665),
-	BurningBloodIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(82660),
-	LightningRodIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(83099),
-	GravityCrushIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(84948),
-	FrostBeaconIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(92307),
-	StaticOverloadIcon		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(92067),
-	GravityCoreIcon			= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(92075)
+	yellScrewed				= "Кричать, когда на Вас одновременно $spell:83099 и $spell:92307"
 })
 
 L:SetMiscLocalization({
@@ -276,13 +239,6 @@ L:SetMiscLocalization({
 --  Cho'gall  --
 ----------------
 L= DBM:GetModLocalization(167)
-
-L:SetOptionLocalization({
-	CorruptingCrashArrow	= "Показывать стрелку DBM, когда $spell:81685 около Вас",
-	InfoFrame				= "Показывать информационное окно для $journal:3165",
-	RangeFrame				= "Показывать окно проверки дистанции (5м) для $journal:3165",
-	SetIconOnWorship		= DBM_CORE_L.AUTO_ICONS_OPTION_TARGETS:format(91317)
-})
 
 ----------------
 --  Sinestra  --

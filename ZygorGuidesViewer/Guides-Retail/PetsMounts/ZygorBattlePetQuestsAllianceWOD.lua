@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pet Quests\\Draeno
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through completing the Draenor Battle Pet dailies.",
+description="This guide will walk you through completing the Draenor Battle Pet dailies.",
 condition_suggested=function() return level>=1 and level<=50 end,
 },[[
 step

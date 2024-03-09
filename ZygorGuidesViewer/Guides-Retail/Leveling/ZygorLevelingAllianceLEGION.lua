@@ -8213,7 +8213,7 @@ Watch the dialogue
 Escort Prophet Velen to the Seat of the Naaru |scenariostage 5 |goto 53.90,38.63 |q 44004
 step
 kill Fel Annihilator##111593
-|tip He hits very hard. If you have trouble, pull him to your allies and let them fight him until he runs up onto the platform.
+|tip If you have trouble, pull him to your allies and let them fight him until he runs up onto the platform.
 Watch the dialogue
 Defeat High General Rakeesh |scenarioend |goto 57.88,41.16 |q 44004
 step
@@ -8619,6 +8619,7 @@ Speak to Archmage Khadgar |scenarioend |goto 50.81,66.50 |q 42659
 step
 talk Halduron Brightwing##108620
 accept Champion: Halduron Brightwing##42415 |goto 49.62,65.59
+He can also be found at [Trueshot Lodge/0 47.46,39.42]
 step
 click Portal to Highmountain##251760 |goto 50.83,65.11 |n
 Travel to Trueshot Lodge |goto 50.83,65.11 > 10000 |noway |c |q 42659
@@ -9862,7 +9863,8 @@ step
 click Portal out of the Vault##251105 |goto 51.15,19.36
 Return to Dalaran |goto 52.32,18.56 < 10 |noway |c |q 42455
 step
-Fly to the Abandoned Kirin Tor Camp near Karazhan |q 42476/2 |goto Deadwind Pass/0 35.85,64.07
+use Karazhan Scroll##173698
+Use the Karazhan Scroll to Get to Karazhan |q 42476/2 |goto Deadwind Pass/0 35.85,64.07 |notravel
 step
 click Functional Ward##250602
 Find the Remaining Ritual Items|q 42476/3 |goto 35.83,64.07
@@ -9878,7 +9880,7 @@ Take the Ritual Focus Crystal |q 42476/6 |goto 34.14,59.68
 step
 use Blasted Lands Scroll##173699
 |tip Use it to teleport directly to the Blasted Lands.
-Arrive in the Blasted Lands |goto Blasted Lands/0 33.73,47.33 < 7 |c
+Arrive in the Blasted Lands |goto Blasted Lands/0 33.73,47.33 < 7 |c |q 42477
 step
 Locate Daio |q 42477/2 |goto 32.50,45.14
 step
@@ -14270,13 +14272,16 @@ stickystart "Exorcise_Spirits"
 stickystart "Kill_Cannoneer_Dargal"
 step
 click Gravestone##251288
-Purify the Gravestone |q 42772/1 |goto 50.33,80.28 |count 1
+|tip You may have to click it more than once.
+Purify the Graveyard |q 42772/1 |count 1 |goto 50.33,80.28
 step
 click Gravestone##251288
-Purify the Gravestone |q 42772/1 |goto 49.84,77.59 |count 2
+|tip You may have to click it more than once.
+Purify the Graveyard |q 42772/1 |count 2 |goto 49.84,77.59
 step
 click Gravestone##251288
-Purify the Gravestone |q 42772/1 |goto 51.02,76.18 |count 3
+|tip You may have to click it more than once.
+Purify the Graveyard |q 42772/1 |count 3 |goto 51.02,76.18
 step
 label "Exorcise_Spirits"
 Kill enemies around this area.
@@ -14362,6 +14367,7 @@ Return to Tirion Fordring |scenarioend |goto 20.18,61.39 |q 38376
 step
 talk Lord Maxwell Tyrosus##91144
 turnin The Search for the Highlord##38376 |goto 20.42,61.55
+accept We Meet at Light's Hope##42811 |goto 20.42,61.55
 step
 clicknpc Argent Hippogryph##91145
 |tip Click the hippogryph nearby.
@@ -14369,14 +14375,11 @@ Fly back to Light's Hope Chapel |goto Eastern Plaguelands/0 73.97,53.46 |c |nowa
 |next "All_Paladins"
 step
 label "All_Paladins"
-talk Lord Maxwell Tyrosus##100031
-accept We Meet at Light's Hope##38576 |goto Dalaran L/10 71.83,45.03
-step
 Enter the building |goto Eastern Plaguelands/0 75.41,52.65 < 7 |walk
 click Secret Door
 |tip Inside the building.
 |tip Walk down the stairs.
-Enter Light's Hope Sanctum |q 38576/3 |goto Eastern Plaguelands/20 42.19,89.06
+Enter Light's Hope Sanctum |q 42811/2 |goto Eastern Plaguelands/20 42.19,89.06
 step
 talk Lord Maxwell Tyrosus##100031
 turnin We Meet at Light's Hope##38576 |goto 63.16,37.13
@@ -15000,6 +15003,7 @@ Recover #8# of Aponi's Journal Pages |q 43490/1 |goto 66.71,27.88
 step
 Use the Portal |q 43490/2 |goto 66.96,27.82
 |tip Walk into the portal.
+|tip It may not be visible.
 step
 click Cage##238791
 Free Aponi Brightmane |q 43490/3 |goto Niskara/0 48.92,63.77
@@ -26497,7 +26501,7 @@ Escort Prince Farondis |q 37497/1 |goto 51.79,44.30
 step
 accept The Broken Academy##37466 |goto 51.79,44.30
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 step
 talk Prince Farondis##88867
 turnin Trailing the Tidestone##37497 |goto 51.79,44.30
@@ -26513,7 +26517,7 @@ accept You Never Know Until You Scry##42693 |goto 53.40,45.43
 stickystart "Defend_Against_The_Hatecoil"
 step
 click Ancient Highborne Tome##251120
-|tip Inside the building.
+|tip Inside the building on the ground floor.
 Find the First Ancient Highborne Tome |q 42692/1 |goto 53.03,43.75
 step
 Enter the building |goto 51.91,43.94 < 7 |only if walking
@@ -26793,7 +26797,7 @@ accept The Head of the Snake##37470 |goto 57.87,43.34
 step
 accept Tip the Scales##37779 |goto 58.71,41.57
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Disrupt_The_Hatecoil_Warcamp"
 step
 kill Athissa##89116 |q 37470/1 |goto 62.64,41.15
@@ -26866,7 +26870,7 @@ Enter the cave |goto 47.94,50.86 < 30 |walk
 click Okuna Longtusk's Pack##239120
 |tip Inside the cave.
 turnin Round 1, Fight!##37538 |goto Azsuna/18 43.89,24.67
-accept Plunder the Cove##37495 |goto 43.77,24.70 |goto Azsuna/18 43.89,24.67 |only if level < 50
+accept Plunder the Cove##37495 |goto 43.77,24.70 |goto Azsuna/18 43.89,24.67 |only if level < 45
 accept The Right Weapon for the Job##37565 |goto Azsuna/18 43.89,24.67
 stickystart "Plunder_Oceanus_Cove"
 step
@@ -26956,7 +26960,6 @@ kill Oublion##89350
 kill Queen Kraklaa##89287
 Deal with Queen Kraklaa |q 37657/2 |goto 63.86,63.55
 step
-Leave the underwater cave |goto 62.93,61.44 < 20 |walk
 talk Looper Allen##106881
 turnin Maritime Law##37654 |goto 64.26,56.14
 accept The Captain's Foot Locker##37659 |goto 64.26,56.14
@@ -27199,7 +27202,7 @@ accept Challiane Vineyards##38203 |goto 47.44,12.53
 step
 accept A Tainted Vintage##37965 |goto 47.44,12.53
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Combat_The_Haunting"
 step
 Enter the building |goto 45.69,12.53 < 7 |walk
@@ -27797,7 +27800,7 @@ step
 talk Spiritwalker Ebonhorn##99153
 |tip Inside the cave.
 turnin The Path of Huln##39575 |goto 43.23,28.19
-accept Echoes of Deathwing##39576 |goto 43.23,28.19 |only if level < 50
+accept Echoes of Deathwing##39576 |goto 43.23,28.19 |only if level < 45
 accept In Defiance of Deathwing##40219 |goto 43.23,28.19
 stickystart "Explore_The_Vault"
 step
@@ -28041,7 +28044,7 @@ turnin Can't Hold a Candle To You##39772 |goto 54.70,45.00
 step
 accept Siege of Crawliac##39317 |goto 51.25,43.21
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Break_The_Harpy_Assault_On_Skyhorn"
 step
 clicknpc Captive Great Eagle##94991+
@@ -28059,7 +28062,7 @@ accept Hex-a-Gone##39419 |goto 47.17,47.99
 step
 accept The Screeching Crag##40316 |goto 47.35,46.93
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Cleanse_The_Screeching_Crag_Of_The_Harpies_Curse"
 step
 kill Hexweaver Akara##95693 |q 39419/1 |goto 45.62,49.23
@@ -28379,7 +28382,7 @@ turnin I'm Not Lion!##39867 |goto 40.02,52.35
 step
 accept Witches of the Sky##39371 |goto 38.97,38.75
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 step
 talk Oakin Ironbull##95256
 |tip Inside the building.
@@ -28501,7 +28504,7 @@ Follow the path up |goto 47.57,29.00 < 15 |c |q 39426
 step
 accept Vengeance for the Stonedark##42373 |goto 47.91,26.62
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Vanquish_The_Feltotem"
 step
 Cross the bridge |goto 48.97,26.46 < 10 |only if walking
@@ -28581,7 +28584,7 @@ Fly to Shipwreck Cove |goto 41.88,10.51 < 10 |c |q 40244 |notravel
 step
 accept Shipwreck Cove##40050 |goto 41.88,10.51
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 step
 talk Steven Nelson##98066
 fpath Shipwreck Cove |goto 41.91,10.41
@@ -28638,7 +28641,7 @@ talk King Mrgl-Mrgl##98067
 turnin Murlocs: The Next Generation##40102 |goto 49.57,15.96
 turnin Oh, the Clawdacity!##40230 |goto 49.57,15.96
 step
-Return to Thunder Totem |goto Thunder Totem/0 45.70,38.88 < 10000 |c |q 39456
+Return to Thunder Totem |goto Thunder Totem/0 45.70,38.88 < 100 |c |q 39456
 step
 talk Navarrogg##99619
 |tip Outside, downstairs inside Thunder Totem.
@@ -28916,7 +28919,7 @@ Add the Hearty Grains |q 38331/3 |goto 43.09,49.44
 step
 talk Havi##96254
 turnin Havi's Test##38331 |goto 43.17,49.16
-accept A Worthy Challenger##38442 |goto 43.17,49.16 |only if level < 50
+accept A Worthy Challenger##38442 |goto 43.17,49.16 |only if level < 45
 accept Ahead of the Game##39590 |goto 43.17,49.16
 stickystart "Defeat_The_Challengers"
 step
@@ -29028,7 +29031,7 @@ accept To Weather the Storm##38405 |goto 42.01,64.49
 step
 clicknpc Grapple Point##110334
 |tip On top of the wall nearby, with a bouncing yellow arrow floating above it.
-Grapple Over the Wall |q 38318/1 |goto 42.02,64.48
+Grapple To the Wall |q 38318/1 |goto Stormheim/0 42.88,64.85
 stickystart "Assault_The_Drekirjar"
 step
 kill Stormwing Drake##91202+
@@ -29098,33 +29101,28 @@ accept Above the Winter Moonlight##38412
 step
 clicknpc Grapple Point##110334
 |tip On the cliff ledge nearby.
-Grapple to the Mountain Path |q 38618/1 |goto 46.36,74.37
+Grapple to the Mountain Path |q 38412/1 |goto 46.36,74.37 < 7 |c
 step
 Run Up the Path |goto 46.65,75.09 < 5
 Run Up the Ledge |goto 45.68,74.79 < 7
-Run Up the Narrow Zig Zag Ledge |goto 46.28,75.67 < 7 |c |q 38618
+Run Up the Narrow Zig Zag Ledge |goto 46.44,75.29 < 7 |c
 |only if walking
 step
 clicknpc Grapple Point##110334
 |tip Up to the rock with the broken branch.
-Grapple Up Across the Path |goto 45.88,76.34 < 7 |c |q 38618
+Grapple Up Across the Path |goto 45.88,76.34 < 7 |c
 |only if walking
 step
 clicknpc Grapple Point##110334
 |tip Up to the flat rock.
-Grapple Across to the Rock |goto 45.23,75.59 < 5 |c |q 38618
-|only if walking
-step
-clicknpc Grapple Point##110334
-|tip Up to the rock.
-Grapple to the rock |goto 44.34,76.37 < 5 |c |q 38618
+Grapple Across to the Rock |goto 44.86,75.55 < 5 |c
 |only if walking
 step
 clicknpc Grapple Point##110334
 |tip Up to the bridge above.
-Grapple Up to the Bridge |goto 43.70,76.72 < 5 |c |q 38618
+Grapple Up to the Bridge |goto 43.70,76.72 < 5 |c
 step
-Reach the Top of the Path |q 38618/2 |goto 44.44,77.60
+Reach the Top of the Path |q 38412/2 |goto 44.44,77.60
 step
 talk Vethir##91249
 turnin Above the Winter Moonlight##38412 |goto 44.81,77.40
@@ -29134,7 +29132,7 @@ accept Fury of the Storm##40568 |goto 44.81,77.40
 step
 clicknpc Grapple Point##110334
 |tip Across the chasm.
-Grapple Across the Broken Bridge |goto 45.21,78.83 < 5 |c |q 38413
+Grapple Across the Broken Bridge |goto 45.21,78.83 < 5 |c
 stickystart "Slay_Drekirjar_Vrykul"
 step
 click Ritual Circle##244337
@@ -29244,7 +29242,7 @@ You can find more around [46.92,33.97]
 step
 accept The Brood of Nithogg##42431 |goto 42.87,38.52
 |tip You will automatically accept this quest.
-|only if level < 50
+|only if level < 45
 step
 label "Cull_The_Squallhunters"
 Kill enemies around this area
@@ -29356,13 +29354,13 @@ stickystart "Kill_Bonespeaker_Carvers"
 stickystart "Kill_Bonespeaker_Runeaxes"
 step
 clicknpc Runestone##93343
-Activate the Runestone |q 38778/1 |goto 68.60,51.60 |count 1
+Activate the Runestone |q 38778/1 |count 1 |goto 68.60,51.60
 step
 clicknpc Runestone##93343
-Activate the Runestone |q 38778/1 |goto 67.34,56.43 |count 2
+Activate the Runestone |q 38778/1 |count 2 |goto 67.34,56.43
 step
 clicknpc Runestone##93343
-Activate the Runestone |q 38778/1 |goto 65.27,53.28 |count 3
+Activate the Runestone |q 38778/1 |count 3 |goto 65.27,53.28
 step
 label "Kill_Bonespeaker_Carvers"
 kill 8 Bonespeaker Carver##93070 |q 39788/2 |goto 68.63,51.61
@@ -29410,7 +29408,7 @@ step
 label "Return_Restless_Ancestors_To_The_Earth"
 kill Restless Ancestor##93094+
 use the Branch of the Runewood##128772
-|tip You only have to them once with your fist, a weapon, or a spell, then use the branch on them.
+|tip Hit them once with your fist, a weapon, or a spell, then use the branch on them.
 Return #8# Restless Ancestors to the Earth |q 39791/1 |goto 66.41,45.90
 step
 talk Shieldmaiden Iounn##93446
@@ -29423,50 +29421,35 @@ step
 Follow the path |goto 68.81,46.43 < 20 |only if walking
 click Rune-Carved Tablet##241840
 accept The Runes that Bind##38823 |goto 69.80,45.73
+stickystart "DESTROY_RITUAL_STONES"
 step
 click Ashildir's Bones##241874
-collect Ashildir's Bones##124512 |q 38817/1 |goto 69.85,45.77 |count 1
+|tip They look like small piles of bones lying inside and outside crypts around this area.
+collect 8 Ashildir's Bones##124512 |q 38817/1 |goto 69.85,45.77
+You can find more around:
+[69.34,44.36]
+[69.18,42.38]
+[69.28,41.70]
+[69.81,41.48]
+[71.18,44.18]
+[71.78,44.78]
+[71.14,45.67]
 step
-click Ashildir's Bones##241874
-collect Ashildir's Bones##124512 |q 38817/1 |goto 69.34,44.36 |count 2
-step
+label "DESTROY_RITUAL_STONES"
 Enter the building |goto 69.85,42.53 < 7 |walk
 click Ritual Stone##265596
 |tip Inside the building.
-Destroy the Ritual Stone |q 38823/1 |goto 69.52,41.97 |count 1
-step
-click Ashildir's Bones##241874
-|tip Inside the building.
-collect Ashildir's Bones##124512 |q 38817/1 |goto 69.18,42.38 |count 3
-step
-click Ashildir's Bones##241874
-|tip Inside the building.
-collect Ashildir's Bones##124512 |q 38817/1 |goto 69.28,41.70 |count 4
-step
-click Ashildir's Bones##241874
-|tip Inside the building.
-collect Ashildir's Bones##124512 |q 38817/1 |goto 69.81,41.48 |count 5
-step
-click Ashildir's Bones##241874
-collect Ashildir's Bones##124512 |q 38817/1 |goto 71.18,44.18 |count 6
+Destroy the Ritual Stone |q 38823/1 |goto 69.52,41.97
 step
 Enter the building |goto 71.10,44.66 < 7 |walk
 click Ritual Stone##265596
 |tip Inside the building.
-Destroy the Ritual Stone |q 38823/1 |goto 71.42,45.20 |count 2
-step
-click Ashildir's Bones##241874
-|tip Inside the building.
-collect Ashildir's Bones##124512 |q 38817/1 |goto 71.78,44.78 |count 7
-step
-click Ashildir's Bones##241874
-|tip Inside the building.
-collect Ashildir's Bones##124512 |q 38817/1 |goto 71.14,45.67 |count 8
+Destroy the Ritual Stone |q 38823/1 |goto 71.42,45.20
 step
 Enter the building |goto 72.62,43.45 < 7 |walk
 click Ritual Stone##265596
 |tip Inside the building.
-Destroy the Ritual Stone |q 38823/1 |goto 72.97,43.99 |count 3
+Destroy the Ritual Stone |q 38823/1 |goto 72.97,43.99
 step
 label "Slay_Bonespeaker_Allies"
 Kill enemies around this area
@@ -29497,7 +29480,7 @@ Travel to Helheim |goto Helheim/0 64.92,47.32 < 10 |noway |c |q 38818
 step
 talk Ashildir##97319
 turnin The Final Judgment##38818 |goto Helheim/0 65.53,47.07
-accept Raze Hel##38343 |goto Helheim/0 65.53,47.07 |only if level < 50
+accept Raze Hel##38343 |goto Helheim/0 65.53,47.07 |only if level < 45
 accept An Unworthy Task##39837 |goto Helheim/0 65.53,47.07
 stickystart "Become_A_Hel_Raiser"
 step
@@ -29512,28 +29495,16 @@ accept Accessories of the Cursed##38324 |goto 64.63,43.36
 stickystart "Collect_Kvaldir_Seaweed"
 step
 click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 60.41,34.01 |count 1
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 64.75,30.41 |count 2
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 69.35,28.91 |count 3
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 75.39,29.01 |count 4
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 78.05,27.50 |count 5
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 77.21,26.45 |count 6
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 78.56,23.29 |count 7
-step
-click Cursed Bones##240586
-collect Cursed Bones##122611 |q 38324/1 |goto 73.86,23.41 |count 8
+|tip They look like glowing piles of bones on the ground around this area.
+collect 8 Cursed Bones##122611 |q 38324/1 |goto 60.41,34.01
+You can find more around:
+[64.75,30.41]
+[69.35,28.91]
+[75.39,29.01]
+[78.05,27.50]
+[77.21,26.45]
+[78.56,23.29]
+[73.86,23.41]
 step
 label "Collect_Kvaldir_Seaweed"
 Kill enemies around this area
@@ -29575,33 +29546,23 @@ talk Ashildir##97480
 turnin To Light the Way##39849 |goto 46.79,49.05
 accept Sundered##39850 |goto 46.79,49.05
 accept Allies in Death##39851 |goto 46.79,49.05
+stickystart "COLLECT_FRAGMENTS"
 step
 clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 43.14,52.50 |count 1
+|tip They are female Valkyra trapped in guarded bubbles around this area.
+Release 8 Bound Valkyra |q 39851/1 |goto 43.14,52.50
+You can find more around:
+[52.01,48.77]
+[52.40,48.90]
+[57.05,51.67]
+[59.24,66.54]
+[59.07,67.28]
+[55.75,65.33]
+[52.20,71.35]
 step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 52.01,48.77 |count 2
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 52.40,48.90 |count 3
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 57.05,51.67 |count 4
-step
+label "COLLECT_FRAGMENTS"
 clicknpc Fragment of Will##97356
 Collect the Fragment of Will |q 39850/1 |goto 63.78,61.26
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 59.24,66.54 |count 5
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 59.07,67.28 |count 6
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 55.75,65.33 |count 7
-step
-clicknpc Drowning Valkyra##97469
-Release the Bound Valkyra |q 39851/1 |goto 52.20,71.35 |count 8
 step
 Enter the cave |goto 51.35,74.61 < 10 |walk
 clicknpc Fragment of Might##97570
@@ -29757,7 +29718,7 @@ accept To Skold-Ashil##39062 |goto 71.53,59.83
 step
 talk Commander Lorna Crowley##93779
 turnin To Skold-Ashil##39062 |goto 63.56,61.73
-accept Assault on Skold-Ashil##39119 |goto 63.56,61.73 |only if level < 50
+accept Assault on Skold-Ashil##39119 |goto 63.56,61.73 |only if level < 45
 accept Shielded Secrets##39063 |goto 63.56,61.73
 stickystart "Complete_The_Assault_On_Skold_Ashil"
 step
@@ -29849,12 +29810,14 @@ step
 clicknpc Grapple Point##110334 |goto 75.45,52.85
 |tip On the mast of the ship nearby.
 Board the Ship |goto 75.59,52.00 < 5 |noway |c |q 42635
+|only if walking
 step
 click Ancient Dreyrgrot Tablet##258851
-|tip At the top of the ship.
+|tip On the bridgedeck at the back of the ship next to the wheel.
 Collect the Ancient Dreyrgrot Tablet |q 42635/1 |goto 75.88,51.90 |count 1
 step
 click Ancient Dreyrgrot Tablet##258851
+|tip On the maindeck in the middle of the ship.
 Collect the Ancient Dreyrgrot Tablet |q 42635/1 |goto 75.29,52.09 |count 2
 step
 click Crate of Ancient Relics##251007
@@ -29867,20 +29830,23 @@ step
 clicknpc Grapple Point##110334 |goto 75.23,50.16
 |tip On the deck of the ship nearby.
 Board the Ship |goto 75.15,49.78 < 5 |noway |c |q 42635
+|only if walking
 step
 click Ancient Dreyrgrot Tablet##258851
-|tip At the top of the ship.
+|tip On the bridgedeck at the back of the ship where the wheel is.
 Collect the Ancient Dreyrgrot Tablet |q 42635/1 |goto 75.44,48.91 |count 3
 step
 clicknpc Grapple Point##110334 |goto 75.72,50.18
 |tip On the deck of the ship nearby.
 Board the ship |goto 75.98,50.33 < 5 |noway |c |q 42635
+|only if walking
 step
 click Ancient Dreyrgrot Tablet##258851
+|tip On the quarterdeck next to the stairs.
 Collect the Ancient Dreyrgrot Tablet |q 42635/1 |goto 76.13,49.71 |count 4
 step
 kill Captain Broketooth##108032
-|tip At the top of the ship.
+|tip On the bridgedeck at the back of the ship where the wheel is.
 collect Broketooth's Ruby Amulet##138150 |q 42639/1 |goto 76.18,49.35
 step
 kill Steelscale##107917
@@ -29897,7 +29863,7 @@ accept A Murky Fate##40120 |goto 78.24,58.68
 step
 accept Rout the Bilgefin Invaders##40111 |goto 79.35,59.90
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Rout_The_Bilgefin_Invaders"
 step
 use the Smoldering Torch##129725
@@ -29930,6 +29896,7 @@ step
 clicknpc Grapple Point##110334 |goto 73.09,52.83
 |tip It's across the gap.
 Grapple Across the Water |goto 72.82,52.15 < 5 |noway |c |q 42641
+|only if walking
 step
 clicknpc Blood-Thane Lucard##107588
 |tip Inside the building.
@@ -29965,7 +29932,7 @@ step
 Cross the bridge |goto 64.30,60.33 < 20 |only if walking
 accept Drive Back the Tideskorn##39998 |goto 64.91,61.23
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Drive_Back_the_Tideskorn"
 step
 Cross the bridge |goto 64.39,60.45 < 30 |only if walking
@@ -30549,7 +30516,7 @@ step
 Follow the road |goto 41.31,40.32 < 15 |only if walking
 Step on the Ancient Switch |q 40010/2 |goto 41.56,38.76
 step
-Enter the cave |goto Suramar/0 41.63,38.97 |goto 41.66,38.96 < 7 |walk
+Enter the cave |goto Suramar/0 41.63,38.97 < 7 |walk
 talk Arcanist Valtrois##102600
 Choose _<Show Thalyssra's token to Valtrois.>_
 Speak with Arcanist Valtrois |q 40010/3 |goto 41.63,39.13
@@ -30631,7 +30598,7 @@ talk Arcanist Valtrois##102600
 accept Feeding Shal'Aran##41138 |goto Suramar/0 36.54,46.97 |region suramar_shalaran
 step
 Follow Arcanist Valtrois and watch the dialogue
-|tip Make sure you follow Arcanist Valtrois as she walks, or the quest will have to be restarted.
+|tip Make sure you follow Arcanist Valtrois as she walks, or the quest may have to be restarted.
 Examine the Leyline Feed |q 41138/1 |goto 37.02,46.24 |region suramar_shalaran
 step
 talk Arcanist Valtrois##103155
@@ -30741,14 +30708,15 @@ talk First Arcanist Thalyssra##97140
 turnin First Contact##42147 |goto 37.08,46.23 |region suramar_shalaran
 accept Arcane Communion##40324 |goto 37.08,46.23 |region suramar_shalaran
 step
+click Ancient Mana+
+|tip They look like big blue/purple crystals on the ground all around Suramar.
+|tip They can be very spread out, so you will need to search for them.
+|tip Use the Mana Divining Stone to track them.
+|tip They should appear as blue dots on your minimap.
+Collect #300# Ancient Mana |complete curcount(1155) > 300 |q 40324 |future
+step
 talk Theryn##104618
 |tip Downstairs inside the cave.
-|tip This requires you to have 300 Ancient Mana.				|only if curcount(1155) < 300
-|tip Click Ancient Mana crystals to collect Ancient Mana.			|only if curcount(1155) < 300
-|tip They look like big blue/purple crystals on the ground all around Suramar.	|only if curcount(1155) < 300
-|tip They can be very spread out, so you will need to search for them.		|only if curcount(1155) < 300
-|tip Use the Mana Divining Stone to track them.					|only if curcount(1155) < 300
-|tip They will appear as blue dots on your minimap.				|only if curcount(1155) < 300
 Feed Theryn |q 40324/1 |goto 37.14,46.30 |region suramar_shalaran
 step
 talk First Arcanist Thalyssra##97140
@@ -31003,21 +30971,15 @@ accept Prongs and Fangs##41475 |goto 28.31,29.71
 stickystart "Kill_Suramar_Snarlers"
 step
 click Rich Soil##248114
-Plant the Lush Grass Seeds |q 41474/1 |goto 27.90,32.86
-step
-click Rich Soil##248114
-Plant the Lush Grass Seeds |q 41474/1 |goto 27.29,33.84
-step
-click Rich Soil##248114
-Plant the Lush Grass Seeds |q 41474/1 |goto 27.04,35.15
-step
-click Rich Soil##248114
-Plant the Lush Grass Seeds |q 41474/1 |goto 29.01,33.53
+Plant #5# Lush Grass Seeds |q 41474/1 |goto 27.90,32.86
+You can find more at:
+[27.29,33.84]
+[27.04,35.15]
+[29.01,33.53]
+[29.96,32.84]
+[30.67,34.86]
 step
 kill Gloomfang##104226 |q 41475/2 |goto 29.96,32.84
-step
-click Rich Soil##248114
-Plant the Lush Grass Seeds |q 41474/1 |goto 30.67,34.86
 step
 label "Kill_Suramar_Snarlers"
 kill 8 Suramar Snarler##104224 |q 41475/1 |goto 30.67,34.86
@@ -34859,7 +34821,7 @@ accept Death to the Witchmother##38225 |goto 48.88,70.19
 step
 accept Wretched Sisters##38372 |goto 45.42,70.39
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Defeat_The_Hard_Hearted_Harbingers"
 step
 clicknpc Marnor Lorleaf##93602
@@ -34894,7 +34856,7 @@ turnin Death to the Witchmother##38225 |goto 48.86,70.21
 step
 talk Thaon Moonclaw##95395
 turnin Archdruid of the Vale##38382 |goto 61.02,73.26
-accept Moonclaw Vale##39393 |goto 61.02,73.26 |only if level < 50
+accept www##39393 |goto 61.02,73.26 |only if level < 45
 accept Dishonored##39383 |goto 61.02,73.26
 stickystart "Defend_Moonclaw_Vale"
 step
@@ -35035,8 +34997,6 @@ label "Kill_Undulating_Boneslimes"
 kill 8 Undulating Boneslime##108327 |q 42747/2 |goto 59.67,81.89
 |tip Inside the cave.
 step
-Follow the path |goto 60.33,81.90 < 10 |walk
-Leave the cave |goto 60.97,82.80 < 10 |only if walking
 talk Guviena Bladesong##108304
 turnin Emerald Sisters##42748 |goto 59.41,84.12
 turnin Where the Wildkin Are##42747 |goto 59.41,84.12
@@ -35141,7 +35101,7 @@ Enter the building |goto 52.40,56.52 < 15 |walk
 talk Lyanis Moonfall##92680
 |tip Inside the building.
 turnin The Temple of Elune##38641 |goto 51.44,57.00
-accept Defend The Temple##39029 |goto 51.44,57.00 |only if level < 50
+accept Defend The Temple##39029 |goto 51.44,57.00 |only if level < 45
 accept Tears for Fears##38662 |goto 51.44,57.00
 step
 talk Isoraen Nightstar##92697
@@ -35165,7 +35125,7 @@ click Blessed Bow##242450+
 |tip They look like bows laying on the ground around this area.
 |tip Use the "Arrow of Light" ability they give to kill enemies faster.
 Defend The Temple |q 39029/1 |goto 55.59,54.11
-|only if level < 50
+|only if level < 45
 step
 Enter the building |goto 52.40,56.52 < 15 |walk
 talk Isoraen Nightstar##92697
@@ -35296,7 +35256,7 @@ Follow Malfurion's Trail |q 41724/1 |goto 66.24,44.76 |only if haveq(41724) or c
 step
 accept Flow of the Nightmare##43241 |goto 66.24,44.76
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 step
 talk Tyrande Whisperwind##104728
 turnin Heart of the Nightmare##38675 |goto 66.21,44.77 |only if haveq(38675) or completedq(38675)
@@ -35346,7 +35306,7 @@ Return to Tyrande Whisperwind |goto 63.28,42.07 < 10 |c |q 43702 |notravel
 step
 talk Tyrande Whisperwind##104728
 turnin Softening the Target##43702 |goto 63.20,42.23
-accept Ruins of Shala'nir##38748 |goto 63.20,42.23 |only if level < 50
+accept Ruins of Shala'nir##38748 |goto 63.20,42.23 |only if level < 45
 |tip You will only be able to accept one of these quests.
 accept Close Enough to Touch##41763 |goto 63.20,42.23 |or
 accept Close Enough to Touch##38687 |goto 63.20,42.23 |or
@@ -35517,7 +35477,7 @@ Check the Prison Cages |q 38714/1 |goto 40.50,51.55
 step
 accept Black Rook Hold##38716 |goto 40.50,51.55
 |tip You will accept this quest automatically.
-|only if level < 50
+|only if level < 45
 stickystart "Thwart_The_Black_Rook_Forces"
 step
 kill Starlys Strongbow##92963 |q 38715/1 |goto 39.92,52.05

@@ -3,7 +3,7 @@ H.H.T.D. World of Warcraft Add-on
 Copyright (c) 2009-2018 by John Wellesz (hhtd@2072productions.com)
 All rights reserved
 
-Version 2.4.16
+Version 2.4.17
 
 In World of Warcraft healers have to die. This is a cruel truth that you're
 taught very early in the game. This add-on helps you influence this unfortunate
@@ -37,7 +37,7 @@ local INFO      = 3;
 local INFO2     = 4;
 
 local UNPACKAGED = "@pro" .. "ject-version@";
-local VERSION = "2.4.16";
+local VERSION = "2.4.17";
 
 local ADDON_NAME, T = ...;
 local GetAddOnMetadata  = _G.C_AddOns and _G.C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata;
@@ -561,7 +561,7 @@ do
                 name = L["OPT_VERSION"],
                 desc = L["OPT_VERSION_DESC"],
                 guiHidden = true,
-                func = function () HHTD:Print(L["VERSION"], '2.4.16,', L["RELEASE_DATE"], '2023-11-22T21:42:34Z') end,
+                func = function () HHTD:Print(L["VERSION"], '2.4.17,', L["RELEASE_DATE"], '2024-01-22T00:47:19Z') end,
                 order = -5,
             },
             ShowGUI = {
@@ -579,7 +579,7 @@ do
                 args = {
                     Info_Header = {
                         type = 'header',
-                        name = L["VERSION"] .. ' 2.4.16 -- ' .. L["RELEASE_DATE"] .. ' 2023-11-22T21:42:34Z',
+                        name = L["VERSION"] .. ' 2.4.17 -- ' .. L["RELEASE_DATE"] .. ' 2024-01-22T00:47:19Z',
                         order = 1,
                     },
                     Pve = {

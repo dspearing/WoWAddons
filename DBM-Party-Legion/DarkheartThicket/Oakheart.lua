@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(1655, "DBM-Party-Legion", 2, 762)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20231124222902")
+mod:SetRevision("20240119070511")
 mod:SetCreatureID(103344)
 mod:SetEncounterID(1837)
 mod:SetHotfixNoticeRev(20231029000000)
@@ -28,13 +28,13 @@ local warnUproot					= mod:NewSpellAnnounce(212786, 2)
 
 local specWarnRoots					= mod:NewSpecialWarningDodge(204574, nil, nil, nil, 2, 2)
 local yellThrow						= mod:NewYell(204658, 2764)--yell so others can avoid splash damage. I don't think target can avoid
-local specWarnBreath				= mod:NewSpecialWarningDefensive(204667, "Tank", nil, nil, 1, 2)--Can tank side step? based on logs I seen some tanks completely avoiding damage so maybe change to dodge
+local specWarnBreath				= mod:NewSpecialWarningDodge(204667, nil, nil, nil, 2, 2)
 
-local timerShatteredEarthCD			= mod:NewCDCountTimer(34, 204666, nil, nil, nil, 2)--34-60 (basically same as OG)
+local timerShatteredEarthCD			= mod:NewCDCountTimer(31.6, 204666, nil, nil, nil, 2)--34-60 (basically same as OG)
 local timerCrushingGripCD			= mod:NewCDCountTimer(27.9, 204611, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON, nil, mod:IsTank() and 2, 4)--27.9-36 (basically same as OG)
 local timerRootsCD					= mod:NewCDCountTimer(18.2, 204574, nil, nil, nil, 3)--18.2-35.1 (basically same as OG)
 local timerBreathCD					= mod:NewCDCountTimer(26.5, 204667, nil, nil, nil, 5)--26-35 (basically same as OG)
-local timerUprootCD					= mod:NewCDCountTimer(32.7, 212786, nil, nil, nil, 1, nil, DBM_COMMON_L.DAMAGE_ICON)--32.7-37.6 (Probably also OG timer, but didn't have it in OG mod)
+local timerUprootCD					= mod:NewCDCountTimer(32.4, 212786, nil, nil, nil, 1, nil, DBM_COMMON_L.DAMAGE_ICON)--32.7-37.6 (Probably also OG timer, but didn't have it in OG mod)
 
 mod.vb.shatteredCount = 0
 mod.vb.crushingCount = 0
@@ -46,7 +46,7 @@ mod.vb.uprootCount = 0
 --Crushing Grip triggers 6 ICD (well technically it triggers 1, and second Id triggers 5 more)
 --Uproot triggers 3.6 ICD
 --Strangling Roots triggers 2.4 ICD
---Shattering Earth triggers 7.2 ICD
+--Shattering Earth triggers 3-7.2 ICD
 --Shattering Roots itself is unaffected by ICDs of other spells
 local function updateAllTimers(self, ICD)
 	DBM:Debug("updateAllTimers running", 3)
@@ -75,9 +75,9 @@ local function updateAllTimers(self, ICD)
 		DBM:Debug("timerBreathCD extended by: "..extend, 2)
 		timerBreathCD:Update(elapsed, total+extend, self.vb.breathCount+1)
 	end
-	if timerUprootCD:GetRemaining(self.vb.uprootCount+1) < ICD then
+	if timerUprootCD:GetRemaining(self.vb.uprootCount+1) < (ICD == 7.1 and 3 or ICD) then
 		local elapsed, total = timerUprootCD:GetTime(self.vb.uprootCount+1)
-		local extend = ICD - (total-elapsed)
+		local extend = (ICD == 7.1 and 3 or ICD) - (total-elapsed)
 		DBM:Debug("timerUprootCD extended by: "..extend, 2)
 		timerUprootCD:Update(elapsed, total+extend, self.vb.uprootCount+1)
 	end
@@ -118,7 +118,7 @@ function mod:SPELL_CAST_START(args)
 		warnShatteredEarth:Show(self.vb.shatteredCount)
 		--35.2, 44.9 / 51.8, 36.3 / 52.2, 60.7
 		timerShatteredEarthCD:Start(nil, self.vb.shatteredCount+1)
-		updateAllTimers(self, 7.2)
+		updateAllTimers(self, 3)
 	elseif spellId == 204574 then
 		self.vb.rootsCount = self.vb.rootsCount + 1
 		specWarnRoots:Show(self.vb.rootsCount)
@@ -129,7 +129,7 @@ function mod:SPELL_CAST_START(args)
 	elseif spellId == 204667 then
 		self.vb.breathCount = self.vb.breathCount + 1
 		specWarnBreath:Show(self.vb.breathCount)
-		specWarnBreath:Play("defensive")
+		specWarnBreath:Play("breathsoon")
 		--32.7, 27.9 / 29.1, 32.7, 36.4 / 29.1, 32.8, 27.9
 		timerBreathCD:Start(nil, self.vb.breathCount+1)
 		updateAllTimers(self, 7.2)

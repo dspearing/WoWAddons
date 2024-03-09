@@ -302,7 +302,11 @@ L:SetOptionLocalization({
 -----------------------
 -- Manifested Timeways --
 -----------------------
---L= DBM:GetModLocalization(2528)
+L= DBM:GetModLocalization(2528)
+
+L:SetMiscLocalization({
+	PrePullRP		= "아무리 시간의 위상이라도 시간의 길을 어지럽히게 둘 순 없다!"
+})
 
 -----------------------
 -- Blight of Galakrond --
@@ -312,7 +316,11 @@ L:SetOptionLocalization({
 -----------------------
 -- Iridikron the Stonescaled --
 -----------------------
---L= DBM:GetModLocalization(2537)
+L= DBM:GetModLocalization(2537)
+
+L:SetMiscLocalization({
+	PrePullRP		= "티탄의 꼭두각시가 왔군."
+})
 
 -----------------------
 -- Tyr, the infinite Keeper --
@@ -349,4 +357,8 @@ L = DBM:GetModLocalization("DawnoftheInfiniteTrash")
 
 L:SetGeneralLocalization({
 	name =	"무한의 여명 일반몹"
+})
+
+L:SetOptionLocalization({
+	AutoRift	= "구슬 피하기 통과 후 균열 활성화 대화 자동 선택"
 })

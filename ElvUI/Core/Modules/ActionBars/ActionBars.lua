@@ -659,6 +659,8 @@ function AB:UpdateButtonSettings(specific)
 			if LAB.FlyoutButtons then
 				AB:LAB_FlyoutSpells()
 			end
+		elseif (E.Wrath and E.myclass == 'SHAMAN') and AB.db.totemBar.enable then
+			AB:PositionAndSizeTotemBar()
 		end
 	end
 end
@@ -1162,9 +1164,6 @@ do
 							child.CheckBox:SetEnabled(false)
 							child:DisplayEnabled(false)
 						end
-
-						child.CheckBox:SetScript('OnEnter', nil)
-						child.Tooltip:SetScript('OnEnter', nil)
 					end
 				end
 			end)

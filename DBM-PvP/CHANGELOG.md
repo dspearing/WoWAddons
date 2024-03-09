@@ -1,6 +1,7 @@
 # <DBM Mod> PvP
 
-## [r154](https://github.com/DeadlyBossMods/DBM-PvP/tree/r154) (2023-11-07)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r153...r154) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
+## [r168](https://github.com/DeadlyBossMods/DBM-PvP/tree/r168) (2024-02-25)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r167...r168) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
 
-- Bump tocs  
+- Fix yet another odd edge case with widget updates  
+- Fix fetch depth in CI  

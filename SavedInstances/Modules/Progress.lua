@@ -364,6 +364,11 @@ local presets = {
       local majorFactionIDs = C_MajorFactions.GetMajorFactionIDs(LE_EXPANSION_DRAGONFLIGHT)
       for _, factionID in ipairs(majorFactionIDs) do
         local data = C_MajorFactions.GetMajorFactionData(factionID)
+        local currentRepValue, threshold = C_Reputation.GetFactionParagonInfo(factionID)
+        if currentRepValue and threshold then
+          data.renownReputationEarned = currentRepValue % threshold
+          data.renownLevelThreshold = threshold
+        end
         store[factionID] = data and {data.renownLevel, data.renownReputationEarned, data.renownLevelThreshold}
       end
     end,
@@ -617,6 +622,8 @@ local presets = {
       72647, -- Ohn'ahran Plains
       72648, -- The Azure Span
       72649, -- Thaldraszus
+	  75305, -- Zaralek Cavern
+	  78097, -- Emerald Dream
     },
     reset = 'weekly',
     persists = false,
@@ -762,6 +769,17 @@ local presets = {
     progress = true,
     onlyOnOrCompleted = false,
   },
+  -- The Big Dig: Traitor's Rest
+  ['df-the-big-dig-traitors-rest'] = {
+    type = 'single',
+    expansion = 9,
+    index = 22,
+    name = L["The Big Dig: Traitor's Rest"],
+    questID = 79226,
+    reset = 'weekly',
+    persists = true,
+    fullObjective = false,
+  },
 }
 
 ---update the progress of quest to the store
@@ -782,17 +800,14 @@ local function UpdateQuestStore(store, questID)
     return false
   else
     local showText
-    local allFinished = true
     local leaderboardCount = C_QuestLog.GetNumQuestObjectives(questID)
     for i = 1, leaderboardCount do
-      local text, objectiveType, finished, numFulfilled, numRequired = GetQuestObjectiveInfo(questID, i, false)
+      local text, objectiveType, _, numFulfilled, numRequired = GetQuestObjectiveInfo(questID, i, false)
       ---@cast text string
       ---@cast objectiveType "item"|"object"|"monster"|"reputation"|"log"|"event"|"player"|"progressbar"
-      ---@cast finished boolean
+      ---@cast _ boolean
       ---@cast numFulfilled number
       ---@cast numRequired number
-
-      allFinished = allFinished and finished
 
       local objectiveText
       if objectiveType == 'progressbar' then
@@ -816,7 +831,7 @@ local function UpdateQuestStore(store, questID)
 
     store.show = true
     store.isComplete = false
-    store.isFinish = allFinished
+    store.isFinish = C_QuestLog.IsComplete(questID)
     store.leaderboardCount = leaderboardCount
     store.text = showText
 

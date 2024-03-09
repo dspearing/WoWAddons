@@ -10,7 +10,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2678,
-description="\nThis battle pet is caught in the wild in Nazjatar around Newhome.",
+description="This battle pet is caught in the wild in Nazjatar around Newhome.",
 },[[
 step
 clicknpc Abyssal Slitherling##154814
@@ -28,7 +28,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2652,
-description="\nThis battle pet is caught in the wild in Nazjatar around the Spears of Azshara.",
+description="This battle pet is caught in the wild in Nazjatar around the Spears of Azshara.",
 },[[
 step
 clicknpc Bloodseeker##154714
@@ -47,7 +47,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","The","Eternal","Palace"},
 pet=2658,
-description="\nThis battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
+description="This battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
 },[[
 step
 Enter "The Eternal Palace" Raid |goto The Eternal Palace/7 0.00,0.00 < 1000 |c |or
@@ -70,7 +70,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Terror","Nazjatar"},
 pet=2690,
-description="\nThis battle pet has a chance to drop from the rare mob Caverndark Terror in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Caverndark Terror in Nazjatar.",
 },[[
 step
 Enter the cave |goto Nazjatar/0 42.49,13.03 < 5 |walk
@@ -94,7 +94,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Needlespine","Nazjatar"},
 pet=2689,
-description="\nThis battle pet has a chance to drop from the rare mob Needlespine in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Needlespine in Nazjatar.",
 },[[
 step
 kill Needlespine##152465
@@ -119,7 +119,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2648,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Chitterspine Skitterling##154706
@@ -137,7 +137,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Terror","Nazjatar"},
 pet=2695,
-description="\nThis battle pet has a chance to drop from the rare mob Daggertooth Terror in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Daggertooth Terror in Nazjatar.",
 },[[
 step
 kill Daggertooth Terror##152756
@@ -164,7 +164,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2651,
-description="\nThis battle pet is caught in the wild in Nazjatar around the Spears of Azshara.",
+description="This battle pet is caught in the wild in Nazjatar around the Spears of Azshara.",
 },[[
 step
 clicknpc Deeptide Fingerling##154712
@@ -182,7 +182,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Mechagon"},
 pet=2665,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Fleeting Frog##154775
@@ -200,7 +200,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2647,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Glimmershell Scuttler##154704
@@ -218,7 +218,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Sandclaw","Stoneshell","Nazjatar"},
 pet=2684,
-description="\nThis battle pet has a chance to drop from the rare mob Sandclaw Stoneshell in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Sandclaw Stoneshell in Nazjatar.",
 },[[
 step
 kill Sandclaw Stoneshell##152795
@@ -245,7 +245,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2649,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 Enter the cave |goto Nazjatar/0 42.43,13.16 < 15 |walk
@@ -265,7 +265,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Eternal","Palace","Nazjatar"},
 pet=2692,
-description="\nThis battle pet has a chance to drop from the Lady Ashvane in The Eternal Palace raid.",
+description="This battle pet has a chance to drop from the Lady Ashvane in The Eternal Palace raid.",
 },[[
 step
 kill Lady Ashvane##153142
@@ -287,7 +287,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Eternal","Palace","Nazjatar"},
 pet=2694,
-description="\nThis battle pet has a chance to drop from the Blackwater Behemoth in The Eternal Palace raid.",
+description="This battle pet has a chance to drop from the Blackwater Behemoth in The Eternal Palace raid.",
 },[[
 step
 kill Blackwater Behemoth##154986
@@ -309,7 +309,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Eternal","Palace","Nazjatar"},
 pet=2696,
-description="\nThis battle pet has a chance to drop from Za'qul in The Eternal Palace raid.",
+description="This battle pet has a chance to drop from Za'qul in The Eternal Palace raid.",
 },[[
 step
 kill Za'qul##150859
@@ -328,7 +328,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Glimmering Chests hidden throughout Nazjatar.",
+description="This battle pet has a chance to drop from Glimmering Chests hidden throughout Nazjatar.",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2685,
@@ -367,7 +367,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2645,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Sandclaw Pincher##154697
@@ -385,7 +385,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Nazjatar"},
 pet=2646,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Sandclaw Sunshell##154702
@@ -404,7 +404,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Scale","Matriarch","Gratinax","Nazjatar"},
 pet=2704,
-description="\nThis battle pet has a chance to drop from the rare mob Scale Matriarch Gratinax in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Scale Matriarch Gratinax in Nazjatar.",
 },[[
 step
 kill Scale Matriarch Gratinax##152548
@@ -426,7 +426,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Elderspawn","Nazjatar"},
 pet=2693,
-description="\nThis battle pet has a chance to drop from the rare mob Elderspawn Nalaada in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Elderspawn Nalaada in Nazjatar.",
 },[[
 step
 kill Elderspawn Nalaada##152555
@@ -449,7 +449,7 @@ author="support@zygorguides.com",
 startlevel=45.0,
 keywords={"aquatic, pet, battle, of, azeroth, preorder, collector, edition"},
 pet=2143,
-description="\nThis battle pet is acquired by purchasing the collector's edition of the Battle for Azeroth expansion.",
+description="This battle pet is acquired by purchasing the collector's edition of the Battle for Azeroth expansion.",
 },[[
 step
 Purchase the Collector's Edition of the Battle for Azeroth Expansion |achieve 12229
@@ -469,7 +469,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Zekhan's Corrupted Chest in the Horrific Vision of Orgrimmar.",
+description="This battle pet has a chance to drop from Zekhan's Corrupted Chest in the Horrific Vision of Orgrimmar.",
 startlevel=50.0,
 keywords={"Aquatic","Horrific","Vision","Orgrimmar"},
 pet=2796,
@@ -493,7 +493,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught in the wild in Vale of Eternal Blossoms.",
+description="This battle pet can be caught in the wild in Vale of Eternal Blossoms.",
 keywords={"Aquatic","Vale","of","Eternal","Blossoms","8.3"},
 startlevel=50.0,
 pet=2865,
@@ -527,7 +527,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Mechagon"},
 pet=2666,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Yellow Junkhopper##154777
@@ -544,7 +544,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Rexxar's Corrupted Chest in the Horrific Vision of Orgrimmar.",
+description="This battle pet has a chance to drop from Rexxar's Corrupted Chest in the Horrific Vision of Orgrimmar.",
 startlevel=50.0,
 keywords={"Beast","Horrific","Vision","Orgrimmar"},
 pet=2838,
@@ -567,7 +567,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the Uldum Accord Supply caches from paragon reputation.",
+description="This battle pet has a chance to drop from the Uldum Accord Supply caches from paragon reputation.",
 keywords={"Beast","Blizzard","store","8.3"},
 startlevel=50.0,
 pet=2623,
@@ -586,7 +586,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Beast","Mechagon"},
 pet=2662,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Duskytooth Snooter##154769
@@ -603,7 +603,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from King Mechagon in the Mechagon dungeon.",
+description="This battle pet has a chance to drop from King Mechagon in the Mechagon dungeon.",
 keywords={"Beast","King","Mechagon"},
 startlevel=50.0,
 pet=2711,
@@ -626,7 +626,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained from Rajani Supply caches from Rajani paragon reputation rewards.",
+description="This battle pet can be obtained from Rajani Supply caches from Rajani paragon reputation rewards.",
 startlevel=50.0,
 keywords={"Beast","Paragon","Reputation","Rajani"},
 pet=2852,
@@ -650,7 +650,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='82000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Stolen Royal Vendorbot on Mechagon Island after reaching "..
+description="This battle pet can be purchased from the Stolen Royal Vendorbot on Mechagon Island after reaching "..
 "Honored reputation with the Rustbolt Resistance for 500 gold, modified for reputation.",
 startlevel=50.0,
 keywords={"Beast","Mechagon"},
@@ -676,7 +676,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Provisioner Qorra in Uldum after obtaining 300 "..
+description="This battle pet can be purchased from Provisioner Qorra in Uldum after obtaining 300 "..
 "Polished Pet Charms and reaching revered reputation with the Uldum Accord.",
 startlevel=50.0,
 keywords={"Beast","Reputation","Uldum","Accord"},
@@ -712,7 +712,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Beast","Recruit","a","Friend"},
 pet=2776,
-description="\nThis battle pet is awarded when your Recruit-a-Friend allies have purchased one month of game time.",
+description="This battle pet is awarded when your Recruit-a-Friend allies have purchased one month of game time.",
 },[[
 step
 collect 1 Rikki's Pith Helmet##173296 |or
@@ -730,7 +730,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare mob Lord Aj'qirai in Uldum during the Aqir Unearthed invasion.",
+description="This battle pet has a chance to drop from the rare mob Lord Aj'qirai in Uldum during the Aqir Unearthed invasion.",
 startlevel=50.0,
 keywords={"Beast","Lord","Aj'qirai","Uldum","8.3"},
 pet=2847,
@@ -771,7 +771,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Beast","Mechagon"},
 pet=2661,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Rustyroot Snooter##154767
@@ -789,7 +789,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Beast","Fungarian","Furor","Mechagon"},
 pet=2712,
-description="\nThis battle pet has a chance to drop from the rare mob Fungarian Furor On Mechagon Island.",
+description="This battle pet has a chance to drop from the rare mob Fungarian Furor On Mechagon Island.",
 },[[
 step
 click Mushroom##135497+
@@ -812,7 +812,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Alleria's Corrupted Chest in the Horrific Vision of Stormwind.",
+description="This battle pet has a chance to drop from Alleria's Corrupted Chest in the Horrific Vision of Stormwind.",
 keywords={"Beast","Horrific","Vision","Stormwind","Alleria","8.3"},
 startlevel=50.0,
 pet=2840,
@@ -835,7 +835,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Umbric's Corrupted Chest in the Horrific Vision of Stormwind.",
+description="This battle pet has a chance to drop from Umbric's Corrupted Chest in the Horrific Vision of Stormwind.",
 keywords={"Beast","Horrific","Vision","Stormwind","Magister","Umbric","8.3"},
 startlevel=50.0,
 pet=2839,
@@ -858,7 +858,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Thrall's Corrupted Chest in the Horrific Vision of Orgrimmar.",
+description="This battle pet has a chance to drop from Thrall's Corrupted Chest in the Horrific Vision of Orgrimmar.",
 startlevel=50.0,
 keywords={"Beast","Horrific","Vision","Orgrimmar"},
 pet=2797,
@@ -881,7 +881,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Kelsey's Corrupted Chest in the Horrific Vision of Stormwind.",
+description="This battle pet has a chance to drop from Kelsey's Corrupted Chest in the Horrific Vision of Stormwind.",
 keywords={"Beast","Horrific","Vision","Stormwind","Magister","Umbric","8.3"},
 startlevel=50.0,
 pet=2841,
@@ -904,7 +904,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare mob Amalgamation of Flesh in Uldum during The Black Empire "..
+description="This battle pet has a chance to drop from the rare mob Amalgamation of Flesh in Uldum during The Black Empire "..
 " invasion when the world quest \"Pyre of the Amalgamated One\" is active.",
 keywords={"Beast","Amalgamation","of","Flesh","Uldum","8.3"},
 startlevel=50.0,
@@ -948,7 +948,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Nazjatar","Spireshell"},
 pet=2697,
-description="\nThis battle pet has a chance to drop from the Amethyst Spireshell rare mob in Nazjatar.",
+description="This battle pet has a chance to drop from the Amethyst Spireshell rare mob in Nazjatar.",
 },[[
 step
 kill Amethyst Spireshell##152794
@@ -968,7 +968,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Tek'ris in the Ny'alotha, the Waking City raid.",
+description="This battle pet has a chance to drop from Tek'ris in the Ny'alotha, the Waking City raid.",
 keywords={"Critter","Ny'alotha","Tek'ris","8.3"},
 startlevel=50.0,
 pet=2834,
@@ -992,7 +992,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare mob Skikx'traz in Uldum during the Aqir Unearthed invasion.",
+description="This battle pet has a chance to drop from the rare mob Skikx'traz in Uldum during the Aqir Unearthed invasion.",
 keywords={"Critter","Skikx'traz","Uldum","8.3"},
 startlevel=50.0,
 pet=2848,
@@ -1034,7 +1034,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","The","Eternal","Palace"},
 pet=2657,
-description="\nThis battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
+description="This battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
 },[[
 step
 Enter "The Eternal Palace" Raid |goto The Eternal Palace/7 0.00,0.00 < 1000 |c |or
@@ -1057,7 +1057,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Mechagon"},
 pet=2664,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Experimental Roach##154773
@@ -1074,7 +1074,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught in the wild in Vale of Eternal Blossoms.",
+description="This battle pet can be caught in the wild in Vale of Eternal Blossoms.",
 keywords={"Critter","Vale","of","Eternal","Blossoms","8.3"},
 startlevel=50.0,
 pet=2867,
@@ -1108,7 +1108,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Mechagon"},
 pet=2663,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Junkheap Roach##154771
@@ -1126,7 +1126,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Mechagon"},
 pet=2670,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Mechagon Marmot##154785
@@ -1144,7 +1144,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Mirecrawler","Nazjatar"},
 pet=2700,
-description="\nThis battle pet has a chance to drop from the rare mob Mirecrawler in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Mirecrawler in Nazjatar.",
 },[[
 step
 kill Mirecrawler##144644
@@ -1166,7 +1166,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Nazjatar"},
 pet=2660,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Muck Slug##154724
@@ -1184,7 +1184,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","Nazjatar"},
 pet=2653,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Spireshell Snail##154716
@@ -1202,7 +1202,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Critter","The","Eternal","Palace"},
 pet=2659,
-description="\nThis battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
+description="This battle pet can be tamed in the wild inside \"The Eternal Palace\" raid.",
 },[[
 step
 Enter "The Eternal Palace" Raid |goto The Eternal Palace/7 0.00,0.00 < 1000 |c |or
@@ -1222,7 +1222,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any mob in the Uldum lesser Vision of N'Zoth "..
+description="This battle pet has a chance to drop from any mob in the Uldum lesser Vision of N'Zoth "..
 " when the Black Empire assault is active.",
 keywords={"Critter","Lesser","Vision","of","N'Zoth","Uldum","8.3"},
 startlevel=50.0,
@@ -1260,7 +1260,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught in the wild in Uldum.",
+description="This battle pet can be caught in the wild in Uldum.",
 keywords={"Critter","Uldum","Battle","8.3"},
 startlevel=50.0,
 pet=2864,
@@ -1294,7 +1294,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='82500',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for purchasing the Epic edition of the Shadowlands expansion.",
+description="This battle pet is a reward for purchasing the Epic edition of the Shadowlands expansion.",
 keywords={"Dragonkin","Shadowlands","Epic","8.3"},
 startlevel=50.0,
 pet=2779,
@@ -1314,7 +1314,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Dragonkin","Bonepicker","Mechagon"},
 pet=2719,
-description="\nThis battle pet has a chance to drop from the Bonepicker rare mob on Mechagon Island.",
+description="This battle pet has a chance to drop from the Bonepicker rare mob on Mechagon Island.",
 },[[
 step
 Enter the cave |goto Mechagon Island/0 65.90,26.56 < 20 |walk
@@ -1339,7 +1339,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Dragonkin","Anniversary","15th"},
 pet=2621,
-description="\nThis battle pet is contained in the 15th Anniversary Gift sent in the mail.",
+description="This battle pet is contained in the 15th Anniversary Gift sent in the mail.",
 },[[
 step
 collect Anniversary Gift##172014 |or
@@ -1363,7 +1363,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Dragonkin","Twilight","Highlands"},
 pet=2677,
-description="\nThis battle pet is caught in the wild in Twilight Highlands.",
+description="This battle pet is caught in the wild in Twilight Highlands.",
 },[[
 step
 clicknpc Twilight Whelpling##154803
@@ -1381,7 +1381,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Avarius","Nazjatar"},
 pet=2706,
-description="\nThis battle pet has a chance to drop from the rare mob Avarius in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Avarius in Nazjatar.",
 },[[
 step
 Kill Rares and open chests throughout Nazjatar
@@ -1447,7 +1447,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Rockweed","Shambler","Nazjatar"},
 pet=2707,
-description="\nThis battle pet has a chance to drop from the rare mob Rockweed Shambler in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Rockweed Shambler in Nazjatar.",
 },[[
 step
 kill Rockweed Shambler##150583
@@ -1470,7 +1470,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Carnivorous","Lasher","Nazjatar"},
 pet=2708,
-description="\nThis battle pet has a chance to drop from the rare mob Carnivorous Lasher in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Carnivorous Lasher in Nazjatar.",
 },[[
 step
 Kill Rares and open chests throughout Nazjatar
@@ -1537,7 +1537,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Irradiated Boxes of Assorted Parts upon completion "..
+description="This battle pet has a chance to drop from Irradiated Boxes of Assorted Parts upon completion "..
 "of the hard mode Reclamation Rig event on Mechagon Island.",
 keywords={"Elemental","Mechagon","Island","Reclamation","Rig","Hard","Mode"},
 startlevel=50.0,
@@ -1570,7 +1570,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Sandkeep","Nazjatar"},
 pet=2703,
-description="\nThis battle pet has a chance to drop from the rare mob Sandkeep in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Sandkeep in Nazjatar.",
 },[[
 step
 label "Collect_Scrying_Stone"
@@ -1607,7 +1607,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Prince","Typhonus","Nazjatar"},
 pet=2701,
-description="\nThis battle pet has a chance to drop from the rare mob Prince Typhonus in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Prince Typhonus in Nazjatar.",
 },[[
 step
 kill Prince Typhonus##152681
@@ -1629,7 +1629,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Elemental","Prince","Vortran","Nazjatar"},
 pet=2702,
-description="\nThis battle pet has a chance to drop from the rare mob Prince Vortran in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Prince Vortran in Nazjatar.",
 },[[
 step
 kill Prince Vortran##152682
@@ -1648,7 +1648,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
+description="This battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
 "1 Shadowy Gem.",
 keywords={"Elemental","Shadowy","Gem","8.3"},
 startlevel=50.0,
@@ -1676,7 +1676,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='82500',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the Honey Smasher in Stormsong Valley.",
+description="This battle pet has a chance to drop from the Honey Smasher in Stormsong Valley.",
 keywords={"Flying","Honey","Smasher"},
 startlevel=50.0,
 pet=2794,
@@ -1710,7 +1710,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Flying","Nazjatar"},
 pet=2650,
-description="\nThis battle pet is caught in the wild in Nazjatar.",
+description="This battle pet is caught in the wild in Nazjatar.",
 },[[
 step
 clicknpc Great Sea Albatross##154710
@@ -1725,7 +1725,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught in the wild in Uldum.",
+description="This battle pet can be caught in the wild in Uldum.",
 keywords={"Flying","Uldum","Battle","8.3"},
 startlevel=50.0,
 pet=2863,
@@ -1759,7 +1759,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Tek'ris in the Ny'alotha, the Waking City raid.",
+description="This battle pet has a chance to drop from Tek'ris in the Ny'alotha, the Waking City raid.",
 keywords={"Flying","Ny'alotha","Tek'ris","8.3"},
 startlevel=50.0,
 pet=2835,
@@ -1786,7 +1786,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Flying","Mechagon"},
 pet=2669,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Rustbolt Clucker##154783
@@ -1801,7 +1801,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='83000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet can obtained by completing the quest \"They Grow So Fast\" during "..
+description="This battle pet can obtained by completing the quest \"They Grow So Fast\" during "..
 "the Shadowbarb Drone mount questline.",
 startlevel=50.0,
 keywords={"Flying","Reputation","Rajani"},
@@ -2028,7 +2028,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='83000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught in the wild in Vale of Eternal Blossoms.",
+description="This battle pet can be caught in the wild in Vale of Eternal Blossoms.",
 keywords={"Flying","Vale","of","Eternal","Blossoms","8.3"},
 startlevel=50.0,
 pet=2866,
@@ -2059,7 +2059,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Zhang Ku in Vale of Eternal Blossoms after obtaining 300 "..
+description="This battle pet can be purchased from Zhang Ku in Vale of Eternal Blossoms after obtaining 300 "..
 "Polished Pet Charms and reaching exalted reputation with the Rajani.",
 startlevel=50.0,
 keywords={"Flying","Reputation","Rajani"},
@@ -2096,7 +2096,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Humanoid","Island","Expedition"},
 pet=2755,
-description="\nThis battle pet is a random drop from Island Expeditions added in patch 8.2.",
+description="This battle pet is a random drop from Island Expeditions added in patch 8.2.",
 },[[
 step
 collect 1 Adventurous Hopling Pack##169322 |or
@@ -2115,7 +2115,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the Uldum Accord Supply caches from paragon reputation.",
+description="This battle pet has a chance to drop from the Uldum Accord Supply caches from paragon reputation.",
 keywords={"Humanoid","Accord","Paragon","Uldum","8.3"},
 startlevel=50.0,
 pet=2850,
@@ -2139,7 +2139,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare mob The Forgotten in Vale of Eternal Blossoms.",
+description="This battle pet has a chance to drop from the rare mob The Forgotten in Vale of Eternal Blossoms.",
 keywords={"Humanoid","The","Forgotten","Vale","Eternal","Blossoms","8.3"},
 startlevel=50.0,
 pet=2845,
@@ -2171,7 +2171,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='82000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is awarded upon completion of the \"Team Aquashock\" achievement.",
+description="This battle pet is awarded upon completion of the \"Team Aquashock\" achievement.",
 keywords={"Humanoid","Team","Aquashock"},
 startlevel=50.0,
 pet=2683,
@@ -2195,7 +2195,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Humanoid","King","Gakula","Nazjatar"},
 pet=2681,
-description="\nThis battle pet has a chance to drop from the rare mob King Gakula in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob King Gakula in Nazjatar.",
 },[[
 step
 clicknpc Bloodfin Tadpole##152275
@@ -2225,7 +2225,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Humanoid","Blindlight","Nazjatar"},
 pet=2682,
-description="\nThis battle pet has a chance to drop from the rare mob Blindlight in Nazjatar.",
+description="This battle pet has a chance to drop from the rare mob Blindlight in Nazjatar.",
 },[[
 step
 Enter the cave |goto Nazjatar/0 39.62,77.25 < 10 |walk
@@ -2246,7 +2246,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Ra-den in the Ny'alotha, the Waking City raid.",
+description="This battle pet has a chance to drop from Ra-den in the Ny'alotha, the Waking City raid.",
 keywords={"Humanoid","Ny'alotha","Ra-den","8.3"},
 startlevel=50.0,
 pet=2833,
@@ -2272,7 +2272,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Humanoid","Eternal","Palace","Nazjatar"},
 pet=2680,
-description="\nThis battle pet has a chance to drop from Queen Azshara's Chest in The Eternal Palace raid.",
+description="This battle pet has a chance to drop from Queen Azshara's Chest in The Eternal Palace raid.",
 },[[
 step
 kill Queen Azshara##155126
@@ -2293,7 +2293,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Alleria or Thrall's Corrupted Chest in the Horrific Visions "..
+description="This battle pet has a chance to drop from Alleria or Thrall's Corrupted Chest in the Horrific Visions "..
 "of Stormwind and Orgrimmar.",
 keywords={"Magic","Horrific","Vision","Orgrimmar","Stormwind","Alleria","Thrall","8.3"},
 startlevel=50.0,
@@ -2317,7 +2317,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare mob Will of N'Zoth in Vale of Eternal Blossoms.",
+description="This battle pet has a chance to drop from the rare mob Will of N'Zoth in Vale of Eternal Blossoms.",
 keywords={"Magic","Will","of","N'Zoth","Vale","Eternal","Blossoms","8.3"},
 startlevel=50.0,
 pet=2846,
@@ -2349,7 +2349,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='82000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Boxes of Assorted Parts upon completion "..
+description="This battle pet has a chance to drop from Boxes of Assorted Parts upon completion "..
 "of the Reclamation Rig event on Mechagon Island.",
 keywords={"Magic","Mechagon","Island","Reclamation","Rig"},
 startlevel=50.0,
@@ -2376,7 +2376,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the Vault of the Black Empire after killing "..
+description="This battle pet has a chance to drop from the Vault of the Black Empire after killing "..
 "N'Zoth the Corruptor in the Ny'alotha, the Waking City raid.",
 keywords={"Magic","N'Zoth","the","Corruptor","Vault","Black","Empire","Ny'alotha","8.3"},
 startlevel=50.0,
@@ -2401,7 +2401,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet has a chance to drop from from looted casts from Fishing "..
+description="This pet has a chance to drop from from looted casts from Fishing "..
 "in the current Black Empire assault zone.",
 keywords={"Magic","Fishing","Black","Empire","8.3"},
 startlevel=50.0,
@@ -2425,7 +2425,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Maut in the Ny'alotha, the Waking City raid.",
+description="This battle pet has a chance to drop from Maut in the Ny'alotha, the Waking City raid.",
 keywords={"Magic","Maut","the","Waking","City","Ny'alotha","8.3"},
 startlevel=50.0,
 pet=2832,
@@ -2449,7 +2449,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='83000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nTo collect this battle pet, you will have to complete all objectives in the Horrific Vision of Orgrimmar "..
+description="To collect this battle pet, you will have to complete all objectives in the Horrific Vision of Orgrimmar "..
 "and the Horrific Vision of Stormwind in one visit each.",
 startlevel=50.0,
 keywords={"Magic","Horrific","Vision","Orgrimmar","Stormwind"},
@@ -2477,7 +2477,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Magic","Stratholme","Battle","Dungeon"},
 pet=2750,
-description="\nThis battle pet is purchased from Sean Wilkers in Eastern Plaguelands for three Cleansed Remains.",
+description="This battle pet is purchased from Sean Wilkers in Eastern Plaguelands for three Cleansed Remains.",
 },[[
 step
 collect 3 Cleansed Remains##169665 |or
@@ -2504,7 +2504,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Operation","Mechagon"},
 pet=2672,
-description="\nThis battle pet is caught in the wild inside the \"Operation: Mechagon\" mythic dungeon.",
+description="This battle pet is caught in the wild inside the \"Operation: Mechagon\" mythic dungeon.",
 },[[
 step
 Enter the "Operation: Mechagon" Dungeon |goto Mechagon 0.00,0.00 |c < 1000 |or
@@ -2527,7 +2527,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon","Mecharantula"},
 pet=2720,
-description="\nThis battle pet has a chance to drop from the Mecharantula rare mob on Mechagon Island.",
+description="This battle pet has a chance to drop from the Mecharantula rare mob on Mechagon Island.",
 },[[
 step
 kill Mecharantula##151672
@@ -2551,7 +2551,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon"},
 pet=2766,
-description="\nThis battle pet has a chance to drop from the Armored Vaultbot rare mob on Mechagon Island.",
+description="This battle pet has a chance to drop from the Armored Vaultbot rare mob on Mechagon Island.",
 },[[
 step
 kill Armored Vaultbot##150394
@@ -2582,7 +2582,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Operation","Mechagon"},
 pet=2675,
-description="\nThis battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
+description="This battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
 },[[
 step
 Enter the "Operation: Mechagon" Dungeon |goto Mechagon 0.00,0.00 |c < 1000 |or
@@ -2605,7 +2605,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Operation","Mechagon"},
 pet=2668,
-description="\nThis battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
+description="This battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
 },[[
 step
 Enter the "Operation: Mechagon" Dungeon |goto Mechagon 0.00,0.00 |c < 1000 |or
@@ -2625,7 +2625,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
+description="This battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
 "3 Shadowy Gems.",
 keywords={"Mechanical","Shadowy","Gem","8.3"},
 startlevel=50.0,
@@ -2656,7 +2656,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Operation","Mechagon"},
 pet=2674,
-description="\nThis battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
+description="This battle pet is caught in the wild inside the \"Operation: Mechagon\" dungeon.",
 },[[
 step
 Enter the "Operation: Mechagon" Dungeon |goto Mechagon 0.00,0.00 |c < 1000 |or
@@ -2679,7 +2679,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Malfunctioning","Beastbot","Mechagon"},
 pet=2715,
-description="\nThis battle pet has a chance to drop from the rare mob Malfunctioning Beastbot on Mechagon Island.",
+description="This battle pet has a chance to drop from the rare mob Malfunctioning Beastbot on Mechagon Island.",
 },[[
 step
 clicknpc Malfunctioning Beastbot##151933
@@ -2706,7 +2706,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon"},
 pet=2676,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Malfunctioning Microbot##154798
@@ -2721,7 +2721,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted by an engineer who has purchased the schematic from "..
+description="This battle pet can be crafted by an engineer who has purchased the schematic from "..
 "Micro Zoox, the Gnomeregan pet battle dungeon vendor.",
 keywords={"Mechanical","Gnomeregan","Challenge"},
 startlevel=50.0,
@@ -2748,7 +2748,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Operation","Mechagon"},
 pet=2718,
-description="\nThis battle pet has a chance to drop from the HK-8 Aerial Oppression Unit in Operation: Mechagon.",
+description="This battle pet has a chance to drop from the HK-8 Aerial Oppression Unit in Operation: Mechagon.",
 },[[
 step
 kill HK-8 Aerial Oppression Unit##155157
@@ -2771,7 +2771,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon"},
 pet=2667,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Motorized Croaker##154779
@@ -2786,7 +2786,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is sometimes awarded after repairing Dismantled OOX-35/MGs on Mechagon Island "..
+description="This battle pet is sometimes awarded after repairing Dismantled OOX-35/MGs on Mechagon Island "..
 "when the \"My Chickens are Not for Eating!\" daily quest is active.",
 keywords={"Mechanical","Dismantled","Mechagon","Island"},
 startlevel=50.0,
@@ -2816,7 +2816,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon"},
 pet=2673,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Scrapyard Tunneler##154791
@@ -2834,7 +2834,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Mechanical","Mechagon"},
 pet=2671,
-description="\nThis battle pet is caught in the wild on Mechagon Island.",
+description="This battle pet is caught in the wild on Mechagon Island.",
 },[[
 step
 clicknpc Specimen 97##154787
@@ -2849,7 +2849,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='83000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
+description="This battle pet can be purchased from Burt Macklyn in Blackrock Mountain for "..
 "2 Shadowy Gems.",
 keywords={"Mechanical","Shadowy","Gem","8.3"},
 startlevel=50.0,
@@ -2880,7 +2880,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Undead","Malowned","Stratholme"},
 pet=2767,
-description="\nThis battle pet is a reward for earning the \"Malowned\" achievement.",
+description="This battle pet is a reward for earning the \"Malowned\" achievement.",
 },[[
 step
 Earn the "Malowned" Achievement |achieve 13766
@@ -2902,7 +2902,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Undead","Stratholme","Battle","Dungeon"},
 pet=2749,
-description="\nThis battle pet is purchased from Sean Wilkers in Eastern Plaguelands for two Cleansed Remains.",
+description="This battle pet is purchased from Sean Wilkers in Eastern Plaguelands for two Cleansed Remains.",
 },[[
 step
 collect 2 Cleansed Remains##169665 |or
@@ -2926,7 +2926,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='82000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Feylana the Handler in Nazjatar for 40 Prismatic Manapearls.",
+description="This battle pet can be purchased from Feylana the Handler in Nazjatar for 40 Prismatic Manapearls.",
 startlevel=50.0,
 keywords={"Undead","Feylana","the","Handler"},
 pet=2710,
@@ -2950,7 +2950,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Crestfall Salvage crates awarded for completing the "..
+description="This battle pet has a chance to drop from Crestfall Salvage crates awarded for completing the "..
 "Crestfall Island Expedition.",
 startlevel=50.0,
 keywords={"Undead","Crestfall","Island","Expedition"},
@@ -2978,7 +2978,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Undead","Stratholme","Battle","Dungeon"},
 pet=2747,
-description="\nThis battle pet is purchased from Sean Wilkers in Eastern Plaguelands for three Cleansed Remains.",
+description="This battle pet is purchased from Sean Wilkers in Eastern Plaguelands for three Cleansed Remains.",
 },[[
 step
 collect 3 Cleansed Remains##169665 |or
@@ -3002,7 +3002,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Micro Zoox outside the Gnomeregan dungeon for "..
+description="This battle pet can be purchased from Micro Zoox outside the Gnomeregan dungeon for "..
 "2 Pristine Gizmos.",
 keywords={"Undead","Gnomeregan","Challenge"},
 startlevel=50.0,
@@ -3029,7 +3029,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='82000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet can be collected by completing the Pet Battle Challenge: Stratholme for the first time.",
+description="This battle pet can be collected by completing the Pet Battle Challenge: Stratholme for the first time.",
 startlevel=50.0,
 keywords={"Undead","Stratholme","Pet","Battle","Challenge"},
 pet=2638,
@@ -3160,7 +3160,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Undead","Stratholme","Battle","Dungeon"},
 pet=2748,
-description="\nThis battle pet is purchased from Sean Wilkers in Eastern Plaguelands for one Cleansed Remains.",
+description="This battle pet is purchased from Sean Wilkers in Eastern Plaguelands for one Cleansed Remains.",
 },[[
 step
 collect 1 Cleansed Remains##169665 |or

@@ -815,8 +815,6 @@ Tell him _"I will signal the end of the Grand Hunt!"_
 Talk to Scout Tomul and Conclude the Hunt |scenarioend |goto The Waking Shores/0 25.25,88.48 |next "Reputation Guides\\Dragonflight Reputations\\Maruuk Centaur\\Grand Hunts\\Northern Waking Shores Hunt"
 ]])
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Valdrakken Accord\\Valdrakken Accord")
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Winterpelt Furbolg")
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Loamm Niffen")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Reputation Guides\\Dragonflight Reputations\\Dream Wardens")

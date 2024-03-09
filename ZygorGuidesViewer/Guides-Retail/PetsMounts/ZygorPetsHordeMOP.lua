@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Dancing Water Skimmer",
+description="This guide will walk you through obtaining the Aquatic pet: Dancing Water Skimmer",
 pet=751,
 },[[
 step
@@ -19,7 +19,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Fishy",
+description="This guide will walk you through obtaining the Aquatic pet: Fishy",
 pet=847,
 },[[
 step
@@ -40,7 +40,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='52000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Swamp Croaker",
+description="This guide will walk you through obtaining the Aquatic pet: Swamp Croaker",
 pet=1182,
 },[[
 step
@@ -52,7 +52,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Tiny Goldfish",
+description="This guide will walk you through obtaining the Aquatic pet: Tiny Goldfish",
 pet=652,
 },[[
 step
@@ -231,7 +231,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='52000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Elder Python",
+description="This guide will walk you through obtaining the Beast pet: Elder Python",
 pet=1181,
 },[[
 step
@@ -244,7 +244,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='51000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Sumprush Rodent.",
+description="This guide will walk you through obtaining the Beast pet: Sumprush Rodent.",
 pet=1128,
 },[[
 step
@@ -266,7 +266,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='51000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Pandaren Air Spirit",
+description="This guide will walk you through obtaining the Elemental pet: Pandaren Air Spirit",
 pet=1125,
 },[[
 step
@@ -326,7 +326,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='51000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Pandaren Earth Spirit",
+description="This guide will walk you through obtaining the Elemental pet: Pandaren Earth Spirit",
 pet=1126,
 },[[
 step
@@ -385,7 +385,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='51000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Pandaren Fire Spirit",
+description="This guide will walk you through obtaining the Elemental pet: Pandaren Fire Spirit",
 pet=1124,
 },[[
 step
@@ -444,7 +444,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='50400',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Pandaren Water Spirit",
+description="This guide will walk you through obtaining the Elemental pet: Pandaren Water Spirit",
 pet=868,
 },[[
 step
@@ -503,7 +503,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='50100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Sapphire Cub",
+description="This guide will walk you through obtaining the Elemental pet: Sapphire Cub",
 pet=846,
 },[[
 step
@@ -522,7 +522,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='52000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Thundertail Flapper",
+description="This guide will walk you through obtaining the Elemental pet: Thundertail Flapper",
 pet=1175,
 },[[
 step
@@ -534,7 +534,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='50300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Chi-ji Kite",
+description="This guide will walk you through obtaining the Flying pet: Chi-ji Kite",
 pet=849,
 },[[
 step
@@ -587,7 +587,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='50100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Jade Crane Chick",
+description="This guide will walk you through obtaining the Flying pet: Jade Crane Chick",
 pet=792,
 },[[
 step
@@ -603,7 +603,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='50300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Yu'lon Kite",
+description="This guide will walk you through obtaining the Flying pet: Yu'lon Kite",
 pet=850,
 },[[
 step
@@ -655,7 +655,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='52000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Mountain Panda",
+description="This guide will walk you through obtaining the Humanoid pet: Mountain Panda",
 pet=1198,
 },[[
 step
@@ -684,7 +684,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='52000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Red Panda",
+description="This guide will walk you through obtaining the Humanoid pet: Red Panda",
 pet=1176,
 },[[
 step
@@ -705,7 +705,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='52000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Snowy Panda",
+description="This guide will walk you through obtaining the Humanoid pet: Snowy Panda",
 pet=1197,
 },[[
 step
@@ -734,7 +734,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='52000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Sunfur Panda",
+description="This guide will walk you through obtaining the Humanoid pet: Sunfur Panda",
 pet=1196,
 },[[
 step
@@ -763,7 +763,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='50300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Jade Owl",
+description="This guide will walk you through obtaining the Magic pet: Jade Owl",
 pet=845,
 },[[
 step
@@ -799,7 +799,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='51000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Clock'em",
+description="This guide will walk you through obtaining the Mechanical pet: Clock'em",
 pet=1142,
 },[[
 step

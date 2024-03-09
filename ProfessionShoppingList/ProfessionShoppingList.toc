@@ -1,20 +1,18 @@
-## Interface: 100200
+## Interface: 100205
 ## Title: Profession Shopping List
 ## Author: Sluimerstand
 ## IconTexture: Interface\AddOns\ProfessionShoppingList\assets\psl_icon.blp
 ## AddonCompartmentFunc: ProfessionShoppingList_Click
 ## AddonCompartmentFuncOnEnter: ProfessionShoppingList_Enter
 ## AddonCompartmentFuncOnLeave: ProfessionShoppingList_Leave
-## Version: v10.2.0-006
+## Version: v10.2.5-003
 ## X-Curse-Project-ID: 498475
 ## X-Wago-ID: Xb6X71Np
 
-## SavedVariables: userSettings, windowPosition, recipesTracked, recipeLinks, reagentLinks, recipeCooldowns, reagentTiers, recipeLibrary
-## SavedVariablesPerCharacter: pcWindowPosition, pcRecipesTracked, pcRecipeLinks, personalOrders
+## SavedVariables: userSettings, recipesTracked, recipeCooldowns, reagentTiers, reagentCache, recipeLibrary, fakeRecipeLibrary
+## SavedVariablesPerCharacter: pcRecipesTracked, personalOrders
 
 libs\LibDBIcon-1.0\embeds.xml
 libs\LibDBIcon-1.0\LibDBIcon-1.0\LibDBIcon-1.0.lua
-libs\lib-st\lib-st.xml
 Core.lua
-ProfessionShoppingList.lua
 Database.lua

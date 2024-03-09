@@ -3349,7 +3349,7 @@ turnin Rest and Relaxation##37112 |goto 43.8,65.8
 step
 talk Innkeeper Farley##295
 |tip Inside the building.
-home Goldshire |q 26393 |future |goto 43.8,65.8
+home Lion's Pride Inn |q 26393 |future |goto 43.8,65.8
 step
 talk Smith Argus##514
 |tip Inside the building.

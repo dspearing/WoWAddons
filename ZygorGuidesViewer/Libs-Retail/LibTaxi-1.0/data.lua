@@ -11,6 +11,12 @@ data.taxipoints = {
 -----     DRAGON ISLES    -----
 -------------------------------
 [1978]={
+	['Amirdrassil']={
+
+		-- NEUTRAL --
+		{name="Bel'ameth",faction="B",npc="Leora",npcid=216283,x=50.23,y=55.93},
+	},
+
 	['The Emerald Dream']={
 
 		-- NEUTRAL --
@@ -96,7 +102,7 @@ data.taxipoints = {
 	['The Forbidden Reach/5']={ -- The Forbidden Reach/5
 
 		-- NEUTRAL --
-		{name="Morqut Village",faction="B",npc="Renpiaq",npcid=200561,x=33.62,y=54.86},
+		{name="Morqut Village",faction="B",npc="Renpiaq",npcid=200561,x=35.85,y=59.12},
 		{name="Morqut Islet",faction="B",npc="Ancient Waygate",npcid="aw",x=29.08,y=62.45,taxinodeID=2862,taxioperator="ancientwaygate",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.readyq(75154) or c.completedq(75154)) and not c.hasbuff("spell:392960") end},
 	},
 
@@ -104,7 +110,7 @@ data.taxipoints = {
 
 		-- NEUTRAL --
 		{name="Obsidian Rest",faction="B",npc="Keskos",npcid=200893,x=51.03,y=26.17},
-		{name="Loamm",faction="B",npc="Avogadro",npcid=202467,x=56.60,y=52.72},
+		{name="Loamm",faction="B",npc="Avogadro",npcid=202467,x=55.64,y=54.79},
 		{name="Dragonscale Camp",faction="B",npc="Sharpbeak",npcid=200300,x=40.34,y=67.80},
 
 		{name = "The Throughway, Zaralek Cavern", taxinodeID = 2867,taxihidden=true, faction="B", x=73.80, y=49.33}, -- zaralek cavern crossmap point
@@ -123,7 +129,7 @@ data.taxipoints = {
 		{name="Tazavesh",faction="B",npc="Ta'resarra",npcid=178796,x=91.96,y=41.71,quest=63985},
 	},
 
-	['Oribos']={
+	['Oribos/1']={
 
 		-- NEUTRAL --
 		{name="Oribos",faction="B",npc="Pathscribe Roh-Avonavi",npcid=162666,x=60.83,y=68.60,f=1},
@@ -230,12 +236,12 @@ data.taxipoints = {
 		{name="Antecedent Isle",faction="B",npc="Ancient Translocator",npcid=184337,x=47.36,y=13.29,taxioperator="zerethportal2"},
 		{name="Sepulcher Overlook",faction="B",npc="Ancient Translocator",npcid=183970,x=64.89,y=53.55,taxioperator="zerethportal3"},
 		{name="Sepulcher of the First Ones",faction="B",npc="Ancient Translocator",npcid=184332,x=73.00,y=53.39,taxioperator="zerethportal3"},
-		{name="Primus Locus",faction="B",npc="Locus Shift",npcid=184386,x=48.43,y=26.35,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,3) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Secundus Locus",faction="B",npc="Locus Shift",npcid=184387,x=47.96,y=27.91,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,5) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Tertius Locus",faction="B",npc="Locus Shift",npcid=184388,x=51.91,y=27.11,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,7) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Quartus Locus",faction="B",npc="Locus Shift",npcid=184385,x=48.52,y=29.70,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,9) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Quintus Locus",faction="B",npc="Locus Shift",npcid=184384,x=50.67,y=32.60,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,11) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
-		{name="Ultimus Locus",faction="B",npc="Locus Shift",npcid=184364,x=48.89,y=31.43,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,13) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Primus Locus",  faction="B",npc="Locus Shift",npcid=184386,x=48.43,y=26.35,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,3)  and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Secundus Locus",faction="B",npc="Locus Shift",npcid=184387,x=47.96,y=27.91,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,5)  and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Tertius Locus", faction="B",npc="Locus Shift",npcid=184388,x=51.91,y=27.11,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,7)  and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Quartus Locus", faction="B",npc="Locus Shift",npcid=184385,x=48.52,y=29.70,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,9)  and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Quintus Locus", faction="B",npc="Locus Shift",npcid=184384,x=50.67,y=32.60,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,11) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
+		{name="Ultimus Locus", faction="B",npc="Locus Shift",npcid=184364,x=48.89,y=31.43,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return (c.completedq(64889,13) and c.haveq(64889)) or (c.specialtalent(1907) and c.completedq(64889) and not c.achieved(15514)) end},
 	},
 	['Gravid Repose']={
 		{name="Gravid Repose Locus",faction="B",npc="Locus Shift",npcid=184329,x=59.35,y=41.51,taxioperator="zerethlocus",recheck=true,cond_fun=function() local c=ZGV.Parser.ConditionEnv return c.haveq(64889) or (c.specialtalent(1907) and c.completedq(64889)) end}, -- known_fun=function() local c=ZGV.Parser.ConditionEnv return c.haveq(123456) or c.completedq(123456) end
@@ -9355,7 +9361,7 @@ data.flightcost = {
 		taxioperator = "zerethportal",
 		neighbors = {
 			[2724] = 21, -- Haven
-			[2728] = 0, -- Pilgrim's Grace
+			[2728] = 38, -- Pilgrim's Grace
 		},
 	},
 	{
@@ -9364,44 +9370,8 @@ data.flightcost = {
 		name = "Pilgrim's Grace",
 		taxioperator = "zerethportal",
 		neighbors = {
-			[2724] = 38, -- Haven
-			[2725] = 0, -- Faith's Repose
-		},
-	},
-	{
-		tag = "459:225",
-		nodeID = 2733,
-		name = "Zovaal's Grasp",
-		taxioperator = "zerethportal2",
-		neighbors = {
-			[2734] = 0, -- Antecedent Isle
-		},
-	},
-	{
-		tag = "474:127",
-		nodeID = 2734,
-		name = "Antecedent Isle",
-		taxioperator = "zerethportal2",
-		neighbors = {
-			[2733] = 0, -- Zovaal's Grasp
-		},
-	},
-	{
-		tag = "646:535",
-		nodeID = 2736,
-		name = "Sepulcher Overlook",
-		taxioperator = "zerethportal3",
-		neighbors = {
-			[2737] = 0, -- Sepulcher Of The First Ones
-		},
-	},
-	{
-		tag = "731:533",
-		nodeID = 2737,
-		name = "Sepulcher of the First Ones",
-		taxioperator = "zerethportal3",
-		neighbors = {
-			[2736] = 0, -- Sepulcher Overlook
+			[2724] = 39, -- Haven
+			[2725] = 38, -- Faith's Repose
 		},
 	},
 	{
@@ -9426,6 +9396,42 @@ data.flightcost = {
 		taxioperator = "zerethlocus",
 		neighbors = {
 			[2729] = 1, -- Gravid Repose Locus
+		},
+	},
+	{
+		tag = "459:225",
+		nodeID = 2733,
+		name = "Zovaal's Grasp",
+		taxioperator = "zerethportal2",
+		neighbors = {
+			[2734] = 8, -- Antecedent Isle
+		},
+	},
+	{
+		tag = "474:127",
+		nodeID = 2734,
+		name = "Antecedent Isle",
+		taxioperator = "zerethportal2",
+		neighbors = {
+			[2733] = 8, -- Zovaal's Grasp
+		},
+	},
+	{
+		tag = "646:535",
+		nodeID = 2736,
+		name = "Sepulcher Overlook",
+		taxioperator = "zerethportal3",
+		neighbors = {
+			[2737] = 10, -- Sepulcher of the First Ones
+		},
+	},
+	{
+		tag = "731:533",
+		nodeID = 2737,
+		name = "Sepulcher of the First Ones",
+		taxioperator = "zerethportal3",
+		neighbors = {
+			[2736] = 10, -- Sepulcher Overlook
 		},
 	},
 	{
@@ -9668,6 +9674,7 @@ data.flightcost = {
 				[2794] = 21, -- Teerakai
 				[2795] = 36, -- Broadhoof Outpost
 				[2874] = 0, -- Old Loamm Road
+				[2915] = 0, -- Bel'ameth
 			},
 		},
 		{
@@ -9941,10 +9948,27 @@ data.flightcost = {
 			name = "Eon's Fringe",
 			taxioperator = "ancientwaygate",
 			neighbors = {
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2838] = 3, -- Cobalt Assembly
 				[2839] = 3, -- Rusza'thar Reach
 				[2840] = 3, -- Shady Sanctuary
+				[2842] = 3, -- Rubyscale Outpost
+				[2862] = 3, -- Morqut Islet
+			},
+		},
+		{
+			tag = "649:409",
+			nodeID = 2836,
+			name = "Algeth'era",
+			taxioperator = "ancientwaygate",
+			neighbors = {
+				[2834] = 3, -- Eon's Fringe
+				[2837] = 3, -- Vakthros
+				[2838] = 3, -- Cobalt Assembly
+				[2839] = 3, -- Rusza'thar Reach
+				[2840] = 3, -- Shady Sanctuary
+				[2841] = 3, -- Skytop Observatory
 				[2842] = 3, -- Rubyscale Outpost
 				[2862] = 3, -- Morqut Islet
 			},
@@ -9956,6 +9980,7 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2838] = 3, -- Cobalt Assembly
 				[2839] = 3, -- Rusza'thar Reach
 				[2840] = 3, -- Shady Sanctuary
@@ -9970,6 +9995,7 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2839] = 3, -- Rusza'thar Reach
 				[2840] = 3, -- Shady Sanctuary
@@ -9984,6 +10010,7 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2838] = 3, -- Cobalt Assembly
 				[2840] = 3, -- Shady Sanctuary
@@ -9998,11 +10025,20 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2838] = 3, -- Cobalt Assembly
 				[2839] = 3, -- Rusza'thar Reach
 				[2842] = 3, -- Rubyscale Outpost
 				[2862] = 3, -- Morqut Islet
+			},
+		},
+		{
+			tag = "576:358",
+			nodeID = 2841,
+			name = "Skytop Observatory",
+			neighbors = {
+				[2836] = 3, -- Algeth'era
 			},
 		},
 		{
@@ -10012,6 +10048,7 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2838] = 3, -- Cobalt Assembly
 				[2839] = 3, -- Rusza'thar Reach
@@ -10036,6 +10073,7 @@ data.flightcost = {
 			taxioperator = "ancientwaygate",
 			neighbors = {
 				[2834] = 3, -- Eon's Fringe
+				[2836] = 3, -- Algeth'era
 				[2837] = 3, -- Vakthros
 				[2838] = 3, -- Cobalt Assembly
 				[2839] = 3, -- Rusza'thar Reach
@@ -10174,7 +10212,16 @@ data.flightcost = {
 				[2904] = 36, -- Eye of Ysera
 			},
 		},
+		{
+			tag = "245:597",
+			nodeID = 2915,
+			name = "Bel'ameth",
+			neighbors = {
+				[2796] = 0, -- Shady Sanctuary
+			},
+		},
 	},
+
 
 
 

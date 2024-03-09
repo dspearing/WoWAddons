@@ -50,7 +50,7 @@ ZGV.IsClassicTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
 ZGV.IsClassicWOTLK = (WOW_PROJECT_ID == WOW_PROJECT_WRATH_CLASSIC) or ((WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC) and (LE_EXPANSION_LEVEL_CURRENT == LE_EXPANSION_WRATH_OF_THE_LICH_KING))
 ZGV.IsRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 ZGV.IsClassicSoM =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.SeasonOfMastery)
-ZGV.IsClassicSoD =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.SeasonOfDiscovery)
+ZGV.IsClassicSoD =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==(Enum.SeasonID.SeasonOfDiscovery or 2))
 ZGV.IsClassicHardcore =  C_Seasons and (ZGV.IsClassic and C_Seasons.HasActiveSeason() and C_Seasons.GetActiveSeason()==Enum.SeasonID.Hardcore)
 
 ZGV.CLASSIC_SCALE_ADJUST = ZGV.IsRetail and 1 or UIParent:GetEffectiveScale()
@@ -3546,7 +3546,7 @@ function ZGV:GoalOnClick(frame,button)
 end
 
 function ZGV:GoalOnEnter(goalframe)
-	local goal = goalframe:GetParent().goal or goalframe:GetParent().tipgoal
+	local goal = goalframe.goal or goalframe.tipgoal
 	if not goal then return end
 
 	local step = goal.parentStep
@@ -5830,7 +5830,8 @@ function ZGV.InPhase(phasename)
 		return getmapartid(70)==75
 	elseif phasename=="newdustwallow" then
 		return getmapartid(70)==498
-
+	elseif phasename=="olddarkshore" then
+		return quest(54411) -- timetravel flag
 	-- 8.3 invasion checks
 	elseif phasename=="olduldum" then
 		return quest(50659) -- timetravel flag

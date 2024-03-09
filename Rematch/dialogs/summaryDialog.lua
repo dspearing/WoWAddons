@@ -49,33 +49,24 @@ local categories = {
 
 rematch.events:Register(rematch.summaryDialog,"PLAYER_LOGIN",function(self)
 
-    rematch.dialog:Register("PetSummary",{
+    rematch.dialog:Register("PetSummaryMinimized",{
         title = L["Pet Collection"],
         accept = OKAY,
-        minHeight = 264,
-        layouts={
+        minHeight = 275,
+        minimize = {nextState="maximize", nextDialog="PetSummary"},
+        layouts = {
             Default={"LayoutTabs","PetSummary"},
-            Types={"LayoutTabs","BarChartDropDown","BarChart"},
-            Sources={"LayoutTabs","BarChartDropDown","BarChart"},
-            Battles={"LayoutTabs","Spacer","BattleSummary","Spacer2","Text","Team"}
+            Types={"LayoutTabs","BarChartDropDown","Spacer","BarChart"},
+            Sources={"LayoutTabs","BarChartDropDown","Spacer","BarChart"},
+            Battles={"LayoutTabs","BattleSummary","TopTeams","CheckButton"}            
         },
         refreshFunc = function(self,info,subject,firstRun)
             if firstRun then
+                rematch.summaryDialog:FirstUseSetup()
+                settings.MinimizePetSummary = true -- hitting minimize button will set this
                 self.LayoutTabs:SetTabs({{"Summary","Default"},{"Pet Types","Types"},{"Sources","Sources"},{"Battles","Battles"}})
-                if not self.BarChartDropDown.isSetup then
-                    local menu = {}
-                    for i,info in ipairs(categories) do
-                        tinsert(menu,{text=info.name, value=i})
-                    end
-                    self.BarChartDropDown.DropDown:BasicSetup(menu,
-                        function(value)
-                            settings.BarChartCategory = value
-                            self.BarChart:Set(rematch.summaryDialog:GetChartData(rematch.dialog:GetOpenLayout()=="Types" and C.BARCHART_TYPES or C.BARCHART_SOURCES,settings.BarChartCategory or C.BARCHART_IN_JOURNAL))
-                        end
-                    )
-                    self.BarChartDropDown.DropDown:SetSelection(settings.BarChartCategory)
-                    self.BarChartDropDown.isSetup = true
-                end
+                self.CheckButton:SetText(L["Rank teams by percentage won"])
+                self.CheckButton:SetChecked(settings.RankWinsByPercent)
             end
             local layout = rematch.dialog:GetOpenLayout()
             if layout=="Default" then
@@ -85,17 +76,54 @@ rematch.events:Register(rematch.summaryDialog,"PLAYER_LOGIN",function(self)
             elseif layout=="Sources" then
                 self.BarChart:Set(rematch.summaryDialog:GetChartData(C.BARCHART_SOURCES,settings.BarChartCategory or C.BARCHART_IN_JOURNAL))
             elseif layout=="Battles" then
-                local teamID = self.BattleSummary:Fill()
-                if teamID and rematch.savedTeams[teamID].winrecord then
-                    self.Team:Fill(teamID)
-                    self.Text:SetText(format(L["Team with the most wins (%s%d\124r)"],C.HEX_GREEN,rematch.savedTeams[teamID].winrecord.wins))
-                    self.Team:Show()
-                else
-                    self.Team:Hide()
-                    self.Text:SetText("")
-                end
+                local stats = rematch.collectionInfo:GetWinStats(3)
+                self.BattleSummary:Fill(stats)
+                self.TopTeams:Fill(stats.topTeams)
+                self.TopTeams:SetShown(stats.teams and stats.teams>0) -- only show top teams if there are teams to show
             end
         end,
+        changeFunc = function(self,info,subject)
+            settings.RankWinsByPercent = self.CheckButton:GetChecked()
+            rematch.dialog:Refresh()
+        end        
+    })
+
+    rematch.dialog:Register("PetSummary",{
+        title = L["Pet Collection"],
+        accept = OKAY,
+        minHeight = 476, -- was 264 with summary on its own tab
+        minimize = {nextState="minimize", nextDialog="PetSummaryMinimized"},
+        layouts={
+            Default={"LayoutTabs","PetSummary","BarChartDropDown","BarChart"},
+            Sources={"LayoutTabs","PetSummary","BarChartDropDown","BarChart"},
+            Battles={"LayoutTabs","Spacer","BattleSummary","TopTeams","CheckButton"}
+        },
+        refreshFunc = function(self,info,subject,firstRun)
+            if firstRun then
+                rematch.summaryDialog:FirstUseSetup()
+                settings.MinimizePetSummary = false -- hitting minimize button will set this
+                self.LayoutTabs:SetTabs({{L["Pet Types"],"Default"},{L["Sources"],"Sources"},{L["Battles"],"Battles"}})
+                self.CheckButton:SetText(L["Rank teams by percentage won"])
+                self.CheckButton:SetChecked(settings.RankWinsByPercent)
+            end
+            local layout = rematch.dialog:GetOpenLayout()
+            if layout=="Default" then
+                rematch.summaryDialog:FillSummary()
+                self.BarChart:Set(rematch.summaryDialog:GetChartData(C.BARCHART_TYPES,settings.BarChartCategory or C.BARCHART_IN_JOURNAL))
+            elseif layout=="Sources" then
+                rematch.summaryDialog:FillSummary()
+                self.BarChart:Set(rematch.summaryDialog:GetChartData(C.BARCHART_SOURCES,settings.BarChartCategory or C.BARCHART_IN_JOURNAL))
+            elseif layout=="Battles" then
+                local stats = rematch.collectionInfo:GetWinStats(10)
+                self.BattleSummary:Fill(stats)
+                self.TopTeams:Fill(stats.topTeams)
+                self.TopTeams:SetShown(stats.teams and stats.teams>0) -- only show top teams if there are teams to show
+            end
+        end,
+        changeFunc = function(self,info,subject)
+            settings.RankWinsByPercent = self.CheckButton:GetChecked()
+            rematch.dialog:Refresh()
+        end
     })
 
     -- sets the labels to the summary dialog control
@@ -112,65 +140,61 @@ rematch.events:Register(rematch.summaryDialog,"PLAYER_LOGIN",function(self)
 
 end)
 
+-- since many sessions may not use this dialog at all, any setup stuff for dialog controls is done here on first use
+function rematch.summaryDialog:FirstUseSetup()
+    if not self.isSetup then
+        self.isSetup = true
+        local menu = {}
+        for i,info in ipairs(categories) do
+            tinsert(menu,{text=info.name, value=i})
+        end
+        rematch.dialog.Canvas.BarChartDropDown.DropDown:BasicSetup(menu,
+            function(value)
+                settings.BarChartCategory = value
+                rematch.dialog.Canvas.BarChart:Set(rematch.summaryDialog:GetChartData(rematch.dialog:GetOpenLayout()=="Types" and C.BARCHART_TYPES or C.BARCHART_SOURCES,settings.BarChartCategory or C.BARCHART_IN_JOURNAL))
+            end
+        )
+        rematch.dialog.Canvas.BarChartDropDown.DropDown:SetSelection(settings.BarChartCategory)
+
+        rematch.dialog.Canvas.TopTeams.WinsLabel:SetText(L["Wins"])
+
+
+        rematch.dialog.Canvas.BattleSummary.WinLabel:SetText(L["Won"])
+        rematch.dialog.Canvas.BattleSummary.LossLabel:SetText(L["Lost"])
+        rematch.dialog.Canvas.BattleSummary.DrawLabel:SetText(L["Draw"])        
+    end
+end
+
 -- main tab of dialog, summary statistics of collection
 function rematch.summaryDialog:FillSummary()
     -- collection[speciesID] = {petType,source,numPets,numAt25,totalLevels,numPoor,numCommon,numUncommon,numRare}
-    local stats = rematch.collectionInfo:GetSpeciesStats()
+    local stats = rematch.collectionInfo:GetCollectionStats()
 
     local summary = rematch.dialog.Canvas.PetSummary
-    local numInJournal = 0
-    local numCollectedUnique, numCollectedTotal = 0, 0
-    local numUncollected = 0
-    local numUniqueMax, numTotalMax = 0, 0
-    local totalLevels = 0
-    local numUniqueRare, numTotalRare = 0, 0
-    local numUncommon = 0
-    local numCommon = 0
-    local numPoor = 0
 
-    for _,info in pairs(stats) do
-        numInJournal = numInJournal + 1
-        if info[3]==0 then
-            numUncollected = numUncollected + 1
-        else
-            numCollectedTotal = numCollectedTotal + info[3] -- total collected pets
-            numCollectedUnique = numCollectedUnique + 1 -- unique collected pets
-            numTotalMax = numTotalMax + info[4] -- total pets at max level
-            numUniqueMax = numUniqueMax + min(info[4],1) -- unique pets at max level
-            totalLevels = totalLevels + info[5]
-            numPoor = numPoor + info[7] -- total poor
-            numCommon = numCommon + info[8] -- total common
-            numUncommon = numUncommon + info[9] -- total uncommon
-            numTotalRare = numTotalRare + info[10] -- rare pets
-            numUniqueRare = numUniqueRare + min(info[10],1) -- unique rare pets
-        end
-    end
+    summary.TotalInJournal:SetText(format(L["There are %s%d\124r unique pets in the journal"],C.HEX_WHITE,stats.numInJournal))
+    summary.TotalCollected:SetText(format(L["You've collected %s%.1f%%\124r of them"],C.HEX_WHITE,stats.numCollectedUnique*100/max(1,stats.numInJournal)))
 
-    local averageLevel = totalLevels>0 and totalLevels/numCollectedTotal or 0
-
-    summary.TotalInJournal:SetText(format(L["There are %s%d\124r unique pets in the journal"],C.HEX_WHITE,numInJournal))
-    summary.TotalCollected:SetText(format(L["You've collected %s%.1f%%\124r of them"],C.HEX_WHITE,numCollectedUnique*100/max(1,numInJournal)))
-
-    if numInJournal==0 or numCollectedTotal==0 then
+    if stats.numInJournal==0 or stats.numCollectedTotal==0 then
         return -- pets didn't load for some reason or user has no pets, leave
     end
 
     local barWidth = 248
-    summary.RareBar:SetWidth(max(numTotalRare*barWidth/numCollectedTotal,0.1))
-    summary.UncommonBar:SetWidth(max(numUncommon*barWidth/numCollectedTotal,0.1))
-    summary.CommonBar:SetWidth(max(numCommon*barWidth/numCollectedTotal,0.1))
-    summary.PoorBar:SetWidth(max(numPoor*barWidth/numCollectedTotal,0.1))
+    summary.RareBar:SetWidth(max(stats.numTotalRare*barWidth/stats.numCollectedTotal,0.1))
+    summary.UncommonBar:SetWidth(max(stats.numUncommon*barWidth/stats.numCollectedTotal,0.1))
+    summary.CommonBar:SetWidth(max(stats.numCommon*barWidth/stats.numCollectedTotal,0.1))
+    summary.PoorBar:SetWidth(max(stats.numPoor*barWidth/stats.numCollectedTotal,0.1))
 
-    summary.CollectedUniqueCount:SetText(numCollectedUnique)
-    summary.CollectedTotalCount:SetText(numCollectedTotal)
-    summary.MaxLevelUniqueCount:SetText(numUniqueMax)
-    summary.MaxLevelTotalCount:SetText(numTotalMax)
-    summary.RarePetsUniqueCount:SetText(numUniqueRare)
-    summary.RarePetsTotalCount:SetText(numTotalRare)
+    summary.CollectedUniqueCount:SetText(stats.numCollectedUnique)
+    summary.CollectedTotalCount:SetText(stats.numCollectedTotal)
+    summary.MaxLevelUniqueCount:SetText(stats.numUniqueMax)
+    summary.MaxLevelTotalCount:SetText(stats.numTotalMax)
+    summary.RarePetsUniqueCount:SetText(stats.numUniqueRare)
+    summary.RarePetsTotalCount:SetText(stats.numTotalRare)
 
-    summary.DuplicatePetsCount:SetText(numCollectedTotal-numCollectedUnique)
-    summary.AverageLevel:SetText(floor(averageLevel)==averageLevel and averageLevel or format("%.1f",averageLevel))
-    summary.UncollectedCount:SetText(numInJournal-numCollectedUnique)
+    summary.DuplicatePetsCount:SetText(stats.numCollectedTotal-stats.numCollectedUnique)
+    summary.AverageLevel:SetText(floor(stats.averageLevel)==stats.averageLevel and stats.averageLevel or format("%.1f",stats.averageLevel))
+    summary.UncollectedCount:SetText(stats.numInJournal-stats.numCollectedUnique)
 end
 
 --[[ chart data ]]

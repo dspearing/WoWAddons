@@ -99,9 +99,9 @@ kModelConstants =
     [166991] = {  -- "spells/summon_precast_hand.m2"
         Name = kCategory.Glow .. "Cloud, Purple (Soft)",
         BaseScale = 0.18, BaseFacing = 0,
-        BaseOfsX = 0.925, BaseOfsY = -0.725,
-        BaseStepX = 3408, BaseStepY = 3150,
-        IsSkewed = true, HorizontalSlope = 6,
+        BaseOfsX = 0.075, BaseOfsY = -0.05,
+        BaseStepX = 3432, BaseStepY = 3150,
+        IsSkewed = true, HorizontalSlope = 0,
     },
 
     --~~~~~~~~~~~~~~~~~~~~~~~

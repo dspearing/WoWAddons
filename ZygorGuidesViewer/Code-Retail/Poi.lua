@@ -109,8 +109,22 @@ end
 
 -- returns if given poi is already completed
 function Poi:IsComplete(point)
-	if not point.quest then return true end
-	return IsQuestFlaggedCompleted(point.quest)
+	if not (point.quest or point.achieve) then return true end
+	if point.quest then return IsQuestFlaggedCompleted(point.quest) end
+	if point.achieve then 
+		if type(point.achieve)=="string" then
+			local name, id, criteria = ZGV.Parser.ParseID(point.achieve)
+			point.achieve, point.achievecriteria = tonumber(id), tonumber(criteria)
+		end
+		
+		local _,completed
+		if point.achievecriteria then
+			_, _, _, completed = GetAchievementCriteriaInfoByID(point.achieve,point.achievecriteria, true)
+		else
+			_, _, _, completed = GetAchievementInfo(point.achieve)
+		end
+		return completed
+	end
 end
 
 -- returns if given poi is valid under current settings
@@ -143,12 +157,32 @@ function Poi:IsValid(point)
 		return false,"condition failed" -- unmet condition
 	end
 
-	return not Poi:IsComplete(point),"quest status"
+	return not Poi:IsComplete(point),"quest/achieve status"
 end
 
 function Poi:ParsePoints()
 	local totalsets = 0
 	for pointsetname,pointset in pairs(Poi.Sets) do  totalsets=totalsets+1  end
+
+	local currencyInfo = {
+		["GR"] = C_CurrencyInfo.GetCurrencyInfo(824),
+		["AC"] = C_CurrencyInfo.GetCurrencyInfo(823),
+		["GL"] = {name="Gold",iconFileIDicon = "Interface\\Icons\\INV_Misc_Coin_01"},
+		["PS"] = {name="Primal Spirits",iconFileIDicon = "Interface\\Icons\\6BF_Explosive_Shard"},
+		["AA"] = C_CurrencyInfo.GetCurrencyInfo(829), --arakkoa archaeo
+		["OIL"]= C_CurrencyInfo.GetCurrencyInfo(1101),
+		["PC"] = {name="Pet Charms",iconFileIDicon = "Interface\\Icons\\achievement_guildperk_honorablemention"},
+		["OR"] = C_CurrencyInfo.GetCurrencyInfo(1220), 
+		["AM"] = C_CurrencyInfo.GetCurrencyInfo(1155), 
+		["VA"] = C_CurrencyInfo.GetCurrencyInfo(1508), 
+		["CC"] = C_CurrencyInfo.GetCurrencyInfo(1275), 
+		["AZ"] = C_CurrencyInfo.GetCurrencyInfo(1553), 
+		["WR"] = C_CurrencyInfo.GetCurrencyInfo(1560), 
+		["CR"] = C_CurrencyInfo.GetCurrencyInfo(1931), 
+		["IR"] = C_CurrencyInfo.GetCurrencyInfo(1820), --Infused Ruby
+		["RA"] = C_CurrencyInfo.GetCurrencyInfo(1813), --Reservoir Anima
+		["ST"] = C_CurrencyInfo.GetCurrencyInfo(1767), --Stygia
+	}
 
 	local count=0
 	for pointsetname,pointset in pairs(Poi.Sets) do 
@@ -173,7 +207,6 @@ function Poi:ParsePoints()
 			point.x = tonumber(x)/100
 			point.y = tonumber(y)/100
 
-
 			-- reward: currency
 			if point.currency then
 				point.currencydata = {}
@@ -182,25 +215,7 @@ function Poi:ParsePoints()
 					local name,icon,_,info
 					if not value then currency=currencystring:match("(%w+)") end
 					
-
-					if currency == "GR" then info = C_CurrencyInfo.GetCurrencyInfo(824)
-					elseif currency == "AC" then info = C_CurrencyInfo.GetCurrencyInfo(823)
-					elseif currency == "GL" then name,icon = "Gold","Interface\\Icons\\INV_Misc_Coin_01"
-					elseif currency == "PS" then name,icon = "Primal Spirits","Interface\\Icons\\6BF_Explosive_Shard"
-					elseif currency == "AA" then info = C_CurrencyInfo.GetCurrencyInfo(829) --arakkoa archaeo
-					elseif currency == "OIL" then info = C_CurrencyInfo.GetCurrencyInfo(1101)
-					elseif currency == "PC" then name,icon = "Pet Charms","Interface\\Icons\\achievement_guildperk_honorablemention"
-					elseif currency == "OR" then info = C_CurrencyInfo.GetCurrencyInfo(1220)
-					elseif currency == "AM" then info = C_CurrencyInfo.GetCurrencyInfo(1155)
-					elseif currency == "VA" then info = C_CurrencyInfo.GetCurrencyInfo(1508)
-					elseif currency == "CC" then info = C_CurrencyInfo.GetCurrencyInfo(1275)
-					elseif currency == "AZ" then info = C_CurrencyInfo.GetCurrencyInfo(1553)
-					elseif currency == "WR" then info = C_CurrencyInfo.GetCurrencyInfo(1560)
-					elseif currency == "CR" then info = C_CurrencyInfo.GetCurrencyInfo(1931)
-					elseif currency == "IR" then info = C_CurrencyInfo.GetCurrencyInfo(1820)--Infused Ruby
-					elseif currency == "RA" then info = C_CurrencyInfo.GetCurrencyInfo(1813)--Reservoir Anima
-					elseif currency == "ST" then info = C_CurrencyInfo.GetCurrencyInfo(1767)--Stygia
-					end
+					local info = currencyInfo[currency]
 
 					if info then
 						name = info.name
@@ -414,7 +429,7 @@ function DataProvider:OnHide()
 	if DataProvider.RetryTimer then 
 		ZGV:CancelTimer(DataProvider.RetryTimer)
 	end
-	ZGV.Pointer:ClearSet("zgv_poi_"..DataProvider.DisplayedPoiSet)
+	ZGV.Pointer:ClearSet("zgv_poi_"..DataProvider.DisplayedPoiSet,"keeparrow")
 	DataProvider.DisplayedPoiSet = 0
 
 end

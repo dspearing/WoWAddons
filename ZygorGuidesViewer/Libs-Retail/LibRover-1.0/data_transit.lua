@@ -3,7 +3,7 @@ local name,addon = ...
 addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
-data.basenodes.transit = {
+data.basenodes.transit = --[[LIBROVER]] {
 
 ---------------------
 ---------------------
@@ -14,6 +14,37 @@ data.basenodes.transit = {
 	--------------------------------
 	-----     DRAGONFLIGHT     -----
 	--------------------------------
+
+	-----------------
+	-- AMIRDRASSIL --
+	-----------------
+	--## ALLIANCE ##--
+
+		"Amirdrassil/0 54.92,63.88 @amirdrassil_tp_dst",
+
+		"Amirdrassil/0 51.40,18.35 -to- Feralas/0 45.14,41.73 {fac:A} {mode:PORTAL} {title:Click the Portal to Feathermoon Stronghold} ",
+
+			"Feralas/0 44.91,42.74 -to- @amirdrassil_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Bel'ameth} ",
+
+		"Amirdrassil/0 55.49,63.66 -to- Stormwind City/0 46.37,90.28 <region:magetower> {fac:A} {mode:PORTAL} {title:Click the Portal to Stormwind} ",
+
+			"Stormwind City/0 43.34,97.45 <region:magetower> -to- @amirdrassil_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Bel'ameth} ",
+
+		"Amirdrassil/0 55.44,64.58 -to- Darkshore/0 53.62,18.77 {fac:A} {mode:PORTAL} {title:Click the Portal to Darkshore Inside the Building} ",
+
+			"Darkshore/0 53.70,18.71 -to- @amirdrassil_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Bel'ameth} ",
+
+		"Amirdrassil/0 55.41,64.90 -to- Mount Hyjal/0 63.49,23.37 {fac:A} {mode:PORTAL} {title:Click the Portal to Mount Hyjal Inside the Building} ",
+
+			"Mount Hyjal/0 62.44,22.72 -to- @amirdrassil_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Bel'ameth} ",
+
+		"Amirdrassil/0 55.18,64.86 -to- Val'sharah/0 54.84,72.96 {fac:A} {mode:PORTAL} {title:Click the Portal to Val'sharah Inside the Building} ",
+
+			"Val'sharah/0 54.85,71.85 -to- @amirdrassil_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Bel'ameth} ",
+
+	--## HORDE ##--
+
+	--## Neutral ##--
 
 	-----------------------
 	-- THE EMERALD DREAM --
@@ -37,27 +68,134 @@ data.basenodes.transit = {
 
 		-- Valdrakken -to- Stormwind City
 		"Valdrakken/0 59.79,41.71 -to- Stormwind City/0 46.37,90.28 <region:magetower> {fac:A} {mode:PORTAL} {title:Click the Portal to Stormwind\ninside the Building} "..
-			"{cond:PlayerCompletedQuest(66244)}",
+			"{cond:PlayerLevel() >= 58}",
+
+		-- Valdrakken -to- Elwynn Forest
+		"Valdrakken/0 54.53,63.49 -to- Elwynn Forest/0 34.48,51.42 {mode:PORTAL} {fac:A} {title:Click the Scenic Getaway Portal and choose The Gala of Gifts}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Elwynn Forest -to- Val'sharah
+		"Elwynn Forest/0 34.53,51.44 -to- Val'sharah/0 51.52,58.44 {mode:PORTAL} {fac:A} {title:Click the Scenic Getaway Portal and choose Val'sharah}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Elwynn Forest -to- The Jade Forest
+		"Elwynn Forest/0 34.53,51.44 -to- The Jade Forest/0 43.91,42.26 {mode:PORTAL} {fac:A} {title:Click the Scenic Getaway Portal and choose Jade Forest}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Elwynn Forest -to- Winterspring
+		"Elwynn Forest/0 34.53,51.44 -to- Winterspring/0 22.78,46.76 {mode:PORTAL} {fac:A} {title:Click the Scenic Getaway Portal and choose Winterspring}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Elwynn Forest -to- Northern Stranglethorn
+		"Elwynn Forest/0 34.53,51.44 -to- Northern Stranglethorn/0 79.60,77.33 {mode:PORTAL} {fac:A} {title:Click the Scenic Getaway Portal and choose Northern Stranglethorn}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Val'sharah -to- Elwynn Forest
+		"Val'sharah/0 51.86,58.66 -to- Elwynn Forest/0 34.48,51.42 {mode:PORTAL} {fac:A} {title:Click the Portal to Stormwind}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- The Jade Forest -to- Elwynn Forest
+		"The Jade Forest/0 43.83,41.73 -to- Elwynn Forest/0 34.48,51.42 {mode:PORTAL} {fac:A} {title:Click the Portal to Stormwind}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Winterspring -to- Elwynn Forest
+		"Winterspring/0 22.56,46.50 -to- Elwynn Forest/0 34.48,51.42 {mode:PORTAL} {fac:A} {title:Click the Portal to Stormwind}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Northern Stranglethorn -to- Elwynn Forest
+		"Northern Stranglethorn/0 79.69,77.68 -to- Elwynn Forest/0 34.48,51.42 {mode:PORTAL} {fac:A} {title:Click the Portal to Stormwind}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
 
 	--## HORDE ##--
 
 		-- Valdrakken -to- Orgrimmar
 		"Valdrakken/0 56.59,38.26 -to- Orgrimmar/1 56.25,90.27 {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar\ninside the Building} "..
-			"{cond:PlayerCompletedQuest(66244)}",
+			"{cond:PlayerLevel() >= 58}",
+
+		-- Valdrakken -to- Durotar
+		"Valdrakken/0 54.53,63.49 -to- Durotar/0 41.43,16.61 {mode:PORTAL} {fac:H} {title:Click the Scenic Getaway Portal and choose The Gala of Gifts}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Durotar -to- Val'sharah
+		"Durotar/0 41.54,16.00 -to- Val'sharah/0 51.52,58.44 {mode:PORTAL} {fac:H} {title:Click the Scenic Getaway Portal and choose Val'sharah}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Durotar -to- The Jade Forest
+		"Durotar/0 41.54,16.00 -to- The Jade Forest/0 43.91,42.26 {mode:PORTAL} {fac:H} {title:Click the Scenic Getaway Portal and choose Jade Forest}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Durotar -to- Winterspring
+		"Durotar/0 41.54,16.00 -to- Winterspring/0 22.78,46.76 {mode:PORTAL} {fac:H} {title:Click the Scenic Getaway Portal and choose Winterspring}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Durotar -to- Northern Stranglethorn
+		"Durotar/0 41.54,16.00 -to- Northern Stranglethorn/0 79.60,77.33 {mode:PORTAL} {fac:H} {title:Click the Scenic Getaway Portal and choose Northern Stranglethorn}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Val'sharah -to- Durotar
+		"Val'sharah/0 51.86,58.66 -to- Durotar/0 41.43,16.61 {mode:PORTAL} {fac:H} {title:Click the Portal to Orgrimmar}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- The Jade Forest -to- Durotar
+		"The Jade Forest/0 43.83,41.73 -to- Durotar/0 41.43,16.61 {mode:PORTAL} {fac:H} {title:Click the Portal to Orgrimmar}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Winterspring -to- Durotar
+		"Winterspring/0 22.56,46.50 -to- Durotar/0 41.43,16.61 {mode:PORTAL} {fac:H} {title:Click the Portal to Orgrimmar}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
+
+		-- Northern Stranglethorn -to- Durotar
+		"Northern Stranglethorn/0 79.69,77.68 -to- Durotar/0 41.43,16.61 {mode:PORTAL} {fac:H} {title:Click the Portal to Orgrimmar}"..
+			"cond:ZGV.Parser.ConditionEnv.isevent('Love is in the Air')",
 
 	--## Neutral ##--
 
-		-- Valdrakken -to- Tiragarde Sound
-		"Valdrakken/0 53.98,55.68 -to- Tiragarde Sound/0 63.59,57.17 {mode:PORTAL} {title:Click the Portal to Tiragarde Sound}",
-
-		-- Valdrakken -to- Uldum
-		"Valdrakken/0 54.06,54.57 -to- Uldum New/0 66.93,62.94 {mode:PORTAL} {title:Click the Portal to Uldum}",
-
-		-- Valdrakken -to- Nazmir
-		"Valdrakken/0 53.54,54.99 -to- Nazmir/0 49.77,60.70 {mode:PORTAL} {title:Click the Portal to Nazmir}",
-
 		-- Valdrakken -to- Badlands
 		"Valdrakken/0 26.10,40.99 -to- Badlands/0 64.66,37.27 {mode:PORTAL} {title:Click the Portal to Badlands\ninside the building}",
+
+		-- Valdrakken -to- The Timeways
+		"Valdrakken/0 53.57,55.35 -to- Millenia's Threshold/0 49.31,52.06 {mode:PORTAL} {title:Click the Portal to\nThe Timeways} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Valdrakken
+		"Millenia's Threshold/0 43.53,49.95 -to- Valdrakken/0 53.57,55.35 {mode:PORTAL} {title:Click the Portal to Valdrakken\nnear the big gate} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Vashj'ir
+		"Millenia's Threshold/0 64.53,43.60 -to- Abyssal Depths/0 69.80,34.23 {mode:PORTAL} {title:Click the Portal to Vashj'ir\non the north side} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Gorgrond
+		"Millenia's Threshold/0 74.45,47.04 -to- Gorgrond/0 57.90,34.50 {mode:PORTAL} {title:Click the Portal to Gorgrond\non the northeast side} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Val'sharah
+		"Millenia's Threshold/0 77.43,61.70 -to- Val'sharah/0 55.00,72.61 {mode:PORTAL} {title:Click the Portal to Val'sharah\non the east side} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Zuldazar
+		"Millenia's Threshold/0 70.49,72.93 -to- Zuldazar/0 48.56,37.35 {mode:PORTAL} {title:Click the Portal to Zuldazar\non the southeast side} {cond:PlayerLevel() >= 70}",
+
+		-- The Timeways -to- Drustvar
+		"Millenia's Threshold/0 60.51,69.45 -to- Drustvar/0 36.90,41.06 {mode:PORTAL} {title:Click the Portal to Drustvar\non the south side} {cond:PlayerLevel() >= 70}",
+
+
+
+
+
+
+
+
+
+
+
+
+		-- Valdrakken -to- Val'sharah
+		"Valdrakken/0 54.53,63.49 -to- Val'sharah/0 51.52,58.44 {mode:PORTAL} {title:Click the Scenic Getaway Portal and choose Val'sharah}",
+
+		-- Valdrakken -to- The Jade Forest
+		"Valdrakken/0 54.53,63.49 -to- The Jade Forest/0 43.91,42.26 {mode:PORTAL} {title:Click the Scenic Getaway Portal and choose Jade Forest}",
+
+		-- Valdrakken -to- Winterspring
+		"Valdrakken/0 54.53,63.49 -to- Winterspring/0 22.78,46.76 {mode:PORTAL} {title:Click the Scenic Getaway Portal and choose Winterspring}",
+
+		-- Valdrakken -to- Northern Stranglethorn
+		"Valdrakken/0 54.53,63.49 -to- Northern Stranglethorn/0 79.60,77.33 {mode:PORTAL} {title:Click the Scenic Getaway Portal and choose Northern Stranglethorn}",
 
 	--------------------
 	-- THE AZURE SPAN --
@@ -693,7 +831,7 @@ data.basenodes.transit = {
 		"Northern Stranglethorn/0 37.54,50.99 -to- Undercity/0 84.58,16.33 {fac:H} {mode:PORTAL} {cond:ZGV.InPhase('Old Undercity')}",
 
 		-- Northern Stranglethorn Vale, Kalimdor -to- Tirisfal Glades, Eastern Kingdoms (After Destruction) --CHECKED
-		"Northern Stranglethorn/0 37.54,50.99 -to- Tirisfal Glades/0 69.30,62.75 {fac:H} {mode:PORTAL} {cond:not ZGV.InPhase('Old Undercity')}",
+		"Northern Stranglethorn/0 37.54,50.99 -to- Tirisfal Glades/0 69.30,62.75 {fac:H} {mode:PORTAL} {cond:not ZGV.InPhase('Old Undercity') and not ZGV.InPhase('UndercityCharred') and not ZGV.InPhase('UndercityOoze')}",
 
 		-- Orgrimmar - Durotar, Kalimdor -to- Kelp'thar Forest - Vashj'ir, Eastern Kingdoms --CHECKED
 		"Orgrimmar/1 49.23,36.52 -to- Kelp'thar Forest/0 45.14,23.33 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(25924) and not PlayerCompletedQuest(25222)}",
@@ -774,7 +912,7 @@ data.basenodes.transit = {
 			"{title:Click the Portal to Jade Forest in the Portal Room}",
 
 		-- Orgrimmar - Durotar, Kalimdor, Eastern Kingdoms -to- Valdrakken - Thaldraszus, Dragon Isles
-		"Orgrimmar/1 57.11,87.30 -to- Valdrakken/0 59.55,41.46 {fac:H} {mode:PORTAL} {cond:PlayerCompletedQuest(66244)}"..
+		"Orgrimmar/1 57.11,87.30 -to- Valdrakken/0 59.55,41.46 {fac:H} {mode:PORTAL} {cond:PlayerLevel() >= 58}"..
 			"{title:Click the Portal to Valdrakken\nInside the Portal Room}",
 
 		-- Orgrimmar - Durotar, Kalimdor -to- Silvermoon City - Everson Woods, Eastern Kingdoms --CHECKED
@@ -972,7 +1110,7 @@ data.basenodes.transit = {
 			"{fac:A} {mode:PORTAL} {cond:PlayerLevel() < 10} {cost:999}",
 
 		-- Stormwind - Elwynn Forest, Eastern Kingdoms -to- Valdrakken - Thaldraszus, Dragon Isles
-		"Stormwind City/0 48.89,93.42 <region:magetower> -to- Valdrakken/0 59.55,41.46 {fac:A} {mode:PORTAL}  {cond:PlayerCompletedQuest(66244)}"..
+		"Stormwind City/0 48.89,93.42 <region:magetower> -to- Valdrakken/0 59.55,41.46 {fac:A} {mode:PORTAL}  {cond:PlayerLevel() >= 58}"..
 			"{title:Click the Portal to Valdrakken\nInside the Mage Tower}",
 
 		-- Stromgarde Keep- Arathi Highlands, Eastern Kingdom -to- Boralus Harbor - Boralus, Kul Tiras --CHECKED
@@ -1000,6 +1138,15 @@ data.basenodes.transit = {
 		-- Shattered Landing - Blasted Lands, Eastern Kingdoms (New Time) -to- Orgrimmar - Durotar, Kalimdor --CHECKED
 		"Blasted Lands/0 72.65,49.51 -to- Orgrimmar/1 57.10,89.81 {fac:H} {mode:PORTAL} {cond:PlayerLevel() >= 10 and not ZGV.InPhase('Old Blasted Lands')}",
 
+
+
+
+
+
+
+
+
+
 		-- Silvermoon City - Eversong Woods, Eastern Kingdoms -x- Ruins of Lordaeron - Tirisfal Glades, Eastern Kingdoms (Old Time) --CHECKED
 		"Silvermoon City/0 49.49,14.80 -x- Tirisfal Glades/0 59.45,67.44 <region:undercitycourt> {fac:H} {mode:PORTAL} {title:Click the Orb of Translocation} "..
 			"{cond:ZGV.InPhase('Old Undercity')}",
@@ -1010,7 +1157,20 @@ data.basenodes.transit = {
 
 		-- Silvermoon City - Eversong Woods, Eastern Kingdoms -to- Tirisfal Glades, Eastern Kingdoms (New Time) --CHECKED
 		"Silvermoon City/0 49.49,14.80 -to- Tirisfal Glades/0 69.30,62.75 {fac:H} {mode:PORTAL} {title:Click the Orb of Translocation} "..
-			"{cond:not ZGV.InPhase('Old Undercity')}",
+			"{cond:not ZGV.InPhase('Old Undercity') and not ZGV.InPhase('UndercityCharred') and not ZGV.InPhase('UndercityOoze')}",
+
+		-- Silvermoon City - Eversong Woods, Eastern Kingdoms -x- Ruins of Lordaeron - Tirisfal Glades, Eastern Kingdoms (Old Time) --CHECKED
+		"Silvermoon City/0 49.49,14.80 -x- Tirisfal Glades L/0 59.40,67.45 {fac:H} {mode:PORTAL} {title:Click the Orb of Translocation} "..
+			"{cond:ZGV.InPhase('UndercityCharred')}",
+
+
+
+
+
+
+
+
+
 
 		-- Tirisfal Glades, Eastern Kingdoms (Old Time) -to- Northern Stranglethorn Vale, Kalimdor --CHECKED
 		"Tirisfal Glades/0 61.88,59.01 -to- Northern Stranglethorn/0 37.23,50.48 {fac:H} {mode:PORTAL} {title:Click the Portal to Grom'gol on Top of the Zeppelin Tower} "..
@@ -1058,10 +1218,6 @@ data.basenodes.transit = {
 
 		-- Undercity - Tirisfal Glades, Eastern Kingdoms -to- The Stair of Destiny - Hellfire Peninsula, Outland (Portal Usable) --CHECKED
 		--"Undercity/0 85.25,17.04 -to- Hellfire Peninsula/0 89.16,49.56 {fac:H} {mode:PORTAL} {cond:PlayerLevel() >= 10 and ZGV.InPhase('UndercityCharred')}",
-
-		-- Silvermoon City - Eversong Woods, Eastern Kingdoms -x- Ruins of Lordaeron - Tirisfal Glades, Eastern Kingdoms (Old Time) --CHECKED
-		"Silvermoon City/0 49.49,14.80 -x- Tirisfal Glades L/0 59.40,67.45 {fac:H} {mode:PORTAL} {title:Click the Orb of Translocation} "..
-			"{cond:ZGV.InPhase('UndercityCharred')}",
 
 	--## NEUTRAL ##--
 
@@ -1158,7 +1314,7 @@ data.basenodes.transit = {
 				"{cond:PlayerIsOnQuest(47330) or PlayerIsOnQuest(46206)}",
 
 		-- Waygate - Sholazar Basin, Northrend -to- Waygate - Un'Goro Crater, Kalimdor --CHECKED
-		"Sholazar Basin/0 40.38,83.20 -x- Un'Goro Crater/0 50.53,7.71 {mode:PORTAL} {title:Walk into the light} {cond:PlayerCompletedQuest(12546)}",
+		"Sholazar Basin/0 40.38,83.20 -x- Un'Goro Crater/0 50.53,7.71 {mode:PORTAL} {title:Walk into the light and touch the ground} {cond:PlayerCompletedQuest(12546)}",
 
 	--------------
 	-- PANDARIA --
@@ -1806,7 +1962,7 @@ data.basenodes.transit = {
 
 		-- Sanctum of the Sages - Boralus Harbor, Tiragarde Sound -to- Magni's Encampment - Silithus, Kalimdor --
 		"Boralus/0 69.65,15.92 -to- Silithus/0 41.41,45.19 {fac:A} {mode:PORTAL} {title:Click the Portal to Silithus Inside the Building} "..
-			"{cond:ZGV.InPhase('BFA') and PlayerLevel() >= 50}",
+			"{cond:ZGV.InPhase('BFA') and not ZGV.InPhase('Old Silithus') and PlayerLevel() >= 50}",
 
 		-- Sanctum of the Sages - Boralus Harbor, Tiragarde Sound -to- Mezzamere - Nazjatar, The Maelstrom --
 		"Boralus/0 69.84,15.29 -to- Nazjatar/0 39.96,52.84 {fac:A} {mode:PORTAL} {title:Click the Portal to Nazjatar Inside the Building} "..
@@ -1876,7 +2032,7 @@ data.basenodes.transit = {
 
 		-- Hall of Ancient Paths - Zuldazar, Zandalar -to- Silithus, Kalimdor --
 		"Dazar'alor/1 73.67,85.43 -to- Silithus/0 41.41,45.19 {fac:H} {mode:PORTAL} {title:Click the Portal to Silithus Inside the Building} "..
-			"{cond:ZGV.InPhase('BFA') and PlayerLevel() >= 10}",
+			"{cond:ZGV.InPhase('BFA') and not ZGV.InPhase('Old Silithus') and PlayerLevel() >= 50}",
 
 		-- Port of Zandalar - Zuldazar, Zandalar -to- Ar'gorok - Arathi Highlands, Eastern Kingdoms --
 		"Dazar'alor/0 51.92,94.59 -to- Arathi Highlands/0 27.40,29.95 {fac:H} {mode:PORTAL} {title:Click the Portal to Ar'gorok} "..

@@ -1,5 +1,5 @@
-## Interface: 11500
-## Version: v10.2.1
+## Interface: 11501
+## Version: v10.2.3
 ## Title: MuteSoundFile
 ## Author: Funkydude
 ## Notes: Mute sound files in World of Warcraft.

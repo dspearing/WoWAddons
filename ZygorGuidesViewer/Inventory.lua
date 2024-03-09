@@ -117,7 +117,7 @@ function Inventory:GetUnusableItems()
 	local itemsList = {}
 	local onlyscan
 	Upgrades:ScanBagsForUpgrades(onlyscan)
-	Upgrades:ScanBagsForUpgradesForAlts()
+	--Upgrades:ScanBagsForUpgradesForAlts()
 
 	for bagID=0, NUM_BAG_SLOTS do
 		for bagSlotID=1,C_Container.GetContainerNumSlots(bagID) do repeat
@@ -133,7 +133,7 @@ function Inventory:GetUnusableItems()
 					local id = ZGV.ItemLink.GetItemID(itemLink)
 
 					local isUpgrade,_,_,_,rejectedUpgrade = Upgrades:IsUpgrade(stripped_itemlink)
-					isUpgrade = isUpgrade or Upgrades:IsUpgradeForAlt(stripped_itemlink)
+					--isUpgrade = isUpgrade or Upgrades:IsUpgradeForAlt(stripped_itemlink)
 					isUpgrade = isUpgrade or Upgrades:IsUpgradeForOffspec(stripped_itemlink)
 
 					local fam,fmax=0,0
@@ -304,6 +304,8 @@ function Inventory:BuyItems()
 end
 
 function Inventory:FindItemsToBuy()
+	do return end
+
 	if self.popup then self.popup:Hide() end
 	if not (ZGV.db.profile.autobuy and ZGV.db.profile.enable_vendor_tools) then return end
 	if not (MerchantFrame and MerchantFrame:IsVisible()) then return end
@@ -650,7 +652,7 @@ local function OnEvent(self, event)
 			Inventory:RecordBank()
 		end
 	elseif event=="MAIL_SHOW" then
-		Inventory:ShowAltGearPopup()
+		--Inventory:ShowAltGearPopup()
 	end
 
 
@@ -879,3 +881,7 @@ tinsert(ZGV.startups,{"InventoryManager setup",function(self)
 
 	ZGV:SendMessage("INVENTORY_STARTUP_DONE")
 end})
+
+local invslots = {'AmmoSlot','BackSlot','Bag0Slot','Bag1Slot','Bag2Slot','Bag3Slot','ChestSlot','FeetSlot','Finger0Slot','Finger1Slot','HandsSlot','HeadSlot','LegsSlot','MainHandSlot','NeckSlot','SecondaryHandSlot','ShirtSlot','ShoulderSlot','TabardSlot','Trinket0Slot','Trinket1Slot','WaistSlot','WristSlot'}
+if not ZGV.IsRetail then table.insert(invslots,'RangedSlot') end
+ZGV.Inventory.InvSlots = invslots

@@ -348,6 +348,7 @@ local ChromieTime = {
 	[8] = "MOP",
 	[9] = "WOD",
 	[10] = "LEG",
+	[14] = "SHA",
 }
 Parser.ChromieTime = ChromieTime
 

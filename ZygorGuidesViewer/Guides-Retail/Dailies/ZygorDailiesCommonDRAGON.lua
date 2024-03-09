@@ -833,7 +833,6 @@ step
 label quest-77156
 accept Botanical Redistribution##77156 |goto The Emerald Dream/0 24.48,21.83
 |tip You will accept this quest automatically.
-|polish
 step
 click Climbing Gear
 Acquire the Climbing Gear |q 77156/1 |goto 24.48,21.83
@@ -899,7 +898,6 @@ step
 label quest-78370
 accept Claws for Concern##78370 |goto The Emerald Dream/0 37.88,67.69
 |tip You will accept this quest automatically.
-|polish
 stickystart "Slay_Podlings_or_Umbraclaws"
 step
 Click Hatchling NPCs
@@ -916,7 +914,6 @@ label quest-78438
 accept Dragonrider Racing - Canopy Concours##78438 |goto The Emerald Dream/0 62.80,88.12
 |tip In the tree limb.
 |tip You will accept this quest automatically.
-|polish
 step
 talk Bronze Timekeeper##210784
 Tell him _"I'd like to try the course."_
@@ -1061,7 +1058,6 @@ step
 label quest-77765
 accept Documenting a Dream##77765 |goto The Emerald Dream/0 38.10,64.23
 |tip You will accept this quest automatically.
-|polish
 step
 clicknpc Cataloger's Disc
 |tip Use the "Catalog" ability on your vehicle bar to take puctures of the wildlife along the river.
@@ -1206,9 +1202,8 @@ kill Portal Breacher##209821 |q 77714/2 |goto 30.57,26.53
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-77159
-accept Not Mushroom For Error##77159 |goto The Emerald Dream/0 52.97,30.17
+accept No Mushroom For Error##77159 |goto The Emerald Dream/0 52.97,30.17
 |tip You will accept this quest automatically.
-|polish
 step
 click Climbing Gear
 Acquire the Climbing Gear |q 77159/1 |goto 52.97,30.17
@@ -1312,7 +1307,6 @@ step
 label quest-76988
 accept Sylvan Slalom##76988 |goto The Emerald Dream/0 34.03,54.41
 |tip You will accept this quest automatically.
-|polish
 step
 click Peculiar Plank
 |tip Make sure you are facing level with the water or you will dive and lose the buff.
@@ -1659,6 +1653,21 @@ accept Shifting Ground##73147 |goto The Forbidden Reach/5 67.30,12.26
 step
 clicknpc Tremblor##197447
 Defeat Tremblor in a Pet Battle |q 73147/1 |goto 67.30,12.26
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-78931
+accept Technoscrying: The Mysteries of Dragonskull Island##78931 |goto Dragonskull Island/0 51.96,45.37
+|tip You will accept this quest automatically.
+|polish
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+Click Treasures
+|tip Inside the cave.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Items |q 78931/1 |goto 51.96,45.37
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-75257
@@ -4593,6 +4602,22 @@ Tell it _"I'm ready to travel with you."_
 Ask Rupert to Bring You to the Buried Vault |q 75660/1 |goto 40.12,68.47
 step
 kill 6 Enraged Watcher##200407 |q 75660/2 |goto 52.92,81.05
+|next "Dragon_World_Quest_Emissaries"
+step
+label quest-78663
+accept Excavation: Scattered Around the Tower##78663 |goto Zaralek Cavern/0 47.51,48.33
+|tip You will accept this quest automatically.
+step
+use Archivist's Earth Totem##210834
+|tip Use it near rumbling earth areas around this area.
+|tip They appear on your minimap as yellow dots.
+clicknpc Roska's Earth Totem##208059
+|tip It appears after using the totem.
+|tip Alternate between this and stepping on small lava oozes to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards fire or earth.
+Click Relics
+|tip While the indicator is in the colored area, click the relic to fill the progress bar.
+Unearth #2# Finds |q 78663/1 |goto 47.51,48.33
 |next "Dragon_World_Quest_Emissaries"
 step
 label quest-74992
@@ -8226,7 +8251,6 @@ You can complete the following snail pet quests:
 '|complete petlevel(2653) >= 25 and not completedq(74967) |next "Begin_Daily_Quests" |or
 '|complete petlevel(1903) >= 25 and not completedq(74968) |next "Begin_Daily_Quests" |or
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Suffusion Camp (Ohn'ahran Plains)",{
 author="support@zygorguides.com",
 startlevel=68,
@@ -8566,7 +8590,6 @@ Slay the Disciple of Fyrakk |scenariogoal 2/0 |goto 58.17,31.75 |next "Begin_Dai
 |tip Move out of areas on the ground and be prepared to be knocked back frequently.
 |only if scenariostage(2)
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\Dragonflight (60-70)\\Researchers Under Fire",{
 author="support@zygorguides.com",
 startlevel=68,

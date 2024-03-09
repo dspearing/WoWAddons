@@ -11,7 +11,7 @@ mounts={253087},
 patch='73000',
 mounttype='Flying',
 model={79480},
-description="\nThis guide will help you acquire an \"Antoran Gloomhound\" mount.",
+description="This guide will help you acquire an \"Antoran Gloomhound\" mount.",
 },[[
 step
 Load the "Glory of the Argus Raider" Achievement Guide |next "Achievement Guides\\Dungeons & Raids\\Legion Raids\\Glory of the Argus Raider" |confirm |or
@@ -33,7 +33,7 @@ mounts={193007},
 patch='70100',
 mounttype='Flying',
 model={72700},
-description="\nThis guide will help you acquire the Defiled Reins.",
+description="This guide will help you acquire the Defiled Reins.",
 },[[
 step
 Complete the Glory of the Legion Raider achievement |achieve 11180
@@ -54,7 +54,7 @@ mounts={225765},
 patch='70300',
 mounttype='Flying',
 model={63625},
-description="\nThis guide will help you acquire the Leyfeather Hippogryph.",
+description="This guide will help you acquire the Leyfeather Hippogryph.",
 },[[
 step
 Complete the Glory of the Legion Hero achievement |achieve 11163
@@ -75,7 +75,7 @@ mounts={223814},
 patch='70300',
 mounttype='Flying',
 model={72071},
-description="\nThis guide will help you acquire the Mechanized Lumber Extractor.",
+description="This guide will help you acquire the Mechanized Lumber Extractor.",
 },[[
 step
 This is a reward for completing the achievement _Remeber to Share_ |achieve 11176
@@ -96,7 +96,7 @@ mounts={254260},
 patch='73000',
 mounttype='Ground',
 model={79440},
-description="\nThis guide will help you acquire a \"Bleakhoof Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Bleakhoof Ruinstrider\" mount.",
 },[[
 step
 This is a reward for completing the achievement _...And Chew Mana Buns_
@@ -117,7 +117,7 @@ keywords={"ground, mount, battle, of, azeroth, preorder, collector, edition"},
 mounts={255696},
 patch='80100',
 mounttype='Ground',
-description="\nThis mount is acquired by purchasing the collector's edition of the Battle of Azeroth expansion.",
+description="This mount is acquired by purchasing the collector's edition of the Battle of Azeroth expansion.",
 condition_valid=function() return raceclass('Horde') end,
 condition_valid_msg="This mount is Horde only!",
 },[[
@@ -132,7 +132,7 @@ keywords={"ground, mount, battle, of, azeroth, preorder, collector, edition"},
 mounts={255695},
 patch='80100',
 mounttype='Ground',
-description="\nThis mount is acquired by purchasing the collector's edition of the Battle of Azeroth expansion.",
+description="This mount is acquired by purchasing the collector's edition of the Battle of Azeroth expansion.",
 },[[
 step
 Purchase the Collector's Edition of the Battle of Azeroth Expansion |achieve 12229
@@ -152,7 +152,7 @@ mounts={213164},
 patch='70300',
 mounttype='Ground',
 model={70062},
-description="\nThis guide will help you acquire the Brilliant Direbeak.",
+description="This guide will help you acquire the Brilliant Direbeak.",
 },[[
 step
 You must first obtain the Direbeak Hatchling before being able to get this mount.
@@ -410,7 +410,7 @@ mounts={213158},
 patch='70300',
 mounttype='Ground',
 model={70060},
-description="\nThis guide will help you acquire the Predatory Bloodgazer.",
+description="This guide will help you acquire the Predatory Bloodgazer.",
 },[[
 step
 Obtain the Bloodgazer Hatchling
@@ -679,7 +679,7 @@ mounts={213163},
 patch='70300',
 mounttype='Ground',
 model={70063},
-description="\nThis guide will help you acquire the Snowfeather Hunter.",
+description="This guide will help you acquire the Snowfeather Hunter.",
 },[[
 step
 You must first obtain the Snowfeather Hatchling before being able to get this mount.
@@ -934,7 +934,7 @@ mounts={213165},
 patch='70300',
 mounttype='Ground',
 model={70061},
-description="\nThis guide will help you acquire the Viridian Sharptalon.",
+description="This guide will help you acquire the Viridian Sharptalon.",
 },[[
 step
 You must first obtain the Sharptalon Hatchling before being able to get this mount.
@@ -1192,7 +1192,7 @@ mounts={243512},
 patch='73000',
 mounttype='Flying',
 model={76586},
-description="\nThis guide will help you acquire the Luminous Starseeker mount.",
+description="This guide will help you acquire the Luminous Starseeker mount.",
 },[[
 step
 This mount can be purchased for $25.00 from the official _Blizzard Store_.
@@ -1210,7 +1210,7 @@ mounts={245725},
 patch='73000',
 mounttype='Flying',
 model={43637},
-description="\nThis guide will help you acquire the Orgrimmar Interceptor mount.",
+description="This guide will help you acquire the Orgrimmar Interceptor mount.",
 },[[
 step
 This mount is a reward for purchasing the 2017 Blizzcon Virtual Ticket
@@ -1228,7 +1228,7 @@ keywords={"blizzard, store, flying, mount"},
 mounts={259395},
 patch='80100',
 mounttype='Flying',
-description="\nShu-zen, the Divine Sentinel is acquired by purchasing it for $25 from the Blizzard store..",
+description="Shu-zen, the Divine Sentinel is acquired by purchasing it for $25 from the Blizzard store..",
 },[[
 step
 This mount can be purchased for $25.00 from the official Blizzard Store
@@ -1246,7 +1246,7 @@ mounts={245723},
 patch='73000',
 mounttype='Flying',
 model={43637},
-description="\nThis guide will help you acquire the Stormwind Skychaser mount.",
+description="This guide will help you acquire the Stormwind Skychaser mount.",
 },[[
 step
 This mount is a reward for purchasing the 2017 Blizzcon Virtual Ticket
@@ -1266,7 +1266,7 @@ mounts={229387},
 patch='72000',
 mounttype='Flying',
 model={75314},
-description="\nThis guide will help you acquire the Deathlord's Vilebrood Vanquisher mount.",
+description="This guide will help you acquire the Deathlord's Vilebrood Vanquisher mount.",
 },[[
 step
 This mount is only available to Death Knights |confirm
@@ -1369,7 +1369,7 @@ mounts={229417},
 patch='72000',
 mounttype='Flying',
 model={73783},
-description="\nThis guide will help you acquire the Slayer's Felbroken Shrieker mount.",
+description="This guide will help you acquire the Slayer's Felbroken Shrieker mount.",
 },[[
 step
 This mount is only available to Demon Hunters |confirm
@@ -1458,7 +1458,7 @@ mounts={229439},
 patch='72000',
 mounttype='Flying',
 model={73781},
-description="\nThis guide will help you acquire the Huntmaster's Dire Wolfhawk mount.",
+description="This guide will help you acquire the Huntmaster's Dire Wolfhawk mount.",
 },[[
 step
 This mount is only available to Hunters |confirm
@@ -1500,7 +1500,7 @@ mounts={229438},
 patch='72000',
 mounttype='Flying',
 model={73782},
-description="\nThis guide will help you acquire the Huntmaster's Fierce Wolfhawk mount.",
+description="This guide will help you acquire the Huntmaster's Fierce Wolfhawk mount.",
 },[[
 step
 This mount is only available to Hunters |confirm
@@ -1542,7 +1542,7 @@ mounts={239829},
 patch='72000',
 mounttype='unknown',
 model={73780},
-description="\nThis guide will help you acquire the Huntmaster's Loyal Wolfhawk mount.",
+description="This guide will help you acquire the Huntmaster's Loyal Wolfhawk mount.",
 },[[
 step
 This mount is only available to Hunters |confirm
@@ -1645,7 +1645,7 @@ mounts={229376},
 patch='72000',
 mounttype='Flying',
 model={73770},
-description="\nThis guide will help you acquire the Archmage's Prismatic Disc mount.",
+description="This guide will help you acquire the Archmage's Prismatic Disc mount.",
 },[[
 step
 This mount is only available to Mages |confirm
@@ -1763,7 +1763,7 @@ mounts={229385},
 patch='72000',
 mounttype='Flying',
 model={73784},
-description="\nThis guide will help you acquire the Ban-Lu, Grandmaster's Companion mount.",
+description="This guide will help you acquire the Ban-Lu, Grandmaster's Companion mount.",
 },[[
 step
 This mount is only available to Monks |confirm
@@ -1920,7 +1920,7 @@ mounts={231435},
 patch='72000',
 mounttype='Flying',
 model={74148},
-description="\nThis guide will help you acquire the Highlord's Golden Charger mount.",
+description="This guide will help you acquire the Highlord's Golden Charger mount.",
 },[[
 step
 This mount is only available to Paladins |confirm
@@ -2087,7 +2087,7 @@ mounts={231589},
 patch='72000',
 mounttype='Flying',
 model={74151},
-description="\nThis guide will help you acquire the Highlord's Valorous Charger mount.",
+description="This guide will help you acquire the Highlord's Valorous Charger mount.",
 },[[
 step
 This mount is only available to Paladins |confirm
@@ -2129,7 +2129,7 @@ mounts={231587},
 patch='72000',
 mounttype='Flying',
 model={74149},
-description="\nThis guide will help you acquire the Highlord's Vengeful Charger mount.",
+description="This guide will help you acquire the Highlord's Vengeful Charger mount.",
 },[[
 step
 This mount is only available to Paladins |confirm
@@ -2171,7 +2171,7 @@ mounts={231588},
 patch='72000',
 mounttype='Flying',
 model={74150},
-description="\nThis guide will help you acquire the Highlord's Vigilant Charger mount.",
+description="This guide will help you acquire the Highlord's Vigilant Charger mount.",
 },[[
 step
 This mount is only available to Paladins |confirm
@@ -2213,7 +2213,7 @@ mounts={240981},
 patch='72000',
 mounttype='unknown',
 model={73774},
-description="\nThis guide will help you acquire the High Priest's Lightsworn Seeker mount.",
+description="This guide will help you acquire the High Priest's Lightsworn Seeker mount.",
 },[[
 step
 This mount is only available to Priests |confirm
@@ -2280,7 +2280,7 @@ mounts={231524},
 patch='72000',
 mounttype='Flying',
 model={74134},
-description="\nThis guide will help you acquire the Shadowblade's Baneful Omen mount.",
+description="This guide will help you acquire the Shadowblade's Baneful Omen mount.",
 },[[
 step
 This mount is only available to Rogues |confirm
@@ -2322,7 +2322,7 @@ mounts={231525},
 patch='72000',
 mounttype='Flying',
 model={74136},
-description="\nThis guide will help you acquire the Shadowblade's Crimson Omen mount.",
+description="This guide will help you acquire the Shadowblade's Crimson Omen mount.",
 },[[
 step
 This mount is only available to Rogues |confirm
@@ -2364,7 +2364,7 @@ mounts={231523},
 patch='72000',
 mounttype='Flying',
 model={74135},
-description="\nThis guide will help you acquire the Shadowblade's Lethal Omen mount.",
+description="This guide will help you acquire the Shadowblade's Lethal Omen mount.",
 },[[
 step
 This mount is only available to Rogues |confirm
@@ -2406,7 +2406,7 @@ mounts={231434},
 patch='72000',
 mounttype='Flying',
 model={74133},
-description="\nThis guide will help you acquire the Shadowblade's Murderous Omen mount.",
+description="This guide will help you acquire the Shadowblade's Murderous Omen mount.",
 },[[
 step
 This mount is only available to Rogues |confirm
@@ -2476,7 +2476,7 @@ mounts={231442},
 patch='72000',
 mounttype='Flying',
 model={76024},
-description="\nThis guide will help you acquire the Farseer's Raging Tempest mount.",
+description="This guide will help you acquire the Farseer's Raging Tempest mount.",
 },[[
 step
 This mount is only available to Shamans |confirm
@@ -2546,7 +2546,7 @@ mounts={238454},
 patch='72000',
 mounttype='Flying',
 model={75533},
-description="\nThis guide will help you acquire the Netherlord's Accursed Wrathsteed mount.",
+description="This guide will help you acquire the Netherlord's Accursed Wrathsteed mount.",
 },[[
 step
 This mount is only available to Warlocks |confirm
@@ -2582,7 +2582,7 @@ mounts={238452},
 patch='72000',
 mounttype='Flying',
 model={75532},
-description="\nThis guide will help you acquire the Netherlord's Brimstone Wrathsteed mount.",
+description="This guide will help you acquire the Netherlord's Brimstone Wrathsteed mount.",
 },[[
 step
 This mount is only available to Warlocks |confirm
@@ -2624,7 +2624,7 @@ mounts={241851},
 patch='72000',
 mounttype='unknown',
 model={74303},
-description="\nThis guide will help you acquire the Netherlord's Chaotic Wrathsteed mount.",
+description="This guide will help you acquire the Netherlord's Chaotic Wrathsteed mount.",
 },[[
 step
 This mount is only available to Warlocks |confirm
@@ -2741,7 +2741,7 @@ mounts={229388},
 patch='72000',
 mounttype='Flying',
 model={73778},
-description="\nThis guide will help you acquire the Battlelord's Bloodthirsty War Wyrm mount.",
+description="This guide will help you acquire the Battlelord's Bloodthirsty War Wyrm mount.",
 },[[
 step
 This mount is only available to Warriors |confirm
@@ -2822,7 +2822,7 @@ mounts={200175},
 patch='70100',
 mounttype='Ground',
 model={67575},
-description="\nThis guide will help you acquire the Felsaber mount.",
+description="This guide will help you acquire the Felsaber mount.",
 },[[
 step
 This mount is only available to Demon Hunters
@@ -2845,7 +2845,7 @@ mounts={232519},
 patch='72000',
 mounttype='Flying',
 model={74315},
-description="\nThis guide will help you acquire the Abyss Worm.",
+description="This guide will help you acquire the Abyss Worm.",
 },[[
 step
 Enter the Tomb of Sargeras with your group |goto Tomb of Sargeras/1 45.2,90.2 |c
@@ -2866,7 +2866,7 @@ mounts={253662},
 patch='73000',
 mounttype='Ground',
 model={79593},
-description="\nThis guide will help you acquire an \"Acid Belcher\" mount.",
+description="This guide will help you acquire an \"Acid Belcher\" mount.",
 },[[
 step
 Follow the path |goto Eredath/0 45.67,17.65 < 15 |only if walking
@@ -2894,7 +2894,7 @@ mounts={253088},
 patch='73000',
 mounttype='Flying',
 model={79479},
-description="\nThis guide will help you acquire an \"Antoran Charhound\" mount.",
+description="This guide will help you acquire an \"Antoran Charhound\" mount.",
 },[[
 step
 Enter Antorus, the Burning Throne with Your Group |goto Antorus/1 91,69 < 1000
@@ -2916,7 +2916,7 @@ mounts={235764},
 patch='73000',
 mounttype='Flying',
 model={74900},
-description="\nThis guide will help you acquire a \"Darkspore Mana Ray\" mount.",
+description="This guide will help you acquire a \"Darkspore Mana Ray\" mount.",
 },[[
 step
 label "Locations"
@@ -3001,7 +3001,7 @@ mounts={253108},
 patch='73000',
 mounttype='Flying',
 model={79487},
-description="\nThis guide will help you acquire a \"Felglow Mana Ray\" mount.",
+description="This guide will help you acquire a \"Felglow Mana Ray\" mount.",
 },[[
 step
 label "Locations"
@@ -3086,7 +3086,7 @@ mounts={213134},
 patch='70300',
 mounttype='Ground',
 model={70051},
-description="\nThis guide will help you acquire the Fiendish Hellfire Core.",
+description="This guide will help you acquire the Fiendish Hellfire Core.",
 },[[
 step
 Enter the Nighthold with your group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -3109,7 +3109,7 @@ mounts={253107},
 patch='73000',
 mounttype='Flying',
 model={79484},
-description="\nThis guide will help you acquire a \"Lambent Mana Ray\" mount.",
+description="This guide will help you acquire a \"Lambent Mana Ray\" mount.",
 },[[
 step
 Follow the path |goto Eredath/0 28.59,43.66 < 10 |only if walking
@@ -3135,7 +3135,7 @@ mounts={213134},
 patch='70300',
 mounttype='Ground',
 model={70040},
-description="\nThis guide will help you acquire the Living Infernal Core.",
+description="This guide will help you acquire the Living Infernal Core.",
 },[[
 step
 Enter the Nighthold with your group |goto Suramar/0 44.13,59.80 |region suramar_sanctum_depths
@@ -3159,7 +3159,7 @@ mounts={253109},
 patch='73000',
 mounttype='Flying',
 model={79486},
-description="\nThis guide will help you acquire a \"Scintillating Mana Ray\" mount.",
+description="This guide will help you acquire a \"Scintillating Mana Ray\" mount.",
 },[[
 step
 label "Locations"
@@ -3244,7 +3244,7 @@ mounts={231428},
 patch='72000',
 mounttype='Flying',
 model={74104},
-description="\nThis guide will help you acquire the Smoldering Ember Wyrm.",
+description="This guide will help you acquire the Smoldering Ember Wyrm.",
 },[[
 step
 _Warning_
@@ -3337,7 +3337,7 @@ mounts={253106},
 patch='73000',
 mounttype='Flying',
 model={79485},
-description="\nThis guide will help you acquire a \"Vibrant Mana Ray\" mount.",
+description="This guide will help you acquire a \"Vibrant Mana Ray\" mount.",
 },[[
 step
 label "Locations"
@@ -3422,7 +3422,7 @@ mounts={243652},
 patch='73000',
 mounttype='Ground',
 model={76646},
-description="\nThis guide will help you acquire a \"Vile Fiend\" mount.",
+description="This guide will help you acquire a \"Vile Fiend\" mount.",
 },[[
 step
 Follow the path up |goto Antoran Wastes/0 72.28,48.00 < 10 |only if walking and knowstaxi("Light's Purchase, Antoran Wastes")
@@ -3456,7 +3456,7 @@ mounts={253660},
 patch='73000',
 mounttype='Ground',
 model={79592},
-description="\nThis guide will help you acquire a \"Biletooth Gnasher\" mount.",
+description="This guide will help you acquire a \"Biletooth Gnasher\" mount.",
 },[[
 step
 This mount can drop from two different rares, Puscilla or Vrax'thul
@@ -3525,7 +3525,7 @@ mounts={253661},
 patch='73000',
 mounttype='Ground',
 model={79595},
-description="\nThis guide will help you acquire a \"Crimson Slavermaw\" mount.",
+description="This guide will help you acquire a \"Crimson Slavermaw\" mount.",
 },[[
 step
 Follow the path up |goto Antoran Wastes/0 72.28,48.00 < 10 |only if walking and knowstaxi("Light's Purchase, Antoran Wastes")
@@ -3559,7 +3559,7 @@ mounts={247402},
 patch='73000',
 mounttype='Ground',
 model={78092},
-description="\nThis guide will help you acquire a \"Lucid Nightmare\" mount.",
+description="This guide will help you acquire a \"Lucid Nightmare\" mount.",
 },[[
 step
 To obtain this mount you must complete several puzzles
@@ -3716,7 +3716,7 @@ mounts={253058},
 patch='73000',
 mounttype='Ground',
 model={76311},
-description="\nThis guide will help you acquire a \"Maddened Chaosrunner\" mount.",
+description="This guide will help you acquire a \"Maddened Chaosrunner\" mount.",
 },[[
 step
 Follow the path |goto Eredath/0 54.50,73.30 < 15 |only if walking
@@ -3738,7 +3738,7 @@ mounts={229499},
 patch='72000',
 mounttype='Ground',
 model={73808},
-description="\nThis guide will help you acquire the Midnight's Eternal Reins.",
+description="This guide will help you acquire the Midnight's Eternal Reins.",
 },[[
 step
 Enter Karazhan with your group |goto Karazhan L/6 63.9,61.3
@@ -3761,7 +3761,7 @@ mounts={243651},
 patch='73000',
 mounttype='Flying',
 model={79436},
-description="\nThis guide will help you acquire a \"Shackled Ur'zul\" mount.",
+description="This guide will help you acquire a \"Shackled Ur'zul\" mount.",
 },[[
 step
 Enter Antorus, the Burning Throne with Your Group |goto Antorus/1 91,69 < 1000
@@ -3779,7 +3779,7 @@ mounts={215159},
 patch='70300',
 mounttype='Flying',
 model={29361},
-description="\nThis guide will help you acquire the Long-Forgotten Hippogryph Mount.",
+description="This guide will help you acquire the Long-Forgotten Hippogryph Mount.",
 },[[
 step
 label "Begin_Guide"
@@ -4677,7 +4677,7 @@ mounts={243025},
 patch='72000',
 mounttype='Flying',
 model={74314},
-description="\nThis guide will help you acquire the Riddler's Mind-Worm.",
+description="This guide will help you acquire the Riddler's Mind-Worm.",
 },[[
 step
 Enter the Legerdemain Lounge |goto Dalaran L/10 46.14,38.18
@@ -4756,7 +4756,7 @@ mounts={230844},
 patch='72000',
 mounttype='Ground',
 model={73248},
-description="\nThis guide will help you acquire the Brawler's Burly Basilisk.",
+description="This guide will help you acquire the Brawler's Burly Basilisk.",
 },[[
 step
 You will need to gain _Rank 8_ with the Legion Brawler's Guild
@@ -4781,7 +4781,7 @@ mounts={223018},
 patch='70300',
 mounttype='Aquatic',
 model={71939},
-description="\nThis guide will help you acquire the Fathom Dweller Mount.",
+description="This guide will help you acquire the Fathom Dweller Mount.",
 },[[
 step
 You may need a few things before beginning this guide:
@@ -4965,7 +4965,7 @@ mounts={215558},
 patch='70300',
 mounttype='Ground',
 model={70619},
-description="\nThis guide will help you acquire the Ratstallion Mount.",
+description="This guide will help you acquire the Ratstallion Mount.",
 },[[
 step
 To earn this mount, you will need to have gathered a total of _20,000 Sightless Eyes_
@@ -5011,7 +5011,7 @@ mounts={227989},
 patch='70300',
 mounttype='Flying',
 model={73317},
-description="\nThis guide will help you acquire the Cruel Gladiator's Storm Dragon.",
+description="This guide will help you acquire the Cruel Gladiator's Storm Dragon.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Legion PvP Season 3
@@ -5026,7 +5026,7 @@ mounts={227995},
 patch='70300',
 mounttype='Flying',
 model={73321},
-description="\nThis guide will help you acquire a \"Dominant Gladiator's Storm Dragon\" mount.",
+description="This guide will help you acquire a \"Dominant Gladiator's Storm Dragon\" mount.",
 },[[
 step
 This mount is rewarded players who reach Gladiator during a Legion PvP Season 6
@@ -5048,7 +5048,7 @@ mounts={227988},
 patch='70300',
 mounttype='Flying',
 model={73316},
-description="\nThis guide will help you acquire the Fearless Gladiator's Storm Dragon.",
+description="This guide will help you acquire the Fearless Gladiator's Storm Dragon.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Legion PvP Season 2
@@ -5063,7 +5063,7 @@ mounts={227991},
 patch='70300',
 mounttype='Flying',
 model={73319},
-description="\nThis guide will help you acquire the Ferocious Gladiator's Storm Dragon.",
+description="This guide will help you acquire the Ferocious Gladiator's Storm Dragon.",
 },[[
 step
 This mount is a reward given to players that obtained the Gladiator rank during Legion PvP Season 4
@@ -5085,7 +5085,7 @@ mounts={227994},
 patch='70300',
 mounttype='Flying',
 model={73320},
-description="\nThis guide will help you acquire a \"Fierce Gladiator's Storm Dragon\" mount.",
+description="This guide will help you acquire a \"Fierce Gladiator's Storm Dragon\" mount.",
 },[[
 step
 This mount is a reward given to players that obtained the Gladiator rank during Legion PvP Season 5
@@ -5108,7 +5108,7 @@ mounts={227986},
 patch='70300',
 mounttype='Flying',
 model={73315},
-description="\nThis guide will help you acquire the Vindictive Gladiator's Storm Dragon.",
+description="This guide will help you acquire the Vindictive Gladiator's Storm Dragon.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Legion PvP Season 1
@@ -5123,7 +5123,7 @@ mounts={230401},
 patch='72000',
 mounttype='Ground',
 model={73991},
-description="\nThis guide will help you acquire the Ivory Hawkstrider.",
+description="This guide will help you acquire the Ivory Hawkstrider.",
 },[[
 step
 You Must first complete one of the 4 Hatchling Mounts before being able to start working toward this mount
@@ -5163,7 +5163,7 @@ mounts={222240},
 patch='70300',
 mounttype='Ground',
 model={70996},
-description="\nTo collect this mount, you must first reach Honor Level 70 in PvP.",
+description="To collect this mount, you must first reach Honor Level 70 in PvP.",
 },[[
 step
 Reach Honor Level 70 |achieve 12906
@@ -5187,7 +5187,7 @@ mounts={222202},
 patch='70300',
 mounttype='Ground',
 model={71001},
-description="\nTo collect this mount, you must first reach Honor Level 15 in PvP.",
+description="To collect this mount, you must first reach Honor Level 15 in PvP.",
 },[[
 step
 Reach Honor Level 15 |achieve 12895
@@ -5211,7 +5211,7 @@ mounts={222237},
 patch='70300',
 mounttype='Ground',
 model={70999},
-description="\nTo collect this mount, you must first reach Honor Level 125 in PvP.",
+description="To collect this mount, you must first reach Honor Level 125 in PvP.",
 },[[
 step
 Reach Honor Level 125 |achieve 12910
@@ -5235,7 +5235,7 @@ mounts={222238},
 patch='70300',
 mounttype='Ground',
 model={70998},
-description="\nTo collect this mount, you must first reach Honor Level 40 in PvP.",
+description="To collect this mount, you must first reach Honor Level 40 in PvP.",
 },[[
 step
 Reach Honor Level 40 |achieve 12903
@@ -5259,7 +5259,7 @@ mounts={222241},
 patch='70300',
 mounttype='Ground',
 model={71000},
-description="\nTo collect this mount, you must first reach Honor Level 250 in PvP.",
+description="To collect this mount, you must first reach Honor Level 250 in PvP.",
 },[[
 step
 Reach Honor Level 250 |achieve 12914
@@ -5283,7 +5283,7 @@ mounts={222236},
 patch='70300',
 mounttype='Ground',
 model={70997},
-description="\nTo collect this mount, you must first reach Honor Level 150 in PvP.",
+description="To collect this mount, you must first reach Honor Level 150 in PvP.",
 },[[
 step
 Reach Honor Level 150 |achieve 12911
@@ -5307,7 +5307,7 @@ mounts={193695},
 patch='70100',
 mounttype='Ground',
 model={65760},
-description="\nThis guide will help you acquire the Prestigious War Steed.",
+description="This guide will help you acquire the Prestigious War Steed.",
 },[[
 step
 This is an Alliance mount reward for completing the achievement "Free for All, More For Me"
@@ -5329,7 +5329,7 @@ mounts={223341},
 patch='70300',
 mounttype='Ground',
 model={71973},
-description="\nThis guide will help you acquire the Vicious Gilnean Warhorse mount.",
+description="This guide will help you acquire the Vicious Gilnean Warhorse mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -5354,7 +5354,7 @@ mounts={229487},
 patch='72000',
 mounttype='Ground',
 model={73805},
-description="\nThis guide will help you acquire a \"Vicious War Bear\" mount.",
+description="This guide will help you acquire a \"Vicious War Bear\" mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -5377,7 +5377,7 @@ mounts={223578},
 patch='70300',
 mounttype='Ground',
 model={72020},
-description="\nThis guide will help you acquire the Vicious War Elekk mount.",
+description="This guide will help you acquire the Vicious War Elekk mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -5402,7 +5402,7 @@ mounts={242896},
 patch='73000',
 mounttype='Ground',
 model={76427},
-description="\nThis guide will help you acquire a \"Vicious War Fox\" mount.",
+description="This guide will help you acquire a \"Vicious War Fox\" mount.",
 },[[
 step
 To Earn This Mount, Win 40 Rated Battlegrounds or 100 Arena Matches
@@ -5425,7 +5425,7 @@ mounts={229512},
 patch='72000',
 mounttype='Ground',
 model={73817},
-description="\nThis guide will help you acquire the Vicious War Lion mount.",
+description="This guide will help you acquire the Vicious War Lion mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -5448,7 +5448,7 @@ mounts={232523},
 patch='72000',
 mounttype='Ground',
 model={74320},
-description="\nThis guide will help you acquire the Vicious War Turtle mount.",
+description="This guide will help you acquire the Vicious War Turtle mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -5473,7 +5473,7 @@ mounts={253711},
 patch='73000',
 mounttype='Aquatic',
 model={79613},
-description="\nThis guide will help you acquire a \"Pond Nettle\" mount.",
+description="This guide will help you acquire a \"Pond Nettle\" mount.",
 },[[
 step
 This mount comes from fishing from any pool on Argus
@@ -5497,7 +5497,7 @@ mounts={214791},
 patch='70300',
 mounttype='Aquatic',
 model={68849},
-description="\nThis guide will help you acquire the Brinedeep Bottom-Feeder Mount.",
+description="This guide will help you acquire the Brinedeep Bottom-Feeder Mount.",
 },[[
 step
 In order to attain this mount, you will need to reach _Best Friend_ status with Conjurer Margoss
@@ -5540,7 +5540,7 @@ mounts={196681},
 patch='70100',
 mounttype='Flying',
 model={67042},
-description="\nThis guide will help you acquire the Great Northern Elderhorn Mount.",
+description="This guide will help you acquire the Great Northern Elderhorn Mount.",
 },[[
 step
 Before starting this quest, you will need to reach _800 Leatherworking_
@@ -5587,7 +5587,7 @@ mounts={196681},
 patch='70100',
 mounttype='Flying',
 model={70874},
-description="\nThis guide will help you acquire Spirit of Eche'ro Mount",
+description="This guide will help you acquire Spirit of Eche'ro Mount",
 },[[
 step
 Reach level 45 |ding 45
@@ -5637,7 +5637,7 @@ mounts={213209},
 patch='70300',
 mounttype='Ground',
 model={70099},
-description="\nThis guide will help you acquire the Steelbound Devourer.",
+description="This guide will help you acquire the Steelbound Devourer.",
 },[[
 step
 Click here if you are a Blacksmith and would like to make this mount |next "Steelbound" |confirm
@@ -5686,7 +5686,7 @@ mounts={171850},
 patch='60100',
 mounttype='Ground',
 model={68851},
-description="\nThis guide will help you acquire the Llothian Prowler Mount.",
+description="This guide will help you acquire the Llothian Prowler Mount.",
 },[[
 step
 There are a few ways that you can earn this mount:
@@ -5800,7 +5800,7 @@ mounts={230987},
 patch='72000',
 mounttype='Flying',
 model={81468},
-description="\nThis guide will help you acquire the Arcanist's Manasaber.",
+description="This guide will help you acquire the Arcanist's Manasaber.",
 },[[
 step
 Earn Exalted reputation with the Nightfallen |complete rep("The Nightfallen")>=Exalted |or
@@ -5854,7 +5854,7 @@ mounts={242881},
 patch='72000',
 mounttype='Flying',
 model={63628},
-description="\nThis guide will help you acquire the Cloudwing Hippogryph.",
+description="This guide will help you acquire the Cloudwing Hippogryph.",
 },[[
 step
 Earn exalted reputation with Court of Farondis |complete rep("Court of Farondis")>=Exalted
@@ -5891,7 +5891,7 @@ mounts={233364},
 patch='72000',
 mounttype='Flying',
 model={74480},
-description="\nThis guide will help you acquire the Leywoven Flying Carpet.",
+description="This guide will help you acquire the Leywoven Flying Carpet.",
 },[[
 step
 Earn exalted reputation with Nightfallen |complete rep("The Nightfallen")>=Exalted
@@ -5928,7 +5928,7 @@ mounts={239013},
 patch='73000',
 mounttype='Flying',
 model={75585},
-description="\nThis guide will help you acquire a \"Lightforged Warframe\" mount.",
+description="This guide will help you acquire a \"Lightforged Warframe\" mount.",
 },[[
 step
 Click here to load the "Army of the Light" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Army of the Light"
@@ -5951,7 +5951,7 @@ mounts={242882},
 patch='72000',
 mounttype='Flying',
 model={68053},
-description="\nThis guide will help you acquire the Valarjar Stormwing.",
+description="This guide will help you acquire the Valarjar Stormwing.",
 },[[
 step
 Earn exalted reputation with Valarjar |complete rep("Valarjar")>=Exalted
@@ -5988,7 +5988,7 @@ mounts={253004},
 patch='73000',
 mounttype='Ground',
 model={79443},
-description="\nThis guide will help you acquire a \"Amethyst Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Amethyst Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6011,7 +6011,7 @@ mounts={254259},
 patch='73000',
 mounttype='Ground',
 model={79790},
-description="\nThis guide will help you acquire a \"Avenging Felcrusher\" mount.",
+description="This guide will help you acquire a \"Avenging Felcrusher\" mount.",
 },[[
 step
 Click here to load the "Army of the Light" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Army of the Light"
@@ -6046,7 +6046,7 @@ mounts={253005},
 patch='73000',
 mounttype='Ground',
 model={79441},
-description="\nThis guide will help you acquire a \"Beryl Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Beryl Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6069,7 +6069,7 @@ mounts={254258},
 patch='73000',
 mounttype='Ground',
 model={79789},
-description="\nThis guide will help you acquire a \"Blessed Felcrusher\" mount.",
+description="This guide will help you acquire a \"Blessed Felcrusher\" mount.",
 },[[
 step
 Click here to load the "Army of the Light" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Army of the Light"
@@ -6104,7 +6104,7 @@ mounts={253007},
 patch='73000',
 mounttype='Ground',
 model={79437},
-description="\nThis guide will help you acquire a \"Cerulean Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Cerulean Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6127,7 +6127,7 @@ mounts={254069},
 patch='73000',
 mounttype='Ground',
 model={79732},
-description="\nThis guide will help you acquire a \"Glorious Felcrusher\" mount.",
+description="This guide will help you acquire a \"Glorious Felcrusher\" mount.",
 },[[
 step
 Click here to load the "Army of the Light" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Army of the Light"
@@ -6162,7 +6162,7 @@ mounts={242874},
 patch='72000',
 mounttype='Ground',
 model={67039},
-description="\nThis guide will help you acquire the Highmountain Elderhorn.",
+description="This guide will help you acquire the Highmountain Elderhorn.",
 },[[
 step
 Earn exalted reputation with Highmountain |complete rep("Highmountain Tribe")>=Exalted
@@ -6199,7 +6199,7 @@ mounts={253006},
 patch='73000',
 mounttype='Ground',
 model={79444},
-description="\nThis guide will help you acquire a \"Russet Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Russet Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6222,7 +6222,7 @@ mounts={242305},
 patch='73000',
 mounttype='Ground',
 model={76318},
-description="\nThis guide will help you acquire a \"Sable Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Sable Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6245,7 +6245,7 @@ mounts={253008},
 patch='73000',
 mounttype='Ground',
 model={79438},
-description="\nThis guide will help you acquire a \"Umber Ruinstrider\" mount.",
+description="This guide will help you acquire a \"Umber Ruinstrider\" mount.",
 },[[
 step
 Click here to load the "Argussian Reach" reputation guide |confirm |next "Reputation Guides\\Legion Reputations\\Argussian Reach"
@@ -6268,7 +6268,7 @@ mounts={242875},
 patch='72000',
 mounttype='Ground',
 model={76424},
-description="\nThis guide will help you acquire the Wild Dreamrunner.",
+description="This guide will help you acquire the Wild Dreamrunner.",
 },[[
 step
 Earn exalted reputation with Dreamweavers |complete rep("Dreamweavers")>=Exalted
@@ -6305,7 +6305,7 @@ mounts={228919},
 patch='72000',
 mounttype='Aquatic',
 model={73254},
-description="\nThis guide will help you acquire the Darkwater Skate.",
+description="This guide will help you acquire the Darkwater Skate.",
 },[[
 step
 talk Galissa Sundew##55103
@@ -6326,7 +6326,7 @@ mounts={127165},
 patch='50400',
 mounttype='Flying',
 model={43695},
-description="\nThis guide will help you acquire Yu'lei, Daughter of Jade.",
+description="This guide will help you acquire Yu'lei, Daughter of Jade.",
 },[[
 step
 This mount can only be bought during the Mists of Pandaria Timewalking event
@@ -6350,7 +6350,7 @@ mounts={227956},
 patch='70300',
 mounttype='Ground',
 model={68848},
-description="\nThis guide will help you acquire the Arcadian War Turtle Mount.",
+description="This guide will help you acquire the Arcadian War Turtle Mount.",
 },[[
 step
 To earn this mount, you will need to gather _150 Curious Coins_
@@ -6376,7 +6376,7 @@ mounts={213115},
 patch='70300',
 mounttype='Ground',
 model={69276},
-description="\nThis guide will help you acquire the Bloodfang Widow Mount.",
+description="This guide will help you acquire the Bloodfang Widow Mount.",
 },[[
 step
 To aqcuire this mount, you will need _2,000,000 gold_
@@ -6397,7 +6397,7 @@ mounts={247448},
 patch='73000',
 mounttype='Flying',
 model={78105},
-description="\nThis guide will help you acquire a \"Darkmoon Dirigible\" mount.",
+description="This guide will help you acquire a \"Darkmoon Dirigible\" mount.",
 },[[
 step
 This mount can be bought either on the release of 7.3 or shortly after from the Darkmoon Faire

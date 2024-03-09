@@ -12,7 +12,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Crystal Lake in Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Crystal Lake in Elwynn Forest.",
 keywords={"Aquatic","Elwynn","Forest"},
 pet=419,
 },[[
@@ -46,7 +46,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Bombay Cat.",
+description="This guide will walk you through obtaining the Beast pet: Bombay Cat.",
 pet=40,
 },[[
 step
@@ -60,7 +60,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
+description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
 pet=41,
 },[[
 step
@@ -79,7 +79,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
+description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
 pet=43,
 },[[
 step
@@ -93,7 +93,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
+description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
 pet=45,
 },[[
 step
@@ -129,7 +129,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Hare.",
+description="This guide will walk you through obtaining the Critter pet: Hare.",
 pet=448,
 },[[
 step
@@ -147,7 +147,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
+description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
 pet=72,
 },[[
 step
@@ -161,7 +161,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Undercity Rat.",
+description="This guide will walk you through obtaining the Critter pet: Undercity Rat.",
 pet=454,
 },[[
 step

@@ -301,7 +301,11 @@ L:SetOptionLocalization({
 -----------------------
 -- Manifested Timeways --
 -----------------------
---L= DBM:GetModLocalization(2528)
+L= DBM:GetModLocalization(2528)
+
+L:SetMiscLocalization({
+	PrePullRP		= "Even the Aspect of Time cannot be allowed to disrupt the timeways!"
+})
 
 -----------------------
 -- Blight of Galakrond --
@@ -311,7 +315,11 @@ L:SetOptionLocalization({
 -----------------------
 -- Iridikron the Stonescaled --
 -----------------------
---L= DBM:GetModLocalization(2537)
+L= DBM:GetModLocalization(2537)
+
+L:SetMiscLocalization({
+	PrePullRP		= "So the titans' puppets have come to face me."
+})
 
 -----------------------
 -- Tyr, the infinite Keeper --
@@ -348,4 +356,8 @@ L = DBM:GetModLocalization("DawnoftheInfiniteTrash")
 
 L:SetGeneralLocalization({
 	name =	"DotI Trash"
+})
+
+L:SetOptionLocalization({
+	AutoRift	= "Auto select gossip to activate rift after gauntlet"
 })

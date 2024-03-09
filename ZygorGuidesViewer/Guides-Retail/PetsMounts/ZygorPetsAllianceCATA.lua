@@ -8,7 +8,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='20100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 5 chance to drop as a reward for catching Mr. Pinchy or it can be purchased from the Auction House.",
+description="This battle pet has a 1 in 5 chance to drop as a reward for catching Mr. Pinchy or it can be purchased from the Auction House.",
 keywords={"Aquatic","Mr.","Pinchy"},
 pet=132,
 },[[
@@ -32,7 +32,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='30200',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Dragonblight after reaching Exalted reputation with the Kalu'ak.",
+description="This battle pet can be purchased from a vendor in Dragonblight after reaching Exalted reputation with the Kalu'ak.",
 keywords={"Aquatic","Dragonblight"},
 pet=198,
 },[[
@@ -54,7 +54,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='43000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet can be caught along the coastal beach of Darkmoon Island using the fishing profession.",
+description="This battle pet can be caught along the coastal beach of Darkmoon Island using the fishing profession.",
 keywords={"Aquatic","Darkmoon","Faire"},
 pet=340,
 },[[
@@ -77,7 +77,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Aquatic","Auction","House"},
 pet=629,
 },[[
@@ -91,7 +91,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Crystal Lake in Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Crystal Lake in Elwynn Forest.",
 keywords={"Aquatic","Elwynn","Forest"},
 pet=419,
 },[[
@@ -108,7 +108,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='31000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from rewards given out for completing any Northrend fishing daily quest or it can be purchased from the Auction House.",
+description="This battle pet can be looted from rewards given out for completing any Northrend fishing daily quest or it can be purchased from the Auction House.",
 keywords={"Aquatic","Northrend"},
 pet=211,
 },[[
@@ -130,7 +130,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Speedy.",
+description="This guide will walk you through obtaining the Aquatic pet: Speedy.",
 pet=125,
 },[[
 step
@@ -154,7 +154,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='31000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Strand Crawler.",
+description="This guide will walk you through obtaining the Aquatic pet: Strand Crawler.",
 pet=211,
 },[[
 step
@@ -293,7 +293,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Beast","Auction","House"},
 pet=75,
 },[[
@@ -312,7 +312,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Elwynn Forest.",
+description="This battle pet is sold by a vendor in Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=40,
 },[[
@@ -334,7 +334,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Beast","Auction","House"},
 pet=77,
 },[[
@@ -353,7 +353,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Elwynn Forest.",
+description="This battle pet is sold by a vendor in Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=41,
 },[[
@@ -375,7 +375,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Beast","Auction","House"},
 pet=78,
 },[[
@@ -394,7 +394,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Icecrown after you champion a Dwarf character in the Argent Tournament.",
+description="This battle pet is sold by a vendor in Icecrown after you champion a Dwarf character in the Argent Tournament.",
 keywords={"Beast","Icecrown"},
 pet=205,
 },[[
@@ -421,7 +421,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Beast","Auction","House"},
 pet=207,
 },[[
@@ -440,7 +440,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='42200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor during the Hollow's End world event.",
+description="This battle pet can be purchased from a vendor during the Hollow's End world event.",
 keywords={"Beast","Hollow's","End"},
 pet=319,
 },[[
@@ -464,7 +464,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='42000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in the Molten Front.",
+description="This battle pet can be purchased from a vendor in the Molten Front.",
 keywords={"Beast","Molten","Front"},
 pet=317,
 },[[
@@ -490,7 +490,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='41000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have completed the quest An Old Friend.",
+description="This battle pet is rewarded to you after you have completed the quest An Old Friend.",
 keywords={"Beast","An","Old","Friend"},
 pet=307,
 },[[
@@ -685,7 +685,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Elwynn Forest.",
+description="This battle pet is sold by a vendor in Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=43,
 },[[
@@ -707,7 +707,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Elwynn Forest.",
+description="This battle pet is sold by a vendor in Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=45,
 },[[
@@ -729,7 +729,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Stormwind.",
+description="This battle pet is sold by a vendor in Stormwind.",
 keywords={"Beast","Stormwind"},
 pet=46,
 },[[
@@ -760,7 +760,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Black Kingsnake.",
+description="This guide will walk you through obtaining the Beast pet: Black Kingsnake.",
 pet=75,
 },[[
 step
@@ -774,7 +774,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Bombay Cat.",
+description="This guide will walk you through obtaining the Beast pet: Bombay Cat.",
 pet=40,
 },[[
 step
@@ -787,7 +787,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Brown Snake.",
+description="This guide will walk you through obtaining the Beast pet: Brown Snake.",
 pet=77,
 },[[
 step
@@ -801,7 +801,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
+description="This guide will walk you through obtaining the Beast pet: Cornish Rex Cat.",
 pet=41,
 },[[
 step
@@ -814,7 +814,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Crimson Snake.",
+description="This guide will walk you through obtaining the Beast pet: Crimson Snake.",
 pet=78,
 },[[
 step
@@ -827,7 +827,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Dun Morogh Cub.",
+description="This guide will walk you through obtaining the Beast pet: Dun Morogh Cub.",
 pet=205,
 },[[
 step
@@ -967,7 +967,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Durotar Scorpion.",
+description="This guide will walk you through obtaining the Beast pet: Durotar Scorpion.",
 pet=207,
 },[[
 step
@@ -981,7 +981,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='42200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Feline Familiar.",
+description="This guide will walk you through obtaining the Beast pet: Feline Familiar.",
 pet=319,
 },[[
 step
@@ -997,7 +997,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='42000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Hyjal Bear Cub.",
+description="This guide will walk you through obtaining the Beast pet: Hyjal Bear Cub.",
 pet=317,
 },[[
 step
@@ -1020,7 +1020,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='41000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Lashtail Hatchling.",
+description="This guide will walk you through obtaining the Beast pet: Lashtail Hatchling.",
 pet=307,
 },[[
 step
@@ -1505,7 +1505,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
+description="This guide will walk you through obtaining the Beast pet: Orange Tabby Cat.",
 pet=43,
 },[[
 step
@@ -1518,7 +1518,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='41000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Panther Cub.",
+description="This guide will walk you through obtaining the Beast pet: Panther Cub.",
 pet=301,
 },[[
 step
@@ -1608,7 +1608,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
+description="This guide will walk you through obtaining the Beast pet: Silver Tabby Cat.",
 pet=45,
 },[[
 step
@@ -1621,7 +1621,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a guild vendor after you earn the Critter Kill Squad guild achievement.",
+description="This battle pet can be purchased from a guild vendor after you earn the Critter Kill Squad guild achievement.",
 keywords={"Critter","Guild","Vendor"},
 pet=272,
 },[[
@@ -1647,7 +1647,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Critter","Auction","House"},
 pet=70,
 },[[
@@ -1666,7 +1666,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Durotar.",
+description="This battle pet can be tamed in the wild all around Durotar.",
 keywords={"Critter","Durotar"},
 pet=467,
 },[[
@@ -1683,7 +1683,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Critter","Children's","Week"},
 pet=158,
 },[[
@@ -1704,7 +1704,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Icecrown after you champion a Human character in the Argent Tournament.",
+description="This battle pet is sold by a vendor in Icecrown after you champion a Human character in the Argent Tournament.",
 keywords={"Critter","Icecrown"},
 pet=209,
 },[[
@@ -1731,7 +1731,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around The Hinterlands.",
+description="This battle pet can be tamed in the wild all around The Hinterlands.",
 keywords={"Critter","The","Hinterlands"},
 pet=448,
 },[[
@@ -1748,7 +1748,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Critter","Children's","Week"},
 pet=126,
 },[[
@@ -1769,7 +1769,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Critter","Auction","House"},
 pet=210,
 },[[
@@ -1788,7 +1788,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Critter","Children's","Week"},
 pet=159,
 },[[
@@ -1809,7 +1809,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='24000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nYou can purchase this battle pet from a vendor in Dun Morogh during the Brewfest event.",
+description="You can purchase this battle pet from a vendor in Dun Morogh during the Brewfest event.",
 keywords={"Critter","Brewfest"},
 pet=166,
 },[[
@@ -1832,7 +1832,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 335 chance to drop from a Sack of Pet Supplies or you can purchase it from the Auction House.",
+description="This battle pet has a 1 in 335 chance to drop from a Sack of Pet Supplies or you can purchase it from the Auction House.",
 keywords={"Critter","Auction","House"},
 pet=381,
 },[[
@@ -1853,7 +1853,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='41000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Critter","Children's","Week"},
 pet=289,
 },[[
@@ -1874,7 +1874,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Dun Morogh.",
+description="This battle pet is sold by a vendor in Dun Morogh.",
 keywords={"Critter","Dun","Morogh"},
 pet=72,
 },[[
@@ -1895,7 +1895,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Critter","Netherstorm"},
 pet=55,
 },[[
@@ -1916,7 +1916,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Canals in the Undercity.",
+description="This battle pet can be tamed in the wild around the Canals in the Undercity.",
 keywords={"Critter","Undercity"},
 pet=454,
 },[[
@@ -1934,7 +1934,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Critter","Children's","Week"},
 pet=127,
 },[[
@@ -1955,7 +1955,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
+description="This battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
 keywords={"Critter","Feast","Of","Winter","Veil"},
 pet=118,
 },[[
@@ -1976,7 +1976,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='22200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the quest Catch the Wild Wolpertinger! during the Brewfest event.",
+description="This battle pet is rewarded to you after completing the quest Catch the Wild Wolpertinger! during the Brewfest event.",
 keywords={"Critter","Brewfest"},
 pet=153,
 },[[
@@ -2010,7 +2010,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Armadillo Pup.",
+description="This guide will walk you through obtaining the Critter pet: Armadillo Pup.",
 pet=272,
 },[[
 step
@@ -2026,7 +2026,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Brown Prairie Dog.",
+description="This guide will walk you through obtaining the Critter pet: Brown Prairie Dog.",
 pet=70,
 },[[
 step
@@ -2040,7 +2040,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Dung Beetle.",
+description="This guide will walk you through obtaining the Critter pet: Dung Beetle.",
 pet=467,
 },[[
 step
@@ -2052,7 +2052,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Egbert.",
+description="This guide will walk you through obtaining the Critter pet: Egbert.",
 pet=158,
 },[[
 step
@@ -2071,7 +2071,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Elwynn Lamb.",
+description="This guide will walk you through obtaining the Critter pet: Elwynn Lamb.",
 pet=209,
 },[[
 step
@@ -2208,7 +2208,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Hare.",
+description="This guide will walk you through obtaining the Critter pet: Hare.",
 pet=448,
 },[[
 step
@@ -2220,7 +2220,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Mr. Wiggles.",
+description="This guide will walk you through obtaining the Critter pet: Mr. Wiggles.",
 pet=126,
 },[[
 step
@@ -2240,7 +2240,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Mulgore Hatchling.",
+description="This guide will walk you through obtaining the Critter pet: Mulgore Hatchling.",
 pet=210,
 },[[
 step
@@ -2254,7 +2254,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Peanut.",
+description="This guide will walk you through obtaining the Critter pet: Peanut.",
 pet=159,
 },[[
 step
@@ -2274,7 +2274,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='24000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm.",
+description="This guide will walk you through obtaining the Critter pet: Pint-Sized Pink Pachyderm.",
 pet=166,
 },[[
 step
@@ -2294,7 +2294,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Porcupette.",
+description="This guide will walk you through obtaining the Critter pet: Porcupette.",
 pet=381,
 },[[
 step
@@ -2473,7 +2473,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='41000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Scooter the Snail.",
+description="This guide will walk you through obtaining the Critter pet: Scooter the Snail.",
 pet=289,
 },[[
 step
@@ -2493,7 +2493,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
+description="This guide will walk you through obtaining the Critter pet: Snowshoe Rabbit.",
 pet=72,
 },[[
 step
@@ -2506,7 +2506,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Undercity Cockroach.",
+description="This guide will walk you through obtaining the Critter pet: Undercity Cockroach.",
 pet=55,
 },[[
 step
@@ -2519,7 +2519,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Undercity Rat.",
+description="This guide will walk you through obtaining the Critter pet: Undercity Rat.",
 pet=454,
 },[[
 step
@@ -2535,7 +2535,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Whiskers the Rat.",
+description="This guide will walk you through obtaining the Critter pet: Whiskers the Rat.",
 pet=127,
 },[[
 step
@@ -2554,7 +2554,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: White Kitten.",
+description="This guide will walk you through obtaining the Critter pet: White Kitten.",
 pet=46,
 },[[
 step
@@ -2576,7 +2576,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Winter Reindeer.",
+description="This guide will walk you through obtaining the Critter pet: Winter Reindeer.",
 pet=118,
 },[[
 step
@@ -2591,7 +2591,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='22200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Wolpertinger.",
+description="This guide will walk you through obtaining the Critter pet: Wolpertinger.",
 pet=153,
 },[[
 step
@@ -2614,7 +2614,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Dragonkin","Auction","House"},
 pet=142,
 },[[
@@ -2633,7 +2633,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='42000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a guild vendor after you earn the Dragonwrath, Tarecgosa's Rest- Guild Edition achievement.",
+description="This battle pet can be purchased from a guild vendor after you earn the Dragonwrath, Tarecgosa's Rest- Guild Edition achievement.",
 keywords={"Dragonkin","Guild","Vendor"},
 pet=320,
 },[[
@@ -2659,7 +2659,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Dragonkin","Auction","House"},
 pet=143,
 },[[
@@ -2678,7 +2678,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Dragonkin","Auction","House"},
 pet=144,
 },[[
@@ -2697,7 +2697,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='50100',
 source='BlackMarket',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Unclaimed Black Market Container.",
+description="This battle pet has a chance to drop from Unclaimed Black Market Container.",
 keywords={"Dragonkin","Black","Market"},
 pet=802,
 },[[
@@ -2720,7 +2720,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Golden Dragonhawk Hatchling.",
 pet=142,
 },[[
 step
@@ -2734,7 +2734,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='42000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa.",
+description="This guide will walk you through obtaining the Dragonkin pet: Lil' Tarecgosa.",
 pet=320,
 },[[
 step
@@ -2750,7 +2750,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Red Dragonhawk Hatchling.",
 pet=143,
 },[[
 step
@@ -2763,7 +2763,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Silver Dragonhawk Hatchling.",
 pet=144,
 },[[
 step
@@ -2777,7 +2777,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='50100',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling.",
+description="This guide will walk you through obtaining the Dragonkin pet: Thundering Serpent Hatchling.",
 pet=802,
 },[[
 step
@@ -2793,7 +2793,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Icecrown after you champion a Draenei character in the Argent Tournament.",
+description="This battle pet is sold by a vendor in Icecrown after you champion a Draenei character in the Argent Tournament.",
 keywords={"Elemental","Icecrown"},
 pet=212,
 },[[
@@ -2820,7 +2820,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a guild vendor after you earn the United Nations guild achievement.",
+description="This battle pet can be purchased from a guild vendor after you earn the United Nations guild achievement.",
 keywords={"Elemental","Guild","Vendor"},
 pet=270,
 },[[
@@ -2846,7 +2846,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from mining Elementium Veins or you can purchase it from the Auction House.",
+description="This battle pet has a chance to drop from mining Elementium Veins or you can purchase it from the Auction House.",
 keywords={"Elemental","Auction","House"},
 pet=293,
 },[[
@@ -2866,7 +2866,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Stolen Presents during the Feast of Winter Veil event or you can purchase it from the Auction House.",
+description="This battle pet has a chance to drop from Stolen Presents during the Feast of Winter Veil event or you can purchase it from the Auction House.",
 keywords={"Elemental","Feast","Of","Winter","Veil"},
 pet=337,
 },[[
@@ -2890,7 +2890,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the Rock Lover achievement.",
+description="This battle pet is a reward for completing the Rock Lover achievement.",
 keywords={"Elemental","Rock","Lover"},
 pet=265,
 },[[
@@ -2910,7 +2910,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='24000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in the Molten Front.",
+description="This battle pet can be purchased from a vendor in the Molten Front.",
 keywords={"Elemental","Molten","Front"},
 pet=172,
 },[[
@@ -2940,7 +2940,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Icecrown after you champion a Night Elf character in the Argent Tournament.",
+description="This battle pet is sold by a vendor in Icecrown after you champion a Night Elf character in the Argent Tournament.",
 keywords={"Elemental","Icecrown"},
 pet=204,
 },[[
@@ -2967,7 +2967,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 4 chance to drop from Gaily Wrapped Present during the Feast of Winter Veil event.",
+description="This battle pet has a 1 in 4 chance to drop from Gaily Wrapped Present during the Feast of Winter Veil event.",
 keywords={"Elemental","Feast","Of","Winter","Veil"},
 pet=117,
 },[[
@@ -2988,7 +2988,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.",
+description="This guide will walk you through obtaining the Elemental pet: Ammen Vale Lashling.",
 pet=212,
 },[[
 step
@@ -3129,7 +3129,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling.",
+description="This guide will walk you through obtaining the Elemental pet: Dark Phoenix Hatchling.",
 pet=270,
 },[[
 step
@@ -3147,7 +3147,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Elementium Geode.",
+description="This guide will walk you through obtaining the Elemental pet: Elementium Geode.",
 pet=293,
 },[[
 step
@@ -3177,7 +3177,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Lumpy.",
+description="This guide will walk you through obtaining the Elemental pet: Lumpy.",
 pet=337,
 },[[
 step
@@ -3202,7 +3202,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40300',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Pebble.",
+description="This guide will walk you through obtaining the Elemental pet: Pebble.",
 pet=265,
 },[[
 step
@@ -4076,7 +4076,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='24000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Searing Scorchling.",
+description="This guide will walk you through obtaining the Elemental pet: Searing Scorchling.",
 pet=172,
 },[[
 step
@@ -4104,7 +4104,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling.",
+description="This guide will walk you through obtaining the Elemental pet: Teldrassil Sproutling.",
 pet=204,
 },[[
 step
@@ -4241,7 +4241,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Tiny Snowman.",
+description="This guide will walk you through obtaining the Elemental pet: Tiny Snowman.",
 pet=117,
 },[[
 step
@@ -4256,7 +4256,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='40100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Withers.",
+description="This guide will walk you through obtaining the Elemental pet: Withers.",
 pet=220,
 },[[
 step
@@ -4613,7 +4613,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='42000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the quest Blown Away.",
+description="This battle pet is rewarded to you after completing the quest Blown Away.",
 keywords={"Flying","Blown","Away"},
 pet=331,
 },[[
@@ -4641,7 +4641,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet can be chosen as a reward when you complete the achievement Beware of the 'Unbeatable?' Pterodactyl or complete the achievement The 'Unbeatable?' Pterodactyl: BEATEN.",
+description="This battle pet can be chosen as a reward when you complete the achievement Beware of the 'Unbeatable?' Pterodactyl or complete the achievement The 'Unbeatable?' Pterodactyl: BEATEN.",
 keywords={"Flying","Beware","The","Unbeatable","Pterodactyl","Beaten"},
 pet=259,
 },[[
@@ -4663,7 +4663,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in The Exodar.",
+description="This battle pet is sold by a vendor in The Exodar.",
 keywords={"Flying","The","Exodar"},
 pet=138,
 },[[
@@ -4683,7 +4683,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Flying","Darkmoon","Faire"},
 pet=336,
 },[[
@@ -4711,7 +4711,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='50100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtainable through a battle pet trainer in Darkshore.",
+description="This battle pet is obtainable through a battle pet trainer in Darkshore.",
 keywords={"Flying","Auction","House"},
 pet=630,
 },[[
@@ -4730,7 +4730,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet can be chosen as a reward when you complete the achievement Beware of the 'Unbeatable?' Pterodactyl or complete the achievement The 'Unbeatable?' Pterodactyl: BEATEN.",
+description="This battle pet can be chosen as a reward when you complete the achievement Beware of the 'Unbeatable?' Pterodactyl or complete the achievement The 'Unbeatable?' Pterodactyl: BEATEN.",
 keywords={"Flying","Beware","The","Unbeatable","Pterodactyl","Beaten"},
 pet=260,
 },[[
@@ -4752,7 +4752,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='32200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is given as a reward when you complete the Pilgrim achievement during the Pilgrim's Bounty world event.",
+description="This battle pet is given as a reward when you complete the Pilgrim achievement during the Pilgrim's Bounty world event.",
 keywords={"Flying","Pilgrim's","Bounty"},
 pet=201,
 },[[
@@ -4771,7 +4771,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='41000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by finding and solving the Pterrordax Hatchling rare Archaeology Fossil artifact.",
+description="This battle pet is obtained by finding and solving the Pterrordax Hatchling rare Archaeology Fossil artifact.",
 keywords={"Flying","Archaeology"},
 pet=309,
 },[[
@@ -4797,7 +4797,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Tol Barad Peninsula.",
+description="This battle pet can be purchased from a vendor in Tol Barad Peninsula.",
 keywords={"Flying","Tol","Barad","Peninsula"},
 pet=271,
 },[[
@@ -4822,7 +4822,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Flying","Icecrown"},
 pet=206,
 },[[
@@ -4841,7 +4841,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='30200',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the quest CLUCK!.",
+description="This battle pet is rewarded to you after you complete the quest CLUCK!.",
 keywords={"Flying","CLUCK"},
 pet=84,
 },[[
@@ -4869,7 +4869,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in The Exodar.",
+description="This battle pet is sold by a vendor in The Exodar.",
 keywords={"Flying","The","Exodar"},
 pet=141,
 },[[
@@ -4889,7 +4889,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in The Exodar.",
+description="This battle pet is sold by a vendor in The Exodar.",
 keywords={"Flying","The","Exodar"},
 pet=140,
 },[[
@@ -4911,7 +4911,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='42000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Alliance Balloon.",
+description="This guide will walk you through obtaining the Flying pet: Alliance Balloon.",
 pet=331,
 },[[
 step
@@ -4932,7 +4932,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Blue Mini Jouster.",
+description="This guide will walk you through obtaining the Flying pet: Blue Mini Jouster.",
 pet=259,
 },[[
 step
@@ -5618,7 +5618,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Blue Moth.",
+description="This guide will walk you through obtaining the Flying pet: Blue Moth.",
 pet=138,
 },[[
 step
@@ -5631,7 +5631,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Darkmoon Balloon.",
+description="This guide will walk you through obtaining the Flying pet: Darkmoon Balloon.",
 pet=336,
 },[[
 step
@@ -5651,7 +5651,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='50100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Gilnean Raven.",
+description="This guide will walk you through obtaining the Flying pet: Gilnean Raven.",
 pet=630,
 },[[
 step
@@ -5663,7 +5663,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Gold Mini Jouster.",
+description="This guide will walk you through obtaining the Flying pet: Gold Mini Jouster.",
 pet=260,
 },[[
 step
@@ -6350,7 +6350,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Great Horned Owl.",
+description="This guide will walk you through obtaining the Flying pet: Great Horned Owl.",
 pet=68,
 },[[
 step
@@ -6364,7 +6364,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Hawk Owl.",
+description="This guide will walk you through obtaining the Flying pet: Hawk Owl.",
 pet=67,
 },[[
 step
@@ -6378,7 +6378,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='32200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Plump Turkey.",
+description="This guide will walk you through obtaining the Flying pet: Plump Turkey.",
 pet=201,
 },[[
 leechsteps "Events Guides\\Pilgrim's Bounty\\Achievements\\Pilgrim"
@@ -6392,7 +6392,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='41000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Pterrordax Hatchling.",
+description="This guide will walk you through obtaining the Flying pet: Pterrordax Hatchling.",
 pet=309,
 },[[
 step
@@ -6417,7 +6417,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Rustberg Gull.",
+description="This guide will walk you through obtaining the Flying pet: Rustberg Gull.",
 pet=271,
 },[[
 step
@@ -6659,7 +6659,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='40300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Tiny Flamefly.",
+description="This guide will walk you through obtaining the Flying pet: Tiny Flamefly.",
 pet=287,
 },[[
 step
@@ -6958,7 +6958,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Tirisfal Batling.",
+description="This guide will walk you through obtaining the Flying pet: Tirisfal Batling.",
 pet=206,
 },[[
 step
@@ -6972,7 +6972,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: White Moth.",
+description="This guide will walk you through obtaining the Flying pet: White Moth.",
 pet=141,
 },[[
 step
@@ -6985,7 +6985,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Flying pet: Yellow Moth.",
+description="This guide will walk you through obtaining the Flying pet: Yellow Moth.",
 pet=140,
 },[[
 step
@@ -6998,7 +6998,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='31000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the quest A Champion Rises.",
+description="This battle pet is rewarded to you after you complete the quest A Champion Rises.",
 keywords={"Humanoid","Argent","Tournament"},
 pet=214,
 },[[
@@ -7018,7 +7018,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='31000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the quest A Champion Rises and can only be earned with a Horde character.",
+description="This battle pet is rewarded to you after you complete the quest A Champion Rises and can only be earned with a Horde character.",
 keywords={"Humanoid","Argent","Tournament"},
 pet=216,
 },[[
@@ -7037,7 +7037,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='32000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is given as a reward after completing Children's Week Quests.",
+description="This battle pet is given as a reward after completing Children's Week Quests.",
 keywords={"Humanoid","Children's","Week"},
 pet=225,
 },[[
@@ -7057,7 +7057,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
+description="This battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
 keywords={"Flying","Feast","Of","Winter","Veil"},
 pet=119,
 },[[
@@ -7078,7 +7078,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can only be obtained with a Horde character.",
+description="This battle pet can only be obtained with a Horde character.",
 keywords={"Humanoid","Guild","Vendor"},
 pet=283,
 },[[
@@ -7096,7 +7096,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a guild vendor after you earn the Profit Sharing guild achievement.",
+description="This battle pet can be purchased from a guild vendor after you earn the Profit Sharing guild achievement.",
 keywords={"Humanoid","Guild","Vendor"},
 pet=280,
 },[[
@@ -7122,7 +7122,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can only be obtained with a Horde character.",
+description="This battle pet can only be obtained with a Horde character.",
 keywords={"Humanoid","Guild","Vendor"},
 pet=283,
 },[[
@@ -7140,7 +7140,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a guild vendor after you earn the Horde Slayer guild achievement.",
+description="This battle pet can be purchased from a guild vendor after you earn the Horde Slayer guild achievement.",
 keywords={"Humanoid","Guild","Vendor"},
 pet=282,
 },[[
@@ -7166,7 +7166,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis battle pet used to be available to purchase from the Bizzard store.",
+description="This battle pet used to be available to purchase from the Bizzard store.",
 keywords={"Humanoid","Blizzard","Store"},
 pet=298,
 },[[
@@ -7184,7 +7184,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis battle pet used to be available to purchase from the Blizzard store.",
+description="This battle pet used to be available to purchase from the Blizzard store.",
 keywords={"Humanoid","Blizzard","Store"},
 pet=296,
 },[[
@@ -7202,7 +7202,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nYou can purchase this battle pet from a vendor in Stormwind City during the Love is in the Air event.",
+description="You can purchase this battle pet from a vendor in Stormwind City during the Love is in the Air event.",
 keywords={"Humanoid","Love","is","In","The","Air"},
 pet=122,
 },[[
@@ -7225,7 +7225,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='54000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from a Stolen Present during the Feast of Winter Veil event.",
+description="This battle pet has a chance to drop from a Stolen Present during the Feast of Winter Veil event.",
 keywords={"Humanoid","Feast","Of","Winter","Veil"},
 pet=1349,
 },[[
@@ -7248,7 +7248,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
+description="This battle pet has a 1 in 4 chance to drop from a Gaily Wrapped Present during the Feast of Winter Veil event.",
 keywords={"Humanoid","Feast","Of","Winter","Veil"},
 pet=120,
 },[[
@@ -7269,7 +7269,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='31000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Argent Squire.",
+description="This guide will walk you through obtaining the Humanoid pet: Argent Squire.",
 pet=214,
 },[[
 step
@@ -7288,7 +7288,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='31000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Argent Gruntling.",
+description="This guide will walk you through obtaining the Humanoid pet: Argent Gruntling.",
 pet=216,
 },[[
 step
@@ -7298,7 +7298,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='32000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling.",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Oracle Hatchling.",
 pet=225,
 },[[
 step
@@ -7317,7 +7317,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='32000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup.",
+description="This guide will walk you through obtaining the Humanoid pet: Curious Wolvar Pup.",
 pet=226,
 },[[
 step
@@ -7335,7 +7335,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Father Winter's Helper.",
+description="This guide will walk you through obtaining the Humanoid pet: Father Winter's Helper.",
 pet=119,
 },[[
 step
@@ -7350,7 +7350,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Guild Herald.",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
 pet=282,
 },[[
 step
@@ -7366,7 +7366,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Guild Herald.",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Herald.",
 pet=283,
 },[[
 step
@@ -7376,7 +7376,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Guild Page.",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
 pet=280,
 },[[
 step
@@ -7392,7 +7392,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Guild Page.",
+description="This guide will walk you through obtaining the Humanoid pet: Guild Page.",
 pet=281,
 },[[
 step
@@ -7402,7 +7402,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
 pet=296,
 },[[
 step
@@ -7418,7 +7418,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='40300',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
+description="This guide will walk you through obtaining the Humanoid pet: Moonkin Hatchling.",
 pet=298,
 },[[
 step
@@ -7428,7 +7428,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='54000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Rotten Little Helper.",
+description="This guide will walk you through obtaining the Humanoid pet: Rotten Little Helper.",
 pet=1349,
 },[[
 step
@@ -7443,7 +7443,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='111100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Winter's Little Helper.",
+description="This guide will walk you through obtaining the Humanoid pet: Winter's Little Helper.",
 pet=120,
 },[[
 step
@@ -7458,7 +7458,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Magic","Icecrown"},
 pet=213,
 },[[
@@ -7477,7 +7477,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet can only be created with a Horde Enchanting recipe or purchased at the Auction House if you are Alliance.",
+description="This battle pet can only be created with a Horde Enchanting recipe or purchased at the Auction House if you are Alliance.",
 keywords={"Magic","Auction","House"},
 pet=267,
 },[[
@@ -7496,7 +7496,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet can be only be purchased with a Horde character during the Lunar Festival event.",
+description="This battle pet can be only be purchased with a Horde character during the Lunar Festival event.",
 keywords={"Magic","Lunar","Festival"},
 pet=342,
 },[[
@@ -7515,7 +7515,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='41000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Magic","Children's","Week"},
 pet=308,
 },[[
@@ -7536,7 +7536,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Moonglade during the Lunar Festival event.",
+description="This battle pet can be purchased from a vendor in Moonglade during the Lunar Festival event.",
 keywords={"Magic","Lunar","Festival"},
 pet=341,
 },[[
@@ -7559,7 +7559,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet can be created if you have a Cataclysm Enchanting level of 75 or purchased from the Auction House.",
+description="This battle pet can be created if you have a Cataclysm Enchanting level of 75 or purchased from the Auction House.",
 keywords={"Magic","Auction","House"},
 pet=292,
 },[[
@@ -7578,7 +7578,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='32000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Icecrown.",
+description="This battle pet can be purchased from a vendor in Icecrown.",
 keywords={"Magic","Icecrown"},
 pet=229,
 },[[
@@ -7605,7 +7605,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing Children's Week Quests.",
+description="This battle pet is a reward for completing Children's Week Quests.",
 keywords={"Magic","Children's","Week"},
 pet=157,
 },[[
@@ -7626,7 +7626,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Enchanted Broom.",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Broom.",
 pet=213,
 },[[
 step
@@ -7640,7 +7640,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Enchanted Lantern.",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Lantern.",
 pet=267,
 },[[
 step
@@ -7655,7 +7655,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Festival Lantern.",
+description="This guide will walk you through obtaining the Magic pet: Festival Lantern.",
 pet=342,
 },[[
 step
@@ -7679,7 +7679,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='41000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Legs.",
+description="This guide will walk you through obtaining the Magic pet: Legs.",
 pet=308,
 },[[
 step
@@ -7699,7 +7699,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='43000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Lunar Lantern.",
+description="This guide will walk you through obtaining the Magic pet: Lunar Lantern.",
 pet=341,
 },[[
 step
@@ -7723,7 +7723,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Magic Lamp.",
+description="This guide will walk you through obtaining the Magic pet: Magic Lamp.",
 pet=292,
 },[[
 step
@@ -7768,7 +7768,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='32000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Shimmering Wyrmling.",
+description="This guide will walk you through obtaining the Magic pet: Shimmering Wyrmling.",
 pet=229,
 },[[
 step
@@ -7797,7 +7797,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='21000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Willy.",
+description="This guide will walk you through obtaining the Magic pet: Willy.",
 pet=157,
 },[[
 step
@@ -7817,7 +7817,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='40100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by finding and solving the Clockwork Gnome rare Archaeology Dwarf artifact.",
+description="This battle pet is obtained by finding and solving the Clockwork Gnome rare Archaeology Dwarf artifact.",
 keywords={"Mechanical","Archaeology"},
 pet=277,
 },[[
@@ -7843,7 +7843,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='23000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from a Stolen Present during the Feast of Winter Veil event.",
+description="This battle pet has a chance to drop from a Stolen Present during the Feast of Winter Veil event.",
 keywords={"Mechanical","Feast","Of","Winter","Veil"},
 pet=191,
 },[[
@@ -7866,7 +7866,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by a vendor in Icecrown.",
+description="This battle pet is sold by a vendor in Icecrown.",
 keywords={"Mechanical","icecrown"},
 pet=215,
 },[[
@@ -7893,7 +7893,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='40100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Clockwork Gnome.",
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Gnome.",
 pet=277,
 },[[
 step
@@ -7917,7 +7917,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='23000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot.",
+description="This guide will walk you through obtaining the Mechanical pet: Clockwork Rocket Bot.",
 pet=191,
 },[[
 step
@@ -7946,7 +7946,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion.",
+description="This guide will walk you through obtaining the Mechanical pet: De-Weaponized Mechanical Companion.",
 pet=262,
 },[[
 step
@@ -8004,7 +8004,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='111100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Lifelike Toad.",
+description="This guide will walk you through obtaining the Mechanical pet: Lifelike Toad.",
 pet=95,
 },[[
 step
@@ -8061,7 +8061,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='111100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Lil' Smoky.",
+description="This guide will walk you through obtaining the Mechanical pet: Lil' Smoky.",
 pet=86,
 },[[
 step
@@ -8134,7 +8134,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='50300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling.",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Pandaren Dragonling.",
 pet=844,
 },[[
 step
@@ -8176,7 +8176,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='111100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel.",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanical Squirrel.",
 pet=39,
 },[[
 step
@@ -8222,7 +8222,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Mechanopeep.",
+description="This guide will walk you through obtaining the Mechanical pet: Mechanopeep.",
 pet=215,
 },[[
 step
@@ -8359,7 +8359,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Personal World Destroyer.",
+description="This guide will walk you through obtaining the Mechanical pet: Personal World Destroyer.",
 pet=261,
 },[[
 step
@@ -8405,7 +8405,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='111100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Pet Bombling.",
+description="This guide will walk you through obtaining the Mechanical pet: Pet Bombling.",
 pet=85,
 },[[
 step
@@ -8463,7 +8463,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='111100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti.",
+description="This guide will walk you through obtaining the Mechanical pet: Tranquil Mechanical Yeti.",
 pet=116,
 },[[
 step
@@ -8504,7 +8504,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by finding and solving the Crawling Claw rare Archaeology Tol'vir artifact.",
+description="This battle pet is obtained by finding and solving the Crawling Claw rare Archaeology Tol'vir artifact.",
 keywords={"Undead","Archaeology"},
 pet=264,
 },[[
@@ -8535,7 +8535,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='42200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the quest The Creepy Crate during the Hallow's End event.",
+description="This battle pet is a reward for completing the quest The Creepy Crate during the Hallow's End event.",
 keywords={"Undead","Hallow's","End"},
 pet=321,
 },[[
@@ -8554,7 +8554,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='40100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by finding and solving the Fossilized Hatchling rare Archaeology Fossil artifact.",
+description="This battle pet is obtained by finding and solving the Fossilized Hatchling rare Archaeology Fossil artifact.",
 keywords={"Undead","Archaeology"},
 pet=266,
 },[[
@@ -8580,7 +8580,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
+description="This battle pet is Horde exclusive but Alliance characters can purchase it from the Auction House.",
 keywords={"Undead","Icecrown"},
 pet=218,
 },[[
@@ -8599,7 +8599,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='41000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by finding and solving the Voodoo Figurine rare Archaeology Troll artifact.",
+description="This battle pet is obtained by finding and solving the Voodoo Figurine rare Archaeology Troll artifact.",
 keywords={"Undead","Archaeology"},
 pet=310,
 },[[
@@ -8625,7 +8625,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='40300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Crawling Claw.",
+description="This guide will walk you through obtaining the Undead pet: Crawling Claw.",
 pet=264,
 },[[
 step
@@ -8649,7 +8649,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='42200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThe Undead pet: Creepy Crate can be obtained by completing the Creepy Crate questline during the Hallow's End event.",
+description="The Undead pet: Creepy Crate can be obtained by completing the Creepy Crate questline during the Hallow's End event.",
 condition_suggested=function() return isevent("Hallow's End") end,
 pet=321,
 },[[
@@ -8668,7 +8668,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='40100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Fossilized Hatchling.",
+description="This guide will walk you through obtaining the Undead pet: Fossilized Hatchling.",
 pet=266,
 },[[
 step
@@ -8691,7 +8691,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='32200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Macabre Marionette.",
+description="This guide will walk you through obtaining the Undead pet: Macabre Marionette.",
 pet=1351,
 },[[
 step
@@ -8726,7 +8726,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='31100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Sen'jin Fetish.",
+description="This guide will walk you through obtaining the Undead pet: Sen'jin Fetish.",
 pet=218,
 },[[
 step
@@ -8740,7 +8740,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='41000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Undead pet: Voodoo Figurine.",
+description="This guide will walk you through obtaining the Undead pet: Voodoo Figurine.",
 pet=310,
 },[[
 step

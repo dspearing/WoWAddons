@@ -111,3 +111,4 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Protoform Synthes
 ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Protoform Synthesis\\Schematic: Archetype of Focus")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Protoform Synthesis\\Schematic: Omnipotential Core")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Protoform Synthesis\\Schematic: Resonant Echo")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Profession Guides\\Protoform Synthesis\\Schematic: Adorned Vombata")

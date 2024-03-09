@@ -11,7 +11,7 @@ mounts={369666},
 patch='90205',
 mounttype='Ground',
 model={105428},
-description="\nThis mount is earned by completing a Dark Iron Dwarf-specific questline.",
+description="This mount is earned by completing a Dark Iron Dwarf-specific questline.",
 },[[
 leechsteps "Leveling Guides\\Shadowlands (50-60)\\Heritage Armor\\Dark Iron Dwarf Heritage Armor"
 step

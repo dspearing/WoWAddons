@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='70300',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Aquatic pet: Lagan.",
+description="This guide will walk you through obtaining the Aquatic pet: Lagan.",
 condition_suggested=function() return level>=40 and level<=45 end,
 pet=1930,
 },[[
@@ -27,7 +27,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='70300',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Ridgeback Piglet.",
+description="This guide will walk you through obtaining the Beast pet: Ridgeback Piglet.",
 condition_suggested=function() return level>=10 and level<=40 end,
 pet=1756,
 },[[
@@ -80,7 +80,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='70300',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet.",
+description="This guide will walk you through obtaining the Beast pet: Thaumaturgical Piglet.",
 condition_suggested=function() return level>=10 and level<=40 end,
 pet=1759,
 },[[
@@ -133,7 +133,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='54200',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Critter pet: Noblegarden Bunny.",
+description="This guide will walk you through obtaining the Critter pet: Noblegarden Bunny.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1943,
 },[[
@@ -154,7 +154,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='70300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Dragonkin pet: Emmigosa.",
+description="This guide will walk you through obtaining the Dragonkin pet: Emmigosa.",
 condition_suggested=function() return level>=10 and level<=45 end,
 pet=1720,
 },[[
@@ -171,7 +171,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='71000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Elemental pet: Igneous Flameling.",
+description="This guide will walk you through obtaining the Elemental pet: Igneous Flameling.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1949,
 },[[
@@ -194,7 +194,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='70300',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast.",
+description="This guide will walk you through obtaining the Humanoid pet: Alliance Enthusiast.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1918,
 },[[
@@ -206,7 +206,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='71000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling.",
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Gruntling.",
 condition_suggested=function() return level>=10 and level<=60 end,
 },[[
 step
@@ -222,7 +222,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='71000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Dutiful Squire.",
+description="This guide will walk you through obtaining the Humanoid pet: Dutiful Squire.",
 condition_suggested=function() return level>=10 and level<=60 end,
 },[[
 step
@@ -233,7 +233,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='73000',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Globe Yeti.",
+description="This guide will walk you through obtaining the Humanoid pet: Globe Yeti.",
 condition_suggested=function() return level>=10 and level<=60 and isevent('Feast of Winter Veil') end,
 pet=2114,
 },[[
@@ -256,7 +256,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='70300',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Horde Fanatic.",
+description="This guide will walk you through obtaining the Humanoid pet: Horde Fanatic.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1919,
 },[[
@@ -274,7 +274,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky.",
+description="This guide will walk you through obtaining the Humanoid pet: Knight-Captain Murky.",
 condition_suggested=function() return level>=10 and level<=45 end,
 pet=1940,
 },[[
@@ -287,7 +287,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Humanoid pet: Legionnaire Murky.",
+description="This guide will walk you through obtaining the Humanoid pet: Legionnaire Murky.",
 condition_suggested=function() return level>=10 and level<=45 end,
 pet=1939,
 },[[
@@ -299,7 +299,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='71500',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
+description="This guide will help you acquire the Humanoid pet: Tylarr Gronnden.",
 condition_suggested=function() return level>=10 and level<=45 end,
 pet=2022,
 },[[
@@ -321,7 +321,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='70300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Enchanted Cauldron.",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Cauldron.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1699,
 },[[
@@ -361,7 +361,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='70300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Enchanted Pen.",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Pen.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1701,
 },[[
@@ -401,7 +401,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='70300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Enchanted Torch.",
+description="This guide will walk you through obtaining the Magic pet: Enchanted Torch.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1700,
 },[[
@@ -441,7 +441,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='70300',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Transmutant.",
+description="This guide will walk you through obtaining the Magic pet: Transmutant.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1920,
 },[[
@@ -495,7 +495,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='70300',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Magic pet: Untethered Wyrmling.",
+description="This guide will walk you through obtaining the Magic pet: Untethered Wyrmling.",
 condition_suggested=function() return level>=45 and level<=50 end,
 pet=1921,
 },[[
@@ -514,7 +514,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining the Mechanical pet: Trigger.",
+description="This guide will walk you through obtaining the Mechanical pet: Trigger.",
 condition_suggested=function() return level>=10 and level<=60 end,
 pet=1886,
 },[[

@@ -6,7 +6,7 @@ if not mod:IsClassic() then--Future planning, so cata classic uses regular rules
 	mod.statTypes = "normal,heroic,timewalker"
 end
 
-mod:SetRevision("20230526084835")
+mod:SetRevision("20240202000458")
 mod:SetCreatureID(52409)
 mod:SetEncounterID(1203)
 mod:SetHotfixNoticeRev(20200918000000)--2020, 09, 18
@@ -68,7 +68,7 @@ local specWarnMagmaTrapNear	= mod:NewSpecialWarningClose(98164, nil, nil, nil, 1
 local yellMagmaTrap			= mod:NewYell(98164)--May Return false tank yells
 local specWarnBurningWound	= mod:NewSpecialWarningStack(99399, nil, 4, nil, nil, 1, 6)
 local specWarnSplittingBlow	= mod:NewSpecialWarningSpell(98951, nil, nil, nil, 1, 2)
-local specWarnBlazingHeat	= mod:NewSpecialWarningYou(100460)--Debuff on you
+local specWarnBlazingHeat	= mod:NewSpecialWarningYou(100460, nil, nil, nil, 1, 2)--Debuff on you
 local yellBlazingHeat		= mod:NewYell(100460)
 local specWarnMoltenSeed	= mod:NewSpecialWarningDodge(98495, nil, nil, nil, 2, 2)
 local specWarnEngulfing		= mod:NewSpecialWarningMove(99171, nil, nil, nil, 1, 2)

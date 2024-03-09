@@ -36,6 +36,7 @@ else
 end
 
 -- compatibility/feature flags
+IceHUD.CanShowTargetCasting = not IceHUD.WowClassic or LibClassicCasterino or (IceHUD.WowClassic and IceHUD.WowVer >= 11500)
 IceHUD.GetPlayerAuraBySpellID = _G["C_UnitAuras"] and C_UnitAuras.GetPlayerAuraBySpellID
 IceHUD.SpellFunctionsReturnRank = IceHUD.WowMain and IceHUD.WowVer < 80000
 IceHUD.EventExistsPlayerPetChanged = IceHUD.WowMain and IceHUD.WowVer < 80000
@@ -48,8 +49,8 @@ IceHUD.EventExistsUnitDynamicFlags = IceHUD.WowMain and IceHUD.WowVer < 80000
 IceHUD.EventExistsUnitHealthFrequent = not IceHUD.WowMain or (IceHUD.WowVer >= 40000 and IceHUD.WowVer < 90000)
 IceHUD.PerPowerEventsExist = IceHUD.WowMain and IceHUD.WowVer < 40000
 IceHUD.PerTargetComboPoints = IceHUD.WowVer < 60000
-IceHUD.CanTrackOtherUnitBuffs = not IceHUD.WowClassic
-IceHUD.CanTrackGCD = not IceHUD.WowClassic
+IceHUD.CanTrackOtherUnitBuffs = not IceHUD.WowClassic or IceHUD.WowVer >= 11500
+IceHUD.CanTrackGCD = not IceHUD.WowClassic or IceHUD.WowVer >= 11500
 IceHUD.GetSpellInfoReturnsFunnel = IceHUD.WowMain and IceHUD.WowVer < 60000
 IceHUD.CanHookDestroyTotem = IceHUD.WowClassic or IceHUD.WowClassicBC or IceHUD.WowClassicWrath
 IceHUD.ShouldUpdateTargetHealthEveryTick = (IceHUD.WowClassic or IceHUD.WowClassicBC) and GetCVarBool("predictedHealth")
@@ -397,7 +398,7 @@ function IceHUD:InitLDB()
 
 		if ldbButton then
 			function ldbButton:OnTooltipShow()
-				self:AddLine(L["IceHUD"] .. " v1.14.29")
+				self:AddLine(L["IceHUD"] .. " v1.14.36")
 				self:AddLine(L["Click to open IceHUD options."], 1, 1, 1)
 			end
 		end

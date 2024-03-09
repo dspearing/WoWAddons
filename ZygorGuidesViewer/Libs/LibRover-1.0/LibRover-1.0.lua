@@ -272,6 +272,7 @@ do
 			["KULTIRAS"]=876,
 			["NAZJATAR"]=1355,
 			["SHADOWLANDS"]=1550,
+			["ZERETHMORTIS"]=1970,
 			["DEEPHOLM"]=207,
 			["DRAGONISLES"]=1978,
 
@@ -2596,21 +2597,24 @@ do
 
 			local timeoff=0
 			if self.extradata and self.extradata.multiple_ends then
+				local playermap = C_Map.GetBestMapForUnit("player")
 				-- this TRANSFORMS the ends into nodes! Supply plain data, don't get recycled.
 				self:Debug("Multiple endpoints detected: %d, called by %s",#self.extradata.multiple_ends+1,self.caller_stack or "(no stack)")
 				local limit=10000
 				local t1=debugprofilestop()
 				for i,data in ipairs(self.extradata.multiple_ends) do
-					local node = LibRover_Node:New(data)
-					node.type="end"
-					local t01=debugprofilestop()
-					AddNode(node) -- don't link endpoints, it's end-pointless
-					self:Debug("end node %d added in %.3fms",i,debugprofilestop()-t01)
-					limit=limit-1
-					if limit<0 then break end
+					if not self:IsDestinationImpossible(playermap,data.m) then
+						local node = LibRover_Node:New(data)
+						node.type="end"
+						local t01=debugprofilestop()
+						AddNode(node) -- don't link endpoints, it's end-pointless
+						self:Debug("end node %d added in %.3fms",i,debugprofilestop()-t01)
+						limit=limit-1
+						if limit<0 then break end
 
-					local t2=debugprofilestop()
-					if t2-t1>10 then local to1=debugprofilestop() yield("PENDING")  timeoff=timeoff+debugprofilestop()-to1  t1=t2 end
+						local t2=debugprofilestop()
+						if t2-t1>10 then local to1=debugprofilestop() yield("PENDING")  timeoff=timeoff+debugprofilestop()-to1  t1=t2 end
+					end
 				end
 				self:Debug("Added %d extra endpoint nodes, #%d-#%d", #self.extradata.multiple_ends, (#Lib.nodes.all - #self.extradata.multiple_ends + 1), #Lib.nodes.all)
 				if limit<0 then self:Debug("CRAP. multiple_ends limit reached! Refusing to find out of so many.") end
@@ -4348,6 +4352,8 @@ do
 
 
 
+		local GetAchievementInfo=_G.GetAchievementInfo
+		
 		function Lib.HasAchievement(id)
 			return select(4,GetAchievementInfo(id))
 		end
@@ -4373,7 +4379,7 @@ do
 			local SP_BFA_PATHFINDER_1 = IsSpellKnown(281576)
 			local SP_BFA_PATHFINDER_2 = IsSpellKnown(278833)
 			local SP_GUILDPERK_MOUNTUP = IsSpellKnown(78633)
-			local SP_DRAGONRIDING_BASICS = IsSpellKnown(376777)
+			local SP_DRAGONRIDING_BASICS = IsSpellKnown(376777) and playerlevel>=60 --(IsQuestFlaggedCompleted(72293) or IsQuestFlaggedCompleted(68795))  -- "Adventuring in the Dragon Isles" or "Dragonriding"
 
 			local SP_LICENCE_WOTLK = IsSpellKnown(54197)
 			local SP_LICENCE_CATA = IsSpellKnown(90267)
@@ -4385,6 +4391,8 @@ do
 
 			local Q_BLESSING_OF_THE_STAG = IsQuestFlaggedCompleted(13567)
 			local Q_MEMORIES_SUNLESS_SKIES = IsQuestFlaggedCompleted(63893)
+			local A_UNLOCKING_THE_SECRETS = HasAchievement(15514)
+			local A_DRAGON_ISLES_PATHFINDER = HasAchievement(19307)
 
 			local groundspeed =
 				       ((SP_JOURNEYMAN_RIDING or SP_ARTISAN_RIDING or SP_EXPERT_RIDING or SP_MASTER_RIDING) and (1 + 1.0)) -- +100%
@@ -4398,7 +4406,7 @@ do
 				    or 0
 
 			local dragonspeed = SP_DRAGONRIDING_BASICS and 10
-				    or 0
+			local dragonspeed_nerfed = SP_EXPERT_RIDING and dragonspeed and dragonspeed * 0.85
 
 			local canfly = flyspeed>0
 			local canfly_in_azeroth = canfly and (Lib.IsRetail or SP_LICENCE_CATA)
@@ -4408,7 +4416,8 @@ do
 			local canfly_in_legion = canfly and playerlevel>=20 and (SP_EXPERT_RIDING or SP_ARTISAN_RIDING or SP_MASTER_RIDING)-- and SP_BROKEN_ISLES_PATHFINDER_2 -- Broken Isles Pathfinder 2
 			local canfly_in_bfa = canfly and playerlevel>=20 -- and SP_BFA_PATHFINDER_2 -- BfA Pathfinder 2 no longer needed in 10.0.7
 			local canfly_in_sl = canfly and Q_MEMORIES_SUNLESS_SKIES
-			local canfly_in_df = false
+			local canfly_in_slzm = canfly and A_UNLOCKING_THE_SECRETS
+			local canfly_in_df = canfly and A_DRAGON_ISLES_PATHFINDER -- useless, but there it is
 
 			if ZGV and ZGV.db then  -- debug overrides
 				flyspeed=ZGV.db.profile.debug_librover_maxspeed or flyspeed
@@ -4417,21 +4426,26 @@ do
 				if ZGV.db.profile.debug_librover_flightlegion~=nil then canfly_in_legion=ZGV.db.profile.debug_librover_flightlegion end
 				if ZGV.db.profile.debug_librover_flightbfa~=nil then canfly_in_bfa=ZGV.db.profile.debug_librover_flightbfa end
 				if ZGV.db.profile.debug_librover_flightsl~=nil then canfly_in_sl=ZGV.db.profile.debug_librover_flightsl end
+				if ZGV.db.profile.debug_librover_dragonriding~=nil then 
+					dragonspeed = ZGV.db.profile.debug_librover_dragonriding and 10
+					dragonspeed_nerfed = SP_EXPERT_RIDING and dragonspeed and dragonspeed * 0.85
+				end
 			end
 
 			Lib.speeds = {
-				["Azeroth"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), canfly_in_azeroth and flyspeed or 0},
-				["Outland"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), flyspeed }, --Outland (flying)
-				["Northrend"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), canfly_in_northrend and flyspeed or 0},
-				["Pandaria"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), canfly_in_pandaria and flyspeed or 0},
-				["Draenor"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), canfly_in_draenor and flyspeed or 0 },
-				["Legion"] = { groundspeed + max(BONUS_BROKEN_ISLES_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), canfly_in_legion and flyspeed or 0 },
+				["Azeroth"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_azeroth and flyspeed) or 0, canfly_in_azeroth and flyspeed or 0},
+				["Outland"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or flyspeed, flyspeed }, --Outland (flying)
+				["Northrend"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_northrend and flyspeed) or 0, canfly_in_northrend and flyspeed or 0 },
+				["Pandaria"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_pandaria and flyspeed) or 0, canfly_in_pandaria and flyspeed or 0 },
+				["Draenor"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_draenor and flyspeed) or 0, canfly_in_draenor and flyspeed or 0 },
+				["Legion"] = { groundspeed + max(BONUS_BROKEN_ISLES_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_legion and flyspeed) or 0, canfly_in_legion and flyspeed or 0 },
 				["Argus"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP), 0 }, -- no flying here
-				["Zandalar"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), canfly_in_bfa and flyspeed or 0 },
-				["KulTiras"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), canfly_in_bfa and flyspeed or 0 },
-				["Nazjatar"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), canfly_in_bfa and flyspeed or 0 },
-				["Shadowlands"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP) , canfly_in_sl and flyspeed or 0 },
-				["DragonIsles"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP) , dragonspeed or 0, flyspeed or 0 }, -- store normal flying mount speed for comfort mode
+				["Zandalar"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_bfa and flyspeed) or 0, canfly_in_bfa and flyspeed or 0 },
+				["KulTiras"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_bfa and flyspeed) or 0, canfly_in_bfa and flyspeed or 0 },
+				["Nazjatar"] = { groundspeed + max(BONUS_BFA_PATHFINDER_1,BONUS_GUILDPERK_MOUNTUP), dragonspeed_nerfed or (canfly_in_bfa and flyspeed) or 0, canfly_in_bfa and flyspeed or 0 },
+				["Shadowlands"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP) , dragonspeed_nerfed or (canfly_in_sl and flyspeed) or 0, canfly_in_sl and flyspeed or 0 },
+				["ShadowlandsZereth"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP) , canfly_in_slzm and (dragonspeed_nerfed or flyspeed) or 0 },
+				["DragonIsles"] = { groundspeed + max(BONUS_GUILDPERK_MOUNTUP) , dragonspeed or (canfly_in_df and flyspeed) or 0, canfly_in_df and flyspeed or dragonspeed_nerfed or 0 }, -- store normal flying mount speed for comfort mode
 			}
 
 			Lib.debug_maxspeeds = {
@@ -4457,6 +4471,7 @@ do
 				['canfly_in_legion']=canfly_in_legion,
 				['canfly_in_bfa']=canfly_in_bfa,
 				['canfly_in_sl']=canfly_in_sl,
+				['canfly_in_slzm']=canfly_in_slzm,
 				['dragonspeed']=dragonspeed,
 			}
 
@@ -4478,10 +4493,11 @@ do
 					elseif system==MAPENUM["KULTIRAS"] then run,fly=unpack(Lib.speeds["KulTiras"])
 					elseif system==MAPENUM["NAZJATAR"] then run,fly=unpack(Lib.speeds["Nazjatar"])
 					elseif system==MAPENUM["SHADOWLANDS"] then run,fly=unpack(Lib.speeds["Shadowlands"])
+					elseif system==MAPENUM["ZERETHMORTIS"] then run,fly=unpack(Lib.speeds["ShadowlandsZereth"])
 					elseif system==MAPENUM["DRAGONISLES"] then run,fly,comfortdragon=unpack(Lib.speeds["DragonIsles"])
 					else run,fly=1,0 end
 
-					if meta.flyable==false then fly=0
+					if meta.flyable==false then fly,comfortdragon=0,0
 					elseif meta.vashjir then fly=2.4  -- seahorses are fast
 					elseif zoneid==62 and Q_BLESSING_OF_THE_STAG and run<1.55 then run=run+0.1 -- only apply to walking and travel form
 					end
@@ -5148,8 +5164,14 @@ do
 		function Lib:GetPlayerPosition()
 			local map = C_Map.GetBestMapForUnit("player")
 			local instance = ZGV.db.char.fakeinstance or select(8,GetInstanceInfo())
-			if not map and instance and Lib.data.InstanceMaps[instance] then 
-				return 0,0,Lib.data.InstanceMaps[instance]
+			local instanceMapID = instance and Lib.data.InstanceMaps[instance]
+			if not map and instanceMapID then
+				local meta = Lib.data.ZoneMeta[instanceMapID]
+				if meta and meta.routable then
+					return 0.01,0.01,instanceMapID
+				else
+					return 0,0,instanceMapID
+				end
 			end
 
 			if not map then return 0,0,0 end

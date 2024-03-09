@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the ponds and rivers in Northwest Bastion.",
+description="This battle pet can be tamed in the wild around the ponds and rivers in Northwest Bastion.",
 keywords={"Aquatic","Bastion"},
 pet=2930,
 },[[
@@ -26,7 +26,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Dionae in Bastion.",
+description="This battle pet has a chance to drop from Dionae in Bastion.",
 keywords={"Aquatic","Bastion"},
 pet=2932,
 },[[
@@ -54,7 +54,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The House of Rituals Maldraxxus.",
+description="This battle pet can be tamed in the wild around The House of Rituals Maldraxxus.",
 keywords={"Beast","Maldraxxus"},
 pet=3050,
 },[[
@@ -71,7 +71,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained several different ways depending on which covenant you are aligned with.",
+description="This battle pet can be obtained several different ways depending on which covenant you are aligned with.",
 keywords={"Beast","Venthyr","Night","Fae","Kyrian","Necrolord"},
 pet=2965,
 },[[
@@ -152,7 +152,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from Tomb Burster in Revendreth.",
+description="This battle pet can be looted from Tomb Burster in Revendreth.",
 keywords={"Beast","Revendreth"},
 pet=2891,
 },[[
@@ -175,7 +175,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from Sister Chelicerae in Maldraxxus.",
+description="This battle pet can be looted from Sister Chelicerae in Maldraxxus.",
 keywords={"Beast","Maldraxxus"},
 pet=2948,
 },[[
@@ -200,7 +200,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Bastion.",
+description="This battle pet can be tamed in the wild around Bastion.",
 keywords={"Beast","Bastion"},
 pet=2936,
 },[[
@@ -219,7 +219,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained several different ways depending on which covenant you are aligned with.",
+description="This battle pet can be obtained several different ways depending on which covenant you are aligned with.",
 keywords={"Beast","Venthyr","Night","Fae","Kyrian","Necrolord"},
 pet=2945,
 },[[
@@ -300,7 +300,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by finding and communicating the proper emote to Playful Vulpin 5 times in the wild around Ardenweald.",
+description="This battle pet can be obtained by finding and communicating the proper emote to Playful Vulpin 5 times in the wild around Ardenweald.",
 keywords={"Beast","Ardenweald"},
 pet=2905,
 },[[
@@ -336,7 +336,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching revered reputation with The Ascended.",
+description="This battle pet can be purchased from a vendor after reaching revered reputation with The Ascended.",
 keywords={"Beast","Bastion"},
 pet=2934,
 },[[
@@ -366,7 +366,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after defeating Alderyn and Myn'ir in the Kyrian Path of Ascension.",
+description="This battle pet is rewarded to you after defeating Alderyn and Myn'ir in the Kyrian Path of Ascension.",
 keywords={"Beast","Kyrian"},
 pet=2941,
 },[[
@@ -397,7 +397,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained from the Winter Veil Gift in Ironforge and Orgrimmar during the Feast of Winter Veil event.",
+description="This battle pet can be obtained from the Winter Veil Gift in Ironforge and Orgrimmar during the Feast of Winter Veil event.",
 keywords={"Beast","Feast","Of","Winter","Veil"},
 pet=2622,
 },[[
@@ -423,7 +423,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Cache of Eyes treasure inside of the Sightless Hold in Maldraxxus.",
+description="This battle pet can be looted from the Cache of Eyes treasure inside of the Sightless Hold in Maldraxxus.",
 keywords={"Beast","Maldraxxus"},
 pet=2947,
 },[[
@@ -447,7 +447,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the Command Table Quest Ahnqat's Darkness.",
+description="This battle pet is rewarded to you after completing the Command Table Quest Ahnqat's Darkness.",
 keywords={"Beast","Command","Table"},
 pet=2946,
 },[[
@@ -479,7 +479,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Gift of Vesiphone chest in Bastion.",
+description="This battle pet can be looted from the Gift of Vesiphone chest in Bastion.",
 keywords={"Beast","Bastion"},
 pet=2935,
 },[[
@@ -511,7 +511,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the quest Renny the Vulpin in Ardenweald.",
+description="This battle pet is rewarded to you after completing the quest Renny the Vulpin in Ardenweald.",
 keywords={"Beast","Ardenweald"},
 pet=2878,
 },[[
@@ -558,7 +558,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare boss Macabre in Ardenweald.",
+description="This battle pet has a chance to drop from the rare boss Macabre in Ardenweald.",
 keywords={"Beast","Ardenweald"},
 pet=2907,
 },[[
@@ -586,7 +586,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Banewood in Revendreth.",
+description="This battle pet can be tamed in the wild around The Banewood in Revendreth.",
 keywords={"Beast","Revendreth"},
 pet=3007,
 },[[
@@ -603,7 +603,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in Bastion.",
+description="This battle pet can be tamed in the wild in Bastion.",
 keywords={"Beast","Bastion"},
 pet=2937,
 },[[
@@ -624,7 +624,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained several different ways depending on which covenant you are aligned with.",
+description="This battle pet can be obtained several different ways depending on which covenant you are aligned with.",
 keywords={"Beast","Venthyr","Night","Fae","Kyrian","Necrolord"},
 pet=2933,
 },[[
@@ -704,7 +704,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Sprouting Growth treasure in Maldraxxus.",
+description="This battle pet can be looted from the Sprouting Growth treasure in Maldraxxus.",
 keywords={"Beast","Maldraxxus"},
 pet=2949,
 },[[
@@ -733,7 +733,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the Command Table quest Save the Skyfoal.",
+description="This battle pet is rewarded to you after completing the Command Table quest Save the Skyfoal.",
 keywords={"Beast","Command","Table"},
 pet=2942,
 },[[
@@ -765,7 +765,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Cache of the Night treasure in Ardenweald.",
+description="This battle pet can be looted from the Cache of the Night treasure in Ardenweald.",
 keywords={"Beast","Ardenweald"},
 pet=2914,
 },[[
@@ -810,7 +810,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Heart of the Forest in Ardenweald.",
+description="This battle pet can be tamed in the wild around The Heart of the Forest in Ardenweald.",
 keywords={"Beast","Ardenweald"},
 pet=3080,
 },[[
@@ -828,7 +828,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching friendly reputation with the Court of Night.",
+description="This battle pet can be purchased from a vendor after reaching friendly reputation with the Court of Night.",
 keywords={"Beast","Court","Of","Night"},
 pet=2915,
 },[[
@@ -868,7 +868,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses in Skoldus Hall inside of Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses in Skoldus Hall inside of Torghast.",
 keywords={"Critter","Torghast"},
 pet=3030,
 },[[
@@ -892,7 +892,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Strange Growth treasure in Maldraxxus.",
+description="This battle pet can be looted from the Strange Growth treasure in Maldraxxus.",
 keywords={"Critter","Maldraxxus"},
 pet=3013,
 },[[
@@ -922,7 +922,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop after killing Smorgas the Feaster in Maldraxxus.",
+description="This battle pet has a chance to drop after killing Smorgas the Feaster in Maldraxxus.",
 keywords={"Critter","Maldraxxus"},
 pet=2955,
 },[[
@@ -945,7 +945,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Dusty Burrows in Ardenweald.",
+description="This battle pet can be tamed in the wild all around the Dusty Burrows in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=3081,
 },[[
@@ -962,7 +962,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from a Fallen Adventurer's Cache inside The Maw.",
+description="This battle pet has a chance to drop from a Fallen Adventurer's Cache inside The Maw.",
 keywords={"Critter","The","Maw"},
 pet=3039,
 },[[
@@ -987,7 +987,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Renard's Den in Ardenweald.",
+description="This battle pet can be tamed in the wild around Renard's Den in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=3021,
 },[[
@@ -1005,7 +1005,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop after killing Smorgas the Feaster in Maldraxxus.",
+description="This battle pet has a chance to drop after killing Smorgas the Feaster in Maldraxxus.",
 keywords={"Critter","Maldraxxus"},
 pet=2956,
 },[[
@@ -1028,7 +1028,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching friendly reputation with The Wild Hunt.",
+description="This battle pet can be purchased from a vendor after reaching friendly reputation with The Wild Hunt.",
 keywords={"Critter","Ardenweald"},
 pet=2910,
 },[[
@@ -1056,7 +1056,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses inside Skoldus Hall located in Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses inside Skoldus Hall located in Torghast.",
 keywords={"Critter","Torghast"},
 pet=3032,
 },[[
@@ -1079,7 +1079,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Ardenweald.",
+description="This battle pet can be purchased from a vendor in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=2917,
 },[[
@@ -1108,7 +1108,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the quest A New Age in the Kyrian covenant storyline.",
+description="This battle pet is rewarded to you after you complete the quest A New Age in the Kyrian covenant storyline.",
 keywords={"Critter","Bastion"},
 pet=2918,
 },[[
@@ -1134,7 +1134,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses inside Coldheart Interstitia located in Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses inside Coldheart Interstitia located in Torghast.",
 keywords={"Critter","Torghast"},
 pet=3027,
 },[[
@@ -1157,7 +1157,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Wild Hunt Supplies in Ardenweald.",
+description="This battle pet has a chance to drop from Wild Hunt Supplies in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=2916,
 },[[
@@ -1188,7 +1188,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare boss Gormbore in Ardenweald.",
+description="This battle pet has a chance to drop from the rare boss Gormbore in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=3035,
 },[[
@@ -1210,7 +1210,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Forgotten Wounds in Maldraxxus.",
+description="This battle pet can be tamed in the wild around the Forgotten Wounds in Maldraxxus.",
 keywords={"Critter","Maldraxxus"},
 pet=3049,
 },[[
@@ -1227,7 +1227,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the Command Table quest Rescue the Runelight Leaper.",
+description="This battle pet is rewarded to you after completing the Command Table quest Rescue the Runelight Leaper.",
 keywords={"Critter","Command","Table"},
 pet=3020,
 },[[
@@ -1257,7 +1257,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Faerie Trove treasure in Ardenweald.",
+description="This battle pet can be looted from the Faerie Trove treasure in Ardenweald.",
 keywords={"Critter","Ardenweald"},
 pet=3022,
 },[[
@@ -1278,7 +1278,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Tred'ova in the Mists of Tirna Scithe Mythic dungeon.",
+description="This battle pet has a chance to drop from Tred'ova in the Mists of Tirna Scithe Mythic dungeon.",
 keywords={"Critter","Ardenweald"},
 pet=3044,
 },[[
@@ -1300,7 +1300,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the final bosses in Coldheart Inserstitia located inside of Torghast.",
+description="This battle pet has a chance to drop from the final bosses in Coldheart Inserstitia located inside of Torghast.",
 keywords={"Critter","Torghast"},
 pet=3026,
 },[[
@@ -1323,7 +1323,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from a Fallen Adventurer's Cache inside The Maw.",
+description="This battle pet has a chance to drop from a Fallen Adventurer's Cache inside The Maw.",
 keywords={"Critter","The","Maw"},
 pet=3038,
 },[[
@@ -1349,7 +1349,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='90001',
 source='Unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was available to purchase from the Blizzard Store during the 2021 BlizzConline event.",
+description="This battle pet was available to purchase from the Blizzard Store during the 2021 BlizzConline event.",
 keywords={"Dragonkin","Blizzard","Store"},
 pet=3053,
 },[[
@@ -1368,7 +1368,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Ashen Amalgamation in The Ember Court.",
+description="This battle pet has a chance to drop from Ashen Amalgamation in The Ember Court.",
 keywords={"Elemental","The","Ember","Court"},
 pet=3024,
 },[[
@@ -1403,7 +1403,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Eternas the Tormentor in the Maw.",
+description="This battle pet has a chance to drop from Eternas the Tormentor in the Maw.",
 keywords={"Elemental","The","Maw"},
 pet=3037,
 },[[
@@ -1423,7 +1423,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching friendly reputation with the Marasmius faction.",
+description="This battle pet can be purchased from a vendor after reaching friendly reputation with the Marasmius faction.",
 keywords={"Elemental","Ardenweald"},
 pet=3016,
 },[[
@@ -1454,7 +1454,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after completing 3 different Star Lake Amphitheater performances for the Night Fae covenant.",
+description="This battle pet can be purchased from a vendor after completing 3 different Star Lake Amphitheater performances for the Night Fae covenant.",
 keywords={"Elemental","Night","Fae"},
 pet=3017,
 },[[
@@ -1488,7 +1488,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Endmire in Revendreth.",
+description="This battle pet can be tamed in the wild around The Endmire in Revendreth.",
 keywords={"Elemental","Revendreth"},
 pet=3014,
 },[[
@@ -1506,7 +1506,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Grand Proctor Beryllia in the Sanguine Depths Mythic dungeon.",
+description="This battle pet has a chance to drop from Grand Proctor Beryllia in the Sanguine Depths Mythic dungeon.",
 keywords={"Elemental","Sanguine","Depths"},
 pet=2898,
 },[[
@@ -1529,7 +1529,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Venthyr Renown Quartermaster when you reach Renown level 27.",
+description="This battle pet can be purchased from the Venthyr Renown Quartermaster when you reach Renown level 27.",
 keywords={"Elemental","Revendreth"},
 pet=2966,
 },[[
@@ -1565,7 +1565,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching Friendly reputation with the Court of Night faction.",
+description="This battle pet can be purchased from a vendor after reaching Friendly reputation with the Court of Night faction.",
 keywords={"Elemental","Court","Of","Night"},
 pet=3019,
 },[[
@@ -1602,7 +1602,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Night Fae Renown Quartermaster when you reach Renown level 27.",
+description="This battle pet can be purchased from the Night Fae Renown Quartermaster when you reach Renown level 27.",
 keywords={"Elemental","Ardenweald"},
 pet=3018,
 },[[
@@ -1638,7 +1638,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the center of Revendreth.",
+description="This battle pet can be tamed in the wild around the center of Revendreth.",
 keywords={"Elemental","Revendreth"},
 pet=3015,
 },[[
@@ -1658,7 +1658,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare bosses Manifestation of Wrath and Prideful Hulk in Revendreth.",
+description="This battle pet has a chance to drop from the rare bosses Manifestation of Wrath and Prideful Hulk in Revendreth.",
 keywords={"Elemental","Revendreth"},
 pet=2897,
 },[[
@@ -1687,7 +1687,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained from the Desiccated Moth treasure in Ardenweald.",
+description="This battle pet can be obtained from the Desiccated Moth treasure in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2911,
 },[[
@@ -1726,7 +1726,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching revered reputation with The Ember Court.",
+description="This battle pet can be purchased from a vendor after reaching revered reputation with The Ember Court.",
 keywords={"Flying","The","Ember","Court"},
 pet=3011,
 },[[
@@ -1761,7 +1761,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet drops after killing Old Ardeite in Ardenweald.",
+description="This battle pet drops after killing Old Ardeite in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2908,
 },[[
@@ -1782,7 +1782,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Ancient Cloudfeather Egg treasure in Ardenweald.",
+description="This battle pet can be looted from the Ancient Cloudfeather Egg treasure in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2909,
 },[[
@@ -1806,7 +1806,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by petting 5 Larion Cubs at the same time while at Nemea's Retreat in Bastion.",
+description="This battle pet is obtained by petting 5 Larion Cubs at the same time while at Nemea's Retreat in Bastion.",
 keywords={"Flying","Bastion"},
 pet=3065,
 },[[
@@ -1833,7 +1833,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Valley of a Thousand Legs in Maldraxxus.",
+description="This battle pet can be tamed in the wild around the Valley of a Thousand Legs in Maldraxxus.",
 keywords={"Flying","Maldraxxus"},
 pet=3083,
 },[[
@@ -1852,7 +1852,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from bat enemies in Revendreth.",
+description="This battle pet has a chance to drop from bat enemies in Revendreth.",
 keywords={"Flying","Revendreth"},
 pet=2903,
 },[[
@@ -1875,7 +1875,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Xinxin the Ravening, Embodied Hunger, and Woldfeaster Chronn in Bastion.",
+description="This battle pet has a chance to drop from Xinxin the Ravening, Embodied Hunger, and Woldfeaster Chronn in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2940,
 },[[
@@ -1899,7 +1899,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the Command Table quest Charthox the Indomitable.",
+description="This battle pet is rewarded to you after completing the Command Table quest Charthox the Indomitable.",
 keywords={"Flying","Command","Table"},
 pet=2922,
 },[[
@@ -1929,7 +1929,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Charred Ramparts in Revendrath.",
+description="This battle pet can be tamed in the wild around the Charred Ramparts in Revendrath.",
 keywords={"Flying","Revendreth"},
 pet=2902,
 },[[
@@ -1947,7 +1947,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Bastion.",
+description="This battle pet can be tamed in the wild around Bastion.",
 keywords={"Flying","Bastion"},
 pet=2926,
 },[[
@@ -1964,7 +1964,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Bastion.",
+description="This battle pet can be tamed in the wild all around Bastion.",
 keywords={"Flying","Bastion"},
 pet=2927,
 },[[
@@ -1982,7 +1982,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Ravenomous in Maldraxxus.",
+description="This battle pet has a chance to drop from Ravenomous in Maldraxxus.",
 keywords={"Flying","Maldraxxus"},
 pet=2964,
 },[[
@@ -2004,7 +2004,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor after reaching friendly reputation with the Marasmius faction.",
+description="This battle pet can be purchased from a vendor after reaching friendly reputation with the Marasmius faction.",
 keywords={"Flying","Ardenweald"},
 pet=2913,
 },[[
@@ -2035,7 +2035,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Silver Strongbox treasure chests in Bastion.",
+description="This battle pet has a chance to drop from Silver Strongbox treasure chests in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2938,
 },[[
@@ -2085,7 +2085,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet drops from Cloudfeather Guardian in Bastion.",
+description="This battle pet drops from Cloudfeather Guardian in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2925,
 },[[
@@ -2107,7 +2107,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Aerto treasure in Ardenweald.",
+description="This battle pet can be looted from the Aerto treasure in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2921,
 },[[
@@ -2127,7 +2127,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet drops from Deifir the Untamed in Ardenweald.",
+description="This battle pet drops from Deifir the Untamed in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2920,
 },[[
@@ -2148,7 +2148,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Dreamshrine Basin and Elder Stand in Ardenweald.",
+description="This battle pet can be tamed in the wild around Dreamshrine Basin and Elder Stand in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2919,
 },[[
@@ -2167,7 +2167,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the quest How to catch a Glimmerfly in Bastion.",
+description="This battle pet is rewarded to you after you complete the quest How to catch a Glimmerfly in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2928,
 },[[
@@ -2236,7 +2236,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Ascended Supplies in Bastion.",
+description="This battle pet has a chance to drop from Ascended Supplies in Bastion.",
 keywords={"Flying","Bastion"},
 pet=3064,
 },[[
@@ -2270,7 +2270,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet drops from the rare boss Larionrider Orstus in Bastion.",
+description="This battle pet drops from the rare boss Larionrider Orstus in Bastion.",
 keywords={"Flying","Bastion"},
 pet=3063,
 },[[
@@ -2297,7 +2297,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Glutharn's Decay in Maldraxxus.",
+description="This battle pet can be tamed in the wild around Glutharn's Decay in Maldraxxus.",
 keywords={"Flying","Maldraxxus"},
 pet=3052,
 },[[
@@ -2316,7 +2316,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained several different ways depending on which covenant you are aligned with.",
+description="This battle pet can be obtained several different ways depending on which covenant you are aligned with.",
 keywords={"Flying","Venthyr","Night","Fae","Kyrian","Necrolord"},
 pet=2923,
 },[[
@@ -2389,7 +2389,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Glitterfall Basin in Ardenweald.",
+description="This battle pet can be tamed in the wild around Glitterfall Basin in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=3082,
 },[[
@@ -2406,7 +2406,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Court of Harvesters Supplies in Revendreth.",
+description="This battle pet has a chance to drop from Court of Harvesters Supplies in Revendreth.",
 keywords={"Flying","Revendreth"},
 pet=3006,
 },[[
@@ -2443,7 +2443,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Forgotten Chests in Revendreth.",
+description="This battle pet has a chance to drop from Forgotten Chests in Revendreth.",
 keywords={"Flying","Revendreth"},
 pet=3012,
 },[[
@@ -2478,7 +2478,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from The Count for 99 Infused Ruby in Revendreth.",
+description="This battle pet can be purchased from The Count for 99 Infused Ruby in Revendreth.",
 keywords={"Flying","Revendreth"},
 pet=3009,
 },[[
@@ -2501,7 +2501,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Highland Path in Ardenweald.",
+description="This battle pet can be tamed in the wild around Highland Path in Ardenweald.",
 keywords={"Flying","Ardenweald"},
 pet=2924,
 },[[
@@ -2518,7 +2518,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Bastion.",
+description="This battle pet can be tamed in the wild all around Bastion.",
 keywords={"Flying","Bastion"},
 pet=2929,
 },[[
@@ -2536,7 +2536,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Aspirant's Crucible in Bastion.",
+description="This battle pet can be tamed in the wild around Aspirant's Crucible in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2939,
 },[[
@@ -2555,7 +2555,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Mnemonic Locus in Bastion.",
+description="This battle pet can be tamed in the wild around The Mnemonic Locus in Bastion.",
 keywords={"Flying","Bastion"},
 pet=2943,
 },[[
@@ -2573,7 +2573,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Revendreth after reaching revered reputation with the Court of Harvesters.",
+description="This battle pet can be purchased from a vendor in Revendreth after reaching revered reputation with the Court of Harvesters.",
 keywords={"Humanoid","Revendreth"},
 pet=2899,
 },[[
@@ -2603,7 +2603,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained after completing the world quest A Stolen Stone Fiend in Revendreth.",
+description="This battle pet can be obtained after completing the world quest A Stolen Stone Fiend in Revendreth.",
 keywords={"Humanoid","Revendreth"},
 pet=2900,
 },[[
@@ -2630,7 +2630,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained after you level The Ember Court to tier 2 and complete the quest Dredging up an Assistant for the Venthy covenant.",
+description="This battle pet is obtained after you level The Ember Court to tier 2 and complete the quest Dredging up an Assistant for the Venthy covenant.",
 keywords={"Humanoid","Venthyr"},
 pet=2967,
 },[[
@@ -2653,7 +2653,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the Guardian of the Smallest quest chain in the Grizzly Hills.",
+description="This battle pet is rewarded to you after you complete the Guardian of the Smallest quest chain in the Grizzly Hills.",
 keywords={"Humanoid","Grizzly","Hills"},
 pet=2888,
 },[[
@@ -2876,7 +2876,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from elite mobs in Bastion.",
+description="This battle pet has a chance to drop from elite mobs in Bastion.",
 keywords={"Humanoid","Bastion"},
 pet=3062,
 },[[
@@ -2900,7 +2900,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Kyrian covenant quartermaster once you reach renown level 27.",
+description="This battle pet can be purchased from the Kyrian covenant quartermaster once you reach renown level 27.",
 keywords={"Humanoid","Bastion"},
 pet=3042,
 },[[
@@ -2938,7 +2938,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after unlocking the Family Exorcist achievement.",
+description="This battle pet is rewarded to you after unlocking the Family Exorcist achievement.",
 keywords={"Humanoid","Family","Exorcist"},
 pet=3067,
 },[[
@@ -2959,7 +2959,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Bastion after earning the Inside the Park Home Run achievement.",
+description="This battle pet can be purchased from a vendor in Bastion after earning the Inside the Park Home Run achievement.",
 keywords={"Humanoid","Bastion"},
 pet=3061,
 },[[
@@ -2992,7 +2992,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Bleakwood Chests in Revendreth.",
+description="This battle pet has a chance to drop from Bleakwood Chests in Revendreth.",
 keywords={"Humanoid","Revendreth"},
 pet=2901,
 },[[
@@ -3015,7 +3015,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90001',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after earning the Abhorrent Adversaries of the Afterlife achievement.",
+description="This battle pet is rewarded to you after earning the Abhorrent Adversaries of the Afterlife achievement.",
 keywords={"Humanoid","Abhorrent","Adversaries","Of","The","Afterlife"},
 pet=3079,
 },[[
@@ -3036,7 +3036,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Forgotten Wounds in Maldraxxus.",
+description="This battle pet can be tamed in the wild around the Forgotten Wounds in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=3051,
 },[[
@@ -3056,7 +3056,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the rare boss Scrivener Lenua in Revendreth.",
+description="This battle pet has a chance to drop from the rare boss Scrivener Lenua in Revendreth.",
 keywords={"Magic","Revendreth"},
 pet=2893,
 },[[
@@ -3083,7 +3083,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold from a vendor after reaching exalted reputation with The Avowed.",
+description="This battle pet is sold from a vendor after reaching exalted reputation with The Avowed.",
 keywords={"Magic","Revendreth"},
 pet=3054,
 },[[
@@ -3115,7 +3115,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Slime-Coated Crate treasure in Maldraxxus.",
+description="This battle pet can be looted from the Slime-Coated Crate treasure in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=2952,
 },[[
@@ -3137,7 +3137,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained after completing Layer 2 of the Twisting Corridors in Torghast.",
+description="This battle pet is obtained after completing Layer 2 of the Twisting Corridors in Torghast.",
 keywords={"Magic","Torghast"},
 pet=3041,
 },[[
@@ -3156,7 +3156,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet drops from the rare boss Oily Invertebrate in Maldraxxus.",
+description="This battle pet drops from the rare boss Oily Invertebrate in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=2960,
 },[[
@@ -3183,7 +3183,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Plaguefallen Chest in Maldraxxus.",
+description="This battle pet can be looted from the Plaguefallen Chest in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=3045,
 },[[
@@ -3209,7 +3209,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Necrolords Quartermaster after reaching renown 27.",
+description="This battle pet can be purchased from the Necrolords Quartermaster after reaching renown 27.",
 keywords={"Magic","Necrolords"},
 pet=3043,
 },[[
@@ -3246,7 +3246,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after returning the Forbidden Ink to the Lost Quill.",
+description="This battle pet is rewarded to you after returning the Forbidden Ink to the Lost Quill.",
 keywords={"Magic","Revendreth"},
 pet=3008,
 },[[
@@ -3272,7 +3272,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses inside the Soulforges and Skoldus Hall located in Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses inside the Soulforges and Skoldus Hall located in Torghast.",
 keywords={"Magic","Torghast"},
 pet=3033,
 },[[
@@ -3296,7 +3296,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the quest Slime, Anyone? in Maldraxxus.",
+description="This battle pet is rewarded to you after completing the quest Slime, Anyone? in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=2798,
 },[[
@@ -3351,7 +3351,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the rare boss Bog Beast in Revendreth.",
+description="This battle pet can be looted from the rare boss Bog Beast in Revendreth.",
 keywords={"Magic","Revendreth"},
 pet=2896,
 },[[
@@ -3376,7 +3376,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Deadly Dapperling in Maldraxxus.",
+description="This battle pet has a chance to drop from Deadly Dapperling in Maldraxxus.",
 keywords={"Magic","Maldraxxus"},
 pet=2953,
 },[[
@@ -3396,7 +3396,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Margrave Stradama in the Plaguefall Mythic dungeon.",
+description="This battle pet has a chance to drop from Margrave Stradama in the Plaguefall Mythic dungeon.",
 keywords={"Magic","Maldraxxus"},
 pet=2961,
 },[[
@@ -3418,7 +3418,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Sire Denathrius in the Castle Nathria raid.",
+description="This battle pet has a chance to drop from Sire Denathrius in the Castle Nathria raid.",
 keywords={"Magic","Castle","Nathria"},
 pet=3036,
 },[[
@@ -3438,7 +3438,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='90001',
 source='Crafted',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have level 100 Shadowlands Engineering.",
+description="This battle pet can be crafted if you have level 100 Shadowlands Engineering.",
 keywords={"Mechanical","Bastion"},
 pet=2889,
 },[[
@@ -3463,7 +3463,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Crafted',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted using the Abomination Table in Maldraxxus.",
+description="This battle pet can be crafted using the Abomination Table in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2958,
 },[[
@@ -3496,7 +3496,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from Secret Treasures in Revendreth.",
+description="This battle pet can be looted from Secret Treasures in Revendreth.",
 keywords={"Undead","Revendreth"},
 pet=2894,
 },[[
@@ -3518,7 +3518,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Skeletal Hand Fragments treasure in Maldraxxus.",
+description="This battle pet can be looted from the Skeletal Hand Fragments treasure in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=3025,
 },[[
@@ -3558,7 +3558,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the House of Constructs in Maldraxxus.",
+description="This battle pet can be tamed in the wild around the House of Constructs in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2950,
 },[[
@@ -3575,7 +3575,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Grove of Terror and the Menagerie of the Master in Revendreth.",
+description="This battle pet can be tamed in the wild around the Grove of Terror and the Menagerie of the Master in Revendreth.",
 keywords={"Undead","Revendreth"},
 pet=2895,
 },[[
@@ -3595,7 +3595,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Dirty Glinting Objects in Ardenweald, Bastion, Maldraxxus, and Revendreth.",
+description="This battle pet has a chance to drop from Dirty Glinting Objects in Ardenweald, Bastion, Maldraxxus, and Revendreth.",
 keywords={"Undead","Bastion","Ardenweald","Maldraxxus","Revendreth"},
 pet=3066,
 },[[
@@ -3625,7 +3625,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses inside Skoldus Hall located in Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses inside Skoldus Hall located in Torghast.",
 keywords={"Undead","Torghast"},
 pet=3029,
 },[[
@@ -3650,7 +3650,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Supplies of the Undying Army in Maldraxxus.",
+description="This battle pet has a chance to drop from Supplies of the Undying Army in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2959,
 },[[
@@ -3680,7 +3680,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Crafted',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted from the Necrolord Abomination Factory.",
+description="This battle pet can be crafted from the Necrolord Abomination Factory.",
 keywords={"Undead","Abomination","Factory"},
 pet=2963,
 },[[
@@ -3711,7 +3711,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Oonar's Arm treasure in Maldraxxus.",
+description="This battle pet can be looted from the Oonar's Arm treasure in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2944,
 },[[
@@ -3740,7 +3740,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Auction House.",
+description="This battle pet can be purchased from the Auction House.",
 keywords={"Undead","Auction","House"},
 pet=3046,
 },[[
@@ -3760,7 +3760,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the final bosses in The Upper Reaches located inside of Torghast.",
+description="This battle pet has a chance to drop from the final bosses in The Upper Reaches located inside of Torghast.",
 keywords={"Undead","Torghast"},
 pet=3028,
 },[[
@@ -3785,7 +3785,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Sanngror the Torturer in the Maw.",
+description="This battle pet has a chance to drop from Sanngror the Torturer in the Maw.",
 keywords={"Undead","The","Maw"},
 pet=3040,
 },[[
@@ -3806,7 +3806,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from the Spinebug Treasure in Maldraxxus.",
+description="This battle pet can be looted from the Spinebug Treasure in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=3047,
 },[[
@@ -3827,7 +3827,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Maldraxxus.",
+description="This battle pet can be purchased from a vendor in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2962,
 },[[
@@ -3856,7 +3856,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the final bosses in Mort'regar located inside of Torghast.",
+description="This battle pet has a chance to drop from the final bosses in Mort'regar located inside of Torghast.",
 keywords={"Undead","Torghast"},
 pet=3034,
 },[[
@@ -3881,7 +3881,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90001',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Scunner in Maldraxxus.",
+description="This battle pet has a chance to drop from Scunner in Maldraxxus.",
 keywords={"Undead","Maldraxxus"},
 pet=2957,
 },[[
@@ -3903,7 +3903,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Gralebboih in The Maw.",
+description="This battle pet has a chance to drop from Gralebboih in The Maw.",
 keywords={"Flying","The","Maw"},
 pet=3117,
 },[[
@@ -3926,7 +3926,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Estuary of Awakening in Korthia.",
+description="This battle pet can be tamed in the wild around Estuary of Awakening in Korthia.",
 keywords={"Flying","Korthia"},
 pet=3102,
 },[[
@@ -3943,7 +3943,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Mauler's Outlook in Korthia.",
+description="This battle pet can be tamed in the wild around Mauler's Outlook in Korthia.",
 keywords={"Critter","Korthia"},
 pet=3134,
 },[[
@@ -3960,7 +3960,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to be rewarded to you after completing either of the Korthian daily quests Oozing with Character or Local Reagents.",
+description="This battle pet has a chance to be rewarded to you after completing either of the Korthian daily quests Oozing with Character or Local Reagents.",
 keywords={"Flying","Korthia"},
 pet=3127,
 },[[
@@ -3986,7 +3986,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in The Maw.",
+description="This battle pet can be tamed in the wild in The Maw.",
 keywords={"Undead","The","Maw"},
 pet=3115,
 },[[
@@ -4009,7 +4009,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Ascended War Chests in The Maw.",
+description="This battle pet has a chance to drop from Ascended War Chests in The Maw.",
 keywords={"Flying","The","Maw"},
 pet=3103,
 },[[
@@ -4035,7 +4035,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
+description="This battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
 keywords={"Beast","Tazavesh","The","Veiled","Market"},
 pet=3108,
 },[[
@@ -4057,7 +4057,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='BlizzardStore',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard Store.",
+description="This battle pet can be purchased from the Blizzard Store.",
 keywords={"Beast","Blizzard","Store"},
 pet=2780,
 },[[
@@ -4077,7 +4077,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
+description="This battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
 keywords={"Critter","Tazavesh","The","Veiled","Market"},
 pet=3111,
 },[[
@@ -4099,7 +4099,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Maw.",
+description="This battle pet can be tamed in the wild around The Maw.",
 keywords={"Critter","The","Maw"},
 pet=3123,
 },[[
@@ -4116,7 +4116,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Korthia.",
+description="This battle pet can be tamed in the wild around Korthia.",
 keywords={"Beast","Korthia"},
 pet=3139,
 },[[
@@ -4133,7 +4133,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased for 50 Polished Pet Charms and 1500 Stygia after becoming Honored with Death's Advance.",
+description="This battle pet can be purchased for 50 Polished Pet Charms and 1500 Stygia after becoming Honored with Death's Advance.",
 keywords={"Critter","Death's","Advance"},
 pet=3138,
 },[[
@@ -4168,7 +4168,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Seeker's Quorum in Korthia.",
+description="This battle pet can be tamed in the wild around Seeker's Quorum in Korthia.",
 keywords={"Magic","Korthia"},
 pet=3126,
 },[[
@@ -4186,7 +4186,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Eye of the Jailer in the Sanctum of Domination raid.",
+description="This battle pet has a chance to drop from Eye of the Jailer in the Sanctum of Domination raid.",
 keywords={"Magic","Sanctum","Of","Domination"},
 pet=3128,
 },[[
@@ -4208,7 +4208,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Eye of the Jailer in the Sanctum of Domination raid Mythic difficulty.",
+description="This battle pet has a chance to drop from Eye of the Jailer in the Sanctum of Domination raid Mythic difficulty.",
 keywords={"Magic","Sanctum","Of","Domination"},
 pet=3129,
 },[[
@@ -4231,7 +4231,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased for 10,000 Polished Pet Charms from Keeper Ta'hult in Oribos.",
+description="This battle pet can be purchased for 10,000 Polished Pet Charms from Keeper Ta'hult in Oribos.",
 keywords={"Beast","Oribos"},
 pet=3097,
 },[[
@@ -4257,7 +4257,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from War Chest of the Undying Army in The Maw.",
+description="This battle pet has a chance to drop from War Chest of the Undying Army in The Maw.",
 keywords={"Undead","The","Maw"},
 pet=3114,
 },[[
@@ -4283,7 +4283,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from any of the final bosses inside Adamant Vaults located in Torghast.",
+description="This battle pet has a chance to drop from any of the final bosses inside Adamant Vaults located in Torghast.",
 keywords={"Humanoid","Torghast"},
 pet=3130,
 },[[
@@ -4309,7 +4309,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from P.O.S.T. Master in Tazavesh, the Veiled Market dungeon on Mythic difficulty.",
+description="This battle pet has a chance to drop from P.O.S.T. Master in Tazavesh, the Veiled Market dungeon on Mythic difficulty.",
 keywords={"Beast","Tazavesh","The","Veiled","Market"},
 pet=3110,
 },[[
@@ -4335,7 +4335,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Supplies of the Archivists' Codex in Korthia.",
+description="This battle pet has a chance to drop from Supplies of the Archivists' Codex in Korthia.",
 keywords={"Beast","Supplies","Of","The","Archivists'","Codex"},
 pet=3140,
 },[[
@@ -4371,7 +4371,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Helsworn Soulseekers around Desmotaeron in The Maw.",
+description="This battle pet has a chance to drop from Helsworn Soulseekers around Desmotaeron in The Maw.",
 keywords={"Magic","The","Maw"},
 pet=3125,
 },[[
@@ -4392,7 +4392,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Mawsworn enemies in Korthia.",
+description="This battle pet has a chance to drop from Mawsworn enemies in Korthia.",
 keywords={"Undead","Korthia"},
 pet=3121,
 },[[
@@ -4413,7 +4413,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in The Maw.",
+description="This battle pet can be tamed in the wild in The Maw.",
 keywords={"Undead","The","Maw"},
 pet=3120,
 },[[
@@ -4437,7 +4437,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from an Etherwyrm Cage in The Maw.",
+description="This battle pet has a chance to drop from an Etherwyrm Cage in The Maw.",
 keywords={"Flying","The","Maw"},
 pet=3099,
 },[[
@@ -4482,7 +4482,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from War Chest of the Wild Hunt in The Maw.",
+description="This battle pet has a chance to drop from War Chest of the Wild Hunt in The Maw.",
 keywords={"Flying","The","Maw"},
 pet=3116,
 },[[
@@ -4508,7 +4508,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Soulrender Dormazain in the Sanctum of Domination raid.",
+description="This battle pet has a chance to drop from Soulrender Dormazain in the Sanctum of Domination raid.",
 keywords={"Undead","Sanctum","Of","Domination"},
 pet=3122,
 },[[
@@ -4530,7 +4530,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Zelnithop in Korthia.",
+description="This battle pet has a chance to drop from Zelnithop in Korthia.",
 keywords={"Critter","Korthia"},
 pet=3136,
 },[[
@@ -4553,7 +4553,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='Discovery',
 author="support@zygorguides.com",
-description="\nThis battle pet can be created after collecting 5 Lil'Abom parts in The Maw.",
+description="This battle pet can be created after collecting 5 Lil'Abom parts in The Maw.",
 keywords={"Undead","The","Maw"},
 pet=3098,
 },[[
@@ -4619,7 +4619,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in The Maw.",
+description="This battle pet can be tamed in the wild in The Maw.",
 keywords={"Undead","The","Maw"},
 pet=3119,
 },[[
@@ -4636,7 +4636,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Kel'Thuzad in the Sanctum of Domination raid.",
+description="This battle pet has a chance to drop from Kel'Thuzad in the Sanctum of Domination raid.",
 keywords={"Humanoid","Sanctum","Of","Domination"},
 pet=3131,
 },[[
@@ -4658,7 +4658,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Death's Advance Supplies in Korthia.",
+description="This battle pet has a chance to drop from Death's Advance Supplies in Korthia.",
 keywords={"Critter","Korthia"},
 pet=3137,
 },[[
@@ -4693,7 +4693,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Tazavesh, The Veiled Market.",
+description="This battle pet can be purchased from a vendor in Tazavesh, The Veiled Market.",
 keywords={"Critter","Tazavesh","The","Veiled","Market"},
 pet=3113,
 },[[
@@ -4753,7 +4753,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Mysterious Gifts from Ve'nari in The Maw.",
+description="This battle pet has a chance to drop from Mysterious Gifts from Ve'nari in The Maw.",
 keywords={"Humanoid","Ve'nari"},
 pet=3133,
 },[[
@@ -4788,7 +4788,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
+description="This battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
 keywords={"Critter","Tazavesh","The","Veiled","Market"},
 pet=3112,
 },[[
@@ -4810,7 +4810,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased with a Ground Gear, Robble's Wobbly Staff, and a Very Unlucky Rock from Keeper Ta'hult in Oribos.",
+description="This battle pet can be purchased with a Ground Gear, Robble's Wobbly Staff, and a Very Unlucky Rock from Keeper Ta'hult in Oribos.",
 keywords={"Beast","Oribos"},
 pet=3104,
 },[[
@@ -4853,7 +4853,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in The Maw.",
+description="This battle pet can be tamed in the wild in The Maw.",
 keywords={"Critter","The","Maw"},
 pet=3118,
 },[[
@@ -4879,7 +4879,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
+description="This battle pet can be tamed inside the dungeon Tazavesh, the Veiled Market.",
 keywords={"Beast","Tazavesh","The","Veiled","Market"},
 pet=3109,
 },[[
@@ -4901,7 +4901,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='90100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from a Grummlepouch.",
+description="This battle pet has a chance to drop from a Grummlepouch.",
 keywords={"Mechanical","Kun-Lai","Summit"},
 pet=3092,
 },[[
@@ -4939,7 +4939,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased with a Rotting Bear Carcass, Dark Iron Baby Booties, and The Stoppable Force from Keeper Ta'hult in Oribos.",
+description="This battle pet can be purchased with a Rotting Bear Carcass, Dark Iron Baby Booties, and The Stoppable Force from Keeper Ta'hult in Oribos.",
 keywords={"Beast","Oribos"},
 pet=3106,
 },[[
@@ -4994,7 +4994,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased with a Rabbit's Foot, Large Slimy Bone, and A Frayed Knot from Keeper Ta'hult in Oribos.",
+description="This battle pet can be purchased with a Rabbit's Foot, Large Slimy Bone, and A Frayed Knot from Keeper Ta'hult in Oribos.",
 keywords={"Beast","Oribos"},
 pet=3105,
 },[[
@@ -5033,7 +5033,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in The Maw.",
+description="This battle pet can be tamed in the wild in The Maw.",
 keywords={"Critter","The","Maw"},
 pet=3124,
 },[[
@@ -5060,7 +5060,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Korthia.",
+description="This battle pet can be tamed in the wild all around Korthia.",
 keywords={"Flying","Korthia"},
 pet=3141,
 },[[
@@ -5079,7 +5079,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Seeker's Quorum in Korthia.",
+description="This battle pet can be tamed in the wild around Seeker's Quorum in Korthia.",
 keywords={"Critter","Korthia"},
 pet=3135,
 },[[
@@ -5098,7 +5098,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Ambystan Darter\" battle pet.",
+description="This guide will walk you through collecting the \"Ambystan Darter\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3223,
 },[[
@@ -5137,7 +5137,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Metamorphosis\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Metamorphosis\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3197,
 },[[
@@ -5180,7 +5180,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Metamorphosis\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Metamorphosis\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3229,
 },[[
@@ -5228,7 +5228,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Serenity\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Serenity\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3181,
 },[[
@@ -5286,7 +5286,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Prototickles\" battle pet.",
+description="This guide will walk you through collecting the \"Prototickles\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3231,
 },[[
@@ -5334,7 +5334,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Terror Jelly\" battle pet.",
+description="This guide will walk you through collecting the \"Terror Jelly\" battle pet.",
 keywords={"Aquatic","Zereth","Mortis","9.2"},
 pet=3230,
 },[[
@@ -5378,7 +5378,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Cunning\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Cunning\" battle pet.",
 keywords={"Beast","Zereth","Mortis","9.2"},
 pet=3207,
 },[[
@@ -5417,7 +5417,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Discovery\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Discovery\" battle pet.",
 keywords={"Beast","Zereth","Mortis","9.2"},
 pet=3174,
 },[[
@@ -5463,7 +5463,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Predation\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Predation\" battle pet.",
 keywords={"Beast","Zereth","Mortis","9.2"},
 pet=3201,
 },[[
@@ -5506,7 +5506,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Tunneling Vombata\" battle pet.",
+description="This guide will walk you through collecting the \"Tunneling Vombata\" battle pet.",
 keywords={"Beast","Zereth","Mortis","9.2"},
 pet=3176,
 },[[
@@ -5545,7 +5545,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Viperid Menace\" battle pet.",
+description="This guide will walk you through collecting the \"Viperid Menace\" battle pet.",
 keywords={"Beast","Zereth","Mortis","9.2"},
 pet=3234,
 },[[
@@ -5589,7 +5589,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Multiplicity\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Multiplicity\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=3189,
 },[[
@@ -5634,7 +5634,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Survival\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Survival\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=3204,
 },[[
@@ -5675,7 +5675,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Vigilance\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Vigilance\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=3233,
 },[[
@@ -5718,7 +5718,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Fierce Scarabid\" battle pet.",
+description="This guide will walk you through collecting the \"Fierce Scarabid\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=3224,
 },[[
@@ -5762,7 +5762,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Leaping Leporid\" battle pet.",
+description="This guide will walk you through collecting the \"Leaping Leporid\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=3232,
 },[[
@@ -5810,7 +5810,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Shelly\" battle pet.",
+description="This guide will walk you through collecting the \"Shelly\" battle pet.",
 keywords={"Critter","Zereth","Mortis","9.2"},
 pet=2193,
 },[[
@@ -5863,7 +5863,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Animation\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Animation\" battle pet.",
 keywords={"Elemental","Zereth","Mortis","9.2"},
 pet=3179,
 },[[
@@ -5911,7 +5911,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='90200',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Stabilized Geomental\" battle pet.",
+description="This guide will walk you through collecting the \"Stabilized Geomental\" battle pet.",
 keywords={"Elemental","Zereth","Mortis","9.2"},
 pet=3227,
 },[[
@@ -5958,7 +5958,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Malice\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Malice\" battle pet.",
 keywords={"Flying","Zereth","Mortis","9.2"},
 pet=3211,
 },[[
@@ -5997,7 +5997,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Motion\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Motion\" battle pet.",
 keywords={"Flying","Zereth","Mortis","9.2"},
 pet=3178,
 },[[
@@ -6043,7 +6043,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Satisfaction\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Satisfaction\" battle pet.",
 keywords={"Flying","Zereth","Mortis","9.2"},
 pet=3220,
 },[[
@@ -6101,7 +6101,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Multichicken\" battle pet.",
+description="This guide will walk you through collecting the \"Multichicken\" battle pet.",
 keywords={"Flying","Zereth","Mortis","9.2"},
 pet=3226,
 },[[
@@ -6163,7 +6163,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Violent Poultrid\" battle pet.",
+description="This guide will walk you through collecting the \"Violent Poultrid\" battle pet.",
 keywords={"Flying","Zereth","Mortis","9.2"},
 pet=3225,
 },[[
@@ -6222,7 +6222,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Archetype of Focus\" battle pet.",
+description="This guide will walk you through collecting the \"Archetype of Focus\" battle pet.",
 keywords={"Magic","Zereth","Mortis","9.2"},
 pet=3169,
 },[[
@@ -6261,7 +6261,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Omnipotential Core\" battle pet.",
+description="This guide will walk you through collecting the \"Omnipotential Core\" battle pet.",
 keywords={"Magic","Zereth","Mortis","9.2"},
 pet=3171,
 },[[
@@ -6305,7 +6305,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='90200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis guide will walk you through collecting the \"Resonant Echo\" battle pet.",
+description="This guide will walk you through collecting the \"Resonant Echo\" battle pet.",
 keywords={"Magic","Zereth","Mortis","9.2"},
 pet=3170,
 },[[

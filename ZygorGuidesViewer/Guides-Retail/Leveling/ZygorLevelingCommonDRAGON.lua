@@ -19724,17 +19724,13 @@ startlevel=70,
 patch='100107',
 },[[
 step
-accept A Sentinel's Summon##76982 |goto Valdrakken/0 50.27,52.83
-|tip You will accept this quest automatically.
+talk Shandris Feathermoon##205067
+accept Fire Season##75918 |goto Valdrakken/0 50.27,52.83
 _Or_ |only if completedq(77523)
 use Shandris's Scouting Report##208181 |only if completedq(77523)
 |tip This item is available if you have completed this story on another character. |only if completedq(77523)
 |tip Using it will allow you to skip this guide and proceed directly to "The Emerald Dream Campaign" guide. |only if completedq(77523)
 Skip "The Coalition of Flames" Chapter |complete completedq(75923) |or |only if completedq(77523)
-step
-talk Shandris Feathermoon##205067
-turnin A Sentinel's Summon##76982 |goto 50.27,52.83
-accept Fire Season##75918 |goto 50.27,52.83
 step
 talk Shandris Feathermoon##205068
 turnin Fire Season##75918 |goto Ohn'ahran Plains/0 18.62,79.78
@@ -22872,4 +22868,383 @@ step
 talk Travard##208839
 |tip Inside the building.
 turnin Time to Process##77344 |goto 60.84,63.77
+step
+collect Letter from Valunei##208826 |q 77341 |future
+|tip You will find this in your mailbox.
+step
+use the Letter from Valunei##208826
+accept Logotyrapy##77341
+step
+Enter the building |goto Thaldraszus/0 59.88,63.78 < 10 |walk
+talk Keeper Tyr##209890
+|tip Inside the building.
+Ask him _"Is something the matter, Tyr?"_
+Speak with Tyr |q 77341/1 |goto 61.00,63.78
+step
+talk Travard##208839
+turnin Logotyrapy##77341 |goto 60.84,63.77
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\Seeing Red",{
+author="support@zygorguides.com",
+description="This guide will help you complete the Seeing Red questline.",
+startlevel=70,
+patch='100105',
+},[[
+step
+talk Virtos##209790 |only if Alliance
+accept Prophecy Stirs##77408 |goto Stormwind City/0 77.95,37.26 |only if Alliance
+talk Knight-Lord Dranarus##209803 |only if Horde
+accept Prophecy Stirs##77408 |goto Orgrimmar/1 72.03,44.55 |only if Horde
+step
+use Teleportation Crystal##208206
+Use the Teleportation Crystal |q 77408/1 |goto Stormwind City/0 77.95,37.27 |only if Alliance
+Use the Teleportation Crystal |q 77408/1 |goto Orgrimmar/1 72.03,44.55 |only if Horde
+step
+talk Prophet Velen##208815
+turnin Prophecy Stirs##77408 |goto Vindicaar Scenario/1 43.20,24.94
+accept Uncertainty##77409 |goto 43.20,24.94
+step
+talk Grand Artificer Romuul##208816
+Tell him _"Please teleport me to Krokuun."_
+Ask Romuul to Teleport You to Krokuun |q 77409/1 |goto 42.08,23.84
+step
+click Lightforged Beacon
+fpath Krokul Hovel |goto Krokuun/0 55.49,67.36
+step
+Enter the cave |goto 55.45,68.31 < 7 |walk
+talk Chieftain Hatuun##208830
+Ask him _"What did you want to discuss?"_
+Speak to Chieftain Hatuun |q 77409/2 |goto 53.75,68.11
+step
+Watch the dialogue
+talk Chieftain Hatuun##208830
+turnin Uncertainty##77409 |goto 53.74,68.10
+accept Opening Wounds##77410 |goto 53.74,68.10
+step
+talk Arzal'kal##208831
+Select _"You don't need to explain yourself. <Skip conversation and complete quest.>"_
+Speak to Arzal'kal |q 77410/1 |goto 53.79,68.22
+step
+Watch the dialogue
+Listen to Arzal'kal |q 77410/2 |goto 53.79,68.22
+step
+talk Prophet Velen##208837
+turnin Opening Wounds##77410 |goto 53.61,68.28
+step
+talk Arzal'kal##208831
+accept Contrition##77411 |goto 53.79,68.23
+step
+click Lightforged Beacon
+fpath Destiny Point |goto Krokuun/0 62.70,49.10
+step
+talk Arzal'kal##208858
+accept Severing Ties##77789 |goto 63.49,42.48
+step
+talk Arzal'kal##208858
+Tell him _"I am ready."_
+Regroup with Arzal'kal |q 77411/1 |goto 63.49,42.48
+stickystart "Slay_Man'ari_Cultists"
+step
+click Sargerei Conduit
+Overload the Sargerei Conduit |q 77789/2 |goto 66.54,37.98 |count 1
+step
+click Sargerei Conduit
+Overload the Sargerei Conduit |q 77789/2 |goto 68.90,34.75 |count 2
+step
+click Sargerei Conduit
+Overload the Sargerei Conduit |q 77789/2 |goto 70.25,34.97 |count 3
+step
+click Sargerei Conduit
+Overload the Sargerei Conduit |q 77789/2 |goto 70.12,32.48 |count 4
+step
+click Sargerei Conduit
+Overload the Sargerei Conduit |q 77789/2 |goto 72.30,34.88 |count 5
+step
+label "Slay_Man'ari_Cultists"
+kill Man'ari Acolyte##208855+
+kill Man'ari Sycophant##208856+
+Slay #10# Man'ari Cultists |q 77789/1 |goto 72.33,34.36
+step
+kill 1 Speaker Nalridun##208862 |q 77411/2 |goto 73.13,33.66
+step
+click Ancient Draenic Relic##405948
+Retrieve the Relic |q 77411/3 |goto 73.43,33.85
+step
+talk Arzal'kal
+turnin Contrition##77411 |goto 73.27,33.56
+turnin Severing Ties##77789 |goto 73.27,33.56
+accept Proof and Promise##77412 |goto 73.27,33.56
+step
+Locate the Legion Teleporter |q 77412/2 |goto 71.77,31.57
+step
+click Legion Teleporter
+Use the Legion Teleporter |q 77412/3 |goto 71.77,31.57
+step
+Return to Velen |q 77412/4 |goto 53.63,68.30
+step
+talk Prophet Velen##208893
+turnin Proof and Promise##77412 |goto 53.63,68.30
+]])
+ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Dragonflight (60-70)\\The Reclaiming of Gilneas",{
+author="support@zygorguides.com",
+description="This guide will help you complete the Reclaiming of Gilneas questline.",
+startlevel=70,
+patch='100205',
+},[[
+step
+talk Deathguard Elite##212916
+|tip Inside the building.
+accept Clandestine Movements##78597 |goto Valdrakken/0 56.13,39.41
+|tip You can also pick this up in Orgrimmar.
+|only if Horde
+step
+talk Calia Menethil##210965
+|tip Inside the building.
+Meet with Lilian and Calia in Pyrewood Village |q 78597/1 |goto Silverpine Forest/0 43.59,73.27
+|only if Horde
+step
+talk Lilian Voss##210964
+|tip Inside the building.
+turnin Clandestine Movements##78597 |goto 43.66,73.28
+|only if Horde
+step
+talk Calia Menethil##210965
+|tip Inside the building.
+accept To Gilneas##78178 |goto 43.59,73.27
+|only if Horde
+step
+talk Princess Tess Greymane##210905
+Tell her _" I'm ready to go to Gilneas."_
+Talk to Tess to Go to Gilneas |q 78178/1 |goto 41.68,72.22
+|only if Horde
+step
+Watch the dialogue
+Arrive in Gilneas |q 78178/2
+|only if Horde
+step
+talk Princess Tess Greymane##210905
+Ask her _" What is your plan?"_
+|tip This option will require you to watch a conversation between NPCs.
+_Or_
+Tell her _" (Skip Conversation) I don't have time for this."_
+|tip This option will skip the dialogue and allow you to continue.
+Talk to Tess |q 78178/3 |goto Ruins of Gilneas/0 41.51,36.07
+|only if Horde
+step
+talk Princess Tess Greymane##210905
+turnin To Gilneas##78178 |goto 41.51,36.07
+accept A Crusade of Red##78180 |goto 41.51,36.07
+|only if Horde
+step
+talk Greyguard Elite##212899
+|tip Inside the building.
+accept Summons to Lord Greymane##78596 |goto Valdrakken/0 59.25,42.65
+|tip You can also pick this up in Stormwind.
+|only if Alliance
+step
+talk Genn Greymane##214538
+Meet with Genn Greymane at Stormwind Harbor |q 78596/1 |goto Stormwind City/0 35.76,28.29
+|only if Alliance
+step
+talk Genn Greymane##214538
+turnin Summons to Lord Greymane##78596 |goto 35.76,28.29
+accept To Gilneas##78177 |goto 35.76,28.29
+|only if Alliance
+step
+talk Genn Greymane##214538
+Tell him _" I'm ready to go to Gilneas."_
+Let Genn Know You Are Ready |q 78177/1 |goto 35.66,28.94
+|only if Alliance
+step
+Watch the dialogue
+Arrive in Gilneas |q 78177/2
+|only if Alliance
+step
+talk Princess Tess Greymane##210905
+Ask her _" What is your plan?"_
+|tip This option will require you to watch a conversation between NPCs.
+_Or_
+Tell her _" (Skip Conversation) I don't have time for this."_
+|tip This option will skip the dialogue and allow you to continue.
+Talk to Tess |q 78177/3 |goto Ruins of Gilneas/0 41.51,36.07
+|only if Alliance
+step
+talk Princess Tess Greymane##210905
+turnin To Gilneas##78177 |goto 41.51,36.07
+accept A Crusade of Red##78180 |goto 41.51,36.07
+|only if Alliance
+step
+talk Genn Greymane##210904
+accept Aderic's Retort##78181 |goto 41.64,36.12
+stickystart "Slay_Members_of_the_Scarlet_Crusade"
+step
+kill Consecrator Hennas##211231 |q 78181/1 |goto 48.80,52.88
+step
+label "Slay_Members_of_the_Scarlet_Crusade"
+Kill Scarlet enemies around this area
+Slay #10# Members of the Scarlet Crusade |q 78180/1 |goto 48.47,52.16
+step
+talk Genn Greymane##212187
+turnin A Crusade of Red##78180 |goto 49.60,57.11
+turnin Aderic's Retort##78181 |goto 49.60,57.11
+accept Knee-High##78182 |goto 49.60,57.11
+step
+Run down the stairs |goto 49.86,57.80 < 7 |walk
+extraaction Swing Torch##424546
+|tip Run through the tunnel spamming the ability on the screen to scare the vermin.
+Clear the Tunnel of Vermin |q 78182/1 |goto 52.18,55.67
+step
+Run down the stairs |goto 57.25,52.90 < 7 |walk
+extraaction Swing Torch##424546
+|tip Continue spamming the ability to clear the vermin until you reach the end of the tunnel.
+talk Princess Tess Greymane##210905
+|tip Inside the building.
+turnin Knee-High##78182 |goto 57.10,53.18
+accept Smokepowder and Mirrors##78184 |goto 57.10,53.18
+step
+talk Lilian Voss##210964
+|tip Inside the building.
+accept Scarlet Blood##78183 |goto 57.11,53.02
+stickystart "Slay_Scarlet_Forces"
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 1 Scarlet Explosives##211248 |q 78184/1 |goto 55.97,54.03
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 2 Scarlet Explosives##211248 |q 78184/1 |goto 55.64,56.88
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 3 Scarlet Explosives##211248 |q 78184/1 |goto 56.67,58.91
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 4 Scarlet Explosives##211248 |q 78184/1 |goto 57.63,57.64
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 5 Scarlet Explosives##211248 |q 78184/1 |goto 58.66,57.61
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 6 Scarlet Explosives##211248 |q 78184/1 |goto 58.41,56.02
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 7 Scarlet Explosives##211248 |q 78184/1 |goto 58.96,55.27
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Scarlet Munitions##410877
+collect 8 Scarlet Explosives##211248 |q 78184/1 |goto 58.30,53.87
+step
+label "Slay_Scarlet_Forces"
+Kill Scarlet enemies around this area
+extraaction Call Lilian##428190 |notinsticky
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage. |notinsticky
+Slay #12# Scarlet Forces |q 78183/1 |goto 57.14,55.42
+step
+_Next to you:_
+talk Princess Tess Greymane##213995
+turnin Smokepowder and Mirrors##78184 |goto 56.92,53.59
+turnin Scarlet Blood##78183 |goto 56.92,53.59
+accept Hounds of War##78185 |goto 56.92,53.59
+step
+click Gilneas Gate
+Open the Gate to Gilneas |q 78185/1 |goto 55.87,58.69
+step
+_Next to you:_
+talk Princess Tess Greymane##213995
+turnin Hounds of War##78185 |goto 55.88,58.70
+accept Artillerist Arsonist##78187 |goto 55.88,58.70
+step
+talk Lilian Voss##210964
+accept Crushing the Crusade##78186 |goto 55.87,58.13
+stickystart "Slay_Scarlet_Elite"
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the First Explosive |q 78187/1 |goto 56.42,48.69 |count 1
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the Second Explosive |q 78187/1 |goto 55.88,48.39 |count 2
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the Third Explosive |q 78187/1 |goto 56.63,44.05 |count 3
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the Fourth Explosive |q 78187/1 |goto 56.89,46.42 |count 4
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the Fifth Explosive |q 78187/1 |goto 58.04,44.64 |count 5
+step
+extraaction Call Lilian##428190
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage.
+click Bomb Location
+Set the Final Explosive |q 78187/1 |goto 58.46,46.78
+step
+label "Slay_Scarlet_Elite"
+Kill Scarlet enemies around this area
+extraaction Call Lilian##428190 |notinsticky
+|tip Use the ability on the screen while targeting an elite enemy to Signal Lilian to strike, dealing massive damage. |notinsticky
+Slay #12# Scarlet Elite |q 78186/1 |goto 58.16,46.63
+step
+talk Princess Tess Greymane##210905
+|tip Inside the building.
+turnin Artillerist Arsonist##78187 |goto 59.50,48.71
+turnin Crushing the Crusade##78186 |goto 59.50,48.71
+accept Righteous Fire, Righteous Fury##78188 |goto 59.50,48.71
+step
+kill Inquisitor Fairbell##211930 |q 78188/1 |goto 61.30,51.14
+|tip Inside the building.
+|tip Run away from "Radiant Nova."
+step
+kill Hallowed Monstrosity##211933 |q 78188/2 |goto 61.33,51.17
+|tip Inside the building.
+|tip Run away from "Radiant Nova."
+|tip Move out of yellow areas on the ground.
+step
+talk Princess Tess Greymane##210905
+turnin Righteous Fire, Righteous Fury##78188 |goto 58.73,47.84
+step
+talk Genn Greymane##210904
+accept Beginning a New Dawn##78189 |goto 58.86,47.89
+step
+talk Princess Tess Greymane##210905
+turnin Beginning a New Dawn##78189 |goto 58.72,47.84
+step
+talk Princess Tess Greymane##210905
+accept What We Left Behind##78190 |goto 58.72,47.84
+|only if Alliance
+step
+talk Genn Greymane##210904
+turnin What We Left Behind##78190 |goto 48.80,52.95
+|only if Alliance
+step
+talk Calia Menethil##210965
+accept The Wall Between Us##79137 |goto 58.89,48.49
+|only if Horde
+step
+talk Lilian Voss##210964
+|tip Inside the building.
+turnin The Wall Between Us##79137 |goto Silverpine Forest/0 43.65,73.23
+|only if Horde
 ]])

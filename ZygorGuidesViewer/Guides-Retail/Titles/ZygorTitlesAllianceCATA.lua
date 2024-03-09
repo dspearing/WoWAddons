@@ -3584,40 +3584,22 @@ leechsteps "Events Guides\\Hallow's End\\Achievements\\Hallowed Be Thy Name"
 step
 Earn "The Hallowed" Title |playertitle the Hallowed##92
 ]])
-ZygorGuidesViewer:RegisterGuide("Title Guides\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Achievements",{
+ZygorGuidesViewer:RegisterGuide("Title Guides\\Wrath of the Lich King Titles\\World Events\\The Love Fool",{
 keywords={"Fool"},
 author="support@zygorguides.com",
 description="\nThis guide section will walk you through completing the Love is in the Air event achievements.",
 playertitle=103,
 },[[
+leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Main Questline"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Be Mine!"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Shafted!"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Sweet Tooth"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\The Rocket's Pink Glare"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Fistful of Love"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Lonely?"
-leechsteps "Events Guides\\Love is in the Air\\Achievements\\Flirt With Disaster"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\I Pitied The Fool"
-leechsteps "Events Guides\\Love is in the Air\\Achievements\\Charming"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\My Love is Like a Red, Red Rose"
 leechsteps "Events Guides\\Love is in the Air\\Achievements\\Dangerous Love"
-leechsteps "Events Guides\\Love is in the Air\\Achievements\\Nation of Adoration"
-]])
-ZygorGuidesViewer:RegisterGuide("Title Guides\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Dailies",{
-keywords={"Fool"},
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the Love is in the Air event daily quests.",
-playertitle=103,
-},[[
-leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Dailies"
-]])
-ZygorGuidesViewer:RegisterGuide("Title Guides\\Wrath of the Lich King Titles\\World Events\\The Love Fool\\Love is in the Air Main Questline",{
-keywords={"Fool"},
-author="support@zygorguides.com",
-description="\nThis guide section will walk you through completing the main questline for the Love is in the Air event.",
-playertitle=103,
-},[[
-leechsteps "Events Guides\\Love is in the Air\\Love is in the Air Main Questline"
 ]])
 ZygorGuidesViewer:RegisterGuide("Title Guides\\Wrath of the Lich King Titles\\World Events\\Matron/Patron\\Children's Week Achievements",{
 keywords={"Matron"},

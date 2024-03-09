@@ -34,6 +34,7 @@ rematch.events:Register(rematch.toolbar,"PLAYER_LOGIN",function(self)
     rematch.frame.TopTileStreaks:SetPoint("TOPRIGHT")
 
     rematch.events:Register(self,"REMATCH_TEAM_LOADED",self.REMATCH_TEAM_LOADED)
+    rematch.timer:Start(0.1,rematch.toolbar.CacheSafariHat)
 end)
 
 function rematch.toolbar:Configure()
@@ -146,6 +147,13 @@ function rematch.toolbar:OnHide()
     rematch.events:Register(self,"REMATCH_TEAM_LOADED",self.REMATCH_TEAM_LOADED)
 end
 
+-- safari hat is a toy and needs to be applied by name; forcing a cache on login to get the name
+function rematch.toolbar:CacheSafariHat()
+    if not GetItemInfo(C.SAFARI_HAT_ITEM_ID) then
+        rematch.timer:Start(0.1,rematch.toolbar.CacheSafariHat)
+    end
+end
+
 --[[ events ]]
 
 function rematch.toolbar:SPELL_UPDATE_COOLDOWN()
@@ -153,6 +161,10 @@ function rematch.toolbar:SPELL_UPDATE_COOLDOWN()
     self.SafariHatButton.Cooldown:SetCooldown(GetItemCooldown(C.SAFARI_HAT_ITEM_ID))
     self.BandageButton.Cooldown:SetCooldown(GetItemCooldown(C.BANDAGE_ITEM_ID))
     self.SummonPetButton.Cooldown:SetCooldown(GetSpellCooldown(C.GCD_SPELL_ID))
+    if self.LevelingStoneButton:IsVisible() then
+        self.LevelingStoneButton.Cooldown:SetCooldown(GetItemCooldown(self.LevelingStoneButton:GetAttribute("item")))
+        self.RarityStoneButton.Cooldown:SetCooldown(GetItemCooldown(self.RarityStoneButton:GetAttribute("item")))
+    end
 end
 
 function rematch.toolbar:COMPANION_UPDATE()
@@ -257,7 +269,8 @@ end
 
 function rematch.toolbar.TotalsButton:OnEnter()
     self.Highlight:Show()
-    local tooltipBody = format(L["Unique Pets: %s%d\124r\nTotal Pets: %s%d\124r%s"],C.HEX_WHITE,rematch.roster:GetNumUniqueOwned(),C.HEX_WHITE,(select(2,C_PetJournal.GetNumPets())),settings.HideMenuHelp and "" or format(L["\n\n%s Click for details"],C.LMB_TEXT_ICON))
+    local stats = rematch.collectionInfo:GetCollectionStats()
+    local tooltipBody = format(L["Unique Pets: %s%d\124r\nTotal Pets: %s%d\124r\nUncollected Pets: %s%d\124r\nAverage Level: %s%.1f\124r%s"],C.HEX_WHITE,stats.numCollectedUnique,C.HEX_WHITE,stats.numCollectedTotal,C.HEX_WHITE,stats.numUncollected,C.HEX_WHITE,stats.averageLevel,settings.HideMenuHelp and "" or format(L["\n\n%s Click for details"],C.LMB_TEXT_ICON))
     rematch.tooltip:ShowSimpleTooltip(self,nil,tooltipBody)
 end
 
@@ -280,7 +293,7 @@ function rematch.toolbar.TotalsButton:OnMouseUp()
 end
 
 function rematch.toolbar.TotalsButton:OnClick()
-    rematch.dialog:ToggleDialog("PetSummary")
+    rematch.dialog:ToggleDialog(settings.MinimizePetSummary and "PetSummaryMinimized" or "PetSummary")
 end
 
 

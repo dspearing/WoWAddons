@@ -47,6 +47,7 @@ enum.CurrencyIDs = {
 	SealOfBrokenFate = 1273,
 	SightlessEye = 1149,
 	AncientMana = 1155,
+	VeiledArgunite = 1508,
 	
 	-- Battle for Azeroth
 	WarResources = 1560,
@@ -93,4 +94,5 @@ enum.CurrencyIDs = {
 	AspectsDreamingCrest = 2709,
 	EmeraldDewdrop = 2650,
 	DreamInfusion = 2777,
+	MysteriousFragment = 2657, -- This is the only currency so far, didn't want to place in a separate tab
 }

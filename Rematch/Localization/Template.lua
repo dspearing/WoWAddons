@@ -90,7 +90,7 @@ L["%sNo favorite teams :("] = nil
 -- chrome\toolbar.lua
 L["UNIQUE_PETS"] = nil
 L["TOTAL_PETS"] = nil
-L["Unique Pets: %s%d\124r\nTotal Pets: %s%d\124r%s"] = nil
+-- L["Unique Pets: %s%d\124r\nTotal Pets: %s%d\124r%s"] = nil
 L["\n\n%s Click for details"] = nil
 
 -- chrome\toolbarButtons.lua
@@ -227,7 +227,7 @@ L["Average Pet Level"] = nil
 L["Rare Quality Pets"] = nil
 L["Pets In Teams"] = nil
 L["Pet Collection"] = nil
-L["Team with the most wins (%s%d\124r)"] = nil
+-- L["Team with the most wins (%s%d\124r)"] = nil
 L["Total"] = nil
 L["Pets Collected"] = nil
 L["Pets At Max Level"] = nil
@@ -367,7 +367,7 @@ L[",Breed"] = nil
 -- menus\petMenu.lua
 L["Find Moveset"] = nil
 L["Slotted pets can't be released."] = nil
-L["You can rename Pet Markers from the Filter menu. Move the mouse over a Pet Marker in the Filter menu and click the gear button to rename."] = nil
+-- L["You can rename Pet Markers from the Filter menu. Move the mouse over a Pet Marker in the Filter menu and click the gear button to rename."] = nil
 L["Pet name too long.\nMaximum 16 characters."] = nil
 L["Invalid name.\nNo numbers allowed."] = nil
 L["Hide Pet"] = nil
@@ -442,7 +442,7 @@ L["The topmost team is the preferred team to load when you interact with this ta
 L["No teams :("] = nil
 
 -- menus\teamMenu.lua
-L["Create Group"] = nil
+-- L["Create Group"] = nil
 L["Edit Group"] = nil
 L["Move Group"] = nil
 L["Delete Group"] = nil
@@ -519,14 +519,14 @@ L["On Soft Interact"] = nil
 L["Always Interact"] = nil
 L["The default behavior is to perform the target or mouseover interaction once until you interact with another NPC with a saved team. Check this to always interact with NPCs that have a saved team not already loaded."] = nil
 L["Prefer Uninjured Teams"] = nil
-L["When you interact with an NPC that has more than one team saved to it, choose the team with no injured pets instead of the topmost team for the target. On Prompt To Load and Show Minimized Window options where you can choose which team to load, start with the healthiest team."] = nil
+-- L["When you interact with an NPC that has more than one team saved to it, choose the team with no injured pets instead of the topmost team for the target. On Prompt To Load and Show Minimized Window options where you can choose which team to load, start with the healthiest team."] = nil
 L["Show Window After Loading"] = nil
 L["When a team is loaded from an interaction (target or mouseover) and the Rematch window is not on screen, summon the standalone Rematch window."] = nil
 L["Only When Any Pets Injured"] = nil
 L["If a team is loaded but no pets are injured, don't summon the Rematch window."] = nil
 L["Standalone Window Options"] = nil
 L["Anchor To"] = nil
-L["Tab Anchor"] = nil
+-- L["Tab Anchor"] = nil
 L["Use Custom Scale"] = nil
 L["Keep Window On Screen"] = nil
 L["Don't hide the standalone window when the ESCape key is pressed or most other times it would hide, such as going to the game menu."] = nil
@@ -658,7 +658,7 @@ L["Instead of choosing only the healthiest pet with identical stats, choose the 
 L["After Battles Or Heals Too"] = nil
 L["Also load healthiest pets after leaving a pet battle or using Revive Battle Pets or Battle Pet Bandage."] = nil
 L["Always Show Team Tabs"] = nil
-L["Show team tabs along the right side of the window even if you're not on the team panel."] = nil
+-- L["Show team tabs along the right side of the window even if you're not on the team panel."] = nil
 L["Display Where Teams Dragged"] = nil
 L["When a team is dragged to another group, print in the chat window where the team was moved to."] = nil
 L["Enable Dragging To Move Teams"] = nil
@@ -710,7 +710,7 @@ L["Only automatically add pets to the queue when you don't have a version alread
 L["Only Rare Pets"] = nil
 L["Only automatically add rare pets to the leveling queue."] = nil
 L["Random Pet When Queue Empty"] = nil
-L["When the queue is empty and a team loads with leveling slots, load a random high-level pet in the leveling slots."] = nil
+-- L["When the queue is empty and a team loads with leveling slots, load a random high-level pet in the leveling slots."] = nil
 L["Confirmation Options"] = nil
 L["Don't ask for confirmation when hiding a pet.\n\nYou can view hidden pets in the 'Other' pet filter."] = nil
 L["If the pet doesn't belong to any teams, don't ask for confirmation when putting a pet in a cage."] = nil
@@ -736,7 +736,7 @@ L["Disable Sharing"] = nil
 L["Disable the Send button and also block any incoming pets sent by others. Import and Export still work."] = nil
 L["Help Options"] = nil
 L["Hide Extra Help"] = nil
-L["Hide the informational \"Help\" items found in many menus and on the pet card."] = nil
+-- L["Hide the informational \"Help\" items found in many menus and on the pet card."] = nil
 L["Hide Descriptive Tooltips"] = nil
 L["Hide tooltips that describe what a button does."] = nil
 L["Hide Toolbar Tooltips"] = nil
@@ -755,7 +755,7 @@ L["When the standalone window is minimized or maximized, use the chosen corner/e
 L["Panel Tabs"] = nil
 L["Choose which corner of the standalone Rematch window to anchor panel tabs such as Pets, Teams, Targets, etc.\n\nNote: Choosing a new anchor for the whole window will change the tabs anchor to match. You can change this tabs anchor again anytime."] = nil
 L["Choose how quickly you prefer the tooltips (including pet ability tooltips) to be shown."] = nil
-L["Tooltip Speed:"] = nil
+-- L["Tooltip Speed:"] = nil
 L["Slow"] = nil
 L["Slow Mouseover"] = nil
 L["Wait three quarters of a second for the tooltip to appear when you mouseover a button with a tooltip."] = nil
@@ -765,7 +765,7 @@ L["Wait a quarter of a second for the tooltip to appear when you mouseover a but
 L["Fast"] = nil
 L["Fast Mouseover"] = nil
 L["Immediately show the tooltip when you mouseover a button with a tooltip."] = nil
-L["Card Speed:"] = nil
+-- L["Card Speed:"] = nil
 L["Wait three quarters of a second for the pet card or notes to appear when you mouseover a pet or notes button."] = nil
 L["Wait a quarter of a second for the pet card or notes to appear when you mouseover a pet or notes button."] = nil
 L["Immediately show the pet card or notes when you mouseover a pet or notes button."] = nil
@@ -793,9 +793,9 @@ L["How breeds should display."] = nil
 L["Letters"] = nil
 L["Numbers"] = nil
 L["Icons"] = nil
-L["Interact On Target"] = nil
+-- L["Interact On Target"] = nil
 L["Choose the action to take when you target an NPC with a saved team that's not already loaded."] = nil
-L["On Target:"] = nil
+-- L["On Target:"] = nil
 L["Do Nothing"] = nil
 L["When targeting an NPC with a saved team not already loaded, do nothing."] = nil
 L["Prompt To Load"] = nil
@@ -804,16 +804,16 @@ L["Show Window"] = nil
 L["When targeting an NPC with a saved team not already loaded, show the standalone Rematch window."] = nil
 L["Auto Load"] = nil
 L["When targeting an NPC with a saved team not already loaded, automatically load the saved team.\n\n%sWarning\124r: If you target with right click and immediately enter battle, it may be too late to load a team. %sAuto Load is not recommended for On Target.\124r Use On Mouseover for Auto Load instead."] = nil
-L["Interact On Soft Interact"] = nil
+-- L["Interact On Soft Interact"] = nil
 L["Choose the action to take when you soft interact with an NPC with a saved team that's not already loaded.\n\n%sNote\124r: This option is only available if SoftTargetInteract cvar is fully enabled (3). It will be hidden otherwise."] = nil
-L["On Soft Interact:"] = nil
+-- L["On Soft Interact:"] = nil
 L["When soft interactiong with an NPC with a saved team not already loaded, do nothing."] = nil
 L["When soft interacting with an NPC with a saved team not already loaded, show a prompt to load the save team."] = nil
 L["When soft interacting with an NPC with a saved team not already loaded, show the standalone Rematch window."] = nil
 L["When soft interacting with an NPC with a saved team not already loaded, automatically load the saved team."] = nil
-L["Interact On Mouseover"] = nil
+-- L["Interact On Mouseover"] = nil
 L["Choose the action to take when the mouse moves over an NPC with a saved team that's not already loaded."] = nil
-L["On Mouseover:"] = nil
+-- L["On Mouseover:"] = nil
 L["When the mouse moves over an NPC with a saved team not already loaded, do nothing."] = nil
 L["When the mouse moves over an NPC with a saved team not already loaded, show a prompt to load the save team."] = nil
 L["When the mouse moves over an NPC with a saved team not already loaded, show the standalone Rematch window."] = nil
@@ -989,3 +989,142 @@ L["This will restore all options in Rematch to default values and reload the UI.
 L["All Options:"] = nil
 L["Reset"] = nil
 L["Export"] = nil
+
+-- Version: 5.0.4 --
+
+-- chrome\toolbar.lua
+L["Unique Pets: %s%d\124r\nTotal Pets: %s%d\124r\nUncollected Pets: %s%d\124r\nAverage Level: %s%.1f\124r%s"] = nil
+
+-- menus\teamMenu.lua
+L["Teams and Groups"] = nil
+L["Teams can be organized into an unlimited number of collapsible groups. You can create new groups with %sCreate New Group\124r in this menu. Up to %d groups can be shown as tabs to act as bookmarks to these groups.\n\nBoth teams and groups can be rearranged with drag and drop. To easily move many teams to another group, use %sTeam Herder\124r in this menu.\n\nTeams with a %s beside their name contain at least one target.\nTeams with a %s beside their name contain a leveling preference.\nPets or targets with a %s beside their name belong to at least one team."] = nil
+
+-- panels\optionsList.lua
+L["Show Create New Group Tab"] = nil
+L["When space permits, add a button at the bottom of team tabs to create a new group."] = nil
+L["Show team tabs along the right side of the window even if you're not on the teams panel."] = nil
+L["Never Show Team Tabs"] = nil
+L["Never show team tabs along the right side of the window even if you're on the teams panel."] = nil
+L["Target or pet is in a team"] = nil
+L["Pet is in the leveling queue"] = nil
+L["Team or pet has notes"] = nil
+L["Team has at least one target"] = nil
+L["Team or group has preferences"] = nil
+
+-- panels\optionsPanel.lua
+L["Import Options"] = nil
+L["This will reset most options, set them to values pasted here, then reload the UI. %sUse this at your own risk!\124r Tinkering with these values can cause Rematch to become unstable and require a full reset."] = nil
+L["This will reset most options!\nThis cannot be undone!"] = nil
+
+-- Version: 5.0.5 --
+
+-- panels\optionsList.lua
+L["Hide Notes Button In Battle"] = nil
+L["In the Battle UI, hide the notes \"micro\" button to show notes for the currently-loaded team. Enable this option if another addon wants to use the same space."] = nil
+L["When the queue is empty and a team loads with leveling slots, put random pets that are not max level into the leveling slots."] = nil
+L["Pick Random Max Level"] = nil
+L["When the queue is empty and a team loads with leveling slots, put random max-level pets in the leveling slots."] = nil
+
+-- Version: 5.1.0 --
+
+-- chrome\toolbarButtons.lua
+L["Safari Hat"] = nil
+
+-- dialogs\dialogMixins.lua
+L["Top %d Winning Teams"] = nil
+
+-- dialogs\summaryDialog.lua
+L["Rank teams by percentage won"] = nil
+L["Pet Types"] = nil
+L["Battles"] = nil
+
+-- main\constants.lua
+L["Pet Tags are a way to categorize pets for any meaning you choose. You can then filter by specific tags.\n\nTo tag a pet, right-click a pet in the pet list and choose a tag from the Pet Tags menu.\n\nTo easily tag multiple pets, choose the %sPet Herder\124r option in the main Filters menu.\n\nYou can rename a tag by moving the mouse over a tag in a Pet Tags menu and clicking the %s that appears to the right of the tag's name.\n\nFor instance you can rename %s to Wild Pets To Get, tag pets you'd like to capture with a %s, and the pet card and other places will use the new name for the tag."] = nil
+
+-- menus\petFilterMenu.lua
+L["Pet Tags"] = nil
+L["Pet Herder"] = nil
+
+-- panels\optionsList.lua
+L["Badge Options"] = nil
+L["Only Show Badges On Mouseover"] = nil
+L["Hide all badges unless the mouse is over the pet, team or target.\n\nA badge is a non-interactive icon to the right of a list item to indicate some property such as whether it's leveling.\n\nWith this option enabled, the notes button, breed and win record are also hidden unless the mouse is over the list item."] = nil
+L["Hide Team Badges %s"] = nil
+L["Hide the %s badge on pets and targets that indicate the pet or target is saved in a team."] = nil
+L["Hide Leveling Badges %s"] = nil
+L["Hide the %s badge on pets that indicate the pet is in the leveling queue."] = nil
+L["Hide Pet Tag Badges %s"] = nil
+L["Hide the pet tag badges (such as %s %s %s etc) on pets to indicate what pet tag has been given to the pet."] = nil
+L["Hide Target Badges %s"] = nil
+L["Hide the %s badge on teams that indicate the team contains a target."] = nil
+L["Hide Preference Badges %s"] = nil
+L["Hide the %s badge on teams that indicate the team contains leveling preferences."] = nil
+L["Hide Notes Badges %s"] = nil
+L["Hide the %s badge/button on pets and teams that indicate the pet or team has saved notes."] = nil
+L["Hide External Badges %s"] = nil
+L["Try to hide any badges added to lists from an external source like a third-party addon. (Rematch has no control over what outside addons do, so some addon's badges may not hide with this option.)"] = nil
+L["Larger Breed Text"] = nil
+L["Increase the size of breed text (such as B/B or H/P) on pet list buttons and pet slots."] = nil
+L["Combine Group Key"] = nil
+L["Don't Ask To Remove From Queue"] = nil
+
+-- panels\optionsPanel.lua
+-- L["Combine Groups Key"] = nil
+L["While dragging a team group in the team list, holding this modifier key when you click another group will combine the two groups by moving all teams in the group on the cursor into the clicked group."] = nil
+
+-- process\dragFrame.lua
+L["Combine Groups"] = nil
+L["Combine team groups?"] = nil
+L["This will move all teams from %s to %s, leaving the %s group empty."] = nil
+L["This will move all teams from %s to %s and then delete the emptied %s group afterwards."] = nil
+L["Don't Delete Empty Group"] = nil
+L["You can also selectively move many teams with the Team Herder tool from the Teams button"] = nil
+
+-- process\petHerder.lua
+L["Now click on pets in the pet list to use this action on the pets"] = nil
+L["Pick an action to use on multiple pets"] = nil
+L["Then click on pets in the pet list to use this action on the pets"] = nil
+L["Allow caging pets in a team"] = nil
+L["When the cursor changes to a \124TInterface\\Cursor\\Crosshairs:16\124t over a pet, click the pet to use the chosen action"] = nil
+L["You don't own this pet"] = nil
+L["Injured pets can't be caged"] = nil
+L["Slotted pets can't be caged"] = nil
+L["This pet is not tradable"] = nil
+L["This pet is in a team"] = nil
+L["This pet can't level"] = nil
+L["This pet has no pet tag"] = nil
+
+-- utils\utils.lua
+L["Cage Pet (Without Confirmation)"] = nil
+L["Set/Remove Favorite"] = nil
+L["Add/Remove From Leveling Queue"] = nil
+L["Remove Pet Tags"] = nil
+L["Set/Remove Pet Tag: %s"] = nil
+
+
+-- Version: 5.1.2 --
+
+
+-- menus\teamMenu.lua
+
+L["This is a system group that cannot be deleted."] = nil
+L["Delete Teams"] = nil
+L["This group has no teams."] = nil
+L["Delete Group Teams"] = nil
+L["There are %s%d\124r teams in the group %s."] = nil
+L["%sAre you sure you want to %sdelete\124r these teams? This cannot be undone."] = nil
+
+-- panels\optionsList.lua
+
+L["Mousewheel Speed"] = nil
+L["Choose how quickly you prefer lists to scroll when you mousewheel up or down over a list."] = nil
+L["Slow Mousewheel"] = nil
+L["Scroll one line at a time."] = nil
+L["Normal Mousewheel"] = nil
+L["Scroll two lines at a time."] = nil
+L["Medium Mousewheel"] = nil
+L["Scroll roughly half a page at a time."] = nil
+L["Fast Mousewheel"] = nil
+L["Scroll nearly a whole page at a time."] = nil
+L["Battle Pet Breed ID"] = nil
+L["PetTracker"] = nil

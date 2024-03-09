@@ -7820,7 +7820,7 @@ kill Prince Malchezaar##15690 |goto 53.9,42.0
 |tip Summon Infernal spawns a Netherspite Infernal that casts a large AoE Hellfire on the raid. These cannot be attacked and must be avoided.
 |tip Enfeeble is cast on 5 random raid members, reducing their maximum health to 1 hit point for 7 seconds.
 |tip Shadow Nova is usually cast after Enfeeble. It has a range of 24 yards, deals about 3000 Shadow damage and has a knockback. This can easily be avoided by staying at range of Malchezaar.
-|tip Shadow Word:Pain is a DoT cast on Malchezaar's main target or a random target, dealing 1500 damage per tick. This can be dispelled.
+|tip Shadow Word: Pain is a DoT cast on Malchezaar's main target or a random target, dealing 1500 damage per tick. This can be dispelled.
 |tip Thrash makes Malchezaar's melee attack hit his target 2 additional times.
 |tip Flying Axes hit random targets
 |tip Amplify Damage is a debuff that doubles the target's damage taken from all sources. It is cast on a random target and is not dispellable.

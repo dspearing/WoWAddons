@@ -5653,7 +5653,6 @@ talk Unatos##193015
 |tip Inside the building.
 accept Renowned with the Valdrakken Accord##71023 |goto 58.18,35.15
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Winterpelt Furbolg",{
 author="support@zygorguides.com",
 description="This guide will help you unlock the Winterpelt Furbolg reputation and repeatable reputation quest."
@@ -6121,7 +6120,6 @@ Reach Exalted with the Winterpelt Furbolg |complete rep("Winterpelt Furbolg")>Ex
 |tip Farm Liberated Furbolg Artifacts and turn them in at Sonova Snowden for rep.
 You can find Sonova at [66.92,12.72]
 ]])
-ZGV.BETAEND()
 ZygorGuidesViewer:RegisterGuide("Reputation Guides\\Dragonflight Reputations\\Loamm Niffen",{
 author="support@zygorguides.com",
 description="This guide will walk you through Loamm Niffen renown content.",
@@ -6470,6 +6468,10 @@ Reach Renown Level 15 with the Dream Wardens |complete factionrenown(2574) >= 15
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
 step
+talk Keeper Amrymn##208143
+accept Flightstones##78374 |goto 50.21,61.59
+|tip If this quest is not available you can skip this step.
+step
 Reach Renown Level 16 with the Dream Wardens |complete factionrenown(2574) >= 16
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
@@ -6478,15 +6480,38 @@ Reach Renown Level 17 with the Dream Wardens |complete factionrenown(2574) >= 17
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
 step
+talk Sylvia Whisperbloom##211265
+accept Gigantic Dreamseeds##78388 |goto 59.75,16.89
+step
 Reach Renown Level 18 with the Dream Wardens |complete factionrenown(2574) >= 18
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Melsysra##211962
+accept Dream Infused##78595 |goto 50.15,61.87
+|tip If this quest is not available you can skip this step.
+step
+talk Elianna##211209
+turnin Dream Infused##78595 |goto 50.23,61.81
 step
 Reach Renown Level 19 with the Dream Wardens |complete factionrenown(2574) >= 19
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
 step
+talk Keeper Amrymn##208143
+accept Drake's Dreaming Crest##78372 |goto 50.21,61.59
+|tip If this quest is not available you can skip this step.
+step
 Reach Renown Level 20 with the Dream Wardens |complete factionrenown(2574) >= 20
 |tip Complete daily quests, weekly quests, and zone quests in The Emerald Dream to gain renown.
 |tip Completing "The Emerald Dream" guide awards numerous reputation tokens.
+step
+_Next to you:_
+talk Melsysra##211962
+accept The Dream Thanks You##78373 |goto 50.15,61.87
+|tip If this quest is not available you can skip this step.
+step
+talk Keeper Amrymn##208143
+turnin The Dream Thanks You##78373 |goto 50.21,61.58
 ]])

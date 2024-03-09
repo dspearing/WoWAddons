@@ -34,8 +34,9 @@ do
 		end
 		
 		local name = name_from_cache or name_from_data or fallbackname or "(npc "..id..")"
+		local found = name_from_cache or name_from_data
 		if desc=="" then desc=nil end
-		return name,desc
+		return name,desc,found
 	end
 
 	function Localizers:FindNPCIdByName(testname)

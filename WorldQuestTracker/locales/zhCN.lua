@@ -268,7 +268,15 @@ L["S_OPTIONS_PATHLINE"] = "路线"
 L["S_OPTIONS_QUEST_EMISSARY"] = "使者任务信息"
 L["S_OPTIONS_QUESTBLACKLIST"] = "任务黑名单"
 L["S_OPTIONS_RESET"] = "重置"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_FILTER_BUTTON"] = "Show Filter Button"
 L["S_OPTIONS_SHOW_MINIMIZE_BUTTON"] = "显示最小化按钮"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_SORT_BUTTON"] = "Show Sort Button"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_TIMELEFT_BUTTON"] = "Show Time Left Button"
+--[[Translation missing --]]
+L["S_OPTIONS_SHOW_WORLDSHORTCUT_BUTTON"] = "Show World Shortcuts"
 L["S_OPTIONS_SHOWFACTIONS"] = "显示阵营"
 L["S_OPTIONS_TALKINGHEADS"] = "去除说话面版"
 L["S_OPTIONS_TIMELEFT_NOPRIORITY"] = "时间剩余无优先级"
@@ -280,9 +288,19 @@ L["S_OPTIONS_WORLD_ANCHOR_RIGHT"] = "右侧锚点"
 L["S_OPTIONS_WORLD_ICONSPERROW"] = "每行任务数量"
 L["S_OPTIONS_WORLD_ORGANIZE_BYMAP"] = "按地图分类"
 L["S_OPTIONS_WORLD_ORGANIZE_BYTYPE"] = "按任务类型分类"
+--[[Translation missing --]]
+L["S_OPTIONS_WORLD_SUMMARY_ALPHA"] = "Summary Alpha"
 L["S_OPTIONS_WORLDMAP_ANCHOR_TO"] = "连接到"
 L["S_OPTIONS_WORLDMAP_ORGANIZEBY"] = "组织任务的方式"
+--[[Translation missing --]]
+L["S_OPTIONS_WORLDMAP_WIDGET_ALPHA"] = "Pin Alpha"
 L["S_OPTIONS_ZONE_SHOWONLYTRACKED"] = "只已追踪"
+--[[Translation missing --]]
+L["S_OPTTIONS_DRAGONRACE_MINIMAP"] = "Show Track Minimap"
+--[[Translation missing --]]
+L["S_OPTTIONS_DRAGONRACE_TRACKCOLOR"] = "Track Color"
+--[[Translation missing --]]
+L["S_OPTTIONS_TAB_DRAGONRACE_SETTINGS"] = "Dragon Race"
 L["S_OPTTIONS_TAB_GENERAL_SETTINGS"] = "常规设置"
 L["S_OPTTIONS_TAB_GROUPFINDER_SETTINGS"] = "分组查找"
 L["S_OPTTIONS_TAB_IGNOREDQUESTS_SETTINGS"] = "忽略任务"
@@ -320,6 +338,8 @@ L["S_RAREFINDER_TOOLTIP_SEACHREALM"] = "在其他服务器搜索"
 L["S_RAREFINDER_TOOLTIP_SPOTTEDBY"] = "发现人"
 L["S_RAREFINDER_TOOLTIP_TIMEAGO"] = "分钟"
 L["S_SCALE"] = "比例"
+--[[Translation missing --]]
+L["S_SLASH_OPENMAP_FIRST"] = "World Quest Tracker did not loaded yet, open the map to load."
 L["S_SUMMARYPANEL_EXPIRED"] = "已过期"
 L["S_SUMMARYPANEL_LAST15DAYS"] = "最近15天"
 L["S_SUMMARYPANEL_LIFETIMESTATISTICS_ACCOUNT"] = "账号在线时间统计"
@@ -341,6 +361,8 @@ L["S_TUTORIAL_WORLDBUTTONS"] = [=[点击这里可在三种类型的摘要中循�
 点击|cFFFFAA11切换任务|r隐藏任务地点。]=]
 L["S_TUTORIAL_WORLDMAPBUTTON"] = "点击这个按钮将向你显示破碎群岛地图。"
 L["S_UNKNOWNQUEST"] = "未知任务"
+--[[Translation missing --]]
+L["S_VISIBILITY"] = "Visibility"
 L["S_WHATSNEW"] = "更新了什么？"
 L["S_WORLDBUTTONS_SHOW_TYPE"] = "按类型排列"
 L["S_WORLDBUTTONS_SHOW_ZONE"] = "按区域排列"

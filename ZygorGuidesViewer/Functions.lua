@@ -203,6 +203,7 @@ hooksecurefunc("ToggleDropDownMenu",BigFixDropDownMenuFrameLevelBug) -- should t
 -- This, is, evil. But allows for one-liner creation of UI widgets.
 -- Usage:  local obj = CHAIN(CreateFrame(...)) :SetPoint(...) :SetSize(...) .__END
 function ZGV.ChainCall(obj)
+	assert(obj,"Trying to chain a nil object")
 	return setmetatable({},{__index=function(self,fun)
 		if fun=="__END" then return obj end
 		if fun=="__SET" then return function(self,field,value)  obj[field]=value  return self  end  end
@@ -2289,6 +2290,90 @@ function ZGV.F.IsBoosted(expansion)
 		return count==7	
 	end
 end
+
+local continentBase = {
+	[ZGV.IsRetail and 13 or 1415] = 45, -- EASTERN
+	[ZGV.IsRetail and 12 or 1414] = 45, -- KALIMDOR
+	[ZGV.IsRetail and 101 or 1945] = 235, -- OUTLAND
+	[113] = 580, -- NORTHREND
+}
+local zerodiff = {{1,5}, {8,6}, {10,7},{12,8},{16,9},{20,11},{30,12},{40,13},{45,14},{50,15},{55,16},{60,17}}
+---@return integer
+local function getExpFromMob(level)
+	level = math.max(level,1)
+	local CharLevel = UnitLevel("player") ---@type integer
+	local continent = ZGV.GetCurrentMapContinent() ---@type integer
+	local baseexp = (CharLevel*5) + continentBase[continent]
+	
+	local ZD = 5
+	for _,zdata in ipairs(zerodiff) do
+		if CharLevel<zdata[1] then break end
+		ZD=zdata[2]
+	end
+
+	local grayceil = (CharLevel<6 and 0) or (CharLevel<40  and CharLevel-math.floor(CharLevel/10)-5) or (CharLevel-math.floor(CharLevel/5)-1)
+
+	if level<=grayceil and level>1 then
+		return 0
+	elseif level>CharLevel then
+		return math.floor(baseexp * (1+0.05*(level-CharLevel)))
+	elseif level<CharLevel then
+		return math.floor(baseexp * (1-(CharLevel-level)/ZD))
+	else
+		return baseexp
+	end
+end
+
+local lastkills = {} ---@type table<integer,integer>
+local COMBATLOG_XPGAIN_FIRSTPERSON_PATTERN = COMBATLOG_XPGAIN_FIRSTPERSON:gsub("1%$",""):gsub("2%$",""):gsub("3%$",""):gsub("4%$",""):gsub("%%s","(.+)"):gsub("%%d","([0-9]+)")
+local COMBATLOG_XPGAIN_EXHAUSTION1_PATTERN = COMBATLOG_XPGAIN_EXHAUSTION1:gsub("1%$",""):gsub("2%$",""):gsub("3%$",""):gsub("4%$",""):gsub("%(","%%("):gsub("%)","%%)"):gsub("%%s","(.+)"):gsub("%%d","([0-9]+)")
+function ZGV.F.TrackKills(_,event,message)
+	if message=="" then return end
+	local mob,experience,rested,restedtype = message:match(COMBATLOG_XPGAIN_EXHAUSTION1_PATTERN)
+	if tonumber(rested) and tonumber(experience)>0 then
+		table.insert(lastkills,1,tonumber(experience)-tonumber(rested))
+	else
+		local mob,experience = message:match(COMBATLOG_XPGAIN_FIRSTPERSON_PATTERN)
+		if tonumber(experience) and tonumber(experience)>0 then
+			table.insert(lastkills,1,tonumber(experience))
+		end
+	end
+	lastkills[6]=nil
+end
+
+---@param level number
+---@param experience number
+function ZGV.F:GetKillsNeeded(level,experience)
+	local CharLevel = UnitLevel("player") ---@type number
+	local xp = UnitXP("player") ---@type number
+
+	local restedXPBonus = (GetXPExhaustion() or 0)/2 -- function returns how much exp will be gained under rested, including normal exp gain. actual bonus is half of that
+
+	local xpmax = 0
+	local ExpExtra = 0
+	for i=CharLevel+1,level do xpmax = xpmax + ZGV.ExpToLevel[i] end
+	local rawexpneeded = (experience or xpmax) ---@type number
+	local restedXPBonus = math.min(restedXPBonus,(rawexpneeded-xp)/2) -- more rested banked than we need. cap at half remaining exp
+	local ExpNeeded = rawexpneeded-xp - restedXPBonus
+
+	---- Avarage based on last kills
+	if #lastkills<5 then
+		local baseexp = getExpFromMob(CharLevel-2) -- player is directed to farm in lower level zones, so we assume kills are in that range
+		-- fill empty spaces with exp at current level
+		for i=#lastkills+1,5 do 
+			lastkills[i] = baseexp
+		end
+	end
+	local countedexp = 0
+	for i=1,5 do countedexp=countedexp+(lastkills[i]/5) end -- average exp from last 5 recorded kills
+
+	return math.ceil(ExpNeeded/countedexp)
+end
+
+tinsert(ZGV.startups,{"Kill tracking",function(self)
+	ZGV:AddEventHandler("CHAT_MSG_COMBAT_XP_GAIN",ZGV.F.TrackKills)
+end})
+
 
 ZGV.Languages = {}
 -- all ids for passive Language spells

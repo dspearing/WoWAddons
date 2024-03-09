@@ -1,23 +1,28 @@
-# [5.8.6](https://github.com/WeakAuras/WeakAuras2/tree/5.8.6) (2023-11-15)
+# [5.10.1](https://github.com/WeakAuras/WeakAuras2/tree/5.10.1) (2024-02-09)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.8.5...5.8.6)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.10.0...5.10.1)
 
 ## Highlights
 
- - Update for Range Check hotfix
-- Bugfixes and texture updates for 10.2 
+ - Bug Fixes 
 
 ## Commits
 
-InfusOnWoW (1):
+Putro (1):
 
-- Switch to LibRangeCheck-3.0
+- Localize the title in AuraWarnings
 
-mrbuds (5):
+Stanzilla (3):
 
-- Update model list for 10.2
-- Update texture atlas list for 10.2
-- Use LibRangeCheck-3.0
-- Dynamic Group: don't apply level to subgroups, don't do it only for top level groups
-- Dynamic Group: raise level of auras over backdrop
+- Add more types to Types
+- A few type and spelling fixes
+- Add workaround for actions/checkout#290
+
+dependabot[bot] (1):
+
+- Bump peter-evans/create-pull-request from 5 to 6
+
+emptyrivers (1):
+
+- move type checking code for WeakAurasArchive
 

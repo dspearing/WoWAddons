@@ -1551,15 +1551,16 @@ do
 		-- dev function disabled, broken on classic
 
 		if not ZGV.DEV then return end
-		if not self.taxi_tooltip_timer then self.taxi_tooltip_timer = ZGV:ScheduleRepeatingTimer(function() self:OnTimer() end,0.02) end
+		--if not self.taxi_tooltip_timer then self.taxi_tooltip_timer = ZGV:ScheduleRepeatingTimer(function() self:OnTimer() end,0.02) end
 	end
 
 	local last_mousePin
 	function Lib:OnTimer()
+		-- todo: convert to pin hooking
 		if FlightMapFrame and FlightMapFrame:IsShown() then
 			local flightProvider
 			for v,tr in pairs(FlightMapFrame.dataProviders) do  if v.AddFlightNode then flightProvider=v break end  end
-			if not flightProvider then print("no provider") return end
+			if not flightProvider then return end
 
 			local slotIndexToPin = flightProvider.slotIndexToPin
 			local currentPin

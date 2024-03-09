@@ -29,11 +29,6 @@ L:SetOptionLocalization({
 -------------------------------
 L = DBM:GetModLocalization(169)
 
-L:SetWarningLocalization({
-	SpecWarnActivated			= "%s 활성화 - 대상 전환!",
-	specWarnGenerator			= "%s이 동력 증폭장 바닥을 밟음 - 이동시키세요!"
-})
-
 L:SetTimerLocalization({
 	timerShadowConductorCast	= "암흑 전도체 변환",
 	timerArcaneLockout			= "비전 파괴자 가능",
@@ -45,10 +40,7 @@ L:SetOptionLocalization({
 	timerShadowConductorCast	= "$spell:92053 시전 바 보기",
 	timerArcaneLockout			= "$spell:79710 대기시간 바 보기",
 	timerArcaneBlowbackCast		= "$spell:91879 시전 바 보기",
-	timerNefAblity				= "영웅 난이도에서 골렘 스킬 강화 대기시간 바 보기",
-	SpecWarnActivated			= "새로운 우두머리가 활성화 될 때 대상 전환 특수 경고 보기",
-	specWarnGenerator			= "우두머리가 $spell:79629 바닥을 밟은 경우 특수 경고 보기",
-	SetIconOnActivated			= "활성화된 우두머리에게 전술 목표 아이콘 설정"
+	timerNefAblity				= "영웅 난이도에서 골렘 스킬 강화 대기시간 바 보기"
 })
 
 L:SetMiscLocalization({
@@ -79,10 +71,6 @@ L:SetMiscLocalization({
 --  Atramedes  --
 -----------------
 L = DBM:GetModLocalization(171)
-
-L:SetOptionLocalization({
-	InfoFrame				= "$journal:3072 정보를 정보 창으로 보기"
-})
 
 L:SetMiscLocalization({
 	NefAdd					= "아트라메데스, 적은 바로 저기에 있다!",
@@ -193,10 +181,6 @@ L:SetGeneralLocalization({
 --------------------------
 L= DBM:GetModLocalization(156)
 
-L:SetOptionLocalization({
-	ShowDrakeHealth		= "풀려난 용의 체력 바 보기(우두머리 체력 바 필요)"
-})
-
 ---------------------------
 --  Valiona & Theralion  --
 ---------------------------
@@ -204,8 +188,6 @@ L= DBM:GetModLocalization(157)
 
 L:SetOptionLocalization({
 	TBwarnWhileBlackout		= "$spell:86788이 활성화 중일때도 $spell:86369 경고 보기",
-	TwilightBlastArrow		= "$spell:86369 대상이 가까이 있을 경우 DBM 화살표 보기",
-	RangeFrame				= "거리 창 보기(10m)",
 	BlackoutShieldFrame		= "우두머리 체력 바 사용시 $spell:86788 치유량 바 함께 보기"
 })
 
@@ -234,9 +216,7 @@ L:SetOptionLocalization({
 	SpecWarnGrounded		= "$spell:83581 효과가 없을 경우 특수 경고 보기(~10초 전)",
 	SpecWarnSearingWinds	= "$spell:83500 효과가 없을 경우 특수 경고 보기(~10초 전)",
 	timerTransition			= "다음 단계 바 보기",
-	RangeFrame				= "필요시 거리 창 보기",
-	yellScrewed				= "$spell:83099 와 $spell:92307 대상이 동시에 된 경우 대화로 알리기",
-	InfoFrame				= "$spell:83581 또는 $spell:83500 없는 대상을 정보 창으로 보기"
+	yellScrewed				= "$spell:83099 와 $spell:92307 대상이 동시에 된 경우 대화로 알리기"
 })
 
 L:SetMiscLocalization({
@@ -253,12 +233,6 @@ L:SetMiscLocalization({
 --  Cho'gall  --
 ----------------
 L= DBM:GetModLocalization(167)
-
-L:SetOptionLocalization({
-	CorruptingCrashArrow	= "$spell:81685 대상이 가까이 있을 경우 DBM 화살표 보기",
-	InfoFrame				= "$journal:3165 정보를 정보 창으로 보기",
-	RangeFrame				= "$spell:82235 대상이 된 경우 거리 창(5m) 보기"
-})
 
 ----------------
 --  Sinestra  --

@@ -9,7 +9,7 @@ mounts={138424},
 patch='52000',
 mounttype='Ground',
 model={47718},
-description="\nThis mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
+description="This mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
 },[[
 step
 label "Start_of_Guide"
@@ -56,7 +56,7 @@ mounts={138642},
 patch='52000',
 mounttype='Ground',
 model={47828},
-description="\nThis mount is a rare drop from Primordial enemies on the Isle of Giants.",
+description="This mount is a rare drop from Primordial enemies on the Isle of Giants.",
 },[[
 step
 Kill Primal enemies around this area
@@ -81,7 +81,7 @@ model={47716},
 mounts={138423},
 patch='52000',
 mounttype='Ground',
-description="\nThis mount is a very rare drop from Oondasta on the Isle of Giants.",
+description="This mount is a very rare drop from Oondasta on the Isle of Giants.",
 },[[
 step
 kill Oondasta##69161
@@ -101,7 +101,7 @@ mounts={138643},
 patch='52000',
 mounttype='Ground',
 model={47827},
-description="\nThis mount is a rare drop from Primordial enemies on the Isle of Giants.",
+description="This mount is a rare drop from Primordial enemies on the Isle of Giants.",
 },[[
 step
 Kill Primal enemies around this area
@@ -126,7 +126,7 @@ mounts={138426},
 patch='52000',
 mounttype='Ground',
 model={47717},
-description="\nThis mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
+description="This mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
 },[[
 step
 label "Start_of_Guide"
@@ -164,7 +164,7 @@ mounts={138641},
 patch='52000',
 mounttype='Ground',
 model={47826},
-description="\nThis mount is a rare drop from Primordial enemies on the Isle of Giants.",
+description="This mount is a rare drop from Primordial enemies on the Isle of Giants.",
 },[[
 step
 Kill Primal enemies around this area
@@ -189,7 +189,7 @@ mounts={138425},
 patch='52000',
 mounttype='Ground',
 model={47715},
-description="\nThis mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
+description="This mount is a rare drop from the rare spawn Zandalari Warbringer found throughout Pandaria.",
 },[[
 step
 label "Start_of_Guide"
@@ -236,7 +236,7 @@ model={45264},
 mounts={130965},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is a very rare drop from Galleon in the Valley of the Four Winds.",
+description="This mount is a very rare drop from Galleon in the Valley of the Four Winds.",
 },[[
 step
 kill Galleon##62346
@@ -254,7 +254,7 @@ model={43717},
 mounts={127286},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -276,7 +276,7 @@ model={43718},
 mounts={127287},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -298,7 +298,7 @@ model={43719},
 mounts={127288},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -320,7 +320,7 @@ model={42250},
 mounts={120395},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -342,7 +342,7 @@ model={43910},
 mounts={127289},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -364,7 +364,7 @@ model={43721},
 mounts={127290},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -386,7 +386,7 @@ model={43723},
 mounts={127295},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -408,7 +408,7 @@ model={43724},
 mounts={127302},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -430,7 +430,7 @@ model={43725},
 mounts={127308},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -452,7 +452,7 @@ model={43722},
 mounts={127293},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -474,7 +474,7 @@ model={43726},
 mounts={127310},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -496,7 +496,7 @@ model={42352},
 mounts={120822},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
+description="This mount is purchased from Old Whitenose in Stormwind after reaching Exalted reputation with the Tushui Pandaren.",
 },[[
 step
 Reach Exalted Reputation with the Tushui Pandaren |complete rep('Tushui Pandaren') == Exalted
@@ -518,7 +518,7 @@ mounts={138640},
 patch='52000',
 mounttype='Ground',
 model={47825},
-description="\nThis mount is obtained by collecting 9,999 Giant Dinosaur Bones dropped by Primal enemies on the Isle of Giants.",
+description="This mount is obtained by collecting 9,999 Giant Dinosaur Bones dropped by Primal enemies on the Isle of Giants.",
 },[[
 step
 Kill Primal enemies around this area
@@ -545,7 +545,7 @@ mounts={73313},
 patch='unknown',
 mounttype='Ground',
 model={25279},
-description="\nThis guide will help you acquire the Crimson Deathcharger mount.",
+description="This guide will help you acquire the Crimson Deathcharger mount.",
 },[[
 step
 This mount is a reward given to players that complete the quest line to acquire the legendary Shadowmourne
@@ -566,7 +566,7 @@ mounts={148428},
 patch='54000',
 mounttype='Ground',
 model={51484},
-description="\nThis mount is purchased from Speaker Gulan in the Timeless Isles for 500 Bloody Coins.",
+description="This mount is purchased from Speaker Gulan in the Timeless Isles for 500 Bloody Coins.",
 },[[
 step
 Collect #1000# Timeless Coins |complete curcount(777) >= 1000 or hastoy(102467)
@@ -600,7 +600,7 @@ model={51485},
 mounts={148417},
 patch='54000',
 mounttype='Ground',
-description="\nThis mount is a very rare drop from Garrosh Hellscream in the Siege of Orgrimmar raid.",
+description="This mount is a very rare drop from Garrosh Hellscream in the Siege of Orgrimmar raid.",
 },[[
 step
 Press _I_ and queue for the Siege of Orgrimmar or enter the raid normally |goto Siege of Orgrimmar/11 53.80,11.98 < 100 |c |or
@@ -623,7 +623,7 @@ mounts={136471},
 patch='52000',
 mounttype='Ground',
 model={47238},
-description="\nThis mount is a rare drop from Horridon in the Throne of Thunder raid.",
+description="This mount is a rare drop from Horridon in the Throne of Thunder raid.",
 },[[
 step
 Press _I_ and queue for the Throne of Thunder or enter the raid normally |goto Throne of Thunder/2 27.4,79.1 < 100 |c |or
@@ -646,7 +646,7 @@ model={43090},
 mounts={123886},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Ambersmith Zikk in the Dread Wastes after reaching Exalted reputation with The Klaxxi.",
+description="This mount is purchased from Ambersmith Zikk in the Dread Wastes after reaching Exalted reputation with The Klaxxi.",
 },[[
 step
 Reach Exalted Reputation with The Klaxxi |complete rep('The Klaxxi') == Exalted
@@ -667,7 +667,7 @@ model={43704},
 mounts={127174},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
+description="This mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
 },[[
 step
 Reach Exalted Reputation with the Golden Lotus |complete rep('Golden Lotus') == Exalted
@@ -693,7 +693,7 @@ model={41711},
 mounts={118089},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Nat Pagle in Krasarang Wilds after reaching Exalted reputation with The Anglers.",
+description="This mount is purchased from Nat Pagle in Krasarang Wilds after reaching Exalted reputation with The Anglers.",
 },[[
 step
 Reach Exalted Reputation with The Anglers |complete rep('The Anglers') == Exalted
@@ -714,7 +714,7 @@ model={44836},
 mounts={130138},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
+description="This mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
 },[[
 step
 Reach Exalted Reputation with The Tillers |complete rep('The Tillers') == Exalted
@@ -735,7 +735,7 @@ model={43900},
 mounts={129934},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
+description="This mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
 },[[
 step
 Reach Exalted Reputation with the Shado-Pan |complete rep('Shado-Pan') == Exalted
@@ -756,7 +756,7 @@ model={44807},
 mounts={130086},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
+description="This mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
 },[[
 step
 Reach Exalted Reputation with The Tillers |complete rep('The Tillers') == Exalted
@@ -777,7 +777,7 @@ model={48101},
 mounts={140250},
 patch='52000',
 mounttype='Ground',
-description="\nThis mount must be obtained by a Horde character.",
+description="This mount must be obtained by a Horde character.",
 },[[
 step
 You must be Horde to obtain this mount!
@@ -788,7 +788,7 @@ model={48100},
 mounts={140249},
 patch='52000',
 mounttype='Ground',
-description="\nThis mount is purchased from Hiren Loresong on the Isle of Thunder after reaching Exalted reputation with the Kirin Tor Offensive.",
+description="This mount is purchased from Hiren Loresong on the Isle of Thunder after reaching Exalted reputation with the Kirin Tor Offensive.",
 },[[
 step
 Reach Exalted Reputation with the Kirin Tor Offensive |complete rep('Kirin Tor Offensive') == Exalted
@@ -809,7 +809,7 @@ model={43705},
 mounts={127176},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
+description="This mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
 },[[
 step
 Reach Exalted Reputation with the Golden Lotus |complete rep('Golden Lotus') == Exalted
@@ -835,7 +835,7 @@ model={44759},
 mounts={129932},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
+description="This mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
 },[[
 step
 Reach Exalted Reputation with the Shado-Pan |complete rep('Shado-Pan') == Exalted
@@ -856,7 +856,7 @@ model={44757},
 mounts={129935},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
+description="This mount is purchased from Rushi the Fox in Townlong Steppes after reaching Exalted reputation with the Shado-Pan.",
 },[[
 step
 Reach Exalted Reputation with the Shado-Pan |complete rep('Shado-Pan') == Exalted
@@ -877,7 +877,7 @@ model={43706},
 mounts={127177},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
+description="This mount is purchased from Jaluu the Generous in the Vale of Eternal Blossoms after reaching Exalted reputation with the Golden Lotus.",
 },[[
 step
 Reach Exalted Reputation with the Golden Lotus |complete rep('Golden Lotus') == Exalted
@@ -903,7 +903,7 @@ model={44837},
 mounts={130137},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
+description="This mount is purchased from Gina Mudclaw in the Valley of the Four Winds after reaching Exalted reputation with The Tillers.",
 },[[
 step
 Reach Exalted Reputation with The Tillers |complete rep('The Tillers') == Exalted
@@ -924,7 +924,7 @@ mounts={142641},
 patch='53000',
 mounttype='Ground',
 model={48858},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount used to be obtained through the old Brawler's Guild
@@ -936,7 +936,7 @@ model={51482},
 mounts={148396},
 patch='54000',
 mounttype='Ground',
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount used to be awarded for completing the achievement "Ahead of the Curve: Garrosh Hellscream (10/25 player)" in Siege of Orgrimmar
@@ -949,7 +949,7 @@ model={74298},
 mounts={232405},
 patch='72000',
 mounttype='Ground',
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount used to be awarded from a Promotional Event in Heroes of the Storm
@@ -961,7 +961,7 @@ model={43712},
 mounts={127220},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
+description="This mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
 },[[
 step
 talk Uncle Bigpocket##64518
@@ -979,7 +979,7 @@ model={42703},
 mounts={122708},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
+description="This mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
 },[[
 step
 talk Uncle Bigpocket##64518
@@ -997,7 +997,7 @@ model={43711},
 mounts={127216},
 patch='50400',
 mounttype='Ground',
-description="\nThis mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
+description="This mount is purchased from Uncle Bigpocket in Kun-Lai Summit.",
 },[[
 step
 talk Uncle Bigpocket##64518
@@ -1015,7 +1015,7 @@ model={48816},
 mounts={142478},
 patch='53000',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Mount Parade\" achievement.",
+description="This mount is acquired by earning the \"Mount Parade\" achievement.",
 },[[
 step
 Earn the "Mount Parade" Achievement |achieve 8304 |complete hasmount(142478)
@@ -1036,7 +1036,7 @@ model={47256},
 mounts={136400},
 patch='52000',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Glory of the Thundering Raider\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Thundering Raider\" achievement.",
 },[[
 step
 Earn the "Heroic: Jin'rokh the Breaker" Achievement |achieve 8056 |complete hasmount(136400)
@@ -1123,7 +1123,7 @@ model={41592},
 mounts={127156},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Glory of the Pandaria Hero\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Pandaria Hero\" achievement.",
 },[[
 step
 Earn the "Pandaria Dungeon Hero" Achievement |achieve 6925 |complete hasmount(127156)
@@ -1225,7 +1225,7 @@ model={43692},
 mounts={127161},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Glory of the Pandaria Raider\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Pandaria Raider\" achievement.",
 },[[
 step
 Earn the "Must Love Dogs" Achievement |achieve 6823 |complete hasmount(127161)
@@ -1330,7 +1330,7 @@ model={47166},
 mounts={136163},
 patch='51000',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Operation: Shieldwall Campaign\" achievement.",
+description="This mount is acquired by earning the \"Operation: Shieldwall Campaign\" achievement.",
 },[[
 step
 Earn the "Operation: Shieldwall Campaign" Achievement |achieve 7928 |complete hasmount(136163)
@@ -1351,7 +1351,7 @@ model={42147},
 mounts={133023},
 patch='51000',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"We're Going to Need More Saddles\" achievement.",
+description="This mount is acquired by earning the \"We're Going to Need More Saddles\" achievement.",
 },[[
 step
 Earn the "We're Going to Need More Saddles" Achievement |achieve 7860 |complete hasmount(133023)
@@ -1372,7 +1372,7 @@ model={41903},
 mounts={130985},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Pandaren Ambassador\" achievement.",
+description="This mount is acquired by earning the \"Pandaren Ambassador\" achievement.",
 },[[
 step
 Earn the "Pandaren Ambassador" Achievement |achieve 6828 |complete hasmount(130985)
@@ -1393,7 +1393,7 @@ model={43686},
 mounts={124408},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Guild Glory of the Pandaria Raider\" achievement.",
+description="This mount is acquired by earning the \"Guild Glory of the Pandaria Raider\" achievement.",
 },[[
 step
 Earn the "Guild Glory of the Pandaria Raider" achievement |achieve 6682 |complete hasmount(124408)
@@ -1419,7 +1419,7 @@ model={51479},
 mounts={148392},
 patch='54000',
 mounttype='Flying',
-description="\nThis mount is acquired by earning the \"Glory of the Orgrimmar Raider\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Orgrimmar Raider\" achievement.",
 },[[
 step
 Earn the "No More Tears" Achievement |achieve 8536 |complete hasmount(148392)
@@ -1479,7 +1479,7 @@ model={59583},
 mounts={142878},
 patch='53000',
 mounttype='Flying',
-description="\nThis mount is purchased from the in-game Blizzard store.",
+description="This mount is purchased from the in-game Blizzard store.",
 },[[
 step
 This mount can be purchased for $25.00 from the official Blizzard Store
@@ -1499,7 +1499,7 @@ model={55896},
 mounts={163024},
 patch='60100',
 mounttype='Flying',
-description="\nThis mount is purchased from the in-game Blizzard store.",
+description="This mount is purchased from the in-game Blizzard store.",
 },[[
 step
 This mount can be purchased for $30.00 from the official Blizzard Store
@@ -1519,7 +1519,7 @@ model={43254},
 mounts={124659},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount was earned by purchasing the Collector's Edition of the Mists of Pandaria expansion but can now be purchased from the in-game Blizzard store.",
+description="This mount was earned by purchasing the Collector's Edition of the Mists of Pandaria expansion but can now be purchased from the in-game Blizzard store.",
 },[[
 step
 This mount can be purchased for $25.00 from the official Blizzard Store
@@ -1539,7 +1539,7 @@ model={47981},
 mounts={139442},
 patch='52000',
 mounttype='Flying',
-description="\nThis mount is a very rare drop from Nalak on the Isle of Thunder.",
+description="This mount is a very rare drop from Nalak on the Isle of Thunder.",
 },[[
 step
 kill Nalak##69099
@@ -1560,7 +1560,7 @@ model={43689},
 mounts={127158},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is a very rare drop from Sha of Anger in Kun-Lai Summit.",
+description="This mount is a very rare drop from Sha of Anger in Kun-Lai Summit.",
 },[[
 step
 kill Sha of Anger##60491
@@ -1577,7 +1577,7 @@ model={51488},
 mounts={148476},
 patch='54000',
 mounttype='Flying',
-description="\nThis mount is a very rare drop from the rare spawn Huolon in the Timeless Isle.",
+description="This mount is a very rare drop from the rare spawn Huolon in the Timeless Isle.",
 },[[
 step
 kill Huolon##73167
@@ -1598,7 +1598,7 @@ model={45797},
 mounts={132036},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is dropped by Alani in the Vale of Eternal Blossoms after hitting it with a Sky Crystal or purchased from the Auction House.",
+description="This mount is dropped by Alani in the Vale of Eternal Blossoms after hitting it with a Sky Crystal or purchased from the Auction House.",
 },[[
 step
 Kill level 35 enemies throughout Pandaria
@@ -1629,7 +1629,7 @@ model={48931},
 mounts={142073},
 patch='53000',
 mounttype='Flying',
-description="\nThis mount is earned by winning 3 games in 'Play' or 'Arena' mode in Blizzard's card game, Hearthstone.",
+description="This mount is earned by winning 3 games in 'Play' or 'Arena' mode in Blizzard's card game, Hearthstone.",
 },[[
 step
 Earn the "Hearthstoned" Achievement |achieve 8345
@@ -1650,7 +1650,7 @@ model={41990},
 mounts={127154},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is earned from the Surprise Attack! quest after reaching Exalted reputation with the Shado-Pan.",
+description="This mount is earned from the Surprise Attack! quest after reaching Exalted reputation with the Shado-Pan.",
 },[[
 step
 Reach Exalted Reputation with the Shado-Pan |complete rep('Shado-Pan') == Exalted
@@ -1692,7 +1692,7 @@ model={43254},
 mounts={124659},
 patch='50400',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Imperial Quilen mount.",
+description="This guide will help you acquire the Imperial Quilen mount.",
 },[[
 step
 This mount requires you to purchase the World of Warcraft: Mists of Pandaria Collector's Edition
@@ -1708,7 +1708,7 @@ model={43637},
 mounts={126507},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Engineering profession or purchased from the Auction House.",
+description="This mount is crafted with the Engineering profession or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Engineering |skill Pandaria Engineering,75 |or
@@ -1770,7 +1770,7 @@ model={43638},
 mounts={126508},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Engineering profession or purchased from the Auction House.",
+description="This mount is crafted with the Engineering profession or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Engineering |skill Pandaria Engineering,75
@@ -1820,7 +1820,7 @@ model={46686},
 mounts={134359},
 patch='51000',
 mounttype='Flying',
-description="\nThis mount is crafted with the Engineering profession or purchased from the Auction House.",
+description="This mount is crafted with the Engineering profession or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Engineering |skill Pandaria Engineering,75
@@ -1860,7 +1860,7 @@ model={42502},
 mounts={121837},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Jewelcrafting profession after reaching Honored reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
+description="This mount is crafted with the Jewelcrafting profession after reaching Honored reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
@@ -1918,7 +1918,7 @@ model={42185},
 mounts={120043},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Jewelcrafting profession by combining the Jade Panther, Sapphire Panther, Ruby Panther and Sunstone Panther mounts after reaching Exalted reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
+description="This mount is crafted with the Jewelcrafting profession by combining the Jade Panther, Sapphire Panther, Ruby Panther and Sunstone Panther mounts after reaching Exalted reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
@@ -1962,7 +1962,7 @@ model={42499},
 mounts={121838},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Jewelcrafting profession after reaching Revered reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
+description="This mount is crafted with the Jewelcrafting profession after reaching Revered reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
@@ -2020,7 +2020,7 @@ model={42500},
 mounts={121836},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Jewelcrafting profession after reaching Revered reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
+description="This mount is crafted with the Jewelcrafting profession after reaching Revered reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
@@ -2078,7 +2078,7 @@ model={42501},
 mounts={121839},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is crafted with the Jewelcrafting profession after reaching Honored reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
+description="This mount is crafted with the Jewelcrafting profession after reaching Honored reputation with the Order of the Cloud Serpent or purchased from the Auction House.",
 },[[
 step
 Reach 75 Pandaria Jewelcrafting |skill Pandaria Jewelcrafting,75
@@ -2136,7 +2136,7 @@ model={46087},
 mounts={127170},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is a very rare drop from Elegon in the Mogu'shan Vaults raid.",
+description="This mount is a very rare drop from Elegon in the Mogu'shan Vaults raid.",
 },[[
 step
 Press _I_ and queue for the Mogu'shan Vaults or enter the raid normally |goto Mogu'shan Vaults/1 75.32,73.82 < 100 |c |or
@@ -2160,7 +2160,7 @@ model={47983},
 mounts={139448},
 patch='52000',
 mounttype='Flying',
-description="\nThis mount is a very rare drop from Ji-Kun in the Throne of Thunder raid.",
+description="This mount is a very rare drop from Ji-Kun in the Throne of Thunder raid.",
 },[[
 step
 Press _I_ and queue for Throne of Thunder or enter the raid normally |goto Throne of Thunder/1 29.99,25.61 < 100 |c |or
@@ -2183,7 +2183,7 @@ model={41989},
 mounts={123992},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
+description="This mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
 },[[
 step
 Reach Exalted Reputation with the Order of the Cloud Serpent |complete rep('Order of the Cloud Serpent') == Exalted
@@ -2204,7 +2204,7 @@ model={41991},
 mounts={123993},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
+description="This mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
 },[[
 step
 Reach Exalted Reputation with the Order of the Cloud Serpent |complete rep('Order of the Cloud Serpent') == Exalted
@@ -2225,7 +2225,7 @@ model={46929},
 mounts={135416},
 patch='51000',
 mounttype='Flying',
-description="\nThis mount is purchased from Agent Malley in Krasarang Wilds after reaching Exalted reputation with Operation: Shieldwall.",
+description="This mount is purchased from Agent Malley in Krasarang Wilds after reaching Exalted reputation with Operation: Shieldwall.",
 },[[
 step
 talk Lyalia##64610
@@ -2273,7 +2273,7 @@ model={43693},
 mounts={127164},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased for 100,000 Timeless Coins from Mistweaver Ku in the Timeless Isle after reaching Exalted reputation with Emperor Shaohao.",
+description="This mount is purchased for 100,000 Timeless Coins from Mistweaver Ku in the Timeless Isle after reaching Exalted reputation with Emperor Shaohao.",
 },[[
 step
 Reach Exalted Reputation with Emperor Shaohao |complete rep('Emperor Shaohao') == Exalted
@@ -2297,7 +2297,7 @@ model={40590},
 mounts={113199},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
+description="This mount is purchased from San Redscale in The Jade Forest after reaching Exalted reputation with the Order of the Cloud Serpent.",
 },[[
 step
 Reach Exalted Reputation with the Order of the Cloud Serpent |complete rep('Order of the Cloud Serpent') == Exalted
@@ -2318,7 +2318,7 @@ model={44808},
 mounts={130092},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased from Tan Shin Tiao in the Vale of Eternal Blossoms after reaching Exalted reputation with The Lorewalkers.",
+description="This mount is purchased from Tan Shin Tiao in the Vale of Eternal Blossoms after reaching Exalted reputation with The Lorewalkers.",
 },[[
 step
 Reach Exalted Reputation with The Lorewalkers |complete rep('The Lorewalkers') == Exalted
@@ -2340,7 +2340,7 @@ model={43686},
 mounts={129918},
 patch='50400',
 mounttype='Flying',
-description="\nThis mount is purchased from Sage Whiteheart in the Vale of Eternal Blossoms after reaching Exalted reputation with The August Celestials.",
+description="This mount is purchased from Sage Whiteheart in the Vale of Eternal Blossoms after reaching Exalted reputation with The August Celestials.",
 },[[
 step
 Reach Exalted Reputation with The August Celestials |complete rep('The August Celestials') == Exalted
@@ -2361,7 +2361,7 @@ mounts={136505},
 patch='52000',
 mounttype='Flying',
 model={48014},
-description="\nThis mount is obtained by redeeming a 25-digit code from the Trading Card Game or by purchasing it from the Auction House.",
+description="This mount is obtained by redeeming a 25-digit code from the Trading Card Game or by purchasing it from the Auction House.",
 },[[
 step
 This mount can only be obtained by redeeming a code from the World of Warcraft trading card game
@@ -2388,7 +2388,7 @@ mounts={139595},
 patch='52000',
 mounttype='Flying',
 model={48020},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount used to be purchased from the in-game Blizzard store
@@ -2400,7 +2400,7 @@ mounts={132117},
 patch='50400',
 mounttype='Flying',
 model={45521},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for completing all Mists of Pandaria challenge mode dungeons with silver or better time
@@ -2413,7 +2413,7 @@ mounts={58983},
 patch='30002',
 mounttype='Ground',
 model={27567},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for going to the 2008 BlizzCon
@@ -2426,7 +2426,7 @@ mounts={129552},
 patch='50400',
 mounttype='Flying',
 model={44633},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for completing all Mists of Pandaria challenge mode dungeons with silver or better time
@@ -2439,7 +2439,7 @@ mounts={132118},
 patch='50400',
 mounttype='Flying',
 model={45520},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for completing all Mists of Pandaria challenge mode dungeons with silver or better time
@@ -2452,7 +2452,7 @@ mounts={148619},
 patch='54000',
 mounttype='Flying',
 model={51360},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for top ranking arena teams at the conclusion of Arena Season 14
@@ -2465,7 +2465,7 @@ mounts={139407},
 patch='52000',
 mounttype='Flying',
 model={47976},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for top ranking arena teams at the conclusion of Arena Season 12
@@ -2478,7 +2478,7 @@ mounts={148620},
 patch='54000',
 mounttype='Flying',
 model={51359},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for top ranking arena teams at the conclusion of Arena Season 15
@@ -2491,7 +2491,7 @@ mounts={148618},
 patch='54000',
 mounttype='Flying',
 model={51361},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for top ranking arena teams at the conclusion of Arena Season 13
@@ -2504,7 +2504,7 @@ mounts={132119},
 patch='50400',
 mounttype='Flying',
 model={45522},
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 This mount was awarded for completing all Mists of Pandaria challenge mode dungeons with silver or better time.

@@ -1,3 +1,83 @@
+02/17/2024 version 5.1.3
+- zhTW localization provided by RainbowUI
+- Updated the initialization sequence of events before pets are loaded into Rematch on login/reload
+- Leveling stones and rarity stones on the toolbar will now show cooldown spinners
+- The pet icons on pet list/queue/loadouts will now handle right-clicks for menus, shift-click to link pets, and casting leveling/rarity stones
+- Fix for pet list being restricted to whatever the default journal was searching for on last logout
+- Fix for lua error when attempting to summon an unowned pet
+
+02/10/2024 version 5.1.2
+- Added new Behavior Option 'Mousewheel Speed' to change how fast lists scroll via mousewheel
+- Target and team list scroll speed is now based on the height of the target or team instead of their headers
+- Reworked dropdowns in options to only create them when needed and moved their definitions to the main table
+- Added a legend to About Rematch to explain what badge icons mean
+- Fix for potential lua error when interacting with forbidden objects while Rematch is on screen
+- Localization template updated with unused strings now commented out going forward
+
+01/27/2024 version 5.1.1
+- Updated the import dialog to allow picking a group the imported team(s) would go to (unless there's any group definitions in the import) first
+- Added 'Import Teams' to group right-click menus to import teams into the same group unless the import includes group definitions
+- Added 'Delete Teams' to group right-click menus to delete all teams within a group without deleting the group
+- Rather than hide the 'Delete Group' menu option from the right-click menu of Favorite Teams and Ungrouped Teams groups, the option is disabled with a tooltip to explain these are system groups that cannot be deleted
+
+01/16/2024 version 5.1.0
+- Added a Pet Herder tool to the Filters menu, to more easily and selectively cage, favorite, level or tag many pets without using a right-click menu. For instance, to cage many pets: go to Filters -> Pet Herder and choose the 'Cage Pet' action. A little cage icon will appear beside all pets that can be caged and clicking the pet will cage the pet without confirmation. When done caging pets, click Done or dismiss the dialog.
+- Pet Markers are renamed to Pet Tags in the UI (internally it will remain Pet Markers as petTags refer to short strings to identify pets)
+- Pet Tags can now be renamed from the right-click Pet Tags menu in the pet list in addition to the filters Pet Tags menu
+- The Pet Tags menu in the right-click pet menu now has radio buttons to indicate which tag the pet currently has
+- Added new options group 'Badge Options' between Appearance Options and Behavior Options
+- Added Badge Option 'Hide Team Badges' to hide the green paw icon on a pet or target to say if it's saved in a team
+- Added Badge Option 'Hide Leveling Badges' to hide the blue arrow icon on a pet to say if it's in the leveling queue (unless Pet Herder is actively set to leveling pets)
+- Added Badge Option 'Hide Pet Tag Badges' to hide the various pet tags (markers) you've assigned to a pet (unless Pet Herder is actively setting/removing pet tags)
+- Added Badge Option 'Hide Target Badges' to hide the red target icon on a team to say if it's saved to a target
+- Added Badge Option 'Hide Preference Badges' to hide the blue cog icon on teams or groups that have saved preferences
+- Added Badge Option 'Hide Notes Badges' to hide the notes button on pets and teams
+- Changed scrollbars to match the appearance of the rest of the modern default WoW UI (with some modifications such as dimming the up/down arrow if the list can't be scrolled up/down)
+- Added scroll-to-top and scroll-to-bottom buttons to all lists to scroll to either end of a list with one click
+- List contents are now a little wider due to slimmer scrollbars
+- Texture adjustments in list headers due to wider list button widths
+- The Pet Collection dialog (summoned from the Totals button in the topleft of the expanded Rematch windw) is now minimizable/maximizable (default minimized)
+- The Battles tab of the Pet Collection dialog now displays a list of top winning teams rather than a single most-winning team
+- Added a checkbutton 'Rank teams by percentage won' to Battles tab of the Pet Collection dialog to pick the top teams by their percent (with wins as a secondary sort) rather than by wins (with percent as a secondary sort)
+- Added Team Option 'Combine Groups Key' dropdown to choose a modifier key to combine groups. This is initially set to 'None' or disabled. After/while you pick up a group onto the cursor, holding this modifier key while dropping the group onto another group will combine the two groups: all teams in the group on the cursor will move to the new group and the original emptied group will be deleted (unless chosen otherwise in the confirmation dialog)
+- Added Notes button to pet cards of pets with saved notes
+- Added Breed Option 'Larger Breed Text' to make breeds like B/B, H/S, etc appear a little larger
+- Slightly increased the size of ability numbers (1/2) on ability slots in the main loadout slots and their flyouts (but not minimized loadout slots)
+- Confirmation Option 'Don't Ask For Queue Removal' renamed to 'Don't Ask To Remove From Queue'
+- Reworked how badges work internally: all badges now go through registration and individual badge handling is now moved out of list buttons
+- Caging or releasing a pet while the pet card is on screen will dismiss the pet card
+- Another fix for Safari Hat not getting cached (and unusable) on login
+- Added more details to settings export
+- Fix for Help Options 'Hide Descriptive Tooltips' hiding Help tooltips in menus
+- Fix for Help menu item in Queue menu not hiding when Help Options 'Hide Extra Help' is checked
+- Fix for the Leveling Queue potentially trying to slot wrong-factioned pets
+- Localization template updated
+
+12/25/2023 version 5.0.7
+- Potential fix for Rematch 4 to 5 conversion failing
+- Fix for /rematch reset everything not reverting to prior saved state
+
+12/24/2023 version 5.0.6
+- Fix for lua error for users that don't have Safari Hat cached on login
+
+12/24/2023 version 5.0.5
+- Rework of the Leveling Queue Option 'Random Pet When Queue Empty':
+  - Rather than picking random max-level pets, this option will now pick random pets that can level when filling leveling slots when the queue is empty
+  - The suboption 'Pick Random Max Level' was added to support old behavior of picking max level pets when the queue is empty
+  - Anyone who had 'Random Pet When Queue Empty' enabled before this update will also have 'Pick Random Max Level' enabled
+  - The random leveling pet should prefer pets that meet current preferences (if your current preference is max level 20, then random pet will be max level 20 where possible, or any level under 25 if not possible, or a random max level otherwise) and also prefer rares over uncommon or less
+- Added a team notes button to the "micro" buttons panel in the battle UI to view or modify notes for the currently-loaded team without summoning Rematch
+- Added Notes Option 'Hide Notes Button In Battle' to hide the new notes button in case other addons are using the same space of the battle UI
+- Potential fix for Safari Hat button not being usable because the toy was not cached
+- Fix for Delete/Undo/Save buttons not always dismissing when clicking Delete in the Notes window
+- Added REMATCH_NOTES_CHANGED event (with teamID or speciesID that had its notes changed)
+- Localization template updated
+
+12/17/2023 version 5.0.4
+- Fix for Standalone Options 'Keep Window On Screen' -> 'Even Across Sessions' always showing window on login instead of only if it was up on last logout
+- Added Uncollected Pets count and Average Level to the total pets/collection tooltip in topleft of the expanded window
+- Localization template updated
+
 11/26/2023 version 5.0.3
 - Increased limit of team tabs from 15 to 16. The 16th tab, when used, replaces the "Create New Group" tab if it was shown
 - Added Team Option 'Show Create New Group Tab' to show/hide the tab with the yellow plus (+) symbol to create a new group. This is initially enabled for anyone who upgraded from Rematch 4 and disabled for any new installs

@@ -7,7 +7,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around River's Heart in Sholazar Basin.",
+description="This pet can be captured in the wild around River's Heart in Sholazar Basin.",
 keywords={"Aquatic","Sholazar","Basin"},
 pet=649,
 },[[
@@ -24,7 +24,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='23000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
+description="This battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
 keywords={"Aquatic","Crocolisks","In","The","City"},
 pet=174,
 },[[
@@ -56,7 +56,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Aquatic","Darkmoon","Faire"},
 pet=335,
 },[[
@@ -91,7 +91,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis Battle pet can be caught in the wild around Falfarren River in Ashenvale.",
+description="This Battle pet can be caught in the wild around Falfarren River in Ashenvale.",
 keywords={"Aquatic","Ashenvale"},
 pet=495,
 },[[
@@ -108,7 +108,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis Battle pet can be caught in the wild around Desolace.",
+description="This Battle pet can be caught in the wild around Desolace.",
 keywords={"Aquatic","Desolace"},
 pet=483,
 },[[
@@ -125,7 +125,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis Battle pet can be caught in the wild along the eastern river in Hillsbrad Foothills.",
+description="This Battle pet can be caught in the wild along the eastern river in Hillsbrad Foothills.",
 keywords={"Aquatic","Hillsbrad", "Foothills"},
 pet=648,
 },[[
@@ -142,7 +142,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after completing the Spawn of Morja quest at the Darkmoon Faire.",
+description="This battle pet is rewarded to you after completing the Spawn of Morja quest at the Darkmoon Faire.",
 keywords={"Aquatic","Darkmoon","Faire"},
 pet=106,
 },[[
@@ -179,7 +179,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis Battle pet can be caught in the wild around Vir'naal Oasis in Uldum.",
+description="This Battle pet can be caught in the wild around Vir'naal Oasis in Uldum.",
 keywords={"Aquatic","Uldum"},
 pet=542,
 },[[
@@ -196,7 +196,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='23000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild inside the heroic dungeon Zul'Aman.",
+description="This battle pet can be tamed in the wild inside the heroic dungeon Zul'Aman.",
 keywords={"Aquatic","Zul'Aman"},
 pet=165,
 },[[
@@ -222,7 +222,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='31200',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet is available to all players who merge their World of Warcraft account with a Battle.net account.",
+description="This battle pet is available to all players who merge their World of Warcraft account with a Battle.net account.",
 keywords={"Aquatic","Merge","Account"},
 pet=192,
 },[[
@@ -239,7 +239,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='23000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
+description="This battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
 keywords={"Aquatic","Crocolisks","In","The","City"},
 pet=164,
 },[[
@@ -271,7 +271,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='43000',
 source='TradingCardGame',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet is obtained through the World of Warcraft Trading Card Game.",
 keywords={"Aquatic","Trading","Card","Game"},
 pet=328,
 },[[
@@ -294,7 +294,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Shattered Strand in Azshara.",
+description="This battle pet can be tamed in the wild around The Shattered Strand in Azshara.",
 keywords={"Aquatic","Azshara"},
 pet=388,
 },[[
@@ -311,7 +311,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='23000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
+description="This battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
 keywords={"Aquatic","Crocolisks","In","The","City"},
 pet=173,
 },[[
@@ -343,7 +343,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Un'Goro Crater.",
+description="This battle pet can be tamed in the wild around Un'Goro Crater.",
 keywords={"Aquatic","Un'Goro","Crater"},
 pet=502,
 },[[
@@ -361,7 +361,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Cape of Stranglethorn.",
+description="This battle pet can be tamed in the wild around The Cape of Stranglethorn.",
 keywords={"Aquatic","Cape","Of","Stranglethorn"},
 pet=401,
 },[[
@@ -379,7 +379,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
+description="This battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
 keywords={"Aquatic","Durotar"},
 pet=420,
 },[[
@@ -396,7 +396,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='23000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
+description="This battle pet is a reward for completing the quest Crocolisks in the City or can be purchased from the Auction House.",
 keywords={"Aquatic","Crocolisks","In","The","City"},
 pet=163,
 },[[
@@ -428,7 +428,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Flik at the Darkmoon Faire.",
+description="This battle pet can be purchased from Flik at the Darkmoon Faire.",
 keywords={"Aquatic","Darkmoon","Faire"},
 pet=65,
 },[[
@@ -456,7 +456,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Coldwind Pass in Borean Tundra.",
+description="This battle pet can be tamed in the wild around Coldwind Pass in Borean Tundra.",
 keywords={"Aquatic","Borean","Tundra"},
 pet=536,
 },[[
@@ -473,7 +473,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Shattered Strand in Azshara.",
+description="This battle pet can be tamed in the wild around The Shattered Strand in Azshara.",
 keywords={"Aquatic","Azshara"},
 pet=473,
 },[[
@@ -490,7 +490,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from Flik at the Darkmoon Faire.",
+description="This battle pet can be purchased from Flik at the Darkmoon Faire.",
 keywords={"Aquatic","Darkmoon","Faire"},
 pet=64,
 },[[
@@ -518,7 +518,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Durotar.",
+description="This battle pet can be tamed in the wild around Durotar.",
 keywords={"Beast","Durotar"},
 pet=635,
 },[[
@@ -535,7 +535,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='112100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Dalaran.",
+description="This battle pet can be purchased from a vendor in Dalaran.",
 keywords={"Beast","Dalaran"},
 pet=74,
 },[[
@@ -556,7 +556,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='54100',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Beast","Blizzard","Store"},
 pet=1363,
 },[[
@@ -573,7 +573,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Snowdrift Plains in The Storm Peaks.",
+description="This battle pet can be tamed in the wild around Snowdrift Plains in The Storm Peaks.",
 keywords={"Beast","Storm","Peaks"},
 pet=558,
 },[[
@@ -591,7 +591,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Fire Plume Ridge in Un'Goro Crater.",
+description="This battle pet can be tamed in the wild around Fire Plume Ridge in Un'Goro Crater.",
 keywords={"Beast","Un'Goro","Crater"},
 pet=632,
 },[[
@@ -609,7 +609,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Searing Gorge.",
+description="This battle pet can be tamed in the wild all around Searing Gorge.",
 keywords={"Beast","Searing","Gorge"},
 pet=427,
 },[[
@@ -626,7 +626,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Burning Steppes.",
+description="This battle pet can be tamed in the wild all around Burning Steppes.",
 keywords={"Beast","Burning","Steppes"},
 pet=425,
 },[[
@@ -643,7 +643,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Jaguero Isle in The Cape of Stranglethorn.",
+description="This battle pet can be tamed in the wild around Jaguero Isle in The Cape of Stranglethorn.",
 keywords={"Beast","The","Cape","Of","Stranglethorn"},
 pet=411,
 },[[
@@ -661,7 +661,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='30300',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by logging on during the World of Warcraft 4th year anniversary event.",
+description="This battle pet can be obtained by logging on during the World of Warcraft 4th year anniversary event.",
 keywords={"Beast","World","Of","Warcraft","Anniversary","Event"},
 pet=202,
 },[[
@@ -678,7 +678,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='20100',
 source='TradingCardGame',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Beast","Trading","Card","Game"},
 pet=156,
 },[[
@@ -701,7 +701,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained from a random zone drop around Gavin's Naze in Hillsbrad Foothills.",
+description="This battle pet can be obtained from a random zone drop around Gavin's Naze in Hillsbrad Foothills.",
 keywords={"Beast","Hillsbrad","Foothills"},
 pet=42,
 },[[
@@ -719,7 +719,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='33000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Dalaran.",
+description="This battle pet can be purchased from a vendor in Dalaran.",
 keywords={"Beast","Dalaran"},
 pet=224,
 },[[
@@ -740,7 +740,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Elwynn Forest.",
 keywords={"Beast","Elwynn","Forest"},
 pet=459,
 },[[
@@ -757,7 +757,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Northern Barrens.",
+description="This battle pet can be tamed in the wild around Northern Barrens.",
 keywords={"Beast","Northern","Barrens"},
 pet=474,
 },[[
@@ -775,7 +775,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Nagrand.",
+description="This battle pet can be tamed in the wild around Nagrand.",
 keywords={"Beast","Nagrand"},
 pet=518,
 },[[
@@ -792,7 +792,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='30200',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
+description="This battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
 keywords={"Beast","The","Oracles"},
 pet=197,
 },[[
@@ -817,7 +817,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Stonetalon Mountains.",
+description="This battle pet can be tamed in the wild around Stonetalon Mountains.",
 keywords={"Beast","Stonetalon","Mountains"},
 pet=488,
 },[[
@@ -834,7 +834,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Lake Kel'Theril in Winterspring.",
+description="This battle pet can be tamed in the wild around Lake Kel'Theril in Winterspring.",
 keywords={"Beast","Winterspring"},
 pet=634,
 },[[
@@ -851,7 +851,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Beast","Darkmoon","Faire"},
 pet=343,
 },[[
@@ -886,7 +886,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='43000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Beast","Darkmoon","Faire"},
 pet=330,
 },[[
@@ -921,7 +921,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Southern Darkshore.",
+description="This battle pet can be tamed in the wild around Southern Darkshore.",
 keywords={"Beast","Darkshore"},
 pet=508,
 },[[
@@ -942,7 +942,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by looting Dart's Nest in Dustwallow Marsh.",
+description="This battle pet can be obtained by looting Dart's Nest in Dustwallow Marsh.",
 keywords={"Beast","Dustwallow","Marsh"},
 pet=232,
 },[[
@@ -966,7 +966,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Northeastern Desolace.",
+description="This battle pet can be tamed in the wild all around Northeastern Desolace.",
 keywords={"Beast","Desolace"},
 pet=484,
 },[[
@@ -983,7 +983,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a rare loot drop from enemies inside the Wailing Caverns dungeon.",
+description="This battle pet is a rare loot drop from enemies inside the Wailing Caverns dungeon.",
 keywords={"Beast","The","Wailing","Caverns"},
 pet=233,
 },[[
@@ -1009,7 +1009,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Urgarde Catacombs in the Howling Fjord.",
+description="This battle pet can be tamed in the wild around Urgarde Catacombs in the Howling Fjord.",
 keywords={"Beast","Howling","Fjord"},
 pet=523,
 },[[
@@ -1033,7 +1033,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Golakka Hot Springs in Un'Goro Crater.",
+description="This battle pet can be tamed in the wild around Golakka Hot Springs in Un'Goro Crater.",
 keywords={"Beast","Un'Goro","Crater"},
 pet=504,
 },[[
@@ -1050,7 +1050,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Duskwood.",
+description="This battle pet can be tamed in the wild around Duskwood.",
 keywords={"Beast","Duskwood"},
 pet=396,
 },[[
@@ -1067,7 +1067,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the rivers and lakes in Un'Goro Crater.",
+description="This battle pet can be tamed in the wild around the rivers and lakes in Un'Goro Crater.",
 keywords={"Beast","Un'Goro","Crater"},
 pet=631,
 },[[
@@ -1084,7 +1084,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Eastern Plaguelands.",
+description="This battle pet can be tamed in the wild all around the Eastern Plaguelands.",
 keywords={"Beast","Eastern","Plaguelands"},
 pet=457,
 },[[
@@ -1101,7 +1101,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around The Isle of Spears in Howling Fjord.",
+description="This battle pet can be tamed in the wild all around The Isle of Spears in Howling Fjord.",
 keywords={"Beast","Howling","Fjord"},
 pet=529,
 },[[
@@ -1118,7 +1118,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Gloomshade Grove in Shadowmoon Valley.",
+description="This battle pet can be tamed in the wild around Gloomshade Grove in Shadowmoon Valley.",
 keywords={"Beast","Shadowmoon","Valley"},
 pet=407,
 },[[
@@ -1135,7 +1135,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='40300',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from Baradin Foxes around Tol Barad Peninsula.",
+description="This battle pet can be looted from Baradin Foxes around Tol Barad Peninsula.",
 keywords={"Beast","Tol","Barad","Peninsula"},
 pet=278,
 },[[
@@ -1162,7 +1162,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Southern Barrens.",
+description="This battle pet can be tamed in the wild around the Southern Barrens.",
 keywords={"Beast","Southern","Barrens"},
 pet=475,
 },[[
@@ -1181,7 +1181,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be looted from Gundrak Raptors around Gundrak in Zul'Drak.",
+description="This battle pet can be looted from Gundrak Raptors around Gundrak in Zul'Drak.",
 keywords={"Beast","Zul'Drak"},
 pet=234,
 },[[
@@ -1201,7 +1201,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Eastern Uldum.",
+description="This battle pet can be tamed in the wild around Eastern Uldum.",
 keywords={"Beast","Uldum"},
 pet=851,
 },[[
@@ -1219,7 +1219,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Badlands.",
+description="This battle pet can be tamed in the wild around the Badlands.",
 keywords={"Beast","Badlands"},
 pet=438,
 },[[
@@ -1237,7 +1237,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Ghostlands.",
+description="This battle pet can be tamed in the wild around the Ghostlands.",
 keywords={"Beast","Badlands"},
 pet=461,
 },[[
@@ -1255,7 +1255,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by looting Takk's Nest in the Northern Barrens.",
+description="This battle pet can be obtained by looting Takk's Nest in the Northern Barrens.",
 keywords={"Beast","Dustwallow","Marsh"},
 pet=232,
 },[[
@@ -1277,7 +1277,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Uldum.",
+description="This battle pet can be tamed in the wild around Uldum.",
 keywords={"Beast","Uldum"},
 pet=545,
 },[[
@@ -1295,7 +1295,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can only be tamed in the wild during the daytime in Loch Modan.",
+description="This battle pet can only be tamed in the wild during the daytime in Loch Modan.",
 keywords={"Beast","Loch","Modan"},
 pet=437,
 },[[
@@ -1314,7 +1314,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Northern Stranglethorn.",
+description="This battle pet can be tamed in the wild all around Northern Stranglethorn.",
 keywords={"Beast","Northern","Stranglethorn"},
 pet=408,
 },[[
@@ -1331,7 +1331,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Felfire Hill in Ashenvale.",
+description="This battle pet can be tamed in the wild around Felfire Hill in Ashenvale.",
 keywords={"Beast","Ashenvale"},
 pet=450,
 },[[
@@ -1348,7 +1348,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the rivers in the Swamp of Sorrows.",
+description="This battle pet can be tamed in the wild around the rivers in the Swamp of Sorrows.",
 keywords={"Beast","Swamp","Of","Sorrows"},
 pet=422,
 },[[
@@ -1366,7 +1366,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around pools of lava in the Searing Gorge.",
+description="This battle pet can be tamed in the wild around pools of lava in the Searing Gorge.",
 keywords={"Beast","Searing","Gorge"},
 pet=428,
 },[[
@@ -1384,7 +1384,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='40300',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a world drop in the Eastern Plaguelands or it can be purchased from the Auction House.",
+description="This battle pet is a world drop in the Eastern Plaguelands or it can be purchased from the Auction House.",
 keywords={"Beast","Eastern","Plaguelands"},
 pet=286,
 },[[
@@ -1452,7 +1452,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='41000',
 source='TradingCardGame',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet is obtained through the World of Warcraft Trading Card Game.",
 keywords={"Beast","Trading","Card","Game"},
 pet=303,
 },[[
@@ -1475,7 +1475,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Dalaran.",
+description="This battle pet can be purchased from a vendor in Dalaran.",
 keywords={"Beast","Dalaran"},
 pet=236,
 },[[
@@ -1496,7 +1496,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by purchasing the World of Warcraft Collector's Edition.",
+description="This battle pet can be obtained by purchasing the World of Warcraft Collector's Edition.",
 keywords={"Beast","World","Of","Warcraft","Collector's","Edition"},
 pet=92,
 },[[
@@ -1514,7 +1514,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='24000',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who participated in the iCoke promotional event in China.",
+description="This battle pet was given out to players who participated in the iCoke promotional event in China.",
 keywords={"Beast","Special","Event"},
 pet=124,
 },[[
@@ -1532,7 +1532,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Duskwood.",
+description="This battle pet can be tamed in the wild all around Duskwood.",
 keywords={"Beast","Duskwood"},
 pet=399,
 },[[
@@ -1549,7 +1549,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Northern parts of Twilight Highlands.",
+description="This battle pet can be tamed in the wild all around the Northern parts of Twilight Highlands.",
 keywords={"Beast","Twilight","Highlands"},
 pet=431,
 },[[
@@ -1566,7 +1566,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Bloodmyst Isle.",
+description="This battle pet can be tamed in the wild all around Bloodmyst Isle.",
 keywords={"Beast","Bloodmyst","Isle"},
 pet=465,
 },[[
@@ -1583,7 +1583,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by looting Ravasaur Matriarch's Nest around The Marshlands in Un'Goro Crater.",
+description="This battle pet can be obtained by looting Ravasaur Matriarch's Nest around The Marshlands in Un'Goro Crater.",
 keywords={"Beast","Un'Goro","Crater"},
 pet=237,
 },[[
@@ -1607,7 +1607,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained by looting Razormaw Matriarch's Nest around Raptor Ridge in the Wetlands.",
+description="This battle pet can be obtained by looting Razormaw Matriarch's Nest around Raptor Ridge in the Wetlands.",
 keywords={"Beast","Wetlands"},
 pet=238,
 },[[
@@ -1632,7 +1632,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='32000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is world zone drop for killing enemies in the Northern Stranglethorn and The Cape of Stranglethorn.",
+description="This battle pet is world zone drop for killing enemies in the Northern Stranglethorn and The Cape of Stranglethorn.",
 keywords={"Beast","Northern","Stranglethorn","The","Cape","Of"},
 pet=239,
 },[[
@@ -1653,7 +1653,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Desolace.",
+description="This battle pet can be tamed in the wild all around Desolace.",
 keywords={"Beast","Desolace"},
 pet=482,
 },[[
@@ -1670,7 +1670,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the desert areas in Tanaris.",
+description="This battle pet can be tamed in the wild around the desert areas in Tanaris.",
 keywords={"Beast","Tanaris"},
 pet=491,
 },[[
@@ -1687,7 +1687,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Skald in Blade's Edge Mountains.",
+description="This battle pet can be tamed in the wild around Skald in Blade's Edge Mountains.",
 keywords={"Beast","Blade's","Edge","Mountains"},
 pet=528,
 },[[
@@ -1704,7 +1704,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Hellfire Peninsula.",
+description="This battle pet can be tamed in the wild all around the Hellfire Peninsula.",
 keywords={"Beast","Hellfire","Peninsula"},
 pet=414,
 },[[
@@ -1721,7 +1721,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the hills near Dark Portal in the Blasted Lands.",
+description="This battle pet can be tamed in the wild around the hills near Dark Portal in the Blasted Lands.",
 keywords={"Beast","Blasted","Lands"},
 pet=416,
 },[[
@@ -1742,7 +1742,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Beast","Netherstorm"},
 pet=44,
 },[[
@@ -1762,7 +1762,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around sandy areas in Uldum.",
+description="This battle pet can be tamed in the wild around sandy areas in Uldum.",
 keywords={"Beast","Uldum"},
 pet=511,
 },[[
@@ -1779,7 +1779,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild during sandstorms around the Gaping chasm in Tanaris.",
+description="This battle pet can be tamed in the wild during sandstorms around the Gaping chasm in Tanaris.",
 keywords={"Beast","Tanaris"},
 pet=494,
 },[[
@@ -1797,7 +1797,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Southern caves of Blade's Edge Mountains.",
+description="This battle pet can be tamed in the wild around the Southern caves of Blade's Edge Mountains.",
 keywords={"Beast","Blade's","Edge","Mountains"},
 pet=637,
 },[[
@@ -1818,7 +1818,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from Mother Smolderweb inside the Lower Blackrock Spire dungeon.",
+description="This battle pet is a drop from Mother Smolderweb inside the Lower Blackrock Spire dungeon.",
 keywords={"Beast","Blackrock","Spire"},
 pet=90,
 },[[
@@ -1841,7 +1841,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Feralas.",
+description="This battle pet can be tamed in the wild all around Feralas.",
 keywords={"Beast","Feralas"},
 pet=387,
 },[[
@@ -1858,7 +1858,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Central and Eastern Dun Morogh.",
+description="This battle pet can be tamed in the wild all around Central and Eastern Dun Morogh.",
 keywords={"Beast","Dun","Morogh"},
 pet=440,
 },[[
@@ -1875,7 +1875,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Webwinder Hollow in Stonetalon Mountains.",
+description="This battle pet can be tamed in the wild around Webwinder Hollow in Stonetalon Mountains.",
 keywords={"Beast","Stonetalon","Mountains"},
 pet=412,
 },[[
@@ -1892,7 +1892,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Northern Silithus.",
+description="This battle pet can be tamed in the wild around Northern Silithus.",
 keywords={"Beast","Silithus"},
 pet=433,
 },[[
@@ -1913,7 +1913,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Deadeye Shore in Durotar.",
+description="This battle pet can be tamed in the wild around Deadeye Shore in Durotar.",
 keywords={"Beast","Durotar"},
 pet=466,
 },[[
@@ -1930,7 +1930,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the sandy areas in Tanaris.",
+description="This battle pet can be tamed in the wild all around the sandy areas in Tanaris.",
 keywords={"Beast","Tanaris"},
 pet=432,
 },[[
@@ -1947,7 +1947,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Western parts of Sholazar Basin.",
+description="This battle pet can be tamed in the wild around the Western parts of Sholazar Basin.",
 keywords={"Beast","Sholazar","Basin"},
 pet=532,
 },[[
@@ -1964,7 +1964,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Northern Stranglethorn.",
+description="This battle pet can be tamed in the wild all around Northern Stranglethorn.",
 keywords={"Beast","Northern","Stranglethorn"},
 pet=405,
 },[[
@@ -1981,7 +1981,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Twilight Withering and Twilight Bulwark in Thousand Needles.",
+description="This battle pet can be tamed in the wild around Twilight Withering and Twilight Bulwark in Thousand Needles.",
 keywords={"Beast","Thousand","Needles"},
 pet=505,
 },[[
@@ -1999,7 +1999,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Devouring Breach in Twilight Highlands.",
+description="This battle pet can be tamed in the wild around The Devouring Breach in Twilight Highlands.",
 keywords={"Beast","Twilight","Highlands"},
 pet=470,
 },[[
@@ -2016,7 +2016,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Webwinder Hollow in Stonetalon Mountains.",
+description="This battle pet can be tamed in the wild around Webwinder Hollow in Stonetalon Mountains.",
 keywords={"Beast","Stonetalon","Mountains"},
 pet=506,
 },[[
@@ -2033,7 +2033,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Terokkar Forest.",
+description="This battle pet can be tamed in the wild all around Terokkar Forest.",
 keywords={"Beast","Terokkar","Forest"},
 pet=517,
 },[[
@@ -2050,7 +2050,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
+description="This battle pet can be tamed in the wild around Southfury Watershed in Durotar.",
 keywords={"Beast","Durotar"},
 pet=418,
 },[[
@@ -2067,7 +2067,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild after nightfall in Duskwood.",
+description="This battle pet can be tamed in the wild after nightfall in Duskwood.",
 keywords={"Beast","Duskwood"},
 pet=400,
 },[[
@@ -2086,7 +2086,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='33200',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis battle pet was previously purchasable on the Blizzard store but is currently no longer available.",
+description="This battle pet was previously purchasable on the Blizzard store but is currently no longer available.",
 keywords={"Beast","Blizzard","Store"},
 pet=246,
 },[[
@@ -2105,7 +2105,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='41000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Winterspring.",
+description="This battle pet can be purchased from a vendor in Winterspring.",
 keywords={"Beast","Winterspring"},
 pet=306,
 },[[
@@ -2126,7 +2126,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from Mother Smolderweb inside the Lower Blackrock Spire dungeon.",
+description="This battle pet is a drop from Mother Smolderweb inside the Lower Blackrock Spire dungeon.",
 keywords={"Beast","Blackrock","Spire"},
 pet=89,
 },[[
@@ -2149,7 +2149,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Winterspring.",
+description="This battle pet can be tamed in the wild all around Winterspring.",
 keywords={"Critter","Winterspring"},
 pet=487,
 },[[
@@ -2167,7 +2167,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Winterspring.",
+description="This battle pet can be tamed in the wild all around Winterspring.",
 keywords={"Critter","Winterspring"},
 pet=441,
 },[[
@@ -2184,7 +2184,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Transborea in the Borean Tundra.",
+description="This battle pet can be tamed in the wild around Transborea in the Borean Tundra.",
 keywords={"Critter","Borean","Tundra"},
 pet=641,
 },[[
@@ -2201,7 +2201,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who purchased the Starcraft II Heart of the Swarm Collector's Edition.",
+description="This battle pet was given out to people who purchased the Starcraft II Heart of the Swarm Collector's Edition.",
 keywords={"Critter","Collector's","Edition"},
 pet=903,
 },[[
@@ -2219,7 +2219,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Northern Stranglethorn.",
+description="This battle pet can be tamed in the wild all around the Northern Stranglethorn.",
 keywords={"Critter","Northern","Stranglethorn"},
 pet=406,
 },[[
@@ -2236,7 +2236,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Elwynn Forest.",
+description="This battle pet can be tamed in the wild all around Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=374,
 },[[
@@ -2253,7 +2253,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Thundermar Ruins in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around Thundermar Ruins in the Twilight Highlands.",
 keywords={"Critter","Twilight","Highlands"},
 pet=398,
 },[[
@@ -2270,7 +2270,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the plains areas in the Borean Tundra.",
+description="This battle pet can be tamed in the wild around the plains areas in the Borean Tundra.",
 keywords={"Critter","Borean","Tundra"},
 pet=639,
 },[[
@@ -2287,7 +2287,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around The Hinterlands.",
+description="This battle pet can be tamed in the wild all around The Hinterlands.",
 keywords={"Critter","The","Hinterlands"},
 pet=449,
 },[[
@@ -2304,7 +2304,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='20100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Critter","Netherstorm"},
 pet=137,
 },[[
@@ -2324,7 +2324,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Sethria's Roost in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around Sethria's Roost in Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=540,
 },[[
@@ -2344,7 +2344,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Zun'watha in The Hinterlands.",
+description="This battle pet can be tamed in the wild all around Zun'watha in The Hinterlands.",
 keywords={"Critter","The","Hinterlands"},
 pet=393,
 },[[
@@ -2361,7 +2361,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Durotar.",
+description="This battle pet can be tamed in the wild all around Durotar.",
 keywords={"Critter","Durotar"},
 pet=468,
 },[[
@@ -2378,7 +2378,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Deepholm.",
+description="This battle pet can be tamed in the wild all around Deepholm.",
 keywords={"Critter","Deepholm"},
 pet=556,
 },[[
@@ -2395,7 +2395,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='51000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Critter","Darkmoon","Faire"},
 pet=1061,
 },[[
@@ -2430,7 +2430,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from a elite raid boss at the Darkmoon Faire.",
+description="This battle pet is a drop from a elite raid boss at the Darkmoon Faire.",
 keywords={"Critter","Darkmoon","Faire"},
 pet=848,
 },[[
@@ -2460,7 +2460,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Lightning Ledge in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around the Lightning Ledge in Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=755,
 },[[
@@ -2477,7 +2477,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Deepholm.",
+description="This battle pet can be tamed in the wild all around Deepholm.",
 keywords={"Critter","Deepholm"},
 pet=555,
 },[[
@@ -2494,7 +2494,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Northeast Mount Hyjal.",
+description="This battle pet can be tamed in the wild around Northeast Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=479,
 },[[
@@ -2511,7 +2511,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest areas of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest areas of Elwynn Forest.",
 keywords={"Critter","Mount","Hyjal"},
 pet=447,
 },[[
@@ -2528,7 +2528,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Blasted Lands.",
+description="This battle pet can be tamed in the wild all around the Blasted Lands.",
 keywords={"Critter","Blasted","Lands"},
 pet=415,
 },[[
@@ -2545,7 +2545,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Southern Mount Hyjal.",
+description="This battle pet can be tamed in the wild all around Southern Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=541,
 },[[
@@ -2563,7 +2563,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Wyrmskull Village in the Howling Fjord.",
+description="This battle pet can be tamed in the wild around Wyrmskull Village in the Howling Fjord.",
 keywords={"Critter","Howling","Fjord"},
 pet=644,
 },[[
@@ -2580,7 +2580,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Mulgore.",
+description="This battle pet can be tamed in the wild all around Mulgore.",
 keywords={"Critter","Mulgore"},
 pet=477,
 },[[
@@ -2597,7 +2597,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='30200',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis battle pet is a rare drop from a fishing spot located in the Underbelly in Dalaran (Northrend).",
+description="This battle pet is a rare drop from a fishing spot located in the Underbelly in Dalaran (Northrend).",
 keywords={"Critter","Dalaran"},
 pet=193,
 },[[
@@ -2619,7 +2619,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Tanaris.",
+description="This battle pet can be tamed in the wild all around Tanaris.",
 keywords={"Critter","Tanaris"},
 pet=430,
 },[[
@@ -2636,7 +2636,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='24000',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was obtained through the recruit a friend program but is no longer available.",
+description="This battle pet was obtained through the recruit a friend program but is no longer available.",
 keywords={"Critter","Recruit","A","Friend"},
 pet=170,
 },[[
@@ -2653,7 +2653,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Arathi Highlands.",
+description="This battle pet can be tamed in the wild all around the Arathi Highlands.",
 keywords={"Critter","Arathi","Highlands"},
 pet=443,
 },[[
@@ -2670,7 +2670,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Grizzly Hills.",
+description="This battle pet can be tamed in the wild all around the Grizzly Hills.",
 keywords={"Critter","Grizzly","Hills"},
 pet=647,
 },[[
@@ -2687,7 +2687,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Hyjal Barrow Den in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around the Hyjal Barrow Den in Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=539,
 },[[
@@ -2706,7 +2706,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Vermillion Redoubt in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around Vermillion Redoubt in the Twilight Highlands.",
 keywords={"Critter","Twilight","Highlands"},
 pet=550,
 },[[
@@ -2724,7 +2724,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Thundermar Ruins in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around Thundermar Ruins in the Twilight Highlands.",
 keywords={"Critter","Twilight","Highlands"},
 pet=823,
 },[[
@@ -2741,7 +2741,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Toxic Airfield in New Tinkertown.",
+description="This battle pet can be tamed in the wild around The Toxic Airfield in New Tinkertown.",
 keywords={"Critter","New","Tinkertown"},
 pet=442,
 },[[
@@ -2758,7 +2758,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around all around the Burning Steppes.",
+description="This battle pet can be tamed in the wild around all around the Burning Steppes.",
 keywords={"Critter","Burning","Steppes"},
 pet=429,
 },[[
@@ -2776,7 +2776,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='30800',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 75 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 75 unique battle pets.",
 keywords={"Critter","Lil'","Game","Hunter"},
 pet=203,
 },[[
@@ -2794,7 +2794,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around all around Vir'naal Oasis in Uldum.",
+description="This battle pet can be tamed in the wild around all around Vir'naal Oasis in Uldum.",
 keywords={"Critter","Uldum"},
 pet=543,
 },[[
@@ -2812,7 +2812,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Booty Bay in The Cape of Stranglethorn.",
+description="This battle pet can be tamed in the wild around Booty Bay in The Cape of Stranglethorn.",
 keywords={"Critter","The","Cape","Of","Stranglethorn"},
 pet=404,
 },[[
@@ -2830,7 +2830,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='21000',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was gifted out to people who attended the 2007 Blizzard World Invitational.",
+description="This battle pet was gifted out to people who attended the 2007 Blizzard World Invitational.",
 keywords={"Critter","Blizzard","World","Invitational"},
 pet=155,
 },[[
@@ -2848,7 +2848,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Critter","Blizzard","Store"},
 pet=671,
 },[[
@@ -2865,7 +2865,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Redridge Mountains.",
+description="This battle pet can be tamed in the wild all around the Redridge Mountains.",
 keywords={"Critter","Redridge","Mountains"},
 pet=391,
 },[[
@@ -2882,7 +2882,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Wetlands.",
+description="This battle pet can be tamed in the wild around the Wetlands.",
 keywords={"Critter","Wetlands"},
 pet=633,
 },[[
@@ -2900,7 +2900,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Dragonmurk in Dustwallow Marsh.",
+description="This battle pet can be tamed in the wild around The Dragonmurk in Dustwallow Marsh.",
 keywords={"Critter","Dustwallow","Marsh"},
 pet=385,
 },[[
@@ -2917,7 +2917,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Netherstorm.",
+description="This battle pet can be tamed in the wild all around the Netherstorm.",
 keywords={"Critter","Netherstorm"},
 pet=638,
 },[[
@@ -2934,7 +2934,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='42000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 100 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 100 unique battle pets.",
 keywords={"Critter","Petting","Zoo"},
 pet=323,
 },[[
@@ -2952,7 +2952,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='33000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you complete the Looking For Multitudes achievement.",
+description="This battle pet is rewarded to you after you complete the Looking For Multitudes achievement.",
 keywords={"Critter","Looking","For","Multitudes"},
 pet=250,
 },[[
@@ -2971,7 +2971,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Southern Barrens.",
+description="This battle pet can be tamed in the wild all around the Southern Barrens.",
 keywords={"Critter","Southern","Barrens"},
 pet=386,
 },[[
@@ -2988,7 +2988,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=378,
 },[[
@@ -3005,7 +3005,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Dabyrie's Farmstead in the Arathi Highlands.",
+description="This battle pet can be tamed in the wild around Dabyrie's Farmstead in the Arathi Highlands.",
 keywords={"Critter","Arathi","Highlands"},
 pet=417,
 },[[
@@ -3024,7 +3024,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Hillsbrad Foothills.",
+description="This battle pet can be tamed in the wild all around the Hillsbrad Foothills.",
 keywords={"Critter","Hillsbrad","Foothills"},
 pet=452,
 },[[
@@ -3041,7 +3041,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Galardell Valley in the Redridge Mountains.",
+description="This battle pet can be tamed in the wild around Galardell Valley in the Redridge Mountains.",
 keywords={"Critter","Redridge","Mountains"},
 pet=392,
 },[[
@@ -3058,7 +3058,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Alther's Mill in the Redridge Mountains.",
+description="This battle pet can be tamed in the wild around Alther's Mill in the Redridge Mountains.",
 keywords={"Critter","Redridge","Mountains"},
 pet=424,
 },[[
@@ -3075,7 +3075,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Zoram Strand in Ashenvale.",
+description="This battle pet can be tamed in the wild around The Zoram Strand in Ashenvale.",
 keywords={"Critter","Ashenvale"},
 pet=496,
 },[[
@@ -3093,7 +3093,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='TradingCardGame',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Critter","Trading","Card","Game"},
 pet=665,
 },[[
@@ -3116,7 +3116,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Ahn' Qiraj: The Fallen Kingdom.",
+description="This battle pet can be tamed in the wild around Ahn' Qiraj: The Fallen Kingdom.",
 keywords={"Critter","Ahn'Qiraj","The","Fallen","Kingdom"},
 pet=512,
 },[[
@@ -3137,7 +3137,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild along the west coast beaches in Darkshore.",
+description="This battle pet can be tamed in the wild along the west coast beaches in Darkshore.",
 keywords={"Critter","Darkshore"},
 pet=493,
 },[[
@@ -3159,7 +3159,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='24000',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was obtained through the recruit a friend program but is no longer available.",
+description="This battle pet was obtained through the recruit a friend program but is no longer available.",
 keywords={"Critter","Recruit","A","Friend"},
 pet=171,
 },[[
@@ -3176,7 +3176,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you level 75 battle pets to level 25.",
+description="This battle pet is rewarded to you after you level 75 battle pets to level 25.",
 keywords={"Critter","Pro","Pet","Mob"},
 pet=820,
 },[[
@@ -3193,7 +3193,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Azshara.",
+description="This battle pet can be tamed in the wild all around Azshara.",
 keywords={"Critter","Azshara"},
 pet=397,
 },[[
@@ -3210,7 +3210,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Crushridge Hold in the Hillsbrad Foothills.",
+description="This battle pet can be tamed in the wild around Crushridge Hold in the Hillsbrad Foothills.",
 keywords={"Critter","Hillsbrad","Foothills"},
 pet=640,
 },[[
@@ -3234,7 +3234,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='31100',
 source='WorldEvent',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor during the Noblegarden world event or purchased from the Auction House.",
+description="This battle pet can be purchased from a vendor during the Noblegarden world event or purchased from the Auction House.",
 keywords={"Critter","Noblegarden"},
 pet=200,
 },[[
@@ -3258,7 +3258,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
+description="This battle pet can be tamed in the wild around the Northwest parts of Elwynn Forest.",
 keywords={"Critter","Elwynn","Forest"},
 pet=379,
 },[[
@@ -3275,7 +3275,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Tanaris.",
+description="This battle pet can be tamed in the wild all around Tanaris.",
 keywords={"Critter","Tanaris"},
 pet=492,
 },[[
@@ -3292,7 +3292,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='24000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 50 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 50 unique battle pets.",
 keywords={"Critter","Shop","Smart","Pet"},
 pet=160,
 },[[
@@ -3310,7 +3310,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild at night time around Eastern Desolace.",
+description="This battle pet can be tamed in the wild at night time around Eastern Desolace.",
 keywords={"Critter","Desolace"},
 pet=485,
 },[[
@@ -3329,7 +3329,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Old Town in Stormwind City.",
+description="This battle pet can be tamed in the wild around Old Town in Stormwind City.",
 keywords={"Critter","Stormwind","City"},
 pet=675,
 },[[
@@ -3346,7 +3346,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Storm's Fury Wreckage in Deepholm.",
+description="This battle pet can be tamed in the wild around Storm's Fury Wreckage in Deepholm.",
 keywords={"Critter","Deepholm"},
 pet=553,
 },[[
@@ -3364,7 +3364,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Felwood.",
+description="This battle pet can be tamed in the wild all around Felwood.",
 keywords={"Critter","Felwood"},
 pet=497,
 },[[
@@ -3381,7 +3381,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Felwood.",
+description="This battle pet can be tamed in the wild all around Felwood.",
 keywords={"Critter","Felwood"},
 pet=499,
 },[[
@@ -3398,7 +3398,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northeast parts of Uldum.",
+description="This battle pet can be tamed in the wild around the Northeast parts of Uldum.",
 keywords={"Critter","Uldum"},
 pet=546,
 },[[
@@ -3419,7 +3419,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Gar'gol's Hovel in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around Gar'gol's Hovel in Mount Hyjal.",
 keywords={"Critter","Mount","Hyjal"},
 pet=469,
 },[[
@@ -3436,7 +3436,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Booty Bay in The Cape of Stranglethorn.",
+description="This battle pet can be tamed in the wild around Booty Bay in The Cape of Stranglethorn.",
 keywords={"Critter","The","Cape","Of","Stranglethorn"},
 pet=410,
 },[[
@@ -3454,7 +3454,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Southern parts of the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around the Southern parts of the Twilight Highlands.",
 keywords={"Critter","Twilight","Highlands"},
 pet=549,
 },[[
@@ -3471,7 +3471,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by purchasing the World of Warcraft Collector's Edition.",
+description="This battle pet is obtained by purchasing the World of Warcraft Collector's Edition.",
 keywords={"Critter","Collector's","Edition"},
 pet=94,
 },[[
@@ -3489,7 +3489,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='112100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in Winterspring.",
+description="This battle pet is a zone drop in Winterspring.",
 keywords={"Dragonkin","Winterspring"},
 pet=57,
 },[[
@@ -3509,7 +3509,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Dragonkin","Netherstorm"},
 pet=145,
 },[[
@@ -3529,7 +3529,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='42000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 150 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 150 unique battle pets.",
 keywords={"Dragonkin","Littlest","Pet","Shop"},
 pet=255,
 },[[
@@ -3547,7 +3547,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='51000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from the raid boss Chromaggus inside the Blackwing Lair raid.",
+description="This battle pet is a drop from the raid boss Chromaggus inside the Blackwing Lair raid.",
 keywords={"Dragonkin","Blackwing","Lair"},
 pet=1152,
 },[[
@@ -3586,7 +3586,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='111100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in the Wetlands.",
+description="This battle pet is a zone drop in the Wetlands.",
 keywords={"Dragonkin","Wetlands"},
 pet=58,
 },[[
@@ -3606,7 +3606,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in the Badlands.",
+description="This battle pet is a zone drop in the Badlands.",
 keywords={"Dragonkin","Badlands"},
 pet=56,
 },[[
@@ -3627,7 +3627,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from the raid boss Broodlord Lashlayer inside the Blackwing Lair raid.",
+description="This battle pet is a drop from the raid boss Broodlord Lashlayer inside the Blackwing Lair raid.",
 keywords={"Dragonkin","Blackwing","Lair"},
 pet=1153,
 },[[
@@ -3653,7 +3653,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Savage Thicket in Sholazar Basin.",
+description="This battle pet can be tamed in the wild around The Savage Thicket in Sholazar Basin.",
 keywords={"Dragonkin","Sholazar","Basin"},
 pet=1167,
 },[[
@@ -3670,7 +3670,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in Feralas.",
+description="This battle pet is a zone drop in Feralas.",
 keywords={"Dragonkin","Feralas"},
 pet=59,
 },[[
@@ -3690,7 +3690,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out as a code to players on the Chinese server during the 2008 Olympics.",
+description="This battle pet was given out as a code to players on the Chinese server during the 2008 Olympics.",
 keywords={"Dragonkin","The","Spirit","Of","Competition"},
 pet=180,
 },[[
@@ -3708,7 +3708,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Caverns of Times in Tanaris.",
+description="This battle pet can be tamed in the wild around the Caverns of Times in Tanaris.",
 keywords={"Dragonkin","Tanaris"},
 pet=1161,
 },[[
@@ -3725,7 +3725,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who purchase the Cataclysm Collector's Edition.",
+description="This battle pet was given out to people who purchase the Cataclysm Collector's Edition.",
 keywords={"Dragonkin","Cataclysm","Collector's","Edition"},
 pet=268,
 },[[
@@ -3743,7 +3743,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who purchase the Burning Crusade Collector's Edition.",
+description="This battle pet was given out to people who purchase the Burning Crusade Collector's Edition.",
 keywords={"Dragonkin","Burning","Crusade","Collector's","Edition"},
 pet=131,
 },[[
@@ -3761,7 +3761,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Coldarra in the Borean Tundra.",
+description="This battle pet can be tamed in the wild all around Coldarra in the Borean Tundra.",
 keywords={"Dragonkin","Borean","Tundra"},
 pet=1165,
 },[[
@@ -3778,7 +3778,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who logged in during the WoW 5th Anniversary event.",
+description="This battle pet was given out to players who logged in during the WoW 5th Anniversary event.",
 keywords={"Dragonkin","Anniversary","Event"},
 pet=243,
 },[[
@@ -3796,7 +3796,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
+description="This battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
 keywords={"Dragonkin","The","Oracles"},
 pet=196,
 },[[
@@ -3821,7 +3821,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Dragonkin","Blizzard","Store"},
 pet=347,
 },[[
@@ -3838,7 +3838,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Wyrmbog in Dustwallow Marsh.",
+description="This battle pet can be tamed in the wild around Wyrmbog in Dustwallow Marsh.",
 keywords={"Dragonkin","Dustwallow","Marsh"},
 pet=489,
 },[[
@@ -3855,7 +3855,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out as a code to players on the Chinese server during the 2008 Olympics.",
+description="This battle pet was given out as a code to players on the Chinese server during the 2008 Olympics.",
 keywords={"Dragonkin","The","Spirit","Of","Competition"},
 pet=179,
 },[[
@@ -3873,7 +3873,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in Feralas.",
+description="This battle pet is a zone drop in Feralas.",
 keywords={"Dragonkin","Feralas"},
 pet=87,
 },[[
@@ -3893,7 +3893,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who participated in the iCoke promotional event in China.",
+description="This battle pet was given out to players who participated in the iCoke promotional event in China.",
 keywords={"Dragonkin","Special","Event"},
 pet=757,
 },[[
@@ -3911,7 +3911,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who participated in the iCoke promotional event in China.",
+description="This battle pet was given out to players who participated in the iCoke promotional event in China.",
 keywords={"Dragonkin","Special","Event"},
 pet=758,
 },[[
@@ -3929,7 +3929,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from the raid boss Razorgore the Untamed inside the Blackwing Lair raid.",
+description="This battle pet is a drop from the raid boss Razorgore the Untamed inside the Blackwing Lair raid.",
 keywords={"Dragonkin","Blackwing","Lair"},
 pet=1151,
 },[[
@@ -3955,7 +3955,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Therazane's Throne in Deepholm.",
+description="This battle pet can be tamed in the wild around Therazane's Throne in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=838,
 },[[
@@ -3972,7 +3972,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from the raid boss Golemagg the Incinerator inside the Molten Core raid.",
+description="This battle pet is a drop from the raid boss Golemagg the Incinerator inside the Molten Core raid.",
 keywords={"Elemental","Molten","Core"},
 pet=1150,
 },[[
@@ -3998,7 +3998,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Elemental","Blizzard","Store"},
 pet=1248,
 },[[
@@ -4015,7 +4015,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is given to players that have a Battle.net account linked to a Blizzard Authenticator.",
+description="This battle pet is given to players that have a Battle.net account linked to a Blizzard Authenticator.",
 keywords={"Elemental","Blizzard","Authenticator"},
 pet=244,
 },[[
@@ -4033,7 +4033,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Crimson Expanse in Deepholm.",
+description="This battle pet can be tamed in the wild around the Crimson Expanse in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=559,
 },[[
@@ -4050,7 +4050,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in the Molten Front.",
+description="This battle pet can be purchased from a vendor in the Molten Front.",
 keywords={"Elemental","Molten","Front"},
 pet=318,
 },[[
@@ -4075,7 +4075,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Crimson Expanse in Deepholm.",
+description="This battle pet can be tamed in the wild around the Crimson Expanse in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=554,
 },[[
@@ -4092,7 +4092,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Quaking Fields in Deepholm.",
+description="This battle pet can be tamed in the wild around The Quaking Fields in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=837,
 },[[
@@ -4109,7 +4109,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Fel Pits in Shadowmoon Valley.",
+description="This battle pet can be tamed in the wild around The Fel Pits in Shadowmoon Valley.",
 keywords={"Elemental","Shadowmoon","Valley"},
 pet=519,
 },[[
@@ -4126,7 +4126,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from a boss in The Slave Pens dungeon during the Midsummer Fire Festival.",
+description="This battle pet is a drop from a boss in The Slave Pens dungeon during the Midsummer Fire Festival.",
 keywords={"Elemental","Midsummer","Fire","Festival"},
 pet=253,
 },[[
@@ -4154,7 +4154,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 400 pet battle achievement points.",
+description="This battle pet is rewarded to you after you have collected 400 pet battle achievement points.",
 keywords={"Elemental","Time","To","Open","A","Pet","Store"},
 pet=856,
 },[[
@@ -4172,7 +4172,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have completed the Higher Learning achievement.",
+description="This battle pet is rewarded to you after you have completed the Higher Learning achievement.",
 keywords={"Elemental","Higher","Learning"},
 pet=199,
 },[[
@@ -4198,7 +4198,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the lava pools in the Searing Gorge.",
+description="This battle pet can be tamed in the wild around the lava pools in the Searing Gorge.",
 keywords={"Elemental","Searing","Gorge"},
 pet=423,
 },[[
@@ -4216,7 +4216,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Elemental","Blizzard","Store"},
 pet=297,
 },[[
@@ -4233,7 +4233,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from Kael'thas Sunstrider inside the Magisters' Terrace dungeon.",
+description="This battle pet is a drop from Kael'thas Sunstrider inside the Magisters' Terrace dungeon.",
 keywords={"Elemental","Magisters'","Terrace"},
 pet=175,
 },[[
@@ -4257,7 +4257,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Eversong Woods.",
+description="This battle pet can be tamed in the wild all around the Eversong Woods.",
 keywords={"Elemental","Eversong","Woods"},
 pet=460,
 },[[
@@ -4275,7 +4275,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing a quest chain for Brazie the Botanist in the Hillsbrad Foothills.",
+description="This battle pet is a reward for completing a quest chain for Brazie the Botanist in the Hillsbrad Foothills.",
 keywords={"Elemental","Hillsbrad","Foothills"},
 pet=291,
 },[[
@@ -4364,7 +4364,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor during the Hollow's End world event or purchased from the Auction House.",
+description="This battle pet can be purchased from a vendor during the Hollow's End world event or purchased from the Auction House.",
 keywords={"Elemental","Hollow's","End"},
 pet=162,
 },[[
@@ -4389,7 +4389,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor during the Midsummer Fire Festival world event or purchased from the Auction House.",
+description="This battle pet can be purchased from a vendor during the Midsummer Fire Festival world event or purchased from the Auction House.",
 keywords={"Elemental","Midsummer","Fire","Festival"},
 pet=128,
 },[[
@@ -4412,7 +4412,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Green Belt in the Wetlands.",
+description="This battle pet can be tamed in the wild around The Green Belt in the Wetlands.",
 keywords={"Elemental","Wetlands"},
 pet=509,
 },[[
@@ -4429,7 +4429,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a dropped from Jadefang in Deepholm.",
+description="This battle pet is a dropped from Jadefang in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=279,
 },[[
@@ -4464,7 +4464,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Circle of Outer Binding in the Arathi Highlands.",
+description="This battle pet can be tamed in the wild around the Circle of Outer Binding in the Arathi Highlands.",
 keywords={"Elemental","Arathi","Highlands"},
 pet=445,
 },[[
@@ -4481,7 +4481,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Upper Silvermarsh in Deepholm.",
+description="This battle pet can be tamed in the wild around the Upper Silvermarsh in Deepholm.",
 keywords={"Elemental","Deepholm"},
 pet=480,
 },[[
@@ -4500,7 +4500,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 400 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 400 unique battle pets.",
 keywords={"Elemental","Time","To","Open","A","Pet","Store"},
 pet=855,
 },[[
@@ -4518,7 +4518,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Drak'Sotra Fields in Zul'Drak.",
+description="This battle pet can be tamed in the wild around the Drak'Sotra Fields in Zul'Drak.",
 keywords={"Elemental","Zul'Drak"},
 pet=535,
 },[[
@@ -4535,7 +4535,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Thousand Needles.",
+description="This battle pet can be purchased from a vendor in Thousand Needles.",
 keywords={"Flying","Thousand","Needles"},
 pet=52,
 },[[
@@ -4557,7 +4557,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild in the Tirisfal Glades.",
+description="This battle pet can be tamed in the wild in the Tirisfal Glades.",
 keywords={"Flying","Tirisfal","Glades"},
 pet=626,
 },[[
@@ -4574,7 +4574,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 125 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 125 unique battle pets.",
 keywords={"Flying","Menagerie"},
 pet=325,
 },[[
@@ -4592,7 +4592,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet used to be available to purchase from the Blizzard store.",
+description="This battle pet used to be available to purchase from the Blizzard store.",
 keywords={"Flying","Blizzard","Store"},
 pet=316,
 },[[
@@ -4611,7 +4611,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Eastvale Logging Camp in Elwynn Forest.",
+description="This battle pet can be tamed in the wild around Eastvale Logging Camp in Elwynn Forest.",
 keywords={"Flying","Elwynn","Forest"},
 pet=646,
 },[[
@@ -4628,7 +4628,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Booty Bay.",
+description="This battle pet can be purchased from a vendor in Booty Bay.",
 keywords={"Flying","Booty","Bay"},
 pet=47,
 },[[
@@ -4649,7 +4649,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Teldrassil.",
+description="This battle pet can be tamed in the wild all around Teldrassil.",
 keywords={"Flying","Teldrassil"},
 pet=507,
 },[[
@@ -4670,7 +4670,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Kal'ai Ruins in Northern Stranglethorn.",
+description="This battle pet can be tamed in the wild around the Kal'ai Ruins in Northern Stranglethorn.",
 keywords={"Flying","Northern","Stranglethorn"},
 pet=421,
 },[[
@@ -4687,7 +4687,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the forest areas in Darkmoon Island.",
+description="This battle pet can be tamed in the wild around the forest areas in Darkmoon Island.",
 keywords={"Flying","Darkmoon","Faire"},
 pet=1068,
 },[[
@@ -4711,7 +4711,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the forest areas in Darkmoon Island.",
+description="This battle pet can be tamed in the wild around the forest areas in Darkmoon Island.",
 keywords={"Flying","Darkmoon","Faire"},
 pet=1062,
 },[[
@@ -4734,7 +4734,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Beast","Trading","Card","Game"},
 pet=169,
 },[[
@@ -4757,7 +4757,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Dragon Wastes in Dragonblight.",
+description="This battle pet can be tamed in the wild around The Dragon Wastes in Dragonblight.",
 keywords={"Flying","Dragonblight"},
 pet=537,
 },[[
@@ -4774,7 +4774,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in Zangarmarsh.",
+description="This battle pet is a zone drop in Zangarmarsh.",
 keywords={"Flying","Zangarmarsh"},
 pet=146,
 },[[
@@ -4795,7 +4795,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the hills in northern Redridge Mountains.",
+description="This battle pet can be tamed in the wild around the hills in northern Redridge Mountains.",
 keywords={"Flying","Redridge","Mountains"},
 pet=395,
 },[[
@@ -4812,7 +4812,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around most Manaforges in Netherstorm.",
+description="This battle pet can be tamed in the wild around most Manaforges in Netherstorm.",
 keywords={"Flying","Netherstorm"},
 pet=521,
 },[[
@@ -4833,7 +4833,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Ashenvale.",
+description="This battle pet can be tamed in the wild all around Ashenvale.",
 keywords={"Flying","Ashenvale"},
 pet=478,
 },[[
@@ -4850,7 +4850,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Upper Silvermarsh in Deepholm.",
+description="This battle pet can be tamed in the wild around Upper Silvermarsh in Deepholm.",
 keywords={"Flying","Deepholm"},
 pet=756,
 },[[
@@ -4867,7 +4867,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Defias Pirates inside the Deadmines dungeon.",
+description="This battle pet has a chance to drop from Defias Pirates inside the Deadmines dungeon.",
 keywords={"Flying","Deadmines"},
 pet=50,
 },[[
@@ -4891,7 +4891,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Azuremyst Isle.",
+description="This battle pet can be tamed in the wild all around Azuremyst Isle.",
 keywords={"Flying","Azuremyst","Isle"},
 pet=464,
 },[[
@@ -4908,7 +4908,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was previously purchasable on the Blizzard store but is currently no longer available.",
+description="This battle pet was previously purchasable on the Blizzard store but is currently no longer available.",
 keywords={"Flying","Blizzard","Store"},
 pet=245,
 },[[
@@ -4927,7 +4927,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet used to be available to purchase on the Blizzard Store but is no longer available.",
+description="This battle pet used to be available to purchase on the Blizzard Store but is no longer available.",
 keywords={"Flying","Blizzard","Store"},
 pet=311,
 },[[
@@ -4946,7 +4946,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Vermillion Redoubt in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around Vermillion Redoubt in the Twilight Highlands.",
 keywords={"Flying","Twilight","Highlands"},
 pet=645,
 },[[
@@ -4963,7 +4963,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Flying","Trading","Card","Game"},
 pet=130,
 },[[
@@ -4986,7 +4986,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis battle pet is given as a reward for completing the Horde quest Blown Away.",
+description="This battle pet is given as a reward for completing the Horde quest Blown Away.",
 keywords={"Flying","Blown","Away"},
 pet=332,
 },[[
@@ -5014,7 +5014,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in Northern Stranglethorn and The Cape of Stranglethorn.",
+description="This battle pet is a zone drop in Northern Stranglethorn and The Cape of Stranglethorn.",
 keywords={"Flying","Northern","Stranglethorn"},
 pet=49,
 },[[
@@ -5035,7 +5035,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Grizzly Hills.",
+description="This battle pet can be tamed in the wild all around the Grizzly Hills.",
 keywords={"Flying","Grizzly","Hills"},
 pet=534,
 },[[
@@ -5053,7 +5053,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is given as a reward for completing the quest Skywing in Terokkar Forest.",
+description="This battle pet is given as a reward for completing the quest Skywing in Terokkar Forest.",
 keywords={"Flying","Terokkar","Forest"},
 pet=149,
 },[[
@@ -5083,7 +5083,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Dire Maul in Feralas.",
+description="This battle pet can be tamed in the wild around Dire Maul in Feralas.",
 keywords={"Flying","Feralas"},
 pet=557,
 },[[
@@ -5100,7 +5100,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Terokkar Forest after you reach Exalted reputation with the Sha'tari Skyguard.",
+description="This battle pet can be purchased from a vendor in Terokkar Forest after you reach Exalted reputation with the Sha'tari Skyguard.",
 keywords={"Flying","Sha'tari","Skyguard"},
 pet=186,
 },[[
@@ -5122,7 +5122,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Uldum.",
+description="This battle pet can be tamed in the wild all around Uldum.",
 keywords={"Flying","Uldum"},
 pet=544,
 },[[
@@ -5143,7 +5143,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Misty Reed Farm in the Swamp of Sorrows.",
+description="This battle pet can be tamed in the wild around Misty Reed Farm in the Swamp of Sorrows.",
 keywords={"Flying","Swamp","Of","Sorrows"},
 pet=403,
 },[[
@@ -5163,7 +5163,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Northern Stranglethorn.",
+description="This battle pet can be tamed in the wild all around Northern Stranglethorn.",
 keywords={"Flying","Northern","Stranglethorn"},
 pet=409,
 },[[
@@ -5180,7 +5180,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Flying","Netherstorm"},
 pet=139,
 },[[
@@ -5200,7 +5200,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Northeast coast of Tanaris.",
+description="This battle pet can be tamed in the wild around the Northeast coast of Tanaris.",
 keywords={"Flying","Tanaris"},
 pet=560,
 },[[
@@ -5217,7 +5217,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Booty Bay.",
+description="This battle pet can be purchased from a vendor in Booty Bay.",
 keywords={"Flying","Booty","Bay"},
 pet=51,
 },[[
@@ -5238,7 +5238,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Verdant Thicket in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around The Verdant Thicket in Mount Hyjal.",
 keywords={"Flying","Mount","Hyjal"},
 pet=503,
 },[[
@@ -5255,7 +5255,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild during the winter months in Winterspring.",
+description="This battle pet can be tamed in the wild during the winter months in Winterspring.",
 keywords={"Flying","Winterspring"},
 pet=69,
 },[[
@@ -5275,7 +5275,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Swamp of Sarrows.",
+description="This battle pet can be tamed in the wild all around the Swamp of Sarrows.",
 keywords={"Flying","Swamp","Of","Sorrows"},
 pet=402,
 },[[
@@ -5298,7 +5298,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Felwood.",
+description="This battle pet can be tamed in the wild all around Felwood.",
 keywords={"Flying","Felwood"},
 pet=498,
 },[[
@@ -5315,7 +5315,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
+description="This battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
 keywords={"Flying","The","Oracles"},
 pet=194,
 },[[
@@ -5340,7 +5340,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Zangarmarsh after reaching Exalted reputation with Sporeggar.",
+description="This battle pet can be purchased from a vendor in Zangarmarsh after reaching Exalted reputation with Sporeggar.",
 keywords={"Flying","Sporeggar"},
 pet=167,
 },[[
@@ -5364,7 +5364,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Valgarde and Westguard Keep in the Howling Fjord.",
+description="This battle pet can be tamed in the wild around Valgarde and Westguard Keep in the Howling Fjord.",
 keywords={"Flying","Howling","Fjord"},
 pet=525,
 },[[
@@ -5382,7 +5382,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Flying","Trading","Card","Game"},
 pet=241,
 },[[
@@ -5405,7 +5405,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
+description="This battle pet can be purchased from a vendor in Sholazar Basin after you reach revered reputation with The Oracles.",
 keywords={"Flying","The","Oracles"},
 pet=195,
 },[[
@@ -5430,7 +5430,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Kirthaven and Thundermar in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around Kirthaven and Thundermar in the Twilight Highlands.",
 keywords={"Flying","Twilight","Highlands"},
 pet=548,
 },[[
@@ -5449,7 +5449,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Emperor Vek'lor inside the Ahn'Qiraj raid.",
+description="This battle pet has a chance to drop from Emperor Vek'lor inside the Ahn'Qiraj raid.",
 keywords={"Humanoid","Ahn'Qiraj"},
 pet=1155,
 },[[
@@ -5471,7 +5471,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the raid boss Magmadar inside the Molten Core raid.",
+description="This battle pet has a chance to drop from the raid boss Magmadar inside the Molten Core raid.",
 keywords={"Humanoid","Molten","Core"},
 pet=1149,
 },[[
@@ -5497,7 +5497,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is given as a reward after completing Children's Week Quests.",
+description="This battle pet is given as a reward after completing Children's Week Quests.",
 keywords={"Humanoid","Children's","Week"},
 pet=226,
 },[[
@@ -5517,7 +5517,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who attended the 2010 Blizzcon Event.",
+description="This battle pet was given out to people who attended the 2010 Blizzcon Event.",
 keywords={"Humanoid","Blizzcon","Event"},
 pet=294,
 },[[
@@ -5536,7 +5536,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is rewarded to you after you have collected 250 unique battle pets.",
+description="This battle pet is rewarded to you after you have collected 250 unique battle pets.",
 keywords={"Humanoid","Going","To","Need","More","Leases"},
 pet=821,
 },[[
@@ -5554,7 +5554,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Razorthorn Rise in Terokkar Forest.",
+description="This battle pet can be tamed in the wild around Razorthorn Rise in Terokkar Forest.",
 keywords={"Humanoid","Terokkar","Forest"},
 pet=514,
 },[[
@@ -5571,7 +5571,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Humanoid","Trading","Card","Game"},
 pet=333,
 },[[
@@ -5594,7 +5594,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who attended the 2009 Blizzcon Event.",
+description="This battle pet was given out to people who attended the 2009 Blizzcon Event.",
 keywords={"Humanoid","Blizzcon","Event"},
 pet=228,
 },[[
@@ -5613,7 +5613,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who participated in fansite contests on the European servers.",
+description="This battle pet was given out to people who participated in fansite contests on the European servers.",
 keywords={"Humanoid","Fansite","Contest"},
 pet=121,
 },[[
@@ -5632,7 +5632,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from the raid boss Sulfuron Harbinger inside the Molten Core raid.",
+description="This battle pet has a chance to drop from the raid boss Sulfuron Harbinger inside the Molten Core raid.",
 keywords={"Humanoid","Molten","Core"},
 pet=1147,
 },[[
@@ -5658,7 +5658,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Dry Hills in the Northern Barrens.",
+description="This battle pet can be tamed in the wild around The Dry Hills in the Northern Barrens.",
 keywords={"Humanoid","Northern","Barrens"},
 pet=1157,
 },[[
@@ -5675,7 +5675,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completing the achievement Ling-Ting's Herbal Journey.",
+description="This battle pet is a reward for completing the achievement Ling-Ting's Herbal Journey.",
 keywords={"Humanoid","Ling-Ting's","Herbal","Journey"},
 pet=835,
 },[[
@@ -5696,7 +5696,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the central mountain areas in Kun-Lai Summit.",
+description="This battle pet can be tamed in the wild around the central mountain areas in Kun-Lai Summit.",
 keywords={"Humanoid","Kun-Lai","Summit"},
 pet=1166,
 },[[
@@ -5715,7 +5715,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who purchased the Burning Crusade Collector's Edition on the European servers.",
+description="This battle pet was given out to people who purchased the Burning Crusade Collector's Edition on the European servers.",
 keywords={"Humanoid","Collector's","Edition"},
 pet=111,
 },[[
@@ -5733,7 +5733,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who attended the 2008 Blizzard World Wide Event.",
+description="This battle pet was given out to people who attended the 2008 Blizzard World Wide Event.",
 keywords={"Humanoid","Blizzard","Event"},
 pet=189,
 },[[
@@ -5752,7 +5752,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who attended the 2011 Blizzcon Event.",
+description="This battle pet was given out to people who attended the 2011 Blizzcon Event.",
 keywords={"Humanoid","Blizzcon","Event"},
 pet=329,
 },[[
@@ -5771,7 +5771,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who purchased a 2013 Blizzcon virtual ticket.",
+description="This battle pet was given out to people who purchased a 2013 Blizzcon virtual ticket.",
 keywords={"Humanoid","Blizzcon","Event"},
 pet=1364,
 },[[
@@ -5790,7 +5790,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who participated in the World of Warcraft Arena Pass.",
+description="This battle pet was given out to people who participated in the World of Warcraft Arena Pass.",
 keywords={"Humanoid","Arena","Pass"},
 pet=217,
 },[[
@@ -5808,7 +5808,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who participated in a promotional event in Korea.",
+description="This battle pet was given out to players who participated in a promotional event in Korea.",
 keywords={"Humanoid","Promotional","Event"},
 pet=1168,
 },[[
@@ -5826,7 +5826,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to people who attended the 2005 Blizzcon Event.",
+description="This battle pet was given out to people who attended the 2005 Blizzcon Event.",
 keywords={"Humanoid","Blizzcon","Event"},
 pet=107,
 },[[
@@ -5845,7 +5845,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Humanoid","Blizzard","Store"},
 pet=248,
 },[[
@@ -5862,7 +5862,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Scarab Wall in Silithus during the Summer.",
+description="This battle pet can be tamed in the wild around the Scarab Wall in Silithus during the Summer.",
 keywords={"Humanoid","Silithus"},
 pet=513,
 },[[
@@ -5885,7 +5885,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Sporeggar in Zangarmarsh.",
+description="This battle pet can be tamed in the wild around Sporeggar in Zangarmarsh.",
 keywords={"Humanoid","Zangarmarsh"},
 pet=515,
 },[[
@@ -5902,7 +5902,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Feral Scar Vale in Feralas.",
+description="This battle pet can be tamed in the wild around Feral Scar Vale in Feralas.",
 keywords={"Humanoid","Feralas"},
 pet=1158,
 },[[
@@ -5919,7 +5919,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Karazhan in Deadwind Pass.",
+description="This battle pet can be tamed in the wild around Karazhan in Deadwind Pass.",
 keywords={"Magic","Deadwind","Pass"},
 pet=1160,
 },[[
@@ -5936,7 +5936,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a reward for defeating Jeremy Feasel in a pet battle at the Darkmoon Faire.",
+description="This battle pet is a reward for defeating Jeremy Feasel in a pet battle at the Darkmoon Faire.",
 keywords={"Magic","Darkmoon","Faire"},
 pet=1063,
 },[[
@@ -5976,7 +5976,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a zone drop in the Swamp of Sorrows.",
+description="This battle pet is a zone drop in the Swamp of Sorrows.",
 keywords={"Magic","Swamp","Of","Sorrows"},
 pet=114,
 },[[
@@ -6000,7 +6000,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Magic","Trading","Card","Game"},
 pet=183,
 },[[
@@ -6023,7 +6023,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Skull Rock The Hinterlands.",
+description="This battle pet can be tamed in the wild around Skull Rock The Hinterlands.",
 keywords={"Magic","The","Hinterlands"},
 pet=446,
 },[[
@@ -6040,7 +6040,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was obtained through the recruit a friend program but is no longer available.",
+description="This battle pet was obtained through the recruit a friend program but is no longer available.",
 keywords={"Magic","Recruit","A","Friend"},
 pet=231,
 },[[
@@ -6057,7 +6057,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Dalaran Crater in Hillsbrad Foothills.",
+description="This battle pet can be tamed in the wild around the Dalaran Crater in Hillsbrad Foothills.",
 keywords={"Magic","Hillsbrad","Foothills"},
 pet=1159,
 },[[
@@ -6074,7 +6074,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in Netherstorm.",
+description="This battle pet can be purchased from a vendor in Netherstorm.",
 keywords={"Magic","Netherstorm"},
 pet=136,
 },[[
@@ -6094,7 +6094,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Shatter Scar Vale in Felwood.",
+description="This battle pet can be tamed in the wild around the Shatter Scar Vale in Felwood.",
 keywords={"Magic","Felwood"},
 pet=500,
 },[[
@@ -6111,7 +6111,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by purchasing the World of Warcraft Collector's Edition.",
+description="This battle pet is obtained by purchasing the World of Warcraft Collector's Edition.",
 keywords={"Magic","Collector's","Edition"},
 pet=93,
 },[[
@@ -6129,7 +6129,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from The Prophet Skeram inside the Ahn'Qiraj raid.",
+description="This battle pet has a chance to drop from The Prophet Skeram inside the Ahn'Qiraj raid.",
 keywords={"Magic","Ahn'Qiraj"},
 pet=1156,
 },[[
@@ -6153,7 +6153,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Nordrassil in Mount Hyjal.",
+description="This battle pet can be tamed in the wild around Nordrassil in Mount Hyjal.",
 keywords={"Magic","Mount","Hyjal"},
 pet=547,
 },[[
@@ -6170,7 +6170,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Scalding Pools in the Borean Tundra.",
+description="This battle pet can be tamed in the wild around the Scalding Pools in the Borean Tundra.",
 keywords={"Magic","Borean","Tundra"},
 pet=530,
 },[[
@@ -6187,7 +6187,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was given out to players who participated in a promotional event in Korea.",
+description="This battle pet was given out to players who participated in a promotional event in Korea.",
 keywords={"Magic","Promotional","Event"},
 pet=240,
 },[[
@@ -6205,7 +6205,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Magic","Trading","Card","Game"},
 pet=242,
 },[[
@@ -6228,7 +6228,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is a drop from the boss Apothecary Hummel in the Shadowfang Keep dungeon during the Love is in the Air event.",
+description="This battle pet is a drop from the boss Apothecary Hummel in the Shadowfang Keep dungeon during the Love is in the Air event.",
 keywords={"Magic","Love","Is","In","The","Air"},
 pet=251,
 },[[
@@ -6255,7 +6255,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around corrupted areas in the Twilight Highlands.",
+description="This battle pet can be tamed in the wild around corrupted areas in the Twilight Highlands.",
 keywords={"Magic","Twilight","Highlands"},
 pet=552,
 },[[
@@ -6274,7 +6274,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Viscidus inside the Ahn'Qiraj raid.",
+description="This battle pet has a chance to drop from Viscidus inside the Ahn'Qiraj raid.",
 keywords={"Magic","Ahn'Qiraj"},
 pet=1154,
 },[[
@@ -6298,7 +6298,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was obtained through the recruit a friend program but is no longer available.",
+description="This battle pet was obtained through the recruit a friend program but is no longer available.",
 keywords={"Magic","Recruit","A","Friend"},
 pet=247,
 },[[
@@ -6315,7 +6315,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Everlook in Winterspring.",
+description="This battle pet can be tamed in the wild around Everlook in Winterspring.",
 keywords={"Mechanical","Winterspring"},
 pet=1163,
 },[[
@@ -6332,7 +6332,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a world vendor in Orgrimmar and Stormwind City.",
+description="This battle pet can be purchased from a world vendor in Orgrimmar and Stormwind City.",
 keywords={"Mechanical","World","Vendor"},
 pet=254,
 },[[
@@ -6354,7 +6354,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Scalewing Shelf in Blade's Edge Mountains.",
+description="This battle pet can be tamed in the wild around Scalewing Shelf in Blade's Edge Mountains.",
 keywords={"Mechanical","Blade's","Edge","Mountains"},
 pet=1164,
 },[[
@@ -6371,7 +6371,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Mechanical","Darkmoon","Faire"},
 pet=338,
 },[[
@@ -6398,7 +6398,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor at the Darkmoon Faire.",
+description="This battle pet can be purchased from a vendor at the Darkmoon Faire.",
 keywords={"Mechanical","Darkmoon","Faire"},
 pet=339,
 },[[
@@ -6425,7 +6425,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be created if your Engineering skill level is 475 or it can be purchased from the Auction House.",
+description="This battle pet can be created if your Engineering skill level is 475 or it can be purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=262,
 },[[
@@ -6443,7 +6443,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Chill Breeze Valley in New Tinkertown.",
+description="This battle pet can be tamed in the wild around Chill Breeze Valley in New Tinkertown.",
 keywords={"Mechanical","New","Tinkertown"},
 pet=1162,
 },[[
@@ -6460,7 +6460,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Mechanical","Trading","Card","Game"},
 pet=285,
 },[[
@@ -6483,7 +6483,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet used to be available to purchase on the Blizzard store but is no longer available.",
+description="This battle pet used to be available to purchase on the Blizzard store but is no longer available.",
 keywords={"Mechanical","Blizzard","Store"},
 pet=256,
 },[[
@@ -6501,7 +6501,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have an engineering level of 265 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have an engineering level of 265 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=95,
 },[[
@@ -6519,7 +6519,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have an engineering level of 205 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have an engineering level of 205 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=86,
 },[[
@@ -6536,7 +6536,7 @@ You Collected the "Lil' Smoky" Battle Pet.
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical Pets\\Mechanical Chicken",{
 patch='unknown',
 source='unknown',	author="support@zygorguides.com",
-description="\nThis battle pet is a reward for completeing the quest An OOX of Your Own.",
+description="This battle pet is a reward for completeing the quest An OOX of Your Own.",
 keywords={"Mechanical","An","OOX","Of","Your","Own"},
 pet=83,
 },[[
@@ -6605,7 +6605,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have a Pandaria engineering level of 50 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have a Pandaria engineering level of 50 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=844,
 },[[
@@ -6623,7 +6623,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have an engineering level of 75 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have an engineering level of 75 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=39,
 },[[
@@ -6641,7 +6641,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by purchasing the Starcraft 2 Collector's Edition.",
+description="This battle pet is obtained by purchasing the Starcraft 2 Collector's Edition.",
 keywords={"Mechanical","Collector's","Edition"},
 pet=258,
 },[[
@@ -6659,7 +6659,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have a Cataclysm engineering level of 25 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have a Cataclysm engineering level of 25 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=261,
 },[[
@@ -6677,7 +6677,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be crafted if you have an engineering level of 205 or purchased from the Auction House.",
+description="This battle pet can be crafted if you have an engineering level of 205 or purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=85,
 },[[
@@ -6695,7 +6695,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Everlook in Winterspring.",
+description="This battle pet can be tamed in the wild around Everlook in Winterspring.",
 keywords={"Mechanical","Winterspring"},
 pet=472,
 },[[
@@ -6712,7 +6712,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Everlook in Winterspring.",
+description="This battle pet can be tamed in the wild around Everlook in Winterspring.",
 keywords={"Mechanical","Winterspring"},
 pet=471,
 },[[
@@ -6729,7 +6729,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Mechanical","Trading","Card","Game"},
 pet=168,
 },[[
@@ -6752,7 +6752,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around The Dead Acre in Westfall.",
+description="This battle pet can be tamed in the wild around The Dead Acre in Westfall.",
 keywords={"Mechanical","Westfall"},
 pet=389,
 },[[
@@ -6769,7 +6769,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Auction House.",
+description="This battle pet can be purchased from the Auction House.",
 keywords={"Mechanical","Auction","House"},
 pet=116,
 },[[
@@ -6786,7 +6786,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from various world vendors.",
+description="This battle pet can be purchased from various world vendors.",
 keywords={"Mechanical","World","Vendor"},
 pet=227,
 },[[
@@ -6806,7 +6806,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Silverpine Forest.",
+description="This battle pet can be tamed in the wild all around Silverpine Forest.",
 keywords={"Undead","Silverpine","Forest"},
 pet=455,
 },[[
@@ -6823,7 +6823,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Andorhal in the Western Plaguelands.",
+description="This battle pet can be tamed in the wild around Andorhal in the Western Plaguelands.",
 keywords={"Undead","Western","Plaguelands"},
 pet=456,
 },[[
@@ -6840,7 +6840,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Undead","Trading","Card","Game"},
 pet=348,
 },[[
@@ -6863,7 +6863,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by purchasing the Diablo 3 Collector's Edition.",
+description="This battle pet is obtained by purchasing the Diablo 3 Collector's Edition.",
 keywords={"Undead","Collector's","Edition"},
 pet=346,
 },[[
@@ -6881,7 +6881,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is obtained by purchasing the Wrath of the Lich King Collector's Edition.",
+description="This battle pet is obtained by purchasing the Wrath of the Lich King Collector's Edition.",
 keywords={"Undead","Collector's","Edition"},
 pet=188,
 },[[
@@ -6899,7 +6899,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Loatheb inside the Naxxramas raid.",
+description="This battle pet has a chance to drop from Loatheb inside the Naxxramas raid.",
 keywords={"Undead","Naxxramas"},
 pet=1144,
 },[[
@@ -6923,7 +6923,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from a vendor in The Black Market in Dalaran.",
+description="This battle pet can be purchased from a vendor in The Black Market in Dalaran.",
 keywords={"Mechanical","Dalaran"},
 pet=190,
 },[[
@@ -6943,7 +6943,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Maexxna inside the Naxxramas raid.",
+description="This battle pet has a chance to drop from Maexxna inside the Naxxramas raid.",
 keywords={"Undead","Naxxramas"},
 pet=1143,
 },[[
@@ -6967,7 +6967,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Eastern Plaguelands.",
+description="This battle pet can be tamed in the wild all around the Eastern Plaguelands.",
 keywords={"Undead","Eastern","Plaguelands"},
 pet=628,
 },[[
@@ -6984,7 +6984,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around the Eastern Plaguelands.",
+description="This battle pet can be tamed in the wild all around the Eastern Plaguelands.",
 keywords={"Undead","Eastern","Plaguelands"},
 pet=627,
 },[[
@@ -7001,7 +7001,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Southwest part of the Hillsbrad Foothills.",
+description="This battle pet can be tamed in the wild around the Southwest part of the Hillsbrad Foothills.",
 keywords={"Undead","Hillsbrad","Foothills"},
 pet=453,
 },[[
@@ -7018,7 +7018,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be obtained through the World of Warcraft Trading Card Game.",
+description="This battle pet can be obtained through the World of Warcraft Trading Card Game.",
 keywords={"Undead","Trading","Card","Game"},
 pet=302,
 },[[
@@ -7041,7 +7041,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be purchased from the Blizzard store.",
+description="This battle pet can be purchased from the Blizzard store.",
 keywords={"Undead","Blizzard","Store"},
 pet=249,
 },[[
@@ -7058,7 +7058,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Ruins of Lordaeron in Tirisfal Glades.",
+description="This battle pet can be tamed in the wild around the Ruins of Lordaeron in Tirisfal Glades.",
 keywords={"Undead","Tirisfal","Glades"},
 pet=458,
 },[[
@@ -7079,7 +7079,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet is given to you after you get the achievement Raiding With Leashes.",
+description="This battle pet is given to you after you get the achievement Raiding With Leashes.",
 keywords={"Undead","Raiding","With","Leashes"},
 pet=1145,
 },[[
@@ -7097,7 +7097,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Karazhan in Deadwind Pass during the hours of 12am-9am server time.",
+description="This battle pet can be tamed in the wild around Karazhan in Deadwind Pass during the hours of 12am-9am server time.",
 keywords={"Undead","Deadwind","Pass"},
 pet=439,
 },[[
@@ -7116,7 +7116,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around Sindragosa's Fall in Icecrown.",
+description="This battle pet can be tamed in the wild around Sindragosa's Fall in Icecrown.",
 keywords={"Undead","Icecrown"},
 pet=538,
 },[[
@@ -7133,7 +7133,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the west coast beach in the Ghostlands.",
+description="This battle pet can be tamed in the wild around the west coast beach in the Ghostlands.",
 keywords={"Undead","Ghostlands"},
 pet=463,
 },[[
@@ -7150,7 +7150,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet has a chance to drop from Gluth inside the Naxxramas raid.",
+description="This battle pet has a chance to drop from Gluth inside the Naxxramas raid.",
 keywords={"Undead","Naxxramas"},
 pet=1146,
 },[[
@@ -7174,7 +7174,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis battle pet was a drop from killing Tenris Mirkblood during The Scourge Invasion event.",
+description="This battle pet was a drop from killing Tenris Mirkblood during The Scourge Invasion event.",
 keywords={"Undead","The","Scourge","Invasion"},
 pet=206,
 },[[

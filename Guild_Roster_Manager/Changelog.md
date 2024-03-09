@@ -1,3 +1,67 @@
+## **VERSION 1.9905 RELEASE - February 26th 2024**
+
+***QUALITY OF LIFE***
+
+* The CustomNote has been added to the custom GRM roster (/roster). It is also searchable with the note search above.
+
+* I added the option to choose your color by RGB on the 255 scale. Previously it was only  available by manually selecting the color on the wheel, or by entering the hexcode. I once had this added but due to some frame changes it's been missing for a long time, so I re-added it since I was working on fixing the color frame.
+
+* The guild message of the day text will now "wrap" cleaner on the mouseover for the GRM minimap button. I guess I never noticed how bad it looked since I never utilized the full 250+ character limit. When I was debugging some issues in another person's guild it stretched across like 75% of my screen! lol. So, I wrote a function that can wrap any line to a given length (ish), so I might implement this other places if anyone has any suggestions on mouseovers that could use some nice text wrapping.
+
+* Added support for the ClassColors addon.
+
+* The addon will no longer bug you over system messages being disabled if you use an addon like Fast Guild invite. This is handled more efficient and smarter now, and you can enable/disable system messages at will.
+
+* The Custom GRM roster should now properly update on the fly when adding, removing, or editing notes from the public, officer, or custom notes through the mouseover window.
+
+***BUG FIXES***
+
+* Fixed an issue where the additional filtering to kick a player regardless if they are active or inactive, if they haven't moved from a rank after X amount of time should now properly be clickable. In some cases it could be, but on making a new rule it would be greyed out improperly in certain circumstances.
+
+* In addition, the demote rule was showing this filter option, which didn't make sense. This option has been removed from the demote macro rule window as an option, as well as the settings index to ensure data consistency here of a deprecated variable.
+
+* Fixed an issue when kicking players with the macro tool, if you had checked the box to disable chat spam when using the tool, it was only working on promote/demote spam, but it was still showing the kick system message spam. This is now resolved.
+
+* Fixed an issue where you were unable to select and change the main/alt tag color or the chat log colors. I guess there was a recent change around this I didn't notice, on the back end. This is now resolved.
+
+* Fixed an issue where a Lua error would throw when changing colors on the log as it was checking for the "Hardcore Mode" death announce. even in retail, yet I never loaded those frames in non-hardcore modes. This should now work without any pesky error!
+
+* On leaving a guild, if you had the GRM window open, it would throw some errors as it auto-hid. This should no longer happen.
+
+
+## **VERSION 1.9904 RELEASE - January 16th, 2024**
+
+***Patch 10.2.5 compatibility Release***
+
+***BUG FIXES***
+
+* Fixed a bug where if you had disabled the "scanning for changes" in the GRM options, where it still would scan for changes one time at login or reload, it was  failing to ever do any scan updates in the future. So, some might have disabled it from scanning for changes ever X seconds and in doing so it gimped GRM completely. This was only recently reported so I wonder if lots of people just never disable the scanning as to why it hasn't been reported for so long lol.
+
+* Fixed a bug that could prevent some people from being able to update the addon and so it would never load. These are getting ironed out. It seems they pop up on occasion! lol
+
+* Fixed an issue where if you were in the middle of a sync, but you had "scanning" of the roster disabled and thus only updated changes upon logging in, it would error.
+
+* Fixed a bug where GRM was not configuring properly the macro tool so it was crashing, and thus the macro tool would not load properly, which would make it seem like you were denied permissions to use it. It was really just because the macro itself was crashing.
+
+* Fixed an issue where GRM was overriding chat class coloring when not in a guild, and ther ewas no way to disable it since you didn't have access to this specific option when not in a guild. It now show only trigger and be able to disable when not in a guild, as intended.
+
+* Fixed a bug where a lua error would trigger causing the ban list not to appear when opening the tab... this only effect classic builds.
+
+
+## **VERSION 1.9903 RELEASE - December 11th, 2023**
+
+***BUG FIXES***
+
+* Fixed an issue where the addon will not load for someone who has not updated in a while as it crashes on patching. This was due to a small typo where I accidently typo'd and erased a function name without realizing it in the previous update. Whoops!
+
+* Fixed an issue that will force a quicker update scan when someone logs back into the guild. This is useful in HC mode where people are dying often and making a new toon and relogging after deleting the old one. HOWEVER, this does not resolve the issue where a ghost double still exists on the server from Blizz's end. There isn't really a great way to resolve this without adding a lot of extra checks and trying to create some way to ignore the data being received from the server... which seems to self resolve after a few hours anyway. This is just going to resolve some annoyance with it.
+
+
+## **VERSION 1.9902 RELEASE - December 1st, 2023**
+
+*Significant update is coming, but I didn't get it done yet, so I commented out access to a lot of the changes. I will have the update out soon.*
+
+* Compatibility update for Classic Season of Discovery
 
 ## **VERSION 1.9901 RELEASE - November 8th, 2023**
 

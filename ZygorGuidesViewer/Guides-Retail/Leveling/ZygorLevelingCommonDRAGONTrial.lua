@@ -120,3 +120,5 @@ ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign + Side Quests")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Wrathion's Questline")
 ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Tyr's Return")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\Seeing Red")
+ZygorGuidesViewer:RegisterGuidePlaceholder("Leveling Guides\\Dragonflight (60-70)\\The Reclaiming of Gilneas")

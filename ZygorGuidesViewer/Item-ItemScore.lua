@@ -123,11 +123,11 @@ function ItemScore:OnEvent(event,arg1,arg2,...)
 	elseif event == "PLAYER_REGEN_ENABLED" then -- combat ended, check if anything is waiting for equip
 		ItemScore.Upgrades:ProcessPossibleUpgrades()
 	end
-
+--[[
 	if event == "BAG_UPDATE_DELAYED" then
 		ItemScore.Upgrades:ShowAltsUpgrades()
 	end
-
+--]]
 	if event == "PLAYER_EQUIPMENT_CHANGED" then
 		ItemScore.GearFinder:ClearResults()
 	end
@@ -493,6 +493,7 @@ function ItemScore:GetItemScore(itemlink,verbose)
 	local item = ItemScore:GetItemDetails(itemlink)
 	if not item then return -1, false, "no info yet" end
 	if not item.equipment then return 0,true,"not equipment" end
+	if not self.active_set then return -1, false, "no statweight selected" end
 	--if not next(item.stats) then return -1, false, "no item stats yet" end
 
 	if item.score then return item.score, true, "scored cache ok" end
@@ -1029,6 +1030,16 @@ local function ItemScore_SetTooltipData(tooltip)
 		local itemName,itemlink = tooltip:GetItem()
 		if not itemlink then ItemScore.TooltipPatched  = true return end
 
+		if not ItemScore.ActiveRuleSet then 
+			tooltip:AddLine(" ")
+			tooltip:AddLine("|cfffe6100Zygor ItemScore:|r")
+			tooltip:AddLine("|cffff0000No build selected|r")
+			tooltip:AddLine("|cffffffff(See Options / Item Score)|r")
+			return
+		end
+			
+		local spec = ItemScore.ActiveRuleSet.specname and " ("..ItemScore.ActiveRuleSet.specname..")" or ""
+
 		local item = ItemScore:GetItemDetails(itemlink,"temporary") -- temporary item data will be purged 60 seconds after we are done with tooltip
 		if not item then ItemScore.TooltipPatched  = true return end
 
@@ -1092,7 +1103,7 @@ local function ItemScore_SetTooltipData(tooltip)
 				end
 
 				tooltip:AddLine(" ")
-				tooltip:AddLine("|cfffe6100Zygor ItemScore:|r")
+				tooltip:AddLine("|cfffe6100Zygor ItemScore"..spec..":|r")
 				local slotinfo1 = slot_2 and "Slot 1: " or ""
 				local slotinfo2 = slot_2 and "Slot 2: " or ""
 
@@ -1130,7 +1141,7 @@ local function ItemScore_SetTooltipData(tooltip)
 				end
 			elseif (score or 0)>0 then
 				tooltip:AddLine(" ")
-				tooltip:AddLine("|cfffe6100Zygor ItemScore:|r")
+				tooltip:AddLine("|cfffe6100Zygor ItemScore"..spec..":|r")
 				tooltip:AddLine("|r  " .. futureprefix .. "Upgrade |cff00ff00100% " .. futuresuffix)
 			end
 			for statname,statvalue in pairs(item.stats) do
@@ -1145,7 +1156,7 @@ local function ItemScore_SetTooltipData(tooltip)
 		else
 			if item.type~="" then
 				tooltip:AddLine(" ")
-				tooltip:AddLine("|cfffe6100Zygor ItemScore:|r")
+				tooltip:AddLine("|cfffe6100Zygor ItemScore"..spec..":|r")
 				if ZGV.IsRetail then
 					tooltip:AddLine("|r  Not a valid item for "..ItemScore.playerspecName)
 				else
@@ -1153,11 +1164,12 @@ local function ItemScore_SetTooltipData(tooltip)
 				end
 			end
 		end
-
+		--[[
 		local upgradealt,alts = ItemScore.Upgrades:IsUpgradeForAlt(itemlink)
 		if upgradealt then
 			tooltip:AddLine("|r  Is upgrade for: " .. table.concat(alts,","))
 		end
+		--]]
 		local upgradeoffspec,specs = ItemScore.Upgrades:IsUpgradeForOffspec(itemlink) 
 		if upgradeoffspec then
 			tooltip:AddLine("|r  Is upgrade for offspec: " .. table.concat(specs,", "))
@@ -1325,7 +1337,7 @@ tinsert(ZGV.startups,{"ItemScore",function(self)
 
 	ItemScore.Upgrades.AltsQueue = ZGV.db.char.altqueue
 	ItemScore.Upgrades:ScoreEquippedItems()
-	ItemScore.Upgrades:ScanBagsForUpgradesForAlts()
+--	ItemScore.Upgrades:ScanBagsForUpgradesForAlts()
 
 	if GameTooltip:HasScript("OnTooltipSetItem") then
 		GameTooltip:HookScript("OnTooltipSetItem", ItemScore_SetTooltipData)

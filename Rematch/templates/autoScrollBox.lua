@@ -1,5 +1,6 @@
 local _,rematch = ...
 local C = rematch.constants
+local settings = rematch.settings
 
 --[[
     Wrapper for Blizzard's recently expanded ScrollBox control with support for expanding/collapsing headers,
@@ -94,10 +95,12 @@ local C = rematch.constants
 
 ]]
 
-local setView, populateList, handleSelect, setupSelect, getDataHeight -- local functions defined at end
+local setView, populateList, handleSelect, setupSelect, getDataHeight, updateListSpeed -- local functions defined at end
 local disableSearch = false -- set to true during a setView
 
 local selectFrames = {} -- indexed by autoscrollbox(self), unordered {selectName=Frame,selectName=Frame,etc}
+
+local allLists = {} -- lookup table of all AutoScrollBox frames that get set up (indexed by autoscrollbox)
 
 RematchAutoScrollBoxMixin = {}
 
@@ -157,7 +160,34 @@ function RematchAutoScrollBoxMixin:Setup(definition)
         self.ScrollBox:RegisterCallback("OnScroll",function(...) definition.onScroll(self,...) end)
     end
 
+    -- separate OnScroll callback to disable ScrollToTopButton/ScrollToBottomButton
+    self.ScrollBox:RegisterCallback("OnScroll",function(...)
+        local _,percent,_,extent = ...
+        if extent==0 then -- can't scroll, disable top and bottom
+            self.ScrollToTopButton:SetToDisable()
+            self.ScrollToBottomButton:SetToDisable()
+        elseif percent<0.00000001 then -- at top, disable top, enable bottom
+            self.ScrollToTopButton:SetToDisable()
+            self.ScrollToBottomButton:SetToEnable()
+        elseif percent>0.99999999 then -- at bottom, enable top, disable bottom
+            self.ScrollToTopButton:SetToEnable()
+            self.ScrollToBottomButton:SetToDisable()
+        else -- somewhere in middle of scrollable list, enable top and bottom
+            self.ScrollToTopButton:SetToEnable()
+            self.ScrollToBottomButton:SetToEnable()
+        end
+    end)
+
+    self.ScrollBox:RegisterCallback("OnUpdate",function(...)
+        updateListSpeed(self)
+    end)
+
     setView(self) -- create view (local so it can't be called from outside here or SetCompactMode)
+
+    self.ScrollBox:SetPanExtent(self.isCompact and self.compactHeight or self.normalHeight)
+
+    allLists[self] = true
+    updateListSpeed(self)
 
     self.isSetup = true
 end
@@ -193,6 +223,18 @@ function RematchAutoScrollBoxMixin:Update()
         end
         self.CaptureButton:SetPoint("BOTTOMRIGHT",self,"BOTTOMRIGHT",-29,4)
         self.CaptureButton:Show()
+    end
+end
+
+-- if any list has a speed set, all lists are set to the same speed
+function RematchAutoScrollBoxMixin:SetSpeed(speed)
+    if speed==C.MOUSE_SPEED_SLOW or speed==C.MOUSE_SPEED_NORMAL or speed==C.MOUSE_SPEED_MEDIUM or speed==C.MOUSE_SPEED_FAST then
+        settings.MousewheelSpeed = speed
+    else
+        settings.MousewheelSpeed = C.MOUSE_SPEED_NORMAL
+    end
+    for list in pairs(allLists) do
+        updateListSpeed(list)
     end
 end
 
@@ -265,6 +307,7 @@ function RematchAutoScrollBoxMixin:SetCompactMode(isCompact)
     if self:GetCompactMode()~=newCompact then -- only need to change if value is different
         self.isCompact = newCompact
         setView(self)
+        self.ScrollBox:SetPanExtent(self.isCompact and self.compactHeight or self.normalHeight)
     end
 end
 
@@ -622,6 +665,53 @@ function RematchAutoScrollBoxMixin:GetDataFrame(data)
     end
 end
 
+--[[ scroll to end button mixin ]]
+
+RematchAutoScrollBoxScrollToEndMixin = {}
+
+function RematchAutoScrollBoxScrollToEndMixin:OnMouseDown()
+    if not self.isDisabled then
+        self.Texture:SetTexCoord(0,1,0.5,1)
+        self.Highlight:SetTexCoord(0,1,0.5,1)
+    end
+end
+
+function RematchAutoScrollBoxScrollToEndMixin:OnMouseUp()
+    if not self.isDisabled then
+        self.Texture:SetTexCoord(0,1,0,0.5)
+        self.Highlight:SetTexCoord(0,1,0,0.5)
+    end
+end
+
+-- self.scrollMethod should be "ScrollToBegin" or "ScrollToEnd", the ScrollBox method to scroll to top/bottom
+function RematchAutoScrollBoxScrollToEndMixin:OnClick(button)
+    local scrollBox = self:GetParent().ScrollBox
+    scrollBox[self.scrollMethod](scrollBox)
+    PlaySound(SOUNDKIT.IG_CHAT_BOTTOM)
+end
+
+-- to minimize work since this can be called many times while scrolling, this only does work if button needs enabled
+function RematchAutoScrollBoxScrollToEndMixin:SetToEnable()
+    if self.isDisabled then
+        self.isDisabled = false
+        self:GetScript("OnMouseUp")(self)
+        self:SetAlpha(1)
+        self:GetParent().ScrollBar[self.stepButton]:SetAlpha(1) -- un-dims the scrollbar's built-in Back/Forward button
+        self.Highlight:SetAlpha(0.3)
+    end
+end
+
+-- to minimize work since this can be called many times while scrolling, this only does work if button needs disabled
+function RematchAutoScrollBoxScrollToEndMixin:SetToDisable()
+    if not self.isDisabled then
+        self:GetScript("OnMouseUp")(self)
+        self:SetAlpha(0.5)
+        self:GetParent().ScrollBar[self.stepButton]:SetAlpha(0.5) -- dims the scrollbar's built-in Back/Forward button
+        self.Highlight:SetAlpha(0)
+        self.isDisabled = true
+    end
+end
+
 --[[ local stuff ]]
 
 -- this fills displayData with data from allData. for simple lists with no headers or search, it's a direct copy;
@@ -766,5 +856,28 @@ function getDataHeight(self,data)
         return self.compactHeight
     else
         return self.normalHeight
+    end
+end
+
+-- updates the list (autoscrollbox) wheelPanScalar to adjust scroll speed to settings.MousewheelSpeed
+function updateListSpeed(list)
+    if allLists[list] then
+        local speed = settings.MousewheelSpeed
+        local scrollBox = list.ScrollBox
+        local wheelPanScalar
+        if speed==C.MOUSE_SPEED_SLOW then
+            wheelPanScalar = 1
+        elseif speed==C.MOUSE_SPEED_NORMAL then
+            wheelPanScalar = 2
+        else -- the other speeds are based on height of the list (autoscrollbox)
+            local panExtent = max(scrollBox:GetPanExtent() or 0,1)
+            local height = list:GetHeight()-panExtent
+            if speed==C.MOUSE_SPEED_MEDIUM then
+                wheelPanScalar = (height/2-(height/2)%panExtent)/panExtent
+            elseif speed==C.MOUSE_SPEED_FAST then
+                wheelPanScalar = (height-height%panExtent)/panExtent
+            end
+        end
+        scrollBox.wheelPanScalar = (wheelPanScalar and wheelPanScalar>0) and wheelPanScalar or 2
     end
 end

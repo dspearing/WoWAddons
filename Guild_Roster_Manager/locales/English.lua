@@ -1437,16 +1437,12 @@ GRML.English = function()
 
     -- 1.93
     GRM_L["Customize Color"] = true
-    GRM_L["GRM has detected that FGI is blocking system messages and cannot function properly without them. Do you want to enable them?"] = true        -- FGI is in reference to the "Fast Guild Invite" addon...
-    GRM_L["GRM has detected that System Messages are disabled and cannot function properly without them. Do you want to enable them?"] = true
-    GRM_L["System Messages have been enabled and GRM should now function properly."] = true
     GRM_L["Officer Only Access"] = true   -- Tooltip on the advanced join date tool button
     GRM_L["Player no longer has officer access. Advanced Join Date Tool has been closed."] = true
     GRM_L["{custom1} to open Player Window"] = true
     GRM_L["{custom1} for Additional Options"] = true
 
     --1.93
-    GRM_L["Please Note: To permanently enable system messages, you must manually re-enable them in your chat window general settings"] = true
     GRM_L["Unable to notify yourself if you go offline."] = true
     GRM_L["{custom1} to sync join date among all alts in grouping."] = true
     GRM_L["Total Patch Time:"] = true
@@ -1666,7 +1662,7 @@ GRML.English = function()
 
     -- R1.980
     GRM_L["M+ Score" ] = true
-    GRM_L["Search Public and Officer Notes"] = true
+    GRM_L["Search Public, Officer, and Custom Notes"] = true
     GRM_L["Note Search"] = true
     GRM_L["Tips"] = true    -- Options > Help tab - "Tips" as in helpful info.
     GRM_L["Hold the CONTROL key down to scroll 3x the speed"] = true
@@ -1746,6 +1742,20 @@ GRML.English = function()
     -- R1.988
     GRM_L["In-combat. Hiding all GRM windows"] = true
     GRM_L["Auto-Hide all GRM windows when entering combat."] = true
-    
+
+    -- R1.9902
+    GRM_L["Unable to kick or promote or demote players within the guild at current rank."] = true
+    GRM_L["Unable to kick or demote players within the guild at current rank."] = true
+    GRM_L["Unable to kick or promote players within the guild at current rank."] = true
+    GRM_L["Unable to kick players within the guild at current rank."] = true
+    GRM_L["{name}'s Main Rank Sync Rule {num}"] = true
+    GRM_L["{name}'s Repeated Inactivity Rule {num}"] = true
+    GRM_L["Please Select Special Macro Rule"] = true
+    GRM_L["Alt Group Rank Sync"] = true
+    GRM_L["Repeated Inactivity Monitor"] = true
+
+    -- R1.9904
+    GRM_L["If disabled, a one time scan is still done at login or reload."] = true
+
 end
 

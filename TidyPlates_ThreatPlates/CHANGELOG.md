@@ -1,3 +1,3 @@
-# 11.1.33 (2023-12-01)
+# 11.1.39 (2024-02-26)
 
-* Updated TOC version for Classic Patch 1.15.0.
+* Upgraded integrated library Ace3 r1320 to fix an issue with the color picker [Comment #7208]. 

@@ -75,7 +75,7 @@ function widget:Initialise()
 	local region = GetCurrentRegion()
 	if region then
 		self.firstEvent = firstEvent[region]
-		self.interval = (3 * 60 + 30) * 60
+		self.interval = 90 * 60
 		self.duration = 15 * 60
 	end
 

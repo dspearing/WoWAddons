@@ -113,7 +113,7 @@ function WW:SetupMenuArray()
 		{text="Transmogrifier",icon="Interface\\Minimap\\Tracking\\Transmogrifier"},
 		{text="Vendor",icon="Interface\\Minimap\\Tracking\\Food"},
 		{text="Void Storage",icon=ZGV.IconSets.WorldQuest.file,iconkey="VOID"},
-		{text="Main City",icon="Interface\\Minimap\\Tracking\\Banker"},
+		--{text="Main City",icon="Interface\\Minimap\\Tracking\\Banker"},
 	}
 
 	if ZGV.IsRetail then
@@ -139,6 +139,44 @@ function WW:SetupMenuArray()
 	end
 
 
+end
+
+function WW:SetWaypoint(map,x,y,targetident,w,region)
+	local name,desc,found = ZGV.Localizers:GetTranslatedNPC(targetident)
+	local title = type(targetident)=="string" and targetident or ZGV.L['stepgoal_talk to']:format(name or "(#"..targetident..")")
+	if w then
+		title = title .. "\n".. (w=="1" and L["whowhere_walks"] or w)
+	end
+
+	WW.CurrentWay = ZGV.Pointer:SetWaypoint(map,x,y,{
+		title=title,
+		type="manual",
+		cleartype=not IsControlKeyDown(),
+		icon=ZGV.Pointer.Icons.greendotbig,
+		onminimap="always",
+		overworld=true,
+		showonedge=true,
+		findpath=true,
+		manualnpcid = targetident,
+		waypoint_region=region,
+	})
+	if not found and targetident~="Mailbox" then
+		function WW.CurrentWay:UpdateText()
+			local name,desc,found = ZGV.Localizers:GetTranslatedNPC(targetident)
+			if found then
+				WW.CurrentWay.title = ZGV.L['stepgoal_talk to']:format(name)
+				ZGV:ShowWaypoints()
+				ZGV:CancelTimer(WW.UpdateTextTimer)
+			end
+		end
+		WW.UpdateTextTimer = ZGV:ScheduleRepeatingTimer(function()
+			if WW.CurrentWay and WW.CurrentWay.UpdateText then
+				WW.CurrentWay:UpdateText()
+			else
+				ZGV:CancelTimer(WW.UpdateTextTimer)
+			end
+		end,1)
+	end
 end
 
 function WW:CreateWorkerFrame()
@@ -174,13 +212,14 @@ local function CalcThread_Direct()
 			if dist and dist<mindist then
 				mindist=dist
 				minid,minm,minx,miny=tonumber(id),npc.m,npc.x,npc.y
+				minw,minr = npc.w, npc.region
 			end
 		end
 		count=count+1
 		if count%100==0 then coroutine.yield() end
 	end
 	if minid then
-		ZGV.Pointer:SetWaypoint(minm,minx,miny,{title=ZGV.Localizers:GetTranslatedNPC(minid),arrow=true,findpath=true,type="manual",cleartype="true"},true)
+		WW:SetWaypoint(minm,minx,miny,minid,minw,minr)
 	end
 
 end
@@ -264,33 +303,7 @@ function WW.PathFoundHandler(state,path,ext,reason)
 	end
 
 	if last then
-		local title = ZGV.L['stepgoal_talk to']:format(ZGV.Localizers:GetTranslatedNPC(tonumber(last.title)) or "?")
-		if last.w then
-			title = title .. "\n".. (last.w=="1" and L["whowhere_walks"] or last.w)
-		end
-		local way = ZGV.Pointer:SetWaypoint(last.m,last.x,last.y,{
-			title=title,
-			type="manual",
-			cleartype=not IsControlKeyDown(),
-			icon=ZGV.Pointer.Icons.greendotbig,
-			onminimap="always",
-			overworld=true,
-			showonedge=true,
-			findpath=true,
-			manualnpcid = npcid,
-			waypoint_region=last.region
-		})
-	end
-end
-
-function WW:ClearTarget() 
-	-- called on PLAYER_TARGET_CHANGED to clear manual waypoint once player is at proper npc
-	if not LibRover.RESULTS then return end
-	local point = LibRover.RESULTS[#LibRover.RESULTS]
-	if not (point and point.waypoint and point.waypoint.manualnpcid) then return end
-	if point.waypoint.manualnpcid==ZGV.GetTargetId() then
-		ZGV.Pointer:ClearWaypoints("manual")  
-		ZGV:ShowWaypoints()
+		WW:SetWaypoint(last.m,last.x,last.y,tonumber(last.title),last.w,last.region)
 	end
 end
 
@@ -300,7 +313,7 @@ local function CalcMailboxThread()
 	local m, x, y =  WW.m, WW.x, WW.y
 
 	local parse=ZGV.MailboxData.parseMailbox
-	local mindist,minid,minm,minf,minx,miny=999999
+	local mindist,minid,minm,minf,minx,miny,minw,minr=999999
 	local count=0
 	for id,data in ZGV.MailboxData:iterate() do
 		local mailbox=parse(data)
@@ -312,13 +325,14 @@ local function CalcMailboxThread()
 			if dist and dist<mindist then
 				mindist=dist
 				minid,minm,minx,miny=tonumber(id),mailbox.m,mailbox.x,mailbox.y
+				minw,minr = mailbox.w, mailbox.region
 			end
 		end
 		count=count+1
 		if count%100==0 then coroutine.yield() end
 	end
 	if minid then
-		ZGV.Pointer:SetWaypoint(minm,minx,miny,{title="Mailbox",arrow=true,findpath=true,type="manual",cleartype="true"},true)
+		WW:SetWaypoint(minm,minx,miny,"Mailbox",minw,minr)
 	end
 
 end
@@ -461,7 +475,28 @@ function WW:LeechTaxis()
 	end
 end
 
+function WW:InteractionStart(_,interactionID)
+	if interactionID==Enum.PlayerInteractionType.MailInfo then	
+		WW.ActiveNPC = "Mailbox"
+	else
+		WW.ActiveNPC = ZGV.GetUnitId("NPC")
+	end
+end
 
+function WW:InteractionEnd() 
+	if not (WW.ActiveNPC and (type(WW.ActiveNPC)=="string" or WW.ActiveNPC>0)) then return end
+	local lastNPC = WW.ActiveNPC
+	WW.ActiveNPC = nil
+
+	-- called when player closes interaction with npc
+	if not LibRover.RESULTS then return end
+	local point = LibRover.RESULTS[#LibRover.RESULTS]
+	if not (point and point.waypoint and point.waypoint.manualnpcid) then return end
+	if point.waypoint.manualnpcid==lastNPC then
+		ZGV.Pointer:ClearWaypoints("manual")  
+		ZGV:ShowWaypoints()
+	end
+end
 
 
 tinsert(ZGV.startups,{"WhoWhere",function(self)
@@ -469,5 +504,7 @@ tinsert(ZGV.startups,{"WhoWhere",function(self)
 	WW:CreateWorkerFrame()
 	WW:LeechTaxis()
 	WW:Initialise()
-	ZGV:AddEventHandler("PLAYER_TARGET_CHANGED",WW.ClearTarget)
+
+	ZGV:AddEventHandler("PLAYER_INTERACTION_MANAGER_FRAME_SHOW",WW.InteractionStart)
+	ZGV:AddEventHandler("PLAYER_INTERACTION_MANAGER_FRAME_HIDE",WW.InteractionEnd)
 end})

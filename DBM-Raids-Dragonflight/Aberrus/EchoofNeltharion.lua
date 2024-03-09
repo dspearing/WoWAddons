@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2523, "DBM-Raids-Dragonflight", 2, 1208)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20231123214402")
+mod:SetRevision("20240203201001")
 mod:SetCreatureID(201668)
 mod:SetEncounterID(2684)
 mod:SetUsedIcons(6)
@@ -20,7 +20,6 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED_DOSE 407088",
 	"SPELL_PERIODIC_DAMAGE 409058 404277 409183",
 	"SPELL_PERIODIC_MISSED 409058 404277 409183",
---	"UNIT_DIED"
 	"UNIT_SPELLCAST_SUCCEEDED boss1"
 )
 
@@ -35,7 +34,7 @@ mod:RegisterEventsInCombat(
 --]]
 --TODO, delete redundant/incorrect events when real events known
 --TODO, Add shatter? https://www.wowhead.com/ptr/spell=401825/shatter
-local warnPhase									= mod:NewPhaseChangeAnnounce(2, nil, nil, nil, nil, nil, nil, 2)
+local warnPhase									= mod:NewPhaseChangeAnnounce(2, 2, nil, nil, nil, nil, nil, 2)
 --Stage One: The Earth Warder
 mod:AddTimerLine(DBM:EJ_GetSectionInfo(26192))
 local warnTwistedEarth							= mod:NewCountAnnounce(402902, 2)
@@ -217,6 +216,8 @@ function mod:SPELL_CAST_START(args)
 		specWarnUmbralAnnihilation:Play("aesoon")
 		if self.vb.annihilatingCount >= 5 then--Still true?
 			timerUmbralAnnihilationCD:Start(10.9, self.vb.annihilatingCount+1)
+		elseif self.vb.annihilatingCount == 2 then--A wild fluke that keeps coming up in debug
+			timerUmbralAnnihilationCD:Start(27.9, self.vb.annihilatingCount+1)
 		else
 			timerUmbralAnnihilationCD:Start(29.2, self.vb.annihilatingCount+1)
 		end
@@ -452,9 +453,3 @@ function mod:SPELL_PERIODIC_DAMAGE(_, _, _, _, destGUID, _, _, _, spellId, spell
 end
 mod.SPELL_PERIODIC_MISSED = mod.SPELL_PERIODIC_DAMAGE
 
-function mod:UNIT_DIED(args)
-	local cid = self:GetCIDFromGUID(args.destGUID)
-	if cid == 199233 then
-		warnHidden:Show()
-	end
-end

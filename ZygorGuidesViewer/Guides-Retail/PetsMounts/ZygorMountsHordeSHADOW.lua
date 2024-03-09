@@ -11,7 +11,7 @@ mounts={370620},
 patch='90205',
 mounttype='Ground',
 model={106262},
-description="\nThis mount is earned by completing a Blood Elf-specific questline.",
+description="This mount is earned by completing a Blood Elf-specific questline.",
 },[[
 leechsteps "Leveling Guides\\Shadowlands (50-60)\\Blood Elf Questline"
 step

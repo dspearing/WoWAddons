@@ -8,7 +8,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 75 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 75 Polished Pet Charms.",
 pet=2403,
 },[[
 step
@@ -32,7 +32,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 50 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 50 Polished Pet Charms.",
 pet=2425,
 },[[
 step
@@ -56,7 +56,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from the Isle of Fangs or Tusk Isle in Southern Zuldazar",
+description="This pet can be captured in the wild from the Isle of Fangs or Tusk Isle in Southern Zuldazar",
 pet=2385,
 },[[
 step
@@ -72,7 +72,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81500',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet can be collected after completing the Kul Tiras Children's Week event quests.",
+description="This pet can be collected after completing the Kul Tiras Children's Week event quests.",
 keywords={"Aquatic","Children's","Week"},
 pet=2576,
 },[[
@@ -173,7 +173,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from bog-type areas found in eastern and western Nazmir.",
+description="This pet can be captured in the wild from bog-type areas found in eastern and western Nazmir.",
 pet=2398,
 },[[
 step
@@ -192,7 +192,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Bladesman","Inowari"},
 pet=2688,
-description="\nThis battle pet is awarded after reaching rank 20 with Bladesman Inowari.",
+description="This battle pet is awarded after reaching rank 20 with Bladesman Inowari.",
 },[[
 step
 _Next to you:_
@@ -214,7 +214,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by reaching Honor Level 400 in PvP activities.",
+description="This pet can be collected by reaching Honor Level 400 in PvP activities.",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be collected on a Horde character.",
 pet=2479,
@@ -239,7 +239,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Battle","Commendation","PvP","Nazjatar"},
 pet=2691,
-description="\nThis battle pet can be purchased from Tomas Riogain in Mezzamere for 30 Nazjatar Battle Commendations.",
+description="This battle pet can be purchased from Tomas Riogain in Mezzamere for 30 Nazjatar Battle Commendations.",
 },[[
 step
 collect 30 Nazjatar Battle Commendation##168802 |or
@@ -262,7 +262,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from northwestern Nazmir or around Boralus Harbor.",
+description="This pet can be captured in the wild from northwestern Nazmir or around Boralus Harbor.",
 pet=2400,
 },[[
 step
@@ -278,7 +278,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along the coast of Falconhurst in Drustvar.",
+description="This pet can be captured in the wild along the coast of Falconhurst in Drustvar.",
 pet=2386,
 },[[
 step
@@ -294,7 +294,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Collector Kojo in Stormsong Valley for 200 Polished Pet Charms.\n\n"..
+description="This pet can be purchased from Collector Kojo in Stormsong Valley for 200 Polished Pet Charms.\n\n"..
 "_Requires Tortollan Seekers - Revered_",
 pet=2427,
 },[[
@@ -317,7 +317,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Nigel Rifthold in Drustvar for 100 Polished Pet Charms.",
+description="This pet can be purchased from Nigel Rifthold in Drustvar for 100 Polished Pet Charms.",
 pet=2424,
 },[[
 step
@@ -357,7 +357,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet is purchased from Captain Zen'taga in Dazar'alor for 100 Seafarer's Dubloon.",
+description="This pet is purchased from Captain Zen'taga in Dazar'alor for 100 Seafarer's Dubloon.",
 pet=2562,
 },[[
 step
@@ -377,7 +377,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around water along the southern bank of Nazmir.",
+description="This pet can be captured in the wild around water along the southern bank of Nazmir.",
 pet=2389,
 },[[
 step
@@ -393,7 +393,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along the river east of Brennadam in Stormsong Valley.",
+description="This pet can be captured in the wild along the river east of Brennadam in Stormsong Valley.",
 pet=2374,
 },[[
 step
@@ -409,7 +409,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 250 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 250 Polished Pet Charms.",
 pet=2423,
 },[[
 step
@@ -433,7 +433,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81500',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet can be collected after completing the Kul Tiras Children's Week event quests.",
+description="This pet can be collected after completing the Kul Tiras Children's Week event quests.",
 keywords={"Aquatic","Children's","Week"},
 pet=2577,
 },[[
@@ -534,7 +534,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along the coast of Vol'dun, Tiragarde Sound, and certain areas of Stormsong Valley.",
+description="This pet can be captured in the wild along the coast of Vol'dun, Tiragarde Sound, and certain areas of Stormsong Valley.",
 pet=2399,
 },[[
 step
@@ -550,7 +550,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2461,
 },[[
 step
@@ -570,7 +570,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around inland waterways in Tiragarde Sound.",
+description="This pet can be captured in the wild around inland waterways in Tiragarde Sound.",
 pet=2382,
 },[[
 step
@@ -586,7 +586,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2453,
 },[[
 step
@@ -606,7 +606,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Tricky Nick in Tiragarde Sound for 100,000 gold.",
+description="This pet can be purchased from Tricky Nick in Tiragarde Sound for 100,000 gold.",
 pet=2430,
 },[[
 step
@@ -630,7 +630,7 @@ author="support@zygorguides.com",
 startlevel=50.0,
 keywords={"Aquatic","Poen","Gillbrack"},
 pet=2687,
-description="\nThis battle pet is awarded after reaching rank 20 with Poen Gillbrack on the Horde faction.",
+description="This battle pet is awarded after reaching rank 20 with Poen Gillbrack on the Horde faction.",
 },[[
 step
 Learn the "Lustrous Glimmershell" Battle Pet |learnpet Lustrous Glimmershell##2687
@@ -643,7 +643,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81500',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet can be collected after completing the Kul Tiras Children's Week event quests.",
+description="This pet can be collected after completing the Kul Tiras Children's Week event quests.",
 keywords={"Aquatic","Children's","Week"},
 pet=2575,
 },[[
@@ -744,7 +744,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2462,
 },[[
 step
@@ -764,7 +764,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Artisan Okata in Mezzamere for 150 Prismatic Manapearls.",
+description="This pet can be purchased from Artisan Okata in Mezzamere for 150 Prismatic Manapearls.",
 pet=2686,
 },[[
 step
@@ -787,7 +787,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around areas of water in northern Stormsong Valley.",
+description="This pet can be captured in the wild around areas of water in northern Stormsong Valley.",
 pet=2373,
 },[[
 step
@@ -803,7 +803,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around areas of water in northern Stormsong Valley "..
+description="This pet can be captured in the wild around areas of water in northern Stormsong Valley "..
 "and just northwest of Arom's Stand in Drustvar.",
 pet=2378,
 },[[
@@ -820,7 +820,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around the channel of water in eastern Stormsong Valley "..
+description="This pet can be captured in the wild around the channel of water in eastern Stormsong Valley "..
 "or along the coast east of Bridgeport in Tiragarde Sound.",
 pet=2377,
 },[[
@@ -837,7 +837,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2445,
 },[[
 step
@@ -857,7 +857,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along certain coastal areas of Tiragarde Sound.",
+description="This pet can be captured in the wild along certain coastal areas of Tiragarde Sound.",
 pet=2381,
 },[[
 step
@@ -873,7 +873,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along the coast southwest of Shrine of the Storm in Stormsong Valley.",
+description="This pet can be captured in the wild along the coast southwest of Shrine of the Storm in Stormsong Valley.",
 pet=2372,
 },[[
 step
@@ -889,7 +889,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by reaching Honor Level 400 in PvP activities.",
+description="This pet can be collected by reaching Honor Level 400 in PvP activities.",
 pet=2478,
 },[[
 step
@@ -914,7 +914,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet can be crafted with the Alchemy profession.",
+description="This pet can be crafted with the Alchemy profession.",
 pet=2475,
 },[[
 step
@@ -937,7 +937,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2472,
 },[[
 step
@@ -957,7 +957,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2446,
 },[[
 step
@@ -977,7 +977,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
+description="This pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
 "It is available to Mythic difficulty only.",
 pet=2528,
 },[[
@@ -996,7 +996,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Shoak in Nazmir for 200 Polished Pet Charms.",
+description="This pet can be purchased from Shoak in Nazmir for 200 Polished Pet Charms.",
 pet=2419,
 },[[
 step
@@ -1018,7 +1018,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2559,
 },[[
 step
@@ -1037,7 +1037,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis pet is awarded upon purchase of the Battle for Azeroth Collector's Edition.",
+description="This pet is awarded upon purchase of the Battle for Azeroth Collector's Edition.",
 pet=2143,
 },[[
 step
@@ -1056,7 +1056,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Provisioner Lija in Nazmir for 75 Polished Pet Charms."..
+description="This pet can be purchased from Provisioner Lija in Nazmir for 75 Polished Pet Charms."..
 "_Requires Talanji's Expedition - Revered_",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be purchased on a Horde character or from the Auction House.",
@@ -1080,7 +1080,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected through Storm's Wake Paragon reputation boxes."..
+description="This pet can be collected through Storm's Wake Paragon reputation boxes."..
 "You cannot obtain this by normal means as a horde character.",
 pet=2569,
 },[[
@@ -1108,7 +1108,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild along coastal areas of Nazmir.",
+description="This pet can be captured in the wild along coastal areas of Nazmir.",
 pet=2392,
 },[[
 step
@@ -1124,7 +1124,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2758,
 },[[
@@ -1183,7 +1183,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2765,
 },[[
@@ -1242,7 +1242,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2757,
 },[[
@@ -1301,7 +1301,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2760,
 },[[
@@ -1360,7 +1360,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2763,
 },[[
@@ -1419,7 +1419,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2761,
 },[[
@@ -1478,7 +1478,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
+description="This pet can be collected by feeding four Ravenous Slimes in Nazjatar for "..
 "five days in a row.",
 pet=2762,
 },[[
@@ -1537,7 +1537,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet can be crafted with the Alchemy profession.",
+description="This pet can be crafted with the Alchemy profession.",
 pet=2477,
 },[[
 step
@@ -1559,7 +1559,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2551,
 },[[
 step
@@ -1578,7 +1578,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet is obtained via pet battle.",
+description="This pet is obtained via pet battle.",
 pet=2537,
 },[[
 step
@@ -1594,7 +1594,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild in the western portion of Nazmir.",
+description="This pet can be captured in the wild in the western portion of Nazmir.",
 pet=2388,
 },[[
 step
@@ -1610,7 +1610,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2451,
 },[[
 step
@@ -1630,7 +1630,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet must be purchased on a Horde character or from the Auction House.",
+description="This pet must be purchased on a Horde character or from the Auction House.",
 pet=2418,
 },[[
 step
@@ -1651,7 +1651,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2448,
 },[[
 step
@@ -1671,7 +1671,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet is awarded from the quest \"It seems You've Made a Friend\" in Nazmir.",
+description="This pet is awarded from the quest \"It seems You've Made a Friend\" in Nazmir.",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be collected on a Horde character or purchased from the Auction House.",
 pet=2157,
@@ -1693,7 +1693,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by N'chala the Egg Thief in Zuldazar.",
+description="This pet is dropped by N'chala the Egg Thief in Zuldazar.",
 pet=2538,
 },[[
 step
@@ -1713,7 +1713,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2464,
 },[[
 step
@@ -1733,7 +1733,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet is a reward from a rare Kul Tiran Archaeology solve.",
+description="This pet is a reward from a rare Kul Tiran Archaeology solve.",
 pet=2197,
 },[[
 step
@@ -1752,7 +1752,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Nigel Rifthold in Drustvar for 75 Polished Pet Charms.",
+description="This pet can be purchased from Nigel Rifthold in Drustvar for 75 Polished Pet Charms.",
 pet=2406,
 },[[
 step
@@ -1792,7 +1792,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Venomarus in the Arathi Highlands Warfront.",
+description="This pet is dropped by Venomarus in the Arathi Highlands Warfront.",
 pet=2432,
 },[[
 step
@@ -1816,7 +1816,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet is awarded from the quest \"My Hungry Neighbor\" in Vol'dun.",
+description="This pet is awarded from the quest \"My Hungry Neighbor\" in Vol'dun.",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be collected on a Horde character or purchased from the Auction House.",
 pet=2190,
@@ -1838,7 +1838,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2454,
 },[[
 step
@@ -1858,7 +1858,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet must be purchased on a Horde character or from the Auction House.",
+description="This pet must be purchased on a Horde character or from the Auction House.",
 pet=2416,
 },[[
 step
@@ -1879,7 +1879,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet must be purchased on a Horde character or from the Auction House.",
+description="This pet must be purchased on a Horde character or from the Auction House.",
 pet=2196,
 },[[
 step
@@ -1900,7 +1900,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2558,
 },[[
 step
@@ -1919,7 +1919,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2458,
 },[[
 step
@@ -1939,7 +1939,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet is awarded from the quest \"Missing Business\" in Vol'dun.",
+description="This pet is awarded from the quest \"Missing Business\" in Vol'dun.",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be collected on a Horde character or purchased from the Auction House.",
 pet=2188,
@@ -1962,7 +1962,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Ragebeak in the Arathi Highlands Warfront.",
+description="This pet is dropped by Ragebeak in the Arathi Highlands Warfront.",
 pet=2437,
 },[[
 step
@@ -1986,7 +1986,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet comes from a the rarespawn Gnollfeaster in Redridge Mountains.",
+description="This pet comes from a the rarespawn Gnollfeaster in Redridge Mountains.",
 pet=2525,
 },[[
 step
@@ -2003,7 +2003,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Yogursa in the Arathi Highlands Warfront.",
+description="This pet is dropped by Yogursa in the Arathi Highlands Warfront.",
 pet=2436,
 },[[
 step
@@ -2027,7 +2027,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2560,
 },[[
 step
@@ -2046,7 +2046,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2459,
 },[[
 step
@@ -2066,7 +2066,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Merektha in the Temple of Sethraliss on Mythic difficulty.",
+description="This pet is dropped by Merektha in the Temple of Sethraliss on Mythic difficulty.",
 pet=2186,
 },[[
 step
@@ -2093,7 +2093,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet must be purchased on a Horde character or from the Auction House.",
+description="This pet must be purchased on a Horde character or from the Auction House.",
 pet=2540,
 },[[
 step
@@ -2114,7 +2114,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet is awarded from the quest \"Taptaf the Pig!\" in Drustvar.",
+description="This pet is awarded from the quest \"Taptaf the Pig!\" in Drustvar.",
 pet=2198,
 },[[
 step
@@ -2136,7 +2136,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
+description="This pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
 "It is available to Mythic difficulty only.",
 pet=2529,
 },[[
@@ -2155,7 +2155,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Happy Holaua in Zuldazar for 100 Polished Pet Charms.",
+description="This pet can be purchased from Happy Holaua in Zuldazar for 100 Polished Pet Charms.",
 pet=2412,
 },[[
 step
@@ -2179,7 +2179,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Provisioner Stoutforge in Boralus for 100 7th Legion Service Medals.",
+description="This pet can be purchased from Provisioner Stoutforge in Boralus for 100 7th Legion Service Medals.",
 pet=2539,
 },[[
 step
@@ -2201,7 +2201,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from various areas in Stormsong Valley.",
+description="This pet can be captured in the wild from various areas in Stormsong Valley.",
 pet=2375,
 },[[
 step
@@ -2217,7 +2217,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Happy Holaua in Zuldazar for 50 Polished Pet Charms.",
+description="This pet can be purchased from Happy Holaua in Zuldazar for 50 Polished Pet Charms.",
 pet=2413,
 },[[
 step
@@ -2241,7 +2241,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet is obtained through the Alchemy profession.",
+description="This pet is obtained through the Alchemy profession.",
 pet=2476,
 },[[
 step
@@ -2264,7 +2264,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Shoak in Nazmir for 200 Polished Pet Charms.",
+description="This pet can be purchased from Shoak in Nazmir for 200 Polished Pet Charms.",
 pet=2414,
 },[[
 step
@@ -2319,7 +2319,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='82000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased by Horde characters from Atolia Seapearl in Newhome for 425 gold.",
+description="This pet can be purchased by Horde characters from Atolia Seapearl in Newhome for 425 gold.",
 pet=2699,
 },[[
 step
@@ -2334,7 +2334,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Nigel Rifthold in Drustvar for 300 Polished Pet Charms.",
+description="This pet can be purchased from Nigel Rifthold in Drustvar for 300 Polished Pet Charms.",
 pet=2407,
 },[[
 step
@@ -2376,7 +2376,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from northern and southern Tiragarde Sound.",
+description="This pet can be captured in the wild from northern and southern Tiragarde Sound.",
 pet=2383,
 },[[
 step
@@ -2392,7 +2392,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around the Heart of Darkness and Terrace of Shadows "..
+description="This pet can be captured in the wild around the Heart of Darkness and Terrace of Shadows "..
 "in Nazmir.",
 pet=2395,
 },[[
@@ -2416,7 +2416,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around Atal'dazar in western Zuldazar.",
+description="This pet can be captured in the wild around Atal'dazar in western Zuldazar.",
 pet=2387,
 },[[
 step
@@ -2463,7 +2463,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2471,
 },[[
 step
@@ -2482,7 +2482,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2554,
 },[[
 step
@@ -2501,7 +2501,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='82000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Speaker Utia in Mezzamere for 425 gold.",
+description="This pet can be purchased from Speaker Utia in Mezzamere for 425 gold.",
 pet=2698,
 },[[
 step
@@ -2523,7 +2523,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2463,
 },[[
 step
@@ -2542,7 +2542,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 200 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 200 Polished Pet Charms.",
 pet=2421,
 },[[
 step
@@ -2563,7 +2563,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='81500',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet can be collected after completing the Kul Tiras Children's Week event quests.",
+description="This pet can be collected after completing the Kul Tiras Children's Week event quests.",
 keywords={"Dragonkin","Children's","Week"},
 pet=2578,
 },[[
@@ -2664,7 +2664,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Dragonkin Pe
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2561,
 },[[
 step
@@ -2683,7 +2683,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Venomarus in the Arathi Highlands Warfront.",
+description="This pet is dropped by Venomarus in the Arathi Highlands Warfront.",
 pet=2433,
 },[[
 step
@@ -2703,7 +2703,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Magni Bronzebeard in Silithus for 100 Polished Pet Charms.\n\n"..
+description="This pet can be purchased from Magni Bronzebeard in Silithus for 100 Polished Pet Charms.\n\n"..
 "_Requires Champions of Azeroth - Revered_",
 pet=2429,
 },[[
@@ -2728,7 +2728,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 100 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 100 Polished Pet Charms.",
 pet=2428,
 },[[
 step
@@ -2749,7 +2749,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2548,
 },[[
 step
@@ -2767,7 +2767,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Fozruk in the Arathi Highlands Warfront.",
+description="This pet is dropped by Fozruk in the Arathi Highlands Warfront.",
 pet=2440,
 },[[
 step
@@ -2784,7 +2784,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2466,
 },[[
 step
@@ -2803,7 +2803,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2545,
 },[[
 step
@@ -2821,7 +2821,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='72000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by completing the \"Master of Minions\" achievement, "..
+description="This pet can be collected by completing the \"Master of Minions\" achievement, "..
 "which requires you to collect 1,000 unique battle pets.",
 pet=2003,
 },[[
@@ -2842,7 +2842,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2547,
 },[[
 step
@@ -2860,7 +2860,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2447,
 },[[
 step
@@ -2879,7 +2879,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2468,
 },[[
 step
@@ -2898,7 +2898,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2467,
 },[[
 step
@@ -2917,7 +2917,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2465,
 },[[
 step
@@ -2936,7 +2936,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Elemental Pe
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2450,
 },[[
 step
@@ -2955,7 +2955,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='unknown',
 source='unknown',
 author="support@zygorguides.com",
-description="\nThis pet is purchased from Micro Zoox in Boralus for 200 Seafarer's Dubloon.",
+description="This pet is purchased from Micro Zoox in Boralus for 200 Seafarer's Dubloon.",
 pet=2555,
 },[[
 step
@@ -2975,7 +2975,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected through Proudmoore Admiralty Paragon reputation boxes."..
+description="This pet can be collected through Proudmoore Admiralty Paragon reputation boxes."..
 "You cannot obtain this by normal means as a horde character.",
 pet=2566,
 },[[
@@ -3003,7 +3003,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 100 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 100 Polished Pet Charms.",
 pet=2422,
 },[[
 step
@@ -3025,7 +3025,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by completing the \"Let's Bee Friends\" achievement.",
+description="This pet can be collected by completing the \"Let's Bee Friends\" achievement.",
 pet=2442,
 },[[
 step
@@ -3268,7 +3268,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from the Blizzard store for $10 USD.",
+description="This pet can be purchased from the Blizzard store for $10 USD.",
 pet=2185,
 },[[
 step
@@ -3286,7 +3286,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
+description="This pet is collected from the Conclave of the Chosen encounter in the Battle for Dazar'alor raid."..
 "It is available to all difficulties except LFR.",
 pet=2527,
 },[[
@@ -3306,7 +3306,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected through Order of Embers Paragon reputation boxes."..
+description="This pet can be collected through Order of Embers Paragon reputation boxes."..
 "You cannot obtain this by normal means as a horde character.",
 pet=2568,
 },[[
@@ -3333,7 +3333,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Quartermaster Alcorn in Drustvar for 200 Polished Pet Charms."..
+description="This pet can be purchased from Quartermaster Alcorn in Drustvar for 200 Polished Pet Charms."..
 "_Requires Order of Embers - Revered_",
 pet=2405,
 },[[
@@ -3354,7 +3354,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected through Talanji's Expedition Paragon reputation boxes."..
+description="This pet can be collected through Talanji's Expedition Paragon reputation boxes."..
 "You cannot obtain this by normal means as a alliance character.",
 pet=2567,
 },[[
@@ -3375,7 +3375,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2544,
 },[[
 step
@@ -3394,7 +3394,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by completing the \"Battle Safari\" achievement, "..
+description="This pet can be collected by completing the \"Battle Safari\" achievement, "..
 "which requires you to catch every battle pet on Kul Tiras and Zandalar.",
 pet=2431,
 },[[
@@ -3415,7 +3415,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2557,
 },[[
 step
@@ -3434,7 +3434,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Plaguefeather in the Arathi Highlands Warfront.",
+description="This pet is dropped by Plaguefeather in the Arathi Highlands Warfront.",
 pet=2438,
 },[[
 step
@@ -3452,7 +3452,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by locating Francois in Tiragarde Sound."..
+description="This pet can be collected by locating Francois in Tiragarde Sound."..
 "_You must have 1,000,000 gold on your character to collect this pet, even though it's free._",
 pet=2165,
 },[[
@@ -3474,7 +3474,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Dana Pull in Tiragarde Sound for 50 Polished Pet Charms.",
+description="This pet can be purchased from Dana Pull in Tiragarde Sound for 50 Polished Pet Charms.",
 pet=2409,
 },[[
 step
@@ -3510,7 +3510,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from central and eastern Stormsong Valley.",
+description="This pet can be captured in the wild from central and eastern Stormsong Valley.",
 pet=2379,
 },[[
 step
@@ -3527,7 +3527,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81500',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
+description="This pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
 },[[
 step
 collect 90 Darkmoon Prize Tickets##81055 |goto Darkmoon Island/0 54.33,53.15
@@ -3547,7 +3547,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from eastern and southwestern Zuldazar.",
+description="This pet can be captured in the wild from eastern and southwestern Zuldazar.",
 pet=2390,
 },[[
 step
@@ -3565,7 +3565,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2552,
 },[[
 step
@@ -3584,7 +3584,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81500',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
+description="This pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
 },[[
 step
 collect 90 Darkmoon Prize Tickets##81055 |goto Darkmoon Island/0 54.33,53.15
@@ -3604,7 +3604,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet is a drop from the rarespawn Croz Bloodrage in the Darkshore Warfront.",
+description="This pet is a drop from the rarespawn Croz Bloodrage in the Darkshore Warfront.",
 pet=2563,
 },[[
 step
@@ -3625,7 +3625,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='82500',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet has a small chance to drop from the Honeyback Harvester event cache in Stormsong Valley.",
+description="This pet has a small chance to drop from the Honeyback Harvester event cache in Stormsong Valley.",
 pet=2792,
 },[[
 step
@@ -3708,7 +3708,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from northern Tiragarde Sound.",
+description="This pet can be captured in the wild from northern Tiragarde Sound.",
 pet=2380,
 },[[
 step
@@ -3726,7 +3726,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2452,
 },[[
 step
@@ -3745,7 +3745,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Madeline Netley in Stormsong Valley for 50 Polished Pet Charms.",
+description="This pet can be purchased from Madeline Netley in Stormsong Valley for 50 Polished Pet Charms.",
 pet=2426,
 },[[
 step
@@ -3771,7 +3771,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Sister Lilyana in Stormsong Valley for 250 Polished Pet Charms.\n\n"..
+description="This pet can be purchased from Sister Lilyana in Stormsong Valley for 250 Polished Pet Charms.\n\n"..
 "_Requires Storm's Wake - Revered_",
 pet=2404,
 },[[
@@ -3797,7 +3797,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2556,
 },[[
 step
@@ -3816,7 +3816,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild from the Isle of Fangs or Tusk Isle in Southern Zuldazar",
+description="This pet can be captured in the wild from the Isle of Fangs or Tusk Isle in Southern Zuldazar",
 pet=2384,
 },[[
 step
@@ -3835,7 +3835,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Man-Hunter Rog in the Arathi Highlands Warfront.",
+description="This pet is dropped by Man-Hunter Rog in the Arathi Highlands Warfront.",
 pet=2441,
 },[[
 step
@@ -3852,7 +3852,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2473,
 },[[
 step
@@ -3871,7 +3871,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild south of Deadwash in Stormsong Valley.",
+description="This pet can be captured in the wild south of Deadwash in Stormsong Valley.",
 pet=2376,
 },[[
 step
@@ -3889,7 +3889,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2460,
 },[[
 step
@@ -3908,7 +3908,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='81500',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
+description="This pet can be purchased from Carl Goodup on Darkmoon Island during the Darkmoon Faire.",
 },[[
 step
 collect 90 Darkmoon Prize Tickets##81055 |goto Darkmoon Island/0 54.33,53.15
@@ -3928,7 +3928,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Flying Pets\
 patch='82500',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet has a small chance to drop from the Honeyback Harvester event cache in Stormsong Valley.",
+description="This pet has a small chance to drop from the Honeyback Harvester event cache in Stormsong Valley.",
 pet=2793,
 },[[
 step
@@ -4011,7 +4011,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2457,
 },[[
 step
@@ -4030,7 +4030,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='82500',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was awarded to players who purchased a 2019 Blizzcon virtual or classic ticket.",
+description="This battle pet was awarded to players who purchased a 2019 Blizzcon virtual or classic ticket.",
 keywords={"Humanoid","Blizzcon","2019","8.3"},
 startlevel=50.0,
 pet=2777,
@@ -4046,7 +4046,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='82500',
 source='Promotion',
 author="support@zygorguides.com",
-description="\nThis battle pet was awarded to players who purchased a 2019 Blizzcon virtual or classic ticket.",
+description="This battle pet was awarded to players who purchased a 2019 Blizzcon virtual or classic ticket.",
 keywords={"Humanoid","Blizzcon","2019","8.3"},
 startlevel=50.0,
 pet=2778,
@@ -4062,7 +4062,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Jenoh in Vol'dun for 250 Polished Pet Charms.",
+description="This pet can be purchased from Jenoh in Vol'dun for 250 Polished Pet Charms.",
 pet=2417,
 },[[
 step
@@ -4088,7 +4088,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2469,
 },[[
 step
@@ -4107,7 +4107,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Humanoid Pet
 patch='80100',
 source='In-GameShop',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from the Blizzard Store for $10 USD.",
+description="This pet can be purchased from the Blizzard Store for $10 USD.",
 pet=2184,
 },[[
 step
@@ -4125,7 +4125,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Shoak in Nazmir for 500 Polished Pet Charms.",
+description="This pet can be purchased from Shoak in Nazmir for 500 Polished Pet Charms.",
 pet=2420,
 },[[
 step
@@ -4180,7 +4180,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Magni Bronzebeard in Silithus for 200 Polished Pet Charms.\n\n"..
+description="This pet can be purchased from Magni Bronzebeard in Silithus for 200 Polished Pet Charms.\n\n"..
 "_Requires Champions of Azeroth - Revered_",
 pet=2439,
 },[[
@@ -4206,7 +4206,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured after a BFA treasure hunt."..
+description="This pet can be captured after a BFA treasure hunt."..
 "_You will need a fully-completed Uuna pet for this.",
 pet=2352,
 },[[
@@ -4385,7 +4385,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet can be crafted with the Enchanting profession.",
+description="This pet can be crafted with the Enchanting profession.",
 pet=2201,
 },[[
 step
@@ -4426,7 +4426,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Gol'than the Malodorous in the Tol Dagor on Mythic difficulty.",
+description="This pet is dropped by Gol'than the Malodorous in the Tol Dagor on Mythic difficulty.",
 pet=2187,
 },[[
 step
@@ -4466,7 +4466,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild on the western side of Nazmir.",
+description="This pet can be captured in the wild on the western side of Nazmir.",
 pet=2393,
 },[[
 step
@@ -4489,7 +4489,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Echo of Myzrael in the Arathi Highlands Warfront.",
+description="This pet is dropped by Echo of Myzrael in the Arathi Highlands Warfront.",
 pet=2435,
 },[[
 step
@@ -4507,7 +4507,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2549,
 },[[
 step
@@ -4526,7 +4526,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by Darbel Montrose in the Arathi Highlands Warfront.",
+description="This pet is dropped by Darbel Montrose in the Arathi Highlands Warfront.",
 pet=2434,
 },[[
 step
@@ -4546,7 +4546,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Magic Pets\\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by MobName in the Battle for Darkshore Warfront.",
+description="This pet is dropped by MobName in the Battle for Darkshore Warfront.",
 pet=2550,
 },[[
 step
@@ -4564,7 +4564,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet is purchased from Micro Zoox in Dun Morogh for 3 Pristine Gizmos.",
+description="This pet is purchased from Micro Zoox in Dun Morogh for 3 Pristine Gizmos.",
 pet=2533,
 },[[
 step
@@ -4585,7 +4585,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2449,
 },[[
 step
@@ -4604,7 +4604,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet can be collected after completing the Heroes of the Storm questline.",
+description="This pet can be collected after completing the Heroes of the Storm questline.",
 keywords={"Mechanical","Heroes","of","the","Storm"},
 pet=2526,
 },[[
@@ -4664,7 +4664,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet can be crafted with the Alchemy profession.",
+description="This pet can be crafted with the Alchemy profession.",
 pet=2474,
 },[[
 step
@@ -4688,7 +4688,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Vindicator Jaelaana in Boralus for 200 Polished Pet Charms."..
+description="This pet can be purchased from Vindicator Jaelaana in Boralus for 200 Polished Pet Charms."..
 "_Requires 7th Legion - Revered_",
 pet=2443,
 },[[
@@ -4715,7 +4715,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Vindicator Jaelaana in Boralus for 200 Polished Pet Charms."..
+description="This pet can be purchased from Vindicator Jaelaana in Boralus for 200 Polished Pet Charms."..
 "_Requires The Honorbound - Revered_",
 condition_valid=function() return Horde end,
 condition_valid_msg="This pet must be purchased on a Horde character or from the Auction House.",
@@ -4744,7 +4744,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet is purchased from Micro Zoox in Dun Morogh for 1 Pristine Gizmos.",
+description="This pet is purchased from Micro Zoox in Dun Morogh for 1 Pristine Gizmos.",
 pet=2531,
 },[[
 step
@@ -4765,7 +4765,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Dana Pull in Tiragarde Sound for 75 Polished Pet Charms.",
+description="This pet can be purchased from Dana Pull in Tiragarde Sound for 75 Polished Pet Charms.",
 pet=2410,
 },[[
 step
@@ -4801,7 +4801,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected from the Faction Assault on Vol'dun.",
+description="This pet can be collected from the Faction Assault on Vol'dun.",
 pet=2564,
 },[[
 step
@@ -4851,7 +4851,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by using a Horde Character or buying the pet from the Auction House.",
+description="This pet can be collected by using a Horde Character or buying the pet from the Auction House.",
 pet=2565,
 },[[
 step
@@ -4871,7 +4871,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by completing the \"Pet Emporium\" achievement, "..
+description="This pet can be collected by completing the \"Pet Emporium\" achievement, "..
 "which requires you to collect 800 unique battle pets.",
 pet=2401,
 },[[
@@ -4892,7 +4892,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Quest',
 author="support@zygorguides.com",
-description="\nThis pet is awarded from the quest \"Cutting Edge Poultry Science\" which can be "..
+description="This pet is awarded from the quest \"Cutting Edge Poultry Science\" which can be "..
 "picked up in the Waycrest Manor dungeon.",
 pet=2192,
 },[[
@@ -4928,7 +4928,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='81000',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected from completing the Pet Battle Challenge: Gnomeregan Achievement.",
+description="This pet can be collected from completing the Pet Battle Challenge: Gnomeregan Achievement.",
 pet=2534,
 },[[
 step
@@ -4945,7 +4945,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='82000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped by The Kleptoboss rare on Mechagon Island.",
+description="This pet is dropped by The Kleptoboss rare on Mechagon Island.",
 pet=2753,
 },[[
 step
@@ -4969,7 +4969,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by crafting it with junkyard tinkering on Mechagon Island.",
+description="This pet can be collected by crafting it with junkyard tinkering on Mechagon Island.",
 pet=2716,
 },[[
 step
@@ -5016,7 +5016,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Mechanical P
 patch='82000',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by crafting it with junkyard tinkering on Mechagon Island.",
+description="This pet can be collected by crafting it with junkyard tinkering on Mechagon Island.",
 pet=2717,
 },[[
 step
@@ -5060,7 +5060,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2456,
 },[[
 step
@@ -5079,7 +5079,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Nigel Rifthold in Drustvar for 100 Polished Pet Charms.",
+description="This pet can be purchased from Nigel Rifthold in Drustvar for 100 Polished Pet Charms.",
 pet=2408,
 },[[
 step
@@ -5109,7 +5109,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2455,
 },[[
 step
@@ -5128,7 +5128,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is dropped from Conflagros in the Battle for Darkshore Warfront.",
+description="This pet is dropped from Conflagros in the Battle for Darkshore Warfront.",
 pet=2546,
 },[[
 step
@@ -5147,7 +5147,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Achievement',
 author="support@zygorguides.com",
-description="\nThis pet can be collected by completing the \"How to Keep a Mummy\" achievement, "..
+description="This pet can be collected by completing the \"How to Keep a Mummy\" achievement, "..
 "which requires you to free Miimii the Mummy in King's Rest on Mythic difficulty.",
 pet=2202,
 },[[
@@ -5166,7 +5166,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Profession',
 author="support@zygorguides.com",
-description="\nThis pet is a reward from a Drust Archaeology solve.",
+description="This pet is a reward from a Drust Archaeology solve.",
 pet=2199,
 },[[
 step
@@ -5185,7 +5185,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around the Terrace of Sorrows in western Nazmir.",
+description="This pet can be captured in the wild around the Terrace of Sorrows in western Nazmir.",
 pet=2394,
 },[[
 step
@@ -5201,7 +5201,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='81000',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet is a random drop from Island Expeditions.",
+description="This pet is a random drop from Island Expeditions.",
 pet=2553,
 },[[
 step
@@ -5220,7 +5220,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis pet can be purchased from Nigel Rifthold in Drustvar for 200 Polished Pet Charms.",
+description="This pet can be purchased from Nigel Rifthold in Drustvar for 200 Polished Pet Charms.",
 pet=2189,
 },[[
 step
@@ -5312,7 +5312,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis pet can be captured in the wild around The Necropolis in northern Nazmir.",
+description="This pet can be captured in the wild around The Necropolis in northern Nazmir.",
 pet=2397,
 },[[
 step
@@ -5329,7 +5329,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Undead Pets\
 patch='80100',
 source='Drop',
 author="support@zygorguides.com",
-description="\nThis pet can be captured after a BFA treasure hunt in Drustvar.",
+description="This pet can be captured after a BFA treasure hunt in Drustvar.",
 pet=2411,
 },[[
 step

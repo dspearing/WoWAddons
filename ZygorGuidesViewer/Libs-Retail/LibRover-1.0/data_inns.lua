@@ -8,6 +8,10 @@ data.basenodes.inns = {
 	--------------------------------
 	-----     DRAGON ISLES     -----
 	--------------------------------
+	["Amirdrassil"]={
+		{name="The Silver Feather",faction="B",npc="Saelienne",npcid=216280,x=48.29,y=54.03},
+	},
+
 	["The Emerald Dream"]={
 		{name="Verdant Landing",faction="B",npc="Athera",npcid=208286,x=69.53,y=53.24},
 		{name="Central Encampment",faction="B",npc="Saelienne",npcid=207627,x=49.85,y=61.64},

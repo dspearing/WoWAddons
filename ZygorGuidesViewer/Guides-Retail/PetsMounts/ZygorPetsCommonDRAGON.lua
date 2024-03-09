@@ -378,7 +378,7 @@ step
 use the Mallard Duckling##193571
 Learn the "Mallard Duckling" Battle Pet |learnpet Mallard Duckling##3303
 ]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Jean�s Lucky Fish",{
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Jean's Lucky Fish",{
 patch='100005',
 source='Vendor',
 author="support@zygorguides.com",
@@ -393,11 +393,11 @@ collect 300 Polished Pet Charm##163036 |or
 step
 talk Patchu##196069
 Tell her _"Want to trade some pet charms?"_
-buy Jean�s Lucky Fish##192459 |goto The Azure Span/0 13.89,49.85 |or
+buy Jean's Lucky Fish##192459 |goto The Azure Span/0 13.89,49.85 |or
 '|complete haspet(3270) |or
 step
-use Jean�s Lucky Fish##192459
-Learn the "Jean�s Lucky Fish" Battle Pet |learnpet Jean�s Lucky Fish##3270
+use Jean's Lucky Fish##192459
+Learn the "Jean's Lucky Fish" Battle Pet |learnpet Jean's Lucky Fish##3270
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets\\Quack-E",{
 patch='100005',
@@ -2834,4 +2834,171 @@ buy Ghostflame##200173 |goto Valdrakken/0 38.10,37.72 |or
 step
 use Ghostflame##200173
 Learn the "Ghostflame" Battle Pet |learnpet Ghostflame##3287
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Dream Badger",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="A brown dream badger is a rare sight. Not so rare a smell though.",
+keywords={"Critter"},
+pet=4304,
+},[[
+step
+map The Emerald Dream/0
+path	48.86,57.94	49.98,54.53	51.40,57.75	53.70,59.48	52.69,77.74
+Follow the path
+|tip Search for a Dream Badger along the path.
+clicknpc Dream Badger##212557
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Dream Badger" Battle Pet |learnpet Dream Badger##4304
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Flooftalon",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="The first thing you might notice about this creature is its huge expressive eyes. This is a mistake. Instead focus on its razor-sharp claws.",
+keywords={"Beast"},
+pet=4275,
+},[[
+step
+clicknpc Flooftalon##211110
+|tip You may need to kill the critter version of these to get the battle pet version to appear.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Flooftalon" Battle Pet |learnpet Flooftalon##4275 |goto The Emerald Dream/0 47.04,73.84
+You Can Find More Around:
+[48.80,74.51]
+[48.85,76.55]
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Fol'ya Pup",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="Keep it out of your backpack or it will eat all your food and then take a nap.",
+keywords={"Critter"},
+pet=4276,
+},[[
+step
+clicknpc Fol'ya Pup##211177
+|tip They can be found as frontliners throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Fol'ya Pup" Battle Pet |achieve 19401/3 |goto The Emerald Dream/0 50.96,62.13
+Capture the "Fol'ya Pup" Battle Pet |learnpet Fol'ya Pup##4276
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Leyhart",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="This little one likes cheese, but most fawn do.",
+keywords={"Critter"},
+pet=4278,
+},[[
+step
+clicknpc Leyhart##211288
+|tip These are common throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Leyhart" Battle Pet |learnpet Leyhart##4278 |goto The Emerald Dream/0 52.79,65.58
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Pewling",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="If you think the skunks of the Emerald Dream smell bad, pray that you never smell the skunks of the Emerald Nightmare.",
+keywords={"Critter"},
+pet=4280,
+},[[
+step
+clicknpc Pewling##211302
+|tip These are common throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Pewling" Battle Pet |learnpet Pewling##4280 |goto The Emerald Dream/0 52.35,64.44
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets\\Sapnibbler",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="Sapnibblers are always up for a game of hide and squeak.",
+keywords={"Critter"},
+pet=4277,
+},[[
+step
+clicknpc Sapnibbler##211182
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Sapnibbler" Battle Pet |learnpet Sapnibbler##4277 |goto The Emerald Dream/0 55.25,72.32
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Slumbertooth",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="As younglings, these critters need a lot of naps. Fortunately, adventurers' backpacks make good napping spots.",
+keywords={"Beast"},
+pet=4279,
+},[[
+step
+clicknpc Slumbertooth##211295
+|tip This pet appears more often during a Superbloom.
+|tip Kill the critter version of Slumbertooth around here.
+|tip Eventually a captuarable one will spawn.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Slumbertooth" Battle Pet |learnpet Slumbertooth##4279 |goto The Emerald Dream/0 44.41,72.20
+You Can Find More Around Here:
+[50.13,78.04]
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Snaggletoof",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="Such toof. Such snaggle.",
+keywords={"Beast"},
+pet=4303,
+},[[
+step
+map The Emerald Dream/0
+path loop off; bounce
+path	25.53,22.90	57.71,26.31	49.74,47.80	37.46,57.65
+path	33.58,68.88
+Follow the path
+|tip You may need to kill the critter version of these to get the battle pet version to appear.
+clicknpc Snaggletoof##212459
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Snaggletoof" Battle Pet |learnpet Snaggletoof##4303
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Pale Slumbertooth",{
+patch='100200',
+source='PetBattle',
+author="support@zygorguides.com",
+description="These creatures live in bushes and near trees, but they sleep so soundly they're practically invisible. If you want to interrupt their dreaming, you'd best bring friends.",
+keywords={"Beast"},
+pet=4302,
+},[[
+step
+talk Celestine of the Harvest##210608
+|tip She moves with the Dreamsurge Camp.
+buy Friendsurge Defenders##209944 |or
+|tip This costs 500 Dreamsurge Coalescence.
+|tip Complete the Weekly Dreamsurge Quest, Rares, closing portals, some world quests, Dragon Isles Supply Nodes and Fly through Green Orbs that may appear to farm them.
+'|achieve 19401/5 |or
+step
+use the Friendsurge Defenders##209944
+Gain the Friendsurge Defenders Buff |complete hasbuff("spell:423865") |or
+|tip This lasts for 30 minutes.
+'|achieve 19401/5 |or
+step
+map The Emerald Dream/0
+path loop off; bounce
+path	58.47,35.07	53.61,65.31	48.36,69.42	35.75,62.29	34.60,62.26
+path	34.31,67.65
+Follow the path
+clicknpc Pale Slumbertooth##212437
+|tip They will be in bushes.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Capture the "Pale Slumbertooth" Battle Pet |learnpet Pale Slumbertooth##4302
 ]])

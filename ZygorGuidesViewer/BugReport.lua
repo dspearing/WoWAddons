@@ -370,6 +370,17 @@ end
 
 BugReport.Flags = {guide=1,step=1,player=1,questlog=1,inventory=1,parselog=1,itemscore=1,gearfinder=1}
 
+function BugReport:GetReport_Flavor()
+	return
+		   (ZGV.IsRetail and "RETAIL")
+		or (ZGV.IsClassic and "CLASSIC")
+		or (ZGV.IsClassicSoM and "CLASSIC-SOM")
+		or (ZGV.IsClassicSoD and "CLASSIC-SOD")
+		or (ZGV.IsClassicHardcore and "CLASSIC-HC")
+		or (ZGV.IsClassicWOTLK and "CLASSIC-WOTLK")
+		or "???"
+end
+
 function BugReport:GetReport_Player_Basic()
 	local spec = "n/a"
 
@@ -388,8 +399,14 @@ function BugReport:GetReport_Player_Basic()
 	end			
 
 
-	return ("Race: %s  Class: %s  Spec: %s  Level: %.2f   Faction: %s, Chromie: %s"):format(
-		select(2,UnitRace("player")),select(2,UnitClass("player")), spec or "none", ZGV:GetPlayerPreciseLevel(),UnitFactionGroup("player"),chromietime)
+	return ("Race: %s  Class: %s  Spec: %s  Level: %.2f   Flavor: %s, Faction: %s, Chromie: %s"):format(
+		select(2,UnitRace("player")),
+		select(2,UnitClass("player")),
+		spec or "none",
+		ZGV:GetPlayerPreciseLevel(),
+		self:GetReport_Flavor(),
+		UnitFactionGroup("player"),
+		chromietime)
 end
 function BugReport:GetReport_Player_Location()
 	local mapid = C_Map.GetBestMapForUnit("player") or -1
@@ -403,7 +420,7 @@ end
 function BugReport:GetReport(maint,flags)
 	local s = ""
 
-	s = s .. ("Zygor Guides Viewer v%s %s\n"):format(ZGV.version,(ZGV.IsClassic and "classic") or (ZGV.IsClassicTBC and "tbc") or (ZGV.IsClassicWOTLK and "wotlk") or "retail")
+	s = s .. ("Zygor Guides Viewer v%s %s\n"):format(ZGV.version,self:GetReport_Flavor())
 	s = s .. ("Guide: %s\nStep: %d\n"):format(ZGV.CurrentGuideName or "no guide",ZGV.CurrentStepNum or 0)
 	s = s .. "\n"
 

@@ -5,7 +5,7 @@ if ZGV:DoMutex("PoiRareLEG") then return end
 ZGV.Poi.Sets.PoiRareLEG={
 {
 rare=[[Admiral Rel'var]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 73.55,72.06",
 currency="18 VA",
 quest=48817,
@@ -31,7 +31,7 @@ Defeat Admiral Rel'var |q 48817 |goto Antoran Wastes/0 73.55,72.06 |future
 },
 {
 rare=[[All-Seer Xanarian]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 76.16,56.11",
 currency="16 VA",
 quest=48818,
@@ -51,7 +51,7 @@ Defeat All-Seer Xanarian |q 48818 |goto Antoran Wastes/0 76.16,56.11 |future
 },
 {
 rare=[[Blistermaw]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 61.81,36.93",
 item=152905,
 quest=49183,
@@ -79,7 +79,7 @@ Defeat Blistermaw |q 49183 |goto Antoran Wastes/0 61.81,36.93 |future
 },
 {
 rare=[[Chief Alchemist Munculus]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 61.40,20.85",
 currency="10 VA",
 quest=48865,
@@ -107,7 +107,7 @@ Defeat Chief Alchemist Munculus |q 48865 |goto Antoran Wastes/0 61.40,20.85 |fut
 },
 {
 rare=[[Commander Texlaz]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 82.71,65.48",
 currency="14 VA",
 quest=48816,
@@ -133,7 +133,7 @@ Defeat Commander Texlaz |q 48816 |goto Antoran Wastes/0 82.71,65.48 |future
 },
 {
 rare=[[Doomcaster Suprax]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 58.49,11.76",
 currency="16 VA",
 quest=48968,
@@ -169,7 +169,7 @@ Defeat Doomcaster Suprax |q 48968 |goto Antoran Wastes/0 58.49,11.76 |future
 },
 {
 rare=[[Gar'zoth]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 55.78,45.98",
 currency="14 VA",
 quest=49241,
@@ -202,7 +202,7 @@ Defeat Gar'zoth |q 49241 |goto Antoran Wastes/0 55.78,45.98 |future
 },
 {
 rare=[[Houndmaster Kerrax]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 63.01,24.62",
 item=152790,
 quest=48821,
@@ -229,7 +229,7 @@ Defeat Houndmaster Kerrax |q 48821 |goto Antoran Wastes/0 63.94,21.84 |future
 },
 {
 rare=[[Inquisitor Vethroz]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 60.67,48.31",
 currency="16 VA",
 quest=48815,
@@ -253,7 +253,7 @@ Defeat Inquisitor Vethroz |q 48815 |goto Antoran Wastes/0 60.67,48.31 |future
 },
 {
 rare=[[Lieutenant Xakaar]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 62.21,53.49",
 currency="11 VA",
 quest=48813,
@@ -273,7 +273,7 @@ Defeat Lieutenant Xakaar |q 48813 |goto Antoran Wastes/0 62.21,53.49 |future
 },
 {
 rare=[[Mistress Il'thendra]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 57.35,33.49",
 currency="16 VA",
 quest=49240,
@@ -301,7 +301,7 @@ Defeat Mistress Il'thendra |q 49240 |goto Antoran Wastes/0 57.35,33.49 |future
 },
 {
 rare=[[Mother Rosula]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 66.78,17.99",
 currency="13 VA",
 quest=48970,
@@ -343,7 +343,7 @@ Defeat Mother Rosula |q 48970 |goto 66.78,17.99 |future
 },
 {
 rare=[[Puscilla]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 63.98,20.86",
 currency="16 VA",
 quest=48809,
@@ -375,7 +375,7 @@ Defeat Puscilla |q 48809 |goto Antoran Wastes/0 63.98,20.86 |future
 },
 {
 rare=[[Rezira the Seer]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 64.81,82.76",
 currency="10 VA",
 quest=48971,
@@ -430,7 +430,7 @@ Defeat Rezira the Seer |q 48971 |goto Antoran Wastes/0 64.81,82.76 |future
 },
 {
 rare=[[Squadron Commander Vishax]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 84.38,81.10",
 currency="15 VA",
 quest=48967,
@@ -479,7 +479,7 @@ Defeat Squadron Commander Vishax |q 48967 |goto Antoran Wastes/0 84.38,81.10 |fu
 },
 {
 rare=[[The Many-Faced Devourer]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 54.81,39.15",
 currency="12 VA",
 quest=48966,
@@ -559,7 +559,7 @@ Defeat The Many-Faced Devourer |q 48966 |goto Antoran Wastes/0 54.81,39.15 |futu
 },
 {
 rare=[[Varga]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 65.02,51.46",
 item=153190,
 quest=48812,
@@ -583,7 +583,7 @@ Defeat Varga |q 48812 |goto Antoran Wastes/0 65.02,51.46 |future
 },
 {
 rare=[[Ven'orn]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 63.01,57.35",
 currency="16 VA",
 quest=48811,
@@ -602,7 +602,7 @@ Defeat Ven'orn |q 48811 |goto Antoran Wastes/0 63.01,57.35 |future
 },
 {
 rare=[[Void Warden Valsuran]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 55.31,21.61",
 currency="14 VA",
 quest=48824,
@@ -631,7 +631,7 @@ Defeat Void Warden Valsuran |q 48824 |goto Antoran Wastes/0 55.31,21.61 |future
 },
 {
 rare=[[Vrax'thul]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 53.02,36.02",
 currency="17 VA",
 quest=48810,
@@ -661,7 +661,7 @@ Defeat Vrax'thul |q 48810 |goto Antoran Wastes/0 53.02,36.02 |future
 },
 {
 rare=[[Watcher Aival]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 53.05,29.05",
 currency="18 VA",
 quest=48822,
@@ -692,7 +692,7 @@ Defeat Watcher Aival |q 48822 |goto Antoran Wastes/0 53.05,29.05 |future
 },
 {
 rare=[[Worldsplitter Skuul]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 50.93,55.40",
 currency="19 VA",
 quest=48820,
@@ -729,7 +729,7 @@ Defeat Worldsplitter Skuul |q 48820 |goto Antoran Wastes/0 50.93,55.40 |future
 },
 {
 rare=[[Wrath-Lord Yarez]],
-level=110,
+level=45,
 spot="Antoran Wastes/0 61.32,65.20",
 currency="11 VA",
 quest=48814,
@@ -1443,7 +1443,7 @@ kill Devouring Darkness##100495 |q 40414 |future |goto Highmountain 54.44,41.25
 },
 {
 rare=[[Frostshard]],
-level=110,
+level=45,
 spot="Highmountain 54.44,74.54",
 currency="OR",
 quest=40773,
@@ -1498,7 +1498,7 @@ kill Gurbog da Basher##96590 |q 40347 |future |goto Highmountain 56.40,60.50
 },
 {
 rare=[[Commander Endaxis]],
-level=110,
+level=45,
 spot="Krokuun/0 45.30,58.81",
 currency="15 VA",
 quest=48564,
@@ -1511,7 +1511,7 @@ Defeat Commander Endaxis |q 48564 |goto Krokuun/0 45.30,58.81 |future
 },
 {
 rare=[[Commander Sathrenael]],
-level=110,
+level=45,
 spot="Krokuun/0 33.21,76.15",
 currency="17 VA",
 quest=48562,
@@ -1526,7 +1526,7 @@ Defeat Commander Sathrenael |q 48562 |goto Krokuun/0 33.21,76.15 |future
 },
 {
 rare=[[Commander Vecaya]],
-level=110,
+level=45,
 spot="Krokuun/0 38.38,59.73",
 currency="13 VA",
 quest=48563,
@@ -1545,7 +1545,7 @@ Defeat Commander Vecaya |q 48563 |goto Krokuun/0 38.38,59.73 |future
 },
 {
 rare=[[Imp Mother Laglath]],
-level=110,
+level=45,
 spot="Krokuun/0 42.05,70.09",
 currency="19 VA",
 quest=48666,
@@ -1561,7 +1561,7 @@ Defeat Imp Mother Laglath |q 48666 |goto Krokuun/0 42.05,70.09 |future
 },
 {
 rare=[[Khazaduum]],
-level=110,
+level=45,
 spot="Krokuun/7 38.95,40.23",
 currency="20 VA",
 quest=48561,
@@ -1585,7 +1585,7 @@ Defeat Khazaduum |q 48561 |goto Krokuun/7 38.95,40.23 |future
 },
 {
 rare=[[Naroua]],
-level=110,
+level=45,
 spot="Krokuun/0 71.09,32.75",
 item=153190,
 quest=48667,
@@ -1604,7 +1604,7 @@ Defeat Naroua |q 48667 |goto Krokuun/0 71.09,32.75 |future
 },
 {
 rare=[[Siegemaster Voraan]],
-level=110,
+level=45,
 spot="Krokuun/0 58.30,75.89",
 currency="17 VA",
 quest=48627,
@@ -1622,7 +1622,7 @@ Defeat Siegemaster Voraan |q 48627 |goto Krokuun/0 58.30,75.89 |future
 },
 {
 rare=[[Sister Subversia]],
-level=110,
+level=45,
 spot="Krokuun/0 52.83,30.97",
 currency="18 VA",
 quest=48565,
@@ -1644,7 +1644,7 @@ Defeat Sister Subversia |q 48565 |goto Krokuun/0 52.83,30.97 |future
 },
 {
 rare=[[Talestra the Vile]],
-level=110,
+level=45,
 spot="Krokuun/0 54.73,81.26",
 currency="14 VA",
 quest=48628,
@@ -1662,7 +1662,7 @@ Defeat Talestra the Vile |q 48628 |goto 54.73,81.26 |future
 },
 {
 rare=[[Tar Spitter]],
-level=110,
+level=45,
 spot="Krokuun/0 70.15,81.20",
 currency="14 VA",
 quest=48665,
@@ -1686,7 +1686,7 @@ Defeat Tar Spitter |q 48665 |goto Krokuun/0 70.15,81.20 |future
 },
 {
 rare=[[Tereck the Selector]],
-level=110,
+level=45,
 spot="Krokuun/0 69.55,56.45",
 currency="18 VA",
 quest=48664,
@@ -1709,7 +1709,7 @@ Defeat Tereck the Selector |q 48664 |goto Krokuun/0 69.55,56.45 |future
 },
 {
 rare=[[Vagath the Betrayed]],
-level=110,
+level=45,
 spot="Krokuun/0 60.82,19.72",
 currency="11 VA",
 quest=48629,
@@ -1729,7 +1729,7 @@ Defeat Vagath the Betrayed |q 48629 |goto Krokuun/0 60.82,19.72 |future
 },
 {
 rare=[[Ataxon]],
-level=110,
+level=45,
 spot="Eredath/0 30.12,40.19",
 currency="16 VA",
 quest=48709,
@@ -1744,7 +1744,7 @@ Defeat Ataxon |q 48709 |goto Eredath/0 30.12,40.19 |future
 },
 {
 rare=[[Baruut the Bloodthirsty]],
-level=110,
+level=45,
 spot="Eredath/0 43.84,60.62",
 currency="13 VA",
 quest=48700,
@@ -1760,7 +1760,7 @@ Defeat Baruut the Bloodthirsty |q 48700 |goto Eredath/0 43.84,60.62 |future
 },
 {
 rare=[[Captain Faruq]],
-level=110,
+level=45,
 spot="Eredath/0 27.18,30.03",
 currency="14 VA",
 quest=48707,
@@ -1777,7 +1777,7 @@ Defeat Captain Faruq |q 48707 |goto Eredath/0 27.18,30.03 |future
 },
 {
 rare=[[Commander Xethgar]],
-level=110,
+level=45,
 spot="Eredath/0 56.86,14.64",
 currency="19 VA",
 quest=48720,
@@ -1798,7 +1798,7 @@ Defeat Commander Xethgar |q 48720 |goto Eredath/0 56.86,14.64 |future
 },
 {
 rare=[[Feasel the Muffin Thief]],
-level=110,
+level=45,
 spot="Eredath/0 41.14,11.50",
 currency="18 VA",
 quest=48702,
@@ -1814,7 +1814,7 @@ Defeat Feasel the Muffin Thief |q 48702 |goto Eredath/0 41.14,11.50 |future
 },
 {
 rare=[[Herald of Chaos]],
-level=110,
+level=45,
 spot="Eredath/0 35.84,58.63",
 currency="13 VA",
 quest=48711,
@@ -1836,7 +1836,7 @@ Defeat Herald of Chaos |q 48711 |goto Eredath/0 35.84,58.63 |future
 },
 {
 rare=[[Instructor Tarahna]],
-level=110,
+level=45,
 spot="Eredath/0 61.34,50.37",
 currency="12 VA",
 quest=48718,
@@ -1852,7 +1852,7 @@ Defeat Instructor Tarahna |q 48718 |goto Eredath/0 61.34,50.37 |future
 },
 {
 rare=[[Jed'hin Champion Vorusk]],
-level=110,
+level=45,
 spot="Eredath/0 48.10,40.61",
 currency="19 VA",
 quest=48713,
@@ -1869,7 +1869,7 @@ Defeat Jed'hin Champion Vorusk |q 48713 |goto Eredath/0 48.10,40.61 |future
 },
 {
 rare=[[Kaara the Pale]],
-level=110,
+level=45,
 spot="Eredath/0 37.79,54.62",
 item=153190,
 quest=48697,
@@ -1888,7 +1888,7 @@ Defeat Kaara the Pale |q 48697 |goto Eredath/0 37.79,54.62 |future
 },
 {
 rare=[[Overseer Y'Beda]],
-level=110,
+level=45,
 spot="Eredath/0 58.75,37.62",
 currency="14 VA",
 quest=48714,
@@ -1901,7 +1901,7 @@ Defeat Overseer Y'Beda |q 48714 |goto Eredath/0 58.75,37.62 |future
 },
 {
 rare=[[Overseer Y'Morna]],
-level=110,
+level=45,
 spot="Eredath/0 60.93,29.75",
 currency="17 VA",
 quest=48717,
@@ -1915,7 +1915,7 @@ Defeat Overseer Y'Morna |q 48717 |goto Eredath/0 60.93,29.75 |future
 },
 {
 rare=[[Overseer Y'Sorna]],
-level=110,
+level=45,
 spot="Eredath/0 57.16,30.03",
 currency="17 VA",
 quest=48716,
@@ -1930,7 +1930,7 @@ Defeat Overseer Y'Sorna |q 48716 |goto Eredath/0 57.16,30.03 |future
 },
 {
 rare=[[Sabuul]],
-level=110,
+level=45,
 spot="Eredath/0 44.06,48.22",
 item=153190,
 quest=48712,
@@ -1945,7 +1945,7 @@ Defeat Sabuul |q 48712 |goto Eredath/0 44.06,48.22 |future
 },
 {
 rare=[[Shadowcaster Voruun]],
-level=110,
+level=45,
 spot="Eredath/0 44.53,71.66",
 quest=48692,
 steps=[[
@@ -1960,7 +1960,7 @@ Defeat Shadowcaster Voruun |q 48692 |goto Eredath/0 44.53,71.66 |future
 },
 {
 rare=[[Skreeg the Devourer]],
-level=110,
+level=45,
 spot="Eredath/0 49.70,09.90",
 item=152904,
 quest=48721,
@@ -1982,7 +1982,7 @@ Defeat Skreeg the Devourer |q 48721 |goto Eredath/0 49.70,09.90 |future
 },
 {
 rare=[[Slithon the Last]],
-level=110,
+level=45,
 spot="Eredath/0 48.60,52.46",
 currency="16 VA",
 quest=48935,
@@ -1995,7 +1995,7 @@ Defeat Slithon the Last |q 48935 |goto Eredath/0 48.60,52.46 |future
 },
 {
 rare=[[Sorolis the Ill-Fated]],
-level=110,
+level=45,
 spot="Eredath/0 70.23,45.96",
 currency="11 VA",
 quest=48710,
@@ -2012,7 +2012,7 @@ Defeat Sorolis the Ill-Fated |q 48710 |goto Eredath/0 70.23,45.96 |future
 },
 {
 rare=[[Soultwisted Monstrosity]],
-level=110,
+level=45,
 spot="Eredath/0 52.92,67.15",
 currency="12 VA",
 quest=48693,
@@ -2025,7 +2025,7 @@ Defeat Soultwisted Monstrosity |q 48693 |goto Eredath/0 52.92,67.15 |future
 },
 {
 rare=[[Turek the Lucid]],
-level=110,
+level=45,
 spot="Eredath/0 38.23,64.38",
 currency="20 VA",
 quest=48706,
@@ -2044,7 +2044,7 @@ Defeat Turek the Lucid |q 48706 |goto Eredath/0 38.23,64.38 |future
 },
 {
 rare=[[Umbraliss]],
-level=110,
+level=45,
 spot="Eredath/0 35.20,37.20",
 currency="13 VA",
 quest=48708,
@@ -2061,7 +2061,7 @@ Defeat Umbraliss |q 48708 |goto Eredath/0 35.20,37.20 |future
 },
 {
 rare=[[Venomtail Skyfin]],
-level=110,
+level=45,
 spot="Eredath/0 33.70,47.50",
 item=152844,
 quest=48705,
@@ -2081,7 +2081,7 @@ Defeat Venomtail Skyfin |q 48705 |goto Eredath/0 33.70,47.50 |future
 },
 {
 rare=[[Vigilant Kuro]],
-level=110,
+level=45,
 spot="Eredath/0 63.82,64.31",
 currency="17 VA",
 quest=48704,
@@ -2099,7 +2099,7 @@ Defeat Vigilant Kuro |q 48704 |goto Eredath/0 63.82,64.31 |future
 },
 {
 rare=[[Vigilant Thanos]],
-level=110,
+level=45,
 spot="Eredath/0 36.69,23.86",
 currency="14 VA",
 quest=48703,
@@ -2117,7 +2117,7 @@ Defeat Vigilant Thanos |q 48703 |goto Eredath/0 36.69,23.86 |future
 },
 {
 rare=[[Wrangler Kravos]],
-level=110,
+level=45,
 spot="Eredath/0 55.77,59.34",
 item=152814,
 quest=48695,
@@ -2135,7 +2135,7 @@ Defeat Wrangler Kravos |q 48695 |goto Eredath/0 55.77,59.34 |future
 },
 {
 rare=[[Zul'tan the Numerous]],
-level=110,
+level=45,
 spot="Eredath/0 66.76,28.44",
 currency="18 VA",
 quest=48719,
@@ -2530,7 +2530,7 @@ kill Grrvrgull the Conqueror##98503 |q 40113 |future |goto Stormheim 78.62,61.16
 },
 {
 rare=[[Tideclaw]],
-level=110,
+level=45,
 spot="Suramar/0 18.55,61.14",
 currency="AM",
 quest=43542,
@@ -2542,7 +2542,7 @@ kill Tideclaw##110824 |q 43542 |future |goto Suramar/0 18.55,61.14
 },
 {
 rare=[[Mar'tura]],
-level=110,
+level=45,
 spot="Suramar 13.53,53.44",
 currency="AM",
 quest=44124,
@@ -2554,7 +2554,7 @@ kill Mar'tura##112802 |q 44124 |future |goto Suramar 13.53,53.44
 },
 {
 rare=[[Shadowquill]],
-level=110,
+level=45,
 spot="Suramar 16.70,27.04",
 currency="AM",
 quest=43996,
@@ -2566,7 +2566,7 @@ kill Shadowquill##103841 |q 43996 |future |goto Suramar 16.70,27.04
 },
 {
 rare=[[Elfbane]],
-level=110,
+level=45,
 spot="Suramar 22.13,51.78",
 currency="AM",
 quest=41319,
@@ -2579,7 +2579,7 @@ kill Elfbane##99792 |q 41319 |future |goto Suramar 22.13,51.78
 },
 {
 rare=[[Rauren]],
-level=110,
+level=45,
 spot="Suramar 24.05,25.42",
 currency="AM",
 quest=43484,
@@ -2591,7 +2591,7 @@ kill Rauren##105547 |q 43484 |future |goto Suramar 24.05,25.42
 },
 {
 rare=[[Maia the White]],
-level=110,
+level=45,
 spot="Suramar 24.39,35.17",
 currency="OR",
 item=139897,
@@ -2603,7 +2603,7 @@ kill Maia the White##112497 |q 44071 |future |goto Suramar 24.39,35.17
 },
 {
 rare=[[Oreth the Vile]],
-level=110,
+level=45,
 spot="Suramar 24.57,47.40",
 currency="AM",
 quest=43449,
@@ -2615,7 +2615,7 @@ kill Oreth the Vile##110577 |q 43449 |future |goto Suramar 24.57,47.40
 },
 {
 rare=[[Shal'an]],
-level=110,
+level=45,
 spot="Suramar 26.24,41.19",
 currency="AM",
 quest=42831,
@@ -2628,7 +2628,7 @@ kill Shal'an##109054 |q 42831 |future |goto Suramar 26.24,41.19
 },
 {
 rare=[[Gorgroth]],
-level=110,
+level=45,
 spot="Suramar 27.77,65.47",
 currency="AM",
 quest=43992,
@@ -2641,7 +2641,7 @@ kill Gorgroth##110832 |q 43992 |future |goto Suramar 27.29,66.02
 },
 {
 rare=[[Llorian]],
-level=110,
+level=45,
 spot="Suramar 29.39,53.30",
 currency="OR",
 item=138839,
@@ -2658,7 +2658,7 @@ click Llorian's Supplies##255341 |q 44676 |future |goto Suramar 29.39,53.30
 },
 {
 rare=[[Anax]],
-level=110,
+level=45,
 spot="Suramar 33.72,51.23",
 currency="AM",
 quest=43954,
@@ -2670,7 +2670,7 @@ kill Anax##111197 |q 43954 |future |goto Suramar 33.72,51.23
 },
 {
 rare=[[Artificer Lothaire]],
-level=110,
+level=45,
 spot="Suramar 33.78,15.09",
 currency="AM",
 quest=43717,
@@ -2684,7 +2684,7 @@ kill Artificer Lothaire##106351 |q 43717 |future |goto Suramar 33.78,15.09
 },
 {
 rare=[[Mal'Dreth the Corruptor]],
-level=110,
+level=45,
 spot="Suramar 34.17,60.99",
 currency="AM",
 quest=43351,
@@ -2696,7 +2696,7 @@ kill Mal'Dreth the Corruptor##110024 |q 43351 |future |goto Suramar 34.17,60.99
 },
 {
 rare=[[Lady Rivantas]],
-level=110,
+level=45,
 spot="Suramar 35.23,67.23",
 currency="AM",
 quest=44675,
@@ -2710,7 +2710,7 @@ kill Lady Rivantas##106526 |q 44675 |future |goto Suramar 35.23,67.23
 },
 {
 rare=[[Matron Hagatha]],
-level=110,
+level=45,
 spot="Suramar 36.18,33.81",
 currency="OR",
 quest=43718,
@@ -2724,7 +2724,7 @@ kill Matron Hagatha##111329 |q 43718 |future |goto Suramar 36.18,33.81
 },
 {
 rare=[[Siegemaster Aedrin]],
-level=110,
+level=45,
 spot="Suramar 37.14,21.37",
 currency="AM",
 quest=43369,
@@ -2737,7 +2737,7 @@ kill Siegemaster Aedrin##110438 |q 43369 |future |goto Suramar 37.14,21.37
 },
 {
 rare=[[Myonix]],
-level=110,
+level=45,
 spot="Suramar 40.96,32.82",
 currency="AM",
 quest=43358,
@@ -2749,7 +2749,7 @@ kill Myonix##110340 |q 43358 |future |goto Suramar 40.96,32.82
 },
 {
 rare=[[Magister Phaedris]],
-level=110,
+level=45,
 spot="Suramar 42.05,80.05",
 currency="OR",
 quest=43348,
@@ -2762,7 +2762,7 @@ kill Magister Phaedris##109954 |q 43348 |future |goto Suramar 42.05,80.05
 },
 {
 rare=[[Apothecary Faldren]],
-level=110,
+level=45,
 spot="Suramar 42.17,56.41",
 currency="AM",
 quest=43580,
@@ -2774,7 +2774,7 @@ kill Apothecary Faldren##110870 |q 43580 |future |goto Suramar 42.17,56.41
 },
 {
 rare=[[Lieutenant Strathmar]],
-level=110,
+level=45,
 spot="Suramar 48.53,56.68",
 currency="AM",
 quest=40905,
@@ -2787,7 +2787,7 @@ kill Lieutenant Strathmar##102303 |q 40905 |future |goto Suramar 48.53,56.68
 },
 {
 rare=[[Randril]],
-level=110,
+level=45,
 spot="Suramar 49.60,79.00",
 currency="AM",
 quest=43603,
@@ -2801,7 +2801,7 @@ kill Randril##111007 |q 43603 |future |goto Suramar 49.60,79.00
 },
 {
 rare=[[Garvrulg]],
-level=110,
+level=45,
 spot="Suramar 53.19,30.21",
 currency="AM",
 quest=40897,
@@ -2817,7 +2817,7 @@ kill Garvrulg##99610 |q 40897 |future |goto Suramar 53.19,30.21
 },
 {
 rare=[[Degren]],
-level=110,
+level=45,
 spot="Suramar 54.43,56.12",
 currency="AM",
 quest=43792,
@@ -2830,7 +2830,7 @@ kill Degren##111651 |q 43792 |future |goto Suramar 54.43,56.12
 },
 {
 rare=[[Ambassador D'vwinn]],
-level=110,
+level=45,
 spot="Suramar 54.80,63.76",
 currency="AM",
 quest=43794,
@@ -2844,7 +2844,7 @@ kill Ambassador D'vwinn##111649 |q 43794 |future |goto Suramar 54.80,63.76
 },
 {
 rare=[[Guardian Thor'el]],
-level=110,
+level=45,
 spot="Suramar 61.01,52.98",
 currency="AM",
 quest=43597,
@@ -2857,7 +2857,7 @@ kill Guardian Thor'el##110944 |q 43597 |future |goto Suramar 61.01,52.98
 },
 {
 rare=[[Hertha Grimdottir]],
-level=110,
+level=45,
 spot="Suramar 61.66,39.58",
 currency="AM",
 quest=43993,
@@ -2870,7 +2870,7 @@ kill Hertha Grimdottir##103223 |q 43993 |future |goto Suramar 61.66,39.58
 },
 {
 rare=[[Miasu]],
-level=110,
+level=45,
 spot="Suramar 62.50,63.69",
 currency="OR",
 item=121810,
@@ -2883,7 +2883,7 @@ kill Miasu##111653 |q 43793 |future |goto Suramar 62.50,63.69
 },
 {
 rare=[[Cadraeus]],
-level=110,
+level=45,
 spot="Suramar 62.56,48.08",
 currency="AM",
 quest=43495,
@@ -2895,7 +2895,7 @@ kill Cadraeus##110726 |q 43495 |future |goto Suramar 62.56,48.08
 },
 {
 rare=[[Arcanist Lylandre]],
-level=110,
+level=45,
 spot="Suramar 65.57,59.14",
 currency="AM",
 quest=43481,
@@ -2912,7 +2912,7 @@ kill Arcanist Lylandre##110656 |q 43481 |future |goto Suramar 65.57,59.14
 },
 {
 rare=[[Pinchshank]],
-level=110,
+level=45,
 spot="Suramar 66.65,67.13",
 currency="AM",
 quest=43968,
@@ -2924,7 +2924,7 @@ kill Pinchshank##107846 |q 43968 |future |goto Suramar 66.65,67.13
 },
 {
 rare=[[Har'kess the Insatiable]],
-level=110,
+level=45,
 spot="Suramar 67.67,71.06",
 currency="AM",
 quest=41136,
@@ -2937,7 +2937,7 @@ kill Har'kess the Insatiable##103214 |q 41136 |future |goto Suramar 67.67,71.06
 },
 {
 rare=[[Cora'Kar]],
-level=110,
+level=45,
 spot="Suramar 68.17,58.96",
 currency="OR",
 item=139952,
@@ -2950,7 +2950,7 @@ kill Cora'Kar##100864 |q 41135 |future |goto Suramar 68.17,58.96
 },
 {
 rare=[[Reef Lord Raj'his]],
-level=110,
+level=45,
 spot="Suramar 75.52,57.29",
 currency="AM",
 quest=44003,
@@ -2962,7 +2962,7 @@ kill Reef Lord Raj'his##103575 |q 44003 |future |goto Suramar 75.52,57.29
 },
 {
 rare=[[Rok'nash]],
-level=110,
+level=45,
 spot="Suramar 80.15,70.00",
 currency="AM",
 quest=40680,
@@ -2974,7 +2974,7 @@ kill Rok'nash##103183 |q 40680 |future |goto Suramar 80.15,70.00
 },
 {
 rare=[[King Morgalash]],
-level=110,
+level=45,
 spot="Suramar 87.45,62.35",
 currency="OR",
 quest=41786,

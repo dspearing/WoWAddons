@@ -27,9 +27,9 @@ function QuestItem:ShowQuestRewardGlow(index,selling)
 	local b = G["QuestInfoRewardsFrameQuestInfoItem"..index]
 
 	if not self.GlowFrame then
-		self.GlowFrame = CHAIN(ZGV.CreateFrameWithBG("Frame","",QuestFrameRewardPanel))
+		self.GlowFrame = CHAIN(ZGV.CreateFrameWithBG("Frame",nil,QuestInfoRewardsFrame))
 			:SetBackdrop({bgFile="",edgeFile=ZGV.DIR.."\\Skins\\glowborder", edgeSize=5})
-			:SetSize(109,45)
+			:SetSize(107,45)
 			:SetFrameStrata("HIGH")
 		.__END
 
@@ -41,7 +41,7 @@ function QuestItem:ShowQuestRewardGlow(index,selling)
 			--.__END
 	end
 
-	self.GlowFrame:SetPoint("LEFT",b,"LEFT",37,3)
+	self.GlowFrame:SetPoint("LEFT",b,"LEFT",39,1)
 	self.GlowFrame:Show()
 		--self.GlowFrame.tex:SetShown(selling)
 end

@@ -13,7 +13,7 @@
             </Layer>
             <Layer level="OVERLAY">
                 <!-- the tiny 1/2 in the bottomright for ability number (border shares this drawlayer) -->
-                <FontString parentKey="Number" inherits="SystemFont_Tiny">
+                <FontString parentKey="Number" inherits="GameFontHighlightSmall">
                     <Anchors>
                         <Anchor point="CENTER" relativePoint="BOTTOMRIGHT" x="-4" y="4"/>
                     </Anchors>
@@ -40,7 +40,7 @@
         <Size x="280" y="137"/>
         <Frames>
             <!-- based on RematchPetButtonTemplate but not inheriting it (separate parent for highlight purposes, different size, etc.)-->
-            <Button parentKey="Pet" mixin="RematchFillPetMixin" registerForDrag="LeftButton" >
+            <Button parentKey="Pet" mixin="RematchFillPetMixin" registerForDrag="LeftButton" registerForClicks="AnyUp">
                 <Size x="46" y="46"/>
                 <Anchors>
                     <Anchor point="TOPLEFT" x="15" y="-18"/>

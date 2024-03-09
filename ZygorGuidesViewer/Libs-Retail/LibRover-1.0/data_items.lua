@@ -28,6 +28,10 @@ data.portkeys = { -- smile if you're a muggle
 	{item=172179, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Eternal Traveler's Hearthstone
 	{item=193588, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Timewalker's Hearthstone
 	{item=209035, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Hearthstone of the Flame
+	{item=208704, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Deepdweller's Earthen Hearthstone
+	{item=188952, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Dominated Hearthstone
+	{item=190196, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Enlightened Hearthstone
+	{item=200630, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth"}, -- Ohn'ir Windsage's Hearthstone
 
 	{item=182773, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth", cond=function() return ZGV.Parser.ConditionEnv.Necrolord end}, -- Necrolord Hearthstone
 	{item=184353, destination="_HEARTH", cost=hearthcost, toy=true, mode="hearth", cond=function() return ZGV.Parser.ConditionEnv.Kyrian end}, -- Kyrian Hearthstone
@@ -88,10 +92,10 @@ data.portkeys = { -- smile if you're a muggle
 
 	{item=128353,  destA="Shadowmoon Valley D/0 27.94,11.16", destH="Frostfire Ridge/0 42.68,69.58", cost=otheritem, cooldown=14400}, -- Admiral's Compass
 
-	{item=30542, destination="Netherstorm 32,63", cost=120, cooldown=14400}, -- Dimensional Ripper - Area 52 Engineering >=350 Goblin -- TODO only approx coords
-	{item=18984, destination="Winterspring 59,50", cost=120, cooldown=14400}, -- Dimensional Ripper - Everlook Engineering >=260 Goblin -- TODO only approx coords
-	{item=30544, destination="Blade's Edge Mountains 60.4,65.1", cost=120, cooldown=14400}, -- Ultrasafe Transporter: Toshley's Station Engineering >=350 Gnomish
-	{item=18986, destination="Tanaris 51.6,28.0", cost=120, cooldown=14400}, -- APPROX. Ultrasafe Transporter: Gadgetzan Engineering >=260 Gnomish
+	{item=30542, destination="Netherstorm 32,63", cost=120, cooldown=14400, cond=function() return ZGV.Parser.ConditionEnv.skill('Engineering')>=350 end}, -- Dimensional Ripper - Area 52 Goblin -- TODO only approx coords
+	{item=18984, destination="Winterspring 59,50", cost=120, cooldown=14400, cond=function() return ZGV.Parser.ConditionEnv.skill('Engineering')>=260 end}, -- Dimensional Ripper - Everlook Goblin -- TODO only approx coords
+	{item=30544, destination="Blade's Edge Mountains 60.4,65.1", cost=120, cooldown=14400, cond=function() return ZGV.Parser.ConditionEnv.skill('Engineering')>=350 end}, -- Ultrasafe Transporter: Toshley's Station Gnomish
+	{item=18986, destination="Tanaris 51.6,28.0", cost=120, cooldown=14400, cond=function() return ZGV.Parser.ConditionEnv.skill('Engineering')>=260 end}, -- APPROX. Ultrasafe Transporter: Gadgetzan Gnomish
 
 	{item=63378, destination="Tol Barad Peninsula 73.7,60.9", cost=otheritem, cooldown=14400}, -- Baradin's Wardens Tabard  Alliance -- TODO only approx coords
 	{item=63379, destination="Tol Barad Peninsula 55.8,80.1", cost=otheritem, cooldown=14400}, -- Hellscream's Reach Tabard  Horde
@@ -197,9 +201,9 @@ data.portkeys = { -- smile if you're a muggle
 	--- DRAGONFLIGHT ---
 	--------------------
 	-- Lucky Tortollan Charm
-	{item=202046, destination="Stormsong Valley/0 40.28,36.53", cost=15, cooldown=60},
+	{item=202046, toy=true, destination="Stormsong Valley/0 40.28,36.53", cost=15, cooldown=60},
 	-- Niffen Diggin' Mitts
-	{item=205255, destination="Zaralek Cavern/0 56.45,55.80", cost=15, cooldown=60, cond=function() local m=ZGV.CurrentMapID return m==2133 end},
+	{item=205255, toy=true, destination="Zaralek Cavern/0 56.45,55.80", cost=15, cooldown=60, cond=function() local m=ZGV.CurrentMapID return m==2133 end},
 	-- Aylaag Windstone Fragment
 	--{item=200613, destination="Ohn'ahran Plains/0 71.33,31.48", cost=15, cooldown=15 , cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7102)>0 end}, --Rusza'thar Reach location
 	--{item=200613, destination="Ohn'ahran Plains/0 70.58,63.34", cost=15, cooldown=15, cond=function() return ZGV.Parser.ConditionEnv.areapoitime(7101)>0 end}, --Pinewood Post location

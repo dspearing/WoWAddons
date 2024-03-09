@@ -5,7 +5,7 @@ if ZGV:DoMutex("HunterPetHLEGION") then return end
 ZygorGuidesViewer.GuideMenuTier = "LEG"
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Clefthooves\\Saddled Greater Clefthooves\\Red Saddled Greater Clefthoof",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red Saddled Greater Clefthoof pet.",
+description="This guide will walk you through obtaining a Red Saddled Greater Clefthoof pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={53311},
@@ -20,7 +20,7 @@ Use your _Tame Beast_ ability on _Reassigned Warbeast_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Green Core Hound",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Core Hound pet.",
+description="This guide will walk you through obtaining a Green Core Hound pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={20521},
@@ -37,7 +37,7 @@ Use your _Tame Beast_ ability on a _Spawn of Uvuros_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Orange Core Hound",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Orange Core Hound pet.",
+description="This guide will walk you through obtaining a Orange Core Hound pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={12168},
@@ -52,7 +52,7 @@ Use your _Tame Beast_ ability on a _Brimstone Hound_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Core Hounds\\Yellow Core Hound",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Yellow Core Hound pet.",
+description="This guide will walk you through obtaining a Yellow Core Hound pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={73332},
@@ -71,7 +71,7 @@ Use your _Tame Beast_ ability on _Gomegaz_ |cast Tame Beast##1515 |goto Blasted 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Devilaurs\\Black Armored Devilsaur",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Armored Devilsaur pet.",
+description="This guide will walk you through obtaining a Black Armored Devilsaur pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={51144},
@@ -188,7 +188,7 @@ Use your _Tame Beast_ ability on _Thok the Bloodthirsty_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Orange Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange Sandreaver pet.",
+description="This guide will walk you through obtaining an Orange Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61308},
@@ -208,7 +208,7 @@ Use your _Tame Beast_ ability on a _Sandreaver_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Pink Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pink Sandreaver pet.",
+description="This guide will walk you through obtaining a Pink Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={60223},
@@ -228,7 +228,7 @@ Use your _Tame Beast_ ability on a _Sandreaver Matriarch_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Purple Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Sandreaver pet.",
+description="This guide will walk you through obtaining a Purple Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={25089},
@@ -248,7 +248,7 @@ Use your _Tame Beast_ ability on a _Sandreaver Matriarch_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Orange Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Striped Orange Sandreaver pet.",
+description="This guide will walk you through obtaining a Striped Orange Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61308},
@@ -268,7 +268,7 @@ Use your _Tame Beast_ ability on a _Sandreaver_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Purple Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Striped Purple Sandreaver pet.",
+description="This guide will walk you through obtaining a Striped Purple Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={25089},
@@ -304,7 +304,7 @@ Use your _Tame Beast_ ability on _Sarinexx_ |cast Tame Beast##1515 |goto 51.65,2
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Striped Yellow Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Striped Yellow Sandreaver pet.",
+description="This guide will walk you through obtaining a Striped Yellow Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61306},
@@ -323,7 +323,7 @@ Use your _Tame Beast_ ability on a _Sandreaver Drone_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Silithids\\Sandreavers\\Yellow Sandreaver",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Yellow Sandreaver pet.",
+description="This guide will walk you through obtaining a Yellow Sandreaver pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61306},
@@ -342,7 +342,7 @@ Use your _Tame Beast_ ability on a _Sandreaver Drone_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Spirit Elderhorn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Spirit Elderhorn pet.",
+description="This guide will walk you through obtaining a Spirit Elderhorn pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70876},
@@ -367,7 +367,7 @@ Use your _Tame Beast_ ability on _Bulvinkel_ |cast Tame Beast##1515 |goto Stormh
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Blue Mana Saber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Mana Saber pet.",
+description="This guide will walk you through obtaining a Blue Mana Saber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61927},
@@ -383,7 +383,7 @@ Use your _Tame Beast_ ability on a _Thicket Manahunter_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Indigo Mana Saber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Indigo Mana Saber pet.",
+description="This guide will walk you through obtaining a Indigo Mana Saber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={71536},
@@ -398,7 +398,7 @@ Use your _Tame Beast_ ability on _Myonix_ |cast Tame Beast##1515 |goto Suramar/0
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Spirit Beasts\\Mana Sabers\\Purple Mana Saber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Mana Saber pet.",
+description="This guide will walk you through obtaining a Purple Mana Saber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={72883},
@@ -413,7 +413,7 @@ Use your _Tame Beast_ ability on a _Mana Saber_ |cast Tame Beast##1515 |goto Sur
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Water Striders\\Coral Water Strider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Coral Water Strider pet.",
+description="This guide will walk you through obtaining a Coral Water Strider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={40003},
@@ -428,7 +428,7 @@ Use your _Tame Beast_ ability on a _Skittering Riverbug_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Beast Mastery Exotic Pets\\Worms\\Jormungars\\Bright Green Jormungar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Bright Green Jormungar pet.",
+description="This guide will walk you through obtaining a Bright Green Jormungar pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68370},
@@ -443,7 +443,7 @@ Use your _Tame Beast_ ability on an _Infectious Worm_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Basilisks\\Spiny Basilisks\\Fel-Green Spiny Basilisk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel-Green Spiny Basilisk pet.",
+description="This guide will walk you through obtaining a Fel-Green Spiny Basilisk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={67022},
@@ -457,7 +457,7 @@ Use your _Tame Beast_ ability on a _Felslate Basilisk_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Basilisks\\Spiny Basilisks\\Gray Spiny Basilisk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Spiny Basilisk pet.",
+description="This guide will walk you through obtaining a Gray Spiny Basilisk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={65050},
@@ -470,7 +470,7 @@ Use your _Tame Beast_ ability on a _Coldscale Gazecrawler_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Basilisks\\Spiny Basilisks\\Olive-Green Spiny Basilisk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Olive-Green Spiny Basilisk pet.",
+description="This guide will walk you through obtaining an Olive-Green Spiny Basilisk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={65051},
@@ -483,7 +483,7 @@ Use your _Tame Beast_ ability on a _Canyon Rockeater_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Basilisks\\Spiny Basilisks\\Orange Spiny Basilisk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange Spiny Basilisk pet.",
+description="This guide will walk you through obtaining an Orange Spiny Basilisk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={65052},
@@ -496,7 +496,7 @@ Use your _Tame Beast_ ability on a _Manascale Basilisk_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Basilisks\\Spiny Basilisks\\Purple Spiny Basilisk (Legion)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Spiny Basilisk pet.",
+description="This guide will walk you through obtaining a Purple Spiny Basilisk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={67021},
@@ -509,7 +509,7 @@ Use your _Tame Beast_ ability on a _Lagoon Basilisk_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Dark Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Bear pet.",
+description="This guide will walk you through obtaining a Dark Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={23992},
@@ -521,7 +521,7 @@ Use your _Tame Beast_ ability on a _Vicious Black Bear_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Dark Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Bear pet.",
+description="This guide will walk you through obtaining a Dark Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={820},
@@ -533,7 +533,7 @@ Use your _Tame Beast_ ability on a _Ashenvale Bear_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Diseased Dark Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Diseased Dark Bear pet.",
+description="This guide will walk you through obtaining a Diseased Dark Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1082},
@@ -545,7 +545,7 @@ Use your _Tame Beast_ ability on a _Diseased Black Bear_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Diseased Dark Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Diseased Dark Brown Bear pet.",
+description="This guide will walk you through obtaining a Diseased Dark Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={26940},
@@ -557,7 +557,7 @@ Use your _Tame Beast_ ability on a _Consumed Thistle Bear_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Diseased Gray Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Diseased Gray Bear pet.",
+description="This guide will walk you through obtaining a Diseased Gray Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={31588},
@@ -569,7 +569,7 @@ Use your _Tame Beast_ ability on an _Infested Bear_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Diseased Tan Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Diseased Tan Bear pet.",
+description="This guide will walk you through obtaining a Diseased Tan Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={37538},
@@ -581,7 +581,7 @@ Use your _Tame Beast_ ability on a _Hulking Plaguebear_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Diseased White Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Diseased White Bear pet.",
+description="This guide will walk you through obtaining a Diseased White Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={23966},
@@ -593,7 +593,7 @@ Use your _Tame Beast_ ability on a _Rabid Grizzly_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Gray Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Bear pet.",
+description="This guide will walk you through obtaining a Gray Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={3201},
@@ -605,7 +605,7 @@ Use your _Tame Beast_ ability on an _Elder Gray Bear_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Black Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Black Bear pet.",
+description="This guide will walk you through obtaining an old model Black Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70188},
@@ -620,7 +620,7 @@ Use your _Tame Beast_ ability on _Ursol'lok_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Brown Bear pet.",
+description="This guide will walk you through obtaining an old model Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70186},
@@ -634,7 +634,7 @@ Use your _Tame Beast_ ability on _Mongress_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Dark Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Dark Brown Bear pet.",
+description="This guide will walk you through obtaining an old model Dark Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70199},
@@ -646,7 +646,7 @@ Use your _Tame Beast_ ability on _Grizzled Ben_ |cast Tame Beast##1515 |goto Elw
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Diseased Black Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a old model Diseased Black Bear pet.",
+description="This guide will walk you through obtaining a old model Diseased Black Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70194},
@@ -660,7 +660,7 @@ Use your _Tame Beast_ ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Diseased Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Diseased Brown Bear pet.",
+description="This guide will walk you through obtaining an old model Diseased Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70189},
@@ -672,7 +672,7 @@ Use your _Tame Beast_ ability on _Big Samras_ |cast Tame Beast##1515 |goto Hills
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Diseased Dark Brown Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Diseased Dark Brown Bear pet.",
+description="This guide will walk you through obtaining an old model Diseased Dark Brown Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70190},
@@ -689,7 +689,7 @@ Use your _Tame Beast_ ability on _Ol' Muddle_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Diseased Gray Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Diseased Gray Bear pet.",
+description="This guide will walk you through obtaining an old model Diseased Gray Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70191},
@@ -701,7 +701,7 @@ Use your _Tame Beast_ ability on _Mange_ |cast Tame Beast##1515 |goto Western Pl
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Diseased White Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Diseased White Bear pet.",
+description="This guide will walk you through obtaining an old model Diseased White Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70192},
@@ -713,7 +713,7 @@ Use your _Tame Beast_ ability on _Hibernus the Sleeper_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model Gray Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model Gray Bear pet.",
+description="This guide will walk you through obtaining an old model Gray Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70193},
@@ -727,7 +727,7 @@ Use your _Tame Beast_ ability on _Grimrot_ |cast Tame Beast##1515 |goto Felwood/
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Old Model Bears\\Old Model White Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an old model White Bear pet.",
+description="This guide will walk you through obtaining an old model White Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70185},
@@ -741,7 +741,7 @@ Use your _Tame Beast_ ability on _Bjarn_ |cast Tame Beast##1515 |goto Dun Morogh
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\Tan Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Tan Bear pet.",
+description="This guide will walk you through obtaining a Tan Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1006},
@@ -753,7 +753,7 @@ Use your _Tame Beast_ ability on a _Corrupted Thistle Bear_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Bears\\White Bear",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Bear pet.",
+description="This guide will walk you through obtaining a White Bear pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={865},
@@ -765,7 +765,7 @@ Use your _Tame Beast_ ability on a _Shardtooth Bear_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Cats\\Nightsabers\\Black Nightsaber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Nightsaber pet.",
+description="This guide will walk you through obtaining a Black Nightsaber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68398},
@@ -777,7 +777,7 @@ Use your _Tame Beast_ ability on a _Wild Nightsaber_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Cats\\Nightsabers\\Brown Nightsaber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Nightsaber pet.",
+description="This guide will walk you through obtaining a Brown Nightsaber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64595},
@@ -789,7 +789,7 @@ Use your _Tame Beast_ ability on a _Pinerock Prowler_ or _Pinerock Stalker_ |cas
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Cats\\Nightsabers\\Gray Nightsaber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Nightsaber pet.",
+description="This guide will walk you through obtaining a Gray Nightsaber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64385},
@@ -801,7 +801,7 @@ Use your _Tame Beast_ ability on a _Cursed Prowler_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Cats\\Nightsabers\\Pale Nightsaber",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Nightsaber pet.",
+description="This guide will walk you through obtaining a Pale Nightsaber pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={62591},
@@ -813,7 +813,7 @@ Use your _Tame Beast_ ability on a _Thicket Hunter_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Boars\\Greater Boars\\Arcane Purple Greater Boar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Arcane Purple Greater Boar pet.",
+description="This guide will walk you through obtaining an Arcane Purple Greater Boar pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={62708},
@@ -826,7 +826,7 @@ Use your _Tame Beast_ ability on _Leytusk_ |cast Tame Beast##1515 |goto Azsuna/0
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Boars\\Greater Boars\\Dark Brown Greater Boar",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Greater Boar pet.",
+description="This guide will walk you through obtaining a Dark Brown Greater Boar pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={52834},
@@ -838,7 +838,7 @@ Use your _Tame Beast_ ability on a _Spinetusk Piglet_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Blue and Orange Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue and Orange Marsuul pet.",
+description="This guide will walk you through obtaining a Blue and Orange Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -852,7 +852,7 @@ Use your _Tame Beast_ ability on a _Blue and Orange Marsuul_ |cast Tame Beast##1
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Fel-Grey Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel-Grey Marsuul pet.",
+description="This guide will walk you through obtaining a Fel-Grey Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -868,7 +868,7 @@ Use your _Tame Beast_ ability on a _Fel-Grey Marsuul_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Orange and Green Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange and Green Marsuul pet.",
+description="This guide will walk you through obtaining an Orange and Green Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -882,7 +882,7 @@ Use your _Tame Beast_ ability on an _Orange and Green Marsuul_ |cast Tame Beast#
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Pale Blue Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Blue Marsuul pet.",
+description="This guide will walk you through obtaining a Pale Blue Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -895,7 +895,7 @@ Use your _Tame Beast_ ability on a _Pale Blue Marsuul_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Purple and Green Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple and Green Marsuul pet.",
+description="This guide will walk you through obtaining a Purple and Green Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -908,7 +908,7 @@ Use your _Tame Beast_ ability on a _Purple and Green Marsuul_ |cast Tame Beast##
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Marsuul\\Void-Touched Marsuul",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Void-Touched Marsuul pet.",
+description="This guide will walk you through obtaining a Void-Touched Marsuul pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -921,7 +921,7 @@ Use your _Tame Beast_ ability on a _Void-Touched Marsuul_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Musken\\Black Musken",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Musken pet.",
+description="This guide will walk you through obtaining a Black Musken pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70286},
@@ -933,7 +933,7 @@ Use your _Tame Beast_ ability on a _Wild Plains Runehorn_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Musken\\Brown Musken",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Musken pet.",
+description="This guide will walk you through obtaining a Brown Musken pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70290},
@@ -946,7 +946,7 @@ Use your _Tame Beast_ ability on a _Plains Runehorn Bull_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Musken\\White Musken",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Musken pet.",
+description="This guide will walk you through obtaining a White Musken pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70336},
@@ -958,7 +958,7 @@ Use your _Tame Beast_ ability on a _Highlands Runehorn_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Shoveltusks\\Brown Shoveltusk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Shoveltusk pet.",
+description="This guide will walk you through obtaining a Brown Shoveltusk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={37780},
@@ -970,7 +970,7 @@ Use your _Tame Beast_ ability on a _Shoveltusk Forager_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Shoveltusks\\Dark Shoveltusk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Shoveltusk pet.",
+description="This guide will walk you through obtaining a Dark Shoveltusk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={22131},
@@ -982,7 +982,7 @@ Use your _Tame Beast_ ability on a _Shoveltusk Stag_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Shoveltusks\\Pale Shoveltusk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Shoveltusk pet.",
+description="This guide will walk you through obtaining a Pale Shoveltusk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={22132},
@@ -995,7 +995,7 @@ Use your _Tame Beast_ ability on a _Shoveltusk_ |cast Tame Beast##1515 |goto How
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Shoveltusks\\Red Shoveltusk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red Shoveltusk pet.",
+description="This guide will walk you through obtaining a Red Shoveltusk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={37781},
@@ -1008,7 +1008,7 @@ Use your _Tame Beast_ ability on a _Longhoof Grazer_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Yaks\\Black Yak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Yak pet.",
+description="This guide will walk you through obtaining a Black Yak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={42171},
@@ -1020,7 +1020,7 @@ Use your _Tame Beast_ ability on a _Wasteland Yak_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Yaks\\Brown Yak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Yak pet.",
+description="This guide will walk you through obtaining a Brown Yak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={40694},
@@ -1033,7 +1033,7 @@ Use your _Tame Beast_ ability on a _Mountain Yak_ |cast Tame Beast##1515 |goto K
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Yaks\\Gray Yak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Yak pet.",
+description="This guide will walk you through obtaining a Gray Yak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={45247},
@@ -1046,7 +1046,7 @@ Use your _Tame Beast_ ability on a _Wasteland Calf_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Yaks\\Tan Yak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Tan Yak pet.",
+description="This guide will walk you through obtaining a Tan Yak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={51282},
@@ -1059,7 +1059,7 @@ Use your _Tame Beast_ ability on a _Mountain Yak_ |cast Tame Beast##1515 |goto K
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Oxen\\Yaks\\White Yak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Yak pet.",
+description="This guide will walk you through obtaining a White Yak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={45242},
@@ -1072,7 +1072,7 @@ Use your _Tame Beast_ ability on a _Wasteland Calf_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Dark Teal Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Teal Panthara pet.",
+description="This guide will walk you through obtaining a Dark Teal Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1101,7 +1101,7 @@ Use your _Tame Beast_ ability on a _Dark Teal Panthara_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Fel Green Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Green Panthara pet.",
+description="This guide will walk you through obtaining a Fel Green Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1130,7 +1130,7 @@ Use your _Tame Beast_ ability on a _Fel Green Panthara_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Indigo Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Indigo Panthara pet.",
+description="This guide will walk you through obtaining a Indigo Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1159,7 +1159,7 @@ Use your _Tame Beast_ ability on a _Indigo Panthara_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Purple-Yellow Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple-Yellow Panthara pet.",
+description="This guide will walk you through obtaining a Purple-Yellow Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1189,7 +1189,7 @@ Use your _Tame Beast_ ability on a _Purple-Yellow Panthara_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Silver-Blue Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Silver-Blue Panthara pet.",
+description="This guide will walk you through obtaining a Silver-Blue Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1224,7 +1224,7 @@ Use your _Tame Beast_ ability on a _Silver-Blue Panthara_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Panthara\\Yellow-Green Panthara",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Yellow-Green Panthara pet.",
+description="This guide will walk you through obtaining a Yellow-Green Panthara pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1255,7 +1255,7 @@ Use your _Tame Beast_ ability on a _Yellow-Green Panthara_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Raptors\\Falcosaurs\\Black and Red Falcosaur",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black and Red Falcosaur pet.",
+description="This guide will walk you through obtaining a Black and Red Falcosaur pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70056},
@@ -1267,7 +1267,7 @@ Use your _Tame Beast_ ability on a _Bloodgazer Nest-Keeper_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Raptors\\Falcosaurs\\Orange and Turquoise Falcosaur",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange and Turquoise Falcosaur pet.",
+description="This guide will walk you through obtaining an Orange and Turquoise Falcosaur pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70058},
@@ -1279,7 +1279,7 @@ Use your _Tame Beast_ ability on a _Direbeak Nest-Keeper_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Raptors\\Falcosaurs\\Purple and Green Falcosaur",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple and Green Falcosaur pet.",
+description="This guide will walk you through obtaining a Purple and Green Falcosaur pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70057},
@@ -1291,7 +1291,7 @@ Use your _Tame Beast_ ability on a _Sharptalon Nest-Keeper_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Raptors\\Falcosaurs\\Silver and Gray Falcosaur",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Silver and Gray Falcosaur pet.",
+description="This guide will walk you through obtaining a Silver and Gray Falcosaur pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70059},
@@ -1303,7 +1303,7 @@ Use your _Tame Beast_ ability on a _Snowfeather Nest-Keeper_ |cast Tame Beast##1
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Kodos\\Furry Brown Kodo",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Furry Brown Kodo pet.",
+description="This guide will walk you through obtaining a Furry Brown Kodo pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10916},
@@ -1315,7 +1315,7 @@ Use your _Tame Beast_ ability on a _Recovering Kodo_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Kodos\\Green-Beige Kodo",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green-Beige Kodo pet.",
+description="This guide will walk you through obtaining a Green-Beige Kodo pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1308},
@@ -1327,7 +1327,7 @@ Use your _Tame Beast_ ability on an _Aged Kodo_ |cast Tame Beast##1515 |goto Des
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Kodos\\Yellow Kodo",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Yellow Kodo pet.",
+description="This guide will walk you through obtaining a Yellow Kodo pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={2767},
@@ -1339,7 +1339,7 @@ Use your _Tame Beast_ ability on an _Ancient Kodo_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Mushan\\Blue Mushan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Mushan pet.",
+description="This guide will walk you through obtaining a Blue Mushan pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={45161},
@@ -1352,7 +1352,7 @@ Use your _Tame Beast_ ability on a _Longshadow Bull_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Mushan\\Dark Mushan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Mushan pet.",
+description="This guide will walk you through obtaining a Dark Mushan pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={41935},
@@ -1365,7 +1365,7 @@ Use your _Tame Beast_ ability on a _Longshadow Mushan_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Mushan\\Green Mushan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Mushan pet.",
+description="This guide will walk you through obtaining a Green Mushan pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={44635},
@@ -1378,7 +1378,7 @@ Use your _Tame Beast_ ability on a _Mushan Nomad_ |cast Tame Beast##1515 |goto V
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Mushan\\Pale Mushan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Mushan pet.",
+description="This guide will walk you through obtaining a Pale Mushan pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={44785},
@@ -1391,7 +1391,7 @@ Use your _Tame Beast_ ability on a _Sungraze Mushan Calf_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Mushan\\Tan Mushan",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Tan Mushan pet.",
+description="This guide will walk you through obtaining a Tan Mushan pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={40874},
@@ -1404,7 +1404,7 @@ Use your _Tame Beast_ ability on a _Sungraze Mushan Calf_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Beige Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Beige Stegodon pet.",
+description="This guide will walk you through obtaining a Beige Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={2742},
@@ -1416,7 +1416,7 @@ Use your _Tame Beast_ ability on a _Raging Thunder Lizard_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Black Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Stegodon pet.",
+description="This guide will walk you through obtaining a Black Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10933},
@@ -1429,7 +1429,7 @@ Use your _Tame Beast_ ability on a _Margol the Rager_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Blue Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Stegodon pet.",
+description="This guide will walk you through obtaining a Blue Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1540},
@@ -1441,7 +1441,7 @@ Use your _Tame Beast_ ability on a _Rejuvenated Thunder Lizard_ |cast Tame Beast
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Dark Green Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Green Stegodon pet.",
+description="This guide will walk you through obtaining a Dark Green Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1532},
@@ -1453,7 +1453,7 @@ Use your _Tame Beast_ ability on a _Thunderhead_ |cast Tame Beast##1515 |goto So
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Light Green Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Light Green Stegodon pet.",
+description="This guide will walk you through obtaining a Light Green Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={37778},
@@ -1469,7 +1469,7 @@ Use your _Tame Beast_ ability on _Thunderstomp_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Scalehides\\Stegodons\\Red Stegodon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red Stegodon pet.",
+description="This guide will walk you through obtaining a Red Stegodon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={1537},
@@ -1481,7 +1481,7 @@ Use your _Tame Beast_ ability on a _Cliff Stormer_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Does\\Dark Brown Doe",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Doe pet.",
+description="This guide will walk you through obtaining a Dark Brown Doe pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70446},
@@ -1493,7 +1493,7 @@ Use your _Tame Beast_ ability on an _Amberfall Doe_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Does\\Gray Doe",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Doe pet.",
+description="This guide will walk you through obtaining a Gray Doe pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70448},
@@ -1505,7 +1505,7 @@ Use your _Tame Beast_ ability on a _Shieldscar Doe_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Does\\Orange Doe",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange Doe pet.",
+description="This guide will walk you through obtaining an Orange Doe pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70449},
@@ -1517,7 +1517,7 @@ Use your _Tame Beast_ ability on a _Runewood Doe_ |cast Tame Beast##1515 |goto S
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Does\\Puce Doe",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Puce Doe pet.",
+description="This guide will walk you through obtaining a Puce Doe pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70450},
@@ -1529,7 +1529,7 @@ Use your _Tame Beast_ ability on a _Ferngrazer Doe_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Does\\White Doe",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Doe pet.",
+description="This guide will walk you through obtaining a White Doe pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70576},
@@ -1541,7 +1541,7 @@ Use your _Tame Beast_ ability on a _Frenzybound Doe_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Greater Stags\\Dark Brown Greater Stag",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Greater Stag pet.",
+description="This guide will walk you through obtaining a Dark Brown Greater Stag pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70440},
@@ -1553,7 +1553,7 @@ Use your _Tame Beast_ ability on an _Amberfall Greatstag_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Greater Stags\\Gray Greater Stag",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray Greater Stag pet.",
+description="This guide will walk you through obtaining a Gray Greater Stag pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70442},
@@ -1565,7 +1565,7 @@ Use your _Tame Beast_ ability on a _Ferngrazer Stag_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Greater Stags\\Orange Greater Stag",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange Greater Stag pet.",
+description="This guide will walk you through obtaining an Orange Greater Stag pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70443},
@@ -1577,7 +1577,7 @@ Use your _Tame Beast_ ability on a _Runewood Greatstag_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Greater Stags\\Puce Greater Stag",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Puce Greater Stag pet.",
+description="This guide will walk you through obtaining a Puce Greater Stag pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70444},
@@ -1589,7 +1589,7 @@ Use your _Tame Beast_ ability on a _Foothills Greatstag_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Greater Stags\\Patterned White Greater Stag",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Patterned White Greater Stag pet.",
+description="This guide will walk you through obtaining a Patterned White Greater Stag pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={45092},
@@ -1601,7 +1601,7 @@ Use your _Tame Beast_ ability on a _Frenzybound Stag_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Elderhorns\\Beige Elderhorn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Beige Elderhorn pet.",
+description="This guide will walk you through obtaining a Beige Elderhorn pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={66004},
@@ -1614,7 +1614,7 @@ Use your _Tame Beast_ ability on a _Highland Elderhorn_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Elderhorns\\Black Elderhorn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Elderhorn pet.",
+description="This guide will walk you through obtaining a Black Elderhorn pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64256},
@@ -1626,7 +1626,7 @@ Use your _Tame Beast_ ability on _Morashu_ |cast Tame Beast##1515 |goto Highmoun
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Elderhorns\\Silver Elderhorn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Silver Elderhorn pet.",
+description="This guide will walk you through obtaining a Silver Elderhorn pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64893},
@@ -1645,7 +1645,7 @@ Use your _Tame Beast_ ability on a _Majestic Elderhorn_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Elderhorns\\Tan Elderhorn",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Tan Elderhorn pet.",
+description="This guide will walk you through obtaining a Tan Elderhorn pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={63734},
@@ -1658,7 +1658,7 @@ Use your _Tame Beast_ ability on a _Pinerock Elderhorn_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Blue Spiny Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Spiny Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining a Blue Spiny Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1673,7 +1673,7 @@ Use your _Tame Beast_ ability on a _Blue Spiny Talbuk with Backswept Horns_ |cas
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Blue Spiny Talbuk with Side Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Spiny Talbuk with Side Horns pet.",
+description="This guide will walk you through obtaining a Blue Spiny Talbuk with Side Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1689,7 +1689,7 @@ Use your _Tame Beast_ ability on a _Blue Spiny Talbuk with Side Horns_ |cast Tam
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Brown Spiny Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Purple Spiny Talbuk pet.",
+description="This guide will walk you through obtaining a Dark Purple Spiny Talbuk pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1705,7 +1705,7 @@ Use your _Tame Beast_ ability on a _Brown Spiny Talbuk with Backswept Horns_ |ca
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Brown Spiny Talbuk with Side Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Brown Spiny Talbuk pet.",
+description="This guide will walk you through obtaining a Fel Brown Spiny Talbuk pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1718,7 +1718,7 @@ Use your _Tame Beast_ ability on a _Brown Spiny Talbuk with Side Horns_ |cast Ta
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Fel Brown Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Maroon Spiny Talbuk pet.",
+description="This guide will walk you through obtaining a Fel Maroon Spiny Talbuk pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1732,7 +1732,7 @@ Use your _Tame Beast_ ability on a _Fel Brown Talbuk with Backswept Horns_ |cast
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Fel Brown Talbuk with Side Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Brown Talbuk with Side Horns pet.",
+description="This guide will walk you through obtaining a Fel Brown Talbuk with Side Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1746,7 +1746,7 @@ Use your _Tame Beast_ ability on a _Fel Brown Talbuk with Side Horns_ |cast Tame
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Fel Maroon Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Maroon Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining a Fel Maroon Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1760,7 +1760,7 @@ Use your _Tame Beast_ ability on a _Fel Maroon Talbuk with Backswept Horns_ |cas
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Fel Maroon Talbuk with Side Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Maroon Talbuk with Side Horns pet.",
+description="This guide will walk you through obtaining a Fel Maroon Talbuk with Side Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1774,7 +1774,7 @@ Use your _Tame Beast_ ability on a _Fel Maroon Talbuk with Side Horns_ |cast Tam
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Orange Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Orange Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining an Orange Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1788,7 +1788,7 @@ Use your _Tame Beast_ ability on a _Orange Talbuk with Backswept Horns_ |cast Ta
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Purple Talbuk With Side Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Talbuk With Side Horns pet.",
+description="This guide will walk you through obtaining a Purple Talbuk With Side Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1802,7 +1802,7 @@ Use your _Tame Beast_ ability on a _Purple Talbuk with Side Horns_ |cast Tame Be
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Purple With Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Talbuk With Backswept Horns pet.",
+description="This guide will walk you through obtaining a Purple Talbuk With Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1816,7 +1816,7 @@ Use your _Tame Beast_ ability on a _Puple Talbuk with Backswept Horns_ |cast Tam
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Red-Brown Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red-Brown Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining a Red-Brown Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1830,7 +1830,7 @@ Use your _Tame Beast_ ability on a _Red-Brown Talbuk with Backswept Horns_ |cast
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\Teal-Grey Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Teal-Grey Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining a Teal-Grey Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1844,7 +1844,7 @@ Use your _Tame Beast_ ability on a _Teal-Grey Talbuk with Backswept Horns_ |cast
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Stags\\Argus Talbuks\\White Talbuk with Backswept Horns",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Talbuk with Backswept Horns pet.",
+description="This guide will walk you through obtaining a White Talbuk with Backswept Horns pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -1858,7 +1858,7 @@ Use your _Tame Beast_ ability on a _White Talbuk with Backswept Horns_ |cast Tam
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Dire Worgs\\Dark Gray Dire Worg",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Gray Dire Worg pet.",
+description="This guide will walk you through obtaining a Dark Gray Dire Worg pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70178},
@@ -1870,7 +1870,7 @@ Use your _Tame Beast_ ability on a _Duskpelt Snarler_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Dire Worgs\\Light Gray Dire Worg",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Light Gray Dire Worg pet.",
+description="This guide will walk you through obtaining a Light Gray Dire Worg pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={71540},
@@ -1883,7 +1883,7 @@ Use your _Tame Beast_ ability on _Bloodstalker Alpha_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Dire Worgs\\Tan Dire Worg",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Tan Dire Worg pet.",
+description="This guide will walk you through obtaining a Tan Dire Worg pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70179},
@@ -1895,7 +1895,7 @@ Use your _Tame Beast_ ability on a _Saberfang Worg_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Maned Wolves\\Auburn Maned Wolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Auburn Maned Wolf pet.",
+description="This guide will walk you through obtaining an Auburn Maned Wolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={62862},
@@ -1909,7 +1909,7 @@ You have completed the quest _"Removing Obstacles"_. Unfortunately, you cannot t
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Maned Wolves\\Dark Brown Maned Wolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Maned Wolf pet.",
+description="This guide will walk you through obtaining a Dark Brown Maned Wolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={66640},
@@ -1921,7 +1921,7 @@ Use your _Tame Beast_ ability on a _Dusky Howler_ |cast Tame Beast##1515 |goto V
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Ground Pets\\Wolves\\Scarred Worgs\\Battle-Scarred Runed Worg",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Battle-Scarred Runed Worg pet.",
+description="This guide will walk you through obtaining a Battle-Scarred Runed Worg pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64466},
@@ -1937,7 +1937,7 @@ Use your _Tame Beast_ ability on _Fenryr_ |cast Tame Beast##1515 |goto Halls of 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Bats\\Greater Bats\\Green Greater Bat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Greater Bat pet.",
+description="This guide will walk you through obtaining a Green Greater Bat pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={53767},
@@ -1950,7 +1950,7 @@ Use your _Tame Beast_ ability on a _Duskwing Shrieker_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Eagles\\Brown Eagle (Legion)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Eagle pet.",
+description="This guide will walk you through obtaining a Brown Eagle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68157},
@@ -1962,7 +1962,7 @@ Use your _Tame Beast_ ability on a _Galecrested Eagle_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Eagles\\Dark Brown Eagle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Brown Eagle pet.",
+description="This guide will walk you through obtaining a Dark Brown Eagle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={22255},
@@ -1976,7 +1976,7 @@ Use your _Tame Beast_ ability on an _Azsunian Oliveback_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Eagles\\Light Brown Eagle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Light Brown Eagle pet.",
+description="This guide will walk you through obtaining a Light Brown Eagle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={62207},
@@ -1989,7 +1989,7 @@ Use your _Tame Beast_ ability on a _Highcrag Eagle_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Eagles\\White Eagle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Eagle pet.",
+description="This guide will walk you through obtaining a White Eagle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={43225},
@@ -2004,7 +2004,7 @@ Use your _Tame Beast_ ability on a _Azsunian Kingfeather_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Brown Warden Owl",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Warden Owl pet.",
+description="This guide will walk you through obtaining a Brown Warden Owl pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64329},
@@ -2017,7 +2017,7 @@ Use your _Tame Beast_ ability on a _Llothien Owl_ |cast Tame Beast##1515 |goto A
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Dark Warden Owl",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Warden Owl pet.",
+description="This guide will walk you through obtaining a Dark Warden Owl pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={66835},
@@ -2030,7 +2030,7 @@ Use your _Tame Beast_ ability on a _Cursefeather Owl_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Pale Warden Owl",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Warden Owl pet.",
+description="This guide will walk you through obtaining a Pale Warden Owl pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64331},
@@ -2043,7 +2043,7 @@ Use your _Tame Beast_ ability on a _Silvered Streaker_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Birds of Prey\\Warden Owls\\Purple Warden Owl",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Warden Owl pet.",
+description="This guide will walk you through obtaining a Purple Warden Owl pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64330},
@@ -2056,7 +2056,7 @@ Use your _Tame Beast_ ability on a _Deepwoods Owl_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Carrion Birds\\Ravens\\Raven",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Raven pet.",
+description="This guide will walk you through obtaining a Raven pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={32546},
@@ -2068,7 +2068,7 @@ Use your _Tame Beast_ ability on a _Gluttonous Raven_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Grand Hippogryphs\\Arcane Purple Grand Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining an Arcane Purple Grand Hippogryph pet.",
+description="This guide will walk you through obtaining an Arcane Purple Grand Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={63623},
@@ -2113,7 +2113,7 @@ Use your _Tame Beast_ ability on _Netherbeak_ |cast Tame Beast##1515 |goto Azsun
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Grand Hippogryphs\\Blue and Gold Grand Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue and Gold Grand Hippogryph pet.",
+description="This guide will walk you through obtaining a Blue and Gold Grand Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={63631},
@@ -2156,7 +2156,7 @@ Use your _Tame Beast_ ability on _Tormented Stagwing_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Grand Hippogryphs\\Green and Red Grand Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green and Red Grand Hippogryph pet.",
+description="This guide will walk you through obtaining a Green and Red Grand Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64535},
@@ -2199,7 +2199,7 @@ Use your _Tame Beast_ ability on _Daggerbeak_ |cast Tame Beast##1515 |goto Azsun
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Gryphons\\Black Gryphon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Gryphon pet.",
+description="This guide will walk you through obtaining a Black Gryphon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76364},
@@ -2245,7 +2245,7 @@ Use your _Tame Beast_ ability on _Jetwing_ |cast Tame Beast##1515 |goto The Hint
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Gryphons\\Brown Gryphon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Gryphon pet.",
+description="This guide will walk you through obtaining a Brown Gryphon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={935},
@@ -2288,7 +2288,7 @@ Use your _Tame Beast_ ability on a _Wild Gryphon_ |cast Tame Beast##1515 |goto H
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Gryphons\\White Gryphon",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a White Gryphon pet.",
+description="This guide will walk you through obtaining a White Gryphon pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76365},
@@ -2332,7 +2332,7 @@ Use your _Tame Beast_ ability on _Snowblind_ |cast Tame Beast##1515 |goto Winter
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Blue Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Hippogryph pet.",
+description="This guide will walk you through obtaining a Blue Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={63631},
@@ -2375,7 +2375,7 @@ Use your _Tame Beast_ ability on _Skystormer_ |cast Tame Beast##1515 |goto Feral
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Brown and White Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown and White Hippogryph pet.",
+description="This guide will walk you through obtaining a Brown and White Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10891},
@@ -2418,7 +2418,7 @@ Use your _Tame Beast_ ability on _Spotted Hippogryph_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Dark Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Dark Hippogryph pet.",
+description="This guide will walk you through obtaining a Dark Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={6757},
@@ -2461,7 +2461,7 @@ Use your _Tame Beast_ ability on _Thunderhead Hippogryph_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Fel Green Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Green Hippogryph pet.",
+description="This guide will walk you through obtaining a Fel Green Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76357},
@@ -2507,7 +2507,7 @@ Use your _Tame Beast_ ability on _Lalathin_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Pale Hippogryph (Rare Spawn)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Pale Hippogryph pet.",
+description="This guide will walk you through obtaining a Pale Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10889},
@@ -2551,7 +2551,7 @@ Use your _Tame Beast_ ability on _Antilus the Soarer_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Hippogryphs\\Purple Hippogryph",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Hippogryph pet.",
+description="This guide will walk you through obtaining a Purple Hippogryph pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10889},
@@ -2595,7 +2595,7 @@ Use your _Tame Beast_ ability on _Frayfeather Hippogryph_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Owlcats\\Black Owlcat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Owlcat pet.",
+description="This guide will walk you through obtaining a Black Owlcat pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10889},
@@ -2639,7 +2639,7 @@ More can be found here |goto 21.4,30.6
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Owlcats\\Brown Owlcat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Owlcat pet.",
+description="This guide will walk you through obtaining a Brown Owlcat pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={67552},
@@ -2682,7 +2682,7 @@ Use your _Tame Beast_ ability on _Llothien Prowler_ |cast Tame Beast##1515 |goto
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Owlcats\\Gray-Brown Owlcat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray-Brown Owlcat pet.",
+description="This guide will walk you through obtaining a Gray-Brown Owlcat pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76366},
@@ -2726,7 +2726,7 @@ Use your _Tame Beast_ ability on a _Very Lost Feathermane Kitten_ |cast Tame Bea
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Owlcats\\Silver-Gray Owlcat",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Silver-Gray Owlcat pet.",
+description="This guide will walk you through obtaining a Silver-Gray Owlcat pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={67551},
@@ -2770,7 +2770,7 @@ Use your _Tame Beast_ ability on a _Moonfeather Prowler_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wind Riders\\Blue Wind Rider (Rare Spawn)",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Wind Rider pet.",
+description="This guide will walk you through obtaining a Blue Wind Rider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={11012},
@@ -2813,7 +2813,7 @@ Use your _Tame Beast_ ability on _Sorrow Wing_ |cast Tame Beast##1515 |goto Ston
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wind Riders\\Brown Wind Rider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Wind Rider pet.",
+description="This guide will walk you through obtaining a Brown Wind Rider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={295},
@@ -2856,7 +2856,7 @@ Use your _Tame Beast_ ability on a _Pridewing Wyvern_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wind Riders\\Green Wind Rider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Wind Rider pet.",
+description="This guide will walk you through obtaining a Green Wind Rider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={35655},
@@ -2900,7 +2900,7 @@ Use your _Tame Beast_ ability on the _Pridewing Patriarch_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wolfhawks\\Blue Wolfhawk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Wolfhawk pet.",
+description="This guide will walk you through obtaining a Blue Wolfhawk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76529},
@@ -2943,7 +2943,7 @@ Use your _Tame Beast_ ability on _Kveldulfnir_ |cast Tame Beast##1515 |goto 65.0
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wolfhawks\\Brown Wolfhawk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Brown Wolfhawk pet.",
+description="This guide will walk you through obtaining a Brown Wolfhawk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76531},
@@ -2986,7 +2986,7 @@ Use your _Tame Beast_ ability on _Varoudnir_ |cast Tame Beast##1515 |goto 56.90,
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Feathermanes\\Wolfhawks\\Green Wolfhawk",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Wolfhawk pet.",
+description="This guide will walk you through obtaining a Green Wolfhawk pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={76530},
@@ -3029,7 +3029,7 @@ Use your _Tame Beast_ ability on _Mavarnir_ |cast Tame Beast##1515 |goto 60.8,78
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Blue-Silver Mana Wyrm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue-Silver Mana Wyrm pet.",
+description="This guide will walk you through obtaining a Blue-Silver Mana Wyrm pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={62385},
@@ -3042,7 +3042,7 @@ Use your _Tame Beast_ ability on a _Mana Thirster_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Green Mana Wyrm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Mana Wyrm pet.",
+description="This guide will walk you through obtaining a Green Mana Wyrm pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={25733},
@@ -3054,7 +3054,7 @@ Use your _Tame Beast_ ability on a _Mana Serpent_ |cast Tame Beast##1515 |goto E
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Peach-Silver Mana Wyrm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Peach-Silver Mana Wyrm pet.",
+description="This guide will walk you through obtaining a Peach-Silver Mana Wyrm pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={19690},
@@ -3066,7 +3066,7 @@ Use your _Tame Beast_ ability on a _Mana Snapper_ |cast Tame Beast##1515 |goto N
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Ruby Mana Wyrm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Coral-Gray Mana Wyrm pet.",
+description="This guide will walk you through obtaining a Coral-Gray Mana Wyrm pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={20476},
@@ -3087,7 +3087,7 @@ Use your _Tame Beast_ ability on a _Phase Wyrm_ |cast Tame Beast##1515 |goto Bla
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Serpents\\Mana Wyrms\\Violet Mana Wyrm",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Violet Mana Wyrm pet.",
+description="This guide will walk you through obtaining a Violet Mana Wyrm pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={19331},
@@ -3123,7 +3123,7 @@ Use your _Tame Beast_ ability on a _Syphoner_ |cast Tame Beast##1515 |goto Karaz
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Blue and Orange Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue and Orange Mana Ray pet.",
+description="This guide will walk you through obtaining a Blue and Orange Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3137,7 +3137,7 @@ Use your _Tame Beast_ ability on a _Blue and Orange Mana Ray_ |cast Tame Beast##
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Fel Gray-Plum Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Gray-Plum Mana Ray pet.",
+description="This guide will walk you through obtaining a Fel Gray-Plum Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3156,7 +3156,7 @@ Use your _Tame Beast_ ability on a _Fel Gray-Plum Mana Ray_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Fel Red Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Fel Red Mana Ray pet.",
+description="This guide will walk you through obtaining a Fel Red Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3175,7 +3175,7 @@ Use your _Tame Beast_ ability on a _Fel Red Mana Ray_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Magenta Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Magenta Mana Ray pet.",
+description="This guide will walk you through obtaining a Magenta Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3190,7 +3190,7 @@ Use your _Tame Beast_ ability on a _Magenta Mana Ray_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Purple Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Purple Mana Ray pet.",
+description="This guide will walk you through obtaining a Purple Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3205,7 +3205,7 @@ Use your _Tame Beast_ ability on a _Purple Mana Ray_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Nether Rays\\Mana Rays\\Teal Mana Ray",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Teal Mana Ray pet.",
+description="This guide will walk you through obtaining a Teal Mana Ray pet.",
 condition_suggested=function() return level>=45 and (ZGV.CurrentMapID==830 or ZGV.CurrentMapID==831 or ZGV.CurrentMapID==832 or ZGV.CurrentMapID==833) end,
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
@@ -3219,7 +3219,7 @@ Use your _Tame Beast_ ability on a _Teal Mana Ray_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Wasps\\Dire Wasps\\Nightmare Dire Wasp",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Nightmare Dire Wasp pet.",
+description="This guide will walk you through obtaining a Nightmare Dire Wasp pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={64744},
@@ -3231,7 +3231,7 @@ Use your _Tame Beast_ ability on a _Dreadsting Lurker_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Wasps\\Fireflies\\Yellow Glowing Purple Firefly",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Yellow Glowing Purple Firefly pet.",
+description="This guide will walk you through obtaining a Yellow Glowing Purple Firefly pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={28435},
@@ -3243,7 +3243,7 @@ Use your _Tame Beast_ ability on an _Moonglow Locust_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Flying Pets\\Wind Serpents\\Spiked Wind Serpents\\Gray and Green Spiked Wind Serpent",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray and Green Spiked Wind Serpent pet.",
+description="This guide will walk you through obtaining a Gray and Green Spiked Wind Serpent pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={67476},
@@ -3255,7 +3255,7 @@ Use your _Tame Beast_ ability on a _Winged Swampserpent_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Electric Sheep\\Robotic Sheep",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Robotic Sheep pet.",
+description="This guide will walk you through obtaining a Robotic Sheep pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={3886},
@@ -3274,7 +3274,7 @@ Use your _Tame Beast_ ability on a _Tekton_ |cast Tame Beast##1515 |goto Elwynn 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Blue Iron Scorpion",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Iron Scorpion pet.",
+description="This guide will walk you through obtaining a Blue Iron Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70228},
@@ -3419,7 +3419,7 @@ Use your _Tame Beast_ ability on _Blue Juggernaut_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Green-Gold Iron Scorpion",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green-Gold Iron Scorpion pet.",
+description="This guide will walk you through obtaining a Green-Gold Iron Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70229},
@@ -3564,7 +3564,7 @@ Use your _Tame Beast_ ability on _Green Juggernaut_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Red-Gray Iron Scorpion",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red-Gray Iron Scorpion pet.",
+description="This guide will walk you through obtaining a Red-Gray Iron Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70231},
@@ -3712,7 +3712,7 @@ Use your _Tame Beast_ ability on _Grey Juggernaut_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Iron Scorpions\\Teal Iron Scorpion",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Teal Iron Scorpion pet.",
+description="This guide will walk you through obtaining a Teal Iron Scorpion pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70230},
@@ -3855,7 +3855,7 @@ Use your _Tame Beast_ ability on _Teal Juggernaut_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Axebeaks\\Mechanical Axebeak",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Mechanical Axebeak pet.",
+description="This guide will walk you through obtaining a Mechanical Axebeak pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68296},
@@ -3874,7 +3874,7 @@ Use your _Tame Beast_ ability on the _War-Iron Axebeak_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Rabbits\\Robotic Rabbit",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Robotic Rabbit pet.",
+description="This guide will walk you through obtaining a Robotic Rabbit pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68291},
@@ -3892,7 +3892,7 @@ Use your _Tame Beast_ ability on a _Weaponized Rabbot_ |cast Tame Beast##1515 |g
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Spiders\\Copper-Gray Mechanical Spider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Copper-Gray Mechanical Spider pet.",
+description="This guide will walk you through obtaining a Copper-Gray Mechanical Spider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={73602},
@@ -3932,7 +3932,7 @@ Use your _Tame Beast_ ability on the _Copper Arachnodrone_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Spiders\\Gold Mechanical Spider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gold Mechanical Spider pet.",
+description="This guide will walk you through obtaining a Gold Mechanical Spider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={73601},
@@ -3972,7 +3972,7 @@ Use your _Tame Beast_ ability on the _Gold Arachnodrone_ |cast Tame Beast##1515 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Spiders\\Gray-Bronze Mechanical Spider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Gray-Bronze Mechanical Spider pet.",
+description="This guide will walk you through obtaining a Gray-Bronze Mechanical Spider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={73603},
@@ -4013,7 +4013,7 @@ Use your _Tame Beast_ ability on the _Silver Arachnodrone_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanical Squirrel\\Mechanical Squirrel",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Mechanical Squirrel pet.",
+description="This guide will walk you through obtaining a Mechanical Squirrel pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={70105},
@@ -4051,7 +4051,7 @@ Use your _Tame Beast_ ability on _N.U.T.Z._ |cast Tame Beast##1515 |goto Azshara
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Blue-Purple Mechanostrider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue-Purple Mechanostrider pet.",
+description="This guide will walk you through obtaining a Blue-Purple Mechanostrider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10662},
@@ -4130,7 +4130,7 @@ Use your _Tame Beast_ ability on _Sentient Mechanostrider_ |cast Tame Beast##151
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Matte-Gray Mechanostrider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Matte-Gray Mechanostrider pet.",
+description="This guide will walk you through obtaining a Matte-Gray Mechanostrider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={9476},
@@ -4148,7 +4148,7 @@ Use your _Tame Beast_ ability on a _Proto-Strider_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanostriders\\Red-Blue Mechanostrider",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red-Blue Mechanostrider pet.",
+description="This guide will walk you through obtaining a Red-Blue Mechanostrider pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={10664},
@@ -4169,7 +4169,7 @@ Use your _Tame Beast_ ability on _Optimo_ |cast Tame Beast##1515 |goto Loch Moda
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Black Mechanowolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Black Mechanowolf pet.",
+description="This guide will walk you through obtaining a Black Mechanowolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68852},
@@ -4227,7 +4227,7 @@ Follow the path, searching for puddles of oil |goto 52.05,44.98 |c |noway |next 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Blue Mechanowolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Blue Mechanowolf pet.",
+description="This guide will walk you through obtaining a Blue Mechanowolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={71920},
@@ -4277,7 +4277,7 @@ Use your _Tame Beast_ ability on _Friender_ |cast Tame Beast##1515
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Green Mechanowolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Green Mechanowolf pet.",
+description="This guide will walk you through obtaining a Green Mechanowolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={73898},
@@ -4306,7 +4306,7 @@ Use your _Tame Beast_ ability on _Model GU-4RD-3R_ |cast Tame Beast##1515 |goto 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Mechanowolves\\Red Mechanowolf",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red Mechanowolf pet.",
+description="This guide will walk you through obtaining a Red Mechanowolf pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={68856},
@@ -4370,7 +4370,7 @@ Follow the path, searching for puddles of oil |goto 43.46,8.76 |c |noway |next "
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Chickens\\Robot Chicken",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Robot Chicken pet.",
+description="This guide will walk you through obtaining a Robot Chicken pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={6909},
@@ -4388,7 +4388,7 @@ Use your _Tame Beast_ ability on a _Haywire Battle-Chicken_ |cast Tame Beast##15
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Mechanical Pets\\Robotic Gorillas\\Robotic Gorilla",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Robotic Gorilla pet.",
+description="This guide will walk you through obtaining a Robotic Gorilla pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={8841},
@@ -4412,7 +4412,7 @@ Use your _Tame Beast_ ability on _A-Me 02_ |cast Tame Beast##1515 |goto Un'Goro 
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Water Pets\\Crabs\\Spiked Crabs\\Red-Tinged Steel Blue Spiked Crab",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red-Tinged Steel Blue Spiked Crab pet.",
+description="This guide will walk you through obtaining a Red-Tinged Steel Blue Spiked Crab pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={61702},
@@ -4424,7 +4424,7 @@ Use your _Tame Beast_ ability on _Spikebacked Scuttler_ |cast Tame Beast##1515 |
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Camo Spiked Dragon Turtle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Camo Spiked Turtle pet.",
+description="This guide will walk you through obtaining a Camo Spiked Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={43411},
@@ -4436,7 +4436,7 @@ Use your _Tame Beast_ ability on a _Rankbite Ancient_ |cast Tame Beast##1515 |go
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Water Pets\\Turtles\\Spiked Dragon Turtles\\Red Spiked Dragon Turtle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Red Spiked Dragon Turtle pet.",
+description="This guide will walk you through obtaining a Red Spiked Dragon Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={45491},
@@ -4448,7 +4448,7 @@ Use your _Tame Beast_ ability on a _Coastal Snapper_ |cast Tame Beast##1515 |got
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Hunter Pets\\Legion Pets\\Water Pets\\Turtles\\Stone Dragon Turtles\\Stone Dragon Turtle",{
 author="support@zygorguides.com",
-description="\nThis guide will walk you through obtaining a Stone Dragon Turtle pet.",
+description="This guide will walk you through obtaining a Stone Dragon Turtle pet.",
 condition_valid=function() return raceclass('Hunter') end,
 condition_valid_msg="You must be a hunter to tame pets.",
 model={72656},

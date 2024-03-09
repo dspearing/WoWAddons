@@ -1400,6 +1400,7 @@ GOALTYPES['nexttab'] = {
 
 
 local invslots = {'AmmoSlot','BackSlot','Bag0Slot','Bag1Slot','Bag2Slot','Bag3Slot','ChestSlot','FeetSlot','Finger0Slot','Finger1Slot','HandsSlot','HeadSlot','LegsSlot','MainHandSlot','NeckSlot','SecondaryHandSlot','ShirtSlot','ShoulderSlot','TabardSlot','Trinket0Slot','Trinket1Slot','WaistSlot','WristSlot'}
+if not ZGV.IsRetail then table.insert(invslots,'RangedSlot') end
 GOALTYPES['equipped'] = {
 	parse = function(self,params)
 		self.target,self.targetid = ParseID(params)
@@ -1889,14 +1890,25 @@ GOALTYPES['level'] = {
 		end
 
 		local level = ZGV:GetPlayerPreciseLevel()
-		local percent = 0
-		if self.exp then
-			percent = (level<self.level) and 0 or (floor(level)>self.level) and 100 or floor(min(100,UnitXP("player")/self.exp * 100))
-		else
-			percent = (level<self.level-1) and 0 or (level>=self.level) and 100 or floor(UnitXP("player")/UnitXPMax("player") * 100)
+		local killtext = ""
+		if not ZGV.IsRetail then
+			local killcount = ZGV.F:GetKillsNeeded(self.level,self.exp)
+			killtext = L[killcount==1 and "stepgoal_level_kill" or "stepgoal_level_kills"]:format(killcount)
 		end
 
-		local progtext = L["completion_level"]:format(percent)
+		local suffix = (level<self.level-1) and " of level "..(math.floor(level+1)) or ""
+
+		local percent = 0
+
+		if self.exp then
+			if floor(level)>self.level then killtext = "" end
+			percent = (level<self.level) and 0 or (floor(level)>self.level) and 100 or floor(min(100,UnitXP("player")/self.exp * 100))
+		else
+			if level>=self.level then killtext = "" end
+			percent = (level>=self.level) and 100 or floor(UnitXP("player")/UnitXPMax("player") * 100)
+		end
+
+		local progtext = L["completion_level"]:format(percent,suffix) .. killtext
 
 		return text,nil,progtext
 	end,
@@ -2337,7 +2349,7 @@ GOALTYPES['image'] = {
 	-- show_h - number of pixels from top-left to show
 
 	parse = function(self,params,step)
-		self.mode,self.image,self.full_w,self.full_h,self.show_w,self.show_h = strsplit(",",params)
+		self.mode,self.image,self.full_w,self.full_h,self.show_w,self.show_h, self.maxw, self.maxh = strsplit(",",params)
 		if not (self.mode and self.image) then return false,"image or mode missing" end
 
 		self.full_h = tonumber(self.full_h)
@@ -2347,20 +2359,22 @@ GOALTYPES['image'] = {
 		self.image = ZGV.IMAGESDIR..self.image
 	end,
 	gettext = function(self)
-		if self.mode~="text" then
+		if self.mode=="inline" or self.mode=="inlinepopup" then
 			local display_w, display_h = self.show_w, self.show_h
-			local available_w = floor(ZygorGuidesViewerFrame_Step1_Line1ContentText:GetWidth())
+			local available_w = floor(ZygorGuidesViewerFrame.Border.Scroll:GetWidth())
 			if available_w<display_w then
 				display_h = display_h*available_w/display_w
 				display_w = available_w
 			end
-			return ("|T%s:%d:%d:0:0:1024:1024:0:%d:0:%d|t"):format(self.image,display_h,display_w,self.full_w,self.full_h)
+			if self.maxw then display_w = min(display_w, self.maxw) end
+			if self.maxh then display_h = min(display_h, self.maxh) end
+			return ("|T%s:%d:%d:0:0:%d:%d:0:%d:0:%d|t"):format(self.image,display_h,display_w,self.full_w,self.full_h,self.show_w,self.show_h)
 		else
 			return L["stepgoal_image"]
 		end
 	end,
 	onclick = function(self)
-		if self.mode~="inline" then
+		if self.mode=="text" or self.mode=="inlinepopup" then
 			ZGV.GoalPopupImage(self)
 		end
 	end,
@@ -2430,6 +2444,8 @@ local function GoalPopupImage_DragStopHandler()
 end
 
 function ZGV.GoalPopupImage(goal)
+	if ZGV.GoalPopupImageFrame and ZGV.GoalPopupImageFrame:IsVisible() then ZGV.GoalPopupImageFrame:Hide() return end
+
 	if not ZGV.GoalPopupImageFrame then
 		local CHAIN=ZGV.ChainCall
 		local ui = ZGV.UI
@@ -2437,7 +2453,7 @@ function ZGV.GoalPopupImage(goal)
 
 		ZGV.GoalPopupImageFrame = CHAIN(ui:Create("Frame",UIParent,"ZGV_GoalPopupImageFrame"))
 			:SetFrameStrata("HIGH")
-			:SetToplevel(enable)
+			:SetToplevel(true)
 			:SetBackdropColor(ZGV.F.HTMLColor("#222222ff"))
 			:SetPoint("TOPLEFT",UIParent,50,50)
 			:CanDrag(true)
@@ -2454,7 +2470,7 @@ function ZGV.GoalPopupImage(goal)
 			:SetFrameLevel(MF:GetFrameLevel()+2)
 			:SetBackdropColor(0,0,0,1)
 			:SetBackdropBorderColor(0,0,0,0)
-			:SetToplevel(enable)
+			:SetToplevel(true)
 			.__END
 
 			MF.HeaderFrame.Logo = CHAIN(MF.HeaderFrame:CreateTexture())
@@ -2468,7 +2484,7 @@ function ZGV.GoalPopupImage(goal)
 				:SetSize(17,17)
 				:SetScript("OnClick", function() ZGV.GoalPopupImageFrame:Hide() end)
 				.__END
-			ZGV.F.AssignButtonTexture(MF.HeaderFrame.close,(SkinData("TitleButtons")),6,32)
+			ZGV.ButtonSets.TitleButtons.CLOSE:AssignToButton(MF.HeaderFrame.close)
 		MF.ImageTexture = CHAIN(MF:CreateTexture())
 				:SetPoint("TOPLEFT",MF.HeaderFrame,"BOTTOMLEFT",1,-1)
 				:SetPoint("BOTTOMRIGHT",MF,"BOTTOMRIGHT",-1,1)
@@ -2573,7 +2589,49 @@ GOALTYPES['devmsg'] = {
 	end,
 }
 
+GOALTYPES['getrune'] = {
+	parse = function(self,params)
+		C_Engraving.RefreshRunesList()
+		self.target,self.targetid = ParseID(params)
+		self.categories = C_Engraving.GetRuneCategories(false, false)
+	end,
+	iscomplete = function(self)
+		for _,cat in pairs(self.categories) do
+			local runes = C_Engraving.GetRunesForCategory(cat, true)
+			for _,rune in pairs(runes) do
+				if rune.learnedAbilitySpellIDs then
+					for _,spell in pairs(rune.learnedAbilitySpellIDs) do
+						if spell==self.targetid then return true,true,1 end
+					end
+				end
+			end
+		end
+		return false,true,1
+	end,
+	gettext = function(self) return L["stepgoal_getrune"]:format(self.target) end,
+}
 
+GOALTYPES['userune'] = {
+	parse = function(self,params)
+		C_Engraving.RefreshRunesList()
+		self.target,self.targetid = ParseID(params)
+	end,
+	iscomplete = function(self)
+		for i,slot in pairs(invslots) do
+			local slotid,_ = GetInventorySlotInfo(slot)
+			if slotid then
+				local rune = C_Engraving.GetRuneForEquipmentSlot(slotid)
+				if rune and rune.learnedAbilitySpellIDs then
+					for _,spell in pairs(rune.learnedAbilitySpellIDs) do
+						if spell==self.targetid then return true,true,1 end
+					end
+				end
+			end
+		end
+		return false,true,1
+	end,
+	gettext = function(self) return L["stepgoal_userune"]:format(self.target) end,
+}
 --[[
 
 		█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
@@ -2796,7 +2854,7 @@ function Goal:IsComplete()
 		local iscomplete,ispossible,numdone,numneeded,comment,isbad = GOALTYPES['q'].iscomplete(self)
 		numdone,numneeded = norm_nums(numdone or iscomplete,numneeded)
 		if not numdone and not numneeded then  numdone,numneeded = iscomplete and 1 or 0,1  end
-		if iscomplete or (not ispossible and not self.future) or self.objnum then  -- 2019-07-08: added objnum check; if goal is questgoal-bound then follow it strictly
+		if iscomplete or (not self.future and (not ispossible or self.objnum)) then  
 			return iscomplete,ispossible,numdone,numneeded,comment,isbad
 		else
 			fallthrough_ispossible,fallthrough_numdone,fallthrough_numneeded = ispossible,numdone,numneeded

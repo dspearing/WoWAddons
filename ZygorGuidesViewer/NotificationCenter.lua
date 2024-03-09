@@ -516,7 +516,7 @@ end
 
 function Notification:QueueToast(notiftype,guide,param,param1,param2,popup)
 
-	if not ZGV.db.profile.n_popup_toast then table.wipe(Notification.QueuedToasts) return end
+	if not ZGV.db.profile.n_popup_toast or not ZGV.db.profile.n_popup_enable then table.wipe(Notification.QueuedToasts) return end
 	if not notiftype and not Notification.QueuedToasts[1] then Notification.prioritytoast = false return end
 	ZGV:Debug("&toasts Toast queue for %s initiated", notiftype or "")
 
@@ -945,6 +945,7 @@ end
 
 function Notification:HideFloatingToast(notiftype,guide,param,param1,param2,popup)
 
+	if not Notification.FloatingToast then return end
 --Hide the main frame elements (because the layout may change the next time the toast is summoned)
 	local frame = Notification.FloatingToast
 	

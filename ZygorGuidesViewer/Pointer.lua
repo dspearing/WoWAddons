@@ -140,7 +140,11 @@ function Pointer:HighlightTaxiDestination()
 
 	local taxinode = (function() -- find destination taxi in results
 		for k,node in ipairs(LibRover.RESULTS) do
-			if node and node.type=="taxi" and (node.taxiFinal or (node.taxioperator=="argusportal" and node.a_b__c_d=="taxi_argusportal__taxi_argusportal") or (node.taxioperator=="zerethportal" and node.a_b__c_d=="taxi_zerethportal__taxi_zerethportal")) then -- dirty hack - highlight if it is last node, or layover point when using argus portals
+			if node and node.type=="taxi" and
+			 (node.taxiFinal
+			 or (node.taxioperator=="argusportal" and node.a_b__c_d=="taxi_argusportal__taxi_argusportal")
+			 or (node.taxioperator=="zerethportal" and node.a_b__c_d=="taxi_zerethportal__taxi_zerethportal")
+			 ) then -- dirty hack - highlight if it is last node, or layover point when using argus portals
 				return node
 			end
 		end
@@ -188,6 +192,7 @@ function Pointer:HighlightTaxiDestination()
 end
 
 function Pointer:HighlightFlightMapDestination()
+	if not FlightMapFrame then return end
 	if Pointer.DebugHighlight then print("HighlightFlightMapDestination starting") end
 	if not FlightMapFrame.ZygorGuidesViewer_TaxiMarker then
 		if Pointer.DebugHighlight then print("HFMD set up glow") end
@@ -212,6 +217,19 @@ function Pointer:HighlightFlightMapDestination()
 	if not taxinode then return end
 
 	if Pointer.DebugHighlight then print("HFMD found node %d for highlight",taxinode.taxinodeID) end
+
+	-- special case! Zaralek
+	if taxinode.m==2133 and FlightMapFrame.mapID==2057 then -- dest is Zaralek, shown Dragonisles
+		ZGV:ScheduleTimer(function()
+			FlightMapFrame.ZygorGuidesViewer_TaxiMarker:PointToCoords(FlightMapFrame,0.87,0.16)
+		end,0.2)
+		return
+	elseif taxinode.m~=2133 and FlightMapFrame.mapID==2175 then -- dest is not Zaralek, shown Zaralek
+		ZGV:ScheduleTimer(function()
+			FlightMapFrame.ZygorGuidesViewer_TaxiMarker:PointToCoords(FlightMapFrame,0.87,0.16)
+		end,0.2)
+		return
+	end
 
 	local function getpin(nodeID) -- find corresponding pin on map
 		for pin,_ in pairs(FlightMapFrame.pinPools.FlightMap_FlightPointPinTemplate.activeObjects) do
@@ -240,8 +258,8 @@ function Pointer:HighlightFlightMapDestination()
 			local mapID = GetTaxiMapID()
 			local sx,sy = pinstart.normalizedX,pinstart.normalizedY
 			local ex,ey = pin.normalizedX,pin.normalizedY
-			local smapid = sx and (C_Map.GetMapInfoAtPosition(mapID, sx,sy) or {}).mapID or taxinodestart.m
-			local emapid = ex and (C_Map.GetMapInfoAtPosition(mapID, ex,ey) or {}).mapID or taxinode.m
+			local smapid = sx and mapID and (C_Map.GetMapInfoAtPosition(mapID, sx,sy) or {}).mapID or taxinodestart.m
+			local emapid = ex and mapID and (C_Map.GetMapInfoAtPosition(mapID, ex,ey) or {}).mapID or taxinode.m
 			self:Debug(("Taxizoom: Zooming from map %d (%d,%d) to %d (%d,%d)"):format(smapid or 0,sx*100,sy*100,emapid or 0,ex*100,ey*100))
 			if smapid and emapid and smapid~=emapid --[[and FlagsUtil.IsSet(subMapInfo.flags, Enum.UIMapFlag.FlightMapAutoZoom) --]] then
 				local centerX, centerY = MapUtil.GetMapCenterOnMap(emapid, mapID);
@@ -257,7 +275,7 @@ function Pointer:HighlightFlightMapDestination()
 	-- point to it
 	ZGV:ScheduleTimer(function()
 		FlightMapFrame.ZygorGuidesViewer_TaxiMarker:PointTo(pin,pin)
-	end,0.5)
+	end,0.2)
 	
 	-- take auto taxi
 	if ZGV.db.profile.autotaxi and pin.taxiNodeData.slotIndex and ZGV.Frame:IsVisible() and not IsAltKeyDown() then
@@ -317,6 +335,10 @@ function Pointer:Startup()
 		:RegisterEvent("TAXIMAP_OPENED")
 	ZGV:AddMessageHandler("ZGV_STEP_CHANGED",self.ControlFrame.OnEvent)
 	ZGV:AddMessageHandler("ZGV_INITIAL_GUIDE_LOADED",self.ControlFrame.OnEvent)
+
+	if ZGV.IsRetail then
+		EventRegistry:RegisterCallback("MapCanvas.MapSet", function() ZGV:ScheduleTimer(function() Pointer:HighlightFlightMapDestination() end,0) end, FlightMapFrame);
+	end
 
 	--hooksecurefunc("WorldMapButton_OnClick",ZGV.Pointer.hook_WorldMapButton_OnClick)
 
@@ -865,7 +887,7 @@ function Pointer:ClearWaypoints(waytype)
 	return n
 end
 
-function Pointer:RemoveWaypoint(waypoint,reason)
+function Pointer:RemoveWaypoint(waypoint,reason,keeparrow)
 	local wayn
 	if type(waypoint)=="number" then  wayn=waypoint  waypoint=self.waypoints[wayn]  end
 	if not waypoint then return end -- let's just play nice --assert(waypoint,"Waypoint not found")
@@ -909,11 +931,13 @@ function Pointer:RemoveWaypoint(waypoint,reason)
 
 	-- Now for extra cleanups:
 
-	if self.ArrowFrame.waypoint==waypoint then self:HideArrow() end
-	if self.DestinationWaypoint==waypoint then
-		Pointer:Debug("Removed DestinationWaypoint because "..(reason or "no reason"))
-		self.DestinationWaypoint=nil  self.TempWaypath=nil
-		self:ClearSet("route")
+	if not keeparrow then
+		if self.ArrowFrame.waypoint==waypoint then self:HideArrow() end
+		if self.DestinationWaypoint==waypoint then
+			Pointer:Debug("Removed DestinationWaypoint because "..(reason or "no reason"))
+			self.DestinationWaypoint=nil  self.TempWaypath=nil
+			self:ClearSet("route")
+		end
 	end
 
 	Pointer.Provider:SoilData()
@@ -1556,13 +1580,17 @@ local function ShowTooltip(button,tooltip)
 		end
 
 		for i,line in pairs(tooltipdata) do if i~="ZGV_OPTIONS" then
+			if ZGV.db.profile.debug_display and type(line)=="string" then line=line:gsub(" |cff888888%(context","|n |cff888888(context") end
+
 			if type(line)=="string" then tooltip:AddLine(line,1,1,1,1,1) end
 			if line.text then tooltip:AddLine(line.text,1,1,1,1,line.nowrap or 1) end
 			if line.icon then tooltip:AddTexture(line.icon) end
 			if line.indent then tooltip:AddTexture(ZGV.DIR .. "\\Skins\\blank") end
 		end end
 	else
-		tooltip:SetText(button.waypoint:GetTitle())
+		local title = button.waypoint:GetTitle()
+		if ZGV.db.profile.debug_display then title=title:gsub("(context","|n(context") end
+		tooltip:SetText(title)
 	end
 	if button.waypoint.OnEnter then
 		local r = button.waypoint:OnEnter(tooltip)
@@ -5180,7 +5208,7 @@ function Pointer:ClearSets()
 end
 
 local lv=0
-function Pointer:ClearSet(name)
+function Pointer:ClearSet(name,keeparrow)
 	local t1=debugprofilestop()
 	lv=lv+1
 	local set = self.pointsets[name]
@@ -5193,7 +5221,7 @@ function Pointer:ClearSet(name)
 	for pi,point in ipairs(set.points) do
 		--Pointer:Debug("Removing point %d from set %s",pi,name)
 		point.in_set = nil  -- so that it's not attempted to remove from set again
-		self:RemoveWaypoint(point,"clearset "..(name or "?"))
+		self:RemoveWaypoint(point,"clearset "..(name or "?"),keeparrow)
 	end
 	self.pointsets[name]=nil
 	assert(lv<=3,"No nesting ClearSet too deep!")
@@ -5500,7 +5528,7 @@ function Pointer:FindTravelPath(way)
 		ZGV:Debug("&pointer FindTravelPath to %s",waypoint_tostring(way))
 		LibRover:Abort("before QFP","quiet")
 		LibRover:QueueFindPath(0,0,0,way.m,way.x,way.y, PathFoundHandler,
-			{title=way.title .. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding or (way.goal and way.goal.waypoint_notravel),
+			{title=(way.title or "Destination").. (display_zone and ("\n(in %s)"):format(display_zone) or ""), waypoint=way, direct=not ZGV.db.profile.pathfinding or (way.goal and way.goal.waypoint_notravel),
 			waypoint_zone=way.waypoint_zone, waypoint_realzone=way.waypoint_realzone, waypoint_subzone=way.waypoint_subzone, waypoint_minizone=way.waypoint_minizone,
 			waypoint_region=way.waypoint_region, waypoint_indoors = way.waypoint_indoors
 			}
@@ -5968,6 +5996,17 @@ end
 function ZygorGuidesViewer_TaxiMarker_Mixin:PointTo(parent,pin)
 	self:SetParent(parent)
 	self:SetPoint("CENTER",pin,"CENTER",0,0)
+	self.icon:SetSize(35,35)
+	self:SetFrameLevel(50)
+	self:Show()
+	self.fadein:Play()
+	self.here:Play()
+end
+function ZygorGuidesViewer_TaxiMarker_Mixin:PointToCoords(parent,x,y)
+	self:SetParent(parent)
+	self:SetPoint("CENTER",parent,"BOTTOMLEFT",parent:GetWidth()*x,parent:GetHeight()*y)
+	self.icon:SetSize(50,50)
+	self:SetFrameLevel(50)
 	self:Show()
 	self.fadein:Play()
 	self.here:Play()

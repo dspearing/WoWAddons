@@ -9,7 +9,7 @@ model={59347},
 mounts={171629},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Armored Frostboar mount.",
+description="This guide will help you acquire the Armored Frostboar mount.",
 },[[
 step
 This mount requires the achievement _Advanced Husbandry_
@@ -26,7 +26,7 @@ model={59753},
 mounts={171838},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Armored Frostwolf mount.",
+description="This guide will help you acquire the Armored Frostwolf mount.",
 },[[
 step
 This mount requires the achievement _The Stable Master_
@@ -42,7 +42,7 @@ model={59349},
 mounts={171627},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Blacksteel Battleboar mount.",
+description="This guide will help you acquire the Blacksteel Battleboar mount.",
 },[[
 step
 This mount requires the Guild achievement _Guild Glory of the Draenor Raider_
@@ -58,7 +58,7 @@ model={60577},
 mounts={171848},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Challenger's War Yeti mount.",
+description="This guide will help you acquire the Challenger's War Yeti mount.",
 },[[
 step
 This mount requires the achievement _Challenge Warlord: Silver_
@@ -74,7 +74,7 @@ model={59344},
 mounts={171632},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Frostplains Battleboar mount.",
+description="This guide will help you acquire the Frostplains Battleboar mount.",
 },[[
 step
 This mount requires the achievement _Glory of the Draenor Hero_
@@ -90,7 +90,7 @@ model={59159},
 mounts={171436},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Gorestrider Gronnling mount.",
+description="This guide will help you acquire the Gorestrider Gronnling mount.",
 },[[
 step
 This mount requires the achievement _Glory of the Draenor Raider_
@@ -106,7 +106,7 @@ model={63873},
 mounts={186305},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Infernal Direwolf mount.",
+description="This guide will help you acquire the Infernal Direwolf mount.",
 },[[
 step
 This mount requires the achievement _Glory of the Hellfire Raider_
@@ -122,7 +122,7 @@ model={61803},
 mounts={9909},
 patch='unknown',
 mounttype='unknown',
-description="\nThis guide will help you earn the Chauffeured Chopper mount.",
+description="This guide will help you earn the Chauffeured Chopper mount.",
 },[[
 step
 This mount requires the achievement _Heirloom Hoarder_
@@ -140,7 +140,7 @@ model={59320},
 mounts={171617},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Icehoof mount.",
+description="This guide will help you acquire the Trained Icehoof mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -242,7 +242,7 @@ model={59340},
 mounts={171623},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Meadowstomper mount.",
+description="This guide will help you acquire the Trained Meadowstomper mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -314,7 +314,7 @@ model={59743},
 mounts={171638},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Riverwallow mount.",
+description="This guide will help you acquire the Trained Riverwallow mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -398,7 +398,7 @@ model={59735},
 mounts={171637},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Rocktusk mount.",
+description="This guide will help you acquire the Trained Rocktusk mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -488,7 +488,7 @@ model={59365},
 mounts={171831},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Silverpelt mount.",
+description="This guide will help you acquire the Trained Silverpelt mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -590,7 +590,7 @@ model={59757},
 mounts={171841},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Trained Snarler mount.",
+description="This guide will help you acquire the Trained Snarler mount.",
 },[[
 step
 This mount requires a _level 1 or higher Stables_ in your Garrison
@@ -662,7 +662,7 @@ model={59323},
 mounts={171620},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Bloodhoof Bull mount.",
+description="This guide will help you acquire the Bloodhoof Bull mount.",
 },[[
 step
 _Click_ Nakk the Thunderer's known spawn locations below for your chance at this rare mount
@@ -682,7 +682,7 @@ model={54114},
 mounts={171851},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Garn Nighthowl mount.",
+description="This guide will help you acquire the Garn Nighthowl mount.",
 },[[
 step
 _Click here_ to gather the Garn Nighthowl mount yourself |confirm |next "farm"
@@ -712,7 +712,7 @@ model={59736},
 mounts={171636},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Great Greytusk mount.",
+description="This guide will help you acquire the Great Greytusk mount.",
 },[[
 step
 _Click_ Gorok's known spawn locations below for your chance at this rare mount
@@ -732,7 +732,7 @@ model={59339},
 mounts={171622},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Mottled Meadowstomper mount.",
+description="This guide will help you acquire the Mottled Meadowstomper mount.",
 },[[
 step
 _Click_ Luk'hok's known spawn locations below for your chance at this rare mount
@@ -752,7 +752,7 @@ model={59744},
 mounts={171824},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Sapphire Riverbeast mount.",
+description="This guide will help you acquire the Sapphire Riverbeast mount.",
 },[[
 step
 _Click_ Silthide's known spawn locations below for your chance at this rare mount
@@ -771,7 +771,7 @@ model={60578},
 mounts={171849},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Sunhide Gronnling mount.",
+description="This guide will help you acquire the Sunhide Gronnling mount.",
 },[[
 step
 _Click_ Poundfist's known spawn locations below for your chance at this rare mount
@@ -791,7 +791,7 @@ model={59364},
 mounts={171830},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Swift Breezestrider mount.",
+description="This guide will help you acquire the Swift Breezestrider mount.",
 },[[
 step
 _Click_ Pathrunner's known spawn locations below for your chance at this rare mount
@@ -811,7 +811,7 @@ mounts={171837},
 patch='60100',
 mounttype='Ground',
 model={59752},
-description="\nThis guide will help you acquire the Warsong Direfang mount.",
+description="This guide will help you acquire the Warsong Direfang mount.",
 },[[
 step
 Click lines to change the waypoint:
@@ -838,7 +838,7 @@ mounts={171630},
 patch='60100',
 mounttype='Ground',
 model={59346},
-description="\nThis guide will help you acquire the Armored Razorback mount.",
+description="This guide will help you acquire the Armored Razorback mount.",
 },[[
 step
 Click lines to change the waypoint:
@@ -865,7 +865,7 @@ mounts={171619},
 patch='60100',
 mounttype='Ground',
 model={59324},
-description="\nThis guide will help you acquire the Tundra Icehoof mount.",
+description="This guide will help you acquire the Tundra Icehoof mount.",
 },[[
 step
 Click lines to change the waypoint:
@@ -893,7 +893,7 @@ model={38668},
 mounts={100332},
 patch='unknown',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Vicious War Steed mount.",
+description="This guide will help you acquire the Vicious War Steed mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -918,7 +918,7 @@ model={51037},
 mounts={146615},
 patch='54000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Vicious Warsaber mount.",
+description="This guide will help you acquire the Vicious Warsaber mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -943,7 +943,7 @@ model={60574},
 mounts={171834},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Vicious War Ram mount.",
+description="This guide will help you acquire the Vicious War Ram mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -968,7 +968,7 @@ model={63249},
 mounts={183889},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Vicious War Mechanostrider mount.",
+description="This guide will help you acquire the Vicious War Mechanostrider mount.",
 },[[
 step
 In order to earn this mount, you will need to win 40 Rated Battlegrounds _OR_ 100 Arena Matches
@@ -993,7 +993,7 @@ model={64960},
 mounts={191314},
 patch='62200',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Minion of Grumpus mount.",
+description="This guide will help you acquire the Minion of Grumpus mount.",
 },[[
 step
 This mount was released during the 2015 christmas event.
@@ -1043,7 +1043,7 @@ model={59762},
 mounts={171844},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Dustmane Direwolf mount.",
+description="This guide will help you acquire the Dustmane Direwolf mount.",
 },[[
 step
 This mount _requires_ you to have level 600 Leatherworking
@@ -1099,7 +1099,7 @@ patch='60100',
 mounttype='Ground',
 keywords={"ironhoof","destroyer","ground","mount","raid"},
 model={59837},
-description="\nThis guide will help you acquire the Ironhoof Destroyer mount.",
+description="This guide will help you acquire the Ironhoof Destroyer mount.",
 },[[
 step
 Enter the Blackrock Foundry _Mythic_ Dungeon |goto Gorgrond/0 51.3,28.7
@@ -1119,7 +1119,7 @@ patch='62000',
 mounttype='Flying',
 keywords={"felsteel","annihilator","ground","mount","raid"},
 model={62893},
-description="\nThis guide will help you acquire the Felsteel Annihilator mount.",
+description="This guide will help you acquire the Felsteel Annihilator mount.",
 },[[
 step
 Enter the Hellfire Citadel _Mythic_ Dungeon |goto Tanaan Jungle/0 45.4,53.7
@@ -1139,7 +1139,7 @@ model={59343},
 mounts={171626},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Armored Irontusk mount.",
+description="This guide will help you acquire the Armored Irontusk mount.",
 },[[
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Sha'tari Defense_
@@ -1158,7 +1158,7 @@ model={59738},
 mounts={171634},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Domesticated Razorback mount.",
+description="This guide will help you acquire the Domesticated Razorback mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with the _Steamwheedle "Preservation" Society_
@@ -1175,7 +1175,7 @@ model={59342},
 mounts={171625},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Dusty Rockhide mount.",
+description="This guide will help you acquire the Dusty Rockhide mount.",
 },[[
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Council of Exarchs_
@@ -1193,7 +1193,7 @@ model={59363},
 mounts={171829},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Shadowmane Charger mount.",
+description="This guide will help you acquire the Shadowmane Charger mount.",
 },[[
 step
 This mount requires you to be _Exalted_ with the _Arakkoa Outcasts_
@@ -1211,7 +1211,7 @@ model={59739},
 mounts={171633},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Wild Goretusk mount.",
+description="This guide will help you acquire the Wild Goretusk mount.",
 },[[
 step
 Reach _Honored_ Reputation with The Saberstalkers |complete rep('The Saberstalkers') >= Honored
@@ -1232,7 +1232,7 @@ model={64726},
 mounts={190690},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Bristling Hellboar mount.",
+description="This guide will help you acquire the Bristling Hellboar mount.",
 },[[
 step
 Reach _Exalted_ Reputation with The Saberstalkers |complete rep('The Saberstalkers') == Exalted
@@ -1253,7 +1253,7 @@ model={64849},
 mounts={190977},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Deathtusk Felboar mount.",
+description="This guide will help you acquire the Deathtusk Felboar mount.",
 },[[
 step
 Reach _Exalted_ Reputation with Hand of the Prophet |complete rep('Hand of the Prophet') == Exalted
@@ -1274,7 +1274,7 @@ model={59367},
 mounts={171833},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Pale Thorngrazer mount.",
+description="This guide will help you acquire the Pale Thorngrazer mount.",
 },[[
 step
 This mount is _Alliance only_ and requires you to be _Exalted_ with the _Wrynn's Vanguard_
@@ -1294,7 +1294,7 @@ model={59746},
 mounts={171826},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Mudback Riverbeast mount.",
+description="This guide will help you acquire the Mudback Riverbeast mount.",
 },[[
 step
 clicknpc Fleet Command Table##94399
@@ -1312,7 +1312,7 @@ model={64426},
 mounts={189364},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Coalfist Gronnling mount.",
+description="This guide will help you acquire the Coalfist Gronnling mount.",
 },[[
 step
 #include "Garrison_CommandTable"
@@ -1330,7 +1330,7 @@ model={59756},
 mounts={171836},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Garn Steelmaw mount.",
+description="This guide will help you acquire the Garn Steelmaw mount.",
 },[[
 step
 |tip This mount is one of four that will drop randomly from the _Invader's Forgotten Treasure_ and _Routed Invader's Crate of Spoils_ reward
@@ -1346,7 +1346,7 @@ model={59737},
 mounts={171635},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Giant Coldsnout mount.",
+description="This guide will help you acquire the Giant Coldsnout mount.",
 },[[
 step
 |tip This mount is one of four that will drop randomly from the _Invader's Forgotten Treasure_ and _Routed Invader's Crate of Spoils_ reward
@@ -1362,7 +1362,7 @@ model={59341},
 mounts={171624},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Shadowhide Pearltusk mount.",
+description="This guide will help you acquire the Shadowhide Pearltusk mount.",
 },[[
 step
 |tip This mount is one of four that will drop randomly from the _Invader's Forgotten Treasure_ and _Routed Invader's Crate of Spoils_ reward
@@ -1378,7 +1378,7 @@ model={59760},
 mounts={171633},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Smoky Direwolf mount.",
+description="This guide will help you acquire the Smoky Direwolf mount.",
 },[[
 step
 |tip This mount is one of four that will drop randomly from the _Invader's Forgotten Treasure_ and _Routed Invader's Crate of Spoils_ reward
@@ -1394,7 +1394,7 @@ model={11997},
 mounts={170347},
 patch='60100',
 mounttype='Ground',
-description="\nThis mount has been removed from the game.",
+description="This mount has been removed from the game.",
 },[[
 step
 The Core Hound was a limited-time reward for completing the new Molten Core upon the launch of Warlords of Draenor
@@ -1406,7 +1406,7 @@ model={63956},
 mounts={186828},
 patch='62000',
 mounttype='Ground',
-description="\nThis mount was only available in Warlords Season 1.",
+description="This mount was only available in Warlords Season 1.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Warlords of Draenor PvP Season 1
@@ -1422,7 +1422,7 @@ mounts={189044},
 patch='62000',
 mounttype='Ground',
 model={64377},
-description="\nThis guide will help you acquire the Warmongering Gladiator's Felblood Gronnling.",
+description="This guide will help you acquire the Warmongering Gladiator's Felblood Gronnling.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Warlords of Draenor PvP Season 3
@@ -1435,7 +1435,7 @@ model={64378},
 mounts={189043},
 patch='62000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Wild Gladiator's Felblood Gronnling mount.",
+description="This guide will help you acquire the Wild Gladiator's Felblood Gronnling mount.",
 },[[
 step
 This mount was a reward given to players that obtained the Gladiator rank during Warlords of Draenor PvP Season 2
@@ -1448,7 +1448,7 @@ model={43713},
 mounts={127271},
 patch='50400',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Crimson Water Strider mount.",
+description="This guide will help you acquire the Crimson Water Strider mount.",
 },[[
 step
 This mount requires you to be _Honored_ with the _Nat Pagle_
@@ -1468,7 +1468,7 @@ model={59745},
 mounts={171825},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Mosshide Riverwallow mount.",
+description="This guide will help you acquire the Mosshide Riverwallow mount.",
 },[[
 step
 talk Dawn-Seeker Krek##86391
@@ -1486,7 +1486,7 @@ model={59348},
 mounts={171628},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Rocktusk Battleboar mount.",
+description="This guide will help you acquire the Rocktusk Battleboar mount.",
 },[[
 step
 talk Trader Araanda##95470
@@ -1504,7 +1504,7 @@ model={59321},
 mounts={171616},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Witherhide Cliffstomper mount.",
+description="This guide will help you acquire the Witherhide Cliffstomper mount.",
 },[[
 step
 talk Trader Araanda##95470
@@ -1522,7 +1522,7 @@ model={60207},
 mounts={171846},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Champion's Treadblade mount.",
+description="This guide will help you acquire the Champion's Treadblade mount.",
 },[[
 step
 talk Paulie##87501
@@ -1540,7 +1540,7 @@ model={38783},
 mounts={179478},
 patch='61000',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Voidtalon mount.",
+description="This guide will help you acquire the Voidtalon mount.",
 },[[
 step
 This mount is obtained from entering one of the extremely rare edge of reality portals
@@ -1572,7 +1572,7 @@ model={64582},
 mounts={189998},
 patch='62200',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Illidari Felstalker mount.",
+description="This guide will help you acquire the Illidari Felstalker mount.",
 },[[
 step
 This mount is obtained by purchasing the Legion Collector's Edition
@@ -1588,7 +1588,7 @@ model={38032},
 mounts={97501},
 patch='unknown',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Felfire Hawk mount.",
+description="This guide will help you acquire the Felfire Hawk mount.",
 },[[
 step
 This mount requires the achievement _Mountacular_
@@ -1604,7 +1604,7 @@ model={65040},
 mounts={191633},
 patch='62000',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Soaring Skyterror mount.",
+description="This guide will help you acquire the Soaring Skyterror mount.",
 },[[
 step
 Complete the Draenor Pathfinder Achievement |achieve 10018
@@ -1622,7 +1622,7 @@ model={25834},
 mounts={175700},
 patch='60100',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Reins of the Emerald Drake mount.",
+description="This guide will help you acquire the Reins of the Emerald Drake mount.",
 },[[
 step
 This mount requires the achievement _Awake the Drakes_
@@ -1640,7 +1640,7 @@ model={43697},
 mounts={127169},
 patch='50400',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Reins of the Reins of the Heavenly Azure Cloud Serpent mount.",
+description="This guide will help you acquire the Reins of the Reins of the Heavenly Azure Cloud Serpent mount.",
 },[[
 step
 This mount requires the achievement _Lord of the Reins_
@@ -1658,7 +1658,7 @@ model={55907},
 mounts={163025},
 patch='60100',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Grinning Reaver mount.",
+description="This guide will help you acquire the Grinning Reaver mount.",
 },[[
 step
 This mount can only be purchased in the official _Blizzard Store_
@@ -1674,7 +1674,7 @@ model={62148},
 mounts={180545},
 patch='61000',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Mystic Runesaber mount.",
+description="This guide will help you acquire the Mystic Runesaber mount.",
 },[[
 step
 This mount can only be purchased in the official _Blizzard Store_
@@ -1690,7 +1690,7 @@ model={59751},
 mounts={171828},
 patch='60100',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Solar Spirehawk mount.",
+description="This guide will help you acquire the Solar Spirehawk mount.",
 },[[
 step
 kill Rukhmar##87493
@@ -1710,7 +1710,7 @@ model={67594},
 mounts={201098},
 patch='62300',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Infinite Timereaver mount.",
+description="This guide will help you acquire the Infinite Timereaver mount.",
 },[[
 step
 This mount can only be obtained during Timewalking dungeon events.
@@ -1727,7 +1727,7 @@ model={53774},
 mounts={155741},
 patch='54700',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Dread Raven mount.",
+description="This guide will help you acquire the Dread Raven mount.",
 },[[
 step
 This mount is obtained by purchasing the Warlords of Draenor Collector's Edition
@@ -1743,7 +1743,7 @@ model={61363},
 mounts={171847},
 patch='60100',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Cindermane Charger mount.",
+description="This guide will help you acquire the Cindermane Charger mount.",
 },[[
 step
 This mount is obtained through the Blizzard Recruit-a-riend system
@@ -1760,7 +1760,7 @@ model={64583},
 mounts={189999},
 patch='62200',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Grove Warden mount.",
+description="This guide will help you acquire the Grove Warden mount.",
 },[[
 step
 This mount is no longer obtainable.
@@ -1771,7 +1771,7 @@ model={46453},
 mounts={169952},
 patch='60100',
 mounttype='Ground',
-description="\nThis guide will help you acquire the Creeping Carpet mount.",
+description="This guide will help you acquire the Creeping Carpet mount.",
 },[[
 step
 This mount requires you to have _level 600 Tailoring_
@@ -1827,7 +1827,7 @@ model={63032},
 mounts={183117},
 patch='62000',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Corrupted Dreadwing mount.",
+description="This guide will help you acquire the Corrupted Dreadwing mount.",
 },[[
 step
 Reach _Friendly_ Reputation with Order of the Awakened |complete rep('Order of the Awakened') >= Friendly
@@ -1848,7 +1848,7 @@ model={48946},
 mounts={142910},
 patch='53000',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Bridle of the Ironbound Wraithcharger mount.",
+description="This guide will help you acquire the Bridle of the Ironbound Wraithcharger mount.",
 },[[
 step
 talk Auzin##98690
@@ -1868,7 +1868,7 @@ model={27525},
 mounts={194464},
 patch='62200',
 mounttype='Flying',
-description="\nThis guide will help you acquire the Reins of the Eclipse Dragonhawk mount.",
+description="This guide will help you acquire the Reins of the Eclipse Dragonhawk mount.",
 },[[
 step
 talk Auzin##98690

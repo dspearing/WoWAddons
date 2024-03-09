@@ -59,6 +59,7 @@ Upgrades.UniqueEquipped = {}
 function Upgrades:ScoreEquippedItems(forced)
 	if not ZGV.db.profile.autogear then return end -- disabled
 	if Upgrades.StopScanning then return end	--if scanning needs to be paused
+	if not ItemScore.active_set then return end
 
 	if Upgrades.UpgradeQueueCount == 0 then table.wipe(Upgrades.ToastExistingUpgrades) Upgrades.forcefull = false Notification:RemoveEntry("ZygorItemPopup") end	--stop enforcing standard popup over floaties if there are no upgrades to be processed
 
@@ -412,6 +413,7 @@ end
 
 -- Checks if item is upgrade for any alt (but not for current character)
 -- Utility function used by itemscore tooltips, inventory manager and mail tools
+--[[
 local alts = {}
 function Upgrades:IsUpgradeForAlt(itemlink)
 	if not ZGV.DEV then return false end
@@ -430,7 +432,7 @@ function Upgrades:IsUpgradeForAlt(itemlink)
 	end
 	return #alts>0,alts
 end
-
+--]]
 -- Checks if item is upgrade for any offspec (but not current spec)
 -- Utility function used by itemscore tooltips, inventory manager and mail tools
 local offspecs = {}
@@ -800,6 +802,7 @@ function Upgrades:ScanBagsForUpgrades(onlyscan, forced)
 	Upgrades:ScoreBagsItems(forced)
 end
 
+--[[
 Upgrades.AltUpgrades = {}
 function Upgrades:ScanBagsForUpgradesForAlts()
 	ZGV:Debug("&itemscore ScanBagsForUpgradesForAlts")
@@ -885,18 +888,16 @@ function Upgrades:ShowAltGearPopup(itemlink)
 		text = text .. "\n" .. itemlink .. "\n"
 		Upgrades.EquipPopupAlts.CurrentItem = {item=itemlink,characters={},confirmed=0}
 		for _,data in ipairs(item) do
-			local spec = ItemScore.altDB[data[1]].gear[data[2]].specname or ""
-			text = text .. data[1] .. " " .. spec.. "\n"
-			Upgrades.EquipPopupAlts.CurrentItem.characters[data[1]] = true
-		end
-	end
+ --]]
+--			local spec = ItemScore.altDB[data[1]].gear[data[2]].specname or ""
+--			text = text .. data[1] .. " " .. spec.. "\n"
+--			Upgrades.EquipPopupAlts.CurrentItem.characters[data[1]] = true
+--		end
+--	end
 
-	Upgrades.EquipPopupAlts:SetText(text)
-	Upgrades.EquipPopupAlts:Show()
-end
-
-
-
+--	Upgrades.EquipPopupAlts:SetText(text)
+--	Upgrades.EquipPopupAlts:Show()
+--end
 
 function Upgrades:ScoreBagsItems(forced)
 	local skipped = false
@@ -1065,6 +1066,7 @@ function Upgrades:ProcessPossibleUpgrades(forced)
 end
 
 function Upgrades:SetBadUpgrade(itemlink,slot)
+	if not itemlink then return end
 	Upgrades.BadUpgrades[itemlink] = true
 	table.wipe(Upgrades.UpgradeQueue[slot])
 	Upgrades.UpgradeQueue[slot].score = 0
@@ -1507,7 +1509,7 @@ function Upgrades:ShowGearReport()
 end
 
 function Upgrades:ShowEquipmentChangePopup(slot, forced)
-	if not ZGV.db.profile.n_popup_gear then return end
+	if not ZGV.db.profile.n_popup_gear or not ZGV.db.profile.n_popup_enable then return end
 	if ZygorItemPopup and ZygorItemPopup:IsVisible() then return end
 	if Notification.prioritytoast then return end
 
@@ -1854,15 +1856,7 @@ function Upgrades:ShowEquipmentChangePopup(slot, forced)
 		end
 	end
 
-	if not ZGV.IsRetail and (ZGV.db.profile.n_popup_toast and not ZGV.ItemScore.Upgrades.forcefull and ZGV.Skills.SkillsPopup) then
-		ZGV:ScheduleTimer(function()
-			if not F:IsVisible() then
-				F:Show()
-			end
-		end,3)
-	else
-		F:Show()
-	end
+	F:Show()
 
 	return true
 end

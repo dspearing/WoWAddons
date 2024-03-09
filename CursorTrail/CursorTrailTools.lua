@@ -6,6 +6,8 @@
             if Blizzard changes their model API again.
 -----------------------------------------------------------------------------]]
 
+local kAddonFolderName, private = ...
+
 --[[                       Saved (Persistent) Variables                      ]]
 CursorTrail_PlayerConfig = CursorTrail_PlayerConfig or {}
 
@@ -18,6 +20,7 @@ local CreateFrame = _G.CreateFrame
 local CopyTable = _G.CopyTable
 local date = _G.date
 local floor = _G.floor
+local GetBuildInfo = _G.GetBuildInfo
 local GetCurrentResolution = _G.GetCurrentResolution
 local GetCursorPosition = _G.GetCursorPosition
 local GetScreenResolutions = _G.GetScreenResolutions
@@ -413,228 +416,6 @@ function showErrMsg(msg)
             nil, true, SOUNDKIT.ALARM_CLOCK_WARNING_3 )
 end
 
--------------------------------------------------------------------------------
-function createTextScrollFrame(parent, title, width, height)
--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
--- USAGE EXAMPLE:
---    local tsf = createTextScrollFrame(OptionsFrame, "*** Scroll Window Test ***", 333)
---
---    local title = tsf.scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormalLarge")
---    title:SetPoint("TOP", 0, -4)
---    title:SetText("General Info")
---
---    local firstLine = tsf.scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
---    firstLine:SetPoint("TOP", title, "BOTTOM", 0, -1)
---    firstLine:SetJustifyH("LEFT")  -- Specify this when using text with carriage returns in it.
---    firstLine:SetText("This is the first line.\n  (Scroll way down to see the last!)")
---
---    local footer = tsf.scrollChild:CreateFontString("ARTWORK", nil, "GameFontNormal")
---    footer:SetPoint("TOP", 0, -5000)
---    footer:SetText("This is 5000 pixels below the top, so scrollChild automatically adjusts its height.")
---
---        -- < OR > --
---
---    local indent = 16 -- pixels
---    tsf:addText("General Info:", 0, 4, "GameFontNormalLarge")
---    tsf:addText("This is the first line.\n  (Scroll way down to see the last!)")
---    tsf:addText("|cffEE5500Line #2 is orange.|r", indent)
---    tsf:addText("This is line #3.  It is a very long line in order to test the .:.:.:. word wrap feature of the scroll frame.\n ", indent)
---    tsf:addText("This is 5000 pixels below the top, so scrollChild automatically adjusts its height.", 0, 5000)
--- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-    parent = parent or UIParent
-    width = width or 400
-    height = height or 600
-
-    local margin = 9
-
-    -----------------------------
-    -- Create a container frame.
-    -----------------------------
-    local containerFrame = CreateFrame("frame", nil, parent) ----, "BackdropTemplate")
-    ----containerFrame:Hide()
-    containerFrame:SetFrameStrata("DIALOG")
-    containerFrame:SetFrameLevel(10)
-    ----containerFrame:SetToplevel(true)
-    containerFrame:EnableMouse(true)  -- Prevents clicking thru this frame and triggering things beneath it.
-    containerFrame:SetPoint("CENTER")
-    containerFrame:SetWidth(width)
-    containerFrame:SetHeight(height)
-    ----containerFrame:SetBackdropColor(0,0,0, 1)
-
-    -- Create dark marbled background.
-    containerFrame.bg = containerFrame:CreateTexture(nil, "BACKGROUND") ----, "BackdropTemplate")
-    containerFrame.bg:SetPoint("TOPLEFT", 1, -1)
-    containerFrame.bg:SetPoint("BOTTOMRIGHT", -1, 1)
-    containerFrame.bg:SetTexture("Interface\\FrameGeneral\\UI-Background-Marble", true, true)
-    ----containerFrame.bg:SetColorTexture(0, 0, 0, 1) -- Black
-
-    containerFrame.bg:SetHorizTile(true)
-    containerFrame.bg:SetVertTile(true)
-    ----containerFrame.bg:SetBackdropColor(0,0,0, 1)
-
-    -- Create border around the edges.
-    for k, v in pairs({
-            {"UI-Frame-InnerTopLeft", "TOPLEFT", 0, 0},
-            {"UI-Frame-InnerTopRight", "TOPRIGHT", 0, 0},
-            {"UI-Frame-InnerBotLeftCorner", "BOTTOMLEFT", 0, 0},
-            {"UI-Frame-InnerBotRight", "BOTTOMRIGHT", 0, 0},
-            {"_UI-Frame-InnerTopTile", "TOPLEFT", 6, 0, "TOPRIGHT", -6, 0},
-            {"_UI-Frame-InnerBotTile", "BOTTOMLEFT", 6, 0, "BOTTOMRIGHT", -6, 0},
-            {"!UI-Frame-InnerLeftTile", "TOPLEFT", 0, -6, "BOTTOMLEFT", 0, 6},
-            {"!UI-Frame-InnerRightTile", "TOPRIGHT", 0, -6, "BOTTOMRIGHT", 0, 6}
-            }) do
-        local border = containerFrame:CreateTexture(nil, "BORDER", v[1])
-        border:ClearAllPoints()
-        border:SetPoint( v[2], v[3], v[4] )
-        if v[5] then border:SetPoint( v[5], v[6], v[7] ) end
-    end
-
-    -- Create title banner.
-    if title then
-        containerFrame.title = containerFrame:CreateFontString("ARTWORK", nil, "SplashHeaderFont")  -- "GameFontNormalLarge"?
-        containerFrame.title:SetPoint("TOP", 0, -margin-1)
-        ----local titleFont = containerFrame.title:GetFontObject()
-        ----titleFont:SetTextColor(1,1,1)
-        ----titleFont:SetShadowColor(0,0,1)
-        containerFrame.title:SetText(title)
-    end
-
-    -- Create CLOSE button.
-    containerFrame.closeBtn = CreateFrame("Button", nil, containerFrame, kButtonTemplate)
-    containerFrame.closeBtn:SetText("Close")
-    containerFrame.closeBtn:SetPoint("BOTTOM", 0, 12)
-    containerFrame.closeBtn:SetSize(width/3, 24)
-    containerFrame.closeBtn:SetScript("OnClick", function(self) self:GetParent():Hide() end)
-
-    -----------------------------------------------------------------
-    -- Create a scroll frame (view port) inside the container frame.
-    -----------------------------------------------------------------
-
-    -- Create the scrolling parent frame and size it to fit inside the texture.
-    containerFrame.scrollFrame = CreateFrame("ScrollFrame", nil, containerFrame, "UIPanelScrollFrameTemplate")
-    if containerFrame.title then
-        containerFrame.scrollFrame:SetPoint("TOP", containerFrame.title, "BOTTOM", 0, -8)
-    else
-        containerFrame.scrollFrame:SetPoint("TOP", containerFrame, "TOP", 0, -margin)
-    end
-    containerFrame.scrollFrame:SetPoint("LEFT", margin, 0)
-    containerFrame.scrollFrame:SetPoint("BOTTOM", containerFrame.closeBtn, "TOP", 0, margin*0.6)
-    containerFrame.scrollFrame:SetPoint("RIGHT", -23, 0)
-    
-    containerFrame.scrollFrame.ScrollBar:ClearAllPoints()
-	containerFrame.scrollFrame.ScrollBar:SetPoint("TOPLEFT", containerFrame.scrollFrame, "TOPRIGHT", 2, -17)
-	containerFrame.scrollFrame.ScrollBar:SetPoint("BOTTOMRIGHT", containerFrame.scrollFrame, "BOTTOMRIGHT", 18, 16)
-    ----containerFrame.scrollFrame:SetScript("OnMouseWheel", function(self, delta) 
-    ----        -- Customize mouse wheel scroll speed.
-    ----        local newValue = self:GetVerticalScroll() - (delta * 20) -- Larger delta multiplier speeds up scrolling.
-    ----        if (newValue < 0) then newValue = 0
-    ----        elseif (newValue > self:GetVerticalScrollRange()) then newValue = self:GetVerticalScrollRange()
-    ----        end
-    ----        self:SetVerticalScroll(newValue)
-    ----    end)
-
-    -- Create the scrolling child frame, set its width to fit, and give it an arbitrary minimum height of 1.
-    containerFrame.scrollChild = CreateFrame("Frame", nil, containerFrame.scrollFrame)
-    containerFrame.scrollChild:SetWidth( containerFrame:GetWidth()-18 )
-    containerFrame.scrollChild:SetHeight( 1 )  -- Specifies an arbitrary minimum height.
-    containerFrame.scrollChild.bg = containerFrame.scrollChild:CreateTexture(nil, "BACKGROUND")
-    containerFrame.scrollChild.bg:SetAllPoints(containerFrame.scrollFrame, true)
-    containerFrame.scrollChild.bg:SetColorTexture(0.6, 0.3, 0.0, 0.13)  -- R, G, B, a
-    containerFrame.scrollFrame:SetScrollChild( containerFrame.scrollChild )
-
-    ----------------------------------
-    -- Scroll frame helper functions.
-    ----------------------------------
-
-    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-    -- addText(text, dx, dy, fontName):
-    --      'dx' and 'dy' must be positive!
-    --      Note: You can change color of text parts using the "|cAARRGGBB...|r" syntax.
-    containerFrame.strings = {}
-    containerFrame.nextVertPos = 0  -- # of pixels from the top to add the next text string.
-    containerFrame.addText = function(self, text, dx, dy, fontName)  
-            assert(type(self) == "table")  -- Fails if this function is called using a dot instead of a colon.
-            dx = dx or 0
-            assert(dx >= 0)
-            dy = dy or 1
-            assert(dy >= 0)
-            
-            local numStrings = #containerFrame.strings
-            numStrings = numStrings + 1
-            local str = self.scrollChild:CreateFontString("ARTWORK", nil, fontName or "GameFontNormal")
-            str:SetJustifyH("LEFT")  -- Required when using carriage returns or wordwrap.
-            str:SetText(text)
-            str:SetPoint("LEFT", dx+2, 0)
-            str:SetPoint("RIGHT", -20, 0)
-            if (numStrings > 1) then
-                str:SetPoint("TOP", self.strings[numStrings-1], "BOTTOM", 0, -dy)
-            else -- It's the first string to be added.
-                str:SetPoint("TOP", self.scrollChild, "TOP", 0, -dy)
-            end
-            str.verticalScrollPos = self.nextVertPos
-            self.nextVertPos = self.nextVertPos + str:GetHeight() + dy
-            self.strings[numStrings] = str  -- Store this string.
-
-            return str  -- Return the font string so it can be customized.
-        end
-
-    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-    -- getNextVerticalPosition():  
-    -- Returns vertical position (in pixels) of where the next line will be added by addText().
-    containerFrame.getNextVerticalPosition = function(self)
-            return self.nextVertPos
-        end
-    
-    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-    -- setVerticalScroll(offsetInPixels, delaySecs):
-    --      'offsetInPixels' must be positive!
-    --      'delaySecs' can be used if the scrollbar doesn't update correctly.  Usually 0.1 secs is long enough.
-    containerFrame.setVerticalScroll = function(self, offsetInPixels, delaySecs)  
-            assert(type(self) == "table")  -- Fails if this function is called using a dot instead of a colon.
-            assert(offsetInPixels >= 0)
-            if (delaySecs == nil or delaySecs == 0) then
-                self.scrollFrame:SetVerticalScroll(offsetInPixels)
-            else
-                C_Timer.After(0.1, function() self.scrollFrame:SetVerticalScroll(offsetInPixels) end)
-            end
-        end
-        
-    -- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - --
-    -- setScrollTextBackColor(r, g, b, alpha):
-    containerFrame.setScrollTextBackColor = function(self, r, g, b, alpha)
-            assert(type(self) == "table")  -- Fails if this function is called using a dot instead of a colon.
-            self.scrollChild.bg:SetColorTexture(r, g, b, alpha)
-        end
-        
-    -----------
-    -- Finish.
-    -----------
-    return containerFrame
-end
-
--------------------------------------------------------------------------------
-function displayAllFonts()
-    if (Globals.FontNamesScrollFrame == nil) then
-        Globals.FontNamesScrollFrame = createTextScrollFrame(UIParent, "*** Available Fonts ***", 1000, 600)
-        
-        local fontNames = Globals.GetFonts()
-        table.sort(fontNames, function(name1, name2) return (name1 < name2); end)
-        local name
-        for i = 1, #fontNames do
-            name = fontNames[i]
-            if (name and type(name) == "string" ----and name ~= ""
-                and name ~= "ScrollingMessageFrame"
-                and name:sub(1, 6) ~= "table:"
-              ) then
-                ----print("DBG: fontNames["..i.."]:", name)
-                Globals.FontNamesScrollFrame:addText(name, nil, nil, name)
-            end
-        end    
-    end
-    
-    Globals.FontNamesScrollFrame:Show()
-end
-
 --[[                          Tool Functions                                 ]]
 
 -------------------------------------------------------------------------------
@@ -656,7 +437,10 @@ function HandleToolSwitches(params)
     -----------------------------------------------------
     -- NOTE: You can also enable the switch "kEditBaseValues" in the main file and then use
     --       the arrow keys to alter the values below (while the UI is displayed).
-    --       Shift/Ctrl/Alt affect what is changed, or how much the change is.
+    --       Arrow keys (no modifier key) change BaseOfsX and BaseOfsY.
+    --       Alt causes arrow keys to change BaseStepX and BaseStepY.
+    --       Shift decrease the amount of change each arrow key press.
+    --       Ctrl increase the amount of change each arrow key press.
     --       When done, type "/ct model" to dump all values (BEFORE CLOSING THE UI).
     elseif (params:sub(1,5) == "box++") then CmdLineValue("BaseOfsX",  params:sub(6), "+")
     elseif (params:sub(1,5) == "boy++") then CmdLineValue("BaseOfsY",  params:sub(6), "+")
@@ -697,7 +481,7 @@ function HandleToolSwitches(params)
             CursorModel.Constants.BaseScale = origBaseScale
             CursorModel.Constants.BaseStepX = 3330
             CursorModel.Constants.BaseStepY = 3330
-            CursorTrail_ApplyUserSettings()
+            CursorTrail_ApplyModelSettings()
             msg = msg .. " changed model ID to " .. (modelID or "NIL") .. "."
         end
         print(msg)
@@ -720,6 +504,8 @@ function HandleToolSwitches(params)
         TestCursorModel:SetCustomCamera(1) -- Very important! (Note: CursorModel:SetCamera(1) doesn't work here.)
     ----elseif (paramAsNum ~= nil) then
     ----    print(kAddonName .. " processed number", paramAsNum, ".")
+    elseif (params == "fonts") then
+        private.Controls.DisplayAllFonts()
     elseif (params == "bug") then  -- Cause a bug to test error handling.
         xpcall(bogus_function, geterrorhandler())
         ----xpcall(bogus_function, errHandler)
@@ -746,7 +532,7 @@ function CmdLineValue(name, val, plusOrMinus)
         if (name == "BaseScale") then
             PlayerConfig.UserScale = 1.0  -- Reset user offsets when changing base scale.
             CursorModel.Constants.BaseScale = 1.0  -- VERY IMPORTANT to do this first.
-            CursorTrail_ApplyUserSettings()
+            CursorTrail_ApplyModelSettings()
         elseif (name:sub(1,7) == "BaseOfs") then
             -- Reset user offsets when changing base offsets.
             PlayerConfig.UserOfsX = 0
@@ -754,7 +540,7 @@ function CmdLineValue(name, val, plusOrMinus)
         end
 
         CursorModel.Constants[name] = val  -- Change the specified value.
-        CursorTrail_ApplyUserSettings()    -- Apply the change.
+        CursorTrail_ApplyModelSettings()   -- Apply the change.
         print(kAddonName .. " changed "..name.." to", val, ".")
         ----if (name == "BaseScale") then CursorModel_Dump() end
     end

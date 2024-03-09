@@ -1,0 +1,118 @@
+v1.45 (Jan 26, 2024)
+toc update
+
+v1.44 (Nov 26, 2023)
+Prevent an error when ElvUI plugins create Datatexts, during their install routines. (Credit: Eltreum)
+
+v1.43 (Nov 9, 2023)
+toc update
+
+v1.42 (Sep 28, 2023)
+toc updates
+fix Objective Tracker Hiding Tracked Achievements error. Credit: thurin
+
+v1.41 (Jul 12, 2023)
+toc bump for WoW 10.1.5
+
+v1.39 (Mar 21, 2023)
+toc update for patch 10.0.7
+
+1.38 (Feb 9, 2023)
+Fixed the Datatexts error after ElvUI v13.25.
+
+1.37 (Jan 29, 2023)
+toc updates
+
+1.36 (Dec 2, 2022)
+*Removed Covenant Color option
+*Fixed Datatext Colors not applying when creating a Custom Datatext
+
+1.35 (Nov 15, 2022)
+*toc update for patch v10.02
+
+1.34 (Nov 7, 2022)
+*Fixed a CreateFontString error. This should deal with issue #2
+
+1.33 (Nov 4, 2022)
+*toc update for DF
+
+1.32 (Oct 9, 2022)
+*AiO version
+
+1.31 (Jun 1st, 2022)
+*toc update for patch 9.2.5
+
+1.30 (Feb 26, 2022)
+*toc bump for patch 9.2
+*follow ElvUI top/bottom panel changes
+
+1.29 (Nov 2, 2021)
+*toc bump for patch 9.1.5
+
+1.28 (Aug 4, 2021)
+*Add Torghast exception to hiding Objective Tracker. Credit: Cilraaz
+
+1.27 (Jul 26, 2021)
+*Fixed BagsCountPosition Module
+
+1.26 (Jun 29, 2021)
+*toc update for patch 9.10
+
+1.25 (Apr 4, 2021)
+*Follow BenikUI Style function rename
+
+1.24 (Mar 9, 2021)
+*toc update for patch 9.05
+
+1.23 (Jan 24, 2021)
+*Added Covenant colors for the Datatexts
+
+1.22 (Nov 23, 2020)
+*toc update for 9.02
+
+1.21 (Oct 13, 2020)
+*Release for Shadowlands prepatch and ElvUI 12.00
+*Removed Databar Colors module. It's in ElvUI now
+
+1.20 (Jul 9, 2020)
+*Fixed DataText Colors module
+*Fixed DataText color not applying after a reload
+*Update Class Colors
+
+1.19 (Feb 6, 2020)
+Fixed the options to follow the latest ElvUI changes
+
+1.18 (Jan 15, 2020)
+Fix LocationLite right click error. (#7)
+
+1.17 (Jan 15, 2020)
+Bump toc for patch 8.3
+
+1.16
+*toc update for patch 8.2.5
+
+1.15
+*toc update for patch 8.2
+
+1.14
+Fixed CreateShadow
+
+1.13
+*toc update for patch 8.1
+
+1.12
+*toc update for patch 8.1
+
+1.11
+*toc update for patch 8.1
+*Disable Objective Tracker by default
+*Prevent the Objective Tracker from being hidden/shown while taxi flying
+
+1.10
+*New module: Objective Frame hider
+*Enable some modules by default
+*Top Panel will use the new 'Under' style. It will show better with BenikUI dev version
+*Toggle Top and Bottom Panels via N&B options
+
+1.00
+Initial release

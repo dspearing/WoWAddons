@@ -13,4 +13,5 @@
 	<Script file="Foglight.lua"/>
 	<Script file="Dungeons.lua"/>
 	<Script file="Phases.lua"/>
+	<Script file="XPTable.lua"/>
 </Ui>

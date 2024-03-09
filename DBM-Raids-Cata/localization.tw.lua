@@ -29,11 +29,6 @@ L:SetOptionLocalization({
 -------------------------------
 L = DBM:GetModLocalization(169)
 
-L:SetWarningLocalization({
-	SpecWarnActivated			= "轉換目標到 %s!",
-	specWarnGenerator			= "發電機 - 拉開%s!"
-})
-
 L:SetTimerLocalization({
 	timerShadowConductorCast	= "聚影體",
 	timerArcaneLockout			= "秘法殲滅者鎖定",
@@ -45,10 +40,7 @@ L:SetOptionLocalization({
 	timerShadowConductorCast	= "為$spell:92048的施放顯示計時器",
 	timerArcaneLockout			= "為$spell:79710法術鎖定顯示計時器",
 	timerArcaneBlowbackCast		= "為$spell:91879的施放顯示計時器",
-	timerNefAblity				= "為困難技能增益冷卻顯示計時器",
-	SpecWarnActivated			= "當新首領啟動時顯示特別警告",
-	specWarnGenerator			= "當首領獲得$spell:91557時顯示特別警告",
-	SetIconOnActivated			= "設置標記到最後啟動的首領"
+	timerNefAblity				= "為困難技能增益冷卻顯示計時器"
 })
 
 L:SetMiscLocalization({
@@ -79,10 +71,6 @@ L:SetMiscLocalization({
 --  Atramedes  --
 -----------------
 L = DBM:GetModLocalization(171)
-
-L:SetOptionLocalization({
-	InfoFrame				= "為$journal:3072顯示資訊框架"
-})
 
 L:SetMiscLocalization({
 	NefAdd					= "亞特拉米德，英雄們就在那!",
@@ -193,10 +181,6 @@ L:SetGeneralLocalization({
 --------------------------
 L= DBM:GetModLocalization(156)
 
-L:SetOptionLocalization({
-	ShowDrakeHealth		= "顯示已被釋放的小龍血量<br/>(需要先開啟首領血量)"
-})
-
 ---------------------------
 --  Valiona & Theralion  --
 ---------------------------
@@ -204,8 +188,6 @@ L= DBM:GetModLocalization(157)
 
 L:SetOptionLocalization({
 	TBwarnWhileBlackout	= "當$spell:86369生效時顯示$spell:86788警告",
-	TwilightBlastArrow	= "當你附近的人中了$spell:86369時顯示DBM箭頭",
-	RangeFrame			= "顯示距離框(10碼)",
 	BlackoutShieldFrame	= "為$spell:86788顯示首領血量條"
 })
 
@@ -234,9 +216,7 @@ L:SetOptionLocalization({
 	SpecWarnGrounded		= "當你缺少$spell:83581時顯示特別警告<br/>(大約施放前10秒內)",
 	SpecWarnSearingWinds	= "當你缺少$spell:83500時顯示特別警告<br/>(大約施放前10秒內)",
 	timerTransition			= "顯示階段轉換計時器",
-	RangeFrame	 			= "當需要時自動顯示距離框",
-	yellScrewed				= "當你同時有$spell:83099和$spell:92307時大喊",
-	InfoFrame				= "顯示沒有$spell:83581或$spell:83500的玩家"
+	yellScrewed				= "當你同時有$spell:83099和$spell:92307時大喊"
 })
 
 L:SetMiscLocalization({
@@ -253,12 +233,6 @@ L:SetMiscLocalization({
 --  Cho'gall  --
 ----------------
 L= DBM:GetModLocalization(167)
-
-L:SetOptionLocalization({
-	CorruptingCrashArrow	= "當你附近的人中了$spell:81685時顯示DBM箭頭",
-	InfoFrame				= "為$journal:3165顯示資訊框架",
-	RangeFrame				= "為$journal:3165顯示距離框(5碼)"
-})
 
 ----------------
 --  Sinestra  --

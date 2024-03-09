@@ -4933,3 +4933,21 @@ clicknpc Synthesis Forge##184172
 |tip Inside the cave.
 turnin Schematic Reassimilation: Resonant Echo##65351 |goto 60.53,59.39
 ]])
+ZygorGuidesViewer:RegisterGuide("Profession Guides\\Protoform Synthesis\\Schematic: Adorned Vombata",{
+author="support@zygorguides.com",
+description="\nThis guide will walk you through farming the Schematic: Adorned Vombata for Protoform Sythesis crafting "..
+" in Zereth Mortis.",
+startlevel=60.0,
+},[[
+#include "Protofom_Synthesis_Mount_Unlock"
+step
+Click animals around this area
+|tip Pet the animals on top of the mountain.
+|tip There are 5 Agitated Vombata, 4 Agitated Cervid, and 3 Agitated Lupine to pet.
+|tip The final Agitated Cervid is on the gray cut rocks near the cliff.
+click Grateful Boon##375484
+|tip It appears after you pet all of the animals.
+Loot the "Grateful Boon" Treasure |q 65545 |future |goto Zereth Mortis/0 37.18,78.31
+step
+collect Schematic: Adorned Vombata##189478
+]])

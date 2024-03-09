@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(2563, "DBM-Raids-Dragonflight", 1, 1207)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20231128021157")
+mod:SetRevision("20240125080131")
 mod:SetCreatureID(200927)
 mod:SetEncounterID(2824)
 --mod:SetUsedIcons(1, 2, 3)
@@ -13,7 +13,7 @@ mod:RegisterCombat("combat")
 
 mod:RegisterEventsInCombat(
 	"SPELL_CAST_START 421343 422691 426725 422172",
-	"SPELL_CAST_SUCCESS 422277 430677",
+	"SPELL_CAST_SUCCESS 422277 430677 421343",
 	"SPELL_AURA_APPLIED 421656 422577 421455 422067",
 --	"SPELL_AURA_APPLIED_DOSE",
 	"SPELL_AURA_REMOVED 421656 422577 421455 422067",
@@ -30,7 +30,7 @@ mod:RegisterEventsInCombat(
 --]]
 --TODO, better tracking of personal dps buffs in P2?
 --general
-local warnPhase										= mod:NewPhaseChangeAnnounce(2, nil, nil, nil, nil, nil, 2)
+local warnPhase										= mod:NewPhaseChangeAnnounce(2, 2, nil, nil, nil, nil, nil, 2)
 
 local specWarnGTFO									= mod:NewSpecialWarningGTFO(421532, nil, nil, nil, 1, 8)
 
@@ -47,9 +47,9 @@ local warnSeekingInferno							= mod:NewIncomingCountAnnounce(425885, 2)
 local specWarnBrandofDamnation						= mod:NewSpecialWarningCount(421343, nil, nil, nil, 2, 2)
 local yellBrandofDamnation							= mod:NewShortYell(421343, nil, nil, nil, "YELL")
 local yellBrandofDamnationFades						= mod:NewShortFadesYell(421343, nil, nil, nil, "YELL")
-local specWarnBrandofDamnationTaunt					= mod:NewSpecialWarningTaunt(421343, false, nil, 2, 1, 2)
+local specWarnAftermathTaunt						= mod:NewSpecialWarningTaunt(422577, nil, nil, nil, 1, 2)
 local specWarnSearingAftermath						= mod:NewSpecialWarningMoveAway(422577, nil, nil, nil, 1, 2)
-local yellSearingAftermath							= mod:NewShortYell(422577)
+local yellSearingAftermath							= mod:NewShortYell(422577, 37859)
 local yellSearingAftermathFades						= mod:NewShortFadesYell(422577)
 local specWarnOverheated							= mod:NewSpecialWarningMoveAway(421455, nil, nil, nil, 1, 2)
 local specWarnOverheatedTaunt						= mod:NewSpecialWarningTaunt(421455, nil, nil, nil, 1, 2)
@@ -58,8 +58,8 @@ local yellOverheatedFades							= mod:NewShortFadesYell(421455)
 local specWarnLavaGeysers							= mod:NewSpecialWarningCount(422691, nil, nil, nil, 2, 2)
 
 local timerBrandofDamnationCD						= mod:NewCDCountTimer(29.9, 421343, nil, nil, nil, 5)
-local timerSearingAftermathCD						= mod:NewTargetTimer(6, 422577, nil, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)
-local timerOverheatedCD								= mod:NewCDCountTimer(29.9, 421455, nil, nil, nil, 5)
+local timerSearingAftermathCD						= mod:NewTargetTimer(6, 422577, 37859, "Tank|Healer", nil, 5, nil, DBM_COMMON_L.TANK_ICON)
+local timerOverheatedCD								= mod:NewCDCountTimer(29.9, 421455, nil, nil, nil, 3)
 local timerLavaGeysersCD							= mod:NewCDCountTimer(25.9, 422691, nil, nil, nil, 3)
 local timerSeekingInfernoCD							= mod:NewCDCountTimer(21.9, 425885, nil, nil, nil, 3, nil, DBM_COMMON_L.MYTHIC_ICON)
 
@@ -85,6 +85,7 @@ mod.vb.geyserCount = 0
 mod.vb.cycleCount = 0
 mod.vb.infernoCount = 0
 mod.vb.encroached = false
+local playerWasFirstBrand = false
 
 function mod:OnCombatStart(delay)
 	self:SetStage(1)
@@ -94,6 +95,7 @@ function mod:OnCombatStart(delay)
 	self.vb.cycleCount = 0
 	self.vb.infernoCount = 0
 	self.vb.encroached = false
+	playerWasFirstBrand = false
 	timerOverheatedCD:Start(10-delay, 1)
 	timerBrandofDamnationCD:Start(12.9-delay, 1)
 	timerLavaGeysersCD:Start(self:IsMythic() and 24 or 26.9-delay, 1)
@@ -112,11 +114,7 @@ function mod:SPELL_CAST_START(args)
 			specWarnBrandofDamnation:Show(self.vb.brandCount)
 			specWarnBrandofDamnation:Play("targetyou")
 			yellBrandofDamnation:Yell()
-			yellBrandofDamnationFades:Countdown(4)
-		elseif self:IsTank() then
-			local bossTarget = UnitName("boss1target") or DBM_COMMON_L.UNKNOWN
-			specWarnBrandofDamnationTaunt:Show(bossTarget)
-			specWarnBrandofDamnationTaunt:Play("tauntboss")
+			yellBrandofDamnationFades:Countdown(self:IsEasy() and 4 or 3)
 		else
 			specWarnBrandofDamnation:Show(self.vb.brandCount)
 			specWarnBrandofDamnation:Play("specialsoon")
@@ -128,6 +126,9 @@ function mod:SPELL_CAST_START(args)
 		self.vb.geyserCount = self.vb.geyserCount + 1
 		specWarnLavaGeysers:Show(self.vb.geyserCount)
 		specWarnLavaGeysers:Play("watchstep")
+		if self:IsTank() then
+			specWarnLavaGeysers:ScheduleVoice(1, "moveboss")
+		end
 		if self.vb.geyserCount < 8 and self.vb.geyserCount % 2 == 1 then--Other timers started in phase change event
 			timerLavaGeysersCD:Start(self:IsMythic() and 25 or 26, self.vb.geyserCount+1)--25.9
 		end
@@ -152,6 +153,8 @@ function mod:SPELL_CAST_SUCCESS(args)
 		if self.vb.overheatedCount < 8 and self.vb.overheatedCount % 2 == 1 then--Other timers started in phase change event
 			timerOverheatedCD:Start(nil, self.vb.overheatedCount+1)--29.9
 		end
+	elseif spellId == 421343 and args:IsPlayer() then
+		playerWasFirstBrand = true
 	end
 end
 
@@ -165,6 +168,9 @@ function mod:SPELL_AURA_APPLIED(args)
 			specWarnSearingAftermath:Play("runout")
 			yellSearingAftermath:Yell()
 			yellSearingAftermathFades:Countdown(spellId)
+		elseif self:IsTank() then
+			specWarnAftermathTaunt:Show(args.destName)
+			specWarnAftermathTaunt:Play("tauntboss")
 		else
 			warnSearingAftermath:Show(args.destName)
 		end
@@ -176,10 +182,13 @@ function mod:SPELL_AURA_APPLIED(args)
 --			yellOverheated:Yell()
 			yellOverheatedFades:Countdown(spellId)
 		else
-			local uId = DBM:GetRaidUnitId(args.destName)
-			if self:IsTanking(uId) then
-				specWarnOverheatedTaunt:Show(args.destName)
-				specWarnOverheatedTaunt:Play("tauntboss")
+			--Check if overheated when on person tanking the main boss, by seeing if you're tanking the main boss
+			if not self:IsTanking("player", "boss1", nil, true) and not playerWasFirstBrand then
+				local uId = DBM:GetRaidUnitId(args.destName)
+				if self:IsTanking(uId) then--Not tanking boss and not overheated target and they are a tank, taunt boss
+					specWarnOverheatedTaunt:Show(args.destName)
+					specWarnOverheatedTaunt:Play("tauntboss")
+				end
 			end
 		end
 	elseif spellId == 422067 then
@@ -211,6 +220,7 @@ function mod:SPELL_AURA_REMOVED(args)
 		end
 	elseif spellId == 422067 then
 		self:SetStage(1)
+		playerWasFirstBrand = false
 		self.vb.cycleCount = self.vb.cycleCount + 1
 		warnPhase:Show(DBM_CORE_L.AUTO_ANNOUNCE_TEXTS.stage:format(1))
 		warnPhase:Play("phasechange")

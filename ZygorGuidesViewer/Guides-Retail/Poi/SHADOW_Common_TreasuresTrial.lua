@@ -2059,4 +2059,24 @@ click Syntactic Vault##375492
 Loot the "Syntactic Vault" Treasure |q 65565 |future |goto Zereth Mortis/0 77.52,58.23
 ]],
 },
+{
+treasure=[[Grateful Boon]],
+level=60,
+spot="Zereth Mortis/0 37.05,78.31",
+item=189478,
+comment="Notice: You must unlock Protoform Synthesis mount crafting to loot the schematic.",
+comment="Use the \"Schematic: Adorned Vombata\" guide for this.",
+quest=65545,
+polish=true,
+steps=[[
+step
+Click animals around this area
+|tip Pet the animals on top of the mountain.
+|tip There are 5 Agitated Vombata, 4 Agitated Cervid, and 3 Agitated Lupine to pet.
+|tip The final Agitated Cervid is on the gray cut rocks near the cliff.
+click Grateful Boon##375484
+|tip It appears after you pet all of the animals.
+Loot the "Grateful Boon" Treasure |q 65545 |future |goto Zereth Mortis/0 37.18,78.31
+]],
+},
 }

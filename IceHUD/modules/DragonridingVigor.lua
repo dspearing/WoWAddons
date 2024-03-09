@@ -38,6 +38,7 @@ function DragonridingVigor.prototype:Enable(core)
 	end
 
 	DragonridingVigor.super.prototype.Enable(self, core)
+	self:Show(false)
 
 	self:RegisterEvent("UNIT_AURA", "CheckShouldShow")
 	self:RegisterEvent("UPDATE_UI_WIDGET", "UpdateVigorRecharge")
@@ -54,16 +55,29 @@ function DragonridingVigor.prototype:CheckShouldShow(event, unit, info)
 		return
 	end
 
-	if knowsAlternateMountEnum and UnitPowerMax(self.unit, unitPowerType) > 0 then
-		self:Show(true)
-	elseif IceHUD:HasAnyBuff("player", DragonridingBuffs) then
-		self:Show(true)
-	else
+	local info = C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(vigorWidgetID)
+	if not info or info.shownState == 0 then
 		self:Show(false)
+		self.suppressHideBlizz = true
 		if self.moduleSettings.hideBlizz then
 			self:ShowBlizz()
 		end
+
+		return
 	end
+
+	self:Show(true)
+
+	-- if knowsAlternateMountEnum and UnitPowerMax(self.unit, unitPowerType) > 0 then
+	-- 	self:Show(true)
+	-- elseif not knowsAlternateMountEnum and IceHUD:HasAnyBuff("player", DragonridingBuffs) then
+	-- 	self:Show(true)
+	-- else
+	-- 	self:Show(false)
+	-- 	if self.moduleSettings.hideBlizz then
+	-- 		self:ShowBlizz()
+	-- 	end
+	-- end
 end
 
 function DragonridingVigor.prototype:UpdateRunePower(event, arg1, arg2)
@@ -78,17 +92,19 @@ function DragonridingVigor.prototype:UpdateVigorRecharge(event, widget)
 		return
 	end
 
+	local info = C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(vigorWidgetID)
+	if not info then
+		return
+	end
+
+	self.suppressHideBlizz = not info or info.shownState == 0
+
 	if event ~= "internal" then
 		if self.moduleSettings.hideBlizz then
 			self:HideBlizz()
 		else
 			self:ShowBlizz()
 		end
-	end
-
-	local info = C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(vigorWidgetID)
-	if not info then
-		return
 	end
 
 	if info.numFullFrames == info.numTotalFrames then
@@ -150,11 +166,21 @@ function DragonridingVigor.prototype:GetPartialRuneAtlas(rune)
 end
 
 function DragonridingVigor.prototype:ShowBlizz()
-	UIWidgetPowerBarContainerFrame:Show()
+	local info = C_UIWidgetManager.GetFillUpFramesWidgetVisualizationInfo(vigorWidgetID)
+	if not info or info.shownState == 0 then
+		return
+	end
+	UIWidgetPowerBarContainerFrame.widgetFrames[vigorWidgetID]:Show()
 end
 
 function DragonridingVigor.prototype:HideBlizz()
-	UIWidgetPowerBarContainerFrame:Hide()
+	if not UIWidgetPowerBarContainerFrame.widgetFrames or not UIWidgetPowerBarContainerFrame.widgetFrames[vigorWidgetID] then
+		return
+	end
+
+	if not self.suppressHideBlizz then
+		UIWidgetPowerBarContainerFrame.widgetFrames[vigorWidgetID]:Hide()
+	end
 end
 
 -- Load us up

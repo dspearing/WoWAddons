@@ -824,24 +824,22 @@ TA.Builds = {
 				Posthaste##100634
 				Posthaste##100634
 				Counter Shot##100624
-				Natural Mending##100638
-				Natural Mending##100638
 				Survival of the Fittest##100523
+				Natural Mending##100638
+				Natural Mending##100638
 				Tar Trap##100641
+				Tranquilizing Shot##100617
+				Intimidation##100621
 				Nature's Endurance##100521
 				Camouflage##100647
 				Binding Shot##100650
-				Tranquilizing Shot##100617
-				Intimidation##100621
+				Rejuvenating Wind##100619
+				Rejuvenating Wind##100619
 				Born To Be Wild##100646
 				Born To Be Wild##100646
 				Improved Tranquilizing Shot##100632
-				Rejuvenating Wind##100619
-				Rejuvenating Wind##100619
 				Hunter's Avoidance##100536
 				Pathfinding##100631
-				Master Marksman##100625
-				Master Marksman##100625
 				Keen Eyesight##100635
 				Keen Eyesight##100635
 				Death Chakram##100628
@@ -850,39 +848,41 @@ TA.Builds = {
 				Improved Kill Command##100645
 				Improved Kill Command##100645
 				Alpha Predator##100613
+				Master Marksman##100625
+				Master Marksman##100625
 				Serrated Shots##100513
 				Kill Command##100648
 			]],[[
 				Cobra Shot##100663
-				Barbed Shot##100683
 				Multi-Shot##100630
-				Beast Cleave##100670
-				Beast Cleave##100670
+				Barbed Shot##100683
 				Pack Tactics##100672
 				Aspect of the Beast##100658
 				Animal Companion##100661
+				Beast Cleave##100670
+				Beast Cleave##100670
 				Bestial Wrath##100669
 				Barbed Wrath##100524
 				Wild Call##100681
 				Kill Cleave##100668
 				War Orders##100666
 				War Orders##100666
-				Training Expert##100662
-				Training Expert##100662
-				Killer Command##100653
-				Killer Command##100653
+				Savagery##100664
 				Thrill of the Hunt##100679
 				Thrill of the Hunt##100679
+				Stomp##100656
+				Stomp##100656
+				Training Expert##100662
 				Scent of Blood##100680
 				Scent of Blood##100680
 				Piercing Fangs##100675
-				Brutal Companion##100515
-				Wailing Arrow##100652
-				Thrill of the Hunt##100679
-				Stomp##100656
-				Stomp##100656
+				Master Handler##100677
+				Call of the Wild##100682
+				Bloody Frenzy##100612
 				Dire Command##100667
 				Dire Command##100667
+				Dire Frenzy##100527
+				Dire Frenzy##100527
 			]]
 		},
 		["Marksmanship (DPS)"] = {2,false,[[
@@ -1299,7 +1299,7 @@ TA.Builds = {
 				Spear Hand Strike##101504
 				Celerity##101503
 				Ring of Peace##101516
-				Dampen Harm##101522
+				Dampen Harm##117802
 				Diffuse Magic##101515
 				Chi Burst##101527
 				Profound Rebuttal##101526
@@ -1355,7 +1355,7 @@ TA.Builds = {
 		},
 		["Windwalker (DPS)"] = {3,true,  [[
 				Tiger's Lust##101507
-				Paralysis##101506
+				Detox##101416
 				Ferocity of Xuen##101524
 				Ferocity of Xuen##101524
 				Soothing Mist##101509
@@ -1363,60 +1363,60 @@ TA.Builds = {
 				Grace of the Crane##101529
 				Grace of the Crane##101529
 				Chi Burst##101527
-				Spear Hand Strike##101504
-				Celerity##101503
-				Improved Touch of Death##101501
-				Fast Feet##101523
-				Fast Feet##101523
 				Transcendence##101512
 				Ring of Peace##101516
+				Dampen Harm##117804
 				Eye of the Tiger##101518
-				Dampen Harm##101522
-				Profound Rebuttal##101526
 				Diffuse Magic##101515
+				Fast Feet##101523
+				Fast Feet##101523
+				Disable##101495
+				Fortifying Brew##101496
+				Celerity##101503
+				Improved Touch of Death##101501
 				Fatal Touch##101521
 				Fatal Touch##101521
 				Resonant Fists##101520
 				Resonant Fists##101520
 				Summon White Tiger Statue##101519
-				Generous Pour##101500
-				Generous Pour##101500
-				Close to Heart##101525
-				Close to Heart##101525
-				Escape from Reality##101534
+				Profound Rebuttal##101526
 				Calming Presence##101511
+				Generous Pour##101500
+				Generous Pour##101500
+				Close to Heart##101525
+				Close to Heart##101525
 				Rising Sun Kick##101508
 			]],[[
 				Fists of Fury##101423
-				Touch of Karma##101420
-				Power Strikes##101424
 				Ascension##101422
+				Power Strikes##101424
 				Flashing Fists##101425
 				Flashing Fists##101425
 				Flying Serpent Kick##101432
-				Glory of the Dawn##101493
-				Strike of the Windlord##101491
-				Thunderfist##101490
+				Touch of Karma##101420
+				Widening Whirl##101419
 				Serenity##101428
 				Drinking Horn Cover##101430
 				Invoke Xuen, the White Tiger##101473
-				Widening Whirl##101419
+				Glory of the Dawn##101493
+				Open Palm Strikes##101494
+				Strike of the Windlord##101491
+				Hit Combo##101492
+				Thunderfist##101490
+				Teachings of the Monastery##101426
 				Mark of the Crane##101434
 				Shadowboxing Treads##101435
 				Dance of Chi-Ji##101437
-				Forbidden Technique##101418
-				Hit Combo##101492
-				Teachings of the Monastery##101426
 				Fury of Xuen##101472
 				Xuen's Battlegear##101478
-				Invoker's Delight##101477
+				Skyreach##114822
+				Rising Star##101489
+				Rising Star##101489
+				Jadefire Stomp##101488
+				Jadefire Harmony##101487
 				Empowered Tiger Lightning##101475
 				Transfer the Power##101476
-				Crane Vortex##101483
-				Crane Vortex##101483
-				Bonedust Brew##101485
-				Fatal Flying Guillotine##101482
-				Open Palm Strikes##101494
+				Invoker's Delight##101477
 			]]
 		},
 	},
@@ -2113,7 +2113,7 @@ TA.Builds = {
 				Winds of Al'Akir##101981
 				Spirit Walk##101983
 				Capacitor Totem##101961
-				Guardian's Cudgel##101959
+				Static Charge##101960
 				Wind Rush Totem##101976
 				Nature's Guardian##101974
 				Nature's Guardian##101974
@@ -2128,41 +2128,41 @@ TA.Builds = {
 				Planes Traveler##101944
 				Chain Heal##101951
 				Earth Shield##102004
-				Elemental Warding##101978
-				Elemental Warding##101978
-				Maelstrom Weapon##101948
+				Elemental Warding##117910
+				Elemental Warding##117910
 				Chain Lightning##101949
+				Maelstrom Weapon##101948
 			]],[[
 				Stormstrike##101804
-				Windfury Weapon##101823
 				Lava Lash##101805
+				Windfury Weapon##101823
 				Improved Maelstrom Weapon##101822
 				Improved Maelstrom Weapon##101822
 				Raging Maelstrom##101802
 				Ice Strike##101821
 				Molten Assault##101806
-				Windfury Totem##101803
-				Sundering##101841
+				Elemental Blast##117750
 				Crash Lightning##101840
-				Overflowing Maelstrom##101801
+				Elemental Weapons##101826
+				Elemental Weapons##101826
 				Crashing Storms##101818
 				Molten Assault##101806
 				Hailstorm##101808
+				Overflowing Maelstrom##101801
+				Sundering##101841
 				Hot Hand##101809
 				Hot Hand##101809
 				Ashen Catalyst##101811
-				Lashing Flames##101812
-				Swirling Maelstrom##101820
 				Feral Spirit##101838
 				Witch Doctor's Ancestry##101837
 				Witch Doctor's Ancestry##101837
 				Elemental Spirits##101836
-				Elemental Weapons##101826
-				Elemental Weapons##101826
 				Primordial Wave##101830
 				Primal Maelstrom##101829
 				Primal Maelstrom##101829
 				Splintered Elements##101828
+				Lashing Flames##101812
+				Elemental Assault##101827
 			]]
 		},
 		["Restoration (Healer)"] = {3,false, [[

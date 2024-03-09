@@ -12,7 +12,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Aquatic Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Overgrowth in Southern Barrens.",
+description="This battle pet can be tamed in the wild around the Overgrowth in Southern Barrens.",
 keywords={"Aquatic","Southern","Barrens"},
 pet=419,
 },[[
@@ -32,7 +32,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
+description="This battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
 keywords={"Beast","Auction","House"},
 pet=40,
 },[[
@@ -52,7 +52,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
+description="This battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
 keywords={"Beast","Auction","House"},
 pet=41,
 },[[
@@ -77,7 +77,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
+description="This battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
 keywords={"Beast","Auction","House"},
 pet=43,
 },[[
@@ -97,7 +97,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
+description="This battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
 keywords={"Beast","Auction","House"},
 pet=45,
 },[[
@@ -122,7 +122,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild all around Durotar.",
+description="This battle pet can be tamed in the wild all around Durotar.",
 keywords={"Critter","Durotar"},
 pet=448,
 },[[
@@ -145,7 +145,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='111100',
 source='Vendor',
 author="support@zygorguides.com",
-description="\nThis battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
+description="This battle pet is sold by an Alliance vendor and can only be purchased from the Auction House if you are Horde.",
 keywords={"Critter","Auction","House"},
 pet=72,
 },[[
@@ -165,7 +165,7 @@ ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Critter Pets
 patch='50100',
 source='PetBattle',
 author="support@zygorguides.com",
-description="\nThis battle pet can be tamed in the wild around the Canals in the Undercity.",
+description="This battle pet can be tamed in the wild around the Canals in the Undercity.",
 keywords={"Critter","Undercity"},
 pet=454,
 },[[

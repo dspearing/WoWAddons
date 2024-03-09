@@ -85,6 +85,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_get #_done"] = "Collected %s %s",
 	["stepgoal_get"] = "Collect %s",
 	["stepgoal_get_done"] = "Collected %s",
+	["stepgoal_getrune"] = "Collect %s rune",
 	["stepgoal_goal #"] = "%s %s",
 	["stepgoal_goal #_done"] = "Done: %s %s",
 	["stepgoal_goal"] = "%s",
@@ -104,7 +105,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_havebuilding_ready"] = "Wait for %s level %s to build",
 	["stepgoal_hearth to"] = "Hearth to %s", -- used by stepgoal hearth
 	["stepgoal_home"] = "Make %s Inn Your Home",
-		--stepgoal_image
+	["stepgoal_image"] = "Click here to view the image",
 		--stepgoal_info
 	["stepgoal_invehicle"] = "Enter vehicle",
 		--stepgoal_itemname
@@ -128,6 +129,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_level_brief"] = "Reach level %s",
 	["stepgoal_level_exp"] = "Reach Level %s and %s XP",
 	["stepgoal_level_exp_brief"] = "Reach level %s and %s exp",
+	["stepgoal_level_kill"] = " (%s Kill)",
+	["stepgoal_level_kills"] = " (%s Kills)",
 		--stepgoal_nexttab
 		--stepgoal_noautoaccept
 	["stepgoal_nobuff"] = "Lose buff/debuff '%s'",
@@ -194,6 +197,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 	["stepgoal_turn in_done"] = "Turned in %s",
 	["stepgoal_unequipped"] = "Unequip %s",
 	["stepgoal_use"] = "Use %s",
+	["stepgoal_userune"] = "Engrave %s rune",
 	["stepgoal_vendor"] = "Visit %s's shop", 
 	["stepgoal_vendor_done"] = "Visited %s's shop", 
 		--stepgoal_walk
@@ -680,7 +684,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		opt_n_popup_toasttype_compact = "Compact",
 		opt_n_popup_toasttype_detailed = "Detailed",
 
-		opt_group_notify = "Notify me of:",
+		opt_group_notify = "In the detailed view, notify me of:",
 		opt_n_popup_skills = "Essential Skills",
 		opt_n_popup_skills_optional = "Optional skills",
 		opt_n_popup_skills_future = "Future skills",
@@ -699,7 +703,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		opt_n_popup_toast_desc = "When possible, notifications are displayed as a temporary toast notification with relevant prompts to take action. If no action is taken, the toast will fade away and a record of the notification will be stored in the Notification Center for later retrieval.",
 		opt_n_popup_toast_duration_desc = "Sets the time the toast message will be displayed before fading. Note: All messages will be stored in Notification Center regardless of setting.",
 		opt_n_nc_no_popups_desc = "This will disable all toasts and other popups from showing and send them straight to the Notification Center for later viewing.",
-		opt_n_popup_toasttype_desc = "Changes how much detail is shown in the Class Skill Reminder toast message. In Compact mode, you’ll see the amount of spells available to learn and only spell icons for up to five spells. In Detailed mode, you’ll see the full names and ranks for up to five spells.",
+		opt_n_popup_toasttype_desc = "Changes how much detail is shown in the Class Skill Reminder toast message. In Compact mode, you'll see the amount of spells available to learn and only spell icons for up to five spells. In Detailed mode, you'll see the full names and ranks for up to five spells.",
 		opt_n_popup_msg_welcome_desc = "A welcome message that only appears on first time use.",
 		opt_n_popup_msg_general_desc = "A message that appears on version updates when important updates have been made",
 		opt_n_popup_msg_orientation_desc = "A message that appears when you are missing data needed to improve Zygor performance",
@@ -865,7 +869,7 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		completion_count = "(%s)",
 		completion_ding = "(%s%%)",
 		completion_goal = "(%s/%s)",
-		completion_level = "(%s%%)",
+		completion_level = "(%s%%%s)",
 		completion_petding = "(%s%%)",
 		completion_rep = "(%s)",
 		coords = "%d,%d",
@@ -1486,6 +1490,8 @@ ZygorGuidesViewer_L("Main", "enUS", function()
 		static_help = "Help and tutorial system|ncoming soon.",
 		static_sis = "|cffffff88Smart Injection System|r|n|nThis feature will attempt to find the best spot in the guides for you to start.|nIt will reset your dynamic progress settings, load the starting guide for level 1 of your race/class, and start skipping forward until it finds quests worth completing.|n|nIf your character is high-level, you'll mostly see the guide zip past |cff88ff88green|r (completed) or |cff88aaffblue|r (low-level) steps.|n|nIf it stops at a seemingly low-level quest, it's usually a good idea to trust the guide and complete the quest, as it might start a long chain reaching to your level.|n|nIt might stop at flight path pickups, it's up to you to verify if they're really unknown to your character.|n|nSo... Ready for the ride?",
 		welcome_guides = "%d guides are loaded.",
+		tooltip_waypoint = COLOR_TIP_MOUSE.."Click|r"..COLOR_TIP.." to set waypoint: |cffffaa00%s|r",
+		tooltip_waypoint_coords = "Location: |cffffaa00%s|r",
 
 	-- ZygorMapIcon ---------------------------------------------------------------------------------------------------
 		minimap_tooltip = COLOR_TIP_MOUSE.."Click|r to toggle guide window|n"..COLOR_TIP_MOUSE.."Right-click|r to configure|n",

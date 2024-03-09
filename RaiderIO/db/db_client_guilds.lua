@@ -1,5 +1,5 @@
 --
--- RaiderIO Client Data. Generated on Tue Jul 04 2023 20:09:29 GMT+0000 (Coordinated Universal Time)
+-- RaiderIO Client Data. Generated on Fri Feb 23 2024 17:59:07 GMT+0000 (Coordinated Universal Time)
 --
 local _, ns = ...
 ns.GUILD_BEST_DATA = {
@@ -11,172 +11,172 @@ ns.GUILD_BEST_DATA = {
     },
     ["season_best"] = {
       {
-        ["zone_id"] = 5035,
-        ["level"] = 19,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.01091782949352,
-        ["clear_time"] = "00:30:20.662",
+        ["zone_id"] = 1000011,
+        ["level"] = 13,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.7047388730860126,
+        ["clear_time"] = "00:25:22.940",
         ["party"] = {
           {
-            ["name"] = "Metsfan",
+            ["name"] = "Tinydemon",
             ["role"] = "tank",
-            ["class_id"] = 1
+            ["class_id"] = 12
           },
           {
-            ["name"] = "Khalana",
+            ["name"] = "Elletal",
             ["role"] = "healer",
-            ["class_id"] = 5
-          },
-          {
-            ["name"] = "Antäeus",
-            ["role"] = "dps",
-            ["class_id"] = 4
-          },
-          {
-            ["name"] = "Kurikong",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Mixoflik",
-            ["role"] = "dps",
-            ["class_id"] = 8
-          }
-        }
-      },
-      {
-        ["zone_id"] = 5035,
-        ["level"] = 18,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.8598972014976133,
-        ["clear_time"] = "00:25:48.674",
-        ["party"] = {
-          {
-            ["name"] = "Felourian",
-            ["role"] = "tank",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Surging",
-            ["role"] = "healer",
-            ["class_id"] = 7
-          },
-          {
-            ["name"] = "Bøytoy",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          },
-          {
-            ["name"] = "Mixoflik",
-            ["role"] = "dps",
-            ["class_id"] = 8
-          },
-          {
-            ["name"] = "Passionfruit",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          }
-        }
-      },
-      {
-        ["zone_id"] = 14082,
-        ["level"] = 18,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.9305054405071111,
-        ["clear_time"] = "00:32:34.991",
-        ["party"] = {
-          {
-            ["name"] = "Sunstep",
-            ["role"] = "tank",
             ["class_id"] = 11
           },
           {
-            ["name"] = "Perfec",
-            ["role"] = "healer",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Mixoflik",
+            ["name"] = "Hbç",
             ["role"] = "dps",
-            ["class_id"] = 8
+            ["class_id"] = 11
           },
           {
-            ["name"] = "Reformedgala",
+            ["name"] = "Jacksmite",
             ["role"] = "dps",
             ["class_id"] = 2
           },
           {
-            ["name"] = "Tlöck",
+            ["name"] = "Zbrute",
             ["role"] = "dps",
-            ["class_id"] = 9
+            ["class_id"] = 3
           }
         }
       },
       {
-        ["zone_id"] = 14011,
-        ["level"] = 18,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.9390878036788509,
-        ["clear_time"] = "00:31:00.332",
+        ["zone_id"] = 7109,
+        ["level"] = 13,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5956984329623589,
+        ["clear_time"] = "00:19:40.078",
         ["party"] = {
           {
-            ["name"] = "Beefgoblin",
-            ["role"] = "tank",
-            ["class_id"] = 1
-          },
-          {
-            ["name"] = "Freshminty",
-            ["role"] = "healer",
-            ["class_id"] = 10
-          },
-          {
-            ["name"] = "Mixoflik",
-            ["role"] = "dps",
-            ["class_id"] = 8
-          },
-          {
-            ["name"] = "Nivina",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Souschëf",
-            ["role"] = "dps",
-            ["class_id"] = 5
-          }
-        }
-      },
-      {
-        ["zone_id"] = 14082,
-        ["level"] = 18,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.9537381978763436,
-        ["clear_time"] = "00:33:23.803",
-        ["party"] = {
-          {
-            ["name"] = "Soundzgood",
+            ["name"] = "Pantsondk",
             ["role"] = "tank",
             ["class_id"] = 6
           },
           {
-            ["name"] = "Frip",
+            ["name"] = "Elletal",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Atemon",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Jacksmite",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Khonvum",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          }
+        }
+      },
+      {
+        ["zone_id"] = 9028,
+        ["level"] = 13,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5494200718601177,
+        ["clear_time"] = "00:16:29.505",
+        ["party"] = {
+          {
+            ["name"] = "Funknar",
+            ["role"] = "tank",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Shammyjammy",
             ["role"] = "healer",
             ["class_id"] = 7
           },
           {
-            ["name"] = "Huuli",
+            ["name"] = "Artgozap",
+            ["role"] = "dps",
+            ["class_id"] = 7
+          },
+          {
+            ["name"] = "Azzamus",
+            ["role"] = "dps",
+            ["class_id"] = 1
+          },
+          {
+            ["name"] = "Ezekien",
+            ["role"] = "dps",
+            ["class_id"] = 13
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7673,
+        ["level"] = 13,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.6067182713593955,
+        ["clear_time"] = "00:18:12.699",
+        ["party"] = {
+          {
+            ["name"] = "Noseleche",
+            ["role"] = "tank",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Skipz",
+            ["role"] = "healer",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Meliadula",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Phyna",
             ["role"] = "dps",
             ["class_id"] = 3
           },
           {
-            ["name"] = "Kaelith",
+            ["name"] = "Timelord",
             ["role"] = "dps",
-            ["class_id"] = 9
+            ["class_id"] = 13
+          }
+        }
+      },
+      {
+        ["zone_id"] = 9424,
+        ["level"] = 13,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5306251826317797,
+        ["clear_time"] = "00:19:38.518",
+        ["party"] = {
+          {
+            ["name"] = "Arnej",
+            ["role"] = "tank",
+            ["class_id"] = 11
           },
           {
-            ["name"] = "Ponsington",
+            ["name"] = "Skipz",
+            ["role"] = "healer",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Bisrage",
             ["role"] = "dps",
-            ["class_id"] = 4
+            ["class_id"] = 13
+          },
+          {
+            ["name"] = "Enon",
+            ["role"] = "dps",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Sundered",
+            ["role"] = "dps",
+            ["class_id"] = 7
           }
         }
       }
@@ -193,172 +193,354 @@ ns.GUILD_BEST_DATA = {
     },
     ["season_best"] = {
       {
-        ["zone_id"] = 14082,
-        ["level"] = 12,
-        ["upgrades"] = 0,
-        ["fraction"] = 1.3023199915849555,
-        ["clear_time"] = "00:45:36.173",
+        ["zone_id"] = 9028,
+        ["level"] = 9,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.6330192298829705,
+        ["clear_time"] = "00:19:00.067",
         ["party"] = {
           {
-            ["name"] = "Zeeblebrox",
+            ["name"] = "Falothrel",
             ["role"] = "tank",
-            ["class_id"] = 11
+            ["class_id"] = 12
           },
           {
-            ["name"] = "Avendesorå",
+            ["name"] = "Alliåndre",
             ["role"] = "healer",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Benedorf",
-            ["role"] = "dps",
-            ["class_id"] = 7
-          },
-          {
-            ["name"] = "Dtcafagl",
-            ["role"] = "dps",
-            ["class_id"] = 2
-          },
-          {
-            ["name"] = "Hëy",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          }
-        }
-      },
-      {
-        ["zone_id"] = 7546,
-        ["level"] = 11,
-        ["upgrades"] = 3,
-        ["fraction"] = 0.5611259773477927,
-        ["clear_time"] = "00:18:31.590",
-        ["party"] = {
-          {
-            ["name"] = "Zeeblebrox",
-            ["role"] = "tank",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Avendesorå",
-            ["role"] = "healer",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Benedorf",
-            ["role"] = "dps",
-            ["class_id"] = 7
-          },
-          {
-            ["name"] = "Unhõly",
-            ["role"] = "dps",
             ["class_id"] = 5
           },
           {
-            ["name"] = "Çptjack",
+            ["name"] = "Deiczar",
             ["role"] = "dps",
-            ["class_id"] = 2
+            ["class_id"] = 6
+          },
+          {
+            ["name"] = "Leytankaar",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          },
+          {
+            ["name"] = "Pållås",
+            ["role"] = "dps",
+            ["class_id"] = 3
           }
         }
       },
       {
-        ["zone_id"] = 9164,
-        ["level"] = 11,
-        ["upgrades"] = 2,
-        ["fraction"] = 0.7697061464220691,
-        ["clear_time"] = "00:23:06.240",
+        ["zone_id"] = 9028,
+        ["level"] = 9,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5364711474020807,
+        ["clear_time"] = "00:16:06.184",
         ["party"] = {
           {
-            ["name"] = "Bártho",
+            ["name"] = "Falothrel",
             ["role"] = "tank",
-            ["class_id"] = 2
+            ["class_id"] = 12
           },
           {
-            ["name"] = "Avendesorå",
+            ["name"] = "Bjorvarg",
             ["role"] = "healer",
             ["class_id"] = 11
           },
           {
-            ["name"] = "Benedorf",
+            ["name"] = "Rasputinna",
             ["role"] = "dps",
-            ["class_id"] = 7
+            ["class_id"] = 9
           },
           {
-            ["name"] = "Kurai",
+            ["name"] = "Slythic",
+            ["role"] = "dps",
+            ["class_id"] = 4
+          },
+          {
+            ["name"] = "Tavarien",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7805,
+        ["level"] = 9,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5314426337078361,
+        ["clear_time"] = "00:19:08.447",
+        ["party"] = {
+          {
+            ["name"] = "Zeeblebrox",
+            ["role"] = "tank",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Leytonkahr",
+            ["role"] = "healer",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Lilithium",
+            ["role"] = "dps",
+            ["class_id"] = 9
+          },
+          {
+            ["name"] = "Loicmage",
+            ["role"] = "dps",
+            ["class_id"] = 8
+          },
+          {
+            ["name"] = "Vosegüs",
+            ["role"] = "dps",
+            ["class_id"] = 3
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7109,
+        ["level"] = 10,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.4332793706609645,
+        ["clear_time"] = "00:14:18.326",
+        ["party"] = {
+          {
+            ["name"] = "Zeeblebrox",
+            ["role"] = "tank",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Leytonkahr",
+            ["role"] = "healer",
+            ["class_id"] = 5
+          },
+          {
+            ["name"] = "Extramountry",
             ["role"] = "dps",
             ["class_id"] = 12
           },
           {
-            ["name"] = "Zeeblebrox",
+            ["name"] = "Holydodo",
             ["role"] = "dps",
-            ["class_id"] = 11
-          }
-        }
-      },
-      {
-        ["zone_id"] = 14011,
-        ["level"] = 11,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.8977864198820898,
-        ["clear_time"] = "00:29:38.514",
-        ["party"] = {
-          {
-            ["name"] = "Zeeblebrox",
-            ["role"] = "tank",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Avendesorå",
-            ["role"] = "healer",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Benedorf",
-            ["role"] = "dps",
-            ["class_id"] = 7
-          },
-          {
-            ["name"] = "Gralak",
-            ["role"] = "dps",
-            ["class_id"] = 5
-          },
-          {
-            ["name"] = "Yogiwan",
-            ["role"] = "dps",
-            ["class_id"] = 10
-          }
-        }
-      },
-      {
-        ["zone_id"] = 13991,
-        ["level"] = 10,
-        ["upgrades"] = 1,
-        ["fraction"] = 0.8752312590343927,
-        ["clear_time"] = "00:30:38.860",
-        ["party"] = {
-          {
-            ["name"] = "Zeeblebrox",
-            ["role"] = "tank",
-            ["class_id"] = 11
-          },
-          {
-            ["name"] = "Holycheat",
-            ["role"] = "healer",
             ["class_id"] = 2
           },
           {
-            ["name"] = "Davix",
+            ["name"] = "Nehsgnol",
             ["role"] = "dps",
             ["class_id"] = 3
+          }
+        }
+      },
+      {
+        ["zone_id"] = 9028,
+        ["level"] = 10,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.4728059260443787,
+        ["clear_time"] = "00:14:11.523",
+        ["party"] = {
+          {
+            ["name"] = "Falothrel",
+            ["role"] = "tank",
+            ["class_id"] = 12
           },
           {
-            ["name"] = "Lawlessness",
-            ["role"] = "dps",
+            ["name"] = "Leytonkahr",
+            ["role"] = "healer",
             ["class_id"] = 5
           },
           {
-            ["name"] = "Rexardt",
+            ["name"] = "Magegopew",
             ["role"] = "dps",
-            ["class_id"] = 3
+            ["class_id"] = 8
+          },
+          {
+            ["name"] = "Marieçlaveau",
+            ["role"] = "dps",
+            ["class_id"] = 9
+          },
+          {
+            ["name"] = "Zeithron",
+            ["role"] = "dps",
+            ["class_id"] = 2
+          }
+        }
+      }
+    },
+    ["weekly_best"] = {
+
+    }
+  },
+  ["WulfPak-Stormrage"] = {
+    ["profile"] = {
+      ["name"] = "WulfPak",
+      ["realm"] = "Stormrage",
+      ["faction"] = "alliance"
+    },
+    ["season_best"] = {
+      {
+        ["zone_id"] = 1000010,
+        ["level"] = 20,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.557014971589893,
+        ["clear_time"] = "00:18:56.867",
+        ["party"] = {
+          {
+            ["name"] = "Khodavand",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Kesya",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Skreeam",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Zyndermizzar",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Zèéble",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          }
+        }
+      },
+      {
+        ["zone_id"] = 9424,
+        ["level"] = 20,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.6140227888441192,
+        ["clear_time"] = "00:22:43.744",
+        ["party"] = {
+          {
+            ["name"] = "Khodavand",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Kesya",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Skreeam",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Zyndermizzar",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Zèéble",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          }
+        }
+      },
+      {
+        ["zone_id"] = 9028,
+        ["level"] = 20,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.6341724787187555,
+        ["clear_time"] = "00:19:02.144",
+        ["party"] = {
+          {
+            ["name"] = "Khodavand",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Kesya",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Skreeam",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Zyndermizzar",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Zèéble",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          }
+        }
+      },
+      {
+        ["zone_id"] = 7109,
+        ["level"] = 20,
+        ["upgrades"] = 2,
+        ["fraction"] = 0.6223935499210247,
+        ["clear_time"] = "00:20:32.961",
+        ["party"] = {
+          {
+            ["name"] = "Khodavand",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Kesya",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Skreeam",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          },
+          {
+            ["name"] = "Zyndermizzar",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Zéèble",
+            ["role"] = "dps",
+            ["class_id"] = 12
+          }
+        }
+      },
+      {
+        ["zone_id"] = 1000010,
+        ["level"] = 20,
+        ["upgrades"] = 3,
+        ["fraction"] = 0.5842903401716513,
+        ["clear_time"] = "00:19:52.536",
+        ["party"] = {
+          {
+            ["name"] = "Khodavand",
+            ["role"] = "tank",
+            ["class_id"] = 2
+          },
+          {
+            ["name"] = "Deiner",
+            ["role"] = "healer",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Larsyl",
+            ["role"] = "dps",
+            ["class_id"] = 10
+          },
+          {
+            ["name"] = "Nitroberius",
+            ["role"] = "dps",
+            ["class_id"] = 11
+          },
+          {
+            ["name"] = "Zéèble",
+            ["role"] = "dps",
+            ["class_id"] = 12
           }
         }
       }

@@ -2,7 +2,965 @@ local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("EventsC") then return end
 ZygorGuidesViewer.GuideMenuTier = "CAT"
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\Emerald Dreamsurge (Thaldraszus)",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\Azerothian Archives!",{
+author="support@zygorguides.com",
+description="This guide will help you complete Azerothian Archives activities.",
+startlevel=70,
+patch='100205',
+},[[
+step
+click Azerothian Archives!
+|tip Inside the building.
+accept To the Archives!##77325 |goto Valdrakken/0 46.60,47.61
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin To the Archives!##77325 |goto Thaldraszus/0 61.57,31.32
+accept The Big Dig: Traitor's Rest##79226 |goto 61.57,31.32
+step
+talk Zenata##208355
+|tip Inside the base of the tower on the floating island.
+accept Technoscrying 101##77231 |goto 61.62,31.12
+step
+talk Roska Rocktooth##208614
+|tip Inside the base of the tower on the floating island.
+accept Excavation 101##77267 |goto 61.60,31.08
+step
+Meet Zenata Outside |q 77231/1 |goto 61.26,30.75
+step
+use the Technoscryers##208084
+Put on the Goggles |q 77231/2 |goto 61.26,30.75
+step
+use the Technoscryers##208084
+Activate the Auto-Adjuster |q 77231/3 |goto 61.26,30.75
+|tip Use the "Auto Adjusting..." ability on your action bar.
+|tip It is highlighted in yellow.
+step
+use the Technoscryers##208084
+Activate Scrying Mode |q 77231/4 |goto 61.26,30.75
+|tip Use the "Scrying Mode" ability on your action bar.
+|tip It is highlighted in yellow.
+step
+use the Technoscryers##208084
+Remove the Goggles |q 77231/5 |goto 61.26,30.75
+|tip Use the "Remove Goggles" ability on your action bar.
+|tip It is highlighted in yellow.
+step
+talk Zenata##208355
+turnin Technoscrying 101##77231 |goto 61.26,30.75
+accept A Practical Test##77166 |goto 61.26,30.75
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+click Nirobin's Spectacles
+Recover the Attunement "Relic" |q 77166/1 |goto 61.87,29.84
+step
+talk Zenata##208355
+turnin A Practical Test##77166 |goto 61.69,29.87
+accept I Can See Through Time!##77176 |goto 61.69,29.87
+step
+Reach the Nexus Point |q 77176/1 |goto 61.81,29.84
+step
+use the Technoscryers##202247
+Put On the Goggles |q 77176/2 |goto 61.81,29.84
+step
+use the Technoscryers##202247
+Activate Observation Mode |q 77176/3 |goto 61.81,29.84
+|tip Use the "Observation Mode" ability in the second slot on your action bar.
+step
+Watch the dialogue
+Observe the Temporal Scene |q 77176/4 |goto 61.81,29.84
+step
+talk Zenata##208355
+turnin I Can See Through Time!##77176 |goto 61.69,29.87
+accept Technoscrying: Observatory##77434 |goto 61.69,29.87
+step
+Meet Roska Outside |q 77267/1 |goto 61.06,30.60
+step
+use the Archivist's Fire Totem##210956
+Place the Fire Totem |q 77267/2 |goto 61.06,30.60
+step
+talk Roska Rocktooth##208614
+Tell her _"I'm ready to start digging!"_
+Speak to Roska to Start the Dig |q 77267/3 |goto 61.06,30.60
+step
+use the Archivist's Fire Totem##210956
+|tip Use it next to the smoking dirt patch on the ground.
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+Watch the dialogue
+Unearth the First Find |q 77267/4 |goto 61.16,30.48
+step
+use the Archivist's Fire Totem##210956
+|tip Use it next to the smoking dirt patch on the ground.
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+Watch the dialogue
+|tip You will be attacked by an elemental shortly.
+Unearth the Second Find |q 77267/5 |goto 61.32,30.47
+step
+use the Archivist's Fire Totem##210956
+|tip Use it next to the smoking dirt patch on the ground.
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+Watch the dialogue
+Unearth the Third Find |q 77267/6 |goto 61.34,30.22
+step
+talk Roska Rocktooth##208614
+turnin Excavation 101##77267 |goto 61.39,30.22
+accept Your First Find##78762 |goto 61.39,30.22
+step
+use the Archivist's Fire Totem##210956
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+Use the Fire Totem to Increase Heat |q 78762/1 |goto 61.34,30.22
+step
+Step Through Spontaneous Puddles to Lower Heat |q 78762/2 |goto 61.34,30.22
+|tip Run through the swirling water patches to lower the heat and move the bar toward water.
+step
+use the Archivist's Fire Totem##210956
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+|tip Alternate between this and stepping in water puddles to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards heat or water.
+click Outdated Geology Textbook
+|tip While the indicator is in the colored area, click the textbook to fill the progress bar.
+Fully Excavate the Find |q 78762/3 |goto 61.34,30.21
+step
+talk Roska Rocktooth##208614
+turnin Your First Find##78762 |goto 61.38,30.23
+accept Hands-On Experience##77268 |goto 61.38,30.23
+step
+use the Archivist's Fire Totem##210956
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+Unearth the Major Find |q 77268/1 |goto 61.50,30.04
+step
+use the Archivist's Fire Totem##210956
+clicknpc Roska's Fire Totem##208853
+|tip It appears after using the totem.
+|tip Alternate between this and stepping in water puddles to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards heat or water.
+click Scholar's Chest
+|tip While the indicator is in the colored area, click the textbook to fill the progress bar.
+Excavate the Scholar's Chest |q 77268/2 |goto 61.50,30.04
+step
+talk Roska Rocktooth##208614
+turnin Hands-On Experience##77268 |goto 61.58,30.02
+accept Excavation: Riverbed##77433 |goto 61.58,30.02
+step
+talk Zenata##204835
+turnin Technoscrying: Observatory##77434 |goto The Waking Shores/0 56.38,43.95
+accept Attune to the Observer##75729 |goto 56.38,43.95
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Weathered Staff
+|tip Inside the building.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 75729/1 |goto 56.00,45.40 |count 33
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Tattered Hood
+|tip Inside the building.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 75729/1 |goto 57.85,44.55 |count 66
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Cracked Epaulet
+|tip Inside the building.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 75729/1 |goto 56.83,41.91
+step
+talk Zenata##204835
+turnin Attune to the Observer##75729 |goto 56.38,43.95
+accept A Link to the Past##75867 |goto 56.38,43.95
+step
+Reach the Nexus Point |q 75867/1 |goto 56.35,43.68
+step
+use the Technoscryers##202247
+Put On the Goggles |q 75867/2 |goto 56.35,43.68
+step
+use the Technoscryers##202247
+|tip Use the "Observation Mode" ability in the second slot on your action bar.
+Activate Observation Mode |q 75867/3 |goto 56.35,43.68
+step
+Watch the dialogue
+Observe the Temporal Scene |q 75867/4 |goto 56.36,43.69
+step
+talk Zenata##204835
+turnin A Link to the Past##75867 |goto 56.37,43.95
+accept A Window into the Future##75868 |goto 56.37,43.95
+step
+click Dreadsquall Nest##404849+
+|tip They look like giant bird nests in high locations around this area.
+kill Agitated Dreadsquall##208141+
+|tip They will sometimes attack you after investigating a nest.
+|tip Loot them and the nests until you find the lens.
+Search Dreadsquall Nests for the Lens |q 75868/1 |goto 55.32,44.35
+You can find more around:
+[57.86,44.39]
+[56.30,46.25]
+[56.37,45.47]
+[55.59,45.38]
+[55.54,46.31]
+[56.82,48.08]
+step
+talk Zenata##204835
+turnin A Window into the Future##75868 |goto 56.38,43.95
+step
+talk Roska Rocktooth##204094
+turnin Excavation: Riverbed##77433 |goto Ohn'ahran Plains/0 67.34,47.55
+accept Surveying the Riverbed##75493 |goto 67.34,47.55
+step
+talk Roska Rocktooth##204094
+Tell her _"I'm ready to start digging!"_
+Watch the dialogue
+Tell Roska to Start the Dig |q 75493/1 |goto 67.34,47.55
+step
+use the Archivist's Water Totem##210435
+clicknpc Roska's Water Totem##204704
+|tip It appears after using the totem.
+|tip Alternate between this and clicking Sturdy Earth to keep the indicator in the colored section of the bar.
+click Sturdy Earth
+|tip They look like piles of dirt on the ground around this area.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards earth or water.
+|tip While the indicator is in the colored area, click the textbook to fill the progress bar.
+Unearth the Find |q 75493/2 |goto 66.20,47.98 |count 1
+step
+use the Archivist's Water Totem##210435
+clicknpc Roska's Water Totem##204704
+|tip It appears after using the totem.
+|tip Alternate between this and clicking Sturdy Earth to keep the indicator in the colored section of the bar.
+click Sturdy Earth
+|tip They look like piles of dirt on the ground around this area.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards earth or water.
+|tip While the indicator is in the colored area, click the relic to fill the progress bar.
+Unearth the Find |q 75493/2 |goto 64.91,48.22 |count 2
+step
+use the Archivist's Water Totem##210435
+clicknpc Roska's Water Totem##204704
+|tip It appears after using the totem.
+Watch the dialogue
+Unearth the Major Find |q 75493/3 |goto 66.46,46.17
+step
+talk Ancient Centaur Corpse##204245
+accept The Body on the Banks##75518 |goto 66.45,46.23
+step
+talk Roska Rocktooth##204094
+Tell her _"Let's start excavating!"_
+Tell Roska to Start the Dig |q 75518/1 |goto 66.40,46.00
+step
+use the Archivist's Water Totem##210435
+clicknpc Roska's Water Totem##204704
+|tip It appears after using the totem.
+|tip Alternate between this and clicking Sturdy Earth to keep the indicator in the colored section of the bar.
+click Sturdy Earth
+|tip They look like piles of dirt on the ground around this area.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards earth or water.
+clicknpc Ancient Centaur Corpse##204245
+|tip While the indicator is in the colored area, click the corpse to fill the progress bar.
+Excavate the Body |q 75518/2 |goto 66.47,46.22
+step
+talk Roska Rocktooth##204094
+turnin Surveying the Riverbed##75493 |goto 66.40,46.00
+turnin The Body on the Banks##75518 |goto 66.40,46.00
+accept Do Rites by Her##75603 |goto 66.40,46.00
+step
+talk Farrier Rondare##195547
+Select _"<Share your archaeological finds.>"_
+Inform Farrier Rondare |q 75603/2 |goto 62.54,42.47
+step
+talk Storykeeper Jaru##195888
+Select _"<Share your archaeological finds.>"_
+Inform Storykeeper Jaru |q 75603/1 |goto 60.97,39.18
+step
+talk Tigari Khan##187092
+|tip Inside the building.
+Select _"<Share your archaeological finds.>"_
+Inform Tigari Khan |q 75603/3 |goto 62.96,33.61
+step
+talk Tigari Khan##204383
+Tell her _"Let's finally put her to rest."_
+Meet Tigari Khan at the Riverbed Site |q 75603/4 |goto 66.57,45.96
+step
+talk Roska Rocktooth##204643
+turnin Do Rites by Her##75603 |goto 66.39,46.00
+accept Nirobin and the Office##77327 |goto 66.39,46.00
+step
+talk Nirobin##205967
+|tip Inside the building.
+turnin Nirobin and the Office##77327 |goto Thaldraszus/0 58.48,36.75
+accept Living History##76217 |goto 58.48,36.75
+step
+click Hourglass of Time
+|tip Inside the building.
+Analyze the Relic's Time Era |q 76217/1 |goto 58.52,36.75
+step
+click Compass of Placement
+|tip Inside the building.
+Analyze Relic's Origin |q 76217/2 |goto 58.55,36.76
+step
+click Specimens of Inspiration
+|tip Inside the building.
+Analyze Relic's Context |q 76217/3 |goto 58.57,36.79
+step
+click Intriguing Dracthyr Goblet
+|tip Inside the building.
+Analyze the Relic |q 76217/4 |goto 58.52,36.81
+step
+talk Nirobin##205967
+|tip Inside the building.
+turnin Living History##76217 |goto 58.48,36.75
+accept Lab Partners with a Squirrel##76241 |goto 58.48,36.75
+step
+talk Reese##205975
+turnin Lab Partners with a Squirrel##76241 |goto The Forbidden Reach/5 53.66,47.56
+accept A Research Thesis Worth Publishing##76242 |goto 53.66,47.56
+step
+Watch the dialogue
+Watch Reese Activate Clues |q 76242/1 |goto 53.66,47.56
+step
+extraaction Gain Clue##412948
+|tip Search around for groups of purple and blue ghostly animals and stand in the middle of them.
+|tip Use the button that appears on the screen to collect the information from them.
+clicknpc Juicy Clue##206895+
+|tip They look like a white and blue animals running around this area.
+Collect Information |q 76242/2 |goto 54.98,42.32
+step
+Return to Nirobin's Office |q 76242/3 |goto Thaldraszus/0 58.48,36.76
+|tip Inside the building.
+step
+extraaction Transmute Information##417012
+|tip Inside the building.
+|tip Stand with Reese and use the ability that appears on the screen.
+Transmute Reese's Information |q 76242/4 |goto 58.49,36.86
+step
+click Tome of Archived Isels Research
+|tip Inside the building.
+Read the Research Tome |q 76242/5 |goto 58.47,36.73
+step
+talk Nirobin##205967
+|tip Inside the building.
+turnin A Research Thesis Worth Publishing##76242 |goto 58.48,36.76
+accept Back to Headquarters!##77328 |goto 58.48,36.76
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin Back to Headquarters!##77328 |goto 61.57,31.32
+accept Finally, An Archivist!##79223 |goto 61.57,31.32
+step
+talk Provisioner Aristta##209192
+|tip Inside the base of the tower on the floating island.
+buy 1 Archivist's Buckled Cap##208451 |q 79223/1 |goto 61.37,31.40
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin Finally, An Archivist!##79223 |goto 61.57,31.32
+step
+talk Zenata##208355
+|tip Inside the base of the tower on the floating island.
+accept Technoscrying: Dragonskull Island##77483 |goto 61.62,31.12
+accept Technoscrying: Igira's Watch##77484 |goto 61.62,31.12
+step
+talk Roska Rocktooth##208614
+|tip Inside the base of the tower on the floating island.
+accept Excavation: Gaze of Neltharion##77486 |goto 61.60,31.08
+accept Excavation: Winglord's Perch##77487 |goto 61.60,31.08
+step
+talk Zenata##207311
+turnin Technoscrying: Dragonskull Island##77483 |goto The Forbidden Reach/5 77.14,38.37
+accept The Fate of Scalecommander Abereth##76448 |goto 77.14,38.37
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Drakonid Blade
+|tip Inside the cave.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relics |q 76448/1 |goto Dragonskull Island/0 70.56,71.32 |count 33
+step
+Enter the side cave |goto 54.73,19.80 < 10 |walk
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Pitted Blade
+|tip Inside the cave.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relics |q 76448/1 |goto 69.42,22.47 |count 66
+step
+Enter the side cave |goto 33.29,36.23 < 10 |walk
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Drakonid Spyglass
+|tip Inside the cave.
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relics |q 76448/1 |goto 29.39,29.81
+step
+talk Zenata##207311
+turnin The Fate of Scalecommander Abereth##76448 |goto The Forbidden Reach/5 77.14,38.37
+accept Without Honor##76557 |goto 77.14,38.37
+step
+Reach the Nexus Point |q 76557/1 |goto 76.92,38.59
+step
+use the Technoscryers##202247
+Put On the Goggles |q 76557/2 |goto 76.92,38.59
+step
+Activate Observation Mode |q 76557/3 |goto 76.92,38.59
+|tip Use the "Observation Mode" ability in the second slot on your action bar.
+step
+Watch the dialogue
+Observe the Temporal Scene |q 76557/4 |goto 76.92,38.59
+step
+talk Zenata##207311
+turnin Without Honor##76557 |goto 77.14,38.37
+accept The Hidden Hand##77415 |goto 77.14,38.37
+step
+click Drakonid Scroll Case##405944
+|tip Inside and outside the cave near piles of treasure.
+|tip They appear on your minimap as yellow dots.
+|tip You can run the elites out of the cave to despawn them for a short period of time.
+Recover the Neltharion Agent Instructions |q 77415/1 |goto 67.78,45.09
+step
+talk Zenata##207311
+turnin The Hidden Hand##77415 |goto 77.14,38.37
+step
+talk Roska Rocktooth##208362
+turnin Excavation: Winglord's Perch##77487 |goto 17.19,16.29
+accept Surveying the Cliffside##77100 |goto 17.19,16.29
+step
+talk Roska Rocktooth##208362
+Tell her _"I'm ready to start digging!"_
+Tell Roska to Start the Dig |q 77100/1 |goto 17.19,16.29
+step
+use the Archivist's Wind Totem##210778
+|tip Use it near rumbling earth areas around this area.
+|tip They appear on your minimap as yellow dots.
+clicknpc Roska's Wind Totem##208951
+|tip It appears after using the totem.
+|tip Alternate between this and stepping in water spouts to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards air or water.
+click Rustic Dragonkin Pottery
+|tip While the indicator is in the colored area, click the relic to fill the progress bar.
+Unearth #2# Finds |q 77100/2 |goto 16.39,14.98
+step
+use the Archivist's Wind Totem##210778
+clicknpc Roska's Wind Totem##208951
+|tip It appears after using the totem.
+Watch the dialogue
+Unearth the Major Find |q 77100/3 |goto 14.06,14.69
+step
+click Intact Dragonkin Cache
+accept The Cache in the Crag##77151 |goto 14.07,14.67
+step
+talk Roska Rocktooth##208398
+|tip She parachutes to this location.
+Tell her _"Let's start excavating!"_
+Speak to Ruska to Start the Excavation |q 77151/1 |goto 14.19,14.96
+step
+use the Archivist's Wind Totem##210778
+clicknpc Roska's Wind Totem##208951
+|tip It appears after using the totem.
+click Salty Waterspout
+|tip Alternate between this and stepping in water spouts to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards air or water.
+click Intact Dragonkin Cache
+|tip While the indicator is in the colored area, click the relic to fill the progress bar.
+Excavate the Cache |q 77151/2 |goto 14.07,14.66
+step
+talk Roska Rocktooth##208398
+turnin Surveying the Cliffside##77100 |goto 14.19,14.95
+turnin The Cache in the Crag##77151 |goto 14.19,14.95
+accept A Taste of the Past##77154 |goto 14.19,14.95
+step
+talk Atrenosh Hailstone##200010
+Select _"<Share your archaeological finds.>"_
+Inform Atrenosh Hailstone |q 77154/1 |goto 34.65,57.56
+step
+click Intact Dragonkin Cache
+Open the Intact Dragonkin Cache |q 77154/2 |goto 17.28,16.41
+step
+talk Roska Rocktooth##208362
+turnin A Taste of the Past##77154 |goto 17.19,16.28
+step
+talk Roska Rocktooth##205413
+turnin Excavation: Gaze of Neltharion##77486 |goto Zaralek Cavern/0 48.69,48.36
+accept Surveying the Tower##76026 |goto 48.69,48.36
+step
+talk Roska Rocktooth##205413
+Tell her _"I'm ready to start digging!"_
+Tell Roska to Start the Dig |q 76026/1 |goto 48.69,48.36
+step
+use Archivist's Earth Totem##210834
+|tip Use it near rumbling earth areas around this area.
+|tip They appear on your minimap as yellow dots.
+clicknpc Roska's Earth Totem##208059
+|tip It appears after using the totem.
+|tip Alternate between this and stepping on small lava oozes to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards fire or earth.
+click Antique Niffen Salvage
+|tip While the indicator is in the colored area, click the relic to fill the progress bar.
+Unearth #2# Finds |q 76026/2 |goto 47.66,47.41
+step
+use Archivist's Earth Totem##210834
+clicknpc Roska's Earth Totem##208059
+|tip It appears after using the totem.
+Watch the dialogue
+Unearth the Major Find |q 76026/3 |goto 47.56,48.57
+step
+click Defaced Dragon Statue
+accept Hidden in the Midden##76032 |goto 47.55,48.58
+step
+talk Roska Rocktooth##208055
+|tip She eventually parachutes to this location.
+Tell her _"Let's start excavating!"_
+Speak to Roska to Start the Excavation |q 76032/1 |goto 47.66,48.64
+step
+use Archivist's Earth Totem##210834
+clicknpc Roska's Earth Totem##208059
+|tip It appears after using the totem.
+|tip Alternate between this and stepping on small lava oozes to keep the indicator in the colored section of the bar.
+|tip Small arrows on the left or right of the indicator mark indicate if the progress is towards fire or earth.
+click Defaced Dragon Statue
+|tip While the indicator is in the colored area, click the statue to fill the progress bar.
+Unearth the Find |q 76032/2 |goto 47.55,48.58
+step
+talk Roska Rocktooth##208055
+turnin Surveying the Tower##76026 |goto 47.66,48.64
+turnin Hidden in the Midden##76032 |goto 47.66,48.64
+accept Antiquated Antics##75604 |goto 47.66,48.64
+step
+talk Kiln-Singer Malraka##204215
+Select _"<Share your archaeological finds.>"_
+Inform Kiln-Singer Malraka |q 75604/2 |goto 57.80,54.35
+step
+talk Archivist Edress##215736
+Select _"<Share your archaeological finds.>"_
+Inform Archivist Edress |q 75604/1 |goto 52.68,26.35
+step
+talk Roska Rocktooth##208055
+turnin Antiquated Antics##75604 |goto 47.66,48.65
+step
+Enter the cave |goto 38.57,50.28 < 7 |walk
+talk Zenata##207763
+|tip Inside the cave.
+turnin Technoscrying: Igira's Watch##77484 |goto 38.14,49.85
+accept The Tools of the Dragonkillers##76564 |goto 38.14,49.85
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Dragonkiller Harpoon
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 76564/1 |goto 39.38,51.44 |count 33
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Gnawed Fish Kebab
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 76564/1 |goto 40.94,48.81 |count 66
+step
+use the Technoscryers##202247
+|tip Use the "Scrying Mode" ability on your action bar to locate a treasure nearby.
+|tip Watch the bar until it fills up and the X is completely red, then find the treasure near you.
+|tip You will sometimes see a light trail indicating a nearby relic.
+click Tuskarr Scaling Knife
+|tip Make sure the light cone is pointing at the relic to make it clickable.
+Recover the Attunement Relic |q 76564/1 |goto 42.15,51.12
+step
+Enter the cave |goto 38.57,50.28 < 7 |walk
+talk Zenata##207763
+|tip Inside the cave.
+turnin The Tools of the Dragonkillers##76564 |goto 38.14,49.85
+accept An Unlikely Proposal##76576 |goto 38.14,49.85
+step
+Reach the Nexus Point |q 76576/1 |goto 38.25,49.75
+|tip Inside the cave.
+step
+use the Technoscryers##202247
+|tip Inside the cave.
+Put on the Goggles |q 76576/2 |goto 38.25,49.75
+step
+use the Technoscryers##202247
+|tip Inside the cave.
+|tip Use the "Observation Mode" ability in the second slot on your action bar.
+Activate Observation Mode |q 76576/3 |goto 38.25,49.75
+step
+Watch the dialogue
+|tip Inside the cave.
+Observe the Temporal Scene |q 76576/4 |goto 38.25,49.75
+step
+talk Zenata##207763
+|tip Inside the cave.
+turnin An Unlikely Proposal##76576 |goto 38.14,49.86
+accept The Scale of it All##77425 |goto 38.14,49.86
+step
+click Ancient Zaqali Trade-bond Tablet##405996
+Recover the Trade-Bonded Tablet |q 77425/1 |goto 42.08,34.88
+step
+Enter the cave |goto 38.57,50.28 < 7 |walk
+talk Zenata##207763
+|tip Inside the cave.
+turnin The Scale of it All##77425 |goto 38.14,49.85
+accept Back to Headquarters! Again!##79231 |goto 38.14,49.85
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin Back to Headquarters! Again!##79231 |goto Thaldraszus/0 61.53,31.29
+accept Graduation Day##77331 |goto 61.53,31.29
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+Tell him _"Thank you."_
+Speak with Eadweard |q 77331/5 |goto 61.53,31.29
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin Graduation Day##77331 |goto 61.53,31.29
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\The Big Dig: Traitor's Rest",{
+author="support@zygorguides.com",
+description="This guide will help you complete the Azerothian Archives big dig in Traitor's Rest.",
+startlevel=70,
+patch='100205',
+areapoiid=7657,
+areapoitype="BigDig",
+},[[
+step
+label "Begin_Scenario"
+talk Eadweard Dalyngrigge##209134
+accept The Big Dig: Traitor's Rest##79226 |goto The Azure Span/0 26.96,46.46
+step
+Wait for the Scenario to Begin |complete areapoi(2024,7657) and inscenario() |goto The Azure Span/0 26.96,46.46
+|tip The scenario starts every hour on the half hour. |only if not inscenario()
+|tip Steps that have progress bars are currently bugged and may complete early. |only if not inscenario()
+|tip This scenario has been heavily bugged. |only if not inscenario()
+step
+Stand Near Eadweard for Instructions |scenariogoal 1/60758 |goto Traitor's Rest/0 55.33,51.34
+|only if scenariostage(1)
+step
+click Wild Restweed+
+|tip They look like small plants on the ground around this area.
+Clear #6# Restweed |scenariogoal 2/60772 |goto 58.21,46.77
+|only if scenariostage(2)
+step
+click Wild Traitor's Bramble+
+|tip They look like large red bushes around the bones.
+Clear #5# Traitor's Bramble |scenariogoal 3/65236 |goto Traitor's Rest/0 53.85,49.04
+|only if scenariostage(3)
+step
+click Wild Restweed+
+|tip They look like small plants on the ground around this area.
+Clear #6# Restweed |scenariogoal 4/65237 |goto 51.93,45.29
+|only if scenariostage(4)
+step
+click Wild Boneclover+
+|tip They look like small plants on the ground around this area.
+Clear #5# Boneclover |scenariogoal 5/65239 |goto 56.37,49.07
+|only if scenariostage(5)
+step
+click Wild Boneclover+
+|tip They look like small plants on the ground around this area.
+Clear #6# Boneclover |scenariogoal 6/65238 |goto 50.99,47.79
+|only if scenariostage(6)
+step
+click Traitor's Bramble+
+|tip They look like bushy plants on the ground around this area.
+Clear #7# Traitor's Bramble |scenariogoal 7/65240 |goto 51.09,51.19
+|only if scenariostage(7)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(8)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(9)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(10)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(11)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+Uncover and Analyze Hidden Runes Around the Site |scenariogoal 12/0 |goto 54.43,49.91
+|only if scenariostage(12)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+Uncover and Analyze Hidden Runes Around the Site |scenariogoal 13/0 |goto 53.93,50.06
+|only if scenariostage(13)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+Uncover and Analyze Hidden Runes Around the Site |scenariogoal 14/0 |goto 54.54,49.71
+|only if scenariostage(14)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+|tip Relics look like small sparkling patches on the ground.
+Uncover and Analyze Ancient Relics Around the Site |scenariogoal 15/0 |goto 52.36,49.04
+|only if scenariostage(15)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+|tip Relics look like small sparkling patches on the ground.
+Uncover and Analyze Ancient Relics Around the Site |scenariogoal 16/0 |goto 52.36,49.04
+|only if scenariostage(16)
+step
+extraaction Analysis##398015
+|tip Run to yellow dots on the minimap and use the button that appears on the screen.
+|tip Relics look like small sparkling patches on the ground.
+Uncover and Analyze Ancient Relics Around the Site |scenariogoal 17/0 |goto 52.98,50.15
+|only if scenariostage(17)
+step
+extraaction Roska's Fire Totem##427611
+|tip Use the button on the screen to summon Roska's Fire Totem.
+clicknpc Roska's Fire Totem##208853
+|tip Click the fire totem to excavate smoky rumbling areas of earth on the ground around this area.
+|tip They appear on your minimap as yellow dots.
+Survey Disturbed Earth |scenariogoal 18/0 |goto 53.80,46.86
+|only if scenariostage(18)
+step
+extraaction Roska's Fire Totem##427611
+|tip Use the button on the screen to summon Roska's Fire Totem.
+clicknpc Roska's Fire Totem##208853
+|tip Click the fire totem to start it channeling on the rubble.
+click Warped Dragon Bone
+|tip While the elemental is channeling, excavate the bone.
+Excavate Dragon Bones |scenariogoal 19/0 |goto 52.29,45.83
+|only if scenariostage(19)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(20)
+step
+click Promising Rock+
+|tip They look like half-buried rocks.
+Inspect Stones Around the Site for Achaelogical Value |scenariogoal 21/0 |goto 50.92,47.75
+|only if scenariostage(21)
+step
+click Promising Rock+
+|tip They look like half-buried rocks.
+Inspect Stones Around the Site for Achaelogical Value |scenariogoal 22/0 |goto 53.02,53.39
+|only if scenariostage(22)
+step
+click Promising Rock+
+|tip They look like half-buried rocks.
+Inspect Stones Around the Site for Achaelogical Value |scenariogoal 23/0 |goto 54.83,42.01
+|only if scenariostage(23)
+step
+click Promising Rock+
+|tip They look like half-buried rocks.
+Inspect Stones Around the Site for Achaelogical Value |scenariogoal 24/0 |goto 59.45,47.34
+|only if scenariostage(24)
+step
+click Pile of Unsorted Rocks
+|tip Run them to the nearby highlighted flag each time you click the pile.
+Sort Significant Stones |scenariogoal 25/0 |goto 52.40,45.92
+|only if scenariostage(25)
+step
+click Pile of Unsorted Rocks
+|tip Run them to the nearby highlighted flag each time you click the pile.
+Sort Significant Stones |scenariogoal 26/0 |goto 57.62,53.73
+|only if scenariostage(26)
+step
+click Pile of Unsorted Rocks
+|tip Run them to the nearby highlighted flag each time you click the pile.
+Sort Significant Stones |scenariogoal 27/0 |goto 48.52,48.75
+|only if scenariostage(27)
+step
+click Broken Shovel+
+Repair #3# Shovels |scenariogoal 28/61195 |goto Traitor's Rest/0 53.09,47.25
+|only if scenariostage(28)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(29)
+step
+clicknpc Clue-Compiling Familiar##209451
+|tip It appears on your minimap as a yellow dot.
+|tip Stand still while channeling.
+Release the Otters! |scenariogoal 30/0 |goto 51.86,50.59
+|only if scenariostage(30)
+step
+kill Information-Stuffed Clue##210079 |scenariogoal 31/64388 |goto 52.38,53.25
+|tip It walks all over this area.
+|only if scenariostage(31)
+step
+kill Clue Morsel##210080
+Morsel Clues |scenariogoal 31/61900 |goto 54.77,46.68
+|only if scenariostage(31)
+step
+click Azerothian Tome+
+|tip They look like books scattered all over the ground.
+Return Scattered Tomes |scenariogoal 32/0 |goto 52.35,51.84
+|only if scenariostage(32)
+step
+click Pot of Azer-Broth
+Pick up Azer-Broth |scenariogoal 33/61288 |goto 55.82,51.83
+|only if scenariostage(33)
+step
+extraaction Deliver That Lunch!##420139
+|tip It appears on the screen when you are near hungry workers.
+Feed #3# Hungry Archivists |scenariogoal 33/61287 |goto 58.11,50.92
+|only if scenariostage(33)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(34)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(35)
+step
+Click objects around this area
+|tip Click the four objects to set up the dig.
+Set up a Satellite Dig |scenariogoal 36/0 |goto Traitor's Rest/0 47.65,45.10
+|only if scenariostage(36)
+step
+extraaction Gain Clue##421550
+|tip Use the ability that appears on the screen near clue spots.
+|tip They look like small blue creatures running around this area.
+|tip They appear on your minimap as yellow dots.
+|tip You may need to dismount to get the button to appear.
+Discover #3# Clue spots |scenariogoal 37/61898 |goto 53.09,47.70
+|only if scenariostage(37)
+step
+clicknpc Juicy Clue##210076+
+|tip They look like small blue creatures running around this area.
+|tip They appear on your minimap as yellow dots.
+Discover the First Juicy Clue |scenariogoal 38/61899 |goto 26.82,46.75 |count 1
+|only if scenariostage(38)
+step
+clicknpc Juicy Clue##210076+
+|tip They look like small blue creatures running around this area.
+|tip They appear on your minimap as yellow dots.
+Discover the Second Juicy Clue |scenariogoal 38/61899 |goto 26.50,45.79 |count 2
+|only if scenariostage(38)
+step
+clicknpc Juicy Clue##210076+
+|tip They look like small blue creatures running around this area.
+|tip They appear on your minimap as yellow dots.
+Discover the Third Juicy Clue |scenariogoal 38/61899 |goto 25.74,46.72 |count 3
+|only if scenariostage(38)
+step
+click Crate of Crchaeologist Hats
+|tip They look like large brown crates around the bones.
+clicknpc Sun-baked Archeologist##210146+
+|tip They look like dizzy NPCs in beams of light.
+|tip Use the Hat Toss ability on screen while targeting them.
+|tip Return to a crate for another hat after each NPC.
+extraaction Hat Toss##421669
+Throw Hats at Archivists |scenariogoal 39/0 |goto 53.23,49.56
+|only if scenariostage(39)
+step
+click Crate of Archivist Hats
+|tip Click the wooden crate to pick up a hat for each elemental.
+|tip Return to the crate after using it to get another.
+extraaction Recruit an Elemental##422145
+|tip Use the ability on the screen to toss a hat on the targeted elemental.
+clicknpc Eager Elemental##210408
+Recruit Eager Elementals |scenariogoal 40/0 |goto 52.48,45.42
+|only if scenariostage(40)
+step
+talk Eadweard Dalyngrigge##209134
+Ask him _"Do you have that thing Zenata needed?"_
+Retrieve Supplies for Zenata's Study |havebuff spell:428891 |goto 55.33,51.36
+|only if scenariostage(41)
+step
+Resupply Zenata's Study |scenariogoal 41/64341 |goto 56.40,45.73
+|only if scenariostage(41)
+step
+talk Eadweard Dalyngrigge##209134
+Ask him _"Do you have that thing Roksa needed?"_
+Retrieve Supplies for Roska |havebuff spell:429291 |goto 55.33,51.36
+|only if scenariostage(42)
+step
+Deliver Supplies to Roska! |scenariogoal 42/0 |goto 53.26,46.68
+|only if scenariostage(42)
+step
+talk Eadweard Dalyngrigge##209134
+Ask him _"Do you have that thing Nirobin needed?"_
+Retrieve Supplies for Nirobin |havebuff spell:429293 |goto 55.33,51.35
+|only if scenariostage(43)
+step
+Deliver a Crate of Artifacts to Nirobin to Study |scenariogoal 43/64412 |goto 51.59,51.80
+|only if scenariostage(43)
+step
+click Archivist's Bone Brush+
+|tip They look like tiny brushes moving on the big bones.
+Brush the Bones |scenariogoal 44/0 |goto 55.46,50.35
+|only if scenariostage(44)
+step
+Stomp Book Beetles |scenariogoal 45/0 |goto 55.23,50.73
+|tip Walk over the beetles around the camp.
+|only if scenariostage(45)
+step
+talk Roska Rocktooth##209133
+Ask her _"Do you have that thing Eadweard needed?"_
+Speak to Roska to Get shovels |havebuff spell:430028 |goto 53.27,46.72
+|only if scenariostage(46)
+step
+Deliver Shovels to Eadweard |scenariogoal 46/64615 |goto 55.33,51.35
+|only if scenariostage(46)
+step
+talk Zenata##209132
+Ask her _"Do you have that thing Eadweard needed?"_
+Talk to Zenata to Get runes |havebuff spell:430344 |goto 56.32,46.08
+|only if scenariostage(47)
+step
+Deliver them to Eadweard |scenariogoal 47/64614 |goto 55.32,51.38
+|only if scenariostage(47)
+step
+talk Nirobin##209135
+Ask him _"Do you have that thing Eadweard needed?"_
+Talk to Nirobin to Get Books |havebuff spell:430033 |goto 51.60,51.77
+|only if scenariostage(48)
+step
+Deliver the Books |scenariogoal 48/64616 |goto 55.33,51.34
+|only if scenariostage(48)
+step
+Scenario Stage Coming Soon! |confirm
+|only if scenariostage(49)
+step
+Stand by Eadweard for Instructions |scenariogoal 50/64424 |goto 55.33,51.34
+|only if scenariostage(50)
+step
+kill Doomshadow##208029 |scenariogoal 51/63299 |goto 59.69,49.72
+|tip Move out of areas targeted on the ground.
+|only if scenariostage(51)
+step
+Wait for a New Scenario Stage |complete areapoi(2024,7657) and inscenario() |goto 55.33,51.36 |next "Begin_Scenario" |notravel
+|only if inscenario()
+step
+talk Eadweard Dalyngrigge##209134
+turnin The Big Dig: Traitor's Rest##79226 |goto The Azure Span/0 26.96,46.46
+|only if readyq(79226)
+step
+talk Eadweard Dalyngrigge##206107
+|tip Inside the base of the tower on the floating island.
+turnin Curious Find: Hole-Punched Bakar Tooth##77766 |goto Thaldraszus/0 61.53,31.29 |only if haveq(77766)
+turnin Curious Find: Dragonhorn Flute##77760 |goto 61.53,31.29 |only if haveq(77760)
+turnin Curious Find: Waterlogged Ledger##77763 |goto 61.53,31.29 |only if haveq(77763)
+|only if haveq(77766,77760,77763)
+step
+Wait for the Dig to Begin |complete areapoi(2024,7657) and inscenario() |goto The Azure Span/0 26.96,46.46 |next "Begin_Scenario"
+|tip The scenario starts every hour on the half hour.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (Thaldraszus)",{
 author="support@zygorguides.com",
 description="This guide will help you complete the Emerald Dreamsurge in Thaldraszus.",
 startlevel=70,
@@ -66,7 +1024,7 @@ talk Gearweaver##208649
 turnin Shaping the Dreamsurge##77251 |goto Thaldraszus/0 51.21,43.34
 turnin Dreamsurge Investigation##77414 |goto 51.21,43.34 |only if not completedq(77414)
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\Emerald Dreamsurge (The Waking Shores)",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (The Waking Shores)",{
 author="support@zygorguides.com",
 description="This guide will help you complete the Emerald Dreamsurge in The Waking Shores.",
 startlevel=70,
@@ -130,7 +1088,7 @@ talk Archdruid Hamuul Runetotem##208649
 turnin Shaping the Dreamsurge##77251 |goto 58.39,67.74
 turnin Dreamsurge Investigation##77414 |goto 58.39,67.74 |only if not completedq(77414)
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\Emerald Dreamsurge (Ohn'ahran Plains)",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (Ohn'ahran Plains)",{
 author="support@zygorguides.com",
 description="This guide will help you complete the Emerald Dreamsurge in Ohn'ahran Plains.",
 startlevel=70,
@@ -192,7 +1150,7 @@ talk Archdruid Hamuul Runetotem##208649
 turnin Shaping the Dreamsurge##77251 |goto 64.11,41.73
 turnin Dreamsurge Investigation##77414 |goto 64.11,41.73 |only if not completedq(77414)
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\Emerald Dreamsurge (The Azure Span)",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\Emerald Dreamsurge (The Azure Span)",{
 author="support@zygorguides.com",
 description="This guide will help you complete the Emerald Dreamsurge in The Azure Span.",
 startlevel=70,
@@ -886,7 +1844,7 @@ click Loose Dirt Mound
 Loot the Buried Satchel |q 77288 |goto Felwood/0 42.23,48.04 |future
 step
 click Loose Dirt Mound
-|ti on the floating island.
+|tip on the floating island.
 Loot the Buried Satchel |q 77299 |goto Nagrand/0 57.90,26.37 |future
 step
 use the Torch of Pyrreth##208092
@@ -899,7 +1857,7 @@ click Loose Dirt Mound
 Loot the Buried Satchel |q 77294 |goto Dragonblight/0 63.91,72.62 |future
 step
 click Loose Dirt Mound
-|ti on the floating island.
+|tip on the floating island.
 Loot the Buried Satchel |q 77302 |goto Dragonblight/0 73.15,39.54 |future
 step
 talk Darrok##27425 |only if Horde
@@ -928,11 +1886,11 @@ click Loose Dirt Mound
 Loot the Buried Satchel |q 77292 |goto Shadowmoon Valley D/0 35.31,48.96 |future
 step
 click Loose Dirt Mound
-|ti on the floating island.
+|tip on the floating island.
 Loot the Buried Satchel |q 78208 |goto Highmountain/0 53.35,87.50 |future
 step
 click Loose Dirt Mound
-|ti on the floating island.
+|tip on the floating island.
 Loot the Buried Satchel |q 77295 |goto Tiragarde Sound/0 74.56,86.13 |future
 step
 use the Torch of Pyrreth##208092
@@ -976,7 +1934,7 @@ step
 use Mimiron's Jumpjets##210022
 Collect the Mimiron's Jumpjets Mount |learnmount Mimiron's Jumpjets##424082
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\The Emerald Dream Superbloom",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\The Emerald Dream Superbloom",{
 author="support@zygorguides.com",
 description="This guide will help you complete the Superbloom event in The Emerald Dream.",
 startlevel=70,
@@ -1068,7 +2026,7 @@ talk Clarelle##208474
 turnin The Superbloom##78319 |goto 44.62,71.96
 |next "Accept_The_Superbloom"
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight\\19th Anniversary Event",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (60-70)\\19th Anniversary Event",{
 author="support@zygorguides.com",
 description="This guide will help you complete the 19th anniversary event weekly quest.",
 startlevel=30,

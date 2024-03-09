@@ -35,6 +35,7 @@ local eventList = {
     "ResearchersUnderFire",
     "TimeRiftThaldraszus",
     "SuperBloom",
+    "BigDig",
     "IskaaranFishingNet"
 }
 
@@ -805,7 +806,7 @@ local eventData = {
         args = {
             icon = 3939983,
             type = "loopTimer",
-            questIDs = { 78319 },
+            questIDs = {78319},
             hasWeeklyReward = true,
             duration = 15 * 60,
             interval = 1 * 60 * 60,
@@ -828,6 +829,46 @@ local eventData = {
                     [4] = 1701828010, -- TW
                     [5] = 1701828010, -- CN
                     [72] = 1701828010 -- TR
+                }
+                local region = GetCurrentRegion()
+                -- TW is not a real region, so we need to check the client language if player in KR
+                if region == 2 and W.Locale ~= "koKR" then
+                    region = 4
+                end
+
+                return timestampTable[region]
+            end)()
+        }
+    },
+    BigDig = {
+        dbKey = "bigDig",
+        args = {
+            icon = 4549135,
+            type = "loopTimer",
+            questIDs = {79226},
+            hasWeeklyReward = true,
+            duration = 15 * 60,
+            interval = 1 * 60 * 60,
+            eventName = L["The Big Dig"],
+            label = L["Big Dig"],
+            location = C_Map_GetMapInfo(2024).name,
+            barColor = colorPlatte.purple,
+            runningText = L["In Progress"],
+            filter = function(args)
+                if args.stopAlertIfPlayerNotEnteredDragonlands and not C_QuestLog_IsQuestFlaggedCompleted(67700) then
+                    return false
+                end
+                return true
+            end,
+            startTimestamp = (function()
+                local timestampTable = {
+                    -- need more accurate Timers
+                    [1] = 1701826200, -- NA
+                    [2] = 1701826200, -- KR
+                    [3] = 1701826200, -- EU
+                    [4] = 1701826200, -- TW
+                    [5] = 1701826200, -- CN
+                    [72] = 1701826200 -- TR
                 }
                 local region = GetCurrentRegion()
                 -- TW is not a real region, so we need to check the client language if player in KR

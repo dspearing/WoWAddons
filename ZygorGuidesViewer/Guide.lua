@@ -773,23 +773,9 @@ function GuideFuncs:AskReload() --reload after a panda has choosen a faction.
 		self.ReloadPopup = ZGV.PopupHandler:NewPopup("ZygorReloadPopup","default")
 
 		self.ReloadPopup:SetText(L['static_pandareload'])
-
-		self.ReloadPopup.acceptbutton:Hide()
-
-		self.ReloadPopup.acceptbuttonsecure = CHAIN(CreateFrame("Button", nil, self.ReloadPopup,"SecureActionButtonTemplate"))
-			:SetBackdrop(ZGV.UI.SkinData("ButtonBackdrop1"))
-			:SetBackdropColor(unpack(ZGV.UI.SkinData("ButtonColor1")))
-			:SetBackdropBorderColor(unpack(ZGV.UI.SkinData("ButtonBorderColor1")))
-			:SetPoint("BOTTOMRIGHT",self.ReloadPopup.morebutton,"TOP",-5,5)
-			:SetSize(80,20)
-			:SetText(L['static_accept'])
-			:RegisterForClicks("LeftButtonUp")
-			:SetAttribute("type","macro")
-			:SetAttribute("macrotext","/console reloadui")
-		.__END
-		self.ReloadPopup.acceptbuttonsecure:GetFontString():SetFont(FONTBOLD,ZGV.db.profile.fontsize)
-
-		-- text,title,tooltipText,priority,poptime,removetime,quiet = returnMinimizeSettings()
+		
+		function self.ReloadPopup:OnAccept() ReloadUI() end
+		function self.ReloadPopup.LayoutFull() end
 
 		self.ReloadPopup.returnMinimizeSettings = function(self)
 			local notifcationText = L['notifcenter_reload_text']

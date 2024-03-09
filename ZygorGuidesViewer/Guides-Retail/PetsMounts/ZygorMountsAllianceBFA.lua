@@ -11,7 +11,7 @@ mounts={250735},
 patch='80100',
 mounttype='Ground',
 model={78858},
-description="\nThis mount is acquired earning the \"Glory of the Uldir Raider\" achievement.",
+description="This mount is acquired earning the \"Glory of the Uldir Raider\" achievement.",
 },[[
 step
 Earn the "Elevator Music" Achievement |achieve 12937 |learnmount Bloodgorged Crawg##250735
@@ -55,7 +55,7 @@ mounts={271646},
 patch='80100',
 mounttype='Ground',
 model={85691},
-description="\nThis mount is acquired by completing the War Campaign as well as becoming exalted with the 7th Legion.",
+description="This mount is acquired by completing the War Campaign as well as becoming exalted with the 7th Legion.",
 },[[
 step
 Earn the "Ready for War" Achievement |achieve 12510
@@ -83,7 +83,7 @@ keywords={"ground, mount, battle, for, azeroth"},
 mounts={280729},
 patch='80100',
 mounttype='Ground',
-description="\nThis mount is acquired by earning the achievement \"A Horde of Hoofbeats\" which requires you to \n"..
+description="This mount is acquired by earning the achievement \"A Horde of Hoofbeats\" which requires you to \n"..
 "collect 400 mounts.",
 },[[
 step
@@ -106,7 +106,7 @@ mounts={295386},
 patch='81500',
 mounttype='Ground',
 model={91389},
-description="\nThis mount is acquired by earning the \"Two Sides to Every Tale\" achievement.",
+description="This mount is acquired by earning the \"Two Sides to Every Tale\" achievement.",
 },[[
 step
 Earn the "A Nation United" Achievement |achieve 13517/1 |complete hasmount(295386)
@@ -141,7 +141,7 @@ patch='73500',
 mounttype='Ground',
 model={81114},
 condition_end=function() return hasmount(258022) end,
-description="\nThis mount is acquired by completing the \"Allied Races: Lightforged Draenei\" achievement.",
+description="This mount is acquired by completing the \"Allied Races: Lightforged Draenei\" achievement.",
 },[[
 step
 accept The Call for Allies##49929 |goto Dalaran L/10 72.46,45.94
@@ -341,7 +341,7 @@ mounts={239049},
 patch='80100',
 mounttype='Ground',
 model={75600},
-description="\nThis mount is acquired by earning the \"Glory of the Wartorn Hero\" achievement.",
+description="This mount is acquired by earning the \"Glory of the Wartorn Hero\" achievement.",
 },[[
 step
 Earn the "Pecking Order" Achievement |achieve 12550
@@ -441,7 +441,7 @@ mounts={280730},
 patch='80100',
 mounttype='Ground',
 model={83664},
-description="\nThis mount is acquired by collect 400 mounts.",
+description="This mount is acquired by collect 400 mounts.",
 },[[
 step
 Raise 100 different reputations to Exalted
@@ -464,7 +464,7 @@ patch='73500',
 mounttype='Ground',
 model={81648},
 condition_end=function() return hasmount(259202) end,
-description="\nThis mount is acquired by completing the \"Allied Races: Void Elf\" achievement.",
+description="This mount is acquired by completing the \"Allied Races: Void Elf\" achievement.",
 },[[
 step
 accept The Call for Allies##49929 |goto Dalaran L/10 72.46,45.94
@@ -645,7 +645,7 @@ mounts={308250},
 patch='82500',
 mounttype='Ground',
 model={93396},
-description="\nThis mount is collected by completing the \"Alterac Valley of Olde\" achievement.",
+description="This mount is collected by completing the \"Alterac Valley of Olde\" achievement.",
 },[[
 step
 collect Anniversary Gift##172014 |or
@@ -685,7 +685,7 @@ mounts={282682},
 patch='81500',
 mounttype='Ground',
 model={88974},
-description="\nThis mount is acquired from completing the Allied Races: Kul Tiran achievement.",
+description="This mount is acquired from completing the Allied Races: Kul Tiran achievement.",
 },[[
 step
 Earn the "Allied Races: Kul Tiran" Achievement |achieve 13157
@@ -706,7 +706,7 @@ mounts={292419},
 patch='82000',
 mounttype='Flying',
 model={90729},
-description="\nThis mount is acquired from completing the \"Glory of the Eternal Raider\" achievement.",
+description="This mount is acquired from completing the \"Glory of the Eternal Raider\" achievement.",
 },[[
 step
 Earn the "Glory of the Eternal Raider" Achievement |achieve 13687
@@ -726,7 +726,7 @@ mounts={289101},
 patch='81000',
 mounttype='Flying',
 model={90194},
-description="\nThis mount is acquired from completing the No Stable Big Enough achievement.",
+description="This mount is acquired from completing the No Stable Big Enough achievement.",
 },[[
 step
 Earn the "Glory of the Dazar'alor Raider" Achievement |achieve 13315
@@ -746,7 +746,7 @@ mounts={290328},
 patch='81500',
 mounttype='Flying',
 model={90421},
-description="\nThis mount is acquired by completing the \"Battle for Azeroth Pathrinder, Part Two\" achievement.",
+description="This mount is acquired by completing the \"Battle for Azeroth Pathrinder, Part Two\" achievement.",
 },[[
 leechsteps "Achievement Guides\\Exploration\\Battle for Azeroth\\Battle for Azeroth Pathfinder, Part Two" 1-28
 step
@@ -766,7 +766,7 @@ keywords={"ground, mount, battle, for, azeroth, paladin"},
 mounts={270562},
 patch='80100',
 mounttype='unknown',
-description="\nThis mount is acquired from completing the Allied Races: Dark Iron Dwarf achievement.",
+description="This mount is acquired from completing the Allied Races: Dark Iron Dwarf achievement.",
 },[[
 step
 Earn the "Allied Races: Dark Iron Dwarf" Achievement |achieve 12515
@@ -786,7 +786,7 @@ keywords={"ground, mount, battle, for, azeroth, paladin"},
 mounts={270564},
 patch='80100',
 mounttype='unknown',
-description="\nThis mount is acquired from reaching level 10 on a Dwarf Paladin.",
+description="This mount is acquired from reaching level 10 on a Dwarf Paladin.",
 },[[
 step
 Raise a Dwarf Paladin to Level 10
@@ -804,7 +804,7 @@ mounts={302361},
 patch='82500',
 mounttype='Flying',
 model={92345},
-description="\nThis mount can be purchased from the Blizzard Store or earned from the 15th Anniversary "..
+description="This mount can be purchased from the Blizzard Store or earned from the 15th Anniversary "..
 "Collector's Edition of the game.",
 },[[
 step
@@ -822,7 +822,7 @@ mounts={290133},
 patch='unknown',
 mounttype='unknown',
 model={90397},
-description="\nThis mount is purchased from the Blizzard Shop for $25 USD.",
+description="This mount is purchased from the Blizzard Shop for $25 USD.",
 },[[
 step
 This mount can be purchased for $25.00 from the official _Blizzard Store_
@@ -841,7 +841,7 @@ mounts={281554},
 patch='unknown',
 mounttype='unknown',
 model={88646},
-description="\nThis mount is attained by purchasing the Warcraft III: Reforged Spoils of War Edition from the Blizzard Store.",
+description="This mount is attained by purchasing the Warcraft III: Reforged Spoils of War Edition from the Blizzard Store.",
 },[[
 step
 This mount is attained by purchasing the "Warcraft III: Reforged Spoil of War Edition" from the official _Blizzard Store_
@@ -860,7 +860,7 @@ mounts={272770},
 patch='unknown',
 mounttype='unknown',
 model={85970},
-description="\nThis mount is attained by purchasing the 180 Days of World of Warcraft game time.",
+description="This mount is attained by purchasing the 180 Days of World of Warcraft game time.",
 },[[
 step
 This mount is attained by purchasing the 180 Days of World of Warcraft game time from the official _Blizzard Store_
@@ -880,7 +880,7 @@ mounts={290718},
 patch='82000',
 mounttype='Flying',
 model={92730},
-description="\nThis mount has a very small chance to drop from King Mechagon in the Operation: Mechagon dungeon.",
+description="This mount has a very small chance to drop from King Mechagon in the Operation: Mechagon dungeon.",
 },[[
 step
 kill King Mechagon##155438
@@ -901,7 +901,7 @@ mounts={297157},
 patch='82000',
 mounttype='Ground',
 model={91634},
-description="\nThis mount has a slight chance to drop from the rare spawn Rustfeather on Mechagon Island.",
+description="This mount has a slight chance to drop from the rare spawn Rustfeather on Mechagon Island.",
 },[[
 step
 kill Rustfeather##152182
@@ -923,7 +923,7 @@ mounts={243795},
 patch='80100',
 mounttype='Flying',
 model={76706},
-description="\nThis mount is acquired by a random world drop.",
+description="This mount is acquired by a random world drop.",
 },[[
 step
 Kill Loa-Gutter enemies around this area
@@ -944,7 +944,7 @@ mounts={299158},
 patch='82000',
 mounttype='Ground',
 model={90710},
-description="\nThis mount has a very small chance to drop from the HK-8 Aerial Oppression Unit in the Operation: "..
+description="This mount has a very small chance to drop from the HK-8 Aerial Oppression Unit in the Operation: "..
 "Mechagon dungeon.",
 },[[
 step
@@ -966,7 +966,7 @@ mounts={294038},
 patch='82000',
 mounttype='Ground',
 model={91104},
-description="\nThis mount has a very small chance to drop from elite naga enemies in Nazjatar",
+description="This mount has a very small chance to drop from elite naga enemies in Nazjatar",
 },[[
 step
 Kill Elite enemies around this area
@@ -988,7 +988,7 @@ mounts={291492},
 patch='82000',
 mounttype='Ground',
 model={90711},
-description="\nThis mount has a slight chance to drop from the rare spawn Arachnoid Harvester on Mechagon Island.",
+description="This mount has a slight chance to drop from the rare spawn Arachnoid Harvester on Mechagon Island.",
 },[[
 step
 kill Arachnoid Harvester##151934
@@ -1011,7 +1011,7 @@ patch='80100',
 mounttype='Flying',
 model={80449},
 condition_end=function() return hasmount(254813) end,
-description="\nThis mount is acquired by obtaining a random drop from Harlan Sweete in the Freehold dungeon on Mythic difficulty.",
+description="This mount is acquired by obtaining a random drop from Harlan Sweete in the Freehold dungeon on Mythic difficulty.",
 },[[
 step
 Enter the Freehold Dungeon |goto Tiragarde Sound/0 84.53,78.83 < 10 |c
@@ -1033,7 +1033,7 @@ mounts={300149},
 patch='82000',
 mounttype='Flying',
 model={90728},
-description="\nThis mount has a slight chance to drop from the rare spawn Soundless in Nazjatar.",
+description="This mount has a slight chance to drop from the rare spawn Soundless in Nazjatar.",
 },[[
 step
 kill Soundless##152290
@@ -1056,7 +1056,7 @@ mounts={289083},
 patch='81000',
 mounttype='Flying',
 model={90189},
-description="\nThis mount is acquired from the Battle for Dazar'alor Raid.",
+description="This mount is acquired from the Battle for Dazar'alor Raid.",
 },[[
 step
 Enter the "Battle for Dazar'alor" Raid |goto Boralus/0 70.55,35.33 < 20 |c |or
@@ -1079,7 +1079,7 @@ mounts={289555},
 patch='81000',
 mounttype='Flying',
 model={90414},
-description="\nThis mount is acquired from the Mythic Battle for Dazar'alor Raid.",
+description="This mount is acquired from the Mythic Battle for Dazar'alor Raid.",
 },[[
 step
 kill Lady Jaina Proudmoore##151866
@@ -1100,7 +1100,7 @@ mounts={288495},
 patch='81000',
 mounttype='Flying',
 model={89750},
-description="\nThis mount is acquired from the Rarespawn Alash'anir in Darkshore.",
+description="This mount is acquired from the Rarespawn Alash'anir in Darkshore.",
 },[[
 step
 kill Alash'anir##148787
@@ -1120,7 +1120,7 @@ mounts={237286},
 patch='80100',
 mounttype='Ground',
 model={75324},
-description="\nThis mount is acquired by a random world drop.",
+description="This mount is acquired by a random world drop.",
 },[[
 step
 Kill enemies around this area
@@ -1141,7 +1141,7 @@ mounts={260175},
 patch='80100',
 mounttype='Ground',
 model={81690},
-description="\nThis mount is acquired by an incredibly rare drop in Stormsong Valley or purchased from the Auction House.",
+description="This mount is acquired by an incredibly rare drop in Stormsong Valley or purchased from the Auction House.",
 },[[
 step
 Kill enemies around this area
@@ -1163,7 +1163,7 @@ mounts={279456},
 patch='80100',
 mounttype='Ground',
 model={87774},
-description="\nThis mount is acquired from Doomrider Helgrim while the Alliance controls the Stromgarde War Front.",
+description="This mount is acquired from Doomrider Helgrim while the Alliance controls the Stromgarde War Front.",
 },[[
 step
 talk Zidormi##141649
@@ -1191,7 +1191,7 @@ mounts={279608},
 patch='80100',
 mounttype='Ground',
 model={87773},
-description="\nThis mount is acquired from Knight-Captain Aldrin while the Horde controls the Stromgarde War Front.",
+description="This mount is acquired from Knight-Captain Aldrin while the Horde controls the Stromgarde War Front.",
 },[[
 step
 talk Zidormi##141649
@@ -1219,7 +1219,7 @@ mounts={279611},
 patch='80100',
 mounttype='Ground',
 model={87848},
-description="\nThis mount is acquired from Skullripper in Arathi Highlands.",
+description="This mount is acquired from Skullripper in Arathi Highlands.",
 },[[
 step
 talk Zidormi##141649
@@ -1246,7 +1246,7 @@ mounts={279569},
 patch='80100',
 mounttype='Ground',
 model={14345},
-description="\nThis mount is dropped by Beastrider Kama in Arathi Highlands when under Horde control.",
+description="This mount is dropped by Beastrider Kama in Arathi Highlands when under Horde control.",
 },[[
 step
 talk Zidormi##141649
@@ -1274,7 +1274,7 @@ mounts={260174},
 patch='80100',
 mounttype='Ground',
 model={81694},
-description="\nThis mount is acquired by a random world drop.",
+description="This mount is acquired by a random world drop.",
 },[[
 step
 Kill enemies around this area
@@ -1297,7 +1297,7 @@ patch='80100',
 mounttype='Ground',
 model={84274},
 condition_end=function() return hasmount(266058) end,
-description="\nThis mount is acquired by obtaining a random drop from Dazar, The First King in the King's Rest dungeon.",
+description="This mount is acquired by obtaining a random drop from Dazar, The First King in the King's Rest dungeon.",
 },[[
 step
 Enter the King's Rest Dungeon |goto King's Rest/0 0.00,0.00 < 1000
@@ -1321,7 +1321,7 @@ patch='80100',
 mounttype='Ground',
 model={78860},
 condition_end=function() return hasmount(273541) end,
-description="\nThis mount is acquired by obtaining a random drop from the Unbound Abomination in The Underrot dungeon.",
+description="This mount is acquired by obtaining a random drop from the Unbound Abomination in The Underrot dungeon.",
 },[[
 step
 Enter The Underrot Dungeon |goto The Underrot/0 0.00,0.00 < 1000
@@ -1343,7 +1343,7 @@ mounts={288438},
 patch='81000',
 mounttype='Ground',
 model={706},
-description="\nThis mount is acquired from the Rarespawn Blackpaw in Darkshore.",
+description="This mount is acquired from the Rarespawn Blackpaw in Darkshore.",
 },[[
 step
 talk Zidormi##141489
@@ -1371,7 +1371,7 @@ mounts={288505},
 patch='81000',
 mounttype='Ground',
 model={89247},
-description="\nThis mount is acquired from the Rarespawn Croz Bloodrage in Darkshore.",
+description="This mount is acquired from the Rarespawn Croz Bloodrage in Darkshore.",
 },[[
 step
 talk Zidormi##141489
@@ -1398,7 +1398,7 @@ mounts={288503},
 patch='81000',
 mounttype='Ground',
 model={89246},
-description="\nThis mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
+description="This mount is acquired from the Rarespawn Shadowclaw in Darkshore.",
 },[[
 step
 talk Zidormi##141489
@@ -1426,7 +1426,7 @@ mounts={279868},
 patch='80100',
 mounttype='Flying',
 model={86091},
-description="\nThis mount is acquired from the Rarespawn Shadowclaw in Arathi Highlands.",
+description="This mount is acquired from the Rarespawn Shadowclaw in Arathi Highlands.",
 },[[
 step
 talk Zidormi##141649
@@ -1454,7 +1454,7 @@ mounts={288499},
 patch='81000',
 mounttype='Ground',
 model={12247},
-description="\nThis mount is acquired from locating a Frightened Kodo in Darkshore.",
+description="This mount is acquired from locating a Frightened Kodo in Darkshore.",
 },[[
 step
 map Darkshore/0
@@ -1482,7 +1482,7 @@ patch='80100',
 mounttype='Aquatic',
 model={87747},
 condition_end=function() return hasmount(278979) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1507,7 +1507,7 @@ patch='80100',
 mounttype='Ground',
 model={45836},
 condition_end=function() return hasmount(279469) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1532,7 +1532,7 @@ patch='80100',
 mounttype='Flying',
 model={79916},
 condition_end=function() return hasmount(254811) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1557,7 +1557,7 @@ patch='80100',
 mounttype='Flying',
 model={87775},
 condition_end=function() return hasmount(279466) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1582,7 +1582,7 @@ patch='80100',
 mounttype='Ground',
 model={87776},
 condition_end=function() return hasmount(279467) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1607,7 +1607,7 @@ patch='81000',
 mounttype='Flying',
 model={55151},
 condition_end=function() return hasmount(288720) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1631,7 +1631,7 @@ patch='81000',
 mounttype='Flying',
 model={90158},
 condition_end=function() return hasmount(288721) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1655,7 +1655,7 @@ patch='81500',
 mounttype='Flying',
 model={84359},
 condition_end=function() return hasmount(266925) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1680,7 +1680,7 @@ patch='81000',
 mounttype='Ground',
 model={87776},
 condition_end=function() return hasmount(288712) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1705,7 +1705,7 @@ patch='81000',
 mounttype='Ground',
 model={5050},
 condition_end=function() return hasmount(288722) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1730,7 +1730,7 @@ patch='81000',
 mounttype='Aquatic',
 model={34958},
 condition_end=function() return hasmount(288711) end,
-description="\nThis mount is acquired by completing an Island Expeditions.",
+description="This mount is acquired by completing an Island Expeditions.",
 },[[
 step
 click Expedition Map
@@ -1755,7 +1755,7 @@ patch='80100',
 mounttype='Flying',
 model={88835},
 condition_end=function() return hasmount(261395) end,
-description="\nThis mount is acquired by completing varius puzzles and secrets, including:\n\n"..
+description="This mount is acquired by completing varius puzzles and secrets, including:\n\n"..
 "_Red, Yellow, Green, and Blue Colored Monocles_\n"..
 "_Suramar Beams (Requires Group)_\n"..
 "_Lost Cat Toy (Requires Group)_\n"..
@@ -2205,7 +2205,7 @@ mounts={294143},
 patch='82000',
 mounttype='Ground',
 model={92666},
-description="\nThis mount can be crafted at Pascal-K1N6 on Mechagon Island after purchasing the blueprint for 500 gold "..
+description="This mount can be crafted at Pascal-K1N6 on Mechagon Island after purchasing the blueprint for 500 gold "..
 "from Cork Stuttguard in Bondo's Yard.",
 },[[
 step
@@ -2248,7 +2248,7 @@ mounts={278803},
 patch='80100',
 mounttype='Aquatic',
 model={73253},
-description="\nThis mount is acquired by a random world drop.",
+description="This mount is acquired by a random world drop.",
 },[[
 step
 Fish in any water on Kul Tiras or Zandalar
@@ -2268,7 +2268,7 @@ mounts={274621},
 patch='80100',
 mounttype='unknown',
 model={},
-description="\nThis mount is acquired by crafting it with the Engineering profession.",
+description="This mount is acquired by crafting it with the Engineering profession.",
 },[[
 step
 Reach Level 150 Kul Tiran Engineering |skill Kul Tiran Engineering,150 |or
@@ -2357,7 +2357,7 @@ mounts={299159},
 patch='82000',
 mounttype='Ground',
 model={90712},
-description="\nThis mount is acquired by completing the \"Drive It Away Today\" questline on Mechagon Island.",
+description="This mount is acquired by completing the \"Drive It Away Today\" questline on Mechagon Island.",
 },[[
 leechsteps "Leveling Guides\\Battle for Azeroth (10-60)\\Kul Tiras\\Mechagon Island\\Mechagon Island" 1-138
 step
@@ -2375,7 +2375,7 @@ mounts={300147},
 patch='82000',
 mounttype='Ground',
 model={91236},
-description="\nThis mount is acquired by completing the \"Wild Tame\" quest after reaching rank 20 with Hunter Akama in Nazjatar.",
+description="This mount is acquired by completing the \"Wild Tame\" quest after reaching rank 20 with Hunter Akama in Nazjatar.",
 },[[
 step
 Unlock Nazjatar Bodyguards and World Quests |q 57006 |future
@@ -2416,7 +2416,7 @@ mounts={260173},
 patch='80100',
 mounttype='Ground',
 model={82161},
-description="\nThis mount is acquired by becoming Exalted with the Order of Embers then buying the mount for 10,000 gold.",
+description="This mount is acquired by becoming Exalted with the Order of Embers then buying the mount for 10,000 gold.",
 },[[
 step
 Load the "Order of Embers" Reputation Guide |confirm |next "Reputation Guides\\Battle for Azeroth\\Order of Embers"
@@ -2439,7 +2439,7 @@ mounts={237287},
 patch='80100',
 mounttype='Ground',
 model={82148},
-description="\nThis mount is acquired by becoming Exalted with the Proudmoore Admiralty then buying the mount for 10,000 gold.",
+description="This mount is acquired by becoming Exalted with the Proudmoore Admiralty then buying the mount for 10,000 gold.",
 },[[
 step
 Load the "Proudmoore Admiralty" Reputation Guide |confirm |next "Reputation Guides\\Battle for Azeroth\\Proudmoore Admiralty"
@@ -2464,7 +2464,7 @@ mounts={260172},
 patch='80100',
 mounttype='Ground',
 model={81693},
-description="\nThis mount is acquired by becoming Exalted with the Storm's Wake then buying the mount for 10,000 gold.",
+description="This mount is acquired by becoming Exalted with the Storm's Wake then buying the mount for 10,000 gold.",
 },[[
 step
 Load the "Storm's Wake" Reputation Guide |confirm |next "Reputation Guides\\Battle for Azeroth\\Storm's Wake"
@@ -2487,7 +2487,7 @@ mounts={259741},
 patch='80100',
 mounttype='Flying',
 model={81967},
-description="\nThis mount is attained by reaching Exalted status with the \"Honeyback Hive\" faction and "..
+description="This mount is attained by reaching Exalted status with the \"Honeyback Hive\" faction and "..
 "raising a Honeyback Harvester bee to full maturity.",
 },[[
 leechsteps "Reputation Guides\\Battle for Azeroth\\Honeyback Harvester" 1-27
@@ -2506,7 +2506,7 @@ mounts={300153},
 patch='82000',
 mounttype='Aquatic',
 model={92254},
-description="\nThis mount is can be purchased from Mrrl in Nazjatar after purchasing numerous other items in a specific order.",
+description="This mount is can be purchased from Mrrl in Nazjatar after purchasing numerous other items in a specific order.",
 },[[
 step
 Obtain an Azsh'ari Stormsurger Cape |complete itemcount(169489) >= 1 |goto Nazjatar/0 37.85,55.71
@@ -2632,7 +2632,7 @@ mounts={292407},
 patch='82000',
 mounttype='Flying',
 model={90725},
-description="\nThis mount can be purchased from Artisan Okata in Nazjatar after reaching Exalted status "..
+description="This mount can be purchased from Artisan Okata in Nazjatar after reaching Exalted status "..
 "with the Waveblade Ankoan.",
 },[[
 step
@@ -2661,7 +2661,7 @@ mounts={288740},
 patch='81000',
 mounttype='Flying',
 model={90159},
-description="\nThis mount is acquired by purchasing the mount for 750 7th Legion Service Medals.",
+description="This mount is acquired by purchasing the mount for 750 7th Legion Service Medals.",
 },[[
 step
 Collect 750 7th Legion Service Medals |complete curcount(1717)>=750
@@ -2684,7 +2684,7 @@ mounts={299170},
 patch='82000',
 mounttype='Flying',
 model={92731},
-description="\nThis mount can be purchased from the Stolen Royal Vendorbot on Mechagon Island for 524,288 gold, adjusted for reputation.",
+description="This mount can be purchased from the Stolen Royal Vendorbot on Mechagon Island for 524,288 gold, adjusted for reputation.",
 },[[
 step
 Reach Exalted with the Rustbolt Resistance |complete rep('Rustbolt Resistance') == Exalted
@@ -2702,7 +2702,7 @@ You Collected the "Rustbolt Resistor" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Explorer's Dunetrekker",{
 author="support@zygorguides.com",
-description="\nThis mount is awarded when your Recruit-a-Friend allies have purchased three months "..
+description="This mount is awarded when your Recruit-a-Friend allies have purchased three months "..
 "of game time in total across all that you have recruited.",
 startlevel=50.0,
 keywords={"Recruit","a","Friend"},
@@ -2725,7 +2725,7 @@ You Collected the "Explorer's Dunetrekker" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Vendor Mounts\\Explorer's Jungle Hopper",{
 author="support@zygorguides.com",
-description="\nThis mount is awarded when your Recruit-a-Friend allies have purchased nine months "..
+description="This mount is awarded when your Recruit-a-Friend allies have purchased nine months "..
 "of game time in total across all that you have recruited.",
 startlevel=50.0,
 keywords={"Recruit","a","Friend"},
@@ -2750,7 +2750,7 @@ mounts={264058},
 patch='80100',
 mounttype='Ground',
 model={83632},
-description="\nThis mount is acquired from the Black Market Auction House.",
+description="This mount is acquired from the Black Market Auction House.",
 },[[
 step
 Reach Level 60 |ding 60
@@ -2774,7 +2774,7 @@ mounts={279474},
 patch='80100',
 mounttype='Ground',
 model={87779},
-description="\nThis mount is acquired by purchasing the mount for 500,000 gold.",
+description="This mount is acquired by purchasing the mount for 500,000 gold.",
 },[[
 step
 talk Tricky Nick##142691
@@ -2794,7 +2794,7 @@ mounts={288736},
 patch='81000',
 mounttype='Ground',
 model={90393},
-description="\nThis mount is acquired by purchasing the mount for 200 7th Legion Service Medals.",
+description="This mount is acquired by purchasing the mount for 200 7th Legion Service Medals.",
 },[[
 step
 Collect 200 7th Legion Service Medals |complete curcount(1717)>=200
@@ -2817,7 +2817,7 @@ mounts={288587},
 patch='81000',
 mounttype='Ground',
 model={81959},
-description="\nThis mount is acquired by purchasing the mount for 333,333 gold.",
+description="This mount is acquired by purchasing the mount for 333,333 gold.",
 },[[
 step
 Enter the cave |goto Nazmir/0 71.22,55.80
@@ -2837,7 +2837,7 @@ mounts={259740},
 patch='80100',
 mounttype='Ground',
 model={81952},
-description="\nThis mount is acquired by purchasing the mount for 333,333 gold.",
+description="This mount is acquired by purchasing the mount for 333,333 gold.",
 },[[
 step
 Enter the cave |goto Nazmir/0 71.22,55.80
@@ -2857,7 +2857,7 @@ mounts={288589},
 patch='81000',
 mounttype='Ground',
 model={81958},
-description="\nThis mount is acquired by purchasing the mount for 333,333 gold.",
+description="This mount is acquired by purchasing the mount for 333,333 gold.",
 },[[
 step
 Enter the cave |goto Nazmir/0 71.22,55.80
@@ -2871,7 +2871,7 @@ You Collected the "Yellow Marsh Hopper" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Wriggling Parasite",{
 author="support@zygorguides.com",
-description="\nThis mount is acquired by earning the \"Glory of the Ny'alotha Raider\" Achievement.",
+description="This mount is acquired by earning the \"Glory of the Ny'alotha Raider\" Achievement.",
 startlevel=50.0,
 keywords={"Glory","of","the","Ny'alotha","Raider"},
 mounts={316343},
@@ -2893,7 +2893,7 @@ You Collected the "Wriggling Parasite" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Quest Mounts\\Shadowbarb Drone (Beta)",{
 author="support@zygorguides.com",
-description="\nThis mount can be collected after completing a daily questline that can be started during "..
+description="This mount can be collected after completing a daily questline that can be started during "..
 "the Aqir assault in Uldum.",
 startlevel=50.0,
 keywords={"Ready","to","Fly","Aqir","Assault"},
@@ -3254,7 +3254,7 @@ You Collected the "Shadowbarb Drone" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Achievement Mounts\\Mechagon Mechanostrider",{
 author="support@zygorguides.com",
-description="\nThis mount is acquired by earning the \"Allied Races: Mechagnome\" Achievement.",
+description="This mount is acquired by earning the \"Allied Races: Mechagnome\" Achievement.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Allied","Races","Mechagnome"},
 mounts={305592},
@@ -3453,7 +3453,7 @@ You Collected the "Mechagon Mechanostrider" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Ensorcelled Everwyrm",{
 author="support@zygorguides.com",
-description="\nThis mount can be obtained by purchasing the Heroic Edition of the Shadowlands World of Warcraft "..
+description="This mount can be obtained by purchasing the Heroic Edition of the Shadowlands World of Warcraft "..
 "expansion.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Blizzard","Store","Shadowlands","Heroic","Edition"},
@@ -3493,7 +3493,7 @@ You Collected the "Ensorcelled Everwyrm" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Clutch of Ha-Li",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Ha-Li rare spawn in Vale of Eternal Blossoms during the Warring Clans assault.",
+description="This mount drops from the Ha-Li rare spawn in Vale of Eternal Blossoms during the Warring Clans assault.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Vale","of","Eternal","Blossoms"},
 mounts={312751},
@@ -3532,7 +3532,7 @@ You Collected the "Clutch of Ha-Li" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Drake of the Four Winds",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Ishak of the Four Winds rare spawn in Uldum during the Uldum assault.",
+description="This mount drops from the Ishak of the Four Winds rare spawn in Uldum during the Uldum assault.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Ishak"},
 mounts={315847},
@@ -3576,7 +3576,7 @@ Learn the "Drake of the Four Winds" Mount |learnmount Drake of the Four Winds##3
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Mail Muncher",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Mail Muncher rare spawn in Horrific Visions.",
+description="This mount drops from the Mail Muncher rare spawn in Horrific Visions.",
 keywords={"8.3","N'zoth","Nzoth","Corruption","Horrific","Vision"},
 startlevel=50.0,
 mounts={315987},
@@ -3600,7 +3600,7 @@ You Collected the "Mail Muncher" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Ny'alotha Allseer",{
 author="support@zygorguides.com",
-description="\nThis mount drops from mythic N'Zoth the Corruptor in Ny'alotha, the Waking City.",
+description="This mount drops from mythic N'Zoth the Corruptor in Ny'alotha, the Waking City.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Mythic","Waking","City","Ny'alotha"},
 mounts={308814},
@@ -3623,7 +3623,7 @@ You Collected the "Ny'alotha Allseer" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Uncorrupted Voidwing",{
 author="support@zygorguides.com",
-description="\nThis mount is a reward for completing the quest \"Lost Flight\", which can be started from "..
+description="This mount is a reward for completing the quest \"Lost Flight\", which can be started from "..
 "an item that drops from heroic or mythic N'Zoth the Corruptor.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Heroic","Waking","City","Ny'alotha"},
@@ -3659,7 +3659,7 @@ You Collected the "Uncorrupted Voidwing" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Waste Marauder",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Rotfeaster rare spawn in Uldum during the Amathet Advance assault.",
+description="This mount drops from the Rotfeaster rare spawn in Uldum during the Amathet Advance assault.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Rotfeaster","N'Zoth","Assault"},
 mounts={316275},
@@ -3696,7 +3696,7 @@ You Collected the "Waste Marauder" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Mollie",{
 author="support@zygorguides.com",
-description="\nThis mount has a small chance to drop from Dunegorger Kraulok in Vol'dun when the "..
+description="This mount has a small chance to drop from Dunegorger Kraulok in Vol'dun when the "..
 "world quest \"Sandswept Bones\" is active.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Dunegorger","Kraulok","Slightly","Damp","Pile","Fur"},
@@ -3718,7 +3718,7 @@ Learn the "Mollie" Mount |learnmount Mollie##298367
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Ren's Stalwart Hound",{
 author="support@zygorguides.com",
-description="\nThis mount has a chance to drop from the rare spawn Houndlord Ren in Vale of "..
+description="This mount has a chance to drop from the rare spawn Houndlord Ren in Vale of "..
 "Eternal Blossoms during \"The Warring Clans\" assault.",
 startlevel=50.0,
 keywords={"8.3","N'zoth","Nzoth","Corruption","Houndlord","Ren","Vale","or","Eternal","Blossoms"},
@@ -3757,7 +3757,7 @@ You Collected the "Ren's Stalwart Hound" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Xinlao",{
 author="support@zygorguides.com",
-description="\nThis mount has a chance to drop from the rare spawn Anh-De the Loyal in Vale of "..
+description="This mount has a chance to drop from the rare spawn Anh-De the Loyal in Vale of "..
 "Eternal Blossoms during \"The Warring Clans\" assault.",
 keywords={"8.3","N'zoth","Nzoth","Corruption","Anh-De","the","Loyal","Vale","or","Eternal","Blossoms"},
 startlevel=50.0,
@@ -3794,7 +3794,7 @@ _Congratulations!_
 You Collected the "Xinlao" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Vendor Mounts\\Wicked Swarmer",{
-description="\nThis mount can be purchased from Wrathion in the Chamber of Heart for 100,000 Corrupted Mementos.",
+description="This mount can be purchased from Wrathion in the Chamber of Heart for 100,000 Corrupted Mementos.",
 author="support@zygorguides.com",
 keywords={"8.3","N'zoth","Nzoth","Corruption","mount","chamber","heart"},
 startlevel=50.0,
@@ -3829,7 +3829,7 @@ _Congratulations!_
 You Collected the "Wicked Swarmer" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Vendor Mounts\\Wastewander Skyterror",{
-description="\nThis mount can be purchased from Provisioner Qorra in the Uldum for 24,000 gold, adjusted for reputation.",
+description="This mount can be purchased from Provisioner Qorra in the Uldum for 24,000 gold, adjusted for reputation.",
 author="support@zygorguides.com",
 keywords={"8.3","N'zoth","Nzoth","Corruption","mount","uldum","accord"},
 startlevel=50.0,
@@ -3868,7 +3868,7 @@ mounts={294197},
 patch='82500',
 mounttype='Flying',
 model={91272},
-description="\nThis mount requires you to complete the achievement \"Memories of Fel, Frost and Fire.\"",
+description="This mount requires you to complete the achievement \"Memories of Fel, Frost and Fire.\"",
 },[[
 step
 collect Anniversary Gift##172014 |or
@@ -3912,7 +3912,7 @@ You Collected the "Obsidian Worldbreaker" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Awakened Mindborer",{
 author="support@zygorguides.com",
-description="\nTo collect this mount, you will have to complete the following Battle for Azeroth "..
+description="To collect this mount, you will have to complete the following Battle for Azeroth "..
 "dungeons at Mythic 15 or higher:\n\nAtal'Dazar\nKings' Rest\nFreehold\nShrine of the Storm\n"..
 "Siege of Boralus\nTemple of Sethraliss\nThe MOTHERLODE!!\nThe Underrot\nMechagon Junkyard\n"..
 "Mechagon Workshop\nTol Dagor\nWaycrest Manor",
@@ -3938,7 +3938,7 @@ You Collected the "Awakened Mindborer" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Black Serpent of N'Zoth",{
 author="support@zygorguides.com",
-description="\nThis mount is acquired by earning the \"Through the Depths of Visions\" Achievement.",
+description="This mount is acquired by earning the \"Through the Depths of Visions\" Achievement.",
 keywords={"8.3","N'zoth","Nzoth","Corruption","Through","the","Depths","Visions"},
 startlevel=50.0,
 mounts={305182},
@@ -3963,7 +3963,7 @@ You Collected the "Black Serpent of N'Zoth" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Ivory Cloud Serpent",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Ivory Cloud Serpent rare spawn in Vale of Eternal Blossoms.",
+description="This mount drops from the Ivory Cloud Serpent rare spawn in Vale of Eternal Blossoms.",
 keywords={"8.3","N'zoth","Nzoth","Corruption"},
 startlevel=50.0,
 mounts={315014},
@@ -4008,7 +4008,7 @@ You Collected the "Ivory Cloud Serpent" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Malevolent Drone",{
 author="support@zygorguides.com",
-description="\nThis mount drops from the Corpse Eater rare spawn in Uldum during the Aqir assault.",
+description="This mount drops from the Corpse Eater rare spawn in Uldum during the Aqir assault.",
 keywords={"8.3","N'zoth","Nzoth","Corruption","Corpse","Eater"},
 startlevel=50.0,
 mounts={316337},
@@ -4046,7 +4046,7 @@ You Collected the "Malevolent Drone" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Quest Mounts\\Springfur Alpaca",{
 author="support@zygorguides.com",
-description="\nThis mount can be collected after completing seven daily quests and the quest \"Alpaca It In\" in Uldum.",
+description="This mount can be collected after completing seven daily quests and the quest \"Alpaca It In\" in Uldum.",
 startlevel=50.0,
 keywords={"Alpaca","It","In","Up"},
 mounts={316802},
@@ -4109,7 +4109,7 @@ You Collected the "Springfur Alpaca" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Vendor Mounts\\Rajani Warserpent",{
 author="support@zygorguides.com",
-description="\nThis mount can be purchased from Zhang Ku in Vale of Eternal Blossoms for one Pristine Cloud Serpent Scale. "..
+description="This mount can be purchased from Zhang Ku in Vale of Eternal Blossoms for one Pristine Cloud Serpent Scale. "..
 "The Pristine Cloud Serpent Scale has a small chance to drop from the rare spawn Zhang Ku in Vale of Eternal Blossoms.",
 startlevel=50.0,
 keywords={"Vale","of","Eternal","Blossoms"},
@@ -4158,7 +4158,7 @@ You Collected the "Rajani Warserpent" Mount.
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Dropped Mounts\\Elusive Quickhoof",{
 author="support@zygorguides.com",
-description="\nNot finished.",
+description="Not finished.",
 startlevel=50.0,
 keywords={"Alpaca"},
 mounts={316493},

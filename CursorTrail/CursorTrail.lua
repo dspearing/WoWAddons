@@ -4,6 +4,8 @@
     Desc:   This file contains the core implementation for this addon.
 -----------------------------------------------------------------------------]]
 
+local kAddonFolderName, private = ...
+
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                       Saved (Persistent) Variables                      ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -64,7 +66,7 @@ setfenv(1, _G.CursorTrail)  -- Everything after this uses our namespace rather t
 --[[                       Constants                                         ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-kAddonName = ...  -- (i.e.  "CursorTrail")
+kAddonName = kAddonFolderName  -- (i.e.  "CursorTrail")
 kAddonVersion = (GetAddOnMetadata(kAddonName, "Version") or "0.0.0.0"):match("^([%d.]+)")
 kGameTocVersion = select(4, GetBuildInfo())
 ----print("CursorTrail kGameTocVersion:", kGameTocVersion)
@@ -240,7 +242,12 @@ kDefaultConfig11.FadeOut = false
 --[[                       Switches                                          ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-kEditBaseValues = false  -- Set to true so arrow keys change base offsets while UI is up.  (Developers only!)
+kEditBaseValues = false -- Set to true so arrow keys change base offsets and step size while UI is up.  (Developers only!)
+                        -- Arrow keys (no modifier key) change BaseOfsX and BaseOfsY.
+                        -- Alt causes arrow keys to change BaseStepX and BaseStepY.
+                        -- Shift decrease the amount of change each arrow key press.
+                        -- Ctrl increase the amount of change each arrow key press.
+                        -- When done, type "/ct model" to dump all values (BEFORE CLOSING THE UI).
 kAlwaysUseDefaults = false  -- Set to true to prevent using saved settings.
 kShadowStrataMatchesMain = false  -- Set to true if you want shadow at same level as the trail effect.
 
@@ -441,7 +448,7 @@ end
 --[[                       Event Handlers                                    ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-local EventFrame = CreateFrame("Frame")
+EventFrame = CreateFrame("Frame")
 
 -------------------------------------------------------------------------------
 EventFrame:SetScript("OnEvent", function(self, event, ...)
@@ -537,6 +544,13 @@ EventFrame:RegisterEvent("PLAYER_REGEN_ENABLED")
 function       EventFrame:PLAYER_REGEN_ENABLED()  -- Combat ended.
     ----dbg("PLAYER_REGEN_ENABLED")
     if (PlayerConfig.UserShowOnlyInCombat == true) then gShowOrHide = kHide end
+end
+
+-------------------------------------------------------------------------------
+----EventFrame:RegisterEvent("GLOBAL_MOUSE_DOWN")  <-- Registered in OptionsFrame_OnShow().
+function EventFrame:GLOBAL_MOUSE_DOWN(button)
+    ----dbg("GLOBAL_MOUSE_DOWN")
+    private.Controls.handleGlobalMouseClick(button)
 end
 
 --~ -------------------------------------------------------------------------------
@@ -742,27 +756,6 @@ function CursorTrail_OnUpdate(self, elapsedSeconds)
     ----DebugText("dt: "..GetTime()-t0, 200)
 end
 
--------------------------------------------------------------------------------
-function isCursorTrailOff()
-    if (EventFrame:GetScript("OnUpdate") == nil) then return true end
-    return false
-end
-
--------------------------------------------------------------------------------
-function CursorTrail_ON(bPrintMsg)
-    if isCursorTrailOff() then  -- Prevents chaining multiple calls to our handler.
-        ----print(kAddonName..": Setting EventFrame's OnUpdate script.")
-        EventFrame:SetScript("OnUpdate", CursorTrail_OnUpdate)
-    end
-    if bPrintMsg then printMsg(kAddonName..": "..ORANGE.."ON") end
-end
-
--------------------------------------------------------------------------------
-function CursorTrail_OFF()
-    if OptionsFrame:IsShown() then OptionsFrame:Hide() end
-    EventFrame:SetScript("OnUpdate", nil)
-end
-
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 --[[                            Hooks                                        ]]
 --:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -817,6 +810,27 @@ function Addon_Initialize()
     -- Initialize addon.
     CursorTrail_Load()
     CursorTrail_ON()
+end
+
+-------------------------------------------------------------------------------
+function isCursorTrailOff()
+    if (EventFrame:GetScript("OnUpdate") == nil) then return true end
+    return false
+end
+
+-------------------------------------------------------------------------------
+function CursorTrail_ON(bPrintMsg)
+    if isCursorTrailOff() then  -- Prevents chaining multiple calls to our handler.
+        ----print(kAddonName..": Setting EventFrame's OnUpdate script.")
+        EventFrame:SetScript("OnUpdate", CursorTrail_OnUpdate)
+    end
+    if bPrintMsg then printMsg(kAddonName..": "..ORANGE.."ON") end
+end
+
+-------------------------------------------------------------------------------
+function CursorTrail_OFF()
+    if OptionsFrame:IsShown() then OptionsFrame:Hide() end
+    EventFrame:SetScript("OnUpdate", nil)
 end
 
 -------------------------------------------------------------------------------

@@ -207,7 +207,12 @@ data.basenodes.DungeonEntrances = --[[LIBROVER]] {
 
 		--Northrend
 			-- UTGARDE KEEP
-			"Howling Fjord/0 57.28,46.70 -x- Utgarde Keep/1 69.15,73.98 {autotype:portal_dungeon}",
+			"Howling Fjord/0 57.97,49.93 <radius:10> <title:Enter the building>",
+				"@+ -x- Howling Fjord/0 57.27,46.67 <radius:5> <nofly:1> <dark:1> {title:Run into the portal}",
+				"@+ -x- Utgarde Keep/1 0.00,0.00 <nofly:1> <dark:1> {autotype:portal_dungeon}",
+
+			--"Howling Fjord/0 57.27,46.67 -x- Utgarde Keep/1 69.15,73.98 {autotype:portal_dungeon} {title:Run into the portal down inside the building}",
+
 			-- UTGARDE PINNACLE
 			"Howling Fjord/0 57.27,46.69 -x- Utgarde Pinnacle/2 44.33,14.19 {autotype:portal_dungeon}",
 

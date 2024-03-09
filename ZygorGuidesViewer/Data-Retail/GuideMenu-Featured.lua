@@ -7,6 +7,30 @@ local GuideMenu = ZGV.GuideMenu
 GuideMenu.Featured={}
 
 table.insert(GuideMenu.Featured,{
+	title="Patch 10.2.5 - Seeds of Renewal", group="patch_1025",
+--{"section", text=[[LEVELING]]},
+--        {"banner", image=ZGV.IMAGESDIR.."Patch1025Leveling",showcaseonly=true},
+--	{"content", text=[[Reclaim the fallen city of Gilneas in Eastern Kingdoms]]},
+--	{"columns",
+--	{"item", text=[[**The Reclaiming of Gilneas**]], guide="Leveling Guides\\Dragonflight (60-70)\\The Reclaiming of Gilneas"},
+--	}, --columnsend
+	
+{"section", text=[[EVENTS]]},
+        {"banner", image=ZGV.IMAGESDIR.."Patch1025Events",showcaseonly=true},
+	{"content", text=[[Azerothian Archives Big Dig]]},
+	{"columns",
+	{"item", text=[[**The Big Dig: Traitor's Rest**]], guide="Events Guides\\Dragonflight (60-70)\\The Big Dig: Traitor's Rest"},
+	}, --columnsend
+	{"text", text=[[NOTE: Random scenario stage information is still be collected.]]},
+	{"columns",
+	{"item", text=[[**Azerothian Archives!**]], guide="Events Guides\\Dragonflight (60-70)\\Azerothian Archives!"},
+	}, --columnsend
+	{"text", text=[[NOTE: This guide is currently in beta.]]},
+
+}) 
+
+
+table.insert(GuideMenu.Featured,{
 	title="Patch 10.2.0 - Guardians of the Dream Overview", group="patch_102",
 {"section", text=[[LEVELING]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch102Leveling",showcaseonly=true},
@@ -35,7 +59,7 @@ table.insert(GuideMenu.Featured,{
 {"section", text=[[EVENTS]]},
         {"banner", image=ZGV.IMAGESDIR.."Patch102Events",showcaseonly=true},
 	{"columns",
-	{"item", text=[[**The Emerald Dream Superbloom**]], guide="Events Guides\\Dragonflight\\The Emerald Dream Superbloom"},
+	{"item", text=[[**The Emerald Dream Superbloom**]], guide="Events Guides\\Dragonflight (60-70)\\The Emerald Dream Superbloom"},
 	}, --columnsend
 
 {"section", text=[[ACHIEVEMENTS]]},
@@ -45,10 +69,6 @@ table.insert(GuideMenu.Featured,{
 	{"guideslist", content=[[Expansion Feature Achievements]],filters={patch="100200",keywords={"Expansion", "Features"}},columns=4},
 
 }) 
-
-
-
-
 
 table.insert(GuideMenu.Featured,{
 	title="Patch 10.1.7 - Fury Incarnate", group="patch_1017",
@@ -95,7 +115,7 @@ table.insert(GuideMenu.Featured,{
 	}, --columnsend
 	{"text", text=[[NOTE: This event spawns in Thaldraszus at the beginning of every hour and lasts for 15 minutes. New scenario stages are still being added.]]},
 
-	{"content", text=[[Correct timeline anomolies in Eon's Fringe]]},
+	{"content", text=[[Correct timeline anomalies in Eon's Fringe]]},
 	{"columns",
 	{"item", text=[[**Eon's Fringe Dailies**]], guide="Daily Guides\\Dragonflight (60-70)\\Eon's Fringe Dailies"},
 	}, --columnsend

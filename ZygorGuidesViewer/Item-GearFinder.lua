@@ -778,8 +778,18 @@ function GearFinder:CreateMainFrame()
 		:SetTexCoord(0,220/256,0,139/256)
 	.__END
 
+	MF.BuildInfo = CHAIN(MF.CenterColumn:CreateFontString())
+		:SetPoint("TOPRIGHT",MF.DungeonImage,"BOTTOMRIGHT",0,-10)
+		:SetFont(FONT,10)
+		:SetText("")
+		:SetWidth(140)
+		:SetJustifyH("CENTER")
+		:Show()
+	.__END
+
+
 	MF.DungeonMessage = CHAIN(MF.CenterColumn:CreateFontString())
-		:SetPoint("TOPLEFT",MF.DungeonImage,"BOTTOMLEFT",0,-10)
+		:SetPoint("TOPLEFT",MF.BuildInfo,"BOTTOMLEFT",10,-10)
 		:SetFont(FONT,10)
 		:SetText("Suggested dungeon:")
 		:SetWidth(120)
@@ -1041,6 +1051,12 @@ function GearFinder:DisplayResults()
 
 		MF.DungeonDesc:SetText(difftext .. "\n\n"..best_dungeon[2].." items found")
 		MF.DungeonDesc:Show()
+	end
+
+	if not ItemScore.ActiveRuleSet then 
+		MF.BuildInfo:SetText("|cffff0000No build selected|r|n|cffffffff(See Options / Item Score)|r")
+	else
+		MF.BuildInfo:SetText("Build: "..ItemScore.ActiveRuleSet.specname)
 	end
 
 end

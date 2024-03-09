@@ -2,6 +2,7 @@
 local E = unpack(ElvUI)
 local L = E.Libs.ACL:NewLocale('ElvUI', 'ruRU')
 
+L["Countdown"] = "Отсчет"
 L["Reset"] = "Сброс"
 L["ELVUI_DESC"] = ("*ElvUI|r |cFFffffffэто аддон для полной замены пользовательского интерфейса World of Warcraft.|r"):gsub('*', E.InfoColor)
 L["UPDATE_REQUEST"] = "Кажется, возникла проблема с установкой. Пожалуйста, переустановите ElvUI."
@@ -175,7 +176,7 @@ L["Interrupted %s's |cff71d5ff|Hspell:%d:0|h[%s]|h|r!"] = "Прерван %s. С
 L["Invalid Target"] = "Неверная цель"
 L["is looking for members"] = "ищет игроков"
 L["It appears one of your AddOns have disabled the AddOn Blizzard_CompactRaidFrames. This can cause errors and other issues. The AddOn will now be re-enabled."] = "Похоже, что один из Ваших аддонов отключил Blizzard_CompactRaidFrames. Это может вызвать ошибки и другие проблемы, мы рекомендуем включить. Включить аддоны Blizzard сейчас?"
-L["Item level: %.2f"] = "Уровень предмета: %.2f"
+L["Item level: %.2f"] = "Ур. предметов: %.2f"
 L["Item Level:"] = "Уровень предмета:"
 L["joined a group"] = "присоединяется к группе"
 L["Key"] = "Клавиша"

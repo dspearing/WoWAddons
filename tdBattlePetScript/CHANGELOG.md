@@ -1,3 +1,22 @@
+## v1.10
+
+### Fixes
+
+- Import dialog no longer breaks with Rematch 5.
+- Import dialog no longer breaks with disabled plugins. If you ever disabled a plugin, please contact us to win a price.
+
+## v1.9.3
+
+### Other
+
+- Compatibility with Rematch 5.1 (in addition to old versions).
+
+## v1.9.2
+
+### Other
+
+- Bumped TOC for patch 10.2.5.
+
 ## v1.9.1
 
 ### Other

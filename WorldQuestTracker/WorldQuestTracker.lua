@@ -123,6 +123,94 @@ function WorldQuestTracker.Debug (message, color)
 	end
 end
 
+WorldQuestTracker.ExtraMapTextures = {}
+
+function WorldQuestTracker.UpdateExtraMapTextures()
+	local mapID = WorldQuestTracker.GetCurrentMapAreaID()
+	for texturePath, textureInfo in pairs (WorldQuestTracker.ExtraMapTextures) do
+		if (textureInfo.MapID == mapID) then
+			textureInfo.Pin:Show()
+		else
+			textureInfo.Pin:Hide()
+		end
+	end
+
+	--alternative way to deal with it:
+	--[=[
+	local map = WorldQuestTrackerDataProvider:GetMap()
+	for pin in map:EnumeratePinsByTemplate("WorldQuestTrackerWorldMapPinTemplate") do
+		if (pin.MapTextureInfo.MapID ~= WorldMapFrame.mapID) then
+			pin.Texture:Hide()
+		else
+			pin.Texture:Show()
+		end
+	end
+	--]=]
+end
+
+---@param mapID number the mapID to show the texture, if the map does not match, the texture won't be shown
+---@param texturePath any
+---@param x number the x position of the texture
+---@param y number the y position of the texture
+---@param width number
+---@param height number
+---@param onClickMapID number the mapID to switch when the texture is clicked
+function WorldQuestTracker.AddExtraMapTexture(mapID, texturePath, x, y, width, height, onClickMapID)
+	local mapTextureInfo = WorldQuestTracker.ExtraMapTextures[texturePath]
+	if (not mapTextureInfo) then
+		width = width * 4
+		height = height * 4
+
+		local pin = WorldQuestTrackerDataProvider:GetMap():AcquirePin("WorldQuestTrackerExtraMapTextureTemplate", "questPin")
+		pin:SetPosition(x, y)
+		pin:SetSize(width, height)
+
+		local texture = pin:CreateTexture(nil, "overlay")
+		texture:SetTexture(texturePath)
+		texture:SetSize(width, height)
+		texture:SetPoint("topleft", pin, "topleft", 0, 0)
+		texture:SetAlpha(0.834)
+		pin.Child = texture
+
+		local textureHighlight = pin:CreateTexture(nil, "overlay")
+		textureHighlight:SetTexture(texturePath)
+		textureHighlight:SetSize(width, height)
+		textureHighlight:SetPoint("topleft", pin, "topleft", 0, 0)
+		textureHighlight:SetAlpha(0.15)
+		textureHighlight:SetVertexColor(1, 0.7, 0)
+		textureHighlight:SetBlendMode("ADD")
+		textureHighlight:Hide()
+
+		pin:SetScript("OnEnter", function()
+			textureHighlight:Show()
+		end)
+
+		pin:SetScript("OnLeave", function()
+			textureHighlight:Hide()
+		end)
+
+		pin:SetScript("OnMouseUp", function()
+			WorldMapFrame:SetMapID(onClickMapID)
+			WorldQuestTracker.UpdateZoneWidgets(true)
+		end)
+
+		mapTextureInfo = {
+			MapID = mapID,
+			Texture = texture,
+			Pin = pin
+		}
+
+		pin.MapTextureInfo = mapTextureInfo
+		WorldQuestTracker.ExtraMapTextures[texturePath] = mapTextureInfo
+
+		--debug
+		--print("WorldQuestTracker.AddExtraMapTexture", texturePath, x, y, width, height)
+		--print(texture, pin, mapTextureInfo)
+		--DetailsFramework:DebugVisibility(texture)
+		--DetailsFramework:DebugVisibility(pin)
+	end
+end
+
 function WorldQuestTracker:OnInit()
 	do
 		local languageCurrentVersion = 1
@@ -265,6 +353,8 @@ function WorldQuestTracker:OnInit()
 				C_Timer.After (.5, WorldQuestTracker.UpdateCurrentStandingZone)
 			end
 		end
+
+		WorldQuestTracker.UpdateExtraMapTextures()
 
 		local mapInfo = WorldQuestTracker.GetMapInfo()
 		local mapFileName = mapInfo and mapInfo.name
@@ -741,33 +831,6 @@ fadeInAnimation:SetScript("OnFinished", function()
 	worldFramePOIs:SetAlpha(1)
 end)
 
---[=[
-	local textureTest = worldFramePOIs:CreateTexture(nil, "overlay")
-	textureTest:SetSize(128, 128)
-	textureTest:SetColorTexture(1, 0, 0)
-	textureTest:SetPoint("center", worldFramePOIs, "center")
---]=]
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
---> zone map widgets
-
---C_Timer.After (2, function()
---	function WorldMap_DoesWorldQuestInfoPassFilters (info, ignoreTypeFilters, ignoreTimeRequirement)
---		print (info, ignoreTypeFilters, ignoreTimeRequirement)
---		return true
---	end
---end)
-
---[=[
-WorldMapScrollFrame:HookScript ("OnMouseWheel", function (self, delta)
-	--> update widget anchors if the map is a world quest zone
-	if (WorldQuestTracker.ZoneHaveWorldQuest()) then
-		WorldQuestTracker.UpdateZoneWidgetAnchors()
-	end
-end)
---]=]
-
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> tutorials
 
@@ -1017,7 +1080,6 @@ function WorldQuestTracker.StopLoadingAnimation()
 	WorldQuestTracker.LoadingAnimation.IsPlaying = false
 end
 
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> slash commands
 
@@ -1041,6 +1103,10 @@ function SlashCmdList.WQTRACKER (msg, editbox)
 		b:SetPoint("center", UIParent, "center", 0, 0)
 
 	elseif (msg == "options") then
+		if (not WorldQuestTracker.SetupStatusbarButton) then
+			WorldQuestTracker:Msg(L["S_SLASH_OPENMAP_FIRST"])
+			return
+		end
 		WorldQuestTracker.OpenOptionsPanel()
 
 	elseif (msg == "test") then

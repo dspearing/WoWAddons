@@ -368,7 +368,7 @@ ZGV.GOALTYPES['dragonrace'] = {
 			s=s..({normal="Normal",advanced="Advanced",reverse="Reverse",challenge="Challenge",revchallenge="Reverse Challenge"})[diff]..": "
 			self.racedata.desc = self.racedata.desc or {}
 			local topmedal=DR:GetRaceMedal(self.zone,self.race,diff)
-			s=s..(topmedal>0 and MedalTextures[1][topmedal] or MedalTextures[2][1]).."  "
+			s=s..(topmedal>0 and MedalTextures[1][topmedal] or MedalTextures[2][2]).."  "
 		until true end
 		return s
 	end,

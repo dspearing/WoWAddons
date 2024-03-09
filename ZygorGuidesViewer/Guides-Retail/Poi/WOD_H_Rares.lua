@@ -5,7 +5,7 @@ if ZGV:DoMutex("PoiRareWOD") then return end
 ZGV.Poi.Sets.PoiRareWOD={
 {
 rare=[[Yaga the Scarred]],
-level=92,
+level=40,
 spot="Frostfire Ridge/0 40.6,27.6",
 currency="GR",
 item=111477,
@@ -18,7 +18,7 @@ kill Yaga the Scarred##79145 |q 34559 |future |goto Frostfire Ridge/0 40.6,27.6
 },
 {
 rare=[[Coldstomp the Griever]],
-level=91,
+level=40,
 spot="Frostfire Ridge 25.40,55.00",
 currency="GR",
 item=112066,
@@ -31,7 +31,7 @@ kill Coldstomp the Griever##77513 |q 34129 |future |goto Frostfire Ridge 25.40,5
 },
 {
 rare=[[The Beater]],
-level=90,
+level=40,
 spot="Frostfire Ridge 26.80,31.60",
 currency="GR",
 item=111475,
@@ -44,7 +44,7 @@ kill The Beater##77527 |q 34133 |future |goto Frostfire Ridge 26.80,31.60
 },
 {
 rare=[[Breathless]],
-level=90,
+level=40,
 spot="Frostfire Ridge 27.40,50.00",
 currency="GR",
 item=111476,
@@ -57,7 +57,7 @@ kill Breathless##78867 |q 34497 |future |goto Frostfire Ridge 27.40,50.00
 },
 {
 rare=[[Pale Fishmonger]],
-level=92,
+level=40,
 spot="Frostfire Ridge 28.29,66.63",
 currency="GR",
 item=109142,
@@ -72,7 +72,7 @@ kill Pale Fishmonger##78606 |q 34470 |future |goto Frostfire Ridge 28.29,66.63
 },
 {
 rare=[[Canyon Icemother]],
-level=91,
+level=40,
 spot="Frostfire Ridge 34.00,23.20",
 currency="GR",
 item=101436,
@@ -85,7 +85,7 @@ kill Canyon Icemother##71721 |q 32941 |future |goto Frostfire Ridge 34.00,23.20
 },
 {
 rare=[[Primalist Mur'og]],
-level=90,
+level=40,
 spot="Frostfire Ridge 36.80,34.00",
 currency="GR",
 item=111576,
@@ -100,7 +100,7 @@ kill Primalist Mur'og##76918 |q 33938 |future |goto Frostfire Ridge 36.80,34.00
 },
 {
 rare=[[Gorivax]],
-level=101,
+level=40,
 spot="Frostfire Ridge 38.00,14.00",
 currency="AC",
 item=120945,
@@ -114,7 +114,7 @@ kill Gorivax##82536 |q 37388 |future |goto Frostfire Ridge 38.00,14.00
 },
 {
 rare=[[Son of Goramal]],
-level=101,
+level=40,
 spot="Frostfire Ridge 38.20,16.00",
 currency="AC",
 item=120945,
@@ -127,7 +127,7 @@ kill Son of Goramal##82620 |q 37383 |future |goto Frostfire Ridge 38.20,16.00
 },
 {
 rare=[[Grutush the Pillager]],
-level=90,
+level=40,
 spot="Frostfire Ridge 38.60,63.00",
 currency="GR",
 item=112077,
@@ -141,7 +141,7 @@ kill Grutush the Pillager##80312 |q 34865 |future |goto Frostfire Ridge 38.60,63
 },
 {
 rare=[[Cindermaw]],
-level=90,
+level=40,
 spot="Frostfire Ridge 40.40,47.00",
 currency="GR",
 item=111490,
@@ -156,7 +156,7 @@ kill Cindermaw##72294 |q 33014 |future |goto Frostfire Ridge/0 41.7,46.3
 },
 {
 rare=[[Ug'lok the Frozen]],
-level=100,
+level=40,
 spot="Frostfire Ridge 40.60,12.40",
 currency="AC",
 item=120945,
@@ -170,7 +170,7 @@ kill Ug'lok the Frozen##79104 |q 34522 |future |goto Frostfire Ridge 40.60,12.40
 },
 {
 rare=[[Chillfang]],
-level=90,
+level=40,
 spot="Frostfire Ridge 41.20,68.20",
 currency="GR",
 item=111953,
@@ -185,7 +185,7 @@ kill Chillfang##80242 |q 34843 |future |goto Frostfire Ridge 41.20,68.20
 },
 {
 rare=[[Moltnoma]],
-level=101,
+level=40,
 spot="Frostfire Ridge 43.00,21.00",
 currency="AC",
 item=120945,
@@ -201,7 +201,7 @@ kill Moltnoma##82614 |q 37387 |future |goto Frostfire Ridge 43.00,21.00
 },
 {
 rare=[[Tor'goroth]],
-level=101,
+level=40,
 spot="Frostfire Ridge 43.60,09.40",
 currency="AC",
 item=120945,
@@ -215,7 +215,7 @@ kill Tor'goroth##82618 |q 37384 |future |goto Frostfire Ridge 43.60,09.40
 },
 {
 rare=[[Slogtusk the Corpse-Eater]],
-level=101,
+level=40,
 spot="Frostfire Ridge 45.00,15.00",
 currency="AC",
 item=120945,
@@ -228,7 +228,7 @@ kill Slogtusk the Corpse-Eater##82617 |q 37385 |future |goto Frostfire Ridge 45.
 },
 {
 rare=[[Gurun]],
-level=90,
+level=40,
 spot="Frostfire Ridge 47.00,55.20",
 currency="GR",
 item=111955,
@@ -243,7 +243,7 @@ kill Gurun##80235 |q 34839 |future |goto Frostfire Ridge 47.00,55.20
 },
 {
 rare=[[Jabberjaw]],
-level=101,
+level=40,
 spot="Frostfire Ridge 48.20,23.40",
 currency="AC",
 item=120945,
@@ -256,7 +256,7 @@ kill Jabberjaw##82616 |q 37386 |future |goto Frostfire Ridge 48.20,23.40
 },
 {
 rare=[[Gruuk]],
-level=90,
+level=40,
 spot="Frostfire Ridge 50.30,52.60",
 currency="GR",
 item=111948,
@@ -269,7 +269,7 @@ kill Gruuk##80190 |q 34825 |future |goto Frostfire Ridge 50.30,52.60
 },
 {
 rare=[[Giant-Slayer Kul]],
-level=90,
+level=40,
 spot="Frostfire Ridge 54.60,22.20",
 currency="GR",
 item=111530,
@@ -282,7 +282,7 @@ kill Giant-Slayer Kul##71665 |q 32918 |future |goto Frostfire Ridge 54.60,22.20
 },
 {
 rare=[[Coldtusk]],
-level=90,
+level=40,
 spot="Frostfire Ridge 54.60,69.40",
 currency="GR",
 item=111484,
@@ -295,7 +295,7 @@ kill Coldtusk##76914 |q 34131 |future |goto Frostfire Ridge 54.60,69.40
 },
 {
 rare=[[Huntmaster Kuang]],
-level=92,
+level=40,
 spot="Frostfire Ridge 58.60,34.20",
 currency="GR",
 quest=34130,
@@ -313,7 +313,7 @@ kill Huntmaster Kuang##78151 |q 34130 |future |goto Frostfire Ridge 58.60,34.20
 },
 {
 rare=[[Jehil the Climber]],
-level=92,
+level=40,
 spot="Frostfire Ridge 61.60,26.40",
 item=112078,
 quest=34708,
@@ -328,7 +328,7 @@ kill Jehil the Climber##79678 |q 34708 |future |goto Frostfire Ridge 61.60,26.40
 },
 {
 rare=[[Broodmother Reeg'ak]],
-level=92,
+level=40,
 spot="Frostfire Ridge 66.40,31.40",
 currency="GR",
 item=111533,
@@ -343,7 +343,7 @@ kill Broodmother Reeg'ak##74613 |q 33843 |future |goto Frostfire Ridge 66.40,31.
 },
 {
 rare=[[Gibblette the Cowardly]],
-level=101,
+level=40,
 spot="Frostfire Ridge 66.60,25.40",
 currency="AC",
 item=120945,
@@ -360,7 +360,7 @@ kill Gibblette the Cowardly##87352 |q 37380 |future |goto Frostfire Ridge 66.60,
 },
 {
 rare=[[Cyclonic Fury]],
-level=93,
+level=40,
 spot="Frostfire Ridge 67.40,78.20",
 currency="GR",
 item=112086,
@@ -373,7 +373,7 @@ kill Cyclonic Fury##78621 |q 34477 |future |goto Frostfire Ridge 67.40,78.20
 },
 {
 rare=[[Hoarfrost]],
-level=101,
+level=40,
 spot="Frostfire Ridge 68.80,19.40",
 currency="AC",
 item=120945,
@@ -387,7 +387,7 @@ kill Hoarfrost##87348 |q 37382 |future |goto Frostfire Ridge/0 68.1,19.9
 },
 {
 rare=[[Gorg'ak the Lava Guzzler]],
-level=100,
+level=40,
 spot="Frostfire Ridge 70.00,36.00",
 currency="AC",
 item=120945,
@@ -400,7 +400,7 @@ kill Gorg'ak the Lava Guzzler##72364 |q 33512 |future |goto Frostfire Ridge 71.0
 },
 {
 rare=[[Vrok the Ancient]],
-level=103,
+level=40,
 spot="Frostfire Ridge 70.60,39.00",
 currency="AC",
 item=120945,
@@ -416,7 +416,7 @@ kill Vrok the Ancient##87356 |q 37379 |future |goto Frostfire Ridge 70.60,39.00
 },
 {
 rare=[[Firefury Giant]],
-level=90,
+level=40,
 spot="Frostfire Ridge 71.40,46.80",
 currency="GR",
 item=107661,
@@ -433,7 +433,7 @@ kill Firefury Giant##74971 |q 33504 |future |goto Frostfire Ridge 71.40,46.80
 },
 {
 rare=[[Mother of Goren]],
-level=101,
+level=40,
 spot="Frostfire Ridge 72.20,22.80",
 currency="AC",
 item=120945,
@@ -447,7 +447,7 @@ kill Mother of Goren##87351 |q 37381 |future |goto Frostfire Ridge 72.20,22.80
 },
 {
 rare=[[The Bone Crawler]],
-level=101,
+level=40,
 spot="Frostfire Ridge 72.20,33.00",
 currency="AC",
 item=120945,
@@ -460,7 +460,7 @@ kill The Bone Crawler##78265 |q 34361 |future |goto Frostfire Ridge 72.20,33.00
 },
 {
 rare=[[Valkor]],
-level=101,
+level=40,
 spot="Frostfire Ridge 72.40,24.20",
 currency="AC",
 item=120945,
@@ -473,7 +473,7 @@ kill Valkor##87357 |q 37378 |future |goto Frostfire Ridge 72.40,24.20
 },
 {
 rare=[[Scout Goreseeker]],
-level=93,
+level=40,
 spot="Frostfire Ridge 76.40,63.40",
 currency="GR",
 item=112094,
@@ -487,7 +487,7 @@ kill Scout Goreseeker##77526 |q 34132 |future |goto Frostfire Ridge/0 76.6,63.6
 },
 {
 rare=[[Ogom the Mangler]],
-level=100,
+level=40,
 spot="Frostfire Ridge 83.60,47.20",
 currency="AC",
 item=120945,
@@ -500,7 +500,7 @@ kill Ogom the Mangler##87622 |q 37402 |future |goto Frostfire Ridge 83.60,47.20
 },
 {
 rare=[[Earthshaker Holar]],
-level=100,
+level=40,
 spot="Frostfire Ridge 84.60,46.80",
 currency="AC",
 item=120945,
@@ -513,7 +513,7 @@ kill Earthshaker Holar##84376 |q 37403 |future |goto Frostfire Ridge 84.60,46.80
 },
 {
 rare=[[Ragore Driftstalker]],
-level=100,
+level=40,
 spot="Frostfire Ridge 86.60,48.80",
 currency="AC",
 item=120945,
@@ -526,7 +526,7 @@ kill Ragore Driftstalker##84392 |q 37401 |future |goto Frostfire Ridge 86.60,48.
 },
 {
 rare=[[Kaga the Ironbender]],
-level=100,
+level=40,
 spot="Frostfire Ridge 86.80,45.00",
 currency="AC",
 item=120945,
@@ -540,7 +540,7 @@ kill Kaga the Ironbender##84374 |q 37404 |future |goto Frostfire Ridge 86.80,45.
 },
 {
 rare=[[Ak'ox the Slaughterer]],
-level=100,
+level=40,
 spot="Frostfire Ridge 88.60,57.40",
 currency="AC",
 item=120945,
@@ -554,7 +554,7 @@ kill Ak'ox the Slaughterer##84378 |q 37525 |future |goto Frostfire Ridge 88.60,5
 },
 {
 rare=[[Gnarljaw]],
-level=101,
+level=40,
 spot="Gorgrond/21 54.0,31.0",
 currency="AC",
 item=120945,
@@ -571,7 +571,7 @@ kill Gnarljaw##78269 |q 37413 |future |goto Gorgrond/21 54.0,31.0
 },
 {
 rare=[[King Slime]],
-level=100,
+level=40,
 spot="Gorgrond/21 42.0,75.1",
 currency="AC",
 item=120945,
@@ -588,7 +588,7 @@ kill King Slime##78260 |q 37412 |future |goto Gorgrond/21 42.0,75.1
 },
 {
 rare=[[Roardan the Sky Terror (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond/0 53.0,63.1",
 currency="|poicurrency",
 item=113459,
@@ -603,7 +603,7 @@ accept Trophy of Glory: Roardan the Sky Terror##35818 |use Ebony Feather##113459
 },
 {
 rare=[[Riptar]],
-level=92,
+level=40,
 spot="Gorgrond 37.60,81.40",
 currency="GR",
 item=118231,
@@ -617,7 +617,7 @@ kill Riptar##85970 |q 36600 |future |goto Gorgrond 37.60,81.40
 },
 {
 rare=[[Stomper Kreego]],
-level=92,
+level=40,
 spot="Gorgrond 38.20,66.20",
 currency="GR",
 item=118224,
@@ -630,7 +630,7 @@ kill Stomper Kreego##79629 |q 35910 |future |goto Gorgrond 38.20,66.20
 },
 {
 rare=[[Berthora]],
-level=92,
+level=40,
 spot="Gorgrond 39.40,74.60",
 currency="GR",
 item=118232,
@@ -643,7 +643,7 @@ kill Berthora##85907 |q 36597 |future |goto Gorgrond 39.40,74.60
 },
 {
 rare=[[Bashiok]],
-level=92,
+level=40,
 spot="Gorgrond 40.00,79.00",
 currency="GR",
 item=118222,
@@ -657,7 +657,7 @@ kill Bashiok##82085 |q 35335 |future |goto Gorgrond 40.00,79.00
 },
 {
 rare=[[Sulfurious]],
-level=94,
+level=40,
 spot="Gorgrond 40.20,59.60",
 currency="GR",
 item=114227,
@@ -670,7 +670,7 @@ kill Sulfurious##80725 |q 36394 |future |goto Gorgrond/0 39.8,60.6
 },
 {
 rare=[[Dessicus of the Dead Pools (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 40.50,51.00",
 currency="|poicurrency",
 quest=35810,
@@ -684,7 +684,7 @@ accept Trophy of Glory: Dessicus##35810 |use Globe of Dead Water##113447 |goto G
 },
 {
 rare=[[Gelgor of the Blue Flame]],
-level=93,
+level=40,
 spot="Gorgrond 41.80,45.40",
 currency="GR",
 item=118230,
@@ -700,7 +700,7 @@ kill Gelgor of the Blue Flame##81038 |q 36391 |future |goto Gorgrond/19 32.5,38.
 },
 {
 rare=[[Crater Lord Igneous (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 42.80,59.20",
 currency="|poicurrency",
 quest=35811,
@@ -714,7 +714,7 @@ accept Trophy of Glory: Crater Lord Igneous##35811 |use Chunk of Crater Lord##11
 },
 {
 rare=[[Sunclaw]],
-level=93,
+level=40,
 spot="Gorgrond 44.60,92.20",
 currency="GR",
 item=118223,
@@ -728,7 +728,7 @@ kill Sunclaw##86137 |q 36656 |future |goto Gorgrond 44.60,92.20
 {
 currency="AC",
 rare=[[Blademaster Ro'gor]],
-level=103,
+level=40,
 spot="Gorgrond 46.00,33.60",
 access="Completionist",
 item=120945,
@@ -741,7 +741,7 @@ kill Blademaster Ro'gor##86579 |q 37368 |future |goto Gorgrond 46.00,33.60
 },
 {
 rare=[[Charl Doomwing (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 46.00,46.80",
 currency="|poicurrency",
 quest=35815,
@@ -757,7 +757,7 @@ accept Trophy of Glory: Charl Doomwing##35815 |use Fang of the Doomwing##113456 
 {
 currency="AC",
 rare=[[Horgg]],
-level=101,
+level=40,
 spot="Gorgrond 46.1,27.2",
 access="Completionist",
 item=120945,
@@ -770,7 +770,7 @@ kill Horgg##86577 |q 37365 |future |goto Gorgrond/0 46.1,27.2
 },
 {
 rare=[[Glut]],
-level=93,
+level=40,
 spot="Gorgrond 46.20,50.80",
 currency="GR",
 item=118229,
@@ -784,7 +784,7 @@ kill Glut##80868 |q 36204 |future |goto Gorgrond 46.20,50.80
 {
 currency="AC",
 rare=[[Morgo Kain]],
-level=103,
+level=40,
 spot="Gorgrond 46.3,23.6",
 access="Completionist",
 item=120945,
@@ -797,7 +797,7 @@ kill Morgo Kain##86582 |q 37364 |future |goto Gorgrond 46.3,23.6
 },
 {
 rare=[[Greldrok the Cunning]],
-level=93,
+level=40,
 spot="Gorgrond 46.80,43.20",
 currency="GR",
 item=118210,
@@ -811,7 +811,7 @@ kill Greldrok the Cunning##84431 |q 36186 |future |goto Gorgrond 46.80,43.20
 {
 currency="AC",
 rare=[[Inventor Blammo]],
-level=101,
+level=40,
 spot="Gorgrond 47.60,30.60",
 access="Completionist",
 item=120945,
@@ -824,7 +824,7 @@ kill Inventor Blammo##86574 |q 37367 |future |goto Gorgrond 47.60,30.60
 },
 {
 rare=[[Rolkor]],
-level=93,
+level=40,
 spot="Gorgrond 47.80,41.40",
 currency="GR",
 item=118211,
@@ -837,7 +837,7 @@ kill Rolkor##85264 |q 36393 |future |goto Gorgrond 47.80,41.40
 {
 currency="AC",
 rare=[[Defector Dazgo]],
-level=103,
+level=40,
 spot="Gorgrond 48.20,21.00",
 access="Completionist",
 item=120945,
@@ -851,7 +851,7 @@ kill Defector Dazgo##86566 |q 37362 |future |goto Gorgrond 48.20,21.00
 {
 currency="AC",
 rare=[[Maniacal Madgard]],
-level=103,
+level=40,
 spot="Gorgrond 49.00,33.80",
 access="Completionist",
 item=120945,
@@ -865,7 +865,7 @@ kill Maniacal Madgard##86562 |q 37363 |future |goto Gorgrond 49.00,33.80
 {
 currency="AC",
 rare=[[Durp the Hated]],
-level=103,
+level=40,
 spot="Gorgrond 50.00,23.80",
 access="Completionist",
 item=120945,
@@ -878,7 +878,7 @@ kill Durp the Hated##86571 |q 37366 |future |goto Gorgrond 50.00,23.80
 },
 {
 rare=[[Mandrakor]],
-level=93,
+level=40,
 spot="Gorgrond 50.60,53.20",
 currency="GR",
 item=118709,
@@ -891,7 +891,7 @@ kill Mandrakor##84406 |q 36178 |future |goto Gorgrond 50.60,53.20
 },
 {
 rare=[[Erosian the Violent (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 51.80,41.60",
 currency="|poicurrency",
 quest=35807,
@@ -905,7 +905,7 @@ accept Trophy of Glory: Erosian##35807 |use Crystalized Steam##113444 |goto Gorg
 },
 {
 rare=[[Khargax the Devourer (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 52.40,65.80",
 currency="|poicurrency",
 quest=35819,
@@ -929,7 +929,7 @@ turnin Trophy of Glory: Khargax the Devourer##35819 |goto Gorgrond/0 46.00,70.20
 },
 {
 rare=[[Hive Queen Skrikka]],
-level=92,
+level=40,
 spot="Gorgrond 52.5,70.1",
 currency="GR",
 item=118209,
@@ -942,7 +942,7 @@ kill Hive Queen Skrikka##83522 |q 35908 |future |goto Gorgrond/0 52.5,70.1
 },
 {
 rare=[[Char the Burning]],
-level=94,
+level=40,
 spot="Gorgrond 53.40,44.60",
 currency="GR",
 item=118212,
@@ -955,7 +955,7 @@ kill Char the Burning##82311 |q 35503 |future |goto Gorgrond 53.40,44.60
 },
 {
 rare=[[Mother Araneae]],
-level=93,
+level=40,
 spot="Gorgrond 53.40,78.20",
 currency="GR",
 item=118208,
@@ -968,7 +968,7 @@ kill Mother Araneae##76473 |q 34726 |future |goto Gorgrond 53.40,78.20
 },
 {
 rare=[[Stompalupagus]],
-level=92,
+level=40,
 spot="Gorgrond 54.20,72.40",
 currency="GR",
 item=118228,
@@ -981,7 +981,7 @@ kill Stompalupagus##86520 |q 36837 |future |goto Gorgrond/0 54.1,72.5
 },
 {
 rare=[[Hunter Bal'ra]],
-level=100,
+level=40,
 spot="Gorgrond 55.00,46.20",
 currency="AC",
 item=120945,
@@ -994,7 +994,7 @@ kill Hunter Bal'ra##88672 |q 37377 |future |goto Gorgrond 55.00,46.20
 },
 {
 rare=[[Fossilwood the Petrified]],
-level=92,
+level=40,
 spot="Gorgrond 57.40,68.60",
 currency="GR",
 item=118221,
@@ -1007,7 +1007,7 @@ kill Fossilwood the Petrified##85250 |q 36387 |future |goto Gorgrond 57.40,68.60
 },
 {
 rare=[[Firestarter Grash]],
-level=100,
+level=40,
 spot="Gorgrond 58.00,36.40",
 currency="AC",
 item=120945,
@@ -1021,7 +1021,7 @@ He can also be found _here_ |goto Gorgrond 72.8,35.8
 },
 {
 rare=[[Fungal Praetorian (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 58.00,63.60",
 currency="|poicurrency",
 quest=35814,
@@ -1035,7 +1035,7 @@ accept Trophy of Glory: Fungal Praetorian##35814 |use Precious Mushroom##113454 
 },
 {
 rare=[[Alkali]],
-level=100,
+level=40,
 spot="Gorgrond 58.60,41.20",
 currency="AC",
 item=120945,
@@ -1050,7 +1050,7 @@ Or _here_ |goto Gorgrond 71.3,40.4
 },
 {
 rare=[[Swift Onyx Flayer]],
-level=100,
+level=40,
 spot="Gorgrond 59.6,32.0",
 currency="AC",
 item=120945,
@@ -1065,7 +1065,7 @@ kill Swift Onyx Flayer##88582 |q 37374 |future |goto Gorgrond 59.6,32.0
 },
 {
 rare=[[Grove Warden Yal]],
-level=100,
+level=40,
 spot="Gorgrond 59.7,42.9",
 currency="AC",
 item=120945,
@@ -1078,7 +1078,7 @@ kill Grove Warden Yal##88583 |q 37375 |future |goto Gorgrond 59.7,42.9
 },
 {
 rare=[[Biolante (Horde)]],
-level=93,
+level=40,
 spot="Gorgrond 60.80,54.00",
 currency="|poicurrency",
 quest=36503,
@@ -1093,7 +1093,7 @@ accept Trophy of Glory: Biolante##36503 |use Writhing Green Tendril##116160 |got
 },
 {
 rare=[[Mogamago]],
-level=100,
+level=40,
 spot="Gorgrond 61.80,39.30",
 currency="AC",
 item=120945,
@@ -1107,7 +1107,7 @@ kill Mogamago##88586 |q 37376 |future |goto Gorgrond 61.80,39.30
 {
 currency="AC",
 rare=[[Venolasix]],
-level=100,
+level=40,
 spot="Gorgrond 63.4,30.7",
 access="Completionist",
 item=120945,
@@ -1121,7 +1121,7 @@ kill Venolasix##86266 |q 37372 |future |goto Gorgrond 63.4,30.7
 },
 {
 rare=[[Sylldross]],
-level=93,
+level=40,
 spot="Gorgrond 64.00,61.80",
 currency="GR",
 item=118213,
@@ -1136,7 +1136,7 @@ kill Sylldross##86410 |q 36794 |future |goto Gorgrond 64.00,61.80
 {
 currency="GR",
 rare=[[Basten + Nultra + Valstil]],
-level=103,
+level=40,
 spot="Gorgrond 69.20,44.60",
 access="Completionist",
 item=120945,
@@ -1151,7 +1151,7 @@ kill Valstil##86259 |q 37369 |future |goto Gorgrond 69.20,44.60
 },
 {
 rare=[[Depthroot]],
-level=100,
+level=40,
 spot="Gorgrond 72.6,40.9",
 currency="AC",
 item=120945,
@@ -1164,7 +1164,7 @@ kill Depthroot##82058 |q 37370 |future |goto Gorgrond 72.6,40.9
 },
 {
 rare=[[Typhon]],
-level=103,
+level=40,
 spot="Gorgrond 76.00,42.00",
 access="Completionist",
 currency="GR",
@@ -1178,7 +1178,7 @@ kill Typhon##80371 |q 37405 |future |goto Gorgrond 76.00,42.00
 {
 currency="GR",
 rare=[[Mu'gra]],
-level=103,
+level=40,
 spot="Nagrand D 34.00,51.00",
 access="Completionist",
 item=118659,
@@ -1191,7 +1191,7 @@ kill Mu'gra##87666 |q 37224 |future |goto Nagrand D 34.00,51.00
 },
 {
 rare=[[Captain Ironbeard]],
-level=99,
+level=40,
 spot="Nagrand D 34.3,76.9",
 currency="GR",
 item=116809,
@@ -1207,7 +1207,7 @@ kill Captain Ironbeard##79725 |q 34727 |future |goto Nagrand D 34.3,76.9
 {
 currency="GR",
 rare=[[Vileclaw]],
-level=103,
+level=40,
 spot="Nagrand D 37.00,38.00",
 access="Completionist",
 item=120172,
@@ -1221,7 +1221,7 @@ kill Vileclaw##88951 |q 37520 |future |goto Nagrand D 37.00,38.00
 {
 currency="AC",
 rare=[[Pit Slayer]],
-level=101,
+level=40,
 spot="Nagrand D 38.00,19.60",
 access="Completionist",
 item=120945,
@@ -1239,7 +1239,7 @@ kill Pit Slayer##87846 |q 37397 |future |goto Nagrand D/0 39.8,14.5
 },
 {
 rare=[[Durg Spinecrusher]],
-level=100,
+level=40,
 spot="Nagrand D 38.60,22.40",
 currency="AC",
 item=120945,
@@ -1252,7 +1252,7 @@ kill Durg Spinecrusher##87788 |q 37395 |future |goto Nagrand D 38.60,22.40
 },
 {
 rare=[[Bonebreaker]],
-level=100,
+level=40,
 spot="Nagrand D 40.00,16.00",
 currency="AC",
 item=120945,
@@ -1267,7 +1267,7 @@ kill Bonebreaker##87837 |q 37396 |future |goto Nagrand D 40.00,16.00
 {
 currency="GR",
 rare=[[Xelganak]],
-level=103,
+level=40,
 spot="Nagrand D 41.00,44.00",
 access="Completionist",
 item=118661,
@@ -1281,7 +1281,7 @@ kill Xelganak##86835 |q 37226 |future |goto Nagrand D 41.00,44.00
 {
 currency="AC",
 rare=[[Gortag Steelgrip]],
-level=100,
+level=40,
 spot="Nagrand D 42.00,36.80",
 access="Completionist",
 item=120945,
@@ -1298,7 +1298,7 @@ kill Gortag Steelgrip##87344 |q 37472 |future |goto Nagrand D/0 42.4,36.5
 },
 {
 rare=[[Gaz'orda]],
-level=99,
+level=40,
 spot="Nagrand D 42.20,78.60",
 currency="GR",
 item=116798,
@@ -1311,7 +1311,7 @@ kill Gaz'orda##80122 |q 34725 |future |goto Nagrand D/0 43.8,77.7
 },
 {
 rare=[[Ophiis]],
-level=99,
+level=40,
 spot="Nagrand D 42.80,49.20",
 currency="GR",
 item=116765,
@@ -1325,7 +1325,7 @@ kill Ophiis##83409 |q 35875 |future |goto Nagrand D 42.80,49.20
 },
 {
 rare=[[Brutag Grimblade]],
-level=100,
+level=40,
 spot="Nagrand D 43.00,36.40",
 currency="AC",
 item=120945,
@@ -1338,7 +1338,7 @@ kill Brutag Grimblade##87234 |q 37400 |future |goto Nagrand D 43.00,36.40
 },
 {
 rare=[[Krahl Deadeye]],
-level=100,
+level=40,
 spot="Nagrand D 43.80,34.40",
 currency="AC",
 item=120945,
@@ -1355,7 +1355,7 @@ kill Gortag Steelgrip##87344
 },
 {
 rare=[[Mr. Pinchy Sr.]],
-level=100,
+level=40,
 spot="Nagrand D 45.80,15.20",
 currency="GR",
 item=118690,
@@ -1369,7 +1369,7 @@ kill Mr. Pinchy Sr.##84435 |q 36229 |future |goto Nagrand D 45.80,15.20
 },
 {
 rare=[[Karosh Blackwind]],
-level=100,
+level=40,
 spot="Nagrand D 45.80,34.80",
 currency="AC",
 item=120945,
@@ -1382,7 +1382,7 @@ kill Karosh Blackwind##86959 |q 37399 |future |goto Nagrand D 45.80,34.80
 },
 {
 rare=[[Netherspawn]],
-level=99,
+level=40,
 spot="Nagrand D 47.60,70.80",
 currency="GR",
 item=116815,
@@ -1396,7 +1396,7 @@ kill Netherspawn##83401 |q 35865 |future |goto Nagrand D 47.60,70.80
 {
 currency="GR",
 rare=[[Gagrog the Brutal]],
-level=103,
+level=40,
 spot="Nagrand D 48.20,22.20",
 access="Completionist",
 item=118658,
@@ -1411,7 +1411,7 @@ kill Gagrog the Brutal##86771 |q 37223 |future |goto Nagrand D 48.20,22.20
 {
 currency="GR",
 rare=[[Aogexon]],
-level=103,
+level=40,
 spot="Nagrand D 51.00,16.00",
 access="Completionist",
 item=118654,
@@ -1426,7 +1426,7 @@ kill Aogexon##86774 |q 37210 |future |goto Nagrand D 51.00,16.00
 {
 currency="AC",
 rare=[[Lernaea]],
-level=103,
+level=40,
 spot="Nagrand D 52.00,90.00",
 access="Completionist",
 item=120945,
@@ -1439,7 +1439,7 @@ kill Lernaea##80370 |q 37408 |future |goto Nagrand D 52.00,90.00
 },
 {
 rare=[[Gar'lua]],
-level=99,
+level=40,
 spot="Nagrand D 52.20,55.80",
 currency="GR",
 item=118246,
@@ -1452,7 +1452,7 @@ kill Gar'lua##82764 |q 35715 |future |goto Nagrand D 52.20,55.80
 },
 {
 rare=[[Scout Pokhar]],
-level=98,
+level=40,
 spot="Nagrand D 54.80,61.20",
 currency="GR",
 item=116797,
@@ -1467,7 +1467,7 @@ kill Scout Pokhar##83634 |q 35931 |future |goto Nagrand D 54.80,61.20
 },
 {
 rare=[[Ru'klaa]],
-level=99,
+level=40,
 spot="Nagrand D 58.00,84.00",
 currency="GR",
 item=118688,
@@ -1481,7 +1481,7 @@ kill Ru'klaa##83526 |q 35900 |future |goto Nagrand D 58.00,84.00
 },
 {
 rare=[[Pit Beast]],
-level=100,
+level=40,
 spot="Nagrand D 58.1,18.6",
 currency="AC",
 item=120945,
@@ -1495,7 +1495,7 @@ kill Pit Beast##88208 |q 37637 |future |goto Nagrand D 58.1,18.6
 {
 currency="AC",
 rare=[[Krud the Eviscerator]],
-level=100,
+level=40,
 spot="Nagrand D 58.20,12.00",
 access="Completionist",
 item=120945,
@@ -1510,7 +1510,7 @@ kill Krud the Eviscerator##88210 |q 37398 |future |goto Nagrand D/0 58.2,11.7
 {
 currency="GR",
 rare=[[Thek'talon]],
-level=100,
+level=40,
 spot="Nagrand D 58.40,35.80",
 access="Completionist",
 item=118660,
@@ -1524,7 +1524,7 @@ kill Thek'talon##86750 |q 37225 |future |goto Nagrand D 58.40,35.80
 {
 currency="GR",
 rare=[[Direhoof]],
-level=103,
+level=40,
 spot="Nagrand D 60.00,38.00",
 access="Completionist",
 item=118657,
@@ -1537,7 +1537,7 @@ kill Direhoof##86729 |q 37222 |future |goto Nagrand D/0 60.2,38.7
 },
 {
 rare=[[Sean Whitesea]],
-level=99,
+level=40,
 spot="Nagrand D 60.93,47.75",
 currency="GR",
 item=116834,
@@ -1552,7 +1552,7 @@ kill Sean Whitesea##83542 |q 35912 |future |goto Nagrand D 60.93,47.75
 },
 {
 rare=[[Outrider Duretha]],
-level=98,
+level=40,
 spot="Nagrand D 61.80,69.00",
 currency="GR",
 item=116800,
@@ -1566,7 +1566,7 @@ kill Outrider Duretha##83680 |q 35943 |future |goto Nagrand D 61.80,69.00
 {
 currency="GR",
 rare=[[Bergruu]],
-level=103,
+level=40,
 spot="Nagrand D 62.60,16.80",
 access="Completionist",
 item=118655,
@@ -1584,7 +1584,7 @@ kill Bergruu##86732 |q 37211 |future
 {
 currency="GR",
 rare=[[Dekorhan]],
-level=103,
+level=40,
 spot="Nagrand D 64.20,30.00",
 access="Completionist",
 item=118656,
@@ -1597,7 +1597,7 @@ kill Dekorhan##86743 |q 37221 |future |goto Nagrand D 64.20,30.00
 },
 {
 rare=[[Tura'aka]],
-level=99,
+level=40,
 spot="Nagrand D 65.00,39.00",
 currency="GR",
 item=116814,
@@ -1609,7 +1609,7 @@ kill Tura'aka##83591 |q 35920 |future |goto Nagrand D 65.00,39.00
 },
 {
 rare=[[Gnarlhoof the Rabid]],
-level=98,
+level=40,
 spot="Nagrand D 66.60,56.60",
 currency="GR",
 item=116824,
@@ -1622,7 +1622,7 @@ kill Gnarlhoof the Rabid##82778 |q 35717 |future |goto Nagrand D 66.60,56.60
 },
 {
 rare=[[Greatfeather]],
-level=98,
+level=40,
 spot="Nagrand D 66.80,51.20",
 currency="GR",
 item=116795,
@@ -1635,7 +1635,7 @@ kill Greatfeather##82758 |q 35714 |future |goto Nagrand D 66.80,51.20
 },
 {
 rare=[[Flinthide]],
-level=99,
+level=40,
 spot="Nagrand D 69.8,42.0",
 currency="GR",
 item=116807,
@@ -1648,7 +1648,7 @@ kill Flinthide##83483 |q 35893 |future |goto Nagrand D 69.8,42.0
 },
 {
 rare=[[Windcaller Korast]],
-level=99,
+level=40,
 spot="Nagrand D 70.60,29.40",
 currency="GR",
 item=116808,
@@ -1663,7 +1663,7 @@ kill Windcaller Korast##83428 |q 35877 |future |goto Nagrand D 70.60,29.40
 },
 {
 rare=[[Redclaw the Feral]],
-level=98,
+level=40,
 spot="Nagrand D 73.60,57.80",
 currency="GR",
 item=118243,
@@ -1677,7 +1677,7 @@ kill Redclaw the Feral##82755 |q 35712 |future |goto Nagrand D 73.60,57.80
 },
 {
 rare=[[Fangler]],
-level=98,
+level=40,
 spot="Nagrand D 74.80,11.80",
 currency="GR",
 item=116836,
@@ -1692,7 +1692,7 @@ kill Fangler##82975 |q 35836 |future |goto Nagrand D 74.80,11.80
 },
 {
 rare=[[Soulfang]],
-level=98,
+level=40,
 spot="Nagrand D 75.60,65.00",
 currency="GR",
 item=116806,
@@ -1710,7 +1710,7 @@ kill Soulfang##80057 |q 36128 |future |goto Nagrand D 75.60,65.00
 },
 {
 rare=[[Berserk T-300 Series Mark II]],
-level=98,
+level=40,
 spot="Nagrand D 76.9,64.4",
 currency="GR",
 item=116823,
@@ -1724,7 +1724,7 @@ kill Berserk T-300 Series Mark II##82826 |q 35735 |future |goto Nagrand D 76.9,6
 },
 {
 rare=[[Hunter Blacktooth]],
-level=98,
+level=40,
 spot="Nagrand D 80.60,30.40",
 currency="GR",
 item=118245,
@@ -1738,7 +1738,7 @@ kill Hunter Blacktooth##83603 |q 35923 |future |goto Nagrand D 80.60,30.40
 },
 {
 rare=[[Malroc Stonesunder]],
-level=98,
+level=40,
 spot="Nagrand D 81.20,60.00",
 currency="GR",
 item=116796,
@@ -1752,7 +1752,7 @@ kill Malroc Stonesunder##83643 |q 35932 |future |goto Nagrand D 81.20,60.00
 },
 {
 rare=[[Warmaster Blugthol]],
-level=99,
+level=40,
 spot="Nagrand D 82.60,76.20",
 currency="GR",
 item=116805,
@@ -1765,7 +1765,7 @@ kill Warmaster Blugthol##79024 |q 34645 |future |goto Nagrand D 82.60,76.20
 },
 {
 rare=[[Graveltooth]],
-level=98,
+level=40,
 spot="Nagrand D 84.60,36.60",
 currency="GR",
 item=118689,
@@ -1780,7 +1780,7 @@ kill Graveltooth##84263 |q 36159 |future |goto Nagrand D/0 84.0,36.9
 },
 {
 rare=[[Ancient Blademaster]],
-level=98,
+level=40,
 spot="Nagrand D 84.60,53.40",
 currency="GR",
 item=116832,
@@ -1795,7 +1795,7 @@ kill Ancient Blademaster##82899 |q 35778 |future |goto Nagrand D 84.60,53.40
 },
 {
 rare=[[Hyperious]],
-level=98,
+level=40,
 spot="Nagrand D 87.00,55.00",
 currency="GR",
 item=116799,
@@ -1812,7 +1812,7 @@ kill Hyperious##78161 |q 34862 |future |goto Nagrand D/0 87.2,55.2
 },
 {
 rare=[[Explorer Nozzand]],
-level=98,
+level=40,
 spot="Nagrand D 89.00,41.20",
 currency="GR",
 item=118679,
@@ -1826,7 +1826,7 @@ kill Explorer Nozzand##82486 |q 35623 |future |goto Nagrand D 89.00,41.20
 },
 {
 rare=[[Grizzlemaw]],
-level=98,
+level=40,
 spot="Nagrand D 89.5,72.8",
 currency="GR",
 item=118687,
@@ -1839,7 +1839,7 @@ kill Grizzlemaw##82912 |q 35784 |future |goto Nagrand D/0 89.5,72.8
 },
 {
 rare=[[Gorepetal]],
-level=98,
+level=40,
 spot="Nagrand D 93.20,28.20",
 currency="GR",
 item=116916,
@@ -1854,7 +1854,7 @@ kill Gorepetal##83509 |q 35898 |future |goto Nagrand D 93.20,28.20
 },
 {
 rare=[[Nagidna]],
-level=100,
+level=40,
 spot="Shadowmoon Valley D/0 60.8,89.9",
 currency="AC",
 item=120945,
@@ -1869,7 +1869,7 @@ kill Nagidna##85555 |q 37409 |future |goto Shadowmoon Valley D/0 60.8,89.9
 },
 {
 rare=[[Veloss]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 21.60,21.00",
 currency="GR",
 item=108906,
@@ -1884,7 +1884,7 @@ kill Veloss##75482 |q 33640 |future |goto Shadowmoon Valley D 21.60,21.00
 },
 {
 rare=[[Gorum]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 21.60,33.00",
 currency="GR",
 item=113082,
@@ -1899,7 +1899,7 @@ kill Gorum##76380 |q 33664 |future |goto Shadowmoon Valley D/15 31.1,34.8
 },
 {
 rare=[[Sneevel]],
-level=92,
+level=40,
 spot="Shadowmoon Valley D 27.60,43.60",
 currency="GR",
 item=118734,
@@ -1913,7 +1913,7 @@ kill Sneevel##86689 |q 36880 |future |goto Shadowmoon Valley D/0 27.5,43.7
 },
 {
 rare=[[Bahameye]],
-level=90,
+level=40,
 spot="Shadowmoon Valley D 29.60,06.20",
 currency="GR",
 item=111666,
@@ -1927,7 +1927,7 @@ kill Bahameye##81406 |q 35281 |future |goto Shadowmoon Valley D 29.60,06.20
 },
 {
 rare=[[Malgosh Shadowkeeper]],
-level=100,
+level=40,
 spot="Shadowmoon Valley D 29.60,50.80",
 currency="AC",
 item=120945,
@@ -1942,7 +1942,7 @@ kill Malgosh Shadowkeeper##85451 |q 37357 |future |goto Shadowmoon Valley D 29.6
 },
 {
 rare=[[Ku'targ the Voidseer]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 32.20,35.00",
 currency="GR",
 item=109061,
@@ -1956,7 +1956,7 @@ kill Ku'targ the Voidseer##72362 |q 33039 |future |goto Shadowmoon Valley D/0 32
 },
 {
 rare=[[Voidseer Kalurg]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 32.60,41.40",
 currency="GR",
 item=109074,
@@ -1972,7 +1972,7 @@ kill Voidseer Kalurg##83385 |q 35847 |future |goto Shadowmoon Valley D 32.60,41.
 },
 {
 rare=[[Amaukwa]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 37.20,36.40",
 currency="GR",
 item=109060,
@@ -1993,7 +1993,7 @@ kill Amaukwa##77140 |q 33061 |future
 },
 {
 rare=[[Hypnocroak]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 37.40,48.80",
 currency="GR",
 item=113631,
@@ -2007,7 +2007,7 @@ kill Hypnocroak##79524 |q 35558 |future |goto Shadowmoon Valley D 37.40,48.80
 },
 {
 rare=[[Leaf-Reader Kurri]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 37.60,14.60",
 currency="GR",
 item=108907,
@@ -2021,7 +2021,7 @@ kill Leaf-Reader Kurri##72537 |q 33055 |future |goto Shadowmoon Valley D 37.60,1
 },
 {
 rare=[[Morva Soultwister]],
-level=90,
+level=40,
 spot="Shadowmoon Valley D 38.60,70.20",
 currency="GR",
 item=113559,
@@ -2034,7 +2034,7 @@ kill Morva Soultwister##82362 |q 35523 |future |goto Shadowmoon Valley D/0 38.6,
 },
 {
 rare=[[Darkmaster Go'vid]],
-level=90,
+level=40,
 spot="Shadowmoon Valley D 38.7,83.6",
 currency="GR",
 item=113548,
@@ -2049,7 +2049,7 @@ kill Darkmaster Go'vid##82268 |q 35448 |future |goto Shadowmoon Valley D/0 38.7,
 },
 {
 rare=[[Killmaw]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 40.80,44.40",
 currency="GR",
 item=109078,
@@ -2062,7 +2062,7 @@ kill Killmaw##74206 |q 33043 |future |goto Shadowmoon Valley D/0 40.8,44.6
 },
 {
 rare=[[Windfang Matriarch]],
-level=90,
+level=40,
 spot="Shadowmoon Valley D 42.80,41.00",
 currency="GR",
 item=113553,
@@ -2077,7 +2077,7 @@ kill Windfang Matriarch##75434 |q 33038 |future |goto Shadowmoon Valley D 42.80,
 },
 {
 rare=[[Mother Om'ra]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 44.00,57.60",
 currency="GR",
 item=119449,
@@ -2091,7 +2091,7 @@ kill Mother Om'ra##88831 |q 33642 |future |goto Shadowmoon Valley D/0 44.0,57.7
 },
 {
 rare=[[Brambleking Fili]],
-level=100,
+level=40,
 spot="Shadowmoon Valley D 45.0,77.0",
 currency="AC",
 item=120945,
@@ -2103,7 +2103,7 @@ kill Brambleking Fili##81639 |q 33383 |future |goto Shadowmoon Valley D/0 45.0,7
 },
 {
 rare=[[Mad King Sporeon]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 45.00,20.90",
 currency="GR",
 item=113561,
@@ -2117,7 +2117,7 @@ kill Mad King Sporeon##77310 |q 35906 |future |goto Shadowmoon Valley D 45.00,20
 },
 {
 rare=[[Demidos]],
-level=103,
+level=40,
 spot="Shadowmoon Valley D 46.00,71.60",
 currency="AC",
 item=120945,
@@ -2132,7 +2132,7 @@ kill Demidos##84911 |q 37351 |future |goto Shadowmoon Valley D 46.00,71.60
 },
 {
 rare=[[Lady Temptessa]],
-level=101,
+level=40,
 spot="Shadowmoon Valley D 48.00,77.60",
 currency="AC",
 item=120945,
@@ -2145,7 +2145,7 @@ kill Lady Temptessa##85121 |q 37355 |future |goto Shadowmoon Valley D 48.00,77.6
 },
 {
 rare=[[Shadowspeaker Niir]],
-level=101,
+level=40,
 spot="Shadowmoon Valley D 48.20,81.00",
 currency="AC",
 item=120945,
@@ -2158,7 +2158,7 @@ kill Shadowspeaker Niir##85029 |q 37354 |future |goto Shadowmoon Valley D 48.20,
 },
 {
 rare=[[Rai'vosh]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 48.60,22.60",
 currency="GR",
 item=113542,
@@ -2172,7 +2172,7 @@ kill Rai'vosh##82374 |q 35553 |future |goto Shadowmoon Valley D/0 48.8,22.7
 },
 {
 rare=[[Dark Emanation]],
-level=90,
+level=40,
 spot="Shadowmoon Valley D 48.60,43.60",
 currency="GR",
 item=109075,
@@ -2189,7 +2189,7 @@ kill Dark Emanation##77085 |q 33064 |future |goto Shadowmoon Valley D 48.60,43.6
 },
 {
 rare=[[Yggdrel]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 48.80,66.40",
 currency="GR",
 item=113570,
@@ -2202,7 +2202,7 @@ kill Yggdrel##75435 |q 33389 |future |goto Shadowmoon Valley D 48.80,66.40
 },
 {
 rare=[[Darktalon]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 49.60,42.00",
 currency="GR",
 item=113541,
@@ -2217,7 +2217,7 @@ kill Darktalon##82411 |q 35555 |future |goto Shadowmoon Valley D/0 49.6,41.8
 },
 {
 rare=[[Quartermaster Hershak]],
-level=101,
+level=40,
 spot="Shadowmoon Valley D 50.20,72.40",
 currency="AC",
 item=120945,
@@ -2231,7 +2231,7 @@ kill Quartermaster Hershak##84925 |q 37352 |future |goto Shadowmoon Valley D 50.
 },
 {
 rare=[[Aqualir]],
-level=101,
+level=40,
 spot="Shadowmoon Valley D 50.80,78.80",
 currency="AC",
 item=120945,
@@ -2246,7 +2246,7 @@ kill Aqualir##86213 |q 37356 |future |goto Shadowmoon Valley D 50.80,78.80
 },
 {
 rare=[[Master Sergeant Milgra]],
-level=101,
+level=40,
 spot="Shadowmoon Valley D 51.80,79.20",
 currency="AC",
 item=120945,
@@ -2259,7 +2259,7 @@ kill Master Sergeant Milgra##85001 |q 37353 |future |goto Shadowmoon Valley D 51
 },
 {
 rare=[[Ba'ruun]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 52.80,16.80",
 currency="GR",
 item=113540,
@@ -2275,7 +2275,7 @@ kill Ba'ruun##82326 |q 35731 |future |goto Shadowmoon Valley D 52.80,16.80
 },
 {
 rare=[[Rockhoof]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 53.00,50.60",
 currency="GR",
 item=109077,
@@ -2288,7 +2288,7 @@ kill Rockhoof##72606 |q 34068 |future |goto Shadowmoon Valley D 53.00,50.60
 },
 {
 rare=[[Venomshade]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 54.60,70.60",
 currency="GR",
 item=108957,
@@ -2301,7 +2301,7 @@ kill Venomshade##75492 |q 33643 |future |goto Shadowmoon Valley D/0 54.8,70.2
 },
 {
 rare=[[Insha'tar]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 57.40,48.40",
 currency="GR",
 item=113571,
@@ -2314,7 +2314,7 @@ kill Insha'tar##83553 |q 35909 |future |goto Shadowmoon Valley D 57.40,48.40
 },
 {
 rare=[[Shinri]],
-level=92,
+level=40,
 spot="Shadowmoon Valley D 61.00,55.20",
 currency="GR",
 item=113543,
@@ -2327,7 +2327,7 @@ kill Shinri##82415 |q 35732 |future |goto Shadowmoon Valley D 61.00,55.20
 },
 {
 rare=[[Faebright]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 61.60,61.80",
 currency="GR",
 item=113557,
@@ -2342,7 +2342,7 @@ kill Faebright##82207 |q 35725 |future |goto Shadowmoon Valley D 61.60,61.80
 },
 {
 rare=[[Slivermaw]],
-level=100,
+level=40,
 spot="Shadowmoon Valley D 61.7,89.0",
 currency="AC",
 item=120945,
@@ -2356,7 +2356,7 @@ kill Slivermaw##85837 |q 37411 |future |goto Shadowmoon Valley D 61.7,89.0
 },
 {
 rare=[[Avalanche]],
-level=100,
+level=40,
 spot="Shadowmoon Valley D 67.8,84.9",
 currency="AC",
 item=120945,
@@ -2372,7 +2372,7 @@ kill Avalanche##85568 |q 37410 |future |goto Shadowmoon Valley D 67.8,84.9
 },
 {
 rare=[[Enavra]],
-level=91,
+level=40,
 spot="Shadowmoon Valley D 67.80,63.80",
 currency="GR",
 item=113556,
@@ -2387,7 +2387,7 @@ kill Enavra##82676 |q 35688 |future |goto Shadowmoon Valley D/0 67.9,63.9
 },
 {
 rare=[[Gaze]],
-level=97,
+level=40,
 spot="Spires of Arak 25.20,24.20",
 currency="GR",
 item=118696,
@@ -2401,7 +2401,7 @@ kill Gaze##86978 |q 36943 |future |goto Spires of Arak 25.20,24.20
 },
 {
 rare=[[Gobblefin]],
-level=97,
+level=40,
 spot="Spires of Arak 33.00,59.00",
 currency="GR",
 item=116836,
@@ -2415,7 +2415,7 @@ kill Gobblefin##84951 |q 36305 |future |goto Spires of Arak 33.00,59.00
 },
 {
 rare=[[Stonespite]],
-level=96,
+level=40,
 spot="Spires of Arak 33.40,22.00",
 currency="GR",
 item=116858,
@@ -2428,7 +2428,7 @@ kill Stonespite##84805 |q 36265 |future |goto Spires of Arak 33.40,22.00
 },
 {
 rare=[[Nas Dunberlin]],
-level=96,
+level=40,
 spot="Spires of Arak 36.40,52.40",
 currency="GR",
 item=116837,
@@ -2441,7 +2441,7 @@ kill Nas Dunberlin##82247 |q 36129 |future |goto Spires of Arak 36.40,52.40
 },
 {
 rare=[[Rotcap]],
-level=97,
+level=40,
 spot="Spires of Arak 38.40,27.80",
 currency="GR",
 item=118107,
@@ -2453,7 +2453,7 @@ kill Rotcap##85504 |q 36470 |future |goto Spires of Arak 38.40,27.80
 },
 {
 rare=[[Durkath Steelmaw]],
-level=96,
+level=40,
 spot="Spires of Arak 46.40,28.60",
 currency="GR",
 item=118198,
@@ -2466,7 +2466,7 @@ kill Durkath Steelmaw##84807 |q 36267 |future |goto Spires of Arak 46.40,28.60
 },
 {
 rare=[[Blade-Dancer Aeryx]],
-level=96,
+level=40,
 spot="Spires of Arak 46.80,23.00",
 currency="GR",
 item=116839,
@@ -2479,7 +2479,7 @@ kill Blade-Dancer Aeryx##80614 |q 35599 |future |goto Spires of Arak 46.80,23.00
 {
 currency="AC",
 rare=[[Solar Magnifier]],
-level=100,
+level=40,
 spot="Spires of Arak 51.80,07.20",
 access="Completionist",
 item=120945,
@@ -2492,7 +2492,7 @@ kill Solar Magnifier##83990 |q 37394 |future |goto Spires of Arak 51.80,07.20
 },
 {
 rare=[[Shadowbark]],
-level=96,
+level=40,
 spot="Spires of Arak 52.00,35.40",
 currency="GR",
 item=118201,
@@ -2504,7 +2504,7 @@ kill Shadowbark##79938 |q 36478 |future |goto Spires of Arak 52.00,35.40
 },
 {
 rare=[[Swarmleaf]],
-level=97,
+level=40,
 spot="Spires of Arak 52.80,54.80",
 currency="GR",
 item=116857,
@@ -2516,7 +2516,7 @@ kill Swarmleaf##85520 |q 36472 |future |goto Spires of Arak 52.80,54.80
 },
 {
 rare=[[Mutafen]],
-level=96,
+level=40,
 spot="Spires of Arak 53.20,89.00",
 currency="GR",
 item=118206,
@@ -2529,7 +2529,7 @@ kill Mutafen##84417 |q 36396 |future |goto Spires of Arak 53.20,89.00
 },
 {
 rare=[[Talonbreaker]],
-level=96,
+level=40,
 spot="Spires of Arak 54.60,63.20",
 currency="GR",
 item=116838,
@@ -2544,7 +2544,7 @@ kill Talonbreaker##84836 |q 36278 |future |goto Spires of Arak 54.60,63.20
 },
 {
 rare=[[Festerbloom]],
-level=96,
+level=40,
 spot="Spires of Arak 54.80,39.60",
 currency="GR",
 item=118200,
@@ -2557,7 +2557,7 @@ kill Festerbloom##84890 |q 36297 |future |goto Spires of Arak 54.80,39.60
 },
 {
 rare=[[Jiasska the Sporegorger]],
-level=97,
+level=40,
 spot="Spires of Arak 56.60,94.60",
 currency="GR",
 item=118202,
@@ -2569,7 +2569,7 @@ kill Jiasska the Sporegorger##84955 |q 36306 |future |goto Spires of Arak 56.60,
 },
 {
 rare=[[Tesska the Broken]],
-level=97,
+level=40,
 spot="Spires of Arak 57.40,74.00",
 currency="GR",
 item=116852,
@@ -2581,7 +2581,7 @@ kill Tesska the Broken##84775 |q 36254 |future |goto Spires of Arak 57.40,74.00
 },
 {
 rare=[[Betsi Boombasket]],
-level=97,
+level=40,
 spot="Spires of Arak 58.20,84.60",
 currency="GR",
 item=116907,
@@ -2594,7 +2594,7 @@ kill Betsi Boombasket##84887 |q 36291 |future |goto Spires of Arak 58.20,84.60
 },
 {
 rare=[[Sunderthorn]],
-level=96,
+level=40,
 spot="Spires of Arak 58.60,45.20",
 currency="GR",
 item=116855,
@@ -2608,7 +2608,7 @@ kill Sunderthorn##84912 |q 36298 |future |goto Spires of Arak 58.60,45.20
 },
 {
 rare=[[Hermit Palefur]],
-level=96,
+level=40,
 spot="Spires of Arak 59.20,15.00",
 currency="GR",
 item=118279,
@@ -2621,7 +2621,7 @@ kill Hermit Palefur##86724 |q 36887 |future |goto Spires of Arak 59.20,15.00
 },
 {
 rare=[[Poisonmaster Bortusk]],
-level=96,
+level=40,
 spot="Spires of Arak 59.40,37.40",
 currency="GR",
 item=118199,
@@ -2634,7 +2634,7 @@ kill Poisonmaster Bortusk##84838 |q 36279 |future |goto Spires of Arak 59.40,37.
 },
 {
 rare=[[Kalos the Bloodbathed]],
-level=96,
+level=40,
 spot="Spires of Arak 62.60,37.40",
 currency="GR",
 item=118735,
@@ -2647,7 +2647,7 @@ kill Kalos the Bloodbathed##84810 |q 36268 |future |goto Spires of Arak 62.60,37
 },
 {
 rare=[[Blightglow]],
-level=97,
+level=40,
 spot="Spires of Arak 64.00,64.80",
 currency="GR",
 item=118205,
@@ -2661,7 +2661,7 @@ kill Blightglow##84856 |q 36283 |future |goto Spires of Arak 64.00,64.80
 },
 {
 rare=[[Oskiira the Vengeful]],
-level=96,
+level=40,
 spot="Spires of Arak 66.00,55.00",
 currency="GR",
 item=118204,
@@ -2674,7 +2674,7 @@ kill Oskiira the Vengeful##84872 |q 36288 |future |goto Spires of Arak/0 65.0,54
 },
 {
 rare=[[Sangrikass]],
-level=96,
+level=40,
 spot="Spires of Arak 69.00,48.80",
 currency="GR",
 item=118203,
@@ -2689,7 +2689,7 @@ kill Sangrikass##84833 |q 36276 |future |goto Spires of Arak 69.00,48.80
 {
 currency="AC",
 rare=[[Echidna]],
-level=103,
+level=40,
 spot="Spires of Arak 69.00,54.00",
 access="Completionist",
 item=120945,
@@ -2705,7 +2705,7 @@ kill Echidna##80372 |q 37406 |future |goto Spires of Arak 69.00,54.00
 {
 currency="AC",
 rare=[[Kenos the Unraveler]],
-level=103,
+level=40,
 spot="Spires of Arak 70.40,23.80",
 access="Completionist",
 item=120945,
@@ -2720,7 +2720,7 @@ kill Kenos the Unraveler##85037 |q 37361 |future |goto Spires of Arak 70.40,23.8
 {
 currency="AC",
 rare=[[Shadow Hulk]],
-level=100,
+level=40,
 spot="Spires of Arak 71.20,33.80",
 access="Completionist",
 item=120945,
@@ -2736,7 +2736,7 @@ kill Shadow Hulk##87027 |q 37392 |future |goto Spires of Arak 71.20,33.80
 {
 currency="AC",
 rare=[[Giga Sentinel]],
-level=102,
+level=40,
 spot="Spires of Arak 71.40,45.00",
 access="Completionist",
 item=120945,
@@ -2749,7 +2749,7 @@ kill Giga Sentinel##87029 |q 37393 |future |goto Spires of Arak 71.40,45.00
 {
 currency="AC",
 rare=[[Formless Nightmare]],
-level=103,
+level=40,
 spot="Spires of Arak 71.70,20.10",
 access="Completionist",
 item=120945,
@@ -2764,7 +2764,7 @@ kill Formless Nightmare##85036 |q 37360 |future |goto Spires of Arak 71.70,20.10
 {
 currency="AC",
 rare=[[Soul-Twister Torek]],
-level=100,
+level=40,
 spot="Spires of Arak 72.40,19.40",
 access="Completionist",
 item=120945,
@@ -2778,7 +2778,7 @@ kill Soul-Twister Torek##85026 |q 37358 |future |goto Spires of Arak 72.40,19.40
 {
 currency="AC",
 rare=[[Voidreaver Urnae]],
-level=101,
+level=40,
 spot="Spires of Arak 72.90,30.90",
 access="Completionist",
 item=120945,
@@ -2792,7 +2792,7 @@ kill Voidreaver Urnae##85078 |q 37359 |future |goto Spires of Arak 72.90,30.90
 {
 currency="AC",
 rare=[[Gluttonous Giant]],
-level=100,
+level=40,
 spot="Spires of Arak 74.40,42.80",
 access="Completionist",
 item=120945,
@@ -2806,7 +2806,7 @@ kill Gluttonous Giant##87019 |q 37390 |future |goto Spires of Arak 74.40,42.80
 {
 currency="AC",
 rare=[[Mecha Plunderer]],
-level=101,
+level=40,
 spot="Spires of Arak 74.41,38.64",
 access="Completionist",
 item=120945,
@@ -2818,7 +2818,7 @@ kill Mecha Plunderer##87026 |q 37391 |future |goto Spires of Arak 74.41,38.64
 },
 {
 rare=[[Grrbrrgle]],
-level=97,
+level=40,
 spot="Talador 22.2,74.2",
 currency="GR",
 item=120436,
@@ -2835,7 +2835,7 @@ kill Grrbrrgle##85572 |q 36919 |future |goto Talador/0 22.2,74.2
 {
 currency="AC",
 rare=[[Lord Korinak]],
-level=103,
+level=40,
 spot="Talador 30.50,26.40",
 access="Completionist",
 item=120945,
@@ -2850,7 +2850,7 @@ kill Lord Korinak##82920 |q 37345 |future |goto Talador 30.50,26.40
 {
 currency="AC",
 rare=[[Orumo the Observer]],
-level=103,
+level=40,
 spot="Talador 31.40,47.50",
 access="Completionist",
 item=120945,
@@ -2865,7 +2865,7 @@ kill Orumo the Observer##87668 |q 37344 |future |goto Talador 31.40,47.50
 },
 {
 rare=[[Glimmerwing]],
-level=94,
+level=40,
 spot="Talador 31.80,63.80",
 currency="GR",
 item=116113,
@@ -2879,7 +2879,7 @@ kill Glimmerwing##77719 |q 34189 |future |goto Talador 31.80,63.80
 {
 currency="AC",
 rare=[[Kurlosh Doomfang]],
-level=102,
+level=40,
 spot="Talador 33.5,37.8",
 access="Completionist",
 item=120945,
@@ -2895,7 +2895,7 @@ kill Kurlosh Doomfang##82988 |q 37348 |future |goto Talador 33.5,37.8
 {
 currency="AC",
 rare=[[Lady Demlash]],
-level=102,
+level=40,
 spot="Talador 33.80,37.80",
 access="Completionist",
 item=120945,
@@ -2909,7 +2909,7 @@ kill Lady Demlash##82942 |q 37346 |future |goto Talador 33.80,37.80
 },
 {
 rare=[[Echo of Murmur]],
-level=95,
+level=40,
 spot="Talador 34.20,57.00",
 item=113670,
 quest=34221,
@@ -2924,7 +2924,7 @@ kill Echo of Murmur##77795 |q 34221 |future |goto Talador/0 34.20,57.00
 {
 currency="AC",
 rare=[[Vigilant Paarthos]],
-level=102,
+level=40,
 spot="Talador 36.80,41.00",
 access="Completionist",
 item=120945,
@@ -2937,7 +2937,7 @@ kill Vigilant Paarthos##88436 |q 37350 |future |goto Talador 36.80,41.00
 },
 {
 rare=[[Cro Fleshrender]],
-level=95,
+level=40,
 spot="Talador 37.3,70.5",
 currency="GR",
 item=116123,
@@ -2951,7 +2951,7 @@ kill Cro Fleshrender##77620 |q 34165 |future |goto Talador 37.3,70.5
 {
 currency="AC",
 rare=[[Legion Vanguard]],
-level=101,
+level=40,
 spot="Talador 38.0,20.8",
 access="Completionist",
 item=120945,
@@ -2965,7 +2965,7 @@ kill Legion Vanguard##88494 |q 37342 |future |goto Talador 38.0,20.8
 {
 currency="AC",
 rare=[[Xothear, the Destroyer]],
-level=101,
+level=40,
 spot="Talador 38.00,14.60",
 access="Completionist",
 item=120945,
@@ -2979,7 +2979,7 @@ kill Xothear, the Destroyer##82922 |q 37343 |future |goto Talador 38.00,14.60
 {
 currency="AC",
 rare=[[Matron of Sin]],
-level=103,
+level=40,
 spot="Talador 39.00,49.60",
 access="Completionist",
 item=120945,
@@ -2993,7 +2993,7 @@ kill Matron of Sin##82998 |q 37349 |future |goto Talador 39.00,49.60
 {
 currency="AC",
 rare=[[Shadowflame Terrorwalker]],
-level=102,
+level=40,
 spot="Talador 41.00,42.00",
 access="Completionist",
 item=120945,
@@ -3006,7 +3006,7 @@ kill Shadowflame Terrorwalker##82930 |q 37347 |future |goto Talador 41.00,42.00
 },
 {
 rare=[[Shirzir]],
-level=95,
+level=40,
 spot="Talador 41.80,59.40",
 currency="GR",
 item=112370,
@@ -3021,7 +3021,7 @@ kill Shirzir##79543 |q 34671 |future |goto Talador/14 67.4,23.3
 {
 currency="AC",
 rare=[[Bombardier Gu'gok]],
-level=101,
+level=40,
 spot="Talador 44.00,38.00",
 access="Completionist",
 item=120945,
@@ -3036,7 +3036,7 @@ kill Bombardier Gu'gok##87597 |q 37339 |future |goto Talador 44.00,38.00
 {
 currency="GR",
 rare=[[Strategist Ankor + Archmagus Tekar + Soulbinder Naylana]],
-level=101,
+level=40,
 spot="Talador 46.00,27.40",
 access="Completionist",
 item=119350,
@@ -3051,7 +3051,7 @@ Defeat the trio |q 37337 |future |goto Talador 46.00,27.40
 },
 {
 rare=[[Frenzied Golem]],
-level=95,
+level=40,
 spot="Talador 46.2,54.8",
 currency="GR",
 item=113287,
@@ -3064,7 +3064,7 @@ kill Frenzied Golem##77614 |q 34145 |future |goto Talador 46.2,54.8
 {
 currency="AC",
 rare=[[Avatar of Socrethar]],
-level=101,
+level=40,
 spot="Talador 46.60,35.20",
 access="Completionist",
 item=120945,
@@ -3079,7 +3079,7 @@ kill Avatar of Socrethar##88043 |q 37338 |future |goto Talador 46.60,35.20
 {
 currency="AC",
 rare=[[Gug'tol]],
-level=101,
+level=40,
 spot="Talador 47.60,39.00",
 access="Completionist",
 item=120945,
@@ -3095,7 +3095,7 @@ kill Gug'tol##83019 |q 37340 |future |goto Talador 47.60,39.00
 {
 currency="AC",
 rare=[[Haakun the All-Consuming]],
-level=101,
+level=40,
 spot="Talador 48.00,25.00",
 access="Completionist",
 item=120945,
@@ -3110,7 +3110,7 @@ kill Haakun the All-Consuming##83008 |q 37312 |future |goto Talador 48.00,25.00
 },
 {
 rare=[[Lo'marg Jawcrusher]],
-level=95,
+level=40,
 spot="Talador 49.00,92.00",
 currency="GR",
 item=116070,
@@ -3125,7 +3125,7 @@ kill Lo'marg Jawcrusher##77784 |q 34208 |future |goto Talador/0 49.2,92.3
 {
 currency="AC",
 rare=[[Felfire Consort]],
-level=101,
+level=40,
 spot="Talador 50.20,35.20",
 access="Completionist",
 item=120945,
@@ -3138,7 +3138,7 @@ kill Felfire Consort##82992 |q 37341 |future |goto Talador 50.20,35.20
 },
 {
 rare=[[Felbark]],
-level=95,
+level=40,
 spot="Talador 50.80,83.80",
 currency="GR",
 item=112373,
@@ -3151,7 +3151,7 @@ kill Felbark##80204 |q 35018 |future |goto Talador 50.80,83.80
 },
 {
 rare=[[Talonpriest Zorkra]],
-level=95,
+level=40,
 spot="Talador 53.8,91.4",
 currency="GR",
 item=116110,
@@ -3164,7 +3164,7 @@ kill Talonpriest Zorkra##79485 |q 34668 |future |goto Talador 53.8,91.4
 },
 {
 rare=[[Yazheera the Incinerator]],
-level=94,
+level=40,
 spot="Talador 53.80,25.80",
 currency="GR",
 item=112263,
@@ -3176,7 +3176,7 @@ kill Yazheera the Incinerator##77529 |q 34135 |future |goto Talador 53.80,25.80
 },
 {
 rare=[[Kharazos the Triumphant + Galzomar + Sikthiss]],
-level=95,
+level=40,
 spot="Talador 56.60,63.60",
 currency="GR",
 item=116122,
@@ -3191,7 +3191,7 @@ kill Kharazos the Triumphant##78710 |q 35219 |future |goto Talador 56.60,63.60
 },
 {
 rare=[[Taladorantula]],
-level=95,
+level=40,
 spot="Talador 59.00,88.00",
 currency="GR",
 item=116126,
@@ -3205,7 +3205,7 @@ kill Taladorantula##77634 |q 34171 |future |goto Talador 59.00,88.00
 },
 {
 rare=[[Ra'kahn]],
-level=95,
+level=40,
 spot="Talador 59.50,59.60",
 currency="GR",
 item=116112,
@@ -3218,7 +3218,7 @@ kill Ra'kahn##77741 |q 34196 |future |goto Talador 59.50,59.60
 },
 {
 rare=[[Hammertooth]],
-level=94,
+level=40,
 spot="Talador 62.00,46.00",
 currency="GR",
 item=116124,
@@ -3231,7 +3231,7 @@ kill Hammertooth##77715 |q 34185 |future |goto Talador 62.00,46.00
 },
 {
 rare=[[Underseer Bloodmane]],
-level=94,
+level=40,
 spot="Talador 63.80,20.70",
 currency="GR",
 item=112475,
@@ -3245,7 +3245,7 @@ kill Underseer Bloodmane##80524 |q 34945 |future |goto Talador 63.80,20.70
 },
 {
 rare=[[Klikixx]],
-level=95,
+level=40,
 spot="Talador 66.80,85.40",
 currency="GR",
 item=116125,
@@ -3260,7 +3260,7 @@ kill Klikixx##78872 |q 34498 |future |goto Talador 66.80,85.40
 },
 {
 rare=[[Gennadian]],
-level=94,
+level=40,
 spot="Talador 67.40,80.60",
 currency="GR",
 item=116075,
@@ -3273,7 +3273,7 @@ kill Gennadian##80471 |q 34929 |future |goto Talador 67.40,80.60
 },
 {
 rare=[[Steeltusk]],
-level=95,
+level=40,
 spot="Talador 67.8,35.5",
 currency="GR",
 item=117562,
@@ -3285,7 +3285,7 @@ kill Steeltusk##86549 |q 36858 |future |goto Talador 67.8,35.5
 },
 {
 rare=[[Dr. Gloom]],
-level=94,
+level=40,
 spot="Talador 68.4,15.8",
 currency="GR",
 item=112499,
@@ -3298,7 +3298,7 @@ kill Dr. Gloom##77561 |q 34142 |future |goto Talador/0 68.4,15.8
 },
 {
 rare=[[Wandering Vindicator]],
-level=94,
+level=40,
 spot="Talador 69.7,33.2",
 currency="GR",
 item=112261,
@@ -3312,7 +3312,7 @@ click Hope##227859 |q 34205 |future |goto Talador/0 69.7,33.2
 },
 {
 rare=[[Hen-Mother Hami]],
-level=94,
+level=40,
 spot="Talador 78.00,50.40",
 currency="GR",
 item=112369,
@@ -3325,7 +3325,7 @@ kill Hen-Mother Hami##77626 |q 34167 |future |goto Talador 78.00,50.40
 },
 {
 rare=[[No'losh]],
-level=95,
+level=40,
 spot="Talador 86.40,30.40",
 currency="GR",
 item=116077,
@@ -3339,7 +3339,7 @@ kill No'losh##79334 |q 34859 |future |goto Talador 86.40,30.40
 {
 currency="AC",
 rare=[[Argosh the Destroyer]],
-level=100,
+level=40,
 spot="Tanaan Jungle/0 52.60,40.20",
 access="Completionist",
 item=127326,
@@ -3355,7 +3355,7 @@ kill Argosh the Destroyer##91871 |q 38430 |goto Tanaan Jungle/0 52.60,40.20 |fut
 },
 {
 rare=[[Bilkor the Thrower]],
-level=100,
+level=40,
 spot="Tanaan Jungle/0 23.8,51.9",
 currency="AC",
 item=120945,
@@ -3368,7 +3368,7 @@ kill Bilkor the Thrower##90884 |q 38262 |goto Tanaan Jungle/0 23.8,51.9 |future
 },
 {
 rare=[[Captain Grok'mar]],
-level=100,
+level=40,
 spot="Tanaan Jungle/0 48.6,57.4",
 currency="AC",
 item=120945,
@@ -3382,7 +3382,7 @@ kill Captain Grok'mar##93264 |q 38820 |goto Tanaan Jungle/0 48.6,57.4 |future
 {
 currency="AC",
 rare=[[Drakum]],
-level=102,
+level=40,
 spot="Tanaan Jungle/0 83.6,43.6",
 access="Completionist",
 item=108631,
@@ -3398,7 +3398,7 @@ kill Drakum##98283 |q 40105 |goto Tanaan Jungle/0 83.6,43.6 |future
 {
 currency="AC",
 rare=[[Gondar]],
-level=102,
+level=40,
 spot="Tanaan Jungle/0 80.6,56.4",
 access="Completionist",
 item=108633,
@@ -3415,7 +3415,7 @@ kill Gondar##98284 |q 40106 |goto Tanaan Jungle/0 80.6,56.4 |future
 },
 {
 rare=[[The Iron Houndmaster]],
-level=100,
+level=40,
 spot="Tanaan Jungle 12.7,56.9",
 currency="AC",
 item=120945,
@@ -3429,7 +3429,7 @@ kill The Iron Houndmaster##92977 |goto Tanaan Jungle 12.7,56.9 |q 38751 |future
 },
 {
 rare=[[Tho'gar Gorefist]],
-level=100,
+level=40,
 spot="Tanaan Jungle 13.60,56.80",
 currency="AC",
 item=120945,
@@ -3442,7 +3442,7 @@ kill Tho'gar Gorefist##91243 |q 38747 |goto Tanaan Jungle 13.60,56.80 |future
 },
 {
 rare=[[Commander Krag'goth]],
-level=100,
+level=40,
 spot="Tanaan Jungle 15.00,54.20",
 currency="AC",
 item=120945,
@@ -3457,7 +3457,7 @@ kill Commander Krag'goth##91232 |q 38746 |goto Tanaan Jungle 15.00,54.20 |future
 {
 currency="OIL",
 rare=[[Terrorfist]],
-level=100,
+level=40,
 spot="Tanaan Jungle 15.40,63.40",
 access="Completionist",
 item=128025,
@@ -3471,7 +3471,7 @@ kill Terrorfist##95044 |q 39288 |goto Tanaan Jungle 15.40,63.40 |future
 },
 {
 rare=[[Szirek the Twisted]],
-level=100,
+level=40,
 spot="Tanaan Jungle 16.00,57.20",
 currency="AC",
 item=120945,
@@ -3487,7 +3487,7 @@ kill Szirek the Twisted##93001 |q 38752 |goto Tanaan Jungle 16.00,57.20 |future
 {
 currency="AC",
 rare=[[Grannok]],
-level=100,
+level=40,
 spot="Tanaan Jungle 16.00,59.20",
 access="Completionist",
 item=120945,
@@ -3501,7 +3501,7 @@ kill Grannok##93057 |q 38750 |goto Tanaan Jungle 16.00,59.20 |future
 },
 {
 rare=[[Podlord Wakkawam]],
-level=100,
+level=40,
 spot="Tanaan Jungle 17.0,48.7",
 currency="AC",
 item=120945,
@@ -3515,7 +3515,7 @@ kill Podlord Wakkawam##91374 |q 38282 |goto Tanaan Jungle 17.0,48.7 |future
 {
 currency="AC",
 rare=[[Rasthe]],
-level=100,
+level=40,
 spot="Tanaan Jungle 17.3,42.9",
 access="Completionist",
 item=120945,
@@ -3529,7 +3529,7 @@ kill Rasthe##90782 |q 38034 |goto Tanaan Jungle 17.3,42.9 |future
 },
 {
 rare=[[Driss Vile]],
-level=100,
+level=40,
 spot="Tanaan Jungle 19.80,53.60",
 currency="AC",
 item=120945,
@@ -3544,7 +3544,7 @@ kill Driss Vile##93028 |q 38736 |goto Tanaan Jungle 19.80,53.60 |future
 },
 {
 rare=[[High Priest Ikzan]],
-level=100,
+level=40,
 spot="Tanaan Jungle 20.40,40.00",
 currency="AC",
 item=120945,
@@ -3556,7 +3556,7 @@ kill High Priest Ikzan##90777 |q 38028 |goto Tanaan Jungle 20.40,40.00 |future
 },
 {
 rare=[[Rogond the Tracker]],
-level=100,
+level=40,
 spot="Tanaan Jungle 20.5,49.6",
 currency="AC",
 item=120945,
@@ -3570,7 +3570,7 @@ kill Rogond the Tracker##90885 |q 38263 |goto Tanaan Jungle/0 20.5,49.6 |future
 {
 currency="AC",
 rare=[[Remnant of the Blood Moon]],
-level=100,
+level=40,
 spot="Tanaan Jungle 22.20,50.80",
 access="Completionist",
 item=120945,
@@ -3586,7 +3586,7 @@ kill Remnant of the Blood Moon##91227 |q 39159 |goto Tanaan Jungle 22.20,50.80 |
 {
 currency="OIL",
 rare=[[Deathtalon]],
-level=100,
+level=40,
 spot="Tanaan Jungle 23.0,40.2",
 access="Completionist",
 item=120945,
@@ -3599,7 +3599,7 @@ kill Deathtalon##95053 |q 39287 |goto Tanaan Jungle/0 23.0,40.2 |future
 },
 {
 rare=[[Dorg the Bloody]],
-level=100,
+level=40,
 spot="Tanaan Jungle 23.20,48.40",
 currency="AC",
 item=120945,
@@ -3612,7 +3612,7 @@ kill Dorg the Bloody##90887 |q 38265 |goto Tanaan Jungle 23.20,48.40 |future
 },
 {
 rare=[[Bloodhunter Zulk]],
-level=100,
+level=40,
 spot="Tanaan Jungle 24.7,50.1",
 currency="AC",
 item=120945,
@@ -3627,7 +3627,7 @@ kill Bloodhunter Zulk##90936 |q 38266 |goto Tanaan Jungle/0 24.7,50.1 |future
 {
 currency="AC",
 rare=[[Lady Oran]],
-level=100,
+level=40,
 spot="Tanaan Jungle 25.40,77.20",
 access="Completionist",
 item=120945,
@@ -3639,7 +3639,7 @@ kill Lady Oran##90438 |q 38029 |goto Tanaan Jungle 25.40,77.20 |future
 },
 {
 rare=[[Drivnul]],
-level=100,
+level=40,
 spot="Tanaan Jungle 25.50,46.20",
 currency="AC",
 item=120945,
@@ -3654,7 +3654,7 @@ kill Drivnul##90888 |q 38264 |goto Tanaan Jungle 25.50,46.20 |future
 {
 currency="AC",
 rare=[[Mistress Thavra]],
-level=100,
+level=40,
 spot="Tanaan Jungle 25.80,79.00",
 access="Completionist",
 item=120945,
@@ -3669,7 +3669,7 @@ kill Mistress Thavra##90442 |q 38032 |goto Tanaan Jungle 25.80,79.00 |future
 },
 {
 rare=[[Relgor]],
-level=100,
+level=40,
 spot="Tanaan Jungle 26.30,54.20",
 currency="AC",
 item=120945,
@@ -3681,7 +3681,7 @@ kill Relgor##92197 |q 38496 |goto Tanaan Jungle 26.30,54.20 |future
 },
 {
 rare=[[Jax'zor]],
-level=100,
+level=40,
 spot="Tanaan Jungle 26.6,75.3",
 currency="AC",
 item=120945,
@@ -3696,7 +3696,7 @@ kill Jax'zor##90437 |q 38030 |goto Tanaan Jungle 26.6,75.3 |future
 {
 currency="AC",
 rare=[[Varyx the Damned]],
-level=100,
+level=40,
 spot="Tanaan Jungle 27.60,32.80",
 access="Completionist",
 item=120945,
@@ -3713,7 +3713,7 @@ kill Varyx the Damned##92451 |q 37937 |goto Tanaan Jungle 27.60,32.80 |future
 {
 currency="AC",
 rare=[[Felbore]],
-level=100,
+level=40,
 spot="Tanaan Jungle 28.60,50.80",
 access="Completionist",
 item=120945,
@@ -3727,7 +3727,7 @@ kill Felbore##93168 |q 38775 |goto Tanaan Jungle 28.60,50.80 |future
 },
 {
 rare=[[Ceraxas]],
-level=100,
+level=40,
 spot="Tanaan Jungle 31.40,68.00",
 currency="AC",
 item=120945,
@@ -3740,7 +3740,7 @@ kill Ceraxas##90434 |q 38031 |goto Tanaan Jungle 31.40,68.00 |future
 },
 {
 rare=[[Imp-Master Valessa]],
-level=100,
+level=40,
 spot="Tanaan Jungle 31.60,72.80",
 currency="AC",
 item=120945,
@@ -3754,7 +3754,7 @@ kill Imp-Master Valessa##90429 |q 38026 |goto Tanaan Jungle 31.60,72.80 |future
 {
 currency="OIL",
 rare=[[Vengeance]],
-level=100,
+level=40,
 spot="Tanaan Jungle 32.40,74.00",
 access="Completionist",
 item=120945,
@@ -3767,7 +3767,7 @@ kill Vengeance##95054 |q 39290 |goto Tanaan Jungle 32.40,74.00 |future
 },
 {
 rare=[[Gorabosh]],
-level=100,
+level=40,
 spot="Tanaan Jungle 33.00,35.70",
 currency="AC",
 item=120945,
@@ -3781,7 +3781,7 @@ kill Gorabosh##92941 |q 38709 |goto Tanaan Jungle 33.00,35.70 |future
 {
 currency="AC",
 rare=[[Thromma the Gutslicer]],
-level=100,
+level=40,
 spot="Tanaan Jungle 34.00,44.40",
 access="Completionist",
 item=120945,
@@ -3797,7 +3797,7 @@ kill Thromma the Gutslicer##92574 |q 38620 |goto Tanaan Jungle 34.00,44.40 |futu
 },
 {
 rare=[[The Goreclaw]],
-level=100,
+level=40,
 spot="Tanaan Jungle 34.30,72.50",
 currency="AC",
 item=120945,
@@ -3812,7 +3812,7 @@ kill The Goreclaw##92694 |q 38654 |goto Tanaan Jungle 34.30,72.50 |future
 {
 currency="AC",
 rare=[[Glub'glok]],
-level=100,
+level=40,
 spot="Tanaan Jungle 34.60,78.20",
 access="Completionist",
 item=120945,
@@ -3831,7 +3831,7 @@ kill Glub'glok##93125 |q 38764 |goto Tanaan Jungle 34.60,78.20 |future
 },
 {
 rare=[[Belgork]],
-level=100,
+level=40,
 spot="Tanaan Jungle 35.40,46.80",
 currency="AC",
 item=120945,
@@ -3845,7 +3845,7 @@ kill Belgork##92552 |q 38609 |goto Tanaan Jungle 35.40,46.80 |future
 },
 {
 rare=[[Captain Ironbeard]],
-level=100,
+level=40,
 spot="Tanaan Jungle 36.20,79.70",
 currency="AC",
 item=120945,
@@ -3859,7 +3859,7 @@ kill Captain Ironbeard ##93076 |q 38756 |goto Tanaan Jungle 36.20,79.70 |future
 },
 {
 rare=[[Zoug the Heavy]],
-level=100,
+level=40,
 spot="Tanaan Jungle 37.00,32.80",
 currency="AC",
 item=120945,
@@ -3873,7 +3873,7 @@ kill Zoug the Heavy##90122 |q 39045 |goto Tanaan Jungle 37.00,32.80 |future
 {
 currency="AC",
 rare=[[The Night Haunter]],
-level=100,
+level=40,
 spot="Tanaan Jungle 39.40,73.80",
 access="Completionist",
 item=120945,
@@ -3888,7 +3888,7 @@ kill The Night Haunter##92636 |q 38632 |goto Tanaan Jungle 39.40,73.80 |future
 },
 {
 rare=[[Harbormaster Korak]],
-level=100,
+level=40,
 spot="Tanaan Jungle 39.60,32.60",
 currency="AC",
 item=120945,
@@ -3901,7 +3901,7 @@ kill Harbormaster Korak##90094 |q 39046 |goto Tanaan Jungle 39.60,32.60 |future
 {
 currency="AC",
 rare=[[Kris'kar the Unredeemed]],
-level=100,
+level=40,
 spot="Tanaan Jungle 39.60,68.10",
 access="Completionist",
 item=120945,
@@ -3915,7 +3915,7 @@ kill Kris'kar the Unredeemed##93279 |q 38825 |goto Tanaan Jungle 39.60,68.10 |fu
 },
 {
 rare=[[Bramblefell]],
-level=100,
+level=40,
 spot="Tanaan Jungle 40.80,70.00",
 currency="AC",
 item=120945,
@@ -3928,7 +3928,7 @@ kill Bramblefell##91093 |q 38209 |goto Tanaan Jungle 40.80,70.00 |future
 },
 {
 rare=[[Sylissa]],
-level=100,
+level=40,
 spot="Tanaan Jungle 41.00,78.80",
 currency="AC",
 item=120945,
@@ -3941,7 +3941,7 @@ kill Sylissa##92606 |q 38628 |goto Tanaan Jungle 41.00,78.80 |future
 },
 {
 rare=[[Keravnos]],
-level=103,
+level=40,
 spot="Tanaan Jungle 41.40,79.60",
 access="Completionist",
 currency="GR",
@@ -3955,7 +3955,7 @@ kill Keravnos##80398 |q 37407 |future |goto Tanaan Jungle 41.40,79.60
 {
 currency="AC",
 rare=[[Rendrak]],
-level=100,
+level=40,
 spot="Tanaan Jungle 41.80,73.80",
 access="Completionist",
 item=120945,
@@ -3972,7 +3972,7 @@ kill Rendrak##92627 |q 38631 |goto Tanaan Jungle 41.80,73.80 |future
 },
 {
 rare=[[Sergeant Mor'grak]],
-level=100,
+level=40,
 spot="Tanaan Jungle 42.40,37.30",
 currency="AC",
 item=120945,
@@ -3985,7 +3985,7 @@ kill Sergeant Mor'grak##90024 |q 37953 |goto Tanaan Jungle 42.40,37.30 |future
 },
 {
 rare=[[Cindral the Wildfire]],
-level=100,
+level=40,
 spot="Tanaan Jungle 44.60,37.60",
 currency="AC",
 item=120945,
@@ -4000,7 +4000,7 @@ kill Cindral the Wildfire##90519 |q 37990 |goto Tanaan Jungle 44.60,37.60 |futur
 },
 {
 rare=[[Felsmith Damorka]],
-level=100,
+level=40,
 spot="Tanaan Jungle 45.80,47.00",
 currency="AC",
 item=120945,
@@ -4012,7 +4012,7 @@ kill Felsmith Damorka##92647 |q 38634 |goto Tanaan Jungle 45.80,47.00 |future
 },
 {
 rare=[[Grand Warlock Nethekurse]],
-level=100,
+level=40,
 spot="Tanaan Jungle 46.20,42.40",
 currency="AC",
 item=120945,
@@ -4025,7 +4025,7 @@ kill Grand Warlock Nethekurse##16807 |q 38400 |goto Tanaan Jungle 46.20,42.40 |f
 {
 currency="OIL",
 rare=[[Doomroller]],
-level=100,
+level=40,
 spot="Tanaan Jungle 47.00,52.60",
 access="Completionist",
 item=128025,
@@ -4039,7 +4039,7 @@ kill Doomroller##95056 |q 39289 |goto Tanaan Jungle 47.00,52.60 |future
 {
 currency="AC",
 rare=[[Zeter'el]],
-level=100,
+level=40,
 spot="Tanaan Jungle 48.40,28.50",
 access="Completionist",
 item=120945,
@@ -4055,7 +4055,7 @@ kill Zeter'el##91087 |q 38207 |goto Tanaan Jungle 48.40,28.50 |future
 {
 currency="AC",
 rare=[[The Blackfang]],
-level=100,
+level=40,
 spot="Tanaan Jungle 48.80,72.80",
 access="Completionist",
 item=120945,
@@ -4069,7 +4069,7 @@ kill The Blackfang##92465 |q 38597 |goto Tanaan Jungle 48.80,72.80 |future
 },
 {
 rare=[[Shadowthrash]],
-level=100,
+level=40,
 spot="Tanaan Jungle 49.70,61.40",
 currency="AC",
 item=120945,
@@ -4082,7 +4082,7 @@ kill Shadowthrash##93236 |q 38812 |goto Tanaan Jungle 49.70,61.40 |future
 },
 {
 rare=[[Executor Riloth]],
-level=100,
+level=40,
 spot="Tanaan Jungle 50.00,36.00",
 currency="AC",
 item=120945,
@@ -4097,7 +4097,7 @@ kill Executor Riloth##91727 |q 38411 |goto Tanaan Jungle 50.00,36.00 |future
 },
 {
 rare=[[Commander Org'mok]],
-level=100,
+level=40,
 spot="Tanaan Jungle 51.00,46.00",
 currency="AC",
 item=120945,
@@ -4110,7 +4110,7 @@ kill Commander Org'mok##89675 |q 38749 |goto Tanaan Jungle 51.00,46.00 |future
 {
 currency="AC",
 rare=[[Bleeding Hollow Horror]],
-level=100,
+level=40,
 spot="Tanaan Jungle 51.00,74.40",
 access="Completionist",
 item=120945,
@@ -4128,7 +4128,7 @@ kill Bleeding Hollow Horror##92657 |q 38696 |goto Tanaan Jungle 51.00,74.40 |fut
 {
 currency="AC",
 rare=[[Krell the Serene]],
-level=100,
+level=40,
 spot="Tanaan Jungle 52.0,83.9",
 access="Completionist",
 item=120945,
@@ -4142,7 +4142,7 @@ kill Krell the Serene##92517 |q 38605 |goto Tanaan Jungle 52.0,83.9 |future
 },
 {
 rare=[[Magwia]],
-level=100,
+level=40,
 spot="Tanaan Jungle 52.20,65.10",
 currency="AC",
 item=120945,
@@ -4156,7 +4156,7 @@ kill Magwia##93002 |q 38726 |goto Tanaan Jungle 52.20,65.10 |future
 {
 currency="AC",
 rare=[[Felspark]],
-level=100,
+level=40,
 spot="Tanaan Jungle 52.80,25.60",
 access="Completionist",
 item=120945,
@@ -4170,7 +4170,7 @@ kill Felspark##91098 |q 38211 |goto Tanaan Jungle 52.80,25.60 |future
 {
 currency="AC",
 rare=[[Overlord Ma'gruth]],
-level=100,
+level=40,
 spot="Tanaan Jungle 53.00,20.00",
 access="Completionist",
 item=120945,
@@ -4185,7 +4185,7 @@ kill Overlord Ma'gruth##92411 |q 38580 |goto Tanaan Jungle 53.00,20.00 |future
 {
 currency="AC",
 rare=[[Painmistress Selora]],
-level=100,
+level=40,
 spot="Tanaan Jungle 53.60,21.70",
 access="Completionist",
 item=120945,
@@ -4201,7 +4201,7 @@ kill Painmistress Selora##92274 |q 38557 |goto Tanaan Jungle 53.60,21.70 |future
 {
 currency="AC",
 rare=[[Putre'thar]],
-level=100,
+level=40,
 spot="Tanaan Jungle 57.10,22.80",
 access="Completionist",
 item=120945,
@@ -4214,7 +4214,7 @@ kill Putre'thar##91009 |q 38457 |goto Tanaan Jungle 57.10,22.80 |future
 },
 {
 rare=[[Broodlord Ixkor]],
-level=100,
+level=40,
 spot="Tanaan Jungle 57.60,67.20",
 currency="AC",
 item=120945,
@@ -4228,7 +4228,7 @@ kill Broodlord Ixkor##92429 |q 38589 |goto Tanaan Jungle/0 57.8,67.3 |future
 {
 currency="AC",
 rare=[[Xanzith the Everlasting]],
-level=100,
+level=40,
 spot="Tanaan Jungle 60.20,20.90",
 access="Completionist",
 item=120945,
@@ -4242,7 +4242,7 @@ kill Xanzith the Everlasting##92408 |q 38579 |goto Tanaan Jungle 60.20,20.90 |fu
 {
 currency="AC",
 rare=[[Soulslicer]],
-level=100,
+level=40,
 spot="Tanaan Jungle 62.60,72.00",
 access="Completionist",
 item=120945,
@@ -4257,7 +4257,7 @@ kill Soulslicer##92495 |q 38600 |goto Tanaan Jungle/0 62.7,72.2 |future
 {
 currency="AC",
 rare=[[Gloomtalon]],
-level=100,
+level=40,
 spot="Tanaan Jungle 63.60,81.10",
 access="Completionist",
 item=120945,
@@ -4271,7 +4271,7 @@ kill Gloomtalon##92508 |q 38604 |goto Tanaan Jungle 63.60,81.10 |future
 },
 {
 rare=[[Steelsnout]],
-level=100,
+level=40,
 spot="Tanaan Jungle 65.40,36.60",
 currency="AC",
 item=120945,

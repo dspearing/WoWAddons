@@ -3891,3 +3891,533 @@ Open #100# Small Treasures Around the Post-storm Forbidden Reach |q 17528
 |tip They are found all around The Forbidden Reach.
 |tip Refer to the Treasures of the Forbidden Reach guide for in depth locations.
 ]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Fruit of the Bloom",{
+author="support@zygorguides.com",
+description="",
+achieveid={19310},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+Acquire the "Basket of Explosive Acorns" Dreamfruit Power at Least Once |achieve 19310/1
+step
+Acquire the "Bubble Blowgun" Dreamfruit Power at Least Once |achieve 19310/2
+step
+Acquire the "Dream Gatherer" Dreamfruit Power at Least Once |achieve 19310/3
+step
+Acquire the "Feral Overflow" Dreamfruit Power at Least Once |achieve 19310/4
+step
+Acquire the "Flower Trail" Dreamfruit Power at Least Once |achieve 19310/5
+step
+Acquire the "Life Surger" Dreamfruit Power at Least Once |achieve 19310/6
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/7
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/8
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/9
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/10
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/11
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/12
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/13
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/14
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/15
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/16
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/17
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/18
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/19
+step
+Acquire the "" Dreamfruit Power at Least Once |achieve 19310/20
+]])
+ZGV.DevEnd()
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Quests\\Dream On",{
+author="support@zygorguides.com",
+description="",
+achieveid={19318},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+leechsteps "Achievement Guides\\Character Achievements\\Exploration\\Dragon Isles\\Explore the Emerald Dream"
+leechsteps "Achievement Guides\\Character Achievements\\Exploration\\I Dream of Seeds"
+leechsteps "Achievement Guides\\Character Achievements\\Exploration\\Treasures of the Emerald Dream"
+leechsteps "Achievement Guides\\Character Achievements\\Quests\\Defenders of the Dream"
+leechsteps "Achievement Guides\\Character Achievements\\Exploration\\Adventurer of the Emerald Dream"
+leechsteps "Achievement Guides\\Character Achievements\\Exploration\\Super Duper Bloom"
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\I Dream of Seeds",{
+author="support@zygorguides.com",
+description="",
+achieveid={19013},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+label "Accept_Mysterious_Seeds"
+Kill enemies around this area |notinsticky
+accept Mysterious Seeds##78172 |goto The Emerald Dream/0 62.89,68.30
+|tip You will eventually accept this automatically after looting.
+step
+talk Sylvia Whisperbloom##211265
+turnin Mysterious Seeds##78172 |goto 59.75,16.89
+stickystart "Seed_Information"
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Ageless Blossom " Emerald Bounty Location |achieve 19013/17 |goto 59.2,17.4
+|tip The event may also be found here:
+[59.7,15.8]
+[60.1,18.2]
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Lullaby Lavender" Emerald Bounty Location |achieve 19013/11 |goto 56.5,37.7
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Lofty Lupin" Emerald Bounty Location |achieve 19013/6 |goto  56.7,44.9
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Fuzzy Licorice" Emerald Bounty Location |achieve 19013/3 |goto 63.49,47.10
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Singing Weedling" Emerald Bounty Location |achieve 19013/13 |goto 63.0,52.8
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Ysera's Clover" Emerald Bounty Location |achieve 19013/1 |goto 59.25,58.75
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Dragon's Daffodil" Emerald Bounty Location |achieve 19013/7 |goto 63.9,64.8
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Chiming Foxglove" Emerald Bounty Location |achieve 19013/2 |goto 54.59,67.63
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Whisperbloom Sapling" Emerald Bounty Location |achieve 19013/18 |goto 51.1,58.7
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Flourishing Scurfpea" Emerald Bounty Location |achieve 19013/16 |goto 48.7,80.5
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Moon Tulip" Emerald Bounty Location |achieve 19013/15 |goto 42.64,74.04
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Comfy Chamomile" Emerald Bounty Location |achieve 19013/14 |goto 38.5,59.2
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Viridescent Sprout" Emerald Bounty Location |achieve 19013/4 |goto 40.02,52.70
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Ringing Rose" Emerald Bounty Location |achieve 19013/5 |goto 49.16,48.06
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Glade Goldenrod" Emerald Bounty Location |achieve 19013/8 |goto 40.7,43.5
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Dreamer's Daisy" Emerald Bounty Location |achieve 19013/9 |goto 46.4,40.5
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Belligerent Begonias" Emerald Bounty Location |achieve 19013/10 |goto 49.9,35.4
+|tip Open your map and look for the Emerald Bounty to be active.
+|tip Contribute a seed to the bounty and complete the event for credit.
+step
+use the Small Dreamseed##208066
+use the Plump Dreamseed##208067
+use the Gigantic Dreamseed##208047
+|tip You will only need to use one.
+Contribute a seed to the "Lavatouched Lilies" Emerald Bounty Location |achieve 19013/12 |goto 40.7,24.8
+step
+label "Seed_Information"
+collect Small Dreamseed##208066 |n
+collect Plump Dreamseed##208067 |n
+collect Gigantic Dreamseed##208047 |n
+You need {local s=0 for i=1,18 do s=s+select(4,_G.GetAchievementCriteriaInfo(19013,i)) end return 18-s} more seeds.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Treasures of the Emerald Dream",{
+author="support@zygorguides.com",
+description="",
+achieveid={19317},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+clicknpc Triflesnatcher##210060
+|tip It looks like a small blue owl sitting on a large green vine hanging above the ground.
+|tip At each location it will fly to the next.
+|tip You can follow it or wait for it at the next location.
+|tip Click it 3 times.
+map The Emerald Dream/0
+path	loop off; follow strict
+path	39.74,52.16	42.24,56.28	41.74,62.58
+click Triflesnatch's Roving Trove##407739
+|tip After interacting for the 3rd time, follow Triflesnatch.
+|tip This will appear when it lands.
+Discover the "Triflesnatch's Roving Trove" Treasure |achieve 19317/1 |goto The Emerald Dream/0 34.09,56.35
+step
+click Crystalline Glowblossom##408107
+|tip Hanging from a branch on the tree.
+Discover the "Crystalline Glowblossom" Treasure|achieve 19317/3 |goto 39.11,65.52
+step
+click Mark of Goldrinn##410889
+|tip It looks like a tablet with green fangs on a rock.
+|tip Be ready to hurry, you will have 59 seconds to reach the Statue of the Great Wolf.
+|tip You can use the Moonfang Shroud or Moonfang's Paw and skip this step.
+|tip You can skip this step and talk directly to the statue. |only if Worgen
+Gain the "Wolf Spirit Guardian" Buff  |complete hasbuff("spell:425408") |goto 34.52,82.68 |or
+'|achieve 19317/10 |or
+step
+talk Statue of the Great Wolf##212012
+|tip Inside the cave.
+Choose _<I have been honored by the Great Wolf.>_
+click Boon of Goldrinn##411067
+Discover the "Reliquary of Goldrinn" Treasure |achieve 19317/10 |goto 33.06,83.23
+step
+click Mark of Ursol##409264
+|tip It looks like a tablet with a green bear claw up against the tree.
+|tip Be ready to hurry, you will have 59 seconds to reach the Statue of the Bear Lord. |only if not Druid
+|tip You can skip this using bear form. |only if Druid
+Gain the "Bear Spirit Guardian" Buff |complete hasbuff("spell:423306") |goto 33.21,81.99 |or
+'|achieve 19317/7 |or
+step
+talk Statue of the Bear Lord##210732
+Choose _<I have been honored by the Great Bear Spirit!>_
+click Boon of Ursol##409222
+Discover the "Reliquary of Ursol" Treasure |achieve 19317/7 |goto 47.13,52.96
+step
+click Mark of Aviana##410892
+|tip It looks like a stone slab with a leaf on it.
+|tip Be ready to hurry, you will have 59 seconds to reach the Statue of the Sky Mistress.
+|tip You can also use Blazing Wings or Sparkle Wings and skip this part.
+|tip You can skip this using flight form. |only if Druid
+Gain the "Winged Spirit Guardian" Buff |complete hasbuff("spell:425432") |goto 47.16,52.75 |or
+'|achieve 19317/8 |or
+step
+talk Statue of the Sky Mistress##212011 |goto 64.22,19.27
+|tip Wedged between tree roots.
+click Boon of Aviana##411066
+Discover the "Reliquary of Aviana" Treasure |achieve 19317/8 |goto 64.10,19.15
+step
+click Hidden Moonkin Stash##407862
+|tip It looks like a basket on top of a root in the air.
+Discover the "Hidden Moonkin Stash" Treasure |achieve 19317/2 |goto 47.49,34.85
+step
+click Pineshrew Cache##409440
+|tip It looks like a mound of dirt.
+Discover the "Pineshrew Cache" Treasure |achieve 19317/4 |goto 37.25,30.69
+step
+click Odd Burl##408707
+|tip At the top of the giant brown tree.
+Discover the "Odd Burl" Treasure |achieve 19317/6 |goto 55.27,57.25
+step
+talk Laughing Podling##210538
+map The Emerald Dream/0
+path	loop off; follow strict
+path	64.31,61.30	62.90,60.41	61.61,59.50
+|tip You can follow it to the next location.
+|tip Click it 3 times.
+click Magical Bloom##408706
+Discover the "Magical Bloom" Treasure |achieve 19317/5 |goto 61.61,59.61
+step
+Enter the Cave |goto 63.48,71.71 < 5
+click Mark of Ashmane##410893
+|tip Inside the cave.
+|tip Complete the Dryad Fire Drill World Quest for it to phase back.
+Gain the "Panther Spirit Guardian" Buff |complete hasbuff("spell:425426") |goto Barrows of Reverie/0 38.66,66.34 |or
+'|achieve 19317/9 |or
+step
+Follow the path |goto 40.82,43.10 < 10
+talk Statue of the Ashen Panther##212009
+Choose _<I have been honored by a cunning panther spirit.>_
+click Boon of Ashamane##411065
+Discover the "Reliquary of Ashmane" Treasure |achieve 19317/9 |goto 63.42,73.01
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Quests\\Defenders of the Dream",{
+author="support@zygorguides.com",
+description="",
+achieveid={19026},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+Load the "Emerald Dream Campaign + Side Quests" Leveling Guide |next "Leveling Guides\\Dragonflight (60-70)\\Emerald Dream Campaign + Side Quests"
+|tip Click the line above to load the guide.
+|tip Completing this guide will grant you this achievment.
+Earn the "Defenders of the Dream" Achievement |q 19026
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Adventurer of the Emerald Dream",{
+author="support@zygorguides.com",
+description="",
+achieveid={19316},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+Complete {local s=0 for i=1,10 do s=s+select(4,_G.GetAchievementCriteriaInfo(19316,i)) end return 10-s} Special Encounters in the Emerald Dream |achieve 19316
+|tip Refer to the Emerald Dream World Quest guide to accomplish this.
+|tip You will need to open your world map while in the Emerald Dream and left click the Rare Spawn icons as they appear.
+Click Here to Load "The Emerald Dream World Quests" Guide |confirm |next "Daily Guides\\Dragonflight (60-70)\\The Emerald Dream World Quests"
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Super Duper Bloom",{
+author="support@zygorguides.com",
+description="",
+achieveid={19312},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+Complete a Superbloom with Epic Bloom Quality |achieve 19312
+|tip This requires a large group of people actively hitting all the objectives that are possible.
+|tip Refer to The Emerald Dream Superbloom event guide to accomplish this.
+Load "The Emerald Dream Superbloom" Event Guide |confirm |next "Events Guides\\Dragonflight\\The Emerald Dream Superbloom"
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Exploration\\Emerald Dream Safari",{
+author="support@zygorguides.com",
+description="",
+achieveid={19401},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+map The Emerald Dream/0
+path	48.86,57.94	49.98,54.53	51.40,57.75	53.70,59.48	52.69,77.74
+Follow the path
+|tip Search for a Dream Badger along the path.
+clicknpc Dream Badger##212557
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Dream Badger" Battle Pet |achieve 19401/1
+step
+clicknpc Flooftalon##211110
+|tip You may need to kill the critter version of these to get the battle pet version to appear.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Flooftalon" Battle Pet |achieve 19401/2 |goto 47.04,73.84
+You can find more around here:
+[48.80,74.51]
+[48.85,76.55]
+step
+clicknpc Fol'ya Pup##211177
+|tip They can be found as frontliners throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Fol'ya Pup" Battle Pet |achieve 19401/3 |goto 50.96,62.13
+step
+clicknpc Leyhart##211288
+|tip These are common throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Leyhart" Battle Pet |achieve 19401/4 |goto 52.79,65.58
+step
+clicknpc Pewling##211302
+|tip These are common throughout the zone.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Pewling" Battle Pet |achieve 19401/6 |goto 52.35,64.44
+step
+clicknpc Sapnibbler##211182
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Sapnibbler" Battle Pet |achieve 19401/7 |goto 55.25,72.32
+step
+clicknpc Slumbertooth##211295
+|tip This pet appears more often during a Superbloom.
+|tip Kill the critter version of Slumbertooth around here.
+|tip Eventually a captuarable one will spawn.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Slumbertooth" Battle Pet |achieve 19401/8 |goto 44.41,72.20
+You can find more here
+[50.13,78.04]
+step
+map The Emerald Dream/0
+path loop off' bounce
+path	25.53,22.90	57.71,26.31	49.74,47.80	37.46,57.65
+path	33.58,68.88
+Follow the path
+|tip You may need to kill the critter version of these to get the battle pet version to appear.
+clicknpc Snaggletoof##212459
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Snaggletoof" Battle Pet |achieve 19401/9
+step
+talk Celestine of the Harvest##210608
+|tip She moves with the Dreamsurge Camp.
+buy Friendsurge Defenders##209944 |or
+|tip This costs 500 Dreamsurge Coalescence.
+|tip Complete the Weekly Dreamsurge Quest, Rares, closing portals, some world quests, Dragon Isles Supply Nodes and Fly through Green Orbs that may appear to farm them.
+'|achieve 19401/5 |or
+step
+use the Friendsurge Defenders##209944
+Gain the Friendsurge Defenders Buff |complete hasbuff("spell:423865") |or
+|tip This lasts for 30 minutes.
+'|achieve 19401/5 |or
+step
+map The Emerald Dream/0
+path loop off; bounce
+path	58.47,35.07	53.61,65.31	48.36,69.42	35.75,62.29	34.60,62.26
+path	34.31,67.65
+Follow the path
+clicknpc Pale Slumbertooth##212437
+|tip They will be in bushes.
+|tip Reduce its health below 35% and use the "Trap" ability on your pet bar.
+|tip You may need to attempt the trap several times.
+Catch the "Pale Slumbertooth" Battle Pet |achieve 19401/5
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Quests\\Friends In Feathers",{
+author="support@zygorguides.com",
+description="Rescue the following moonkin hatchlings during the 'Claws For Concern' quest in the Whorlwing Basin.",
+achieveid={19293},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+step
+For this Achievement, you will need to rescue Moonkin Hatchlings during the "Claws for Concern" World quest
+|tip Note that you will only be able to save 6 Moonkin per world quest.
+|tip It should take 3 resets to clear the achievement.
+|tip Since progress is account wide, if you have an alt you can use them.
+|tip You can also join a raid group to rescue them without progressing the World Quest.
+Click Here to Continue |confirm |achieve 19293
+stickystart "Reminder"
+step
+Enter the cave |goto 2200 36.17,70.95 < 10
+Rescue "Squawkle" the Moonkin Hatchling |achieve 19293/1 |goto 2200 36.36,71.57
+step
+Rescue "Feets" the Moonkin Hatchling |achieve 19293/2 |goto 2200 38.45,69.55
+step
+Enter the cave |goto 2200 36.14,67.16 < 10
+Rescue "Giblet" the Moonkin Hatchling |achieve 19293/3 |goto 2200 35.67,67.09
+step
+Rescue "Bumbletweet" the Moonkin Hatchling |achieve 19293/4 |goto 2200 39.10,66.00
+step
+Enter the cave |goto 2200 37.57,68.59 < 10
+Rescue "Peanut" the Moonkin Hatchling |achieve 19293/5 |goot 2200 38.02,69.01
+step
+Enter the cave |goto 2200 38.84,71.57 < 10
+Rescue "Snoozle" the Moonkin Hatchling |achieve 19293/6 |goto 2200 40.39,71.50
+step
+Enter the cave |goto 2200 38.84,71.57 < 10
+Rescue "Fruffles" the Moonkin Hatchling |achieve 19293/7 |goto 2200 39.31,71.77
+step
+Enter the cave |goto 2200 37.57,69.65 < 10
+Rescue "Wingnut" the Moonkin Hatchling |achieve 19293/8 |goto 2200 37.78,70.27
+step
+Rescue "Owlington" the Moonkin Hatchling |achieve 19293/9 |goto 2200 37.39,72.25
+step
+Enter the cave |goto 2200 36.07,69.49 < 10
+Rescue "Meep" the Moonkin Hatchling |achieve 19293/10 |goto 2200 35.54,69.75
+step
+Rescue "Hops" the Moonkin Hatchling |achieve 19293/11 |goto 2200 37.76,73.30
+step
+Rescue "Beaks" the Moonkin Hatchling |achieve 19293/12 |goto 2200 36.89,65.87
+step
+Enter the cave |goto 2200 37.57,69.65 < 10
+Rescue "Squeaky" the Moonkin Hatchling |achieve 19293/13 |goto 2200 38.45,69.33
+step
+Enter the cave |goto 2200 36.91,62.40 < 10
+Rescue "Eugene" the Moonkin Hatchling |achieve 19293/14 |goto 2200 36.40,62.76
+step
+Rescue "Moonbeam" the Moonkin Hatchling |achieve 19293/15 |goto 2200 36.11,69.68
+step
+Enter the cave |goto 2200 36.17,70.95 < 10
+Rescue "Chickle" the Moonkin Hatchling |achieve 19293/16 |goto 2200 36.41,71.20
+step
+Rescue "Fuzz" the Moonkin Hatchling |achieve 19293/17 |goto 2200 38.68,63.56
+step
+Enter the cave |goto 2200 37.57,69.65 < 10
+Rescue "Tickles" the Moonkin Hatchling |achieve 19293/18 |goto 2200 38.73,70.48
+step
+label "Reminder"
+Remember, the Quest "Claws for Concern" Must Be Active
+|tip Also remember you can only save 6 Moonkin per completion.
+]])
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Character Achievements\\Quests\\Of the Tyr's Guard",{
+author="support@zygorguides.com",
+description="",
+achieveid={18958},
+patch='100200',
+startlevel=70,
+keywords={"Dragonflight", "Exploration"},
+},[[
+leechsteps "Leveling Guides\\Dragonflight (60-70)\\Tyr's Return"
+step
+collect Letter from Valunei##208826 |n
+use the Letter from Valunei##208826
+|tip This is collected from the mail after completing "Time to Process".
+accept Logotyrapy##77341
+step
+talk Keeper Tyr##208796
+|tip Inside the building.
+Choose _<Is something the matter, Tyr?>_
+Watch the Dialogue
+Speak with Tyr |q 77341/1 |goto Thaldraszus/0 60.95,63.77
+step
+talk Travard##208839
+|tip Inside the building.
+turnin Logotyrapy##77341 |goto Thaldraszus/0 60.84,63.77
+]])

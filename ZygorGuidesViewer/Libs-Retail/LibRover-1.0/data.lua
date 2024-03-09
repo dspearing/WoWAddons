@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 504,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 517,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -27,7 +27,6 @@ data.MapIDsByName = {
 ["The Maelstrom Continent"] = {[0]=948},
 ["Zandalar"] = {[0]=875, [1]=1011},
 ["The Shadowlands"] = {[0]=1550,[1]=1647},
-["Dragon Isles"] = {[0]=1978},
 
 
 
@@ -44,7 +43,7 @@ data.MapIDsByName = {
 ["Ohn'ahran Plains"] = {[0]=2023},
 ["Pandaren Revolution"] = {[0]=2088},
 ["Primalist Tomorrow"] = {[0]=2085},
-["Redridge Mountains"] = {[0]=1260},
+["Redridge Mountains DF"] = {[0]=1260},
 ["Resonant Peaks"] = {[0]=2059},
 ["Ruby Life Pools"] = {[0]=2095,[1]=2094},
 ["Thaldraszus"] = {[0]=2025},
@@ -79,7 +78,9 @@ data.MapIDsByName = {
 ["Sor'theril Barrow Den"] = {[0]=2253},
 ["Amirdrassil"]={[0]=2239},
 ["The Nighthold T"]={[0]=2221,[1]=2220},
+["Traitor's Rest"]={[0]=2262},
 
+["Millenia's Threshold"] = {[0]=2266 }, -- faked map based on instance
 
 
 
@@ -88,7 +89,7 @@ data.MapIDsByName = {
 ["The Warlands"]={[0]=2207},
 ["Azq'roth"]={[0]=2201},
 ["A.Z.E.R.O.T.H."]={[0]=2206},
-["Azmerloth"]={[0]=2204},
+["AzmerlothTR"]={[0]=2204},
 ["Azmourne"]={[0]=2203},
 ["Ulderoth"]={[0]=2205},
 ["Azewrath"]={[0]=2202},
@@ -106,7 +107,6 @@ data.MapIDsByName = {
 ["Maldraxxus"] = {[0]=1536, [1]=1652},
 ["Sightless Hold"] = {[0]=1650},
 ["Ardenweald"] = {[0]=1565, [1]=1829, [2]=1818, [3]=1824, [4]=1709},
-["Battle of Ardenweald"] = {[0]=2005},
 ["Revendreth"] = {[0]=1525},
 ["Ember Court"] = {[0]=1644},
 ["The Maw"] = {[0]=1543},
@@ -231,7 +231,7 @@ data.MapIDsByName = {
 ["Prison of Ink"] = {[0]=1407},
 
 --Icecrown Citadel Scenario
-["Icecrown Citadel L"] = {[0]=1359},
+["Icecrown Citadel S"] = {[0]=1359},
 
 --Patch 8.2.5
 ["Durotar War Campaign"] = {[0]=1535},
@@ -521,7 +521,7 @@ data.MapIDsByName = {
 ["Blackwing Lair"] = {[1]=287,[2]=288,[3]=289,[4]=290},
 ["Dragon Soul"] = {[1]=409,[2]=410,[3]=411,[4]=412,[5]=413,[6]=414,[7]=415},
 ["The Emerald Nightmare"] = {[1]=777,[2]=778,[3]=779,[4]=780,[5]=781,[6]=782,[7]=783,[8]=784,[9]=785,[10]=786,[11]=787,[12]=788,[13]=789},
-["The Eye of Eternity"] = {[1]=141},
+["The Eye of Eternity R"] = {[1]=141},
 ["Firelands"] = {[0]=367,[1]=368,[3]=369},
 ["Gruul's Lair"] = {[1]=330},
 ["Heart of Fear"] = {[1]=474,[2]=475},
@@ -711,7 +711,6 @@ data.MapIDsByName = {
 ["Undercity BFA"] = {[0]=998},
 ["Blackrock Scenario"] = {[0]=1159, [1]=1160},
 ["Arathi Highlands BFA"] = {[0]=1158},
-["The Great Sea"] = {[0]=1157},
 ["Stormwind City BFA"] = {[0]=1012},
 ["Stockcades Scenario"] = {[0]=1013},
 ["Stratholme Scenario"] = {[0] = 827},
@@ -750,6 +749,8 @@ data.FloorByID = {}
 data.MapGroupIDs = {}
 data.InstanceMaps = {}
 data.InstanceMapsRev = {}
+data.InstanceMapsContinents = {}
+data.DungeonMaps = {} -- This is used by |goto implementation to detect which maps cannot be positioned anymore.
 for mapname,mapdata in pairs(data.MapIDsByName) do 
 	for floornum,floormap in pairs(mapdata) do
 		if floornum~="default" then
@@ -757,6 +758,12 @@ for mapname,mapdata in pairs(data.MapIDsByName) do
 			data.FloorByID[floormap] = floornum
 			data.MapGroupIDs[floormap] = mapname
 		end
+	end
+	if mapdata.instance then
+		data.InstanceMaps[mapdata.instance] = mapdata[0]
+		data.InstanceMapsRev[mapdata[0]] = mapdata.instance
+		data.InstanceMapsContinents[mapdata[0]] = mapdata.c
+		data.DungeonMaps[mapdata[0]] = true
 	end
 end
 
@@ -848,7 +855,6 @@ data.DungeonMaps = {
   [349] = true,
   [350] = true,
   [367] = true,
-  [379] = true,
   [398] = true,
   [399] = true,
   [404] = true,
@@ -866,7 +872,6 @@ data.DungeonMaps = {
   [474] = true,
   [476] = true,
   [508] = true,
-  [543] = true,
   [557] = true,
   [573] = true,
   [574] = true,
@@ -1022,6 +1027,7 @@ data.greenborders = {
 	{"The Azure Span/0","Thaldraszus/0"},
 	{"Valdrakken/0","Thaldraszus/0"},
 	{"Ohn'ahran Plains/0","Amirdrassil/0"},
+	{"The Azure Span/0","Traitor's Rest/0"},
 
 
 
@@ -1342,10 +1348,7 @@ data.ZoneMeta = {
 	["Ghostlands/1"] = {flyable=false},
 	["Eversong Woods/0"] = {flyable=false},
 	["Sunstrider Isle/0"] = {flyable=false},
-	["Sunstrider Isle/0"] = {flyable=false},
-
-	["Tol Barad/0"] = {flyable=false},
-
+	
 	["Icecrown Citadel Intro/0"] = {hostile=false},
 	["Icecrown Citadel Intro/1"] = {hostile=false},
 	["Icecrown Citadel Intro/2"] = {hostile=false},
@@ -1440,6 +1443,8 @@ data.ZoneMeta = {
 
 	["Tol Barad/0"] = {flyable=false},
 	["Tol Barad Peninsula/0"] = {flyable=false},
+
+	--["The Timeways/0"] = {routable=true},
 
 } -- Gets numberized and setmetatable-ized in lib code.
 

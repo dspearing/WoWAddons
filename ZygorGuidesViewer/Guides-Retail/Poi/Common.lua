@@ -7,5 +7,5 @@ ZygorGuidesViewer:RegisterGuide("Leveling Guides\\Points of interest",{
 	poiloader = true
 },[[
 	step
-		Please select a point of interest from world map.
+		Please select a point of interest from world map. |complete false
 ]])
